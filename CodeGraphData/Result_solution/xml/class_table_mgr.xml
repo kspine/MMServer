@@ -1,0 +1,2097 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_table_mgr" kind="class" prot="public">
+    <compoundname>TableMgr</compoundname>
+    <includes refid="_table_mgr_8h" local="no">TableMgr.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_table_mgr_1a2d86cb971a5d4564ea493402d6650ece" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_table_mgr" kindref="compound">TableMgr</ref> *</type>
+        <definition>TableMgr * TableMgr::m_pkAllTableMgr</definition>
+        <argsstring></argsstring>
+        <name>m_pkAllTableMgr</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="230" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="230" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" compoundref="_table_mgr1_8cpp" startline="36" endline="43">Get</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_table_mgr_1ac063483c32a03894c11291f7e210329e" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int, int&gt; TableMgr::m_akHeroID2PosIndex</definition>
+        <argsstring></argsstring>
+        <name>m_akHeroID2PosIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="233" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="233" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1a78d1d214ceb908cd6240bbab7a7b44e7" compoundref="_table_mgr1_8cpp" startline="124" endline="133">GetPosIndexByHeroID</referencedby>
+        <referencedby refid="class_table_mgr_1a608710a39e8da87bd21924a688ccd930" compoundref="_table_mgr1_8cpp" startline="264" endline="285">InitHeroPosIndex</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1ab45504de8146dfb5de9e777525f3009d" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int, int&gt; TableMgr::m_akPosIndex2HeroID</definition>
+        <argsstring></argsstring>
+        <name>m_akPosIndex2HeroID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="234" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="234" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1aa4cc1b835d4a779047171d0a18fca0d9" compoundref="_table_mgr1_8cpp" startline="113" endline="122">GetHeroIDByPosIndex</referencedby>
+        <referencedby refid="class_table_mgr_1a608710a39e8da87bd21924a688ccd930" compoundref="_table_mgr1_8cpp" startline="264" endline="285">InitHeroPosIndex</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1a372a760b8ec57bd7accd53622a336ab0" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int, int&gt; TableMgr::m_akPetID2PosIndex</definition>
+        <argsstring></argsstring>
+        <name>m_akPetID2PosIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="237" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="237" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1a2e5391528de557402df6da53b4506d22" compoundref="_table_mgr1_8cpp" startline="146" endline="155">GetPosIndexByPetID</referencedby>
+        <referencedby refid="class_table_mgr_1a92dd5fc3393d4cc25e98e39e85656ea2" compoundref="_table_mgr1_8cpp" startline="287" endline="308">InitPetPosIndex</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1ad4e418067c21766bbb18abdbe25e27d6" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int, int&gt; TableMgr::m_akPosIndex2PetID</definition>
+        <argsstring></argsstring>
+        <name>m_akPosIndex2PetID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="238" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="238" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1ae62557a71f7c02e07dd517e52e950f64" compoundref="_table_mgr1_8cpp" startline="135" endline="144">GetPetIDByPosIndex</referencedby>
+        <referencedby refid="class_table_mgr_1a92dd5fc3393d4cc25e98e39e85656ea2" compoundref="_table_mgr1_8cpp" startline="287" endline="308">InitPetPosIndex</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1a2937a14b54c44f6c6b8049b36c8e1586" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int, int&gt; TableMgr::m_akHorseID2PosIndex</definition>
+        <argsstring></argsstring>
+        <name>m_akHorseID2PosIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="241" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="241" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1a7becbe4e31df122ed2bf9d40cd76664f" compoundref="_table_mgr1_8cpp" startline="168" endline="177">GetPosIndexByHorseID</referencedby>
+        <referencedby refid="class_table_mgr_1a0660913905a81e3e3a0ca87c1470d23d" compoundref="_table_mgr1_8cpp" startline="310" endline="331">InitHorsePosIndex</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1a9e5df7cad943429e293796b0e60a8222" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int, int&gt; TableMgr::m_akPosIndex2HorseID</definition>
+        <argsstring></argsstring>
+        <name>m_akPosIndex2HorseID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="242" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="242" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1a7a71a5b546088463b1f55938b16d6145" compoundref="_table_mgr1_8cpp" startline="157" endline="166">GetHorseIDByPosIndex</referencedby>
+        <referencedby refid="class_table_mgr_1a0660913905a81e3e3a0ca87c1470d23d" compoundref="_table_mgr1_8cpp" startline="310" endline="331">InitHorsePosIndex</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1a1b1eadfb4e922f1ea60ea99724bbccff" prot="private" static="no" mutable="no">
+        <type><ref refid="_table_mgr_def_8h_1a53336714bba2cf335d3db9b72a9dd2dd" kindref="member">MPreTask</ref></type>
+        <definition>MPreTask TableMgr::m_MainTaskPre</definition>
+        <argsstring></argsstring>
+        <name>m_MainTaskPre</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="249" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="249" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1a63ef6ccfb78a618d0d6fca442241ced5" compoundref="_table_mgr1_8cpp" startline="1095" endline="1108">GetNextMainTaskID</referencedby>
+        <referencedby refid="class_table_mgr_1ad0d44a4ae56a515ab9bafa62298ac4a0" compoundref="_table_mgr1_8cpp" startline="1063" endline="1087">InitTaskList</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1afb4542d14224c367d107ca7cfd9e44df" prot="private" static="no" mutable="no">
+        <type><ref refid="_table_mgr_def_8h_1abf27be547ee60f1648773fa9568a960c" kindref="member">VTaskTypeID</ref></type>
+        <definition>VTaskTypeID TableMgr::m_TaskTypeID</definition>
+        <argsstring></argsstring>
+        <name>m_TaskTypeID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="250" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="250" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1acea52d6373f03b5ece326a1c996936ab" compoundref="_table_mgr1_8cpp" startline="1110" endline="1128">GetDailyTaskIDList</referencedby>
+        <referencedby refid="class_table_mgr_1aca0b7147592a6dbf62766e2cb8f33e92" compoundref="_table_mgr1_8cpp" startline="1131" endline="1154">GetFirstDailyTaskID</referencedby>
+        <referencedby refid="class_table_mgr_1ac8ea08be392220339714779938079e1b" compoundref="_table_mgr1_8cpp" startline="1047" endline="1061">GetTaskIDInfo</referencedby>
+        <referencedby refid="class_table_mgr_1ad0d44a4ae56a515ab9bafa62298ac4a0" compoundref="_table_mgr1_8cpp" startline="1063" endline="1087">InitTaskList</referencedby>
+        <referencedby refid="class_table_mgr_1a4880511e5c48375cc7070e9933fe5258" compoundref="_table_mgr1_8cpp" startline="1089" endline="1093">IsFirstWinTask</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1a6595ac599c7a599ac1264054cb8f4295" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::map&lt;int, std::vector&lt;std::string&gt; &gt; TableMgr::m_akUnit2Model</definition>
+        <argsstring></argsstring>
+        <name>m_akUnit2Model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="253" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="253" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1a40d5e0cad4954e337d38064823ff9ed8" compoundref="_table_mgr1_8cpp" startline="764" endline="767">GetModelResByUnit</referencedby>
+        <referencedby refid="class_table_mgr_1af7cf541261c0b36b35af12b2b86367aa" compoundref="_table_mgr1_8cpp" startline="645" endline="657">InitModelRes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1a1a1743ed61b08f1e23b0420bf324e3cf" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::map&lt;int, std::vector&lt;std::string&gt; &gt; TableMgr::m_akUnit2Voice</definition>
+        <argsstring></argsstring>
+        <name>m_akUnit2Voice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="254" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="254" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1a8c916d94a73c7d9b8ab74e35d74b866d" compoundref="_table_mgr1_8cpp" startline="769" endline="772">GetVoiceResByUnit</referencedby>
+        <referencedby refid="class_table_mgr_1a93701d99587c7871ad22119f138adc1b" compoundref="_table_mgr1_8cpp" startline="659" endline="670">InitVoiceRes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1a15088c9a84437bf4188140f18162351c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_ren_ji_conditions_table" kindref="compound">RenJiConditionsTable</ref> * &gt;</type>
+        <definition>std::vector&lt;RenJiConditionsTable*&gt; TableMgr::m_akRenjiVec</definition>
+        <argsstring></argsstring>
+        <name>m_akRenjiVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="256" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="256" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1a7fb4d0caa2385af8b92c31a173383ed0" compoundref="_table_mgr1_8cpp" startline="548" endline="555">GetRenjiConditionByID</referencedby>
+        <referencedby refid="class_table_mgr_1abb689bcbe22afc4a4729cee4d19edd28" compoundref="_table_mgr1_8cpp" startline="635" endline="643">InitRenjiCondition</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1a0e7a506e8a49a5d5efc758effce19f55" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, std::vector&lt; int &gt; &gt;</type>
+        <definition>std::map&lt;int, std::vector&lt;int&gt; &gt; TableMgr::m_akRaceHelperSkill</definition>
+        <argsstring></argsstring>
+        <name>m_akRaceHelperSkill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="259" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="259" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1ae1e3ff3f35667e2c87e94adf914c0892" compoundref="_table_mgr1_8cpp" startline="557" endline="582">GetRaceHelpSkillTypes</referencedby>
+        <referencedby refid="class_table_mgr_1a67a9954d02acba4c907120d1aea51c64" compoundref="_table_mgr1_8cpp" startline="672" endline="762">InitRaceHelperRes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1a9e0d5fe0f6a73569cbacd33e11c52b2f" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned long long, std::vector&lt; int &gt; &gt;</type>
+        <definition>std::map&lt;unsigned long long, std::vector&lt;int&gt; &gt; TableMgr::m_akRaceHeperMasteryRecom</definition>
+        <argsstring></argsstring>
+        <name>m_akRaceHeperMasteryRecom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="260" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="260" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1aff683240e45e1bc138bae0c00d08454a" compoundref="_table_mgr1_8cpp" startline="584" endline="633">GetRaceHelpMasterySkillTypes</referencedby>
+        <referencedby refid="class_table_mgr_1a67a9954d02acba4c907120d1aea51c64" compoundref="_table_mgr1_8cpp" startline="672" endline="762">InitRaceHelperRes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1a1708030708a256398d5d01e20d9c6a3b" prot="private" static="no" mutable="no">
+        <type><ref refid="_language__table_8hpp_1a09e626beea3c0303612dd497efb24379" kindref="member">SeGlobalLanguage</ref></type>
+        <definition>SeGlobalLanguage TableMgr::m_eLanguage</definition>
+        <argsstring></argsstring>
+        <name>m_eLanguage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="263" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="263" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1a20fe1ff73990af40d4acf2b559c30d48" compoundref="_table_mgr1_8cpp" startline="179" endline="182">GetLanguage</referencedby>
+        <referencedby refid="class_table_mgr_1ac4c6f35a99ef98d8714f64e53c342c08" compoundref="_table_mgr1_8cpp" startline="205" endline="214">GetText</referencedby>
+        <referencedby refid="class_table_mgr_1a1b808febff52f5224cfa4e811a3b7aa7" compoundref="_table_mgr1_8cpp" startline="184" endline="188">SetLanguage</referencedby>
+        <referencedby refid="class_table_mgr_1a0e4d10bad85fb1e2c5d89340a1ad6a05" compoundref="_table_mgr1_8cpp" startline="45" endline="49">TableMgr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1adb1f51b3c3907f3fdf814c49df89652a" prot="private" static="no" mutable="no">
+        <type><ref refid="_language__table_8hpp_1a09e626beea3c0303612dd497efb24379" kindref="member">SeGlobalLanguage</ref></type>
+        <definition>SeGlobalLanguage TableMgr::m_eSoundLanguage</definition>
+        <argsstring></argsstring>
+        <name>m_eSoundLanguage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="264" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="264" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1a042bcaca600c7b95d56b8be8f7554a68" compoundref="_table_mgr1_8cpp" startline="190" endline="193">GetSoundLanguage</referencedby>
+        <referencedby refid="class_table_mgr_1a37ac1bb54b2a65efaf2db1a96a4ae6f2" compoundref="_table_mgr1_8cpp" startline="216" endline="262">GetVoiceInfo</referencedby>
+        <referencedby refid="class_table_mgr_1a3d767648ffd3a1425d6da5b6145594fb" compoundref="_table_mgr1_8cpp" startline="195" endline="198">SetSoundLanguage</referencedby>
+        <referencedby refid="class_table_mgr_1a0e4d10bad85fb1e2c5d89340a1ad6a05" compoundref="_table_mgr1_8cpp" startline="45" endline="49">TableMgr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1a2cc753c1aae3f164f36d4bdab3649e44" prot="private" static="no" mutable="no">
+        <type><ref refid="class_table_loader" kindref="compound">TableLoader</ref> *</type>
+        <definition>TableLoader* TableMgr::m_pkLoader</definition>
+        <argsstring></argsstring>
+        <name>m_pkLoader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="265" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="265" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1af1a60a8b2807abd34ceb6002cf8f4b80" compoundref="_table_mgr1_8cpp" startline="851" endline="858">GetTableLoader</referencedby>
+        <referencedby refid="class_table_mgr_1ae172b572c046f0cd7c8cd428e7ee8dec" compoundref="_table_mgr1_8cpp" startline="839" endline="849">SetTableLoader</referencedby>
+        <referencedby refid="class_table_mgr_1a151bba8b2427d00b714ab49dca3c3123" compoundref="_table_mgr1_8cpp" startline="51" endline="58">~TableMgr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1a92e242ae4e71ff786567d126993287df" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_choice_item_table" kindref="compound">ChoiceItemTable</ref> * &gt;</type>
+        <definition>std::vector&lt;ChoiceItemTable*&gt; TableMgr::WishBuyOrderVec</definition>
+        <argsstring></argsstring>
+        <name>WishBuyOrderVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="268" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="268" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1a9bf6b8f7c5f1bc7946a2770eb06682f2" compoundref="_table_mgr1_8cpp" startline="983" endline="993">GetWishBuyID</referencedby>
+        <referencedby refid="class_table_mgr_1a30c6b3312ffd5270d42a0f4ea7ca881e" compoundref="_table_mgr1_8cpp" startline="966" endline="980">InitWishBuyOrder</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1ad3193fac660e628018c5bd1ecc396818" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned int, <ref refid="struct_unit_table" kindref="compound">UnitTable</ref> * &gt;</type>
+        <definition>std::map&lt;unsigned int, UnitTable*&gt; TableMgr::m_mapCreateSightUnits</definition>
+        <argsstring></argsstring>
+        <name>m_mapCreateSightUnits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="270" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="270" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1a9540446ae7fbecf3475a5c5b2addb933" compoundref="_table_mgr1_8cpp" startline="396" endline="407">InitCreateSightUnit</referencedby>
+        <referencedby refid="class_table_mgr_1ae84775d5d6a7b23048ae507ea7fb0386" compoundref="_table_mgr1_8cpp" startline="388" endline="394">IsCreateSightUnit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1a9855c9b6ddce08a2b44247949cbda46d" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned int, std::vector&lt; unsigned int &gt; &gt;</type>
+        <definition>std::map&lt;unsigned int, std::vector&lt;unsigned int&gt; &gt; TableMgr::ItemReelMap</definition>
+        <argsstring></argsstring>
+        <name>ItemReelMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="271" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="271" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1a254d691f066cc7a0395298e9d823ac21" compoundref="_table_mgr1_8cpp" startline="1032" endline="1039">GetWishAttrItems</referencedby>
+        <referencedby refid="class_table_mgr_1a0f7e813633c7bd8bb019e2657fc3dd85" compoundref="_table_mgr1_8cpp" startline="1003" endline="1030">InitReelMap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_table_mgr_1ab1d0bcf1e754a43f60b7a07a8ffd16dd" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned int, <ref refid="class_achieve_type_info" kindref="compound">AchieveTypeInfo</ref> * &gt;</type>
+        <definition>std::map&lt;unsigned int, AchieveTypeInfo*&gt; TableMgr::m_AchieveGroupIDMap</definition>
+        <argsstring></argsstring>
+        <name>m_AchieveGroupIDMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="274" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="274" bodyend="-1"/>
+        <referencedby refid="class_table_mgr_1a77d7fe37b4105ce840e8d440c702bb2c" compoundref="_table_mgr1_8cpp" startline="1271" endline="1279">GetAchieveInfo</referencedby>
+        <referencedby refid="class_table_mgr_1a177c9d18c75f13924f0578d7c4906d1e" compoundref="_table_mgr1_8cpp" startline="1247" endline="1269">LoadAchieveInfo</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_table_mgr_1ae1ceeb5a4a6212a8497ef7dd92f87885" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void TableMgr::LoadTable</definition>
+        <argsstring>()</argsstring>
+        <name>LoadTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="79" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="79" bodyend="132"/>
+        <references refid="class_kill_bounty_table_mgr_1ad3df906726e24acba7b4f703e9dbfd79" compoundref="_kill_bounty__table_8cpp" startline="6" endline="13">KillBountyTableMgr::Get</references>
+        <references refid="class_task_recom_table_mgr_1a7b35030960e0c6e679ce295bd0b426d9" compoundref="_task_recom__table_8cpp" startline="6" endline="13">TaskRecomTableMgr::Get</references>
+        <references refid="class_choice_item_table_mgr_1ad5e4ce53682de15b8da81b17c09b47b1" compoundref="_choice_item__table_8cpp" startline="6" endline="13">ChoiceItemTableMgr::Get</references>
+        <references refid="class_avatar_shop_table_mgr_1ab6cb33a675cc248f0edcf62f1fa1abf6" compoundref="_avatar_shop__table_8cpp" startline="6" endline="13">AvatarShopTableMgr::Get</references>
+        <references refid="class_map_shop_res_table_mgr_1ac84b641441a86d9dd34276b3fc1f7734" compoundref="_map_shop_res__table_8cpp" startline="6" endline="13">MapShopResTableMgr::Get</references>
+        <references refid="class_addtional_table_mgr_1a7e955997f623a75fb90df916345c05f9" compoundref="_addtional__table_8cpp" startline="6" endline="13">AddtionalTableMgr::Get</references>
+        <references refid="class_random_name_table_mgr_1a7d7b7d37c9e41eb54bd83d12803e150d" compoundref="_random_name__table_8cpp" startline="6" endline="13">RandomNameTableMgr::Get</references>
+        <references refid="class_system_prompt_table_mgr_1a9264ab96269c42d6379f2d63b5373adf" compoundref="_system_prompt__table_8cpp" startline="6" endline="13">SystemPromptTableMgr::Get</references>
+        <references refid="class_attack_armor_ratio_table_mgr_1a334330314c374fd045f5c86295b9d42b" compoundref="_attack_armor_ratio__table_8cpp" startline="6" endline="13">AttackArmorRatioTableMgr::Get</references>
+        <references refid="class_level_table_mgr_1a93222b97aad160c709a7bb1f0a8ecd10" compoundref="_level__table_8cpp" startline="6" endline="13">LevelTableMgr::Get</references>
+        <references refid="class_effect_switch_table_mgr_1a4dfcb7a780939b98db981d6901ad746c" compoundref="_effect_switch__table_8cpp" startline="6" endline="13">EffectSwitchTableMgr::Get</references>
+        <references refid="class_language_table_mgr_1af1050afa6182e5c992f119ae2f12fc90" compoundref="_language__table_8cpp" startline="7" endline="14">LanguageTableMgr::Get</references>
+        <references refid="class_a_i_table_mgr_1a1960dce2fac294be94061e1b6436a047" compoundref="_a_i__table_8cpp" startline="6" endline="13">AITableMgr::Get</references>
+        <references refid="class_racehelp_table_mgr_1ad50ed165d1cd9e4fde4d04b6b92b92a5" compoundref="_racehelp__table_8cpp" startline="6" endline="13">RacehelpTableMgr::Get</references>
+        <references refid="class_achievement_table_mgr_1a57d3c1edb47e553a93a0313a60720dbf" compoundref="_achievement__table_8cpp" startline="6" endline="13">AchievementTableMgr::Get</references>
+        <references refid="class_voice_table_mgr_1a3933e0480565a2bb3bb0654e04e9ed5d" compoundref="_voice__table_8cpp" startline="6" endline="13">VoiceTableMgr::Get</references>
+        <references refid="class_preset_shop_table_mgr_1a40d4fbf622a4c1840c2529a67558495d" compoundref="_preset_shop__table_8cpp" startline="6" endline="13">PresetShopTableMgr::Get</references>
+        <references refid="class_upgrade_cost_table_mgr_1a044b7fee3600e86d0fbf32b4eb41154e" compoundref="_upgrade_cost__table_8cpp" startline="6" endline="13">UpgradeCostTableMgr::Get</references>
+        <references refid="class_ac_system_table_mgr_1a5e25e31a8b7dffa7aa3170e3620f5dd4" compoundref="_ac_system__table_8cpp" startline="6" endline="13">AcSystemTableMgr::Get</references>
+        <references refid="class_append_cost_table_mgr_1af5e0e493453a28fd4b7655f6eef1fe9e" compoundref="_append_cost__table_8cpp" startline="6" endline="13">AppendCostTableMgr::Get</references>
+        <references refid="class_rank_stage_table_mgr_1a5bf8f5713afdccf8132ca5eff5128371" compoundref="_rank_stage__table_8cpp" startline="6" endline="13">RankStageTableMgr::Get</references>
+        <references refid="class_chance_table_mgr_1ab76a9b5b446f503f6380ab1d150a7605" compoundref="_chance__table_8cpp" startline="6" endline="13">ChanceTableMgr::Get</references>
+        <references refid="class_item_compose_table_mgr_1ad7a696061f9046dd5e347b5e2fd9ca34" compoundref="_item_compose__table_8cpp" startline="6" endline="13">ItemComposeTableMgr::Get</references>
+        <references refid="class_creep_tower_growth_table_mgr_1a28366dd381ed207da9ffd59f06e5c265" compoundref="_creep_tower_growth__table_8cpp" startline="6" endline="13">CreepTowerGrowthTableMgr::Get</references>
+        <references refid="class_free_heroes_table_mgr_1a31b72f05c18076362f3d8df7d7f8d2cd" compoundref="_free_heroes__table_8cpp" startline="6" endline="13">FreeHeroesTableMgr::Get</references>
+        <references refid="class_propaganda_table_mgr_1a3aca3e9ce8eaf97ce7128191a63fad91" compoundref="_propaganda__table_8cpp" startline="6" endline="13">PropagandaTableMgr::Get</references>
+        <references refid="class_decompose_table_mgr_1a47d572729be1db5d75e47635099fe9c9" compoundref="_decompose__table_8cpp" startline="6" endline="13">DecomposeTableMgr::Get</references>
+        <references refid="class_shop_table_mgr_1a5002cc4576ba94d600d36d0087ab4944" compoundref="_shop__table_8cpp" startline="6" endline="13">ShopTableMgr::Get</references>
+        <references refid="class_model_res_table_mgr_1a2dd4ea8e40aed6955c9db5e857f859e1" compoundref="_model_res__table_8cpp" startline="6" endline="13">ModelResTableMgr::Get</references>
+        <references refid="class_hero_info_table_mgr_1a1f3c4c7cc613cb20a3bf908907113cc3" compoundref="_hero_info__table_8cpp" startline="6" endline="13">HeroInfoTableMgr::Get</references>
+        <references refid="class_racedrop_table_mgr_1acca8eba6c237e770d02acc693d8a34b9" compoundref="_racedrop__table_8cpp" startline="6" endline="13">RacedropTableMgr::Get</references>
+        <references refid="class_rack_table_mgr_1a313d0ac694d9803f59351ce929683e78" compoundref="_rack__table_8cpp" startline="6" endline="13">RackTableMgr::Get</references>
+        <references refid="class_buffer_table_mgr_1a0d5b131fe64966196d3e19ded5e833ca" compoundref="_buffer__table_8cpp" startline="6" endline="13">BufferTableMgr::Get</references>
+        <references refid="class_battle_tips_table_mgr_1ac0d076464fa523e84c686c6b992a65c8" compoundref="_battle_tips__table_8cpp" startline="6" endline="13">BattleTipsTableMgr::Get</references>
+        <references refid="class_skill_tips_table_mgr_1a546d55eacf0f366de2faa6db798530dc" compoundref="_skill_tips__table_8cpp" startline="7" endline="14">SkillTipsTableMgr::Get</references>
+        <references refid="class_video_tag_table_mgr_1ac578b5f504e28498981b93de6d695244" compoundref="_video_tag__table_8cpp" startline="6" endline="13">VideoTagTableMgr::Get</references>
+        <references refid="class_avatar_table_mgr_1a3477b4d229f1d71f2e2c1e5051e020f6" compoundref="_avatar__table_8cpp" startline="6" endline="13">AvatarTableMgr::Get</references>
+        <references refid="class_sel_hero_table_mgr_1ac5adb636decd634beffa0a72ddbadc41" compoundref="_sel_hero__table_8cpp" startline="6" endline="13">SelHeroTableMgr::Get</references>
+        <references refid="class_append_skill_table_mgr_1a122687e0d4908b96195a33af96a4752b" compoundref="_append_skill__table_8cpp" startline="6" endline="13">AppendSkillTableMgr::Get</references>
+        <references refid="class_item_exchange_table_mgr_1a303fbd7efc108182f90631a1e632d58f" compoundref="_item_exchange__table_8cpp" startline="6" endline="13">ItemExchangeTableMgr::Get</references>
+        <references refid="class_task_info_table_mgr_1a4b44c8bdcc538a05e72720f9887c9ee5" compoundref="_task_info__table_8cpp" startline="6" endline="13">TaskInfoTableMgr::Get</references>
+        <references refid="class_map_info_table_mgr_1a9449f21c1cae1164722db1429849d982" compoundref="_map_info__table_8cpp" startline="6" endline="13">MapInfoTableMgr::Get</references>
+        <references refid="class_strengthen_table_mgr_1a797f4ffbbeea1ed9cf5f5ae0b68a5701" compoundref="_strengthen__table_8cpp" startline="6" endline="13">StrengthenTableMgr::Get</references>
+        <references refid="class_item_table_mgr_1a2a18e1c6defb26b2047f9c75a53a40e5" compoundref="_item__table_8cpp" startline="7" endline="14">ItemTableMgr::Get</references>
+        <references refid="class_unit_table_mgr_1aed3bd5aa1c6d9c498d4644068d00cbd0" compoundref="_unit__table_8cpp" startline="6" endline="13">UnitTableMgr::Get</references>
+        <references refid="class_skill_table_mgr_1a95867ec55c8a5decb13df445d5dc6986" compoundref="_skill__table_8cpp" startline="6" endline="13">SkillTableMgr::Get</references>
+        <references refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">TownItemTableMgr::Get</references>
+        <references refid="class_table_mgr_1a24204b2d28998384cc6dd81b0a565020" compoundref="_table_mgr1_8cpp" startline="932" endline="948">InitData</references>
+        <referencedby refid="class_se_res_mgr_1a493c1e3c9e76902707c6909ea0352bd4" compoundref="_world_server_2_src_2_se_res_mgr_8cpp" startline="18" endline="23">SeResMgr::Initialize</referencedby>
+        <referencedby refid="class_se_re_mgr_1aa1a23a6f877900741b6aee6bb02c3317" compoundref="_match_server_2_src_2_se_res_mgr_8cpp" startline="14" endline="24">SeReMgr::Initialize</referencedby>
+        <referencedby refid="class_race_server_1a66b1d68ffc570732242915bc09651c27" compoundref="src_2_race_server_8cpp" startline="74" endline="132">RaceServer::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_table_mgr" kindref="compound">TableMgr</ref> *</type>
+        <definition>TableMgr * TableMgr::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="134" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="36" bodyend="43"/>
+        <references refid="class_table_mgr_1a2d86cb971a5d4564ea493402d6650ece" compoundref="_table_mgr_8h" startline="230">m_pkAllTableMgr</references>
+        <references refid="class_table_mgr_1a0e4d10bad85fb1e2c5d89340a1ad6a05" compoundref="_table_mgr1_8cpp" startline="45" endline="49">TableMgr</references>
+        <referencedby refid="class_task_mgr_1a0b713ce49930e4071b47136dcddba6ce" compoundref="_src_2_task_mgr_8cpp" startline="391" endline="459">TaskMgr::GetDailyTaskNextTask</referencedby>
+        <referencedby refid="class_se_formula_1a64fc95004181a0d0a416952f4d5bca1c" compoundref="_se_formula_8cpp" startline="305" endline="320">SeFormula::GetHorseFlag2HorseID</referencedby>
+        <referencedby refid="class_se_formula_1a62c762cceae335dfe9715ad9958dbed0" compoundref="_se_formula_8cpp" startline="287" endline="303">SeFormula::GetHorseID2HorseFlag</referencedby>
+        <referencedby refid="class_task_mgr_1a2bc47dbab7475fd8f497fdf9f8d7738f" compoundref="_src_2_task_mgr_8cpp" startline="370" endline="388">TaskMgr::GetMainTaskNextTask</referencedby>
+        <referencedby refid="class_global_table_mgr_1a36ba85c0887d3b4028251ee3e67e8c3a" compoundref="_global_table_mgr_8cpp" startline="109" endline="113">GlobalTableMgr::GetText</referencedby>
+        <referencedby refid="class_task_mgr_1a342a99e25f638e680a4a3303ca0b22d7" compoundref="_src_2_task_mgr_8cpp" startline="462" endline="548">TaskMgr::GetWinTaskNextTask</referencedby>
+        <referencedby refid="class_table_mgr_1a24204b2d28998384cc6dd81b0a565020" compoundref="_table_mgr1_8cpp" startline="932" endline="948">InitData</referencedby>
+        <referencedby refid="class_kill_bounty_table_mgr_1adb250e467de144138bf84e40d2d6831b" compoundref="_kill_bounty__table_8cpp" startline="62" endline="102">KillBountyTableMgr::Load</referencedby>
+        <referencedby refid="class_task_recom_table_mgr_1a7a33433eff0fd0c309899d6644c8e84b" compoundref="_task_recom__table_8cpp" startline="62" endline="102">TaskRecomTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_shop_table_mgr_1aa7ee36f4eb3a95bcd568d498c381378c" compoundref="_avatar_shop__table_8cpp" startline="62" endline="102">AvatarShopTableMgr::Load</referencedby>
+        <referencedby refid="class_map_shop_res_table_mgr_1a7d83421880ea8b941b3dd7d9d870d96d" compoundref="_map_shop_res__table_8cpp" startline="62" endline="102">MapShopResTableMgr::Load</referencedby>
+        <referencedby refid="class_append_group_table_mgr_1abc58e6cc64585da7c604447a2a544e3d" compoundref="_append_group__table_8cpp" startline="62" endline="102">AppendGroupTableMgr::Load</referencedby>
+        <referencedby refid="class_choice_item_table_mgr_1abad55b40544ff352423c54d293a397da" compoundref="_choice_item__table_8cpp" startline="62" endline="102">ChoiceItemTableMgr::Load</referencedby>
+        <referencedby refid="class_random_name_table_mgr_1a64f2090c4ae646a4ace61bbcd9ff9e8e" compoundref="_random_name__table_8cpp" startline="62" endline="102">RandomNameTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_model_table_mgr_1ae6b8e03739ca0c6c511addece0943684" compoundref="_avatar_model__table_8cpp" startline="62" endline="102">AvatarModelTableMgr::Load</referencedby>
+        <referencedby refid="class_addtional_table_mgr_1a249ef08bcb2f537b9452f7c43d0cedaa" compoundref="_addtional__table_8cpp" startline="62" endline="102">AddtionalTableMgr::Load</referencedby>
+        <referencedby refid="class_race_text_table_mgr_1aa8cdba6ebbc23d8e5714186bc6ca25d1" compoundref="_race_text__table_8cpp" startline="62" endline="102">RaceTextTableMgr::Load</referencedby>
+        <referencedby refid="class_attack_armor_ratio_table_mgr_1a34928520708d970bd80724f8f77f90ec" compoundref="_attack_armor_ratio__table_8cpp" startline="62" endline="102">AttackArmorRatioTableMgr::Load</referencedby>
+        <referencedby refid="class_system_prompt_table_mgr_1ae6d04247f9e9fa3382f653f31b3d4670" compoundref="_system_prompt__table_8cpp" startline="71" endline="112">SystemPromptTableMgr::Load</referencedby>
+        <referencedby refid="class_unit_head_area_table_mgr_1a7d0bc9d0a09462a9de517d15262c8cef" compoundref="_unit_head_area__table_8cpp" startline="62" endline="102">UnitHeadAreaTableMgr::Load</referencedby>
+        <referencedby refid="class_level_table_mgr_1a8a8d81638699acf529a511a0217eb77f" compoundref="_level__table_8cpp" startline="62" endline="102">LevelTableMgr::Load</referencedby>
+        <referencedby refid="class_effect_switch_table_mgr_1aaddf1f8d0397ee79bd44fb6c0ad1af74" compoundref="_effect_switch__table_8cpp" startline="74" endline="114">EffectSwitchTableMgr::Load</referencedby>
+        <referencedby refid="class_language_table_mgr_1a1b543bf6d489bda48c23e45d9f154b09" compoundref="_language__table_8cpp" startline="63" endline="103">LanguageTableMgr::Load</referencedby>
+        <referencedby refid="class_dress_table_mgr_1ae556fb6ecf40b64dc08ed4e18136e686" compoundref="_dress__table_8cpp" startline="62" endline="102">DressTableMgr::Load</referencedby>
+        <referencedby refid="class_a_i_table_mgr_1a745e4c9d603e4364676b12f1b9f40a24" compoundref="_a_i__table_8cpp" startline="62" endline="102">AITableMgr::Load</referencedby>
+        <referencedby refid="class_racehelp_table_mgr_1a52fb79dc5f29a34dc284921c1e0d7d7b" compoundref="_racehelp__table_8cpp" startline="62" endline="102">RacehelpTableMgr::Load</referencedby>
+        <referencedby refid="class_achievement_table_mgr_1afcc0892d13ff6c20142b3a4398dc832b" compoundref="_achievement__table_8cpp" startline="78" endline="118">AchievementTableMgr::Load</referencedby>
+        <referencedby refid="class_horse_table_mgr_1aaf438c96e82287a6fd30820d7fb4f0ff" compoundref="_horse__table_8cpp" startline="62" endline="102">HorseTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_animation_table_mgr_1a5122df02998be1a9d395f76512707ea1" compoundref="_avatar_animation__table_8cpp" startline="62" endline="102">AvatarAnimationTableMgr::Load</referencedby>
+        <referencedby refid="class_a_i_prio_table_mgr_1af3a0af8696385e7803a7c859d616317a" compoundref="_a_i_prio__table_8cpp" startline="62" endline="102">AIPrioTableMgr::Load</referencedby>
+        <referencedby refid="class_voice_table_mgr_1acdffff4eabfe1409676f829dc5d2e5d2" compoundref="_voice__table_8cpp" startline="62" endline="102">VoiceTableMgr::Load</referencedby>
+        <referencedby refid="class_preset_shop_table_mgr_1ae9ffbb84a206d4a5fd816e83875913ce" compoundref="_preset_shop__table_8cpp" startline="62" endline="102">PresetShopTableMgr::Load</referencedby>
+        <referencedby refid="class_indexoffer_table_mgr_1a795ecf94988a510b954afe871b34144f" compoundref="_indexoffer__table_8cpp" startline="62" endline="102">IndexofferTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_effect_table_mgr_1ac19d759accbc2143122158d03fb8c149" compoundref="_avatar_effect__table_8cpp" startline="62" endline="102">AvatarEffectTableMgr::Load</referencedby>
+        <referencedby refid="class_ac_system_table_mgr_1aaa1477228c364b0660eb13370885a0a8" compoundref="_ac_system__table_8cpp" startline="62" endline="102">AcSystemTableMgr::Load</referencedby>
+        <referencedby refid="class_account_level_table_mgr_1a89b26412b6353366b28499ea941a6d80" compoundref="_account_level__table_8cpp" startline="62" endline="102">AccountLevelTableMgr::Load</referencedby>
+        <referencedby refid="class_upgrade_cost_table_mgr_1ac0602c2f51a6af0d6737f8fe5038dc3f" compoundref="_upgrade_cost__table_8cpp" startline="62" endline="102">UpgradeCostTableMgr::Load</referencedby>
+        <referencedby refid="class_chance_table_mgr_1ac7c4dfa0ba73e985f82fb8547e8bfea1" compoundref="_chance__table_8cpp" startline="62" endline="102">ChanceTableMgr::Load</referencedby>
+        <referencedby refid="class_ren_ji_table_mgr_1aa6ac248af0aef192dd09d577bfe67bcb" compoundref="_ren_ji__table_8cpp" startline="62" endline="102">RenJiTableMgr::Load</referencedby>
+        <referencedby refid="class_search_choice_table_mgr_1a0ee82c5241b01f37d8b74259973dd155" compoundref="_search_choice__table_8cpp" startline="62" endline="102">SearchChoiceTableMgr::Load</referencedby>
+        <referencedby refid="class_item_compose_table_mgr_1a752edcdd8eab18402f6f05a1c882dd2a" compoundref="_item_compose__table_8cpp" startline="62" endline="102">ItemComposeTableMgr::Load</referencedby>
+        <referencedby refid="class_pet_table_mgr_1afdea0f199fb94e6443c8442959ad24fb" compoundref="_pet__table_8cpp" startline="62" endline="102">PetTableMgr::Load</referencedby>
+        <referencedby refid="class_append_cost_table_mgr_1aefc5bc86880b3fe17cb01b529335d435" compoundref="_append_cost__table_8cpp" startline="62" endline="102">AppendCostTableMgr::Load</referencedby>
+        <referencedby refid="class_rank_stage_table_mgr_1a92a0520acab5da8e863e2130ffc4e699" compoundref="_rank_stage__table_8cpp" startline="72" endline="113">RankStageTableMgr::Load</referencedby>
+        <referencedby refid="class_creep_tower_growth_table_mgr_1a8c99af615ed056cb553a9ba5f7d29978" compoundref="_creep_tower_growth__table_8cpp" startline="62" endline="102">CreepTowerGrowthTableMgr::Load</referencedby>
+        <referencedby refid="class_free_heroes_table_mgr_1a51e3bb60bf65ba5d5618e9a64656dde7" compoundref="_free_heroes__table_8cpp" startline="62" endline="102">FreeHeroesTableMgr::Load</referencedby>
+        <referencedby refid="class_league_rank_table_mgr_1a4717acfca30cf455ba4a4d968eb7c2cc" compoundref="_league_rank__table_8cpp" startline="62" endline="102">LeagueRankTableMgr::Load</referencedby>
+        <referencedby refid="class_shop_table_mgr_1a34fbbe169593748d337c3270834ebbee" compoundref="_shop__table_8cpp" startline="62" endline="102">ShopTableMgr::Load</referencedby>
+        <referencedby refid="class_propaganda_table_mgr_1a71b4b10f082060ae54b68327a91044b9" compoundref="_propaganda__table_8cpp" startline="72" endline="113">PropagandaTableMgr::Load</referencedby>
+        <referencedby refid="class_decompose_table_mgr_1a0b6c7d40655cfd3d0c1fd1bdd2db652a" compoundref="_decompose__table_8cpp" startline="62" endline="102">DecomposeTableMgr::Load</referencedby>
+        <referencedby refid="class_map_misc_table_mgr_1a127d11f395fcaadeccf0607564ec2702" compoundref="_map_misc__table_8cpp" startline="62" endline="102">MapMiscTableMgr::Load</referencedby>
+        <referencedby refid="class_model_res_table_mgr_1acc87d8d970c0f9412565631cae185385" compoundref="_model_res__table_8cpp" startline="62" endline="102">ModelResTableMgr::Load</referencedby>
+        <referencedby refid="class_ren_ji_actions_table_mgr_1ad2a530426a02404de4dc69a0d552cef3" compoundref="_ren_ji_actions__table_8cpp" startline="62" endline="102">RenJiActionsTableMgr::Load</referencedby>
+        <referencedby refid="class_ren_ji_custom_data_table_mgr_1a34f51aca8f50b45a76fa4d8780b342a9" compoundref="_ren_ji_custom_data__table_8cpp" startline="62" endline="102">RenJiCustomDataTableMgr::Load</referencedby>
+        <referencedby refid="class_hero_info_table_mgr_1acf7375278ed1d171da3d632a0005d37c" compoundref="_hero_info__table_8cpp" startline="78" endline="119">HeroInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_star_wheel_table_mgr_1a4a18eabc8044fe1b148a1f8e4d4dfdbe" compoundref="_star_wheel__table_8cpp" startline="62" endline="102">StarWheelTableMgr::Load</referencedby>
+        <referencedby refid="class_racedrop_table_mgr_1a5a736a966cc69e1daafed9c98c8448c0" compoundref="_racedrop__table_8cpp" startline="62" endline="102">RacedropTableMgr::Load</referencedby>
+        <referencedby refid="class_rack_table_mgr_1ab35f2db90bcbfe3572387c7159e4331f" compoundref="_rack__table_8cpp" startline="62" endline="102">RackTableMgr::Load</referencedby>
+        <referencedby refid="class_buffer_table_mgr_1af902373e933faf61fd9ad9cfe7f2c46b" compoundref="_buffer__table_8cpp" startline="62" endline="102">BufferTableMgr::Load</referencedby>
+        <referencedby refid="class_mission_info_table_mgr_1a1b8927e86350a9a5c073464dd2996dd1" compoundref="_mission_info__table_8cpp" startline="74" endline="116">MissionInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_battle_tips_table_mgr_1aa9abdc929c067c1fe088a6c843cf0b60" compoundref="_battle_tips__table_8cpp" startline="71" endline="112">BattleTipsTableMgr::Load</referencedby>
+        <referencedby refid="class_p_v_e_rule_table_mgr_1aaa67021a6c7ccf8b2d9aef3f2ab7fa4d" compoundref="_p_v_e_rule__table_8cpp" startline="62" endline="102">PVERuleTableMgr::Load</referencedby>
+        <referencedby refid="class_video_tag_table_mgr_1a64f1a525c7ee58716240beab5ba74ef3" compoundref="_video_tag__table_8cpp" startline="62" endline="102">VideoTagTableMgr::Load</referencedby>
+        <referencedby refid="class_append_skill_p_r_table_mgr_1aa9116b4a12c456635f7e3aabccda0cb1" compoundref="_append_skill_p_r__table_8cpp" startline="62" endline="102">AppendSkillPRTableMgr::Load</referencedby>
+        <referencedby refid="class_ren_ji_conditions_table_mgr_1ad4e68f604cf6886b839de42c630d9882" compoundref="_ren_ji_conditions__table_8cpp" startline="62" endline="102">RenJiConditionsTableMgr::Load</referencedby>
+        <referencedby refid="class_race_sta_mission_table_mgr_1ac4336f0c5ed03ee53a47404021da91fd" compoundref="_race_sta_mission__table_8cpp" startline="62" endline="102">RaceStaMissionTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_table_mgr_1a7f0386c3528c677c1d1fe4bf8ef6bf42" compoundref="_avatar__table_8cpp" startline="62" endline="102">AvatarTableMgr::Load</referencedby>
+        <referencedby refid="class_maps_info_table_mgr_1ae1e01a926772d2cf076dd0e16edf0f48" compoundref="_maps_info__table_8cpp" startline="62" endline="102">MapsInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_append_skill_table_mgr_1ac56d7c32f5a819dc19cca4587efdd046" compoundref="_append_skill__table_8cpp" startline="62" endline="102">AppendSkillTableMgr::Load</referencedby>
+        <referencedby refid="class_sel_hero_table_mgr_1a41ea849afb79b47430442dc72744ca3c" compoundref="_sel_hero__table_8cpp" startline="71" endline="112">SelHeroTableMgr::Load</referencedby>
+        <referencedby refid="class_item_exchange_table_mgr_1ac8cb50b578b976ed93bf4519b98f0a1a" compoundref="_item_exchange__table_8cpp" startline="62" endline="102">ItemExchangeTableMgr::Load</referencedby>
+        <referencedby refid="class_task_info_table_mgr_1a5ac142d83d027ede57fb4a61cb90a170" compoundref="_task_info__table_8cpp" startline="62" endline="102">TaskInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_achievement_task_table_mgr_1abc620fe6e9f2a0e47cffbab2dfd5a012" compoundref="_achievement_task__table_8cpp" startline="62" endline="102">AchievementTaskTableMgr::Load</referencedby>
+        <referencedby refid="class_map_info_table_mgr_1a6f3d2a28522e251e0b7a9bcc57fc7a2b" compoundref="_map_info__table_8cpp" startline="73" endline="113">MapInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_strengthen_table_mgr_1ae9eb8970968f5a1d88d6abc1cb2bdde9" compoundref="_strengthen__table_8cpp" startline="62" endline="102">StrengthenTableMgr::Load</referencedby>
+        <referencedby refid="class_unit_table_mgr_1a1f1a4fe49cb048773f3bd4fab1273ee3" compoundref="_unit__table_8cpp" startline="72" endline="112">UnitTableMgr::Load</referencedby>
+        <referencedby refid="class_item_table_mgr_1a571494a6f0138a944bbb1bf2af591bcf" compoundref="_item__table_8cpp" startline="127" endline="168">ItemTableMgr::Load</referencedby>
+        <referencedby refid="class_town_item_table_mgr_1a75b541cb98ad97b219724e7ca27e2524" compoundref="_town_item__table_8cpp" startline="62" endline="102">TownItemTableMgr::Load</referencedby>
+        <referencedby refid="class_skill_table_mgr_1a113e3c8b9ec50d1c32e8aabf2d827dad" compoundref="_skill__table_8cpp" startline="67" endline="106">SkillTableMgr::LoadSkillFile</referencedby>
+        <referencedby refid="class_system_prompt_table_mgr_1a86bf424e20e63bd3d2c8c996697943ac" compoundref="_system_prompt__table_8cpp" startline="42" endline="49">SystemPromptTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_achievement_table_mgr_1a7d7f8749ac843455f78b4721365858bf" compoundref="_achievement__table_8cpp" startline="42" endline="56">AchievementTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_rank_stage_table_mgr_1a5ebc97de325815487526096fc17dd8c8" compoundref="_rank_stage__table_8cpp" startline="42" endline="50">RankStageTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_propaganda_table_mgr_1a2c10b9edf0efb06242e5acde122c0ec9" compoundref="_propaganda__table_8cpp" startline="42" endline="50">PropagandaTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_hero_info_table_mgr_1ac1b0d4c09a9ff4cc0a44dea7af24ed4d" compoundref="_hero_info__table_8cpp" startline="42" endline="56">HeroInfoTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_battle_tips_table_mgr_1af5c8cab7a83c231d54a02c8c46015794" compoundref="_battle_tips__table_8cpp" startline="42" endline="49">BattleTipsTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_mission_info_table_mgr_1a277c12ae79fda50876cc192d81ea7d1a" compoundref="_mission_info__table_8cpp" startline="42" endline="52">MissionInfoTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_skill_tips_table_mgr_1a54f08055e1c4d668a81446559ce2edbd" compoundref="_skill_tips__table_8cpp" startline="43" endline="58">SkillTipsTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_sel_hero_table_mgr_1a2b8fee82ec5c19736822b6e10769e727" compoundref="_sel_hero__table_8cpp" startline="42" endline="49">SelHeroTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_map_info_table_mgr_1aed5a42edba130c0e2e79b18b467eec86" compoundref="_map_info__table_8cpp" startline="42" endline="51">MapInfoTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_unit_table_mgr_1ad23ca235060c91856541197b4d2bfa0e" compoundref="_unit__table_8cpp" startline="42" endline="49">UnitTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_item_table_mgr_1a9b400ff10b5605b56c44f5a596136479" compoundref="_item__table_8cpp" startline="81" endline="90">ItemTableMgr::UpdateLanguadgeContent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a24204b2d28998384cc6dd81b0a565020" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::InitData</definition>
+        <argsstring>()</argsstring>
+        <name>InitData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="136" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="932" bodyend="948"/>
+        <references refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" compoundref="_table_mgr1_8cpp" startline="36" endline="43">Get</references>
+        <references refid="class_table_mgr_1a9540446ae7fbecf3475a5c5b2addb933" compoundref="_table_mgr1_8cpp" startline="396" endline="407">InitCreateSightUnit</references>
+        <references refid="class_table_mgr_1a608710a39e8da87bd21924a688ccd930" compoundref="_table_mgr1_8cpp" startline="264" endline="285">InitHeroPosIndex</references>
+        <references refid="class_table_mgr_1a0660913905a81e3e3a0ca87c1470d23d" compoundref="_table_mgr1_8cpp" startline="310" endline="331">InitHorsePosIndex</references>
+        <references refid="class_table_mgr_1af7cf541261c0b36b35af12b2b86367aa" compoundref="_table_mgr1_8cpp" startline="645" endline="657">InitModelRes</references>
+        <references refid="class_table_mgr_1a92dd5fc3393d4cc25e98e39e85656ea2" compoundref="_table_mgr1_8cpp" startline="287" endline="308">InitPetPosIndex</references>
+        <references refid="class_table_mgr_1a67a9954d02acba4c907120d1aea51c64" compoundref="_table_mgr1_8cpp" startline="672" endline="762">InitRaceHelperRes</references>
+        <references refid="class_table_mgr_1a0f7e813633c7bd8bb019e2657fc3dd85" compoundref="_table_mgr1_8cpp" startline="1003" endline="1030">InitReelMap</references>
+        <references refid="class_table_mgr_1abb689bcbe22afc4a4729cee4d19edd28" compoundref="_table_mgr1_8cpp" startline="635" endline="643">InitRenjiCondition</references>
+        <references refid="class_table_mgr_1ad0d44a4ae56a515ab9bafa62298ac4a0" compoundref="_table_mgr1_8cpp" startline="1063" endline="1087">InitTaskList</references>
+        <references refid="class_table_mgr_1a93701d99587c7871ad22119f138adc1b" compoundref="_table_mgr1_8cpp" startline="659" endline="670">InitVoiceRes</references>
+        <references refid="class_table_mgr_1a30c6b3312ffd5270d42a0f4ea7ca881e" compoundref="_table_mgr1_8cpp" startline="966" endline="980">InitWishBuyOrder</references>
+        <referencedby refid="class_table_mgr_1ae1ceeb5a4a6212a8497ef7dd92f87885" compoundref="_table_mgr_8h" startline="79" endline="132">LoadTable</referencedby>
+        <referencedby refid="class_table_mgr_1a6298f0e9b81636b481a25c06016e237a" compoundref="_table_mgr1_8cpp" startline="860" endline="914">ReloadTable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a6298f0e9b81636b481a25c06016e237a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::ReloadTable</definition>
+        <argsstring>()</argsstring>
+        <name>ReloadTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="137" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="860" bodyend="914"/>
+        <references refid="class_table_mgr_1a24204b2d28998384cc6dd81b0a565020" compoundref="_table_mgr1_8cpp" startline="932" endline="948">InitData</references>
+        <references refid="class_kill_bounty_table_mgr_1aad2fc7486f71721f927fae26875f624f" compoundref="_kill_bounty__table_8cpp" startline="15" endline="23">KillBountyTableMgr::ReLoad</references>
+        <references refid="class_task_recom_table_mgr_1a2d5e3a47ec3f22e58deb29336109e329" compoundref="_task_recom__table_8cpp" startline="15" endline="23">TaskRecomTableMgr::ReLoad</references>
+        <references refid="class_avatar_shop_table_mgr_1a59d619953113e72b525b34d09ad136fd" compoundref="_avatar_shop__table_8cpp" startline="15" endline="23">AvatarShopTableMgr::ReLoad</references>
+        <references refid="class_map_shop_res_table_mgr_1ad8364db9392c17a603ff34868541be85" compoundref="_map_shop_res__table_8cpp" startline="15" endline="23">MapShopResTableMgr::ReLoad</references>
+        <references refid="class_choice_item_table_mgr_1a29ce4860b00ed22cedc4be9d7bb10c26" compoundref="_choice_item__table_8cpp" startline="15" endline="23">ChoiceItemTableMgr::ReLoad</references>
+        <references refid="class_addtional_table_mgr_1a5ab89c1a58a84ebb521f864cac3fca61" compoundref="_addtional__table_8cpp" startline="15" endline="23">AddtionalTableMgr::ReLoad</references>
+        <references refid="class_avatar_model_table_mgr_1ae929e2e27131c029977136c59154ea0c" compoundref="_avatar_model__table_8cpp" startline="15" endline="23">AvatarModelTableMgr::ReLoad</references>
+        <references refid="class_random_name_table_mgr_1a94c195998d8134e9743d520525c00b25" compoundref="_random_name__table_8cpp" startline="15" endline="23">RandomNameTableMgr::ReLoad</references>
+        <references refid="class_system_prompt_table_mgr_1a4e6e27943166539079779db63bdbf7d0" compoundref="_system_prompt__table_8cpp" startline="15" endline="23">SystemPromptTableMgr::ReLoad</references>
+        <references refid="class_attack_armor_ratio_table_mgr_1ab509cc8633b76e7088574ee806bd5354" compoundref="_attack_armor_ratio__table_8cpp" startline="15" endline="23">AttackArmorRatioTableMgr::ReLoad</references>
+        <references refid="class_level_table_mgr_1af5d5106fa9418f61719f5fb0db2836f5" compoundref="_level__table_8cpp" startline="15" endline="23">LevelTableMgr::ReLoad</references>
+        <references refid="class_effect_switch_table_mgr_1a17f8016fd879603469660bbd3cbc4405" compoundref="_effect_switch__table_8cpp" startline="15" endline="23">EffectSwitchTableMgr::ReLoad</references>
+        <references refid="class_language_table_mgr_1a625e5d4de944c790945b53628a49bb50" compoundref="_language__table_8cpp" startline="16" endline="24">LanguageTableMgr::ReLoad</references>
+        <references refid="class_a_i_table_mgr_1af1aaf9d54efcca1bad2beab3e6fb3f67" compoundref="_a_i__table_8cpp" startline="15" endline="23">AITableMgr::ReLoad</references>
+        <references refid="class_racehelp_table_mgr_1a0d6cddef1e47852058dc7c7c84c29ef4" compoundref="_racehelp__table_8cpp" startline="15" endline="23">RacehelpTableMgr::ReLoad</references>
+        <references refid="class_achievement_table_mgr_1ac1fcd9122f6664d29d6ad07546695176" compoundref="_achievement__table_8cpp" startline="15" endline="23">AchievementTableMgr::ReLoad</references>
+        <references refid="class_avatar_animation_table_mgr_1a24a213b007ff8490f3c92953ed9f05c9" compoundref="_avatar_animation__table_8cpp" startline="15" endline="23">AvatarAnimationTableMgr::ReLoad</references>
+        <references refid="class_voice_table_mgr_1a71be9c1f3f9ab2affdc3b48bf42370ec" compoundref="_voice__table_8cpp" startline="15" endline="23">VoiceTableMgr::ReLoad</references>
+        <references refid="class_preset_shop_table_mgr_1a9acc831b8a125166a8968373ce8c50d0" compoundref="_preset_shop__table_8cpp" startline="15" endline="23">PresetShopTableMgr::ReLoad</references>
+        <references refid="class_avatar_effect_table_mgr_1a476861fc9e647231a9f469dd471fbfbd" compoundref="_avatar_effect__table_8cpp" startline="15" endline="23">AvatarEffectTableMgr::ReLoad</references>
+        <references refid="class_upgrade_cost_table_mgr_1ad0c9007a3d8ddac827a1e3d853064390" compoundref="_upgrade_cost__table_8cpp" startline="15" endline="23">UpgradeCostTableMgr::ReLoad</references>
+        <references refid="class_ac_system_table_mgr_1aa79f436c2f05683de3458ad83f50943f" compoundref="_ac_system__table_8cpp" startline="15" endline="23">AcSystemTableMgr::ReLoad</references>
+        <references refid="class_append_cost_table_mgr_1a3014375acbd75630c72ecd41409d94ea" compoundref="_append_cost__table_8cpp" startline="15" endline="23">AppendCostTableMgr::ReLoad</references>
+        <references refid="class_chance_table_mgr_1a8d3cdc8723dcef37a8469b134a774908" compoundref="_chance__table_8cpp" startline="15" endline="23">ChanceTableMgr::ReLoad</references>
+        <references refid="class_item_compose_table_mgr_1acafd0d6148fa11bcb9500d64a71ec3ec" compoundref="_item_compose__table_8cpp" startline="15" endline="23">ItemComposeTableMgr::ReLoad</references>
+        <references refid="class_search_choice_table_mgr_1a0768cf0476a958c9837e7abd529df7a0" compoundref="_search_choice__table_8cpp" startline="15" endline="23">SearchChoiceTableMgr::ReLoad</references>
+        <references refid="class_creep_tower_growth_table_mgr_1a6e0deccb26ee2db56021e3e8bd26349c" compoundref="_creep_tower_growth__table_8cpp" startline="15" endline="23">CreepTowerGrowthTableMgr::ReLoad</references>
+        <references refid="class_free_heroes_table_mgr_1a16c44dee3f56cdd0c06c5f2b55ec1ae1" compoundref="_free_heroes__table_8cpp" startline="15" endline="23">FreeHeroesTableMgr::ReLoad</references>
+        <references refid="class_decompose_table_mgr_1a7e321f7ff26dda10d5ddaefbad54ce00" compoundref="_decompose__table_8cpp" startline="15" endline="23">DecomposeTableMgr::ReLoad</references>
+        <references refid="class_shop_table_mgr_1a8055dd5e3edf389ef9ababa5b6a04c36" compoundref="_shop__table_8cpp" startline="15" endline="23">ShopTableMgr::ReLoad</references>
+        <references refid="class_model_res_table_mgr_1af87e3edc7cd60ccdba29cd436e8ec883" compoundref="_model_res__table_8cpp" startline="15" endline="23">ModelResTableMgr::ReLoad</references>
+        <references refid="class_hero_info_table_mgr_1ae43a6b337ed6b3819238564f6edc057c" compoundref="_hero_info__table_8cpp" startline="15" endline="23">HeroInfoTableMgr::ReLoad</references>
+        <references refid="class_racedrop_table_mgr_1a560d960abf3caffff02dad250b5323e6" compoundref="_racedrop__table_8cpp" startline="15" endline="23">RacedropTableMgr::ReLoad</references>
+        <references refid="class_rack_table_mgr_1adefaadafc2cc66ca8667497844e10c03" compoundref="_rack__table_8cpp" startline="15" endline="23">RackTableMgr::ReLoad</references>
+        <references refid="class_buffer_table_mgr_1a7389266b4fe65c337eee468c0546890b" compoundref="_buffer__table_8cpp" startline="15" endline="23">BufferTableMgr::ReLoad</references>
+        <references refid="class_battle_tips_table_mgr_1ac0df72d226bc98eecec5b8f8ef0c4c65" compoundref="_battle_tips__table_8cpp" startline="15" endline="23">BattleTipsTableMgr::ReLoad</references>
+        <references refid="class_skill_tips_table_mgr_1ab5ec9b92868ec39225364bf4036172b7" compoundref="_skill_tips__table_8cpp" startline="16" endline="24">SkillTipsTableMgr::ReLoad</references>
+        <references refid="class_video_tag_table_mgr_1a86f57efa9e78ca7b1ae791d55fe0b770" compoundref="_video_tag__table_8cpp" startline="15" endline="23">VideoTagTableMgr::ReLoad</references>
+        <references refid="class_avatar_table_mgr_1a870a4c9ea2f8d6b3cb0a845f75cc6dc7" compoundref="_avatar__table_8cpp" startline="15" endline="23">AvatarTableMgr::ReLoad</references>
+        <references refid="class_append_skill_table_mgr_1af56d881531d74a7a646c1f193a5bb8aa" compoundref="_append_skill__table_8cpp" startline="15" endline="23">AppendSkillTableMgr::ReLoad</references>
+        <references refid="class_sel_hero_table_mgr_1aff8498fcd31b79258e15f27f5948d6b7" compoundref="_sel_hero__table_8cpp" startline="15" endline="23">SelHeroTableMgr::ReLoad</references>
+        <references refid="class_item_exchange_table_mgr_1adf38f93bc43cbd32ff72fe95076f3b88" compoundref="_item_exchange__table_8cpp" startline="15" endline="23">ItemExchangeTableMgr::ReLoad</references>
+        <references refid="class_task_info_table_mgr_1a2a741bc6a30afe140faf97c1e74fc127" compoundref="_task_info__table_8cpp" startline="15" endline="23">TaskInfoTableMgr::ReLoad</references>
+        <references refid="class_map_info_table_mgr_1a341bf8523f70a208be2b9e0a3eb09829" compoundref="_map_info__table_8cpp" startline="15" endline="23">MapInfoTableMgr::ReLoad</references>
+        <references refid="class_strengthen_table_mgr_1aa71c15a8560b0a1f72ea7328726b9b38" compoundref="_strengthen__table_8cpp" startline="15" endline="23">StrengthenTableMgr::ReLoad</references>
+        <references refid="class_unit_table_mgr_1a2244d917d0ffe703c6ce207ba9efc953" compoundref="_unit__table_8cpp" startline="15" endline="23">UnitTableMgr::ReLoad</references>
+        <references refid="class_item_table_mgr_1afa40e279f5cc797ad88f67bc2633a53a" compoundref="_item__table_8cpp" startline="16" endline="24">ItemTableMgr::ReLoad</references>
+        <references refid="class_skill_table_mgr_1abff591317314e165224c8b4cda968e0f" compoundref="_skill__table_8cpp" startline="15" endline="23">SkillTableMgr::ReLoad</references>
+        <references refid="class_town_item_table_mgr_1ac0e7d9495faa7a17014804afcfea87c8" compoundref="_town_item__table_8cpp" startline="15" endline="23">TownItemTableMgr::ReLoad</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1af4ee9ef43e51ae3efd0794c4c1be8e78" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::UpdateLanguageContent</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateLanguageContent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="138" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="916" bodyend="929"/>
+        <references refid="class_system_prompt_table_mgr_1a9264ab96269c42d6379f2d63b5373adf" compoundref="_system_prompt__table_8cpp" startline="6" endline="13">SystemPromptTableMgr::Get</references>
+        <references refid="class_achievement_table_mgr_1a57d3c1edb47e553a93a0313a60720dbf" compoundref="_achievement__table_8cpp" startline="6" endline="13">AchievementTableMgr::Get</references>
+        <references refid="class_rank_stage_table_mgr_1a5bf8f5713afdccf8132ca5eff5128371" compoundref="_rank_stage__table_8cpp" startline="6" endline="13">RankStageTableMgr::Get</references>
+        <references refid="class_propaganda_table_mgr_1a3aca3e9ce8eaf97ce7128191a63fad91" compoundref="_propaganda__table_8cpp" startline="6" endline="13">PropagandaTableMgr::Get</references>
+        <references refid="class_hero_info_table_mgr_1a1f3c4c7cc613cb20a3bf908907113cc3" compoundref="_hero_info__table_8cpp" startline="6" endline="13">HeroInfoTableMgr::Get</references>
+        <references refid="class_mission_info_table_mgr_1ade80db59633b8983302df778217c5f23" compoundref="_mission_info__table_8cpp" startline="6" endline="13">MissionInfoTableMgr::Get</references>
+        <references refid="class_battle_tips_table_mgr_1ac0d076464fa523e84c686c6b992a65c8" compoundref="_battle_tips__table_8cpp" startline="6" endline="13">BattleTipsTableMgr::Get</references>
+        <references refid="class_skill_tips_table_mgr_1a546d55eacf0f366de2faa6db798530dc" compoundref="_skill_tips__table_8cpp" startline="7" endline="14">SkillTipsTableMgr::Get</references>
+        <references refid="class_map_info_table_mgr_1a9449f21c1cae1164722db1429849d982" compoundref="_map_info__table_8cpp" startline="6" endline="13">MapInfoTableMgr::Get</references>
+        <references refid="class_unit_table_mgr_1aed3bd5aa1c6d9c498d4644068d00cbd0" compoundref="_unit__table_8cpp" startline="6" endline="13">UnitTableMgr::Get</references>
+        <references refid="class_item_table_mgr_1a2a18e1c6defb26b2047f9c75a53a40e5" compoundref="_item__table_8cpp" startline="7" endline="14">ItemTableMgr::Get</references>
+        <references refid="class_system_prompt_table_mgr_1a86bf424e20e63bd3d2c8c996697943ac" compoundref="_system_prompt__table_8cpp" startline="42" endline="49">SystemPromptTableMgr::UpdateLanguadgeContent</references>
+        <references refid="class_achievement_table_mgr_1a7d7f8749ac843455f78b4721365858bf" compoundref="_achievement__table_8cpp" startline="42" endline="56">AchievementTableMgr::UpdateLanguadgeContent</references>
+        <references refid="class_rank_stage_table_mgr_1a5ebc97de325815487526096fc17dd8c8" compoundref="_rank_stage__table_8cpp" startline="42" endline="50">RankStageTableMgr::UpdateLanguadgeContent</references>
+        <references refid="class_propaganda_table_mgr_1a2c10b9edf0efb06242e5acde122c0ec9" compoundref="_propaganda__table_8cpp" startline="42" endline="50">PropagandaTableMgr::UpdateLanguadgeContent</references>
+        <references refid="class_hero_info_table_mgr_1ac1b0d4c09a9ff4cc0a44dea7af24ed4d" compoundref="_hero_info__table_8cpp" startline="42" endline="56">HeroInfoTableMgr::UpdateLanguadgeContent</references>
+        <references refid="class_battle_tips_table_mgr_1af5c8cab7a83c231d54a02c8c46015794" compoundref="_battle_tips__table_8cpp" startline="42" endline="49">BattleTipsTableMgr::UpdateLanguadgeContent</references>
+        <references refid="class_mission_info_table_mgr_1a277c12ae79fda50876cc192d81ea7d1a" compoundref="_mission_info__table_8cpp" startline="42" endline="52">MissionInfoTableMgr::UpdateLanguadgeContent</references>
+        <references refid="class_skill_tips_table_mgr_1a54f08055e1c4d668a81446559ce2edbd" compoundref="_skill_tips__table_8cpp" startline="43" endline="58">SkillTipsTableMgr::UpdateLanguadgeContent</references>
+        <references refid="class_map_info_table_mgr_1aed5a42edba130c0e2e79b18b467eec86" compoundref="_map_info__table_8cpp" startline="42" endline="51">MapInfoTableMgr::UpdateLanguadgeContent</references>
+        <references refid="class_unit_table_mgr_1ad23ca235060c91856541197b4d2bfa0e" compoundref="_unit__table_8cpp" startline="42" endline="49">UnitTableMgr::UpdateLanguadgeContent</references>
+        <references refid="class_item_table_mgr_1a9b400ff10b5605b56c44f5a596136479" compoundref="_item__table_8cpp" startline="81" endline="90">ItemTableMgr::UpdateLanguadgeContent</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_table_mgr_1a0e4d10bad85fb1e2c5d89340a1ad6a05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TableMgr::TableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>TableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="139" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="45" bodyend="49"/>
+        <references refid="class_table_mgr_1a1708030708a256398d5d01e20d9c6a3b" compoundref="_table_mgr_8h" startline="263">m_eLanguage</references>
+        <references refid="class_table_mgr_1adb1f51b3c3907f3fdf814c49df89652a" compoundref="_table_mgr_8h" startline="264">m_eSoundLanguage</references>
+        <references refid="_language__table_8hpp_1a09e626beea3c0303612dd497efb24379a1fa778fff6088f01d645ebaac55ff251" compoundref="_language__table_8hpp" startline="12">SGL_ZH_CN</references>
+        <referencedby refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" compoundref="_table_mgr1_8cpp" startline="36" endline="43">Get</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a151bba8b2427d00b714ab49dca3c3123" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TableMgr::~TableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~TableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="140" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="51" bodyend="58"/>
+        <references refid="class_table_mgr_1a2cc753c1aae3f164f36d4bdab3649e44" compoundref="_table_mgr_8h" startline="265">m_pkLoader</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a559890fac8dca5aaab35c69382b603e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TableMgr::GetItemComposee</definition>
+        <argsstring>(unsigned int iTypeID, unsigned int *iOutComposee)</argsstring>
+        <name>GetItemComposee</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>iTypeID</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>iOutComposee</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="142" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="60" bodyend="78"/>
+        <references refid="class_item_compose_table_mgr_1ad7a696061f9046dd5e347b5e2fd9ca34" compoundref="_item_compose__table_8cpp" startline="6" endline="13">ItemComposeTableMgr::Get</references>
+        <references refid="class_item_compose_table_mgr_1ac6902068c7eb9984f31fc29dba7bd498" compoundref="_item_compose__table_8cpp" startline="42" endline="50">ItemComposeTableMgr::GetItemComposeTable</references>
+        <references refid="_item__table_8hpp_1ac21a1f21dfda7d0d1d0dfdd2ba81121d" compoundref="_item__table_8hpp" startline="13">MAX_COMPOSEE</references>
+        <references refid="struct_item_compose_table_1a014c0614f4769361a840da63b311bcc0" compoundref="_item_compose__table_8hpp" startline="20">ItemComposeTable::uiItemIDA</references>
+        <references refid="struct_item_compose_table_1abb755505f7b123b083035b5971d26501" compoundref="_item_compose__table_8hpp" startline="21">ItemComposeTable::uiItemIDB</references>
+        <references refid="struct_item_compose_table_1a85ba96ea258974bee66fbc5d11197559" compoundref="_item_compose__table_8hpp" startline="22">ItemComposeTable::uiItemIDC</references>
+        <references refid="struct_item_compose_table_1a15dcdcb471ef8e8ac320d9bd1ed62c0e" compoundref="_item_compose__table_8hpp" startline="23">ItemComposeTable::uiItemIDD</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1ac6831413e90ae60464c2ea373fa1702e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TableMgr::GetAllMapMissionID</definition>
+        <argsstring>(std::vector&lt; int &gt; &amp;rkID, int iMap, bool bHasNoMissionRate=true) const </argsstring>
+        <name>GetAllMapMissionID</name>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>rkID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iMap</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bHasNoMissionRate</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="144" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="80" bodyend="95"/>
+        <references refid="class_racedrop_table_mgr_1acca8eba6c237e770d02acc693d8a34b9" compoundref="_racedrop__table_8cpp" startline="6" endline="13">RacedropTableMgr::Get</references>
+        <references refid="class_racedrop_table_mgr_1a3402273ff6a2173df1bb33823bd48c76" compoundref="_racedrop__table_8cpp" startline="26" endline="29">RacedropTableMgr::GetRacedropTableMap</references>
+        <references refid="struct_racedrop_table_1a82a36725b02f77f4e51cafccf22f37d8" compoundref="_racedrop__table_8hpp" startline="32">RacedropTable::uiMapID</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a894299f18b598c5108eb2e5d0a11c9d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TableMgr::GetModleIndex</definition>
+        <argsstring>(std::string kName)</argsstring>
+        <name>GetModleIndex</name>
+        <param>
+          <type>std::string</type>
+          <declname>kName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="145" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="97" bodyend="111"/>
+        <references refid="class_model_res_table_mgr_1a2dd4ea8e40aed6955c9db5e857f859e1" compoundref="_model_res__table_8cpp" startline="6" endline="13">ModelResTableMgr::Get</references>
+        <references refid="class_model_res_table_mgr_1a06ca1c528c26350a439da081acacf067" compoundref="_model_res__table_8cpp" startline="26" endline="29">ModelResTableMgr::GetModelResTableMap</references>
+        <references refid="struct_model_res_table_1abecad88dc3e097fd14ac938499b2b844" compoundref="_model_res__table_8hpp" startline="31">ModelResTable::kPath</references>
+        <references refid="struct_model_res_table_1a5b5f9d09d1474fcbf1618c4322f585a6" compoundref="_model_res__table_8hpp" startline="29">ModelResTable::uiID</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1aa4cc1b835d4a779047171d0a18fca0d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TableMgr::GetHeroIDByPosIndex</definition>
+        <argsstring>(int iPosIndex)</argsstring>
+        <name>GetHeroIDByPosIndex</name>
+        <param>
+          <type>int</type>
+          <declname>iPosIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="147" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="113" bodyend="122"/>
+        <references refid="class_table_mgr_1ab45504de8146dfb5de9e777525f3009d" compoundref="_table_mgr_8h" startline="234">m_akPosIndex2HeroID</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a78d1d214ceb908cd6240bbab7a7b44e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TableMgr::GetPosIndexByHeroID</definition>
+        <argsstring>(int iHeroID)</argsstring>
+        <name>GetPosIndexByHeroID</name>
+        <param>
+          <type>int</type>
+          <declname>iHeroID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="148" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="124" bodyend="133"/>
+        <references refid="class_table_mgr_1ac063483c32a03894c11291f7e210329e" compoundref="_table_mgr_8h" startline="233">m_akHeroID2PosIndex</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1ae62557a71f7c02e07dd517e52e950f64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TableMgr::GetPetIDByPosIndex</definition>
+        <argsstring>(int iPosIndex)</argsstring>
+        <name>GetPetIDByPosIndex</name>
+        <param>
+          <type>int</type>
+          <declname>iPosIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="150" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="135" bodyend="144"/>
+        <references refid="class_table_mgr_1ad4e418067c21766bbb18abdbe25e27d6" compoundref="_table_mgr_8h" startline="238">m_akPosIndex2PetID</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a2e5391528de557402df6da53b4506d22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TableMgr::GetPosIndexByPetID</definition>
+        <argsstring>(int iPetID)</argsstring>
+        <name>GetPosIndexByPetID</name>
+        <param>
+          <type>int</type>
+          <declname>iPetID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="151" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="146" bodyend="155"/>
+        <references refid="class_table_mgr_1a372a760b8ec57bd7accd53622a336ab0" compoundref="_table_mgr_8h" startline="237">m_akPetID2PosIndex</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a7a71a5b546088463b1f55938b16d6145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TableMgr::GetHorseIDByPosIndex</definition>
+        <argsstring>(int iPosIndex)</argsstring>
+        <name>GetHorseIDByPosIndex</name>
+        <param>
+          <type>int</type>
+          <declname>iPosIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="153" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="157" bodyend="166"/>
+        <references refid="class_table_mgr_1a9e5df7cad943429e293796b0e60a8222" compoundref="_table_mgr_8h" startline="242">m_akPosIndex2HorseID</references>
+        <referencedby refid="class_se_formula_1a64fc95004181a0d0a416952f4d5bca1c" compoundref="_se_formula_8cpp" startline="305" endline="320">SeFormula::GetHorseFlag2HorseID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a7becbe4e31df122ed2bf9d40cd76664f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TableMgr::GetPosIndexByHorseID</definition>
+        <argsstring>(int iHorseID)</argsstring>
+        <name>GetPosIndexByHorseID</name>
+        <param>
+          <type>int</type>
+          <declname>iHorseID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="154" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="168" bodyend="177"/>
+        <references refid="class_table_mgr_1a2937a14b54c44f6c6b8049b36c8e1586" compoundref="_table_mgr_8h" startline="241">m_akHorseID2PosIndex</references>
+        <referencedby refid="class_se_formula_1a62c762cceae335dfe9715ad9958dbed0" compoundref="_se_formula_8cpp" startline="287" endline="303">SeFormula::GetHorseID2HorseFlag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a473a2ba3a6f5f351f6678f2042d07bcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float TableMgr::GetRenJiCustomValue</definition>
+        <argsstring>(int iTypeID)</argsstring>
+        <name>GetRenJiCustomValue</name>
+        <param>
+          <type>int</type>
+          <declname>iTypeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="156" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="445" bodyend="454"/>
+        <references refid="struct_ren_ji_custom_data_table_1a424c6c3862f612ae5c39575ad7d836f1" compoundref="_ren_ji_custom_data__table_8hpp" startline="42">RenJiCustomDataTable::fValue</references>
+        <references refid="class_ren_ji_custom_data_table_mgr_1a4554f8d1822fd6820c9f7b12d2874b1e" compoundref="_ren_ji_custom_data__table_8cpp" startline="6" endline="13">RenJiCustomDataTableMgr::Get</references>
+        <references refid="class_ren_ji_custom_data_table_mgr_1a839a82c45a8f92bacdd74bfea04c2527" compoundref="_ren_ji_custom_data__table_8cpp" startline="42" endline="50">RenJiCustomDataTableMgr::GetRenJiCustomDataTable</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1ae84775d5d6a7b23048ae507ea7fb0386" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TableMgr::IsCreateSightUnit</definition>
+        <argsstring>(unsigned int iTypeID)</argsstring>
+        <name>IsCreateSightUnit</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>iTypeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="162" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="388" bodyend="394"/>
+        <references refid="class_table_mgr_1ad3193fac660e628018c5bd1ecc396818" compoundref="_table_mgr_8h" startline="270">m_mapCreateSightUnits</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1aaa779b8333707fc73d92cfd8a319f6ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TableMgr::GetLeagueLevelByScore</definition>
+        <argsstring>(int iScore)</argsstring>
+        <name>GetLeagueLevelByScore</name>
+        <param>
+          <type>int</type>
+          <declname>iScore</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="163" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="517" bodyend="534"/>
+        <references refid="class_league_rank_table_mgr_1a242c6e7076faa54da67dbda96a79c60c" compoundref="_league_rank__table_8cpp" startline="6" endline="13">LeagueRankTableMgr::Get</references>
+        <references refid="class_league_rank_table_mgr_1a4d54e5c0b735597ab29dfbd05274ede6" compoundref="_league_rank__table_8cpp" startline="26" endline="29">LeagueRankTableMgr::GetLeagueRankTableMap</references>
+        <references refid="struct_league_rank_table_1a006a0441d1be445ac6f81afd10eee507" compoundref="_league_rank__table_8hpp" startline="29">LeagueRankTable::iLevel</references>
+        <references refid="struct_league_rank_table_1ab32770f640ec857a68b0c33eab465f75" compoundref="_league_rank__table_8hpp" startline="30">LeagueRankTable::iMinScore</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1acf75a251cdc102e4cdfd9316e4bc50ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TableMgr::GetMaxCampPlayerNumByMapID</definition>
+        <argsstring>(int iMapID)</argsstring>
+        <name>GetMaxCampPlayerNumByMapID</name>
+        <param>
+          <type>int</type>
+          <declname>iMapID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="165" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="536" bodyend="545"/>
+        <references refid="class_map_info_table_mgr_1a9449f21c1cae1164722db1429849d982" compoundref="_map_info__table_8cpp" startline="6" endline="13">MapInfoTableMgr::Get</references>
+        <references refid="class_map_info_table_mgr_1a39952135dade4b97c37babb2956d299a" compoundref="_map_info__table_8cpp" startline="53" endline="61">MapInfoTableMgr::GetMapInfoTable</references>
+        <references refid="struct_map_info_table_1af964b291ca0b25d23732cf2860dc4155" compoundref="_map_info__table_8hpp" startline="109">MapInfoTable::iCampNum</references>
+        <references refid="struct_map_info_table_1ab6affe9226795011119570d2b95dda7a" compoundref="_map_info__table_8hpp" startline="108">MapInfoTable::iMaxPlayer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a7fb4d0caa2385af8b92c31a173383ed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_ren_ji_conditions_table" kindref="compound">RenJiConditionsTable</ref> *</type>
+        <definition>const RenJiConditionsTable * TableMgr::GetRenjiConditionByID</definition>
+        <argsstring>(int iID)</argsstring>
+        <name>GetRenjiConditionByID</name>
+        <param>
+          <type>int</type>
+          <declname>iID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="167" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="548" bodyend="555"/>
+        <references refid="class_table_mgr_1a15088c9a84437bf4188140f18162351c" compoundref="_table_mgr_8h" startline="256">m_akRenjiVec</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1ae1e3ff3f35667e2c87e94adf914c0892" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TableMgr::GetRaceHelpSkillTypes</definition>
+        <argsstring>(int iTypeID, std::vector&lt; int &gt; &amp;rakResult, std::vector&lt; int &gt; &amp;indexResult)</argsstring>
+        <name>GetRaceHelpSkillTypes</name>
+        <param>
+          <type>int</type>
+          <declname>iTypeID</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>rakResult</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>indexResult</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="170" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="557" bodyend="582"/>
+        <references refid="class_unit_table_mgr_1aed3bd5aa1c6d9c498d4644068d00cbd0" compoundref="_unit__table_8cpp" startline="6" endline="13">UnitTableMgr::Get</references>
+        <references refid="class_unit_table_mgr_1ac9603a41db61ca35d443bfd3b7c1a7ee" compoundref="_unit__table_8cpp" startline="51" endline="59">UnitTableMgr::GetUnitTable</references>
+        <references refid="struct_unit_table_1a9d5c10f31ab0b9291cc91fdad4835fe7" compoundref="_unit__table_8hpp" startline="152">UnitTable::iSkillList</references>
+        <references refid="class_table_mgr_1a0e7a506e8a49a5d5efc758effce19f55" compoundref="_table_mgr_8h" startline="259">m_akRaceHelperSkill</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1aff683240e45e1bc138bae0c00d08454a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TableMgr::GetRaceHelpMasterySkillTypes</definition>
+        <argsstring>(int iTypeID, int iPetID, std::vector&lt; int &gt; &amp;rakResult)</argsstring>
+        <name>GetRaceHelpMasterySkillTypes</name>
+        <param>
+          <type>int</type>
+          <declname>iTypeID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iPetID</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>rakResult</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="171" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="584" bodyend="633"/>
+        <references refid="class_pet_table_mgr_1a4a39fccb32393ff12e12a40ec0001062" compoundref="_pet__table_8cpp" startline="6" endline="13">PetTableMgr::Get</references>
+        <references refid="class_sel_hero_table_mgr_1ac5adb636decd634beffa0a72ddbadc41" compoundref="_sel_hero__table_8cpp" startline="6" endline="13">SelHeroTableMgr::Get</references>
+        <references refid="class_pet_table_mgr_1aa40ae7352aa7033868cdd9e8b994b0c1" compoundref="_pet__table_8cpp" startline="42" endline="50">PetTableMgr::GetPetTable</references>
+        <references refid="class_sel_hero_table_mgr_1ad88b5f2ce054c64a873548ac8aeabcce" compoundref="_sel_hero__table_8cpp" startline="51" endline="59">SelHeroTableMgr::GetSelHeroTable</references>
+        <references refid="struct_pet_table_1a057e1db6b88e78f297b7f6d97ff0d71d" compoundref="_pet__table_8hpp" startline="20">PetTable::iShop_list_4</references>
+        <references refid="struct_pet_table_1a5c8803e26ba66ba6586c5a6516fba520" compoundref="_pet__table_8hpp" startline="21">PetTable::iShop_list_5</references>
+        <references refid="struct_sel_hero_table_1add0918fd1e35b4024bc2be7ed99e0956" compoundref="_sel_hero__table_8hpp" startline="58">SelHeroTable::iTalent4</references>
+        <references refid="struct_sel_hero_table_1aee6802d2d7a3c62d3633094b301200c2" compoundref="_sel_hero__table_8hpp" startline="59">SelHeroTable::iTalent5</references>
+        <references refid="struct_sel_hero_table_1a2641c3d52b222b69ff661c1112f80523" compoundref="_sel_hero__table_8hpp" startline="60">SelHeroTable::iTalent6</references>
+        <references refid="class_table_mgr_1a9e0d5fe0f6a73569cbacd33e11c52b2f" compoundref="_table_mgr_8h" startline="260">m_akRaceHeperMasteryRecom</references>
+        <references refid="struct_sel_hero_table_1a68b62b38be55ab88fdf3bb4fa87e78b9" compoundref="_sel_hero__table_8hpp" startline="42">SelHeroTable::uiLocation</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a20fe1ff73990af40d4acf2b559c30d48" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_language__table_8hpp_1a09e626beea3c0303612dd497efb24379" kindref="member">SeGlobalLanguage</ref></type>
+        <definition>SeGlobalLanguage TableMgr::GetLanguage</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLanguage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="174" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="179" bodyend="182"/>
+        <references refid="class_table_mgr_1a1708030708a256398d5d01e20d9c6a3b" compoundref="_table_mgr_8h" startline="263">m_eLanguage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a1b808febff52f5224cfa4e811a3b7aa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::SetLanguage</definition>
+        <argsstring>(SeGlobalLanguage eLanguage)</argsstring>
+        <name>SetLanguage</name>
+        <param>
+          <type><ref refid="_language__table_8hpp_1a09e626beea3c0303612dd497efb24379" kindref="member">SeGlobalLanguage</ref></type>
+          <declname>eLanguage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="175" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="184" bodyend="188"/>
+        <references refid="class_table_mgr_1a1708030708a256398d5d01e20d9c6a3b" compoundref="_table_mgr_8h" startline="263">m_eLanguage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1af66b92515e734a30e380a42030336213" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string TableMgr::GetText</definition>
+        <argsstring>(int iKey)</argsstring>
+        <name>GetText</name>
+        <param>
+          <type>int</type>
+          <declname>iKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="176" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="200" bodyend="203"/>
+        <referencedby refid="class_global_table_mgr_1a36ba85c0887d3b4028251ee3e67e8c3a" compoundref="_global_table_mgr_8cpp" startline="109" endline="113">GlobalTableMgr::GetText</referencedby>
+        <referencedby refid="class_system_prompt_table_mgr_1a86bf424e20e63bd3d2c8c996697943ac" compoundref="_system_prompt__table_8cpp" startline="42" endline="49">SystemPromptTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_achievement_table_mgr_1a7d7f8749ac843455f78b4721365858bf" compoundref="_achievement__table_8cpp" startline="42" endline="56">AchievementTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_rank_stage_table_mgr_1a5ebc97de325815487526096fc17dd8c8" compoundref="_rank_stage__table_8cpp" startline="42" endline="50">RankStageTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_propaganda_table_mgr_1a2c10b9edf0efb06242e5acde122c0ec9" compoundref="_propaganda__table_8cpp" startline="42" endline="50">PropagandaTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_hero_info_table_mgr_1ac1b0d4c09a9ff4cc0a44dea7af24ed4d" compoundref="_hero_info__table_8cpp" startline="42" endline="56">HeroInfoTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_battle_tips_table_mgr_1af5c8cab7a83c231d54a02c8c46015794" compoundref="_battle_tips__table_8cpp" startline="42" endline="49">BattleTipsTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_mission_info_table_mgr_1a277c12ae79fda50876cc192d81ea7d1a" compoundref="_mission_info__table_8cpp" startline="42" endline="52">MissionInfoTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_skill_tips_table_mgr_1a54f08055e1c4d668a81446559ce2edbd" compoundref="_skill_tips__table_8cpp" startline="43" endline="58">SkillTipsTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_sel_hero_table_mgr_1a2b8fee82ec5c19736822b6e10769e727" compoundref="_sel_hero__table_8cpp" startline="42" endline="49">SelHeroTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_map_info_table_mgr_1aed5a42edba130c0e2e79b18b467eec86" compoundref="_map_info__table_8cpp" startline="42" endline="51">MapInfoTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_unit_table_mgr_1ad23ca235060c91856541197b4d2bfa0e" compoundref="_unit__table_8cpp" startline="42" endline="49">UnitTableMgr::UpdateLanguadgeContent</referencedby>
+        <referencedby refid="class_item_table_mgr_1a9b400ff10b5605b56c44f5a596136479" compoundref="_item__table_8cpp" startline="81" endline="90">ItemTableMgr::UpdateLanguadgeContent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1ac4c6f35a99ef98d8714f64e53c342c08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string &amp; TableMgr::GetText</definition>
+        <argsstring>(const std::string &amp;sKey)</argsstring>
+        <name>GetText</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="177" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="205" bodyend="214"/>
+        <references refid="struct_language_table_1a8dd897a61a588484f3d57c7fe5401941" compoundref="_language__table_8hpp" startline="22">LanguageTable::akLanguage</references>
+        <references refid="class_language_table_mgr_1af1050afa6182e5c992f119ae2f12fc90" compoundref="_language__table_8cpp" startline="7" endline="14">LanguageTableMgr::Get</references>
+        <references refid="class_language_table_mgr_1a82e57177a6ffa4d941deb1188fb259a3" compoundref="_language__table_8cpp" startline="43" endline="51">LanguageTableMgr::GetLanguageTable</references>
+        <references refid="class_table_mgr_1a1708030708a256398d5d01e20d9c6a3b" compoundref="_table_mgr_8h" startline="263">m_eLanguage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a042bcaca600c7b95d56b8be8f7554a68" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_language__table_8hpp_1a09e626beea3c0303612dd497efb24379" kindref="member">SeGlobalLanguage</ref></type>
+        <definition>SeGlobalLanguage TableMgr::GetSoundLanguage</definition>
+        <argsstring>() const </argsstring>
+        <name>GetSoundLanguage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="179" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="190" bodyend="193"/>
+        <references refid="class_table_mgr_1adb1f51b3c3907f3fdf814c49df89652a" compoundref="_table_mgr_8h" startline="264">m_eSoundLanguage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a3d767648ffd3a1425d6da5b6145594fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::SetSoundLanguage</definition>
+        <argsstring>(SeGlobalLanguage eLanguage)</argsstring>
+        <name>SetSoundLanguage</name>
+        <param>
+          <type><ref refid="_language__table_8hpp_1a09e626beea3c0303612dd497efb24379" kindref="member">SeGlobalLanguage</ref></type>
+          <declname>eLanguage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="180" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="195" bodyend="198"/>
+        <references refid="class_table_mgr_1adb1f51b3c3907f3fdf814c49df89652a" compoundref="_table_mgr_8h" startline="264">m_eSoundLanguage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a37ac1bb54b2a65efaf2db1a96a4ae6f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string TableMgr::GetVoiceInfo</definition>
+        <argsstring>(const char *pcAudioInfoStr)</argsstring>
+        <name>GetVoiceInfo</name>
+        <param>
+          <type>const char *</type>
+          <declname>pcAudioInfoStr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="181" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="216" bodyend="262"/>
+        <references refid="class_voice_table_mgr_1a3933e0480565a2bb3bb0654e04e9ed5d" compoundref="_voice__table_8cpp" startline="6" endline="13">VoiceTableMgr::Get</references>
+        <references refid="class_voice_table_mgr_1aa48dea1975da6714593049e00dc6faa1" compoundref="_voice__table_8cpp" startline="42" endline="50">VoiceTableMgr::GetVoiceTable</references>
+        <references refid="struct_voice_table_1a0dea810295e45372bd1d2e07ac9b3218" compoundref="_voice__table_8hpp" startline="21">VoiceTable::kContent</references>
+        <references refid="struct_voice_table_1a04cd8efd4346b4d812b06f173d10eb07" compoundref="_voice__table_8hpp" startline="23">VoiceTable::kContent_English</references>
+        <references refid="class_table_mgr_1adb1f51b3c3907f3fdf814c49df89652a" compoundref="_table_mgr_8h" startline="264">m_eSoundLanguage</references>
+        <references refid="_language__table_8hpp_1a09e626beea3c0303612dd497efb24379a304adb8c87186837fab94008d0d612e2" compoundref="_language__table_8hpp" startline="13">SGL_EN_US</references>
+        <references refid="_language__table_8hpp_1a09e626beea3c0303612dd497efb24379a1fa778fff6088f01d645ebaac55ff251" compoundref="_language__table_8hpp" startline="12">SGL_ZH_CN</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a40d5e0cad4954e337d38064823ff9ed8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; std::string &gt; &amp;</type>
+        <definition>const std::vector&lt; std::string &gt; &amp; TableMgr::GetModelResByUnit</definition>
+        <argsstring>(int iUnitTypeID)</argsstring>
+        <name>GetModelResByUnit</name>
+        <param>
+          <type>int</type>
+          <declname>iUnitTypeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="182" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="764" bodyend="767"/>
+        <references refid="class_table_mgr_1a6595ac599c7a599ac1264054cb8f4295" compoundref="_table_mgr_8h" startline="253">m_akUnit2Model</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a8c916d94a73c7d9b8ab74e35d74b866d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; std::string &gt; &amp;</type>
+        <definition>const std::vector&lt; std::string &gt; &amp; TableMgr::GetVoiceResByUnit</definition>
+        <argsstring>(int iUnitTypeID)</argsstring>
+        <name>GetVoiceResByUnit</name>
+        <param>
+          <type>int</type>
+          <declname>iUnitTypeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="183" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="769" bodyend="772"/>
+        <references refid="class_table_mgr_1a1a1743ed61b08f1e23b0420bf324e3cf" compoundref="_table_mgr_8h" startline="254">m_akUnit2Voice</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a2a087af2e4184e9a8e74d4cacda44f82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::GetActionResVecAll</definition>
+        <argsstring>(std::vector&lt; std::string &gt; &amp;vec)</argsstring>
+        <name>GetActionResVecAll</name>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="184" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="774" bodyend="785"/>
+        <references refid="struct_model_res_table_1a45784eae4bbb3be6440b7678cf5f13c8" compoundref="_model_res__table_8hpp" startline="38">ModelResTable::bActionRes</references>
+        <references refid="class_model_res_table_mgr_1a2dd4ea8e40aed6955c9db5e857f859e1" compoundref="_model_res__table_8cpp" startline="6" endline="13">ModelResTableMgr::Get</references>
+        <references refid="class_model_res_table_mgr_1a06ca1c528c26350a439da081acacf067" compoundref="_model_res__table_8cpp" startline="26" endline="29">ModelResTableMgr::GetModelResTableMap</references>
+        <references refid="struct_model_res_table_1abecad88dc3e097fd14ac938499b2b844" compoundref="_model_res__table_8hpp" startline="31">ModelResTable::kPath</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a00aec7a5698907c65b610f8972bc7ec2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::GetActionResVec</definition>
+        <argsstring>(std::vector&lt; std::string &gt; &amp;vec, std::set&lt; int &gt; PreLoadHeroVec)</argsstring>
+        <name>GetActionResVec</name>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>std::set&lt; int &gt;</type>
+          <declname>PreLoadHeroVec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="185" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="787" bodyend="798"/>
+        <references refid="struct_model_res_table_1a45784eae4bbb3be6440b7678cf5f13c8" compoundref="_model_res__table_8hpp" startline="38">ModelResTable::bActionRes</references>
+        <references refid="class_model_res_table_mgr_1a2dd4ea8e40aed6955c9db5e857f859e1" compoundref="_model_res__table_8cpp" startline="6" endline="13">ModelResTableMgr::Get</references>
+        <references refid="class_model_res_table_mgr_1a06ca1c528c26350a439da081acacf067" compoundref="_model_res__table_8cpp" startline="26" endline="29">ModelResTableMgr::GetModelResTableMap</references>
+        <references refid="struct_model_res_table_1abecad88dc3e097fd14ac938499b2b844" compoundref="_model_res__table_8hpp" startline="31">ModelResTable::kPath</references>
+        <references refid="struct_model_res_table_1a16f31e3cc813bc2aa021b45baa0a6a7f" compoundref="_model_res__table_8hpp" startline="33">ModelResTable::uiOwner</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a9cd5565797c79eded85a67d84f15fbf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; TableMgr::GetPreLoadRes</definition>
+        <argsstring>(E_MODELRESTABLE_PRELOADLEVEL eLevel)</argsstring>
+        <name>GetPreLoadRes</name>
+        <param>
+          <type><ref refid="_model_res__table_8hpp_1a45e563dba71bd50497c1f538ab0fd142" kindref="member">E_MODELRESTABLE_PRELOADLEVEL</ref></type>
+          <declname>eLevel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="186" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="800" bodyend="824"/>
+        <references refid="class_voice_table_mgr_1a3933e0480565a2bb3bb0654e04e9ed5d" compoundref="_voice__table_8cpp" startline="6" endline="13">VoiceTableMgr::Get</references>
+        <references refid="class_model_res_table_mgr_1a2dd4ea8e40aed6955c9db5e857f859e1" compoundref="_model_res__table_8cpp" startline="6" endline="13">ModelResTableMgr::Get</references>
+        <references refid="class_model_res_table_mgr_1a06ca1c528c26350a439da081acacf067" compoundref="_model_res__table_8cpp" startline="26" endline="29">ModelResTableMgr::GetModelResTableMap</references>
+        <references refid="class_voice_table_mgr_1a1c780dca5afc1596f740b287e5e832b1" compoundref="_voice__table_8cpp" startline="26" endline="29">VoiceTableMgr::GetVoiceTableMap</references>
+        <references refid="struct_voice_table_1a42356738e61dc20338b4040da668db9b" compoundref="_voice__table_8hpp" startline="17">VoiceTable::iPreLoad</references>
+        <references refid="struct_model_res_table_1a19280dccb61d969e801bd1b637131f87" compoundref="_model_res__table_8hpp" startline="37">ModelResTable::iPreLoad</references>
+        <references refid="struct_voice_table_1ab7f7479e8e707ab159ba4819333ce032" compoundref="_voice__table_8hpp" startline="20">VoiceTable::kPreLoadContent</references>
+        <references refid="struct_model_res_table_1a8d86ed1949c99c122e12cdba42c42d0b" compoundref="_model_res__table_8hpp" startline="36">ModelResTable::kPreLoadPath</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a900cbe0e81a7712b10aff28c8fd65fc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::GetAllCanSelHeroSet</definition>
+        <argsstring>(std::vector&lt; int &gt; &amp;kHeroSet)</argsstring>
+        <name>GetAllCanSelHeroSet</name>
+        <param>
+          <type>std::vector&lt; int &gt; &amp;</type>
+          <declname>kHeroSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="187" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="826" bodyend="837"/>
+        <references refid="class_sel_hero_table_mgr_1ac5adb636decd634beffa0a72ddbadc41" compoundref="_sel_hero__table_8cpp" startline="6" endline="13">SelHeroTableMgr::Get</references>
+        <references refid="class_sel_hero_table_mgr_1a3e213a7d70f61efb16a4f5a0e34c3b9f" compoundref="_sel_hero__table_8cpp" startline="26" endline="29">SelHeroTableMgr::GetSelHeroTableMap</references>
+        <references refid="struct_sel_hero_table_1a8fe3db90710c2615ffee27c0b3173c17" compoundref="_sel_hero__table_8hpp" startline="53">SelHeroTable::iOpen</references>
+        <references refid="struct_sel_hero_table_1affd25956457ada874c1420d65e7378ae" compoundref="_sel_hero__table_8hpp" startline="36">SelHeroTable::uiUnitID</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1ae172b572c046f0cd7c8cd428e7ee8dec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::SetTableLoader</definition>
+        <argsstring>(TableLoader *pkTableLoader)</argsstring>
+        <name>SetTableLoader</name>
+        <param>
+          <type><ref refid="class_table_loader" kindref="compound">TableLoader</ref> *</type>
+          <declname>pkTableLoader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="189" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="839" bodyend="849"/>
+        <references refid="class_table_mgr_1a2cc753c1aae3f164f36d4bdab3649e44" compoundref="_table_mgr_8h" startline="265">m_pkLoader</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1af1a60a8b2807abd34ceb6002cf8f4b80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_table_loader" kindref="compound">TableLoader</ref> *</type>
+        <definition>TableLoader * TableMgr::GetTableLoader</definition>
+        <argsstring>()</argsstring>
+        <name>GetTableLoader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="190" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="851" bodyend="858"/>
+        <references refid="class_table_mgr_1a2cc753c1aae3f164f36d4bdab3649e44" compoundref="_table_mgr_8h" startline="265">m_pkLoader</references>
+        <referencedby refid="class_kill_bounty_table_mgr_1adb250e467de144138bf84e40d2d6831b" compoundref="_kill_bounty__table_8cpp" startline="62" endline="102">KillBountyTableMgr::Load</referencedby>
+        <referencedby refid="class_append_group_table_mgr_1abc58e6cc64585da7c604447a2a544e3d" compoundref="_append_group__table_8cpp" startline="62" endline="102">AppendGroupTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_shop_table_mgr_1aa7ee36f4eb3a95bcd568d498c381378c" compoundref="_avatar_shop__table_8cpp" startline="62" endline="102">AvatarShopTableMgr::Load</referencedby>
+        <referencedby refid="class_task_recom_table_mgr_1a7a33433eff0fd0c309899d6644c8e84b" compoundref="_task_recom__table_8cpp" startline="62" endline="102">TaskRecomTableMgr::Load</referencedby>
+        <referencedby refid="class_map_shop_res_table_mgr_1a7d83421880ea8b941b3dd7d9d870d96d" compoundref="_map_shop_res__table_8cpp" startline="62" endline="102">MapShopResTableMgr::Load</referencedby>
+        <referencedby refid="class_choice_item_table_mgr_1abad55b40544ff352423c54d293a397da" compoundref="_choice_item__table_8cpp" startline="62" endline="102">ChoiceItemTableMgr::Load</referencedby>
+        <referencedby refid="class_addtional_table_mgr_1a249ef08bcb2f537b9452f7c43d0cedaa" compoundref="_addtional__table_8cpp" startline="62" endline="102">AddtionalTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_model_table_mgr_1ae6b8e03739ca0c6c511addece0943684" compoundref="_avatar_model__table_8cpp" startline="62" endline="102">AvatarModelTableMgr::Load</referencedby>
+        <referencedby refid="class_race_text_table_mgr_1aa8cdba6ebbc23d8e5714186bc6ca25d1" compoundref="_race_text__table_8cpp" startline="62" endline="102">RaceTextTableMgr::Load</referencedby>
+        <referencedby refid="class_random_name_table_mgr_1a64f2090c4ae646a4ace61bbcd9ff9e8e" compoundref="_random_name__table_8cpp" startline="62" endline="102">RandomNameTableMgr::Load</referencedby>
+        <referencedby refid="class_system_prompt_table_mgr_1ae6d04247f9e9fa3382f653f31b3d4670" compoundref="_system_prompt__table_8cpp" startline="71" endline="112">SystemPromptTableMgr::Load</referencedby>
+        <referencedby refid="class_unit_head_area_table_mgr_1a7d0bc9d0a09462a9de517d15262c8cef" compoundref="_unit_head_area__table_8cpp" startline="62" endline="102">UnitHeadAreaTableMgr::Load</referencedby>
+        <referencedby refid="class_level_table_mgr_1a8a8d81638699acf529a511a0217eb77f" compoundref="_level__table_8cpp" startline="62" endline="102">LevelTableMgr::Load</referencedby>
+        <referencedby refid="class_attack_armor_ratio_table_mgr_1a34928520708d970bd80724f8f77f90ec" compoundref="_attack_armor_ratio__table_8cpp" startline="62" endline="102">AttackArmorRatioTableMgr::Load</referencedby>
+        <referencedby refid="class_effect_switch_table_mgr_1aaddf1f8d0397ee79bd44fb6c0ad1af74" compoundref="_effect_switch__table_8cpp" startline="74" endline="114">EffectSwitchTableMgr::Load</referencedby>
+        <referencedby refid="class_language_table_mgr_1a1b543bf6d489bda48c23e45d9f154b09" compoundref="_language__table_8cpp" startline="63" endline="103">LanguageTableMgr::Load</referencedby>
+        <referencedby refid="class_dress_table_mgr_1ae556fb6ecf40b64dc08ed4e18136e686" compoundref="_dress__table_8cpp" startline="62" endline="102">DressTableMgr::Load</referencedby>
+        <referencedby refid="class_racehelp_table_mgr_1a52fb79dc5f29a34dc284921c1e0d7d7b" compoundref="_racehelp__table_8cpp" startline="62" endline="102">RacehelpTableMgr::Load</referencedby>
+        <referencedby refid="class_a_i_table_mgr_1a745e4c9d603e4364676b12f1b9f40a24" compoundref="_a_i__table_8cpp" startline="62" endline="102">AITableMgr::Load</referencedby>
+        <referencedby refid="class_achievement_table_mgr_1afcc0892d13ff6c20142b3a4398dc832b" compoundref="_achievement__table_8cpp" startline="78" endline="118">AchievementTableMgr::Load</referencedby>
+        <referencedby refid="class_a_i_prio_table_mgr_1af3a0af8696385e7803a7c859d616317a" compoundref="_a_i_prio__table_8cpp" startline="62" endline="102">AIPrioTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_animation_table_mgr_1a5122df02998be1a9d395f76512707ea1" compoundref="_avatar_animation__table_8cpp" startline="62" endline="102">AvatarAnimationTableMgr::Load</referencedby>
+        <referencedby refid="class_horse_table_mgr_1aaf438c96e82287a6fd30820d7fb4f0ff" compoundref="_horse__table_8cpp" startline="62" endline="102">HorseTableMgr::Load</referencedby>
+        <referencedby refid="class_voice_table_mgr_1acdffff4eabfe1409676f829dc5d2e5d2" compoundref="_voice__table_8cpp" startline="62" endline="102">VoiceTableMgr::Load</referencedby>
+        <referencedby refid="class_preset_shop_table_mgr_1ae9ffbb84a206d4a5fd816e83875913ce" compoundref="_preset_shop__table_8cpp" startline="62" endline="102">PresetShopTableMgr::Load</referencedby>
+        <referencedby refid="class_indexoffer_table_mgr_1a795ecf94988a510b954afe871b34144f" compoundref="_indexoffer__table_8cpp" startline="62" endline="102">IndexofferTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_effect_table_mgr_1ac19d759accbc2143122158d03fb8c149" compoundref="_avatar_effect__table_8cpp" startline="62" endline="102">AvatarEffectTableMgr::Load</referencedby>
+        <referencedby refid="class_ac_system_table_mgr_1aaa1477228c364b0660eb13370885a0a8" compoundref="_ac_system__table_8cpp" startline="62" endline="102">AcSystemTableMgr::Load</referencedby>
+        <referencedby refid="class_account_level_table_mgr_1a89b26412b6353366b28499ea941a6d80" compoundref="_account_level__table_8cpp" startline="62" endline="102">AccountLevelTableMgr::Load</referencedby>
+        <referencedby refid="class_upgrade_cost_table_mgr_1ac0602c2f51a6af0d6737f8fe5038dc3f" compoundref="_upgrade_cost__table_8cpp" startline="62" endline="102">UpgradeCostTableMgr::Load</referencedby>
+        <referencedby refid="class_chance_table_mgr_1ac7c4dfa0ba73e985f82fb8547e8bfea1" compoundref="_chance__table_8cpp" startline="62" endline="102">ChanceTableMgr::Load</referencedby>
+        <referencedby refid="class_append_cost_table_mgr_1aefc5bc86880b3fe17cb01b529335d435" compoundref="_append_cost__table_8cpp" startline="62" endline="102">AppendCostTableMgr::Load</referencedby>
+        <referencedby refid="class_pet_table_mgr_1afdea0f199fb94e6443c8442959ad24fb" compoundref="_pet__table_8cpp" startline="62" endline="102">PetTableMgr::Load</referencedby>
+        <referencedby refid="class_search_choice_table_mgr_1a0ee82c5241b01f37d8b74259973dd155" compoundref="_search_choice__table_8cpp" startline="62" endline="102">SearchChoiceTableMgr::Load</referencedby>
+        <referencedby refid="class_ren_ji_table_mgr_1aa6ac248af0aef192dd09d577bfe67bcb" compoundref="_ren_ji__table_8cpp" startline="62" endline="102">RenJiTableMgr::Load</referencedby>
+        <referencedby refid="class_item_compose_table_mgr_1a752edcdd8eab18402f6f05a1c882dd2a" compoundref="_item_compose__table_8cpp" startline="62" endline="102">ItemComposeTableMgr::Load</referencedby>
+        <referencedby refid="class_creep_tower_growth_table_mgr_1a8c99af615ed056cb553a9ba5f7d29978" compoundref="_creep_tower_growth__table_8cpp" startline="62" endline="102">CreepTowerGrowthTableMgr::Load</referencedby>
+        <referencedby refid="class_rank_stage_table_mgr_1a92a0520acab5da8e863e2130ffc4e699" compoundref="_rank_stage__table_8cpp" startline="72" endline="113">RankStageTableMgr::Load</referencedby>
+        <referencedby refid="class_free_heroes_table_mgr_1a51e3bb60bf65ba5d5618e9a64656dde7" compoundref="_free_heroes__table_8cpp" startline="62" endline="102">FreeHeroesTableMgr::Load</referencedby>
+        <referencedby refid="class_league_rank_table_mgr_1a4717acfca30cf455ba4a4d968eb7c2cc" compoundref="_league_rank__table_8cpp" startline="62" endline="102">LeagueRankTableMgr::Load</referencedby>
+        <referencedby refid="class_shop_table_mgr_1a34fbbe169593748d337c3270834ebbee" compoundref="_shop__table_8cpp" startline="62" endline="102">ShopTableMgr::Load</referencedby>
+        <referencedby refid="class_propaganda_table_mgr_1a71b4b10f082060ae54b68327a91044b9" compoundref="_propaganda__table_8cpp" startline="72" endline="113">PropagandaTableMgr::Load</referencedby>
+        <referencedby refid="class_decompose_table_mgr_1a0b6c7d40655cfd3d0c1fd1bdd2db652a" compoundref="_decompose__table_8cpp" startline="62" endline="102">DecomposeTableMgr::Load</referencedby>
+        <referencedby refid="class_map_misc_table_mgr_1a127d11f395fcaadeccf0607564ec2702" compoundref="_map_misc__table_8cpp" startline="62" endline="102">MapMiscTableMgr::Load</referencedby>
+        <referencedby refid="class_model_res_table_mgr_1acc87d8d970c0f9412565631cae185385" compoundref="_model_res__table_8cpp" startline="62" endline="102">ModelResTableMgr::Load</referencedby>
+        <referencedby refid="class_ren_ji_actions_table_mgr_1ad2a530426a02404de4dc69a0d552cef3" compoundref="_ren_ji_actions__table_8cpp" startline="62" endline="102">RenJiActionsTableMgr::Load</referencedby>
+        <referencedby refid="class_ren_ji_custom_data_table_mgr_1a34f51aca8f50b45a76fa4d8780b342a9" compoundref="_ren_ji_custom_data__table_8cpp" startline="62" endline="102">RenJiCustomDataTableMgr::Load</referencedby>
+        <referencedby refid="class_hero_info_table_mgr_1acf7375278ed1d171da3d632a0005d37c" compoundref="_hero_info__table_8cpp" startline="78" endline="119">HeroInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_star_wheel_table_mgr_1a4a18eabc8044fe1b148a1f8e4d4dfdbe" compoundref="_star_wheel__table_8cpp" startline="62" endline="102">StarWheelTableMgr::Load</referencedby>
+        <referencedby refid="class_racedrop_table_mgr_1a5a736a966cc69e1daafed9c98c8448c0" compoundref="_racedrop__table_8cpp" startline="62" endline="102">RacedropTableMgr::Load</referencedby>
+        <referencedby refid="class_rack_table_mgr_1ab35f2db90bcbfe3572387c7159e4331f" compoundref="_rack__table_8cpp" startline="62" endline="102">RackTableMgr::Load</referencedby>
+        <referencedby refid="class_buffer_table_mgr_1af902373e933faf61fd9ad9cfe7f2c46b" compoundref="_buffer__table_8cpp" startline="62" endline="102">BufferTableMgr::Load</referencedby>
+        <referencedby refid="class_battle_tips_table_mgr_1aa9abdc929c067c1fe088a6c843cf0b60" compoundref="_battle_tips__table_8cpp" startline="71" endline="112">BattleTipsTableMgr::Load</referencedby>
+        <referencedby refid="class_mission_info_table_mgr_1a1b8927e86350a9a5c073464dd2996dd1" compoundref="_mission_info__table_8cpp" startline="74" endline="116">MissionInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_p_v_e_rule_table_mgr_1aaa67021a6c7ccf8b2d9aef3f2ab7fa4d" compoundref="_p_v_e_rule__table_8cpp" startline="62" endline="102">PVERuleTableMgr::Load</referencedby>
+        <referencedby refid="class_video_tag_table_mgr_1a64f1a525c7ee58716240beab5ba74ef3" compoundref="_video_tag__table_8cpp" startline="62" endline="102">VideoTagTableMgr::Load</referencedby>
+        <referencedby refid="class_append_skill_p_r_table_mgr_1aa9116b4a12c456635f7e3aabccda0cb1" compoundref="_append_skill_p_r__table_8cpp" startline="62" endline="102">AppendSkillPRTableMgr::Load</referencedby>
+        <referencedby refid="class_race_sta_mission_table_mgr_1ac4336f0c5ed03ee53a47404021da91fd" compoundref="_race_sta_mission__table_8cpp" startline="62" endline="102">RaceStaMissionTableMgr::Load</referencedby>
+        <referencedby refid="class_ren_ji_conditions_table_mgr_1ad4e68f604cf6886b839de42c630d9882" compoundref="_ren_ji_conditions__table_8cpp" startline="62" endline="102">RenJiConditionsTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_table_mgr_1a7f0386c3528c677c1d1fe4bf8ef6bf42" compoundref="_avatar__table_8cpp" startline="62" endline="102">AvatarTableMgr::Load</referencedby>
+        <referencedby refid="class_maps_info_table_mgr_1ae1e01a926772d2cf076dd0e16edf0f48" compoundref="_maps_info__table_8cpp" startline="62" endline="102">MapsInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_append_skill_table_mgr_1ac56d7c32f5a819dc19cca4587efdd046" compoundref="_append_skill__table_8cpp" startline="62" endline="102">AppendSkillTableMgr::Load</referencedby>
+        <referencedby refid="class_sel_hero_table_mgr_1a41ea849afb79b47430442dc72744ca3c" compoundref="_sel_hero__table_8cpp" startline="71" endline="112">SelHeroTableMgr::Load</referencedby>
+        <referencedby refid="class_item_exchange_table_mgr_1ac8cb50b578b976ed93bf4519b98f0a1a" compoundref="_item_exchange__table_8cpp" startline="62" endline="102">ItemExchangeTableMgr::Load</referencedby>
+        <referencedby refid="class_task_info_table_mgr_1a5ac142d83d027ede57fb4a61cb90a170" compoundref="_task_info__table_8cpp" startline="62" endline="102">TaskInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_achievement_task_table_mgr_1abc620fe6e9f2a0e47cffbab2dfd5a012" compoundref="_achievement_task__table_8cpp" startline="62" endline="102">AchievementTaskTableMgr::Load</referencedby>
+        <referencedby refid="class_map_info_table_mgr_1a6f3d2a28522e251e0b7a9bcc57fc7a2b" compoundref="_map_info__table_8cpp" startline="73" endline="113">MapInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_strengthen_table_mgr_1ae9eb8970968f5a1d88d6abc1cb2bdde9" compoundref="_strengthen__table_8cpp" startline="62" endline="102">StrengthenTableMgr::Load</referencedby>
+        <referencedby refid="class_unit_table_mgr_1a1f1a4fe49cb048773f3bd4fab1273ee3" compoundref="_unit__table_8cpp" startline="72" endline="112">UnitTableMgr::Load</referencedby>
+        <referencedby refid="class_item_table_mgr_1a571494a6f0138a944bbb1bf2af591bcf" compoundref="_item__table_8cpp" startline="127" endline="168">ItemTableMgr::Load</referencedby>
+        <referencedby refid="class_town_item_table_mgr_1a75b541cb98ad97b219724e7ca27e2524" compoundref="_town_item__table_8cpp" startline="62" endline="102">TownItemTableMgr::Load</referencedby>
+        <referencedby refid="class_skill_table_mgr_1a113e3c8b9ec50d1c32e8aabf2d827dad" compoundref="_skill__table_8cpp" startline="67" endline="106">SkillTableMgr::LoadSkillFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a9bf6b8f7c5f1bc7946a2770eb06682f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TableMgr::GetWishBuyID</definition>
+        <argsstring>(int Order)</argsstring>
+        <name>GetWishBuyID</name>
+        <param>
+          <type>int</type>
+          <declname>Order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="193" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="983" bodyend="993"/>
+        <references refid="class_table_mgr_1a92e242ae4e71ff786567d126993287df" compoundref="_table_mgr_8h" startline="268">WishBuyOrderVec</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a254d691f066cc7a0395298e9d823ac21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; unsigned int &gt; &amp;</type>
+        <definition>const std::vector&lt; unsigned int &gt; &amp; TableMgr::GetWishAttrItems</definition>
+        <argsstring>(unsigned int ReelID)</argsstring>
+        <name>GetWishAttrItems</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ReelID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="194" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="1032" bodyend="1039"/>
+        <references refid="class_table_mgr_1a9855c9b6ddce08a2b44247949cbda46d" compoundref="_table_mgr_8h" startline="271">ItemReelMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a14df1ec726904a656262795b7adc26ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_task_info_table" kindref="compound">TaskInfoTable</ref> *</type>
+        <definition>const TaskInfoTable * TableMgr::GetTaskInfo</definition>
+        <argsstring>(unsigned int dwTaskID)</argsstring>
+        <name>GetTaskInfo</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>dwTaskID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="197" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="1042" bodyend="1045"/>
+        <references refid="class_task_info_table_mgr_1a4b44c8bdcc538a05e72720f9887c9ee5" compoundref="_task_info__table_8cpp" startline="6" endline="13">TaskInfoTableMgr::Get</references>
+        <references refid="class_task_info_table_mgr_1ad4e124dcccab58d2b3d8ce227ef2cd12" compoundref="_task_info__table_8cpp" startline="42" endline="50">TaskInfoTableMgr::GetTaskInfoTable</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1ac8ea08be392220339714779938079e1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; unsigned int &gt; *</type>
+        <definition>const std::vector&lt; unsigned int &gt; * TableMgr::GetTaskIDInfo</definition>
+        <argsstring>(unsigned int dwTaskID, unsigned int uiType)</argsstring>
+        <name>GetTaskIDInfo</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>dwTaskID</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>uiType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="199" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="1047" bodyend="1061"/>
+        <references refid="class_table_mgr_1afb4542d14224c367d107ca7cfd9e44df" compoundref="_table_mgr_8h" startline="250">m_TaskTypeID</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cabebde7e54de1347b289088eb2ed78481" compoundref="_task_info__table_8hpp" startline="14">TASKINFO_TYPE_RONGYU</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca5693accf773fbd6c743e04cf98f4e7ee" compoundref="_task_info__table_8hpp" startline="12">TASKINFO_TYPE_SHENGCHANG</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca45ff411372bc06a2eec9c36fbc11642c" compoundref="_task_info__table_8hpp" startline="13">TASKINFO_TYPE_YINGXIONG</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca1b3dc8c8adc207dc5b9eab401a7a43f9" compoundref="_task_info__table_8hpp" startline="15">TASKINFO_TYPE_ZHANYI</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cafce21a82d146e9539ce9d2ae9733256b" compoundref="_task_info__table_8hpp" startline="11">TASKINFO_TYPE_ZHUXIAN</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a4880511e5c48375cc7070e9933fe5258" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TableMgr::IsFirstWinTask</definition>
+        <argsstring>(unsigned int dwTaskID)</argsstring>
+        <name>IsFirstWinTask</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>dwTaskID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="201" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="1089" bodyend="1093"/>
+        <references refid="class_table_mgr_1afb4542d14224c367d107ca7cfd9e44df" compoundref="_table_mgr_8h" startline="250">m_TaskTypeID</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca5693accf773fbd6c743e04cf98f4e7ee" compoundref="_task_info__table_8hpp" startline="12">TASKINFO_TYPE_SHENGCHANG</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a63ef6ccfb78a618d0d6fca442241ced5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int TableMgr::GetNextMainTaskID</definition>
+        <argsstring>(unsigned int dwTaskID)</argsstring>
+        <name>GetNextMainTaskID</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>dwTaskID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="204" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="1095" bodyend="1108"/>
+        <references refid="class_table_mgr_1aca0b7147592a6dbf62766e2cb8f33e92" compoundref="_table_mgr1_8cpp" startline="1131" endline="1154">GetFirstDailyTaskID</references>
+        <references refid="class_table_mgr_1a1b1eadfb4e922f1ea60ea99724bbccff" compoundref="_table_mgr_8h" startline="249">m_MainTaskPre</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cafce21a82d146e9539ce9d2ae9733256b" compoundref="_task_info__table_8hpp" startline="11">TASKINFO_TYPE_ZHUXIAN</references>
+        <referencedby refid="class_task_mgr_1a2bc47dbab7475fd8f497fdf9f8d7738f" compoundref="_src_2_task_mgr_8cpp" startline="370" endline="388">TaskMgr::GetMainTaskNextTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1acea52d6373f03b5ece326a1c996936ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::GetDailyTaskIDList</definition>
+        <argsstring>(E_TASKINFOTABLE_TYPE eType, VTaskID &amp;vID)</argsstring>
+        <name>GetDailyTaskIDList</name>
+        <param>
+          <type><ref refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91c" kindref="member">E_TASKINFOTABLE_TYPE</ref></type>
+          <declname>eType</declname>
+        </param>
+        <param>
+          <type><ref refid="_table_mgr_def_8h_1a8e1b1e428d3f63df31e23b19ea69aa5f" kindref="member">VTaskID</ref> &amp;</type>
+          <declname>vID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="206" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="1110" bodyend="1128"/>
+        <references refid="class_table_mgr_1afb4542d14224c367d107ca7cfd9e44df" compoundref="_table_mgr_8h" startline="250">m_TaskTypeID</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cabebde7e54de1347b289088eb2ed78481" compoundref="_task_info__table_8hpp" startline="14">TASKINFO_TYPE_RONGYU</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca5693accf773fbd6c743e04cf98f4e7ee" compoundref="_task_info__table_8hpp" startline="12">TASKINFO_TYPE_SHENGCHANG</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca45ff411372bc06a2eec9c36fbc11642c" compoundref="_task_info__table_8hpp" startline="13">TASKINFO_TYPE_YINGXIONG</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca1b3dc8c8adc207dc5b9eab401a7a43f9" compoundref="_task_info__table_8hpp" startline="15">TASKINFO_TYPE_ZHANYI</references>
+        <referencedby refid="class_task_mgr_1a0b713ce49930e4071b47136dcddba6ce" compoundref="_src_2_task_mgr_8cpp" startline="391" endline="459">TaskMgr::GetDailyTaskNextTask</referencedby>
+        <referencedby refid="class_task_mgr_1a342a99e25f638e680a4a3303ca0b22d7" compoundref="_src_2_task_mgr_8cpp" startline="462" endline="548">TaskMgr::GetWinTaskNextTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1aca0b7147592a6dbf62766e2cb8f33e92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int TableMgr::GetFirstDailyTaskID</definition>
+        <argsstring>(E_TASKINFOTABLE_TYPE eType)</argsstring>
+        <name>GetFirstDailyTaskID</name>
+        <param>
+          <type><ref refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91c" kindref="member">E_TASKINFOTABLE_TYPE</ref></type>
+          <declname>eType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="208" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="1131" bodyend="1154"/>
+        <references refid="class_table_mgr_1afb4542d14224c367d107ca7cfd9e44df" compoundref="_table_mgr_8h" startline="250">m_TaskTypeID</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cabebde7e54de1347b289088eb2ed78481" compoundref="_task_info__table_8hpp" startline="14">TASKINFO_TYPE_RONGYU</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca5693accf773fbd6c743e04cf98f4e7ee" compoundref="_task_info__table_8hpp" startline="12">TASKINFO_TYPE_SHENGCHANG</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca45ff411372bc06a2eec9c36fbc11642c" compoundref="_task_info__table_8hpp" startline="13">TASKINFO_TYPE_YINGXIONG</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca1b3dc8c8adc207dc5b9eab401a7a43f9" compoundref="_task_info__table_8hpp" startline="15">TASKINFO_TYPE_ZHANYI</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cafce21a82d146e9539ce9d2ae9733256b" compoundref="_task_info__table_8hpp" startline="11">TASKINFO_TYPE_ZHUXIAN</references>
+        <referencedby refid="class_table_mgr_1a63ef6ccfb78a618d0d6fca442241ced5" compoundref="_table_mgr1_8cpp" startline="1095" endline="1108">GetNextMainTaskID</referencedby>
+        <referencedby refid="class_task_mgr_1a342a99e25f638e680a4a3303ca0b22d7" compoundref="_src_2_task_mgr_8cpp" startline="462" endline="548">TaskMgr::GetWinTaskNextTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a177c9d18c75f13924f0578d7c4906d1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::LoadAchieveInfo</definition>
+        <argsstring>()</argsstring>
+        <name>LoadAchieveInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="211" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="1247" bodyend="1269"/>
+        <references refid="_table_mgr_def_8h_1a9164b3a2e4fcdeeb3ee247c5752841c8" compoundref="_table_mgr_def_8h" startline="15">ACHIEVE_TASK_MAP_LIST_LENGTH</references>
+        <references refid="class_achieve_type_info_1a0dfd72c71de5d65de9dac882fdd7d90a" compoundref="_table_mgr1_8cpp" startline="1189" endline="1192">AchieveTypeInfo::AddMapID</references>
+        <references refid="class_achievement_task_table_mgr_1a5fbf8608a5288723e8fb303f006af1c2" compoundref="_achievement_task__table_8cpp" startline="6" endline="13">AchievementTaskTableMgr::Get</references>
+        <references refid="class_achievement_task_table_mgr_1ab54bd1b92c7631ec78cc13087c655a71" compoundref="_achievement_task__table_8cpp" startline="26" endline="29">AchievementTaskTableMgr::GetAchievementTaskTableMap</references>
+        <references refid="struct_achievement_task_table_1ac7ea3683560f83bc133d06da720c0daf" compoundref="_achievement_task__table_8hpp" startline="108">AchievementTaskTable::iMapList</references>
+        <references refid="struct_achievement_task_table_1ae1619987fcb40699670486160571b2ca" compoundref="_achievement_task__table_8hpp" startline="105">AchievementTaskTable::iValue_Number</references>
+        <references refid="class_table_mgr_1ab1d0bcf1e754a43f60b7a07a8ffd16dd" compoundref="_table_mgr_8h" startline="274">m_AchieveGroupIDMap</references>
+        <references refid="struct_achievement_task_table_1a9d97e0b2890cb615f8842bc1b7c7ee81" compoundref="_achievement_task__table_8hpp" startline="106">AchievementTaskTable::uiCondition</references>
+        <references refid="struct_achievement_task_table_1ab2461d990a814ba8f18f4d655d6b8397" compoundref="_achievement_task__table_8hpp" startline="107">AchievementTaskTable::uiGameType</references>
+        <references refid="struct_achievement_task_table_1ad884b9b853ea5fad589fef639f318e73" compoundref="_achievement_task__table_8hpp" startline="98">AchievementTaskTable::uiTask_ID</references>
+        <references refid="struct_achievement_task_table_1a9bae60d76c0c97f41d24b0d63d92bbc5" compoundref="_achievement_task__table_8hpp" startline="99">AchievementTaskTable::uiTaskgroups</references>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a77d7fe37b4105ce840e8d440c702bb2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_achieve_type_info" kindref="compound">AchieveTypeInfo</ref> *</type>
+        <definition>const AchieveTypeInfo * TableMgr::GetAchieveInfo</definition>
+        <argsstring>(int iGroupID)</argsstring>
+        <name>GetAchieveInfo</name>
+        <param>
+          <type>int</type>
+          <declname>iGroupID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="212" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="1271" bodyend="1279"/>
+        <references refid="class_table_mgr_1ab1d0bcf1e754a43f60b7a07a8ffd16dd" compoundref="_table_mgr_8h" startline="274">m_AchieveGroupIDMap</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_table_mgr_1a608710a39e8da87bd21924a688ccd930" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::InitHeroPosIndex</definition>
+        <argsstring>()</argsstring>
+        <name>InitHeroPosIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="215" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="264" bodyend="285"/>
+        <references refid="class_sel_hero_table_mgr_1ac5adb636decd634beffa0a72ddbadc41" compoundref="_sel_hero__table_8cpp" startline="6" endline="13">SelHeroTableMgr::Get</references>
+        <references refid="class_sel_hero_table_mgr_1a3e213a7d70f61efb16a4f5a0e34c3b9f" compoundref="_sel_hero__table_8cpp" startline="26" endline="29">SelHeroTableMgr::GetSelHeroTableMap</references>
+        <references refid="struct_sel_hero_table_1a8fe3db90710c2615ffee27c0b3173c17" compoundref="_sel_hero__table_8hpp" startline="53">SelHeroTable::iOpen</references>
+        <references refid="class_table_mgr_1ac063483c32a03894c11291f7e210329e" compoundref="_table_mgr_8h" startline="233">m_akHeroID2PosIndex</references>
+        <references refid="class_table_mgr_1ab45504de8146dfb5de9e777525f3009d" compoundref="_table_mgr_8h" startline="234">m_akPosIndex2HeroID</references>
+        <referencedby refid="class_table_mgr_1a24204b2d28998384cc6dd81b0a565020" compoundref="_table_mgr1_8cpp" startline="932" endline="948">InitData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a92dd5fc3393d4cc25e98e39e85656ea2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::InitPetPosIndex</definition>
+        <argsstring>()</argsstring>
+        <name>InitPetPosIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="216" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="287" bodyend="308"/>
+        <references refid="class_pet_table_mgr_1a4a39fccb32393ff12e12a40ec0001062" compoundref="_pet__table_8cpp" startline="6" endline="13">PetTableMgr::Get</references>
+        <references refid="class_pet_table_mgr_1ae522114d7ee91a4d60b606ada26c60ed" compoundref="_pet__table_8cpp" startline="26" endline="29">PetTableMgr::GetPetTableMap</references>
+        <references refid="class_table_mgr_1a372a760b8ec57bd7accd53622a336ab0" compoundref="_table_mgr_8h" startline="237">m_akPetID2PosIndex</references>
+        <references refid="class_table_mgr_1ad4e418067c21766bbb18abdbe25e27d6" compoundref="_table_mgr_8h" startline="238">m_akPosIndex2PetID</references>
+        <referencedby refid="class_table_mgr_1a24204b2d28998384cc6dd81b0a565020" compoundref="_table_mgr1_8cpp" startline="932" endline="948">InitData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a0660913905a81e3e3a0ca87c1470d23d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::InitHorsePosIndex</definition>
+        <argsstring>()</argsstring>
+        <name>InitHorsePosIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="217" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="310" bodyend="331"/>
+        <references refid="class_horse_table_mgr_1ada03b84c58ec173a709298cdbe943883" compoundref="_horse__table_8cpp" startline="6" endline="13">HorseTableMgr::Get</references>
+        <references refid="class_horse_table_mgr_1a010989bbec845d964c3849fa2f43538b" compoundref="_horse__table_8cpp" startline="26" endline="29">HorseTableMgr::GetHorseTableMap</references>
+        <references refid="class_table_mgr_1a2937a14b54c44f6c6b8049b36c8e1586" compoundref="_table_mgr_8h" startline="241">m_akHorseID2PosIndex</references>
+        <references refid="class_table_mgr_1a9e5df7cad943429e293796b0e60a8222" compoundref="_table_mgr_8h" startline="242">m_akPosIndex2HorseID</references>
+        <referencedby refid="class_table_mgr_1a24204b2d28998384cc6dd81b0a565020" compoundref="_table_mgr1_8cpp" startline="932" endline="948">InitData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1ad0d44a4ae56a515ab9bafa62298ac4a0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::InitTaskList</definition>
+        <argsstring>()</argsstring>
+        <name>InitTaskList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="219" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="1063" bodyend="1087"/>
+        <references refid="class_task_info_table_mgr_1a4b44c8bdcc538a05e72720f9887c9ee5" compoundref="_task_info__table_8cpp" startline="6" endline="13">TaskInfoTableMgr::Get</references>
+        <references refid="class_task_info_table_mgr_1a84b934defcce3723a9d6bfae333bd942" compoundref="_task_info__table_8cpp" startline="26" endline="29">TaskInfoTableMgr::GetTaskInfoTableMap</references>
+        <references refid="class_table_mgr_1a1b1eadfb4e922f1ea60ea99724bbccff" compoundref="_table_mgr_8h" startline="249">m_MainTaskPre</references>
+        <references refid="class_table_mgr_1afb4542d14224c367d107ca7cfd9e44df" compoundref="_table_mgr_8h" startline="250">m_TaskTypeID</references>
+        <references refid="_task_info__table_8hpp_1a9cd60d3a4409df8e87f7b1112a622699aa2cba154a1a412c460b7ea90d0482a52" compoundref="_task_info__table_8hpp" startline="30">TASKINFO_TRIGGERTYPE_QIANZHI</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cafce21a82d146e9539ce9d2ae9733256b" compoundref="_task_info__table_8hpp" startline="11">TASKINFO_TYPE_ZHUXIAN</references>
+        <references refid="struct_task_info_table_1a296ee8b118d24f3a2e0e185609740b3e" compoundref="_task_info__table_8hpp" startline="101">TaskInfoTable::uiPreconditionTaskID</references>
+        <references refid="struct_task_info_table_1ac98fcfb2ee19a8d120a3e7893a56644a" compoundref="_task_info__table_8hpp" startline="90">TaskInfoTable::uiTaskID</references>
+        <references refid="struct_task_info_table_1aa62f1135a8732c29ecb10be65707c430" compoundref="_task_info__table_8hpp" startline="100">TaskInfoTable::uiTriggerType</references>
+        <references refid="struct_task_info_table_1aa21612d9c8b4822ecf8087111214f1d0" compoundref="_task_info__table_8hpp" startline="96">TaskInfoTable::uiType</references>
+        <referencedby refid="class_table_mgr_1a24204b2d28998384cc6dd81b0a565020" compoundref="_table_mgr1_8cpp" startline="932" endline="948">InitData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a9540446ae7fbecf3475a5c5b2addb933" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::InitCreateSightUnit</definition>
+        <argsstring>()</argsstring>
+        <name>InitCreateSightUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="220" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="396" bodyend="407"/>
+        <references refid="class_unit_table_mgr_1aed3bd5aa1c6d9c498d4644068d00cbd0" compoundref="_unit__table_8cpp" startline="6" endline="13">UnitTableMgr::Get</references>
+        <references refid="class_unit_table_mgr_1a6d680d5cde97c03ea67c58f35c838fa9" compoundref="_unit__table_8cpp" startline="26" endline="29">UnitTableMgr::GetUnitTableMap</references>
+        <references refid="class_table_mgr_1ad3193fac660e628018c5bd1ecc396818" compoundref="_table_mgr_8h" startline="270">m_mapCreateSightUnits</references>
+        <referencedby refid="class_table_mgr_1a24204b2d28998384cc6dd81b0a565020" compoundref="_table_mgr1_8cpp" startline="932" endline="948">InitData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1abb689bcbe22afc4a4729cee4d19edd28" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::InitRenjiCondition</definition>
+        <argsstring>()</argsstring>
+        <name>InitRenjiCondition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="222" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="635" bodyend="643"/>
+        <references refid="class_ren_ji_conditions_table_mgr_1af7cfe968b0180e0595c11b3562b32fdf" compoundref="_ren_ji_conditions__table_8cpp" startline="6" endline="13">RenJiConditionsTableMgr::Get</references>
+        <references refid="class_ren_ji_conditions_table_mgr_1addb46c682e0f6e37981a5dc26c001947" compoundref="_ren_ji_conditions__table_8cpp" startline="26" endline="29">RenJiConditionsTableMgr::GetRenJiConditionsTableMap</references>
+        <references refid="class_table_mgr_1a15088c9a84437bf4188140f18162351c" compoundref="_table_mgr_8h" startline="256">m_akRenjiVec</references>
+        <referencedby refid="class_table_mgr_1a24204b2d28998384cc6dd81b0a565020" compoundref="_table_mgr1_8cpp" startline="932" endline="948">InitData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1af7cf541261c0b36b35af12b2b86367aa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::InitModelRes</definition>
+        <argsstring>()</argsstring>
+        <name>InitModelRes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="223" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="645" bodyend="657"/>
+        <references refid="class_model_res_table_mgr_1a2dd4ea8e40aed6955c9db5e857f859e1" compoundref="_model_res__table_8cpp" startline="6" endline="13">ModelResTableMgr::Get</references>
+        <references refid="class_model_res_table_mgr_1a06ca1c528c26350a439da081acacf067" compoundref="_model_res__table_8cpp" startline="26" endline="29">ModelResTableMgr::GetModelResTableMap</references>
+        <references refid="struct_model_res_table_1a8d86ed1949c99c122e12cdba42c42d0b" compoundref="_model_res__table_8hpp" startline="36">ModelResTable::kPreLoadPath</references>
+        <references refid="class_table_mgr_1a6595ac599c7a599ac1264054cb8f4295" compoundref="_table_mgr_8h" startline="253">m_akUnit2Model</references>
+        <references refid="struct_model_res_table_1a16f31e3cc813bc2aa021b45baa0a6a7f" compoundref="_model_res__table_8hpp" startline="33">ModelResTable::uiOwner</references>
+        <referencedby refid="class_table_mgr_1a24204b2d28998384cc6dd81b0a565020" compoundref="_table_mgr1_8cpp" startline="932" endline="948">InitData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a93701d99587c7871ad22119f138adc1b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::InitVoiceRes</definition>
+        <argsstring>()</argsstring>
+        <name>InitVoiceRes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="224" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="659" bodyend="670"/>
+        <references refid="class_voice_table_mgr_1a3933e0480565a2bb3bb0654e04e9ed5d" compoundref="_voice__table_8cpp" startline="6" endline="13">VoiceTableMgr::Get</references>
+        <references refid="class_voice_table_mgr_1a1c780dca5afc1596f740b287e5e832b1" compoundref="_voice__table_8cpp" startline="26" endline="29">VoiceTableMgr::GetVoiceTableMap</references>
+        <references refid="struct_voice_table_1ab7f7479e8e707ab159ba4819333ce032" compoundref="_voice__table_8hpp" startline="20">VoiceTable::kPreLoadContent</references>
+        <references refid="class_table_mgr_1a1a1743ed61b08f1e23b0420bf324e3cf" compoundref="_table_mgr_8h" startline="254">m_akUnit2Voice</references>
+        <references refid="struct_voice_table_1a3d0e89d0ce01403705e40a583b25eca3" compoundref="_voice__table_8hpp" startline="16">VoiceTable::uiOwner</references>
+        <referencedby refid="class_table_mgr_1a24204b2d28998384cc6dd81b0a565020" compoundref="_table_mgr1_8cpp" startline="932" endline="948">InitData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a67a9954d02acba4c907120d1aea51c64" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::InitRaceHelperRes</definition>
+        <argsstring>()</argsstring>
+        <name>InitRaceHelperRes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="225" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="672" bodyend="762"/>
+        <references refid="class_racehelp_table_mgr_1ad50ed165d1cd9e4fde4d04b6b92b92a5" compoundref="_racehelp__table_8cpp" startline="6" endline="13">RacehelpTableMgr::Get</references>
+        <references refid="class_racehelp_table_mgr_1aea88ec674713e0d82ac9824e73db6250" compoundref="_racehelp__table_8cpp" startline="26" endline="29">RacehelpTableMgr::GetRacehelpTableMap</references>
+        <references refid="struct_racehelp_table_1a872ddc853016d6f2d21ac04b346a0d48" compoundref="_racehelp__table_8hpp" startline="22">RacehelpTable::kArcherRecom</references>
+        <references refid="struct_racehelp_table_1a687f5372dd08c7a47a0edd362d3a22c7" compoundref="_racehelp__table_8hpp" startline="23">RacehelpTable::kMageRecom</references>
+        <references refid="struct_racehelp_table_1a79153b0d1c8d75ebf47734805bc1ea09" compoundref="_racehelp__table_8hpp" startline="19">RacehelpTable::kMasteryRecom</references>
+        <references refid="struct_racehelp_table_1a179a7672ea347ebccd183a20dced8bb6" compoundref="_racehelp__table_8hpp" startline="24">RacehelpTable::kSkillRecom</references>
+        <references refid="struct_racehelp_table_1a6613a176378eafa88784ef61ab894795" compoundref="_racehelp__table_8hpp" startline="20">RacehelpTable::kTankRecom</references>
+        <references refid="class_table_mgr_1a0e7a506e8a49a5d5efc758effce19f55" compoundref="_table_mgr_8h" startline="259">m_akRaceHelperSkill</references>
+        <references refid="class_table_mgr_1a9e0d5fe0f6a73569cbacd33e11c52b2f" compoundref="_table_mgr_8h" startline="260">m_akRaceHeperMasteryRecom</references>
+        <references refid="_sel_hero__table_8hpp_1a3c6bdcc93cca71ca067a3b8e3e723896a66f5dfefb3564e9c895cc309f822add6" compoundref="_sel_hero__table_8hpp" startline="20">SELHERO_LOCATION_ARCHER</references>
+        <references refid="_sel_hero__table_8hpp_1a3c6bdcc93cca71ca067a3b8e3e723896a616fadb37980bafaf05f3ac491b06739" compoundref="_sel_hero__table_8hpp" startline="21">SELHERO_LOCATION_MAGE</references>
+        <references refid="_sel_hero__table_8hpp_1a3c6bdcc93cca71ca067a3b8e3e723896adde5d23c9a05b5646426cdf80f57ad16" compoundref="_sel_hero__table_8hpp" startline="19">SELHERO_LOCATION_TANK</references>
+        <references refid="_table_mgr1_8cpp_1a4235582d0cea10030f8f5609bbe6fded" compoundref="_table_mgr1_8cpp" startline="11" endline="33">SplitTableStr</references>
+        <referencedby refid="class_table_mgr_1a24204b2d28998384cc6dd81b0a565020" compoundref="_table_mgr1_8cpp" startline="932" endline="948">InitData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a30c6b3312ffd5270d42a0f4ea7ca881e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::InitWishBuyOrder</definition>
+        <argsstring>()</argsstring>
+        <name>InitWishBuyOrder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="226" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="966" bodyend="980"/>
+        <references refid="class_choice_item_table_mgr_1ad5e4ce53682de15b8da81b17c09b47b1" compoundref="_choice_item__table_8cpp" startline="6" endline="13">ChoiceItemTableMgr::Get</references>
+        <references refid="class_choice_item_table_mgr_1ab9298b14df5ab784957b8dfd55361e73" compoundref="_choice_item__table_8cpp" startline="26" endline="29">ChoiceItemTableMgr::GetChoiceItemTableMap</references>
+        <references refid="class_table_mgr_1a92e242ae4e71ff786567d126993287df" compoundref="_table_mgr_8h" startline="268">WishBuyOrderVec</references>
+        <referencedby refid="class_table_mgr_1a24204b2d28998384cc6dd81b0a565020" compoundref="_table_mgr1_8cpp" startline="932" endline="948">InitData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_table_mgr_1a0f7e813633c7bd8bb019e2657fc3dd85" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TableMgr::InitReelMap</definition>
+        <argsstring>()</argsstring>
+        <name>InitReelMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="227" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr1.cpp" bodystart="1003" bodyend="1030"/>
+        <references refid="class_item_compose_table_mgr_1ad7a696061f9046dd5e347b5e2fd9ca34" compoundref="_item_compose__table_8cpp" startline="6" endline="13">ItemComposeTableMgr::Get</references>
+        <references refid="class_item_compose_table_mgr_1a86862c02a634c4f1f4dc03fef472abb2" compoundref="_item_compose__table_8cpp" startline="26" endline="29">ItemComposeTableMgr::GetItemComposeTableMap</references>
+        <references refid="class_table_mgr_1a9855c9b6ddce08a2b44247949cbda46d" compoundref="_table_mgr_8h" startline="271">ItemReelMap</references>
+        <referencedby refid="class_table_mgr_1a24204b2d28998384cc6dd81b0a565020" compoundref="_table_mgr1_8cpp" startline="932" endline="948">InitData</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9117">
+        <label>UnitTable</label>
+        <link refid="struct_unit_table"/>
+        <childnode refid="9112" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9113" relation="usage">
+          <edgelabel>kRideResName</edgelabel>
+          <edgelabel>kEmenyResName</edgelabel>
+          <edgelabel>kName_ChinaK</edgelabel>
+          <edgelabel>kAttackVoice</edgelabel>
+          <edgelabel>kResName</edgelabel>
+          <edgelabel>kDeathSound</edgelabel>
+          <edgelabel>kName_China</edgelabel>
+          <edgelabel>kResPath</edgelabel>
+          <edgelabel>kWalkSound</edgelabel>
+          <edgelabel>kSelectSound</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+        <childnode refid="9118" relation="usage">
+          <edgelabel>iBossSkillVec</edgelabel>
+        </childnode>
+      </node>
+      <node id="9107">
+        <label>TableMgr</label>
+        <link refid="class_table_mgr"/>
+        <childnode refid="9108" relation="usage">
+          <edgelabel>ItemReelMap</edgelabel>
+        </childnode>
+        <childnode refid="9110" relation="usage">
+          <edgelabel>m_akRenjiVec</edgelabel>
+        </childnode>
+        <childnode refid="9115" relation="usage">
+          <edgelabel>m_akPosIndex2PetID</edgelabel>
+          <edgelabel>m_akHorseID2PosIndex</edgelabel>
+          <edgelabel>m_akPosIndex2HorseID</edgelabel>
+          <edgelabel>m_akPetID2PosIndex</edgelabel>
+          <edgelabel>m_akHeroID2PosIndex</edgelabel>
+          <edgelabel>m_akPosIndex2HeroID</edgelabel>
+        </childnode>
+        <childnode refid="9116" relation="usage">
+          <edgelabel>m_mapCreateSightUnits</edgelabel>
+        </childnode>
+        <childnode refid="9119" relation="usage">
+          <edgelabel>m_AchieveGroupIDMap</edgelabel>
+        </childnode>
+        <childnode refid="9123" relation="usage">
+          <edgelabel>WishBuyOrderVec</edgelabel>
+        </childnode>
+        <childnode refid="9125" relation="usage">
+          <edgelabel>m_TaskTypeID</edgelabel>
+        </childnode>
+        <childnode refid="9126" relation="usage">
+          <edgelabel>m_pkLoader</edgelabel>
+        </childnode>
+        <childnode refid="9127" relation="usage">
+          <edgelabel>m_akRaceHeperMasteryRecom</edgelabel>
+        </childnode>
+        <childnode refid="9107" relation="usage">
+          <edgelabel>m_pkAllTableMgr</edgelabel>
+        </childnode>
+        <childnode refid="9128" relation="usage">
+          <edgelabel>m_akUnit2Model</edgelabel>
+          <edgelabel>m_akUnit2Voice</edgelabel>
+        </childnode>
+        <childnode refid="9130" relation="usage">
+          <edgelabel>m_MainTaskPre</edgelabel>
+        </childnode>
+        <childnode refid="9131" relation="usage">
+          <edgelabel>m_akRaceHelperSkill</edgelabel>
+        </childnode>
+      </node>
+      <node id="9131">
+        <label>std::map&lt; int, std::vector&lt; int &gt; &gt;</label>
+        <childnode refid="9118" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9121">
+        <label>std::list&lt; unsigned int &gt;</label>
+      </node>
+      <node id="9128">
+        <label>std::map&lt; int, std::vector&lt; std::string &gt; &gt;</label>
+        <childnode refid="9129" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9115">
+        <label>std::map&lt; int, int &gt;</label>
+      </node>
+      <node id="9124">
+        <label>ChoiceItemTable</label>
+        <link refid="struct_choice_item_table"/>
+        <childnode refid="9112" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9113" relation="usage">
+          <edgelabel>kName</edgelabel>
+        </childnode>
+      </node>
+      <node id="9125">
+        <label>std::vector&lt; std::vector&lt; unsigned int &gt; &gt;</label>
+      </node>
+      <node id="9110">
+        <label>std::vector&lt; RenJiConditionsTable * &gt;</label>
+        <childnode refid="9111" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9123">
+        <label>std::vector&lt; ChoiceItemTable * &gt;</label>
+        <childnode refid="9124" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9114">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="9112">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="9127">
+        <label>std::map&lt; unsigned long long, std::vector&lt; int &gt; &gt;</label>
+        <childnode refid="9118" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9109">
+        <label>std::vector&lt; unsigned int &gt;</label>
+      </node>
+      <node id="9108">
+        <label>std::map&lt; unsigned int, std::vector&lt; unsigned int &gt; &gt;</label>
+        <childnode refid="9109" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9129">
+        <label>std::vector&lt; std::string &gt;</label>
+        <childnode refid="9113" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9122">
+        <label>std::map&lt; unsigned int, int &gt;</label>
+      </node>
+      <node id="9111">
+        <label>RenJiConditionsTable</label>
+        <link refid="struct_ren_ji_conditions_table"/>
+        <childnode refid="9112" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9113" relation="usage">
+          <edgelabel>kDiscription</edgelabel>
+        </childnode>
+      </node>
+      <node id="9116">
+        <label>std::map&lt; unsigned int, UnitTable * &gt;</label>
+        <childnode refid="9117" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9119">
+        <label>std::map&lt; unsigned int, AchieveTypeInfo * &gt;</label>
+        <childnode refid="9120" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9126">
+        <label>TableLoader</label>
+        <link refid="class_table_loader"/>
+      </node>
+      <node id="9120">
+        <label>AchieveTypeInfo</label>
+        <link refid="class_achieve_type_info"/>
+        <childnode refid="9121" relation="usage">
+          <edgelabel>m_MapList</edgelabel>
+        </childnode>
+        <childnode refid="9122" relation="usage">
+          <edgelabel>m_AchieveValueMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="9130">
+        <label>std::unordered_map&lt; unsigned int, unsigned int &gt;</label>
+      </node>
+      <node id="9118">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+      <node id="9113">
+        <label>std::string</label>
+        <childnode refid="9114" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" line="77" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TableMgr.h" bodystart="76" bodyend="275"/>
+    <listofallmembers>
+      <member refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>Get</name></member>
+      <member refid="class_table_mgr_1a77d7fe37b4105ce840e8d440c702bb2c" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetAchieveInfo</name></member>
+      <member refid="class_table_mgr_1a00aec7a5698907c65b610f8972bc7ec2" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetActionResVec</name></member>
+      <member refid="class_table_mgr_1a2a087af2e4184e9a8e74d4cacda44f82" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetActionResVecAll</name></member>
+      <member refid="class_table_mgr_1a900cbe0e81a7712b10aff28c8fd65fc1" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetAllCanSelHeroSet</name></member>
+      <member refid="class_table_mgr_1ac6831413e90ae60464c2ea373fa1702e" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetAllMapMissionID</name></member>
+      <member refid="class_table_mgr_1acea52d6373f03b5ece326a1c996936ab" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetDailyTaskIDList</name></member>
+      <member refid="class_table_mgr_1aca0b7147592a6dbf62766e2cb8f33e92" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetFirstDailyTaskID</name></member>
+      <member refid="class_table_mgr_1aa4cc1b835d4a779047171d0a18fca0d9" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetHeroIDByPosIndex</name></member>
+      <member refid="class_table_mgr_1a7a71a5b546088463b1f55938b16d6145" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetHorseIDByPosIndex</name></member>
+      <member refid="class_table_mgr_1a559890fac8dca5aaab35c69382b603e9" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetItemComposee</name></member>
+      <member refid="class_table_mgr_1a20fe1ff73990af40d4acf2b559c30d48" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetLanguage</name></member>
+      <member refid="class_table_mgr_1aaa779b8333707fc73d92cfd8a319f6ad" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetLeagueLevelByScore</name></member>
+      <member refid="class_table_mgr_1acf75a251cdc102e4cdfd9316e4bc50ca" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetMaxCampPlayerNumByMapID</name></member>
+      <member refid="class_table_mgr_1a40d5e0cad4954e337d38064823ff9ed8" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetModelResByUnit</name></member>
+      <member refid="class_table_mgr_1a894299f18b598c5108eb2e5d0a11c9d1" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetModleIndex</name></member>
+      <member refid="class_table_mgr_1a63ef6ccfb78a618d0d6fca442241ced5" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetNextMainTaskID</name></member>
+      <member refid="class_table_mgr_1ae62557a71f7c02e07dd517e52e950f64" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetPetIDByPosIndex</name></member>
+      <member refid="class_table_mgr_1a78d1d214ceb908cd6240bbab7a7b44e7" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetPosIndexByHeroID</name></member>
+      <member refid="class_table_mgr_1a7becbe4e31df122ed2bf9d40cd76664f" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetPosIndexByHorseID</name></member>
+      <member refid="class_table_mgr_1a2e5391528de557402df6da53b4506d22" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetPosIndexByPetID</name></member>
+      <member refid="class_table_mgr_1a9cd5565797c79eded85a67d84f15fbf1" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetPreLoadRes</name></member>
+      <member refid="class_table_mgr_1aff683240e45e1bc138bae0c00d08454a" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetRaceHelpMasterySkillTypes</name></member>
+      <member refid="class_table_mgr_1ae1e3ff3f35667e2c87e94adf914c0892" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetRaceHelpSkillTypes</name></member>
+      <member refid="class_table_mgr_1a7fb4d0caa2385af8b92c31a173383ed0" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetRenjiConditionByID</name></member>
+      <member refid="class_table_mgr_1a473a2ba3a6f5f351f6678f2042d07bcc" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetRenJiCustomValue</name></member>
+      <member refid="class_table_mgr_1a042bcaca600c7b95d56b8be8f7554a68" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetSoundLanguage</name></member>
+      <member refid="class_table_mgr_1af1a60a8b2807abd34ceb6002cf8f4b80" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetTableLoader</name></member>
+      <member refid="class_table_mgr_1ac8ea08be392220339714779938079e1b" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetTaskIDInfo</name></member>
+      <member refid="class_table_mgr_1a14df1ec726904a656262795b7adc26ac" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetTaskInfo</name></member>
+      <member refid="class_table_mgr_1af66b92515e734a30e380a42030336213" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetText</name></member>
+      <member refid="class_table_mgr_1ac4c6f35a99ef98d8714f64e53c342c08" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetText</name></member>
+      <member refid="class_table_mgr_1a37ac1bb54b2a65efaf2db1a96a4ae6f2" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetVoiceInfo</name></member>
+      <member refid="class_table_mgr_1a8c916d94a73c7d9b8ab74e35d74b866d" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetVoiceResByUnit</name></member>
+      <member refid="class_table_mgr_1a254d691f066cc7a0395298e9d823ac21" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetWishAttrItems</name></member>
+      <member refid="class_table_mgr_1a9bf6b8f7c5f1bc7946a2770eb06682f2" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>GetWishBuyID</name></member>
+      <member refid="class_table_mgr_1a9540446ae7fbecf3475a5c5b2addb933" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>InitCreateSightUnit</name></member>
+      <member refid="class_table_mgr_1a24204b2d28998384cc6dd81b0a565020" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>InitData</name></member>
+      <member refid="class_table_mgr_1a608710a39e8da87bd21924a688ccd930" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>InitHeroPosIndex</name></member>
+      <member refid="class_table_mgr_1a0660913905a81e3e3a0ca87c1470d23d" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>InitHorsePosIndex</name></member>
+      <member refid="class_table_mgr_1af7cf541261c0b36b35af12b2b86367aa" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>InitModelRes</name></member>
+      <member refid="class_table_mgr_1a92dd5fc3393d4cc25e98e39e85656ea2" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>InitPetPosIndex</name></member>
+      <member refid="class_table_mgr_1a67a9954d02acba4c907120d1aea51c64" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>InitRaceHelperRes</name></member>
+      <member refid="class_table_mgr_1a0f7e813633c7bd8bb019e2657fc3dd85" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>InitReelMap</name></member>
+      <member refid="class_table_mgr_1abb689bcbe22afc4a4729cee4d19edd28" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>InitRenjiCondition</name></member>
+      <member refid="class_table_mgr_1ad0d44a4ae56a515ab9bafa62298ac4a0" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>InitTaskList</name></member>
+      <member refid="class_table_mgr_1a93701d99587c7871ad22119f138adc1b" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>InitVoiceRes</name></member>
+      <member refid="class_table_mgr_1a30c6b3312ffd5270d42a0f4ea7ca881e" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>InitWishBuyOrder</name></member>
+      <member refid="class_table_mgr_1ae84775d5d6a7b23048ae507ea7fb0386" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>IsCreateSightUnit</name></member>
+      <member refid="class_table_mgr_1a4880511e5c48375cc7070e9933fe5258" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>IsFirstWinTask</name></member>
+      <member refid="class_table_mgr_1a9855c9b6ddce08a2b44247949cbda46d" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>ItemReelMap</name></member>
+      <member refid="class_table_mgr_1a177c9d18c75f13924f0578d7c4906d1e" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>LoadAchieveInfo</name></member>
+      <member refid="class_table_mgr_1ae1ceeb5a4a6212a8497ef7dd92f87885" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>LoadTable</name></member>
+      <member refid="class_table_mgr_1ab1d0bcf1e754a43f60b7a07a8ffd16dd" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_AchieveGroupIDMap</name></member>
+      <member refid="class_table_mgr_1ac063483c32a03894c11291f7e210329e" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_akHeroID2PosIndex</name></member>
+      <member refid="class_table_mgr_1a2937a14b54c44f6c6b8049b36c8e1586" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_akHorseID2PosIndex</name></member>
+      <member refid="class_table_mgr_1a372a760b8ec57bd7accd53622a336ab0" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_akPetID2PosIndex</name></member>
+      <member refid="class_table_mgr_1ab45504de8146dfb5de9e777525f3009d" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_akPosIndex2HeroID</name></member>
+      <member refid="class_table_mgr_1a9e5df7cad943429e293796b0e60a8222" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_akPosIndex2HorseID</name></member>
+      <member refid="class_table_mgr_1ad4e418067c21766bbb18abdbe25e27d6" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_akPosIndex2PetID</name></member>
+      <member refid="class_table_mgr_1a0e7a506e8a49a5d5efc758effce19f55" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_akRaceHelperSkill</name></member>
+      <member refid="class_table_mgr_1a9e0d5fe0f6a73569cbacd33e11c52b2f" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_akRaceHeperMasteryRecom</name></member>
+      <member refid="class_table_mgr_1a15088c9a84437bf4188140f18162351c" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_akRenjiVec</name></member>
+      <member refid="class_table_mgr_1a6595ac599c7a599ac1264054cb8f4295" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_akUnit2Model</name></member>
+      <member refid="class_table_mgr_1a1a1743ed61b08f1e23b0420bf324e3cf" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_akUnit2Voice</name></member>
+      <member refid="class_table_mgr_1a1708030708a256398d5d01e20d9c6a3b" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_eLanguage</name></member>
+      <member refid="class_table_mgr_1adb1f51b3c3907f3fdf814c49df89652a" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_eSoundLanguage</name></member>
+      <member refid="class_table_mgr_1a1b1eadfb4e922f1ea60ea99724bbccff" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_MainTaskPre</name></member>
+      <member refid="class_table_mgr_1ad3193fac660e628018c5bd1ecc396818" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_mapCreateSightUnits</name></member>
+      <member refid="class_table_mgr_1a2d86cb971a5d4564ea493402d6650ece" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_pkAllTableMgr</name></member>
+      <member refid="class_table_mgr_1a2cc753c1aae3f164f36d4bdab3649e44" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_pkLoader</name></member>
+      <member refid="class_table_mgr_1afb4542d14224c367d107ca7cfd9e44df" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>m_TaskTypeID</name></member>
+      <member refid="class_table_mgr_1a6298f0e9b81636b481a25c06016e237a" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>ReloadTable</name></member>
+      <member refid="class_table_mgr_1a1b808febff52f5224cfa4e811a3b7aa7" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>SetLanguage</name></member>
+      <member refid="class_table_mgr_1a3d767648ffd3a1425d6da5b6145594fb" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>SetSoundLanguage</name></member>
+      <member refid="class_table_mgr_1ae172b572c046f0cd7c8cd428e7ee8dec" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>SetTableLoader</name></member>
+      <member refid="class_table_mgr_1a0e4d10bad85fb1e2c5d89340a1ad6a05" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>TableMgr</name></member>
+      <member refid="class_table_mgr_1af4ee9ef43e51ae3efd0794c4c1be8e78" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>UpdateLanguageContent</name></member>
+      <member refid="class_table_mgr_1a92e242ae4e71ff786567d126993287df" prot="private" virt="non-virtual"><scope>TableMgr</scope><name>WishBuyOrderVec</name></member>
+      <member refid="class_table_mgr_1a151bba8b2427d00b714ab49dca3c3123" prot="public" virt="non-virtual"><scope>TableMgr</scope><name>~TableMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,603 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_http_server_8h" kind="file">
+    <compoundname>HttpServer.h</compoundname>
+    <includes refid="_se_file_log_8h" local="yes">SeFileLog.h</includes>
+    <includes refid="_se_config_8h" local="yes">SeConfig.h</includes>
+    <includes local="yes">EsLock.h</includes>
+    <includes refid="_se_server_main_def_8h" local="yes">SeServerMainDef.h</includes>
+    <includes refid="_se_virt_conn_mgr_8h" local="yes">SeVirtConnMgr.h</includes>
+    <includes refid="_http_server_def_8h" local="yes">HttpServerDef.h</includes>
+    <includes local="yes">HttpModule.h</includes>
+    <includes refid="json_8h" local="yes">json/json.h</includes>
+    <includes refid="_se_h_w_send_8inl" local="yes">SeHWSend.inl</includes>
+    <includes refid="_se_w_h_process_8inl" local="yes">SeWHProcess.inl</includes>
+    <includes refid="_se_http_resp_process_8inl" local="yes">SeHttpRespProcess.inl</includes>
+    <includedby refid="_http_server_8cpp" local="yes">HttpServer/src/HttpServer.cpp</includedby>
+    <includedby refid="_http_server_2src_2_main_8cpp" local="yes">HttpServer/src/Main.cpp</includedby>
+    <includedby refid="_se_http_resp_process_8cpp" local="yes">HttpServer/src/SeHttpRespProcess.cpp</includedby>
+    <includedby refid="_se_h_w_send_8cpp" local="yes">HttpServer/src/SeHWSend.cpp</includedby>
+    <includedby refid="_se_w_h_process_8cpp" local="yes">HttpServer/src/SeWHProcess.cpp</includedby>
+    <incdepgraph>
+      <node id="28982">
+        <label>list</label>
+      </node>
+      <node id="28976">
+        <label>locale</label>
+      </node>
+      <node id="28986">
+        <label>queue</label>
+      </node>
+      <node id="28980">
+        <label>limits</label>
+      </node>
+      <node id="28998">
+        <label>SePtlCommDefine.h</label>
+        <link refid="_se_ptl_comm_define_8h"/>
+      </node>
+      <node id="28999">
+        <label>SeMemPool.h</label>
+        <link refid="_se_mem_pool_8h"/>
+        <childnode refid="28962" relation="include">
+        </childnode>
+        <childnode refid="28959" relation="include">
+        </childnode>
+        <childnode refid="28969" relation="include">
+        </childnode>
+      </node>
+      <node id="28964">
+        <label>windows.h</label>
+      </node>
+      <node id="28969">
+        <label>assert.h</label>
+      </node>
+      <node id="29008">
+        <label>autolink.h</label>
+        <link refid="autolink_8h"/>
+        <childnode refid="29009" relation="include">
+        </childnode>
+        <childnode refid="29008" relation="include">
+        </childnode>
+      </node>
+      <node id="29000">
+        <label>SeTimer.h</label>
+        <link refid="_se_timer_8h"/>
+      </node>
+      <node id="29009">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="28967">
+        <label>stdlib.h</label>
+      </node>
+      <node id="28959">
+        <label>EsLock.h</label>
+      </node>
+      <node id="28971">
+        <label>cmath</label>
+      </node>
+      <node id="29001">
+        <label>HttpServerDef.h</label>
+        <link refid="_http_server_def_8h"/>
+        <childnode refid="28991" relation="include">
+        </childnode>
+        <childnode refid="28992" relation="include">
+        </childnode>
+        <childnode refid="29002" relation="include">
+        </childnode>
+        <childnode refid="29003" relation="include">
+        </childnode>
+        <childnode refid="29004" relation="include">
+        </childnode>
+        <childnode refid="29005" relation="include">
+        </childnode>
+      </node>
+      <node id="28979">
+        <label>string</label>
+      </node>
+      <node id="29005">
+        <label>SePtl_WS_To_HS.h</label>
+        <link refid="_se_ptl___w_s___to___h_s_8h"/>
+        <childnode refid="28992" relation="include">
+        </childnode>
+      </node>
+      <node id="29004">
+        <label>SePtl_HS_To_WS.h</label>
+        <link refid="_se_ptl___h_s___to___w_s_8h"/>
+        <childnode refid="28992" relation="include">
+        </childnode>
+      </node>
+      <node id="28983">
+        <label>map</label>
+      </node>
+      <node id="28956">
+        <label>SeFileLog.h</label>
+        <link refid="_se_file_log_8h"/>
+        <childnode refid="28957" relation="include">
+        </childnode>
+        <childnode refid="28958" relation="include">
+        </childnode>
+        <childnode refid="28959" relation="include">
+        </childnode>
+      </node>
+      <node id="28966">
+        <label>conio.h</label>
+      </node>
+      <node id="28997">
+        <label>SePtlRandomNumDef.h</label>
+        <link refid="_se_ptl_random_num_def_8h"/>
+      </node>
+      <node id="29013">
+        <label>reader.h</label>
+        <link refid="reader_8h"/>
+        <childnode refid="29014" relation="include">
+        </childnode>
+        <childnode refid="29010" relation="include">
+        </childnode>
+        <childnode refid="29015" relation="include">
+        </childnode>
+        <childnode refid="29016" relation="include">
+        </childnode>
+        <childnode refid="29017" relation="include">
+        </childnode>
+        <childnode refid="28979" relation="include">
+        </childnode>
+        <childnode refid="29018" relation="include">
+        </childnode>
+      </node>
+      <node id="28965">
+        <label>direct.h</label>
+      </node>
+      <node id="29012">
+        <label>exception</label>
+      </node>
+      <node id="28977">
+        <label>fstream</label>
+      </node>
+      <node id="29020">
+        <label>ostream</label>
+      </node>
+      <node id="29023">
+        <label>SeHttpRespProcess.inl</label>
+        <link refid="_se_http_resp_process_8inl"/>
+      </node>
+      <node id="28993">
+        <label>SeTool.h</label>
+        <link refid="_se_tool_8h"/>
+        <childnode refid="28962" relation="include">
+        </childnode>
+        <childnode refid="28961" relation="include">
+        </childnode>
+        <childnode refid="28994" relation="include">
+        </childnode>
+        <childnode refid="28995" relation="include">
+        </childnode>
+        <childnode refid="28974" relation="include">
+        </childnode>
+        <childnode refid="28996" relation="include">
+        </childnode>
+      </node>
+      <node id="28963">
+        <label>winsock2.h</label>
+      </node>
+      <node id="28989">
+        <label>SeServerMainDef.h</label>
+        <link refid="_se_server_main_def_8h"/>
+        <childnode refid="28962" relation="include">
+        </childnode>
+      </node>
+      <node id="28995">
+        <label>TeMisc.h</label>
+        <link refid="_te_misc_8h"/>
+        <childnode refid="28973" relation="include">
+        </childnode>
+      </node>
+      <node id="29007">
+        <label>json/json.h</label>
+        <link refid="json_8h"/>
+        <childnode refid="29008" relation="include">
+        </childnode>
+        <childnode refid="29010" relation="include">
+        </childnode>
+        <childnode refid="29013" relation="include">
+        </childnode>
+        <childnode refid="29019" relation="include">
+        </childnode>
+        <childnode refid="29014" relation="include">
+        </childnode>
+      </node>
+      <node id="29019">
+        <label>writer.h</label>
+        <link refid="writer_8h"/>
+        <childnode refid="29010" relation="include">
+        </childnode>
+        <childnode refid="28981" relation="include">
+        </childnode>
+        <childnode refid="28979" relation="include">
+        </childnode>
+        <childnode refid="29020" relation="include">
+        </childnode>
+      </node>
+      <node id="29010">
+        <label>value.h</label>
+        <link refid="value_8h"/>
+        <childnode refid="29011" relation="include">
+        </childnode>
+        <childnode refid="28979" relation="include">
+        </childnode>
+        <childnode refid="28981" relation="include">
+        </childnode>
+        <childnode refid="29012" relation="include">
+        </childnode>
+        <childnode refid="28983" relation="include">
+        </childnode>
+      </node>
+      <node id="29003">
+        <label>SeServerDefine.h</label>
+        <link refid="_se_server_define_8h"/>
+        <childnode refid="28961" relation="include">
+        </childnode>
+        <childnode refid="28991" relation="include">
+        </childnode>
+        <childnode refid="28993" relation="include">
+        </childnode>
+      </node>
+      <node id="29011">
+        <label>forwards.h</label>
+        <link refid="forwards_8h"/>
+        <childnode refid="29009" relation="include">
+        </childnode>
+      </node>
+      <node id="28973">
+        <label>string.h</label>
+      </node>
+      <node id="28960">
+        <label>SeConfig.h</label>
+        <link refid="_se_config_8h"/>
+        <childnode refid="28961" relation="include">
+        </childnode>
+      </node>
+      <node id="28972">
+        <label>ctime</label>
+      </node>
+      <node id="28991">
+        <label>TeNetMgr.h</label>
+      </node>
+      <node id="29017">
+        <label>stack</label>
+      </node>
+      <node id="28981">
+        <label>vector</label>
+      </node>
+      <node id="28987">
+        <label>new</label>
+      </node>
+      <node id="28992">
+        <label>SePtlDefine.h</label>
+        <link refid="_se_ptl_define_8h"/>
+        <childnode refid="28962" relation="include">
+        </childnode>
+        <childnode refid="28961" relation="include">
+        </childnode>
+        <childnode refid="28993" relation="include">
+        </childnode>
+        <childnode refid="28997" relation="include">
+        </childnode>
+        <childnode refid="28998" relation="include">
+        </childnode>
+        <childnode refid="28999" relation="include">
+        </childnode>
+      </node>
+      <node id="28961">
+        <label>SeShareDef.h</label>
+        <link refid="_se_share_def_8h"/>
+        <childnode refid="28962" relation="include">
+        </childnode>
+      </node>
+      <node id="28978">
+        <label>sstream</label>
+      </node>
+      <node id="28996">
+        <label>EsString.h</label>
+      </node>
+      <node id="28990">
+        <label>SeVirtConnMgr.h</label>
+        <link refid="_se_virt_conn_mgr_8h"/>
+        <childnode refid="28961" relation="include">
+        </childnode>
+        <childnode refid="28991" relation="include">
+        </childnode>
+        <childnode refid="28992" relation="include">
+        </childnode>
+        <childnode refid="29000" relation="include">
+        </childnode>
+      </node>
+      <node id="29021">
+        <label>SeHWSend.inl</label>
+        <link refid="_se_h_w_send_8inl"/>
+      </node>
+      <node id="28962">
+        <label>SeInclude.h</label>
+        <link refid="_se_include_8h"/>
+        <childnode refid="28963" relation="include">
+        </childnode>
+        <childnode refid="28964" relation="include">
+        </childnode>
+        <childnode refid="28965" relation="include">
+        </childnode>
+        <childnode refid="28966" relation="include">
+        </childnode>
+        <childnode refid="28967" relation="include">
+        </childnode>
+        <childnode refid="28968" relation="include">
+        </childnode>
+        <childnode refid="28969" relation="include">
+        </childnode>
+        <childnode refid="28970" relation="include">
+        </childnode>
+        <childnode refid="28971" relation="include">
+        </childnode>
+        <childnode refid="28972" relation="include">
+        </childnode>
+        <childnode refid="28958" relation="include">
+        </childnode>
+        <childnode refid="28973" relation="include">
+        </childnode>
+        <childnode refid="28974" relation="include">
+        </childnode>
+        <childnode refid="28975" relation="include">
+        </childnode>
+        <childnode refid="28976" relation="include">
+        </childnode>
+        <childnode refid="28977" relation="include">
+        </childnode>
+        <childnode refid="28978" relation="include">
+        </childnode>
+        <childnode refid="28979" relation="include">
+        </childnode>
+        <childnode refid="28980" relation="include">
+        </childnode>
+        <childnode refid="28981" relation="include">
+        </childnode>
+        <childnode refid="28982" relation="include">
+        </childnode>
+        <childnode refid="28983" relation="include">
+        </childnode>
+        <childnode refid="28984" relation="include">
+        </childnode>
+        <childnode refid="28985" relation="include">
+        </childnode>
+        <childnode refid="28986" relation="include">
+        </childnode>
+        <childnode refid="28987" relation="include">
+        </childnode>
+        <childnode refid="28988" relation="include">
+        </childnode>
+      </node>
+      <node id="28957">
+        <label>time.h</label>
+      </node>
+      <node id="28968">
+        <label>math.h</label>
+      </node>
+      <node id="29006">
+        <label>HttpModule.h</label>
+      </node>
+      <node id="28974">
+        <label>EsType.h</label>
+      </node>
+      <node id="29016">
+        <label>iosfwd</label>
+      </node>
+      <node id="28970">
+        <label>cctype</label>
+      </node>
+      <node id="28994">
+        <label>SeToolTemplate.inl</label>
+        <link refid="_se_tool_template_8inl"/>
+      </node>
+      <node id="29015">
+        <label>deque</label>
+      </node>
+      <node id="28984">
+        <label>unordered_map</label>
+      </node>
+      <node id="29022">
+        <label>SeWHProcess.inl</label>
+        <link refid="_se_w_h_process_8inl"/>
+      </node>
+      <node id="28988">
+        <label>SeDefine.h</label>
+        <link refid="_se_define_8h"/>
+      </node>
+      <node id="28955">
+        <label>HttpServer/src/HttpServer.h</label>
+        <link refid="HttpServer.h"/>
+        <childnode refid="28956" relation="include">
+        </childnode>
+        <childnode refid="28960" relation="include">
+        </childnode>
+        <childnode refid="28959" relation="include">
+        </childnode>
+        <childnode refid="28989" relation="include">
+        </childnode>
+        <childnode refid="28990" relation="include">
+        </childnode>
+        <childnode refid="29001" relation="include">
+        </childnode>
+        <childnode refid="29006" relation="include">
+        </childnode>
+        <childnode refid="29007" relation="include">
+        </childnode>
+        <childnode refid="29021" relation="include">
+        </childnode>
+        <childnode refid="29022" relation="include">
+        </childnode>
+        <childnode refid="29023" relation="include">
+        </childnode>
+      </node>
+      <node id="29002">
+        <label>SeServerTool.h</label>
+        <link refid="_se_server_tool_8h"/>
+        <childnode refid="28962" relation="include">
+        </childnode>
+        <childnode refid="28993" relation="include">
+        </childnode>
+        <childnode refid="28992" relation="include">
+        </childnode>
+      </node>
+      <node id="28985">
+        <label>set</label>
+      </node>
+      <node id="28975">
+        <label>algorithm</label>
+      </node>
+      <node id="29014">
+        <label>features.h</label>
+        <link refid="features_8h"/>
+        <childnode refid="29011" relation="include">
+        </childnode>
+      </node>
+      <node id="28958">
+        <label>stdio.h</label>
+      </node>
+      <node id="29018">
+        <label>istream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="29026">
+        <label>HttpServer/src/Main.cpp</label>
+        <link refid="_http_server_2src_2_main_8cpp"/>
+      </node>
+      <node id="29028">
+        <label>HttpServer/src/SeHWSend.cpp</label>
+        <link refid="_se_h_w_send_8cpp"/>
+      </node>
+      <node id="29027">
+        <label>HttpServer/src/SeHttpRespProcess.cpp</label>
+        <link refid="_se_http_resp_process_8cpp"/>
+      </node>
+      <node id="29029">
+        <label>HttpServer/src/SeWHProcess.cpp</label>
+        <link refid="_se_w_h_process_8cpp"/>
+      </node>
+      <node id="29025">
+        <label>HttpServer/src/HttpServer.cpp</label>
+        <link refid="_http_server_8cpp"/>
+      </node>
+      <node id="29024">
+        <label>HttpServer/src/HttpServer.h</label>
+        <link refid="HttpServer.h"/>
+        <childnode refid="29025" relation="include">
+        </childnode>
+        <childnode refid="29026" relation="include">
+        </childnode>
+        <childnode refid="29027" relation="include">
+        </childnode>
+        <childnode refid="29028" relation="include">
+        </childnode>
+        <childnode refid="29029" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_http_server" prot="public">HttpServer</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_http_server_8h_1a50f0c47161c4580e9ebedc8d02810f22" prot="public" static="no" mutable="no">
+        <type><ref refid="class_http_server" kindref="compound">HttpServer</ref></type>
+        <definition>HttpServer g_kHttpServer</definition>
+        <argsstring></argsstring>
+        <name>g_kHttpServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="75" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_file_log_8h" kindref="compound">SeFileLog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_config_8h" kindref="compound">SeConfig.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;EsLock.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_server_main_def_8h" kindref="compound">SeServerMainDef.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_virt_conn_mgr_8h" kindref="compound">SeVirtConnMgr.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_http_server_def_8h" kindref="compound">HttpServerDef.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;HttpModule.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="json_8h" kindref="compound">json/json.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_http_server" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_http_server" kindref="compound">HttpServer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>TeNetCall,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_se_base_server" kindref="compound">SeBaseServer</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_http_server_1a21cf52381aad79022d297dec4f6b1d4a" kindref="member">HttpServer</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_http_server_1a14fb5346b90163686c1172b5a7e1b19a" kindref="member">~HttpServer</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1abc911606499e42dbf9450f4331de0a62" kindref="member">Initialize</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1a16c9f135682bba53fd8753e6dcda2bc9" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1a1353ba2482032c91a75ce20c841be584" kindref="member">Finialize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1a0f10527bafad5af104ac9c000992ac19" kindref="member">ShowConsoleTitle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iDTime);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_se_server_main_def_8h_1a6856d2f3d34c3913f55b991c0d63e89d" kindref="member">SeServerActionResult</ref><sp/><ref refid="class_http_server_1a5c20706f0ab97369cead930a117c672a" kindref="member">ExecuteAction</ref>(<ref refid="_se_server_main_def_8h_1abbd63e694a43e9bc292e0e0b55ae79bd" kindref="member">SeServerActionIndex</ref><sp/>eActionIndex);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_http_server_1a191167d16fa982c95ab32d1b2bf154a7" kindref="member">OnNetConnected</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HSock&amp;<sp/>rkSock,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcIP,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iPort);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_http_server_1ab123245e4752eae9b2c6b427c05be80f" kindref="member">OnNetAccept</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HSock&amp;<sp/>rkSock,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iListenPort,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcIP,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iPort);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_http_server_1aaeb40cd619e4a2b41d93a2345644ad70" kindref="member">OnNetRecv</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HSock&amp;<sp/>rkSock,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_http_server_1a512037f9a67425a544579dff680ea4b1" kindref="member">OnNetDisconnect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HSock&amp;<sp/>rkSock,<sp/>TeDisconnectCode<sp/>eCode,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iParam);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="class_http_server_1a0a0eca30d34c80dad3f02c64da72cdfe" kindref="member">HttpRequestCallback</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>ulKey,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcUrl,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcContent,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="class_http_server_1a26f7eb0d28647aebeb5d0139ee0e17f1" kindref="member">HttpResponseCallback</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>ulKey,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcContent,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="class_http_server_1afbbc874850fdff95267d16af6d1af4e8" kindref="member">HttpCloseCallback</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>ulKey);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1ab5ea6ba8f9e07e1c035c82329010de96" kindref="member">OnHttpRequest</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>ulKey,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcUrl,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcContent,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1ae69faaed2df760eb23c4d059ac869bc5" kindref="member">OnHttpResponse</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>ulKey,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcContent,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1ad3a76b48f9e203669fdfac5bb487ce02" kindref="member">OnHttpClose</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>ulKey);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>DWord<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1af7b41397867e9d9594bfe4379064d105" kindref="member">GetServerTime</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>DWord<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1a26ff7c8e1c7b5cc0ce10c0fcdbee8e88" kindref="member">GetServerID</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;<ref refid="_se_h_w_send_8inl" kindref="compound">SeHWSend.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;<ref refid="_se_w_h_process_8inl" kindref="compound">SeWHProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;<ref refid="_se_http_resp_process_8inl" kindref="compound">SeHttpRespProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1a66312168a48b7f22f1e56078c9a588c7" kindref="member">LoadConfig</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcFile);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1a6a21013597797329dc5094ecb3f33849" kindref="member">LoadDynamicConfig</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1aeb9fc5ec87338e576f19173508f1b4fc" kindref="member">InitializeNet</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1ae1a9ef7d49cdda4b4e55c6954a689893" kindref="member">AddRequest</ref>(ULONG<sp/>ulKey,<sp/><ref refid="struct_se_request_content" kindref="compound">SeRequestContent</ref>&amp;<sp/>rkContent);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1a9a1d0c25aa6d29b95f62d1020782efc4" kindref="member">GetDeleteRequest</ref>(ULONG<sp/>ulKey,<sp/><ref refid="struct_se_request_content" kindref="compound">SeRequestContent</ref>&amp;<sp/>rkContent);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1afd943934218b1c968c9612e4019be8da" kindref="member">AddResponse</ref>(ULONG<sp/>ulKey,<sp/><ref refid="struct_se_response_content" kindref="compound">SeResponseContent</ref>&amp;<sp/>rkContent);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1a07652b680d05253b41a8d078b06c5baf" kindref="member">GetDeleteResponse</ref>(ULONG<sp/>ulKey,<sp/><ref refid="struct_se_response_content" kindref="compound">SeResponseContent</ref>&amp;<sp/>rkContent);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="57" refid="class_http_server_1af7569b2d2283b5539db8141eb64913d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1af7569b2d2283b5539db8141eb64913d7" kindref="member">m_acSend</ref>[<ref refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aae551c574c3a189b2a44409b830b02afa" kindref="member">SSD_SEND_SIZE</ref>];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>用来网络发送使用(构造不定长数据包)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="class_http_server_1a97c09219673ca8f4ed66e0f92094958f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1a97c09219673ca8f4ed66e0f92094958f" kindref="member">m_acPraseBuf</ref>[<ref refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa07d3a4f7da0bf861d08aa51e3ec80a37" kindref="member">SSD_PRASER_SIZE</ref>];<sp/><sp/></highlight><highlight class="comment">//解析缓冲</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_http_server_1ab4e8f9d7ee33439779749179777026cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_http_config" kindref="compound">SeHttpConfig</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1ab4e8f9d7ee33439779749179777026cc" kindref="member">m_kConfig</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>配置文件</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="class_http_server_1aa9ae3bf8ca38162b552ccbc0aa555d84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>DWord<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1aa9ae3bf8ca38162b552ccbc0aa555d84" kindref="member">m_dwTickCount</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>上次检查时间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="class_http_server_1aa47a4fde1e0868a0c86d34311e300af6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>DWord<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1aa47a4fde1e0868a0c86d34311e300af6" kindref="member">m_dwCurTime</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>当前服务器时间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="class_http_server_1a96834713459d5297a117fd23186084ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TeNetMgr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1a96834713459d5297a117fd23186084ec" kindref="member">m_kNetMgr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>网络管理</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="class_http_server_1aa481945ebf935ed6296eb4fff7cbfda2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1aa481945ebf935ed6296eb4fff7cbfda2" kindref="member">m_pkWSConn</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>时间服务器</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>HTTP请求</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="class_http_server_1a1884787d09c7a6aa234a7fce39d5b4e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Es::NormalLock<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1a1884787d09c7a6aa234a7fce39d5b4e1" kindref="member">m_kRequestLock</ref>;</highlight></codeline>
+<codeline lineno="70" refid="class_http_server_1a55e56a94206394f9792eb382584e2c31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_http_server_def_8h_1af97e08f6cfc7e464d92561524946f494" kindref="member">MapRequest</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1a55e56a94206394f9792eb382584e2c31" kindref="member">m_kMapRequest</ref>;</highlight></codeline>
+<codeline lineno="71" refid="class_http_server_1a95c07cc385c818f2bfff128bbe9422df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Es::NormalLock<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1a95c07cc385c818f2bfff128bbe9422df" kindref="member">m_kResponseLock</ref>;</highlight></codeline>
+<codeline lineno="72" refid="class_http_server_1aa0f45acdb1a8b1d48eb1ca092285a68e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_http_server_def_8h_1a9c89dcbd1ecea25cd2c7be663cf88c61" kindref="member">MapResponse</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_http_server_1aa0f45acdb1a8b1d48eb1ca092285a68e" kindref="member">m_kMapResponse</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="class_http_server" kindref="compound">HttpServer</ref><sp/><sp/><sp/><ref refid="_http_server_8h_1a50f0c47161c4580e9ebedc8d02810f22" kindref="member">g_kHttpServer</ref>;</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_shop_table_mgr" kind="class" prot="public">
+    <compoundname>ShopTableMgr</compoundname>
+    <includes refid="_shop__table_8hpp" local="no">Shop_table.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_shop_table_mgr_1a11732203bc8a3d9cf1b248b07aad1f5d" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned int, <ref refid="struct_shop_table" kindref="compound">ShopTable</ref> * &gt;</type>
+        <definition>std::map&lt;unsigned int,ShopTable*&gt; ShopTableMgr::m_kShopTableMap</definition>
+        <argsstring></argsstring>
+        <name>m_kShopTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.hpp" line="55" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.hpp" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_shop_table_mgr_1a69e05e510f8e08375974bda3b2a4731c" compoundref="_shop__table_8cpp" startline="104" endline="204">FillData</referencedby>
+        <referencedby refid="class_shop_table_mgr_1a6410de3d541a3e093b1d54074416b146" compoundref="_shop__table_8cpp" startline="42" endline="50">GetShopTable</referencedby>
+        <referencedby refid="class_shop_table_mgr_1a621305da17accea010f2cacfdaec3718" compoundref="_shop__table_8cpp" startline="26" endline="29">GetShopTableMap</referencedby>
+        <referencedby refid="class_shop_table_mgr_1affa2f55c807d4bbf49243d8fd4a195ba" compoundref="_shop__table_8cpp" startline="31" endline="40">GetShopTableVec</referencedby>
+        <referencedby refid="class_shop_table_mgr_1af505e8708cb771492b8396d25da67c77" compoundref="_shop__table_8cpp" startline="57" endline="60">~ShopTableMgr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_shop_table_mgr_1a622e217e056cf41f776fe003b97999b3" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_shop_table_mgr" kindref="compound">ShopTableMgr</ref> *</type>
+        <definition>ShopTableMgr * ShopTableMgr::m_pkShopTableMgr</definition>
+        <argsstring></argsstring>
+        <name>m_pkShopTableMgr</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.hpp" line="56" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.hpp" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_shop_table_mgr_1a5002cc4576ba94d600d36d0087ab4944" compoundref="_shop__table_8cpp" startline="6" endline="13">Get</referencedby>
+        <referencedby refid="class_shop_table_mgr_1a8055dd5e3edf389ef9ababa5b6a04c36" compoundref="_shop__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_shop_table_mgr_1a5002cc4576ba94d600d36d0087ab4944" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_shop_table_mgr" kindref="compound">ShopTableMgr</ref> *</type>
+        <definition>ShopTableMgr * ShopTableMgr::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.hpp" line="42" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.cpp" bodystart="6" bodyend="13"/>
+        <references refid="class_shop_table_mgr_1a622e217e056cf41f776fe003b97999b3" compoundref="_shop__table_8hpp" startline="56">m_pkShopTableMgr</references>
+        <references refid="class_shop_table_mgr_1a5741a56d9c84b3518ac32a934ed9a275" compoundref="_shop__table_8cpp" startline="52" endline="55">ShopTableMgr</references>
+        <referencedby refid="class_global_table_mgr_1affb29d3e21eaf42f2c76b4765920ede1" compoundref="_global_table_mgr_8cpp" startline="44" endline="47">GlobalTableMgr::GetShopTable</referencedby>
+        <referencedby refid="class_table_mgr_1ae1ceeb5a4a6212a8497ef7dd92f87885" compoundref="_table_mgr_8h" startline="79" endline="132">TableMgr::LoadTable</referencedby>
+        <referencedby refid="class_shop_table_mgr_1a8055dd5e3edf389ef9ababa5b6a04c36" compoundref="_shop__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_shop_table_mgr_1a8055dd5e3edf389ef9ababa5b6a04c36" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_shop_table_mgr" kindref="compound">ShopTableMgr</ref> *</type>
+        <definition>ShopTableMgr * ShopTableMgr::ReLoad</definition>
+        <argsstring>()</argsstring>
+        <name>ReLoad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.hpp" line="43" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.cpp" bodystart="15" bodyend="23"/>
+        <references refid="class_shop_table_mgr_1a5002cc4576ba94d600d36d0087ab4944" compoundref="_shop__table_8cpp" startline="6" endline="13">Get</references>
+        <references refid="class_shop_table_mgr_1a622e217e056cf41f776fe003b97999b3" compoundref="_shop__table_8hpp" startline="56">m_pkShopTableMgr</references>
+        <referencedby refid="class_table_mgr_1a6298f0e9b81636b481a25c06016e237a" compoundref="_table_mgr1_8cpp" startline="860" endline="914">TableMgr::ReloadTable</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_shop_table_mgr_1a5741a56d9c84b3518ac32a934ed9a275" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ShopTableMgr::ShopTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>ShopTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.hpp" line="44" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.cpp" bodystart="52" bodyend="55"/>
+        <references refid="class_shop_table_mgr_1a34fbbe169593748d337c3270834ebbee" compoundref="_shop__table_8cpp" startline="62" endline="102">Load</references>
+        <referencedby refid="class_shop_table_mgr_1a5002cc4576ba94d600d36d0087ab4944" compoundref="_shop__table_8cpp" startline="6" endline="13">Get</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_shop_table_mgr_1af505e8708cb771492b8396d25da67c77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ShopTableMgr::~ShopTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~ShopTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.hpp" line="45" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.cpp" bodystart="57" bodyend="60"/>
+        <references refid="class_shop_table_mgr_1a11732203bc8a3d9cf1b248b07aad1f5d" compoundref="_shop__table_8hpp" startline="55">m_kShopTableMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_shop_table_mgr_1a6410de3d541a3e093b1d54074416b146" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_shop_table" kindref="compound">ShopTable</ref> *</type>
+        <definition>const ShopTable * ShopTableMgr::GetShopTable</definition>
+        <argsstring>(unsigned int iTypeID)</argsstring>
+        <name>GetShopTable</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>iTypeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.hpp" line="47" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.cpp" bodystart="42" bodyend="50"/>
+        <references refid="class_shop_table_mgr_1a11732203bc8a3d9cf1b248b07aad1f5d" compoundref="_shop__table_8hpp" startline="55">m_kShopTableMap</references>
+        <referencedby refid="class_global_table_mgr_1affb29d3e21eaf42f2c76b4765920ede1" compoundref="_global_table_mgr_8cpp" startline="44" endline="47">GlobalTableMgr::GetShopTable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_shop_table_mgr_1a621305da17accea010f2cacfdaec3718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; unsigned int, <ref refid="struct_shop_table" kindref="compound">ShopTable</ref> * &gt; &amp;</type>
+        <definition>const std::map&lt; unsigned int, ShopTable * &gt; &amp; ShopTableMgr::GetShopTableMap</definition>
+        <argsstring>()</argsstring>
+        <name>GetShopTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.hpp" line="48" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.cpp" bodystart="26" bodyend="29"/>
+        <references refid="class_shop_table_mgr_1a11732203bc8a3d9cf1b248b07aad1f5d" compoundref="_shop__table_8hpp" startline="55">m_kShopTableMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_shop_table_mgr_1affa2f55c807d4bbf49243d8fd4a195ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_table_res_array" kindref="compound">TableResArray</ref></type>
+        <definition>TableResArray ShopTableMgr::GetShopTableVec</definition>
+        <argsstring>()</argsstring>
+        <name>GetShopTableVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.hpp" line="49" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.cpp" bodystart="31" bodyend="40"/>
+        <references refid="class_shop_table_mgr_1a11732203bc8a3d9cf1b248b07aad1f5d" compoundref="_shop__table_8hpp" startline="55">m_kShopTableMap</references>
+        <references refid="class_table_res_array_1ab7fbd71c9a00bfd30ae2282a4955dbc0" compoundref="_se_table_res_base_8cpp" startline="13" endline="16">TableResArray::pushBack</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_shop_table_mgr_1a34fbbe169593748d337c3270834ebbee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ShopTableMgr::Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.hpp" line="52" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.cpp" bodystart="62" bodyend="102"/>
+        <references refid="class_ti_xml_document_1a6dfc01a6e5d58e56acd537dfd3bdeb29" compoundref="tinyxml_8h" startline="1430" endline="1430">TiXmlDocument::Error</references>
+        <references refid="class_ti_xml_document_1a9d0f689f6e09ea494ea547be8d79c25e" compoundref="tinyxml_8h" startline="1433" endline="1433">TiXmlDocument::ErrorDesc</references>
+        <references refid="class_shop_table_mgr_1a69e05e510f8e08375974bda3b2a4731c" compoundref="_shop__table_8cpp" startline="104" endline="204">FillData</references>
+        <references refid="class_ti_xml_node_1ab1f8d8e70d88aea4c5efedfe00862d55" compoundref="tinyxml_8cpp" startline="420" endline="432">TiXmlNode::FirstChildElement</references>
+        <references refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" compoundref="_table_mgr1_8cpp" startline="36" endline="43">TableMgr::Get</references>
+        <references refid="class_table_mgr_1af1a60a8b2807abd34ceb6002cf8f4b80" compoundref="_table_mgr1_8cpp" startline="851" endline="858">TableMgr::GetTableLoader</references>
+        <references refid="class_table_loader_1a8d06b11d37cde9ff76d98901dd39bab4">TableLoader::LoadTable</references>
+        <references refid="class_ti_xml_node_1a7667217e269e0da01d1f82aee94d1a3d" compoundref="tinyxml_8cpp" startline="450" endline="462">TiXmlNode::NextSiblingElement</references>
+        <references refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</references>
+        <referencedby refid="class_shop_table_mgr_1a5741a56d9c84b3518ac32a934ed9a275" compoundref="_shop__table_8cpp" startline="52" endline="55">ShopTableMgr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_shop_table_mgr_1a69e05e510f8e08375974bda3b2a4731c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ShopTableMgr::FillData</definition>
+        <argsstring>(ShopTable *row, TiXmlElement *element)</argsstring>
+        <name>FillData</name>
+        <param>
+          <type><ref refid="struct_shop_table" kindref="compound">ShopTable</ref> *</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.hpp" line="53" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.cpp" bodystart="104" bodyend="204"/>
+        <references refid="class_ti_xml_element_1ac1e4691e9375ba4e665dce7e46a50a9c" compoundref="tinyxml_8cpp" startline="544" endline="550">TiXmlElement::Attribute</references>
+        <references refid="struct_shop_table_1a93488d2e33952cfc64005f72baff7ac6" compoundref="_shop__table_8hpp" startline="26">ShopTable::ktips1</references>
+        <references refid="struct_shop_table_1afab3a0c85435c3a1f7c911ceb3393413" compoundref="_shop__table_8hpp" startline="35">ShopTable::ktips10</references>
+        <references refid="struct_shop_table_1ada4fea7086962cc5e7e811d520b7141b" compoundref="_shop__table_8hpp" startline="27">ShopTable::ktips2</references>
+        <references refid="struct_shop_table_1a9d593ac0e795dae69878acc06a63e488" compoundref="_shop__table_8hpp" startline="28">ShopTable::ktips3</references>
+        <references refid="struct_shop_table_1a900c2b27287cf3fef698633f202a9b13" compoundref="_shop__table_8hpp" startline="29">ShopTable::ktips4</references>
+        <references refid="struct_shop_table_1a87669f8a7931ef3a160d3e2ec66a0983" compoundref="_shop__table_8hpp" startline="30">ShopTable::ktips5</references>
+        <references refid="struct_shop_table_1a75969c8337fb4ac267a131ee861015d7" compoundref="_shop__table_8hpp" startline="31">ShopTable::ktips6</references>
+        <references refid="struct_shop_table_1a7df3e108d183f75a6a5cd1102f0e22d2" compoundref="_shop__table_8hpp" startline="32">ShopTable::ktips7</references>
+        <references refid="struct_shop_table_1a3627466d3ba88244f33be18927b0dcf0" compoundref="_shop__table_8hpp" startline="33">ShopTable::ktips8</references>
+        <references refid="struct_shop_table_1ad6b2ed7ba3ffb8f2c60166a0c0d143c4" compoundref="_shop__table_8hpp" startline="34">ShopTable::ktips9</references>
+        <references refid="class_shop_table_mgr_1a11732203bc8a3d9cf1b248b07aad1f5d" compoundref="_shop__table_8hpp" startline="55">m_kShopTableMap</references>
+        <references refid="struct_shop_table_1ab2fbd8824aab7874e00931d9e2669c69" compoundref="_shop__table_8hpp" startline="16">ShopTable::uiitem1</references>
+        <references refid="struct_shop_table_1ac9ee0173770a17f69b4b72b2e5f81348" compoundref="_shop__table_8hpp" startline="25">ShopTable::uiitem10</references>
+        <references refid="struct_shop_table_1a222fb7381e0623fa58f9096299848a04" compoundref="_shop__table_8hpp" startline="17">ShopTable::uiitem2</references>
+        <references refid="struct_shop_table_1a2481f41564fd45d502a08d7aa3b9bc0a" compoundref="_shop__table_8hpp" startline="18">ShopTable::uiitem3</references>
+        <references refid="struct_shop_table_1ad63aad67f1a41cee1fc33716446f756d" compoundref="_shop__table_8hpp" startline="19">ShopTable::uiitem4</references>
+        <references refid="struct_shop_table_1a9efd728f7b6e639f14e55d7095b2fb3d" compoundref="_shop__table_8hpp" startline="20">ShopTable::uiitem5</references>
+        <references refid="struct_shop_table_1a3bafa2f57f76e011296682e981db6e16" compoundref="_shop__table_8hpp" startline="21">ShopTable::uiitem6</references>
+        <references refid="struct_shop_table_1aa9ef3711dd9709d79309ba7e61f62ab2" compoundref="_shop__table_8hpp" startline="22">ShopTable::uiitem7</references>
+        <references refid="struct_shop_table_1aca797be9bafa103127d146e94a989dff" compoundref="_shop__table_8hpp" startline="23">ShopTable::uiitem8</references>
+        <references refid="struct_shop_table_1a0f9c76b1d01e10826e4f096ca30ea939" compoundref="_shop__table_8hpp" startline="24">ShopTable::uiitem9</references>
+        <references refid="struct_shop_table_1a13d94eab7b04211e5a2d52a4da6d1467" compoundref="_shop__table_8hpp" startline="15">ShopTable::uiItemTypeID</references>
+        <referencedby refid="class_shop_table_mgr_1a34fbbe169593748d337c3270834ebbee" compoundref="_shop__table_8cpp" startline="62" endline="102">Load</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8955">
+        <label>ShopTableMgr</label>
+        <link refid="class_shop_table_mgr"/>
+        <childnode refid="8955" relation="usage">
+          <edgelabel>m_pkShopTableMgr</edgelabel>
+        </childnode>
+        <childnode refid="8956" relation="usage">
+          <edgelabel>m_kShopTableMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="8960">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="8958">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="8956">
+        <label>std::map&lt; unsigned int, ShopTable * &gt;</label>
+        <childnode refid="8957" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="8957">
+        <label>ShopTable</label>
+        <link refid="struct_shop_table"/>
+        <childnode refid="8958" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8959" relation="usage">
+          <edgelabel>ktips1</edgelabel>
+          <edgelabel>ktips2</edgelabel>
+          <edgelabel>ktips3</edgelabel>
+          <edgelabel>ktips10</edgelabel>
+          <edgelabel>ktips4</edgelabel>
+          <edgelabel>ktips5</edgelabel>
+          <edgelabel>ktips6</edgelabel>
+          <edgelabel>ktips7</edgelabel>
+          <edgelabel>ktips8</edgelabel>
+          <edgelabel>ktips9</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="8959">
+        <label>std::string</label>
+        <childnode refid="8960" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.hpp" line="40" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Shop_table.hpp" bodystart="39" bodyend="57"/>
+    <listofallmembers>
+      <member refid="class_shop_table_mgr_1a69e05e510f8e08375974bda3b2a4731c" prot="private" virt="non-virtual"><scope>ShopTableMgr</scope><name>FillData</name></member>
+      <member refid="class_shop_table_mgr_1a5002cc4576ba94d600d36d0087ab4944" prot="public" virt="non-virtual"><scope>ShopTableMgr</scope><name>Get</name></member>
+      <member refid="class_shop_table_mgr_1a6410de3d541a3e093b1d54074416b146" prot="public" virt="non-virtual"><scope>ShopTableMgr</scope><name>GetShopTable</name></member>
+      <member refid="class_shop_table_mgr_1a621305da17accea010f2cacfdaec3718" prot="public" virt="non-virtual"><scope>ShopTableMgr</scope><name>GetShopTableMap</name></member>
+      <member refid="class_shop_table_mgr_1affa2f55c807d4bbf49243d8fd4a195ba" prot="public" virt="non-virtual"><scope>ShopTableMgr</scope><name>GetShopTableVec</name></member>
+      <member refid="class_shop_table_mgr_1a34fbbe169593748d337c3270834ebbee" prot="private" virt="non-virtual"><scope>ShopTableMgr</scope><name>Load</name></member>
+      <member refid="class_shop_table_mgr_1a11732203bc8a3d9cf1b248b07aad1f5d" prot="private" virt="non-virtual"><scope>ShopTableMgr</scope><name>m_kShopTableMap</name></member>
+      <member refid="class_shop_table_mgr_1a622e217e056cf41f776fe003b97999b3" prot="private" virt="non-virtual"><scope>ShopTableMgr</scope><name>m_pkShopTableMgr</name></member>
+      <member refid="class_shop_table_mgr_1a8055dd5e3edf389ef9ababa5b6a04c36" prot="public" virt="non-virtual"><scope>ShopTableMgr</scope><name>ReLoad</name></member>
+      <member refid="class_shop_table_mgr_1a5741a56d9c84b3518ac32a934ed9a275" prot="public" virt="non-virtual"><scope>ShopTableMgr</scope><name>ShopTableMgr</name></member>
+      <member refid="class_shop_table_mgr_1af505e8708cb771492b8396d25da67c77" prot="public" virt="non-virtual"><scope>ShopTableMgr</scope><name>~ShopTableMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

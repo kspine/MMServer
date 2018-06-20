@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="assertions_8h" kind="file">
+    <compoundname>assertions.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">sstream</includes>
+    <includes refid="config_8h" local="yes">config.h</includes>
+    <includedby refid="json__reader_8cpp" local="no">F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp</includedby>
+    <includedby refid="json__value_8cpp" local="no">F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="1">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2">
+        <label>sstream</label>
+      </node>
+      <node id="0">
+        <label>F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/assertions.h</label>
+        <link refid="assertions.h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp</label>
+        <link refid="json__reader_8cpp"/>
+      </node>
+      <node id="4">
+        <label>F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/assertions.h</label>
+        <link refid="assertions.h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp</label>
+        <link refid="json__value_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="assertions_8h_1a188941dcc789ccb6539c3d6f41405582" prot="public" static="no">
+        <name>JSON_ASSERT</name>
+        <param><defname>condition</defname></param>
+        <initializer>{if (!(condition)) {<ref refid="namespace_json_1a27613326e9e36bbfe04a905ac90caa91" kindref="member">Json::throwLogicError</ref>( &quot;assert json failed&quot; );}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>It should not be possible for a maliciously designed file to cause an abort() or seg-fault, so these macros are used only for pre-condition violations and internal logic errors. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/assertions.h" line="23" column="10" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/assertions.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="struct_json_1_1_value_1_1_comment_info_1a4d01c2cd8c07995969c5d636dfd4fa8c" compoundref="json__value_8cpp" startline="194" endline="205">Json::Value::CommentInfo::setComment</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="assertions_8h_1a67007439f94bc6afc465923f56147ba1" prot="public" static="no">
+        <name>JSON_FAIL_MESSAGE</name>
+        <param><defname>message</defname></param>
+        <initializer>{                                                                            \
+    std::ostringstream oss; oss &lt;&lt; message;                                    \
+    <ref refid="namespace_json_1a27613326e9e36bbfe04a905ac90caa91" kindref="member">Json::throwLogicError</ref>(oss.str());                                          \
+    abort();                                                                   \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/assertions.h" line="26" column="10" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/assertions.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_value_1a7402c797285c020566c3db5f8ae4e940" compoundref="json__value_8cpp" startline="798" endline="815">Json::Value::asBool</referencedby>
+        <referencedby refid="class_json_1_1_value_1a33434ed1c0217a34d04c95fa5342fd37" compoundref="json__value_8cpp" startline="754" endline="774">Json::Value::asDouble</referencedby>
+        <referencedby refid="class_json_1_1_value_1ac2128d7080499daf8c5b1c71da243f63" compoundref="json__value_8cpp" startline="776" endline="796">Json::Value::asFloat</referencedby>
+        <referencedby refid="class_json_1_1_value_1ac786e35b860b1d700cb3d3e56dd6a235" compoundref="json__value_8cpp" startline="649" endline="669">Json::Value::asInt</referencedby>
+        <referencedby refid="class_json_1_1_value_1a7f739b55aef060f4ab6360bfe1912b77" compoundref="json__value_8cpp" startline="695" endline="714">Json::Value::asInt64</referencedby>
+        <referencedby refid="class_json_1_1_value_1a03ee3d5df576640c93ba683f140828bd" compoundref="json__value_8cpp" startline="614" endline="637">Json::Value::asString</referencedby>
+        <referencedby refid="class_json_1_1_value_1a2019d1bd296b89356c1b0da5970c918c" compoundref="json__value_8cpp" startline="671" endline="691">Json::Value::asUInt</referencedby>
+        <referencedby refid="class_json_1_1_value_1a65acdab039f60ff0da15e622f2e17739" compoundref="json__value_8cpp" startline="716" endline="735">Json::Value::asUInt64</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="assertions_8h_1ad7facdeeca0f495765e3b204c265eadb" prot="public" static="no">
+        <name>JSON_ASSERT_MESSAGE</name>
+        <param><defname>condition</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>if (!(condition)) {                                                          \
+    <ref refid="assertions_8h_1a67007439f94bc6afc465923f56147ba1" kindref="member">JSON_FAIL_MESSAGE</ref>(message);                                                \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/assertions.h" line="49" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/assertions.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_value_1a5b7da48b163bcec63b1424f1608b7da6" compoundref="json__value_8cpp" startline="595" endline="603">Json::Value::asCString</referencedby>
+        <referencedby refid="class_json_1_1_value_1ac786e35b860b1d700cb3d3e56dd6a235" compoundref="json__value_8cpp" startline="649" endline="669">Json::Value::asInt</referencedby>
+        <referencedby refid="class_json_1_1_value_1a7f739b55aef060f4ab6360bfe1912b77" compoundref="json__value_8cpp" startline="695" endline="714">Json::Value::asInt64</referencedby>
+        <referencedby refid="class_json_1_1_value_1a2019d1bd296b89356c1b0da5970c918c" compoundref="json__value_8cpp" startline="671" endline="691">Json::Value::asUInt</referencedby>
+        <referencedby refid="class_json_1_1_value_1a65acdab039f60ff0da15e622f2e17739" compoundref="json__value_8cpp" startline="716" endline="735">Json::Value::asUInt64</referencedby>
+        <referencedby refid="class_json_1_1_value_1a501a4d67e6c875255c2ecc03ccd2019b" compoundref="json__value_8cpp" startline="883" endline="897">Json::Value::clear</referencedby>
+        <referencedby refid="namespace_json_1a9795a09a0141d1f12d307c4386aeaee6" compoundref="json__value_8cpp" startline="102" endline="122">Json::duplicateAndPrefixStringValue</referencedby>
+        <referencedby refid="class_json_1_1_value_1a184bf49ec5da7ec31af089cf6f458f99" compoundref="json__value_8cpp" startline="1016" endline="1026">Json::Value::find</referencedby>
+        <referencedby refid="class_json_1_1_value_1a30fa08af88f2d0a038b22ba9f4e88b2a" compoundref="json__value_8cpp" startline="1168" endline="1183">Json::Value::getMemberNames</referencedby>
+        <referencedby refid="class_json_1_1_value_1a7d99f5dba388cdaa152ce6ef933d64ef" compoundref="json__value_8cpp" startline="917" endline="931">Json::Value::operator[]</referencedby>
+        <referencedby refid="class_json_1_1_value_1aa52f7873b95d29627d6e83ba96f69aaa" compoundref="json__value_8cpp" startline="1102" endline="1112">Json::Value::removeMember</referencedby>
+        <referencedby refid="class_json_1_1_value_1aa284353271ada427dbfa04a42f2be407" compoundref="json__value_8cpp" startline="899" endline="915">Json::Value::resize</referencedby>
+        <referencedby refid="class_json_1_1_value_1a9ff9cdae2c8f4155bab603d750b0b3f1" compoundref="json__value_8cpp" startline="971" endline="987">Json::Value::resolveReference</referencedby>
+        <referencedby refid="struct_json_1_1_value_1_1_comment_info_1a4d01c2cd8c07995969c5d636dfd4fa8c" compoundref="json__value_8cpp" startline="194" endline="205">Json::Value::CommentInfo::setComment</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2007-2010<sp/>Baptiste<sp/>Lepilleur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Distributed<sp/>under<sp/>MIT<sp/>license,<sp/>or<sp/>public<sp/>domain<sp/>if<sp/>desired<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>recognized<sp/>in<sp/>your<sp/>jurisdiction.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>See<sp/>file<sp/>LICENSE<sp/>for<sp/>detail<sp/>or<sp/>copy<sp/>at<sp/>http://jsoncpp.sourceforge.net/LICENSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CPPTL_JSON_ASSERTIONS_H_INCLUDED</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CPPTL_JSON_ASSERTIONS_H_INCLUDED</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(JSON_IS_AMALGAMATION)</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>if<sp/>!defined(JSON_IS_AMALGAMATION)</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor">#if<sp/>JSON_USE_EXCEPTION</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>@todo<sp/>&lt;=<sp/>add<sp/>detail<sp/>about<sp/>condition<sp/>in<sp/>exception</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="assertions_8h_1a188941dcc789ccb6539c3d6f41405582" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>JSON_ASSERT(condition)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"><sp/><sp/>{if<sp/>(!(condition))<sp/>{Json::throwLogicError(<sp/>&quot;assert<sp/>json<sp/>failed&quot;<sp/>);}}</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="assertions_8h_1a67007439f94bc6afc465923f56147ba1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>JSON_FAIL_MESSAGE(message)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>std::ostringstream<sp/>oss;<sp/>oss<sp/>&lt;&lt;<sp/>message;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>Json::throwLogicError(oss.str());<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>abort();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/>//<sp/>JSON_USE_EXCEPTION</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>JSON_ASSERT(condition)<sp/>assert(condition)</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>call<sp/>to<sp/>assert()<sp/>will<sp/>show<sp/>the<sp/>failure<sp/>message<sp/>in<sp/>debug<sp/>builds.<sp/>In</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>release<sp/>builds<sp/>we<sp/>abort,<sp/>for<sp/>a<sp/>core-dump<sp/>or<sp/>debugger.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>JSON_FAIL_MESSAGE(message)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>std::ostringstream<sp/>oss;<sp/>oss<sp/>&lt;&lt;<sp/>message;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>assert(false<sp/>&amp;&amp;<sp/>oss.str().c_str());<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>abort();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="assertions_8h_1ad7facdeeca0f495765e3b204c265eadb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JSON_ASSERT_MESSAGE(condition,<sp/>message)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"><sp/><sp/>if<sp/>(!(condition))<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>JSON_FAIL_MESSAGE(message);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CPPTL_JSON_ASSERTIONS_H_INCLUDED</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/assertions.h"/>
+  </compounddef>
+</doxygen>

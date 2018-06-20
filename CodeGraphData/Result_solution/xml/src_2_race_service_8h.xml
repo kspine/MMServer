@@ -1,0 +1,638 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="src_2_race_service_8h" kind="file">
+    <compoundname>RaceService.h</compoundname>
+    <includes refid="src_2_race_service_def_8h" local="yes">RaceServiceDef.h</includes>
+    <includes refid="_se_thread_msg_8h" local="yes">SeThreadMsg.h</includes>
+    <includes local="no">IRaceLogic.h</includes>
+    <includes refid="_se_ptl_comm_define_8h" local="yes">SePtlCommDefine.h</includes>
+    <includes local="yes">EsThread.h</includes>
+    <includes refid="_se_file_log_8h" local="yes">SeFileLog.h</includes>
+    <includes refid="src_2_se_ptl___r_s___to___r_s_c_8h" local="yes">SePtl_RS_To_RSC.h</includes>
+    <includes refid="src_2_se_ptl___r_s_c___to___r_s_8h" local="yes">SePtl_RSC_To_RS.h</includes>
+    <includes refid="src_2_se_thread_race_mgr_8h" local="yes">SeThreadRaceMgr.h</includes>
+    <includes refid="src_2_se_race_server_push_8inl" local="yes">SeRaceServerPush.inl</includes>
+    <includes refid="src_2_se_race_server_process_8inl" local="yes">SeRaceServerProcess.inl</includes>
+    <includedby refid="src_2_race_server_8h" local="yes">RaceServer/src/RaceServer.h</includedby>
+    <includedby refid="src_2_race_service_8cpp" local="yes">RaceServer/src/RaceService.cpp</includedby>
+    <includedby refid="src_2_se_race_server_process_8cpp" local="yes">RaceServer/src/SeRaceServerProcess.cpp</includedby>
+    <includedby refid="src_2_se_race_server_push_8cpp" local="yes">RaceServer/src/SeRaceServerPush.cpp</includedby>
+    <incdepgraph>
+      <node id="49399">
+        <label>list</label>
+      </node>
+      <node id="49393">
+        <label>locale</label>
+      </node>
+      <node id="49403">
+        <label>queue</label>
+      </node>
+      <node id="49397">
+        <label>limits</label>
+      </node>
+      <node id="49413">
+        <label>SePtlCommDefine.h</label>
+        <link refid="_se_ptl_comm_define_8h"/>
+      </node>
+      <node id="49414">
+        <label>SeMemPool.h</label>
+        <link refid="_se_mem_pool_8h"/>
+        <childnode refid="49378" relation="include">
+        </childnode>
+        <childnode refid="49415" relation="include">
+        </childnode>
+        <childnode refid="49385" relation="include">
+        </childnode>
+      </node>
+      <node id="49377">
+        <label>RaceServiceDef.h</label>
+        <link refid="src_2_race_service_def_8h"/>
+        <childnode refid="49378" relation="include">
+        </childnode>
+        <childnode refid="49406" relation="include">
+        </childnode>
+      </node>
+      <node id="49380">
+        <label>windows.h</label>
+      </node>
+      <node id="49428">
+        <label>makeCommand.hpp</label>
+        <link refid="make_command_8hpp"/>
+      </node>
+      <node id="49385">
+        <label>assert.h</label>
+      </node>
+      <node id="49431">
+        <label>SeRaceServerPush.inl</label>
+        <link refid="src_2_se_race_server_push_8inl"/>
+      </node>
+      <node id="49383">
+        <label>stdlib.h</label>
+      </node>
+      <node id="49415">
+        <label>EsLock.h</label>
+      </node>
+      <node id="49417">
+        <label>IRaceLogic.h</label>
+      </node>
+      <node id="49387">
+        <label>cmath</label>
+      </node>
+      <node id="49418">
+        <label>EsThread.h</label>
+      </node>
+      <node id="49396">
+        <label>string</label>
+      </node>
+      <node id="49400">
+        <label>map</label>
+      </node>
+      <node id="49419">
+        <label>SeFileLog.h</label>
+        <link refid="_se_file_log_8h"/>
+        <childnode refid="49420" relation="include">
+        </childnode>
+        <childnode refid="49389" relation="include">
+        </childnode>
+        <childnode refid="49415" relation="include">
+        </childnode>
+      </node>
+      <node id="49382">
+        <label>conio.h</label>
+      </node>
+      <node id="49412">
+        <label>SePtlRandomNumDef.h</label>
+        <link refid="_se_ptl_random_num_def_8h"/>
+      </node>
+      <node id="49381">
+        <label>direct.h</label>
+      </node>
+      <node id="49394">
+        <label>fstream</label>
+      </node>
+      <node id="49408">
+        <label>SeTool.h</label>
+        <link refid="_se_tool_8h"/>
+        <childnode refid="49378" relation="include">
+        </childnode>
+        <childnode refid="49407" relation="include">
+        </childnode>
+        <childnode refid="49409" relation="include">
+        </childnode>
+        <childnode refid="49410" relation="include">
+        </childnode>
+        <childnode refid="49391" relation="include">
+        </childnode>
+        <childnode refid="49411" relation="include">
+        </childnode>
+      </node>
+      <node id="49379">
+        <label>winsock2.h</label>
+      </node>
+      <node id="49422">
+        <label>SeThreadRaceDef.h</label>
+        <link refid="src_2_se_thread_race_def_8h"/>
+        <childnode refid="49378" relation="include">
+        </childnode>
+        <childnode refid="49408" relation="include">
+        </childnode>
+        <childnode refid="49423" relation="include">
+        </childnode>
+      </node>
+      <node id="49410">
+        <label>TeMisc.h</label>
+        <link refid="_te_misc_8h"/>
+        <childnode refid="49390" relation="include">
+        </childnode>
+      </node>
+      <node id="49416">
+        <label>SeThreadMsg.h</label>
+        <link refid="_se_thread_msg_8h"/>
+        <childnode refid="49378" relation="include">
+        </childnode>
+        <childnode refid="49415" relation="include">
+        </childnode>
+      </node>
+      <node id="49390">
+        <label>string.h</label>
+      </node>
+      <node id="49388">
+        <label>ctime</label>
+      </node>
+      <node id="49423">
+        <label>TeNetMgr.h</label>
+      </node>
+      <node id="49398">
+        <label>vector</label>
+      </node>
+      <node id="49426">
+        <label>MobaApi.hpp</label>
+        <link refid="_moba_api_8hpp"/>
+      </node>
+      <node id="49404">
+        <label>new</label>
+      </node>
+      <node id="49421">
+        <label>SePtl_RS_To_RSC.h</label>
+        <link refid="src_2_se_ptl___r_s___to___r_s_c_8h"/>
+        <childnode refid="49378" relation="include">
+        </childnode>
+        <childnode refid="49422" relation="include">
+        </childnode>
+      </node>
+      <node id="49425">
+        <label>utils/Command.hpp</label>
+        <link refid="_command_8hpp"/>
+        <childnode refid="49426" relation="include">
+        </childnode>
+        <childnode refid="49427" relation="include">
+        </childnode>
+        <childnode refid="49428" relation="include">
+        </childnode>
+      </node>
+      <node id="49406">
+        <label>SePtlDefine.h</label>
+        <link refid="_se_ptl_define_8h"/>
+        <childnode refid="49378" relation="include">
+        </childnode>
+        <childnode refid="49407" relation="include">
+        </childnode>
+        <childnode refid="49408" relation="include">
+        </childnode>
+        <childnode refid="49412" relation="include">
+        </childnode>
+        <childnode refid="49413" relation="include">
+        </childnode>
+        <childnode refid="49414" relation="include">
+        </childnode>
+      </node>
+      <node id="49407">
+        <label>SeShareDef.h</label>
+        <link refid="_se_share_def_8h"/>
+        <childnode refid="49378" relation="include">
+        </childnode>
+      </node>
+      <node id="49395">
+        <label>sstream</label>
+      </node>
+      <node id="49411">
+        <label>EsString.h</label>
+      </node>
+      <node id="49376">
+        <label>RaceServer/src/RaceService.h</label>
+        <link refid="src/RaceService.h"/>
+        <childnode refid="49377" relation="include">
+        </childnode>
+        <childnode refid="49416" relation="include">
+        </childnode>
+        <childnode refid="49417" relation="include">
+        </childnode>
+        <childnode refid="49413" relation="include">
+        </childnode>
+        <childnode refid="49418" relation="include">
+        </childnode>
+        <childnode refid="49419" relation="include">
+        </childnode>
+        <childnode refid="49421" relation="include">
+        </childnode>
+        <childnode refid="49424" relation="include">
+        </childnode>
+        <childnode refid="49429" relation="include">
+        </childnode>
+        <childnode refid="49431" relation="include">
+        </childnode>
+        <childnode refid="49432" relation="include">
+        </childnode>
+      </node>
+      <node id="49424">
+        <label>SePtl_RSC_To_RS.h</label>
+        <link refid="src_2_se_ptl___r_s_c___to___r_s_8h"/>
+        <childnode refid="49377" relation="include">
+        </childnode>
+        <childnode refid="49417" relation="include">
+        </childnode>
+        <childnode refid="49425" relation="include">
+        </childnode>
+      </node>
+      <node id="49429">
+        <label>SeThreadRaceMgr.h</label>
+        <link refid="src_2_se_thread_race_mgr_8h"/>
+        <childnode refid="49430" relation="include">
+        </childnode>
+        <childnode refid="49422" relation="include">
+        </childnode>
+      </node>
+      <node id="49378">
+        <label>SeInclude.h</label>
+        <link refid="_se_include_8h"/>
+        <childnode refid="49379" relation="include">
+        </childnode>
+        <childnode refid="49380" relation="include">
+        </childnode>
+        <childnode refid="49381" relation="include">
+        </childnode>
+        <childnode refid="49382" relation="include">
+        </childnode>
+        <childnode refid="49383" relation="include">
+        </childnode>
+        <childnode refid="49384" relation="include">
+        </childnode>
+        <childnode refid="49385" relation="include">
+        </childnode>
+        <childnode refid="49386" relation="include">
+        </childnode>
+        <childnode refid="49387" relation="include">
+        </childnode>
+        <childnode refid="49388" relation="include">
+        </childnode>
+        <childnode refid="49389" relation="include">
+        </childnode>
+        <childnode refid="49390" relation="include">
+        </childnode>
+        <childnode refid="49391" relation="include">
+        </childnode>
+        <childnode refid="49392" relation="include">
+        </childnode>
+        <childnode refid="49393" relation="include">
+        </childnode>
+        <childnode refid="49394" relation="include">
+        </childnode>
+        <childnode refid="49395" relation="include">
+        </childnode>
+        <childnode refid="49396" relation="include">
+        </childnode>
+        <childnode refid="49397" relation="include">
+        </childnode>
+        <childnode refid="49398" relation="include">
+        </childnode>
+        <childnode refid="49399" relation="include">
+        </childnode>
+        <childnode refid="49400" relation="include">
+        </childnode>
+        <childnode refid="49401" relation="include">
+        </childnode>
+        <childnode refid="49402" relation="include">
+        </childnode>
+        <childnode refid="49403" relation="include">
+        </childnode>
+        <childnode refid="49404" relation="include">
+        </childnode>
+        <childnode refid="49405" relation="include">
+        </childnode>
+      </node>
+      <node id="49420">
+        <label>time.h</label>
+      </node>
+      <node id="49384">
+        <label>math.h</label>
+      </node>
+      <node id="49432">
+        <label>SeRaceServerProcess.inl</label>
+        <link refid="src_2_se_race_server_process_8inl"/>
+      </node>
+      <node id="49391">
+        <label>EsType.h</label>
+      </node>
+      <node id="49386">
+        <label>cctype</label>
+      </node>
+      <node id="49409">
+        <label>SeToolTemplate.inl</label>
+        <link refid="_se_tool_template_8inl"/>
+      </node>
+      <node id="49401">
+        <label>unordered_map</label>
+      </node>
+      <node id="49405">
+        <label>SeDefine.h</label>
+        <link refid="_se_define_8h"/>
+      </node>
+      <node id="49427">
+        <label>type_traits</label>
+      </node>
+      <node id="49402">
+        <label>set</label>
+      </node>
+      <node id="49392">
+        <label>algorithm</label>
+      </node>
+      <node id="49430">
+        <label>SeRaceData.h</label>
+        <link refid="src_2_se_race_data_8h"/>
+        <childnode refid="49422" relation="include">
+        </childnode>
+      </node>
+      <node id="49389">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="49453">
+        <label>RaceServer/src/SeRCSend.cpp</label>
+        <link refid="src_2_se_r_c_send_8cpp"/>
+      </node>
+      <node id="49443">
+        <label>RaceServer/src/SeMRProcess.cpp</label>
+        <link refid="src_2_se_m_r_process_8cpp"/>
+      </node>
+      <node id="49457">
+        <label>RaceServer/src/SeRWCSSend.cpp</label>
+        <link refid="src_2_se_r_w_c_s_send_8cpp"/>
+      </node>
+      <node id="49451">
+        <label>RaceServer/src/SeRaceSvrOther.cpp</label>
+        <link refid="src_2_se_race_svr_other_8cpp"/>
+      </node>
+      <node id="49447">
+        <label>RaceServer/src/SeRaceRoomMgr.cpp</label>
+        <link refid="src_2_se_race_room_mgr_8cpp"/>
+      </node>
+      <node id="49459">
+        <label>RaceServer/src/SeThreadRaceMgr.cpp</label>
+        <link refid="src_2_se_thread_race_mgr_8cpp"/>
+      </node>
+      <node id="49456">
+        <label>RaceServer/src/SeRNSend.cpp</label>
+        <link refid="src_2_se_r_n_send_8cpp"/>
+      </node>
+      <node id="49460">
+        <label>RaceServer/src/SeWCSRProcess.cpp</label>
+        <link refid="src_2_se_w_c_s_r_process_8cpp"/>
+      </node>
+      <node id="49440">
+        <label>RaceServer/src/SeBLRProcess.cpp</label>
+        <link refid="src_2_se_b_l_r_process_8cpp"/>
+      </node>
+      <node id="49439">
+        <label>RaceServer/src/RaceService.cpp</label>
+        <link refid="src_2_race_service_8cpp"/>
+      </node>
+      <node id="49435">
+        <label>RaceServer/src/PerformanceIntervalFileDump.cpp</label>
+        <link refid="src_2_performance_interval_file_dump_8cpp"/>
+      </node>
+      <node id="49438">
+        <label>RaceServer/src/RaceServer.cpp</label>
+        <link refid="src_2_race_server_8cpp"/>
+      </node>
+      <node id="49450">
+        <label>RaceServer/src/SeRaceServicePush.cpp</label>
+        <link refid="src_2_se_race_service_push_8cpp"/>
+      </node>
+      <node id="49461">
+        <label>RaceServer/src/SeWRProcess.cpp</label>
+        <link refid="src_2_se_w_r_process_8cpp"/>
+      </node>
+      <node id="49446">
+        <label>RaceServer/src/SeRaceMgr.cpp</label>
+        <link refid="_race_server_2src_2_se_race_mgr_8cpp"/>
+      </node>
+      <node id="49452">
+        <label>RaceServer/src/SeRBLSend.cpp</label>
+        <link refid="src_2_se_r_b_l_send_8cpp"/>
+      </node>
+      <node id="49455">
+        <label>RaceServer/src/SeRMSend.cpp</label>
+        <link refid="src_2_se_r_m_send_8cpp"/>
+      </node>
+      <node id="49444">
+        <label>RaceServer/src/SeNRProcess.cpp</label>
+        <link refid="src_2_se_n_r_process_8cpp"/>
+      </node>
+      <node id="49454">
+        <label>RaceServer/src/SeReconMgr.cpp</label>
+        <link refid="src_2_se_recon_mgr_8cpp"/>
+      </node>
+      <node id="49442">
+        <label>RaceServer/src/SeMatchPlayer.cpp</label>
+        <link refid="src_2_se_match_player_8cpp"/>
+      </node>
+      <node id="49448">
+        <label>RaceServer/src/SeRaceServerPush.cpp</label>
+        <link refid="src_2_se_race_server_push_8cpp"/>
+      </node>
+      <node id="49462">
+        <label>RaceServer/src/SeRaceServerProcess.cpp</label>
+        <link refid="src_2_se_race_server_process_8cpp"/>
+      </node>
+      <node id="49433">
+        <label>RaceServer/src/RaceService.h</label>
+        <link refid="src/RaceService.h"/>
+        <childnode refid="49434" relation="include">
+        </childnode>
+        <childnode refid="49439" relation="include">
+        </childnode>
+        <childnode refid="49462" relation="include">
+        </childnode>
+        <childnode refid="49448" relation="include">
+        </childnode>
+      </node>
+      <node id="49441">
+        <label>RaceServer/src/SeCRProcess.cpp</label>
+        <link refid="src_2_se_c_r_process_8cpp"/>
+      </node>
+      <node id="49437">
+        <label>RaceServer/src/raceRecordSaveThread.cpp</label>
+        <link refid="_race_server_2src_2race_record_save_thread_8cpp"/>
+      </node>
+      <node id="49449">
+        <label>RaceServer/src/SeRaceServiceProcess.cpp</label>
+        <link refid="src_2_se_race_service_process_8cpp"/>
+      </node>
+      <node id="49436">
+        <label>RaceServer/src/RaceDetailMgr.cpp</label>
+        <link refid="src_2_race_detail_mgr_8cpp"/>
+      </node>
+      <node id="49434">
+        <label>RaceServer/src/RaceServer.h</label>
+        <link refid="src_2_race_server_8h"/>
+        <childnode refid="49435" relation="include">
+        </childnode>
+        <childnode refid="49436" relation="include">
+        </childnode>
+        <childnode refid="49437" relation="include">
+        </childnode>
+        <childnode refid="49438" relation="include">
+        </childnode>
+        <childnode refid="49439" relation="include">
+        </childnode>
+        <childnode refid="49440" relation="include">
+        </childnode>
+        <childnode refid="49441" relation="include">
+        </childnode>
+        <childnode refid="49442" relation="include">
+        </childnode>
+        <childnode refid="49443" relation="include">
+        </childnode>
+        <childnode refid="49444" relation="include">
+        </childnode>
+        <childnode refid="49445" relation="include">
+        </childnode>
+        <childnode refid="49446" relation="include">
+        </childnode>
+        <childnode refid="49447" relation="include">
+        </childnode>
+        <childnode refid="49448" relation="include">
+        </childnode>
+        <childnode refid="49449" relation="include">
+        </childnode>
+        <childnode refid="49450" relation="include">
+        </childnode>
+        <childnode refid="49451" relation="include">
+        </childnode>
+        <childnode refid="49452" relation="include">
+        </childnode>
+        <childnode refid="49453" relation="include">
+        </childnode>
+        <childnode refid="49454" relation="include">
+        </childnode>
+        <childnode refid="49455" relation="include">
+        </childnode>
+        <childnode refid="49456" relation="include">
+        </childnode>
+        <childnode refid="49457" relation="include">
+        </childnode>
+        <childnode refid="49458" relation="include">
+        </childnode>
+        <childnode refid="49459" relation="include">
+        </childnode>
+        <childnode refid="49460" relation="include">
+        </childnode>
+        <childnode refid="49461" relation="include">
+        </childnode>
+      </node>
+      <node id="49445">
+        <label>RaceServer/src/SeRaceData.cpp</label>
+        <link refid="src_2_se_race_data_8cpp"/>
+      </node>
+      <node id="49458">
+        <label>RaceServer/src/SeRWSend.cpp</label>
+        <link refid="src_2_se_r_w_send_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_race_service" prot="public">RaceService</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="src_2_race_service_def_8h" kindref="compound">RaceServiceDef.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_thread_msg_8h" kindref="compound">SeThreadMsg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;IRaceLogic.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_ptl_comm_define_8h" kindref="compound">SePtlCommDefine.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;EsThread.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_file_log_8h" kindref="compound">SeFileLog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="src_2_se_ptl___r_s___to___r_s_c_8h" kindref="compound">SePtl_RS_To_RSC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="src_2_se_ptl___r_s_c___to___r_s_8h" kindref="compound">SePtl_RSC_To_RS.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="src_2_se_thread_race_mgr_8h" kindref="compound">SeThreadRaceMgr.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_race_service" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_race_service" kindref="compound">RaceService</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>BeRaceLogicCall,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Es::Thread</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_race_service_1ac3807f78ed60a010024d71d84fc65a2f" kindref="member">RaceService</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_race_service_1ad0c57fe0dc4fcabd530a24d4cca91946" kindref="member">~RaceService</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1abfccad7fabdcc62ee709c93555eb3996" kindref="member">Initialize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iBaseBuffSize<sp/>=<sp/>4<sp/>*<sp/>1024<sp/>*<sp/>1024);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1ac75744355bee316fe6e3cfd834d2c76c" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a45c4bf4771b10ebc22ded6c3f8905c4b" kindref="member">Finialize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a8974cc80645f9d95bb2fa11ec82713ab" kindref="member">SetPerformaceMgr</ref>(</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/><ref refid="class_c_performance_timing_mgr" kindref="compound">CPerformanceTimingMgr</ref>*<sp/>pMgr);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="class_race_service_1ad1e3d97fafd8b900c000ac2813852e84" kindref="member">GetPerformaceMgr</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a9a0b5f09d5dafe49f734ef8080f76e2c" kindref="member">Dislpay</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iFlag,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,...);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_race_service_1ad874aad3ee8df4efa70895ff61cbd43f" kindref="member">GetDumpPath</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a21f47c0b38266266d8cd2e828de30fe6" kindref="member">OnJustifyResult</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a8a9007b3468fd155011c4a71a077c705" kindref="member">OnRaceStream</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSeat,<sp/>DWord<sp/>dwFrame,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bMustSend);</highlight></codeline>
+<codeline lineno="30" refid="class_race_service_1adecb244d3b2942c458bc530025cc1e26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1adecb244d3b2942c458bc530025cc1e26" kindref="member">OnRaceRecordPack</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize){}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1aab14866a2a8f9a18002de7f3382bf323" kindref="member">OnRaceErrorRet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a682d00a8b87522fd1e27245a150021df" kindref="member">OnRaceEvent</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BeLogicEventInfo&amp;<sp/>rkEvent);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a0ca5013b8c78bacbcf81ab063b83006e" kindref="member">OnRaceSvrModelPack</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a3e4550f4043e6e543490062bcbdd58cc" kindref="member">OnAddRaceRet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bAddSuc,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iType,<sp/>DWord<sp/>dwSrcServerID);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1aa6b1d0ef2370cfcd8443496f8594d11d" kindref="member">OnPushStreamRet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,<sp/>DWord<sp/>dwSrcServerID,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bPushRet,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a9feefb3c9960c3fa777e8e13ded8294c" kindref="member">OnRaceNumsRet</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iType,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkUserData,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iNums);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1ad2fbb08c06c352d4d8ab02d7fc706fd4" kindref="member">OnRaceOffsetRet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iOffset);</highlight></codeline>
+<codeline lineno="38" refid="class_race_service_1a403e02f3e9e0b73fae48d3d1330e7944" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a403e02f3e9e0b73fae48d3d1330e7944" kindref="member">OnShowPerInfo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iY,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcInfo){}</highlight></codeline>
+<codeline lineno="39" refid="class_race_service_1a68518a40d432e65e71d5f9f0ca011aa3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a68518a40d432e65e71d5f9f0ca011aa3" kindref="member">OnThreadUpdateTime</ref>(DWord<sp/>dwUpdateTime){}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1aeab2c2c55360788c731c7fed2515689c" kindref="member">OnRaceHeroInfo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSeat,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1ad6519fa134508dcced70946d3356d16b" kindref="member">OnRaceKDA</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BeAllHeroKDA&amp;<sp/>rInfo);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1add36927477834ade57c347253ad8b569" kindref="member">OnRealTimeRaceKDA</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BeAllHeroKDA&amp;<sp/>rInfo);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a1d1f294bda3343b60c07fb51230b704d" kindref="member">OnRealTimeRaceMapDetail</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BeRaceBuildingStatus&amp;<sp/>rInfo);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1aca476353c346c6b1259b46418d6f3c13" kindref="member">OnGetAchievement</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSeat,<sp/>DWord<sp/>aID,DWord<sp/>aLvl);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a8fc8a0181ec42136cfe0e3bd3492ba39" kindref="member">OnAchievementCounts</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSeat,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1ab283f9dd5d705e66c9cf108fab699f58" kindref="member">OnPlayerItemChange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BePlayerItemChange<sp/>&amp;<sp/>rInfo);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a0133ffb9bf1e584dfff364aaf9fa06d2" kindref="member">OnRaceEndArenaDetail</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BeRaceArenaDetail&amp;<sp/>rInfo);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1aafbbac9cefc27f6ba6cbadf4a8ecbc09" kindref="member">OnRaceEndGradeDetail</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BeRaceGradeDetail&amp;<sp/>rInfo);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a0bcb6fe33ef74244de0c5c22ecb639b9" kindref="member">OnDecRespawnItem</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rkRaceID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BeDecRespawnItem&amp;<sp/>rInfo);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="src_2_se_race_server_push_8inl" kindref="compound">SeRaceServerPush.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="src_2_se_race_server_process_8inl" kindref="compound">SeRaceServerProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a830024286ee919364c182cd9c61b4e7c" kindref="member">PushMsg</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1ac030266656fd64ac5a06249bf755cb67" kindref="member">SetThreadIndex</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iThreadIndex);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1ace1c37675c9bc256b137d4860f57888f" kindref="member">UpdateRSCMsg</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_race_service_1a0e549baec6fe2d1d67a662387cfaf4a0" kindref="member">DoWork</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65" refid="class_race_service_1a027a184ce91e158a6bf94191cd89b585" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_race_service_1a027a184ce91e158a6bf94191cd89b585" kindref="member">m_iThreadIndex</ref>;</highlight></codeline>
+<codeline lineno="66" refid="class_race_service_1a356147840aaf44245466c24527b70296" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_c_performance_timing_mgr" kindref="compound">CPerformanceTimingMgr</ref>*<sp/><ref refid="class_race_service_1a356147840aaf44245466c24527b70296" kindref="member">m_pPerforceMgr</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="class_race_service_1af00d2a26326938722a112510c34a15bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>DWord<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_race_service_1af00d2a26326938722a112510c34a15bf" kindref="member">m_dwTickCount</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>上次检查时间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="class_race_service_1a3276074885c9b608bf372b5b3ac5ec73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>DWord<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_race_service_1a3276074885c9b608bf372b5b3ac5ec73" kindref="member">m_dwCurTime</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>服务器时间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="class_race_service_1ab205ec535d589ee281536eb75fb3fd4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_se_thread_msg_mgr" kindref="compound">SeThreadMsgMgr</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_race_service_1ab205ec535d589ee281536eb75fb3fd4d" kindref="member">m_kThreadMsgMgr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>线程消息管理器</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="class_race_service_1a720cbed3e7892151174e3f6d458901c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_race_service_1a720cbed3e7892151174e3f6d458901c7" kindref="member">m_bStop</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="class_race_service_1aaf6085e0cf3a819b9dc3266bf03f99ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>IRaceLogic*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_race_service_1aaf6085e0cf3a819b9dc3266bf03f99ff" kindref="member">m_pkRaceLogic</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>比赛逻辑</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="class_race_service_1adc8f04bb90042cf896221ea15a1f913c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_se_thread_race_mgr" kindref="compound">SeThreadRaceMgr</ref><sp/><sp/><sp/><sp/><sp/><ref refid="class_race_service_1adc8f04bb90042cf896221ea15a1f913c" kindref="member">m_kRaceMgr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>比赛管理器</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h"/>
+  </compounddef>
+</doxygen>

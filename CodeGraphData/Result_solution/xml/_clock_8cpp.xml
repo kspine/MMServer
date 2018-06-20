@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_clock_8cpp" kind="file">
+    <compoundname>Clock.cpp</compoundname>
+    <includes refid="_clock_8hpp" local="yes">Clock.hpp</includes>
+    <includes local="no">Windows.h</includes>
+    <incdepgraph>
+      <node id="144226">
+        <label>EsLock.h</label>
+      </node>
+      <node id="144229">
+        <label>Windows.h</label>
+      </node>
+      <node id="144224">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/utils/Clock.cpp</label>
+        <link refid="Clock.cpp"/>
+        <childnode refid="144225" relation="include">
+        </childnode>
+        <childnode refid="144229" relation="include">
+        </childnode>
+      </node>
+      <node id="144228">
+        <label>MobaApi.hpp</label>
+        <link refid="_moba_api_8hpp"/>
+      </node>
+      <node id="144227">
+        <label>time.h</label>
+      </node>
+      <node id="144225">
+        <label>Clock.hpp</label>
+        <link refid="_clock_8hpp"/>
+        <childnode refid="144226" relation="include">
+        </childnode>
+        <childnode refid="144227" relation="include">
+        </childnode>
+        <childnode refid="144228" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacemoba">moba</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_clock_8cpp_1a63c7acef5369ac4e5fd5f852ee1720e0" prot="public" static="no">
+        <name>FACTOR</name>
+        <initializer>(0x19db1ded53e8000LL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/utils/Clock.cpp" line="11" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/utils/Clock.cpp" bodystart="11" bodyend="-1"/>
+        <referencedby refid="namespacemoba_1ab5ed7adf6ef466503aaacb5a90bace3e" compoundref="_clock_8cpp" startline="14" endline="24">moba::systime</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_clock_8hpp" kindref="compound">Clock.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WIN32</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">moba</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WIN32</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="namespacemoba_1a82a70a8504bb78d409a890ab5ce360f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="namespacemoba_1a82a70a8504bb78d409a890ab5ce360f5" kindref="member">LONGLONG</ref>;</highlight></codeline>
+<codeline lineno="11" refid="_clock_8cpp_1a63c7acef5369ac4e5fd5f852ee1720e0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FACTOR<sp/>(0x19db1ded53e8000LL)</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="namespacemoba_1a82a70a8504bb78d409a890ab5ce360f5" kindref="member">LONGLONG</ref></highlight></codeline>
+<codeline lineno="14" refid="namespacemoba_1ab5ed7adf6ef466503aaacb5a90bace3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemoba_1ab5ed7adf6ef466503aaacb5a90bace3e" kindref="member">systime</ref>()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LARGE_INTEGER<sp/>x;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILETIME<sp/>ft;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetSystemTimeAsFileTime(&amp;ft);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x.HighPart<sp/>=<sp/>ft.dwHighDateTime;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x.LowPart<sp/>=<sp/>ft.dwLowDateTime;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x.QuadPart<sp/>-=<sp/><ref refid="_clock_8cpp_1a63c7acef5369ac4e5fd5f852ee1720e0" kindref="member">FACTOR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Add<sp/>conversion<sp/>factor<sp/>for<sp/>UNIX<sp/>vs.<sp/>Windows<sp/>base<sp/>time<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x.QuadPart<sp/>/=<sp/>10;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Convert<sp/>to<sp/>microseconds<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x.QuadPart;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classmoba_1_1_clock_1a3725ce9a822d24eabae6203a68be1224" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classmoba_1_1_clock_1a3725ce9a822d24eabae6203a68be1224" kindref="member">Clock::gettimeofday</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmoba_1_1timeval" kindref="compound">moba::timeval</ref><sp/>*tv,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>timezone<sp/>*tz)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>tzflag;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacemoba_1a82a70a8504bb78d409a890ab5ce360f5" kindref="member">LONGLONG</ref><sp/>now<sp/>=<sp/><ref refid="namespacemoba_1ab5ed7adf6ef466503aaacb5a90bace3e" kindref="member">systime</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tv-&gt;<ref refid="structmoba_1_1timeval_1ae739cb064f00cf6b8508a8312a75ee38" kindref="member">tv_sec</ref><sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">time_t</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(now<sp/>/<sp/>1000000);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tv-&gt;<ref refid="structmoba_1_1timeval_1ae1d87dd0f7faafde7625cddb7487601e" kindref="member">tv_usec</ref><sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">long</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(now<sp/>%<sp/>1000000);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classmoba_1_1_clock_1a017cd8834ba92e5da56f02db7bb00038" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmoba_1_1_clock_1a017cd8834ba92e5da56f02db7bb00038" kindref="member">Clock::Clock</ref>()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WIN32</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmoba_1_1_clock_1ae75d61a29593358716a12d987c93ec9f" kindref="member">m_millisecond</ref><sp/>=<sp/><ref refid="classmoba_1_1_clock_1a20d2fc4ff30d84f6c72f39c7adb02156" kindref="member">m_tailMillisecond</ref><sp/>=<sp/>timeGetTime();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmoba_1_1_clock_1abdcf1ad6efdc68c7903d9f5023b827de" kindref="member">setTime</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classmoba_1_1_clock_1abdcf1ad6efdc68c7903d9f5023b827de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classmoba_1_1_clock_1abdcf1ad6efdc68c7903d9f5023b827de" kindref="member">Clock::setTime</ref>()</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Es::AutoLock<sp/>guard(&amp;<ref refid="classmoba_1_1_clock_1a791ff006385f13b456188ec4c32eb36f" kindref="member">m_mutex</ref>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//更新时间戳</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WIN32</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmoba_1_1_clock_1a3725ce9a822d24eabae6203a68be1224" kindref="member">gettimeofday</ref>(&amp;<ref refid="classmoba_1_1_clock_1aa3cd5d61c906c0053cbffffdaa8d3079" kindref="member">m_current</ref>,<sp/>NULL);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structmoba_1_1timeval" kindref="compound">::timeval</ref><sp/>current;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmoba_1_1_clock_1a3725ce9a822d24eabae6203a68be1224" kindref="member">gettimeofday</ref>(&amp;current,<sp/>NULL);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmoba_1_1_clock_1aa3cd5d61c906c0053cbffffdaa8d3079" kindref="member">m_current</ref>.<ref refid="structmoba_1_1timeval_1ae739cb064f00cf6b8508a8312a75ee38" kindref="member">tv_sec</ref><sp/>=<sp/>current.<ref refid="structmoba_1_1timeval_1ae739cb064f00cf6b8508a8312a75ee38" kindref="member">tv_sec</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmoba_1_1_clock_1aa3cd5d61c906c0053cbffffdaa8d3079" kindref="member">m_current</ref>.<ref refid="structmoba_1_1timeval_1ae1d87dd0f7faafde7625cddb7487601e" kindref="member">tv_usec</ref><sp/>=<sp/>current.<ref refid="structmoba_1_1timeval_1ae1d87dd0f7faafde7625cddb7487601e" kindref="member">tv_usec</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WIN32</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_te_m_d5_check_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>now<sp/>=<sp/>timeGetTime();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_te_m_d5_check_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref><sp/>up<sp/>=<sp/>now<sp/>-<sp/><ref refid="classmoba_1_1_clock_1a20d2fc4ff30d84f6c72f39c7adb02156" kindref="member">m_tailMillisecond</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_tailMillisecond<sp/>=<sp/>now;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmoba_1_1_clock_1ae75d61a29593358716a12d987c93ec9f" kindref="member">m_millisecond</ref><sp/>+=<sp/>up;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmoba_1_1_clock_1a1435a603481b92103ea8fde4f25fd36c" kindref="member">m_second</ref><sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="_te_m_d5_check_8h_1ad342ac907eb044443153a22f964bf0af" kindref="member">DWORD</ref></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="classmoba_1_1_clock_1ae75d61a29593358716a12d987c93ec9f" kindref="member">m_millisecond</ref><sp/>/<sp/>1000);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timespec<sp/>ts;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clock_gettime(CLOCK_MONOTONIC,<sp/>&amp;ts);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmoba_1_1_clock_1a1435a603481b92103ea8fde4f25fd36c" kindref="member">m_second</ref><sp/>=<sp/>ts.tv_sec;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmoba_1_1_clock_1ae75d61a29593358716a12d987c93ec9f" kindref="member">m_millisecond</ref><sp/>=<sp/>(<ref refid="namespacemoba_1a2ea02b3d6b0984234e33fb9fe56fbdc5" kindref="member">TimeType</ref>)ts.tv_sec<sp/>*<sp/>1000<sp/>+<sp/>ts.tv_nsec<sp/>/<sp/>1000000;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">#endif</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmoba_1_1_clock_1a71109e63c9b6245180f404c876ac4b6a" kindref="member">m_currentMS</ref><sp/>=<sp/><ref refid="classmoba_1_1_clock_1aa3cd5d61c906c0053cbffffdaa8d3079" kindref="member">m_current</ref>.<ref refid="structmoba_1_1timeval_1ae739cb064f00cf6b8508a8312a75ee38" kindref="member">tv_sec</ref><sp/>*<sp/>1000;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classmoba_1_1_clock_1a71109e63c9b6245180f404c876ac4b6a" kindref="member">m_currentMS</ref><sp/>+=<sp/><ref refid="classmoba_1_1_clock_1aa3cd5d61c906c0053cbffffdaa8d3079" kindref="member">m_current</ref>.<ref refid="structmoba_1_1timeval_1ae1d87dd0f7faafde7625cddb7487601e" kindref="member">tv_usec</ref><sp/>/<sp/>1000;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="classmoba_1_1_clock_1a27565664c64aff707c93a15bcccfdbeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>time_t<sp/><ref refid="classmoba_1_1_clock_1a27565664c64aff707c93a15bcccfdbeb" kindref="member">Clock::getTime</ref>()</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Es::AutoLock<sp/>guard(&amp;<ref refid="classmoba_1_1_clock_1a791ff006385f13b456188ec4c32eb36f" kindref="member">m_mutex</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmoba_1_1_clock_1aa3cd5d61c906c0053cbffffdaa8d3079" kindref="member">m_current</ref>.<ref refid="structmoba_1_1timeval_1ae739cb064f00cf6b8508a8312a75ee38" kindref="member">tv_sec</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classmoba_1_1_clock_1acd5d1c239b2d555b6cb6c6f10a46f057" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structmoba_1_1timeval" kindref="compound">moba::timeval</ref><sp/><ref refid="classmoba_1_1_clock_1acd5d1c239b2d555b6cb6c6f10a46f057" kindref="member">Clock::getTimeVal</ref>()</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Es::AutoLock<sp/>guard(&amp;<ref refid="classmoba_1_1_clock_1a791ff006385f13b456188ec4c32eb36f" kindref="member">m_mutex</ref>);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmoba_1_1_clock_1aa3cd5d61c906c0053cbffffdaa8d3079" kindref="member">m_current</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classmoba_1_1_clock_1a6572704b32d3150ec5d545fa747ff95a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classmoba_1_1_clock_1a6572704b32d3150ec5d545fa747ff95a" kindref="member">Clock::getSeconds</ref>()</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Es::AutoLock<sp/>guard(&amp;<ref refid="classmoba_1_1_clock_1a791ff006385f13b456188ec4c32eb36f" kindref="member">m_mutex</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmoba_1_1_clock_1a1435a603481b92103ea8fde4f25fd36c" kindref="member">m_second</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classmoba_1_1_clock_1a405b5bd09dad4e81b74ddbd4ed00dc32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacemoba_1a2ea02b3d6b0984234e33fb9fe56fbdc5" kindref="member">TimeType</ref><sp/><ref refid="classmoba_1_1_clock_1a405b5bd09dad4e81b74ddbd4ed00dc32" kindref="member">Clock::getMilliSeconds</ref>()</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Es::AutoLock<sp/>guard(&amp;<ref refid="classmoba_1_1_clock_1a791ff006385f13b456188ec4c32eb36f" kindref="member">m_mutex</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmoba_1_1_clock_1ae75d61a29593358716a12d987c93ec9f" kindref="member">m_millisecond</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="classmoba_1_1_clock_1acf5e39ca714dda37ddbe8bc1b8c335e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespacemoba_1a2ea02b3d6b0984234e33fb9fe56fbdc5" kindref="member">TimeType</ref><sp/><ref refid="classmoba_1_1_clock_1acf5e39ca714dda37ddbe8bc1b8c335e8" kindref="member">Clock::getTimeMS</ref>()</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Es::AutoLock<sp/>guard(&amp;<ref refid="classmoba_1_1_clock_1a791ff006385f13b456188ec4c32eb36f" kindref="member">m_mutex</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classmoba_1_1_clock_1a71109e63c9b6245180f404c876ac4b6a" kindref="member">m_currentMS</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classmoba_1_1_clock_1a029b72699ef2168d7429c114bfa856dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classmoba_1_1_clock" kindref="compound">Clock</ref><sp/>&amp;<sp/><ref refid="classmoba_1_1_clock_1a029b72699ef2168d7429c114bfa856dd" kindref="member">Clock::getInstance</ref>()</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classmoba_1_1_clock" kindref="compound">Clock</ref><sp/>clock;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>clock;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/utils/Clock.cpp"/>
+  </compounddef>
+</doxygen>

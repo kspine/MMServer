@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_se_r_b_l_process_8inc" kind="file">
+    <compoundname>SeRBLProcess.inc</compoundname>
+    <includedby refid="_src_2_se_r_b_l_process_8cpp" local="yes">WorldServer/Src/SeRBLProcess.cpp</includedby>
+    <includedby refid="src_2_se_r_b_l_process_8cpp" local="yes">WorldServer/src/SeRBLProcess.cpp</includedby>
+    <invincdepgraph>
+      <node id="128042">
+        <label>WorldServer/src/SeRBLProcess.cpp</label>
+        <link refid="src_2_se_r_b_l_process_8cpp"/>
+      </node>
+      <node id="128041">
+        <label>WorldServer/Src/SeRBLProcess.cpp</label>
+        <link refid="_src_2_se_r_b_l_process_8cpp"/>
+      </node>
+      <node id="128040">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeRBLProcess.inc</label>
+        <link refid="SeRBLProcess.inc"/>
+        <childnode refid="128041" relation="include">
+        </childnode>
+        <childnode refid="128042" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_r_b_l_process_8inl_1a523afd70825fb51c2456121b5aa8dafd" kindref="member">SERVER::ProcessRBLData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkSender)</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_c_m_d" kindref="compound">SeCMD</ref>))</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_c_m_d" kindref="compound">SeCMD</ref>*<sp/>pkCmd<sp/>=<sp/>(<ref refid="struct_se_c_m_d" kindref="compound">SeCMD</ref>*)pkData;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pkCmd-&gt;<ref refid="struct_se_c_m_d_1a2efa122a60040d09cfca777f9155394c" kindref="member">wCmd</ref><sp/>&lt;<sp/><ref refid="_se_server_define_8h_1a5ef39269c62c879ff0b5584312980bc2a075e79f65d81ae8ed07cebb4768666af" kindref="member">STCB_RS_BLS</ref><sp/>||<sp/>pkCmd-&gt;<ref refid="struct_se_c_m_d_1a2efa122a60040d09cfca777f9155394c" kindref="member">wCmd</ref><sp/>&gt;<sp/><ref refid="_se_server_define_8h_1a5ef39269c62c879ff0b5584312980bc2a075e79f65d81ae8ed07cebb4768666af" kindref="member">STCB_RS_BLS</ref><sp/>+<sp/><ref refid="_se_server_define_8h_1a7e57d75ea3d17743d491908f4fb5cc93" kindref="member">STCB_INTERVAL</ref>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="_se_r_b_l_process_8inl_1a54e6c3c3be835c60e2f4d8c6e4b320fe" kindref="member">PreProcessRBL</ref>(pkData,<sp/>iSize,<sp/>pkSender))</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//根据命令头做各种处理</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(pkCmd-&gt;<ref refid="struct_se_c_m_d_1a2efa122a60040d09cfca777f9155394c" kindref="member">wCmd</ref>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___r_s___to___b_l_s_8h_1a337cd60f6fc0e63a5c5aeb6c765f808ea1343ed8d726fb593dd85ec96f9e13833" kindref="member">CMD_RBL_UPDATESCORE</ref>:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_r_b_l___update_score" kindref="compound">SeRBL_UpdateScore</ref>))</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_r_b_l_process_8inl_1af16f6c5b85a53d31a8281032db65c053" kindref="member">ProcessRBL_UpdateScore</ref>((<ref refid="struct_se_r_b_l___update_score" kindref="compound">SeRBL_UpdateScore</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___r_s___to___b_l_s_8h_1a337cd60f6fc0e63a5c5aeb6c765f808ea57e6e18dde6007bf8d29377fdf0f8c11" kindref="member">CMD_RBL_AWARDITEMNTF</ref>:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)offsetof(<ref refid="struct_se_r_b_l___award_item_ntf" kindref="compound">SeRBL_AwardItemNtf</ref>,<sp/>awards))</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)offsetof(<ref refid="struct_se_r_b_l___award_item_ntf" kindref="compound">SeRBL_AwardItemNtf</ref>,<sp/>awards)<sp/>+<sp/>((<ref refid="struct_se_r_b_l___award_item_ntf" kindref="compound">SeRBL_AwardItemNtf</ref>*)pkData)-&gt;iNum<sp/>*<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_award_item" kindref="compound">SeAwardItem</ref>))</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_r_b_l_process_8inl_1a407982104509ca9c76b2f9df51abce7a" kindref="member">ProcessRBL_AwardItemNtf</ref>((<ref refid="struct_se_r_b_l___award_item_ntf" kindref="compound">SeRBL_AwardItemNtf</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___r_s___to___b_l_s_8h_1a337cd60f6fc0e63a5c5aeb6c765f808eae164e8bdaf20e1416e7e14bf6cdcc232" kindref="member">CMD_RBL_DECRESPAWNITEMNTF</ref>:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_r_b_l___dec_respawn_item_ntf" kindref="compound">SeRBL_DecRespawnItemNtf</ref>))</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_r_b_l_process_8inl_1a26441d3c439507490f5deb545bedf8ac" kindref="member">ProcessRBL_DecRespawnItemNtf</ref>((<ref refid="struct_se_r_b_l___dec_respawn_item_ntf" kindref="compound">SeRBL_DecRespawnItemNtf</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___r_s___to___b_l_s_8h_1a337cd60f6fc0e63a5c5aeb6c765f808ea184dea5f5b5711b0672669abb31b3475" kindref="member">CMD_RBL_SETEQUIPSETNTF</ref>:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_r_b_l___set_equip_set_ntf" kindref="compound">SeRBL_SetEquipSetNtf</ref>))</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_r_b_l_process_8inl_1ab357c81d47e40b41ed24c05ba55d3234" kindref="member">ProcessRBL_SetEquipSetNtf</ref>((<ref refid="struct_se_r_b_l___set_equip_set_ntf" kindref="compound">SeRBL_SetEquipSetNtf</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___r_s___to___b_l_s_8h_1a337cd60f6fc0e63a5c5aeb6c765f808ea89fca43c710f9fc6c70c27ee339c96a3" kindref="member">CMD_RBL_SETRACEMAPHERONTF</ref>:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_r_b_l___set_race_map_hero_ntf" kindref="compound">SeRBL_SetRaceMapHeroNtf</ref>))</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_r_b_l_process_8inl_1af35c440eb1f650b7c68178396b712a7a" kindref="member">ProcessRBL_SetRaceMapHeroNtf</ref>((<ref refid="struct_se_r_b_l___set_race_map_hero_ntf" kindref="compound">SeRBL_SetRaceMapHeroNtf</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___r_s___to___b_l_s_8h_1a337cd60f6fc0e63a5c5aeb6c765f808eae2e1bd533ef6a14b84377918a4b99f80" kindref="member">CMD_RBL_SETAVATARNTF</ref>:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_r_b_l___set_avatar_ntf" kindref="compound">SeRBL_SetAvatarNtf</ref>))</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_r_b_l_process_8inl_1a172e1caf558c7cb44a3dc16514deb1a0" kindref="member">ProcessRBL_SetAvatarNtf</ref>((<ref refid="struct_se_r_b_l___set_avatar_ntf" kindref="compound">SeRBL_SetAvatarNtf</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___r_s___to___b_l_s_8h_1a337cd60f6fc0e63a5c5aeb6c765f808ea9e4584b409ba34031d049dbf9a4e0fae" kindref="member">CMD_RBL_SELECTHEROREQ</ref>:</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_r_b_l___select_hero_req" kindref="compound">SeRBL_SelectHeroReq</ref>))</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_r_b_l_process_8inl_1af79978eba723607715b6dc97a7ac55cd" kindref="member">ProcessRBL_SelectHeroReq</ref>((<ref refid="struct_se_r_b_l___select_hero_req" kindref="compound">SeRBL_SelectHeroReq</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___r_s___to___b_l_s_8h_1a337cd60f6fc0e63a5c5aeb6c765f808ea9f50de349259ebd218ba85cadbf962ce" kindref="member">CMD_RBL_USERRACEMAPNTF</ref>:</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_r_b_l___user_race_map_ntf" kindref="compound">SeRBL_UserRaceMapNtf</ref>))</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_r_b_l_process_8inl_1acc1da873d3b6d3071ed885c98732dab3" kindref="member">ProcessRBL_UserRaceMapNtf</ref>((<ref refid="struct_se_r_b_l___user_race_map_ntf" kindref="compound">SeRBL_UserRaceMapNtf</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___r_s___to___b_l_s_8h_1a337cd60f6fc0e63a5c5aeb6c765f808eae3e88548d76174578bf9566005dc2859" kindref="member">CMD_RBL_RACEENDARENABASEINFOSYNC</ref>:</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_r_b_l___race_end_arena_base_info_sync" kindref="compound">SeRBL_RaceEndArenaBaseInfoSync</ref>))</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_r_b_l_process_8inl_1aabeba4e55f5b94bf3ddd50a1cf718a3e" kindref="member">ProcessRBL_RaceEndArenaBaseInfoSync</ref>((<ref refid="struct_se_r_b_l___race_end_arena_base_info_sync" kindref="compound">SeRBL_RaceEndArenaBaseInfoSync</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeRBLProcess.inc"/>
+  </compounddef>
+</doxygen>

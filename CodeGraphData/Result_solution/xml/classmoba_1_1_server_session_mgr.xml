@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classmoba_1_1_server_session_mgr" kind="class" prot="public">
+    <compoundname>moba::ServerSessionMgr</compoundname>
+    <includes refid="_server_session_mgr_8h" local="no">ServerSessionMgr.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmoba_1_1_server_session_mgr_1a9662655d80ce58f10fe588739c0f1e44" prot="private" static="no" mutable="no">
+        <type>Es::NormalLock</type>
+        <definition>Es::NormalLock moba::ServerSessionMgr::m_mutex</definition>
+        <argsstring></argsstring>
+        <name>m_mutex</name>
+        <briefdescription>
+<para>Ëø. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" line="45" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="classmoba_1_1_server_session_mgr_1abe916376c07bef0b75157aaa7f5764aa" compoundref="_server_session_mgr_8cpp" startline="101" endline="109">broadcast</referencedby>
+        <referencedby refid="classmoba_1_1_server_session_mgr_1a39198f291e1e4c7b90da8fd2efbf1581" compoundref="_server_session_mgr_8cpp" startline="36" endline="40">checkServer</referencedby>
+        <referencedby refid="classmoba_1_1_server_session_mgr_1aa4ad2a436182079b99c65b99f7fd08e9" compoundref="_server_session_mgr_8cpp" startline="18" endline="22">createServer</referencedby>
+        <referencedby refid="classmoba_1_1_server_session_mgr_1a4b23d8e9f32948a662167e6d299bee67" compoundref="_server_session_mgr_8cpp" startline="24" endline="34">deleteServer</referencedby>
+        <referencedby refid="classmoba_1_1_server_session_mgr_1a218fd5244522e60e2c17652953c5bcd6" compoundref="_server_session_mgr_8cpp" startline="43" endline="54">getServerHSock</referencedby>
+        <referencedby refid="classmoba_1_1_server_session_mgr_1ab491aa714527a6eb4399ca1f5766281b" compoundref="_server_session_mgr_8cpp" startline="68" endline="94">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmoba_1_1_server_session_mgr_1a926c29203147854a7e90fc4858ad67fb" prot="private" static="no" mutable="no">
+        <type>TeNetMgr *</type>
+        <definition>TeNetMgr* moba::ServerSessionMgr::m_netMgr</definition>
+        <argsstring></argsstring>
+        <name>m_netMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" line="46" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="classmoba_1_1_server_session_mgr_1abe916376c07bef0b75157aaa7f5764aa" compoundref="_server_session_mgr_8cpp" startline="101" endline="109">broadcast</referencedby>
+        <referencedby refid="classmoba_1_1_server_session_mgr_1afe74b10561a74ea894525811da93d6dd" compoundref="_server_session_mgr_8cpp" startline="96" endline="99">initialize</referencedby>
+        <referencedby refid="classmoba_1_1_server_session_mgr_1a0767a52a7d0c16f5820e42cdb06db19f" compoundref="_server_session_mgr_8cpp" startline="9" endline="12">ServerSessionMgr</referencedby>
+        <referencedby refid="classmoba_1_1_server_session_mgr_1ab491aa714527a6eb4399ca1f5766281b" compoundref="_server_session_mgr_8cpp" startline="68" endline="94">update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classmoba_1_1_server_session_mgr_1a84cc4f23a21b2bb2fb1aee428210a052" prot="private" static="no" mutable="no">
+        <type>std::map&lt; DWord, <ref refid="structmoba_1_1_se_connect" kindref="compound">SeConnect</ref> * &gt;</type>
+        <definition>std::map&lt;DWord, SeConnect*&gt; moba::ServerSessionMgr::m_servers</definition>
+        <argsstring></argsstring>
+        <name>m_servers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" line="47" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="classmoba_1_1_server_session_mgr_1abe916376c07bef0b75157aaa7f5764aa" compoundref="_server_session_mgr_8cpp" startline="101" endline="109">broadcast</referencedby>
+        <referencedby refid="classmoba_1_1_server_session_mgr_1a39198f291e1e4c7b90da8fd2efbf1581" compoundref="_server_session_mgr_8cpp" startline="36" endline="40">checkServer</referencedby>
+        <referencedby refid="classmoba_1_1_server_session_mgr_1aa4ad2a436182079b99c65b99f7fd08e9" compoundref="_server_session_mgr_8cpp" startline="18" endline="22">createServer</referencedby>
+        <referencedby refid="classmoba_1_1_server_session_mgr_1a4b23d8e9f32948a662167e6d299bee67" compoundref="_server_session_mgr_8cpp" startline="24" endline="34">deleteServer</referencedby>
+        <referencedby refid="classmoba_1_1_server_session_mgr_1a218fd5244522e60e2c17652953c5bcd6" compoundref="_server_session_mgr_8cpp" startline="43" endline="54">getServerHSock</referencedby>
+        <referencedby refid="classmoba_1_1_server_session_mgr_1ab491aa714527a6eb4399ca1f5766281b" compoundref="_server_session_mgr_8cpp" startline="68" endline="94">update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmoba_1_1_server_session_mgr_1a0767a52a7d0c16f5820e42cdb06db19f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>moba::ServerSessionMgr::ServerSessionMgr</definition>
+        <argsstring>()</argsstring>
+        <name>ServerSessionMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" line="29" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.cpp" bodystart="9" bodyend="12"/>
+        <references refid="classmoba_1_1_server_session_mgr_1a926c29203147854a7e90fc4858ad67fb" compoundref="_server_session_mgr_8h" startline="46">m_netMgr</references>
+      </memberdef>
+      <memberdef kind="function" id="classmoba_1_1_server_session_mgr_1ad9bc4ed2eeb6aeb3918f7f2649c6e3cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>moba::ServerSessionMgr::~ServerSessionMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~ServerSessionMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" line="30" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classmoba_1_1_server_session_mgr_1afe74b10561a74ea894525811da93d6dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void moba::ServerSessionMgr::initialize</definition>
+        <argsstring>(TeNetMgr &amp;netMgr)</argsstring>
+        <name>initialize</name>
+        <param>
+          <type>TeNetMgr &amp;</type>
+          <declname>netMgr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" line="33" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.cpp" bodystart="96" bodyend="99"/>
+        <references refid="classmoba_1_1_server_session_mgr_1a926c29203147854a7e90fc4858ad67fb" compoundref="_server_session_mgr_8h" startline="46">m_netMgr</references>
+        <referencedby refid="class_nexus_server_1a1d525ee77da84c486209bfb55548e71a" compoundref="_nexus_server_8cpp" startline="386" endline="409">NexusServer::InitializeNet</referencedby>
+        <referencedby refid="class_world_server_1aec2222be0677e4316736cf4e03763ee4" compoundref="_src_2_world_server_8cpp" startline="292" endline="314">WorldServer::InitializeNet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmoba_1_1_server_session_mgr_1aa4ad2a436182079b99c65b99f7fd08e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void moba::ServerSessionMgr::createServer</definition>
+        <argsstring>(SeConnect &amp;pkConnect)</argsstring>
+        <name>createServer</name>
+        <param>
+          <type><ref refid="structmoba_1_1_se_connect" kindref="compound">SeConnect</ref> &amp;</type>
+          <declname>pkConnect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" line="34" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.cpp" bodystart="18" bodyend="22"/>
+        <references refid="structmoba_1_1_se_connect_1a0a240a14e6f8e2f8a5aedb6b1d01b88e" compoundref="_server_session_mgr_8h" startline="22">moba::SeConnect::dwServerID</references>
+        <references refid="classmoba_1_1_server_session_mgr_1a9662655d80ce58f10fe588739c0f1e44" compoundref="_server_session_mgr_8h" startline="45">m_mutex</references>
+        <references refid="classmoba_1_1_server_session_mgr_1a84cc4f23a21b2bb2fb1aee428210a052" compoundref="_server_session_mgr_8h" startline="47">m_servers</references>
+        <referencedby refid="class_nexus_server_1a4394185c267ea24eee7d55669ea40bbe" compoundref="_se_m_n_process_8cpp" startline="13" endline="34">NexusServer::ProcessMN_Register</referencedby>
+        <referencedby refid="class_world_server_1a36e446bb19e1603c9502eea12bbaa2fb" compoundref="_src_2_se_m_w_process_8cpp" startline="12" endline="43">WorldServer::ProcessMW_Register</referencedby>
+        <referencedby refid="class_world_server_1aa5ddee158677283a707eb4148d7666c4" compoundref="_src_2_se_n_w_process_8cpp" startline="13" endline="43">WorldServer::ProcessNW_Register</referencedby>
+        <referencedby refid="class_nexus_server_1a517a11fbd5596c4d010cd86ed574fb67" compoundref="_se_r_n_process_8cpp" startline="13" endline="45">NexusServer::ProcessRN_Register</referencedby>
+        <referencedby refid="class_world_server_1af0f5d753bfc10241b1f18fb5ce5a145f" compoundref="_src_2_se_r_w_process_8cpp" startline="13" endline="44">WorldServer::ProcessRW_Register</referencedby>
+        <referencedby refid="class_nexus_server_1a879ab33226780ee6565fb3ae7e71faec" compoundref="_se_t_n_process_8cpp" startline="17" endline="38">NexusServer::ProcessTN_Register</referencedby>
+        <referencedby refid="class_world_server_1a45693227a5db854d18b639f6377a43b2" compoundref="_src_2_se_t_w_process_8cpp" startline="20" endline="96">WorldServer::ProcessTW_Register</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmoba_1_1_server_session_mgr_1a4b23d8e9f32948a662167e6d299bee67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void moba::ServerSessionMgr::deleteServer</definition>
+        <argsstring>(DWord dwServerID)</argsstring>
+        <name>deleteServer</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwServerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" line="35" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.cpp" bodystart="24" bodyend="34"/>
+        <references refid="classmoba_1_1_server_session_mgr_1a9662655d80ce58f10fe588739c0f1e44" compoundref="_server_session_mgr_8h" startline="45">m_mutex</references>
+        <references refid="classmoba_1_1_server_session_mgr_1a84cc4f23a21b2bb2fb1aee428210a052" compoundref="_server_session_mgr_8h" startline="47">m_servers</references>
+        <referencedby refid="class_nexus_server_1a76c854987531fedf75cca110db6f1e94" compoundref="_nexus_server_8cpp" startline="229" endline="275">NexusServer::OnNetDisconnect</referencedby>
+        <referencedby refid="class_world_server_1a683b50ed480b702c766f5b629a23498d" compoundref="_src_2_world_server_8cpp" startline="929" endline="989">WorldServer::OnNetDisconnect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmoba_1_1_server_session_mgr_1a39198f291e1e4c7b90da8fd2efbf1581" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool moba::ServerSessionMgr::checkServer</definition>
+        <argsstring>(DWord dwServerID)</argsstring>
+        <name>checkServer</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwServerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" line="36" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.cpp" bodystart="36" bodyend="40"/>
+        <references refid="classmoba_1_1_server_session_mgr_1a9662655d80ce58f10fe588739c0f1e44" compoundref="_server_session_mgr_8h" startline="45">m_mutex</references>
+        <references refid="classmoba_1_1_server_session_mgr_1a84cc4f23a21b2bb2fb1aee428210a052" compoundref="_server_session_mgr_8h" startline="47">m_servers</references>
+        <referencedby refid="class_nexus_server_1a4394185c267ea24eee7d55669ea40bbe" compoundref="_se_m_n_process_8cpp" startline="13" endline="34">NexusServer::ProcessMN_Register</referencedby>
+        <referencedby refid="class_world_server_1a36e446bb19e1603c9502eea12bbaa2fb" compoundref="_src_2_se_m_w_process_8cpp" startline="12" endline="43">WorldServer::ProcessMW_Register</referencedby>
+        <referencedby refid="class_world_server_1aa5ddee158677283a707eb4148d7666c4" compoundref="_src_2_se_n_w_process_8cpp" startline="13" endline="43">WorldServer::ProcessNW_Register</referencedby>
+        <referencedby refid="class_nexus_server_1a517a11fbd5596c4d010cd86ed574fb67" compoundref="_se_r_n_process_8cpp" startline="13" endline="45">NexusServer::ProcessRN_Register</referencedby>
+        <referencedby refid="class_world_server_1af0f5d753bfc10241b1f18fb5ce5a145f" compoundref="_src_2_se_r_w_process_8cpp" startline="13" endline="44">WorldServer::ProcessRW_Register</referencedby>
+        <referencedby refid="class_nexus_server_1a879ab33226780ee6565fb3ae7e71faec" compoundref="_se_t_n_process_8cpp" startline="17" endline="38">NexusServer::ProcessTN_Register</referencedby>
+        <referencedby refid="class_world_server_1a45693227a5db854d18b639f6377a43b2" compoundref="_src_2_se_t_w_process_8cpp" startline="20" endline="96">WorldServer::ProcessTW_Register</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmoba_1_1_server_session_mgr_1a218fd5244522e60e2c17652953c5bcd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool moba::ServerSessionMgr::getServerHSock</definition>
+        <argsstring>(DWord dwServerID, HSock &amp;kSock)</argsstring>
+        <name>getServerHSock</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwServerID</declname>
+        </param>
+        <param>
+          <type>HSock &amp;</type>
+          <declname>kSock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" line="37" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.cpp" bodystart="43" bodyend="54"/>
+        <references refid="classmoba_1_1_server_session_mgr_1a9662655d80ce58f10fe588739c0f1e44" compoundref="_server_session_mgr_8h" startline="45">m_mutex</references>
+        <references refid="classmoba_1_1_server_session_mgr_1a84cc4f23a21b2bb2fb1aee428210a052" compoundref="_server_session_mgr_8h" startline="47">m_servers</references>
+        <referencedby refid="class_block_server_1ad31ba2f46e7a13af9a6e2ea956000d50" compoundref="_src_2_se_b_l_m_send_8cpp" startline="9" endline="18">BlockServer::SendBLMData</referencedby>
+        <referencedby refid="class_block_server_1a53a439d917ede8f3d5a22ebc97314bf9" compoundref="_src_2_se_b_l_r_send_8cpp" startline="9" endline="18">BlockServer::SendBLRData</referencedby>
+        <referencedby refid="class_block_server_1ab85ed4a2f3ac3c07e4d3f93229373b59" compoundref="_src_2_se_b_l_t_send_8cpp" startline="9" endline="18">BlockServer::SendBLTData</referencedby>
+        <referencedby refid="class_world_server_1a54c57688a1595bdd99f4b5ab6d593100" compoundref="_src_2_se_w_n_send_8cpp" startline="8" endline="35">WorldServer::SendWNData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmoba_1_1_server_session_mgr_1af6f32915bb35e38b350cde1b355f498b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool moba::ServerSessionMgr::getServerHSock</definition>
+        <argsstring>(HSock &amp;kSock)</argsstring>
+        <name>getServerHSock</name>
+        <param>
+          <type>HSock &amp;</type>
+          <declname>kSock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" line="39" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.cpp" bodystart="56" bodyend="65"/>
+        <references refid="classmoba_1_1_server_session_mgr_1a9662655d80ce58f10fe588739c0f1e44" compoundref="_server_session_mgr_8h" startline="45">m_mutex</references>
+        <references refid="classmoba_1_1_server_session_mgr_1a84cc4f23a21b2bb2fb1aee428210a052" compoundref="_server_session_mgr_8h" startline="47">m_servers</references>
+      </memberdef>
+      <memberdef kind="function" id="classmoba_1_1_server_session_mgr_1ab491aa714527a6eb4399ca1f5766281b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void moba::ServerSessionMgr::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" line="41" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.cpp" bodystart="68" bodyend="94"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="namespacemoba_1a6f3c6ad4e424858e81ea9de39b8c35bd" compoundref="_server_session_mgr_8cpp" startline="67">moba::DELAY_MAX_TIME</references>
+        <references refid="structmoba_1_1_se_connect_1a0a240a14e6f8e2f8a5aedb6b1d01b88e" compoundref="_server_session_mgr_8h" startline="22">moba::SeConnect::dwServerID</references>
+        <references refid="structmoba_1_1_se_connect_1a60eda066d66070e0336564c0dba4e08f" compoundref="_server_session_mgr_8h" startline="21">moba::SeConnect::eIndex</references>
+        <references refid="_se_tool_8h_1ada81d4ae5d39c42af0a02b45f4a6f715" compoundref="_se_tool_8h" startline="66">GetID2Str</references>
+        <references refid="classmoba_1_1_clock_1a029b72699ef2168d7429c114bfa856dd" compoundref="_clock_8cpp" startline="105" endline="109">moba::Clock::getInstance</references>
+        <references refid="classmoba_1_1_clock_1a405b5bd09dad4e81b74ddbd4ed00dc32" compoundref="_clock_8cpp" startline="93" endline="97">moba::Clock::getMilliSeconds</references>
+        <references refid="_se_server_tool_8cpp_1a4d452970e4bf219a5058ab2ad8b0e2c4" compoundref="_se_server_tool_8cpp" startline="107" endline="140">GetServerNameByIndex</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="structmoba_1_1_se_connect_1a4f9b9fe60b4a7d0742d28f9584f07425" compoundref="_server_session_mgr_8h" startline="20">moba::SeConnect::kNetAddr</references>
+        <references refid="structmoba_1_1_se_connect_1a3e15be5bc74c219a97147729d105f50e" compoundref="_server_session_mgr_8h" startline="19">moba::SeConnect::kSock</references>
+        <references refid="classmoba_1_1_server_session_mgr_1a9662655d80ce58f10fe588739c0f1e44" compoundref="_server_session_mgr_8h" startline="45">m_mutex</references>
+        <references refid="classmoba_1_1_server_session_mgr_1a926c29203147854a7e90fc4858ad67fb" compoundref="_server_session_mgr_8h" startline="46">m_netMgr</references>
+        <references refid="classmoba_1_1_server_session_mgr_1a84cc4f23a21b2bb2fb1aee428210a052" compoundref="_server_session_mgr_8h" startline="47">m_servers</references>
+        <references refid="structmoba_1_1_se_connect_1ab7ea8bc1b7b3ed9f989870d3449dbb4b" compoundref="_server_session_mgr_8h" startline="23">moba::SeConnect::recvTime</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <referencedby refid="class_world_server_1ae9253ba0018a943c9ed75a12af533e86" compoundref="_src_2_world_server_8cpp" startline="594" endline="691">WorldServer::Update</referencedby>
+        <referencedby refid="class_nexus_server_1a518930647c3028e8174b1088996d42c1" compoundref="_nexus_server_8cpp" startline="421" endline="451">NexusServer::UpdateConnect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classmoba_1_1_server_session_mgr_1abe916376c07bef0b75157aaa7f5764aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void moba::ServerSessionMgr::broadcast</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>broadcast</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" line="43" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.cpp" bodystart="101" bodyend="109"/>
+        <references refid="structmoba_1_1_se_connect_1a3e15be5bc74c219a97147729d105f50e" compoundref="_server_session_mgr_8h" startline="19">moba::SeConnect::kSock</references>
+        <references refid="classmoba_1_1_server_session_mgr_1a9662655d80ce58f10fe588739c0f1e44" compoundref="_server_session_mgr_8h" startline="45">m_mutex</references>
+        <references refid="classmoba_1_1_server_session_mgr_1a926c29203147854a7e90fc4858ad67fb" compoundref="_server_session_mgr_8h" startline="46">m_netMgr</references>
+        <references refid="classmoba_1_1_server_session_mgr_1a84cc4f23a21b2bb2fb1aee428210a052" compoundref="_server_session_mgr_8h" startline="47">m_servers</references>
+        <referencedby refid="class_nexus_server_1a9eb00e634c20e62316575363b79c4f00" compoundref="_se_n_r_send_8cpp" startline="8" endline="19">NexusServer::SendNRData</referencedby>
+        <referencedby refid="class_nexus_server_1a5e8ebf69025ba5e798046af28a6cb127" compoundref="_se_n_t_send_8cpp" startline="8" endline="19">NexusServer::SendNTData</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6973">
+        <label>std::map&lt; DWord, moba::SeConnect * &gt;</label>
+        <childnode refid="6974" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6972">
+        <label>moba::ServerSessionMgr</label>
+        <link refid="classmoba_1_1_server_session_mgr"/>
+        <childnode refid="6973" relation="usage">
+          <edgelabel>m_servers</edgelabel>
+        </childnode>
+      </node>
+      <node id="6974">
+        <label>moba::SeConnect</label>
+        <link refid="structmoba_1_1_se_connect"/>
+        <childnode refid="6975" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6975">
+        <label>SeNetAddr</label>
+        <link refid="struct_se_net_addr"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" line="27" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/ServerSessionMgr.h" bodystart="26" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classmoba_1_1_server_session_mgr_1abe916376c07bef0b75157aaa7f5764aa" prot="public" virt="non-virtual"><scope>moba::ServerSessionMgr</scope><name>broadcast</name></member>
+      <member refid="classmoba_1_1_server_session_mgr_1a39198f291e1e4c7b90da8fd2efbf1581" prot="public" virt="non-virtual"><scope>moba::ServerSessionMgr</scope><name>checkServer</name></member>
+      <member refid="classmoba_1_1_server_session_mgr_1aa4ad2a436182079b99c65b99f7fd08e9" prot="public" virt="non-virtual"><scope>moba::ServerSessionMgr</scope><name>createServer</name></member>
+      <member refid="classmoba_1_1_server_session_mgr_1a4b23d8e9f32948a662167e6d299bee67" prot="public" virt="non-virtual"><scope>moba::ServerSessionMgr</scope><name>deleteServer</name></member>
+      <member refid="classmoba_1_1_server_session_mgr_1a218fd5244522e60e2c17652953c5bcd6" prot="public" virt="non-virtual"><scope>moba::ServerSessionMgr</scope><name>getServerHSock</name></member>
+      <member refid="classmoba_1_1_server_session_mgr_1af6f32915bb35e38b350cde1b355f498b" prot="public" virt="non-virtual"><scope>moba::ServerSessionMgr</scope><name>getServerHSock</name></member>
+      <member refid="classmoba_1_1_server_session_mgr_1afe74b10561a74ea894525811da93d6dd" prot="public" virt="non-virtual"><scope>moba::ServerSessionMgr</scope><name>initialize</name></member>
+      <member refid="classmoba_1_1_server_session_mgr_1a9662655d80ce58f10fe588739c0f1e44" prot="private" virt="non-virtual"><scope>moba::ServerSessionMgr</scope><name>m_mutex</name></member>
+      <member refid="classmoba_1_1_server_session_mgr_1a926c29203147854a7e90fc4858ad67fb" prot="private" virt="non-virtual"><scope>moba::ServerSessionMgr</scope><name>m_netMgr</name></member>
+      <member refid="classmoba_1_1_server_session_mgr_1a84cc4f23a21b2bb2fb1aee428210a052" prot="private" virt="non-virtual"><scope>moba::ServerSessionMgr</scope><name>m_servers</name></member>
+      <member refid="classmoba_1_1_server_session_mgr_1a0767a52a7d0c16f5820e42cdb06db19f" prot="public" virt="non-virtual"><scope>moba::ServerSessionMgr</scope><name>ServerSessionMgr</name></member>
+      <member refid="classmoba_1_1_server_session_mgr_1ab491aa714527a6eb4399ca1f5766281b" prot="public" virt="non-virtual"><scope>moba::ServerSessionMgr</scope><name>update</name></member>
+      <member refid="classmoba_1_1_server_session_mgr_1ad9bc4ed2eeb6aeb3918f7f2649c6e3cb" prot="public" virt="non-virtual"><scope>moba::ServerSessionMgr</scope><name>~ServerSessionMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

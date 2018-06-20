@@ -1,0 +1,1025 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_achieve_schedule_mgr" kind="class" prot="public">
+    <compoundname>AchieveScheduleMgr</compoundname>
+    <basecompoundref refid="class_data_mgr" prot="public" virt="non-virtual">DataMgr&lt; SeDBCharAchieveSchedule &gt;</basecompoundref>
+    <basecompoundref refid="class_data_mgr" prot="public" virt="non-virtual">DataMgr&lt; SeDBCharAchieveSchedule &gt;</basecompoundref>
+    <includes refid="_src_2_achieve_schedule_mgr_8h" local="no">AchieveScheduleMgr.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_achieve_schedule_mgr_1a35b5b1efe25958e3c319c3efd058bfec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>AchieveMgr</definition>
+        <argsstring></argsstring>
+        <name>AchieveMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" line="29" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_achieve_schedule_mgr_1ac4ae6976263794303f024557a4b54f40" prot="private" static="no" mutable="no">
+        <type>std::map&lt; DWord, <ref refid="struct_se_achieve_schedule_info" kindref="compound">SeAchieveScheduleInfo</ref> * &gt;</type>
+        <definition>std::map&lt; DWord, SeAchieveScheduleInfo * &gt; AchieveScheduleMgr::m_ScheduleMap</definition>
+        <argsstring></argsstring>
+        <name>m_ScheduleMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" line="51" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_achieve_schedule_mgr_1a4784d97403b7d3e8aceaf7275290eaba" compoundref="_src_2_achieve_schedule_mgr_8cpp" startline="113" endline="124">Finalize</referencedby>
+        <referencedby refid="class_achieve_schedule_mgr_1af2807ea3b6b3dfc737868482f297dfbe" compoundref="_src_2_achieve_schedule_mgr_8cpp" startline="57" endline="68">GetGroupSchedule</referencedby>
+        <referencedby refid="class_achieve_schedule_mgr_1adc9eeeb42cc2998635d0e74be3636716" compoundref="_src_2_achieve_schedule_mgr_8cpp" startline="41" endline="49">loadData</referencedby>
+        <referencedby refid="class_achieve_schedule_mgr_1af6aaf16562e7bc500309ef4421982852" compoundref="_src_2_achieve_schedule_mgr_8cpp" startline="82" endline="111">UpdateSchedule</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_achieve_schedule_mgr_1a523cadfe883906b7ce39a40bd4b0ae80" prot="private" static="no" mutable="no">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer &amp; AchieveScheduleMgr::m_SePlayer</definition>
+        <argsstring></argsstring>
+        <name>m_SePlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" line="52" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="class_achieve_schedule_mgr_1a040de0bed2415b29534c4f003ba1bbcf" compoundref="_src_2_achieve_schedule_mgr_8cpp" startline="51" endline="54">getOwner</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_achieve_schedule_mgr_1ad05411e3fa766a5d92a9bbec45260b87" prot="private" static="no" mutable="no">
+        <type>SeDBCharAchieveSchedule</type>
+        <definition>SeDBCharAchieveSchedule AchieveScheduleMgr::m_TemData</definition>
+        <argsstring></argsstring>
+        <name>m_TemData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" line="53" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="class_achieve_schedule_mgr_1af6aaf16562e7bc500309ef4421982852" compoundref="_src_2_achieve_schedule_mgr_8cpp" startline="82" endline="111">UpdateSchedule</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_achieve_schedule_mgr_1ae744fd96c2c6f55db75a9fa14d0e69ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AchieveScheduleMgr::AchieveScheduleMgr</definition>
+        <argsstring>(SePlayer &amp;rkPlayer)</argsstring>
+        <name>AchieveScheduleMgr</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>rkPlayer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" line="32" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.cpp" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_achieve_schedule_mgr_1a61664eea45daad10f6bbb6ca19268637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AchieveScheduleMgr::~AchieveScheduleMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~AchieveScheduleMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" line="33" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.cpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_achieve_schedule_mgr_1af2807ea3b6b3dfc737868482f297dfbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord AchieveScheduleMgr::GetGroupSchedule</definition>
+        <argsstring>(DWord dwGroupID)</argsstring>
+        <name>GetGroupSchedule</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwGroupID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" line="36" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.cpp" bodystart="57" bodyend="68"/>
+        <references refid="struct_se_achieve_schedule_info_1a5ea9a802edd0aced9e2b429fefbc17e8" compoundref="_src_2_achieve_schedule_mgr_8h" startline="23">SeAchieveScheduleInfo::dwParameter</references>
+        <references refid="class_achieve_schedule_mgr_1ac4ae6976263794303f024557a4b54f40" compoundref="_src_2_achieve_schedule_mgr_8h" startline="51">m_ScheduleMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_achieve_schedule_mgr_1af6aaf16562e7bc500309ef4421982852" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AchieveScheduleMgr::UpdateSchedule</definition>
+        <argsstring>(DWord dwGroupID, DWord value)</argsstring>
+        <name>UpdateSchedule</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwGroupID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" line="38" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.cpp" bodystart="82" bodyend="111"/>
+        <references refid="class_achieve_schedule_mgr_1a0aed0e050f76cb8be276ca8f33999365" compoundref="_src_2_achieve_schedule_mgr_8cpp" startline="70" endline="78">ComposeInfo</references>
+        <references refid="struct_se_achieve_schedule_info_1a44c8289f85a947495723d8dc28d0b98f" compoundref="_src_2_achieve_schedule_mgr_8cpp" startline="20" endline="25">SeAchieveScheduleInfo::DataInfo</references>
+        <references refid="class_default_player_data_strategy_1a01824b8ff7f25899b55f3d4d1bbd6637" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="47" endline="50">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataInsert</references>
+        <references refid="class_default_player_data_strategy_1a6baced26772bd2c55f9e1caaac6d23ef" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="53" endline="56">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataUpdate</references>
+        <references refid="struct_se_achieve_schedule_info_1afd7778c7ddabbd5dc34d891736ef3b41" compoundref="_src_2_achieve_schedule_mgr_8h" startline="21">SeAchieveScheduleInfo::dwID</references>
+        <references refid="struct_se_achieve_schedule_info_1a5ea9a802edd0aced9e2b429fefbc17e8" compoundref="_src_2_achieve_schedule_mgr_8h" startline="23">SeAchieveScheduleInfo::dwParameter</references>
+        <references refid="_world_server_2_src_2_char_achieve_schedule_strategy_8cpp_1a94a6ad12a468651bb623b72b552ce16d" compoundref="_world_server_2_src_2_char_achieve_schedule_strategy_8cpp" startline="3">g_kAchieveScheduleStrategy</references>
+        <references refid="class_achieve_schedule_mgr_1a040de0bed2415b29534c4f003ba1bbcf" compoundref="_src_2_achieve_schedule_mgr_8cpp" startline="51" endline="54">getOwner</references>
+        <references refid="class_achieve_schedule_mgr_1ac4ae6976263794303f024557a4b54f40" compoundref="_src_2_achieve_schedule_mgr_8h" startline="51">m_ScheduleMap</references>
+        <references refid="class_achieve_schedule_mgr_1ad05411e3fa766a5d92a9bbec45260b87" compoundref="_src_2_achieve_schedule_mgr_8h" startline="53">m_TemData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_achieve_schedule_mgr_1adc9eeeb42cc2998635d0e74be3636716" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AchieveScheduleMgr::loadData</definition>
+        <argsstring>(const SeDBCharAchieveSchedule &amp;data)</argsstring>
+        <name>loadData</name>
+        <reimplements refid="class_data_mgr_1a19fd585291b3911a1f43d63dfbcc71c6">loadData</reimplements>
+        <param>
+          <type>const SeDBCharAchieveSchedule &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" line="40" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.cpp" bodystart="41" bodyend="49"/>
+        <references refid="struct_se_achieve_schedule_info_1aefe3057ffe78990af9a3eb86e65a8301" compoundref="_src_2_achieve_schedule_mgr_8cpp" startline="13" endline="18">SeAchieveScheduleInfo::loadData</references>
+        <references refid="class_achieve_schedule_mgr_1ac4ae6976263794303f024557a4b54f40" compoundref="_src_2_achieve_schedule_mgr_8h" startline="51">m_ScheduleMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_achieve_schedule_mgr_1a040de0bed2415b29534c4f003ba1bbcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer &amp; AchieveScheduleMgr::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" line="42" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.cpp" bodystart="51" bodyend="54"/>
+        <references refid="class_achieve_schedule_mgr_1a523cadfe883906b7ce39a40bd4b0ae80" compoundref="_src_2_achieve_schedule_mgr_8h" startline="52">m_SePlayer</references>
+        <referencedby refid="class_achieve_schedule_mgr_1af6aaf16562e7bc500309ef4421982852" compoundref="_src_2_achieve_schedule_mgr_8cpp" startline="82" endline="111">UpdateSchedule</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_achieve_schedule_mgr_1a4784d97403b7d3e8aceaf7275290eaba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AchieveScheduleMgr::Finalize</definition>
+        <argsstring>()</argsstring>
+        <name>Finalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" line="44" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.cpp" bodystart="113" bodyend="124"/>
+        <references refid="class_achieve_schedule_mgr_1ac4ae6976263794303f024557a4b54f40" compoundref="_src_2_achieve_schedule_mgr_8h" startline="51">m_ScheduleMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_achieve_schedule_mgr_1ae744fd96c2c6f55db75a9fa14d0e69ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AchieveScheduleMgr::AchieveScheduleMgr</definition>
+        <argsstring>(SePlayer &amp;rkPlayer)</argsstring>
+        <name>AchieveScheduleMgr</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>rkPlayer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/AchieveScheduleMgr.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_achieve_schedule_mgr_1a61664eea45daad10f6bbb6ca19268637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AchieveScheduleMgr::~AchieveScheduleMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~AchieveScheduleMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/AchieveScheduleMgr.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_achieve_schedule_mgr_1af2807ea3b6b3dfc737868482f297dfbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord AchieveScheduleMgr::GetGroupSchedule</definition>
+        <argsstring>(DWord dwGroupID)</argsstring>
+        <name>GetGroupSchedule</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwGroupID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/AchieveScheduleMgr.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_achieve_schedule_mgr_1af6aaf16562e7bc500309ef4421982852" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AchieveScheduleMgr::UpdateSchedule</definition>
+        <argsstring>(DWord dwGroupID, DWord value)</argsstring>
+        <name>UpdateSchedule</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwGroupID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/AchieveScheduleMgr.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_achieve_schedule_mgr_1adc9eeeb42cc2998635d0e74be3636716" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AchieveScheduleMgr::loadData</definition>
+        <argsstring>(const SeDBCharAchieveSchedule &amp;data)</argsstring>
+        <name>loadData</name>
+        <reimplements refid="class_data_mgr_1a19fd585291b3911a1f43d63dfbcc71c6">loadData</reimplements>
+        <param>
+          <type>const SeDBCharAchieveSchedule &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/AchieveScheduleMgr.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_achieve_schedule_mgr_1ac31b524cf942ee94b1e167b007db8a56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer&amp; AchieveScheduleMgr::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/AchieveScheduleMgr.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_achieve_schedule_mgr_1a4784d97403b7d3e8aceaf7275290eaba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AchieveScheduleMgr::Finalize</definition>
+        <argsstring>()</argsstring>
+        <name>Finalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/AchieveScheduleMgr.h" line="44" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_achieve_schedule_mgr_1a0aed0e050f76cb8be276ca8f33999365" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_se_achieve_schedule_info" kindref="compound">SeAchieveScheduleInfo</ref> *</type>
+        <definition>SeAchieveScheduleInfo * AchieveScheduleMgr::ComposeInfo</definition>
+        <argsstring>(DWord dwGroupID, DWord value)</argsstring>
+        <name>ComposeInfo</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwGroupID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" line="48" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.cpp" bodystart="70" bodyend="78"/>
+        <references refid="struct_se_achieve_schedule_info_1aedaf9c18ce38f1aaac87e375d77c3012" compoundref="_src_2_achieve_schedule_mgr_8h" startline="22">SeAchieveScheduleInfo::dwGroupID</references>
+        <references refid="struct_se_achieve_schedule_info_1afd7778c7ddabbd5dc34d891736ef3b41" compoundref="_src_2_achieve_schedule_mgr_8h" startline="21">SeAchieveScheduleInfo::dwID</references>
+        <references refid="struct_se_achieve_schedule_info_1a5ea9a802edd0aced9e2b429fefbc17e8" compoundref="_src_2_achieve_schedule_mgr_8h" startline="23">SeAchieveScheduleInfo::dwParameter</references>
+        <references refid="_world_server_2_src_2_char_achieve_schedule_strategy_8cpp_1a94a6ad12a468651bb623b72b552ce16d" compoundref="_world_server_2_src_2_char_achieve_schedule_strategy_8cpp" startline="3">g_kAchieveScheduleStrategy</references>
+        <references refid="class_player_data_strategy_1a5f33fc51eb6066e5fe9545dd9e273a3a" compoundref="_world_server_2_src_2_player_data_strategy_8cpp" startline="22" endline="26">PlayerDataStrategy::getGenID</references>
+        <referencedby refid="class_achieve_schedule_mgr_1af6aaf16562e7bc500309ef4421982852" compoundref="_src_2_achieve_schedule_mgr_8cpp" startline="82" endline="111">UpdateSchedule</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_achieve_schedule_mgr_1ac18011827330b9ef684867e54919b614" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_se_achieve_schedule_info" kindref="compound">SeAchieveScheduleInfo</ref> *</type>
+        <definition>SeAchieveScheduleInfo* AchieveScheduleMgr::ComposeInfo</definition>
+        <argsstring>(DWord dwGroupID, DWord value)</argsstring>
+        <name>ComposeInfo</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwGroupID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/AchieveScheduleMgr.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="204">
+        <label>AchieveScheduleMgr</label>
+        <link refid="class_achieve_schedule_mgr"/>
+        <childnode refid="205" relation="public-inheritance">
+        </childnode>
+        <childnode refid="205" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="205">
+        <label>DataMgr&lt; SeDBCharAchieveSchedule &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="285">
+        <label>SeAchieveScheduleInfo</label>
+        <link refid="struct_se_achieve_schedule_info"/>
+      </node>
+      <node id="218">
+        <label>std::map&lt; DWord, CItem * &gt;</label>
+        <childnode refid="219" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="231">
+        <label>SeThreadMsgMgr</label>
+        <link refid="class_se_thread_msg_mgr"/>
+        <childnode refid="232" relation="usage">
+          <edgelabel>m_kTemMsgData</edgelabel>
+        </childnode>
+      </node>
+      <node id="238">
+        <label>DataMgr&lt; SeDBCharEquipSchema &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="248">
+        <label>K</label>
+      </node>
+      <node id="249">
+        <label>T</label>
+      </node>
+      <node id="260">
+        <label>SeItem</label>
+        <link refid="struct_se_item"/>
+        <childnode refid="215" relation="usage">
+          <edgelabel>kFinishTime</edgelabel>
+        </childnode>
+        <childnode refid="261" relation="usage">
+          <edgelabel>pkItemRes</edgelabel>
+        </childnode>
+      </node>
+      <node id="215">
+        <label>SeDBTime</label>
+        <link refid="struct_se_d_b_time"/>
+      </node>
+      <node id="254">
+        <label>SeTaskInfo</label>
+        <link refid="struct_se_task_info"/>
+        <childnode refid="255" relation="usage">
+          <edgelabel>pkRes</edgelabel>
+        </childnode>
+      </node>
+      <node id="276">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="249" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="219">
+        <label>CItem</label>
+        <link refid="struct_c_item"/>
+        <childnode refid="220" relation="usage">
+          <edgelabel>pvpAttr</edgelabel>
+          <edgelabel>pveAttr</edgelabel>
+        </childnode>
+        <childnode refid="221" relation="usage">
+          <edgelabel>citiaoAttr</edgelabel>
+        </childnode>
+      </node>
+      <node id="268">
+        <label>AchieveMgr</label>
+        <link refid="class_achieve_mgr"/>
+        <childnode refid="208" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="208">
+        <label>SePlayer</label>
+        <link refid="class_se_player"/>
+        <childnode refid="209" relation="usage">
+          <edgelabel>m_kCurPos</edgelabel>
+        </childnode>
+        <childnode refid="210" relation="usage">
+          <edgelabel>m_heroMgr</edgelabel>
+        </childnode>
+        <childnode refid="213" relation="usage">
+          <edgelabel>m_mapNexusFriendData</edgelabel>
+        </childnode>
+        <childnode refid="216" relation="usage">
+          <edgelabel>m_PlayerItemMgr</edgelabel>
+        </childnode>
+        <childnode refid="224" relation="usage">
+          <edgelabel>m_kMobileInfo</edgelabel>
+        </childnode>
+        <childnode refid="215" relation="usage">
+          <edgelabel>m_kEnterTime</edgelabel>
+        </childnode>
+        <childnode refid="225" relation="usage">
+          <edgelabel>m_pkBlockServer</edgelabel>
+        </childnode>
+        <childnode refid="236" relation="usage">
+          <edgelabel>m_kLoadFlag2Count</edgelabel>
+        </childnode>
+        <childnode refid="237" relation="usage">
+          <edgelabel>m_equipSchemaMgr</edgelabel>
+        </childnode>
+        <childnode refid="239" relation="usage">
+          <edgelabel>m_raceMapMgr</edgelabel>
+        </childnode>
+        <childnode refid="242" relation="usage">
+          <edgelabel>m_raceHeroMgr</edgelabel>
+        </childnode>
+        <childnode refid="250" relation="usage">
+          <edgelabel>m_loadingFlag</edgelabel>
+        </childnode>
+        <childnode refid="251" relation="usage">
+          <edgelabel>m_TaskMgr</edgelabel>
+        </childnode>
+        <childnode refid="259" relation="usage">
+          <edgelabel>m_akItem</edgelabel>
+        </childnode>
+        <childnode refid="262" relation="usage">
+          <edgelabel>m_FriendLadderData</edgelabel>
+        </childnode>
+        <childnode refid="265" relation="usage">
+          <edgelabel>m_activeAvatarMgr</edgelabel>
+        </childnode>
+        <childnode refid="268" relation="usage">
+          <edgelabel>m_AchieveMgr</edgelabel>
+        </childnode>
+        <childnode refid="269" relation="usage">
+          <edgelabel>m_kLoadFlagCounts</edgelabel>
+        </childnode>
+        <childnode refid="235" relation="usage">
+          <edgelabel>m_kAccountInfo</edgelabel>
+        </childnode>
+        <childnode refid="270" relation="usage">
+          <edgelabel>m_AchieveFinishMgr</edgelabel>
+        </childnode>
+        <childnode refid="273" relation="usage">
+          <edgelabel>m_akStatMap</edgelabel>
+        </childnode>
+        <childnode refid="206" relation="usage">
+          <edgelabel>m_AchieveScheduleMgr</edgelabel>
+        </childnode>
+        <childnode refid="275" relation="usage">
+          <edgelabel>m_kMAllCharMem</edgelabel>
+        </childnode>
+        <childnode refid="277" relation="usage">
+          <edgelabel>m_akExchange</edgelabel>
+        </childnode>
+        <childnode refid="279" relation="usage">
+          <edgelabel>m_infoMgr</edgelabel>
+        </childnode>
+        <childnode refid="282" relation="usage">
+          <edgelabel>m_kSingleMatchInfo</edgelabel>
+        </childnode>
+        <childnode refid="283" relation="usage">
+          <edgelabel>m_kOderItr</edgelabel>
+        </childnode>
+      </node>
+      <node id="234">
+        <label>SeWaitPlayer</label>
+        <link refid="struct_se_wait_player"/>
+        <childnode refid="235" relation="usage">
+          <edgelabel>kAccountInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="247">
+        <label>std::map&lt; K, T &gt;</label>
+        <childnode refid="248" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="249" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="250">
+        <label>std::set&lt; SeDBTableIndex &gt;</label>
+      </node>
+      <node id="270">
+        <label>AchieveFinishMgr</label>
+        <link refid="class_achieve_finish_mgr"/>
+        <childnode refid="271" relation="public-inheritance">
+        </childnode>
+        <childnode refid="271" relation="public-inheritance">
+        </childnode>
+        <childnode refid="272" relation="usage">
+          <edgelabel>m_FinishMap</edgelabel>
+        </childnode>
+        <childnode refid="208" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="245">
+        <label>SeUserRaceMapHeroBase</label>
+        <link refid="struct_se_user_race_map_hero_base"/>
+      </node>
+      <node id="210">
+        <label>HeroMgr</label>
+        <link refid="class_hero_mgr"/>
+        <childnode refid="211" relation="public-inheritance">
+        </childnode>
+        <childnode refid="211" relation="public-inheritance">
+        </childnode>
+        <childnode refid="208" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="212" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="235">
+        <label>SePtlAccountInfo</label>
+        <link refid="struct_se_ptl_account_info"/>
+      </node>
+      <node id="283">
+        <label>std::map&lt; K, T &gt;::iterator</label>
+      </node>
+      <node id="227">
+        <label>SeLeagueInfo</label>
+        <link refid="struct_se_league_info"/>
+        <childnode refid="215" relation="usage">
+          <edgelabel>kBeginTime</edgelabel>
+          <edgelabel>kEndTime</edgelabel>
+        </childnode>
+      </node>
+      <node id="246">
+        <label>std::map&lt; DWord, MDBCharRaceHero &gt;</label>
+        <childnode refid="247" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="259">
+        <label>std::vector&lt; SeItem * &gt;</label>
+        <childnode refid="260" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="209">
+        <label>SePos2</label>
+        <link refid="struct_se_pos2"/>
+      </node>
+      <node id="253">
+        <label>std::vector&lt; SeTaskInfo * &gt;</label>
+        <childnode refid="254" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="255">
+        <label>TaskInfoTable</label>
+        <link refid="struct_task_info_table"/>
+        <childnode refid="256" relation="public-inheritance">
+        </childnode>
+        <childnode refid="257" relation="usage">
+          <edgelabel>kNameID</edgelabel>
+          <edgelabel>kDescID</edgelabel>
+          <edgelabel>kName_China</edgelabel>
+          <edgelabel>kTaskDesc</edgelabel>
+          <edgelabel>kTargetDesc</edgelabel>
+        </childnode>
+      </node>
+      <node id="214">
+        <label>SeCharNexusFriendData</label>
+        <link refid="struct_se_char_nexus_friend_data"/>
+        <childnode refid="215" relation="usage">
+          <edgelabel>create_time</edgelabel>
+        </childnode>
+      </node>
+      <node id="236">
+        <label>std::map&lt; int, int &gt;</label>
+      </node>
+      <node id="279">
+        <label>InfoMgr</label>
+        <link refid="class_info_mgr"/>
+        <childnode refid="280" relation="public-inheritance">
+        </childnode>
+        <childnode refid="281" relation="public-inheritance">
+        </childnode>
+        <childnode refid="280" relation="public-inheritance">
+        </childnode>
+        <childnode refid="281" relation="public-inheritance">
+        </childnode>
+        <childnode refid="208" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="212" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="241">
+        <label>std::map&lt; DWord, SeDBCharRaceArena * &gt;</label>
+      </node>
+      <node id="230">
+        <label>SeNetAddr</label>
+        <link refid="struct_se_net_addr"/>
+      </node>
+      <node id="220">
+        <label>SeAttrUnit</label>
+        <link refid="struct_se_attr_unit"/>
+      </node>
+      <node id="212">
+        <label>std::map&lt; DWord, SeDBCharHero * &gt;</label>
+      </node>
+      <node id="258">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="256">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="222">
+        <label>SeExternAttrUnit</label>
+        <link refid="struct_se_extern_attr_unit"/>
+      </node>
+      <node id="217">
+        <label>DataMgr&lt; SeDBCharItem &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="233">
+        <label>std::map&lt; DWord, SeWaitPlayer * &gt;</label>
+        <childnode refid="234" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="273">
+        <label>std::vector&lt; SeStatMap * &gt;</label>
+        <childnode refid="274" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="243">
+        <label>DataMgr&lt; SeDBCharRaceHero &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="240">
+        <label>DataMgr&lt; SeDBCharRaceArena &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="252">
+        <label>DataMgr&lt; SeDBCharTask &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="224">
+        <label>SeMobileInfo</label>
+        <link refid="struct_se_mobile_info"/>
+      </node>
+      <node id="223">
+        <label>std::map&lt; uint16_t, CItem * &gt;</label>
+        <childnode refid="219" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="239">
+        <label>RaceMapMgr</label>
+        <link refid="class_race_map_mgr"/>
+        <childnode refid="240" relation="public-inheritance">
+        </childnode>
+        <childnode refid="240" relation="public-inheritance">
+        </childnode>
+        <childnode refid="208" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="241" relation="usage">
+          <edgelabel>m_race_map</edgelabel>
+        </childnode>
+      </node>
+      <node id="281">
+        <label>DataMgr&lt; SeDBCharInfo &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="265">
+        <label>ActiveAvatarMgr</label>
+        <link refid="class_active_avatar_mgr"/>
+        <childnode refid="266" relation="public-inheritance">
+        </childnode>
+        <childnode refid="266" relation="public-inheritance">
+        </childnode>
+        <childnode refid="267" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+        <childnode refid="208" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="225">
+        <label>BlockServer</label>
+        <link refid="class_block_server"/>
+        <childnode refid="226" relation="public-inheritance">
+        </childnode>
+        <childnode refid="226" relation="public-inheritance">
+        </childnode>
+        <childnode refid="227" relation="usage">
+          <edgelabel>m_kLeagueInfo</edgelabel>
+        </childnode>
+        <childnode refid="228" relation="usage">
+          <edgelabel>m_kAllPlayer</edgelabel>
+        </childnode>
+        <childnode refid="231" relation="usage">
+          <edgelabel>m_kThreadMsgMgr</edgelabel>
+        </childnode>
+        <childnode refid="233" relation="usage">
+          <edgelabel>m_kWaitPlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="216">
+        <label>CItemMgr</label>
+        <link refid="class_c_item_mgr"/>
+        <childnode refid="217" relation="public-inheritance">
+        </childnode>
+        <childnode refid="217" relation="public-inheritance">
+        </childnode>
+        <childnode refid="218" relation="usage">
+          <edgelabel>m_idMap</edgelabel>
+        </childnode>
+        <childnode refid="208" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+        </childnode>
+        <childnode refid="223" relation="usage">
+          <edgelabel>m_BagMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="278">
+        <label>SeExChangeInfo</label>
+        <link refid="struct_se_ex_change_info"/>
+        <childnode refid="215" relation="usage">
+          <edgelabel>kRecordTime</edgelabel>
+        </childnode>
+      </node>
+      <node id="262">
+        <label>std::unordered_map&lt; DWord, SeCharLadderData * &gt;</label>
+        <childnode refid="263" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="284">
+        <label>std::map&lt; DWord, SeAchieveScheduleInfo * &gt;</label>
+        <childnode refid="285" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="267">
+        <label>std::set&lt; DWord &gt;</label>
+      </node>
+      <node id="282">
+        <label>SeSingleMatchInfo</label>
+        <link refid="struct_se_single_match_info"/>
+      </node>
+      <node id="206">
+        <label>AchieveScheduleMgr</label>
+        <link refid="class_achieve_schedule_mgr"/>
+        <childnode refid="207" relation="public-inheritance">
+        </childnode>
+        <childnode refid="207" relation="public-inheritance">
+        </childnode>
+        <childnode refid="208" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+        <childnode refid="284" relation="usage">
+          <edgelabel>m_ScheduleMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="226">
+        <label>Thread</label>
+      </node>
+      <node id="207">
+        <label>DataMgr&lt; SeDBCharAchieveSchedule &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="264">
+        <label>SeLadderRankInfo</label>
+        <link refid="struct_se_ladder_rank_info"/>
+      </node>
+      <node id="271">
+        <label>DataMgr&lt; SeDBCharAchieveFinish &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="266">
+        <label>DataMgr&lt; SeDBCharActiveAvatar &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="213">
+        <label>std::map&lt; DWord, SeCharNexusFriendData * &gt;</label>
+        <childnode refid="214" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="263">
+        <label>SeCharLadderData</label>
+        <link refid="struct_se_char_ladder_data"/>
+        <childnode refid="264" relation="public-inheritance">
+        </childnode>
+        <childnode refid="264" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>DataMgr&lt; SeDBCharHero &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="275">
+        <label>std::map&lt; DWord, VCharMemory &gt;</label>
+        <childnode refid="276" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="228">
+        <label>std::map&lt; HSock, SeLoginPlayer * &gt;</label>
+        <childnode refid="229" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="221">
+        <label>SeCiTiao</label>
+        <link refid="struct_se_ci_tiao"/>
+        <childnode refid="222" relation="usage">
+          <edgelabel>SkillAdd</edgelabel>
+        </childnode>
+      </node>
+      <node id="280">
+        <label>SeDBCharInfo</label>
+      </node>
+      <node id="277">
+        <label>std::vector&lt; SeExChangeInfo * &gt;</label>
+        <childnode refid="278" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="237">
+        <label>EquipSchemaMgr</label>
+        <link refid="class_equip_schema_mgr"/>
+        <childnode refid="238" relation="public-inheritance">
+        </childnode>
+        <childnode refid="238" relation="public-inheritance">
+        </childnode>
+        <childnode refid="208" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="242">
+        <label>RaceHeroMgr</label>
+        <link refid="class_race_hero_mgr"/>
+        <childnode refid="243" relation="public-inheritance">
+        </childnode>
+        <childnode refid="243" relation="public-inheritance">
+        </childnode>
+        <childnode refid="208" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="244" relation="usage">
+          <edgelabel>map_arena_race_heros</edgelabel>
+        </childnode>
+        <childnode refid="246" relation="usage">
+          <edgelabel>map_race_heros</edgelabel>
+        </childnode>
+      </node>
+      <node id="232">
+        <label>SeMsgData</label>
+        <link refid="struct_se_msg_data"/>
+      </node>
+      <node id="272">
+        <label>std::map&lt; DWord, std::map&lt; DWord, SeAchieveFinishInfo * &gt; &gt;</label>
+      </node>
+      <node id="251">
+        <label>TaskMgr</label>
+        <link refid="class_task_mgr"/>
+        <childnode refid="252" relation="public-inheritance">
+        </childnode>
+        <childnode refid="252" relation="public-inheritance">
+        </childnode>
+        <childnode refid="253" relation="usage">
+          <edgelabel>m_akVTask</edgelabel>
+        </childnode>
+        <childnode refid="208" relation="usage">
+          <edgelabel>m_Player</edgelabel>
+        </childnode>
+      </node>
+      <node id="269">
+        <label>std::map&lt; SeDBTableIndex, int &gt;</label>
+      </node>
+      <node id="274">
+        <label>SeStatMap</label>
+        <link refid="struct_se_stat_map"/>
+      </node>
+      <node id="229">
+        <label>SeLoginPlayer</label>
+        <link refid="struct_se_login_player"/>
+        <childnode refid="230" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="257">
+        <label>std::string</label>
+        <childnode refid="258" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="244">
+        <label>std::map&lt; DWord, SeUserRaceMapHeroBase &gt;</label>
+        <childnode refid="245" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="261">
+        <label>TownItemTable</label>
+        <link refid="struct_town_item_table"/>
+        <childnode refid="256" relation="public-inheritance">
+        </childnode>
+        <childnode refid="257" relation="usage">
+          <edgelabel>kAttachModel1</edgelabel>
+          <edgelabel>kAttachModel2</edgelabel>
+          <edgelabel>kPVPValueA</edgelabel>
+          <edgelabel>ktaozhuangID</edgelabel>
+          <edgelabel>kNameID</edgelabel>
+          <edgelabel>kPVPValueB</edgelabel>
+          <edgelabel>kDesc</edgelabel>
+          <edgelabel>kPVPValueC</edgelabel>
+          <edgelabel>kPVPValueD</edgelabel>
+          <edgelabel>kPVPValueE</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" line="28" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/AchieveScheduleMgr.h" bodystart="27" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_achieve_schedule_mgr_1a35b5b1efe25958e3c319c3efd058bfec" prot="private" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>AchieveMgr</name></member>
+      <member refid="class_achieve_schedule_mgr_1ae744fd96c2c6f55db75a9fa14d0e69ef" prot="public" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>AchieveScheduleMgr</name></member>
+      <member refid="class_achieve_schedule_mgr_1ae744fd96c2c6f55db75a9fa14d0e69ef" prot="public" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>AchieveScheduleMgr</name></member>
+      <member refid="class_achieve_schedule_mgr_1a0aed0e050f76cb8be276ca8f33999365" prot="private" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>ComposeInfo</name></member>
+      <member refid="class_achieve_schedule_mgr_1ac18011827330b9ef684867e54919b614" prot="private" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>ComposeInfo</name></member>
+      <member refid="class_achieve_schedule_mgr_1a4784d97403b7d3e8aceaf7275290eaba" prot="public" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>Finalize</name></member>
+      <member refid="class_achieve_schedule_mgr_1a4784d97403b7d3e8aceaf7275290eaba" prot="public" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>Finalize</name></member>
+      <member refid="class_data_mgr_1ab72bd1d8bc0f210c94d235c978fbbd4c" prot="public" virt="virtual"><scope>AchieveScheduleMgr</scope><name>fixData</name></member>
+      <member refid="class_data_mgr_1ab72bd1d8bc0f210c94d235c978fbbd4c" prot="public" virt="virtual"><scope>AchieveScheduleMgr</scope><name>fixData</name></member>
+      <member refid="class_achieve_schedule_mgr_1af2807ea3b6b3dfc737868482f297dfbe" prot="public" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>GetGroupSchedule</name></member>
+      <member refid="class_achieve_schedule_mgr_1af2807ea3b6b3dfc737868482f297dfbe" prot="public" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>GetGroupSchedule</name></member>
+      <member refid="class_achieve_schedule_mgr_1a040de0bed2415b29534c4f003ba1bbcf" prot="public" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>getOwner</name></member>
+      <member refid="class_achieve_schedule_mgr_1ac31b524cf942ee94b1e167b007db8a56" prot="public" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>getOwner</name></member>
+      <member refid="class_achieve_schedule_mgr_1adc9eeeb42cc2998635d0e74be3636716" prot="public" virt="virtual"><scope>AchieveScheduleMgr</scope><name>loadData</name></member>
+      <member refid="class_achieve_schedule_mgr_1adc9eeeb42cc2998635d0e74be3636716" prot="public" virt="virtual"><scope>AchieveScheduleMgr</scope><name>loadData</name></member>
+      <member refid="class_achieve_schedule_mgr_1ac4ae6976263794303f024557a4b54f40" prot="private" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>m_ScheduleMap</name></member>
+      <member refid="class_achieve_schedule_mgr_1a523cadfe883906b7ce39a40bd4b0ae80" prot="private" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>m_SePlayer</name></member>
+      <member refid="class_achieve_schedule_mgr_1ad05411e3fa766a5d92a9bbec45260b87" prot="private" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>m_TemData</name></member>
+      <member refid="class_achieve_schedule_mgr_1af6aaf16562e7bc500309ef4421982852" prot="public" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>UpdateSchedule</name></member>
+      <member refid="class_achieve_schedule_mgr_1af6aaf16562e7bc500309ef4421982852" prot="public" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>UpdateSchedule</name></member>
+      <member refid="class_achieve_schedule_mgr_1a61664eea45daad10f6bbb6ca19268637" prot="public" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>~AchieveScheduleMgr</name></member>
+      <member refid="class_achieve_schedule_mgr_1a61664eea45daad10f6bbb6ca19268637" prot="public" virt="non-virtual"><scope>AchieveScheduleMgr</scope><name>~AchieveScheduleMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

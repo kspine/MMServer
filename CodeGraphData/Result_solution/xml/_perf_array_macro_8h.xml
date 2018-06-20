@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_perf_array_macro_8h" kind="file">
+    <compoundname>PerfArrayMacro.h</compoundname>
+    <includedby refid="src_2_performance_timing_8cpp" local="yes">RaceServer/src/PerformanceTiming.cpp</includedby>
+    <includedby refid="_src_2_performance_timing_8cpp" local="yes">RaceServer/Src/PerformanceTiming.cpp</includedby>
+    <invincdepgraph>
+      <node id="101273">
+        <label>RaceServer/Src/PerformanceTiming.cpp</label>
+        <link refid="_src_2_performance_timing_8cpp"/>
+      </node>
+      <node id="101272">
+        <label>RaceServer/src/PerformanceTiming.cpp</label>
+        <link refid="src_2_performance_timing_8cpp"/>
+      </node>
+      <node id="101271">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h</label>
+        <link refid="PerfArrayMacro.h"/>
+        <childnode refid="101272" relation="include">
+        </childnode>
+        <childnode refid="101273" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="src_2_performance_timing_8cpp_1ab3877399e41f4c65e584df660f3d03e2" prot="public" static="no">
+        <name>PERF_ARRAY_NODE_FOLDER_DATA</name>
+        <param><defname>name</defname></param>
+        <param><defname>folderName</defname></param>
+        <initializer>_InnerArray[EPERF_##name] =  <ref refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" kindref="member">CPerformanceTimingMgr::GetInstacne</ref>()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupInterval( EPERF_##name,#name,#folderName );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" line="2" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_performance_timing_8cpp_1a83c13ca11793df59c6f3cfc7dd09af4c" prot="public" static="no">
+        <name>PERF_ARRAY_NODE_DATA</name>
+        <param><defname>name</defname></param>
+        <initializer>_InnerArray[EPERF_##name] =  <ref refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" kindref="member">CPerformanceTimingMgr::GetInstacne</ref>()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupInterval( EPERF_##name,#name );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" line="3" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_performance_timing_8cpp_1a906fa89fbac8d8a70a824be0eaa0575a" prot="public" static="no">
+        <name>PERF_ARRAY_COUNTER_FOLDER_DATA</name>
+        <param><defname>name</defname></param>
+        <param><defname>folderName</defname></param>
+        <initializer>_InnerCounters[EPCN_##name] = <ref refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" kindref="member">CPerformanceTimingMgr::GetInstacne</ref>()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupCounter(EPCN_##name,#name,#folderName);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" line="5" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_performance_timing_8cpp_1aac452c126600761499ce8b4fd43c62a5" prot="public" static="no">
+        <name>PERF_ARRAY_COUNTER_DATA</name>
+        <param><defname>name</defname></param>
+        <initializer>_InnerCounters[EPCN_##name] = <ref refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" kindref="member">CPerformanceTimingMgr::GetInstacne</ref>()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupCounter(EPCN_##name,#name);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" line="6" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_performance_timing_8cpp_1ab12e3c873d6010c462a575054741ac13" prot="public" static="no">
+        <name>PERF_ARRAY_COUNTER_FOLDER_INT_DATA</name>
+        <param><defname>name</defname></param>
+        <param><defname>folderInt</defname></param>
+        <initializer>_InnerCounters[EPCN_##name] = <ref refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" kindref="member">CPerformanceTimingMgr::GetInstacne</ref>()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupCounter(EPCN_##name,&quot;BeUnit&quot;)-&gt;SetFolderName(folderInt);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" line="7" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_performance_timing_8cpp_1ab3877399e41f4c65e584df660f3d03e2" prot="public" static="no">
+        <name>PERF_ARRAY_NODE_FOLDER_DATA</name>
+        <param><defname>name</defname></param>
+        <param><defname>folderName</defname></param>
+        <initializer>_InnerArray[EPERF_##name] =  <ref refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" kindref="member">CPerformanceTimingMgr::GetInstacne</ref>()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupInterval( EPERF_##name,#name,#folderName );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" line="2" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_performance_timing_8cpp_1a83c13ca11793df59c6f3cfc7dd09af4c" prot="public" static="no">
+        <name>PERF_ARRAY_NODE_DATA</name>
+        <param><defname>name</defname></param>
+        <initializer>_InnerArray[EPERF_##name] =  <ref refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" kindref="member">CPerformanceTimingMgr::GetInstacne</ref>()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupInterval( EPERF_##name,#name );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" line="3" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_performance_timing_8cpp_1a906fa89fbac8d8a70a824be0eaa0575a" prot="public" static="no">
+        <name>PERF_ARRAY_COUNTER_FOLDER_DATA</name>
+        <param><defname>name</defname></param>
+        <param><defname>folderName</defname></param>
+        <initializer>_InnerCounters[EPCN_##name] = <ref refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" kindref="member">CPerformanceTimingMgr::GetInstacne</ref>()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupCounter(EPCN_##name,#name,#folderName);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" line="5" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_performance_timing_8cpp_1aac452c126600761499ce8b4fd43c62a5" prot="public" static="no">
+        <name>PERF_ARRAY_COUNTER_DATA</name>
+        <param><defname>name</defname></param>
+        <initializer>_InnerCounters[EPCN_##name] = <ref refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" kindref="member">CPerformanceTimingMgr::GetInstacne</ref>()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupCounter(EPCN_##name,#name);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" line="6" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_performance_timing_8cpp_1ab12e3c873d6010c462a575054741ac13" prot="public" static="no">
+        <name>PERF_ARRAY_COUNTER_FOLDER_INT_DATA</name>
+        <param><defname>name</defname></param>
+        <param><defname>folderInt</defname></param>
+        <initializer>_InnerCounters[EPCN_##name] = <ref refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" kindref="member">CPerformanceTimingMgr::GetInstacne</ref>()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupCounter(EPCN_##name,&quot;BeUnit&quot;)-&gt;SetFolderName(folderInt);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" line="7" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_perf_array_macro_8h_1ab3877399e41f4c65e584df660f3d03e2" prot="public" static="no">
+        <name>PERF_ARRAY_NODE_FOLDER_DATA</name>
+        <param><defname>name</defname></param>
+        <param><defname>folderName</defname></param>
+        <initializer>_InnerArray[EPERF_##name] =  <ref refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" kindref="member">CPerformanceTimingMgr::GetInstacne</ref>()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupInterval( EPERF_##name,#name,#folderName );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" line="2" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_perf_array_macro_8h_1a83c13ca11793df59c6f3cfc7dd09af4c" prot="public" static="no">
+        <name>PERF_ARRAY_NODE_DATA</name>
+        <param><defname>name</defname></param>
+        <initializer>_InnerArray[EPERF_##name] =  <ref refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" kindref="member">CPerformanceTimingMgr::GetInstacne</ref>()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupInterval( EPERF_##name,#name );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" line="3" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_perf_array_macro_8h_1a906fa89fbac8d8a70a824be0eaa0575a" prot="public" static="no">
+        <name>PERF_ARRAY_COUNTER_FOLDER_DATA</name>
+        <param><defname>name</defname></param>
+        <param><defname>folderName</defname></param>
+        <initializer>_InnerCounters[EPCN_##name] = <ref refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" kindref="member">CPerformanceTimingMgr::GetInstacne</ref>()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupCounter(EPCN_##name,#name,#folderName);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" line="5" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_perf_array_macro_8h_1aac452c126600761499ce8b4fd43c62a5" prot="public" static="no">
+        <name>PERF_ARRAY_COUNTER_DATA</name>
+        <param><defname>name</defname></param>
+        <initializer>_InnerCounters[EPCN_##name] = <ref refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" kindref="member">CPerformanceTimingMgr::GetInstacne</ref>()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupCounter(EPCN_##name,#name);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" line="6" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_perf_array_macro_8h_1ab12e3c873d6010c462a575054741ac13" prot="public" static="no">
+        <name>PERF_ARRAY_COUNTER_FOLDER_INT_DATA</name>
+        <param><defname>name</defname></param>
+        <param><defname>folderInt</defname></param>
+        <initializer>_InnerCounters[EPCN_##name] = <ref refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" kindref="member">CPerformanceTimingMgr::GetInstacne</ref>()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupCounter(EPCN_##name,&quot;BeUnit&quot;)-&gt;SetFolderName(folderInt);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" line="7" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PERF_ARRAY_NODE_FOLDER_DATA</highlight></codeline>
+<codeline lineno="2" refid="_perf_array_macro_8h_1ab3877399e41f4c65e584df660f3d03e2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PERF_ARRAY_NODE_FOLDER_DATA(name,folderName)<sp/>_InnerArray[EPERF_##name]<sp/>=<sp/><sp/>CPerformanceTimingMgr::GetInstacne()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupInterval(<sp/>EPERF_##name,#name,#folderName<sp/>);</highlight></codeline>
+<codeline lineno="3" refid="_perf_array_macro_8h_1a83c13ca11793df59c6f3cfc7dd09af4c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PERF_ARRAY_NODE_DATA(name)<sp/>_InnerArray[EPERF_##name]<sp/>=<sp/><sp/>CPerformanceTimingMgr::GetInstacne()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupInterval(<sp/>EPERF_##name,#name<sp/>);</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_perf_array_macro_8h_1a906fa89fbac8d8a70a824be0eaa0575a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PERF_ARRAY_COUNTER_FOLDER_DATA(name,folderName)<sp/>_InnerCounters[EPCN_##name]<sp/>=<sp/>CPerformanceTimingMgr::GetInstacne()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupCounter(EPCN_##name,#name,#folderName);</highlight></codeline>
+<codeline lineno="6" refid="_perf_array_macro_8h_1aac452c126600761499ce8b4fd43c62a5" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PERF_ARRAY_COUNTER_DATA(name)<sp/>_InnerCounters[EPCN_##name]<sp/>=<sp/>CPerformanceTimingMgr::GetInstacne()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupCounter(EPCN_##name,#name);</highlight></codeline>
+<codeline lineno="7" refid="_perf_array_macro_8h_1ab12e3c873d6010c462a575054741ac13" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PERF_ARRAY_COUNTER_FOLDER_INT_DATA(name,folderInt)<sp/><sp/>_InnerCounters[EPCN_##name]<sp/>=<sp/>CPerformanceTimingMgr::GetInstacne()-&gt;MutiInstanceQuick()-&gt;CreateOrLookupCounter(EPCN_##name,&quot;BeUnit&quot;)-&gt;SetFolderName(folderInt);</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>PERF_ARRAY_NODE_FOLDER_DATA</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>PERF_ARRAY_NODE_DATA</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/PerfArrayMacro.h"/>
+  </compounddef>
+</doxygen>

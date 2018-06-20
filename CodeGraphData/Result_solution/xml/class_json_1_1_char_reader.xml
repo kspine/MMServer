@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_json_1_1_char_reader" kind="class" prot="public" abstract="yes">
+    <compoundname>Json::CharReader</compoundname>
+    <derivedcompoundref refid="class_json_1_1_our_char_reader" prot="public" virt="non-virtual">Json::OurCharReader</derivedcompoundref>
+    <includes refid="reader_8h" local="no">reader.h</includes>
+    <innerclass refid="class_json_1_1_char_reader_1_1_factory" prot="public">Json::CharReader::Factory</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_char_reader_1acaa7b6ad04fe1cf2ddfca06e66550d7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Json::CharReader::~CharReader</definition>
+        <argsstring>()</argsstring>
+        <name>~CharReader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="249" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="249" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_char_reader_1a48e320be8b13bbc0960cc5808cafec98" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool Json::CharReader::parse</definition>
+        <argsstring>(char const *beginDoc, char const *endDoc, Value *root, std::string *errs)=0</argsstring>
+        <name>parse</name>
+        <reimplementedby refid="class_json_1_1_our_char_reader_1a52a1fb5fee88d9b63dd462f63b1c9570">parse</reimplementedby>
+        <param>
+          <type>char const *</type>
+          <declname>beginDoc</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>endDoc</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> *</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>errs</declname>
+        </param>
+        <briefdescription>
+<para>Read a <ref refid="class_json_1_1_value" kindref="compound">Value</ref> from a <ulink url="http://www.json.org">JSON</ulink> document. The document must be a UTF-8 encoded string containing the document to read. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>beginDoc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer on the beginning of the UTF-8 encoded string of the document to read. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endDoc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer on the end of the UTF-8 encoded string of the document to read. Must be &gt;= beginDoc. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[out] Contains the root value of the document if it was successfully parsed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[out] Formatted error messages (if not NULL) a user friendly string that lists errors in the parsed document. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the document was successfully parsed, <computeroutput>false</computeroutput> if an error occurred. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="267" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Interface for reading JSON from a char array. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="840">
+        <label>Json::CharReader</label>
+        <link refid="class_json_1_1_char_reader"/>
+      </node>
+      <node id="841">
+        <label>Json::OurCharReader</label>
+        <link refid="class_json_1_1_our_char_reader"/>
+        <childnode refid="840" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="247" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="247" bodyend="279"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_char_reader_1a48e320be8b13bbc0960cc5808cafec98" prot="public" virt="pure-virtual"><scope>Json::CharReader</scope><name>parse</name></member>
+      <member refid="class_json_1_1_char_reader_1acaa7b6ad04fe1cf2ddfca06e66550d7e" prot="public" virt="virtual"><scope>Json::CharReader</scope><name>~CharReader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

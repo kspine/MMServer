@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_se_w_c_s_t_send_8inc" kind="file">
+    <compoundname>SeWCSTSend.inc</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_w_c_s_t_send_8inl_1ab8c4788e1cf81a0e52d66dc8e7eb3c67" kindref="member">SERVER::SendWCST_RegisterRet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_se_server_define_8h_1a83f922065d39660cc6ff3ff3e193daa1" kindref="member">SeRegisterRet</ref>&amp;<sp/>eRet,</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bRunning,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_w_c_s_t___register_ret" kindref="compound">SeWCST_RegisterRet</ref>);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_w_c_s_t___register_ret" kindref="compound">SeWCST_RegisterRet</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_w_c_s_t___register_ret" kindref="compound">SeWCST_RegisterRet</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_c_s_t___register_ret_1a16026e772f04735bebaa90991268dc98" kindref="member">eRet</ref><sp/>=<sp/>eRet;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_c_s_t___register_ret_1a0dd840cbb0c4513ade0e95472f19f6e6" kindref="member">bRunning</ref><sp/>=<sp/>bRunning;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_w_c_s_t_send_8inl_1a11ad9417cffce69ebd392a4e633d758b" kindref="member">SendWCSTData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_w_c_s_t_send_8inl_1ae4eee2d23766796d5feb3ffeb0507584" kindref="member">SERVER::SendWCST_ResView</ref>(DWord<sp/>dwPlayerID,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Byte*<sp/>rID,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_se_ptl_net_addr" kindref="compound">SePtlNetAddr</ref>&amp;<sp/>kViewAddr,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_w_c_s_t___res_view" kindref="compound">SeWCST_ResView</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_w_c_s_t___res_view" kindref="compound">SeWCST_ResView</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_w_c_s_t___res_view" kindref="compound">SeWCST_ResView</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_c_s_t___res_view_1acf6567a954bee5cf96a742fc0e6a8c03" kindref="member">dwPlayerID</ref><sp/>=<sp/>dwPlayerID;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(pkData-&gt;<ref refid="struct_se_w_c_s_t___res_view_1a526936fde931bf8b1f583f348af165c0" kindref="member">rID</ref>,<sp/>rID,<sp/>16<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(Byte));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_c_s_t___res_view_1a4fc41e40d46d568fd28e993ccef01642" kindref="member">kViewAddr</ref><sp/>=<sp/>kViewAddr;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_w_c_s_t_send_8inl_1a11ad9417cffce69ebd392a4e633d758b" kindref="member">SendWCSTData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_w_c_s_t_send_8inl_1ae4eee2d23766796d5feb3ffeb0507584" kindref="member">SERVER::SendWCST_ResView</ref>(DWord<sp/>dwPlayerID,std::vector&lt;Byte&gt;&amp;<sp/>rID,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_se_ptl_net_addr" kindref="compound">SePtlNetAddr</ref>&amp;<sp/>kViewAddr,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_w_c_s_t___res_view" kindref="compound">SeWCST_ResView</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_w_c_s_t___res_view" kindref="compound">SeWCST_ResView</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_w_c_s_t___res_view" kindref="compound">SeWCST_ResView</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_c_s_t___res_view_1acf6567a954bee5cf96a742fc0e6a8c03" kindref="member">dwPlayerID</ref><sp/>=<sp/>dwPlayerID;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(16<sp/>&gt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)rID.size())</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>16;<sp/>++i)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_c_s_t___res_view_1a526936fde931bf8b1f583f348af165c0" kindref="member">rID</ref>[i]<sp/>=<sp/>rID[i];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_c_s_t___res_view_1a4fc41e40d46d568fd28e993ccef01642" kindref="member">kViewAddr</ref><sp/>=<sp/>kViewAddr;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_w_c_s_t_send_8inl_1a11ad9417cffce69ebd392a4e633d758b" kindref="member">SendWCSTData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeWCSTSend.inc"/>
+  </compounddef>
+</doxygen>

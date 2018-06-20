@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_se_d_b_field_format_macro_8h" kind="file">
+    <compoundname>SeDBFieldFormatMacro.h</compoundname>
+    <includedby refid="_src_2_d_b_server_8cpp" local="yes">DBServer/Src/DBServer.cpp</includedby>
+    <includedby refid="src_2_d_b_server_8cpp" local="yes">DBServer/src/DBServer.cpp</includedby>
+    <includedby refid="_src_2_tab_mgr_8cpp" local="yes">WorldServer/Src/TabMgr.cpp</includedby>
+    <includedby refid="src_2_tab_mgr_8cpp" local="yes">WorldServer/src/TabMgr.cpp</includedby>
+    <invincdepgraph>
+      <node id="137792">
+        <label>DBServer/Src/DBServer.cpp</label>
+        <link refid="_src_2_d_b_server_8cpp"/>
+      </node>
+      <node id="137793">
+        <label>DBServer/src/DBServer.cpp</label>
+        <link refid="src_2_d_b_server_8cpp"/>
+      </node>
+      <node id="137791">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h</label>
+        <link refid="SeDBFieldFormatMacro.h"/>
+        <childnode refid="137792" relation="include">
+        </childnode>
+        <childnode refid="137793" relation="include">
+        </childnode>
+        <childnode refid="137794" relation="include">
+        </childnode>
+        <childnode refid="137795" relation="include">
+        </childnode>
+      </node>
+      <node id="137794">
+        <label>WorldServer/Src/TabMgr.cpp</label>
+        <link refid="_src_2_tab_mgr_8cpp"/>
+      </node>
+      <node id="137795">
+        <label>WorldServer/src/TabMgr.cpp</label>
+        <link refid="src_2_tab_mgr_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_src_2_d_b_server_8cpp_1a9b8872dbd74e35d9d288a08e22f5b86d" prot="public" static="no">
+        <name>DB_DEF_BEGIN</name>
+        <param><defname>name</defname></param>
+        <param><defname>tabname</defname></param>
+        <param><defname>can_del</defname></param>
+        <initializer>case SDTI_##name:\
+														{\
+														SeDB##name kEle;\
+														if(kEle.IsNum(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009ae78092949d9eefb0151a8e4307532565" kindref="member">SFF_NUM</ref>;\
+														}\
+														else if(kEle.IsString(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009a80c954e13ea8ef880f1a2a7158efaea3" kindref="member">SFF_STRING</ref>;\
+														}\
+														else if(kEle.IsDBTime(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009a6956e4e8ffef057323452da143d73a06" kindref="member">SFF_DATETIME</ref>;\
+														}\
+														else if(kEle.IsNum64(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009abc8d09c66ad8f83314cf910cebd1ae3a" kindref="member">SFF_NUM64</ref>;\
+														}\
+														break;\
+														}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="2" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_d_b_server_8cpp_1a3d86455ca9341b7f2918927625fdcc0e" prot="public" static="no">
+        <name>DB_BYTE</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="23" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_d_b_server_8cpp_1abb72a7bc982d11eab4fa0e641dddc25c" prot="public" static="no">
+        <name>DB_WORD</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="24" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_d_b_server_8cpp_1afa0c25b1a71e1c9cdc96ba9299f2634f" prot="public" static="no">
+        <name>DB_NUM</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="25" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_d_b_server_8cpp_1a8b61f7ff217e8baba8c9a0a576a1519c" prot="public" static="no">
+        <name>DB_STR</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="26" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_d_b_server_8cpp_1a8d7da5f98f926c0485007f5e6bda0e89" prot="public" static="no">
+        <name>DB_TIME</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="27" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_d_b_server_8cpp_1a99c6491b94802955864ecfb568fc3c89" prot="public" static="no">
+        <name>DB_NUM64</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="28" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_d_b_server_8cpp_1a3989f4bc05c6ec23b5e81f4d7891ff69" prot="public" static="no">
+        <name>DB_DEF_END</name>
+        <param><defname>name</defname></param>
+        <param><defname>tabname</defname></param>
+        <param><defname>can_del</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="29" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_d_b_server_8cpp_1a9b8872dbd74e35d9d288a08e22f5b86d" prot="public" static="no">
+        <name>DB_DEF_BEGIN</name>
+        <param><defname>name</defname></param>
+        <param><defname>tabname</defname></param>
+        <param><defname>can_del</defname></param>
+        <initializer>case SDTI_##name:\
+														{\
+														SeDB##name kEle;\
+														if(kEle.IsNum(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009ae78092949d9eefb0151a8e4307532565" kindref="member">SFF_NUM</ref>;\
+														}\
+														else if(kEle.IsString(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009a80c954e13ea8ef880f1a2a7158efaea3" kindref="member">SFF_STRING</ref>;\
+														}\
+														else if(kEle.IsDBTime(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009a6956e4e8ffef057323452da143d73a06" kindref="member">SFF_DATETIME</ref>;\
+														}\
+														else if(kEle.IsNum64(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009abc8d09c66ad8f83314cf910cebd1ae3a" kindref="member">SFF_NUM64</ref>;\
+														}\
+														break;\
+														}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="2" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_d_b_server_8cpp_1a3d86455ca9341b7f2918927625fdcc0e" prot="public" static="no">
+        <name>DB_BYTE</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="23" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_d_b_server_8cpp_1abb72a7bc982d11eab4fa0e641dddc25c" prot="public" static="no">
+        <name>DB_WORD</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="24" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_d_b_server_8cpp_1afa0c25b1a71e1c9cdc96ba9299f2634f" prot="public" static="no">
+        <name>DB_NUM</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="25" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_d_b_server_8cpp_1a8b61f7ff217e8baba8c9a0a576a1519c" prot="public" static="no">
+        <name>DB_STR</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="26" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_d_b_server_8cpp_1a8d7da5f98f926c0485007f5e6bda0e89" prot="public" static="no">
+        <name>DB_TIME</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="27" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_d_b_server_8cpp_1a99c6491b94802955864ecfb568fc3c89" prot="public" static="no">
+        <name>DB_NUM64</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="28" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_d_b_server_8cpp_1a3989f4bc05c6ec23b5e81f4d7891ff69" prot="public" static="no">
+        <name>DB_DEF_END</name>
+        <param><defname>name</defname></param>
+        <param><defname>tabname</defname></param>
+        <param><defname>can_del</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="29" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_tab_mgr_8cpp_1a9b8872dbd74e35d9d288a08e22f5b86d" prot="public" static="no">
+        <name>DB_DEF_BEGIN</name>
+        <param><defname>name</defname></param>
+        <param><defname>tabname</defname></param>
+        <param><defname>can_del</defname></param>
+        <initializer>case SDTI_##name:\
+														{\
+														SeDB##name kEle;\
+														if(kEle.IsNum(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009ae78092949d9eefb0151a8e4307532565" kindref="member">SFF_NUM</ref>;\
+														}\
+														else if(kEle.IsString(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009a80c954e13ea8ef880f1a2a7158efaea3" kindref="member">SFF_STRING</ref>;\
+														}\
+														else if(kEle.IsDBTime(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009a6956e4e8ffef057323452da143d73a06" kindref="member">SFF_DATETIME</ref>;\
+														}\
+														else if(kEle.IsNum64(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009abc8d09c66ad8f83314cf910cebd1ae3a" kindref="member">SFF_NUM64</ref>;\
+														}\
+														break;\
+														}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="2" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_tab_mgr_8cpp_1a3d86455ca9341b7f2918927625fdcc0e" prot="public" static="no">
+        <name>DB_BYTE</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="23" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_tab_mgr_8cpp_1abb72a7bc982d11eab4fa0e641dddc25c" prot="public" static="no">
+        <name>DB_WORD</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="24" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_tab_mgr_8cpp_1afa0c25b1a71e1c9cdc96ba9299f2634f" prot="public" static="no">
+        <name>DB_NUM</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="25" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_tab_mgr_8cpp_1a8b61f7ff217e8baba8c9a0a576a1519c" prot="public" static="no">
+        <name>DB_STR</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="26" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_tab_mgr_8cpp_1a8d7da5f98f926c0485007f5e6bda0e89" prot="public" static="no">
+        <name>DB_TIME</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="27" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_tab_mgr_8cpp_1a99c6491b94802955864ecfb568fc3c89" prot="public" static="no">
+        <name>DB_NUM64</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="28" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_src_2_tab_mgr_8cpp_1a3989f4bc05c6ec23b5e81f4d7891ff69" prot="public" static="no">
+        <name>DB_DEF_END</name>
+        <param><defname>name</defname></param>
+        <param><defname>tabname</defname></param>
+        <param><defname>can_del</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="29" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_tab_mgr_8cpp_1a9b8872dbd74e35d9d288a08e22f5b86d" prot="public" static="no">
+        <name>DB_DEF_BEGIN</name>
+        <param><defname>name</defname></param>
+        <param><defname>tabname</defname></param>
+        <param><defname>can_del</defname></param>
+        <initializer>case SDTI_##name:\
+														{\
+														SeDB##name kEle;\
+														if(kEle.IsNum(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009ae78092949d9eefb0151a8e4307532565" kindref="member">SFF_NUM</ref>;\
+														}\
+														else if(kEle.IsString(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009a80c954e13ea8ef880f1a2a7158efaea3" kindref="member">SFF_STRING</ref>;\
+														}\
+														else if(kEle.IsDBTime(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009a6956e4e8ffef057323452da143d73a06" kindref="member">SFF_DATETIME</ref>;\
+														}\
+														else if(kEle.IsNum64(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009abc8d09c66ad8f83314cf910cebd1ae3a" kindref="member">SFF_NUM64</ref>;\
+														}\
+														break;\
+														}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="2" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_tab_mgr_8cpp_1a3d86455ca9341b7f2918927625fdcc0e" prot="public" static="no">
+        <name>DB_BYTE</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="23" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_tab_mgr_8cpp_1abb72a7bc982d11eab4fa0e641dddc25c" prot="public" static="no">
+        <name>DB_WORD</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="24" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_tab_mgr_8cpp_1afa0c25b1a71e1c9cdc96ba9299f2634f" prot="public" static="no">
+        <name>DB_NUM</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="25" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_tab_mgr_8cpp_1a8b61f7ff217e8baba8c9a0a576a1519c" prot="public" static="no">
+        <name>DB_STR</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="26" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_tab_mgr_8cpp_1a8d7da5f98f926c0485007f5e6bda0e89" prot="public" static="no">
+        <name>DB_TIME</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="27" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_tab_mgr_8cpp_1a99c6491b94802955864ecfb568fc3c89" prot="public" static="no">
+        <name>DB_NUM64</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="28" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="src_2_tab_mgr_8cpp_1a3989f4bc05c6ec23b5e81f4d7891ff69" prot="public" static="no">
+        <name>DB_DEF_END</name>
+        <param><defname>name</defname></param>
+        <param><defname>tabname</defname></param>
+        <param><defname>can_del</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="29" column="9"/>
+      </memberdef>
+      <memberdef kind="define" id="_se_d_b_field_format_macro_8h_1a9b8872dbd74e35d9d288a08e22f5b86d" prot="public" static="no">
+        <name>DB_DEF_BEGIN</name>
+        <param><defname>name</defname></param>
+        <param><defname>tabname</defname></param>
+        <param><defname>can_del</defname></param>
+        <initializer>case SDTI_##name:\
+														{\
+														SeDB##name kEle;\
+														if(kEle.IsNum(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009ae78092949d9eefb0151a8e4307532565" kindref="member">SFF_NUM</ref>;\
+														}\
+														else if(kEle.IsString(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009a80c954e13ea8ef880f1a2a7158efaea3" kindref="member">SFF_STRING</ref>;\
+														}\
+														else if(kEle.IsDBTime(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009a6956e4e8ffef057323452da143d73a06" kindref="member">SFF_DATETIME</ref>;\
+														}\
+														else if(kEle.IsNum64(iIndex))\
+														{\
+															eFieldType = <ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009abc8d09c66ad8f83314cf910cebd1ae3a" kindref="member">SFF_NUM64</ref>;\
+														}\
+														break;\
+														}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="2" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_se_d_b_field_format_macro_8h_1a3d86455ca9341b7f2918927625fdcc0e" prot="public" static="no">
+        <name>DB_BYTE</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="23" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_se_d_b_field_format_macro_8h_1abb72a7bc982d11eab4fa0e641dddc25c" prot="public" static="no">
+        <name>DB_WORD</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="24" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_se_d_b_field_format_macro_8h_1afa0c25b1a71e1c9cdc96ba9299f2634f" prot="public" static="no">
+        <name>DB_NUM</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="25" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_se_d_b_field_format_macro_8h_1a8b61f7ff217e8baba8c9a0a576a1519c" prot="public" static="no">
+        <name>DB_STR</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="26" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_se_d_b_field_format_macro_8h_1a8d7da5f98f926c0485007f5e6bda0e89" prot="public" static="no">
+        <name>DB_TIME</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="27" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_se_d_b_field_format_macro_8h_1a99c6491b94802955864ecfb568fc3c89" prot="public" static="no">
+        <name>DB_NUM64</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="28" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_se_d_b_field_format_macro_8h_1a3989f4bc05c6ec23b5e81f4d7891ff69" prot="public" static="no">
+        <name>DB_DEF_END</name>
+        <param><defname>name</defname></param>
+        <param><defname>tabname</defname></param>
+        <param><defname>can_del</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" line="29" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>DB_DEF_BEGIN</highlight></codeline>
+<codeline lineno="2" refid="_se_d_b_field_format_macro_8h_1a9b8872dbd74e35d9d288a08e22f5b86d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DB_DEF_BEGIN(name,tabname,can_del)<sp/><sp/>case<sp/>SDTI_##name:\</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SeDB##name<sp/>kEle;\</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(kEle.IsNum(iIndex))\</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eFieldType<sp/>=<sp/>SFF_NUM;\</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if(kEle.IsString(iIndex))\</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eFieldType<sp/>=<sp/>SFF_STRING;\</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if(kEle.IsDBTime(iIndex))\</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eFieldType<sp/>=<sp/>SFF_DATETIME;\</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else<sp/>if(kEle.IsNum64(iIndex))\</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eFieldType<sp/>=<sp/>SFF_NUM64;\</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break;\</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23" refid="_se_d_b_field_format_macro_8h_1a3d86455ca9341b7f2918927625fdcc0e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DB_BYTE(edef,name,len,flag)</highlight></codeline>
+<codeline lineno="24" refid="_se_d_b_field_format_macro_8h_1abb72a7bc982d11eab4fa0e641dddc25c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DB_WORD(edef,name,len,flag)</highlight></codeline>
+<codeline lineno="25" refid="_se_d_b_field_format_macro_8h_1afa0c25b1a71e1c9cdc96ba9299f2634f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DB_NUM(edef,name,len,flag)</highlight></codeline>
+<codeline lineno="26" refid="_se_d_b_field_format_macro_8h_1a8b61f7ff217e8baba8c9a0a576a1519c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DB_STR(edef,name,len,flag)</highlight></codeline>
+<codeline lineno="27" refid="_se_d_b_field_format_macro_8h_1a8d7da5f98f926c0485007f5e6bda0e89" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DB_TIME(edef,name,len,flag)</highlight></codeline>
+<codeline lineno="28" refid="_se_d_b_field_format_macro_8h_1a99c6491b94802955864ecfb568fc3c89" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DB_NUM64(edef,name,len,flag)</highlight></codeline>
+<codeline lineno="29" refid="_se_d_b_field_format_macro_8h_1a3989f4bc05c6ec23b5e81f4d7891ff69" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DB_DEF_END(name,tabname,can_del)</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>DB_DEF_BEGIN</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>DB_BYTE</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>DB_WORD</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>DB_NUM</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>DB_STR</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>DB_TIME</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>DB_NUM64</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>DB_DEF_END</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBFieldFormatMacro.h"/>
+  </compounddef>
+</doxygen>

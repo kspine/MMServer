@@ -1,0 +1,496 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_watch_server" kind="namespace">
+    <compoundname>WatchServer</compoundname>
+    <innerclass refid="class_watch_server_1_1_se_race_record_save_thread" prot="public">WatchServer::SeRaceRecordSaveThread</innerclass>
+    <innerclass refid="class_watch_server_1_1_c_se_race_mgr" prot="public">WatchServer::CSeRaceMgr</innerclass>
+    <innerclass refid="class_watch_server_1_1_se_race_svr_mgr" prot="public">WatchServer::SeRaceSvrMgr</innerclass>
+    <innerclass refid="struct_watch_server_1_1_se_race_svr" prot="public">WatchServer::SeRaceSvr</innerclass>
+    <innerclass refid="class_watch_server_1_1_se_town_mgr" prot="public">WatchServer::SeTownMgr</innerclass>
+    <innerclass refid="struct_watch_server_1_1_se_town" prot="public">WatchServer::SeTown</innerclass>
+    <innerclass refid="class_watch_server_1_1_c_watch_server_mgr" prot="public">WatchServer::CWatchServerMgr</innerclass>
+    <innerclass refid="class_watch_server_1_1_se_watch_server_info" prot="public">WatchServer::SeWatchServerInfo</innerclass>
+    <innerclass refid="class_watch_server_1_1_c_watch_server" prot="public">WatchServer::CWatchServer</innerclass>
+    <innerclass refid="struct_watch_server_1_1_se_watch_config" prot="public">WatchServer::SeWatchConfig</innerclass>
+    <innerclass refid="struct_watch_server_1_1_se_connect" prot="public">WatchServer::SeConnect</innerclass>
+    <innerclass refid="struct_watch_server_1_1_se_inner_connect" prot="public">WatchServer::SeInnerConnect</innerclass>
+    <innerclass refid="struct_watch_server_1_1_se_view_player" prot="public">WatchServer::SeViewPlayer</innerclass>
+    <innerclass refid="struct_watch_server_1_1_se_race" prot="public">WatchServer::SeRace</innerclass>
+    <innerclass refid="struct_watch_server_1_1_se_view_race_data" prot="public">WatchServer::SeViewRaceData</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_watch_server_1af999072588e5dcf3934052b5aeb5bd11" prot="public" static="no">
+        <name>SeRaceDef</name>
+        <enumvalue id="namespace_watch_server_1af999072588e5dcf3934052b5aeb5bd11a6c360e59326d46ce344cf57348019bd6" prot="public">
+          <name>RACERECORD_SEND_SIZE</name>
+          <initializer>= 64 * 1024</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_watch_server_1af999072588e5dcf3934052b5aeb5bd11acc027310b46484962852891cc538ab0c" prot="public">
+          <name>RECONNECT_TIME</name>
+          <initializer>= 5 * 1000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerDef.h" line="28" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerDef.h" bodystart="27" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_watch_server_1ac4644e31ad5820d1529141feef0eed7a" prot="public" static="no">
+        <name>SeConnectState</name>
+        <enumvalue id="namespace_watch_server_1ac4644e31ad5820d1529141feef0eed7aae9411688d92f7749ae30426d7901f913" prot="public">
+          <name>SCS_UNKOWN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_watch_server_1ac4644e31ad5820d1529141feef0eed7aa373bab63686b03d15e19b75a7a9e5639" prot="public">
+          <name>SCS_VALID_OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_watch_server_1ac4644e31ad5820d1529141feef0eed7aa4aed545bd211a01094654bcca1255cb0" prot="public">
+          <name>SCS_TOWN_OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_watch_server_1ac4644e31ad5820d1529141feef0eed7aaf91f7bbc95438db674cb143fb83e2ea6" prot="public">
+          <name>SCS_NEXUS_OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_watch_server_1ac4644e31ad5820d1529141feef0eed7aaacced08a1c3ab15740589ff0cf9039ff" prot="public">
+          <name>SCS_RACESVR_OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_watch_server_1ac4644e31ad5820d1529141feef0eed7aa7534948ab845d1a99ccf7e53828a0009" prot="public">
+          <name>SCS_WATCHSERVER_OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_watch_server_1ac4644e31ad5820d1529141feef0eed7aa6b9654464090ca0ab76a5fac9134baaf" prot="public">
+          <name>SCS_WATCHSLAVESERVER_OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerDef.h" line="58" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerDef.h" bodystart="57" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_watch_server_1aec82ec276c66b37a2dcf12d5bee0bd91" prot="public" static="no">
+        <name>SeHeartState</name>
+        <enumvalue id="namespace_watch_server_1aec82ec276c66b37a2dcf12d5bee0bd91a12d88c35a35b773223ac06ef738fd7ed" prot="public">
+          <name>SHS_WCS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_watch_server_1aec82ec276c66b37a2dcf12d5bee0bd91a61af076e74c089fdbfaa070b47ebbfa0" prot="public">
+          <name>SHS_WCMS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_watch_server_1aec82ec276c66b37a2dcf12d5bee0bd91aaf9a9f2727adb45c1728e7d375df285f" prot="public">
+          <name>SHS_RS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerDef.h" line="70" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerDef.h" bodystart="69" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_watch_server_1a8780c372bc2dc6af217d921fb5f2d61a" prot="public" static="no">
+        <type>std::queue&lt; class <ref refid="struct_watch_server_1_1_se_race" kindref="compound">SeRace</ref> * &gt;</type>
+        <definition>typedef std::queue&lt;class SeRace*&gt; WatchServer::TRaceTaskQueue</definition>
+        <argsstring></argsstring>
+        <name>TRaceTaskQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" line="9" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_watch_server_1ac4e32e015bd82bd031784d2dd0e64cf2" prot="public" static="no">
+        <type>std::map&lt; <ref refid="struct_h_town_sign" kindref="compound">HTownSign</ref>, <ref refid="struct_watch_server_1_1_se_race_svr" kindref="compound">SeRaceSvr</ref> * &gt;</type>
+        <definition>typedef std::map&lt;HTownSign, SeRaceSvr*&gt; WatchServer::MapAllRS</definition>
+        <argsstring></argsstring>
+        <name>MapAllRS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeRaceSvrWatchMgrDef.h" line="37" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeRaceSvrWatchMgrDef.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_watch_server_1acc0ef02ca2da00b320ca7ec1aa6d506f" prot="public" static="no">
+        <type>std::map&lt; <ref refid="struct_h_town_sign" kindref="compound">HTownSign</ref>, <ref refid="struct_watch_server_1_1_se_town" kindref="compound">SeTown</ref> * &gt;</type>
+        <definition>typedef std::map&lt;HTownSign, SeTown*&gt; WatchServer::MapAllTS</definition>
+        <argsstring></argsstring>
+        <name>MapAllTS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeTownMgrDef.h" line="43" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeTownMgrDef.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_watch_server_1a91a4051de31fd1d93e66e4e675051a7a" prot="public" static="no">
+        <type>std::set&lt; DWord &gt;</type>
+        <definition>typedef std::set&lt;DWord&gt; WatchServer::SAreaID</definition>
+        <argsstring></argsstring>
+        <name>SAreaID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeTownMgrDef.h" line="45" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeTownMgrDef.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_watch_server_1a12a17a70d727df29e3777a2df6c629e4" prot="public" static="no">
+        <type>std::map&lt; DWord, <ref refid="class_watch_server_1_1_se_watch_server_info" kindref="compound">SeWatchServerInfo</ref> * &gt;</type>
+        <definition>typedef std::map&lt;DWord, SeWatchServerInfo*&gt; WatchServer::MapAllWCS</definition>
+        <argsstring></argsstring>
+        <name>MapAllWCS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeWatchServerMgrDef.h" line="32" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeWatchServerMgrDef.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_watch_server_1a1fc8410324167f0c7024eac9ba50da7f" prot="public" static="no">
+        <type>std::map&lt; HSock, <ref refid="struct_watch_server_1_1_se_connect" kindref="compound">SeConnect</ref> * &gt;</type>
+        <definition>typedef std::map&lt;HSock, SeConnect*&gt; WatchServer::MapAllConnect</definition>
+        <argsstring></argsstring>
+        <name>MapAllConnect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerDef.h" line="99" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerDef.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_watch_server_1a12dc32278be196867667942e1bf97050" prot="public" static="no">
+        <type>std::map&lt; HSock, <ref refid="struct_watch_server_1_1_se_inner_connect" kindref="compound">SeInnerConnect</ref> * &gt;</type>
+        <definition>typedef std::map&lt;HSock, SeInnerConnect*&gt; WatchServer::MapAllInnerConnect</definition>
+        <argsstring></argsstring>
+        <name>MapAllInnerConnect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerDef.h" line="117" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerDef.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_watch_server_1adfcb820a989ad1a393cdbb0bd92de8dc" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="struct_se_w_c_s_view_info" kindref="compound">SeWCSViewInfo</ref> &gt;</type>
+        <definition>typedef std::vector&lt;SeWCSViewInfo&gt; WatchServer::TWCSViewInfoArray</definition>
+        <argsstring></argsstring>
+        <name>TWCSViewInfoArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerDef.h" line="119" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerDef.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_watch_server_1aba6da22e2bde8e89a13946e29a16c9c6" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="struct_watch_server_1_1_se_view_player" kindref="compound">SeViewPlayer</ref> &gt;</type>
+        <definition>typedef std::vector&lt;SeViewPlayer&gt; WatchServer::VViewPlayer</definition>
+        <argsstring></argsstring>
+        <name>VViewPlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerRaceDef.h" line="45" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerRaceDef.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_watch_server_1aab422a195612b4cac3fdbf7950fa7c65" prot="public" static="no">
+        <type>std::unordered_map&lt; DWord, <ref refid="struct_watch_server_1_1_se_view_player" kindref="compound">SeViewPlayer</ref> &gt;</type>
+        <definition>typedef std::unordered_map&lt;DWord, SeViewPlayer&gt; WatchServer::MViewPlayer</definition>
+        <argsstring></argsstring>
+        <name>MViewPlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerRaceDef.h" line="46" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerRaceDef.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_watch_server_1a56b9214103d6ca1eb7fedf9cd2baa7a5" prot="public" static="no">
+        <type>std::map&lt; <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>, <ref refid="struct_watch_server_1_1_se_race" kindref="compound">SeRace</ref> * &gt;</type>
+        <definition>typedef std::map&lt;TeMD5, SeRace*&gt; WatchServer::MRace</definition>
+        <argsstring></argsstring>
+        <name>MRace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerRaceDef.h" line="62" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerRaceDef.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_watch_server_1adb561a1200301a2c2a72015340e5c145" prot="public" static="no">
+        <type>std::map&lt; <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>, <ref refid="struct_watch_server_1_1_se_view_race_data" kindref="compound">SeViewRaceData</ref> * &gt;</type>
+        <definition>typedef std::map&lt;TeMD5, SeViewRaceData*&gt; WatchServer::MViewRaceData</definition>
+        <argsstring></argsstring>
+        <name>MViewRaceData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerRaceDef.h" line="72" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerRaceDef.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_watch_server_1a1ba085da8e82bcc688d64e20a5a48f5c" prot="public" static="no" mutable="no">
+        <type><ref refid="class_watch_server_1_1_c_se_race_mgr" kindref="compound">CSeRaceMgr</ref></type>
+        <definition>CSeRaceMgr WatchServer::g_kRaceMgr</definition>
+        <argsstring></argsstring>
+        <name>g_kRaceMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeRaceMgr.cpp" line="7" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeRaceMgr.cpp" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a3444555cdeb5bcef2d385962308f43a1" compoundref="_watch_server_8cpp" startline="806" endline="818">WatchServer::CWatchServer::OnPlayerDisconnect</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_mgr_1afbf92fafbe535b6a016412e0efa5673e" compoundref="_se_watch_server_mgr_8cpp" startline="123" endline="208">WatchServer::CWatchServerMgr::onRaceDetailInfoReq</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a810192ea51f8f1f5c14b503651bb5cb8" compoundref="_se_c_w_c_s_process_8cpp" startline="27" endline="38">WatchServer::CWatchServer::ProcessCWCS_ViewValidate</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a1cd0b013f1295e8976dea64903b6f00e" compoundref="_se_r_w_c_s_process_8cpp" startline="79" endline="82">WatchServer::CWatchServer::ProcessRWCS_RaceDetailInfoSync</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a943d1c45eb6cff69de0ac7854beda79b" compoundref="_se_r_w_c_s_process_8cpp" startline="71" endline="77">WatchServer::CWatchServer::ProcessRWCS_RaceEnd</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1aa07eaa6f3b06b6cad3a4cda412530155" compoundref="_se_r_w_c_s_process_8cpp" startline="57" endline="62">WatchServer::CWatchServer::ProcessRWCS_RaceRecord</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1ad224a1d99faee6520e9c2896193993d8" compoundref="_se_r_w_c_s_process_8cpp" startline="64" endline="69">WatchServer::CWatchServer::ProcessRWCS_RaceStart</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a63a55cf9d6cf2034c4e1f6c56fa3410e" compoundref="_watch_server_8cpp" startline="201" endline="220">WatchServer::CWatchServer::Register2RS</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_se_race_mgr_1ae136650b49230a072a448b76121707be" compoundref="_watch_server_2_src_2_se_race_mgr_8cpp" startline="54" endline="75">WatchServer::CSeRaceMgr::removeViewPlayer</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a33f9e96b9e585598ef84457bc2efacb3" compoundref="_watch_server_8cpp" startline="283" endline="306">WatchServer::CWatchServer::ShowConsoleTitle</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a06346a1715803f6de7f0e5df74fb5cb7" compoundref="_watch_server_8cpp" startline="94" endline="107">WatchServer::CWatchServer::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_watch_server_1a1fd026caa0d37dc7c156b53ee24cd900" prot="public" static="no" mutable="no">
+        <type><ref refid="class_watch_server_1_1_se_race_svr_mgr" kindref="compound">SeRaceSvrMgr</ref></type>
+        <definition>SeRaceSvrMgr WatchServer::g_kRaceSvrMgr</definition>
+        <argsstring></argsstring>
+        <name>g_kRaceSvrMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeRaceSvrWatchMgr.cpp" line="6" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeRaceSvrWatchMgr.cpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_watch_server_1a7cc13eccd78c1d1334b1863395dd6127" prot="public" static="no" mutable="no">
+        <type><ref refid="class_watch_server_1_1_se_town_mgr" kindref="compound">SeTownMgr</ref></type>
+        <definition>SeTownMgr WatchServer::g_kTownMgr</definition>
+        <argsstring></argsstring>
+        <name>g_kTownMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeTownMgr.cpp" line="6" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeTownMgr.cpp" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a16c4aafd626d1586aaaae1a112e8d071" compoundref="_watch_server_8cpp" startline="709" endline="778">WatchServer::CWatchServer::OnNetDisconnect</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1abe85080d1172546b0fe37e7ce027541c" compoundref="_se_t_w_c_m_s_process_8cpp" startline="24" endline="58">WatchServer::CWatchServer::ProcessTWCMS_Register</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_watch_server_1ab985a30dbaa554391d708254872572c9" prot="public" static="no" mutable="no">
+        <type><ref refid="class_watch_server_1_1_c_watch_server_mgr" kindref="compound">CWatchServerMgr</ref></type>
+        <definition>CWatchServerMgr WatchServer::g_kWatchServerMgr</definition>
+        <argsstring></argsstring>
+        <name>g_kWatchServerMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeWatchServerMgr.cpp" line="8" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeWatchServerMgr.cpp" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a2a0fec7f6da222842dce84e5bed8c04e" compoundref="_watch_server_8cpp" startline="66" endline="88">WatchServer::CWatchServer::Initialize</referencedby>
+        <referencedby refid="class_nexus_server_1a1d525ee77da84c486209bfb55548e71a" compoundref="_nexus_server_8cpp" startline="386" endline="409">NexusServer::InitializeNet</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a1b5f8ee69896e5c63de2406acc664fac" compoundref="_watch_server_8cpp" startline="845" endline="856">WatchServer::CWatchServer::onDelRace</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a12d36ae4e2d6851452f7af36d1e5784d" compoundref="_watch_server_8cpp" startline="832" endline="843">WatchServer::CWatchServer::onHandleNewRace</referencedby>
+        <referencedby refid="class_nexus_server_1a76c854987531fedf75cca110db6f1e94" compoundref="_nexus_server_8cpp" startline="229" endline="275">NexusServer::OnNetDisconnect</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a0fb32d9b82f9b582ac74196222b20bf1" compoundref="_se_t_w_c_m_s_process_8cpp" startline="82" endline="89">WatchServer::CWatchServer::ProcessTWCMS_RaceDetailInfoReq</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a735c439f62adea6d1934719aea04eb3f" compoundref="_se_t_w_c_m_s_process_8cpp" startline="69" endline="74">WatchServer::CWatchServer::ProcessTWCMS_ReqView</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1ab96aba37b31db5bf849d871fbbb64a40" compoundref="_se_t_w_c_m_s_process_8cpp" startline="76" endline="80">WatchServer::CWatchServer::ProcessTWCMS_ReqViewList</referencedby>
+        <referencedby refid="class_nexus_server_1a620506517d4c884e1f22adeeae62f326" compoundref="_se_w_c_m_s_n_process_8cpp" startline="12" endline="44">NexusServer::ProcessWCMSN_Register</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a7ac28b5d931fa58008b5d34107df294e" compoundref="_watch_server_8cpp" startline="877" endline="880">WatchServer::CWatchServer::RaceWatchUserSync</referencedby>
+        <referencedby refid="class_nexus_server_1a7685e4a6b7dba43dd0857588341c1c98" compoundref="_se_n_w_c_m_s_send_8cpp" startline="8" endline="19">NexusServer::SendNWCMSData</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a33f9e96b9e585598ef84457bc2efacb3" compoundref="_watch_server_8cpp" startline="283" endline="306">WatchServer::CWatchServer::ShowConsoleTitle</referencedby>
+        <referencedby refid="class_nexus_server_1a518930647c3028e8174b1088996d42c1" compoundref="_nexus_server_8cpp" startline="421" endline="451">NexusServer::UpdateConnect</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_watch_server_1a208df4681e96b5652f08391e09c39ee7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WatchServer::IMPLEMENT_POOL</definition>
+        <argsstring>(SeWatchServerInfo, 16, 16)</argsstring>
+        <name>IMPLEMENT_POOL</name>
+        <param>
+          <type><ref refid="class_watch_server_1_1_se_watch_server_info" kindref="compound">SeWatchServerInfo</ref></type>
+        </param>
+        <param>
+          <type>16</type>
+        </param>
+        <param>
+          <type>16</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/SeWatchServerMgrDef.cpp" line="5" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_watch_server_1a6e552b0afc8e74e145af6f7a71f477ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WatchServer::IMPLEMENT_POOL</definition>
+        <argsstring>(SeConnect, 256, 64)</argsstring>
+        <name>IMPLEMENT_POOL</name>
+        <param>
+          <type><ref refid="struct_watch_server_1_1_se_connect" kindref="compound">SeConnect</ref></type>
+        </param>
+        <param>
+          <type>256</type>
+        </param>
+        <param>
+          <type>64</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServer.cpp" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_watch_server_1a074c18f0449cb99e0ef9b97983e8709e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WatchServer::IMPLEMENT_POOL</definition>
+        <argsstring>(SeInnerConnect, 256, 64)</argsstring>
+        <name>IMPLEMENT_POOL</name>
+        <param>
+          <type><ref refid="struct_watch_server_1_1_se_inner_connect" kindref="compound">SeInnerConnect</ref></type>
+        </param>
+        <param>
+          <type>256</type>
+        </param>
+        <param>
+          <type>64</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServer.cpp" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_watch_server_1ae8c1c54937c12c9f966e45f99a1eed96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WatchServer::IMPLEMENT_POOL</definition>
+        <argsstring>(SeRace, 256, 64)</argsstring>
+        <name>IMPLEMENT_POOL</name>
+        <param>
+          <type><ref refid="struct_watch_server_1_1_se_race" kindref="compound">SeRace</ref></type>
+        </param>
+        <param>
+          <type>256</type>
+        </param>
+        <param>
+          <type>64</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerRaceDef.cpp" line="5" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_watch_server_1a41ab44933c237ba254fd02f615bb0214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WatchServer::IMPLEMENT_POOL</definition>
+        <argsstring>(SeViewRaceData, 256, 64)</argsstring>
+        <name>IMPLEMENT_POOL</name>
+        <param>
+          <type><ref refid="struct_watch_server_1_1_se_view_race_data" kindref="compound">SeViewRaceData</ref></type>
+        </param>
+        <param>
+          <type>256</type>
+        </param>
+        <param>
+          <type>64</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServerRaceDef.cpp" line="6" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/Main.cpp" line="4" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1477 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_tcp_server" kind="class" prot="public">
+    <compoundname>TcpServer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TeNetCall</basecompoundref>
+    <basecompoundref refid="class_se_base_server" prot="public" virt="non-virtual">SeBaseServer</basecompoundref>
+    <includes refid="_tcp_server_8h" local="no">TcpServer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_tcp_server_1afc636d718e9af411aeca981b93674ebf" prot="protected" static="no" mutable="no">
+        <type>DWord</type>
+        <definition>DWord TcpServer::m_dwCurTime</definition>
+        <argsstring></argsstring>
+        <name>m_dwCurTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="70" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="class_tcp_server_1a50bafeea0cfd24245ff8378d80c064e6" compoundref="_tcp_server_8cpp" startline="703" endline="706">GetServerTime</referencedby>
+        <referencedby refid="class_tcp_server_1ad6d1a8405d96f2479c297918c396d212" compoundref="_tcp_server_8cpp" startline="8" endline="16">TcpServer</referencedby>
+        <referencedby refid="class_tcp_server_1ad20814eab3dc87056ce261b3fe9cff75" compoundref="_tcp_server_8cpp" startline="245" endline="268">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_tcp_server_1af800329746461585c8a0e020212d7698" prot="protected" static="no" mutable="no">
+        <type>DWord</type>
+        <definition>DWord TcpServer::m_dwTickCount</definition>
+        <argsstring></argsstring>
+        <name>m_dwTickCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="71" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="class_tcp_server_1a45b32232d2a423a01823ec028b433eca" compoundref="_tcp_server_8cpp" startline="90" endline="110">Initialize</referencedby>
+        <referencedby refid="class_tcp_server_1ad6d1a8405d96f2479c297918c396d212" compoundref="_tcp_server_8cpp" startline="8" endline="16">TcpServer</referencedby>
+        <referencedby refid="class_tcp_server_1ad20814eab3dc87056ce261b3fe9cff75" compoundref="_tcp_server_8cpp" startline="245" endline="268">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_tcp_server_1afbd7ca4108cb71dd4a8d5ad53b29dac1" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_se_svr_config" kindref="compound">SeSvrConfig</ref></type>
+        <definition>SeSvrConfig TcpServer::m_kConfig</definition>
+        <argsstring></argsstring>
+        <name>m_kConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="72" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="class_tcp_server_1a7634912a5876e4f85ad0fef38e467b45" compoundref="_tcp_server_8cpp" startline="708" endline="723">ConnectToParent</referencedby>
+        <referencedby refid="class_tcp_server_1a34d826cc9c797b1f70b9880344da11f2" compoundref="_tcp_server_8cpp" startline="821" endline="844">DisconnectPlayerSock</referencedby>
+        <referencedby refid="class_tcp_server_1a38c67c3be0dd0a0d96244da4013a70fc" compoundref="_tcp_server_8cpp" startline="62" endline="88">InitializeNet</referencedby>
+        <referencedby refid="class_tcp_server_1a52a028cf3f9b36fa6c854186927460fd" compoundref="_tcp_server_8cpp" startline="23" endline="60">LoadConfig</referencedby>
+        <referencedby refid="class_tcp_server_1abe074dd33c928bd72d4b86164f574d10" compoundref="_tcp_server_8cpp" startline="605" endline="701">LoadDynamicConfig</referencedby>
+        <referencedby refid="class_tcp_server_1a8d7adffedcab94bb6fdad94558f88d2b" compoundref="_tcp_server_8cpp" startline="307" endline="350">OnNetAccept</referencedby>
+        <referencedby refid="class_tcp_server_1aa8efc818557bb7a347f65b10a4306c46" compoundref="_tcp_server_8cpp" startline="289" endline="305">OnNetConnected</referencedby>
+        <referencedby refid="class_tcp_server_1acbab122cffc250ed01c2ae6de6bd2cbf" compoundref="_se_parent_send_8cpp" startline="59" endline="66">SendParent_Register</referencedby>
+        <referencedby refid="class_tcp_server_1abf6cccb1f01c2e76e07b1ee34bbd54ff" compoundref="_tcp_server_8cpp" startline="276" endline="287">ShowConsoleTitle</referencedby>
+        <referencedby refid="class_tcp_server_1a6d35812fdd9073796c52ff92848e81be" compoundref="_tcp_server_8cpp" startline="181" endline="206">UpdateClientHeart</referencedby>
+        <referencedby refid="class_tcp_server_1ac85d0c14e0f8a08dd5cf5f58d284fca0" compoundref="_tcp_server_8cpp" startline="127" endline="178">UpdateConnect</referencedby>
+        <referencedby refid="class_tcp_server_1aa3d64df40dbb03257e64e0a96a09e1bd" compoundref="_tcp_server_8cpp" startline="208" endline="243">UpdateParentHeart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_tcp_server_1a2aced2e2d59c5ce0adf6fd631f21df25" prot="protected" static="no" mutable="no">
+        <type>DWord</type>
+        <definition>DWord TcpServer::m_dwClientGenID</definition>
+        <argsstring></argsstring>
+        <name>m_dwClientGenID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="73" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" bodystart="73" bodyend="-1"/>
+        <referencedby refid="class_tcp_server_1ae63cd7967ce360cf811740cadf962e4c" compoundref="_tcp_server_8cpp" startline="799" endline="802">GenClientID</referencedby>
+        <referencedby refid="class_tcp_server_1ad6d1a8405d96f2479c297918c396d212" compoundref="_tcp_server_8cpp" startline="8" endline="16">TcpServer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_tcp_server_1a7991d5e390871ec0c6f95da0913282a6" prot="protected" static="no" mutable="no">
+        <type>DWord</type>
+        <definition>DWord TcpServer::m_dwCheckConnectTime</definition>
+        <argsstring></argsstring>
+        <name>m_dwCheckConnectTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="74" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="class_tcp_server_1ad6d1a8405d96f2479c297918c396d212" compoundref="_tcp_server_8cpp" startline="8" endline="16">TcpServer</referencedby>
+        <referencedby refid="class_tcp_server_1a6d35812fdd9073796c52ff92848e81be" compoundref="_tcp_server_8cpp" startline="181" endline="206">UpdateClientHeart</referencedby>
+        <referencedby refid="class_tcp_server_1ac85d0c14e0f8a08dd5cf5f58d284fca0" compoundref="_tcp_server_8cpp" startline="127" endline="178">UpdateConnect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_tcp_server_1aed1319386c612acaf5414dbf4fd3c673" prot="protected" static="no" mutable="no">
+        <type>TeNetMgr</type>
+        <definition>TeNetMgr TcpServer::m_kNetMgr</definition>
+        <argsstring></argsstring>
+        <name>m_kNetMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="77" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="class_tcp_server_1a7634912a5876e4f85ad0fef38e467b45" compoundref="_tcp_server_8cpp" startline="708" endline="723">ConnectToParent</referencedby>
+        <referencedby refid="class_tcp_server_1a34d826cc9c797b1f70b9880344da11f2" compoundref="_tcp_server_8cpp" startline="821" endline="844">DisconnectPlayerSock</referencedby>
+        <referencedby refid="class_tcp_server_1aca0ffc3f1a49054f068f42bde03dd9e4" compoundref="_tcp_server_8cpp" startline="270" endline="274">Finialize</referencedby>
+        <referencedby refid="class_tcp_server_1a38c67c3be0dd0a0d96244da4013a70fc" compoundref="_tcp_server_8cpp" startline="62" endline="88">InitializeNet</referencedby>
+        <referencedby refid="class_tcp_server_1a8d7adffedcab94bb6fdad94558f88d2b" compoundref="_tcp_server_8cpp" startline="307" endline="350">OnNetAccept</referencedby>
+        <referencedby refid="class_tcp_server_1aabf869f68327c348a7f2abbf2a6cdf78" compoundref="_tcp_server_8cpp" startline="352" endline="425">OnNetRecv</referencedby>
+        <referencedby refid="class_tcp_server_1a239bdfbad2c5e76bb0f8f0677e85f7f7" compoundref="_se_parent_proc_8cpp" startline="79" endline="94">ProcessParent_SendData</referencedby>
+        <referencedby refid="class_tcp_server_1ad67fbedd53c9b4352fd05f584c449cba" compoundref="_se_parent_send_8cpp" startline="3" endline="57">SendTTData</referencedby>
+        <referencedby refid="class_tcp_server_1ad20814eab3dc87056ce261b3fe9cff75" compoundref="_tcp_server_8cpp" startline="245" endline="268">Update</referencedby>
+        <referencedby refid="class_tcp_server_1aa3d64df40dbb03257e64e0a96a09e1bd" compoundref="_tcp_server_8cpp" startline="208" endline="243">UpdateParentHeart</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_tcp_server_1a6510b2787024c63755f95e098c83f2ca" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_se_server_data" kindref="compound">SeServerData</ref></type>
+        <definition>SeServerData TcpServer::m_kParentData</definition>
+        <argsstring></argsstring>
+        <name>m_kParentData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="79" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="class_tcp_server_1a7634912a5876e4f85ad0fef38e467b45" compoundref="_tcp_server_8cpp" startline="708" endline="723">ConnectToParent</referencedby>
+        <referencedby refid="class_tcp_server_1a8d7adffedcab94bb6fdad94558f88d2b" compoundref="_tcp_server_8cpp" startline="307" endline="350">OnNetAccept</referencedby>
+        <referencedby refid="class_tcp_server_1aa8efc818557bb7a347f65b10a4306c46" compoundref="_tcp_server_8cpp" startline="289" endline="305">OnNetConnected</referencedby>
+        <referencedby refid="class_tcp_server_1a97d4c221e30e90b403a13a5a863c19a2" compoundref="_tcp_server_8cpp" startline="427" endline="468">OnNetDisconnect</referencedby>
+        <referencedby refid="class_tcp_server_1aabf869f68327c348a7f2abbf2a6cdf78" compoundref="_tcp_server_8cpp" startline="352" endline="425">OnNetRecv</referencedby>
+        <referencedby refid="class_tcp_server_1abef1ea38a82a4e708f5dc0419f41781c" compoundref="_se_parent_proc_8cpp" startline="4" endline="19">ProcessParent</referencedby>
+        <referencedby refid="class_tcp_server_1af603e2982226258bc52370863bf8c304" compoundref="_se_parent_proc_8cpp" startline="21" endline="67">ProcessParent_RegisterRet</referencedby>
+        <referencedby refid="class_tcp_server_1a15dbc0c979136a6e3f3b6ed1032f81cb" compoundref="_tcp_server_8cpp" startline="725" endline="741">RegisterToParent</referencedby>
+        <referencedby refid="class_tcp_server_1ad67fbedd53c9b4352fd05f584c449cba" compoundref="_se_parent_send_8cpp" startline="3" endline="57">SendTTData</referencedby>
+        <referencedby refid="class_tcp_server_1aa3d64df40dbb03257e64e0a96a09e1bd" compoundref="_tcp_server_8cpp" startline="208" endline="243">UpdateParentHeart</referencedby>
+        <referencedby refid="class_tcp_server_1a19c7556adf231cc18610f8bbf94d54d1" compoundref="_tcp_server_8cpp" startline="112" endline="125">UpdateState</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_tcp_server_1a5adb8f6bbb52eafe0eb50f71c66b9442" prot="protected" static="no" mutable="no">
+        <type><ref refid="_src_2_match_server_def_8h_1a4932e253766909a605e124d24249d8d2" kindref="member">MapAllConnect</ref></type>
+        <definition>MapAllConnect TcpServer::m_kMapSock</definition>
+        <argsstring></argsstring>
+        <name>m_kMapSock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="81" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" bodystart="81" bodyend="-1"/>
+        <referencedby refid="class_tcp_server_1a11937f9b14a3449a0a9032bcb310d81c" compoundref="_tcp_server_8cpp" startline="743" endline="753">AddConnect</referencedby>
+        <referencedby refid="class_tcp_server_1acc8d20fbd9bff2db8992275a8e22d741" compoundref="_tcp_server_8cpp" startline="755" endline="764">DelConnect</referencedby>
+        <referencedby refid="class_tcp_server_1a308f820e948e314b0c4107d667211024" compoundref="_tcp_server_8cpp" startline="777" endline="786">FindConnect</referencedby>
+        <referencedby refid="class_tcp_server_1af603e2982226258bc52370863bf8c304" compoundref="_se_parent_proc_8cpp" startline="21" endline="67">ProcessParent_RegisterRet</referencedby>
+        <referencedby refid="class_tcp_server_1abf6cccb1f01c2e76e07b1ee34bbd54ff" compoundref="_tcp_server_8cpp" startline="276" endline="287">ShowConsoleTitle</referencedby>
+        <referencedby refid="class_tcp_server_1a6d35812fdd9073796c52ff92848e81be" compoundref="_tcp_server_8cpp" startline="181" endline="206">UpdateClientHeart</referencedby>
+        <referencedby refid="class_tcp_server_1ac85d0c14e0f8a08dd5cf5f58d284fca0" compoundref="_tcp_server_8cpp" startline="127" endline="178">UpdateConnect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_tcp_server_1a19a9cd4795abf0392f9bc84e94267fb1" prot="protected" static="no" mutable="no">
+        <type><ref refid="_tcp_server_def_8h_1aaeb5a7a9d1019e6570d3196cf7be871a" kindref="member">MapAllConnectByID</ref></type>
+        <definition>MapAllConnectByID TcpServer::m_kMapID</definition>
+        <argsstring></argsstring>
+        <name>m_kMapID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="82" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="class_tcp_server_1a11937f9b14a3449a0a9032bcb310d81c" compoundref="_tcp_server_8cpp" startline="743" endline="753">AddConnect</referencedby>
+        <referencedby refid="class_tcp_server_1acc8d20fbd9bff2db8992275a8e22d741" compoundref="_tcp_server_8cpp" startline="755" endline="764">DelConnect</referencedby>
+        <referencedby refid="class_tcp_server_1a18cdf4ff1fbef370969ec1d28d3e8918" compoundref="_tcp_server_8cpp" startline="766" endline="775">FindConnect</referencedby>
+        <referencedby refid="class_tcp_server_1abf6cccb1f01c2e76e07b1ee34bbd54ff" compoundref="_tcp_server_8cpp" startline="276" endline="287">ShowConsoleTitle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_tcp_server_1a8fdec844d73a73931e97179719059814" prot="protected" static="no" mutable="no">
+        <type><ref refid="_src_2_login_server_def_8h_1addd4927515d11309cdf0e9b62ec72a4a" kindref="member">MapIPCount</ref></type>
+        <definition>MapIPCount TcpServer::m_kIPCount</definition>
+        <argsstring></argsstring>
+        <name>m_kIPCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="84" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="class_tcp_server_1a8d7adffedcab94bb6fdad94558f88d2b" compoundref="_tcp_server_8cpp" startline="307" endline="350">OnNetAccept</referencedby>
+        <referencedby refid="class_tcp_server_1a97d4c221e30e90b403a13a5a863c19a2" compoundref="_tcp_server_8cpp" startline="427" endline="468">OnNetDisconnect</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_tcp_server_1ad6d1a8405d96f2479c297918c396d212" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TcpServer::TcpServer</definition>
+        <argsstring>(void)</argsstring>
+        <name>TcpServer</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="12" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="8" bodyend="16"/>
+        <references refid="class_tcp_server_1a7991d5e390871ec0c6f95da0913282a6" compoundref="_tcp_server_8h" startline="74">m_dwCheckConnectTime</references>
+        <references refid="class_tcp_server_1a2aced2e2d59c5ce0adf6fd631f21df25" compoundref="_tcp_server_8h" startline="73">m_dwClientGenID</references>
+        <references refid="class_tcp_server_1afc636d718e9af411aeca981b93674ebf" compoundref="_tcp_server_8h" startline="70">m_dwCurTime</references>
+        <references refid="class_tcp_server_1af800329746461585c8a0e020212d7698" compoundref="_tcp_server_8h" startline="71">m_dwTickCount</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a226792a6bb7cccdb4eb6dfdf8851326c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TcpServer::~TcpServer</definition>
+        <argsstring>(void)</argsstring>
+        <name>~TcpServer</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="13" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="18" bodyend="21"/>
+        <references refid="class_tcp_server_1aca0ffc3f1a49054f068f42bde03dd9e4" compoundref="_tcp_server_8cpp" startline="270" endline="274">Finialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a45b32232d2a423a01823ec028b433eca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool TcpServer::Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <reimplements refid="class_se_base_server_1a6bb58d0849eb78ffd85d1fcad67d21b2">Initialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="15" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="90" bodyend="110"/>
+        <references refid="class_tcp_server_1a38c67c3be0dd0a0d96244da4013a70fc" compoundref="_tcp_server_8cpp" startline="62" endline="88">InitializeNet</references>
+        <references refid="class_tcp_server_1a52a028cf3f9b36fa6c854186927460fd" compoundref="_tcp_server_8cpp" startline="23" endline="60">LoadConfig</references>
+        <references refid="class_tcp_server_1abe074dd33c928bd72d4b86164f574d10" compoundref="_tcp_server_8cpp" startline="605" endline="701">LoadDynamicConfig</references>
+        <references refid="class_tcp_server_1af800329746461585c8a0e020212d7698" compoundref="_tcp_server_8h" startline="71">m_dwTickCount</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1ad20814eab3dc87056ce261b3fe9cff75" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TcpServer::Update</definition>
+        <argsstring>(void)</argsstring>
+        <name>Update</name>
+        <reimplements refid="class_se_base_server_1a07a0cf8e7406a136e92dcf88875cfd77">Update</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="16" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="245" bodyend="268"/>
+        <references refid="class_tcp_server_1afc636d718e9af411aeca981b93674ebf" compoundref="_tcp_server_8h" startline="70">m_dwCurTime</references>
+        <references refid="class_tcp_server_1af800329746461585c8a0e020212d7698" compoundref="_tcp_server_8h" startline="71">m_dwTickCount</references>
+        <references refid="class_tcp_server_1aed1319386c612acaf5414dbf4fd3c673" compoundref="_tcp_server_8h" startline="77">m_kNetMgr</references>
+        <references refid="class_tcp_server_1a6d35812fdd9073796c52ff92848e81be" compoundref="_tcp_server_8cpp" startline="181" endline="206">UpdateClientHeart</references>
+        <references refid="class_tcp_server_1aa3d64df40dbb03257e64e0a96a09e1bd" compoundref="_tcp_server_8cpp" startline="208" endline="243">UpdateParentHeart</references>
+        <references refid="class_tcp_server_1a19c7556adf231cc18610f8bbf94d54d1" compoundref="_tcp_server_8cpp" startline="112" endline="125">UpdateState</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1aca0ffc3f1a49054f068f42bde03dd9e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TcpServer::Finialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Finialize</name>
+        <reimplements refid="class_se_base_server_1af5e58035250986682d2810757069233b">Finialize</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="17" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="270" bodyend="274"/>
+        <references refid="class_tcp_server_1aed1319386c612acaf5414dbf4fd3c673" compoundref="_tcp_server_8h" startline="77">m_kNetMgr</references>
+        <referencedby refid="class_tcp_server_1a226792a6bb7cccdb4eb6dfdf8851326c" compoundref="_tcp_server_8cpp" startline="18" endline="21">~TcpServer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1abf6cccb1f01c2e76e07b1ee34bbd54ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TcpServer::ShowConsoleTitle</definition>
+        <argsstring>(int iDTime)</argsstring>
+        <name>ShowConsoleTitle</name>
+        <reimplements refid="class_se_base_server_1aab49ca32b654abc948c4d2b163746591">ShowConsoleTitle</reimplements>
+        <param>
+          <type>int</type>
+          <declname>iDTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="18" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="276" bodyend="287"/>
+        <references refid="struct_se_svr_config_1a414151a7311e433b6893acf639482a36" compoundref="_tcp_server_def_8h" startline="33">SeSvrConfig::dwServerID</references>
+        <references refid="_se_tool_8h_1ada81d4ae5d39c42af0a02b45f4a6f715" compoundref="_se_tool_8h" startline="66">GetID2Str</references>
+        <references refid="class_tcp_server_1afbd7ca4108cb71dd4a8d5ad53b29dac1" compoundref="_tcp_server_8h" startline="72">m_kConfig</references>
+        <references refid="class_tcp_server_1a19a9cd4795abf0392f9bc84e94267fb1" compoundref="_tcp_server_8h" startline="82">m_kMapID</references>
+        <references refid="class_tcp_server_1a5adb8f6bbb52eafe0eb50f71c66b9442" compoundref="_tcp_server_8h" startline="81">m_kMapSock</references>
+        <references refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" compoundref="_se_server_tool_8cpp" startline="31" endline="64">SPrintf</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1af1fcfc97e5a84c56e69b9510831c87e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_se_server_main_def_8h_1a6856d2f3d34c3913f55b991c0d63e89d" kindref="member">SeServerActionResult</ref></type>
+        <definition>SeServerActionResult TcpServer::ExecuteAction</definition>
+        <argsstring>(SeServerActionIndex eActionIndex)</argsstring>
+        <name>ExecuteAction</name>
+        <reimplements refid="class_se_base_server_1ab4a7f5d600833220b84b2c1e143f0605">ExecuteAction</reimplements>
+        <param>
+          <type><ref refid="_se_server_main_def_8h_1abbd63e694a43e9bc292e0e0b55ae79bd" kindref="member">SeServerActionIndex</ref></type>
+          <declname>eActionIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="19" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/Main.cpp" bodystart="3" bodyend="21"/>
+        <references refid="_se_server_main_def_8h_1a6856d2f3d34c3913f55b991c0d63e89dac7f0df5db209cf47b037a31ee2946d0c" compoundref="_se_server_main_def_8h" startline="8">AER_OK</references>
+        <references refid="_se_server_main_def_8h_1abbd63e694a43e9bc292e0e0b55ae79bdab240074b0f8ea39e74f33d2dab2c86b6" compoundref="_se_server_main_def_8h" startline="17">AI_F1</references>
+        <references refid="_se_server_main_def_8h_1abbd63e694a43e9bc292e0e0b55ae79bda650354bdbd2abe28dc6965362eae64e3" compoundref="_se_server_main_def_8h" startline="21">AI_F5</references>
+        <references refid="class_tcp_server_1abe074dd33c928bd72d4b86164f574d10" compoundref="_tcp_server_8cpp" startline="605" endline="701">LoadDynamicConfig</references>
+        <references refid="_se_file_log_8h_1a7c727baeafcf8b1ef6ca798fad4d738c" compoundref="_se_file_log_8h" startline="86">SeLogHideTime</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1aa8efc818557bb7a347f65b10a4306c46" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TcpServer::OnNetConnected</definition>
+        <argsstring>(const HSock &amp;rkSock, const char *pcIP, int iPort)</argsstring>
+        <name>OnNetConnected</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcIP</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iPort</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="21" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="289" bodyend="305"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="struct_se_server_data_1a53fcdfea60106f5c7179d39b1e259a3e" compoundref="_se_server_define_8h" startline="20">SeServerData::bConnecting</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="struct_se_svr_config_1a8985377d6448d7776000db2e417f2039" compoundref="_tcp_server_def_8h" startline="35">SeSvrConfig::kParentServer</references>
+        <references refid="struct_se_server_data_1a2777bbfd27a6afe42ebd71c5d14010a0" compoundref="_se_server_define_8h" startline="19">SeServerData::kSock</references>
+        <references refid="class_tcp_server_1afbd7ca4108cb71dd4a8d5ad53b29dac1" compoundref="_tcp_server_8h" startline="72">m_kConfig</references>
+        <references refid="class_tcp_server_1a6510b2787024c63755f95e098c83f2ca" compoundref="_tcp_server_8h" startline="79">m_kParentData</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a8d7adffedcab94bb6fdad94558f88d2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TcpServer::OnNetAccept</definition>
+        <argsstring>(const HSock &amp;rkSock, int iListenPort, const char *pcIP, int iPort)</argsstring>
+        <name>OnNetAccept</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iListenPort</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcIP</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iPort</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="22" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="307" bodyend="350"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="class_tcp_server_1a11937f9b14a3449a0a9032bcb310d81c" compoundref="_tcp_server_8cpp" startline="743" endline="753">AddConnect</references>
+        <references refid="struct_se_server_data_1a4d91e2d15b4bc404ebc4ec42254ac770" compoundref="_se_server_define_8h" startline="21">SeServerData::bRegistered</references>
+        <references refid="struct_se_connect_1a3cf82a9ecf77fa6af735397ec67eeee4" compoundref="_tcp_server_def_8h" startline="80">SeConnect::dwAccountID</references>
+        <references refid="struct_se_connect_1ac790bf17c45ff2293158f377c176c8ac" compoundref="_tcp_server_def_8h" startline="79">SeConnect::dwClientID</references>
+        <references refid="struct_se_connect_1af90c5d0ae32665bd3b89980926896f0c" compoundref="_tcp_server_def_8h" startline="88">SeConnect::dwLastRecvTime</references>
+        <references refid="struct_se_connect_1ae90bd507e6e1e36dc4ee9e4d5e849cd3" compoundref="_src_2_match_server_def_8h" startline="65">SeConnect::dwStateTime</references>
+        <references refid="struct_se_connect_1a149d84058a462e8833764a6dd2aa2d04" compoundref="_src_2_match_server_def_8h" startline="64">SeConnect::eState</references>
+        <references refid="class_tcp_server_1ae63cd7967ce360cf811740cadf962e4c" compoundref="_tcp_server_8cpp" startline="799" endline="802">GenClientID</references>
+        <references refid="class_tcp_server_1a50bafeea0cfd24245ff8378d80c064e6" compoundref="_tcp_server_8cpp" startline="703" endline="706">GetServerTime</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="struct_se_svr_config_1a99ec697d4ba636164a922d86163d336f" compoundref="_tcp_server_def_8h" startline="38">SeSvrConfig::iSameIPConnect</references>
+        <references refid="struct_se_connect_1a6be4df6ec540b10b76496b0d353df27c" compoundref="_src_2_match_server_def_8h" startline="63">SeConnect::kNetAddr</references>
+        <references refid="struct_se_connect_1afaa6333d607da1a42b52df55799eab7b" compoundref="_src_2_match_server_def_8h" startline="61">SeConnect::kSock</references>
+        <references refid="class_tcp_server_1afbd7ca4108cb71dd4a8d5ad53b29dac1" compoundref="_tcp_server_8h" startline="72">m_kConfig</references>
+        <references refid="class_tcp_server_1a8fdec844d73a73931e97179719059814" compoundref="_tcp_server_8h" startline="84">m_kIPCount</references>
+        <references refid="class_tcp_server_1aed1319386c612acaf5414dbf4fd3c673" compoundref="_tcp_server_8h" startline="77">m_kNetMgr</references>
+        <references refid="class_tcp_server_1a6510b2787024c63755f95e098c83f2ca" compoundref="_tcp_server_8h" startline="79">m_kParentData</references>
+        <references refid="_src_2_match_server_def_8h_1a66f85fac7c2312bb587ad3f33324085eaa56d080abab641c052974b0a39f8bf32" compoundref="_src_2_match_server_def_8h" startline="48">SCS_UNKOWN</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="class_tcp_server_1a6c1ad918ac65a0345ebedaf11c2d8160" compoundref="_se_parent_send_8cpp" startline="82" endline="90">SendParent_ClientConnect</references>
+        <references refid="_se_tool_8cpp_1a4d30fbe56257fc998ebc1346e53be0d8" compoundref="_se_tool_8cpp" startline="50" endline="73">StrCpy</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1aabf869f68327c348a7f2abbf2a6cdf78" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TcpServer::OnNetRecv</definition>
+        <argsstring>(const HSock &amp;rkSock, void *pkData, int iSize)</argsstring>
+        <name>OnNetRecv</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="23" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="352" bodyend="425"/>
+        <references refid="struct_se_connect_1ac790bf17c45ff2293158f377c176c8ac" compoundref="_tcp_server_def_8h" startline="79">SeConnect::dwClientID</references>
+        <references refid="struct_se_connect_1af90c5d0ae32665bd3b89980926896f0c" compoundref="_tcp_server_def_8h" startline="88">SeConnect::dwLastRecvTime</references>
+        <references refid="struct_se_connect_1a126e1a8628edb2c2cf4a26af590ec12d" compoundref="_tcp_server_def_8h" startline="85">SeConnect::dwPackCount</references>
+        <references refid="struct_se_connect_1a0dd7021929149225982cad75ebb3fe09" compoundref="_tcp_server_def_8h" startline="86">SeConnect::dwPackSize</references>
+        <references refid="class_tcp_server_1a18cdf4ff1fbef370969ec1d28d3e8918" compoundref="_tcp_server_8cpp" startline="766" endline="775">FindConnect</references>
+        <references refid="class_tcp_server_1a50bafeea0cfd24245ff8378d80c064e6" compoundref="_tcp_server_8cpp" startline="703" endline="706">GetServerTime</references>
+        <references refid="struct_se_server_data_1a2777bbfd27a6afe42ebd71c5d14010a0" compoundref="_se_server_define_8h" startline="19">SeServerData::kSock</references>
+        <references refid="class_tcp_server_1aed1319386c612acaf5414dbf4fd3c673" compoundref="_tcp_server_8h" startline="77">m_kNetMgr</references>
+        <references refid="class_tcp_server_1a6510b2787024c63755f95e098c83f2ca" compoundref="_tcp_server_8h" startline="79">m_kParentData</references>
+        <references refid="class_tcp_server_1abef1ea38a82a4e708f5dc0419f41781c" compoundref="_se_parent_proc_8cpp" startline="4" endline="19">ProcessParent</references>
+        <references refid="class_tcp_server_1a7402e8b47e4f3dee4a8afd51639ae125" compoundref="_se_parent_send_8cpp" startline="100" endline="112">SendParent_RecvData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a97d4c221e30e90b403a13a5a863c19a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TcpServer::OnNetDisconnect</definition>
+        <argsstring>(const HSock &amp;rkSock, TeDisconnectCode eCode, int iParam)</argsstring>
+        <name>OnNetDisconnect</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <param>
+          <type>TeDisconnectCode</type>
+          <declname>eCode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="24" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="427" bodyend="468"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="struct_se_server_data_1a4d91e2d15b4bc404ebc4ec42254ac770" compoundref="_se_server_define_8h" startline="21">SeServerData::bRegistered</references>
+        <references refid="class_tcp_server_1acc8d20fbd9bff2db8992275a8e22d741" compoundref="_tcp_server_8cpp" startline="755" endline="764">DelConnect</references>
+        <references refid="struct_se_connect_1ac790bf17c45ff2293158f377c176c8ac" compoundref="_tcp_server_def_8h" startline="79">SeConnect::dwClientID</references>
+        <references refid="struct_se_server_data_1ad83763ea85ed3a8635ca4b9c5a393ba4" compoundref="_se_server_define_8h" startline="22">SeServerData::dwRegisterTime</references>
+        <references refid="class_tcp_server_1a18cdf4ff1fbef370969ec1d28d3e8918" compoundref="_tcp_server_8cpp" startline="766" endline="775">FindConnect</references>
+        <references refid="class_tcp_server_1a50bafeea0cfd24245ff8378d80c064e6" compoundref="_tcp_server_8cpp" startline="703" endline="706">GetServerTime</references>
+        <references refid="struct_se_connect_1a6be4df6ec540b10b76496b0d353df27c" compoundref="_src_2_match_server_def_8h" startline="63">SeConnect::kNetAddr</references>
+        <references refid="struct_se_server_data_1a2777bbfd27a6afe42ebd71c5d14010a0" compoundref="_se_server_define_8h" startline="19">SeServerData::kSock</references>
+        <references refid="class_tcp_server_1a8fdec844d73a73931e97179719059814" compoundref="_tcp_server_8h" startline="84">m_kIPCount</references>
+        <references refid="class_tcp_server_1a6510b2787024c63755f95e098c83f2ca" compoundref="_tcp_server_8h" startline="79">m_kParentData</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="class_tcp_server_1aa1b9ae1889db78abeca89bb639fb5569" compoundref="_se_parent_send_8cpp" startline="92" endline="98">SendParent_ClientDisconnect</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1ad67fbedd53c9b4352fd05f584c449cba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TcpServer::SendTTData</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>SendTTData</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentSend.inl" line="2" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentSend.cpp" bodystart="3" bodyend="57"/>
+        <references refid="struct_se_server_data_1a2777bbfd27a6afe42ebd71c5d14010a0" compoundref="_se_server_define_8h" startline="19">SeServerData::kSock</references>
+        <references refid="class_tcp_server_1aed1319386c612acaf5414dbf4fd3c673" compoundref="_tcp_server_8h" startline="77">m_kNetMgr</references>
+        <references refid="class_tcp_server_1a6510b2787024c63755f95e098c83f2ca" compoundref="_tcp_server_8h" startline="79">m_kParentData</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="struct_se_c_m_d_1a2efa122a60040d09cfca777f9155394c" compoundref="_se_ptl_define_8h" startline="97">SeCMD::wCmd</references>
+        <referencedby refid="class_tcp_server_1a6c1ad918ac65a0345ebedaf11c2d8160" compoundref="_se_parent_send_8cpp" startline="82" endline="90">SendParent_ClientConnect</referencedby>
+        <referencedby refid="class_tcp_server_1aa1b9ae1889db78abeca89bb639fb5569" compoundref="_se_parent_send_8cpp" startline="92" endline="98">SendParent_ClientDisconnect</referencedby>
+        <referencedby refid="class_tcp_server_1a377b9d301702227e55898db472538797" compoundref="_se_parent_send_8cpp" startline="114" endline="119">SendParent_HeartPackage</referencedby>
+        <referencedby refid="class_tcp_server_1a7402e8b47e4f3dee4a8afd51639ae125" compoundref="_se_parent_send_8cpp" startline="100" endline="112">SendParent_RecvData</referencedby>
+        <referencedby refid="class_tcp_server_1acbab122cffc250ed01c2ae6de6bd2cbf" compoundref="_se_parent_send_8cpp" startline="59" endline="66">SendParent_Register</referencedby>
+        <referencedby refid="class_tcp_server_1a2a827abc4e28587ebd825fc92894157a" compoundref="_se_parent_send_8cpp" startline="68" endline="80">SendParent_ReLoadReadyID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1acbab122cffc250ed01c2ae6de6bd2cbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TcpServer::SendParent_Register</definition>
+        <argsstring>()</argsstring>
+        <name>SendParent_Register</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentSend.inl" line="4" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentSend.cpp" bodystart="59" bodyend="66"/>
+        <references refid="struct_se_svr_config_1a414151a7311e433b6893acf639482a36" compoundref="_tcp_server_def_8h" startline="33">SeSvrConfig::dwServerID</references>
+        <references refid="struct_se_t_t___register_1a3da6c170edf7f7ffb1cf5816c401134c" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="46">SeTT_Register::dwServerID</references>
+        <references refid="struct_se_svr_config_1aa3e5bf9a73c7844cf60b2e9f3420a742" compoundref="_tcp_server_def_8h" startline="34">SeSvrConfig::kLocalServer</references>
+        <references refid="struct_se_t_t___register_1a1f2ff248b7ce6230d18a5591ca59b837" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="47">SeTT_Register::kTCPAddr</references>
+        <references refid="class_tcp_server_1afbd7ca4108cb71dd4a8d5ad53b29dac1" compoundref="_tcp_server_8h" startline="72">m_kConfig</references>
+        <references refid="class_tcp_server_1ad67fbedd53c9b4352fd05f584c449cba" compoundref="_se_parent_send_8cpp" startline="3" endline="57">SendTTData</references>
+        <referencedby refid="class_tcp_server_1a15dbc0c979136a6e3f3b6ed1032f81cb" compoundref="_tcp_server_8cpp" startline="725" endline="741">RegisterToParent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a2a827abc4e28587ebd825fc92894157a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TcpServer::SendParent_ReLoadReadyID</definition>
+        <argsstring>(bool bOver, int iDataLen, const char *acData)</argsstring>
+        <name>SendParent_ReLoadReadyID</name>
+        <param>
+          <type>bool</type>
+          <declname>bOver</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iDataLen</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>acData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentSend.inl" line="5" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentSend.cpp" bodystart="68" bodyend="80"/>
+        <references refid="struct_se_t_t___re_load_ready_i_d_1ab576ff7b40f3f9c1db6b1174ef980bbe" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="36">SeTT_ReLoadReadyID::acData</references>
+        <references refid="struct_se_t_t___re_load_ready_i_d_1a25f2b0c9d0c987e459df43ead7d94883" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="34">SeTT_ReLoadReadyID::bOver</references>
+        <references refid="struct_se_t_t___re_load_ready_i_d_1ae318cad4c620896a2c3271ed53068064" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="35">SeTT_ReLoadReadyID::iDataLen</references>
+        <references refid="_se_tool_8cpp_1a4697a1b0adee30e7c3810134c6cfe519" compoundref="_se_tool_8cpp" startline="76" endline="91">MemCpy</references>
+        <references refid="_se_define_8h_1aab50e6cdde3e284ec0854ce27f9b4dcc" compoundref="_se_define_8h" startline="23">MNew</references>
+        <references refid="class_tcp_server_1ad67fbedd53c9b4352fd05f584c449cba" compoundref="_se_parent_send_8cpp" startline="3" endline="57">SendTTData</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa5b31d4cc364eb59fcd6ab560eebc48cc" compoundref="_se_ptl_comm_define_8h" startline="18">SSD_ENDSTR_LEN</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aab20e42aa46b32b2fe0537ff686d0bbf7" compoundref="_se_ptl_comm_define_8h" startline="15">SSD_MAX_SEND_SIZE</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aae551c574c3a189b2a44409b830b02afa" compoundref="_se_ptl_comm_define_8h" startline="16">SSD_SEND_SIZE</references>
+        <referencedby refid="class_tcp_server_1af603e2982226258bc52370863bf8c304" compoundref="_se_parent_proc_8cpp" startline="21" endline="67">ProcessParent_RegisterRet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a6c1ad918ac65a0345ebedaf11c2d8160" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TcpServer::SendParent_ClientConnect</definition>
+        <argsstring>(DWord dwClientID, const char *acIP, int iPort)</argsstring>
+        <name>SendParent_ClientConnect</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwClientID</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>acIP</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iPort</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentSend.inl" line="6" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentSend.cpp" bodystart="82" bodyend="90"/>
+        <references refid="struct_se_t_t___client_connect_1afea22ded60dd3ab342e6e9d3e1b67e86" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="73">SeTT_ClientConnect::acIP</references>
+        <references refid="struct_se_t_t___client_connect_1aacf50097a62a953581b022d929cb9eff" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="72">SeTT_ClientConnect::dwClientID</references>
+        <references refid="struct_se_t_t___client_connect_1aa3842f61a9bc9115d1edb252432ce9b0" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="74">SeTT_ClientConnect::iPort</references>
+        <references refid="class_tcp_server_1ad67fbedd53c9b4352fd05f584c449cba" compoundref="_se_parent_send_8cpp" startline="3" endline="57">SendTTData</references>
+        <references refid="_se_tool_8cpp_1a4d30fbe56257fc998ebc1346e53be0d8" compoundref="_se_tool_8cpp" startline="50" endline="73">StrCpy</references>
+        <referencedby refid="class_tcp_server_1a8d7adffedcab94bb6fdad94558f88d2b" compoundref="_tcp_server_8cpp" startline="307" endline="350">OnNetAccept</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1aa1b9ae1889db78abeca89bb639fb5569" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TcpServer::SendParent_ClientDisconnect</definition>
+        <argsstring>(DWord dwClientID)</argsstring>
+        <name>SendParent_ClientDisconnect</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwClientID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentSend.inl" line="7" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentSend.cpp" bodystart="92" bodyend="98"/>
+        <references refid="struct_se_t_t___client_disconnect_1a9ee5a474112f0062bbd30a85f5d11310" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="84">SeTT_ClientDisconnect::dwClientID</references>
+        <references refid="class_tcp_server_1ad67fbedd53c9b4352fd05f584c449cba" compoundref="_se_parent_send_8cpp" startline="3" endline="57">SendTTData</references>
+        <referencedby refid="class_tcp_server_1a97d4c221e30e90b403a13a5a863c19a2" compoundref="_tcp_server_8cpp" startline="427" endline="468">OnNetDisconnect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a7402e8b47e4f3dee4a8afd51639ae125" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TcpServer::SendParent_RecvData</definition>
+        <argsstring>(DWord dwClientID, int iSize, void *pkData)</argsstring>
+        <name>SendParent_RecvData</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwClientID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentSend.inl" line="8" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentSend.cpp" bodystart="100" bodyend="112"/>
+        <references refid="struct_se_t_t___recv_data_1ad76d88bbdfcef89d117145af3e221c9d" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="60">SeTT_RecvData::acData</references>
+        <references refid="struct_se_t_t___recv_data_1ad828f16a62fcef00c99300c0138d422c" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="58">SeTT_RecvData::dwClientID</references>
+        <references refid="struct_se_t_t___recv_data_1a233e87949884c91d0d1c4e85c8a756c4" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="59">SeTT_RecvData::iDataLen</references>
+        <references refid="_se_tool_8cpp_1a4697a1b0adee30e7c3810134c6cfe519" compoundref="_se_tool_8cpp" startline="76" endline="91">MemCpy</references>
+        <references refid="_se_define_8h_1aab50e6cdde3e284ec0854ce27f9b4dcc" compoundref="_se_define_8h" startline="23">MNew</references>
+        <references refid="class_tcp_server_1ad67fbedd53c9b4352fd05f584c449cba" compoundref="_se_parent_send_8cpp" startline="3" endline="57">SendTTData</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa5b31d4cc364eb59fcd6ab560eebc48cc" compoundref="_se_ptl_comm_define_8h" startline="18">SSD_ENDSTR_LEN</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aab20e42aa46b32b2fe0537ff686d0bbf7" compoundref="_se_ptl_comm_define_8h" startline="15">SSD_MAX_SEND_SIZE</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aae551c574c3a189b2a44409b830b02afa" compoundref="_se_ptl_comm_define_8h" startline="16">SSD_SEND_SIZE</references>
+        <referencedby refid="class_tcp_server_1aabf869f68327c348a7f2abbf2a6cdf78" compoundref="_tcp_server_8cpp" startline="352" endline="425">OnNetRecv</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a377b9d301702227e55898db472538797" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TcpServer::SendParent_HeartPackage</definition>
+        <argsstring>(void)</argsstring>
+        <name>SendParent_HeartPackage</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentSend.inl" line="9" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentSend.cpp" bodystart="114" bodyend="119"/>
+        <references refid="class_tcp_server_1ad67fbedd53c9b4352fd05f584c449cba" compoundref="_se_parent_send_8cpp" startline="3" endline="57">SendTTData</references>
+        <referencedby refid="class_tcp_server_1aa3d64df40dbb03257e64e0a96a09e1bd" compoundref="_tcp_server_8cpp" startline="208" endline="243">UpdateParentHeart</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_tcp_server_1a52a028cf3f9b36fa6c854186927460fd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TcpServer::LoadConfig</definition>
+        <argsstring>(const char *pcFile)</argsstring>
+        <name>LoadConfig</name>
+        <param>
+          <type>const char *</type>
+          <declname>pcFile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="37" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="23" bodyend="60"/>
+        <references refid="struct_se_svr_config_1a414151a7311e433b6893acf639482a36" compoundref="_tcp_server_def_8h" startline="33">SeSvrConfig::dwServerID</references>
+        <references refid="class_se_config_1a0bd6ce789230fc24e8e09674c0265d5d" compoundref="_se_config_8cpp" startline="56" endline="95">SeConfig::GetNetAddr</references>
+        <references refid="_se_tool_8cpp_1a03bcc77ad4ef4845b20fc5cf4db96834" compoundref="_se_tool_8cpp" startline="603" endline="610">GetStr2ID</references>
+        <references refid="class_se_config_1a8839d0f5e6b831b66fd018826a304086" compoundref="_se_config_8cpp" startline="23" endline="42">SeConfig::GetValue</references>
+        <references refid="struct_se_svr_config_1aa3e5bf9a73c7844cf60b2e9f3420a742" compoundref="_tcp_server_def_8h" startline="34">SeSvrConfig::kLocalServer</references>
+        <references refid="struct_se_svr_config_1a8985377d6448d7776000db2e417f2039" compoundref="_tcp_server_def_8h" startline="35">SeSvrConfig::kParentServer</references>
+        <references refid="class_se_config_1a077cfce8454c31d293c2d2341980ffca" compoundref="_se_config_8cpp" startline="10" endline="21">SeConfig::Load</references>
+        <references refid="class_tcp_server_1afbd7ca4108cb71dd4a8d5ad53b29dac1" compoundref="_tcp_server_8h" startline="72">m_kConfig</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <referencedby refid="class_tcp_server_1a45b32232d2a423a01823ec028b433eca" compoundref="_tcp_server_8cpp" startline="90" endline="110">Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1abe074dd33c928bd72d4b86164f574d10" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::LoadDynamicConfig</definition>
+        <argsstring>(void)</argsstring>
+        <name>LoadDynamicConfig</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="38" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="605" bodyend="701"/>
+        <references refid="struct_se_svr_config_1a3061a3b5c1eb9647183b97a187ad56a2" compoundref="_tcp_server_def_8h" startline="42">SeSvrConfig::bAllFileLog</references>
+        <references refid="struct_se_svr_config_1a86b2049a75a353a6333a44cd7621a92d" compoundref="_tcp_server_def_8h" startline="44">SeSvrConfig::bAutoExpireLog</references>
+        <references refid="struct_se_svr_config_1a1d410b58c0df6f021f667c20cea3b3b7" compoundref="_tcp_server_def_8h" startline="48">SeSvrConfig::bConnectHeartCheck</references>
+        <references refid="struct_se_svr_config_1a2f64ae57f9187670fa89bab991922bc4" compoundref="_tcp_server_def_8h" startline="43">SeSvrConfig::bDayFile</references>
+        <references refid="struct_se_svr_config_1ad789d9622b20cf855ae5586cb51ce646" compoundref="_tcp_server_def_8h" startline="46">SeSvrConfig::bOldHeartPackRet</references>
+        <references refid="struct_se_svr_config_1ac1f12b870924a154045d10801dac8f92" compoundref="_tcp_server_def_8h" startline="39">SeSvrConfig::bShowDisconnectLog</references>
+        <references refid="struct_se_svr_config_1a2c8ebe200c9cf0add3d97784f459e669" compoundref="_tcp_server_def_8h" startline="47">SeSvrConfig::dwConnectHeartTime</references>
+        <references refid="struct_se_svr_config_1a233979529d75a20813226226cd52634c" compoundref="_tcp_server_def_8h" startline="40">SeSvrConfig::dwHeartPackageTime</references>
+        <references refid="struct_se_svr_config_1a459714acf8294b58bf28ab1dd7797a14" compoundref="_tcp_server_def_8h" startline="41">SeSvrConfig::dwHeartPackReplyTime</references>
+        <references refid="struct_se_svr_config_1afcd520860457adef987343a851db8fa8" compoundref="_tcp_server_def_8h" startline="37">SeSvrConfig::dwMaxConnectNum</references>
+        <references refid="class_se_config_1a8839d0f5e6b831b66fd018826a304086" compoundref="_se_config_8cpp" startline="23" endline="42">SeConfig::GetValue</references>
+        <references refid="struct_se_svr_config_1a3ccae6be44a51c6a9d6119949d02ecfa" compoundref="_tcp_server_def_8h" startline="45">SeSvrConfig::iExpireLogDays</references>
+        <references refid="struct_se_svr_config_1a99ec697d4ba636164a922d86163d336f" compoundref="_tcp_server_def_8h" startline="38">SeSvrConfig::iSameIPConnect</references>
+        <references refid="class_se_config_1a077cfce8454c31d293c2d2341980ffca" compoundref="_se_config_8cpp" startline="10" endline="21">SeConfig::Load</references>
+        <references refid="class_tcp_server_1afbd7ca4108cb71dd4a8d5ad53b29dac1" compoundref="_tcp_server_8h" startline="72">m_kConfig</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <referencedby refid="class_tcp_server_1af1fcfc97e5a84c56e69b9510831c87e3" compoundref="_tcp_server_2_src_2_main_8cpp" startline="3" endline="21">ExecuteAction</referencedby>
+        <referencedby refid="class_tcp_server_1a45b32232d2a423a01823ec028b433eca" compoundref="_tcp_server_8cpp" startline="90" endline="110">Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a38c67c3be0dd0a0d96244da4013a70fc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TcpServer::InitializeNet</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitializeNet</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="39" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="62" bodyend="88"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="_se_server_define_8h_1a69ab2b2845a7518bddd912889d3d4811" compoundref="_se_server_define_8h" startline="144">CLIENT_BUFFER_SIZE</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="struct_se_svr_config_1aa3e5bf9a73c7844cf60b2e9f3420a742" compoundref="_tcp_server_def_8h" startline="34">SeSvrConfig::kLocalServer</references>
+        <references refid="class_tcp_server_1afbd7ca4108cb71dd4a8d5ad53b29dac1" compoundref="_tcp_server_8h" startline="72">m_kConfig</references>
+        <references refid="class_tcp_server_1aed1319386c612acaf5414dbf4fd3c673" compoundref="_tcp_server_8h" startline="77">m_kNetMgr</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <referencedby refid="class_tcp_server_1a45b32232d2a423a01823ec028b433eca" compoundref="_tcp_server_8cpp" startline="90" endline="110">Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a19c7556adf231cc18610f8bbf94d54d1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::UpdateState</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="41" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="112" bodyend="125"/>
+        <references refid="struct_se_server_data_1a4d91e2d15b4bc404ebc4ec42254ac770" compoundref="_se_server_define_8h" startline="21">SeServerData::bRegistered</references>
+        <references refid="class_tcp_server_1a7634912a5876e4f85ad0fef38e467b45" compoundref="_tcp_server_8cpp" startline="708" endline="723">ConnectToParent</references>
+        <references refid="struct_se_server_data_1a2777bbfd27a6afe42ebd71c5d14010a0" compoundref="_se_server_define_8h" startline="19">SeServerData::kSock</references>
+        <references refid="class_tcp_server_1a6510b2787024c63755f95e098c83f2ca" compoundref="_tcp_server_8h" startline="79">m_kParentData</references>
+        <references refid="class_tcp_server_1a15dbc0c979136a6e3f3b6ed1032f81cb" compoundref="_tcp_server_8cpp" startline="725" endline="741">RegisterToParent</references>
+        <referencedby refid="class_tcp_server_1ad20814eab3dc87056ce261b3fe9cff75" compoundref="_tcp_server_8cpp" startline="245" endline="268">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1ac85d0c14e0f8a08dd5cf5f58d284fca0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::UpdateConnect</definition>
+        <argsstring>(void)</argsstring>
+        <name>UpdateConnect</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="42" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="127" bodyend="178"/>
+        <references refid="struct_se_svr_config_1a1d410b58c0df6f021f667c20cea3b3b7" compoundref="_tcp_server_def_8h" startline="48">SeSvrConfig::bConnectHeartCheck</references>
+        <references refid="struct_se_connect_1a3cf82a9ecf77fa6af735397ec67eeee4" compoundref="_tcp_server_def_8h" startline="80">SeConnect::dwAccountID</references>
+        <references refid="struct_se_svr_config_1a2c8ebe200c9cf0add3d97784f459e669" compoundref="_tcp_server_def_8h" startline="47">SeSvrConfig::dwConnectHeartTime</references>
+        <references refid="struct_se_connect_1af90c5d0ae32665bd3b89980926896f0c" compoundref="_tcp_server_def_8h" startline="88">SeConnect::dwLastRecvTime</references>
+        <references refid="struct_se_connect_1a126e1a8628edb2c2cf4a26af590ec12d" compoundref="_tcp_server_def_8h" startline="85">SeConnect::dwPackCount</references>
+        <references refid="struct_se_connect_1a0dd7021929149225982cad75ebb3fe09" compoundref="_tcp_server_def_8h" startline="86">SeConnect::dwPackSize</references>
+        <references refid="struct_se_connect_1ae90bd507e6e1e36dc4ee9e4d5e849cd3" compoundref="_src_2_match_server_def_8h" startline="65">SeConnect::dwStateTime</references>
+        <references refid="struct_se_connect_1a149d84058a462e8833764a6dd2aa2d04" compoundref="_src_2_match_server_def_8h" startline="64">SeConnect::eState</references>
+        <references refid="class_tcp_server_1a50bafeea0cfd24245ff8378d80c064e6" compoundref="_tcp_server_8cpp" startline="703" endline="706">GetServerTime</references>
+        <references refid="class_tcp_server_1a7991d5e390871ec0c6f95da0913282a6" compoundref="_tcp_server_8h" startline="74">m_dwCheckConnectTime</references>
+        <references refid="class_tcp_server_1afbd7ca4108cb71dd4a8d5ad53b29dac1" compoundref="_tcp_server_8h" startline="72">m_kConfig</references>
+        <references refid="class_tcp_server_1a5adb8f6bbb52eafe0eb50f71c66b9442" compoundref="_tcp_server_8h" startline="81">m_kMapSock</references>
+        <references refid="_src_2_match_server_def_8h_1a66f85fac7c2312bb587ad3f33324085eaa56d080abab641c052974b0a39f8bf32" compoundref="_src_2_match_server_def_8h" startline="48">SCS_UNKOWN</references>
+        <references refid="_src_2_town_server_def_8h_1a66f85fac7c2312bb587ad3f33324085ea02876359d546bf9cc6d277d591996bc5" compoundref="_src_2_town_server_def_8h" startline="80">SCS_VALID_FAILED</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="_tcp_server_def_8h_1acd40ea989f2db2a122cffd50438aac35" compoundref="_tcp_server_def_8h" startline="11">VALID_CONNECT_TIMEOUT</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a6d35812fdd9073796c52ff92848e81be" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::UpdateClientHeart</definition>
+        <argsstring>(void)</argsstring>
+        <name>UpdateClientHeart</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="43" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="181" bodyend="206"/>
+        <references refid="struct_se_connect_1a3cf82a9ecf77fa6af735397ec67eeee4" compoundref="_tcp_server_def_8h" startline="80">SeConnect::dwAccountID</references>
+        <references refid="struct_se_svr_config_1a2c8ebe200c9cf0add3d97784f459e669" compoundref="_tcp_server_def_8h" startline="47">SeSvrConfig::dwConnectHeartTime</references>
+        <references refid="struct_se_connect_1af90c5d0ae32665bd3b89980926896f0c" compoundref="_tcp_server_def_8h" startline="88">SeConnect::dwLastRecvTime</references>
+        <references refid="class_tcp_server_1a50bafeea0cfd24245ff8378d80c064e6" compoundref="_tcp_server_8cpp" startline="703" endline="706">GetServerTime</references>
+        <references refid="class_tcp_server_1a7991d5e390871ec0c6f95da0913282a6" compoundref="_tcp_server_8h" startline="74">m_dwCheckConnectTime</references>
+        <references refid="class_tcp_server_1afbd7ca4108cb71dd4a8d5ad53b29dac1" compoundref="_tcp_server_8h" startline="72">m_kConfig</references>
+        <references refid="class_tcp_server_1a5adb8f6bbb52eafe0eb50f71c66b9442" compoundref="_tcp_server_8h" startline="81">m_kMapSock</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <referencedby refid="class_tcp_server_1ad20814eab3dc87056ce261b3fe9cff75" compoundref="_tcp_server_8cpp" startline="245" endline="268">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1aa3d64df40dbb03257e64e0a96a09e1bd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::UpdateParentHeart</definition>
+        <argsstring>(void)</argsstring>
+        <name>UpdateParentHeart</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="44" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="208" bodyend="243"/>
+        <references refid="struct_se_server_data_1a4d91e2d15b4bc404ebc4ec42254ac770" compoundref="_se_server_define_8h" startline="21">SeServerData::bRegistered</references>
+        <references refid="struct_se_server_data_1a6c75241d7cd68409f25f383feb838ca3" compoundref="_se_server_define_8h" startline="24">SeServerData::dwHeartPackageTime</references>
+        <references refid="struct_se_svr_config_1a233979529d75a20813226226cd52634c" compoundref="_tcp_server_def_8h" startline="40">SeSvrConfig::dwHeartPackageTime</references>
+        <references refid="class_tcp_server_1a50bafeea0cfd24245ff8378d80c064e6" compoundref="_tcp_server_8cpp" startline="703" endline="706">GetServerTime</references>
+        <references refid="struct_se_server_data_1a2777bbfd27a6afe42ebd71c5d14010a0" compoundref="_se_server_define_8h" startline="19">SeServerData::kSock</references>
+        <references refid="class_tcp_server_1afbd7ca4108cb71dd4a8d5ad53b29dac1" compoundref="_tcp_server_8h" startline="72">m_kConfig</references>
+        <references refid="class_tcp_server_1aed1319386c612acaf5414dbf4fd3c673" compoundref="_tcp_server_8h" startline="77">m_kNetMgr</references>
+        <references refid="class_tcp_server_1a6510b2787024c63755f95e098c83f2ca" compoundref="_tcp_server_8h" startline="79">m_kParentData</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="class_tcp_server_1a377b9d301702227e55898db472538797" compoundref="_se_parent_send_8cpp" startline="114" endline="119">SendParent_HeartPackage</references>
+        <referencedby refid="class_tcp_server_1ad20814eab3dc87056ce261b3fe9cff75" compoundref="_tcp_server_8cpp" startline="245" endline="268">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a7634912a5876e4f85ad0fef38e467b45" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::ConnectToParent</definition>
+        <argsstring>(void)</argsstring>
+        <name>ConnectToParent</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="46" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="708" bodyend="723"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="struct_se_server_data_1a53fcdfea60106f5c7179d39b1e259a3e" compoundref="_se_server_define_8h" startline="20">SeServerData::bConnecting</references>
+        <references refid="struct_se_server_data_1ad83763ea85ed3a8635ca4b9c5a393ba4" compoundref="_se_server_define_8h" startline="22">SeServerData::dwRegisterTime</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="struct_se_svr_config_1a8985377d6448d7776000db2e417f2039" compoundref="_tcp_server_def_8h" startline="35">SeSvrConfig::kParentServer</references>
+        <references refid="class_tcp_server_1afbd7ca4108cb71dd4a8d5ad53b29dac1" compoundref="_tcp_server_8h" startline="72">m_kConfig</references>
+        <references refid="class_tcp_server_1aed1319386c612acaf5414dbf4fd3c673" compoundref="_tcp_server_8h" startline="77">m_kNetMgr</references>
+        <references refid="class_tcp_server_1a6510b2787024c63755f95e098c83f2ca" compoundref="_tcp_server_8h" startline="79">m_kParentData</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_server_define_8h_1a141dc49d73e6790790a053c29623f606" compoundref="_se_server_define_8h" startline="143">SERVER_BUFFER_SIZE</references>
+        <referencedby refid="class_tcp_server_1a19c7556adf231cc18610f8bbf94d54d1" compoundref="_tcp_server_8cpp" startline="112" endline="125">UpdateState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a15dbc0c979136a6e3f3b6ed1032f81cb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::RegisterToParent</definition>
+        <argsstring>(void)</argsstring>
+        <name>RegisterToParent</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="47" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="725" bodyend="741"/>
+        <references refid="struct_se_server_data_1ad83763ea85ed3a8635ca4b9c5a393ba4" compoundref="_se_server_define_8h" startline="22">SeServerData::dwRegisterTime</references>
+        <references refid="class_tcp_server_1a50bafeea0cfd24245ff8378d80c064e6" compoundref="_tcp_server_8cpp" startline="703" endline="706">GetServerTime</references>
+        <references refid="class_tcp_server_1a6510b2787024c63755f95e098c83f2ca" compoundref="_tcp_server_8h" startline="79">m_kParentData</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="class_tcp_server_1acbab122cffc250ed01c2ae6de6bd2cbf" compoundref="_se_parent_send_8cpp" startline="59" endline="66">SendParent_Register</references>
+        <referencedby refid="class_tcp_server_1a19c7556adf231cc18610f8bbf94d54d1" compoundref="_tcp_server_8cpp" startline="112" endline="125">UpdateState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a11937f9b14a3449a0a9032bcb310d81c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::AddConnect</definition>
+        <argsstring>(SeConnect *pkConn)</argsstring>
+        <name>AddConnect</name>
+        <param>
+          <type><ref refid="struct_se_connect" kindref="compound">SeConnect</ref> *</type>
+          <declname>pkConn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="50" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="743" bodyend="753"/>
+        <references refid="struct_se_connect_1ac790bf17c45ff2293158f377c176c8ac" compoundref="_tcp_server_def_8h" startline="79">SeConnect::dwClientID</references>
+        <references refid="struct_se_connect_1afaa6333d607da1a42b52df55799eab7b" compoundref="_src_2_match_server_def_8h" startline="61">SeConnect::kSock</references>
+        <references refid="class_tcp_server_1a19a9cd4795abf0392f9bc84e94267fb1" compoundref="_tcp_server_8h" startline="82">m_kMapID</references>
+        <references refid="class_tcp_server_1a5adb8f6bbb52eafe0eb50f71c66b9442" compoundref="_tcp_server_8h" startline="81">m_kMapSock</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <referencedby refid="class_tcp_server_1a8d7adffedcab94bb6fdad94558f88d2b" compoundref="_tcp_server_8cpp" startline="307" endline="350">OnNetAccept</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1acc8d20fbd9bff2db8992275a8e22d741" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::DelConnect</definition>
+        <argsstring>(SeConnect *pkConn)</argsstring>
+        <name>DelConnect</name>
+        <param>
+          <type><ref refid="struct_se_connect" kindref="compound">SeConnect</ref> *</type>
+          <declname>pkConn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="51" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="755" bodyend="764"/>
+        <references refid="struct_se_connect_1ac790bf17c45ff2293158f377c176c8ac" compoundref="_tcp_server_def_8h" startline="79">SeConnect::dwClientID</references>
+        <references refid="struct_se_connect_1afaa6333d607da1a42b52df55799eab7b" compoundref="_src_2_match_server_def_8h" startline="61">SeConnect::kSock</references>
+        <references refid="class_tcp_server_1a19a9cd4795abf0392f9bc84e94267fb1" compoundref="_tcp_server_8h" startline="82">m_kMapID</references>
+        <references refid="class_tcp_server_1a5adb8f6bbb52eafe0eb50f71c66b9442" compoundref="_tcp_server_8h" startline="81">m_kMapSock</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <referencedby refid="class_tcp_server_1a97d4c221e30e90b403a13a5a863c19a2" compoundref="_tcp_server_8cpp" startline="427" endline="468">OnNetDisconnect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a18cdf4ff1fbef370969ec1d28d3e8918" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_se_connect" kindref="compound">SeConnect</ref> *</type>
+        <definition>SeConnect * TcpServer::FindConnect</definition>
+        <argsstring>(DWord dwConnID)</argsstring>
+        <name>FindConnect</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwConnID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="52" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="766" bodyend="775"/>
+        <references refid="class_tcp_server_1a19a9cd4795abf0392f9bc84e94267fb1" compoundref="_tcp_server_8h" startline="82">m_kMapID</references>
+        <referencedby refid="class_tcp_server_1a97d4c221e30e90b403a13a5a863c19a2" compoundref="_tcp_server_8cpp" startline="427" endline="468">OnNetDisconnect</referencedby>
+        <referencedby refid="class_tcp_server_1aabf869f68327c348a7f2abbf2a6cdf78" compoundref="_tcp_server_8cpp" startline="352" endline="425">OnNetRecv</referencedby>
+        <referencedby refid="class_tcp_server_1a0e0481385b6c674c9d7e7bf7d89195eb" compoundref="_se_parent_proc_8cpp" startline="96" endline="105">ProcessParent_ConnectState</referencedby>
+        <referencedby refid="class_tcp_server_1a239bdfbad2c5e76bb0f8f0677e85f7f7" compoundref="_se_parent_proc_8cpp" startline="79" endline="94">ProcessParent_SendData</referencedby>
+        <referencedby refid="class_tcp_server_1ae977374608c04843359d765c788dbe9f" compoundref="_se_parent_proc_8cpp" startline="69" endline="77">ProcessParent_SeverDisconnect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a308f820e948e314b0c4107d667211024" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_se_connect" kindref="compound">SeConnect</ref> *</type>
+        <definition>SeConnect * TcpServer::FindConnect</definition>
+        <argsstring>(const HSock &amp;rkSock)</argsstring>
+        <name>FindConnect</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="53" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="777" bodyend="786"/>
+        <references refid="class_tcp_server_1a5adb8f6bbb52eafe0eb50f71c66b9442" compoundref="_tcp_server_8h" startline="81">m_kMapSock</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1ae63cd7967ce360cf811740cadf962e4c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord TcpServer::GenClientID</definition>
+        <argsstring>()</argsstring>
+        <name>GenClientID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="55" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="799" bodyend="802"/>
+        <references refid="class_tcp_server_1a2aced2e2d59c5ce0adf6fd631f21df25" compoundref="_tcp_server_8h" startline="73">m_dwClientGenID</references>
+        <referencedby refid="class_tcp_server_1a8d7adffedcab94bb6fdad94558f88d2b" compoundref="_tcp_server_8cpp" startline="307" endline="350">OnNetAccept</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a27d67e7e116be84dbcf7a7d83994e87a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::DisconnectPlayerSock</definition>
+        <argsstring>(SeConnect *pkConnect, const char *pcFun, int iLine)</argsstring>
+        <name>DisconnectPlayerSock</name>
+        <param>
+          <type><ref refid="struct_se_connect" kindref="compound">SeConnect</ref> *</type>
+          <declname>pkConnect</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcFun</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iLine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="58" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="804" bodyend="812"/>
+        <references refid="struct_se_connect_1a3cf82a9ecf77fa6af735397ec67eeee4" compoundref="_tcp_server_def_8h" startline="80">SeConnect::dwAccountID</references>
+        <references refid="struct_se_connect_1afaa6333d607da1a42b52df55799eab7b" compoundref="_src_2_match_server_def_8h" startline="61">SeConnect::kSock</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <referencedby refid="class_tcp_server_1aa0f2874d29366864402d7b253fb16927" compoundref="_tcp_server_8cpp" startline="814" endline="819">DisconnectPlayerSock</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1aa0f2874d29366864402d7b253fb16927" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::DisconnectPlayerSock</definition>
+        <argsstring>(const HSock &amp;rkSock, DWord dwAccountID, const char *pcFun, int iLine)</argsstring>
+        <name>DisconnectPlayerSock</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwAccountID</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcFun</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iLine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="59" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="814" bodyend="819"/>
+        <references refid="class_tcp_server_1a27d67e7e116be84dbcf7a7d83994e87a" compoundref="_tcp_server_8cpp" startline="804" endline="812">DisconnectPlayerSock</references>
+        <references refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" compoundref="_se_server_tool_8cpp" startline="31" endline="64">SPrintf</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a34d826cc9c797b1f70b9880344da11f2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::DisconnectPlayerSock</definition>
+        <argsstring>(const HSock &amp;rkSock, const char *acAccount, const char *pcFun, int iLine)</argsstring>
+        <name>DisconnectPlayerSock</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>acAccount</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcFun</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iLine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="60" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="821" bodyend="844"/>
+        <references refid="struct_se_svr_config_1ac1f12b870924a154045d10801dac8f92" compoundref="_tcp_server_def_8h" startline="39">SeSvrConfig::bShowDisconnectLog</references>
+        <references refid="_se_tool_8cpp_1a2fc76284dab961f5442f35bb06ef31cb" compoundref="_se_tool_8cpp" startline="1529" endline="1559">GetLocalTime</references>
+        <references refid="class_tcp_server_1afbd7ca4108cb71dd4a8d5ad53b29dac1" compoundref="_tcp_server_8h" startline="72">m_kConfig</references>
+        <references refid="class_tcp_server_1aed1319386c612acaf5414dbf4fd3c673" compoundref="_tcp_server_8h" startline="77">m_kNetMgr</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" compoundref="_se_server_tool_8cpp" startline="31" endline="64">SPrintf</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a50bafeea0cfd24245ff8378d80c064e6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord TcpServer::GetServerTime</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetServerTime</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="65" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.cpp" bodystart="703" bodyend="706"/>
+        <references refid="class_tcp_server_1afc636d718e9af411aeca981b93674ebf" compoundref="_tcp_server_8h" startline="70">m_dwCurTime</references>
+        <referencedby refid="class_tcp_server_1a8d7adffedcab94bb6fdad94558f88d2b" compoundref="_tcp_server_8cpp" startline="307" endline="350">OnNetAccept</referencedby>
+        <referencedby refid="class_tcp_server_1a97d4c221e30e90b403a13a5a863c19a2" compoundref="_tcp_server_8cpp" startline="427" endline="468">OnNetDisconnect</referencedby>
+        <referencedby refid="class_tcp_server_1aabf869f68327c348a7f2abbf2a6cdf78" compoundref="_tcp_server_8cpp" startline="352" endline="425">OnNetRecv</referencedby>
+        <referencedby refid="class_tcp_server_1a15dbc0c979136a6e3f3b6ed1032f81cb" compoundref="_tcp_server_8cpp" startline="725" endline="741">RegisterToParent</referencedby>
+        <referencedby refid="class_tcp_server_1a6d35812fdd9073796c52ff92848e81be" compoundref="_tcp_server_8cpp" startline="181" endline="206">UpdateClientHeart</referencedby>
+        <referencedby refid="class_tcp_server_1ac85d0c14e0f8a08dd5cf5f58d284fca0" compoundref="_tcp_server_8cpp" startline="127" endline="178">UpdateConnect</referencedby>
+        <referencedby refid="class_tcp_server_1aa3d64df40dbb03257e64e0a96a09e1bd" compoundref="_tcp_server_8cpp" startline="208" endline="243">UpdateParentHeart</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1abef1ea38a82a4e708f5dc0419f41781c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::ProcessParent</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessParent</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentProc.inl" line="2" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentProc.cpp" bodystart="4" bodyend="19"/>
+        <references refid="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h_1a2c670fae79ac052dcafd0a074bd6b445a1bc02f605b5e290f336e56c737ccad37" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="20">CMD_TT_CONNECT_STATE</references>
+        <references refid="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h_1a2c670fae79ac052dcafd0a074bd6b445aedf28ba337457dd10f9cb7608b4e98b7" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="17">CMD_TT_REGISTERRET</references>
+        <references refid="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h_1a2c670fae79ac052dcafd0a074bd6b445aa77d880f86bb5ed9e5244d81757ddfd3" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="19">CMD_TT_SENDDATA</references>
+        <references refid="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h_1a2c670fae79ac052dcafd0a074bd6b445a8ef6321ba89418749049d0e635a698c4" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="18">CMD_TT_SEVERDISCONNECT</references>
+        <references refid="struct_se_server_data_1a6c75241d7cd68409f25f383feb838ca3" compoundref="_se_server_define_8h" startline="24">SeServerData::dwHeartPackageTime</references>
+        <references refid="class_tcp_server_1a6510b2787024c63755f95e098c83f2ca" compoundref="_tcp_server_8h" startline="79">m_kParentData</references>
+        <references refid="class_tcp_server_1a0e0481385b6c674c9d7e7bf7d89195eb" compoundref="_se_parent_proc_8cpp" startline="96" endline="105">ProcessParent_ConnectState</references>
+        <references refid="class_tcp_server_1af603e2982226258bc52370863bf8c304" compoundref="_se_parent_proc_8cpp" startline="21" endline="67">ProcessParent_RegisterRet</references>
+        <references refid="class_tcp_server_1a239bdfbad2c5e76bb0f8f0677e85f7f7" compoundref="_se_parent_proc_8cpp" startline="79" endline="94">ProcessParent_SendData</references>
+        <references refid="class_tcp_server_1ae977374608c04843359d765c788dbe9f" compoundref="_se_parent_proc_8cpp" startline="69" endline="77">ProcessParent_SeverDisconnect</references>
+        <references refid="struct_se_c_m_d_1a2efa122a60040d09cfca777f9155394c" compoundref="_se_ptl_define_8h" startline="97">SeCMD::wCmd</references>
+        <referencedby refid="class_tcp_server_1aabf869f68327c348a7f2abbf2a6cdf78" compoundref="_tcp_server_8cpp" startline="352" endline="425">OnNetRecv</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1af603e2982226258bc52370863bf8c304" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::ProcessParent_RegisterRet</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessParent_RegisterRet</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentProc.inl" line="4" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentProc.cpp" bodystart="21" bodyend="67"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="struct_se_server_data_1a4d91e2d15b4bc404ebc4ec42254ac770" compoundref="_se_server_define_8h" startline="21">SeServerData::bRegistered</references>
+        <references refid="struct_se_connect_1a3cf82a9ecf77fa6af735397ec67eeee4" compoundref="_tcp_server_def_8h" startline="80">SeConnect::dwAccountID</references>
+        <references refid="struct_se_connect_1ac790bf17c45ff2293158f377c176c8ac" compoundref="_tcp_server_def_8h" startline="79">SeConnect::dwClientID</references>
+        <references refid="struct_se_t_t___register_ret_1a2bf3b0548cd937be76b0c7171eeaf74e" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="116">SeTT_RegisterRet::eRegisterRet</references>
+        <references refid="struct_se_connect_1a149d84058a462e8833764a6dd2aa2d04" compoundref="_src_2_match_server_def_8h" startline="64">SeConnect::eState</references>
+        <references refid="class_se_net_stream_1af0d056a8d47fe3cc8145b8d95b6665f8" compoundref="_se_net_stream_8cpp" startline="39" endline="42">SeNetStream::GetCurPos</references>
+        <references refid="class_se_net_stream_1a5be0f2530ff2f2a56ec03bfc9976cf63" compoundref="_se_net_stream_8cpp" startline="52" endline="55">SeNetStream::GetData</references>
+        <references refid="_se_tool_8cpp_1a4a8fd834e7cd7e160db5b8a3dcefb21d" compoundref="_se_tool_8cpp" startline="1341" endline="1365">GetIPString2DWord</references>
+        <references refid="class_se_net_stream_1ae804960e64332ff50130c153752c7d0a" compoundref="_se_net_stream_8cpp" startline="24" endline="28">SeNetStream::InitData</references>
+        <references refid="struct_se_connect_1a6be4df6ec540b10b76496b0d353df27c" compoundref="_src_2_match_server_def_8h" startline="63">SeConnect::kNetAddr</references>
+        <references refid="class_tcp_server_1a5adb8f6bbb52eafe0eb50f71c66b9442" compoundref="_tcp_server_8h" startline="81">m_kMapSock</references>
+        <references refid="class_tcp_server_1a6510b2787024c63755f95e098c83f2ca" compoundref="_tcp_server_8h" startline="79">m_kParentData</references>
+        <references refid="_src_2_town_server_def_8h_1a66f85fac7c2312bb587ad3f33324085ea8294b81023de7598689131414ad4d5b3" compoundref="_src_2_town_server_def_8h" startline="84">SCS_VALID_OK</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="class_tcp_server_1a2a827abc4e28587ebd825fc92894157a" compoundref="_se_parent_send_8cpp" startline="68" endline="80">SendParent_ReLoadReadyID</references>
+        <references refid="_se_server_define_8h_1a83f922065d39660cc6ff3ff3e193daa1a9066cbcd85981ad03cd92ba399a18338" compoundref="_se_server_define_8h" startline="108">SRR_SUCCESS</references>
+        <references refid="class_se_net_stream_1a58342316751fc11eea81fdf639ed3dea" compoundref="_se_net_stream_8cpp" startline="226" endline="229">SeNetStream::WriteDword</references>
+        <referencedby refid="class_tcp_server_1abef1ea38a82a4e708f5dc0419f41781c" compoundref="_se_parent_proc_8cpp" startline="4" endline="19">ProcessParent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1ae977374608c04843359d765c788dbe9f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::ProcessParent_SeverDisconnect</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessParent_SeverDisconnect</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentProc.inl" line="5" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentProc.cpp" bodystart="69" bodyend="77"/>
+        <references refid="struct_se_t_t___sever_disconnect_1ae12bad260a0292532304134e801449f3" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="105">SeTT_SeverDisconnect::dwClientID</references>
+        <references refid="class_tcp_server_1a18cdf4ff1fbef370969ec1d28d3e8918" compoundref="_tcp_server_8cpp" startline="766" endline="775">FindConnect</references>
+        <referencedby refid="class_tcp_server_1abef1ea38a82a4e708f5dc0419f41781c" compoundref="_se_parent_proc_8cpp" startline="4" endline="19">ProcessParent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a239bdfbad2c5e76bb0f8f0677e85f7f7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::ProcessParent_SendData</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessParent_SendData</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentProc.inl" line="6" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentProc.cpp" bodystart="79" bodyend="94"/>
+        <references refid="struct_se_t_t___send_data_1afdeecc7974a34a57bf1a1692d91e6527" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="129">SeTT_SendData::acData</references>
+        <references refid="struct_se_t_t___send_data_1aa45ee4ce08e9d3e44cbb690858307143" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="127">SeTT_SendData::dwClientID</references>
+        <references refid="class_tcp_server_1a18cdf4ff1fbef370969ec1d28d3e8918" compoundref="_tcp_server_8cpp" startline="766" endline="775">FindConnect</references>
+        <references refid="struct_se_t_t___send_data_1ac37f2c99765e0e19ed54924ec90ccdbe" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="128">SeTT_SendData::iDataLen</references>
+        <references refid="struct_se_connect_1afaa6333d607da1a42b52df55799eab7b" compoundref="_src_2_match_server_def_8h" startline="61">SeConnect::kSock</references>
+        <references refid="class_tcp_server_1aed1319386c612acaf5414dbf4fd3c673" compoundref="_tcp_server_8h" startline="77">m_kNetMgr</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <referencedby refid="class_tcp_server_1abef1ea38a82a4e708f5dc0419f41781c" compoundref="_se_parent_proc_8cpp" startline="4" endline="19">ProcessParent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tcp_server_1a0e0481385b6c674c9d7e7bf7d89195eb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TcpServer::ProcessParent_ConnectState</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessParent_ConnectState</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentProc.inl" line="7" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/SeParentProc.cpp" bodystart="96" bodyend="105"/>
+        <references refid="struct_se_connect_1a3cf82a9ecf77fa6af735397ec67eeee4" compoundref="_tcp_server_def_8h" startline="80">SeConnect::dwAccountID</references>
+        <references refid="struct_se_t_t___connect_state_1abcf7a718c1a5f12a8bf833a71f943ce3" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="142">SeTT_ConnectState::dwClientID</references>
+        <references refid="struct_se_t_t___connect_state_1a83c42f189189d0dfe7ed0d88d1bc771c" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="143">SeTT_ConnectState::dwParam1</references>
+        <references refid="struct_se_connect_1a149d84058a462e8833764a6dd2aa2d04" compoundref="_src_2_match_server_def_8h" startline="64">SeConnect::eState</references>
+        <references refid="class_tcp_server_1a18cdf4ff1fbef370969ec1d28d3e8918" compoundref="_tcp_server_8cpp" startline="766" endline="775">FindConnect</references>
+        <references refid="struct_se_t_t___connect_state_1a8125bb0005a88d9555c5d7cae66cc23b" compoundref="_se_ptl___t_c_p___a_n_d___t_o_w_n_8h" startline="144">SeTT_ConnectState::iReturn</references>
+        <referencedby refid="class_tcp_server_1abef1ea38a82a4e708f5dc0419f41781c" compoundref="_se_parent_proc_8cpp" startline="4" endline="19">ProcessParent</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9249">
+        <label>SeBaseServer</label>
+        <link refid="class_se_base_server"/>
+      </node>
+      <node id="9247">
+        <label>TcpServer</label>
+        <link refid="class_tcp_server"/>
+        <childnode refid="9248" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9249" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9248">
+        <label>TeNetCall</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9260">
+        <label>SeSvrConfig</label>
+        <link refid="struct_se_svr_config"/>
+        <childnode refid="9255" relation="usage">
+          <edgelabel>kParentServer</edgelabel>
+          <edgelabel>kLocalServer</edgelabel>
+        </childnode>
+      </node>
+      <node id="9261">
+        <label>std::map&lt; DWord, SeConnect * &gt;</label>
+        <childnode refid="9254" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9254">
+        <label>SeConnect</label>
+        <link refid="struct_se_connect"/>
+        <childnode refid="9255" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+        <childnode refid="9256" relation="usage">
+          <edgelabel>kTownSign</edgelabel>
+        </childnode>
+      </node>
+      <node id="9252">
+        <label>SeBaseServer</label>
+        <link refid="class_se_base_server"/>
+      </node>
+      <node id="9255">
+        <label>SeNetAddr</label>
+        <link refid="struct_se_net_addr"/>
+      </node>
+      <node id="9259">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="9250">
+        <label>TcpServer</label>
+        <link refid="class_tcp_server"/>
+        <childnode refid="9251" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9252" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9253" relation="usage">
+          <edgelabel>m_kMapSock</edgelabel>
+        </childnode>
+        <childnode refid="9257" relation="usage">
+          <edgelabel>m_kIPCount</edgelabel>
+        </childnode>
+        <childnode refid="9260" relation="usage">
+          <edgelabel>m_kConfig</edgelabel>
+        </childnode>
+        <childnode refid="9261" relation="usage">
+          <edgelabel>m_kMapID</edgelabel>
+        </childnode>
+        <childnode refid="9262" relation="usage">
+          <edgelabel>m_kParentData</edgelabel>
+        </childnode>
+      </node>
+      <node id="9253">
+        <label>std::map&lt; HSock, SeConnect * &gt;</label>
+        <childnode refid="9254" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9256">
+        <label>HTownSign</label>
+        <link refid="struct_h_town_sign"/>
+      </node>
+      <node id="9262">
+        <label>SeServerData</label>
+        <link refid="struct_se_server_data"/>
+      </node>
+      <node id="9257">
+        <label>std::map&lt; std::string, int &gt;</label>
+        <childnode refid="9258" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="9251">
+        <label>TeNetCall</label>
+      </node>
+      <node id="9258">
+        <label>std::string</label>
+        <childnode refid="9259" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" line="10" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/TcpServer/Src/TcpServer.h" bodystart="9" bodyend="85"/>
+    <listofallmembers>
+      <member refid="class_tcp_server_1a11937f9b14a3449a0a9032bcb310d81c" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>AddConnect</name></member>
+      <member refid="class_tcp_server_1a7634912a5876e4f85ad0fef38e467b45" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>ConnectToParent</name></member>
+      <member refid="class_tcp_server_1acc8d20fbd9bff2db8992275a8e22d741" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>DelConnect</name></member>
+      <member refid="class_tcp_server_1a27d67e7e116be84dbcf7a7d83994e87a" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>DisconnectPlayerSock</name></member>
+      <member refid="class_tcp_server_1aa0f2874d29366864402d7b253fb16927" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>DisconnectPlayerSock</name></member>
+      <member refid="class_tcp_server_1a34d826cc9c797b1f70b9880344da11f2" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>DisconnectPlayerSock</name></member>
+      <member refid="class_tcp_server_1af1fcfc97e5a84c56e69b9510831c87e3" prot="public" virt="virtual"><scope>TcpServer</scope><name>ExecuteAction</name></member>
+      <member refid="class_tcp_server_1a18cdf4ff1fbef370969ec1d28d3e8918" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>FindConnect</name></member>
+      <member refid="class_tcp_server_1a308f820e948e314b0c4107d667211024" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>FindConnect</name></member>
+      <member refid="class_tcp_server_1aca0ffc3f1a49054f068f42bde03dd9e4" prot="public" virt="virtual"><scope>TcpServer</scope><name>Finialize</name></member>
+      <member refid="class_tcp_server_1ae63cd7967ce360cf811740cadf962e4c" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>GenClientID</name></member>
+      <member refid="class_tcp_server_1a50bafeea0cfd24245ff8378d80c064e6" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>GetServerTime</name></member>
+      <member refid="class_tcp_server_1a45b32232d2a423a01823ec028b433eca" prot="public" virt="virtual"><scope>TcpServer</scope><name>Initialize</name></member>
+      <member refid="class_tcp_server_1a38c67c3be0dd0a0d96244da4013a70fc" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>InitializeNet</name></member>
+      <member refid="class_tcp_server_1a52a028cf3f9b36fa6c854186927460fd" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>LoadConfig</name></member>
+      <member refid="class_tcp_server_1abe074dd33c928bd72d4b86164f574d10" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>LoadDynamicConfig</name></member>
+      <member refid="class_tcp_server_1a7991d5e390871ec0c6f95da0913282a6" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>m_dwCheckConnectTime</name></member>
+      <member refid="class_tcp_server_1a2aced2e2d59c5ce0adf6fd631f21df25" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>m_dwClientGenID</name></member>
+      <member refid="class_tcp_server_1afc636d718e9af411aeca981b93674ebf" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>m_dwCurTime</name></member>
+      <member refid="class_tcp_server_1af800329746461585c8a0e020212d7698" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>m_dwTickCount</name></member>
+      <member refid="class_tcp_server_1afbd7ca4108cb71dd4a8d5ad53b29dac1" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>m_kConfig</name></member>
+      <member refid="class_tcp_server_1a8fdec844d73a73931e97179719059814" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>m_kIPCount</name></member>
+      <member refid="class_tcp_server_1a19a9cd4795abf0392f9bc84e94267fb1" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>m_kMapID</name></member>
+      <member refid="class_tcp_server_1a5adb8f6bbb52eafe0eb50f71c66b9442" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>m_kMapSock</name></member>
+      <member refid="class_tcp_server_1aed1319386c612acaf5414dbf4fd3c673" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>m_kNetMgr</name></member>
+      <member refid="class_tcp_server_1a6510b2787024c63755f95e098c83f2ca" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>m_kParentData</name></member>
+      <member refid="class_tcp_server_1a8d7adffedcab94bb6fdad94558f88d2b" prot="public" virt="virtual"><scope>TcpServer</scope><name>OnNetAccept</name></member>
+      <member refid="class_tcp_server_1aa8efc818557bb7a347f65b10a4306c46" prot="public" virt="virtual"><scope>TcpServer</scope><name>OnNetConnected</name></member>
+      <member refid="class_tcp_server_1a97d4c221e30e90b403a13a5a863c19a2" prot="public" virt="virtual"><scope>TcpServer</scope><name>OnNetDisconnect</name></member>
+      <member refid="class_tcp_server_1aabf869f68327c348a7f2abbf2a6cdf78" prot="public" virt="virtual"><scope>TcpServer</scope><name>OnNetRecv</name></member>
+      <member refid="class_tcp_server_1abef1ea38a82a4e708f5dc0419f41781c" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>ProcessParent</name></member>
+      <member refid="class_tcp_server_1a0e0481385b6c674c9d7e7bf7d89195eb" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>ProcessParent_ConnectState</name></member>
+      <member refid="class_tcp_server_1af603e2982226258bc52370863bf8c304" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>ProcessParent_RegisterRet</name></member>
+      <member refid="class_tcp_server_1a239bdfbad2c5e76bb0f8f0677e85f7f7" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>ProcessParent_SendData</name></member>
+      <member refid="class_tcp_server_1ae977374608c04843359d765c788dbe9f" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>ProcessParent_SeverDisconnect</name></member>
+      <member refid="class_tcp_server_1a15dbc0c979136a6e3f3b6ed1032f81cb" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>RegisterToParent</name></member>
+      <member refid="class_se_base_server_1a88b0de020f966c810134d45a9d8ca074" prot="public" virt="non-virtual"><scope>TcpServer</scope><name>SeBaseServer</name></member>
+      <member refid="class_tcp_server_1a6c1ad918ac65a0345ebedaf11c2d8160" prot="public" virt="non-virtual"><scope>TcpServer</scope><name>SendParent_ClientConnect</name></member>
+      <member refid="class_tcp_server_1aa1b9ae1889db78abeca89bb639fb5569" prot="public" virt="non-virtual"><scope>TcpServer</scope><name>SendParent_ClientDisconnect</name></member>
+      <member refid="class_tcp_server_1a377b9d301702227e55898db472538797" prot="public" virt="non-virtual"><scope>TcpServer</scope><name>SendParent_HeartPackage</name></member>
+      <member refid="class_tcp_server_1a7402e8b47e4f3dee4a8afd51639ae125" prot="public" virt="non-virtual"><scope>TcpServer</scope><name>SendParent_RecvData</name></member>
+      <member refid="class_tcp_server_1acbab122cffc250ed01c2ae6de6bd2cbf" prot="public" virt="non-virtual"><scope>TcpServer</scope><name>SendParent_Register</name></member>
+      <member refid="class_tcp_server_1a2a827abc4e28587ebd825fc92894157a" prot="public" virt="non-virtual"><scope>TcpServer</scope><name>SendParent_ReLoadReadyID</name></member>
+      <member refid="class_tcp_server_1ad67fbedd53c9b4352fd05f584c449cba" prot="public" virt="non-virtual"><scope>TcpServer</scope><name>SendTTData</name></member>
+      <member refid="class_tcp_server_1abf6cccb1f01c2e76e07b1ee34bbd54ff" prot="public" virt="virtual"><scope>TcpServer</scope><name>ShowConsoleTitle</name></member>
+      <member refid="class_tcp_server_1ad6d1a8405d96f2479c297918c396d212" prot="public" virt="non-virtual"><scope>TcpServer</scope><name>TcpServer</name></member>
+      <member refid="class_tcp_server_1ad20814eab3dc87056ce261b3fe9cff75" prot="public" virt="virtual"><scope>TcpServer</scope><name>Update</name></member>
+      <member refid="class_tcp_server_1a6d35812fdd9073796c52ff92848e81be" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>UpdateClientHeart</name></member>
+      <member refid="class_tcp_server_1ac85d0c14e0f8a08dd5cf5f58d284fca0" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>UpdateConnect</name></member>
+      <member refid="class_tcp_server_1aa3d64df40dbb03257e64e0a96a09e1bd" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>UpdateParentHeart</name></member>
+      <member refid="class_tcp_server_1a19c7556adf231cc18610f8bbf94d54d1" prot="protected" virt="non-virtual"><scope>TcpServer</scope><name>UpdateState</name></member>
+      <member refid="class_se_base_server_1a6db805870a32d2966e41923b2815a8db" prot="public" virt="virtual"><scope>TcpServer</scope><name>~SeBaseServer</name></member>
+      <member refid="class_tcp_server_1a226792a6bb7cccdb4eb6dfdf8851326c" prot="public" virt="non-virtual"><scope>TcpServer</scope><name>~TcpServer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

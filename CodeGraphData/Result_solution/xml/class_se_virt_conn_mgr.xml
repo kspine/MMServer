@@ -1,0 +1,819 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_se_virt_conn_mgr" kind="class" prot="public">
+    <compoundname>SeVirtConnMgr</compoundname>
+    <includes refid="_se_virt_conn_mgr_8h" local="no">SeVirtConnMgr.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_se_virt_conn_mgr_1a61f87e13df7a5c94d749e1764083768a" prot="private" static="no">
+        <type>bool(*</type>
+        <definition>typedef bool(* SeVirtConnMgr::funSendPack)(int)</definition>
+        <argsstring>)(int)</argsstring>
+        <name>funSendPack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="93" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_se_virt_conn_mgr_1ae81b577072b946ef45202a85a83b9eb0" prot="private" static="no" mutable="no">
+        <type>TeNetMgr *</type>
+        <definition>TeNetMgr* SeVirtConnMgr::m_pkNetMgr</definition>
+        <argsstring></argsstring>
+        <name>m_pkNetMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="96" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="class_se_virt_conn_mgr_1aba3fad771b2a79357eb8d265c01eac5b" compoundref="_se_virt_conn_mgr_8cpp" startline="340" endline="359">Connect</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1a74fabe37acfaf60cf51ad9574389b653" compoundref="_se_virt_conn_mgr_8cpp" startline="385" endline="405">HeartBeat</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1a6982c2146c5829aa21e4f2bd5487a3d4" compoundref="_se_virt_conn_mgr_8cpp" startline="23" endline="35">Initialize</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1aabb6f1da4200a5c59845fafe5f30fe2f" compoundref="_se_virt_conn_mgr_8cpp" startline="9" endline="17">SeVirtConnMgr</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1a1a2056beaab510c633febd91090592ee" compoundref="_se_virt_conn_mgr_8cpp" startline="37" endline="53">Update</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1a6c570ccb0119187a7b595c243aa0e77b" compoundref="_se_virt_conn_mgr_8cpp" startline="310" endline="338">UpdateClientConn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_virt_conn_mgr_1a3ce0d8de2e574090465a9b64f0fb6bc9" prot="private" static="no" mutable="no">
+        <type><ref refid="class_se_timer" kindref="compound">SeTimer</ref></type>
+        <definition>SeTimer SeVirtConnMgr::m_kTimer</definition>
+        <argsstring></argsstring>
+        <name>m_kTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="97" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="class_se_virt_conn_mgr_1aabb6f1da4200a5c59845fafe5f30fe2f" compoundref="_se_virt_conn_mgr_8cpp" startline="9" endline="17">SeVirtConnMgr</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1a1a2056beaab510c633febd91090592ee" compoundref="_se_virt_conn_mgr_8cpp" startline="37" endline="53">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_virt_conn_mgr_1a18cdc68f4ff83f0351aad283cb4faf34" prot="private" static="no" mutable="no">
+        <type><ref refid="class_se_virt_conn_mgr_1a61f87e13df7a5c94d749e1764083768a" kindref="member">funSendPack</ref></type>
+        <definition>funSendPack SeVirtConnMgr::m_pkFunReg</definition>
+        <argsstring></argsstring>
+        <name>m_pkFunReg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="100" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" bodystart="100" bodyend="-1"/>
+        <referencedby refid="class_se_virt_conn_mgr_1a6982c2146c5829aa21e4f2bd5487a3d4" compoundref="_se_virt_conn_mgr_8cpp" startline="23" endline="35">Initialize</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1ac47385e06ce5d30905da06ba538230ad" compoundref="_se_virt_conn_mgr_8cpp" startline="361" endline="383">Register</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1aabb6f1da4200a5c59845fafe5f30fe2f" compoundref="_se_virt_conn_mgr_8cpp" startline="9" endline="17">SeVirtConnMgr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_virt_conn_mgr_1a200d6abf2245b820151e0eed64addcae" prot="private" static="no" mutable="no">
+        <type><ref refid="class_se_virt_conn_mgr_1a61f87e13df7a5c94d749e1764083768a" kindref="member">funSendPack</ref></type>
+        <definition>funSendPack SeVirtConnMgr::m_pkFunHeart</definition>
+        <argsstring></argsstring>
+        <name>m_pkFunHeart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="101" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="class_se_virt_conn_mgr_1a74fabe37acfaf60cf51ad9574389b653" compoundref="_se_virt_conn_mgr_8cpp" startline="385" endline="405">HeartBeat</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1a6982c2146c5829aa21e4f2bd5487a3d4" compoundref="_se_virt_conn_mgr_8cpp" startline="23" endline="35">Initialize</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1aabb6f1da4200a5c59845fafe5f30fe2f" compoundref="_se_virt_conn_mgr_8cpp" startline="9" endline="17">SeVirtConnMgr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_virt_conn_mgr_1a25525ee2617bed5e0ec6a9399f3fe018" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref> *</type>
+        <definition>SeVirtConn* SeVirtConnMgr::m_akServerConn[SSI_NUM]</definition>
+        <argsstring>[SSI_NUM]</argsstring>
+        <name>m_akServerConn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="103" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="class_se_virt_conn_mgr_1a42fa65f9815b4e6876a92d0648d7619c" compoundref="_se_virt_conn_mgr_8cpp" startline="60" endline="81">AddServerConn</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1adca74d2f39a17051600b0ea23d600b74" compoundref="_se_virt_conn_mgr_8cpp" startline="83" endline="108">OnServerConnected</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1aabb6f1da4200a5c59845fafe5f30fe2f" compoundref="_se_virt_conn_mgr_8cpp" startline="9" endline="17">SeVirtConnMgr</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1ac7cad4ff49c4ebf07d8415ae0e62e28c" compoundref="_se_virt_conn_mgr_8cpp" startline="283" endline="308">UpdateServerConn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_virt_conn_mgr_1a2c5aeac83aeb9d6c754bb891db8405f9" prot="private" static="no" mutable="no">
+        <type><ref refid="_se_virt_conn_mgr_8h_1ac9d8a258d7df8cea8f84e864aee4932f" kindref="member">MSock2Conn</ref></type>
+        <definition>MSock2Conn SeVirtConnMgr::m_akClientConn[SSI_NUM]</definition>
+        <argsstring>[SSI_NUM]</argsstring>
+        <name>m_akClientConn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="106" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" bodystart="106" bodyend="-1"/>
+        <referencedby refid="class_se_virt_conn_mgr_1acdf19894323074172e21b03c1660238b" compoundref="_se_virt_conn_mgr_8cpp" startline="223" endline="238">GetClientConnByAreaID</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1a4ac4e87a3086c8361093ba6296ab3f2c" compoundref="_se_virt_conn_mgr_8cpp" startline="206" endline="221">GetClientConnByID</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1ad71bdf80c770bf13f932d45b0928ee56" compoundref="_se_virt_conn_mgr_8cpp" startline="266" endline="281">GetClientConnByIndex</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1a51ee10bf4c869460a221b78e3d9296d7" compoundref="_se_virt_conn_mgr_8cpp" startline="240" endline="253">GetClientConnBySock</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1aa4e7eaccafa14a4a55c97f4857da9ee9" compoundref="_se_virt_conn_mgr_8cpp" startline="141" endline="173">OnClientDisconnect</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1a53d31fe08eaa3629a8a268f2d37a05e8" compoundref="_se_virt_conn_mgr_8cpp" startline="175" endline="204">OnClientRegister</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_virt_conn_mgr_1a631e2f8ac02e854b0673363524c38b1e" prot="private" static="no" mutable="no">
+        <type><ref refid="_se_virt_conn_mgr_8h_1ac9d8a258d7df8cea8f84e864aee4932f" kindref="member">MSock2Conn</ref></type>
+        <definition>MSock2Conn SeVirtConnMgr::m_kMAllClientConn</definition>
+        <argsstring></argsstring>
+        <name>m_kMAllClientConn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="107" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" bodystart="107" bodyend="-1"/>
+        <referencedby refid="class_se_virt_conn_mgr_1a63500bd2371897e90065d32e0e16d086" compoundref="_se_virt_conn_mgr_8cpp" startline="110" endline="124">AddClientConn</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1a809747184a045b11d036e72a15c408d8" compoundref="_se_virt_conn_mgr_8cpp" startline="255" endline="264">GetClientConnBySock</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1aa4e7eaccafa14a4a55c97f4857da9ee9" compoundref="_se_virt_conn_mgr_8cpp" startline="141" endline="173">OnClientDisconnect</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1a53d31fe08eaa3629a8a268f2d37a05e8" compoundref="_se_virt_conn_mgr_8cpp" startline="175" endline="204">OnClientRegister</referencedby>
+        <referencedby refid="class_se_virt_conn_mgr_1a6c570ccb0119187a7b595c243aa0e77b" compoundref="_se_virt_conn_mgr_8cpp" startline="310" endline="338">UpdateClientConn</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1aabb6f1da4200a5c59845fafe5f30fe2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeVirtConnMgr::SeVirtConnMgr</definition>
+        <argsstring>()</argsstring>
+        <name>SeVirtConnMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="62" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="9" bodyend="17"/>
+        <references refid="class_se_virt_conn_mgr_1a25525ee2617bed5e0ec6a9399f3fe018" compoundref="_se_virt_conn_mgr_8h" startline="103">m_akServerConn</references>
+        <references refid="class_se_virt_conn_mgr_1a3ce0d8de2e574090465a9b64f0fb6bc9" compoundref="_se_virt_conn_mgr_8h" startline="97">m_kTimer</references>
+        <references refid="class_se_virt_conn_mgr_1a200d6abf2245b820151e0eed64addcae" compoundref="_se_virt_conn_mgr_8h" startline="101">m_pkFunHeart</references>
+        <references refid="class_se_virt_conn_mgr_1a18cdc68f4ff83f0351aad283cb4faf34" compoundref="_se_virt_conn_mgr_8h" startline="100">m_pkFunReg</references>
+        <references refid="class_se_virt_conn_mgr_1ae81b577072b946ef45202a85a83b9eb0" compoundref="_se_virt_conn_mgr_8h" startline="96">m_pkNetMgr</references>
+        <references refid="class_se_timer_1a2cea8d993fa579799239a793c1640eb5" compoundref="_se_timer_8h" startline="15" endline="19">SeTimer::SetInterValue</references>
+        <references refid="_se_ptl_define_8h_1aefb47f3959b8be9e164448819e4bb7f9a08b95c3f94bf176b492b6affdb602a15" compoundref="_se_ptl_define_8h" startline="32">SSI_NUM</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1a87828f5985779d84af90b8a5f551b51b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeVirtConnMgr::~SeVirtConnMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~SeVirtConnMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="63" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1a6982c2146c5829aa21e4f2bd5487a3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeVirtConnMgr::Initialize</definition>
+        <argsstring>(TeNetMgr *pkNetMgr, void *pFunSendReg, void *pFunSendHeart)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type>TeNetMgr *</type>
+          <declname>pkNetMgr</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pFunSendReg</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pFunSendHeart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="65" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="23" bodyend="35"/>
+        <references refid="class_se_virt_conn_mgr_1a200d6abf2245b820151e0eed64addcae" compoundref="_se_virt_conn_mgr_8h" startline="101">m_pkFunHeart</references>
+        <references refid="class_se_virt_conn_mgr_1a18cdc68f4ff83f0351aad283cb4faf34" compoundref="_se_virt_conn_mgr_8h" startline="100">m_pkFunReg</references>
+        <references refid="class_se_virt_conn_mgr_1ae81b577072b946ef45202a85a83b9eb0" compoundref="_se_virt_conn_mgr_8h" startline="96">m_pkNetMgr</references>
+        <referencedby refid="class_global_server_1a0f488564b47400b7f7e4d4c0fae011e5" compoundref="src_2_global_server_8cpp" startline="41" endline="69">GlobalServer::Initialize</referencedby>
+        <referencedby refid="class_login_server_1adbe07e256d58df0d94eab77321928505" compoundref="_src_2_login_server_8cpp" startline="246" endline="271">LoginServer::Initialize</referencedby>
+        <referencedby refid="class_http_server_1abc911606499e42dbf9450f4331de0a62" compoundref="_http_server_8cpp" startline="55" endline="98">HttpServer::Initialize</referencedby>
+        <referencedby refid="class_world_server_1aa1c10ee088e17e4046c812c31eabee41" compoundref="_src_2_world_server_8cpp" startline="332" endline="393">WorldServer::Initialize</referencedby>
+        <referencedby refid="class_match_server_1a3f0839420ac96d8b744d28b1e0f779f8" compoundref="_src_2_match_server_8cpp" startline="228" endline="276">MatchServer::Initialize</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a4f20c63ea79d05ad3b6f532d887fb091" compoundref="_watch_server_8cpp" startline="457" endline="530">WatchServer::CWatchServer::InitializeNet</referencedby>
+        <referencedby refid="class_nexus_server_1abd5eec22d797e3285935dc1eacd5cd52" compoundref="_nexus_server_8cpp" startline="411" endline="419">NexusServer::InitializeNetEx</referencedby>
+        <referencedby refid="class_race_server_1a7e66b0db1cc4963931ab50079fae9d09" compoundref="src_2_race_server_8cpp" startline="975" endline="1019">RaceServer::InitializeNetEx</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1a1a2056beaab510c633febd91090592ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeVirtConnMgr::Update</definition>
+        <argsstring>(DWord dwCurTime)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwCurTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="66" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="37" bodyend="53"/>
+        <references refid="class_se_timer_1ad3c52817ca308cdd73be188d6ab9d65f" compoundref="_se_timer_8h" startline="24" endline="33">SeTimer::IsPassed</references>
+        <references refid="class_se_virt_conn_mgr_1a3ce0d8de2e574090465a9b64f0fb6bc9" compoundref="_se_virt_conn_mgr_8h" startline="97">m_kTimer</references>
+        <references refid="class_se_virt_conn_mgr_1ae81b577072b946ef45202a85a83b9eb0" compoundref="_se_virt_conn_mgr_8h" startline="96">m_pkNetMgr</references>
+        <references refid="class_se_timer_1a5fb0d6e81f14ba88aa3333ff3b3ddd28" compoundref="_se_timer_8h" startline="46" endline="49">SeTimer::Update</references>
+        <references refid="class_se_virt_conn_mgr_1a6c570ccb0119187a7b595c243aa0e77b" compoundref="_se_virt_conn_mgr_8cpp" startline="310" endline="338">UpdateClientConn</references>
+        <references refid="class_se_virt_conn_mgr_1ac7cad4ff49c4ebf07d8415ae0e62e28c" compoundref="_se_virt_conn_mgr_8cpp" startline="283" endline="308">UpdateServerConn</references>
+        <referencedby refid="class_global_server_1a9ec490da6fed2d0097e78ed59e9463f6" compoundref="src_2_global_server_8cpp" startline="71" endline="91">GlobalServer::Update</referencedby>
+        <referencedby refid="class_login_server_1ab0bb0c829cbb4e6fd08b56746b3673d5" compoundref="_src_2_login_server_8cpp" startline="375" endline="394">LoginServer::Update</referencedby>
+        <referencedby refid="class_backend_server_1abdc0d26e6a91c17dcda4c6801cf2ad0c" compoundref="_backend_server_8cpp" startline="39" endline="55">BackendServer::Update</referencedby>
+        <referencedby refid="class_http_server_1a16c9f135682bba53fd8753e6dcda2bc9" compoundref="_http_server_8cpp" startline="100" endline="119">HttpServer::Update</referencedby>
+        <referencedby refid="class_nexus_server_1a98fecce93860b6bee5a77fb3ea2e2ef6" compoundref="_nexus_server_8cpp" startline="76" endline="92">NexusServer::Update</referencedby>
+        <referencedby refid="class_world_server_1ae9253ba0018a943c9ed75a12af533e86" compoundref="_src_2_world_server_8cpp" startline="594" endline="691">WorldServer::Update</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a06346a1715803f6de7f0e5df74fb5cb7" compoundref="_watch_server_8cpp" startline="94" endline="107">WatchServer::CWatchServer::Update</referencedby>
+        <referencedby refid="class_match_server_1aa0c969f78b0a7c57be07f1edeea929cf" compoundref="_src_2_match_server_8cpp" startline="293" endline="367">MatchServer::Update</referencedby>
+        <referencedby refid="class_race_server_1a648783dd4f150a1505c06ffd0c5a9d2a" compoundref="src_2_race_server_8cpp" startline="134" endline="208">RaceServer::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1ad85b1d2c3b0e3c621211ac43decaf3da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeVirtConnMgr::Finialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Finialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="67" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1a42fa65f9815b4e6876a92d0648d7619c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref> *</type>
+        <definition>SeVirtConn * SeVirtConnMgr::AddServerConn</definition>
+        <argsstring>(SeServerIdx eIndex, SeNetAddr &amp;rkAddr, int iBufferLen, SeVirtConnState eState=SVCS_CAN_CONNECT)</argsstring>
+        <name>AddServerConn</name>
+        <param>
+          <type><ref refid="_se_ptl_define_8h_1aefb47f3959b8be9e164448819e4bb7f9" kindref="member">SeServerIdx</ref></type>
+          <declname>eIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_net_addr" kindref="compound">SeNetAddr</ref> &amp;</type>
+          <declname>rkAddr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iBufferLen</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_virt_conn_mgr_8h_1ad6484f55baf154efe4f216e3d9c1f459" kindref="member">SeVirtConnState</ref></type>
+          <declname>eState</declname>
+          <defval><ref refid="_se_virt_conn_mgr_8h_1ad6484f55baf154efe4f216e3d9c1f459a9f83edd36767ac2c28d471a29f16d210" kindref="member">SVCS_CAN_CONNECT</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="71" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="60" bodyend="81"/>
+        <references refid="struct_se_virt_conn_1a40b26e62b433113fadaa391c2c11397a" compoundref="_se_virt_conn_mgr_8h" startline="45">SeVirtConn::eIndex</references>
+        <references refid="struct_se_virt_conn_1a498d90b78881f21f62000e5848c654e2" compoundref="_se_virt_conn_mgr_8h" startline="49">SeVirtConn::eState</references>
+        <references refid="struct_se_virt_conn_1a8a1e9d5f8c625ec2005a7ed3acc86995" compoundref="_se_virt_conn_mgr_8h" startline="55">SeVirtConn::iBufferLen</references>
+        <references refid="struct_se_net_addr_1a35c27f89f488d9bd23ee1c19f2ae7b8a" compoundref="_se_share_def_8h" startline="14" endline="21">SeNetAddr::IsEmpty</references>
+        <references refid="struct_se_virt_conn_1ad05e8487648793f2d2340a47856acb71" compoundref="_se_virt_conn_mgr_8h" startline="46">SeVirtConn::kNetAddr</references>
+        <references refid="class_se_virt_conn_mgr_1a25525ee2617bed5e0ec6a9399f3fe018" compoundref="_se_virt_conn_mgr_8h" startline="103">m_akServerConn</references>
+        <references refid="_se_ptl_define_8h_1aefb47f3959b8be9e164448819e4bb7f9a08b95c3f94bf176b492b6affdb602a15" compoundref="_se_ptl_define_8h" startline="32">SSI_NUM</references>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a4f20c63ea79d05ad3b6f532d887fb091" compoundref="_watch_server_8cpp" startline="457" endline="530">WatchServer::CWatchServer::InitializeNet</referencedby>
+        <referencedby refid="class_race_server_1a7e66b0db1cc4963931ab50079fae9d09" compoundref="src_2_race_server_8cpp" startline="975" endline="1019">RaceServer::InitializeNetEx</referencedby>
+        <referencedby refid="class_login_server_1a44d75705c4debce144b50dbd0c961b3d" compoundref="_src_2_login_server_8cpp" startline="73" endline="135">LoginServer::LoadConfig</referencedby>
+        <referencedby refid="class_http_server_1a66312168a48b7f22f1e56078c9a588c7" compoundref="_http_server_8cpp" startline="276" endline="327">HttpServer::LoadConfig</referencedby>
+        <referencedby refid="class_match_server_1a16c0a4c43f480d67e41613066925888a" compoundref="_src_2_match_server_8cpp" startline="77" endline="150">MatchServer::LoadConfig</referencedby>
+        <referencedby refid="class_nexus_server_1a692ff80a90c8124c028980a9448ffd83" compoundref="_nexus_server_8cpp" startline="311" endline="375">NexusServer::LoadConfig</referencedby>
+        <referencedby refid="class_world_server_1afb9dc70c7da676b263cd148880a6a8d3" compoundref="_src_2_world_server_8cpp" startline="99" endline="230">WorldServer::LoadConfig</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1adca74d2f39a17051600b0ea23d600b74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeVirtConnMgr::OnServerConnected</definition>
+        <argsstring>(const HSock &amp;rkSock, SeVirtConn *pkConn)</argsstring>
+        <name>OnServerConnected</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref> *</type>
+          <declname>pkConn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="72" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="83" bodyend="108"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="struct_se_virt_conn_1a40b26e62b433113fadaa391c2c11397a" compoundref="_se_virt_conn_mgr_8h" startline="45">SeVirtConn::eIndex</references>
+        <references refid="struct_se_virt_conn_1a498d90b78881f21f62000e5848c654e2" compoundref="_se_virt_conn_mgr_8h" startline="49">SeVirtConn::eState</references>
+        <references refid="_se_server_tool_8cpp_1a4d452970e4bf219a5058ab2ad8b0e2c4" compoundref="_se_server_tool_8cpp" startline="107" endline="140">GetServerNameByIndex</references>
+        <references refid="struct_se_virt_conn_1a5cc5f76c8a60f902e609d980308ed0d0" compoundref="_se_virt_conn_mgr_8h" startline="33" endline="41">SeVirtConn::HasValidIndex</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="struct_se_virt_conn_1ad05e8487648793f2d2340a47856acb71" compoundref="_se_virt_conn_mgr_8h" startline="46">SeVirtConn::kNetAddr</references>
+        <references refid="struct_se_virt_conn_1a2ed0654cfe8f298d1dc8fbe76a310df0" compoundref="_se_virt_conn_mgr_8h" startline="47">SeVirtConn::kSock</references>
+        <references refid="class_se_virt_conn_mgr_1a25525ee2617bed5e0ec6a9399f3fe018" compoundref="_se_virt_conn_mgr_8h" startline="103">m_akServerConn</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="_se_virt_conn_mgr_8h_1ad6484f55baf154efe4f216e3d9c1f459a9f83edd36767ac2c28d471a29f16d210" compoundref="_se_virt_conn_mgr_8h" startline="10">SVCS_CAN_CONNECT</references>
+        <referencedby refid="class_login_server_1a4d588c3a9c9835ccc657447c4b34e386" compoundref="_src_2_login_server_8cpp" startline="435" endline="445">LoginServer::OnNetConnected</referencedby>
+        <referencedby refid="class_http_server_1a191167d16fa982c95ab32d1b2bf154a7" compoundref="_http_server_8cpp" startline="138" endline="144">HttpServer::OnNetConnected</referencedby>
+        <referencedby refid="class_nexus_server_1a73449d17a369e6642f75003610f93d30" compoundref="_nexus_server_8cpp" startline="123" endline="133">NexusServer::OnNetConnected</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a55927a94ad08e5ee5d2ba7d7ef6de2db" compoundref="_watch_server_8cpp" startline="532" endline="590">WatchServer::CWatchServer::OnNetConnected</referencedby>
+        <referencedby refid="class_match_server_1a052967673a1e01664998a1dee97a4d86" compoundref="_src_2_match_server_8cpp" startline="391" endline="401">MatchServer::OnNetConnected</referencedby>
+        <referencedby refid="class_race_server_1a1cfd0d7b06dc6972eddd99e414101ac8" compoundref="src_2_race_server_8cpp" startline="258" endline="282">RaceServer::OnNetConnected</referencedby>
+        <referencedby refid="class_world_server_1af1511dce3a76362f187fe49f3e3bc933" compoundref="_src_2_world_server_8cpp" startline="752" endline="772">WorldServer::OnNetConnected</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1ad75abfada4de2eb3107aca79b1c99642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeVirtConnMgr::OnServerDisconnect</definition>
+        <argsstring>(SeVirtConn *pkConn)</argsstring>
+        <name>OnServerDisconnect</name>
+        <param>
+          <type><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref> *</type>
+          <declname>pkConn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="73" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="126" bodyend="139"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="struct_se_virt_conn_1a9875cec7690b50b17bc2fb927d5c252f" compoundref="_se_virt_conn_mgr_8h" startline="50">SeVirtConn::dwStateTime</references>
+        <references refid="struct_se_virt_conn_1a40b26e62b433113fadaa391c2c11397a" compoundref="_se_virt_conn_mgr_8h" startline="45">SeVirtConn::eIndex</references>
+        <references refid="struct_se_virt_conn_1a498d90b78881f21f62000e5848c654e2" compoundref="_se_virt_conn_mgr_8h" startline="49">SeVirtConn::eState</references>
+        <references refid="_se_server_tool_8cpp_1a4d452970e4bf219a5058ab2ad8b0e2c4" compoundref="_se_server_tool_8cpp" startline="107" endline="140">GetServerNameByIndex</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="struct_se_virt_conn_1ad05e8487648793f2d2340a47856acb71" compoundref="_se_virt_conn_mgr_8h" startline="46">SeVirtConn::kNetAddr</references>
+        <references refid="struct_se_virt_conn_1a2ed0654cfe8f298d1dc8fbe76a310df0" compoundref="_se_virt_conn_mgr_8h" startline="47">SeVirtConn::kSock</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_virt_conn_mgr_8h_1ad6484f55baf154efe4f216e3d9c1f459a9f83edd36767ac2c28d471a29f16d210" compoundref="_se_virt_conn_mgr_8h" startline="10">SVCS_CAN_CONNECT</references>
+        <referencedby refid="class_login_server_1a86a30002e806ff2598a7a99f0afbca6d" compoundref="_src_2_login_server_8cpp" startline="522" endline="565">LoginServer::OnNetDisconnect</referencedby>
+        <referencedby refid="class_http_server_1a512037f9a67425a544579dff680ea4b1" compoundref="_http_server_8cpp" startline="166" endline="172">HttpServer::OnNetDisconnect</referencedby>
+        <referencedby refid="class_nexus_server_1a76c854987531fedf75cca110db6f1e94" compoundref="_nexus_server_8cpp" startline="229" endline="275">NexusServer::OnNetDisconnect</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_1a16c4aafd626d1586aaaae1a112e8d071" compoundref="_watch_server_8cpp" startline="709" endline="778">WatchServer::CWatchServer::OnNetDisconnect</referencedby>
+        <referencedby refid="class_match_server_1a190acd16e2bd6be6bdf82e3159d811dc" compoundref="_src_2_match_server_8cpp" startline="489" endline="522">MatchServer::OnNetDisconnect</referencedby>
+        <referencedby refid="class_race_server_1ae340f2c6d93ebee26b390132906d961d" compoundref="src_2_race_server_8cpp" startline="395" endline="463">RaceServer::OnNetDisconnect</referencedby>
+        <referencedby refid="class_world_server_1a683b50ed480b702c766f5b629a23498d" compoundref="_src_2_world_server_8cpp" startline="929" endline="989">WorldServer::OnNetDisconnect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1a63500bd2371897e90065d32e0e16d086" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeVirtConnMgr::AddClientConn</definition>
+        <argsstring>(const HSock &amp;rkSock, const char *pcIP, int iPort)</argsstring>
+        <name>AddClientConn</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcIP</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iPort</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="76" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="110" bodyend="124"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="struct_se_virt_conn_1a498d90b78881f21f62000e5848c654e2" compoundref="_se_virt_conn_mgr_8h" startline="49">SeVirtConn::eState</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="struct_se_virt_conn_1ad05e8487648793f2d2340a47856acb71" compoundref="_se_virt_conn_mgr_8h" startline="46">SeVirtConn::kNetAddr</references>
+        <references refid="struct_se_virt_conn_1a2ed0654cfe8f298d1dc8fbe76a310df0" compoundref="_se_virt_conn_mgr_8h" startline="47">SeVirtConn::kSock</references>
+        <references refid="class_se_virt_conn_mgr_1a631e2f8ac02e854b0673363524c38b1e" compoundref="_se_virt_conn_mgr_8h" startline="107">m_kMAllClientConn</references>
+        <references refid="_se_virt_conn_mgr_8h_1ad6484f55baf154efe4f216e3d9c1f459af2fd418c27e38c5887061982c04bebe5" compoundref="_se_virt_conn_mgr_8h" startline="9">SVCS_NULL</references>
+        <referencedby refid="class_global_server_1afda21a52501747d08ec324a149f52d87" compoundref="src_2_global_server_8cpp" startline="133" endline="136">GlobalServer::OnNetAccept</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1aa4e7eaccafa14a4a55c97f4857da9ee9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeVirtConnMgr::OnClientDisconnect</definition>
+        <argsstring>(const HSock &amp;rkSock)</argsstring>
+        <name>OnClientDisconnect</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="77" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="141" bodyend="173"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="struct_se_virt_conn_1accce5905eca3877d6286e3ad10d87b95" compoundref="_se_virt_conn_mgr_8h" startline="44">SeVirtConn::dwAreaID</references>
+        <references refid="struct_se_virt_conn_1a42dd262e2d620d236a87738f864c517d" compoundref="_se_virt_conn_mgr_8h" startline="43">SeVirtConn::dwServerID</references>
+        <references refid="struct_se_virt_conn_1a40b26e62b433113fadaa391c2c11397a" compoundref="_se_virt_conn_mgr_8h" startline="45">SeVirtConn::eIndex</references>
+        <references refid="_se_tool_8h_1ada81d4ae5d39c42af0a02b45f4a6f715" compoundref="_se_tool_8h" startline="66">GetID2Str</references>
+        <references refid="_se_server_tool_8cpp_1a4d452970e4bf219a5058ab2ad8b0e2c4" compoundref="_se_server_tool_8cpp" startline="107" endline="140">GetServerNameByIndex</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="struct_se_virt_conn_1ad05e8487648793f2d2340a47856acb71" compoundref="_se_virt_conn_mgr_8h" startline="46">SeVirtConn::kNetAddr</references>
+        <references refid="struct_se_virt_conn_1a2ed0654cfe8f298d1dc8fbe76a310df0" compoundref="_se_virt_conn_mgr_8h" startline="47">SeVirtConn::kSock</references>
+        <references refid="class_se_virt_conn_mgr_1a2c5aeac83aeb9d6c754bb891db8405f9" compoundref="_se_virt_conn_mgr_8h" startline="106">m_akClientConn</references>
+        <references refid="class_se_virt_conn_mgr_1a631e2f8ac02e854b0673363524c38b1e" compoundref="_se_virt_conn_mgr_8h" startline="107">m_kMAllClientConn</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_ptl_define_8h_1aefb47f3959b8be9e164448819e4bb7f9a08b95c3f94bf176b492b6affdb602a15" compoundref="_se_ptl_define_8h" startline="32">SSI_NUM</references>
+        <referencedby refid="class_global_server_1a78c7fa08d683d8e0446a1254b55557f6" compoundref="src_2_global_server_8cpp" startline="200" endline="203">GlobalServer::OnNetDisconnect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1a53d31fe08eaa3629a8a268f2d37a05e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeVirtConnMgr::OnClientRegister</definition>
+        <argsstring>(SeVirtConn *pkConn, SeServerIdx eIndex, DWord dwServerID, DWord dwAreaID)</argsstring>
+        <name>OnClientRegister</name>
+        <param>
+          <type><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref> *</type>
+          <declname>pkConn</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_ptl_define_8h_1aefb47f3959b8be9e164448819e4bb7f9" kindref="member">SeServerIdx</ref></type>
+          <declname>eIndex</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwServerID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwAreaID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="78" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="175" bodyend="204"/>
+        <references refid="_se_virt_conn_mgr_8cpp_1a31ebc57bbf60700969b3b75bdbe37441" compoundref="_se_virt_conn_mgr_8cpp" startline="5">CHECK_SERVER_INDEX</references>
+        <references refid="struct_se_virt_conn_1accce5905eca3877d6286e3ad10d87b95" compoundref="_se_virt_conn_mgr_8h" startline="44">SeVirtConn::dwAreaID</references>
+        <references refid="struct_se_virt_conn_1a42dd262e2d620d236a87738f864c517d" compoundref="_se_virt_conn_mgr_8h" startline="43">SeVirtConn::dwServerID</references>
+        <references refid="struct_se_virt_conn_1a40b26e62b433113fadaa391c2c11397a" compoundref="_se_virt_conn_mgr_8h" startline="45">SeVirtConn::eIndex</references>
+        <references refid="struct_se_virt_conn_1a498d90b78881f21f62000e5848c654e2" compoundref="_se_virt_conn_mgr_8h" startline="49">SeVirtConn::eState</references>
+        <references refid="struct_se_virt_conn_1a2ed0654cfe8f298d1dc8fbe76a310df0" compoundref="_se_virt_conn_mgr_8h" startline="47">SeVirtConn::kSock</references>
+        <references refid="class_se_virt_conn_mgr_1a2c5aeac83aeb9d6c754bb891db8405f9" compoundref="_se_virt_conn_mgr_8h" startline="106">m_akClientConn</references>
+        <references refid="class_se_virt_conn_mgr_1a631e2f8ac02e854b0673363524c38b1e" compoundref="_se_virt_conn_mgr_8h" startline="107">m_kMAllClientConn</references>
+        <references refid="_se_virt_conn_mgr_8h_1ad6484f55baf154efe4f216e3d9c1f459a1e34c360626a791e16a13af7a6bd44fe" compoundref="_se_virt_conn_mgr_8h" startline="12">SVCS_REGISTERED</references>
+        <referencedby refid="class_global_server_1a952b9a0bb13dd2d37a644563ef90aa00" compoundref="_global_server_2src_2_se_http_process_8cpp" startline="17" endline="36">GlobalServer::ProcessHS_Register</referencedby>
+        <referencedby refid="class_global_server_1a89916052169d2ef50e803a74fbe6c379" compoundref="src_2_se_l_g_process_8cpp" startline="31" endline="74">GlobalServer::ProcessLG_Register</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1a4ac4e87a3086c8361093ba6296ab3f2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref> *</type>
+        <definition>SeVirtConn * SeVirtConnMgr::GetClientConnByID</definition>
+        <argsstring>(SeServerIdx eIndex, DWord dwServerID)</argsstring>
+        <name>GetClientConnByID</name>
+        <param>
+          <type><ref refid="_se_ptl_define_8h_1aefb47f3959b8be9e164448819e4bb7f9" kindref="member">SeServerIdx</ref></type>
+          <declname>eIndex</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwServerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="79" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="206" bodyend="221"/>
+        <references refid="_se_virt_conn_mgr_8cpp_1a31ebc57bbf60700969b3b75bdbe37441" compoundref="_se_virt_conn_mgr_8cpp" startline="5">CHECK_SERVER_INDEX</references>
+        <references refid="struct_se_virt_conn_1a42dd262e2d620d236a87738f864c517d" compoundref="_se_virt_conn_mgr_8h" startline="43">SeVirtConn::dwServerID</references>
+        <references refid="class_se_virt_conn_mgr_1a2c5aeac83aeb9d6c754bb891db8405f9" compoundref="_se_virt_conn_mgr_8h" startline="106">m_akClientConn</references>
+        <referencedby refid="class_global_server_1a89916052169d2ef50e803a74fbe6c379" compoundref="src_2_se_l_g_process_8cpp" startline="31" endline="74">GlobalServer::ProcessLG_Register</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1acdf19894323074172e21b03c1660238b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref> *</type>
+        <definition>SeVirtConn * SeVirtConnMgr::GetClientConnByAreaID</definition>
+        <argsstring>(SeServerIdx eIndex, DWord dwAreaID)</argsstring>
+        <name>GetClientConnByAreaID</name>
+        <param>
+          <type><ref refid="_se_ptl_define_8h_1aefb47f3959b8be9e164448819e4bb7f9" kindref="member">SeServerIdx</ref></type>
+          <declname>eIndex</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwAreaID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="80" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="223" bodyend="238"/>
+        <references refid="_se_virt_conn_mgr_8cpp_1a31ebc57bbf60700969b3b75bdbe37441" compoundref="_se_virt_conn_mgr_8cpp" startline="5">CHECK_SERVER_INDEX</references>
+        <references refid="struct_se_virt_conn_1accce5905eca3877d6286e3ad10d87b95" compoundref="_se_virt_conn_mgr_8h" startline="44">SeVirtConn::dwAreaID</references>
+        <references refid="class_se_virt_conn_mgr_1a2c5aeac83aeb9d6c754bb891db8405f9" compoundref="_se_virt_conn_mgr_8h" startline="106">m_akClientConn</references>
+        <referencedby refid="class_global_server_1aec57364bffa3037dc2ee400384568b81" compoundref="src_2_global_server_8cpp" startline="540" endline="611">GlobalServer::OnLoginQueryRet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1a51ee10bf4c869460a221b78e3d9296d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref> *</type>
+        <definition>SeVirtConn * SeVirtConnMgr::GetClientConnBySock</definition>
+        <argsstring>(SeServerIdx eIndex, const HSock &amp;rkSock)</argsstring>
+        <name>GetClientConnBySock</name>
+        <param>
+          <type><ref refid="_se_ptl_define_8h_1aefb47f3959b8be9e164448819e4bb7f9" kindref="member">SeServerIdx</ref></type>
+          <declname>eIndex</declname>
+        </param>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="81" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="240" bodyend="253"/>
+        <references refid="_se_virt_conn_mgr_8cpp_1a31ebc57bbf60700969b3b75bdbe37441" compoundref="_se_virt_conn_mgr_8cpp" startline="5">CHECK_SERVER_INDEX</references>
+        <references refid="class_se_virt_conn_mgr_1a2c5aeac83aeb9d6c754bb891db8405f9" compoundref="_se_virt_conn_mgr_8h" startline="106">m_akClientConn</references>
+        <referencedby refid="class_global_server_1aec57364bffa3037dc2ee400384568b81" compoundref="src_2_global_server_8cpp" startline="540" endline="611">GlobalServer::OnLoginQueryRet</referencedby>
+        <referencedby refid="class_global_server_1a2958ca2143d3d5db4bda0d765a70752b" compoundref="src_2_global_server_8cpp" startline="138" endline="198">GlobalServer::OnNetRecv</referencedby>
+        <referencedby refid="class_global_server_1a84864400e97e5b768587b375217753e6" compoundref="_global_server_2src_2_se_d_b_process_8cpp" startline="49" endline="185">GlobalServer::ProcessDB_AccountQuery</referencedby>
+        <referencedby refid="class_global_server_1a03b242257fde22617b857962b45d2f2e" compoundref="_global_server_2src_2_se_http_process_8cpp" startline="44" endline="77">GlobalServer::ProcessHS_DHAccountLoginRet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1a809747184a045b11d036e72a15c408d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref> *</type>
+        <definition>SeVirtConn * SeVirtConnMgr::GetClientConnBySock</definition>
+        <argsstring>(const HSock &amp;rkSock)</argsstring>
+        <name>GetClientConnBySock</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="82" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="255" bodyend="264"/>
+        <references refid="class_se_virt_conn_mgr_1a631e2f8ac02e854b0673363524c38b1e" compoundref="_se_virt_conn_mgr_8h" startline="107">m_kMAllClientConn</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1ad71bdf80c770bf13f932d45b0928ee56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref> *</type>
+        <definition>SeVirtConn * SeVirtConnMgr::GetClientConnByIndex</definition>
+        <argsstring>(SeServerIdx eIndex)</argsstring>
+        <name>GetClientConnByIndex</name>
+        <param>
+          <type><ref refid="_se_ptl_define_8h_1aefb47f3959b8be9e164448819e4bb7f9" kindref="member">SeServerIdx</ref></type>
+          <declname>eIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="83" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="266" bodyend="281"/>
+        <references refid="_se_virt_conn_mgr_8cpp_1a31ebc57bbf60700969b3b75bdbe37441" compoundref="_se_virt_conn_mgr_8cpp" startline="5">CHECK_SERVER_INDEX</references>
+        <references refid="struct_se_virt_conn_1a498d90b78881f21f62000e5848c654e2" compoundref="_se_virt_conn_mgr_8h" startline="49">SeVirtConn::eState</references>
+        <references refid="class_se_virt_conn_mgr_1a2c5aeac83aeb9d6c754bb891db8405f9" compoundref="_se_virt_conn_mgr_8h" startline="106">m_akClientConn</references>
+        <references refid="_se_virt_conn_mgr_8h_1ad6484f55baf154efe4f216e3d9c1f459a1e34c360626a791e16a13af7a6bd44fe" compoundref="_se_virt_conn_mgr_8h" startline="12">SVCS_REGISTERED</references>
+        <referencedby refid="class_global_server_1a342f1a57819ea63f16c403e3911ff1b0" compoundref="src_2_se_l_g_process_8cpp" startline="146" endline="231">GlobalServer::ProcessLG_PlayerLogin</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1ac7cad4ff49c4ebf07d8415ae0e62e28c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeVirtConnMgr::UpdateServerConn</definition>
+        <argsstring>(DWord dwCurTime)</argsstring>
+        <name>UpdateServerConn</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwCurTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="86" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="283" bodyend="308"/>
+        <references refid="class_se_virt_conn_mgr_1aba3fad771b2a79357eb8d265c01eac5b" compoundref="_se_virt_conn_mgr_8cpp" startline="340" endline="359">Connect</references>
+        <references refid="struct_se_virt_conn_1a498d90b78881f21f62000e5848c654e2" compoundref="_se_virt_conn_mgr_8h" startline="49">SeVirtConn::eState</references>
+        <references refid="class_se_virt_conn_mgr_1a74fabe37acfaf60cf51ad9574389b653" compoundref="_se_virt_conn_mgr_8cpp" startline="385" endline="405">HeartBeat</references>
+        <references refid="struct_se_virt_conn_1a2ed0654cfe8f298d1dc8fbe76a310df0" compoundref="_se_virt_conn_mgr_8h" startline="47">SeVirtConn::kSock</references>
+        <references refid="class_se_virt_conn_mgr_1a25525ee2617bed5e0ec6a9399f3fe018" compoundref="_se_virt_conn_mgr_8h" startline="103">m_akServerConn</references>
+        <references refid="class_se_virt_conn_mgr_1ac47385e06ce5d30905da06ba538230ad" compoundref="_se_virt_conn_mgr_8cpp" startline="361" endline="383">Register</references>
+        <references refid="_se_ptl_define_8h_1aefb47f3959b8be9e164448819e4bb7f9a08b95c3f94bf176b492b6affdb602a15" compoundref="_se_ptl_define_8h" startline="32">SSI_NUM</references>
+        <references refid="_se_virt_conn_mgr_8h_1ad6484f55baf154efe4f216e3d9c1f459a1e34c360626a791e16a13af7a6bd44fe" compoundref="_se_virt_conn_mgr_8h" startline="12">SVCS_REGISTERED</references>
+        <referencedby refid="class_se_virt_conn_mgr_1a1a2056beaab510c633febd91090592ee" compoundref="_se_virt_conn_mgr_8cpp" startline="37" endline="53">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1a6c570ccb0119187a7b595c243aa0e77b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeVirtConnMgr::UpdateClientConn</definition>
+        <argsstring>(DWord dwCurTime)</argsstring>
+        <name>UpdateClientConn</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwCurTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="87" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="310" bodyend="338"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="struct_se_virt_conn_1a5d5f05afd1fb01e667d072755cba8b2f" compoundref="_se_virt_conn_mgr_8h" startline="52">SeVirtConn::dwLastRecvTime</references>
+        <references refid="struct_se_virt_conn_1a9875cec7690b50b17bc2fb927d5c252f" compoundref="_se_virt_conn_mgr_8h" startline="50">SeVirtConn::dwStateTime</references>
+        <references refid="struct_se_virt_conn_1a40b26e62b433113fadaa391c2c11397a" compoundref="_se_virt_conn_mgr_8h" startline="45">SeVirtConn::eIndex</references>
+        <references refid="struct_se_virt_conn_1a498d90b78881f21f62000e5848c654e2" compoundref="_se_virt_conn_mgr_8h" startline="49">SeVirtConn::eState</references>
+        <references refid="_se_server_tool_8cpp_1a4d452970e4bf219a5058ab2ad8b0e2c4" compoundref="_se_server_tool_8cpp" startline="107" endline="140">GetServerNameByIndex</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="struct_se_virt_conn_1ad05e8487648793f2d2340a47856acb71" compoundref="_se_virt_conn_mgr_8h" startline="46">SeVirtConn::kNetAddr</references>
+        <references refid="struct_se_virt_conn_1a2ed0654cfe8f298d1dc8fbe76a310df0" compoundref="_se_virt_conn_mgr_8h" startline="47">SeVirtConn::kSock</references>
+        <references refid="class_se_virt_conn_mgr_1a631e2f8ac02e854b0673363524c38b1e" compoundref="_se_virt_conn_mgr_8h" startline="107">m_kMAllClientConn</references>
+        <references refid="class_se_virt_conn_mgr_1ae81b577072b946ef45202a85a83b9eb0" compoundref="_se_virt_conn_mgr_8h" startline="96">m_pkNetMgr</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_virt_conn_mgr_8h_1ad6484f55baf154efe4f216e3d9c1f459a1e34c360626a791e16a13af7a6bd44fe" compoundref="_se_virt_conn_mgr_8h" startline="12">SVCS_REGISTERED</references>
+        <referencedby refid="class_se_virt_conn_mgr_1a1a2056beaab510c633febd91090592ee" compoundref="_se_virt_conn_mgr_8cpp" startline="37" endline="53">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1aba3fad771b2a79357eb8d265c01eac5b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeVirtConnMgr::Connect</definition>
+        <argsstring>(SeVirtConn *pkConn)</argsstring>
+        <name>Connect</name>
+        <param>
+          <type><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref> *</type>
+          <declname>pkConn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="89" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="340" bodyend="359"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="struct_se_virt_conn_1a40b26e62b433113fadaa391c2c11397a" compoundref="_se_virt_conn_mgr_8h" startline="45">SeVirtConn::eIndex</references>
+        <references refid="struct_se_virt_conn_1a498d90b78881f21f62000e5848c654e2" compoundref="_se_virt_conn_mgr_8h" startline="49">SeVirtConn::eState</references>
+        <references refid="_se_server_tool_8cpp_1a4d452970e4bf219a5058ab2ad8b0e2c4" compoundref="_se_server_tool_8cpp" startline="107" endline="140">GetServerNameByIndex</references>
+        <references refid="struct_se_virt_conn_1a8a1e9d5f8c625ec2005a7ed3acc86995" compoundref="_se_virt_conn_mgr_8h" startline="55">SeVirtConn::iBufferLen</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="struct_se_virt_conn_1ad05e8487648793f2d2340a47856acb71" compoundref="_se_virt_conn_mgr_8h" startline="46">SeVirtConn::kNetAddr</references>
+        <references refid="class_se_virt_conn_mgr_1ae81b577072b946ef45202a85a83b9eb0" compoundref="_se_virt_conn_mgr_8h" startline="96">m_pkNetMgr</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_virt_conn_mgr_8h_1ad6484f55baf154efe4f216e3d9c1f459abaa4901d03fd72c9d45f20ce55e1639f" compoundref="_se_virt_conn_mgr_8h" startline="11">SVCS_CONNECTING</references>
+        <referencedby refid="class_se_virt_conn_mgr_1ac7cad4ff49c4ebf07d8415ae0e62e28c" compoundref="_se_virt_conn_mgr_8cpp" startline="283" endline="308">UpdateServerConn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1ac47385e06ce5d30905da06ba538230ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeVirtConnMgr::Register</definition>
+        <argsstring>(DWord dwCurTime, SeVirtConn *pkConn)</argsstring>
+        <name>Register</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwCurTime</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref> *</type>
+          <declname>pkConn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="90" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="361" bodyend="383"/>
+        <references refid="struct_se_virt_conn_1a9875cec7690b50b17bc2fb927d5c252f" compoundref="_se_virt_conn_mgr_8h" startline="50">SeVirtConn::dwStateTime</references>
+        <references refid="struct_se_virt_conn_1a40b26e62b433113fadaa391c2c11397a" compoundref="_se_virt_conn_mgr_8h" startline="45">SeVirtConn::eIndex</references>
+        <references refid="_se_server_tool_8cpp_1a4d452970e4bf219a5058ab2ad8b0e2c4" compoundref="_se_server_tool_8cpp" startline="107" endline="140">GetServerNameByIndex</references>
+        <references refid="class_se_virt_conn_mgr_1a18cdc68f4ff83f0351aad283cb4faf34" compoundref="_se_virt_conn_mgr_8h" startline="100">m_pkFunReg</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <referencedby refid="class_se_virt_conn_mgr_1ac7cad4ff49c4ebf07d8415ae0e62e28c" compoundref="_se_virt_conn_mgr_8cpp" startline="283" endline="308">UpdateServerConn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_virt_conn_mgr_1a74fabe37acfaf60cf51ad9574389b653" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeVirtConnMgr::HeartBeat</definition>
+        <argsstring>(DWord dwCurTime, SeVirtConn *pkConn)</argsstring>
+        <name>HeartBeat</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwCurTime</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref> *</type>
+          <declname>pkConn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="91" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.cpp" bodystart="385" bodyend="405"/>
+        <references refid="struct_se_virt_conn_1a5d5f05afd1fb01e667d072755cba8b2f" compoundref="_se_virt_conn_mgr_8h" startline="52">SeVirtConn::dwLastRecvTime</references>
+        <references refid="struct_se_virt_conn_1a9875cec7690b50b17bc2fb927d5c252f" compoundref="_se_virt_conn_mgr_8h" startline="50">SeVirtConn::dwStateTime</references>
+        <references refid="struct_se_virt_conn_1a40b26e62b433113fadaa391c2c11397a" compoundref="_se_virt_conn_mgr_8h" startline="45">SeVirtConn::eIndex</references>
+        <references refid="_se_server_tool_8cpp_1a4d452970e4bf219a5058ab2ad8b0e2c4" compoundref="_se_server_tool_8cpp" startline="107" endline="140">GetServerNameByIndex</references>
+        <references refid="struct_se_virt_conn_1a2ed0654cfe8f298d1dc8fbe76a310df0" compoundref="_se_virt_conn_mgr_8h" startline="47">SeVirtConn::kSock</references>
+        <references refid="class_se_virt_conn_mgr_1a200d6abf2245b820151e0eed64addcae" compoundref="_se_virt_conn_mgr_8h" startline="101">m_pkFunHeart</references>
+        <references refid="class_se_virt_conn_mgr_1ae81b577072b946ef45202a85a83b9eb0" compoundref="_se_virt_conn_mgr_8h" startline="96">m_pkNetMgr</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <referencedby refid="class_se_virt_conn_mgr_1ac7cad4ff49c4ebf07d8415ae0e62e28c" compoundref="_se_virt_conn_mgr_8cpp" startline="283" endline="308">UpdateServerConn</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8214">
+        <label>SeVirtConnMgr</label>
+        <link refid="class_se_virt_conn_mgr"/>
+        <childnode refid="8215" relation="usage">
+          <edgelabel>m_kTimer</edgelabel>
+        </childnode>
+        <childnode refid="8216" relation="usage">
+          <edgelabel>m_akServerConn</edgelabel>
+        </childnode>
+        <childnode refid="8218" relation="usage">
+          <edgelabel>m_akClientConn</edgelabel>
+          <edgelabel>m_kMAllClientConn</edgelabel>
+        </childnode>
+      </node>
+      <node id="8217">
+        <label>SeNetAddr</label>
+        <link refid="struct_se_net_addr"/>
+      </node>
+      <node id="8218">
+        <label>std::map&lt; HSock, SeVirtConn * &gt;</label>
+        <childnode refid="8216" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="8216">
+        <label>SeVirtConn</label>
+        <link refid="struct_se_virt_conn"/>
+        <childnode refid="8217" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="8215">
+        <label>SeTimer</label>
+        <link refid="class_se_timer"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" line="60" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeVirtConnMgr.h" bodystart="59" bodyend="108"/>
+    <listofallmembers>
+      <member refid="class_se_virt_conn_mgr_1a63500bd2371897e90065d32e0e16d086" prot="public" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>AddClientConn</name></member>
+      <member refid="class_se_virt_conn_mgr_1a42fa65f9815b4e6876a92d0648d7619c" prot="public" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>AddServerConn</name></member>
+      <member refid="class_se_virt_conn_mgr_1aba3fad771b2a79357eb8d265c01eac5b" prot="private" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>Connect</name></member>
+      <member refid="class_se_virt_conn_mgr_1ad85b1d2c3b0e3c621211ac43decaf3da" prot="public" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>Finialize</name></member>
+      <member refid="class_se_virt_conn_mgr_1a61f87e13df7a5c94d749e1764083768a" prot="private" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>funSendPack</name></member>
+      <member refid="class_se_virt_conn_mgr_1acdf19894323074172e21b03c1660238b" prot="public" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>GetClientConnByAreaID</name></member>
+      <member refid="class_se_virt_conn_mgr_1a4ac4e87a3086c8361093ba6296ab3f2c" prot="public" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>GetClientConnByID</name></member>
+      <member refid="class_se_virt_conn_mgr_1ad71bdf80c770bf13f932d45b0928ee56" prot="public" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>GetClientConnByIndex</name></member>
+      <member refid="class_se_virt_conn_mgr_1a51ee10bf4c869460a221b78e3d9296d7" prot="public" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>GetClientConnBySock</name></member>
+      <member refid="class_se_virt_conn_mgr_1a809747184a045b11d036e72a15c408d8" prot="public" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>GetClientConnBySock</name></member>
+      <member refid="class_se_virt_conn_mgr_1a74fabe37acfaf60cf51ad9574389b653" prot="private" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>HeartBeat</name></member>
+      <member refid="class_se_virt_conn_mgr_1a6982c2146c5829aa21e4f2bd5487a3d4" prot="public" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>Initialize</name></member>
+      <member refid="class_se_virt_conn_mgr_1a2c5aeac83aeb9d6c754bb891db8405f9" prot="private" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>m_akClientConn</name></member>
+      <member refid="class_se_virt_conn_mgr_1a25525ee2617bed5e0ec6a9399f3fe018" prot="private" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>m_akServerConn</name></member>
+      <member refid="class_se_virt_conn_mgr_1a631e2f8ac02e854b0673363524c38b1e" prot="private" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>m_kMAllClientConn</name></member>
+      <member refid="class_se_virt_conn_mgr_1a3ce0d8de2e574090465a9b64f0fb6bc9" prot="private" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>m_kTimer</name></member>
+      <member refid="class_se_virt_conn_mgr_1a200d6abf2245b820151e0eed64addcae" prot="private" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>m_pkFunHeart</name></member>
+      <member refid="class_se_virt_conn_mgr_1a18cdc68f4ff83f0351aad283cb4faf34" prot="private" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>m_pkFunReg</name></member>
+      <member refid="class_se_virt_conn_mgr_1ae81b577072b946ef45202a85a83b9eb0" prot="private" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>m_pkNetMgr</name></member>
+      <member refid="class_se_virt_conn_mgr_1aa4e7eaccafa14a4a55c97f4857da9ee9" prot="public" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>OnClientDisconnect</name></member>
+      <member refid="class_se_virt_conn_mgr_1a53d31fe08eaa3629a8a268f2d37a05e8" prot="public" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>OnClientRegister</name></member>
+      <member refid="class_se_virt_conn_mgr_1adca74d2f39a17051600b0ea23d600b74" prot="public" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>OnServerConnected</name></member>
+      <member refid="class_se_virt_conn_mgr_1ad75abfada4de2eb3107aca79b1c99642" prot="public" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>OnServerDisconnect</name></member>
+      <member refid="class_se_virt_conn_mgr_1ac47385e06ce5d30905da06ba538230ad" prot="private" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>Register</name></member>
+      <member refid="class_se_virt_conn_mgr_1aabb6f1da4200a5c59845fafe5f30fe2f" prot="public" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>SeVirtConnMgr</name></member>
+      <member refid="class_se_virt_conn_mgr_1a1a2056beaab510c633febd91090592ee" prot="public" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>Update</name></member>
+      <member refid="class_se_virt_conn_mgr_1a6c570ccb0119187a7b595c243aa0e77b" prot="private" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>UpdateClientConn</name></member>
+      <member refid="class_se_virt_conn_mgr_1ac7cad4ff49c4ebf07d8415ae0e62e28c" prot="private" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>UpdateServerConn</name></member>
+      <member refid="class_se_virt_conn_mgr_1a87828f5985779d84af90b8a5f551b51b" prot="public" virt="non-virtual"><scope>SeVirtConnMgr</scope><name>~SeVirtConnMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

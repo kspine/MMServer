@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_skill_table_mgr" kind="class" prot="public">
+    <compoundname>SkillTableMgr</compoundname>
+    <includes refid="_skill__table_8hpp" local="no">Skill_table.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_skill_table_mgr_1ac692eca0d28bee6403b246cf64de7258" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned int, <ref refid="struct_skill_table" kindref="compound">SkillTable</ref> * &gt;</type>
+        <definition>std::map&lt;unsigned int,SkillTable*&gt; SkillTableMgr::m_kSkillTableMap</definition>
+        <argsstring></argsstring>
+        <name>m_kSkillTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.hpp" line="296" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.hpp" bodystart="296" bodyend="-1"/>
+        <referencedby refid="class_skill_table_mgr_1a9138021173d5408a1ad807f7b1b705ab" compoundref="_skill__table_8cpp" startline="108" endline="377">FillData</referencedby>
+        <referencedby refid="class_skill_table_mgr_1a6a8741793ac7aeac179326240b180026" compoundref="_skill__table_8cpp" startline="42" endline="50">GetSkillTable</referencedby>
+        <referencedby refid="class_skill_table_mgr_1ad45d996c556a57cd489651070e1eac1f" compoundref="_skill__table_8cpp" startline="26" endline="29">GetSkillTableMap</referencedby>
+        <referencedby refid="class_skill_table_mgr_1a44ae9b4a188e676637f869d3009fd3f0" compoundref="_skill__table_8cpp" startline="31" endline="40">GetSkillTableVec</referencedby>
+        <referencedby refid="class_skill_table_mgr_1a187560e160a44926f6e05231b635ceb0" compoundref="_skill__table_8cpp" startline="57" endline="60">~SkillTableMgr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_skill_table_mgr_1a8060c880a1397efdca34a08ed50ea9f1" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_skill_table_mgr" kindref="compound">SkillTableMgr</ref> *</type>
+        <definition>SkillTableMgr * SkillTableMgr::m_pkSkillTableMgr</definition>
+        <argsstring></argsstring>
+        <name>m_pkSkillTableMgr</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.hpp" line="297" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.hpp" bodystart="297" bodyend="-1"/>
+        <referencedby refid="class_skill_table_mgr_1a95867ec55c8a5decb13df445d5dc6986" compoundref="_skill__table_8cpp" startline="6" endline="13">Get</referencedby>
+        <referencedby refid="class_skill_table_mgr_1abff591317314e165224c8b4cda968e0f" compoundref="_skill__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_skill_table_mgr_1a95867ec55c8a5decb13df445d5dc6986" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_skill_table_mgr" kindref="compound">SkillTableMgr</ref> *</type>
+        <definition>SkillTableMgr * SkillTableMgr::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.hpp" line="282" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.cpp" bodystart="6" bodyend="13"/>
+        <references refid="class_skill_table_mgr_1a8060c880a1397efdca34a08ed50ea9f1" compoundref="_skill__table_8hpp" startline="297">m_pkSkillTableMgr</references>
+        <references refid="class_skill_table_mgr_1a08edcb28483fe3ce850419df1c3e8e6f" compoundref="_skill__table_8cpp" startline="52" endline="55">SkillTableMgr</references>
+        <referencedby refid="class_item_table_mgr_1a3889de152a5a34558a735724d1f25077" compoundref="_item__table_8cpp" startline="43" endline="79">ItemTableMgr::EvalFormatElement</referencedby>
+        <referencedby refid="class_global_table_mgr_1ac782985db15fe3580d862eb605af57ed" compoundref="_global_table_mgr_8cpp" startline="152" endline="155">GlobalTableMgr::GetSkillTable</referencedby>
+        <referencedby refid="class_table_mgr_1ae1ceeb5a4a6212a8497ef7dd92f87885" compoundref="_table_mgr_8h" startline="79" endline="132">TableMgr::LoadTable</referencedby>
+        <referencedby refid="class_skill_table_mgr_1abff591317314e165224c8b4cda968e0f" compoundref="_skill__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_table_mgr_1abff591317314e165224c8b4cda968e0f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_skill_table_mgr" kindref="compound">SkillTableMgr</ref> *</type>
+        <definition>SkillTableMgr * SkillTableMgr::ReLoad</definition>
+        <argsstring>()</argsstring>
+        <name>ReLoad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.hpp" line="283" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.cpp" bodystart="15" bodyend="23"/>
+        <references refid="class_skill_table_mgr_1a95867ec55c8a5decb13df445d5dc6986" compoundref="_skill__table_8cpp" startline="6" endline="13">Get</references>
+        <references refid="class_skill_table_mgr_1a8060c880a1397efdca34a08ed50ea9f1" compoundref="_skill__table_8hpp" startline="297">m_pkSkillTableMgr</references>
+        <referencedby refid="class_table_mgr_1a6298f0e9b81636b481a25c06016e237a" compoundref="_table_mgr1_8cpp" startline="860" endline="914">TableMgr::ReloadTable</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_skill_table_mgr_1a08edcb28483fe3ce850419df1c3e8e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SkillTableMgr::SkillTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>SkillTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.hpp" line="284" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.cpp" bodystart="52" bodyend="55"/>
+        <references refid="class_skill_table_mgr_1a8cf31a5f59d938e54e976eb5abf41608" compoundref="_skill__table_8cpp" startline="62" endline="65">Load</references>
+        <referencedby refid="class_skill_table_mgr_1a95867ec55c8a5decb13df445d5dc6986" compoundref="_skill__table_8cpp" startline="6" endline="13">Get</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_table_mgr_1a187560e160a44926f6e05231b635ceb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SkillTableMgr::~SkillTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~SkillTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.hpp" line="285" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.cpp" bodystart="57" bodyend="60"/>
+        <references refid="class_skill_table_mgr_1ac692eca0d28bee6403b246cf64de7258" compoundref="_skill__table_8hpp" startline="296">m_kSkillTableMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_table_mgr_1a6a8741793ac7aeac179326240b180026" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_skill_table" kindref="compound">SkillTable</ref> *</type>
+        <definition>const SkillTable * SkillTableMgr::GetSkillTable</definition>
+        <argsstring>(unsigned int iTypeID)</argsstring>
+        <name>GetSkillTable</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>iTypeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.hpp" line="287" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.cpp" bodystart="42" bodyend="50"/>
+        <references refid="class_skill_table_mgr_1ac692eca0d28bee6403b246cf64de7258" compoundref="_skill__table_8hpp" startline="296">m_kSkillTableMap</references>
+        <referencedby refid="class_item_table_mgr_1a3889de152a5a34558a735724d1f25077" compoundref="_item__table_8cpp" startline="43" endline="79">ItemTableMgr::EvalFormatElement</referencedby>
+        <referencedby refid="class_global_table_mgr_1ac782985db15fe3580d862eb605af57ed" compoundref="_global_table_mgr_8cpp" startline="152" endline="155">GlobalTableMgr::GetSkillTable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_table_mgr_1ad45d996c556a57cd489651070e1eac1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; unsigned int, <ref refid="struct_skill_table" kindref="compound">SkillTable</ref> * &gt; &amp;</type>
+        <definition>const std::map&lt; unsigned int, SkillTable * &gt; &amp; SkillTableMgr::GetSkillTableMap</definition>
+        <argsstring>()</argsstring>
+        <name>GetSkillTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.hpp" line="288" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.cpp" bodystart="26" bodyend="29"/>
+        <references refid="class_skill_table_mgr_1ac692eca0d28bee6403b246cf64de7258" compoundref="_skill__table_8hpp" startline="296">m_kSkillTableMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_table_mgr_1a44ae9b4a188e676637f869d3009fd3f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_table_res_array" kindref="compound">TableResArray</ref></type>
+        <definition>TableResArray SkillTableMgr::GetSkillTableVec</definition>
+        <argsstring>()</argsstring>
+        <name>GetSkillTableVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.hpp" line="289" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.cpp" bodystart="31" bodyend="40"/>
+        <references refid="class_skill_table_mgr_1ac692eca0d28bee6403b246cf64de7258" compoundref="_skill__table_8hpp" startline="296">m_kSkillTableMap</references>
+        <references refid="class_table_res_array_1ab7fbd71c9a00bfd30ae2282a4955dbc0" compoundref="_se_table_res_base_8cpp" startline="13" endline="16">TableResArray::pushBack</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_skill_table_mgr_1a8cf31a5f59d938e54e976eb5abf41608" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SkillTableMgr::Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.hpp" line="292" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.cpp" bodystart="62" bodyend="65"/>
+        <references refid="class_skill_table_mgr_1a113e3c8b9ec50d1c32e8aabf2d827dad" compoundref="_skill__table_8cpp" startline="67" endline="106">LoadSkillFile</references>
+        <referencedby refid="class_skill_table_mgr_1a08edcb28483fe3ce850419df1c3e8e6f" compoundref="_skill__table_8cpp" startline="52" endline="55">SkillTableMgr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_table_mgr_1a113e3c8b9ec50d1c32e8aabf2d827dad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SkillTableMgr::LoadSkillFile</definition>
+        <argsstring>(std::string path)</argsstring>
+        <name>LoadSkillFile</name>
+        <param>
+          <type>std::string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.hpp" line="293" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.cpp" bodystart="67" bodyend="106"/>
+        <references refid="class_ti_xml_document_1a6dfc01a6e5d58e56acd537dfd3bdeb29" compoundref="tinyxml_8h" startline="1430" endline="1430">TiXmlDocument::Error</references>
+        <references refid="class_ti_xml_document_1a9d0f689f6e09ea494ea547be8d79c25e" compoundref="tinyxml_8h" startline="1433" endline="1433">TiXmlDocument::ErrorDesc</references>
+        <references refid="class_skill_table_mgr_1a9138021173d5408a1ad807f7b1b705ab" compoundref="_skill__table_8cpp" startline="108" endline="377">FillData</references>
+        <references refid="class_ti_xml_node_1ab1f8d8e70d88aea4c5efedfe00862d55" compoundref="tinyxml_8cpp" startline="420" endline="432">TiXmlNode::FirstChildElement</references>
+        <references refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" compoundref="_table_mgr1_8cpp" startline="36" endline="43">TableMgr::Get</references>
+        <references refid="class_table_mgr_1af1a60a8b2807abd34ceb6002cf8f4b80" compoundref="_table_mgr1_8cpp" startline="851" endline="858">TableMgr::GetTableLoader</references>
+        <references refid="class_table_loader_1a8d06b11d37cde9ff76d98901dd39bab4">TableLoader::LoadTable</references>
+        <references refid="class_ti_xml_node_1a7667217e269e0da01d1f82aee94d1a3d" compoundref="tinyxml_8cpp" startline="450" endline="462">TiXmlNode::NextSiblingElement</references>
+        <references refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</references>
+        <referencedby refid="class_skill_table_mgr_1a8cf31a5f59d938e54e976eb5abf41608" compoundref="_skill__table_8cpp" startline="62" endline="65">Load</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_table_mgr_1a9138021173d5408a1ad807f7b1b705ab" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillTableMgr::FillData</definition>
+        <argsstring>(SkillTable *row, TiXmlElement *element)</argsstring>
+        <name>FillData</name>
+        <param>
+          <type><ref refid="struct_skill_table" kindref="compound">SkillTable</ref> *</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.hpp" line="294" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.cpp" bodystart="108" bodyend="377"/>
+        <references refid="class_ti_xml_element_1ac1e4691e9375ba4e665dce7e46a50a9c" compoundref="tinyxml_8cpp" startline="544" endline="550">TiXmlElement::Attribute</references>
+        <references refid="struct_skill_table_1aabb3ab73af74e8afe92812a835a6991b" compoundref="_skill__table_8hpp" startline="273">SkillTable::bAICast</references>
+        <references refid="struct_skill_table_1a8ff7580c6d7b72225a8ffc02a4248931" compoundref="_skill__table_8hpp" startline="237">SkillTable::fAAdj</references>
+        <references refid="struct_skill_table_1a9bb42448c96bb06d340bc73ea552f20b" compoundref="_skill__table_8hpp" startline="241">SkillTable::fBAdj</references>
+        <references refid="struct_skill_table_1a0257c3bd713d275fa47f68060e6224bb" compoundref="_skill__table_8hpp" startline="245">SkillTable::fCAdj</references>
+        <references refid="struct_skill_table_1a1eef3e2a421326d80fb78ef8f351c0a0" compoundref="_skill__table_8hpp" startline="249">SkillTable::fDAdj</references>
+        <references refid="struct_skill_table_1a461d738d88db9d9dfb693a41c068ac45" compoundref="_skill__table_8hpp" startline="253">SkillTable::fEAdj</references>
+        <references refid="struct_skill_table_1a1be99a2c20552691eff376b6d85a458c" compoundref="_skill__table_8hpp" startline="257">SkillTable::fFAdj</references>
+        <references refid="struct_skill_table_1ad4a54b55789dac4fc71ad65cda92c430" compoundref="_skill__table_8hpp" startline="270">SkillTable::fFightScore</references>
+        <references refid="struct_skill_table_1a64a3576c92c3d2b266603789b9a4f67c" compoundref="_skill__table_8hpp" startline="233">SkillTable::fManaSpend</references>
+        <references refid="struct_skill_table_1a64adf062faa71cf10e505f49540a0f69" compoundref="_skill__table_8hpp" startline="260">SkillTable::fMissileArc</references>
+        <references refid="struct_skill_table_1a06a4e16bce15a47303d0ea1f0895b8b4" compoundref="_skill__table_8hpp" startline="259">SkillTable::fMissileSpeed</references>
+        <references refid="struct_skill_table_1a672ba190530d66de85b0053404652700" compoundref="_skill__table_8hpp" startline="235">SkillTable::fValueA</references>
+        <references refid="struct_skill_table_1ae6dc7d48a1dc387825ee5c7947719faa" compoundref="_skill__table_8hpp" startline="239">SkillTable::fValueB</references>
+        <references refid="struct_skill_table_1ab83a555040dd3d9838c63b44c16d02eb" compoundref="_skill__table_8hpp" startline="243">SkillTable::fValueC</references>
+        <references refid="struct_skill_table_1a82f02d21b8059b2cc05a91399aca4005" compoundref="_skill__table_8hpp" startline="247">SkillTable::fValueD</references>
+        <references refid="struct_skill_table_1a484d02fc02dfde1bed9db69ad0e1e708" compoundref="_skill__table_8hpp" startline="251">SkillTable::fValueE</references>
+        <references refid="struct_skill_table_1a3724f93fbc16e66b6a3cd572cfb6d953" compoundref="_skill__table_8hpp" startline="255">SkillTable::fValueF</references>
+        <references refid="struct_skill_table_1a35371034d3605d5ed6ecccfbb173e8be" compoundref="_skill__table_8hpp" startline="272">SkillTable::iAdditional</references>
+        <references refid="struct_skill_table_1ac3f3a0ef19a005f061e23f25b0827af3" compoundref="_skill__table_8hpp" startline="226">SkillTable::iCastTime</references>
+        <references refid="struct_skill_table_1a81360a19ad26464aed78279669cd713f" compoundref="_skill__table_8hpp" startline="268">SkillTable::iCastVoice</references>
+        <references refid="struct_skill_table_1addd222260bbb634d1a35dec74432c5dc" compoundref="_skill__table_8hpp" startline="229">SkillTable::iCoolDown</references>
+        <references refid="struct_skill_table_1af2eee375e44585edc21ecd47d1deda05" compoundref="_skill__table_8hpp" startline="275">SkillTable::iDecalType</references>
+        <references refid="struct_skill_table_1ae081a7da681a687962b620be2c4f3c16" compoundref="_skill__table_8hpp" startline="209">SkillTable::iDesc</references>
+        <references refid="struct_skill_table_1a5959a34d245fa6967b6a0801aba0d70b" compoundref="_skill__table_8hpp" startline="262">SkillTable::iDstPosEffect</references>
+        <references refid="struct_skill_table_1a556a56c670aa0c0fdff0ce138cb92f1e" compoundref="_skill__table_8hpp" startline="263">SkillTable::iDstUnitEffect</references>
+        <references refid="struct_skill_table_1a11b734d965156bc63d97acb1872252c8" compoundref="_skill__table_8hpp" startline="230">SkillTable::iEffectScope</references>
+        <references refid="struct_skill_table_1a4f8e9771d1dadea1378c18667dc2dd20" compoundref="_skill__table_8hpp" startline="267">SkillTable::iEffectSound</references>
+        <references refid="struct_skill_table_1ab5538bc38ed67d887eb3fd38ed2d4c9b" compoundref="_skill__table_8hpp" startline="228">SkillTable::iEffectTime</references>
+        <references refid="struct_skill_table_1aa6977c53a0c5f83ed4b2f88aac638e0b" compoundref="_skill__table_8hpp" startline="227">SkillTable::iHoldTime</references>
+        <references refid="struct_skill_table_1a8c6eff46e41d6eadd861806d4ec1f4e7" compoundref="_skill__table_8hpp" startline="225">SkillTable::iLearnLevel</references>
+        <references refid="struct_skill_table_1a48ae1374caaee9e0ea3eedfe3cfc66c2" compoundref="_skill__table_8hpp" startline="258">SkillTable::iMissileModel</references>
+        <references refid="struct_skill_table_1a3dc0ca187ba0bf8c5fcb226e5dde5c39" compoundref="_skill__table_8hpp" startline="207">SkillTable::iName</references>
+        <references refid="struct_skill_table_1ac5697c1970c9b3e238167bc6808a83a0" compoundref="_skill__table_8hpp" startline="232">SkillTable::iNums</references>
+        <references refid="struct_skill_table_1af2133b796e034cddcaeb738af950b60f" compoundref="_skill__table_8hpp" startline="266">SkillTable::iPrepareSound</references>
+        <references refid="struct_skill_table_1adc43a4494024d62f8772cd2e2a24a2d3" compoundref="_skill__table_8hpp" startline="213">SkillTable::iShopPos</references>
+        <references refid="struct_skill_table_1ac12539186ace398bd02b484dd21bcf0b" compoundref="_skill__table_8hpp" startline="231">SkillTable::iSkillDistance</references>
+        <references refid="struct_skill_table_1a82e99143618217ef276f6cd40f8ff3c5" compoundref="_skill__table_8hpp" startline="264">SkillTable::iSkillEffect</references>
+        <references refid="struct_skill_table_1a2b023c33deb56314f19788cce2729437" compoundref="_skill__table_8hpp" startline="223">SkillTable::iSkillMaxLevel</references>
+        <references refid="struct_skill_table_1aa273e58f54894a1f6ac9cb8ddd667e75" compoundref="_skill__table_8hpp" startline="269">SkillTable::iSpecialSound</references>
+        <references refid="struct_skill_table_1affed523824190e027167d9db81a8d43b" compoundref="_skill__table_8hpp" startline="261">SkillTable::iSrcEffect</references>
+        <references refid="struct_skill_table_1aa3d0890aa5f147f76f655b16d465b704" compoundref="_skill__table_8hpp" startline="274">SkillTable::iTower</references>
+        <references refid="struct_skill_table_1a2a2751f05c8dd896c2e996a6972738bb" compoundref="_skill__table_8hpp" startline="214">SkillTable::iUIShowPos</references>
+        <references refid="struct_skill_table_1adc70fddf700ac78fe94b607d1d036cba" compoundref="_skill__table_8hpp" startline="210">SkillTable::kDesc_China</references>
+        <references refid="struct_skill_table_1a28b0713e147c49b2e0249cb35963464a" compoundref="_skill__table_8hpp" startline="265">SkillTable::kLearnIcon</references>
+        <references refid="struct_skill_table_1a54bd9559b10d72b88f849e1ec4e6ed41" compoundref="_skill__table_8hpp" startline="208">SkillTable::kName_China</references>
+        <references refid="struct_skill_table_1ad5bcdd91313d1e485d16b415d2429705" compoundref="_skill__table_8hpp" startline="271">SkillTable::kSimpleDesc</references>
+        <references refid="class_skill_table_mgr_1ac692eca0d28bee6403b246cf64de7258" compoundref="_skill__table_8hpp" startline="296">m_kSkillTableMap</references>
+        <references refid="struct_skill_table_1af95f6c7c49864aacef88710fe2ef4ebf" compoundref="_skill__table_8hpp" startline="236">SkillTable::uiAAdj</references>
+        <references refid="struct_skill_table_1a565dc8eeb7bf73037d445c0e94f2acac" compoundref="_skill__table_8hpp" startline="216">SkillTable::uiAttackType</references>
+        <references refid="struct_skill_table_1ade0505a984da3edd11b69f0715d8e8e5" compoundref="_skill__table_8hpp" startline="240">SkillTable::uiBAdj</references>
+        <references refid="struct_skill_table_1a153ffb3481ab9355b8ee5f70918845e6" compoundref="_skill__table_8hpp" startline="221">SkillTable::uiBufferArray</references>
+        <references refid="struct_skill_table_1a7fb7811e84115db0c67dea3ac993ce85" compoundref="_skill__table_8hpp" startline="220">SkillTable::uiBufferID</references>
+        <references refid="struct_skill_table_1a2666f14480801890a6d7b47d7f2e27f3" compoundref="_skill__table_8hpp" startline="244">SkillTable::uiCAdj</references>
+        <references refid="struct_skill_table_1a55dba5093509e7436c5d5f977c479583" compoundref="_skill__table_8hpp" startline="248">SkillTable::uiDAdj</references>
+        <references refid="struct_skill_table_1a339d7e6c4f562b0b1817c3770b4d6a9b" compoundref="_skill__table_8hpp" startline="234">SkillTable::uiDataContentA</references>
+        <references refid="struct_skill_table_1a788c1c57f2b649c00944471b111d9acf" compoundref="_skill__table_8hpp" startline="238">SkillTable::uiDataContentB</references>
+        <references refid="struct_skill_table_1a166d86ae5953f29d9f7f4e9969c94265" compoundref="_skill__table_8hpp" startline="242">SkillTable::uiDataContentC</references>
+        <references refid="struct_skill_table_1a178332202ee3c00fbe47f303e9cd1045" compoundref="_skill__table_8hpp" startline="246">SkillTable::uiDataContentD</references>
+        <references refid="struct_skill_table_1a172611e582bc18d0b6b191b3d101d05a" compoundref="_skill__table_8hpp" startline="250">SkillTable::uiDataContentE</references>
+        <references refid="struct_skill_table_1aae46df885712de19b1c8e3ae7396b22a" compoundref="_skill__table_8hpp" startline="254">SkillTable::uiDataContentF</references>
+        <references refid="struct_skill_table_1af5001cb3b9c8d8bd8881aa7b12395be7" compoundref="_skill__table_8hpp" startline="252">SkillTable::uiEAdj</references>
+        <references refid="struct_skill_table_1a8953010999d4ae634b42f9d8b052987c" compoundref="_skill__table_8hpp" startline="256">SkillTable::uiFAdj</references>
+        <references refid="struct_skill_table_1af30283bebf81e0a472c81800d50b382b" compoundref="_skill__table_8hpp" startline="211">SkillTable::uiOperateType</references>
+        <references refid="struct_skill_table_1ad32d4039ddd553a3b6312498fc3ac192" compoundref="_skill__table_8hpp" startline="212">SkillTable::uiOriginTypeID</references>
+        <references refid="struct_skill_table_1a0ccd82f65645b0713c190ffec83bfa5d" compoundref="_skill__table_8hpp" startline="218">SkillTable::uiSkillOtherProperty</references>
+        <references refid="struct_skill_table_1ac90ce4247de9809af060a4fedc25f7d2" compoundref="_skill__table_8hpp" startline="217">SkillTable::uiSkillProperty</references>
+        <references refid="struct_skill_table_1abfff2edecedcb3918fef07a1300b564f" compoundref="_skill__table_8hpp" startline="222">SkillTable::uiSpecialID</references>
+        <references refid="struct_skill_table_1a391fd24578faffd52ada0826d7445e9e" compoundref="_skill__table_8hpp" startline="224">SkillTable::uiSpellAction</references>
+        <references refid="struct_skill_table_1a1d2326f696f4dd8f20b1c30db5144f46" compoundref="_skill__table_8hpp" startline="219">SkillTable::uiTalentTips</references>
+        <references refid="struct_skill_table_1a229b48066828f4b142467c85504167a4" compoundref="_skill__table_8hpp" startline="215">SkillTable::uiTargetType</references>
+        <references refid="struct_skill_table_1ad0531f853f0446b5a3ffa1edac9b2cc6" compoundref="_skill__table_8hpp" startline="206">SkillTable::uiTypeID</references>
+        <referencedby refid="class_skill_table_mgr_1a113e3c8b9ec50d1c32e8aabf2d827dad" compoundref="_skill__table_8cpp" startline="67" endline="106">LoadSkillFile</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8972">
+        <label>std::map&lt; unsigned int, SkillTable * &gt;</label>
+        <childnode refid="8973" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="8976">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="8974">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="8973">
+        <label>SkillTable</label>
+        <link refid="struct_skill_table"/>
+        <childnode refid="8974" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8975" relation="usage">
+          <edgelabel>kLearnIcon</edgelabel>
+          <edgelabel>kName_China</edgelabel>
+          <edgelabel>kSimpleDesc</edgelabel>
+          <edgelabel>kDesc_China</edgelabel>
+        </childnode>
+      </node>
+      <node id="8971">
+        <label>SkillTableMgr</label>
+        <link refid="class_skill_table_mgr"/>
+        <childnode refid="8972" relation="usage">
+          <edgelabel>m_kSkillTableMap</edgelabel>
+        </childnode>
+        <childnode refid="8971" relation="usage">
+          <edgelabel>m_pkSkillTableMgr</edgelabel>
+        </childnode>
+      </node>
+      <node id="8975">
+        <label>std::string</label>
+        <childnode refid="8976" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.hpp" line="280" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Skill_table.hpp" bodystart="279" bodyend="298"/>
+    <listofallmembers>
+      <member refid="class_skill_table_mgr_1a9138021173d5408a1ad807f7b1b705ab" prot="private" virt="non-virtual"><scope>SkillTableMgr</scope><name>FillData</name></member>
+      <member refid="class_skill_table_mgr_1a95867ec55c8a5decb13df445d5dc6986" prot="public" virt="non-virtual"><scope>SkillTableMgr</scope><name>Get</name></member>
+      <member refid="class_skill_table_mgr_1a6a8741793ac7aeac179326240b180026" prot="public" virt="non-virtual"><scope>SkillTableMgr</scope><name>GetSkillTable</name></member>
+      <member refid="class_skill_table_mgr_1ad45d996c556a57cd489651070e1eac1f" prot="public" virt="non-virtual"><scope>SkillTableMgr</scope><name>GetSkillTableMap</name></member>
+      <member refid="class_skill_table_mgr_1a44ae9b4a188e676637f869d3009fd3f0" prot="public" virt="non-virtual"><scope>SkillTableMgr</scope><name>GetSkillTableVec</name></member>
+      <member refid="class_skill_table_mgr_1a8cf31a5f59d938e54e976eb5abf41608" prot="private" virt="non-virtual"><scope>SkillTableMgr</scope><name>Load</name></member>
+      <member refid="class_skill_table_mgr_1a113e3c8b9ec50d1c32e8aabf2d827dad" prot="private" virt="non-virtual"><scope>SkillTableMgr</scope><name>LoadSkillFile</name></member>
+      <member refid="class_skill_table_mgr_1ac692eca0d28bee6403b246cf64de7258" prot="private" virt="non-virtual"><scope>SkillTableMgr</scope><name>m_kSkillTableMap</name></member>
+      <member refid="class_skill_table_mgr_1a8060c880a1397efdca34a08ed50ea9f1" prot="private" virt="non-virtual"><scope>SkillTableMgr</scope><name>m_pkSkillTableMgr</name></member>
+      <member refid="class_skill_table_mgr_1abff591317314e165224c8b4cda968e0f" prot="public" virt="non-virtual"><scope>SkillTableMgr</scope><name>ReLoad</name></member>
+      <member refid="class_skill_table_mgr_1a08edcb28483fe3ce850419df1c3e8e6f" prot="public" virt="non-virtual"><scope>SkillTableMgr</scope><name>SkillTableMgr</name></member>
+      <member refid="class_skill_table_mgr_1a187560e160a44926f6e05231b635ceb0" prot="public" virt="non-virtual"><scope>SkillTableMgr</scope><name>~SkillTableMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

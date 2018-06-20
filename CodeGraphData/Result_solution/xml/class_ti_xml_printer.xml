@@ -1,0 +1,505 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_ti_xml_printer" kind="class" prot="public">
+    <compoundname>TiXmlPrinter</compoundname>
+    <basecompoundref refid="class_ti_xml_visitor" prot="public" virt="non-virtual">TiXmlVisitor</basecompoundref>
+    <includes refid="tinyxml_8h" local="no">tinyxml.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ti_xml_printer_1a7e11330449daea912320c22f84387df7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TiXmlPrinter::depth</definition>
+        <argsstring></argsstring>
+        <name>depth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1763" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="1763" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_printer_1a348ad6527b1d43ddeb51454cddeb6a1d" compoundref="tinyxml_8h" startline="1755" endline="1758">DoIndent</referencedby>
+        <referencedby refid="class_ti_xml_printer_1a6dccaf5ee4979f13877690afe28721e8" compoundref="tinyxml_8cpp" startline="1753" endline="1787">VisitEnter</referencedby>
+        <referencedby refid="class_ti_xml_printer_1ae6a1df8271df4bf62d7873c38e34aa69" compoundref="tinyxml_8cpp" startline="1790" endline="1813">VisitExit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ti_xml_printer_1a2dceede5ae9bb8948f1ecaabb24ab2fb" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TiXmlPrinter::simpleTextPrint</definition>
+        <argsstring></argsstring>
+        <name>simpleTextPrint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1764" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="1764" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_printer_1a0857c5d32c59b9a257f9a49cb9411df5" compoundref="tinyxml_8cpp" startline="1816" endline="1837">Visit</referencedby>
+        <referencedby refid="class_ti_xml_printer_1a6dccaf5ee4979f13877690afe28721e8" compoundref="tinyxml_8cpp" startline="1753" endline="1787">VisitEnter</referencedby>
+        <referencedby refid="class_ti_xml_printer_1ae6a1df8271df4bf62d7873c38e34aa69" compoundref="tinyxml_8cpp" startline="1790" endline="1813">VisitExit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ti_xml_printer_1ae6cc56c79e52ef352ecc612809fdbedf" prot="private" static="no" mutable="no">
+        <type><ref refid="tinyxml_8h_1a92bada05fd84d9a0c9a5bbe53de26887" kindref="member">TIXML_STRING</ref></type>
+        <definition>TIXML_STRING TiXmlPrinter::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1765" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="1765" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_printer_1a859eede9597d3e0355b77757be48735e" compoundref="tinyxml_8h" startline="1745" endline="1745">CStr</referencedby>
+        <referencedby refid="class_ti_xml_printer_1a348ad6527b1d43ddeb51454cddeb6a1d" compoundref="tinyxml_8h" startline="1755" endline="1758">DoIndent</referencedby>
+        <referencedby refid="class_ti_xml_printer_1a252a0e13e06def9a06b2eb30a04677a0" compoundref="tinyxml_8h" startline="1759" endline="1761">DoLineBreak</referencedby>
+        <referencedby refid="class_ti_xml_printer_1ad01375ae9199bd2f48252eaddce3039d" compoundref="tinyxml_8h" startline="1747" endline="1747">Size</referencedby>
+        <referencedby refid="class_ti_xml_printer_1a0857c5d32c59b9a257f9a49cb9411df5" compoundref="tinyxml_8cpp" startline="1816" endline="1837">Visit</referencedby>
+        <referencedby refid="class_ti_xml_printer_1a6dccaf5ee4979f13877690afe28721e8" compoundref="tinyxml_8cpp" startline="1753" endline="1787">VisitEnter</referencedby>
+        <referencedby refid="class_ti_xml_printer_1ae6a1df8271df4bf62d7873c38e34aa69" compoundref="tinyxml_8cpp" startline="1790" endline="1813">VisitExit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ti_xml_printer_1a672fda389bb3f5a2ae8ead867f9a2536" prot="private" static="no" mutable="no">
+        <type><ref refid="tinyxml_8h_1a92bada05fd84d9a0c9a5bbe53de26887" kindref="member">TIXML_STRING</ref></type>
+        <definition>TIXML_STRING TiXmlPrinter::indent</definition>
+        <argsstring></argsstring>
+        <name>indent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1766" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="1766" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_printer_1a348ad6527b1d43ddeb51454cddeb6a1d" compoundref="tinyxml_8h" startline="1755" endline="1758">DoIndent</referencedby>
+        <referencedby refid="class_ti_xml_printer_1abb33ec7d4bad6aaeb57f4304394b133d" compoundref="tinyxml_8h" startline="1729" endline="1729">Indent</referencedby>
+        <referencedby refid="class_ti_xml_printer_1a213377a4070c7e625bae59716b089e5e" compoundref="tinyxml_8h" startline="1727" endline="1727">SetIndent</referencedby>
+        <referencedby refid="class_ti_xml_printer_1ab23a90629e374cb1cadca090468bbd19" compoundref="tinyxml_8h" startline="1741" endline="1743">SetStreamPrinting</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ti_xml_printer_1a25e8120bcfda10cc06a11b2dedcef7fe" prot="private" static="no" mutable="no">
+        <type><ref refid="tinyxml_8h_1a92bada05fd84d9a0c9a5bbe53de26887" kindref="member">TIXML_STRING</ref></type>
+        <definition>TIXML_STRING TiXmlPrinter::lineBreak</definition>
+        <argsstring></argsstring>
+        <name>lineBreak</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1767" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="1767" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_printer_1a252a0e13e06def9a06b2eb30a04677a0" compoundref="tinyxml_8h" startline="1759" endline="1761">DoLineBreak</referencedby>
+        <referencedby refid="class_ti_xml_printer_1a11f1b4804a460b175ec244eb5724d96d" compoundref="tinyxml_8h" startline="1736" endline="1736">LineBreak</referencedby>
+        <referencedby refid="class_ti_xml_printer_1a4be1e37e69e3858c59635aa947174fe6" compoundref="tinyxml_8h" startline="1734" endline="1734">SetLineBreak</referencedby>
+        <referencedby refid="class_ti_xml_printer_1ab23a90629e374cb1cadca090468bbd19" compoundref="tinyxml_8h" startline="1741" endline="1743">SetStreamPrinting</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ti_xml_printer_1a6539b864026c8667cd0bd5fdf4b41f43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TiXmlPrinter::TiXmlPrinter</definition>
+        <argsstring>()</argsstring>
+        <name>TiXmlPrinter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1710" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="1710" bodyend="1711"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_printer_1a2ec73087db26ff4d2c4316c56f861db7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool TiXmlPrinter::VisitEnter</definition>
+        <argsstring>(const TiXmlDocument &amp;doc)</argsstring>
+        <name>VisitEnter</name>
+        <reimplements refid="class_ti_xml_visitor_1a2661534963f39b74e29d1fc57918ab73">VisitEnter</reimplements>
+        <param>
+          <type>const <ref refid="class_ti_xml_document" kindref="compound">TiXmlDocument</ref> &amp;</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Visit a document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1713" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="1743" bodyend="1746"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_printer_1a0a636046fa589b6d7f3e5bd025b3f33e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool TiXmlPrinter::VisitExit</definition>
+        <argsstring>(const TiXmlDocument &amp;doc)</argsstring>
+        <name>VisitExit</name>
+        <reimplements refid="class_ti_xml_visitor_1a8edb6c4d3e7db94bc2e7e79c7b12e028">VisitExit</reimplements>
+        <param>
+          <type>const <ref refid="class_ti_xml_document" kindref="compound">TiXmlDocument</ref> &amp;</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+<para>Visit a document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1714" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="1748" bodyend="1751"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_printer_1a6dccaf5ee4979f13877690afe28721e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool TiXmlPrinter::VisitEnter</definition>
+        <argsstring>(const TiXmlElement &amp;element, const TiXmlAttribute *firstAttribute)</argsstring>
+        <name>VisitEnter</name>
+        <reimplements refid="class_ti_xml_visitor_1a3049fd47be339fd3caf561ec78754ac6">VisitEnter</reimplements>
+        <param>
+          <type>const <ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_ti_xml_attribute" kindref="compound">TiXmlAttribute</ref> *</type>
+          <declname>firstAttribute</declname>
+        </param>
+        <briefdescription>
+<para>Visit an element. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1716" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="1753" bodyend="1787"/>
+        <references refid="class_ti_xml_printer_1ae6cc56c79e52ef352ecc612809fdbedf" compoundref="tinyxml_8h" startline="1765">buffer</references>
+        <references refid="class_ti_xml_text_1ad1a6a6b83fa2271022dd97c072a2b586" compoundref="tinyxml_8h" startline="1209" endline="1209">TiXmlText::CDATA</references>
+        <references refid="class_ti_xml_printer_1a7e11330449daea912320c22f84387df7" compoundref="tinyxml_8h" startline="1763">depth</references>
+        <references refid="class_ti_xml_printer_1a348ad6527b1d43ddeb51454cddeb6a1d" compoundref="tinyxml_8h" startline="1755" endline="1758">DoIndent</references>
+        <references refid="class_ti_xml_printer_1a252a0e13e06def9a06b2eb30a04677a0" compoundref="tinyxml_8h" startline="1759" endline="1761">DoLineBreak</references>
+        <references refid="class_ti_xml_node_1a44c8eee26bbe2d1b2762038df9dde2f0" compoundref="tinyxml_8h" startline="515">TiXmlNode::FirstChild</references>
+        <references refid="class_ti_xml_node_1a6d671107e00cca1d28cb2d7f3a87a21e" compoundref="tinyxml_8h" startline="524" endline="524">TiXmlNode::LastChild</references>
+        <references refid="class_ti_xml_attribute_1a776478980776a024f7c2846eec640f65" compoundref="tinyxml_8cpp" startline="1159" endline="1166">TiXmlAttribute::Next</references>
+        <references refid="class_ti_xml_attribute_1acc04956c1d5c4c31fe74f7a7528d109a" compoundref="tinyxml_8h" startline="863" endline="865">TiXmlAttribute::Print</references>
+        <references refid="class_ti_xml_printer_1a2dceede5ae9bb8948f1ecaabb24ab2fb" compoundref="tinyxml_8h" startline="1764">simpleTextPrint</references>
+        <references refid="class_ti_xml_node_1a95a46a52c525992d6b4ee08beb14cd69" compoundref="tinyxml_8h" startline="694" endline="693">TiXmlNode::ToText</references>
+        <references refid="class_ti_xml_node_1a77943eb90d12c2892b1337a9f5918b41" compoundref="tinyxml_8h" startline="482" endline="482">TiXmlNode::Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_printer_1ae6a1df8271df4bf62d7873c38e34aa69" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool TiXmlPrinter::VisitExit</definition>
+        <argsstring>(const TiXmlElement &amp;element)</argsstring>
+        <name>VisitExit</name>
+        <reimplements refid="class_ti_xml_visitor_1ab20597dab9db5818ebba675846f717fe">VisitExit</reimplements>
+        <param>
+          <type>const <ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> &amp;</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Visit an element. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1717" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="1790" bodyend="1813"/>
+        <references refid="class_ti_xml_printer_1ae6cc56c79e52ef352ecc612809fdbedf" compoundref="tinyxml_8h" startline="1765">buffer</references>
+        <references refid="class_ti_xml_printer_1a7e11330449daea912320c22f84387df7" compoundref="tinyxml_8h" startline="1763">depth</references>
+        <references refid="class_ti_xml_printer_1a348ad6527b1d43ddeb51454cddeb6a1d" compoundref="tinyxml_8h" startline="1755" endline="1758">DoIndent</references>
+        <references refid="class_ti_xml_printer_1a252a0e13e06def9a06b2eb30a04677a0" compoundref="tinyxml_8h" startline="1759" endline="1761">DoLineBreak</references>
+        <references refid="class_ti_xml_node_1a44c8eee26bbe2d1b2762038df9dde2f0" compoundref="tinyxml_8h" startline="515">TiXmlNode::FirstChild</references>
+        <references refid="class_ti_xml_printer_1a2dceede5ae9bb8948f1ecaabb24ab2fb" compoundref="tinyxml_8h" startline="1764">simpleTextPrint</references>
+        <references refid="class_ti_xml_node_1a77943eb90d12c2892b1337a9f5918b41" compoundref="tinyxml_8h" startline="482" endline="482">TiXmlNode::Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_printer_1adaf7eec4dc43ad071ff52b60361574f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool TiXmlPrinter::Visit</definition>
+        <argsstring>(const TiXmlDeclaration &amp;declaration)</argsstring>
+        <name>Visit</name>
+        <reimplements refid="class_ti_xml_visitor_1a53f2b1069cb2ac8169be1fecefa26d4f">Visit</reimplements>
+        <param>
+          <type>const <ref refid="class_ti_xml_declaration" kindref="compound">TiXmlDeclaration</ref> &amp;</type>
+          <declname>declaration</declname>
+        </param>
+        <briefdescription>
+<para>Visit a declaration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1719" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="1840" bodyend="1846"/>
+        <references refid="class_ti_xml_printer_1ae6cc56c79e52ef352ecc612809fdbedf" compoundref="tinyxml_8h" startline="1765">buffer</references>
+        <references refid="class_ti_xml_printer_1a348ad6527b1d43ddeb51454cddeb6a1d" compoundref="tinyxml_8h" startline="1755" endline="1758">DoIndent</references>
+        <references refid="class_ti_xml_printer_1a252a0e13e06def9a06b2eb30a04677a0" compoundref="tinyxml_8h" startline="1759" endline="1761">DoLineBreak</references>
+        <references refid="class_ti_xml_declaration_1aa5ab32ec19d4eeecff4a9238c6c90565" compoundref="tinyxml_8cpp" startline="1405" endline="1424">TiXmlDeclaration::Print</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_printer_1a0857c5d32c59b9a257f9a49cb9411df5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool TiXmlPrinter::Visit</definition>
+        <argsstring>(const TiXmlText &amp;text)</argsstring>
+        <name>Visit</name>
+        <reimplements refid="class_ti_xml_visitor_1a0d2b6e4f42f153243cc595ae0bc78306">Visit</reimplements>
+        <param>
+          <type>const <ref refid="class_ti_xml_text" kindref="compound">TiXmlText</ref> &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Visit a text node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1720" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="1816" bodyend="1837"/>
+        <references refid="class_ti_xml_printer_1ae6cc56c79e52ef352ecc612809fdbedf" compoundref="tinyxml_8h" startline="1765">buffer</references>
+        <references refid="class_ti_xml_text_1ad1a6a6b83fa2271022dd97c072a2b586" compoundref="tinyxml_8h" startline="1209" endline="1209">TiXmlText::CDATA</references>
+        <references refid="class_ti_xml_printer_1a348ad6527b1d43ddeb51454cddeb6a1d" compoundref="tinyxml_8h" startline="1755" endline="1758">DoIndent</references>
+        <references refid="class_ti_xml_printer_1a252a0e13e06def9a06b2eb30a04677a0" compoundref="tinyxml_8h" startline="1759" endline="1761">DoLineBreak</references>
+        <references refid="class_ti_xml_printer_1a2dceede5ae9bb8948f1ecaabb24ab2fb" compoundref="tinyxml_8h" startline="1764">simpleTextPrint</references>
+        <references refid="class_ti_xml_node_1a77943eb90d12c2892b1337a9f5918b41" compoundref="tinyxml_8h" startline="482" endline="482">TiXmlNode::Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_printer_1a9870423f5603630e6142f6bdb66dfb57" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool TiXmlPrinter::Visit</definition>
+        <argsstring>(const TiXmlComment &amp;comment)</argsstring>
+        <name>Visit</name>
+        <reimplements refid="class_ti_xml_visitor_1a5c615a6011e312e6da528f2b666b03b8">Visit</reimplements>
+        <param>
+          <type>const <ref refid="class_ti_xml_comment" kindref="compound">TiXmlComment</ref> &amp;</type>
+          <declname>comment</declname>
+        </param>
+        <briefdescription>
+<para>Visit a comment node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1721" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="1849" bodyend="1857"/>
+        <references refid="class_ti_xml_printer_1ae6cc56c79e52ef352ecc612809fdbedf" compoundref="tinyxml_8h" startline="1765">buffer</references>
+        <references refid="class_ti_xml_printer_1a348ad6527b1d43ddeb51454cddeb6a1d" compoundref="tinyxml_8h" startline="1755" endline="1758">DoIndent</references>
+        <references refid="class_ti_xml_printer_1a252a0e13e06def9a06b2eb30a04677a0" compoundref="tinyxml_8h" startline="1759" endline="1761">DoLineBreak</references>
+        <references refid="class_ti_xml_node_1a77943eb90d12c2892b1337a9f5918b41" compoundref="tinyxml_8h" startline="482" endline="482">TiXmlNode::Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_printer_1a08591a15c9a07afa83c24e08b03d6358" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool TiXmlPrinter::Visit</definition>
+        <argsstring>(const TiXmlUnknown &amp;unknown)</argsstring>
+        <name>Visit</name>
+        <reimplements refid="class_ti_xml_visitor_1aa0eef40a3bcc80f9d12993935b3da1ab">Visit</reimplements>
+        <param>
+          <type>const <ref refid="class_ti_xml_unknown" kindref="compound">TiXmlUnknown</ref> &amp;</type>
+          <declname>unknown</declname>
+        </param>
+        <briefdescription>
+<para>Visit an unknow node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1722" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="1860" bodyend="1868"/>
+        <references refid="class_ti_xml_printer_1ae6cc56c79e52ef352ecc612809fdbedf" compoundref="tinyxml_8h" startline="1765">buffer</references>
+        <references refid="class_ti_xml_printer_1a348ad6527b1d43ddeb51454cddeb6a1d" compoundref="tinyxml_8h" startline="1755" endline="1758">DoIndent</references>
+        <references refid="class_ti_xml_printer_1a252a0e13e06def9a06b2eb30a04677a0" compoundref="tinyxml_8h" startline="1759" endline="1761">DoLineBreak</references>
+        <references refid="class_ti_xml_node_1a77943eb90d12c2892b1337a9f5918b41" compoundref="tinyxml_8h" startline="482" endline="482">TiXmlNode::Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_printer_1a213377a4070c7e625bae59716b089e5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlPrinter::SetIndent</definition>
+        <argsstring>(const char *_indent)</argsstring>
+        <name>SetIndent</name>
+        <param>
+          <type>const char *</type>
+          <declname>_indent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the indent characters for printing. By default 4 spaces but tab () is also useful, or null/empty string for no indentation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1727" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="1727" bodyend="1727"/>
+        <references refid="class_ti_xml_printer_1a672fda389bb3f5a2ae8ead867f9a2536" compoundref="tinyxml_8h" startline="1766">indent</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_printer_1abb33ec7d4bad6aaeb57f4304394b133d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* TiXmlPrinter::Indent</definition>
+        <argsstring>()</argsstring>
+        <name>Indent</name>
+        <briefdescription>
+<para>Query the indention string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1729" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="1729" bodyend="1729"/>
+        <references refid="class_ti_xml_printer_1a672fda389bb3f5a2ae8ead867f9a2536" compoundref="tinyxml_8h" startline="1766">indent</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_printer_1a4be1e37e69e3858c59635aa947174fe6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlPrinter::SetLineBreak</definition>
+        <argsstring>(const char *_lineBreak)</argsstring>
+        <name>SetLineBreak</name>
+        <param>
+          <type>const char *</type>
+          <declname>_lineBreak</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the line breaking string. By default set to newline (<linebreak/>
+). Some operating systems prefer other characters, or can be set to the null/empty string for no indenation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1734" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="1734" bodyend="1734"/>
+        <references refid="class_ti_xml_printer_1a25e8120bcfda10cc06a11b2dedcef7fe" compoundref="tinyxml_8h" startline="1767">lineBreak</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_printer_1a11f1b4804a460b175ec244eb5724d96d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* TiXmlPrinter::LineBreak</definition>
+        <argsstring>()</argsstring>
+        <name>LineBreak</name>
+        <briefdescription>
+<para>Query the current line breaking string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1736" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="1736" bodyend="1736"/>
+        <references refid="class_ti_xml_printer_1a25e8120bcfda10cc06a11b2dedcef7fe" compoundref="tinyxml_8h" startline="1767">lineBreak</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_printer_1ab23a90629e374cb1cadca090468bbd19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlPrinter::SetStreamPrinting</definition>
+        <argsstring>()</argsstring>
+        <name>SetStreamPrinting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Switch over to &quot;stream printing&quot; which is the most dense formatting without linebreaks. Common when the XML is needed for network transmission. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1741" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="1741" bodyend="1743"/>
+        <references refid="class_ti_xml_printer_1a672fda389bb3f5a2ae8ead867f9a2536" compoundref="tinyxml_8h" startline="1766">indent</references>
+        <references refid="class_ti_xml_printer_1a25e8120bcfda10cc06a11b2dedcef7fe" compoundref="tinyxml_8h" startline="1767">lineBreak</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_printer_1a859eede9597d3e0355b77757be48735e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* TiXmlPrinter::CStr</definition>
+        <argsstring>()</argsstring>
+        <name>CStr</name>
+        <briefdescription>
+<para>Return the result. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1745" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="1745" bodyend="1745"/>
+        <references refid="class_ti_xml_printer_1ae6cc56c79e52ef352ecc612809fdbedf" compoundref="tinyxml_8h" startline="1765">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_printer_1ad01375ae9199bd2f48252eaddce3039d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t TiXmlPrinter::Size</definition>
+        <argsstring>()</argsstring>
+        <name>Size</name>
+        <briefdescription>
+<para>Return the length of the result string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1747" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="1747" bodyend="1747"/>
+        <references refid="class_ti_xml_printer_1ae6cc56c79e52ef352ecc612809fdbedf" compoundref="tinyxml_8h" startline="1765">buffer</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ti_xml_printer_1a348ad6527b1d43ddeb51454cddeb6a1d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlPrinter::DoIndent</definition>
+        <argsstring>()</argsstring>
+        <name>DoIndent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1755" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="1755" bodyend="1758"/>
+        <references refid="class_ti_xml_printer_1ae6cc56c79e52ef352ecc612809fdbedf" compoundref="tinyxml_8h" startline="1765">buffer</references>
+        <references refid="class_ti_xml_printer_1a7e11330449daea912320c22f84387df7" compoundref="tinyxml_8h" startline="1763">depth</references>
+        <references refid="class_ti_xml_printer_1a672fda389bb3f5a2ae8ead867f9a2536" compoundref="tinyxml_8h" startline="1766">indent</references>
+        <referencedby refid="class_ti_xml_printer_1a0857c5d32c59b9a257f9a49cb9411df5" compoundref="tinyxml_8cpp" startline="1816" endline="1837">Visit</referencedby>
+        <referencedby refid="class_ti_xml_printer_1a6dccaf5ee4979f13877690afe28721e8" compoundref="tinyxml_8cpp" startline="1753" endline="1787">VisitEnter</referencedby>
+        <referencedby refid="class_ti_xml_printer_1ae6a1df8271df4bf62d7873c38e34aa69" compoundref="tinyxml_8cpp" startline="1790" endline="1813">VisitExit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_printer_1a252a0e13e06def9a06b2eb30a04677a0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlPrinter::DoLineBreak</definition>
+        <argsstring>()</argsstring>
+        <name>DoLineBreak</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1759" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="1759" bodyend="1761"/>
+        <references refid="class_ti_xml_printer_1ae6cc56c79e52ef352ecc612809fdbedf" compoundref="tinyxml_8h" startline="1765">buffer</references>
+        <references refid="class_ti_xml_printer_1a25e8120bcfda10cc06a11b2dedcef7fe" compoundref="tinyxml_8h" startline="1767">lineBreak</references>
+        <referencedby refid="class_ti_xml_printer_1a0857c5d32c59b9a257f9a49cb9411df5" compoundref="tinyxml_8cpp" startline="1816" endline="1837">Visit</referencedby>
+        <referencedby refid="class_ti_xml_printer_1a6dccaf5ee4979f13877690afe28721e8" compoundref="tinyxml_8cpp" startline="1753" endline="1787">VisitEnter</referencedby>
+        <referencedby refid="class_ti_xml_printer_1ae6a1df8271df4bf62d7873c38e34aa69" compoundref="tinyxml_8cpp" startline="1790" endline="1813">VisitExit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Print to memory functionality. The <ref refid="class_ti_xml_printer" kindref="compound">TiXmlPrinter</ref> is useful when you need to:</para><para><orderedlist>
+<listitem><para>Print to memory (especially in non-STL mode)</para></listitem><listitem><para>Control formatting (line endings, etc.)</para></listitem></orderedlist>
+</para><para>When constructed, the <ref refid="class_ti_xml_printer" kindref="compound">TiXmlPrinter</ref> is in its default &quot;pretty printing&quot; mode. Before calling Accept() you can call methods to control the printing of the XML document. After <ref refid="class_ti_xml_node_1acc0f88b7462c6cb73809d410a4f5bb86" kindref="member">TiXmlNode::Accept()</ref> is called, the printed document can be accessed via the <ref refid="class_ti_xml_printer_1a859eede9597d3e0355b77757be48735e" kindref="member">CStr()</ref>, Str(), and <ref refid="class_ti_xml_printer_1ad01375ae9199bd2f48252eaddce3039d" kindref="member">Size()</ref> methods.</para><para><ref refid="class_ti_xml_printer" kindref="compound">TiXmlPrinter</ref> uses the Visitor API. <verbatim>TiXmlPrinter printer;
+printer.SetIndent( &quot;\t&quot; );
+
+doc.Accept( &amp;printer );
+fprintf( stdout, &quot;%s&quot;, printer.CStr() );
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="9363">
+        <label>TiXmlVisitor</label>
+        <link refid="class_ti_xml_visitor"/>
+      </node>
+      <node id="9362">
+        <label>TiXmlPrinter</label>
+        <link refid="class_ti_xml_printer"/>
+        <childnode refid="9363" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9365">
+        <label>TiXmlVisitor</label>
+        <link refid="class_ti_xml_visitor"/>
+      </node>
+      <node id="9364">
+        <label>TiXmlPrinter</label>
+        <link refid="class_ti_xml_printer"/>
+        <childnode refid="9365" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="1708" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="1707" bodyend="1768"/>
+    <listofallmembers>
+      <member refid="class_ti_xml_printer_1ae6cc56c79e52ef352ecc612809fdbedf" prot="private" virt="non-virtual"><scope>TiXmlPrinter</scope><name>buffer</name></member>
+      <member refid="class_ti_xml_printer_1a859eede9597d3e0355b77757be48735e" prot="public" virt="non-virtual"><scope>TiXmlPrinter</scope><name>CStr</name></member>
+      <member refid="class_ti_xml_printer_1a7e11330449daea912320c22f84387df7" prot="private" virt="non-virtual"><scope>TiXmlPrinter</scope><name>depth</name></member>
+      <member refid="class_ti_xml_printer_1a348ad6527b1d43ddeb51454cddeb6a1d" prot="private" virt="non-virtual"><scope>TiXmlPrinter</scope><name>DoIndent</name></member>
+      <member refid="class_ti_xml_printer_1a252a0e13e06def9a06b2eb30a04677a0" prot="private" virt="non-virtual"><scope>TiXmlPrinter</scope><name>DoLineBreak</name></member>
+      <member refid="class_ti_xml_printer_1a672fda389bb3f5a2ae8ead867f9a2536" prot="private" virt="non-virtual"><scope>TiXmlPrinter</scope><name>indent</name></member>
+      <member refid="class_ti_xml_printer_1abb33ec7d4bad6aaeb57f4304394b133d" prot="public" virt="non-virtual"><scope>TiXmlPrinter</scope><name>Indent</name></member>
+      <member refid="class_ti_xml_printer_1a25e8120bcfda10cc06a11b2dedcef7fe" prot="private" virt="non-virtual"><scope>TiXmlPrinter</scope><name>lineBreak</name></member>
+      <member refid="class_ti_xml_printer_1a11f1b4804a460b175ec244eb5724d96d" prot="public" virt="non-virtual"><scope>TiXmlPrinter</scope><name>LineBreak</name></member>
+      <member refid="class_ti_xml_printer_1a213377a4070c7e625bae59716b089e5e" prot="public" virt="non-virtual"><scope>TiXmlPrinter</scope><name>SetIndent</name></member>
+      <member refid="class_ti_xml_printer_1a4be1e37e69e3858c59635aa947174fe6" prot="public" virt="non-virtual"><scope>TiXmlPrinter</scope><name>SetLineBreak</name></member>
+      <member refid="class_ti_xml_printer_1ab23a90629e374cb1cadca090468bbd19" prot="public" virt="non-virtual"><scope>TiXmlPrinter</scope><name>SetStreamPrinting</name></member>
+      <member refid="class_ti_xml_printer_1a2dceede5ae9bb8948f1ecaabb24ab2fb" prot="private" virt="non-virtual"><scope>TiXmlPrinter</scope><name>simpleTextPrint</name></member>
+      <member refid="class_ti_xml_printer_1ad01375ae9199bd2f48252eaddce3039d" prot="public" virt="non-virtual"><scope>TiXmlPrinter</scope><name>Size</name></member>
+      <member refid="class_ti_xml_printer_1a6539b864026c8667cd0bd5fdf4b41f43" prot="public" virt="non-virtual"><scope>TiXmlPrinter</scope><name>TiXmlPrinter</name></member>
+      <member refid="class_ti_xml_printer_1adaf7eec4dc43ad071ff52b60361574f5" prot="public" virt="virtual"><scope>TiXmlPrinter</scope><name>Visit</name></member>
+      <member refid="class_ti_xml_printer_1a0857c5d32c59b9a257f9a49cb9411df5" prot="public" virt="virtual"><scope>TiXmlPrinter</scope><name>Visit</name></member>
+      <member refid="class_ti_xml_printer_1a9870423f5603630e6142f6bdb66dfb57" prot="public" virt="virtual"><scope>TiXmlPrinter</scope><name>Visit</name></member>
+      <member refid="class_ti_xml_printer_1a08591a15c9a07afa83c24e08b03d6358" prot="public" virt="virtual"><scope>TiXmlPrinter</scope><name>Visit</name></member>
+      <member refid="class_ti_xml_printer_1a2ec73087db26ff4d2c4316c56f861db7" prot="public" virt="virtual"><scope>TiXmlPrinter</scope><name>VisitEnter</name></member>
+      <member refid="class_ti_xml_printer_1a6dccaf5ee4979f13877690afe28721e8" prot="public" virt="virtual"><scope>TiXmlPrinter</scope><name>VisitEnter</name></member>
+      <member refid="class_ti_xml_printer_1a0a636046fa589b6d7f3e5bd025b3f33e" prot="public" virt="virtual"><scope>TiXmlPrinter</scope><name>VisitExit</name></member>
+      <member refid="class_ti_xml_printer_1ae6a1df8271df4bf62d7873c38e34aa69" prot="public" virt="virtual"><scope>TiXmlPrinter</scope><name>VisitExit</name></member>
+      <member refid="class_ti_xml_visitor_1a276c739ec4701f27c3f86b8ead095e5a" prot="public" virt="virtual"><scope>TiXmlPrinter</scope><name>~TiXmlVisitor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_ti_xml_base" kind="class" prot="public" abstract="yes">
+    <compoundname>TiXmlBase</compoundname>
+    <derivedcompoundref refid="class_ti_xml_attribute" prot="public" virt="non-virtual">TiXmlAttribute</derivedcompoundref>
+    <derivedcompoundref refid="class_ti_xml_node" prot="public" virt="non-virtual">TiXmlNode</derivedcompoundref>
+    <includes refid="tinyxml_8h" local="no">tinyxml.h</includes>
+    <innerclass refid="struct_ti_xml_base_1_1_entity" prot="private">TiXmlBase::Entity</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_ti_xml_base_1a645605650754ab74331c18d9106012fb" prot="public" static="no">
+        <name>@6</name>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fba750a76ca602241c416d5ec357d55fba1" prot="public">
+          <name>TIXML_NO_ERROR</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fbabcabc1b8efabeda1cc4352aa73d64390" prot="public">
+          <name>TIXML_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fbab803949b8f12e03b5b57f86d9c52b614" prot="public">
+          <name>TIXML_ERROR_OPENING_FILE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fba92e3bfc96126d3544f47e8b3f031e7bb" prot="public">
+          <name>TIXML_ERROR_OUT_OF_MEMORY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fba5cbfcf7fe5e67f0cd1aef98deac55dd2" prot="public">
+          <name>TIXML_ERROR_PARSING_ELEMENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fbadcc31ca78a9d507a88c9fafb3d18a3c4" prot="public">
+          <name>TIXML_ERROR_FAILED_TO_READ_ELEMENT_NAME</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fbafefdc75db23215e846605a2b5af0c2d3" prot="public">
+          <name>TIXML_ERROR_READING_ELEMENT_VALUE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fba670fac23171b64829f90639cc3696d6e" prot="public">
+          <name>TIXML_ERROR_READING_ATTRIBUTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fba5f2aee664733a20f13f6f77556b9fa85" prot="public">
+          <name>TIXML_ERROR_PARSING_EMPTY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fba175f7c72e2f9630bb96ef5137b325502" prot="public">
+          <name>TIXML_ERROR_READING_END_TAG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fba24c814fdcf1d84704869e6f76b19cb6e" prot="public">
+          <name>TIXML_ERROR_PARSING_UNKNOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fba72e3072a44be499edb89593f6ce10f6c" prot="public">
+          <name>TIXML_ERROR_PARSING_COMMENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fba4c200f9d125027ab449e2be7be471ba0" prot="public">
+          <name>TIXML_ERROR_PARSING_DECLARATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fbab345f3e42e6ae9cdedee2b95e4d461b9" prot="public">
+          <name>TIXML_ERROR_DOCUMENT_EMPTY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fbade7edbad3a94a6c161cac2638f380e17" prot="public">
+          <name>TIXML_ERROR_EMBEDDED_NULL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fbaab2c858631b5d38eae1e6675949b9cd4" prot="public">
+          <name>TIXML_ERROR_PARSING_CDATA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fba679b15d950f29257700a724bb118c34d" prot="public">
+          <name>TIXML_ERROR_DOCUMENT_TOP_ONLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1a645605650754ab74331c18d9106012fba14552894942250efcec6b00dc52fc48a" prot="public">
+          <name>TIXML_ERROR_STRING_COUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="256" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="255" bodyend="276"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_ti_xml_base_1af0f2dbbf7cd6432553bf78dfd9996b63" prot="private" static="no">
+        <name>@7</name>
+        <enumvalue id="class_ti_xml_base_1af0f2dbbf7cd6432553bf78dfd9996b63ab848893c6d03fcd8f42941d7079ccb47" prot="private">
+          <name>NUM_ENTITY</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_base_1af0f2dbbf7cd6432553bf78dfd9996b63aeb571e41586d47e28f60445cb9b41d49" prot="private">
+          <name>MAX_ENTITY_LENGTH</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="402" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="401" bodyend="406"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_ti_xml_base_1a218872a0d985ae30e78c55adc4bdb196" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TiXmlNode</definition>
+        <argsstring></argsstring>
+        <name>TiXmlNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="192" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_ti_xml_base_1ab6592e32cb9132be517cc12a70564c4b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TiXmlElement</definition>
+        <argsstring></argsstring>
+        <name>TiXmlElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="193" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_ti_xml_base_1a173617f6dfe902cf484ce5552b950475" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TiXmlDocument</definition>
+        <argsstring></argsstring>
+        <name>TiXmlDocument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="194" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_ti_xml_base_1ac8c86058137bdb4b413c3eca58f2d467" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int TiXmlBase::utf8ByteTable</definition>
+        <argsstring>[256]</argsstring>
+        <name>utf8ByteTable</name>
+        <initializer>= 
+{
+	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	
+		2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	
+		3,	3,	3,	3,	3,	3,	3,	3,	3,	3,	3,	3,	3,	3,	3,	3,	
+		4,	4,	4,	4,	4,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1	
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="249" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="249" bodyend="245"/>
+        <referencedby refid="class_ti_xml_base_1a5b0fde72d6f662ae1fd6303195d2159b" compoundref="tinyxml_8h" startline="318" endline="352">GetChar</referencedby>
+        <referencedby refid="class_ti_xml_parsing_data_1a65cee8ab77a36c605db08c84b4c30a7d" compoundref="tinyxmlparser_8cpp" startline="197" endline="312">TiXmlParsingData::Stamp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="class_ti_xml_base_1a7ac8feec4100e446b3d78e1ac0659700" prot="protected" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char * TiXmlBase::errorString</definition>
+        <argsstring>[TIXML_ERROR_STRING_COUNT]</argsstring>
+        <name>errorString</name>
+        <initializer>=
+{
+	&quot;No error&quot;,
+	&quot;Error&quot;,
+	&quot;Failed to open file&quot;,
+	&quot;Memory allocation failed.&quot;,
+	&quot;Error parsing Element.&quot;,
+	&quot;Failed to read Element name&quot;,
+	&quot;Error reading Element value.&quot;,
+	&quot;Error reading Attributes.&quot;,
+	&quot;Error: empty tag.&quot;,
+	&quot;Error reading end tag.&quot;,
+	&quot;Error parsing Unknown.&quot;,
+	&quot;Error parsing Comment.&quot;,
+	&quot;Error parsing Declaration.&quot;,
+	&quot;Error document empty.&quot;,
+	&quot;Error null (0) or unexpected EOF found in input stream.&quot;,
+	&quot;Error parsing CDATA.&quot;,
+	&quot;Error when <ref refid="class_ti_xml_document" kindref="compound">TiXmlDocument</ref> added to document, because <ref refid="class_ti_xml_document" kindref="compound">TiXmlDocument</ref> can only be at the root.&quot;,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="366" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="366" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_document_1a735c23e318597b920c94eae77fa206de" compoundref="tinyxmlparser_8cpp" startline="799" endline="816">TiXmlDocument::SetError</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_ti_xml_base_1a0d992580f3bc264909f898e942677a3c" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_ti_xml_cursor" kindref="compound">TiXmlCursor</ref></type>
+        <definition>TiXmlCursor TiXmlBase::location</definition>
+        <argsstring></argsstring>
+        <name>location</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="368" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="368" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_base_1ab54bfb9b70fe6dd276e7b279cab7f003" compoundref="tinyxml_8h" startline="241">Column</referencedby>
+        <referencedby refid="class_ti_xml_document_1a41f6fe7200864d1dca663d230caf8db6" compoundref="tinyxml_8cpp" startline="962" endline="1074">TiXmlDocument::LoadFile</referencedby>
+        <referencedby refid="class_ti_xml_attribute_1ad62774421b814894b995af3b5d231dda" compoundref="tinyxmlparser_8cpp" startline="1377" endline="1452">TiXmlAttribute::Parse</referencedby>
+        <referencedby refid="class_ti_xml_element_1af95c9165159fd9dfdcc5b894a3fcf85b" compoundref="tinyxmlparser_8cpp" startline="1050" endline="1190">TiXmlElement::Parse</referencedby>
+        <referencedby refid="class_ti_xml_comment_1a43bddc18ac057734b41d84653b71d3e0" compoundref="tinyxmlparser_8cpp" startline="1351" endline="1374">TiXmlComment::Parse</referencedby>
+        <referencedby refid="class_ti_xml_text_1a8d2dcfa41fc73d3e62dacc2fcf633819" compoundref="tinyxmlparser_8cpp" startline="1486" endline="1534">TiXmlText::Parse</referencedby>
+        <referencedby refid="class_ti_xml_declaration_1a9839ea97ed687a2b7342fd7b0f04361b" compoundref="tinyxmlparser_8cpp" startline="1560" endline="1617">TiXmlDeclaration::Parse</referencedby>
+        <referencedby refid="class_ti_xml_unknown_1aa51c2694e4177b5f0b5429ee5a81b58d" compoundref="tinyxmlparser_8cpp" startline="1290" endline="1321">TiXmlUnknown::Parse</referencedby>
+        <referencedby refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</referencedby>
+        <referencedby refid="class_ti_xml_base_1a024bceb070188df92c2a8d8852dd0853" compoundref="tinyxml_8h" startline="240" endline="240">Row</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ti_xml_base_1ab242c01590191f644569fa89a080d97c" prot="protected" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* TiXmlBase::userData</definition>
+        <argsstring></argsstring>
+        <name>userData</name>
+        <briefdescription>
+<para>Field containing a generic user pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="371" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="371" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_node_1ab6056978923ad8350fb5164af32d8038" compoundref="tinyxml_8cpp" startline="149" endline="153">TiXmlNode::CopyTo</referencedby>
+        <referencedby refid="class_ti_xml_base_1a6559a530ca6763fc301a14d77ed28c17" compoundref="tinyxml_8h" startline="244" endline="243">GetUserData</referencedby>
+        <referencedby refid="class_ti_xml_base_1ac6b3e0f790930d4970ec30764e937b5d" compoundref="tinyxml_8h" startline="243" endline="241">SetUserData</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_ti_xml_base_1aae956c75fedff20d337f7cc109c6b71a" prot="private" static="yes" mutable="no">
+        <type><ref refid="struct_ti_xml_base_1_1_entity" kindref="compound">Entity</ref></type>
+        <definition>TiXmlBase::Entity TiXmlBase::entity</definition>
+        <argsstring>[NUM_ENTITY]</argsstring>
+        <name>entity</name>
+        <initializer>= 
+{
+	{ &quot;&amp;amp;&quot;,  5, &apos;&amp;&apos; },
+	{ &quot;&amp;lt;&quot;,   4, &apos;&lt;&apos; },
+	{ &quot;&amp;gt;&quot;,   4, &apos;&gt;&apos; },
+	{ &quot;&amp;quot;&quot;, 6, &apos;\&quot;&apos; },
+	{ &quot;&amp;apos;&quot;, 6, &apos;\&apos;&apos; }
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="407" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="407" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_base_1ac5c08bf3deffcda0bf8ce2958372b584" compoundref="tinyxmlparser_8cpp" startline="439" endline="532">GetEntity</referencedby>
+        <referencedby refid="class_ti_xml_base_1a283ddc4f1f53a53e7111eff4e12a63d9" compoundref="tinyxml_8cpp" startline="40" endline="121">PutString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ti_xml_base_1a447a05f6a3edbb7892f66f9df8244a3d" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool TiXmlBase::condenseWhiteSpace</definition>
+        <argsstring></argsstring>
+        <name>condenseWhiteSpace</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="408" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="408" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_base_1ad4b1472531c647a25b1840a87ae42438" compoundref="tinyxml_8h" startline="220" endline="220">IsWhiteSpaceCondensed</referencedby>
+        <referencedby refid="class_ti_xml_base_1aa646c74921aa33156968b802bbf5566e" compoundref="tinyxmlparser_8cpp" startline="575" endline="638">ReadText</referencedby>
+        <referencedby refid="class_ti_xml_base_1a0f799ec645bfb8d8a969e83478f379c1" compoundref="tinyxml_8h" startline="217" endline="217">SetCondenseWhiteSpace</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ti_xml_base_1ac6753fe8a2c89669038fcf281cb301bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TiXmlBase::TiXmlBase</definition>
+        <argsstring>()</argsstring>
+        <name>TiXmlBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="197" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="197" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1ad1837ecb25a913612fa1115f090cbb56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual TiXmlBase::~TiXmlBase</definition>
+        <argsstring>()</argsstring>
+        <name>~TiXmlBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="198" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="198" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1a0de56b3f2ef14c65091a3b916437b512" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void TiXmlBase::Print</definition>
+        <argsstring>(FILE *cfile, int depth) const =0</argsstring>
+        <name>Print</name>
+        <reimplementedby refid="class_ti_xml_attribute_1acc04956c1d5c4c31fe74f7a7528d109a">Print</reimplementedby>
+        <reimplementedby refid="class_ti_xml_element_1ad9d0c008866982ab8d9aafae7e14d692">Print</reimplementedby>
+        <reimplementedby refid="class_ti_xml_comment_1a17398061d62c470f57801ce28fa33ad4">Print</reimplementedby>
+        <reimplementedby refid="class_ti_xml_text_1ae74d56c5b3ddec6cc3103dd51821af92">Print</reimplementedby>
+        <reimplementedby refid="class_ti_xml_declaration_1abf6303db4bd05b5be554036817ff1cb4">Print</reimplementedby>
+        <reimplementedby refid="class_ti_xml_unknown_1a025f19c21ef01ea9be50febb8fe0ba06">Print</reimplementedby>
+        <reimplementedby refid="class_ti_xml_document_1a7b1aea204fee266b70b9c105c8bf2ada">Print</reimplementedby>
+        <param>
+          <type>FILE *</type>
+          <declname>cfile</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>All TinyXml classes can print themselves to a filestream or the string class (<ref refid="class_ti_xml_string" kindref="compound">TiXmlString</ref> in non-STL mode, std::string in STL mode.) Either or both cfile and str can be null.</para><para>This is a formatted print, and will insert tabs and newlines.</para><para>(For an unformatted stream, use the &lt;&lt; operator.) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="209" column="1"/>
+        <referencedby refid="class_ti_xml_element_1ad9d0c008866982ab8d9aafae7e14d692" compoundref="tinyxml_8cpp" startline="760" endline="810">TiXmlElement::Print</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1a024bceb070188df92c2a8d8852dd0853" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int TiXmlBase::Row</definition>
+        <argsstring>() const </argsstring>
+        <name>Row</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the position, in the original source file, of this node or attribute. The row and column are 1-based. (That is the first row and first column is 1,1). If the returns values are 0 or less, then the parser does not have a row and column value.</para><para>Generally, the row and column value will be set when the TiXmlDocument::Load(), <ref refid="class_ti_xml_document_1a4c852a889c02cf251117fd1d9fe1845f" kindref="member">TiXmlDocument::LoadFile()</ref>, or any <ref refid="class_ti_xml_base_1a00e4edb0219d00a1379c856e5a1d2025" kindref="member">TiXmlNode::Parse()</ref> is called. It will NOT be set when the DOM was created from operator&gt;&gt;.</para><para>The values reflect the initial load. Once the DOM is modified programmatically (by adding or changing nodes and attributes) the new values will NOT update to reflect changes in the document.</para><para>There is a minor performance cost to computing the row and column. Computation can be disabled if <ref refid="class_ti_xml_document_1a51dac56316f89b35bdb7d0d433ba988e" kindref="member">TiXmlDocument::SetTabSize()</ref> is called with 0 as the value.</para><para><simplesect kind="see"><para><ref refid="class_ti_xml_document_1a51dac56316f89b35bdb7d0d433ba988e" kindref="member">TiXmlDocument::SetTabSize()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="240" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="240" bodyend="240"/>
+        <references refid="class_ti_xml_base_1a0d992580f3bc264909f898e942677a3c" compoundref="tinyxml_8h" startline="368">location</references>
+        <references refid="struct_ti_xml_cursor_1a5b54dd949820c2db061e2be41f3effb3" compoundref="tinyxml_8h" startline="101">TiXmlCursor::row</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1ab54bfb9b70fe6dd276e7b279cab7f003" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int TiXmlBase::Column</definition>
+        <argsstring>() const </argsstring>
+        <name>Column</name>
+        <briefdescription>
+<para>See <ref refid="class_ti_xml_base_1a024bceb070188df92c2a8d8852dd0853" kindref="member">Row()</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="241" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="241" bodyend="-1"/>
+        <references refid="struct_ti_xml_cursor_1a5694d7ed2c4d20109d350c14c417969d" compoundref="tinyxml_8h" startline="102">TiXmlCursor::col</references>
+        <references refid="class_ti_xml_base_1a0d992580f3bc264909f898e942677a3c" compoundref="tinyxml_8h" startline="368">location</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1ac6b3e0f790930d4970ec30764e937b5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlBase::SetUserData</definition>
+        <argsstring>(void *user)</argsstring>
+        <name>SetUserData</name>
+        <param>
+          <type>void *</type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>Set a pointer to arbitrary user data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="243" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="243" bodyend="241"/>
+        <references refid="class_ti_xml_base_1ab242c01590191f644569fa89a080d97c" compoundref="tinyxml_8h" startline="371">userData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1a6559a530ca6763fc301a14d77ed28c17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* TiXmlBase::GetUserData</definition>
+        <argsstring>()</argsstring>
+        <name>GetUserData</name>
+        <briefdescription>
+<para>Get a pointer to arbitrary user data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="244" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="244" bodyend="243"/>
+        <references refid="class_ti_xml_base_1ab242c01590191f644569fa89a080d97c" compoundref="tinyxml_8h" startline="371">userData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1ad0120210e4680ef2088601753ce0ede4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const void *</type>
+        <definition>const void* TiXmlBase::GetUserData</definition>
+        <argsstring>() const </argsstring>
+        <name>GetUserData</name>
+        <briefdescription>
+<para>Get a pointer to arbitrary user data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="245" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="245" bodyend="244"/>
+        <references refid="class_ti_xml_base_1ab242c01590191f644569fa89a080d97c" compoundref="tinyxml_8h" startline="371">userData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1a00e4edb0219d00a1379c856e5a1d2025" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>const char *</type>
+        <definition>virtual const char* TiXmlBase::Parse</definition>
+        <argsstring>(const char *p, TiXmlParsingData *data, TiXmlEncoding encoding)=0</argsstring>
+        <name>Parse</name>
+        <reimplementedby refid="class_ti_xml_attribute_1ad62774421b814894b995af3b5d231dda">Parse</reimplementedby>
+        <reimplementedby refid="class_ti_xml_element_1af95c9165159fd9dfdcc5b894a3fcf85b">Parse</reimplementedby>
+        <reimplementedby refid="class_ti_xml_comment_1a43bddc18ac057734b41d84653b71d3e0">Parse</reimplementedby>
+        <reimplementedby refid="class_ti_xml_text_1a8d2dcfa41fc73d3e62dacc2fcf633819">Parse</reimplementedby>
+        <reimplementedby refid="class_ti_xml_declaration_1a9839ea97ed687a2b7342fd7b0f04361b">Parse</reimplementedby>
+        <reimplementedby refid="class_ti_xml_unknown_1aa51c2694e4177b5f0b5429ee5a81b58d">Parse</reimplementedby>
+        <reimplementedby refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289">Parse</reimplementedby>
+        <param>
+          <type>const char *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ti_xml_parsing_data" kindref="compound">TiXmlParsingData</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96" kindref="member">TiXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="251" column="1"/>
+        <referencedby refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</referencedby>
+        <referencedby refid="class_ti_xml_element_1ac786bce103042d3837c4cc2ff6967d41" compoundref="tinyxmlparser_8cpp" startline="1193" endline="1262">TiXmlElement::ReadValue</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_ti_xml_base_1a0f799ec645bfb8d8a969e83478f379c1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void TiXmlBase::SetCondenseWhiteSpace</definition>
+        <argsstring>(bool condense)</argsstring>
+        <name>SetCondenseWhiteSpace</name>
+        <param>
+          <type>bool</type>
+          <declname>condense</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The world does not agree on whether white space should be kept or not. In order to make everyone happy, these global, static functions are provided to set whether or not TinyXml will condense all white space into a single space or not. The default is to condense. Note changing this value is not thread safe. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="217" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="217" bodyend="217"/>
+        <references refid="class_ti_xml_base_1a447a05f6a3edbb7892f66f9df8244a3d" compoundref="tinyxml_8h" startline="408">condenseWhiteSpace</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1ad4b1472531c647a25b1840a87ae42438" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool TiXmlBase::IsWhiteSpaceCondensed</definition>
+        <argsstring>()</argsstring>
+        <name>IsWhiteSpaceCondensed</name>
+        <briefdescription>
+<para>Return the current white space setting. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="220" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="220" bodyend="220"/>
+        <references refid="class_ti_xml_base_1a447a05f6a3edbb7892f66f9df8244a3d" compoundref="tinyxml_8h" startline="408">condenseWhiteSpace</references>
+        <referencedby refid="class_ti_xml_element_1ac786bce103042d3837c4cc2ff6967d41" compoundref="tinyxmlparser_8cpp" startline="1193" endline="1262">TiXmlElement::ReadValue</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="class_ti_xml_base_1ac0c3d66d8a9e6996a1fa016275e16875" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * TiXmlBase::SkipWhiteSpace</definition>
+        <argsstring>(const char *, TiXmlEncoding encoding)</argsstring>
+        <name>SkipWhiteSpace</name>
+        <param>
+          <type>const char *</type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type><ref refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96" kindref="member">TiXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="280" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxmlparser.cpp" bodystart="315" bodyend="363"/>
+        <references refid="class_ti_xml_base_1af56296d561c0bab4bc8e198cdcf5c48e" compoundref="tinyxml_8h" startline="281" endline="284">IsWhiteSpace</references>
+        <references refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96af95195ddd184a603ec46225e87059d0a" compoundref="tinyxml_8h" startline="162">TIXML_ENCODING_UTF8</references>
+        <references refid="tinyxmlparser_8cpp_1a37999e32163e2a3280bc0b8e1999774e" compoundref="tinyxmlparser_8cpp" startline="63">TIXML_UTF_LEAD_0</references>
+        <references refid="tinyxmlparser_8cpp_1a3cda92a178036c812663a7b75c5e04d0" compoundref="tinyxmlparser_8cpp" startline="64">TIXML_UTF_LEAD_1</references>
+        <references refid="tinyxmlparser_8cpp_1a8e36ce25f81f009c066037e937da3a6a" compoundref="tinyxmlparser_8cpp" startline="65">TIXML_UTF_LEAD_2</references>
+        <referencedby refid="class_ti_xml_node_1ac1e3a8e7578be463b04617786120c2bb" compoundref="tinyxmlparser_8cpp" startline="819" endline="906">TiXmlNode::Identify</referencedby>
+        <referencedby refid="class_ti_xml_attribute_1ad62774421b814894b995af3b5d231dda" compoundref="tinyxmlparser_8cpp" startline="1377" endline="1452">TiXmlAttribute::Parse</referencedby>
+        <referencedby refid="class_ti_xml_element_1af95c9165159fd9dfdcc5b894a3fcf85b" compoundref="tinyxmlparser_8cpp" startline="1050" endline="1190">TiXmlElement::Parse</referencedby>
+        <referencedby refid="class_ti_xml_comment_1a43bddc18ac057734b41d84653b71d3e0" compoundref="tinyxmlparser_8cpp" startline="1351" endline="1374">TiXmlComment::Parse</referencedby>
+        <referencedby refid="class_ti_xml_declaration_1a9839ea97ed687a2b7342fd7b0f04361b" compoundref="tinyxmlparser_8cpp" startline="1560" endline="1617">TiXmlDeclaration::Parse</referencedby>
+        <referencedby refid="class_ti_xml_unknown_1aa51c2694e4177b5f0b5429ee5a81b58d" compoundref="tinyxmlparser_8cpp" startline="1290" endline="1321">TiXmlUnknown::Parse</referencedby>
+        <referencedby refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</referencedby>
+        <referencedby refid="class_ti_xml_base_1aa646c74921aa33156968b802bbf5566e" compoundref="tinyxmlparser_8cpp" startline="575" endline="638">ReadText</referencedby>
+        <referencedby refid="class_ti_xml_element_1ac786bce103042d3837c4cc2ff6967d41" compoundref="tinyxmlparser_8cpp" startline="1193" endline="1262">TiXmlElement::ReadValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1af56296d561c0bab4bc8e198cdcf5c48e" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool TiXmlBase::IsWhiteSpace</definition>
+        <argsstring>(char c)</argsstring>
+        <name>IsWhiteSpace</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="281" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="281" bodyend="284"/>
+        <referencedby refid="class_ti_xml_text_1a1c120428e3b3cf24d79706e6d2b65aa6" compoundref="tinyxmlparser_8cpp" startline="1619" endline="1625">TiXmlText::Blank</referencedby>
+        <referencedby refid="class_ti_xml_base_1a3de391ea9f4c4a8aa10d04480b048795" compoundref="tinyxml_8h" startline="285" endline="290">IsWhiteSpace</referencedby>
+        <referencedby refid="class_ti_xml_attribute_1ad62774421b814894b995af3b5d231dda" compoundref="tinyxmlparser_8cpp" startline="1377" endline="1452">TiXmlAttribute::Parse</referencedby>
+        <referencedby refid="class_ti_xml_declaration_1a9839ea97ed687a2b7342fd7b0f04361b" compoundref="tinyxmlparser_8cpp" startline="1560" endline="1617">TiXmlDeclaration::Parse</referencedby>
+        <referencedby refid="class_ti_xml_base_1aa646c74921aa33156968b802bbf5566e" compoundref="tinyxmlparser_8cpp" startline="575" endline="638">ReadText</referencedby>
+        <referencedby refid="class_ti_xml_base_1ac0c3d66d8a9e6996a1fa016275e16875" compoundref="tinyxmlparser_8cpp" startline="315" endline="363">SkipWhiteSpace</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1a3de391ea9f4c4a8aa10d04480b048795" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool TiXmlBase::IsWhiteSpace</definition>
+        <argsstring>(int c)</argsstring>
+        <name>IsWhiteSpace</name>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="285" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="285" bodyend="290"/>
+        <references refid="class_ti_xml_base_1af56296d561c0bab4bc8e198cdcf5c48e" compoundref="tinyxml_8h" startline="281" endline="284">IsWhiteSpace</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1a1c21a6ab5f7b503acd91f35f183734b3" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * TiXmlBase::ReadName</definition>
+        <argsstring>(const char *p, TIXML_STRING *name, TiXmlEncoding encoding)</argsstring>
+        <name>ReadName</name>
+        <param>
+          <type>const char *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="tinyxml_8h_1a92bada05fd84d9a0c9a5bbe53de26887" kindref="member">TIXML_STRING</ref> *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96" kindref="member">TiXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="301" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxmlparser.cpp" bodystart="402" bodyend="437"/>
+        <references refid="class_ti_xml_base_1ae22522b2e8e1ac43102d16394f639fc8" compoundref="tinyxmlparser_8cpp" startline="130" endline="148">IsAlpha</references>
+        <references refid="class_ti_xml_base_1a321919055c115c78ded17f85a793f368" compoundref="tinyxmlparser_8cpp" startline="151" endline="169">IsAlphaNum</references>
+        <referencedby refid="class_ti_xml_attribute_1ad62774421b814894b995af3b5d231dda" compoundref="tinyxmlparser_8cpp" startline="1377" endline="1452">TiXmlAttribute::Parse</referencedby>
+        <referencedby refid="class_ti_xml_element_1af95c9165159fd9dfdcc5b894a3fcf85b" compoundref="tinyxmlparser_8cpp" startline="1050" endline="1190">TiXmlElement::Parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1aa646c74921aa33156968b802bbf5566e" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * TiXmlBase::ReadText</definition>
+        <argsstring>(const char *in, TIXML_STRING *text, bool ignoreWhiteSpace, const char *endTag, bool ignoreCase, TiXmlEncoding encoding)</argsstring>
+        <name>ReadText</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="tinyxml_8h_1a92bada05fd84d9a0c9a5bbe53de26887" kindref="member">TIXML_STRING</ref> *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignoreWhiteSpace</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>endTag</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignoreCase</declname>
+        </param>
+        <param>
+          <type><ref refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96" kindref="member">TiXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="306" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxmlparser.cpp" bodystart="575" bodyend="638"/>
+        <references refid="class_ti_xml_base_1a447a05f6a3edbb7892f66f9df8244a3d" compoundref="tinyxml_8h" startline="408">condenseWhiteSpace</references>
+        <references refid="class_ti_xml_base_1a5b0fde72d6f662ae1fd6303195d2159b" compoundref="tinyxml_8h" startline="318" endline="352">GetChar</references>
+        <references refid="class_ti_xml_base_1af56296d561c0bab4bc8e198cdcf5c48e" compoundref="tinyxml_8h" startline="281" endline="284">IsWhiteSpace</references>
+        <references refid="class_ti_xml_base_1ac0c3d66d8a9e6996a1fa016275e16875" compoundref="tinyxmlparser_8cpp" startline="315" endline="363">SkipWhiteSpace</references>
+        <references refid="class_ti_xml_base_1a51631e6986179558b9e5850723ed165a" compoundref="tinyxmlparser_8cpp" startline="535" endline="573">StringEqual</references>
+        <referencedby refid="class_ti_xml_attribute_1ad62774421b814894b995af3b5d231dda" compoundref="tinyxmlparser_8cpp" startline="1377" endline="1452">TiXmlAttribute::Parse</referencedby>
+        <referencedby refid="class_ti_xml_comment_1a43bddc18ac057734b41d84653b71d3e0" compoundref="tinyxmlparser_8cpp" startline="1351" endline="1374">TiXmlComment::Parse</referencedby>
+        <referencedby refid="class_ti_xml_text_1a8d2dcfa41fc73d3e62dacc2fcf633819" compoundref="tinyxmlparser_8cpp" startline="1486" endline="1534">TiXmlText::Parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1ac5c08bf3deffcda0bf8ce2958372b584" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * TiXmlBase::GetEntity</definition>
+        <argsstring>(const char *in, char *value, int *length, TiXmlEncoding encoding)</argsstring>
+        <name>GetEntity</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96" kindref="member">TiXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="314" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxmlparser.cpp" bodystart="439" bodyend="532"/>
+        <references refid="struct_ti_xml_base_1_1_entity_1a2a7e1e68b93b4f76255c60c8fa7f738e" compoundref="tinyxml_8h" startline="399">TiXmlBase::Entity::chr</references>
+        <references refid="class_ti_xml_base_1a07c765e3a7f979d343e646ea797b180b" compoundref="tinyxmlparser_8cpp" startline="89" endline="127">ConvertUTF32ToUTF8</references>
+        <references refid="class_ti_xml_base_1aae956c75fedff20d337f7cc109c6b71a" compoundref="tinyxml_8h" startline="407">entity</references>
+        <references refid="class_ti_xml_base_1af0f2dbbf7cd6432553bf78dfd9996b63ab848893c6d03fcd8f42941d7079ccb47" compoundref="tinyxml_8h" startline="403">NUM_ENTITY</references>
+        <references refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96af95195ddd184a603ec46225e87059d0a" compoundref="tinyxml_8h" startline="162">TIXML_ENCODING_UTF8</references>
+        <references refid="tinyxml_8h_1a92bada05fd84d9a0c9a5bbe53de26887" compoundref="tinyxml_8h" startline="53">TIXML_STRING</references>
+        <referencedby refid="class_ti_xml_base_1a5b0fde72d6f662ae1fd6303195d2159b" compoundref="tinyxml_8h" startline="318" endline="352">GetChar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1a5b0fde72d6f662ae1fd6303195d2159b" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* TiXmlBase::GetChar</definition>
+        <argsstring>(const char *p, char *_value, int *length, TiXmlEncoding encoding)</argsstring>
+        <name>GetChar</name>
+        <param>
+          <type>const char *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>_value</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96" kindref="member">TiXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="318" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="318" bodyend="352"/>
+        <references refid="class_ti_xml_base_1ac5c08bf3deffcda0bf8ce2958372b584" compoundref="tinyxmlparser_8cpp" startline="439" endline="532">GetEntity</references>
+        <references refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96af95195ddd184a603ec46225e87059d0a" compoundref="tinyxml_8h" startline="162">TIXML_ENCODING_UTF8</references>
+        <references refid="class_ti_xml_base_1ac8c86058137bdb4b413c3eca58f2d467" compoundref="tinyxml_8h" startline="249" endline="245">utf8ByteTable</references>
+        <referencedby refid="class_ti_xml_base_1aa646c74921aa33156968b802bbf5566e" compoundref="tinyxmlparser_8cpp" startline="575" endline="638">ReadText</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1a283ddc4f1f53a53e7111eff4e12a63d9" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlBase::PutString</definition>
+        <argsstring>(const TIXML_STRING &amp;str, TIXML_STRING *out)</argsstring>
+        <name>PutString</name>
+        <param>
+          <type>const <ref refid="tinyxml_8h_1a92bada05fd84d9a0c9a5bbe53de26887" kindref="member">TIXML_STRING</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="tinyxml_8h_1a92bada05fd84d9a0c9a5bbe53de26887" kindref="member">TIXML_STRING</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="356" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="40" bodyend="121"/>
+        <references refid="class_ti_xml_base_1aae956c75fedff20d337f7cc109c6b71a" compoundref="tinyxml_8h" startline="407">entity</references>
+        <referencedby refid="class_ti_xml_attribute_1a19e6b6862a80b188571c47947e88d030" compoundref="tinyxml_8cpp" startline="1199" endline="1222">TiXmlAttribute::Print</referencedby>
+        <referencedby refid="class_ti_xml_text_1ae74d56c5b3ddec6cc3103dd51821af92" compoundref="tinyxml_8cpp" startline="1320" endline="1338">TiXmlText::Print</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1a51631e6986179558b9e5850723ed165a" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TiXmlBase::StringEqual</definition>
+        <argsstring>(const char *p, const char *endTag, bool ignoreCase, TiXmlEncoding encoding)</argsstring>
+        <name>StringEqual</name>
+        <param>
+          <type>const char *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>endTag</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignoreCase</declname>
+        </param>
+        <param>
+          <type><ref refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96" kindref="member">TiXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="361" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxmlparser.cpp" bodystart="535" bodyend="573"/>
+        <references refid="class_ti_xml_base_1a799f17405a86a5c2029618e85f11a097" compoundref="tinyxml_8h" startline="377" endline="388">ToLower</references>
+        <referencedby refid="class_ti_xml_node_1ac1e3a8e7578be463b04617786120c2bb" compoundref="tinyxmlparser_8cpp" startline="819" endline="906">TiXmlNode::Identify</referencedby>
+        <referencedby refid="class_ti_xml_element_1af95c9165159fd9dfdcc5b894a3fcf85b" compoundref="tinyxmlparser_8cpp" startline="1050" endline="1190">TiXmlElement::Parse</referencedby>
+        <referencedby refid="class_ti_xml_comment_1a43bddc18ac057734b41d84653b71d3e0" compoundref="tinyxmlparser_8cpp" startline="1351" endline="1374">TiXmlComment::Parse</referencedby>
+        <referencedby refid="class_ti_xml_text_1a8d2dcfa41fc73d3e62dacc2fcf633819" compoundref="tinyxmlparser_8cpp" startline="1486" endline="1534">TiXmlText::Parse</referencedby>
+        <referencedby refid="class_ti_xml_declaration_1a9839ea97ed687a2b7342fd7b0f04361b" compoundref="tinyxmlparser_8cpp" startline="1560" endline="1617">TiXmlDeclaration::Parse</referencedby>
+        <referencedby refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</referencedby>
+        <referencedby refid="class_ti_xml_base_1aa646c74921aa33156968b802bbf5566e" compoundref="tinyxmlparser_8cpp" startline="575" endline="638">ReadText</referencedby>
+        <referencedby refid="class_ti_xml_element_1ac786bce103042d3837c4cc2ff6967d41" compoundref="tinyxmlparser_8cpp" startline="1193" endline="1262">TiXmlElement::ReadValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1ae22522b2e8e1ac43102d16394f639fc8" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TiXmlBase::IsAlpha</definition>
+        <argsstring>(unsigned char anyByte, TiXmlEncoding encoding)</argsstring>
+        <name>IsAlpha</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>anyByte</declname>
+        </param>
+        <param>
+          <type><ref refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96" kindref="member">TiXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="375" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxmlparser.cpp" bodystart="130" bodyend="148"/>
+        <referencedby refid="class_ti_xml_node_1ac1e3a8e7578be463b04617786120c2bb" compoundref="tinyxmlparser_8cpp" startline="819" endline="906">TiXmlNode::Identify</referencedby>
+        <referencedby refid="class_ti_xml_base_1a1c21a6ab5f7b503acd91f35f183734b3" compoundref="tinyxmlparser_8cpp" startline="402" endline="437">ReadName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1a321919055c115c78ded17f85a793f368" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TiXmlBase::IsAlphaNum</definition>
+        <argsstring>(unsigned char anyByte, TiXmlEncoding encoding)</argsstring>
+        <name>IsAlphaNum</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>anyByte</declname>
+        </param>
+        <param>
+          <type><ref refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96" kindref="member">TiXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="376" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxmlparser.cpp" bodystart="151" bodyend="169"/>
+        <referencedby refid="class_ti_xml_base_1a1c21a6ab5f7b503acd91f35f183734b3" compoundref="tinyxmlparser_8cpp" startline="402" endline="437">ReadName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1a799f17405a86a5c2029618e85f11a097" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int TiXmlBase::ToLower</definition>
+        <argsstring>(int v, TiXmlEncoding encoding)</argsstring>
+        <name>ToLower</name>
+        <param>
+          <type>int</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96" kindref="member">TiXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="377" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="377" bodyend="388"/>
+        <references refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96af95195ddd184a603ec46225e87059d0a" compoundref="tinyxml_8h" startline="162">TIXML_ENCODING_UTF8</references>
+        <referencedby refid="class_ti_xml_base_1a51631e6986179558b9e5850723ed165a" compoundref="tinyxmlparser_8cpp" startline="535" endline="573">StringEqual</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1a07c765e3a7f979d343e646ea797b180b" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlBase::ConvertUTF32ToUTF8</definition>
+        <argsstring>(unsigned long input, char *output, int *length)</argsstring>
+        <name>ConvertUTF32ToUTF8</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="389" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxmlparser.cpp" bodystart="89" bodyend="127"/>
+        <referencedby refid="class_ti_xml_base_1ac5c08bf3deffcda0bf8ce2958372b584" compoundref="tinyxmlparser_8cpp" startline="439" endline="532">GetEntity</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ti_xml_base_1a626975d7fb27b0a471142ca582b561b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TiXmlBase::TiXmlBase</definition>
+        <argsstring>(const TiXmlBase &amp;)</argsstring>
+        <name>TiXmlBase</name>
+        <param>
+          <type>const <ref refid="class_ti_xml_base" kindref="compound">TiXmlBase</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="392" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_base_1a183315aa6f1bb36d509b179e912cb93f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlBase::operator=</definition>
+        <argsstring>(const TiXmlBase &amp;base)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_ti_xml_base" kindref="compound">TiXmlBase</ref> &amp;</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="393" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_ti_xml_base" kindref="compound">TiXmlBase</ref> is a base class for every class in TinyXml. It does little except to establish that TinyXml classes can be printed and provide some utility functions.</para><para>In XML, the document and elements can contain other elements and other types of nodes.</para><para><verbatim>A Document can contain: Element (container or leaf)
+                        Comment (leaf)
+                        Unknown (leaf)
+                        Declaration( leaf )
+
+An Element can contain: Element (container or leaf)
+                        Text    (leaf)
+                        Attributes (not on tree)
+                        Comment (leaf)
+                        Unknown (leaf)
+
+A Decleration contains: Attributes (not on tree)
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="9291">
+        <label>TiXmlDeclaration</label>
+        <link refid="class_ti_xml_declaration"/>
+        <childnode refid="9289" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9290">
+        <label>TiXmlComment</label>
+        <link refid="class_ti_xml_comment"/>
+        <childnode refid="9289" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9289">
+        <label>TiXmlNode</label>
+        <link refid="class_ti_xml_node"/>
+        <childnode refid="9287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9292">
+        <label>TiXmlDocument</label>
+        <link refid="class_ti_xml_document"/>
+        <childnode refid="9289" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9295">
+        <label>TiXmlUnknown</label>
+        <link refid="class_ti_xml_unknown"/>
+        <childnode refid="9289" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9294">
+        <label>TiXmlText</label>
+        <link refid="class_ti_xml_text"/>
+        <childnode refid="9289" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9287">
+        <label>TiXmlBase</label>
+        <link refid="class_ti_xml_base"/>
+      </node>
+      <node id="9288">
+        <label>TiXmlAttribute</label>
+        <link refid="class_ti_xml_attribute"/>
+        <childnode refid="9287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9293">
+        <label>TiXmlElement</label>
+        <link refid="class_ti_xml_element"/>
+        <childnode refid="9289" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9297">
+        <label>TiXmlCursor</label>
+        <link refid="struct_ti_xml_cursor"/>
+      </node>
+      <node id="9296">
+        <label>TiXmlBase</label>
+        <link refid="class_ti_xml_base"/>
+        <childnode refid="9297" relation="usage">
+          <edgelabel>location</edgelabel>
+        </childnode>
+        <childnode refid="9298" relation="usage">
+          <edgelabel>entity</edgelabel>
+        </childnode>
+      </node>
+      <node id="9298">
+        <label>TiXmlBase::Entity</label>
+        <link refid="struct_ti_xml_base_1_1_entity"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="191" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="190" bodyend="409"/>
+    <listofallmembers>
+      <member refid="class_ti_xml_base_1ab54bfb9b70fe6dd276e7b279cab7f003" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>Column</name></member>
+      <member refid="class_ti_xml_base_1a447a05f6a3edbb7892f66f9df8244a3d" prot="private" virt="non-virtual"><scope>TiXmlBase</scope><name>condenseWhiteSpace</name></member>
+      <member refid="class_ti_xml_base_1a07c765e3a7f979d343e646ea797b180b" prot="protected" virt="non-virtual"><scope>TiXmlBase</scope><name>ConvertUTF32ToUTF8</name></member>
+      <member refid="class_ti_xml_base_1aae956c75fedff20d337f7cc109c6b71a" prot="private" virt="non-virtual"><scope>TiXmlBase</scope><name>entity</name></member>
+      <member refid="class_ti_xml_base_1a7ac8feec4100e446b3d78e1ac0659700" prot="protected" virt="non-virtual"><scope>TiXmlBase</scope><name>errorString</name></member>
+      <member refid="class_ti_xml_base_1a5b0fde72d6f662ae1fd6303195d2159b" prot="protected" virt="non-virtual"><scope>TiXmlBase</scope><name>GetChar</name></member>
+      <member refid="class_ti_xml_base_1ac5c08bf3deffcda0bf8ce2958372b584" prot="protected" virt="non-virtual"><scope>TiXmlBase</scope><name>GetEntity</name></member>
+      <member refid="class_ti_xml_base_1a6559a530ca6763fc301a14d77ed28c17" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>GetUserData</name></member>
+      <member refid="class_ti_xml_base_1ad0120210e4680ef2088601753ce0ede4" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>GetUserData</name></member>
+      <member refid="class_ti_xml_base_1ae22522b2e8e1ac43102d16394f639fc8" prot="protected" virt="non-virtual"><scope>TiXmlBase</scope><name>IsAlpha</name></member>
+      <member refid="class_ti_xml_base_1a321919055c115c78ded17f85a793f368" prot="protected" virt="non-virtual"><scope>TiXmlBase</scope><name>IsAlphaNum</name></member>
+      <member refid="class_ti_xml_base_1af56296d561c0bab4bc8e198cdcf5c48e" prot="protected" virt="non-virtual"><scope>TiXmlBase</scope><name>IsWhiteSpace</name></member>
+      <member refid="class_ti_xml_base_1a3de391ea9f4c4a8aa10d04480b048795" prot="protected" virt="non-virtual"><scope>TiXmlBase</scope><name>IsWhiteSpace</name></member>
+      <member refid="class_ti_xml_base_1ad4b1472531c647a25b1840a87ae42438" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>IsWhiteSpaceCondensed</name></member>
+      <member refid="class_ti_xml_base_1a0d992580f3bc264909f898e942677a3c" prot="protected" virt="non-virtual"><scope>TiXmlBase</scope><name>location</name></member>
+      <member refid="class_ti_xml_base_1af0f2dbbf7cd6432553bf78dfd9996b63aeb571e41586d47e28f60445cb9b41d49" prot="private" virt="non-virtual"><scope>TiXmlBase</scope><name>MAX_ENTITY_LENGTH</name></member>
+      <member refid="class_ti_xml_base_1af0f2dbbf7cd6432553bf78dfd9996b63ab848893c6d03fcd8f42941d7079ccb47" prot="private" virt="non-virtual"><scope>TiXmlBase</scope><name>NUM_ENTITY</name></member>
+      <member refid="class_ti_xml_base_1a183315aa6f1bb36d509b179e912cb93f" prot="private" virt="non-virtual"><scope>TiXmlBase</scope><name>operator=</name></member>
+      <member refid="class_ti_xml_base_1a00e4edb0219d00a1379c856e5a1d2025" prot="public" virt="pure-virtual"><scope>TiXmlBase</scope><name>Parse</name></member>
+      <member refid="class_ti_xml_base_1a0de56b3f2ef14c65091a3b916437b512" prot="public" virt="pure-virtual"><scope>TiXmlBase</scope><name>Print</name></member>
+      <member refid="class_ti_xml_base_1a283ddc4f1f53a53e7111eff4e12a63d9" prot="protected" virt="non-virtual"><scope>TiXmlBase</scope><name>PutString</name></member>
+      <member refid="class_ti_xml_base_1a1c21a6ab5f7b503acd91f35f183734b3" prot="protected" virt="non-virtual"><scope>TiXmlBase</scope><name>ReadName</name></member>
+      <member refid="class_ti_xml_base_1aa646c74921aa33156968b802bbf5566e" prot="protected" virt="non-virtual"><scope>TiXmlBase</scope><name>ReadText</name></member>
+      <member refid="class_ti_xml_base_1a024bceb070188df92c2a8d8852dd0853" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>Row</name></member>
+      <member refid="class_ti_xml_base_1a0f799ec645bfb8d8a969e83478f379c1" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>SetCondenseWhiteSpace</name></member>
+      <member refid="class_ti_xml_base_1ac6b3e0f790930d4970ec30764e937b5d" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>SetUserData</name></member>
+      <member refid="class_ti_xml_base_1ac0c3d66d8a9e6996a1fa016275e16875" prot="protected" virt="non-virtual"><scope>TiXmlBase</scope><name>SkipWhiteSpace</name></member>
+      <member refid="class_ti_xml_base_1a51631e6986179558b9e5850723ed165a" prot="protected" virt="non-virtual"><scope>TiXmlBase</scope><name>StringEqual</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fbabcabc1b8efabeda1cc4352aa73d64390" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fbab345f3e42e6ae9cdedee2b95e4d461b9" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR_DOCUMENT_EMPTY</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba679b15d950f29257700a724bb118c34d" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR_DOCUMENT_TOP_ONLY</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fbade7edbad3a94a6c161cac2638f380e17" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR_EMBEDDED_NULL</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fbadcc31ca78a9d507a88c9fafb3d18a3c4" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR_FAILED_TO_READ_ELEMENT_NAME</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fbab803949b8f12e03b5b57f86d9c52b614" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR_OPENING_FILE</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba92e3bfc96126d3544f47e8b3f031e7bb" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR_OUT_OF_MEMORY</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fbaab2c858631b5d38eae1e6675949b9cd4" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR_PARSING_CDATA</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba72e3072a44be499edb89593f6ce10f6c" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR_PARSING_COMMENT</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba4c200f9d125027ab449e2be7be471ba0" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR_PARSING_DECLARATION</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba5cbfcf7fe5e67f0cd1aef98deac55dd2" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR_PARSING_ELEMENT</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba5f2aee664733a20f13f6f77556b9fa85" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR_PARSING_EMPTY</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba24c814fdcf1d84704869e6f76b19cb6e" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR_PARSING_UNKNOWN</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba670fac23171b64829f90639cc3696d6e" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR_READING_ATTRIBUTES</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fbafefdc75db23215e846605a2b5af0c2d3" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR_READING_ELEMENT_VALUE</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba175f7c72e2f9630bb96ef5137b325502" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR_READING_END_TAG</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba14552894942250efcec6b00dc52fc48a" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_ERROR_STRING_COUNT</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba750a76ca602241c416d5ec357d55fba1" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TIXML_NO_ERROR</name></member>
+      <member refid="class_ti_xml_base_1ac6753fe8a2c89669038fcf281cb301bf" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>TiXmlBase</name></member>
+      <member refid="class_ti_xml_base_1a626975d7fb27b0a471142ca582b561b4" prot="private" virt="non-virtual"><scope>TiXmlBase</scope><name>TiXmlBase</name></member>
+      <member refid="class_ti_xml_base_1a173617f6dfe902cf484ce5552b950475" prot="private" virt="non-virtual"><scope>TiXmlBase</scope><name>TiXmlDocument</name></member>
+      <member refid="class_ti_xml_base_1ab6592e32cb9132be517cc12a70564c4b" prot="private" virt="non-virtual"><scope>TiXmlBase</scope><name>TiXmlElement</name></member>
+      <member refid="class_ti_xml_base_1a218872a0d985ae30e78c55adc4bdb196" prot="private" virt="non-virtual"><scope>TiXmlBase</scope><name>TiXmlNode</name></member>
+      <member refid="class_ti_xml_base_1a799f17405a86a5c2029618e85f11a097" prot="protected" virt="non-virtual"><scope>TiXmlBase</scope><name>ToLower</name></member>
+      <member refid="class_ti_xml_base_1ab242c01590191f644569fa89a080d97c" prot="protected" virt="non-virtual"><scope>TiXmlBase</scope><name>userData</name></member>
+      <member refid="class_ti_xml_base_1ac8c86058137bdb4b413c3eca58f2d467" prot="public" virt="non-virtual"><scope>TiXmlBase</scope><name>utf8ByteTable</name></member>
+      <member refid="class_ti_xml_base_1ad1837ecb25a913612fa1115f090cbb56" prot="public" virt="virtual"><scope>TiXmlBase</scope><name>~TiXmlBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

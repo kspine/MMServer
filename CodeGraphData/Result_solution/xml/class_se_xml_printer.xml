@@ -1,0 +1,516 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_se_xml_printer" kind="class" prot="public">
+    <compoundname>SeXmlPrinter</compoundname>
+    <basecompoundref refid="class_se_xml_visitor" prot="public" virt="non-virtual">SeXmlVisitor</basecompoundref>
+    <includes refid="_se_xml_8h" local="no">SeXml.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_se_xml_printer_1a08668a5f24fa1530d2be9d2e21269a7a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeXmlPrinter::depth</definition>
+        <argsstring></argsstring>
+        <name>depth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1734" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1734" bodyend="-1"/>
+        <referencedby refid="class_se_xml_printer_1a70cc7ab5d6ab21a76fd09dece3418b66" compoundref="_se_xml_8h" startline="1726" endline="1729">DoIndent</referencedby>
+        <referencedby refid="class_se_xml_printer_1ae93803a026178e5c3ed9cab3198f0bdd" compoundref="_se_xml_8cpp" startline="3477" endline="3511">VisitEnter</referencedby>
+        <referencedby refid="class_se_xml_printer_1ae188eaedef85b8775cad9f24d4ea9563" compoundref="_se_xml_8cpp" startline="3514" endline="3537">VisitExit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_xml_printer_1a78261b911825fa542e9732ecf8dc1fd1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SeXmlPrinter::simpleTextPrint</definition>
+        <argsstring></argsstring>
+        <name>simpleTextPrint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1735" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1735" bodyend="-1"/>
+        <referencedby refid="class_se_xml_printer_1a9a072352bdc7027060e6399bf6baec83" compoundref="_se_xml_8cpp" startline="3540" endline="3565">Visit</referencedby>
+        <referencedby refid="class_se_xml_printer_1ae93803a026178e5c3ed9cab3198f0bdd" compoundref="_se_xml_8cpp" startline="3477" endline="3511">VisitEnter</referencedby>
+        <referencedby refid="class_se_xml_printer_1ae188eaedef85b8775cad9f24d4ea9563" compoundref="_se_xml_8cpp" startline="3514" endline="3537">VisitExit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_xml_printer_1aeddae55f66e91ccd8b0fa34f447a75bc" prot="private" static="no" mutable="no">
+        <type><ref refid="_se_xml_8h_1aba1e614be498200cbfd6f95fe347cb84" kindref="member">SeXml_STRING</ref></type>
+        <definition>SeXml_STRING SeXmlPrinter::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1736" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1736" bodyend="-1"/>
+        <referencedby refid="class_se_xml_printer_1a995d2536528d75c5775f2a2b299c96b9" compoundref="_se_xml_8h" startline="1718" endline="1718">CStr</referencedby>
+        <referencedby refid="class_se_xml_printer_1a70cc7ab5d6ab21a76fd09dece3418b66" compoundref="_se_xml_8h" startline="1726" endline="1729">DoIndent</referencedby>
+        <referencedby refid="class_se_xml_printer_1ab6a27b3c87dadb0056559a393b8fd8ee" compoundref="_se_xml_8h" startline="1730" endline="1732">DoLineBreak</referencedby>
+        <referencedby refid="class_se_xml_printer_1adf567c3d1556c6e9b74572144a41f1fa" compoundref="_se_xml_8h" startline="1720" endline="1720">Size</referencedby>
+        <referencedby refid="class_se_xml_printer_1ab812cfa9d8ced439d40bf892156e0e2a" compoundref="_se_xml_8h" startline="1723" endline="1723">Str</referencedby>
+        <referencedby refid="class_se_xml_printer_1a9a072352bdc7027060e6399bf6baec83" compoundref="_se_xml_8cpp" startline="3540" endline="3565">Visit</referencedby>
+        <referencedby refid="class_se_xml_printer_1ae93803a026178e5c3ed9cab3198f0bdd" compoundref="_se_xml_8cpp" startline="3477" endline="3511">VisitEnter</referencedby>
+        <referencedby refid="class_se_xml_printer_1ae188eaedef85b8775cad9f24d4ea9563" compoundref="_se_xml_8cpp" startline="3514" endline="3537">VisitExit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_xml_printer_1a2ea6f1ef6cbb455db27e5625e7b4848f" prot="private" static="no" mutable="no">
+        <type><ref refid="_se_xml_8h_1aba1e614be498200cbfd6f95fe347cb84" kindref="member">SeXml_STRING</ref></type>
+        <definition>SeXml_STRING SeXmlPrinter::indent</definition>
+        <argsstring></argsstring>
+        <name>indent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1737" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1737" bodyend="-1"/>
+        <referencedby refid="class_se_xml_printer_1a70cc7ab5d6ab21a76fd09dece3418b66" compoundref="_se_xml_8h" startline="1726" endline="1729">DoIndent</referencedby>
+        <referencedby refid="class_se_xml_printer_1a9e00a225addf9d2f17840baed6afd51b" compoundref="_se_xml_8h" startline="1702" endline="1702">Indent</referencedby>
+        <referencedby refid="class_se_xml_printer_1a2704e416ebabeb5b1af7b9320cff7394" compoundref="_se_xml_8h" startline="1700" endline="1700">SetIndent</referencedby>
+        <referencedby refid="class_se_xml_printer_1ad8c4ab1d8eb5b6d6058a658ab5522ddc" compoundref="_se_xml_8h" startline="1714" endline="1716">SetStreamPrinting</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_xml_printer_1a95c97105310cdc7bb39bddcf1dfb30ba" prot="private" static="no" mutable="no">
+        <type><ref refid="_se_xml_8h_1aba1e614be498200cbfd6f95fe347cb84" kindref="member">SeXml_STRING</ref></type>
+        <definition>SeXml_STRING SeXmlPrinter::lineBreak</definition>
+        <argsstring></argsstring>
+        <name>lineBreak</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1738" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1738" bodyend="-1"/>
+        <referencedby refid="class_se_xml_printer_1ab6a27b3c87dadb0056559a393b8fd8ee" compoundref="_se_xml_8h" startline="1730" endline="1732">DoLineBreak</referencedby>
+        <referencedby refid="class_se_xml_printer_1aa4a54fafc4e93e5d6daa180ae3580918" compoundref="_se_xml_8h" startline="1709" endline="1709">LineBreak</referencedby>
+        <referencedby refid="class_se_xml_printer_1a18ba527846cd22fb712acf7198873229" compoundref="_se_xml_8h" startline="1707" endline="1707">SetLineBreak</referencedby>
+        <referencedby refid="class_se_xml_printer_1ad8c4ab1d8eb5b6d6058a658ab5522ddc" compoundref="_se_xml_8h" startline="1714" endline="1716">SetStreamPrinting</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_se_xml_printer_1a0216b72f5101dfdd77ea1314a8d07582" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SeXmlPrinter::SeXmlPrinter</definition>
+        <argsstring>()</argsstring>
+        <name>SeXmlPrinter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1683" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1683" bodyend="1684"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1afb5be7ba4759f6164ecfca20d4fea653" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SeXmlPrinter::VisitEnter</definition>
+        <argsstring>(const SeXmlDocument &amp;doc)</argsstring>
+        <name>VisitEnter</name>
+        <reimplements refid="class_se_xml_visitor_1a98938adf237ea2a9a53738e49c6a8f7f">VisitEnter</reimplements>
+        <param>
+          <type>const <ref refid="class_se_xml_document" kindref="compound">SeXmlDocument</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Visit a document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1686" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="3467" bodyend="3470"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1a7a4f71b6e4485e919995d779a03b4b65" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SeXmlPrinter::VisitExit</definition>
+        <argsstring>(const SeXmlDocument &amp;doc)</argsstring>
+        <name>VisitExit</name>
+        <reimplements refid="class_se_xml_visitor_1ab2ccd0003863bc10cf2fcc559547b963">VisitExit</reimplements>
+        <param>
+          <type>const <ref refid="class_se_xml_document" kindref="compound">SeXmlDocument</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Visit a document. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1687" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="3472" bodyend="3475"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1ae93803a026178e5c3ed9cab3198f0bdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SeXmlPrinter::VisitEnter</definition>
+        <argsstring>(const SeXmlElement &amp;element, const SeXmlAttribute *firstAttribute)</argsstring>
+        <name>VisitEnter</name>
+        <reimplements refid="class_se_xml_visitor_1a553bc6a3195596352241d2d5822442b7">VisitEnter</reimplements>
+        <param>
+          <type>const <ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="class_se_xml_attribute" kindref="compound">SeXmlAttribute</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Visit an element. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1689" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="3477" bodyend="3511"/>
+        <references refid="class_se_xml_printer_1aeddae55f66e91ccd8b0fa34f447a75bc" compoundref="_se_xml_8h" startline="1736">buffer</references>
+        <references refid="class_se_xml_text_1ae5c049ac970239d3cc685f90d24ecdf0" compoundref="_se_xml_8h" startline="1194" endline="1194">SeXmlText::CDATA</references>
+        <references refid="class_se_xml_printer_1a08668a5f24fa1530d2be9d2e21269a7a" compoundref="_se_xml_8h" startline="1734">depth</references>
+        <references refid="class_se_xml_printer_1a70cc7ab5d6ab21a76fd09dece3418b66" compoundref="_se_xml_8h" startline="1726" endline="1729">DoIndent</references>
+        <references refid="class_se_xml_printer_1ab6a27b3c87dadb0056559a393b8fd8ee" compoundref="_se_xml_8h" startline="1730" endline="1732">DoLineBreak</references>
+        <references refid="class_se_xml_node_1acb7425a84181ff6c7c2c32f40d820da4" compoundref="_se_xml_8h" startline="504">SeXmlNode::FirstChild</references>
+        <references refid="class_se_xml_node_1a0bfafe7b58d1a2b98382ca166abd9a7a" compoundref="_se_xml_8h" startline="513" endline="513">SeXmlNode::LastChild</references>
+        <references refid="class_se_xml_attribute_1acf1f13cb181f5a9b86aba25fd634fba9" compoundref="_se_xml_8cpp" startline="2770" endline="2777">SeXmlAttribute::Next</references>
+        <references refid="class_se_xml_printer_1a78261b911825fa542e9732ecf8dc1fd1" compoundref="_se_xml_8h" startline="1735">simpleTextPrint</references>
+        <references refid="class_se_xml_node_1abeb3a824eb07a3c40c79901c9fb4c00c" compoundref="_se_xml_8h" startline="674" endline="673">SeXmlNode::ToText</references>
+        <references refid="class_se_xml_node_1ac548e8c02b1152a1f4bc4dc700dd9dfc" compoundref="_se_xml_8h" startline="474" endline="474">SeXmlNode::Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1ae188eaedef85b8775cad9f24d4ea9563" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SeXmlPrinter::VisitExit</definition>
+        <argsstring>(const SeXmlElement &amp;element)</argsstring>
+        <name>VisitExit</name>
+        <reimplements refid="class_se_xml_visitor_1a2a4e6bc0f4753a6c8ee2e621bb6317ad">VisitExit</reimplements>
+        <param>
+          <type>const <ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Visit an element. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1690" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="3514" bodyend="3537"/>
+        <references refid="class_se_xml_printer_1aeddae55f66e91ccd8b0fa34f447a75bc" compoundref="_se_xml_8h" startline="1736">buffer</references>
+        <references refid="class_se_xml_printer_1a08668a5f24fa1530d2be9d2e21269a7a" compoundref="_se_xml_8h" startline="1734">depth</references>
+        <references refid="class_se_xml_printer_1a70cc7ab5d6ab21a76fd09dece3418b66" compoundref="_se_xml_8h" startline="1726" endline="1729">DoIndent</references>
+        <references refid="class_se_xml_printer_1ab6a27b3c87dadb0056559a393b8fd8ee" compoundref="_se_xml_8h" startline="1730" endline="1732">DoLineBreak</references>
+        <references refid="class_se_xml_node_1acb7425a84181ff6c7c2c32f40d820da4" compoundref="_se_xml_8h" startline="504">SeXmlNode::FirstChild</references>
+        <references refid="class_se_xml_printer_1a78261b911825fa542e9732ecf8dc1fd1" compoundref="_se_xml_8h" startline="1735">simpleTextPrint</references>
+        <references refid="class_se_xml_node_1ac548e8c02b1152a1f4bc4dc700dd9dfc" compoundref="_se_xml_8h" startline="474" endline="474">SeXmlNode::Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1a5953a588bd8fb9f649b1e20bf7f4d440" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SeXmlPrinter::Visit</definition>
+        <argsstring>(const SeXmlDeclaration &amp;declaration)</argsstring>
+        <name>Visit</name>
+        <reimplements refid="class_se_xml_visitor_1a9fa30ba184552e6b9652cfb482a34e62">Visit</reimplements>
+        <param>
+          <type>const <ref refid="class_se_xml_declaration" kindref="compound">SeXmlDeclaration</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Visit a declaration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1692" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="3568" bodyend="3574"/>
+        <references refid="class_se_xml_printer_1aeddae55f66e91ccd8b0fa34f447a75bc" compoundref="_se_xml_8h" startline="1736">buffer</references>
+        <references refid="class_se_xml_printer_1a70cc7ab5d6ab21a76fd09dece3418b66" compoundref="_se_xml_8h" startline="1726" endline="1729">DoIndent</references>
+        <references refid="class_se_xml_printer_1ab6a27b3c87dadb0056559a393b8fd8ee" compoundref="_se_xml_8h" startline="1730" endline="1732">DoLineBreak</references>
+        <references refid="class_se_xml_declaration_1a835d769aa13d7100def4445a06f08a19" compoundref="_se_xml_8cpp" startline="3016" endline="3035">SeXmlDeclaration::Print</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1a9a072352bdc7027060e6399bf6baec83" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SeXmlPrinter::Visit</definition>
+        <argsstring>(const SeXmlText &amp;text)</argsstring>
+        <name>Visit</name>
+        <reimplements refid="class_se_xml_visitor_1a3fa49a1fa21e2ebf73b638ae7603e7e3">Visit</reimplements>
+        <param>
+          <type>const <ref refid="class_se_xml_text" kindref="compound">SeXmlText</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Visit a text node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1693" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="3540" bodyend="3565"/>
+        <references refid="class_se_xml_printer_1aeddae55f66e91ccd8b0fa34f447a75bc" compoundref="_se_xml_8h" startline="1736">buffer</references>
+        <references refid="class_se_xml_text_1ae5c049ac970239d3cc685f90d24ecdf0" compoundref="_se_xml_8h" startline="1194" endline="1194">SeXmlText::CDATA</references>
+        <references refid="class_se_xml_printer_1a70cc7ab5d6ab21a76fd09dece3418b66" compoundref="_se_xml_8h" startline="1726" endline="1729">DoIndent</references>
+        <references refid="class_se_xml_printer_1ab6a27b3c87dadb0056559a393b8fd8ee" compoundref="_se_xml_8h" startline="1730" endline="1732">DoLineBreak</references>
+        <references refid="class_se_xml_base_1a1ff244393ecfa2592f20e42b003bed8e" compoundref="_se_xml_8cpp" startline="1667" endline="1748">SeXmlBase::EncodeString</references>
+        <references refid="_se_xml_8h_1aba1e614be498200cbfd6f95fe347cb84" compoundref="_se_xml_8h" startline="45">SeXml_STRING</references>
+        <references refid="class_se_xml_printer_1a78261b911825fa542e9732ecf8dc1fd1" compoundref="_se_xml_8h" startline="1735">simpleTextPrint</references>
+        <references refid="class_se_xml_node_1ac548e8c02b1152a1f4bc4dc700dd9dfc" compoundref="_se_xml_8h" startline="474" endline="474">SeXmlNode::Value</references>
+        <references refid="class_se_xml_node_1a61e099b3356df3fc0c309215c0cda021" compoundref="_se_xml_8h" startline="482" endline="482">SeXmlNode::ValueTStr</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1ace1ae28f1cbef703c6522873f78eebf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SeXmlPrinter::Visit</definition>
+        <argsstring>(const SeXmlComment &amp;comment)</argsstring>
+        <name>Visit</name>
+        <reimplements refid="class_se_xml_visitor_1a847b493d2b329891030114e060186a34">Visit</reimplements>
+        <param>
+          <type>const <ref refid="class_se_xml_comment" kindref="compound">SeXmlComment</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Visit a comment node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1694" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="3577" bodyend="3585"/>
+        <references refid="class_se_xml_printer_1aeddae55f66e91ccd8b0fa34f447a75bc" compoundref="_se_xml_8h" startline="1736">buffer</references>
+        <references refid="class_se_xml_printer_1a70cc7ab5d6ab21a76fd09dece3418b66" compoundref="_se_xml_8h" startline="1726" endline="1729">DoIndent</references>
+        <references refid="class_se_xml_printer_1ab6a27b3c87dadb0056559a393b8fd8ee" compoundref="_se_xml_8h" startline="1730" endline="1732">DoLineBreak</references>
+        <references refid="class_se_xml_node_1ac548e8c02b1152a1f4bc4dc700dd9dfc" compoundref="_se_xml_8h" startline="474" endline="474">SeXmlNode::Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1ace06a5df7a505185010a2e2ca4954d6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool SeXmlPrinter::Visit</definition>
+        <argsstring>(const SeXmlUnknown &amp;unknown)</argsstring>
+        <name>Visit</name>
+        <reimplements refid="class_se_xml_visitor_1aeba9805fc4f1b3de2aad22aa5ab5a21b">Visit</reimplements>
+        <param>
+          <type>const <ref refid="class_se_xml_unknown" kindref="compound">SeXmlUnknown</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>Visit an unknown node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1695" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="3588" bodyend="3596"/>
+        <references refid="class_se_xml_printer_1aeddae55f66e91ccd8b0fa34f447a75bc" compoundref="_se_xml_8h" startline="1736">buffer</references>
+        <references refid="class_se_xml_printer_1a70cc7ab5d6ab21a76fd09dece3418b66" compoundref="_se_xml_8h" startline="1726" endline="1729">DoIndent</references>
+        <references refid="class_se_xml_printer_1ab6a27b3c87dadb0056559a393b8fd8ee" compoundref="_se_xml_8h" startline="1730" endline="1732">DoLineBreak</references>
+        <references refid="class_se_xml_node_1ac548e8c02b1152a1f4bc4dc700dd9dfc" compoundref="_se_xml_8h" startline="474" endline="474">SeXmlNode::Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1a2704e416ebabeb5b1af7b9320cff7394" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeXmlPrinter::SetIndent</definition>
+        <argsstring>(const char *_indent)</argsstring>
+        <name>SetIndent</name>
+        <param>
+          <type>const char *</type>
+          <declname>_indent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the indent characters for printing. By default 4 spaces but tab () is also useful, or null/empty string for no indentation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1700" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1700" bodyend="1700"/>
+        <references refid="class_se_xml_printer_1a2ea6f1ef6cbb455db27e5625e7b4848f" compoundref="_se_xml_8h" startline="1737">indent</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1a9e00a225addf9d2f17840baed6afd51b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* SeXmlPrinter::Indent</definition>
+        <argsstring>()</argsstring>
+        <name>Indent</name>
+        <briefdescription>
+<para>Query the indention string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1702" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1702" bodyend="1702"/>
+        <references refid="class_se_xml_printer_1a2ea6f1ef6cbb455db27e5625e7b4848f" compoundref="_se_xml_8h" startline="1737">indent</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1a18ba527846cd22fb712acf7198873229" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeXmlPrinter::SetLineBreak</definition>
+        <argsstring>(const char *_lineBreak)</argsstring>
+        <name>SetLineBreak</name>
+        <param>
+          <type>const char *</type>
+          <declname>_lineBreak</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the line breaking string. By default set to newline (<linebreak/>
+). Some operating systems prefer other characters, or can be set to the null/empty string for no indenation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1707" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1707" bodyend="1707"/>
+        <references refid="class_se_xml_printer_1a95c97105310cdc7bb39bddcf1dfb30ba" compoundref="_se_xml_8h" startline="1738">lineBreak</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1aa4a54fafc4e93e5d6daa180ae3580918" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* SeXmlPrinter::LineBreak</definition>
+        <argsstring>()</argsstring>
+        <name>LineBreak</name>
+        <briefdescription>
+<para>Query the current line breaking string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1709" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1709" bodyend="1709"/>
+        <references refid="class_se_xml_printer_1a95c97105310cdc7bb39bddcf1dfb30ba" compoundref="_se_xml_8h" startline="1738">lineBreak</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1ad8c4ab1d8eb5b6d6058a658ab5522ddc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeXmlPrinter::SetStreamPrinting</definition>
+        <argsstring>()</argsstring>
+        <name>SetStreamPrinting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Switch over to &quot;stream printing&quot; which is the most dense formatting without linebreaks. Common when the XML is needed for network transmission. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1714" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1714" bodyend="1716"/>
+        <references refid="class_se_xml_printer_1a2ea6f1ef6cbb455db27e5625e7b4848f" compoundref="_se_xml_8h" startline="1737">indent</references>
+        <references refid="class_se_xml_printer_1a95c97105310cdc7bb39bddcf1dfb30ba" compoundref="_se_xml_8h" startline="1738">lineBreak</references>
+        <referencedby refid="_se_xml_8cpp_1a3d617ee6c992a1631f920bc9d6b277f7" compoundref="_se_xml_8cpp" startline="3200" endline="3208">operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1a995d2536528d75c5775f2a2b299c96b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* SeXmlPrinter::CStr</definition>
+        <argsstring>()</argsstring>
+        <name>CStr</name>
+        <briefdescription>
+<para>Return the result. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1718" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1718" bodyend="1718"/>
+        <references refid="class_se_xml_printer_1aeddae55f66e91ccd8b0fa34f447a75bc" compoundref="_se_xml_8h" startline="1736">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1adf567c3d1556c6e9b74572144a41f1fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t SeXmlPrinter::Size</definition>
+        <argsstring>()</argsstring>
+        <name>Size</name>
+        <briefdescription>
+<para>Return the length of the result string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1720" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1720" bodyend="1720"/>
+        <references refid="class_se_xml_printer_1aeddae55f66e91ccd8b0fa34f447a75bc" compoundref="_se_xml_8h" startline="1736">buffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1ab812cfa9d8ced439d40bf892156e0e2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; SeXmlPrinter::Str</definition>
+        <argsstring>()</argsstring>
+        <name>Str</name>
+        <briefdescription>
+<para>Return the result. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1723" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1723" bodyend="1723"/>
+        <references refid="class_se_xml_printer_1aeddae55f66e91ccd8b0fa34f447a75bc" compoundref="_se_xml_8h" startline="1736">buffer</references>
+        <referencedby refid="_se_xml_8cpp_1a3d617ee6c992a1631f920bc9d6b277f7" compoundref="_se_xml_8cpp" startline="3200" endline="3208">operator&lt;&lt;</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_se_xml_printer_1a70cc7ab5d6ab21a76fd09dece3418b66" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeXmlPrinter::DoIndent</definition>
+        <argsstring>()</argsstring>
+        <name>DoIndent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1726" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1726" bodyend="1729"/>
+        <references refid="class_se_xml_printer_1aeddae55f66e91ccd8b0fa34f447a75bc" compoundref="_se_xml_8h" startline="1736">buffer</references>
+        <references refid="class_se_xml_printer_1a08668a5f24fa1530d2be9d2e21269a7a" compoundref="_se_xml_8h" startline="1734">depth</references>
+        <references refid="class_se_xml_printer_1a2ea6f1ef6cbb455db27e5625e7b4848f" compoundref="_se_xml_8h" startline="1737">indent</references>
+        <referencedby refid="class_se_xml_printer_1a9a072352bdc7027060e6399bf6baec83" compoundref="_se_xml_8cpp" startline="3540" endline="3565">Visit</referencedby>
+        <referencedby refid="class_se_xml_printer_1ae93803a026178e5c3ed9cab3198f0bdd" compoundref="_se_xml_8cpp" startline="3477" endline="3511">VisitEnter</referencedby>
+        <referencedby refid="class_se_xml_printer_1ae188eaedef85b8775cad9f24d4ea9563" compoundref="_se_xml_8cpp" startline="3514" endline="3537">VisitExit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_printer_1ab6a27b3c87dadb0056559a393b8fd8ee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeXmlPrinter::DoLineBreak</definition>
+        <argsstring>()</argsstring>
+        <name>DoLineBreak</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1730" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1730" bodyend="1732"/>
+        <references refid="class_se_xml_printer_1aeddae55f66e91ccd8b0fa34f447a75bc" compoundref="_se_xml_8h" startline="1736">buffer</references>
+        <references refid="class_se_xml_printer_1a95c97105310cdc7bb39bddcf1dfb30ba" compoundref="_se_xml_8h" startline="1738">lineBreak</references>
+        <referencedby refid="class_se_xml_printer_1a9a072352bdc7027060e6399bf6baec83" compoundref="_se_xml_8cpp" startline="3540" endline="3565">Visit</referencedby>
+        <referencedby refid="class_se_xml_printer_1ae93803a026178e5c3ed9cab3198f0bdd" compoundref="_se_xml_8cpp" startline="3477" endline="3511">VisitEnter</referencedby>
+        <referencedby refid="class_se_xml_printer_1ae188eaedef85b8775cad9f24d4ea9563" compoundref="_se_xml_8cpp" startline="3514" endline="3537">VisitExit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Print to memory functionality. The <ref refid="class_se_xml_printer" kindref="compound">SeXmlPrinter</ref> is useful when you need to:</para><para><orderedlist>
+<listitem><para>Print to memory (especially in non-STL mode)</para></listitem><listitem><para>Control formatting (line endings, etc.)</para></listitem></orderedlist>
+</para><para>When constructed, the <ref refid="class_se_xml_printer" kindref="compound">SeXmlPrinter</ref> is in its default &quot;pretty printing&quot; mode. Before calling Accept() you can call methods to control the printing of the XML document. After <ref refid="class_se_xml_node_1a0bd5f8ed750944abaf9f0d5018d93ce4" kindref="member">SeXmlNode::Accept()</ref> is called, the printed document can be accessed via the <ref refid="class_se_xml_printer_1a995d2536528d75c5775f2a2b299c96b9" kindref="member">CStr()</ref>, <ref refid="class_se_xml_printer_1ab812cfa9d8ced439d40bf892156e0e2a" kindref="member">Str()</ref>, and <ref refid="class_se_xml_printer_1adf567c3d1556c6e9b74572144a41f1fa" kindref="member">Size()</ref> methods.</para><para><ref refid="class_se_xml_printer" kindref="compound">SeXmlPrinter</ref> uses the Visitor API. <verbatim>SeXmlPrinter printer;
+printer.SetIndent( &quot;\t&quot; );
+
+doc.Accept( &amp;printer );
+fprintf( stdout, &quot;%s&quot;, printer.CStr() );
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="8922">
+        <label>SeXmlVisitor</label>
+        <link refid="class_se_xml_visitor"/>
+      </node>
+      <node id="8921">
+        <label>SeXmlPrinter</label>
+        <link refid="class_se_xml_printer"/>
+        <childnode refid="8922" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8924">
+        <label>SeXmlVisitor</label>
+        <link refid="class_se_xml_visitor"/>
+      </node>
+      <node id="8923">
+        <label>SeXmlPrinter</label>
+        <link refid="class_se_xml_printer"/>
+        <childnode refid="8924" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1681" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1680" bodyend="1739"/>
+    <listofallmembers>
+      <member refid="class_se_xml_printer_1aeddae55f66e91ccd8b0fa34f447a75bc" prot="private" virt="non-virtual"><scope>SeXmlPrinter</scope><name>buffer</name></member>
+      <member refid="class_se_xml_printer_1a995d2536528d75c5775f2a2b299c96b9" prot="public" virt="non-virtual"><scope>SeXmlPrinter</scope><name>CStr</name></member>
+      <member refid="class_se_xml_printer_1a08668a5f24fa1530d2be9d2e21269a7a" prot="private" virt="non-virtual"><scope>SeXmlPrinter</scope><name>depth</name></member>
+      <member refid="class_se_xml_printer_1a70cc7ab5d6ab21a76fd09dece3418b66" prot="private" virt="non-virtual"><scope>SeXmlPrinter</scope><name>DoIndent</name></member>
+      <member refid="class_se_xml_printer_1ab6a27b3c87dadb0056559a393b8fd8ee" prot="private" virt="non-virtual"><scope>SeXmlPrinter</scope><name>DoLineBreak</name></member>
+      <member refid="class_se_xml_printer_1a2ea6f1ef6cbb455db27e5625e7b4848f" prot="private" virt="non-virtual"><scope>SeXmlPrinter</scope><name>indent</name></member>
+      <member refid="class_se_xml_printer_1a9e00a225addf9d2f17840baed6afd51b" prot="public" virt="non-virtual"><scope>SeXmlPrinter</scope><name>Indent</name></member>
+      <member refid="class_se_xml_printer_1a95c97105310cdc7bb39bddcf1dfb30ba" prot="private" virt="non-virtual"><scope>SeXmlPrinter</scope><name>lineBreak</name></member>
+      <member refid="class_se_xml_printer_1aa4a54fafc4e93e5d6daa180ae3580918" prot="public" virt="non-virtual"><scope>SeXmlPrinter</scope><name>LineBreak</name></member>
+      <member refid="class_se_xml_printer_1a2704e416ebabeb5b1af7b9320cff7394" prot="public" virt="non-virtual"><scope>SeXmlPrinter</scope><name>SetIndent</name></member>
+      <member refid="class_se_xml_printer_1a18ba527846cd22fb712acf7198873229" prot="public" virt="non-virtual"><scope>SeXmlPrinter</scope><name>SetLineBreak</name></member>
+      <member refid="class_se_xml_printer_1ad8c4ab1d8eb5b6d6058a658ab5522ddc" prot="public" virt="non-virtual"><scope>SeXmlPrinter</scope><name>SetStreamPrinting</name></member>
+      <member refid="class_se_xml_printer_1a0216b72f5101dfdd77ea1314a8d07582" prot="public" virt="non-virtual"><scope>SeXmlPrinter</scope><name>SeXmlPrinter</name></member>
+      <member refid="class_se_xml_printer_1a78261b911825fa542e9732ecf8dc1fd1" prot="private" virt="non-virtual"><scope>SeXmlPrinter</scope><name>simpleTextPrint</name></member>
+      <member refid="class_se_xml_printer_1adf567c3d1556c6e9b74572144a41f1fa" prot="public" virt="non-virtual"><scope>SeXmlPrinter</scope><name>Size</name></member>
+      <member refid="class_se_xml_printer_1ab812cfa9d8ced439d40bf892156e0e2a" prot="public" virt="non-virtual"><scope>SeXmlPrinter</scope><name>Str</name></member>
+      <member refid="class_se_xml_printer_1a5953a588bd8fb9f649b1e20bf7f4d440" prot="public" virt="virtual"><scope>SeXmlPrinter</scope><name>Visit</name></member>
+      <member refid="class_se_xml_printer_1a9a072352bdc7027060e6399bf6baec83" prot="public" virt="virtual"><scope>SeXmlPrinter</scope><name>Visit</name></member>
+      <member refid="class_se_xml_printer_1ace1ae28f1cbef703c6522873f78eebf0" prot="public" virt="virtual"><scope>SeXmlPrinter</scope><name>Visit</name></member>
+      <member refid="class_se_xml_printer_1ace06a5df7a505185010a2e2ca4954d6a" prot="public" virt="virtual"><scope>SeXmlPrinter</scope><name>Visit</name></member>
+      <member refid="class_se_xml_printer_1afb5be7ba4759f6164ecfca20d4fea653" prot="public" virt="virtual"><scope>SeXmlPrinter</scope><name>VisitEnter</name></member>
+      <member refid="class_se_xml_printer_1ae93803a026178e5c3ed9cab3198f0bdd" prot="public" virt="virtual"><scope>SeXmlPrinter</scope><name>VisitEnter</name></member>
+      <member refid="class_se_xml_printer_1a7a4f71b6e4485e919995d779a03b4b65" prot="public" virt="virtual"><scope>SeXmlPrinter</scope><name>VisitExit</name></member>
+      <member refid="class_se_xml_printer_1ae188eaedef85b8775cad9f24d4ea9563" prot="public" virt="virtual"><scope>SeXmlPrinter</scope><name>VisitExit</name></member>
+      <member refid="class_se_xml_visitor_1aaeaabe5af7a3d7a7027facc5a13dc1c2" prot="public" virt="virtual"><scope>SeXmlPrinter</scope><name>~SeXmlVisitor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_hero_mgr" kind="class" prot="public">
+    <compoundname>HeroMgr</compoundname>
+    <basecompoundref refid="class_data_mgr" prot="public" virt="non-virtual">DataMgr&lt; SeDBCharHero &gt;</basecompoundref>
+    <basecompoundref refid="class_data_mgr" prot="public" virt="non-virtual">DataMgr&lt; SeDBCharHero &gt;</basecompoundref>
+    <includes refid="_src_2_hero_mgr_8h" local="no">HeroMgr.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hero_mgr_1ae66084a25f2c7e72f6404c99159a9156" prot="private" static="no" mutable="no">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer &amp; HeroMgr::m_owner</definition>
+        <argsstring></argsstring>
+        <name>m_owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="29" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_hero_mgr_1ab5ae6be0554f054167746d4c808964e9" compoundref="_src_2_hero_mgr_8cpp" startline="27" endline="30">getOwner</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hero_mgr_1aea06717d10974bb2cf4427b0b2f4c92b" prot="private" static="no" mutable="no">
+        <type>std::map&lt; DWord, SeDBCharHero * &gt;</type>
+        <definition>std::map&lt; DWord, SeDBCharHero * &gt; HeroMgr::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="30" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_hero_mgr_1abf15e2273f2e65398ec2aa335b1ed6c8" compoundref="_src_2_hero_mgr_8cpp" startline="125" endline="152">fixData</referencedby>
+        <referencedby refid="class_hero_mgr_1a957c069c1ac7a84d81da60b20330f0db" compoundref="_src_2_hero_mgr_8cpp" startline="247" endline="259">getAllUnlockHeroInfo</referencedby>
+        <referencedby refid="class_hero_mgr_1acc4783d8ab4d93e3858383640e134312" compoundref="_src_2_hero_mgr_8cpp" startline="320" endline="333">getHeroInfo</referencedby>
+        <referencedby refid="class_hero_mgr_1a5dbce1566186ab8a0c5c7479e167a712" compoundref="_src_2_hero_mgr_8cpp" startline="103" endline="111">loadData</referencedby>
+        <referencedby refid="class_hero_mgr_1ae0f4ebafef6dfa89a38a959ef1762c2e" compoundref="_src_2_hero_mgr_8cpp" startline="194" endline="202">sendInitData</referencedby>
+        <referencedby refid="class_hero_mgr_1a5a73b3c804087d226e3ce35291f7cdd4" compoundref="_src_2_hero_mgr_8cpp" startline="261" endline="282">setAvatar</referencedby>
+        <referencedby refid="class_hero_mgr_1a0f1d20deb76cc4c713b0f6532089a3d4" compoundref="_src_2_hero_mgr_8cpp" startline="34" endline="101">unlockHero</referencedby>
+        <referencedby refid="class_hero_mgr_1ab3c151c9c241d585faccf553d2cb277d" compoundref="_src_2_hero_mgr_8cpp" startline="18" endline="25">~HeroMgr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hero_mgr_1a27edeb5329c18062dc7c48ae82750487" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HeroMgr::HeroMgr</definition>
+        <argsstring>(SePlayer &amp;owner)</argsstring>
+        <name>HeroMgr</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="11" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.cpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1ab3c151c9c241d585faccf553d2cb277d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HeroMgr::~HeroMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~HeroMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="12" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.cpp" bodystart="18" bodyend="25"/>
+        <references refid="class_hero_mgr_1aea06717d10974bb2cf4427b0b2f4c92b" compoundref="_src_2_hero_mgr_8h" startline="30">m_data</references>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1a5dbce1566186ab8a0c5c7479e167a712" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void HeroMgr::loadData</definition>
+        <argsstring>(const SeDBCharHero &amp;item)</argsstring>
+        <name>loadData</name>
+        <reimplements refid="class_data_mgr_1a19fd585291b3911a1f43d63dfbcc71c6">loadData</reimplements>
+        <param>
+          <type>const SeDBCharHero &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="14" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.cpp" bodystart="103" bodyend="111"/>
+        <references refid="class_hero_mgr_1aea06717d10974bb2cf4427b0b2f4c92b" compoundref="_src_2_hero_mgr_8h" startline="30">m_data</references>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1abf15e2273f2e65398ec2aa335b1ed6c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void HeroMgr::fixData</definition>
+        <argsstring>()</argsstring>
+        <name>fixData</name>
+        <reimplements refid="class_data_mgr_1ab72bd1d8bc0f210c94d235c978fbbd4c">fixData</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="15" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.cpp" bodystart="125" bodyend="152"/>
+        <references refid="_src_2_hero_mgr_8cpp_1aa695e66b95084415a57f53506dd977a6" compoundref="_src_2_hero_mgr_8cpp" startline="113">AVATAR_BEGIN</references>
+        <references refid="_src_2_hero_mgr_8cpp_1a1f1a135f968712cff0cb54cc06752d41" compoundref="_src_2_hero_mgr_8cpp" startline="114">AVATAR_END</references>
+        <references refid="class_default_player_data_strategy_1a6baced26772bd2c55f9e1caaac6d23ef" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="53" endline="56">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataUpdate</references>
+        <references refid="_d_b_server_2_src_2_char_hero_strategy_8cpp_1a20888718186343632078ed1d3ca687ed" compoundref="_d_b_server_2_src_2_char_hero_strategy_8cpp" startline="3">g_kCharHeroStrategy</references>
+        <references refid="class_c_item_mgr_1ae46cfb3d7664beb10d52a125fb7d0e1f" compoundref="_src_2_item_mgr_8cpp" startline="1345" endline="1356">CItemMgr::getItem</references>
+        <references refid="class_se_player_1a41f0b00c2f8e02d3acfce5d016f3ec4a" compoundref="_world_server_2_src_2_se_player_8h" startline="55" endline="55">SePlayer::GetItemMgr</references>
+        <references refid="class_hero_mgr_1ab5ae6be0554f054167746d4c808964e9" compoundref="_src_2_hero_mgr_8cpp" startline="27" endline="30">getOwner</references>
+        <references refid="class_hero_mgr_1a95a298c7d6927414102db7dcae89ef82" compoundref="_src_2_hero_mgr_8cpp" startline="284" endline="318">isValidAvatar</references>
+        <references refid="class_hero_mgr_1aea06717d10974bb2cf4427b0b2f4c92b" compoundref="_src_2_hero_mgr_8h" startline="30">m_data</references>
+        <references refid="_src_2_hero_mgr_8cpp_1ae17b32a57fc182d13517d82fa0c909dc" compoundref="_src_2_hero_mgr_8cpp" startline="116">s_avatars</references>
+        <references refid="_src_2_hero_mgr_8cpp_1a9e410fa3bdf8cc37984befe2e25c0513">s_varZero</references>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1ae0f4ebafef6dfa89a38a959ef1762c2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HeroMgr::sendInitData</definition>
+        <argsstring>()</argsstring>
+        <name>sendInitData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="16" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.cpp" bodystart="194" bodyend="202"/>
+        <references refid="class_hero_mgr_1aea06717d10974bb2cf4427b0b2f4c92b" compoundref="_src_2_hero_mgr_8h" startline="30">m_data</references>
+        <references refid="class_hero_mgr_1af98b50866da20d78c79738ea73cb490e" compoundref="_src_2_hero_mgr_8cpp" startline="163" endline="192">notifyChanged</references>
+        <referencedby refid="class_se_player_1a6a04c28f9bb38896f106fbf42e732f36" compoundref="_world_server_2_src_2_se_player_8cpp" startline="651" endline="725">SePlayer::OperateLoading</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1a0f1d20deb76cc4c713b0f6532089a3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HeroMgr::unlockHero</definition>
+        <argsstring>(int num, SeUnlockHeroBaseInfo *items)</argsstring>
+        <name>unlockHero</name>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_unlock_hero_base_info" kindref="compound">SeUnlockHeroBaseInfo</ref> *</type>
+          <declname>items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="17" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.cpp" bodystart="34" bodyend="101"/>
+        <references refid="class_default_player_data_strategy_1a01824b8ff7f25899b55f3d4d1bbd6637" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="47" endline="50">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataInsert</references>
+        <references refid="class_default_player_data_strategy_1a6baced26772bd2c55f9e1caaac6d23ef" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="53" endline="56">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataUpdate</references>
+        <references refid="_se_ptl_comm_define_8h_1a2ad068e9693d9cf486629d0ebb27fdb1a88ed72fa1915044c9f55721b5746aad2" compoundref="_se_ptl_comm_define_8h" startline="742">EUHS_SHOP</references>
+        <references refid="_se_ptl_comm_define_8h_1a2ad068e9693d9cf486629d0ebb27fdb1a577014de4508c79b12a4656b58d198a7" compoundref="_se_ptl_comm_define_8h" startline="741">EUHS_WEEK</references>
+        <references refid="_d_b_server_2_src_2_char_hero_strategy_8cpp_1a20888718186343632078ed1d3ca687ed" compoundref="_d_b_server_2_src_2_char_hero_strategy_8cpp" startline="3">g_kCharHeroStrategy</references>
+        <references refid="class_free_heroes_table_mgr_1a31b72f05c18076362f3d8df7d7f8d2cd" compoundref="_free_heroes__table_8cpp" startline="6" endline="13">FreeHeroesTableMgr::Get</references>
+        <references refid="class_hero_info_table_mgr_1a1f3c4c7cc613cb20a3bf908907113cc3" compoundref="_hero_info__table_8cpp" startline="6" endline="13">HeroInfoTableMgr::Get</references>
+        <references refid="class_player_data_strategy_1a5f33fc51eb6066e5fe9545dd9e273a3a" compoundref="_world_server_2_src_2_player_data_strategy_8cpp" startline="22" endline="26">PlayerDataStrategy::getGenID</references>
+        <references refid="class_se_player_1a0834e11ba6f0e730e99014864f8d25e0" compoundref="_town_server_2_src_2_se_player_8h" startline="7" endline="10">SePlayer::GetID</references>
+        <references refid="class_hero_mgr_1ab5ae6be0554f054167746d4c808964e9" compoundref="_src_2_hero_mgr_8cpp" startline="27" endline="30">getOwner</references>
+        <references refid="class_se_player_1ac49c55fb5c3e446a411eb86b2e392d00" compoundref="_world_server_2_src_2_se_player_8cpp" startline="441" endline="444">SePlayer::getTaskMgr</references>
+        <references refid="struct_se_unlock_hero_base_info_1a14ca4b3d1fe204922a73addaa6d89267" compoundref="_se_ptl_comm_define_8h" startline="1995">SeUnlockHeroBaseInfo::heroID</references>
+        <references refid="class_hero_mgr_1aea06717d10974bb2cf4427b0b2f4c92b" compoundref="_src_2_hero_mgr_8h" startline="30">m_data</references>
+        <references refid="struct_se_unlock_hero_base_info_1ade8ada48fa16fcea37246475a940e913" compoundref="_se_ptl_comm_define_8h" startline="1996">SeUnlockHeroBaseInfo::mark</references>
+        <references refid="class_hero_mgr_1af98b50866da20d78c79738ea73cb490e" compoundref="_src_2_hero_mgr_8cpp" startline="163" endline="192">notifyChanged</references>
+        <references refid="_se_tool_8cpp_1ab5215c746438d47cd602ac9cd661d806" compoundref="_se_tool_8cpp" startline="428" endline="433">NowTime</references>
+        <references refid="class_hero_mgr_1a187ef4a0b379c47d56ceb65d1b4c5f51" compoundref="_src_2_hero_mgr_8cpp" startline="204" endline="217">processAddHeroBindItem</references>
+        <references refid="class_task_mgr_1ac2a56ec4804bb04827ce5156ba416e15" compoundref="_src_2_task_mgr_8cpp" startline="713" endline="867">TaskMgr::SettleTask</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a60f73a2ca7cd18514ba1e04d77ee5236" compoundref="_task_info__table_8hpp" startline="62">TASKINFO_CONDITON_JIESUOYINGXIONG</references>
+        <referencedby refid="class_hero_mgr_1afb7e5dccb020a0a7e82dbbda55527028" compoundref="_src_2_hero_mgr_8cpp" startline="219" endline="245">createFreeHeroes</referencedby>
+        <referencedby refid="class_c_shop_1a55684d1ebf8c2e8bcad954fa2c3bb6af" compoundref="_src_2_shop_8cpp" startline="539" endline="550">CShop::ProcessHeroItem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1af98b50866da20d78c79738ea73cb490e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HeroMgr::notifyChanged</definition>
+        <argsstring>(const std::list&lt; SeDBCharHero * &gt; &amp;items)</argsstring>
+        <name>notifyChanged</name>
+        <param>
+          <type>const std::list&lt; SeDBCharHero * &gt; &amp;</type>
+          <declname>items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="18" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.cpp" bodystart="163" bodyend="192"/>
+        <references refid="struct_se_w_t___user_hero_sync_1abc09fac2484b81a040eaf4a011d9a7c0" compoundref="_se_ptl___w_s___to___t_s_8h" startline="589">SeWT_UserHeroSync::akHeroSyncInfo</references>
+        <references refid="struct_se_user_hero_sync_info_1a53b40505cacc32e08983cbb9a219185c" compoundref="_se_ptl_comm_define_8h" startline="2012">SeUserHeroSyncInfo::dwSkin</references>
+        <references refid="struct_se_user_hero_sync_info_1a40706ca64bdf6ed8b585684d825398af" compoundref="_se_ptl_comm_define_8h" startline="2013">SeUserHeroSyncInfo::dwWeapon</references>
+        <references refid="struct_se_user_hero_sync_info_1a1295253f8e9a75c8dce4285cec13e3b7" compoundref="_se_ptl_comm_define_8h" startline="2014">SeUserHeroSyncInfo::dwWing</references>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="_town_server_2_src_2_se_player_8inl_1a62abab014f0e4e72ae69f67e8e6c3a99" compoundref="_town_server_2_src_2_se_player_8inl" startline="6" endline="9">GetID</references>
+        <references refid="class_hero_mgr_1ab5ae6be0554f054167746d4c808964e9" compoundref="_src_2_hero_mgr_8cpp" startline="27" endline="30">getOwner</references>
+        <references refid="_world_server_2_src_2_se_player_8inl_1a2b912387cc3709ca75305a30f0167a37" compoundref="_world_server_2_src_2_se_player_8inl" startline="71" endline="74">GetTownSock</references>
+        <references refid="struct_se_user_hero_sync_info_1a4ca569a0fe70906f9ab9c0aa1410633d" compoundref="_se_ptl_comm_define_8h" startline="2010">SeUserHeroSyncInfo::heroID</references>
+        <references refid="class_hero_mgr_1a50b5d4a143afc9e93c117d97b0212da5" compoundref="_src_2_hero_mgr_8cpp" startline="154" endline="161">isValidHero</references>
+        <references refid="struct_se_user_hero_sync_info_1a7e0da8679deef1cf71fca047dce4ce36" compoundref="_se_ptl_comm_define_8h" startline="2011">SeUserHeroSyncInfo::mark</references>
+        <references refid="struct_se_w_t___user_hero_sync_1ad93d7f2df21c128d0cb32b74bbd7f742" compoundref="_se_ptl___w_s___to___t_s_8h" startline="588">SeWT_UserHeroSync::num</references>
+        <references refid="class_world_server_1aa1809f580d9093366237ac49d2ab60c6">WorldServer::SendWT_UserHeroSync</references>
+        <referencedby refid="class_hero_mgr_1ae0f4ebafef6dfa89a38a959ef1762c2e" compoundref="_src_2_hero_mgr_8cpp" startline="194" endline="202">sendInitData</referencedby>
+        <referencedby refid="class_hero_mgr_1a0f1d20deb76cc4c713b0f6532089a3d4" compoundref="_src_2_hero_mgr_8cpp" startline="34" endline="101">unlockHero</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1afb7e5dccb020a0a7e82dbbda55527028" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HeroMgr::createFreeHeroes</definition>
+        <argsstring>()</argsstring>
+        <name>createFreeHeroes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="19" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.cpp" bodystart="219" bodyend="245"/>
+        <references refid="class_free_heroes_table_mgr_1a31b72f05c18076362f3d8df7d7f8d2cd" compoundref="_free_heroes__table_8cpp" startline="6" endline="13">FreeHeroesTableMgr::Get</references>
+        <references refid="class_free_heroes_table_mgr_1a5755227e9763dec6ab340b44e259a53a" compoundref="_free_heroes__table_8cpp" startline="26" endline="29">FreeHeroesTableMgr::GetFreeHeroesTableMap</references>
+        <references refid="struct_se_unlock_hero_base_info_1a14ca4b3d1fe204922a73addaa6d89267" compoundref="_se_ptl_comm_define_8h" startline="1995">SeUnlockHeroBaseInfo::heroID</references>
+        <references refid="struct_se_unlock_hero_base_info_1ade8ada48fa16fcea37246475a940e913" compoundref="_se_ptl_comm_define_8h" startline="1996">SeUnlockHeroBaseInfo::mark</references>
+        <references refid="struct_free_heroes_table_1a0da5337d8d3ae306ec4bb42e583e4599" compoundref="_free_heroes__table_8hpp" startline="32">FreeHeroesTable::uifeature</references>
+        <references refid="struct_free_heroes_table_1a5f7b0e9d40a60f28dce216587aa4d933" compoundref="_free_heroes__table_8hpp" startline="29">FreeHeroesTable::uiHeroID</references>
+        <references refid="class_hero_mgr_1a0f1d20deb76cc4c713b0f6532089a3d4" compoundref="_src_2_hero_mgr_8cpp" startline="34" endline="101">unlockHero</references>
+        <referencedby refid="class_se_player_1a6a04c28f9bb38896f106fbf42e732f36" compoundref="_world_server_2_src_2_se_player_8cpp" startline="651" endline="725">SePlayer::OperateLoading</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1a957c069c1ac7a84d81da60b20330f0db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HeroMgr::getAllUnlockHeroInfo</definition>
+        <argsstring>(VecSelHeroInfo &amp;akUnlockHero)</argsstring>
+        <name>getAllUnlockHeroInfo</name>
+        <param>
+          <type><ref refid="_se_ptl_define_8h_1a12bdaa0cb091a7fd8b770f73cc23b3bd" kindref="member">VecSelHeroInfo</ref> &amp;</type>
+          <declname>akUnlockHero</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="20" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.cpp" bodystart="247" bodyend="259"/>
+        <references refid="struct_se_sel_hero_info_1ae8bf3fd3105c6774f40e232b6b83d20d" compoundref="_se_ptl_comm_define_8h" startline="1119">SeSelHeroInfo::dwActiveSkin</references>
+        <references refid="struct_se_sel_hero_info_1a6fb076008aed2096e5d78407a20c7001" compoundref="_se_ptl_comm_define_8h" startline="1120">SeSelHeroInfo::dwActiveWeapon</references>
+        <references refid="struct_se_sel_hero_info_1a7b2a85457f14fd3bb46f745a13dfa4c5" compoundref="_se_ptl_comm_define_8h" startline="1121">SeSelHeroInfo::dwActiveWing</references>
+        <references refid="struct_se_sel_hero_info_1a03790e19ae70793eaa2813b5fc0994ef" compoundref="_se_ptl_comm_define_8h" startline="1118">SeSelHeroInfo::dwHeroTypeID</references>
+        <references refid="class_hero_mgr_1aea06717d10974bb2cf4427b0b2f4c92b" compoundref="_src_2_hero_mgr_8h" startline="30">m_data</references>
+        <referencedby refid="class_block_server_1a1bded5892dcafcabdd012d472b6113ed" compoundref="_src_2_se_m_b_l_process_8cpp" startline="14" endline="43">BlockServer::ProcessMBL_RaceMatchLoadDetail</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1acc4783d8ab4d93e3858383640e134312" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HeroMgr::getHeroInfo</definition>
+        <argsstring>(DWord dwHeroID, SeSelHeroInfo &amp;hero)</argsstring>
+        <name>getHeroInfo</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwHeroID</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_sel_hero_info" kindref="compound">SeSelHeroInfo</ref> &amp;</type>
+          <declname>hero</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="21" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.cpp" bodystart="320" bodyend="333"/>
+        <references refid="struct_se_sel_hero_info_1ae8bf3fd3105c6774f40e232b6b83d20d" compoundref="_se_ptl_comm_define_8h" startline="1119">SeSelHeroInfo::dwActiveSkin</references>
+        <references refid="struct_se_sel_hero_info_1a6fb076008aed2096e5d78407a20c7001" compoundref="_se_ptl_comm_define_8h" startline="1120">SeSelHeroInfo::dwActiveWeapon</references>
+        <references refid="struct_se_sel_hero_info_1a7b2a85457f14fd3bb46f745a13dfa4c5" compoundref="_se_ptl_comm_define_8h" startline="1121">SeSelHeroInfo::dwActiveWing</references>
+        <references refid="struct_se_sel_hero_info_1a03790e19ae70793eaa2813b5fc0994ef" compoundref="_se_ptl_comm_define_8h" startline="1118">SeSelHeroInfo::dwHeroTypeID</references>
+        <references refid="class_hero_mgr_1aea06717d10974bb2cf4427b0b2f4c92b" compoundref="_src_2_hero_mgr_8h" startline="30">m_data</references>
+        <referencedby refid="class_block_server_1abce54ae717ff0d518b7dcb1a8322b607" compoundref="_src_2_se_r_b_l_process_8cpp" startline="194" endline="206">BlockServer::ProcessRBL_SelectHeroReq</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1a5a73b3c804087d226e3ce35291f7cdd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HeroMgr::setAvatar</definition>
+        <argsstring>(DWord dwHeroID, DWord dwItemID)</argsstring>
+        <name>setAvatar</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwHeroID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwItemID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="22" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.cpp" bodystart="261" bodyend="282"/>
+        <references refid="_src_2_hero_mgr_8cpp_1aa695e66b95084415a57f53506dd977a6" compoundref="_src_2_hero_mgr_8cpp" startline="113">AVATAR_BEGIN</references>
+        <references refid="_src_2_hero_mgr_8cpp_1a1f1a135f968712cff0cb54cc06752d41" compoundref="_src_2_hero_mgr_8cpp" startline="114">AVATAR_END</references>
+        <references refid="class_default_player_data_strategy_1a6baced26772bd2c55f9e1caaac6d23ef" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="53" endline="56">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataUpdate</references>
+        <references refid="_d_b_server_2_src_2_char_hero_strategy_8cpp_1a20888718186343632078ed1d3ca687ed" compoundref="_d_b_server_2_src_2_char_hero_strategy_8cpp" startline="3">g_kCharHeroStrategy</references>
+        <references refid="class_c_item_mgr_1ae46cfb3d7664beb10d52a125fb7d0e1f" compoundref="_src_2_item_mgr_8cpp" startline="1345" endline="1356">CItemMgr::getItem</references>
+        <references refid="class_se_player_1a41f0b00c2f8e02d3acfce5d016f3ec4a" compoundref="_world_server_2_src_2_se_player_8h" startline="55" endline="55">SePlayer::GetItemMgr</references>
+        <references refid="class_hero_mgr_1ab5ae6be0554f054167746d4c808964e9" compoundref="_src_2_hero_mgr_8cpp" startline="27" endline="30">getOwner</references>
+        <references refid="class_hero_mgr_1a95a298c7d6927414102db7dcae89ef82" compoundref="_src_2_hero_mgr_8cpp" startline="284" endline="318">isValidAvatar</references>
+        <references refid="class_hero_mgr_1aea06717d10974bb2cf4427b0b2f4c92b" compoundref="_src_2_hero_mgr_8h" startline="30">m_data</references>
+        <references refid="_src_2_hero_mgr_8cpp_1ae17b32a57fc182d13517d82fa0c909dc" compoundref="_src_2_hero_mgr_8cpp" startline="116">s_avatars</references>
+        <referencedby refid="class_block_server_1a3f9c7e60928d962dc4958ea3d0df441c" compoundref="_src_2_se_r_b_l_process_8cpp" startline="183" endline="192">BlockServer::ProcessRBL_SetAvatarNtf</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1a27edeb5329c18062dc7c48ae82750487" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HeroMgr::HeroMgr</definition>
+        <argsstring>(SePlayer &amp;owner)</argsstring>
+        <name>HeroMgr</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/HeroMgr.h" line="11" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1ab3c151c9c241d585faccf553d2cb277d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HeroMgr::~HeroMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~HeroMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/HeroMgr.h" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1a5dbce1566186ab8a0c5c7479e167a712" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void HeroMgr::loadData</definition>
+        <argsstring>(const SeDBCharHero &amp;item)</argsstring>
+        <name>loadData</name>
+        <reimplements refid="class_data_mgr_1a19fd585291b3911a1f43d63dfbcc71c6">loadData</reimplements>
+        <param>
+          <type>const SeDBCharHero &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/HeroMgr.h" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1abf15e2273f2e65398ec2aa335b1ed6c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void HeroMgr::fixData</definition>
+        <argsstring>()</argsstring>
+        <name>fixData</name>
+        <reimplements refid="class_data_mgr_1ab72bd1d8bc0f210c94d235c978fbbd4c">fixData</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/HeroMgr.h" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1ae0f4ebafef6dfa89a38a959ef1762c2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HeroMgr::sendInitData</definition>
+        <argsstring>()</argsstring>
+        <name>sendInitData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/HeroMgr.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1a0f1d20deb76cc4c713b0f6532089a3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HeroMgr::unlockHero</definition>
+        <argsstring>(int num, SeUnlockHeroBaseInfo *items)</argsstring>
+        <name>unlockHero</name>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_unlock_hero_base_info" kindref="compound">SeUnlockHeroBaseInfo</ref> *</type>
+          <declname>items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/HeroMgr.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1af98b50866da20d78c79738ea73cb490e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HeroMgr::notifyChanged</definition>
+        <argsstring>(const std::list&lt; SeDBCharHero * &gt; &amp;items)</argsstring>
+        <name>notifyChanged</name>
+        <param>
+          <type>const std::list&lt; SeDBCharHero * &gt; &amp;</type>
+          <declname>items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/HeroMgr.h" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1afb7e5dccb020a0a7e82dbbda55527028" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HeroMgr::createFreeHeroes</definition>
+        <argsstring>()</argsstring>
+        <name>createFreeHeroes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/HeroMgr.h" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1a957c069c1ac7a84d81da60b20330f0db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HeroMgr::getAllUnlockHeroInfo</definition>
+        <argsstring>(VecSelHeroInfo &amp;akUnlockHero)</argsstring>
+        <name>getAllUnlockHeroInfo</name>
+        <param>
+          <type><ref refid="_se_ptl_define_8h_1a12bdaa0cb091a7fd8b770f73cc23b3bd" kindref="member">VecSelHeroInfo</ref> &amp;</type>
+          <declname>akUnlockHero</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/HeroMgr.h" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1acc4783d8ab4d93e3858383640e134312" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HeroMgr::getHeroInfo</definition>
+        <argsstring>(DWord dwHeroID, SeSelHeroInfo &amp;hero)</argsstring>
+        <name>getHeroInfo</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwHeroID</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_sel_hero_info" kindref="compound">SeSelHeroInfo</ref> &amp;</type>
+          <declname>hero</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/HeroMgr.h" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1a5a73b3c804087d226e3ce35291f7cdd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HeroMgr::setAvatar</definition>
+        <argsstring>(DWord dwHeroID, DWord dwItemID)</argsstring>
+        <name>setAvatar</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwHeroID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwItemID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/HeroMgr.h" line="22" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_hero_mgr_1a95a298c7d6927414102db7dcae89ef82" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HeroMgr::isValidAvatar</definition>
+        <argsstring>(CItem *pItem, DWord dwHeroID, int avatarBegin, int avatarEnd, int &amp;avatarType)</argsstring>
+        <name>isValidAvatar</name>
+        <param>
+          <type><ref refid="struct_c_item" kindref="compound">CItem</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwHeroID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>avatarBegin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>avatarEnd</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>avatarType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="23" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.cpp" bodystart="284" bodyend="318"/>
+        <references refid="class_avatar_table_mgr_1a3477b4d229f1d71f2e2c1e5051e020f6" compoundref="_avatar__table_8cpp" startline="6" endline="13">AvatarTableMgr::Get</references>
+        <references refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">TownItemTableMgr::Get</references>
+        <references refid="class_avatar_table_mgr_1a4de3be4c96e1f7c08f15fedd7e3573ed" compoundref="_avatar__table_8cpp" startline="42" endline="50">AvatarTableMgr::GetAvatarTable</references>
+        <references refid="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" compoundref="_town_item__table_8cpp" startline="42" endline="50">TownItemTableMgr::GetTownItemTable</references>
+        <references refid="_town_item__table_8hpp_1a4a87ae9dae8583e9acda43ace84659cfa0abf6166c3fa1e54960cc33f0b3f3412" compoundref="_town_item__table_8hpp" startline="24">TOWNITEM_CLASS_ZHUANGBAN</references>
+        <references refid="struct_avatar_table_1a365ac2ef4776af9c6133df8d82125dc5" compoundref="_avatar__table_8hpp" startline="47">AvatarTable::uiAvatarType</references>
+        <references refid="struct_town_item_table_1a50f128b2bc726da3161c11a9edb7787a" compoundref="_town_item__table_8hpp" startline="1170">TownItemTable::uiClass</references>
+        <references refid="struct_avatar_table_1ae3f13e91c0dcf2dd048d81ad5c280226" compoundref="_avatar__table_8hpp" startline="52">AvatarTable::uiHeroID</references>
+        <references refid="struct_c_item_1a32b9964f399b841ecb58f80fc0c06d8f" compoundref="_src_2_item_mgr_8h" startline="24">CItem::uiItemID</references>
+        <referencedby refid="class_active_avatar_mgr_1a4866ecf9df83db3cc2056d57dd530207" compoundref="_src_2_active_avatar_mgr_8cpp" startline="34" endline="50">ActiveAvatarMgr::fixData</referencedby>
+        <referencedby refid="class_hero_mgr_1abf15e2273f2e65398ec2aa335b1ed6c8" compoundref="_src_2_hero_mgr_8cpp" startline="125" endline="152">fixData</referencedby>
+        <referencedby refid="class_active_avatar_mgr_1a49076d6bca16c4775866e0a4747cbf64" compoundref="_src_2_active_avatar_mgr_8cpp" startline="71" endline="101">ActiveAvatarMgr::setActiveAvatar</referencedby>
+        <referencedby refid="class_hero_mgr_1a5a73b3c804087d226e3ce35291f7cdd4" compoundref="_src_2_hero_mgr_8cpp" startline="261" endline="282">setAvatar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1ab5a338580483956077e6e7083da9b2c2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool HeroMgr::isValidAvatar</definition>
+        <argsstring>(CItem *pItem, DWord dwHeroID, int avatarBegin, int avatarEnd, int &amp;avatarType)</argsstring>
+        <name>isValidAvatar</name>
+        <param>
+          <type><ref refid="struct_c_item" kindref="compound">CItem</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwHeroID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>avatarBegin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>avatarEnd</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>avatarType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/HeroMgr.h" line="23" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_hero_mgr_1ab5ae6be0554f054167746d4c808964e9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer &amp; HeroMgr::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="25" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.cpp" bodystart="27" bodyend="30"/>
+        <references refid="class_hero_mgr_1ae66084a25f2c7e72f6404c99159a9156" compoundref="_src_2_hero_mgr_8h" startline="29">m_owner</references>
+        <referencedby refid="class_hero_mgr_1abf15e2273f2e65398ec2aa335b1ed6c8" compoundref="_src_2_hero_mgr_8cpp" startline="125" endline="152">fixData</referencedby>
+        <referencedby refid="class_hero_mgr_1af98b50866da20d78c79738ea73cb490e" compoundref="_src_2_hero_mgr_8cpp" startline="163" endline="192">notifyChanged</referencedby>
+        <referencedby refid="class_hero_mgr_1a187ef4a0b379c47d56ceb65d1b4c5f51" compoundref="_src_2_hero_mgr_8cpp" startline="204" endline="217">processAddHeroBindItem</referencedby>
+        <referencedby refid="class_hero_mgr_1a5a73b3c804087d226e3ce35291f7cdd4" compoundref="_src_2_hero_mgr_8cpp" startline="261" endline="282">setAvatar</referencedby>
+        <referencedby refid="class_hero_mgr_1a0f1d20deb76cc4c713b0f6532089a3d4" compoundref="_src_2_hero_mgr_8cpp" startline="34" endline="101">unlockHero</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1a187ef4a0b379c47d56ceb65d1b4c5f51" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HeroMgr::processAddHeroBindItem</definition>
+        <argsstring>(DWord dwHeroID)</argsstring>
+        <name>processAddHeroBindItem</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwHeroID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="26" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.cpp" bodystart="204" bodyend="217"/>
+        <references refid="class_c_item_mgr_1ae8e0377cde5732972c5869d98576ba1b" compoundref="_src_2_item_mgr_8cpp" startline="997" endline="1026">CItemMgr::AddItem</references>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="class_se_player_1a41f0b00c2f8e02d3acfce5d016f3ec4a" compoundref="_world_server_2_src_2_se_player_8h" startline="55" endline="55">SePlayer::GetItemMgr</references>
+        <references refid="class_hero_mgr_1ab5ae6be0554f054167746d4c808964e9" compoundref="_src_2_hero_mgr_8cpp" startline="27" endline="30">getOwner</references>
+        <references refid="class_world_server_1a9bf4b22bba03d3ec71b71503d03534ae" compoundref="_src_2_world_server_8cpp" startline="1089" endline="1104">WorldServer::UserHeroBindItem</references>
+        <referencedby refid="class_hero_mgr_1a0f1d20deb76cc4c713b0f6532089a3d4" compoundref="_src_2_hero_mgr_8cpp" startline="34" endline="101">unlockHero</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1a7437a354a389a041fa1e4f0a7a8d307d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer&amp; HeroMgr::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/HeroMgr.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1a187ef4a0b379c47d56ceb65d1b4c5f51" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HeroMgr::processAddHeroBindItem</definition>
+        <argsstring>(DWord dwHeroID)</argsstring>
+        <name>processAddHeroBindItem</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwHeroID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/HeroMgr.h" line="26" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_hero_mgr_1a50b5d4a143afc9e93c117d97b0212da5" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HeroMgr::isValidHero</definition>
+        <argsstring>(const SeDBCharHero &amp;item)</argsstring>
+        <name>isValidHero</name>
+        <param>
+          <type>const SeDBCharHero &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="27" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.cpp" bodystart="154" bodyend="161"/>
+        <references refid="_se_ptl_comm_define_8h_1a2ad068e9693d9cf486629d0ebb27fdb1a577014de4508c79b12a4656b58d198a7" compoundref="_se_ptl_comm_define_8h" startline="741">EUHS_WEEK</references>
+        <references refid="class_free_heroes_table_mgr_1a31b72f05c18076362f3d8df7d7f8d2cd" compoundref="_free_heroes__table_8cpp" startline="6" endline="13">FreeHeroesTableMgr::Get</references>
+        <references refid="class_free_heroes_table_mgr_1a68cd91169ca19fe417e2475b11af7dd3" compoundref="_free_heroes__table_8cpp" startline="42" endline="50">FreeHeroesTableMgr::GetFreeHeroesTable</references>
+        <referencedby refid="class_hero_mgr_1af98b50866da20d78c79738ea73cb490e" compoundref="_src_2_hero_mgr_8cpp" startline="163" endline="192">notifyChanged</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hero_mgr_1a744c944d13582586648bba2dacc8cfac" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool HeroMgr::isValidHero</definition>
+        <argsstring>(const SeDBCharHero &amp;item)</argsstring>
+        <name>isValidHero</name>
+        <param>
+          <type>const SeDBCharHero &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/HeroMgr.h" line="27" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1452">
+        <label>HeroMgr</label>
+        <link refid="class_hero_mgr"/>
+        <childnode refid="1453" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1453" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1453">
+        <label>DataMgr&lt; SeDBCharHero &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1523">
+        <label>SeAchieveScheduleInfo</label>
+        <link refid="struct_se_achieve_schedule_info"/>
+      </node>
+      <node id="1463">
+        <label>std::map&lt; DWord, CItem * &gt;</label>
+        <childnode refid="1464" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1476">
+        <label>SeThreadMsgMgr</label>
+        <link refid="class_se_thread_msg_mgr"/>
+        <childnode refid="1477" relation="usage">
+          <edgelabel>m_kTemMsgData</edgelabel>
+        </childnode>
+      </node>
+      <node id="1483">
+        <label>DataMgr&lt; SeDBCharEquipSchema &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1493">
+        <label>K</label>
+      </node>
+      <node id="1494">
+        <label>T</label>
+      </node>
+      <node id="1505">
+        <label>SeItem</label>
+        <link refid="struct_se_item"/>
+        <childnode refid="1460" relation="usage">
+          <edgelabel>kFinishTime</edgelabel>
+        </childnode>
+        <childnode refid="1506" relation="usage">
+          <edgelabel>pkItemRes</edgelabel>
+        </childnode>
+      </node>
+      <node id="1460">
+        <label>SeDBTime</label>
+        <link refid="struct_se_d_b_time"/>
+      </node>
+      <node id="1499">
+        <label>SeTaskInfo</label>
+        <link refid="struct_se_task_info"/>
+        <childnode refid="1500" relation="usage">
+          <edgelabel>pkRes</edgelabel>
+        </childnode>
+      </node>
+      <node id="1525">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="1494" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1464">
+        <label>CItem</label>
+        <link refid="struct_c_item"/>
+        <childnode refid="1465" relation="usage">
+          <edgelabel>pvpAttr</edgelabel>
+          <edgelabel>pveAttr</edgelabel>
+        </childnode>
+        <childnode refid="1466" relation="usage">
+          <edgelabel>citiaoAttr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1513">
+        <label>AchieveMgr</label>
+        <link refid="class_achieve_mgr"/>
+        <childnode refid="1456" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1456">
+        <label>SePlayer</label>
+        <link refid="class_se_player"/>
+        <childnode refid="1457" relation="usage">
+          <edgelabel>m_kCurPos</edgelabel>
+        </childnode>
+        <childnode refid="1454" relation="usage">
+          <edgelabel>m_heroMgr</edgelabel>
+        </childnode>
+        <childnode refid="1458" relation="usage">
+          <edgelabel>m_mapNexusFriendData</edgelabel>
+        </childnode>
+        <childnode refid="1461" relation="usage">
+          <edgelabel>m_PlayerItemMgr</edgelabel>
+        </childnode>
+        <childnode refid="1469" relation="usage">
+          <edgelabel>m_kMobileInfo</edgelabel>
+        </childnode>
+        <childnode refid="1460" relation="usage">
+          <edgelabel>m_kEnterTime</edgelabel>
+        </childnode>
+        <childnode refid="1470" relation="usage">
+          <edgelabel>m_pkBlockServer</edgelabel>
+        </childnode>
+        <childnode refid="1481" relation="usage">
+          <edgelabel>m_kLoadFlag2Count</edgelabel>
+        </childnode>
+        <childnode refid="1482" relation="usage">
+          <edgelabel>m_equipSchemaMgr</edgelabel>
+        </childnode>
+        <childnode refid="1484" relation="usage">
+          <edgelabel>m_raceMapMgr</edgelabel>
+        </childnode>
+        <childnode refid="1487" relation="usage">
+          <edgelabel>m_raceHeroMgr</edgelabel>
+        </childnode>
+        <childnode refid="1495" relation="usage">
+          <edgelabel>m_loadingFlag</edgelabel>
+        </childnode>
+        <childnode refid="1496" relation="usage">
+          <edgelabel>m_TaskMgr</edgelabel>
+        </childnode>
+        <childnode refid="1504" relation="usage">
+          <edgelabel>m_akItem</edgelabel>
+        </childnode>
+        <childnode refid="1507" relation="usage">
+          <edgelabel>m_FriendLadderData</edgelabel>
+        </childnode>
+        <childnode refid="1510" relation="usage">
+          <edgelabel>m_activeAvatarMgr</edgelabel>
+        </childnode>
+        <childnode refid="1513" relation="usage">
+          <edgelabel>m_AchieveMgr</edgelabel>
+        </childnode>
+        <childnode refid="1514" relation="usage">
+          <edgelabel>m_kLoadFlagCounts</edgelabel>
+        </childnode>
+        <childnode refid="1480" relation="usage">
+          <edgelabel>m_kAccountInfo</edgelabel>
+        </childnode>
+        <childnode refid="1515" relation="usage">
+          <edgelabel>m_AchieveFinishMgr</edgelabel>
+        </childnode>
+        <childnode refid="1518" relation="usage">
+          <edgelabel>m_akStatMap</edgelabel>
+        </childnode>
+        <childnode refid="1520" relation="usage">
+          <edgelabel>m_AchieveScheduleMgr</edgelabel>
+        </childnode>
+        <childnode refid="1524" relation="usage">
+          <edgelabel>m_kMAllCharMem</edgelabel>
+        </childnode>
+        <childnode refid="1526" relation="usage">
+          <edgelabel>m_akExchange</edgelabel>
+        </childnode>
+        <childnode refid="1528" relation="usage">
+          <edgelabel>m_infoMgr</edgelabel>
+        </childnode>
+        <childnode refid="1532" relation="usage">
+          <edgelabel>m_kSingleMatchInfo</edgelabel>
+        </childnode>
+        <childnode refid="1533" relation="usage">
+          <edgelabel>m_kOderItr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1479">
+        <label>SeWaitPlayer</label>
+        <link refid="struct_se_wait_player"/>
+        <childnode refid="1480" relation="usage">
+          <edgelabel>kAccountInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="1492">
+        <label>std::map&lt; K, T &gt;</label>
+        <childnode refid="1493" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="1494" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1495">
+        <label>std::set&lt; SeDBTableIndex &gt;</label>
+      </node>
+      <node id="1515">
+        <label>AchieveFinishMgr</label>
+        <link refid="class_achieve_finish_mgr"/>
+        <childnode refid="1516" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1516" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1517" relation="usage">
+          <edgelabel>m_FinishMap</edgelabel>
+        </childnode>
+        <childnode refid="1456" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1490">
+        <label>SeUserRaceMapHeroBase</label>
+        <link refid="struct_se_user_race_map_hero_base"/>
+      </node>
+      <node id="1454">
+        <label>HeroMgr</label>
+        <link refid="class_hero_mgr"/>
+        <childnode refid="1455" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1455" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1456" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="1531" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="1480">
+        <label>SePtlAccountInfo</label>
+        <link refid="struct_se_ptl_account_info"/>
+      </node>
+      <node id="1533">
+        <label>std::map&lt; K, T &gt;::iterator</label>
+      </node>
+      <node id="1472">
+        <label>SeLeagueInfo</label>
+        <link refid="struct_se_league_info"/>
+        <childnode refid="1460" relation="usage">
+          <edgelabel>kBeginTime</edgelabel>
+          <edgelabel>kEndTime</edgelabel>
+        </childnode>
+      </node>
+      <node id="1491">
+        <label>std::map&lt; DWord, MDBCharRaceHero &gt;</label>
+        <childnode refid="1492" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1504">
+        <label>std::vector&lt; SeItem * &gt;</label>
+        <childnode refid="1505" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1457">
+        <label>SePos2</label>
+        <link refid="struct_se_pos2"/>
+      </node>
+      <node id="1498">
+        <label>std::vector&lt; SeTaskInfo * &gt;</label>
+        <childnode refid="1499" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1500">
+        <label>TaskInfoTable</label>
+        <link refid="struct_task_info_table"/>
+        <childnode refid="1501" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1502" relation="usage">
+          <edgelabel>kNameID</edgelabel>
+          <edgelabel>kDescID</edgelabel>
+          <edgelabel>kName_China</edgelabel>
+          <edgelabel>kTaskDesc</edgelabel>
+          <edgelabel>kTargetDesc</edgelabel>
+        </childnode>
+      </node>
+      <node id="1459">
+        <label>SeCharNexusFriendData</label>
+        <link refid="struct_se_char_nexus_friend_data"/>
+        <childnode refid="1460" relation="usage">
+          <edgelabel>create_time</edgelabel>
+        </childnode>
+      </node>
+      <node id="1481">
+        <label>std::map&lt; int, int &gt;</label>
+      </node>
+      <node id="1528">
+        <label>InfoMgr</label>
+        <link refid="class_info_mgr"/>
+        <childnode refid="1529" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1530" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1529" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1530" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1456" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="1531" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="1486">
+        <label>std::map&lt; DWord, SeDBCharRaceArena * &gt;</label>
+      </node>
+      <node id="1475">
+        <label>SeNetAddr</label>
+        <link refid="struct_se_net_addr"/>
+      </node>
+      <node id="1465">
+        <label>SeAttrUnit</label>
+        <link refid="struct_se_attr_unit"/>
+      </node>
+      <node id="1531">
+        <label>std::map&lt; DWord, SeDBCharHero * &gt;</label>
+      </node>
+      <node id="1503">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1501">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="1467">
+        <label>SeExternAttrUnit</label>
+        <link refid="struct_se_extern_attr_unit"/>
+      </node>
+      <node id="1462">
+        <label>DataMgr&lt; SeDBCharItem &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1478">
+        <label>std::map&lt; DWord, SeWaitPlayer * &gt;</label>
+        <childnode refid="1479" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1518">
+        <label>std::vector&lt; SeStatMap * &gt;</label>
+        <childnode refid="1519" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1488">
+        <label>DataMgr&lt; SeDBCharRaceHero &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1485">
+        <label>DataMgr&lt; SeDBCharRaceArena &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1497">
+        <label>DataMgr&lt; SeDBCharTask &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1469">
+        <label>SeMobileInfo</label>
+        <link refid="struct_se_mobile_info"/>
+      </node>
+      <node id="1468">
+        <label>std::map&lt; uint16_t, CItem * &gt;</label>
+        <childnode refid="1464" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1484">
+        <label>RaceMapMgr</label>
+        <link refid="class_race_map_mgr"/>
+        <childnode refid="1485" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1485" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1456" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="1486" relation="usage">
+          <edgelabel>m_race_map</edgelabel>
+        </childnode>
+      </node>
+      <node id="1530">
+        <label>DataMgr&lt; SeDBCharInfo &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1510">
+        <label>ActiveAvatarMgr</label>
+        <link refid="class_active_avatar_mgr"/>
+        <childnode refid="1511" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1511" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1512" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+        <childnode refid="1456" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="1470">
+        <label>BlockServer</label>
+        <link refid="class_block_server"/>
+        <childnode refid="1471" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1471" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1472" relation="usage">
+          <edgelabel>m_kLeagueInfo</edgelabel>
+        </childnode>
+        <childnode refid="1473" relation="usage">
+          <edgelabel>m_kAllPlayer</edgelabel>
+        </childnode>
+        <childnode refid="1476" relation="usage">
+          <edgelabel>m_kThreadMsgMgr</edgelabel>
+        </childnode>
+        <childnode refid="1478" relation="usage">
+          <edgelabel>m_kWaitPlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1461">
+        <label>CItemMgr</label>
+        <link refid="class_c_item_mgr"/>
+        <childnode refid="1462" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1462" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1463" relation="usage">
+          <edgelabel>m_idMap</edgelabel>
+        </childnode>
+        <childnode refid="1456" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+        </childnode>
+        <childnode refid="1468" relation="usage">
+          <edgelabel>m_BagMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="1527">
+        <label>SeExChangeInfo</label>
+        <link refid="struct_se_ex_change_info"/>
+        <childnode refid="1460" relation="usage">
+          <edgelabel>kRecordTime</edgelabel>
+        </childnode>
+      </node>
+      <node id="1507">
+        <label>std::unordered_map&lt; DWord, SeCharLadderData * &gt;</label>
+        <childnode refid="1508" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1522">
+        <label>std::map&lt; DWord, SeAchieveScheduleInfo * &gt;</label>
+        <childnode refid="1523" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1512">
+        <label>std::set&lt; DWord &gt;</label>
+      </node>
+      <node id="1532">
+        <label>SeSingleMatchInfo</label>
+        <link refid="struct_se_single_match_info"/>
+      </node>
+      <node id="1520">
+        <label>AchieveScheduleMgr</label>
+        <link refid="class_achieve_schedule_mgr"/>
+        <childnode refid="1521" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1521" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1456" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+        <childnode refid="1522" relation="usage">
+          <edgelabel>m_ScheduleMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="1471">
+        <label>Thread</label>
+      </node>
+      <node id="1521">
+        <label>DataMgr&lt; SeDBCharAchieveSchedule &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1509">
+        <label>SeLadderRankInfo</label>
+        <link refid="struct_se_ladder_rank_info"/>
+      </node>
+      <node id="1516">
+        <label>DataMgr&lt; SeDBCharAchieveFinish &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1511">
+        <label>DataMgr&lt; SeDBCharActiveAvatar &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1458">
+        <label>std::map&lt; DWord, SeCharNexusFriendData * &gt;</label>
+        <childnode refid="1459" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1508">
+        <label>SeCharLadderData</label>
+        <link refid="struct_se_char_ladder_data"/>
+        <childnode refid="1509" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1509" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1455">
+        <label>DataMgr&lt; SeDBCharHero &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1524">
+        <label>std::map&lt; DWord, VCharMemory &gt;</label>
+        <childnode refid="1525" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1473">
+        <label>std::map&lt; HSock, SeLoginPlayer * &gt;</label>
+        <childnode refid="1474" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1466">
+        <label>SeCiTiao</label>
+        <link refid="struct_se_ci_tiao"/>
+        <childnode refid="1467" relation="usage">
+          <edgelabel>SkillAdd</edgelabel>
+        </childnode>
+      </node>
+      <node id="1529">
+        <label>SeDBCharInfo</label>
+      </node>
+      <node id="1526">
+        <label>std::vector&lt; SeExChangeInfo * &gt;</label>
+        <childnode refid="1527" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1482">
+        <label>EquipSchemaMgr</label>
+        <link refid="class_equip_schema_mgr"/>
+        <childnode refid="1483" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1483" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1456" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="1487">
+        <label>RaceHeroMgr</label>
+        <link refid="class_race_hero_mgr"/>
+        <childnode refid="1488" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1488" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1456" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="1489" relation="usage">
+          <edgelabel>map_arena_race_heros</edgelabel>
+        </childnode>
+        <childnode refid="1491" relation="usage">
+          <edgelabel>map_race_heros</edgelabel>
+        </childnode>
+      </node>
+      <node id="1477">
+        <label>SeMsgData</label>
+        <link refid="struct_se_msg_data"/>
+      </node>
+      <node id="1517">
+        <label>std::map&lt; DWord, std::map&lt; DWord, SeAchieveFinishInfo * &gt; &gt;</label>
+      </node>
+      <node id="1496">
+        <label>TaskMgr</label>
+        <link refid="class_task_mgr"/>
+        <childnode refid="1497" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1497" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1498" relation="usage">
+          <edgelabel>m_akVTask</edgelabel>
+        </childnode>
+        <childnode refid="1456" relation="usage">
+          <edgelabel>m_Player</edgelabel>
+        </childnode>
+      </node>
+      <node id="1514">
+        <label>std::map&lt; SeDBTableIndex, int &gt;</label>
+      </node>
+      <node id="1519">
+        <label>SeStatMap</label>
+        <link refid="struct_se_stat_map"/>
+      </node>
+      <node id="1474">
+        <label>SeLoginPlayer</label>
+        <link refid="struct_se_login_player"/>
+        <childnode refid="1475" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1502">
+        <label>std::string</label>
+        <childnode refid="1503" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1489">
+        <label>std::map&lt; DWord, SeUserRaceMapHeroBase &gt;</label>
+        <childnode refid="1490" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1506">
+        <label>TownItemTable</label>
+        <link refid="struct_town_item_table"/>
+        <childnode refid="1501" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1502" relation="usage">
+          <edgelabel>kAttachModel1</edgelabel>
+          <edgelabel>kAttachModel2</edgelabel>
+          <edgelabel>kPVPValueA</edgelabel>
+          <edgelabel>ktaozhuangID</edgelabel>
+          <edgelabel>kNameID</edgelabel>
+          <edgelabel>kPVPValueB</edgelabel>
+          <edgelabel>kDesc</edgelabel>
+          <edgelabel>kPVPValueC</edgelabel>
+          <edgelabel>kPVPValueD</edgelabel>
+          <edgelabel>kPVPValueE</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" line="9" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/HeroMgr.h" bodystart="8" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_hero_mgr_1afb7e5dccb020a0a7e82dbbda55527028" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>createFreeHeroes</name></member>
+      <member refid="class_hero_mgr_1afb7e5dccb020a0a7e82dbbda55527028" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>createFreeHeroes</name></member>
+      <member refid="class_hero_mgr_1abf15e2273f2e65398ec2aa335b1ed6c8" prot="public" virt="virtual"><scope>HeroMgr</scope><name>fixData</name></member>
+      <member refid="class_hero_mgr_1abf15e2273f2e65398ec2aa335b1ed6c8" prot="public" virt="virtual"><scope>HeroMgr</scope><name>fixData</name></member>
+      <member refid="class_hero_mgr_1a957c069c1ac7a84d81da60b20330f0db" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>getAllUnlockHeroInfo</name></member>
+      <member refid="class_hero_mgr_1a957c069c1ac7a84d81da60b20330f0db" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>getAllUnlockHeroInfo</name></member>
+      <member refid="class_hero_mgr_1acc4783d8ab4d93e3858383640e134312" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>getHeroInfo</name></member>
+      <member refid="class_hero_mgr_1acc4783d8ab4d93e3858383640e134312" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>getHeroInfo</name></member>
+      <member refid="class_hero_mgr_1ab5ae6be0554f054167746d4c808964e9" prot="private" virt="non-virtual"><scope>HeroMgr</scope><name>getOwner</name></member>
+      <member refid="class_hero_mgr_1a7437a354a389a041fa1e4f0a7a8d307d" prot="private" virt="non-virtual"><scope>HeroMgr</scope><name>getOwner</name></member>
+      <member refid="class_hero_mgr_1a27edeb5329c18062dc7c48ae82750487" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>HeroMgr</name></member>
+      <member refid="class_hero_mgr_1a27edeb5329c18062dc7c48ae82750487" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>HeroMgr</name></member>
+      <member refid="class_hero_mgr_1a95a298c7d6927414102db7dcae89ef82" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>isValidAvatar</name></member>
+      <member refid="class_hero_mgr_1ab5a338580483956077e6e7083da9b2c2" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>isValidAvatar</name></member>
+      <member refid="class_hero_mgr_1a50b5d4a143afc9e93c117d97b0212da5" prot="private" virt="non-virtual"><scope>HeroMgr</scope><name>isValidHero</name></member>
+      <member refid="class_hero_mgr_1a744c944d13582586648bba2dacc8cfac" prot="private" virt="non-virtual"><scope>HeroMgr</scope><name>isValidHero</name></member>
+      <member refid="class_hero_mgr_1a5dbce1566186ab8a0c5c7479e167a712" prot="public" virt="virtual"><scope>HeroMgr</scope><name>loadData</name></member>
+      <member refid="class_hero_mgr_1a5dbce1566186ab8a0c5c7479e167a712" prot="public" virt="virtual"><scope>HeroMgr</scope><name>loadData</name></member>
+      <member refid="class_hero_mgr_1aea06717d10974bb2cf4427b0b2f4c92b" prot="private" virt="non-virtual"><scope>HeroMgr</scope><name>m_data</name></member>
+      <member refid="class_hero_mgr_1ae66084a25f2c7e72f6404c99159a9156" prot="private" virt="non-virtual"><scope>HeroMgr</scope><name>m_owner</name></member>
+      <member refid="class_hero_mgr_1af98b50866da20d78c79738ea73cb490e" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>notifyChanged</name></member>
+      <member refid="class_hero_mgr_1af98b50866da20d78c79738ea73cb490e" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>notifyChanged</name></member>
+      <member refid="class_hero_mgr_1a187ef4a0b379c47d56ceb65d1b4c5f51" prot="private" virt="non-virtual"><scope>HeroMgr</scope><name>processAddHeroBindItem</name></member>
+      <member refid="class_hero_mgr_1a187ef4a0b379c47d56ceb65d1b4c5f51" prot="private" virt="non-virtual"><scope>HeroMgr</scope><name>processAddHeroBindItem</name></member>
+      <member refid="class_hero_mgr_1ae0f4ebafef6dfa89a38a959ef1762c2e" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>sendInitData</name></member>
+      <member refid="class_hero_mgr_1ae0f4ebafef6dfa89a38a959ef1762c2e" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>sendInitData</name></member>
+      <member refid="class_hero_mgr_1a5a73b3c804087d226e3ce35291f7cdd4" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>setAvatar</name></member>
+      <member refid="class_hero_mgr_1a5a73b3c804087d226e3ce35291f7cdd4" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>setAvatar</name></member>
+      <member refid="class_hero_mgr_1a0f1d20deb76cc4c713b0f6532089a3d4" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>unlockHero</name></member>
+      <member refid="class_hero_mgr_1a0f1d20deb76cc4c713b0f6532089a3d4" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>unlockHero</name></member>
+      <member refid="class_hero_mgr_1ab3c151c9c241d585faccf553d2cb277d" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>~HeroMgr</name></member>
+      <member refid="class_hero_mgr_1ab3c151c9c241d585faccf553d2cb277d" prot="public" virt="non-virtual"><scope>HeroMgr</scope><name>~HeroMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

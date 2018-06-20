@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_json_1_1_char_reader_builder" kind="class" prot="public">
+    <compoundname>Json::CharReaderBuilder</compoundname>
+    <basecompoundref refid="class_json_1_1_char_reader_1_1_factory" prot="public" virt="non-virtual">Json::CharReader::Factory</basecompoundref>
+    <includes refid="reader_8h" local="no">reader.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_json_1_1_char_reader_builder_1ac69b7911ad64c171c51ebaf2ea26d958" prot="public" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref></type>
+        <definition>Json::Value Json::CharReaderBuilder::settings_</definition>
+        <argsstring></argsstring>
+        <name>settings_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configuration of this builder. These are case-sensitive. Available settings (case-sensitive):<itemizedlist>
+<listitem><para><computeroutput>&quot;collectComments&quot;: false or true</computeroutput><itemizedlist>
+<listitem><para>true to collect comment and allow writing them back during serialization, false to discard comments. This parameter is ignored if allowComments is false.</para></listitem></itemizedlist>
+</para></listitem><listitem><para><computeroutput>&quot;allowComments&quot;: false or true</computeroutput><itemizedlist>
+<listitem><para>true if comments are allowed.</para></listitem></itemizedlist>
+</para></listitem><listitem><para><computeroutput>&quot;strictRoot&quot;: false or true</computeroutput><itemizedlist>
+<listitem><para>true if root must be either an array or an object value</para></listitem></itemizedlist>
+</para></listitem><listitem><para><computeroutput>&quot;allowDroppedNullPlaceholders&quot;: false or true</computeroutput><itemizedlist>
+<listitem><para>true if dropped null placeholders are allowed. (See <ref refid="class_json_1_1_stream_writer_builder" kindref="compound">StreamWriterBuilder</ref>.)</para></listitem></itemizedlist>
+</para></listitem><listitem><para><computeroutput>&quot;allowNumericKeys&quot;: false or true</computeroutput><itemizedlist>
+<listitem><para>true if numeric object keys are allowed.</para></listitem></itemizedlist>
+</para></listitem><listitem><para><computeroutput>&quot;allowSingleQuotes&quot;: false or true</computeroutput><itemizedlist>
+<listitem><para>true if &apos;&apos; are allowed for strings (both keys and values)</para></listitem></itemizedlist>
+</para></listitem><listitem><para><computeroutput>&quot;stackLimit&quot;: integer</computeroutput><itemizedlist>
+<listitem><para>Exceeding stackLimit (recursive depth of <computeroutput>readValue()</computeroutput>) will cause an exception.</para></listitem><listitem><para>This is a security issue (seg-faults caused by deeply nested JSON), so the default is low.</para></listitem></itemizedlist>
+</para></listitem><listitem><para><computeroutput>&quot;failIfExtra&quot;: false or true</computeroutput><itemizedlist>
+<listitem><para>If true, <computeroutput>parse()</computeroutput> returns false when extra non-whitespace trails the JSON value in the input string.</para></listitem></itemizedlist>
+</para></listitem><listitem><para><computeroutput>&quot;rejectDupKeys&quot;: false or true</computeroutput><itemizedlist>
+<listitem><para>If true, <computeroutput>parse()</computeroutput> returns false when a key is duplicated within an object.</para></listitem></itemizedlist>
+</para></listitem><listitem><para><computeroutput>&quot;allowSpecialFloats&quot;: false or true</computeroutput><itemizedlist>
+<listitem><para>If true, special float values (NaNs and infinities) are allowed and their values are lossfree restorable.</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><para>You can examine &apos;settings_` yourself to see the defaults. You can also write and read them just like any JSON <ref refid="class_json_1_1_value" kindref="compound">Value</ref>. <simplesect kind="see"><para><ref refid="class_json_1_1_char_reader_builder_1a03ff031e06aabff989ab4addc87294ab" kindref="member">setDefaults()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="333" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="333" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a6e197b69a2ede3d87b03b9c5c78ba46a" compoundref="json__reader_8cpp" startline="1913" endline="1916">CharReaderBuilder</referencedby>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a81da7da750111321ff14baf0f0a4c8ae" compoundref="json__reader_8cpp" startline="1919" endline="1933">newCharReader</referencedby>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a324561448113b48eb7aa6e6a5ce3aa0d" compoundref="json__reader_8cpp" startline="1965" endline="1968">operator[]</referencedby>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a3d233735a1e4b3c9a2cb9c68f972c02a" compoundref="json__reader_8cpp" startline="1948" endline="1964">validate</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_char_reader_builder_1a6e197b69a2ede3d87b03b9c5c78ba46a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::CharReaderBuilder::CharReaderBuilder</definition>
+        <argsstring>()</argsstring>
+        <name>CharReaderBuilder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="335" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="1913" bodyend="1916"/>
+        <references refid="class_json_1_1_char_reader_builder_1a03ff031e06aabff989ab4addc87294ab" compoundref="json__reader_8cpp" startline="1985" endline="1999">setDefaults</references>
+        <references refid="class_json_1_1_char_reader_builder_1ac69b7911ad64c171c51ebaf2ea26d958" compoundref="reader_8h" startline="333">settings_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_char_reader_builder_1ae37ffbceec53ba08a99345ae3335af32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::CharReaderBuilder::~CharReaderBuilder</definition>
+        <argsstring>() override</argsstring>
+        <name>~CharReaderBuilder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="336" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="1917" bodyend="1918"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_char_reader_builder_1a81da7da750111321ff14baf0f0a4c8ae" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_json_1_1_char_reader" kindref="compound">CharReader</ref> *</type>
+        <definition>CharReader * Json::CharReaderBuilder::newCharReader</definition>
+        <argsstring>() const override</argsstring>
+        <name>newCharReader</name>
+        <reimplements refid="class_json_1_1_char_reader_1_1_factory_1a4c5862a1ffd432372dbe65cf59de98c4">newCharReader</reimplements>
+        <briefdescription>
+<para>Allocate a <ref refid="class_json_1_1_char_reader" kindref="compound">CharReader</ref> via operator new(). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if something goes wrong (e.g. invalid settings) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="338" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="1919" bodyend="1933"/>
+        <references refid="class_json_1_1_our_features_1a0686e1406b6677f496529f9f3fe98d1e" compoundref="json__reader_8cpp" startline="910" endline="910">Json::OurFeatures::all</references>
+        <references refid="class_json_1_1_our_features_1ac71bb7ba7363d3b05ed76602b036ce33" compoundref="json__reader_8cpp" startline="896">Json::OurFeatures::allowComments_</references>
+        <references refid="class_json_1_1_our_features_1a13963bc44bf948eec1968f7ff8e8f5f1" compoundref="json__reader_8cpp" startline="898">Json::OurFeatures::allowDroppedNullPlaceholders_</references>
+        <references refid="class_json_1_1_our_features_1af6973fc7e774ce2d634ba99442aeb91a" compoundref="json__reader_8cpp" startline="899">Json::OurFeatures::allowNumericKeys_</references>
+        <references refid="class_json_1_1_our_features_1abbd6c196d7a22e2a360a59887eda4610" compoundref="json__reader_8cpp" startline="900">Json::OurFeatures::allowSingleQuotes_</references>
+        <references refid="class_json_1_1_our_features_1af760f91cc2a7af37e44f78fb466061bb" compoundref="json__reader_8cpp" startline="903">Json::OurFeatures::allowSpecialFloats_</references>
+        <references refid="class_json_1_1_value_1a7402c797285c020566c3db5f8ae4e940" compoundref="json__value_8cpp" startline="798" endline="815">Json::Value::asBool</references>
+        <references refid="class_json_1_1_value_1ac786e35b860b1d700cb3d3e56dd6a235" compoundref="json__value_8cpp" startline="649" endline="669">Json::Value::asInt</references>
+        <references refid="class_json_1_1_our_features_1ae8ad25b90706c78f1a8fe929191ac61b" compoundref="json__reader_8cpp" startline="901">Json::OurFeatures::failIfExtra_</references>
+        <references refid="class_json_1_1_our_features_1a39b8e0b86b1c24a45e800c023bb715aa" compoundref="json__reader_8cpp" startline="902">Json::OurFeatures::rejectDupKeys_</references>
+        <references refid="class_json_1_1_char_reader_builder_1ac69b7911ad64c171c51ebaf2ea26d958" compoundref="reader_8h" startline="333">settings_</references>
+        <references refid="class_json_1_1_our_features_1a9a786713902d14be6d57a08cc03ccfff" compoundref="json__reader_8cpp" startline="904">Json::OurFeatures::stackLimit_</references>
+        <references refid="class_json_1_1_our_features_1a2095f66a776c0a4ae6cc931a0c94242e" compoundref="json__reader_8cpp" startline="897">Json::OurFeatures::strictRoot_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_char_reader_builder_1a3d233735a1e4b3c9a2cb9c68f972c02a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::CharReaderBuilder::validate</definition>
+        <argsstring>(Json::Value *invalid) const </argsstring>
+        <name>validate</name>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref> *</type>
+          <declname>invalid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if &apos;settings&apos; are legal and consistent; otherwise, indicate bad settings via &apos;invalid&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="343" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="1948" bodyend="1964"/>
+        <references refid="class_json_1_1_value_1a30fa08af88f2d0a038b22ba9f4e88b2a" compoundref="json__value_8cpp" startline="1168" endline="1183">Json::Value::getMemberNames</references>
+        <references refid="namespace_json_1a8fedd83f49c9a9109d503b2b1d4824aa" compoundref="json__reader_8cpp" startline="1934" endline="1947">Json::getValidReaderKeys</references>
+        <references refid="class_json_1_1_char_reader_builder_1ac69b7911ad64c171c51ebaf2ea26d958" compoundref="reader_8h" startline="333">settings_</references>
+        <references refid="class_json_1_1_value_1a4ca8ee6c48a34ca6c2f131956bab5e05" compoundref="json__value_8cpp" startline="851" endline="872">Json::Value::size</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_char_reader_builder_1a324561448113b48eb7aa6e6a5ce3aa0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+        <definition>Value &amp; Json::CharReaderBuilder::operator[]</definition>
+        <argsstring>(std::string key)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>std::string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A simple way to update a specific setting. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="347" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="1965" bodyend="1968"/>
+        <references refid="class_json_1_1_char_reader_builder_1ac69b7911ad64c171c51ebaf2ea26d958" compoundref="reader_8h" startline="333">settings_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_json_1_1_char_reader_builder_1a03ff031e06aabff989ab4addc87294ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::CharReaderBuilder::setDefaults</definition>
+        <argsstring>(Json::Value *settings)</argsstring>
+        <name>setDefaults</name>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by ctor, but you can use this to reset settings_. <simplesect kind="pre"><para>&apos;settings&apos; != NULL (but Json::null is fine) </para></simplesect>
+<simplesect kind="remark"><para>Defaults: <programlisting></programlisting></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>[CharReaderBuilderDefaults]</para><para>[CharReaderBuilderDefaults] </para>        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="354" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="1985" bodyend="1999"/>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a6e197b69a2ede3d87b03b9c5c78ba46a" compoundref="json__reader_8cpp" startline="1913" endline="1916">CharReaderBuilder</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_char_reader_builder_1a9c19e3c5475f9072d527810d4bf56749" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::CharReaderBuilder::strictMode</definition>
+        <argsstring>(Json::Value *settings)</argsstring>
+        <name>strictMode</name>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same as old <ref refid="class_json_1_1_features_1ae23176c14b2e79e81fb61fb1a8ab58ee" kindref="member">Features::strictMode()</ref>. <simplesect kind="pre"><para>&apos;settings&apos; != NULL (but Json::null is fine) </para></simplesect>
+<simplesect kind="remark"><para>Defaults: <programlisting></programlisting></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>[CharReaderBuilderStrictMode]</para><para>[CharReaderBuilderStrictMode] </para>        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="360" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="1970" bodyend="1983"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Build a <ref refid="class_json_1_1_char_reader" kindref="compound">CharReader</ref> implementation. </para>    </briefdescription>
+    <detaileddescription>
+<para>Usage: <programlisting><codeline><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Json;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="class_json_1_1_char_reader_builder" kindref="compound">CharReaderBuilder</ref><sp/>builder;</highlight></codeline>
+<codeline><highlight class="normal">builder[</highlight><highlight class="stringliteral">&quot;collectComments&quot;</highlight><highlight class="normal">]<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="class_json_1_1_value" kindref="compound">Value</ref><sp/>value;</highlight></codeline>
+<codeline><highlight class="normal">std::string<sp/>errs;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ok<sp/>=<sp/><ref refid="namespace_json_1acfebeaf759a841173ddce34c4da22486" kindref="member">parseFromStream</ref>(builder,<sp/>std::cin,<sp/>&amp;value,<sp/>&amp;errs);</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="843">
+        <label>Json::CharReaderBuilder</label>
+        <link refid="class_json_1_1_char_reader_builder"/>
+        <childnode refid="844" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="844">
+        <label>Json::CharReader::Factory</label>
+        <link refid="class_json_1_1_char_reader_1_1_factory"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="851">
+        <label>K</label>
+      </node>
+      <node id="852">
+        <label>T</label>
+      </node>
+      <node id="845">
+        <label>Json::CharReaderBuilder</label>
+        <link refid="class_json_1_1_char_reader_builder"/>
+        <childnode refid="846" relation="public-inheritance">
+        </childnode>
+        <childnode refid="847" relation="usage">
+          <edgelabel>settings_</edgelabel>
+        </childnode>
+      </node>
+      <node id="847">
+        <label>Json::Value</label>
+        <link refid="class_json_1_1_value"/>
+        <childnode refid="847" relation="usage">
+          <edgelabel>null</edgelabel>
+          <edgelabel>nullRef</edgelabel>
+        </childnode>
+        <childnode refid="848" relation="usage">
+          <edgelabel>comments_</edgelabel>
+        </childnode>
+        <childnode refid="849" relation="usage">
+          <edgelabel>value_</edgelabel>
+        </childnode>
+      </node>
+      <node id="850">
+        <label>std::map&lt; K, T &gt;</label>
+        <childnode refid="851" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="852" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="849">
+        <label>Json::Value::ValueHolder</label>
+        <link refid="union_json_1_1_value_1_1_value_holder"/>
+        <childnode refid="850" relation="usage">
+          <edgelabel>map_</edgelabel>
+        </childnode>
+      </node>
+      <node id="848">
+        <label>Json::Value::CommentInfo</label>
+        <link refid="struct_json_1_1_value_1_1_comment_info"/>
+      </node>
+      <node id="846">
+        <label>Json::CharReader::Factory</label>
+        <link refid="class_json_1_1_char_reader_1_1_factory"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="293" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="293" bodyend="361"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_char_reader_builder_1a6e197b69a2ede3d87b03b9c5c78ba46a" prot="public" virt="non-virtual"><scope>Json::CharReaderBuilder</scope><name>CharReaderBuilder</name></member>
+      <member refid="class_json_1_1_char_reader_builder_1a81da7da750111321ff14baf0f0a4c8ae" prot="public" virt="virtual"><scope>Json::CharReaderBuilder</scope><name>newCharReader</name></member>
+      <member refid="class_json_1_1_char_reader_builder_1a324561448113b48eb7aa6e6a5ce3aa0d" prot="public" virt="non-virtual"><scope>Json::CharReaderBuilder</scope><name>operator[]</name></member>
+      <member refid="class_json_1_1_char_reader_builder_1a03ff031e06aabff989ab4addc87294ab" prot="public" virt="non-virtual"><scope>Json::CharReaderBuilder</scope><name>setDefaults</name></member>
+      <member refid="class_json_1_1_char_reader_builder_1ac69b7911ad64c171c51ebaf2ea26d958" prot="public" virt="non-virtual"><scope>Json::CharReaderBuilder</scope><name>settings_</name></member>
+      <member refid="class_json_1_1_char_reader_builder_1a9c19e3c5475f9072d527810d4bf56749" prot="public" virt="non-virtual"><scope>Json::CharReaderBuilder</scope><name>strictMode</name></member>
+      <member refid="class_json_1_1_char_reader_builder_1a3d233735a1e4b3c9a2cb9c68f972c02a" prot="public" virt="non-virtual"><scope>Json::CharReaderBuilder</scope><name>validate</name></member>
+      <member refid="class_json_1_1_char_reader_builder_1ae37ffbceec53ba08a99345ae3335af32" prot="public" virt="non-virtual"><scope>Json::CharReaderBuilder</scope><name>~CharReaderBuilder</name></member>
+      <member refid="class_json_1_1_char_reader_1_1_factory_1ae6938f632fa57f88e05818add5bc21be" prot="public" virt="virtual"><scope>Json::CharReaderBuilder</scope><name>~Factory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,511 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_tab_mgr" kind="class" prot="public">
+    <compoundname>TabMgr</compoundname>
+    <includes refid="_src_2_tab_mgr_8h" local="no">TabMgr.h</includes>
+    <innerclass refid="struct_tab_mgr_1_1_select_item" prot="private">TabMgr::SelectItem</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_tab_mgr_1ae574494b607d7788d44d78ddb5f8d81b" prot="private" static="no">
+        <type>std::map&lt; DWord, <ref refid="struct_tab_mgr_1_1_select_item" kindref="compound">SelectItem</ref> * &gt;</type>
+        <definition>typedef std::map&lt;DWord, SelectItem *&gt; TabMgr::SELECTMAP</definition>
+        <argsstring></argsstring>
+        <name>SELECTMAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" line="59" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_tab_mgr_1ae574494b607d7788d44d78ddb5f8d81b" prot="private" static="no">
+        <type>std::map&lt; DWord, <ref refid="struct_tab_mgr_1_1_select_item" kindref="compound">SelectItem</ref> * &gt;</type>
+        <definition>typedef std::map&lt;DWord, SelectItem *&gt; TabMgr::SELECTMAP</definition>
+        <argsstring></argsstring>
+        <name>SELECTMAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TabMgr.h" line="59" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TabMgr.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_tab_mgr_1a19adf9468e2db212f8cead8c0ba61318" prot="private" static="no" mutable="no">
+        <type>Es::NormalLock</type>
+        <definition>Es::NormalLock TabMgr::m_mutex</definition>
+        <argsstring></argsstring>
+        <name>m_mutex</name>
+        <briefdescription>
+<para>Ëø. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" line="61" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="class_tab_mgr_1a6b2c5a6f3e749fdf0878a8f179473d07" compoundref="_src_2_tab_mgr_8cpp" startline="76" endline="89">getNextSelectID</referencedby>
+        <referencedby refid="class_tab_mgr_1abe882b7c7785d8d46bf6952150a2d4ec" compoundref="_src_2_tab_mgr_8cpp" startline="184" endline="220">onTabSelectRet</referencedby>
+        <referencedby refid="class_tab_mgr_1ae434823422416fdb9b091983ac4ab02f" compoundref="_src_2_tab_mgr_8cpp" startline="11" endline="57">tabSelect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_tab_mgr_1aee3b939177b85abc3a9381f82bcc5d6a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_tab_mgr_1ae574494b607d7788d44d78ddb5f8d81b" kindref="member">SELECTMAP</ref></type>
+        <definition>SELECTMAP TabMgr::m_selectItems</definition>
+        <argsstring></argsstring>
+        <name>m_selectItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" line="62" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="class_tab_mgr_1a6b2c5a6f3e749fdf0878a8f179473d07" compoundref="_src_2_tab_mgr_8cpp" startline="76" endline="89">getNextSelectID</referencedby>
+        <referencedby refid="class_tab_mgr_1abe882b7c7785d8d46bf6952150a2d4ec" compoundref="_src_2_tab_mgr_8cpp" startline="184" endline="220">onTabSelectRet</referencedby>
+        <referencedby refid="class_tab_mgr_1ae434823422416fdb9b091983ac4ab02f" compoundref="_src_2_tab_mgr_8cpp" startline="11" endline="57">tabSelect</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_tab_mgr_1ab201c2b951326b30c3ac3d285912c5d5" prot="private" static="no" mutable="no">
+        <type>DWord</type>
+        <definition>DWord TabMgr::m_nextSelectID</definition>
+        <argsstring></argsstring>
+        <name>m_nextSelectID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" line="63" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="class_tab_mgr_1a6b2c5a6f3e749fdf0878a8f179473d07" compoundref="_src_2_tab_mgr_8cpp" startline="76" endline="89">getNextSelectID</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_tab_mgr_1ae434823422416fdb9b091983ac4ab02f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TabMgr::tabSelect</definition>
+        <argsstring>(SeDBTableIndex eTable, const std::list&lt; int &gt; &amp;fields, const std::list&lt; SeDBPair &gt; &amp;conds, SelectCallback &amp;callback)</argsstring>
+        <name>tabSelect</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTable</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; int &gt; &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="_se_d_b_variant_8h_1a8834a7173b3bbad30871090774927cb1" kindref="member">SeDBPair</ref> &gt; &amp;</type>
+          <declname>conds</declname>
+        </param>
+        <param>
+          <type><ref refid="class_select_callback" kindref="compound">SelectCallback</ref> &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" line="28" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.cpp" bodystart="11" bodyend="57"/>
+        <references refid="struct_tab_mgr_1_1_select_item_1a1472ea416954706e62de5ccebb1f023a" compoundref="_src_2_tab_mgr_8h" startline="55">TabMgr::SelectItem::callback</references>
+        <references refid="struct_tab_mgr_1_1_select_item_1a3bca14aa4d38709d647763c9428f9091" compoundref="_src_2_tab_mgr_8h" startline="54">TabMgr::SelectItem::formats</references>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="class_se_d_b_stream_1ad6e3e36c80032f3ae4b4311864e4936f" compoundref="_se_d_b_stream_8cpp" startline="51" endline="54">SeDBStream::GetCurPos</references>
+        <references refid="class_se_d_b_stream_1ad7726eed21ab7e2812c74ab59e50fead" compoundref="_se_d_b_stream_8cpp" startline="46" endline="49">SeDBStream::GetData</references>
+        <references refid="class_tab_mgr_1aa49889835d37b7eec96b3082326c3abd" compoundref="_src_2_tab_mgr_8cpp" startline="59" endline="74">GetFieldFormat</references>
+        <references refid="class_tab_mgr_1a6b2c5a6f3e749fdf0878a8f179473d07" compoundref="_src_2_tab_mgr_8cpp" startline="76" endline="89">getNextSelectID</references>
+        <references refid="class_se_d_b_stream_1acf123cf335ac68a48b98a0a1815f7ad4" compoundref="_se_d_b_stream_8cpp" startline="28" endline="35">SeDBStream::InitData</references>
+        <references refid="class_tab_mgr_1a19adf9468e2db212f8cead8c0ba61318" compoundref="_src_2_tab_mgr_8h" startline="61">m_mutex</references>
+        <references refid="class_tab_mgr_1aee3b939177b85abc3a9381f82bcc5d6a" compoundref="_src_2_tab_mgr_8h" startline="62">m_selectItems</references>
+        <references refid="class_world_server_1a27379335dfde6d9a77f6b74da5d2ec16">WorldServer::SendWB_TabSelect</references>
+        <references refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009ab241863309c678744f19fd76cba40536" compoundref="_se_d_b_define_8h" startline="61">SFF_NULL</references>
+        <references refid="class_se_d_b_stream_1aecba2fc0ccfbcdc8a714347fce9d2efc" compoundref="_se_d_b_stream_8cpp" startline="224" endline="227">SeDBStream::WriteDword</references>
+        <references refid="class_se_d_b_stream_1a0dc737ec247a5dd476ee85c6ff4ccee5" compoundref="_se_d_b_stream_8cpp" startline="279" endline="299">SeDBStream::WriteVariant</references>
+        <referencedby refid="class_ladder_level_mgr_1aeea12dbd29b2d6e564514f45a4016ffa" compoundref="_src_2_ladder_level_mgr_8cpp" startline="242" endline="294">LadderLevelMgr::loadDBData</referencedby>
+        <referencedby refid="class_ladder_rank_mgr_1ae6830b76a0365aaa46a4611d7aa26488" compoundref="_src_2_ladder_rank_mgr_8cpp" startline="158" endline="172">LadderRankMgr::loadLadderRankInfoDBData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tab_mgr_1ac784516de12992d76e7362d3895777c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TabMgr::tabInsert</definition>
+        <argsstring>(SeDBTableIndex eTable, const std::list&lt; SeDBPair &gt; &amp;values)</argsstring>
+        <name>tabInsert</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTable</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="_se_d_b_variant_8h_1a8834a7173b3bbad30871090774927cb1" kindref="member">SeDBPair</ref> &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" line="34" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.cpp" bodystart="91" bodyend="109"/>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="class_se_d_b_stream_1ad6e3e36c80032f3ae4b4311864e4936f" compoundref="_se_d_b_stream_8cpp" startline="51" endline="54">SeDBStream::GetCurPos</references>
+        <references refid="class_se_d_b_stream_1ad7726eed21ab7e2812c74ab59e50fead" compoundref="_se_d_b_stream_8cpp" startline="46" endline="49">SeDBStream::GetData</references>
+        <references refid="class_se_d_b_stream_1acf123cf335ac68a48b98a0a1815f7ad4" compoundref="_se_d_b_stream_8cpp" startline="28" endline="35">SeDBStream::InitData</references>
+        <references refid="class_world_server_1aabd3d2bc85da93f0d9efdd52cfc4467d">WorldServer::SendWB_TabInsert</references>
+        <references refid="class_se_d_b_stream_1aecba2fc0ccfbcdc8a714347fce9d2efc" compoundref="_se_d_b_stream_8cpp" startline="224" endline="227">SeDBStream::WriteDword</references>
+        <references refid="class_se_d_b_stream_1a0dc737ec247a5dd476ee85c6ff4ccee5" compoundref="_se_d_b_stream_8cpp" startline="279" endline="299">SeDBStream::WriteVariant</references>
+        <referencedby refid="struct_ladder_rank_item_1a35c65ff6e981f8aea783e3db3b0852e0" compoundref="_src_2_ladder_rank_mgr_8cpp" startline="55" endline="73">LadderRankItem::DBInsert</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1af81d92611f0ba45a9c646d514108c814" compoundref="_src_2_ladder_level_mgr_8cpp" startline="121" endline="167">LadderLevelMgr::joinTop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tab_mgr_1a453989664a31947afdb5559a893e9665" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TabMgr::tabUpdate</definition>
+        <argsstring>(SeDBTableIndex eTable, const std::list&lt; SeDBPair &gt; &amp;values, const std::list&lt; SeDBPair &gt; &amp;conds)</argsstring>
+        <name>tabUpdate</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTable</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="_se_d_b_variant_8h_1a8834a7173b3bbad30871090774927cb1" kindref="member">SeDBPair</ref> &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="_se_d_b_variant_8h_1a8834a7173b3bbad30871090774927cb1" kindref="member">SeDBPair</ref> &gt; &amp;</type>
+          <declname>conds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" line="38" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.cpp" bodystart="111" bodyend="139"/>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="class_se_d_b_stream_1ad6e3e36c80032f3ae4b4311864e4936f" compoundref="_se_d_b_stream_8cpp" startline="51" endline="54">SeDBStream::GetCurPos</references>
+        <references refid="class_se_d_b_stream_1ad7726eed21ab7e2812c74ab59e50fead" compoundref="_se_d_b_stream_8cpp" startline="46" endline="49">SeDBStream::GetData</references>
+        <references refid="class_se_d_b_stream_1acf123cf335ac68a48b98a0a1815f7ad4" compoundref="_se_d_b_stream_8cpp" startline="28" endline="35">SeDBStream::InitData</references>
+        <references refid="class_world_server_1a2a52b070b336f6f36bf0c62aaa06ebb7">WorldServer::SendWB_TabUpdate</references>
+        <references refid="class_se_d_b_stream_1aecba2fc0ccfbcdc8a714347fce9d2efc" compoundref="_se_d_b_stream_8cpp" startline="224" endline="227">SeDBStream::WriteDword</references>
+        <references refid="class_se_d_b_stream_1a0dc737ec247a5dd476ee85c6ff4ccee5" compoundref="_se_d_b_stream_8cpp" startline="279" endline="299">SeDBStream::WriteVariant</references>
+        <referencedby refid="struct_ladder_rank_item_1abd302eb0e91f23cd10034ba4edfc7d87" compoundref="_src_2_ladder_rank_mgr_8cpp" startline="38" endline="53">LadderRankItem::DBUpdate</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1a5f2dde80c12500c73a5a24438adcae12" compoundref="_src_2_ladder_level_mgr_8cpp" startline="92" endline="111">LadderLevelMgr::updateScore</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tab_mgr_1a7e765f45b0e1c30d9483dd10a1d3ce6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TabMgr::tabDelete</definition>
+        <argsstring>(SeDBTableIndex eTable, const std::list&lt; SeDBPair &gt; &amp;conds)</argsstring>
+        <name>tabDelete</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTable</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="_se_d_b_variant_8h_1a8834a7173b3bbad30871090774927cb1" kindref="member">SeDBPair</ref> &gt; &amp;</type>
+          <declname>conds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" line="43" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.cpp" bodystart="141" bodyend="161"/>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="class_se_d_b_stream_1ad6e3e36c80032f3ae4b4311864e4936f" compoundref="_se_d_b_stream_8cpp" startline="51" endline="54">SeDBStream::GetCurPos</references>
+        <references refid="class_se_d_b_stream_1ad7726eed21ab7e2812c74ab59e50fead" compoundref="_se_d_b_stream_8cpp" startline="46" endline="49">SeDBStream::GetData</references>
+        <references refid="class_se_d_b_stream_1acf123cf335ac68a48b98a0a1815f7ad4" compoundref="_se_d_b_stream_8cpp" startline="28" endline="35">SeDBStream::InitData</references>
+        <references refid="class_world_server_1afc0a112e78d2205369c8ba2eb562ae0c">WorldServer::SendWB_TabDelete</references>
+        <references refid="class_se_d_b_stream_1aecba2fc0ccfbcdc8a714347fce9d2efc" compoundref="_se_d_b_stream_8cpp" startline="224" endline="227">SeDBStream::WriteDword</references>
+        <references refid="class_se_d_b_stream_1a0dc737ec247a5dd476ee85c6ff4ccee5" compoundref="_se_d_b_stream_8cpp" startline="279" endline="299">SeDBStream::WriteVariant</references>
+        <referencedby refid="struct_ladder_rank_item_1ae11610bff85dc713d1bd5bf79fc5af7a" compoundref="_src_2_ladder_rank_mgr_8cpp" startline="28" endline="36">LadderRankItem::DBDelete</referencedby>
+        <referencedby refid="struct_ladder_level_mgr_1_1_top_item_1abdc1f1ef5e721b505c6d3504645ed3ab" compoundref="_src_2_ladder_level_mgr_8cpp" startline="169" endline="177">LadderLevelMgr::TopItem::dbDelete</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tab_mgr_1abe882b7c7785d8d46bf6952150a2d4ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TabMgr::onTabSelectRet</definition>
+        <argsstring>(SeBW_TabSelectRet *pkData)</argsstring>
+        <name>onTabSelectRet</name>
+        <param>
+          <type><ref refid="struct_se_b_w___tab_select_ret" kindref="compound">SeBW_TabSelectRet</ref> *</type>
+          <declname>pkData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" line="48" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.cpp" bodystart="184" bodyend="220"/>
+        <references refid="struct_se_b_w___tab_select_ret_1a3ef51d3ece79c8107f46193d5cf2fb27" compoundref="_se_ptl___b_s___to___w_s_8h" startline="142">SeBW_TabSelectRet::acData</references>
+        <references refid="class_se_d_b_stream_1a1351ad25b1dbae98d76b248a8861c036" compoundref="_se_d_b_stream_8cpp" startline="19" endline="26">SeDBStream::Attach</references>
+        <references refid="struct_se_b_w___tab_select_ret_1af73ec2da5ea1b8b6b33a9e8f94be910c" compoundref="_se_ptl___b_s___to___w_s_8h" startline="139">SeBW_TabSelectRet::bySendOver</references>
+        <references refid="struct_tab_mgr_1_1_select_item_1a1472ea416954706e62de5ccebb1f023a" compoundref="_src_2_tab_mgr_8h" startline="55">TabMgr::SelectItem::callback</references>
+        <references refid="struct_se_b_w___tab_select_ret_1ad777a03f05a4317f5cbe306fd55e38ec" compoundref="_se_ptl___b_s___to___w_s_8h" startline="138">SeBW_TabSelectRet::dwQueryID</references>
+        <references refid="class_select_callback_1a67e258ed5f6378a1f7946cfff9022c44">SelectCallback::execute</references>
+        <references refid="struct_tab_mgr_1_1_select_item_1a3bca14aa4d38709d647763c9428f9091" compoundref="_src_2_tab_mgr_8h" startline="54">TabMgr::SelectItem::formats</references>
+        <references refid="struct_se_b_w___tab_select_ret_1ac75739495d306978ff954d4167ccb029" compoundref="_se_ptl___b_s___to___w_s_8h" startline="140">SeBW_TabSelectRet::iRows</references>
+        <references refid="struct_se_b_w___tab_select_ret_1a1de9a717f565133915ca3683cf1151b3" compoundref="_se_ptl___b_s___to___w_s_8h" startline="141">SeBW_TabSelectRet::iSize</references>
+        <references refid="class_tab_mgr_1a19adf9468e2db212f8cead8c0ba61318" compoundref="_src_2_tab_mgr_8h" startline="61">m_mutex</references>
+        <references refid="class_tab_mgr_1aee3b939177b85abc3a9381f82bcc5d6a" compoundref="_src_2_tab_mgr_8h" startline="62">m_selectItems</references>
+        <references refid="class_se_d_b_stream_1a89c9786eb07dda7ecbbcf8842975242e" compoundref="_se_d_b_stream_8cpp" startline="161" endline="179">SeDBStream::ReadVariant</references>
+        <references refid="struct_tab_mgr_1_1_select_item_1a4094cdba32c03e688f60436fb54e961b" compoundref="_src_2_tab_mgr_8h" startline="56">TabMgr::SelectItem::recordset</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <referencedby refid="class_world_server_1a39598c7261976eb31a9e207d130618bc" compoundref="_src_2_se_b_w_process_8cpp" startline="256" endline="259">WorldServer::ProcessBW_TabSelectRet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tab_mgr_1ae434823422416fdb9b091983ac4ab02f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TabMgr::tabSelect</definition>
+        <argsstring>(SeDBTableIndex eTable, const std::list&lt; int &gt; &amp;fields, const std::list&lt; SeDBPair &gt; &amp;conds, SelectCallback &amp;callback)</argsstring>
+        <name>tabSelect</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTable</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; int &gt; &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="_se_d_b_variant_8h_1a8834a7173b3bbad30871090774927cb1" kindref="member">SeDBPair</ref> &gt; &amp;</type>
+          <declname>conds</declname>
+        </param>
+        <param>
+          <type><ref refid="class_select_callback" kindref="compound">SelectCallback</ref> &amp;</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TabMgr.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tab_mgr_1ac784516de12992d76e7362d3895777c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TabMgr::tabInsert</definition>
+        <argsstring>(SeDBTableIndex eTable, const std::list&lt; SeDBPair &gt; &amp;values)</argsstring>
+        <name>tabInsert</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTable</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="_se_d_b_variant_8h_1a8834a7173b3bbad30871090774927cb1" kindref="member">SeDBPair</ref> &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TabMgr.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tab_mgr_1a453989664a31947afdb5559a893e9665" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TabMgr::tabUpdate</definition>
+        <argsstring>(SeDBTableIndex eTable, const std::list&lt; SeDBPair &gt; &amp;values, const std::list&lt; SeDBPair &gt; &amp;conds)</argsstring>
+        <name>tabUpdate</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTable</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="_se_d_b_variant_8h_1a8834a7173b3bbad30871090774927cb1" kindref="member">SeDBPair</ref> &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="_se_d_b_variant_8h_1a8834a7173b3bbad30871090774927cb1" kindref="member">SeDBPair</ref> &gt; &amp;</type>
+          <declname>conds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TabMgr.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tab_mgr_1a7e765f45b0e1c30d9483dd10a1d3ce6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TabMgr::tabDelete</definition>
+        <argsstring>(SeDBTableIndex eTable, const std::list&lt; SeDBPair &gt; &amp;conds)</argsstring>
+        <name>tabDelete</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTable</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="_se_d_b_variant_8h_1a8834a7173b3bbad30871090774927cb1" kindref="member">SeDBPair</ref> &gt; &amp;</type>
+          <declname>conds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TabMgr.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tab_mgr_1abe882b7c7785d8d46bf6952150a2d4ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TabMgr::onTabSelectRet</definition>
+        <argsstring>(SeBW_TabSelectRet *pkData)</argsstring>
+        <name>onTabSelectRet</name>
+        <param>
+          <type><ref refid="struct_se_b_w___tab_select_ret" kindref="compound">SeBW_TabSelectRet</ref> *</type>
+          <declname>pkData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TabMgr.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_tab_mgr_1aa49889835d37b7eec96b3082326c3abd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009" kindref="member">SeFieldFormat</ref></type>
+        <definition>SeFieldFormat TabMgr::GetFieldFormat</definition>
+        <argsstring>(SeDBTableIndex eTable, int iIndex)</argsstring>
+        <name>GetFieldFormat</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTable</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" line="50" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.cpp" bodystart="59" bodyend="74"/>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009ab241863309c678744f19fd76cba40536" compoundref="_se_d_b_define_8h" startline="61">SFF_NULL</references>
+        <referencedby refid="class_tab_mgr_1ae434823422416fdb9b091983ac4ab02f" compoundref="_src_2_tab_mgr_8cpp" startline="11" endline="57">tabSelect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tab_mgr_1a6b2c5a6f3e749fdf0878a8f179473d07" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord TabMgr::getNextSelectID</definition>
+        <argsstring>()</argsstring>
+        <name>getNextSelectID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" line="64" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.cpp" bodystart="76" bodyend="89"/>
+        <references refid="class_tab_mgr_1a19adf9468e2db212f8cead8c0ba61318" compoundref="_src_2_tab_mgr_8h" startline="61">m_mutex</references>
+        <references refid="class_tab_mgr_1ab201c2b951326b30c3ac3d285912c5d5" compoundref="_src_2_tab_mgr_8h" startline="63">m_nextSelectID</references>
+        <references refid="class_tab_mgr_1aee3b939177b85abc3a9381f82bcc5d6a" compoundref="_src_2_tab_mgr_8h" startline="62">m_selectItems</references>
+        <referencedby refid="class_tab_mgr_1ae434823422416fdb9b091983ac4ab02f" compoundref="_src_2_tab_mgr_8cpp" startline="11" endline="57">tabSelect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tab_mgr_1aa49889835d37b7eec96b3082326c3abd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009" kindref="member">SeFieldFormat</ref></type>
+        <definition>SeFieldFormat TabMgr::GetFieldFormat</definition>
+        <argsstring>(SeDBTableIndex eTable, int iIndex)</argsstring>
+        <name>GetFieldFormat</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTable</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TabMgr.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tab_mgr_1a6b2c5a6f3e749fdf0878a8f179473d07" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord TabMgr::getNextSelectID</definition>
+        <argsstring>()</argsstring>
+        <name>getNextSelectID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TabMgr.h" line="64" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9141">
+        <label>std::list&lt; ROW &gt;</label>
+      </node>
+      <node id="9137">
+        <label>TabMgr</label>
+        <link refid="class_tab_mgr"/>
+        <childnode refid="9138" relation="usage">
+          <edgelabel>m_selectItems</edgelabel>
+        </childnode>
+      </node>
+      <node id="9140">
+        <label>std::list&lt; SeFieldFormat &gt;</label>
+      </node>
+      <node id="9138">
+        <label>std::map&lt; DWord, SelectItem * &gt;</label>
+        <childnode refid="9139" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9142">
+        <label>SelectCallback</label>
+        <link refid="class_select_callback"/>
+      </node>
+      <node id="9139">
+        <label>TabMgr::SelectItem</label>
+        <link refid="struct_tab_mgr_1_1_select_item"/>
+        <childnode refid="9140" relation="usage">
+          <edgelabel>formats</edgelabel>
+        </childnode>
+        <childnode refid="9141" relation="usage">
+          <edgelabel>recordset</edgelabel>
+        </childnode>
+        <childnode refid="9142" relation="usage">
+          <edgelabel>callback</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" line="26" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TabMgr.h" bodystart="25" bodyend="65"/>
+    <listofallmembers>
+      <member refid="class_tab_mgr_1aa49889835d37b7eec96b3082326c3abd" prot="private" virt="non-virtual"><scope>TabMgr</scope><name>GetFieldFormat</name></member>
+      <member refid="class_tab_mgr_1aa49889835d37b7eec96b3082326c3abd" prot="private" virt="non-virtual"><scope>TabMgr</scope><name>GetFieldFormat</name></member>
+      <member refid="class_tab_mgr_1a6b2c5a6f3e749fdf0878a8f179473d07" prot="private" virt="non-virtual"><scope>TabMgr</scope><name>getNextSelectID</name></member>
+      <member refid="class_tab_mgr_1a6b2c5a6f3e749fdf0878a8f179473d07" prot="private" virt="non-virtual"><scope>TabMgr</scope><name>getNextSelectID</name></member>
+      <member refid="class_tab_mgr_1a19adf9468e2db212f8cead8c0ba61318" prot="private" virt="non-virtual"><scope>TabMgr</scope><name>m_mutex</name></member>
+      <member refid="class_tab_mgr_1ab201c2b951326b30c3ac3d285912c5d5" prot="private" virt="non-virtual"><scope>TabMgr</scope><name>m_nextSelectID</name></member>
+      <member refid="class_tab_mgr_1aee3b939177b85abc3a9381f82bcc5d6a" prot="private" virt="non-virtual"><scope>TabMgr</scope><name>m_selectItems</name></member>
+      <member refid="class_tab_mgr_1abe882b7c7785d8d46bf6952150a2d4ec" prot="public" virt="non-virtual"><scope>TabMgr</scope><name>onTabSelectRet</name></member>
+      <member refid="class_tab_mgr_1abe882b7c7785d8d46bf6952150a2d4ec" prot="public" virt="non-virtual"><scope>TabMgr</scope><name>onTabSelectRet</name></member>
+      <member refid="class_tab_mgr_1ae574494b607d7788d44d78ddb5f8d81b" prot="private" virt="non-virtual"><scope>TabMgr</scope><name>SELECTMAP</name></member>
+      <member refid="class_tab_mgr_1ae574494b607d7788d44d78ddb5f8d81b" prot="private" virt="non-virtual"><scope>TabMgr</scope><name>SELECTMAP</name></member>
+      <member refid="class_tab_mgr_1a7e765f45b0e1c30d9483dd10a1d3ce6b" prot="public" virt="non-virtual"><scope>TabMgr</scope><name>tabDelete</name></member>
+      <member refid="class_tab_mgr_1a7e765f45b0e1c30d9483dd10a1d3ce6b" prot="public" virt="non-virtual"><scope>TabMgr</scope><name>tabDelete</name></member>
+      <member refid="class_tab_mgr_1ac784516de12992d76e7362d3895777c1" prot="public" virt="non-virtual"><scope>TabMgr</scope><name>tabInsert</name></member>
+      <member refid="class_tab_mgr_1ac784516de12992d76e7362d3895777c1" prot="public" virt="non-virtual"><scope>TabMgr</scope><name>tabInsert</name></member>
+      <member refid="class_tab_mgr_1ae434823422416fdb9b091983ac4ab02f" prot="public" virt="non-virtual"><scope>TabMgr</scope><name>tabSelect</name></member>
+      <member refid="class_tab_mgr_1ae434823422416fdb9b091983ac4ab02f" prot="public" virt="non-virtual"><scope>TabMgr</scope><name>tabSelect</name></member>
+      <member refid="class_tab_mgr_1a453989664a31947afdb5559a893e9665" prot="public" virt="non-virtual"><scope>TabMgr</scope><name>tabUpdate</name></member>
+      <member refid="class_tab_mgr_1a453989664a31947afdb5559a893e9665" prot="public" virt="non-virtual"><scope>TabMgr</scope><name>tabUpdate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

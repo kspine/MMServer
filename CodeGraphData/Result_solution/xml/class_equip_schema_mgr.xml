@@ -1,0 +1,1149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_equip_schema_mgr" kind="class" prot="public">
+    <compoundname>EquipSchemaMgr</compoundname>
+    <basecompoundref refid="class_data_mgr" prot="public" virt="non-virtual">DataMgr&lt; SeDBCharEquipSchema &gt;</basecompoundref>
+    <basecompoundref refid="class_data_mgr" prot="public" virt="non-virtual">DataMgr&lt; SeDBCharEquipSchema &gt;</basecompoundref>
+    <includes refid="_src_2_equip_schema_mgr_8h" local="no">EquipSchemaMgr.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_equip_schema_mgr_1aad7b8e39c855bce79848198d1edc51c9" prot="private" static="no" mutable="no">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer &amp; EquipSchemaMgr::m_owner</definition>
+        <argsstring></argsstring>
+        <name>m_owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.h" line="24" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_equip_schema_mgr_1a18f018f214b99cf6cd2c5bca8c6f318d" compoundref="_src_2_equip_schema_mgr_8cpp" startline="30" endline="33">getOwner</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_equip_schema_mgr_1ac8934fc9c713a5907c07ce9dcbafb95b" prot="private" static="no" mutable="no">
+        <type>SeDBCharEquipSchema *</type>
+        <definition>SeDBCharEquipSchema * EquipSchemaMgr::m_data</definition>
+        <argsstring>[SSD_QUICK_EQUIP_MAX_NUM]</argsstring>
+        <name>m_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.h" line="25" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_equip_schema_mgr_1a960b4a583a5cbb358d28f724ef6a8c2e" compoundref="_src_2_equip_schema_mgr_8cpp" startline="7" endline="11">EquipSchemaMgr</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1ab5bd5a01b4414f19fee5a5471b1d7e00" compoundref="_src_2_equip_schema_mgr_8cpp" startline="77" endline="118">fixData</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1a61525fa1de33e3174993eabe1deed139" compoundref="_src_2_equip_schema_mgr_8cpp" startline="256" endline="284">getEquips</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1a4291292292eaf54658191ce8a8b70d67" compoundref="_src_2_equip_schema_mgr_8cpp" startline="67" endline="75">loadData</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1a8bd817c291f391e01a86119700e5590a" compoundref="_src_2_equip_schema_mgr_8cpp" startline="154" endline="191">putOnEquip</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1ad9507dac413f408e4b6b48615303888b" compoundref="_src_2_equip_schema_mgr_8cpp" startline="237" endline="254">sendInitData</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1a7e8e14a5e9a6523555409c0f41dc73b2" compoundref="_src_2_equip_schema_mgr_8cpp" startline="193" endline="235">takeOffEquip</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1aa7555e9078473d1abddab8efa0c97c96" compoundref="_src_2_equip_schema_mgr_8cpp" startline="19" endline="28">~EquipSchemaMgr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_equip_schema_mgr_1a960b4a583a5cbb358d28f724ef6a8c2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EquipSchemaMgr::EquipSchemaMgr</definition>
+        <argsstring>(SePlayer &amp;owner)</argsstring>
+        <name>EquipSchemaMgr</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.h" line="10" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.cpp" bodystart="7" bodyend="11"/>
+        <references refid="class_equip_schema_mgr_1ac8934fc9c713a5907c07ce9dcbafb95b" compoundref="_src_2_equip_schema_mgr_8h" startline="25">m_data</references>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1aa7555e9078473d1abddab8efa0c97c96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EquipSchemaMgr::~EquipSchemaMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~EquipSchemaMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.h" line="11" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.cpp" bodystart="19" bodyend="28"/>
+        <references refid="class_equip_schema_mgr_1ac8934fc9c713a5907c07ce9dcbafb95b" compoundref="_src_2_equip_schema_mgr_8h" startline="25">m_data</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa5d4dbc04512f69bdf6830ba3c0a017fa" compoundref="_se_ptl_comm_define_8h" startline="40">SSD_QUICK_EQUIP_MAX_NUM</references>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1a4291292292eaf54658191ce8a8b70d67" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void EquipSchemaMgr::loadData</definition>
+        <argsstring>(const SeDBCharEquipSchema &amp;item)</argsstring>
+        <name>loadData</name>
+        <reimplements refid="class_data_mgr_1a19fd585291b3911a1f43d63dfbcc71c6">loadData</reimplements>
+        <param>
+          <type>const SeDBCharEquipSchema &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.h" line="13" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.cpp" bodystart="67" bodyend="75"/>
+        <references refid="class_default_player_data_strategy_1a26a2518d5e30bd8208abf1719f8031e4" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="59" endline="62">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataDelete</references>
+        <references refid="_d_b_server_2_src_2_char_equip_schema_strategy_8cpp_1ac00e94f888a36ec2365b259990e83861" compoundref="_d_b_server_2_src_2_char_equip_schema_strategy_8cpp" startline="3">g_kCharEquipSchemaStrategy</references>
+        <references refid="class_equip_schema_mgr_1a18f018f214b99cf6cd2c5bca8c6f318d" compoundref="_src_2_equip_schema_mgr_8cpp" startline="30" endline="33">getOwner</references>
+        <references refid="class_equip_schema_mgr_1ac8934fc9c713a5907c07ce9dcbafb95b" compoundref="_src_2_equip_schema_mgr_8h" startline="25">m_data</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa5d4dbc04512f69bdf6830ba3c0a017fa" compoundref="_se_ptl_comm_define_8h" startline="40">SSD_QUICK_EQUIP_MAX_NUM</references>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1ab5bd5a01b4414f19fee5a5471b1d7e00" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void EquipSchemaMgr::fixData</definition>
+        <argsstring>()</argsstring>
+        <name>fixData</name>
+        <reimplements refid="class_data_mgr_1ab72bd1d8bc0f210c94d235c978fbbd4c">fixData</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.h" line="14" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.cpp" bodystart="77" bodyend="118"/>
+        <references refid="class_default_player_data_strategy_1a26a2518d5e30bd8208abf1719f8031e4" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="59" endline="62">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataDelete</references>
+        <references refid="class_default_player_data_strategy_1a6baced26772bd2c55f9e1caaac6d23ef" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="53" endline="56">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataUpdate</references>
+        <references refid="_d_b_server_2_src_2_char_equip_schema_strategy_8cpp_1ac00e94f888a36ec2365b259990e83861" compoundref="_d_b_server_2_src_2_char_equip_schema_strategy_8cpp" startline="3">g_kCharEquipSchemaStrategy</references>
+        <references refid="class_c_item_mgr_1ae46cfb3d7664beb10d52a125fb7d0e1f" compoundref="_src_2_item_mgr_8cpp" startline="1345" endline="1356">CItemMgr::getItem</references>
+        <references refid="class_se_player_1a41f0b00c2f8e02d3acfce5d016f3ec4a" compoundref="_world_server_2_src_2_se_player_8h" startline="55" endline="55">SePlayer::GetItemMgr</references>
+        <references refid="class_equip_schema_mgr_1a18f018f214b99cf6cd2c5bca8c6f318d" compoundref="_src_2_equip_schema_mgr_8cpp" startline="30" endline="33">getOwner</references>
+        <references refid="class_equip_schema_mgr_1a55c5e1458eece92e6f5d6982ae0f088b" compoundref="_src_2_equip_schema_mgr_8cpp" startline="120" endline="137">isValidEquip</references>
+        <references refid="class_equip_schema_mgr_1ac8934fc9c713a5907c07ce9dcbafb95b" compoundref="_src_2_equip_schema_mgr_8h" startline="25">m_data</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1a9a4203baa8512036a78da0e578f2c26c" compoundref="_src_2_equip_schema_mgr_8cpp" startline="62">partBegin</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1aa3fa88ea5a774dcb9d54fc6248c82951" compoundref="_src_2_equip_schema_mgr_8cpp" startline="63">partEnd</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1a486dc023fe6d47ded3971eaaba6c9a8a" compoundref="_src_2_equip_schema_mgr_8cpp" startline="35">s_dbParts</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1a9e410fa3bdf8cc37984befe2e25c0513">s_varZero</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa5d4dbc04512f69bdf6830ba3c0a017fa" compoundref="_se_ptl_comm_define_8h" startline="40">SSD_QUICK_EQUIP_MAX_NUM</references>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1a8bd817c291f391e01a86119700e5590a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult EquipSchemaMgr::putOnEquip</definition>
+        <argsstring>(Word srcpos, Word ucDst, DWord &amp;dwItemID)</argsstring>
+        <name>putOnEquip</name>
+        <param>
+          <type>Word</type>
+          <declname>srcpos</declname>
+        </param>
+        <param>
+          <type>Word</type>
+          <declname>ucDst</declname>
+        </param>
+        <param>
+          <type>DWord &amp;</type>
+          <declname>dwItemID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.h" line="16" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.cpp" bodystart="154" bodyend="191"/>
+        <references refid="class_default_player_data_strategy_1a01824b8ff7f25899b55f3d4d1bbd6637" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="47" endline="50">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataInsert</references>
+        <references refid="class_default_player_data_strategy_1a6baced26772bd2c55f9e1caaac6d23ef" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="53" endline="56">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataUpdate</references>
+        <references refid="_d_b_server_2_src_2_char_equip_schema_strategy_8cpp_1ac00e94f888a36ec2365b259990e83861" compoundref="_d_b_server_2_src_2_char_equip_schema_strategy_8cpp" startline="3">g_kCharEquipSchemaStrategy</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1aeff3c1e5daf35924b946f1dab658aed4" compoundref="_src_2_equip_schema_mgr_8cpp" startline="139" endline="152">getEquipClass</references>
+        <references refid="class_player_data_strategy_1a5f33fc51eb6066e5fe9545dd9e273a3a" compoundref="_world_server_2_src_2_player_data_strategy_8cpp" startline="22" endline="26">PlayerDataStrategy::getGenID</references>
+        <references refid="class_se_player_1a0834e11ba6f0e730e99014864f8d25e0" compoundref="_town_server_2_src_2_se_player_8h" startline="7" endline="10">SePlayer::GetID</references>
+        <references refid="class_c_item_mgr_1ae46cfb3d7664beb10d52a125fb7d0e1f" compoundref="_src_2_item_mgr_8cpp" startline="1345" endline="1356">CItemMgr::getItem</references>
+        <references refid="class_se_player_1a41f0b00c2f8e02d3acfce5d016f3ec4a" compoundref="_world_server_2_src_2_se_player_8h" startline="55" endline="55">SePlayer::GetItemMgr</references>
+        <references refid="class_equip_schema_mgr_1a18f018f214b99cf6cd2c5bca8c6f318d" compoundref="_src_2_equip_schema_mgr_8cpp" startline="30" endline="33">getOwner</references>
+        <references refid="class_equip_schema_mgr_1a55c5e1458eece92e6f5d6982ae0f088b" compoundref="_src_2_equip_schema_mgr_8cpp" startline="120" endline="137">isValidEquip</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa001094f9ac0334129916e84e0e8765af" compoundref="_se_ptl_comm_define_8h" startline="609">ITEM_DST_INDEX_ERROR</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa0948d1c2f670047b615f1b91468de95c" compoundref="_se_ptl_comm_define_8h" startline="606">ITEM_RESULT_SUCCESS</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa395548e47e953a3c7b48db4cdfa6002f" compoundref="_se_ptl_comm_define_8h" startline="637">ITEM_TAKEON_POS_SUBTYPE_ERROR</references>
+        <references refid="class_equip_schema_mgr_1ac8934fc9c713a5907c07ce9dcbafb95b" compoundref="_src_2_equip_schema_mgr_8h" startline="25">m_data</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1a9a4203baa8512036a78da0e578f2c26c" compoundref="_src_2_equip_schema_mgr_8cpp" startline="62">partBegin</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1a486dc023fe6d47ded3971eaaba6c9a8a" compoundref="_src_2_equip_schema_mgr_8cpp" startline="35">s_dbParts</references>
+        <references refid="struct_c_item_1a2846eeb087de732805a73dbcc1219039" compoundref="_src_2_item_mgr_8h" startline="22">CItem::uiID</references>
+        <referencedby refid="class_block_server_1a7bc1837f426c6b5d05f320b0fcb9c9bb" compoundref="_src_2_se_t_b_l_process_8cpp" startline="110" endline="122">BlockServer::ProcessTBL_PutOnEquip</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1a7e8e14a5e9a6523555409c0f41dc73b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult EquipSchemaMgr::takeOffEquip</definition>
+        <argsstring>(Word srcpos)</argsstring>
+        <name>takeOffEquip</name>
+        <param>
+          <type>Word</type>
+          <declname>srcpos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.h" line="17" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.cpp" bodystart="193" bodyend="235"/>
+        <references refid="class_default_player_data_strategy_1a26a2518d5e30bd8208abf1719f8031e4" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="59" endline="62">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataDelete</references>
+        <references refid="class_default_player_data_strategy_1a6baced26772bd2c55f9e1caaac6d23ef" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="53" endline="56">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataUpdate</references>
+        <references refid="_d_b_server_2_src_2_char_equip_schema_strategy_8cpp_1ac00e94f888a36ec2365b259990e83861" compoundref="_d_b_server_2_src_2_char_equip_schema_strategy_8cpp" startline="3">g_kCharEquipSchemaStrategy</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1aeff3c1e5daf35924b946f1dab658aed4" compoundref="_src_2_equip_schema_mgr_8cpp" startline="139" endline="152">getEquipClass</references>
+        <references refid="class_equip_schema_mgr_1a18f018f214b99cf6cd2c5bca8c6f318d" compoundref="_src_2_equip_schema_mgr_8cpp" startline="30" endline="33">getOwner</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa001094f9ac0334129916e84e0e8765af" compoundref="_se_ptl_comm_define_8h" startline="609">ITEM_DST_INDEX_ERROR</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa0948d1c2f670047b615f1b91468de95c" compoundref="_se_ptl_comm_define_8h" startline="606">ITEM_RESULT_SUCCESS</references>
+        <references refid="class_equip_schema_mgr_1ac8934fc9c713a5907c07ce9dcbafb95b" compoundref="_src_2_equip_schema_mgr_8h" startline="25">m_data</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1a9a4203baa8512036a78da0e578f2c26c" compoundref="_src_2_equip_schema_mgr_8cpp" startline="62">partBegin</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1aa3fa88ea5a774dcb9d54fc6248c82951" compoundref="_src_2_equip_schema_mgr_8cpp" startline="63">partEnd</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1a486dc023fe6d47ded3971eaaba6c9a8a" compoundref="_src_2_equip_schema_mgr_8cpp" startline="35">s_dbParts</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1a9e410fa3bdf8cc37984befe2e25c0513">s_varZero</references>
+        <referencedby refid="class_block_server_1a5f62f0aafe6e06e6f6797ebe4e59276e" compoundref="_src_2_se_t_b_l_process_8cpp" startline="124" endline="135">BlockServer::ProcessTBL_TakeOffEquip</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1ad9507dac413f408e4b6b48615303888b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EquipSchemaMgr::sendInitData</definition>
+        <argsstring>()</argsstring>
+        <name>sendInitData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.h" line="18" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.cpp" bodystart="237" bodyend="254"/>
+        <references refid="struct_se_w_t___equip_schema_1a08dc98ff4ec879035a3241a7a5a2acba" compoundref="_se_ptl___w_s___to___t_s_8h" startline="534">SeWT_EquipSchema::akEquips</references>
+        <references refid="struct_se_equip_schema_info_1ac86ecc948ec446da0b417f83421d8a2d" compoundref="_se_ptl_comm_define_8h" startline="2081">SeEquipSchemaInfo::byIndex</references>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="_town_server_2_src_2_se_player_8inl_1a62abab014f0e4e72ae69f67e8e6c3a99" compoundref="_town_server_2_src_2_se_player_8inl" startline="6" endline="9">GetID</references>
+        <references refid="class_equip_schema_mgr_1a18f018f214b99cf6cd2c5bca8c6f318d" compoundref="_src_2_equip_schema_mgr_8cpp" startline="30" endline="33">getOwner</references>
+        <references refid="_world_server_2_src_2_se_player_8inl_1a2b912387cc3709ca75305a30f0167a37" compoundref="_world_server_2_src_2_se_player_8inl" startline="71" endline="74">GetTownSock</references>
+        <references refid="struct_se_w_t___equip_schema_1a36ad703a85236c3593ba7e69db14ed56" compoundref="_se_ptl___w_s___to___t_s_8h" startline="533">SeWT_EquipSchema::iNum</references>
+        <references refid="class_equip_schema_mgr_1ac8934fc9c713a5907c07ce9dcbafb95b" compoundref="_src_2_equip_schema_mgr_8h" startline="25">m_data</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1a9a4203baa8512036a78da0e578f2c26c" compoundref="_src_2_equip_schema_mgr_8cpp" startline="62">partBegin</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1aa3fa88ea5a774dcb9d54fc6248c82951" compoundref="_src_2_equip_schema_mgr_8cpp" startline="63">partEnd</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1a486dc023fe6d47ded3971eaaba6c9a8a" compoundref="_src_2_equip_schema_mgr_8cpp" startline="35">s_dbParts</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1a7f57e7a175f76dee04d5d5d956391498" compoundref="_src_2_equip_schema_mgr_8cpp" startline="48">s_proParts</references>
+        <references refid="class_world_server_1a3aedbed0ea7c3b0a871e9395420f4338">WorldServer::SendWT_EquipSchema</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa5d4dbc04512f69bdf6830ba3c0a017fa" compoundref="_se_ptl_comm_define_8h" startline="40">SSD_QUICK_EQUIP_MAX_NUM</references>
+        <referencedby refid="class_se_player_1a6a04c28f9bb38896f106fbf42e732f36" compoundref="_world_server_2_src_2_se_player_8cpp" startline="651" endline="725">SePlayer::OperateLoading</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1a61525fa1de33e3174993eabe1deed139" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EquipSchemaMgr::getEquips</definition>
+        <argsstring>(int equipmentType, VVPtlEquipItem &amp;equips)</argsstring>
+        <name>getEquips</name>
+        <param>
+          <type>int</type>
+          <declname>equipmentType</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_ptl_define_8h_1a4e5bc77363d94782adcd7a9f906d3b57" kindref="member">VVPtlEquipItem</ref> &amp;</type>
+          <declname>equips</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.h" line="19" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.cpp" bodystart="256" bodyend="284"/>
+        <references refid="struct_c_item_1a4ac15527aee78cae90f22e1ddc152c70" compoundref="_src_2_item_mgr_8cpp" startline="1560" endline="1582">CItem::CopyToEquipItem</references>
+        <references refid="class_c_item_mgr_1ae46cfb3d7664beb10d52a125fb7d0e1f" compoundref="_src_2_item_mgr_8cpp" startline="1345" endline="1356">CItemMgr::getItem</references>
+        <references refid="class_se_player_1a41f0b00c2f8e02d3acfce5d016f3ec4a" compoundref="_world_server_2_src_2_se_player_8h" startline="55" endline="55">SePlayer::GetItemMgr</references>
+        <references refid="class_equip_schema_mgr_1a18f018f214b99cf6cd2c5bca8c6f318d" compoundref="_src_2_equip_schema_mgr_8cpp" startline="30" endline="33">getOwner</references>
+        <references refid="class_equip_schema_mgr_1ac8934fc9c713a5907c07ce9dcbafb95b" compoundref="_src_2_equip_schema_mgr_8h" startline="25">m_data</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1a9a4203baa8512036a78da0e578f2c26c" compoundref="_src_2_equip_schema_mgr_8cpp" startline="62">partBegin</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1aa3fa88ea5a774dcb9d54fc6248c82951" compoundref="_src_2_equip_schema_mgr_8cpp" startline="63">partEnd</references>
+        <references refid="_src_2_equip_schema_mgr_8cpp_1a486dc023fe6d47ded3971eaaba6c9a8a" compoundref="_src_2_equip_schema_mgr_8cpp" startline="35">s_dbParts</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa5d4dbc04512f69bdf6830ba3c0a017fa" compoundref="_se_ptl_comm_define_8h" startline="40">SSD_QUICK_EQUIP_MAX_NUM</references>
+        <referencedby refid="class_block_server_1a1bded5892dcafcabdd012d472b6113ed" compoundref="_src_2_se_m_b_l_process_8cpp" startline="14" endline="43">BlockServer::ProcessMBL_RaceMatchLoadDetail</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1a960b4a583a5cbb358d28f724ef6a8c2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EquipSchemaMgr::EquipSchemaMgr</definition>
+        <argsstring>(SePlayer &amp;owner)</argsstring>
+        <name>EquipSchemaMgr</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/EquipSchemaMgr.h" line="10" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1aa7555e9078473d1abddab8efa0c97c96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EquipSchemaMgr::~EquipSchemaMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~EquipSchemaMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/EquipSchemaMgr.h" line="11" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1a4291292292eaf54658191ce8a8b70d67" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void EquipSchemaMgr::loadData</definition>
+        <argsstring>(const SeDBCharEquipSchema &amp;item)</argsstring>
+        <name>loadData</name>
+        <reimplements refid="class_data_mgr_1a19fd585291b3911a1f43d63dfbcc71c6">loadData</reimplements>
+        <param>
+          <type>const SeDBCharEquipSchema &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/EquipSchemaMgr.h" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1ab5bd5a01b4414f19fee5a5471b1d7e00" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void EquipSchemaMgr::fixData</definition>
+        <argsstring>()</argsstring>
+        <name>fixData</name>
+        <reimplements refid="class_data_mgr_1ab72bd1d8bc0f210c94d235c978fbbd4c">fixData</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/EquipSchemaMgr.h" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1a8bd817c291f391e01a86119700e5590a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult EquipSchemaMgr::putOnEquip</definition>
+        <argsstring>(Word srcpos, Word ucDst, DWord &amp;dwItemID)</argsstring>
+        <name>putOnEquip</name>
+        <param>
+          <type>Word</type>
+          <declname>srcpos</declname>
+        </param>
+        <param>
+          <type>Word</type>
+          <declname>ucDst</declname>
+        </param>
+        <param>
+          <type>DWord &amp;</type>
+          <declname>dwItemID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/EquipSchemaMgr.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1a7e8e14a5e9a6523555409c0f41dc73b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult EquipSchemaMgr::takeOffEquip</definition>
+        <argsstring>(Word srcpos)</argsstring>
+        <name>takeOffEquip</name>
+        <param>
+          <type>Word</type>
+          <declname>srcpos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/EquipSchemaMgr.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1ad9507dac413f408e4b6b48615303888b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EquipSchemaMgr::sendInitData</definition>
+        <argsstring>()</argsstring>
+        <name>sendInitData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/EquipSchemaMgr.h" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1a61525fa1de33e3174993eabe1deed139" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EquipSchemaMgr::getEquips</definition>
+        <argsstring>(int equipmentType, VVPtlEquipItem &amp;equips)</argsstring>
+        <name>getEquips</name>
+        <param>
+          <type>int</type>
+          <declname>equipmentType</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_ptl_define_8h_1a4e5bc77363d94782adcd7a9f906d3b57" kindref="member">VVPtlEquipItem</ref> &amp;</type>
+          <declname>equips</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/EquipSchemaMgr.h" line="19" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_equip_schema_mgr_1a18f018f214b99cf6cd2c5bca8c6f318d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer &amp; EquipSchemaMgr::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.h" line="21" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.cpp" bodystart="30" bodyend="33"/>
+        <references refid="class_equip_schema_mgr_1aad7b8e39c855bce79848198d1edc51c9" compoundref="_src_2_equip_schema_mgr_8h" startline="24">m_owner</references>
+        <referencedby refid="class_equip_schema_mgr_1ab5bd5a01b4414f19fee5a5471b1d7e00" compoundref="_src_2_equip_schema_mgr_8cpp" startline="77" endline="118">fixData</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1a61525fa1de33e3174993eabe1deed139" compoundref="_src_2_equip_schema_mgr_8cpp" startline="256" endline="284">getEquips</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1a4291292292eaf54658191ce8a8b70d67" compoundref="_src_2_equip_schema_mgr_8cpp" startline="67" endline="75">loadData</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1a8bd817c291f391e01a86119700e5590a" compoundref="_src_2_equip_schema_mgr_8cpp" startline="154" endline="191">putOnEquip</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1ad9507dac413f408e4b6b48615303888b" compoundref="_src_2_equip_schema_mgr_8cpp" startline="237" endline="254">sendInitData</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1a7e8e14a5e9a6523555409c0f41dc73b2" compoundref="_src_2_equip_schema_mgr_8cpp" startline="193" endline="235">takeOffEquip</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1a9cd911ac5916de0f03f8d9114fbedded" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer&amp; EquipSchemaMgr::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/EquipSchemaMgr.h" line="21" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_equip_schema_mgr_1a55c5e1458eece92e6f5d6982ae0f088b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EquipSchemaMgr::isValidEquip</definition>
+        <argsstring>(int partIndex, CItem *pItem)</argsstring>
+        <name>isValidEquip</name>
+        <param>
+          <type>int</type>
+          <declname>partIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_item" kindref="compound">CItem</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.h" line="22" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.cpp" bodystart="120" bodyend="137"/>
+        <references refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">TownItemTableMgr::Get</references>
+        <references refid="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" compoundref="_town_item__table_8cpp" startline="42" endline="50">TownItemTableMgr::GetTownItemTable</references>
+        <references refid="_town_item__table_8hpp_1a4a87ae9dae8583e9acda43ace84659cfab6de6094600654176fddb036c75799c4" compoundref="_town_item__table_8hpp" startline="14">TOWNITEM_CLASS_ZHUANGBEI</references>
+        <references refid="struct_town_item_table_1a50f128b2bc726da3161c11a9edb7787a" compoundref="_town_item__table_8hpp" startline="1170">TownItemTable::uiClass</references>
+        <references refid="struct_c_item_1a32b9964f399b841ecb58f80fc0c06d8f" compoundref="_src_2_item_mgr_8h" startline="24">CItem::uiItemID</references>
+        <references refid="struct_town_item_table_1a13c33d704af9a1d0d115c9d4b8a5b943" compoundref="_town_item__table_8hpp" startline="1171">TownItemTable::uiSubClass</references>
+        <referencedby refid="class_equip_schema_mgr_1ab5bd5a01b4414f19fee5a5471b1d7e00" compoundref="_src_2_equip_schema_mgr_8cpp" startline="77" endline="118">fixData</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1a8bd817c291f391e01a86119700e5590a" compoundref="_src_2_equip_schema_mgr_8cpp" startline="154" endline="191">putOnEquip</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_equip_schema_mgr_1a1fe2e4ca577390e762612152df263cb3" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool EquipSchemaMgr::isValidEquip</definition>
+        <argsstring>(int partIndex, CItem *pItem)</argsstring>
+        <name>isValidEquip</name>
+        <param>
+          <type>int</type>
+          <declname>partIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_item" kindref="compound">CItem</ref> *</type>
+          <declname>pItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/EquipSchemaMgr.h" line="22" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1286">
+        <label>DataMgr&lt; SeDBCharEquipSchema &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1285">
+        <label>EquipSchemaMgr</label>
+        <link refid="class_equip_schema_mgr"/>
+        <childnode refid="1286" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1286" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1357">
+        <label>SeAchieveScheduleInfo</label>
+        <link refid="struct_se_achieve_schedule_info"/>
+      </node>
+      <node id="1299">
+        <label>std::map&lt; DWord, CItem * &gt;</label>
+        <childnode refid="1300" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1312">
+        <label>SeThreadMsgMgr</label>
+        <link refid="class_se_thread_msg_mgr"/>
+        <childnode refid="1313" relation="usage">
+          <edgelabel>m_kTemMsgData</edgelabel>
+        </childnode>
+      </node>
+      <node id="1288">
+        <label>DataMgr&lt; SeDBCharEquipSchema &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1327">
+        <label>K</label>
+      </node>
+      <node id="1328">
+        <label>T</label>
+      </node>
+      <node id="1339">
+        <label>SeItem</label>
+        <link refid="struct_se_item"/>
+        <childnode refid="1296" relation="usage">
+          <edgelabel>kFinishTime</edgelabel>
+        </childnode>
+        <childnode refid="1340" relation="usage">
+          <edgelabel>pkItemRes</edgelabel>
+        </childnode>
+      </node>
+      <node id="1296">
+        <label>SeDBTime</label>
+        <link refid="struct_se_d_b_time"/>
+      </node>
+      <node id="1333">
+        <label>SeTaskInfo</label>
+        <link refid="struct_se_task_info"/>
+        <childnode refid="1334" relation="usage">
+          <edgelabel>pkRes</edgelabel>
+        </childnode>
+      </node>
+      <node id="1359">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="1328" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1300">
+        <label>CItem</label>
+        <link refid="struct_c_item"/>
+        <childnode refid="1301" relation="usage">
+          <edgelabel>pvpAttr</edgelabel>
+          <edgelabel>pveAttr</edgelabel>
+        </childnode>
+        <childnode refid="1302" relation="usage">
+          <edgelabel>citiaoAttr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1347">
+        <label>AchieveMgr</label>
+        <link refid="class_achieve_mgr"/>
+        <childnode refid="1289" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1289">
+        <label>SePlayer</label>
+        <link refid="class_se_player"/>
+        <childnode refid="1290" relation="usage">
+          <edgelabel>m_kCurPos</edgelabel>
+        </childnode>
+        <childnode refid="1291" relation="usage">
+          <edgelabel>m_heroMgr</edgelabel>
+        </childnode>
+        <childnode refid="1294" relation="usage">
+          <edgelabel>m_mapNexusFriendData</edgelabel>
+        </childnode>
+        <childnode refid="1297" relation="usage">
+          <edgelabel>m_PlayerItemMgr</edgelabel>
+        </childnode>
+        <childnode refid="1305" relation="usage">
+          <edgelabel>m_kMobileInfo</edgelabel>
+        </childnode>
+        <childnode refid="1296" relation="usage">
+          <edgelabel>m_kEnterTime</edgelabel>
+        </childnode>
+        <childnode refid="1306" relation="usage">
+          <edgelabel>m_pkBlockServer</edgelabel>
+        </childnode>
+        <childnode refid="1317" relation="usage">
+          <edgelabel>m_kLoadFlag2Count</edgelabel>
+        </childnode>
+        <childnode refid="1287" relation="usage">
+          <edgelabel>m_equipSchemaMgr</edgelabel>
+        </childnode>
+        <childnode refid="1318" relation="usage">
+          <edgelabel>m_raceMapMgr</edgelabel>
+        </childnode>
+        <childnode refid="1321" relation="usage">
+          <edgelabel>m_raceHeroMgr</edgelabel>
+        </childnode>
+        <childnode refid="1329" relation="usage">
+          <edgelabel>m_loadingFlag</edgelabel>
+        </childnode>
+        <childnode refid="1330" relation="usage">
+          <edgelabel>m_TaskMgr</edgelabel>
+        </childnode>
+        <childnode refid="1338" relation="usage">
+          <edgelabel>m_akItem</edgelabel>
+        </childnode>
+        <childnode refid="1341" relation="usage">
+          <edgelabel>m_FriendLadderData</edgelabel>
+        </childnode>
+        <childnode refid="1344" relation="usage">
+          <edgelabel>m_activeAvatarMgr</edgelabel>
+        </childnode>
+        <childnode refid="1347" relation="usage">
+          <edgelabel>m_AchieveMgr</edgelabel>
+        </childnode>
+        <childnode refid="1348" relation="usage">
+          <edgelabel>m_kLoadFlagCounts</edgelabel>
+        </childnode>
+        <childnode refid="1316" relation="usage">
+          <edgelabel>m_kAccountInfo</edgelabel>
+        </childnode>
+        <childnode refid="1349" relation="usage">
+          <edgelabel>m_AchieveFinishMgr</edgelabel>
+        </childnode>
+        <childnode refid="1352" relation="usage">
+          <edgelabel>m_akStatMap</edgelabel>
+        </childnode>
+        <childnode refid="1354" relation="usage">
+          <edgelabel>m_AchieveScheduleMgr</edgelabel>
+        </childnode>
+        <childnode refid="1358" relation="usage">
+          <edgelabel>m_kMAllCharMem</edgelabel>
+        </childnode>
+        <childnode refid="1360" relation="usage">
+          <edgelabel>m_akExchange</edgelabel>
+        </childnode>
+        <childnode refid="1362" relation="usage">
+          <edgelabel>m_infoMgr</edgelabel>
+        </childnode>
+        <childnode refid="1365" relation="usage">
+          <edgelabel>m_kSingleMatchInfo</edgelabel>
+        </childnode>
+        <childnode refid="1366" relation="usage">
+          <edgelabel>m_kOderItr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1315">
+        <label>SeWaitPlayer</label>
+        <link refid="struct_se_wait_player"/>
+        <childnode refid="1316" relation="usage">
+          <edgelabel>kAccountInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="1326">
+        <label>std::map&lt; K, T &gt;</label>
+        <childnode refid="1327" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="1328" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1329">
+        <label>std::set&lt; SeDBTableIndex &gt;</label>
+      </node>
+      <node id="1349">
+        <label>AchieveFinishMgr</label>
+        <link refid="class_achieve_finish_mgr"/>
+        <childnode refid="1350" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1350" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1351" relation="usage">
+          <edgelabel>m_FinishMap</edgelabel>
+        </childnode>
+        <childnode refid="1289" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1324">
+        <label>SeUserRaceMapHeroBase</label>
+        <link refid="struct_se_user_race_map_hero_base"/>
+      </node>
+      <node id="1291">
+        <label>HeroMgr</label>
+        <link refid="class_hero_mgr"/>
+        <childnode refid="1292" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1292" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1289" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="1293" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="1316">
+        <label>SePtlAccountInfo</label>
+        <link refid="struct_se_ptl_account_info"/>
+      </node>
+      <node id="1366">
+        <label>std::map&lt; K, T &gt;::iterator</label>
+      </node>
+      <node id="1308">
+        <label>SeLeagueInfo</label>
+        <link refid="struct_se_league_info"/>
+        <childnode refid="1296" relation="usage">
+          <edgelabel>kBeginTime</edgelabel>
+          <edgelabel>kEndTime</edgelabel>
+        </childnode>
+      </node>
+      <node id="1325">
+        <label>std::map&lt; DWord, MDBCharRaceHero &gt;</label>
+        <childnode refid="1326" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1338">
+        <label>std::vector&lt; SeItem * &gt;</label>
+        <childnode refid="1339" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1290">
+        <label>SePos2</label>
+        <link refid="struct_se_pos2"/>
+      </node>
+      <node id="1332">
+        <label>std::vector&lt; SeTaskInfo * &gt;</label>
+        <childnode refid="1333" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1334">
+        <label>TaskInfoTable</label>
+        <link refid="struct_task_info_table"/>
+        <childnode refid="1335" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1336" relation="usage">
+          <edgelabel>kNameID</edgelabel>
+          <edgelabel>kDescID</edgelabel>
+          <edgelabel>kName_China</edgelabel>
+          <edgelabel>kTaskDesc</edgelabel>
+          <edgelabel>kTargetDesc</edgelabel>
+        </childnode>
+      </node>
+      <node id="1295">
+        <label>SeCharNexusFriendData</label>
+        <link refid="struct_se_char_nexus_friend_data"/>
+        <childnode refid="1296" relation="usage">
+          <edgelabel>create_time</edgelabel>
+        </childnode>
+      </node>
+      <node id="1317">
+        <label>std::map&lt; int, int &gt;</label>
+      </node>
+      <node id="1362">
+        <label>InfoMgr</label>
+        <link refid="class_info_mgr"/>
+        <childnode refid="1363" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1364" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1363" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1364" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1289" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="1293" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="1320">
+        <label>std::map&lt; DWord, SeDBCharRaceArena * &gt;</label>
+      </node>
+      <node id="1311">
+        <label>SeNetAddr</label>
+        <link refid="struct_se_net_addr"/>
+      </node>
+      <node id="1301">
+        <label>SeAttrUnit</label>
+        <link refid="struct_se_attr_unit"/>
+      </node>
+      <node id="1293">
+        <label>std::map&lt; DWord, SeDBCharHero * &gt;</label>
+      </node>
+      <node id="1337">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1335">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="1303">
+        <label>SeExternAttrUnit</label>
+        <link refid="struct_se_extern_attr_unit"/>
+      </node>
+      <node id="1298">
+        <label>DataMgr&lt; SeDBCharItem &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1314">
+        <label>std::map&lt; DWord, SeWaitPlayer * &gt;</label>
+        <childnode refid="1315" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1352">
+        <label>std::vector&lt; SeStatMap * &gt;</label>
+        <childnode refid="1353" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1322">
+        <label>DataMgr&lt; SeDBCharRaceHero &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1319">
+        <label>DataMgr&lt; SeDBCharRaceArena &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1331">
+        <label>DataMgr&lt; SeDBCharTask &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1305">
+        <label>SeMobileInfo</label>
+        <link refid="struct_se_mobile_info"/>
+      </node>
+      <node id="1304">
+        <label>std::map&lt; uint16_t, CItem * &gt;</label>
+        <childnode refid="1300" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1318">
+        <label>RaceMapMgr</label>
+        <link refid="class_race_map_mgr"/>
+        <childnode refid="1319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1289" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="1320" relation="usage">
+          <edgelabel>m_race_map</edgelabel>
+        </childnode>
+      </node>
+      <node id="1364">
+        <label>DataMgr&lt; SeDBCharInfo &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1344">
+        <label>ActiveAvatarMgr</label>
+        <link refid="class_active_avatar_mgr"/>
+        <childnode refid="1345" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1345" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1346" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+        <childnode refid="1289" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="1306">
+        <label>BlockServer</label>
+        <link refid="class_block_server"/>
+        <childnode refid="1307" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1307" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1308" relation="usage">
+          <edgelabel>m_kLeagueInfo</edgelabel>
+        </childnode>
+        <childnode refid="1309" relation="usage">
+          <edgelabel>m_kAllPlayer</edgelabel>
+        </childnode>
+        <childnode refid="1312" relation="usage">
+          <edgelabel>m_kThreadMsgMgr</edgelabel>
+        </childnode>
+        <childnode refid="1314" relation="usage">
+          <edgelabel>m_kWaitPlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1297">
+        <label>CItemMgr</label>
+        <link refid="class_c_item_mgr"/>
+        <childnode refid="1298" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1298" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1299" relation="usage">
+          <edgelabel>m_idMap</edgelabel>
+        </childnode>
+        <childnode refid="1289" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+        </childnode>
+        <childnode refid="1304" relation="usage">
+          <edgelabel>m_BagMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="1361">
+        <label>SeExChangeInfo</label>
+        <link refid="struct_se_ex_change_info"/>
+        <childnode refid="1296" relation="usage">
+          <edgelabel>kRecordTime</edgelabel>
+        </childnode>
+      </node>
+      <node id="1341">
+        <label>std::unordered_map&lt; DWord, SeCharLadderData * &gt;</label>
+        <childnode refid="1342" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1356">
+        <label>std::map&lt; DWord, SeAchieveScheduleInfo * &gt;</label>
+        <childnode refid="1357" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1346">
+        <label>std::set&lt; DWord &gt;</label>
+      </node>
+      <node id="1365">
+        <label>SeSingleMatchInfo</label>
+        <link refid="struct_se_single_match_info"/>
+      </node>
+      <node id="1354">
+        <label>AchieveScheduleMgr</label>
+        <link refid="class_achieve_schedule_mgr"/>
+        <childnode refid="1355" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1355" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1289" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+        <childnode refid="1356" relation="usage">
+          <edgelabel>m_ScheduleMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="1307">
+        <label>Thread</label>
+      </node>
+      <node id="1355">
+        <label>DataMgr&lt; SeDBCharAchieveSchedule &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1343">
+        <label>SeLadderRankInfo</label>
+        <link refid="struct_se_ladder_rank_info"/>
+      </node>
+      <node id="1350">
+        <label>DataMgr&lt; SeDBCharAchieveFinish &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1345">
+        <label>DataMgr&lt; SeDBCharActiveAvatar &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1294">
+        <label>std::map&lt; DWord, SeCharNexusFriendData * &gt;</label>
+        <childnode refid="1295" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1342">
+        <label>SeCharLadderData</label>
+        <link refid="struct_se_char_ladder_data"/>
+        <childnode refid="1343" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1343" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1292">
+        <label>DataMgr&lt; SeDBCharHero &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="1358">
+        <label>std::map&lt; DWord, VCharMemory &gt;</label>
+        <childnode refid="1359" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1309">
+        <label>std::map&lt; HSock, SeLoginPlayer * &gt;</label>
+        <childnode refid="1310" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1302">
+        <label>SeCiTiao</label>
+        <link refid="struct_se_ci_tiao"/>
+        <childnode refid="1303" relation="usage">
+          <edgelabel>SkillAdd</edgelabel>
+        </childnode>
+      </node>
+      <node id="1363">
+        <label>SeDBCharInfo</label>
+      </node>
+      <node id="1360">
+        <label>std::vector&lt; SeExChangeInfo * &gt;</label>
+        <childnode refid="1361" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1287">
+        <label>EquipSchemaMgr</label>
+        <link refid="class_equip_schema_mgr"/>
+        <childnode refid="1288" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1288" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1289" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="1321">
+        <label>RaceHeroMgr</label>
+        <link refid="class_race_hero_mgr"/>
+        <childnode refid="1322" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1322" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1289" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="1323" relation="usage">
+          <edgelabel>map_arena_race_heros</edgelabel>
+        </childnode>
+        <childnode refid="1325" relation="usage">
+          <edgelabel>map_race_heros</edgelabel>
+        </childnode>
+      </node>
+      <node id="1313">
+        <label>SeMsgData</label>
+        <link refid="struct_se_msg_data"/>
+      </node>
+      <node id="1351">
+        <label>std::map&lt; DWord, std::map&lt; DWord, SeAchieveFinishInfo * &gt; &gt;</label>
+      </node>
+      <node id="1330">
+        <label>TaskMgr</label>
+        <link refid="class_task_mgr"/>
+        <childnode refid="1331" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1331" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1332" relation="usage">
+          <edgelabel>m_akVTask</edgelabel>
+        </childnode>
+        <childnode refid="1289" relation="usage">
+          <edgelabel>m_Player</edgelabel>
+        </childnode>
+      </node>
+      <node id="1348">
+        <label>std::map&lt; SeDBTableIndex, int &gt;</label>
+      </node>
+      <node id="1353">
+        <label>SeStatMap</label>
+        <link refid="struct_se_stat_map"/>
+      </node>
+      <node id="1310">
+        <label>SeLoginPlayer</label>
+        <link refid="struct_se_login_player"/>
+        <childnode refid="1311" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1336">
+        <label>std::string</label>
+        <childnode refid="1337" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1323">
+        <label>std::map&lt; DWord, SeUserRaceMapHeroBase &gt;</label>
+        <childnode refid="1324" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1340">
+        <label>TownItemTable</label>
+        <link refid="struct_town_item_table"/>
+        <childnode refid="1335" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1336" relation="usage">
+          <edgelabel>kAttachModel1</edgelabel>
+          <edgelabel>kAttachModel2</edgelabel>
+          <edgelabel>kPVPValueA</edgelabel>
+          <edgelabel>ktaozhuangID</edgelabel>
+          <edgelabel>kNameID</edgelabel>
+          <edgelabel>kPVPValueB</edgelabel>
+          <edgelabel>kDesc</edgelabel>
+          <edgelabel>kPVPValueC</edgelabel>
+          <edgelabel>kPVPValueD</edgelabel>
+          <edgelabel>kPVPValueE</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.h" line="8" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/EquipSchemaMgr.h" bodystart="7" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_equip_schema_mgr_1a960b4a583a5cbb358d28f724ef6a8c2e" prot="public" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>EquipSchemaMgr</name></member>
+      <member refid="class_equip_schema_mgr_1a960b4a583a5cbb358d28f724ef6a8c2e" prot="public" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>EquipSchemaMgr</name></member>
+      <member refid="class_equip_schema_mgr_1ab5bd5a01b4414f19fee5a5471b1d7e00" prot="public" virt="virtual"><scope>EquipSchemaMgr</scope><name>fixData</name></member>
+      <member refid="class_equip_schema_mgr_1ab5bd5a01b4414f19fee5a5471b1d7e00" prot="public" virt="virtual"><scope>EquipSchemaMgr</scope><name>fixData</name></member>
+      <member refid="class_equip_schema_mgr_1a61525fa1de33e3174993eabe1deed139" prot="public" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>getEquips</name></member>
+      <member refid="class_equip_schema_mgr_1a61525fa1de33e3174993eabe1deed139" prot="public" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>getEquips</name></member>
+      <member refid="class_equip_schema_mgr_1a18f018f214b99cf6cd2c5bca8c6f318d" prot="private" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>getOwner</name></member>
+      <member refid="class_equip_schema_mgr_1a9cd911ac5916de0f03f8d9114fbedded" prot="private" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>getOwner</name></member>
+      <member refid="class_equip_schema_mgr_1a55c5e1458eece92e6f5d6982ae0f088b" prot="private" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>isValidEquip</name></member>
+      <member refid="class_equip_schema_mgr_1a1fe2e4ca577390e762612152df263cb3" prot="private" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>isValidEquip</name></member>
+      <member refid="class_equip_schema_mgr_1a4291292292eaf54658191ce8a8b70d67" prot="public" virt="virtual"><scope>EquipSchemaMgr</scope><name>loadData</name></member>
+      <member refid="class_equip_schema_mgr_1a4291292292eaf54658191ce8a8b70d67" prot="public" virt="virtual"><scope>EquipSchemaMgr</scope><name>loadData</name></member>
+      <member refid="class_equip_schema_mgr_1ac8934fc9c713a5907c07ce9dcbafb95b" prot="private" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>m_data</name></member>
+      <member refid="class_equip_schema_mgr_1aad7b8e39c855bce79848198d1edc51c9" prot="private" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>m_owner</name></member>
+      <member refid="class_equip_schema_mgr_1a8bd817c291f391e01a86119700e5590a" prot="public" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>putOnEquip</name></member>
+      <member refid="class_equip_schema_mgr_1a8bd817c291f391e01a86119700e5590a" prot="public" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>putOnEquip</name></member>
+      <member refid="class_equip_schema_mgr_1ad9507dac413f408e4b6b48615303888b" prot="public" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>sendInitData</name></member>
+      <member refid="class_equip_schema_mgr_1ad9507dac413f408e4b6b48615303888b" prot="public" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>sendInitData</name></member>
+      <member refid="class_equip_schema_mgr_1a7e8e14a5e9a6523555409c0f41dc73b2" prot="public" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>takeOffEquip</name></member>
+      <member refid="class_equip_schema_mgr_1a7e8e14a5e9a6523555409c0f41dc73b2" prot="public" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>takeOffEquip</name></member>
+      <member refid="class_equip_schema_mgr_1aa7555e9078473d1abddab8efa0c97c96" prot="public" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>~EquipSchemaMgr</name></member>
+      <member refid="class_equip_schema_mgr_1aa7555e9078473d1abddab8efa0c97c96" prot="public" virt="non-virtual"><scope>EquipSchemaMgr</scope><name>~EquipSchemaMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

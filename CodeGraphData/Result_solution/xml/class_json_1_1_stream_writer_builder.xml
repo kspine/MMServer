@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_json_1_1_stream_writer_builder" kind="class" prot="public">
+    <compoundname>Json::StreamWriterBuilder</compoundname>
+    <basecompoundref refid="class_json_1_1_stream_writer_1_1_factory" prot="public" virt="non-virtual">Json::StreamWriter::Factory</basecompoundref>
+    <includes refid="writer_8h" local="no">writer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_json_1_1_stream_writer_builder_1a79bdf2e639a52f4e758c0b95bd1d3423" prot="public" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref></type>
+        <definition>Json::Value Json::StreamWriterBuilder::settings_</definition>
+        <argsstring></argsstring>
+        <name>settings_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Configuration of this builder. Available settings (case-sensitive):<itemizedlist>
+<listitem><para>&quot;commentStyle&quot;: &quot;None&quot; or &quot;All&quot;</para></listitem><listitem><para>&quot;indentation&quot;: &quot;&lt;anything&gt;&quot;</para></listitem><listitem><para>&quot;enableYAMLCompatibility&quot;: false or true<itemizedlist>
+<listitem><para>slightly change the whitespace around colons</para></listitem></itemizedlist>
+</para></listitem><listitem><para>&quot;dropNullPlaceholders&quot;: false or true<itemizedlist>
+<listitem><para>Drop the &quot;null&quot; string from the writer&apos;s output for nullValues. Strictly speaking, this is not valid JSON. But when the output is being fed to a browser&apos;s Javascript, it makes for smaller output and the browser can handle the output just fine.</para></listitem></itemizedlist>
+</para></listitem><listitem><para>&quot;useSpecialFloats&quot;: false or true<itemizedlist>
+<listitem><para>If true, outputs non-finite floating point values in the following way: NaN values as &quot;NaN&quot;, positive infinity as &quot;Infinity&quot;, and negative infinity as &quot;-Infinity&quot;.</para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para><para>You can examine &apos;settings_` yourself to see the defaults. You can also write and read them just like any JSON <ref refid="class_json_1_1_value" kindref="compound">Value</ref>. <simplesect kind="see"><para><ref refid="class_json_1_1_stream_writer_builder_1a53bf106b141e28637b01ad0ecd2acbf6" kindref="member">setDefaults()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="112" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_stream_writer_builder_1ab95b76179c152673ad14abc639a46ee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::StreamWriterBuilder::StreamWriterBuilder</definition>
+        <argsstring>()</argsstring>
+        <name>StreamWriterBuilder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="114" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="1118" bodyend="1121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_stream_writer_builder_1ac86f882736cb2fff79adb45adeafeb22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::StreamWriterBuilder::~StreamWriterBuilder</definition>
+        <argsstring>() override</argsstring>
+        <name>~StreamWriterBuilder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="115" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="1122" bodyend="1123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_stream_writer_builder_1a042d21b84d8c5bede52a764e2ada7d65" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_json_1_1_stream_writer" kindref="compound">StreamWriter</ref> *</type>
+        <definition>StreamWriter * Json::StreamWriterBuilder::newStreamWriter</definition>
+        <argsstring>() const override</argsstring>
+        <name>newStreamWriter</name>
+        <reimplements refid="class_json_1_1_stream_writer_1_1_factory_1a9d30ec53e8288cd53befccf1009c5f31">newStreamWriter</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if something goes wrong (e.g. invalid settings) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="120" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="1124" bodyend="1155"/>
+        <references refid="struct_json_1_1_comment_style_1a51fc08f3518fd81eba12f340d19a3d0ca32302c0b97190c1808b3e38f367fef01" compoundref="json__writer_8cpp" startline="826">Json::CommentStyle::All</references>
+        <references refid="struct_json_1_1_comment_style_1a51fc08f3518fd81eba12f340d19a3d0cac8b32a8bae63414c8647d4919da8d437" compoundref="json__writer_8cpp" startline="824">Json::CommentStyle::None</references>
+        <references refid="namespace_json_1a97f039a107b3f6cf1c3edee50e978f76" compoundref="json__value_8cpp" startline="170" endline="173">Json::throwRuntimeError</references>
+        <referencedby refid="namespace_json_1a87bc83d7e90fc666d28aa16727deda2f" compoundref="json__writer_8cpp" startline="1207" endline="1212">Json::operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_stream_writer_builder_1aa1dfed085a3d369e953e4a3c34da009e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::StreamWriterBuilder::validate</definition>
+        <argsstring>(Json::Value *invalid) const </argsstring>
+        <name>validate</name>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref> *</type>
+          <declname>invalid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if &apos;settings&apos; are legal and consistent; otherwise, indicate bad settings via &apos;invalid&apos;. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="125" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="1166" bodyend="1182"/>
+        <references refid="namespace_json_1a45c3c8847f03b09cd61035e615d1d820" compoundref="json__writer_8cpp" startline="1156" endline="1165">Json::getValidWriterKeys</references>
+        <references refid="class_json_1_1_value_1a4ca8ee6c48a34ca6c2f131956bab5e05" compoundref="json__value_8cpp" startline="851" endline="872">Json::Value::size</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_stream_writer_builder_1aa010a8a04a92343179f64a5dbb5df340" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+        <definition>Value &amp; Json::StreamWriterBuilder::operator[]</definition>
+        <argsstring>(std::string key)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>std::string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A simple way to update a specific setting. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="128" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="1183" bodyend="1186"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_json_1_1_stream_writer_builder_1a53bf106b141e28637b01ad0ecd2acbf6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::StreamWriterBuilder::setDefaults</definition>
+        <argsstring>(Json::Value *settings)</argsstring>
+        <name>setDefaults</name>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref> *</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called by ctor, but you can use this to reset settings_. <simplesect kind="pre"><para>&apos;settings&apos; != NULL (but Json::null is fine) </para></simplesect>
+<simplesect kind="remark"><para>Defaults: <programlisting></programlisting></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>[StreamWriterBuilderDefaults]</para><para>[StreamWriterBuilderDefaults] </para>        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="135" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="1188" bodyend="1198"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Build a <ref refid="class_json_1_1_stream_writer" kindref="compound">StreamWriter</ref> implementation. </para>    </briefdescription>
+    <detaileddescription>
+<para>Usage: <programlisting><codeline><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Json;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="class_json_1_1_value" kindref="compound">Value</ref><sp/>value<sp/>=<sp/>...;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="class_json_1_1_stream_writer_builder" kindref="compound">StreamWriterBuilder</ref><sp/>builder;</highlight></codeline>
+<codeline><highlight class="normal">builder[</highlight><highlight class="stringliteral">&quot;commentStyle&quot;</highlight><highlight class="normal">]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;None&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">builder[</highlight><highlight class="stringliteral">&quot;indentation&quot;</highlight><highlight class="normal">]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>&quot;</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>or<sp/>whatever<sp/>you<sp/>like</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">std::unique_ptr&lt;Json::StreamWriter&gt;<sp/>writer(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>builder.newStreamWriter());</highlight></codeline>
+<codeline><highlight class="normal">writer-&gt;write(value,<sp/>&amp;std::cout);</highlight></codeline>
+<codeline><highlight class="normal">std::cout<sp/>&lt;&lt;<sp/>std::endl;<sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>lf<sp/>and<sp/>flush</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="9038">
+        <label>Json::StreamWriter::Factory</label>
+        <link refid="class_json_1_1_stream_writer_1_1_factory"/>
+      </node>
+      <node id="9037">
+        <label>Json::StreamWriterBuilder</label>
+        <link refid="class_json_1_1_stream_writer_builder"/>
+        <childnode refid="9038" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9045">
+        <label>K</label>
+      </node>
+      <node id="9046">
+        <label>T</label>
+      </node>
+      <node id="9041">
+        <label>Json::Value</label>
+        <link refid="class_json_1_1_value"/>
+        <childnode refid="9041" relation="usage">
+          <edgelabel>null</edgelabel>
+          <edgelabel>nullRef</edgelabel>
+        </childnode>
+        <childnode refid="9042" relation="usage">
+          <edgelabel>comments_</edgelabel>
+        </childnode>
+        <childnode refid="9043" relation="usage">
+          <edgelabel>value_</edgelabel>
+        </childnode>
+      </node>
+      <node id="9044">
+        <label>std::map&lt; K, T &gt;</label>
+        <childnode refid="9045" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="9046" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9040">
+        <label>Json::StreamWriter::Factory</label>
+        <link refid="class_json_1_1_stream_writer_1_1_factory"/>
+      </node>
+      <node id="9043">
+        <label>Json::Value::ValueHolder</label>
+        <link refid="union_json_1_1_value_1_1_value_holder"/>
+        <childnode refid="9044" relation="usage">
+          <edgelabel>map_</edgelabel>
+        </childnode>
+      </node>
+      <node id="9042">
+        <label>Json::Value::CommentInfo</label>
+        <link refid="struct_json_1_1_value_1_1_comment_info"/>
+      </node>
+      <node id="9039">
+        <label>Json::StreamWriterBuilder</label>
+        <link refid="class_json_1_1_stream_writer_builder"/>
+        <childnode refid="9040" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9041" relation="usage">
+          <edgelabel>settings_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="87" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" bodystart="87" bodyend="136"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_stream_writer_builder_1a042d21b84d8c5bede52a764e2ada7d65" prot="public" virt="virtual"><scope>Json::StreamWriterBuilder</scope><name>newStreamWriter</name></member>
+      <member refid="class_json_1_1_stream_writer_builder_1aa010a8a04a92343179f64a5dbb5df340" prot="public" virt="non-virtual"><scope>Json::StreamWriterBuilder</scope><name>operator[]</name></member>
+      <member refid="class_json_1_1_stream_writer_builder_1a53bf106b141e28637b01ad0ecd2acbf6" prot="public" virt="non-virtual"><scope>Json::StreamWriterBuilder</scope><name>setDefaults</name></member>
+      <member refid="class_json_1_1_stream_writer_builder_1a79bdf2e639a52f4e758c0b95bd1d3423" prot="public" virt="non-virtual"><scope>Json::StreamWriterBuilder</scope><name>settings_</name></member>
+      <member refid="class_json_1_1_stream_writer_builder_1ab95b76179c152673ad14abc639a46ee4" prot="public" virt="non-virtual"><scope>Json::StreamWriterBuilder</scope><name>StreamWriterBuilder</name></member>
+      <member refid="class_json_1_1_stream_writer_builder_1aa1dfed085a3d369e953e4a3c34da009e" prot="public" virt="non-virtual"><scope>Json::StreamWriterBuilder</scope><name>validate</name></member>
+      <member refid="class_json_1_1_stream_writer_1_1_factory_1ad334ad5e81e3b9b1768620a446366ff1" prot="public" virt="virtual"><scope>Json::StreamWriterBuilder</scope><name>~Factory</name></member>
+      <member refid="class_json_1_1_stream_writer_builder_1ac86f882736cb2fff79adb45adeafeb22" prot="public" virt="non-virtual"><scope>Json::StreamWriterBuilder</scope><name>~StreamWriterBuilder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_se_t_w_c_m_s_send_8inc" kind="file">
+    <compoundname>SeTWCMSSend.inc</compoundname>
+    <includedby refid="_src_2_se_t_w_c_s_send_8cpp" local="yes">TownServer/Src/SeTWCSSend.cpp</includedby>
+    <includedby refid="src_2_se_t_w_c_s_send_8cpp" local="yes">TownServer/src/SeTWCSSend.cpp</includedby>
+    <invincdepgraph>
+      <node id="129300">
+        <label>TownServer/src/SeTWCSSend.cpp</label>
+        <link refid="src_2_se_t_w_c_s_send_8cpp"/>
+      </node>
+      <node id="129298">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeTWCMSSend.inc</label>
+        <link refid="SeTWCMSSend.inc"/>
+        <childnode refid="129299" relation="include">
+        </childnode>
+        <childnode refid="129300" relation="include">
+        </childnode>
+      </node>
+      <node id="129299">
+        <label>TownServer/Src/SeTWCSSend.cpp</label>
+        <link refid="_src_2_se_t_w_c_s_send_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_t_w_c_m_s_send_8inl_1a796b90d50ba77b28a921623061d63f67" kindref="member">SERVER::SendTWCMS_Register</ref>(DWord<sp/>dwServerID,DWord<sp/>dwAreaID,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_t_w_c_m_s___register" kindref="compound">SeTWCMS_Register</ref>);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_t_w_c_m_s___register" kindref="compound">SeTWCMS_Register</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_t_w_c_m_s___register" kindref="compound">SeTWCMS_Register</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_t_w_c_m_s___register_1a92ed12a9e04637ade89ccd8284f5fe9f" kindref="member">dwServerID</ref><sp/>=<sp/>dwServerID;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_t_w_c_m_s___register_1a50e114fc059b9cff26bd66ab15089fc6" kindref="member">dwAreaID</ref><sp/>=<sp/>dwAreaID;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_t_w_c_m_s_send_8inl_1a020622b6dbcfaa3fc8546cd89bd52d18" kindref="member">SendTWCMSData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_t_w_c_m_s_send_8inl_1a8cff866862e199f93bf82cc18c9ed550" kindref="member">SERVER::SendTWCMS_HeartPackage</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_t_w_c_m_s___heart_package" kindref="compound">SeTWCMS_HeartPackage</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_t_w_c_m_s___heart_package" kindref="compound">SeTWCMS_HeartPackage</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_t_w_c_m_s___heart_package" kindref="compound">SeTWCMS_HeartPackage</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_t_w_c_m_s_send_8inl_1a020622b6dbcfaa3fc8546cd89bd52d18" kindref="member">SendTWCMSData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_t_w_c_m_s_send_8inl_1a3d30dc2ba1e708bfea72f85db2a59555" kindref="member">SERVER::SendTWCMS_ReqView</ref>(DWord<sp/>dwPlayerID,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Byte*<sp/>rID,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_t_w_c_m_s___req_view" kindref="compound">SeTWCMS_ReqView</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_t_w_c_m_s___req_view" kindref="compound">SeTWCMS_ReqView</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_t_w_c_m_s___req_view" kindref="compound">SeTWCMS_ReqView</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_t_w_c_m_s___req_view_1a9a95ef356527f7e3b5b27e565b3c3aa2" kindref="member">dwPlayerID</ref><sp/>=<sp/>dwPlayerID;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(pkData-&gt;<ref refid="struct_se_t_w_c_m_s___req_view_1af59e6a14e650745dc0567db091e2867f" kindref="member">rID</ref>,<sp/>rID,<sp/>16<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(Byte));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_t_w_c_m_s_send_8inl_1a020622b6dbcfaa3fc8546cd89bd52d18" kindref="member">SendTWCMSData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_t_w_c_m_s_send_8inl_1a3d30dc2ba1e708bfea72f85db2a59555" kindref="member">SERVER::SendTWCMS_ReqView</ref>(DWord<sp/>dwPlayerID,std::vector&lt;Byte&gt;&amp;<sp/>rID,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_t_w_c_m_s___req_view" kindref="compound">SeTWCMS_ReqView</ref>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_t_w_c_m_s___req_view" kindref="compound">SeTWCMS_ReqView</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_t_w_c_m_s___req_view" kindref="compound">SeTWCMS_ReqView</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_t_w_c_m_s___req_view_1a9a95ef356527f7e3b5b27e565b3c3aa2" kindref="member">dwPlayerID</ref><sp/>=<sp/>dwPlayerID;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(16<sp/>&gt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)rID.size())</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>16;<sp/>++i)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_t_w_c_m_s___req_view_1af59e6a14e650745dc0567db091e2867f" kindref="member">rID</ref>[i]<sp/>=<sp/>rID[i];</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_t_w_c_m_s_send_8inl_1a020622b6dbcfaa3fc8546cd89bd52d18" kindref="member">SendTWCMSData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_t_w_c_m_s_send_8inl_1a91ae2efae3247d36ba2e92a7ee6dabea" kindref="member">SERVER::SendTWCMS_ReqViewList</ref>(DWord<sp/>dwPlayerID,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iPage,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_t_w_c_m_s___req_view_list" kindref="compound">SeTWCMS_ReqViewList</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_t_w_c_m_s___req_view_list" kindref="compound">SeTWCMS_ReqViewList</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_t_w_c_m_s___req_view_list" kindref="compound">SeTWCMS_ReqViewList</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_t_w_c_m_s___req_view_list_1a9559dc1bf69b141506934b527d0f86a9" kindref="member">dwPlayerID</ref><sp/>=<sp/>dwPlayerID;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_t_w_c_m_s___req_view_list_1a0a98acbbe25f6a99117e0d72fe90f1e5" kindref="member">iPage</ref><sp/>=<sp/>iPage;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_t_w_c_m_s_send_8inl_1a020622b6dbcfaa3fc8546cd89bd52d18" kindref="member">SendTWCMSData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_t_w_c_m_s_send_8inl_1a97964904246eb255c73c06133b2643ec" kindref="member">SERVER::SendTWCMS_RaceDetailInfoReq</ref>(DWord<sp/>dwPlayerID,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>page_number,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>page_counts,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_t_w_c_m_s___race_detail_info_req" kindref="compound">SeTWCMS_RaceDetailInfoReq</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_t_w_c_m_s___race_detail_info_req" kindref="compound">SeTWCMS_RaceDetailInfoReq</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_t_w_c_m_s___race_detail_info_req" kindref="compound">SeTWCMS_RaceDetailInfoReq</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_t_w_c_m_s___race_detail_info_req_1ad061a1f32d1abc802cc3f9a41eb2fed7" kindref="member">dwPlayerID</ref><sp/>=<sp/>dwPlayerID;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_t_w_c_m_s___race_detail_info_req_1aef5b070014ae1f5b92fff79a1c1f3b8c" kindref="member">page_number</ref><sp/>=<sp/>page_number;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_t_w_c_m_s___race_detail_info_req_1ab3025fd53d0a2b7b9a8265a4ff375f1d" kindref="member">page_counts</ref><sp/>=<sp/>page_counts;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_t_w_c_m_s_send_8inl_1a020622b6dbcfaa3fc8546cd89bd52d18" kindref="member">SendTWCMSData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeTWCMSSend.inc"/>
+  </compounddef>
+</doxygen>

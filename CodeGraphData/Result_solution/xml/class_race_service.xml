@@ -1,0 +1,2489 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_race_service" kind="class" prot="public">
+    <compoundname>RaceService</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BeRaceLogicCall</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Thread</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">BeRaceLogicCall</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Thread</basecompoundref>
+    <includes refid="src_2_race_service_8h" local="no">RaceService.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_race_service_1a027a184ce91e158a6bf94191cd89b585" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RaceService::m_iThreadIndex</definition>
+        <argsstring></argsstring>
+        <name>m_iThreadIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="65" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="class_race_service_1ac3807f78ed60a010024d71d84fc65a2f" compoundref="src_2_race_service_8cpp" startline="8" endline="16">RaceService</referencedby>
+        <referencedby refid="class_race_service_1ac030266656fd64ac5a06249bf755cb67" compoundref="src_2_race_service_8cpp" startline="341" endline="345">SetThreadIndex</referencedby>
+        <referencedby refid="class_race_service_1ac75744355bee316fe6e3cfd834d2c76c" compoundref="src_2_race_service_8cpp" startline="62" endline="125">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_race_service_1a356147840aaf44245466c24527b70296" prot="private" static="no" mutable="no">
+        <type>class <ref refid="class_c_performance_timing_mgr" kindref="compound">CPerformanceTimingMgr</ref> *</type>
+        <definition>class CPerformanceTimingMgr * RaceService::m_pPerforceMgr</definition>
+        <argsstring></argsstring>
+        <name>m_pPerforceMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="66" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="class_race_service_1ad1e3d97fafd8b900c000ac2813852e84" compoundref="src_2_race_service_8cpp" startline="140" endline="143">GetPerformaceMgr</referencedby>
+        <referencedby refid="class_race_service_1a8974cc80645f9d95bb2fa11ec82713ab" compoundref="src_2_race_service_8cpp" startline="135" endline="138">SetPerformaceMgr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_race_service_1af00d2a26326938722a112510c34a15bf" prot="private" static="no" mutable="no">
+        <type>DWord</type>
+        <definition>DWord RaceService::m_dwTickCount</definition>
+        <argsstring></argsstring>
+        <name>m_dwTickCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="68" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="class_race_service_1ac3807f78ed60a010024d71d84fc65a2f" compoundref="src_2_race_service_8cpp" startline="8" endline="16">RaceService</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_race_service_1a3276074885c9b608bf372b5b3ac5ec73" prot="private" static="no" mutable="no">
+        <type>DWord</type>
+        <definition>DWord RaceService::m_dwCurTime</definition>
+        <argsstring></argsstring>
+        <name>m_dwCurTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="69" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="class_race_service_1ac3807f78ed60a010024d71d84fc65a2f" compoundref="src_2_race_service_8cpp" startline="8" endline="16">RaceService</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_race_service_1ab205ec535d589ee281536eb75fb3fd4d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_se_thread_msg_mgr" kindref="compound">SeThreadMsgMgr</ref></type>
+        <definition>SeThreadMsgMgr RaceService::m_kThreadMsgMgr</definition>
+        <argsstring></argsstring>
+        <name>m_kThreadMsgMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="71" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="class_race_service_1abfccad7fabdcc62ee709c93555eb3996" compoundref="src_2_race_service_8cpp" startline="23" endline="47">Initialize</referencedby>
+        <referencedby refid="class_race_service_1a830024286ee919364c182cd9c61b4e7c" compoundref="src_2_race_service_8cpp" startline="336" endline="339">PushMsg</referencedby>
+        <referencedby refid="class_race_service_1ace1c37675c9bc256b137d4860f57888f" compoundref="src_2_race_service_8cpp" startline="347" endline="359">UpdateRSCMsg</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_race_service_1a720cbed3e7892151174e3f6d458901c7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RaceService::m_bStop</definition>
+        <argsstring></argsstring>
+        <name>m_bStop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="72" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="class_race_service_1a0e549baec6fe2d1d67a662387cfaf4a0" compoundref="src_2_race_service_8cpp" startline="361" endline="369">DoWork</referencedby>
+        <referencedby refid="class_race_service_1a45c4bf4771b10ebc22ded6c3f8905c4b" compoundref="src_2_race_service_8cpp" startline="127" endline="133">Finialize</referencedby>
+        <referencedby refid="class_race_service_1ac3807f78ed60a010024d71d84fc65a2f" compoundref="src_2_race_service_8cpp" startline="8" endline="16">RaceService</referencedby>
+        <referencedby refid="class_race_service_1ac75744355bee316fe6e3cfd834d2c76c" compoundref="src_2_race_service_8cpp" startline="62" endline="125">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_race_service_1aaf6085e0cf3a819b9dc3266bf03f99ff" prot="private" static="no" mutable="no">
+        <type>IRaceLogic *</type>
+        <definition>IRaceLogic * RaceService::m_pkRaceLogic</definition>
+        <argsstring></argsstring>
+        <name>m_pkRaceLogic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="74" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="class_race_service_1a45c4bf4771b10ebc22ded6c3f8905c4b" compoundref="src_2_race_service_8cpp" startline="127" endline="133">Finialize</referencedby>
+        <referencedby refid="class_race_service_1abfccad7fabdcc62ee709c93555eb3996" compoundref="src_2_race_service_8cpp" startline="23" endline="47">Initialize</referencedby>
+        <referencedby refid="class_race_service_1a9285fb001e418d3795ddc16456a843ec" compoundref="src_2_se_race_server_process_8cpp" startline="110" endline="120">ProcessRRC_GetHeroInfo</referencedby>
+        <referencedby refid="class_race_service_1a048dc3b1fa9950cc73b7c7364087292f" compoundref="src_2_se_race_server_process_8cpp" startline="55" endline="67">ProcessRRC_PlayerLeave</referencedby>
+        <referencedby refid="class_race_service_1a040f3911978ad76c0ea78067be639323" compoundref="src_2_se_race_server_process_8cpp" startline="69" endline="81">ProcessRRC_PlayerRelink</referencedby>
+        <referencedby refid="class_race_service_1a77e140d69c562236c411afcb6374a9d1" compoundref="src_2_se_race_server_process_8cpp" startline="28" endline="42">ProcessRRC_RaceInit</referencedby>
+        <referencedby refid="class_race_service_1a2a5f7d12e2afc1bb15b9c185c5d91462" compoundref="src_2_se_race_server_process_8cpp" startline="83" endline="95">ProcessRRC_RaceOver</referencedby>
+        <referencedby refid="class_race_service_1ac2be3d28126e123cfe61e4757ae59174" compoundref="src_2_se_race_server_process_8cpp" startline="44" endline="53">ProcessRRC_RaceStream</referencedby>
+        <referencedby refid="class_race_service_1a98435a3f8b23ebb4d17cfcd9bce4f58e" compoundref="src_2_se_race_server_process_8cpp" startline="122" endline="132">ProcessRRC_SetRaceIncmpState</referencedby>
+        <referencedby refid="class_race_service_1ac3807f78ed60a010024d71d84fc65a2f" compoundref="src_2_race_service_8cpp" startline="8" endline="16">RaceService</referencedby>
+        <referencedby refid="class_race_service_1ac75744355bee316fe6e3cfd834d2c76c" compoundref="src_2_race_service_8cpp" startline="62" endline="125">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_race_service_1adc8f04bb90042cf896221ea15a1f913c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_se_thread_race_mgr" kindref="compound">SeThreadRaceMgr</ref></type>
+        <definition>SeThreadRaceMgr RaceService::m_kRaceMgr</definition>
+        <argsstring></argsstring>
+        <name>m_kRaceMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="75" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="class_race_service_1aab14866a2a8f9a18002de7f3382bf323" compoundref="src_2_race_service_8cpp" startline="194" endline="201">OnRaceErrorRet</referencedby>
+        <referencedby refid="class_race_service_1a682d00a8b87522fd1e27245a150021df" compoundref="src_2_race_service_8cpp" startline="203" endline="224">OnRaceEvent</referencedby>
+        <referencedby refid="class_race_service_1aeab2c2c55360788c731c7fed2515689c" compoundref="src_2_race_service_8cpp" startline="264" endline="267">OnRaceHeroInfo</referencedby>
+        <referencedby refid="class_race_service_1a8a9007b3468fd155011c4a71a077c705" compoundref="src_2_race_service_8cpp" startline="171" endline="180">OnRaceStream</referencedby>
+        <referencedby refid="class_race_service_1a048dc3b1fa9950cc73b7c7364087292f" compoundref="src_2_se_race_server_process_8cpp" startline="55" endline="67">ProcessRRC_PlayerLeave</referencedby>
+        <referencedby refid="class_race_service_1a040f3911978ad76c0ea78067be639323" compoundref="src_2_se_race_server_process_8cpp" startline="69" endline="81">ProcessRRC_PlayerRelink</referencedby>
+        <referencedby refid="class_race_service_1a77e140d69c562236c411afcb6374a9d1" compoundref="src_2_se_race_server_process_8cpp" startline="28" endline="42">ProcessRRC_RaceInit</referencedby>
+        <referencedby refid="class_race_service_1a2a5f7d12e2afc1bb15b9c185c5d91462" compoundref="src_2_se_race_server_process_8cpp" startline="83" endline="95">ProcessRRC_RaceOver</referencedby>
+        <referencedby refid="class_race_service_1acbb709a0386cddf5b17c7ce8a913e3ab" compoundref="src_2_se_race_server_process_8cpp" startline="97" endline="106">ProcessRRC_RaceStart</referencedby>
+        <referencedby refid="class_race_service_1ac030266656fd64ac5a06249bf755cb67" compoundref="src_2_race_service_8cpp" startline="341" endline="345">SetThreadIndex</referencedby>
+        <referencedby refid="class_race_service_1ac75744355bee316fe6e3cfd834d2c76c" compoundref="src_2_race_service_8cpp" startline="62" endline="125">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_race_service_1ac3807f78ed60a010024d71d84fc65a2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RaceService::RaceService</definition>
+        <argsstring>(void)</argsstring>
+        <name>RaceService</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="15" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="8" bodyend="16"/>
+        <references refid="class_race_service_1a720cbed3e7892151174e3f6d458901c7" compoundref="src_2_race_service_8h" startline="72">m_bStop</references>
+        <references refid="class_race_service_1a3276074885c9b608bf372b5b3ac5ec73" compoundref="src_2_race_service_8h" startline="69">m_dwCurTime</references>
+        <references refid="class_race_service_1af00d2a26326938722a112510c34a15bf" compoundref="src_2_race_service_8h" startline="68">m_dwTickCount</references>
+        <references refid="class_race_service_1a027a184ce91e158a6bf94191cd89b585" compoundref="src_2_race_service_8h" startline="65">m_iThreadIndex</references>
+        <references refid="class_race_service_1aaf6085e0cf3a819b9dc3266bf03f99ff" compoundref="src_2_race_service_8h" startline="74">m_pkRaceLogic</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ad0c57fe0dc4fcabd530a24d4cca91946" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RaceService::~RaceService</definition>
+        <argsstring>(void)</argsstring>
+        <name>~RaceService</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="16" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="18" bodyend="21"/>
+        <references refid="class_race_service_1a45c4bf4771b10ebc22ded6c3f8905c4b" compoundref="src_2_race_service_8cpp" startline="127" endline="133">Finialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1abfccad7fabdcc62ee709c93555eb3996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RaceService::Initialize</definition>
+        <argsstring>(int iBaseBuffSize=4 *1024 *1024)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type>int</type>
+          <declname>iBaseBuffSize</declname>
+          <defval>4 *1024 *1024</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="18" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="23" bodyend="47"/>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="class_race_server_1a788a00bd15f61a8dadb074c05658b108" compoundref="src_2_race_server_8cpp" startline="1191" endline="1194">RaceServer::GetRaceConfig</references>
+        <references refid="struct_se_race_config_1a623a11ace476dbbe7222d20cece2bc98" compoundref="src_2_race_server_def_8h" startline="116">SeRaceConfig::iLogicDllRaceNum</references>
+        <references refid="class_se_thread_msg_mgr_1ae74c5d933cc0cac0732d472c6df97107" compoundref="_se_thread_msg_8cpp" startline="28" endline="34">SeThreadMsgMgr::Initialize</references>
+        <references refid="class_race_service_1ab205ec535d589ee281536eb75fb3fd4d" compoundref="src_2_race_service_8h" startline="71">m_kThreadMsgMgr</references>
+        <references refid="class_race_service_1aaf6085e0cf3a819b9dc3266bf03f99ff" compoundref="src_2_race_service_8h" startline="74">m_pkRaceLogic</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <referencedby refid="class_race_server_1a0c77af41b0b3b16bf8809597d30e123e" compoundref="src_2_race_server_8cpp" startline="1028" endline="1051">RaceServer::InitializeRaceService</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ac75744355bee316fe6e3cfd834d2c76c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::Update</definition>
+        <argsstring>(void)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="19" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="62" bodyend="125"/>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="class_race_server_1ae7388ef7da3a30046cf017d40e355669" compoundref="src_2_se_race_svr_other_8cpp" startline="33" endline="36">RaceServer::GetRacePrintTime</references>
+        <references refid="struct_se_r_c_r___thread_over_time_1a3fb591dd1ba5bedf8d93c28789807248" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="125">SeRCR_ThreadOverTime::iDTime</references>
+        <references refid="class_c_performance_timing_1a5b59f88895ce835a1ce7443d0812d43f" compoundref="src_2_performance_timing_8h" startline="219" endline="222">CPerformanceTiming::Instance</references>
+        <references refid="struct_se_r_c_r___thread_over_time_1a551e41a4ce7d5c0ca3f412a23ddf430e" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="124">SeRCR_ThreadOverTime::iThreadIndex</references>
+        <references refid="_performacen_timing_mgr_8h_1a9963036d676352430d69324421a8eb82" compoundref="_performacen_timing_mgr_8h" startline="98">M_BeforeStartInverval</references>
+        <references refid="class_race_service_1a720cbed3e7892151174e3f6d458901c7" compoundref="src_2_race_service_8h" startline="72">m_bStop</references>
+        <references refid="class_race_service_1a027a184ce91e158a6bf94191cd89b585" compoundref="src_2_race_service_8h" startline="65">m_iThreadIndex</references>
+        <references refid="class_race_service_1adc8f04bb90042cf896221ea15a1f913c" compoundref="src_2_race_service_8h" startline="75">m_kRaceMgr</references>
+        <references refid="class_race_service_1aaf6085e0cf3a819b9dc3266bf03f99ff" compoundref="src_2_race_service_8h" startline="74">m_pkRaceLogic</references>
+        <references refid="_performacen_timing_mgr_8h_1a2c43581ee1a0661a50ca6759e73f2fa3" compoundref="_performacen_timing_mgr_8h" startline="101">M_QbeginMutiInterval</references>
+        <references refid="_performacen_timing_mgr_8h_1ae4da7bce635c433ee99b4be890597806" compoundref="_performacen_timing_mgr_8h" startline="103">M_QendMutiInterval</references>
+        <references refid="_se_mini_dump_8cpp_1a80dae5ce6bdd6adb90879fee6b7ccd74" compoundref="_se_mini_dump_8cpp" startline="67" endline="158">MyExceptionFilter</references>
+        <references refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="class_c_performance_timing_1a1a6d876c5a79bd3fc83e7df140173939" compoundref="src_2_performance_timing_8cpp" startline="553" endline="557">CPerformanceTiming::Start</references>
+        <references refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">CPerformanceTiming::TickNotify</references>
+        <references refid="class_se_thread_race_mgr_1ae50d9495ff6e5f6968d5aad75bd75847" compoundref="src_2_se_thread_race_mgr_8cpp" startline="173" endline="208">SeThreadRaceMgr::UpdateRace</references>
+        <references refid="class_race_service_1ace1c37675c9bc256b137d4860f57888f" compoundref="src_2_race_service_8cpp" startline="347" endline="359">UpdateRSCMsg</references>
+        <referencedby refid="class_race_service_1a0e549baec6fe2d1d67a662387cfaf4a0" compoundref="src_2_race_service_8cpp" startline="361" endline="369">DoWork</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a45c4bf4771b10ebc22ded6c3f8905c4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::Finialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Finialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="20" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="127" bodyend="133"/>
+        <references refid="class_race_service_1a720cbed3e7892151174e3f6d458901c7" compoundref="src_2_race_service_8h" startline="72">m_bStop</references>
+        <references refid="class_race_service_1aaf6085e0cf3a819b9dc3266bf03f99ff" compoundref="src_2_race_service_8h" startline="74">m_pkRaceLogic</references>
+        <referencedby refid="class_race_server_1a88f39ef19bb603dd3439fdd9e4916611" compoundref="src_2_race_server_8cpp" startline="218" endline="239">RaceServer::Finialize</referencedby>
+        <referencedby refid="class_race_service_1ad0c57fe0dc4fcabd530a24d4cca91946" compoundref="src_2_race_service_8cpp" startline="18" endline="21">~RaceService</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a8974cc80645f9d95bb2fa11ec82713ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::SetPerformaceMgr</definition>
+        <argsstring>(class CPerformanceTimingMgr *pMgr)</argsstring>
+        <name>SetPerformaceMgr</name>
+        <param>
+          <type>class <ref refid="class_c_performance_timing_mgr" kindref="compound">CPerformanceTimingMgr</ref> *</type>
+          <declname>pMgr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="22" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="135" bodyend="138"/>
+        <references refid="class_race_service_1a356147840aaf44245466c24527b70296" compoundref="src_2_race_service_8h" startline="66">m_pPerforceMgr</references>
+        <referencedby refid="class_race_server_1a0c77af41b0b3b16bf8809597d30e123e" compoundref="src_2_race_server_8cpp" startline="1028" endline="1051">RaceServer::InitializeRaceService</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ad1e3d97fafd8b900c000ac2813852e84" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>void * RaceService::GetPerformaceMgr</definition>
+        <argsstring>()</argsstring>
+        <name>GetPerformaceMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="23" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="140" bodyend="143"/>
+        <references refid="class_race_service_1a356147840aaf44245466c24527b70296" compoundref="src_2_race_service_8h" startline="66">m_pPerforceMgr</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a9a0b5f09d5dafe49f734ef8080f76e2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::Dislpay</definition>
+        <argsstring>(int iFlag, char *format,...)</argsstring>
+        <name>Dislpay</name>
+        <param>
+          <type>int</type>
+          <declname>iFlag</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="25" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="145" bodyend="154"/>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ad874aad3ee8df4efa70895ff61cbd43f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>char *</type>
+        <definition>char * RaceService::GetDumpPath</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetDumpPath</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="26" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="156" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a21f47c0b38266266d8cd2e828de30fe6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnJustifyResult</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, void *pkData, int iSize)</argsstring>
+        <name>OnJustifyResult</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="27" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="166" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a8a9007b3468fd155011c4a71a077c705" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnRaceStream</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iSeat, DWord dwFrame, void *pkData, int iSize, bool bMustSend)</argsstring>
+        <name>OnRaceStream</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSeat</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwFrame</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bMustSend</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="29" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="171" bodyend="180"/>
+        <references refid="class_race_service_1adc8f04bb90042cf896221ea15a1f913c" compoundref="src_2_race_service_8h" startline="75">m_kRaceMgr</references>
+        <references refid="class_se_thread_race_mgr_1a995b70cdd4c0d3ca81e175bb9794fb10" compoundref="src_2_se_thread_race_mgr_8cpp" startline="91" endline="135">SeThreadRaceMgr::PushRaceData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1adecb244d3b2942c458bc530025cc1e26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnRaceRecordPack</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, void *pkData, int iSize)</argsstring>
+        <name>OnRaceRecordPack</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="30" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1aab14866a2a8f9a18002de7f3382bf323" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnRaceErrorRet</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID)</argsstring>
+        <name>OnRaceErrorRet</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="31" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="194" bodyend="201"/>
+        <references refid="class_se_thread_race_mgr_1aaa32cf1e375425ee1eacf3619e311eb2" compoundref="src_2_se_thread_race_mgr_8cpp" startline="61" endline="77">SeThreadRaceMgr::DelRace</references>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="struct_se_r_c_r___race_error_1a46e57c5de60bd8d65a533d466cb08eb8" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="87">SeRCR_RaceError::kRaceID</references>
+        <references refid="class_race_service_1adc8f04bb90042cf896221ea15a1f913c" compoundref="src_2_race_service_8h" startline="75">m_kRaceMgr</references>
+        <references refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a682d00a8b87522fd1e27245a150021df" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnRaceEvent</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, const BeLogicEventInfo &amp;rkEvent)</argsstring>
+        <name>OnRaceEvent</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>const BeLogicEventInfo &amp;</type>
+          <declname>rkEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="32" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="203" bodyend="224"/>
+        <references refid="struct_se_r_c_r___race_end_1a6ec7f0e20f38475b03caa4b4756218ad" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="53">SeRCR_RaceEnd::acData</references>
+        <references refid="class_se_thread_race_mgr_1aaa32cf1e375425ee1eacf3619e311eb2" compoundref="src_2_se_thread_race_mgr_8cpp" startline="61" endline="77">SeThreadRaceMgr::DelRace</references>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="struct_se_r_c_r___race_end_1a1503c39e25289fad2567dd31c77b4686" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="52">SeRCR_RaceEnd::kRaceID</references>
+        <references refid="class_race_service_1adc8f04bb90042cf896221ea15a1f913c" compoundref="src_2_race_service_8h" startline="75">m_kRaceMgr</references>
+        <references refid="_se_tool_8cpp_1a4697a1b0adee30e7c3810134c6cfe519" compoundref="_se_tool_8cpp" startline="76" endline="91">MemCpy</references>
+        <references refid="_se_define_8h_1aab50e6cdde3e284ec0854ce27f9b4dcc" compoundref="_se_define_8h" startline="23">MNew</references>
+        <references refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa5b31d4cc364eb59fcd6ab560eebc48cc" compoundref="_se_ptl_comm_define_8h" startline="18">SSD_ENDSTR_LEN</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aae551c574c3a189b2a44409b830b02afa" compoundref="_se_ptl_comm_define_8h" startline="16">SSD_SEND_SIZE</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a0ca5013b8c78bacbcf81ab063b83006e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnRaceSvrModelPack</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, void *pkData, int iSize)</argsstring>
+        <name>OnRaceSvrModelPack</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="33" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="226" bodyend="237"/>
+        <references refid="struct_se_r_c_r___race_svr_model_pack_1a306c4813a8c22736dac44224f8b219e7" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="113">SeRCR_RaceSvrModelPack::acData</references>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="struct_se_r_c_r___race_svr_model_pack_1a664cf6acebc92858fd9392d7b9e9588a" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="112">SeRCR_RaceSvrModelPack::iSize</references>
+        <references refid="struct_se_r_c_r___race_svr_model_pack_1a55a83969d7868c0fc5c7c69d434dcb62" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="111">SeRCR_RaceSvrModelPack::kRaceID</references>
+        <references refid="_se_tool_8cpp_1a4697a1b0adee30e7c3810134c6cfe519" compoundref="_se_tool_8cpp" startline="76" endline="91">MemCpy</references>
+        <references refid="_se_define_8h_1aab50e6cdde3e284ec0854ce27f9b4dcc" compoundref="_se_define_8h" startline="23">MNew</references>
+        <references refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa5b31d4cc364eb59fcd6ab560eebc48cc" compoundref="_se_ptl_comm_define_8h" startline="18">SSD_ENDSTR_LEN</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aae551c574c3a189b2a44409b830b02afa" compoundref="_se_ptl_comm_define_8h" startline="16">SSD_SEND_SIZE</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a3e4550f4043e6e543490062bcbdd58cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnAddRaceRet</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, bool bAddSuc, int iType, DWord dwSrcServerID)</argsstring>
+        <name>OnAddRaceRet</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bAddSuc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iType</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwSrcServerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="34" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="239" bodyend="247"/>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="struct_se_r_c_r___race_init_fail_1a9bc9e3ac75993fb79568caae4eb3c3df" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="30">SeRCR_RaceInitFail::iRet</references>
+        <references refid="struct_se_r_c_r___race_init_fail_1a4dd2670448d8ccf93eaebf32371f64e8" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="29">SeRCR_RaceInitFail::kRaceID</references>
+        <references refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1aa6b1d0ef2370cfcd8443496f8594d11d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnPushStreamRet</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, DWord dwSrcServerID, bool bPushRet, int iSize)</argsstring>
+        <name>OnPushStreamRet</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwSrcServerID</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bPushRet</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="35" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="249" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a9feefb3c9960c3fa777e8e13ded8294c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnRaceNumsRet</definition>
+        <argsstring>(int iType, void *pkUserData, int iNums)</argsstring>
+        <name>OnRaceNumsRet</name>
+        <param>
+          <type>int</type>
+          <declname>iType</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkUserData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iNums</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="36" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="253" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ad2fbb08c06c352d4d8ab02d7fc706fd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnRaceOffsetRet</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iOffset)</argsstring>
+        <name>OnRaceOffsetRet</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iOffset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="37" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="258" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a403e02f3e9e0b73fae48d3d1330e7944" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnShowPerInfo</definition>
+        <argsstring>(int iX, int iY, const char *pcInfo)</argsstring>
+        <name>OnShowPerInfo</name>
+        <param>
+          <type>int</type>
+          <declname>iX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iY</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="38" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a68518a40d432e65e71d5f9f0ca011aa3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnThreadUpdateTime</definition>
+        <argsstring>(DWord dwUpdateTime)</argsstring>
+        <name>OnThreadUpdateTime</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwUpdateTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="39" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1aeab2c2c55360788c731c7fed2515689c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnRaceHeroInfo</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iSeat, void *pkData, int iSize)</argsstring>
+        <name>OnRaceHeroInfo</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSeat</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="41" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="264" bodyend="267"/>
+        <references refid="class_race_service_1adc8f04bb90042cf896221ea15a1f913c" compoundref="src_2_race_service_8h" startline="75">m_kRaceMgr</references>
+        <references refid="class_se_thread_race_mgr_1a8265c49b0a9dcd4d16bc455427997ab3" compoundref="src_2_se_thread_race_mgr_8cpp" startline="79" endline="88">SeThreadRaceMgr::PushGetHeroInfo</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ad6519fa134508dcced70946d3356d16b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnRaceKDA</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, const BeAllHeroKDA &amp;rInfo)</argsstring>
+        <name>OnRaceKDA</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>const BeAllHeroKDA &amp;</type>
+          <declname>rInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="42" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="269" bodyend="274"/>
+        <references refid="struct_se_r_c_r___command_1ae911fac4d20209d12ffacb4c60a16885" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="135">SeRCR_Command::command</references>
+        <references refid="_match_server_2_src_2_se_race_mgr_8cpp_1a1f83db99b647792f31ca33007bb173f3" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="5">g_kRaceMgr</references>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="class_se_race_mgr_1a261f7138e01869ea6bbbcce029d3c90d" compoundref="_race_server_2src_2_se_race_mgr_8cpp" startline="3890" endline="3911">SeRaceMgr::OnRaceKDA</references>
+        <references refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1add36927477834ade57c347253ad8b569" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnRealTimeRaceKDA</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, const BeAllHeroKDA &amp;rInfo)</argsstring>
+        <name>OnRealTimeRaceKDA</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>const BeAllHeroKDA &amp;</type>
+          <declname>rInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="43" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="276" bodyend="281"/>
+        <references refid="struct_se_r_c_r___command_1ae911fac4d20209d12ffacb4c60a16885" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="135">SeRCR_Command::command</references>
+        <references refid="_match_server_2_src_2_se_race_mgr_8cpp_1a1f83db99b647792f31ca33007bb173f3" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="5">g_kRaceMgr</references>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="class_se_race_mgr_1a51014b6fe60569121ba5dacbe709ad8b" compoundref="_race_server_2src_2_se_race_mgr_8cpp" startline="3851" endline="3888">SeRaceMgr::OnRealTimeRaceKDA</references>
+        <references refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a1d1f294bda3343b60c07fb51230b704d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnRealTimeRaceMapDetail</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, const BeRaceBuildingStatus &amp;rInfo)</argsstring>
+        <name>OnRealTimeRaceMapDetail</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>const BeRaceBuildingStatus &amp;</type>
+          <declname>rInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="44" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="283" bodyend="288"/>
+        <references refid="struct_se_r_c_r___command_1ae911fac4d20209d12ffacb4c60a16885" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="135">SeRCR_Command::command</references>
+        <references refid="_match_server_2_src_2_se_race_mgr_8cpp_1a1f83db99b647792f31ca33007bb173f3" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="5">g_kRaceMgr</references>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="class_se_race_mgr_1a2dd0de8f23e787b77ffa3e4abf4d3a05" compoundref="_race_server_2src_2_se_race_mgr_8cpp" startline="3828" endline="3849">SeRaceMgr::OnRealTimeRaceMapDetail</references>
+        <references refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1aca476353c346c6b1259b46418d6f3c13" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnGetAchievement</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iSeat, DWord aID, DWord aLvl)</argsstring>
+        <name>OnGetAchievement</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSeat</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>aID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>aLvl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="45" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="290" bodyend="299"/>
+        <references refid="struct_se_r_c_r___get_achievement_1aae9afecd8b3e1cdd414a04ca4f0cc75f" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="64">SeRCR_GetAchievement::dwAID</references>
+        <references refid="struct_se_r_c_r___get_achievement_1a983106984d691a089c9dbf9477ee0cb3" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="65">SeRCR_GetAchievement::dwLvl</references>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="struct_se_r_c_r___get_achievement_1ab963f04dfa4f5e6a817f98895dc1a0f8" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="63">SeRCR_GetAchievement::iSeat</references>
+        <references refid="struct_se_r_c_r___get_achievement_1acaff133ce559981e13c1fad869446f73" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="62">SeRCR_GetAchievement::kRaceID</references>
+        <references refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a8fc8a0181ec42136cfe0e3bd3492ba39" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnAchievementCounts</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iSeat, void *pkData, int iSize)</argsstring>
+        <name>OnAchievementCounts</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSeat</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="46" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="322" bodyend="334"/>
+        <references refid="struct_se_r_c_r___achievement_counts_1aa1876021f82ec277fb7bc27b09377a35" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="77">SeRCR_AchievementCounts::acData</references>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="struct_se_r_c_r___achievement_counts_1a5f7de2fa1d9cb76e7b8fb430d345a0fe" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="75">SeRCR_AchievementCounts::iSeat</references>
+        <references refid="struct_se_r_c_r___achievement_counts_1a05f9883d2b2f65ed410be8f57b4dfc7f" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="76">SeRCR_AchievementCounts::iSize</references>
+        <references refid="struct_se_r_c_r___achievement_counts_1a503a2958356ae9c983414c713d4fbe83" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="74">SeRCR_AchievementCounts::kRaceID</references>
+        <references refid="_se_tool_8cpp_1a4697a1b0adee30e7c3810134c6cfe519" compoundref="_se_tool_8cpp" startline="76" endline="91">MemCpy</references>
+        <references refid="_se_define_8h_1aab50e6cdde3e284ec0854ce27f9b4dcc" compoundref="_se_define_8h" startline="23">MNew</references>
+        <references refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa5b31d4cc364eb59fcd6ab560eebc48cc" compoundref="_se_ptl_comm_define_8h" startline="18">SSD_ENDSTR_LEN</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aae551c574c3a189b2a44409b830b02afa" compoundref="_se_ptl_comm_define_8h" startline="16">SSD_SEND_SIZE</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ab283f9dd5d705e66c9cf108fab699f58" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnPlayerItemChange</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, const BePlayerItemChange &amp;rInfo)</argsstring>
+        <name>OnPlayerItemChange</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>const BePlayerItemChange &amp;</type>
+          <declname>rInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="47" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="308" bodyend="313"/>
+        <references refid="struct_se_r_c_r___command_1ae911fac4d20209d12ffacb4c60a16885" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="135">SeRCR_Command::command</references>
+        <references refid="_match_server_2_src_2_se_race_mgr_8cpp_1a1f83db99b647792f31ca33007bb173f3" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="5">g_kRaceMgr</references>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="class_se_race_mgr_1aeda2db482c8e9adc4b51327909238205" compoundref="_race_server_2src_2_se_race_mgr_8cpp" startline="3381" endline="3399">SeRaceMgr::OnPlayerItemChange</references>
+        <references refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a0133ffb9bf1e584dfff364aaf9fa06d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnRaceEndArenaDetail</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, const BeRaceArenaDetail &amp;rInfo)</argsstring>
+        <name>OnRaceEndArenaDetail</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>const BeRaceArenaDetail &amp;</type>
+          <declname>rInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="48" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="315" bodyend="320"/>
+        <references refid="struct_se_r_c_r___command_1ae911fac4d20209d12ffacb4c60a16885" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="135">SeRCR_Command::command</references>
+        <references refid="_match_server_2_src_2_se_race_mgr_8cpp_1a1f83db99b647792f31ca33007bb173f3" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="5">g_kRaceMgr</references>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="class_se_race_mgr_1a17512d648face94dd24933efff4c94c2" compoundref="_race_server_2src_2_se_race_mgr_8cpp" startline="3719" endline="3826">SeRaceMgr::OnRaceEndArenaDetail</references>
+        <references refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1aafbbac9cefc27f6ba6cbadf4a8ecbc09" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnRaceEndGradeDetail</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, const BeRaceGradeDetail &amp;rInfo)</argsstring>
+        <name>OnRaceEndGradeDetail</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>const BeRaceGradeDetail &amp;</type>
+          <declname>rInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="49" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="301" bodyend="306"/>
+        <references refid="struct_se_r_c_r___command_1ae911fac4d20209d12ffacb4c60a16885" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="135">SeRCR_Command::command</references>
+        <references refid="_match_server_2_src_2_se_race_mgr_8cpp_1a1f83db99b647792f31ca33007bb173f3" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="5">g_kRaceMgr</references>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="class_se_race_mgr_1aeb079abe070d16c29aefc0cc8df54ea7" compoundref="_race_server_2src_2_se_race_mgr_8cpp" startline="3588" endline="3699">SeRaceMgr::OnRaceEndGradeDetail</references>
+        <references refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a0bcb6fe33ef74244de0c5c22ecb639b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::OnDecRespawnItem</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, const BeDecRespawnItem &amp;rInfo)</argsstring>
+        <name>OnDecRespawnItem</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>const BeDecRespawnItem &amp;</type>
+          <declname>rInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="50" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="371" bodyend="376"/>
+        <references refid="struct_se_r_c_r___command_1ae911fac4d20209d12ffacb4c60a16885" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="135">SeRCR_Command::command</references>
+        <references refid="_match_server_2_src_2_se_race_mgr_8cpp_1a1f83db99b647792f31ca33007bb173f3" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="5">g_kRaceMgr</references>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="class_se_race_mgr_1ad3028eb038b4a1a365bbe15222b40c7f" compoundref="_race_server_2src_2_se_race_mgr_8cpp" startline="3701" endline="3717">SeRaceMgr::OnDecRespawnItem</references>
+        <references refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a269f34d71a2c6dd513abd8bc7a312542" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.inl" line="2" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.cpp" bodystart="4" bodyend="26"/>
+        <references refid="src_2_se_ptl___r_s___to___r_s_c_8h_1ada3b5ff310fddf2f3066b480671655e7a5870b4a992d876a612dc31a54f7b5d68" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="9">CMD_RSC_END_RACE</references>
+        <references refid="src_2_se_ptl___r_s___to___r_s_c_8h_1ada3b5ff310fddf2f3066b480671655e7a063c794e56a8f10268aa9226edbd65c6" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="13">CMD_RSC_GET_HERO_INFO</references>
+        <references refid="src_2_se_ptl___r_s___to___r_s_c_8h_1ada3b5ff310fddf2f3066b480671655e7a3ba61cf3e8ea4a609162b33b16d36cf8" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="10">CMD_RSC_PLAYER_LEAVE</references>
+        <references refid="src_2_se_ptl___r_s___to___r_s_c_8h_1ada3b5ff310fddf2f3066b480671655e7a1a7d5b9273bbb86e15901082ca31d1ca" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="11">CMD_RSC_PLAYER_RELINK</references>
+        <references refid="src_2_se_ptl___r_s___to___r_s_c_8h_1ada3b5ff310fddf2f3066b480671655e7a2179ad74f5ba30c5f3f46a4fc48c78a2" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="7">CMD_RSC_RACE_INIT</references>
+        <references refid="src_2_se_ptl___r_s___to___r_s_c_8h_1ada3b5ff310fddf2f3066b480671655e7a8c7369b4cd2d5264e998f9f24a8cb1ea" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="12">CMD_RSC_RACE_START</references>
+        <references refid="src_2_se_ptl___r_s___to___r_s_c_8h_1ada3b5ff310fddf2f3066b480671655e7a0a4cdfa80a3792a0e605e9f2ceffb2f3" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="8">CMD_RSC_RACE_STREAM</references>
+        <references refid="src_2_se_ptl___r_s___to___r_s_c_8h_1ada3b5ff310fddf2f3066b480671655e7ac9ee6245f4e1592e41a59a9174f658d0" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="14">CMD_RSC_SET_RACE_INCMP_STATE</references>
+        <references refid="class_race_service_1a9285fb001e418d3795ddc16456a843ec" compoundref="src_2_se_race_server_process_8cpp" startline="110" endline="120">ProcessRRC_GetHeroInfo</references>
+        <references refid="class_race_service_1a048dc3b1fa9950cc73b7c7364087292f" compoundref="src_2_se_race_server_process_8cpp" startline="55" endline="67">ProcessRRC_PlayerLeave</references>
+        <references refid="class_race_service_1a040f3911978ad76c0ea78067be639323" compoundref="src_2_se_race_server_process_8cpp" startline="69" endline="81">ProcessRRC_PlayerRelink</references>
+        <references refid="class_race_service_1a77e140d69c562236c411afcb6374a9d1" compoundref="src_2_se_race_server_process_8cpp" startline="28" endline="42">ProcessRRC_RaceInit</references>
+        <references refid="class_race_service_1a2a5f7d12e2afc1bb15b9c185c5d91462" compoundref="src_2_se_race_server_process_8cpp" startline="83" endline="95">ProcessRRC_RaceOver</references>
+        <references refid="class_race_service_1acbb709a0386cddf5b17c7ce8a913e3ab" compoundref="src_2_se_race_server_process_8cpp" startline="97" endline="106">ProcessRRC_RaceStart</references>
+        <references refid="class_race_service_1ac2be3d28126e123cfe61e4757ae59174" compoundref="src_2_se_race_server_process_8cpp" startline="44" endline="53">ProcessRRC_RaceStream</references>
+        <references refid="class_race_service_1a98435a3f8b23ebb4d17cfcd9bce4f58e" compoundref="src_2_se_race_server_process_8cpp" startline="122" endline="132">ProcessRRC_SetRaceIncmpState</references>
+        <references refid="struct_se_thread_cmd_1a7d5d7c79f458fbfcee2d989a751aa157" compoundref="src_2_race_service_def_8h" startline="40">SeThreadCmd::wCmd</references>
+        <referencedby refid="class_race_service_1ace1c37675c9bc256b137d4860f57888f" compoundref="src_2_race_service_8cpp" startline="347" endline="359">UpdateRSCMsg</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a77e140d69c562236c411afcb6374a9d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC_RaceInit</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC_RaceInit</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.inl" line="4" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.cpp" bodystart="28" bodyend="42"/>
+        <references refid="class_se_thread_race_mgr_1a5087128d5e99691c4539996bb6cb376e" compoundref="src_2_se_thread_race_mgr_8cpp" startline="24" endline="39">SeThreadRaceMgr::AddRace</references>
+        <references refid="class_se_thread_race_mgr_1a5c1640d88ef383e67ab3ad22b7dd1f9d" compoundref="src_2_se_thread_race_mgr_8cpp" startline="41" endline="59">SeThreadRaceMgr::AddRacePlayer</references>
+        <references refid="struct_se_r_s_c___race_init_1a17aaf75ea2a3715a7fc95d5ba4afce49" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="30">SeRSC_RaceInit::akInfo</references>
+        <references refid="struct_se_r_s_c___race_init_1a389e56c9aff88bcf12b7d401585a9555" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="28">SeRSC_RaceInit::iMapID</references>
+        <references refid="struct_se_r_s_c___race_init_1ac25ecf428ac8c3b4be0c0d200a0d0a33" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="29">SeRSC_RaceInit::iNum</references>
+        <references refid="struct_se_r_s_c___race_init_1a0d5f96adb2ea35c8a56b17bceeb44fe3" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="27">SeRSC_RaceInit::iSeatInfo</references>
+        <references refid="struct_se_r_s_c___race_init_1a0f2a6f34ec2c12da30d847527c639297" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="26">SeRSC_RaceInit::kRaceID</references>
+        <references refid="class_race_service_1adc8f04bb90042cf896221ea15a1f913c" compoundref="src_2_race_service_8h" startline="75">m_kRaceMgr</references>
+        <references refid="class_race_service_1aaf6085e0cf3a819b9dc3266bf03f99ff" compoundref="src_2_race_service_8h" startline="74">m_pkRaceLogic</references>
+        <referencedby refid="class_race_service_1a269f34d71a2c6dd513abd8bc7a312542" compoundref="src_2_se_race_server_process_8cpp" startline="4" endline="26">ProcessRRC</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ac2be3d28126e123cfe61e4757ae59174" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC_RaceStream</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC_RaceStream</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.inl" line="5" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.cpp" bodystart="44" bodyend="53"/>
+        <references refid="struct_se_r_s_c___race_stream_1abce29b3170f9f3dd7289d0e5eb79a593" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="43">SeRSC_RaceStream::acData</references>
+        <references refid="struct_se_r_s_c___race_stream_1a42318f02ae6e35059d1e869d7c21296c" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="42">SeRSC_RaceStream::iDataSize</references>
+        <references refid="struct_se_r_s_c___race_stream_1a150f019c60480301b837fde3253b0843" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="41">SeRSC_RaceStream::kRaceID</references>
+        <references refid="class_race_service_1aaf6085e0cf3a819b9dc3266bf03f99ff" compoundref="src_2_race_service_8h" startline="74">m_pkRaceLogic</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa5b31d4cc364eb59fcd6ab560eebc48cc" compoundref="_se_ptl_comm_define_8h" startline="18">SSD_ENDSTR_LEN</references>
+        <referencedby refid="class_race_service_1a269f34d71a2c6dd513abd8bc7a312542" compoundref="src_2_se_race_server_process_8cpp" startline="4" endline="26">ProcessRRC</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a048dc3b1fa9950cc73b7c7364087292f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC_PlayerLeave</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC_PlayerLeave</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.inl" line="6" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.cpp" bodystart="55" bodyend="67"/>
+        <references refid="struct_se_r_s_c___player_leave_1a74238cd72f37d6452d883a93f67bd91f" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="54">SeRSC_PlayerLeave::iSeat</references>
+        <references refid="struct_se_r_s_c___player_leave_1a11e80603016118ccdda0b10db04ad35f" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="53">SeRSC_PlayerLeave::kRaceID</references>
+        <references refid="class_race_service_1adc8f04bb90042cf896221ea15a1f913c" compoundref="src_2_race_service_8h" startline="75">m_kRaceMgr</references>
+        <references refid="class_race_service_1aaf6085e0cf3a819b9dc3266bf03f99ff" compoundref="src_2_race_service_8h" startline="74">m_pkRaceLogic</references>
+        <references refid="class_se_thread_race_mgr_1a8996177af66d17815e3b3a4c0a6f713e" compoundref="src_2_se_thread_race_mgr_8cpp" startline="137" endline="152">SeThreadRaceMgr::PlayerLeave</references>
+        <referencedby refid="class_race_service_1a269f34d71a2c6dd513abd8bc7a312542" compoundref="src_2_se_race_server_process_8cpp" startline="4" endline="26">ProcessRRC</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a040f3911978ad76c0ea78067be639323" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC_PlayerRelink</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC_PlayerRelink</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.inl" line="7" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.cpp" bodystart="69" bodyend="81"/>
+        <references refid="struct_se_r_s_c___player_relink_1ae6ef9dd0dbf3db2ec82e630fc65b5409" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="66">SeRSC_PlayerRelink::iSeat</references>
+        <references refid="struct_se_r_s_c___player_relink_1a64d2ca67e2e17788011d40704ba2f98d" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="65">SeRSC_PlayerRelink::kRaceID</references>
+        <references refid="struct_se_r_s_c___player_relink_1a02727a2e295378b0cbaeeee268c74a2a" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="68">SeRSC_PlayerRelink::kSock</references>
+        <references refid="class_race_service_1adc8f04bb90042cf896221ea15a1f913c" compoundref="src_2_race_service_8h" startline="75">m_kRaceMgr</references>
+        <references refid="class_race_service_1aaf6085e0cf3a819b9dc3266bf03f99ff" compoundref="src_2_race_service_8h" startline="74">m_pkRaceLogic</references>
+        <references refid="class_se_thread_race_mgr_1a20d3fcf75d66f1161d8fd4bd415006e7" compoundref="src_2_se_thread_race_mgr_8cpp" startline="154" endline="171">SeThreadRaceMgr::PlayerRelink</references>
+        <referencedby refid="class_race_service_1a269f34d71a2c6dd513abd8bc7a312542" compoundref="src_2_se_race_server_process_8cpp" startline="4" endline="26">ProcessRRC</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a2a5f7d12e2afc1bb15b9c185c5d91462" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC_RaceOver</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC_RaceOver</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.inl" line="8" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.cpp" bodystart="83" bodyend="95"/>
+        <references refid="class_se_thread_race_mgr_1aaa32cf1e375425ee1eacf3619e311eb2" compoundref="src_2_se_thread_race_mgr_8cpp" startline="61" endline="77">SeThreadRaceMgr::DelRace</references>
+        <references refid="struct_se_r_s_c___race_over_1a142b23ebc5c585c7318dc26cc99f645d" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="77">SeRSC_RaceOver::kRaceID</references>
+        <references refid="class_race_service_1adc8f04bb90042cf896221ea15a1f913c" compoundref="src_2_race_service_8h" startline="75">m_kRaceMgr</references>
+        <references refid="class_race_service_1aaf6085e0cf3a819b9dc3266bf03f99ff" compoundref="src_2_race_service_8h" startline="74">m_pkRaceLogic</references>
+        <referencedby refid="class_race_service_1a269f34d71a2c6dd513abd8bc7a312542" compoundref="src_2_se_race_server_process_8cpp" startline="4" endline="26">ProcessRRC</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1acbb709a0386cddf5b17c7ce8a913e3ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC_RaceStart</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC_RaceStart</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.inl" line="9" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.cpp" bodystart="97" bodyend="106"/>
+        <references refid="class_se_thread_race_mgr_1a5c1640d88ef383e67ab3ad22b7dd1f9d" compoundref="src_2_se_thread_race_mgr_8cpp" startline="41" endline="59">SeThreadRaceMgr::AddRacePlayer</references>
+        <references refid="struct_se_r_s_c___race_start_1acbe490316a14a346a79d5548b13a4dcf" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="90">SeRSC_RaceStart::akInfo</references>
+        <references refid="struct_se_r_s_c___race_start_1a8bbca0b390fbd79bd07c02c302d0fe05" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="89">SeRSC_RaceStart::iNum</references>
+        <references refid="struct_se_r_s_c___race_start_1a5b6bcda111f283cb88e1e0becf50f345" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="88">SeRSC_RaceStart::kRaceID</references>
+        <references refid="class_race_service_1adc8f04bb90042cf896221ea15a1f913c" compoundref="src_2_race_service_8h" startline="75">m_kRaceMgr</references>
+        <referencedby refid="class_race_service_1a269f34d71a2c6dd513abd8bc7a312542" compoundref="src_2_se_race_server_process_8cpp" startline="4" endline="26">ProcessRRC</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a9285fb001e418d3795ddc16456a843ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC_GetHeroInfo</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC_GetHeroInfo</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.inl" line="10" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.cpp" bodystart="110" bodyend="120"/>
+        <references refid="struct_se_r_s_c___get_hero_info_1ab7a5c94bf8fe4b9bf338f27b9e6b0ac2" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="102">SeRSC_GetHeroInfo::iSeat</references>
+        <references refid="struct_se_r_s_c___get_hero_info_1a0e44402d3b97a6e498840f0bbeaf5c63" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="101">SeRSC_GetHeroInfo::kRaceID</references>
+        <references refid="class_race_service_1aaf6085e0cf3a819b9dc3266bf03f99ff" compoundref="src_2_race_service_8h" startline="74">m_pkRaceLogic</references>
+        <referencedby refid="class_race_service_1a269f34d71a2c6dd513abd8bc7a312542" compoundref="src_2_se_race_server_process_8cpp" startline="4" endline="26">ProcessRRC</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a98435a3f8b23ebb4d17cfcd9bce4f58e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC_SetRaceIncmpState</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC_SetRaceIncmpState</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.inl" line="11" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeRaceServerProcess.cpp" bodystart="122" bodyend="132"/>
+        <references refid="struct_se_r_s_c___set_race_incmp_state_1a18e8c40f2334bf9113d5be471602657a" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="113">SeRSC_SetRaceIncmpState::bIncmp</references>
+        <references refid="struct_se_r_s_c___set_race_incmp_state_1a73083625f612e3e7263455b1bbb4e46d" compoundref="src_2_se_ptl___r_s___to___r_s_c_8h" startline="112">SeRSC_SetRaceIncmpState::kRaceID</references>
+        <references refid="class_race_service_1aaf6085e0cf3a819b9dc3266bf03f99ff" compoundref="src_2_race_service_8h" startline="74">m_pkRaceLogic</references>
+        <referencedby refid="class_race_service_1a269f34d71a2c6dd513abd8bc7a312542" compoundref="src_2_se_race_server_process_8cpp" startline="4" endline="26">ProcessRRC</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a830024286ee919364c182cd9c61b4e7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RaceService::PushMsg</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>PushMsg</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="56" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="336" bodyend="339"/>
+        <references refid="class_race_service_1ab205ec535d589ee281536eb75fb3fd4d" compoundref="src_2_race_service_8h" startline="71">m_kThreadMsgMgr</references>
+        <references refid="class_se_thread_msg_mgr_1a2138303823638539c975f7cd63cb46d4" compoundref="_se_thread_msg_8cpp" startline="36" endline="58">SeThreadMsgMgr::PushMsg</references>
+        <referencedby refid="class_race_server_1ae91d04a5ecfd06ba89942fa6db449910" compoundref="src_2_se_race_svr_other_8cpp" startline="275" endline="286">RaceServer::PushRaceServiceMsg</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ac030266656fd64ac5a06249bf755cb67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::SetThreadIndex</definition>
+        <argsstring>(int iThreadIndex)</argsstring>
+        <name>SetThreadIndex</name>
+        <param>
+          <type>int</type>
+          <declname>iThreadIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="57" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="341" bodyend="345"/>
+        <references refid="class_race_service_1a027a184ce91e158a6bf94191cd89b585" compoundref="src_2_race_service_8h" startline="65">m_iThreadIndex</references>
+        <references refid="class_race_service_1adc8f04bb90042cf896221ea15a1f913c" compoundref="src_2_race_service_8h" startline="75">m_kRaceMgr</references>
+        <references refid="class_se_thread_race_mgr_1a3fb9e1b4f640cda3a47c0f0de32c833b" compoundref="src_2_se_thread_race_mgr_8cpp" startline="19" endline="22">SeThreadRaceMgr::SetThreadIndex</references>
+        <referencedby refid="class_race_server_1a0c77af41b0b3b16bf8809597d30e123e" compoundref="src_2_race_server_8cpp" startline="1028" endline="1051">RaceServer::InitializeRaceService</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ac3807f78ed60a010024d71d84fc65a2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RaceService::RaceService</definition>
+        <argsstring>(void)</argsstring>
+        <name>RaceService</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ad0c57fe0dc4fcabd530a24d4cca91946" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RaceService::~RaceService</definition>
+        <argsstring>(void)</argsstring>
+        <name>~RaceService</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1abfccad7fabdcc62ee709c93555eb3996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RaceService::Initialize</definition>
+        <argsstring>(int iBaseBuffSize=4 *1024 *1024)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type>int</type>
+          <declname>iBaseBuffSize</declname>
+          <defval>4 *1024 *1024</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ac75744355bee316fe6e3cfd834d2c76c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::Update</definition>
+        <argsstring>(void)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a45c4bf4771b10ebc22ded6c3f8905c4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::Finialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Finialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a8974cc80645f9d95bb2fa11ec82713ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::SetPerformaceMgr</definition>
+        <argsstring>(class CPerformanceTimingMgr *pMgr)</argsstring>
+        <name>SetPerformaceMgr</name>
+        <param>
+          <type>class <ref refid="class_c_performance_timing_mgr" kindref="compound">CPerformanceTimingMgr</ref> *</type>
+          <declname>pMgr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ae3e8b2da2e532e9a9071dbb0e28dc9d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void *</type>
+        <definition>virtual void* RaceService::GetPerformaceMgr</definition>
+        <argsstring>()</argsstring>
+        <name>GetPerformaceMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1aa86bc182122945e9c661220638b0f34b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::Dislpay</definition>
+        <argsstring>(int iFlag, char *format,...)</argsstring>
+        <name>Dislpay</name>
+        <param>
+          <type>int</type>
+          <declname>iFlag</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a14ed92b886dab70cdfa618d2c5a2602e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>char *</type>
+        <definition>virtual char* RaceService::GetDumpPath</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetDumpPath</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1aa180436f86aed0c5fd36775f2174ba73" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnJustifyResult</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, void *pkData, int iSize)</argsstring>
+        <name>OnJustifyResult</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a13917d556b985c1cefe5022b421c900d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnRaceStream</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iSeat, DWord dwFrame, void *pkData, int iSize, bool bMustSend)</argsstring>
+        <name>OnRaceStream</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSeat</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwFrame</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bMustSend</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1adecb244d3b2942c458bc530025cc1e26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnRaceRecordPack</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, void *pkData, int iSize)</argsstring>
+        <name>OnRaceRecordPack</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="30" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a3f5757bbbcfa7b7c4d3ae3ed6c2b5796" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnRaceErrorRet</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID)</argsstring>
+        <name>OnRaceErrorRet</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1aa4dea37cb6b8c5f444abf06c0e2f590e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnRaceEvent</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, const BeLogicEventInfo &amp;rkEvent)</argsstring>
+        <name>OnRaceEvent</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>const BeLogicEventInfo &amp;</type>
+          <declname>rkEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a231fb63aaa4464dd8f1a4d62287feab6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnRaceSvrModelPack</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, void *pkData, int iSize)</argsstring>
+        <name>OnRaceSvrModelPack</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a97e3e126f82176b7e061ce3b01a7d918" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnAddRaceRet</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, bool bAddSuc, int iType, DWord dwSrcServerID)</argsstring>
+        <name>OnAddRaceRet</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bAddSuc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iType</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwSrcServerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ae313af703cbf79d50f64fea71d3aead1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnPushStreamRet</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, DWord dwSrcServerID, bool bPushRet, int iSize)</argsstring>
+        <name>OnPushStreamRet</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwSrcServerID</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bPushRet</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a844028c7c22deed72e6b95ba4cf6d771" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnRaceNumsRet</definition>
+        <argsstring>(int iType, void *pkUserData, int iNums)</argsstring>
+        <name>OnRaceNumsRet</name>
+        <param>
+          <type>int</type>
+          <declname>iType</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkUserData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iNums</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a9eee175d9e662deac4707235a93d8f31" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnRaceOffsetRet</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iOffset)</argsstring>
+        <name>OnRaceOffsetRet</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iOffset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a403e02f3e9e0b73fae48d3d1330e7944" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnShowPerInfo</definition>
+        <argsstring>(int iX, int iY, const char *pcInfo)</argsstring>
+        <name>OnShowPerInfo</name>
+        <param>
+          <type>int</type>
+          <declname>iX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iY</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="38" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a68518a40d432e65e71d5f9f0ca011aa3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnThreadUpdateTime</definition>
+        <argsstring>(DWord dwUpdateTime)</argsstring>
+        <name>OnThreadUpdateTime</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwUpdateTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="39" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ab572b57571e9c55a6e67c5555b2697c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnRaceHeroInfo</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iSeat, void *pkData, int iSize)</argsstring>
+        <name>OnRaceHeroInfo</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSeat</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a54d2be0b2c2a50f2d02ea5b9dd1f7cc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnRaceKDA</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, const BeAllHeroKDA &amp;rInfo)</argsstring>
+        <name>OnRaceKDA</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>const BeAllHeroKDA &amp;</type>
+          <declname>rInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1af61ec5ce96f7c8e9f61c680615f662ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnRealTimeRaceKDA</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, const BeAllHeroKDA &amp;rInfo)</argsstring>
+        <name>OnRealTimeRaceKDA</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>const BeAllHeroKDA &amp;</type>
+          <declname>rInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1af02a758fe25ea717a695867caa032db6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnRealTimeRaceMapDetail</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, const BeRaceBuildingStatus &amp;rInfo)</argsstring>
+        <name>OnRealTimeRaceMapDetail</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>const BeRaceBuildingStatus &amp;</type>
+          <declname>rInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ad6d931cd5bd6579f927400cfb3580bae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnGetAchievement</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iSeat, DWord aID, DWord aLvl)</argsstring>
+        <name>OnGetAchievement</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSeat</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>aID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>aLvl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1aa730d4cf066dace8284971e2f37890cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnAchievementCounts</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iSeat, void *pkData, int iSize)</argsstring>
+        <name>OnAchievementCounts</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSeat</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a94cea8cb26b49004290113b71235d85d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnPlayerItemChange</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, const BePlayerItemChange &amp;rInfo)</argsstring>
+        <name>OnPlayerItemChange</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>const BePlayerItemChange &amp;</type>
+          <declname>rInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1acbb7e1807aa83ee900478f33b98ed30d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnRaceEndArenaDetail</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, const BeRaceArenaDetail &amp;rInfo)</argsstring>
+        <name>OnRaceEndArenaDetail</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>const BeRaceArenaDetail &amp;</type>
+          <declname>rInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a8d9276ed1bc5b9aabf697742b0acb263" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnRaceEndGradeDetail</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, const BeRaceGradeDetail &amp;rInfo)</argsstring>
+        <name>OnRaceEndGradeDetail</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>const BeRaceGradeDetail &amp;</type>
+          <declname>rInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ad57372db7b44b1a912966994e767fb0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::OnDecRespawnItem</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, const BeDecRespawnItem &amp;rInfo)</argsstring>
+        <name>OnDecRespawnItem</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>const BeDecRespawnItem &amp;</type>
+          <declname>rInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a269f34d71a2c6dd513abd8bc7a312542" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeRaceServerProcess.inl" line="2" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a77e140d69c562236c411afcb6374a9d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC_RaceInit</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC_RaceInit</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeRaceServerProcess.inl" line="4" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ac2be3d28126e123cfe61e4757ae59174" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC_RaceStream</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC_RaceStream</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeRaceServerProcess.inl" line="5" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a048dc3b1fa9950cc73b7c7364087292f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC_PlayerLeave</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC_PlayerLeave</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeRaceServerProcess.inl" line="6" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a040f3911978ad76c0ea78067be639323" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC_PlayerRelink</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC_PlayerRelink</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeRaceServerProcess.inl" line="7" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a2a5f7d12e2afc1bb15b9c185c5d91462" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC_RaceOver</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC_RaceOver</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeRaceServerProcess.inl" line="8" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1acbb709a0386cddf5b17c7ce8a913e3ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC_RaceStart</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC_RaceStart</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeRaceServerProcess.inl" line="9" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a9285fb001e418d3795ddc16456a843ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC_GetHeroInfo</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC_GetHeroInfo</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeRaceServerProcess.inl" line="10" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a98435a3f8b23ebb4d17cfcd9bce4f58e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::ProcessRRC_SetRaceIncmpState</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>ProcessRRC_SetRaceIncmpState</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeRaceServerProcess.inl" line="11" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a830024286ee919364c182cd9c61b4e7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RaceService::PushMsg</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>PushMsg</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ac030266656fd64ac5a06249bf755cb67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::SetThreadIndex</definition>
+        <argsstring>(int iThreadIndex)</argsstring>
+        <name>SetThreadIndex</name>
+        <param>
+          <type>int</type>
+          <declname>iThreadIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="57" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_race_service_1ace1c37675c9bc256b137d4860f57888f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::UpdateRSCMsg</definition>
+        <argsstring>(void)</argsstring>
+        <name>UpdateRSCMsg</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="60" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="347" bodyend="359"/>
+        <references refid="struct_se_msg_data_1ab6577c6c65bcf31204ca984053313335" compoundref="_se_thread_msg_8h" startline="26">SeMsgData::abyData</references>
+        <references refid="struct_se_msg_data_1aecd603d6ee9e3ec757d167f364508db0" compoundref="_se_thread_msg_8h" startline="25">SeMsgData::iSize</references>
+        <references refid="_performacen_timing_mgr_8h_1a9963036d676352430d69324421a8eb82" compoundref="_performacen_timing_mgr_8h" startline="98">M_BeforeStartInverval</references>
+        <references refid="class_race_service_1ab205ec535d589ee281536eb75fb3fd4d" compoundref="src_2_race_service_8h" startline="71">m_kThreadMsgMgr</references>
+        <references refid="_performacen_timing_mgr_8h_1a08f87f8bb7822829ee6ad556f3a1fa82" compoundref="_performacen_timing_mgr_8h" startline="106">M_QDoMutiInterval_FN</references>
+        <references refid="class_se_thread_msg_mgr_1a143465b2c3e037cac44183f87355d23f" compoundref="_se_thread_msg_8cpp" startline="60" endline="82">SeThreadMsgMgr::PopMsg</references>
+        <references refid="class_race_service_1a269f34d71a2c6dd513abd8bc7a312542" compoundref="src_2_se_race_server_process_8cpp" startline="4" endline="26">ProcessRRC</references>
+        <referencedby refid="class_race_service_1ac75744355bee316fe6e3cfd834d2c76c" compoundref="src_2_race_service_8cpp" startline="62" endline="125">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1a0e549baec6fe2d1d67a662387cfaf4a0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceService::DoWork</definition>
+        <argsstring>()</argsstring>
+        <name>DoWork</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="62" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.cpp" bodystart="361" bodyend="369"/>
+        <references refid="class_c_performance_timing_1ae56ca41ef27a84f3558c02102b21d9e9" compoundref="src_2_performance_timing_8cpp" startline="386" endline="390">CPerformanceTiming::AddSink</references>
+        <references refid="class_c_performance_timing_1ab01a87ccbdb82fba98e714b467c7af02" compoundref="src_2_performance_timing_8cpp" startline="712" endline="723">CPerformanceTiming::BeginTrack</references>
+        <references refid="namespacemake_callback_1a0c646a8863d44327e020456c954f4b2d" compoundref="make_callback_8py" startline="145">makeCallback.f</references>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="class_race_server_1a5a1835ed84eb2e50c4a9d1fa203ac928" compoundref="src_2_se_race_svr_other_8cpp" startline="38" endline="41">RaceServer::GetMaxPacketSize</references>
+        <references refid="class_race_server_1ae7388ef7da3a30046cf017d40e355669" compoundref="src_2_se_race_svr_other_8cpp" startline="33" endline="36">RaceServer::GetRacePrintTime</references>
+        <references refid="class_c_performance_timing_1a4f88adba887fed6e7d048d5cd56ea83a" compoundref="src_2_performance_timing_8cpp" startline="364" endline="374">CPerformanceTiming::Init</references>
+        <references refid="class_race_service_1a720cbed3e7892151174e3f6d458901c7" compoundref="src_2_race_service_8h" startline="72">m_bStop</references>
+        <references refid="class_c_performance_timing_1a607525bd7cee344ebc537cb82cfdc833" compoundref="src_2_performance_timing_8h" startline="228" endline="231">CPerformanceTiming::MutiInstance</references>
+        <references refid="class_race_service_1ac75744355bee316fe6e3cfd834d2c76c" compoundref="src_2_race_service_8cpp" startline="62" endline="125">Update</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ace1c37675c9bc256b137d4860f57888f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceService::UpdateRSCMsg</definition>
+        <argsstring>(void)</argsstring>
+        <name>UpdateRSCMsg</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_service_1ab7862cee15bb93d1c796440580cef439" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RaceService::DoWork</definition>
+        <argsstring>()</argsstring>
+        <name>DoWork</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/RaceService.h" line="62" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2436">
+        <label>RaceService</label>
+        <link refid="class_race_service"/>
+        <childnode refid="2437" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2438" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2437" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2438" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2438">
+        <label>Thread</label>
+      </node>
+      <node id="2437">
+        <label>BeRaceLogicCall</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2453">
+        <label>SeThreadMsgMgr</label>
+        <link refid="class_se_thread_msg_mgr"/>
+        <childnode refid="2454" relation="usage">
+          <edgelabel>m_kTemMsgData</edgelabel>
+        </childnode>
+      </node>
+      <node id="2451">
+        <label>SeLogicRaceData</label>
+        <link refid="class_se_logic_race_data"/>
+      </node>
+      <node id="2448">
+        <label>SeSvrRacePlayer</label>
+        <link refid="struct_se_svr_race_player"/>
+      </node>
+      <node id="2443">
+        <label>std::map&lt; TeMD5, SeSvrRace &gt;</label>
+        <childnode refid="2444" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="2452" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="2450">
+        <label>std::map&lt; int, SeLogicRaceData * &gt;</label>
+        <childnode refid="2451" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2447">
+        <label>std::vector&lt; SeSvrRacePlayer &gt;</label>
+        <childnode refid="2448" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2439">
+        <label>RaceService</label>
+        <link refid="class_race_service"/>
+        <childnode refid="2440" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2441" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2440" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2441" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2442" relation="usage">
+          <edgelabel>m_kRaceMgr</edgelabel>
+        </childnode>
+        <childnode refid="2453" relation="usage">
+          <edgelabel>m_kThreadMsgMgr</edgelabel>
+        </childnode>
+        <childnode refid="2455" relation="usage">
+          <edgelabel>m_pPerforceMgr</edgelabel>
+        </childnode>
+      </node>
+      <node id="2445">
+        <label>std::map&lt; DWord, StatisticSendCommandPacket &gt;</label>
+        <childnode refid="2446" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2446">
+        <label>StatisticSendCommandPacket</label>
+        <link refid="struct_statistic_send_command_packet"/>
+      </node>
+      <node id="2452">
+        <label>TeMD5</label>
+        <link refid="struct_te_m_d5"/>
+      </node>
+      <node id="2444">
+        <label>SeSvrRace</label>
+        <link refid="struct_se_svr_race"/>
+        <childnode refid="2445" relation="usage">
+          <edgelabel>kSendCmdDataSize</edgelabel>
+        </childnode>
+        <childnode refid="2447" relation="usage">
+          <edgelabel>kRacePlayer</edgelabel>
+        </childnode>
+        <childnode refid="2449" relation="usage">
+          <edgelabel>kRaceDataMgr</edgelabel>
+        </childnode>
+      </node>
+      <node id="2441">
+        <label>Thread</label>
+      </node>
+      <node id="2455">
+        <label>CPerformanceTimingMgr</label>
+        <link refid="class_c_performance_timing_mgr"/>
+        <childnode refid="2455" relation="usage">
+          <edgelabel>m_pMgr</edgelabel>
+        </childnode>
+      </node>
+      <node id="2449">
+        <label>SeRaceDataMgr</label>
+        <link refid="class_se_race_data_mgr"/>
+        <childnode refid="2450" relation="usage">
+          <edgelabel>m_kMapRaceData</edgelabel>
+        </childnode>
+      </node>
+      <node id="2442">
+        <label>SeThreadRaceMgr</label>
+        <link refid="class_se_thread_race_mgr"/>
+        <childnode refid="2443" relation="usage">
+          <edgelabel>m_kMapRace</edgelabel>
+        </childnode>
+      </node>
+      <node id="2440">
+        <label>BeRaceLogicCall</label>
+      </node>
+      <node id="2454">
+        <label>SeMsgData</label>
+        <link refid="struct_se_msg_data"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" line="13" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/RaceService.h" bodystart="12" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_race_service_1a9a0b5f09d5dafe49f734ef8080f76e2c" prot="public" virt="virtual"><scope>RaceService</scope><name>Dislpay</name></member>
+      <member refid="class_race_service_1aa86bc182122945e9c661220638b0f34b" prot="public" virt="virtual"><scope>RaceService</scope><name>Dislpay</name></member>
+      <member refid="class_race_service_1a0e549baec6fe2d1d67a662387cfaf4a0" prot="protected" virt="virtual"><scope>RaceService</scope><name>DoWork</name></member>
+      <member refid="class_race_service_1ab7862cee15bb93d1c796440580cef439" prot="protected" virt="virtual"><scope>RaceService</scope><name>DoWork</name></member>
+      <member refid="class_race_service_1a45c4bf4771b10ebc22ded6c3f8905c4b" prot="public" virt="non-virtual"><scope>RaceService</scope><name>Finialize</name></member>
+      <member refid="class_race_service_1a45c4bf4771b10ebc22ded6c3f8905c4b" prot="public" virt="non-virtual"><scope>RaceService</scope><name>Finialize</name></member>
+      <member refid="class_race_service_1ad874aad3ee8df4efa70895ff61cbd43f" prot="public" virt="virtual"><scope>RaceService</scope><name>GetDumpPath</name></member>
+      <member refid="class_race_service_1a14ed92b886dab70cdfa618d2c5a2602e" prot="public" virt="virtual"><scope>RaceService</scope><name>GetDumpPath</name></member>
+      <member refid="class_race_service_1ad1e3d97fafd8b900c000ac2813852e84" prot="public" virt="virtual"><scope>RaceService</scope><name>GetPerformaceMgr</name></member>
+      <member refid="class_race_service_1ae3e8b2da2e532e9a9071dbb0e28dc9d8" prot="public" virt="virtual"><scope>RaceService</scope><name>GetPerformaceMgr</name></member>
+      <member refid="class_race_service_1abfccad7fabdcc62ee709c93555eb3996" prot="public" virt="non-virtual"><scope>RaceService</scope><name>Initialize</name></member>
+      <member refid="class_race_service_1abfccad7fabdcc62ee709c93555eb3996" prot="public" virt="non-virtual"><scope>RaceService</scope><name>Initialize</name></member>
+      <member refid="class_race_service_1a720cbed3e7892151174e3f6d458901c7" prot="private" virt="non-virtual"><scope>RaceService</scope><name>m_bStop</name></member>
+      <member refid="class_race_service_1a3276074885c9b608bf372b5b3ac5ec73" prot="private" virt="non-virtual"><scope>RaceService</scope><name>m_dwCurTime</name></member>
+      <member refid="class_race_service_1af00d2a26326938722a112510c34a15bf" prot="private" virt="non-virtual"><scope>RaceService</scope><name>m_dwTickCount</name></member>
+      <member refid="class_race_service_1a027a184ce91e158a6bf94191cd89b585" prot="private" virt="non-virtual"><scope>RaceService</scope><name>m_iThreadIndex</name></member>
+      <member refid="class_race_service_1adc8f04bb90042cf896221ea15a1f913c" prot="private" virt="non-virtual"><scope>RaceService</scope><name>m_kRaceMgr</name></member>
+      <member refid="class_race_service_1ab205ec535d589ee281536eb75fb3fd4d" prot="private" virt="non-virtual"><scope>RaceService</scope><name>m_kThreadMsgMgr</name></member>
+      <member refid="class_race_service_1aaf6085e0cf3a819b9dc3266bf03f99ff" prot="private" virt="non-virtual"><scope>RaceService</scope><name>m_pkRaceLogic</name></member>
+      <member refid="class_race_service_1a356147840aaf44245466c24527b70296" prot="private" virt="non-virtual"><scope>RaceService</scope><name>m_pPerforceMgr</name></member>
+      <member refid="class_race_service_1a8fc8a0181ec42136cfe0e3bd3492ba39" prot="public" virt="virtual"><scope>RaceService</scope><name>OnAchievementCounts</name></member>
+      <member refid="class_race_service_1aa730d4cf066dace8284971e2f37890cb" prot="public" virt="virtual"><scope>RaceService</scope><name>OnAchievementCounts</name></member>
+      <member refid="class_race_service_1a3e4550f4043e6e543490062bcbdd58cc" prot="public" virt="virtual"><scope>RaceService</scope><name>OnAddRaceRet</name></member>
+      <member refid="class_race_service_1a97e3e126f82176b7e061ce3b01a7d918" prot="public" virt="virtual"><scope>RaceService</scope><name>OnAddRaceRet</name></member>
+      <member refid="class_race_service_1a0bcb6fe33ef74244de0c5c22ecb639b9" prot="public" virt="virtual"><scope>RaceService</scope><name>OnDecRespawnItem</name></member>
+      <member refid="class_race_service_1ad57372db7b44b1a912966994e767fb0c" prot="public" virt="virtual"><scope>RaceService</scope><name>OnDecRespawnItem</name></member>
+      <member refid="class_race_service_1aca476353c346c6b1259b46418d6f3c13" prot="public" virt="virtual"><scope>RaceService</scope><name>OnGetAchievement</name></member>
+      <member refid="class_race_service_1ad6d931cd5bd6579f927400cfb3580bae" prot="public" virt="virtual"><scope>RaceService</scope><name>OnGetAchievement</name></member>
+      <member refid="class_race_service_1a21f47c0b38266266d8cd2e828de30fe6" prot="public" virt="virtual"><scope>RaceService</scope><name>OnJustifyResult</name></member>
+      <member refid="class_race_service_1aa180436f86aed0c5fd36775f2174ba73" prot="public" virt="virtual"><scope>RaceService</scope><name>OnJustifyResult</name></member>
+      <member refid="class_race_service_1ab283f9dd5d705e66c9cf108fab699f58" prot="public" virt="virtual"><scope>RaceService</scope><name>OnPlayerItemChange</name></member>
+      <member refid="class_race_service_1a94cea8cb26b49004290113b71235d85d" prot="public" virt="virtual"><scope>RaceService</scope><name>OnPlayerItemChange</name></member>
+      <member refid="class_race_service_1aa6b1d0ef2370cfcd8443496f8594d11d" prot="public" virt="virtual"><scope>RaceService</scope><name>OnPushStreamRet</name></member>
+      <member refid="class_race_service_1ae313af703cbf79d50f64fea71d3aead1" prot="public" virt="virtual"><scope>RaceService</scope><name>OnPushStreamRet</name></member>
+      <member refid="class_race_service_1a0133ffb9bf1e584dfff364aaf9fa06d2" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceEndArenaDetail</name></member>
+      <member refid="class_race_service_1acbb7e1807aa83ee900478f33b98ed30d" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceEndArenaDetail</name></member>
+      <member refid="class_race_service_1aafbbac9cefc27f6ba6cbadf4a8ecbc09" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceEndGradeDetail</name></member>
+      <member refid="class_race_service_1a8d9276ed1bc5b9aabf697742b0acb263" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceEndGradeDetail</name></member>
+      <member refid="class_race_service_1aab14866a2a8f9a18002de7f3382bf323" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceErrorRet</name></member>
+      <member refid="class_race_service_1a3f5757bbbcfa7b7c4d3ae3ed6c2b5796" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceErrorRet</name></member>
+      <member refid="class_race_service_1a682d00a8b87522fd1e27245a150021df" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceEvent</name></member>
+      <member refid="class_race_service_1aa4dea37cb6b8c5f444abf06c0e2f590e" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceEvent</name></member>
+      <member refid="class_race_service_1aeab2c2c55360788c731c7fed2515689c" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceHeroInfo</name></member>
+      <member refid="class_race_service_1ab572b57571e9c55a6e67c5555b2697c5" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceHeroInfo</name></member>
+      <member refid="class_race_service_1ad6519fa134508dcced70946d3356d16b" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceKDA</name></member>
+      <member refid="class_race_service_1a54d2be0b2c2a50f2d02ea5b9dd1f7cc2" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceKDA</name></member>
+      <member refid="class_race_service_1a9feefb3c9960c3fa777e8e13ded8294c" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceNumsRet</name></member>
+      <member refid="class_race_service_1a844028c7c22deed72e6b95ba4cf6d771" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceNumsRet</name></member>
+      <member refid="class_race_service_1ad2fbb08c06c352d4d8ab02d7fc706fd4" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceOffsetRet</name></member>
+      <member refid="class_race_service_1a9eee175d9e662deac4707235a93d8f31" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceOffsetRet</name></member>
+      <member refid="class_race_service_1adecb244d3b2942c458bc530025cc1e26" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceRecordPack</name></member>
+      <member refid="class_race_service_1adecb244d3b2942c458bc530025cc1e26" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceRecordPack</name></member>
+      <member refid="class_race_service_1a8a9007b3468fd155011c4a71a077c705" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceStream</name></member>
+      <member refid="class_race_service_1a13917d556b985c1cefe5022b421c900d" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceStream</name></member>
+      <member refid="class_race_service_1a0ca5013b8c78bacbcf81ab063b83006e" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceSvrModelPack</name></member>
+      <member refid="class_race_service_1a231fb63aaa4464dd8f1a4d62287feab6" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRaceSvrModelPack</name></member>
+      <member refid="class_race_service_1add36927477834ade57c347253ad8b569" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRealTimeRaceKDA</name></member>
+      <member refid="class_race_service_1af61ec5ce96f7c8e9f61c680615f662ec" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRealTimeRaceKDA</name></member>
+      <member refid="class_race_service_1a1d1f294bda3343b60c07fb51230b704d" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRealTimeRaceMapDetail</name></member>
+      <member refid="class_race_service_1af02a758fe25ea717a695867caa032db6" prot="public" virt="virtual"><scope>RaceService</scope><name>OnRealTimeRaceMapDetail</name></member>
+      <member refid="class_race_service_1a403e02f3e9e0b73fae48d3d1330e7944" prot="public" virt="virtual"><scope>RaceService</scope><name>OnShowPerInfo</name></member>
+      <member refid="class_race_service_1a403e02f3e9e0b73fae48d3d1330e7944" prot="public" virt="virtual"><scope>RaceService</scope><name>OnShowPerInfo</name></member>
+      <member refid="class_race_service_1a68518a40d432e65e71d5f9f0ca011aa3" prot="public" virt="virtual"><scope>RaceService</scope><name>OnThreadUpdateTime</name></member>
+      <member refid="class_race_service_1a68518a40d432e65e71d5f9f0ca011aa3" prot="public" virt="virtual"><scope>RaceService</scope><name>OnThreadUpdateTime</name></member>
+      <member refid="class_race_service_1a269f34d71a2c6dd513abd8bc7a312542" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC</name></member>
+      <member refid="class_race_service_1a269f34d71a2c6dd513abd8bc7a312542" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC</name></member>
+      <member refid="class_race_service_1a9285fb001e418d3795ddc16456a843ec" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC_GetHeroInfo</name></member>
+      <member refid="class_race_service_1a9285fb001e418d3795ddc16456a843ec" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC_GetHeroInfo</name></member>
+      <member refid="class_race_service_1a048dc3b1fa9950cc73b7c7364087292f" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC_PlayerLeave</name></member>
+      <member refid="class_race_service_1a048dc3b1fa9950cc73b7c7364087292f" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC_PlayerLeave</name></member>
+      <member refid="class_race_service_1a040f3911978ad76c0ea78067be639323" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC_PlayerRelink</name></member>
+      <member refid="class_race_service_1a040f3911978ad76c0ea78067be639323" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC_PlayerRelink</name></member>
+      <member refid="class_race_service_1a77e140d69c562236c411afcb6374a9d1" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC_RaceInit</name></member>
+      <member refid="class_race_service_1a77e140d69c562236c411afcb6374a9d1" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC_RaceInit</name></member>
+      <member refid="class_race_service_1a2a5f7d12e2afc1bb15b9c185c5d91462" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC_RaceOver</name></member>
+      <member refid="class_race_service_1a2a5f7d12e2afc1bb15b9c185c5d91462" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC_RaceOver</name></member>
+      <member refid="class_race_service_1acbb709a0386cddf5b17c7ce8a913e3ab" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC_RaceStart</name></member>
+      <member refid="class_race_service_1acbb709a0386cddf5b17c7ce8a913e3ab" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC_RaceStart</name></member>
+      <member refid="class_race_service_1ac2be3d28126e123cfe61e4757ae59174" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC_RaceStream</name></member>
+      <member refid="class_race_service_1ac2be3d28126e123cfe61e4757ae59174" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC_RaceStream</name></member>
+      <member refid="class_race_service_1a98435a3f8b23ebb4d17cfcd9bce4f58e" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC_SetRaceIncmpState</name></member>
+      <member refid="class_race_service_1a98435a3f8b23ebb4d17cfcd9bce4f58e" prot="public" virt="non-virtual"><scope>RaceService</scope><name>ProcessRRC_SetRaceIncmpState</name></member>
+      <member refid="class_race_service_1a830024286ee919364c182cd9c61b4e7c" prot="public" virt="non-virtual"><scope>RaceService</scope><name>PushMsg</name></member>
+      <member refid="class_race_service_1a830024286ee919364c182cd9c61b4e7c" prot="public" virt="non-virtual"><scope>RaceService</scope><name>PushMsg</name></member>
+      <member refid="class_race_service_1ac3807f78ed60a010024d71d84fc65a2f" prot="public" virt="non-virtual"><scope>RaceService</scope><name>RaceService</name></member>
+      <member refid="class_race_service_1ac3807f78ed60a010024d71d84fc65a2f" prot="public" virt="non-virtual"><scope>RaceService</scope><name>RaceService</name></member>
+      <member refid="class_race_service_1a8974cc80645f9d95bb2fa11ec82713ab" prot="public" virt="non-virtual"><scope>RaceService</scope><name>SetPerformaceMgr</name></member>
+      <member refid="class_race_service_1a8974cc80645f9d95bb2fa11ec82713ab" prot="public" virt="non-virtual"><scope>RaceService</scope><name>SetPerformaceMgr</name></member>
+      <member refid="class_race_service_1ac030266656fd64ac5a06249bf755cb67" prot="public" virt="non-virtual"><scope>RaceService</scope><name>SetThreadIndex</name></member>
+      <member refid="class_race_service_1ac030266656fd64ac5a06249bf755cb67" prot="public" virt="non-virtual"><scope>RaceService</scope><name>SetThreadIndex</name></member>
+      <member refid="class_race_service_1ac75744355bee316fe6e3cfd834d2c76c" prot="public" virt="non-virtual"><scope>RaceService</scope><name>Update</name></member>
+      <member refid="class_race_service_1ac75744355bee316fe6e3cfd834d2c76c" prot="public" virt="non-virtual"><scope>RaceService</scope><name>Update</name></member>
+      <member refid="class_race_service_1ace1c37675c9bc256b137d4860f57888f" prot="protected" virt="non-virtual"><scope>RaceService</scope><name>UpdateRSCMsg</name></member>
+      <member refid="class_race_service_1ace1c37675c9bc256b137d4860f57888f" prot="protected" virt="non-virtual"><scope>RaceService</scope><name>UpdateRSCMsg</name></member>
+      <member refid="class_race_service_1ad0c57fe0dc4fcabd530a24d4cca91946" prot="public" virt="non-virtual"><scope>RaceService</scope><name>~RaceService</name></member>
+      <member refid="class_race_service_1ad0c57fe0dc4fcabd530a24d4cca91946" prot="public" virt="non-virtual"><scope>RaceService</scope><name>~RaceService</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1870 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_task_mgr" kind="class" prot="public">
+    <compoundname>TaskMgr</compoundname>
+    <basecompoundref refid="class_data_mgr" prot="public" virt="non-virtual">DataMgr&lt; SeDBCharTask &gt;</basecompoundref>
+    <basecompoundref refid="class_data_mgr" prot="public" virt="non-virtual">DataMgr&lt; SeDBCharTask &gt;</basecompoundref>
+    <includes refid="_src_2_task_mgr_8h" local="no">TaskMgr.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_task_mgr_1a98036e8402c00fba3a54dcc393cf5355" prot="private" static="no" mutable="no">
+        <type><ref refid="_src_2_task_mgr_8h_1a045ec149dc352a9071861fcfa3bf2f77" kindref="member">VTaskInfo</ref></type>
+        <definition>VTaskInfo TaskMgr::m_akVTask</definition>
+        <argsstring></argsstring>
+        <name>m_akVTask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="102" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="class_task_mgr_1a0f438c49280a3a24144aeef71235ff12" compoundref="_src_2_task_mgr_8cpp" startline="869" endline="879">Finalize</referencedby>
+        <referencedby refid="class_task_mgr_1a0dc3930176bbe10525f2beb3eebcbe34" compoundref="_src_2_task_mgr_8cpp" startline="568" endline="571">GetTaskVInfo</referencedby>
+        <referencedby refid="class_task_mgr_1a1cadcab5520e56de81d10a050c7d8e8b" compoundref="_src_2_task_mgr_8cpp" startline="573" endline="587">loadData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_task_mgr_1a9645123daa6354cfc8bf566d480f7639" prot="private" static="no" mutable="no">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer &amp; TaskMgr::m_Player</definition>
+        <argsstring></argsstring>
+        <name>m_Player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="103" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="class_task_mgr_1a2777106ae2f76bad46dfbd57c582e51b" compoundref="_src_2_task_mgr_8cpp" startline="331" endline="367">CheckReceiveCondition</referencedby>
+        <referencedby refid="class_task_mgr_1ae0e6465f650523d0e7cf8840029b38e5" compoundref="_src_2_task_mgr_8cpp" startline="562" endline="565">getOwner</referencedby>
+        <referencedby refid="class_task_mgr_1abac2b7ce1997430fe49b2dca3fb6c1dd" compoundref="_src_2_task_mgr_8cpp" startline="116" endline="165">GetTaskReward</referencedby>
+        <referencedby refid="class_task_mgr_1af70c862090441288d1d9c3c9ee821d71" compoundref="_src_2_task_mgr_8cpp" startline="213" endline="298">RefreshTask</referencedby>
+        <referencedby refid="class_task_mgr_1ac32da102f6a03b2aa8cfb8bc54602810" compoundref="_src_2_task_mgr_8cpp" startline="56" endline="113">ResetTask</referencedby>
+        <referencedby refid="class_task_mgr_1ac2a56ec4804bb04827ce5156ba416e15" compoundref="_src_2_task_mgr_8cpp" startline="713" endline="867">SettleTask</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_task_mgr_1a7c4d31d84c0087d80eecc5a28c965a96" prot="private" static="no" mutable="no">
+        <type>SeDBCharTask</type>
+        <definition>SeDBCharTask TaskMgr::m_TemData</definition>
+        <argsstring></argsstring>
+        <name>m_TemData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="104" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" bodystart="104" bodyend="-1"/>
+        <referencedby refid="class_task_mgr_1a62a121be19a9ea8ac1f0fd8ed1ee2f33" compoundref="_src_2_task_mgr_8cpp" startline="556" endline="560">CharTaskInfoInsert</referencedby>
+        <referencedby refid="class_task_mgr_1a5107cc9e0ecd71571a370fbcdebd2f97" compoundref="_src_2_task_mgr_8cpp" startline="550" endline="554">CharTaskInfoUpdate</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_task_mgr_1a7f2e742302f7a0e9f799718b04455165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TaskMgr::TaskMgr</definition>
+        <argsstring>(SePlayer &amp;m_Player)</argsstring>
+        <name>TaskMgr</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>m_Player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="45" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="881" bodyend="885"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1ab0051ec37696b6a8115c9e1c605dff57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TaskMgr::~TaskMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~TaskMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="46" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="887" bodyend="890"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a613f3e9b41717ae81aa967ea63a6695e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TaskMgr::QueryTaskInfo</definition>
+        <argsstring>(VPtlTask &amp;vTaskInfo)</argsstring>
+        <name>QueryTaskInfo</name>
+        <param>
+          <type><ref refid="_src_2_task_mgr_8h_1aa90d2704f5c3ee97967e1f9c44dc467f" kindref="member">VPtlTask</ref> &amp;</type>
+          <declname>vTaskInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="49" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="39" bodyend="53"/>
+        <references refid="class_task_mgr_1a0dc3930176bbe10525f2beb3eebcbe34" compoundref="_src_2_task_mgr_8cpp" startline="568" endline="571">GetTaskVInfo</references>
+        <references refid="class_task_mgr_1af70c862090441288d1d9c3c9ee821d71" compoundref="_src_2_task_mgr_8cpp" startline="213" endline="298">RefreshTask</references>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1ac32da102f6a03b2aa8cfb8bc54602810" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a56df279917e9b9a13ce063c1bec4bf0d" kindref="member">SeTaskAckCode</ref></type>
+        <definition>SeTaskAckCode TaskMgr::ResetTask</definition>
+        <argsstring>(E_TASKINFOTABLE_TYPE eType)</argsstring>
+        <name>ResetTask</name>
+        <param>
+          <type><ref refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91c" kindref="member">E_TASKINFOTABLE_TYPE</ref></type>
+          <declname>eType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="52" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="56" bodyend="113"/>
+        <references refid="class_task_mgr_1a5107cc9e0ecd71571a370fbcdebd2f97" compoundref="_src_2_task_mgr_8cpp" startline="550" endline="554">CharTaskInfoUpdate</references>
+        <references refid="class_task_mgr_1a82caad0e9d0bce1641357e9056ee3227" compoundref="_src_2_task_mgr_8cpp" startline="174" endline="181">CurrTaskInfo</references>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="class_se_player_1a0834e11ba6f0e730e99014864f8d25e0" compoundref="_town_server_2_src_2_se_player_8h" startline="7" endline="10">SePlayer::GetID</references>
+        <references refid="class_task_mgr_1a679969a45a4e3100dd119f4d2b07e31c" compoundref="_src_2_task_mgr_8cpp" startline="185" endline="208">GetNextTaskInfo</references>
+        <references refid="class_se_player_1a6bdd71ce9ae9ec1d617b497a4f5941af" compoundref="_world_server_2_src_2_se_player_8h" startline="505" endline="508">SePlayer::GetTaskResetCount</references>
+        <references refid="struct_se_task_info_1a66074b1e0a3ecee7405edd57a49c28d3" compoundref="_src_2_task_mgr_8h" startline="32">SeTaskInfo::iConditionNum</references>
+        <references refid="struct_task_info_table_1a428c3c8e94714e623179db45555d8e0c" compoundref="_task_info__table_8hpp" startline="107">TaskInfoTable::iLimit</references>
+        <references refid="class_task_mgr_1a9645123daa6354cfc8bf566d480f7639" compoundref="_src_2_task_mgr_8h" startline="103">m_Player</references>
+        <references refid="struct_se_task_info_1ada7d9198ff01997a658a5de246331741" compoundref="_src_2_task_mgr_8h" startline="35">SeTaskInfo::pkRes</references>
+        <references refid="class_world_server_1ab9bea63953bff42f192e42e39fe89594" compoundref="_src_2_se_d_b_ser_sd___char_8cpp" startline="437" endline="448">WorldServer::SendDBServer_CharUpdateTaskResetCount</references>
+        <references refid="class_se_player_1ab39332ead3f09a7a7200f34976f859e9" compoundref="_world_server_2_src_2_se_player_8h" startline="510" endline="513">SePlayer::SetTaskResetCount</references>
+        <references refid="_se_ptl_comm_define_8h_1a56df279917e9b9a13ce063c1bec4bf0dac6771f326f6f26ee985f8f9edb9d73c0" compoundref="_se_ptl_comm_define_8h" startline="267">STAC_COUNT_NOT_ENOUGH</references>
+        <references refid="_se_ptl_comm_define_8h_1a56df279917e9b9a13ce063c1bec4bf0da13cc7038cb6d4f15dfb4f7ca785b2d0f" compoundref="_se_ptl_comm_define_8h" startline="268">STAC_COUNT_USE_OUT</references>
+        <references refid="_se_ptl_comm_define_8h_1a56df279917e9b9a13ce063c1bec4bf0da858a808096f98dbf32b7cb63f79fdc43" compoundref="_se_ptl_comm_define_8h" startline="266">STAC_FORBID_RESET</references>
+        <references refid="_se_ptl_comm_define_8h_1a56df279917e9b9a13ce063c1bec4bf0dad4ed077102f3ac9241b8d318534658b5" compoundref="_se_ptl_comm_define_8h" startline="265">STAC_SUCCESS</references>
+        <references refid="_se_ptl_comm_define_8h_1a5ddabf6ffe445c487e8c6683d5084974ae665e3505e780aae9d7472699ce1c3b7" compoundref="_se_ptl_comm_define_8h" startline="259">STC_RESET_TIME_PER_DAY</references>
+        <references refid="_task_info__table_8hpp_1ad5d9cfef85c5a9117a813c5d5ba186b3a95c69d600cebcd04d173ea3e81cc3995" compoundref="_task_info__table_8hpp" startline="37">TASKINFO_CHANGE_FOU</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cabebde7e54de1347b289088eb2ed78481" compoundref="_task_info__table_8hpp" startline="14">TASKINFO_TYPE_RONGYU</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca5693accf773fbd6c743e04cf98f4e7ee" compoundref="_task_info__table_8hpp" startline="12">TASKINFO_TYPE_SHENGCHANG</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca45ff411372bc06a2eec9c36fbc11642c" compoundref="_task_info__table_8hpp" startline="13">TASKINFO_TYPE_YINGXIONG</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca1b3dc8c8adc207dc5b9eab401a7a43f9" compoundref="_task_info__table_8hpp" startline="15">TASKINFO_TYPE_ZHANYI</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cafce21a82d146e9539ce9d2ae9733256b" compoundref="_task_info__table_8hpp" startline="11">TASKINFO_TYPE_ZHUXIAN</references>
+        <references refid="struct_task_info_table_1af745384b60f38feece1b2d98dd86eb36" compoundref="_task_info__table_8hpp" startline="102">TaskInfoTable::uiChange</references>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1abac2b7ce1997430fe49b2dca3fb6c1dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a56df279917e9b9a13ce063c1bec4bf0d" kindref="member">SeTaskAckCode</ref></type>
+        <definition>SeTaskAckCode TaskMgr::GetTaskReward</definition>
+        <argsstring>(E_TASKINFOTABLE_TYPE eType)</argsstring>
+        <name>GetTaskReward</name>
+        <param>
+          <type><ref refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91c" kindref="member">E_TASKINFOTABLE_TYPE</ref></type>
+          <declname>eType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="55" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="116" bodyend="165"/>
+        <references refid="class_c_item_mgr_1ae8e0377cde5732972c5869d98576ba1b" compoundref="_src_2_item_mgr_8cpp" startline="997" endline="1026">CItemMgr::AddItem</references>
+        <references refid="class_task_mgr_1a5107cc9e0ecd71571a370fbcdebd2f97" compoundref="_src_2_task_mgr_8cpp" startline="550" endline="554">CharTaskInfoUpdate</references>
+        <references refid="_src_2_world_server_def_8h_1a52d6342327b19a578567957af526b100ab14ec124eb51386eabd6542b62ca26d8" compoundref="_src_2_world_server_def_8h" startline="96">CMT_EXP</references>
+        <references refid="_src_2_world_server_def_8h_1a52d6342327b19a578567957af526b100acd3b6845b39d4835146723f7f0b6dd78" compoundref="_src_2_world_server_def_8h" startline="94">CMT_GOLD</references>
+        <references refid="class_task_mgr_1a82caad0e9d0bce1641357e9056ee3227" compoundref="_src_2_task_mgr_8cpp" startline="174" endline="181">CurrTaskInfo</references>
+        <references refid="struct_se_task_info_1a477fa1dbc58db1433aa242054158ec8d" compoundref="_src_2_task_mgr_8h" startline="31">SeTaskInfo::eState</references>
+        <references refid="struct_se_task_info_1acc0347721afe3931bc030a9a9d211368" compoundref="_src_2_task_mgr_8h" startline="30">SeTaskInfo::eTaskType</references>
+        <references refid="struct_task_info_table_1a3adb4bfb3e61c5c5eedf88904c951109" compoundref="_task_info__table_8hpp" startline="110">TaskInfoTable::fValue</references>
+        <references refid="class_se_player_1ab71b6c3ee88e8843a194fdcd42a2e592" compoundref="_world_server_2_src_2_se_player_8h" startline="274" endline="277">SePlayer::GetExp</references>
+        <references refid="class_se_player_1aa5e606a84bbefd5e8ca6c7c4f52367d5" compoundref="_world_server_2_src_2_se_player_8h" startline="234" endline="237">SePlayer::GetGold</references>
+        <references refid="class_se_player_1a41f0b00c2f8e02d3acfce5d016f3ec4a" compoundref="_world_server_2_src_2_se_player_8h" startline="55" endline="55">SePlayer::GetItemMgr</references>
+        <references refid="class_task_mgr_1a679969a45a4e3100dd119f4d2b07e31c" compoundref="_src_2_task_mgr_8cpp" startline="185" endline="208">GetNextTaskInfo</references>
+        <references refid="struct_task_info_table_1a4d97fb11ccbbe8bd84701639953317b8" compoundref="_task_info__table_8hpp" startline="108">TaskInfoTable::iAwardExp</references>
+        <references refid="struct_task_info_table_1a2a115f3d077e023dfbf9b1f4ead7ee7d" compoundref="_task_info__table_8hpp" startline="109">TaskInfoTable::iAwardGold</references>
+        <references refid="struct_task_info_table_1a9661a05cf62397f3ee31a03a8e26bf96" compoundref="_task_info__table_8hpp" startline="111">TaskInfoTable::iAwardItem</references>
+        <references refid="struct_se_task_info_1a66074b1e0a3ecee7405edd57a49c28d3" compoundref="_src_2_task_mgr_8h" startline="32">SeTaskInfo::iConditionNum</references>
+        <references refid="struct_task_info_table_1a481786a3954a571832af3fc8d2df795d" compoundref="_task_info__table_8hpp" startline="105">TaskInfoTable::iCondValue1</references>
+        <references refid="struct_se_task_info_1a297d6f765198bd9db91f941380a0d848" compoundref="_src_2_task_mgr_8h" startline="34">SeTaskInfo::ifinishCount</references>
+        <references refid="struct_task_info_table_1a428c3c8e94714e623179db45555d8e0c" compoundref="_task_info__table_8hpp" startline="107">TaskInfoTable::iLimit</references>
+        <references refid="class_task_mgr_1a9645123daa6354cfc8bf566d480f7639" compoundref="_src_2_task_mgr_8h" startline="103">m_Player</references>
+        <references refid="class_se_player_1a05c7e8a1c86746696a165718fbfa2c52" compoundref="_world_server_2_src_2_se_player_8cpp" startline="727" endline="734">SePlayer::NotifyOwnMoney</references>
+        <references refid="struct_se_task_info_1ada7d9198ff01997a658a5de246331741" compoundref="_src_2_task_mgr_8h" startline="35">SeTaskInfo::pkRes</references>
+        <references refid="_se_ptl_comm_define_8h_1a56df279917e9b9a13ce063c1bec4bf0dac6771f326f6f26ee985f8f9edb9d73c0" compoundref="_se_ptl_comm_define_8h" startline="267">STAC_COUNT_NOT_ENOUGH</references>
+        <references refid="_se_ptl_comm_define_8h_1a56df279917e9b9a13ce063c1bec4bf0da0b1a4a6becfdf289cbaafbf5b68a5337" compoundref="_se_ptl_comm_define_8h" startline="269">STAC_NOT_FINISH</references>
+        <references refid="_se_ptl_comm_define_8h_1a56df279917e9b9a13ce063c1bec4bf0dad4ed077102f3ac9241b8d318534658b5" compoundref="_se_ptl_comm_define_8h" startline="265">STAC_SUCCESS</references>
+        <references refid="_se_ptl_comm_define_8h_1a1e1689859754356057d281744bef6493a8414b8580a869b4fe33888885596220e" compoundref="_se_ptl_comm_define_8h" startline="253">STS_AWARD</references>
+        <references refid="_se_ptl_comm_define_8h_1a1e1689859754356057d281744bef6493aa885107837a9a5987d040d32f8bcdbed" compoundref="_se_ptl_comm_define_8h" startline="252">STS_COMPLETE</references>
+        <references refid="_table_mgr_def_8h_1a8d63260329e023da1553382e125890a3" compoundref="_table_mgr_def_8h" startline="14">TASK_REWARD_LIST_LENGTH</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cafce21a82d146e9539ce9d2ae9733256b" compoundref="_task_info__table_8hpp" startline="11">TASKINFO_TYPE_ZHUXIAN</references>
+        <references refid="class_se_player_1a6ae0d2391e30a2e8f0e359d5691adad7" compoundref="_world_server_2_src_2_se_player_8cpp" startline="173" endline="236">SePlayer::UpdateCharMisc</references>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1ae21e77867141da9b835f65dc4580a262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_se_task_info" kindref="compound">SeTaskInfo</ref> *</type>
+        <definition>const SeTaskInfo * TaskMgr::GetCurrTaskInfo</definition>
+        <argsstring>(E_TASKINFOTABLE_TYPE eType)</argsstring>
+        <name>GetCurrTaskInfo</name>
+        <param>
+          <type><ref refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91c" kindref="member">E_TASKINFOTABLE_TYPE</ref></type>
+          <declname>eType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="58" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="168" bodyend="172"/>
+        <references refid="class_task_mgr_1a82caad0e9d0bce1641357e9056ee3227" compoundref="_src_2_task_mgr_8cpp" startline="174" endline="181">CurrTaskInfo</references>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a679969a45a4e3100dd119f4d2b07e31c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TaskMgr::GetNextTaskInfo</definition>
+        <argsstring>(SeTaskInfo *skTask, bool bIsDiffDay=false)</argsstring>
+        <name>GetNextTaskInfo</name>
+        <param>
+          <type><ref refid="struct_se_task_info" kindref="compound">SeTaskInfo</ref> *</type>
+          <declname>skTask</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bIsDiffDay</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="61" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="185" bodyend="208"/>
+        <references refid="struct_se_task_info_1acc0347721afe3931bc030a9a9d211368" compoundref="_src_2_task_mgr_8h" startline="30">SeTaskInfo::eTaskType</references>
+        <references refid="class_task_mgr_1a0b713ce49930e4071b47136dcddba6ce" compoundref="_src_2_task_mgr_8cpp" startline="391" endline="459">GetDailyTaskNextTask</references>
+        <references refid="class_task_mgr_1a2bc47dbab7475fd8f497fdf9f8d7738f" compoundref="_src_2_task_mgr_8cpp" startline="370" endline="388">GetMainTaskNextTask</references>
+        <references refid="class_task_mgr_1a342a99e25f638e680a4a3303ca0b22d7" compoundref="_src_2_task_mgr_8cpp" startline="462" endline="548">GetWinTaskNextTask</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cabebde7e54de1347b289088eb2ed78481" compoundref="_task_info__table_8hpp" startline="14">TASKINFO_TYPE_RONGYU</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca5693accf773fbd6c743e04cf98f4e7ee" compoundref="_task_info__table_8hpp" startline="12">TASKINFO_TYPE_SHENGCHANG</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca45ff411372bc06a2eec9c36fbc11642c" compoundref="_task_info__table_8hpp" startline="13">TASKINFO_TYPE_YINGXIONG</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca1b3dc8c8adc207dc5b9eab401a7a43f9" compoundref="_task_info__table_8hpp" startline="15">TASKINFO_TYPE_ZHANYI</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cafce21a82d146e9539ce9d2ae9733256b" compoundref="_task_info__table_8hpp" startline="11">TASKINFO_TYPE_ZHUXIAN</references>
+        <referencedby refid="class_task_mgr_1abac2b7ce1997430fe49b2dca3fb6c1dd" compoundref="_src_2_task_mgr_8cpp" startline="116" endline="165">GetTaskReward</referencedby>
+        <referencedby refid="class_task_mgr_1af70c862090441288d1d9c3c9ee821d71" compoundref="_src_2_task_mgr_8cpp" startline="213" endline="298">RefreshTask</referencedby>
+        <referencedby refid="class_task_mgr_1ac32da102f6a03b2aa8cfb8bc54602810" compoundref="_src_2_task_mgr_8cpp" startline="56" endline="113">ResetTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1af70c862090441288d1d9c3c9ee821d71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TaskMgr::RefreshTask</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshTask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="66" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="213" bodyend="298"/>
+        <references refid="class_se_player_1a1e83474c24ce36ee412dfaa1cb9b1a6d" compoundref="_world_server_2_src_2_se_player_8cpp" startline="446" endline="449">SePlayer::AddPlayerMail</references>
+        <references refid="class_task_mgr_1a62a121be19a9ea8ac1f0fd8ed1ee2f33" compoundref="_src_2_task_mgr_8cpp" startline="556" endline="560">CharTaskInfoInsert</references>
+        <references refid="class_task_mgr_1a5107cc9e0ecd71571a370fbcdebd2f97" compoundref="_src_2_task_mgr_8cpp" startline="550" endline="554">CharTaskInfoUpdate</references>
+        <references refid="class_task_mgr_1a2777106ae2f76bad46dfbd57c582e51b" compoundref="_src_2_task_mgr_8cpp" startline="331" endline="367">CheckReceiveCondition</references>
+        <references refid="struct_se_task_info_1a477fa1dbc58db1433aa242054158ec8d" compoundref="_src_2_task_mgr_8h" startline="31">SeTaskInfo::eState</references>
+        <references refid="struct_se_task_info_1acc0347721afe3931bc030a9a9d211368" compoundref="_src_2_task_mgr_8h" startline="30">SeTaskInfo::eTaskType</references>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="class_task_mgr_1a0b713ce49930e4071b47136dcddba6ce" compoundref="_src_2_task_mgr_8cpp" startline="391" endline="459">GetDailyTaskNextTask</references>
+        <references refid="class_se_player_1a0834e11ba6f0e730e99014864f8d25e0" compoundref="_town_server_2_src_2_se_player_8h" startline="7" endline="10">SePlayer::GetID</references>
+        <references refid="class_task_mgr_1a679969a45a4e3100dd119f4d2b07e31c" compoundref="_src_2_task_mgr_8cpp" startline="185" endline="208">GetNextTaskInfo</references>
+        <references refid="class_se_player_1ab93bf2c11bb8cad420bfac74b3066b39" compoundref="_world_server_2_src_2_se_player_8h" startline="495" endline="498">SePlayer::GetTaskResetTime</references>
+        <references refid="class_task_mgr_1a0dc3930176bbe10525f2beb3eebcbe34" compoundref="_src_2_task_mgr_8cpp" startline="568" endline="571">GetTaskVInfo</references>
+        <references refid="class_task_mgr_1a342a99e25f638e680a4a3303ca0b22d7" compoundref="_src_2_task_mgr_8cpp" startline="462" endline="548">GetWinTaskNextTask</references>
+        <references refid="struct_se_task_info_1a66074b1e0a3ecee7405edd57a49c28d3" compoundref="_src_2_task_mgr_8h" startline="32">SeTaskInfo::iConditionNum</references>
+        <references refid="class_task_mgr_1aa9f5fd7e69b6c7c85e9d75f18ef92978" compoundref="_src_2_task_mgr_8cpp" startline="590" endline="626">InitPlayerVTaskInfo</references>
+        <references refid="_se_tool_8cpp_1a3d5259950103d84bbf1773bdc37a210b" compoundref="_se_tool_8cpp" startline="496" endline="504">IsDiffDay</references>
+        <references refid="class_task_mgr_1a9645123daa6354cfc8bf566d480f7639" compoundref="_src_2_task_mgr_8h" startline="103">m_Player</references>
+        <references refid="_se_tool_8cpp_1ab5215c746438d47cd602ac9cd661d806" compoundref="_se_tool_8cpp" startline="428" endline="433">NowTime</references>
+        <references refid="struct_se_task_info_1ada7d9198ff01997a658a5de246331741" compoundref="_src_2_task_mgr_8h" startline="35">SeTaskInfo::pkRes</references>
+        <references refid="class_world_server_1a42c3270bbcf5f09941b8ad6ce79dd623" compoundref="_src_2_se_d_b_ser_sd___char_8cpp" startline="450" endline="464">WorldServer::SendDBServer_CharUpdateTaskResetTime</references>
+        <references refid="class_se_player_1ab39332ead3f09a7a7200f34976f859e9" compoundref="_world_server_2_src_2_se_player_8h" startline="510" endline="513">SePlayer::SetTaskResetCount</references>
+        <references refid="class_se_player_1a64128ec153508787cd813cea1328df17" compoundref="_world_server_2_src_2_se_player_8h" startline="500" endline="503">SePlayer::SetTaskResetTime</references>
+        <references refid="_se_ptl_comm_define_8h_1a1e1689859754356057d281744bef6493aa885107837a9a5987d040d32f8bcdbed" compoundref="_se_ptl_comm_define_8h" startline="252">STS_COMPLETE</references>
+        <references refid="_se_ptl_comm_define_8h_1a1e1689859754356057d281744bef6493a5538e167f2ee524b2fb34a713d101ac4" compoundref="_se_ptl_comm_define_8h" startline="251">STS_DOING</references>
+        <references refid="_se_ptl_comm_define_8h_1a1e1689859754356057d281744bef6493af3957e57c7e95c7d509b28369d1c8d37" compoundref="_se_ptl_comm_define_8h" startline="250">STS_WAIT_CONDITION</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cabebde7e54de1347b289088eb2ed78481" compoundref="_task_info__table_8hpp" startline="14">TASKINFO_TYPE_RONGYU</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca5693accf773fbd6c743e04cf98f4e7ee" compoundref="_task_info__table_8hpp" startline="12">TASKINFO_TYPE_SHENGCHANG</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca45ff411372bc06a2eec9c36fbc11642c" compoundref="_task_info__table_8hpp" startline="13">TASKINFO_TYPE_YINGXIONG</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca1b3dc8c8adc207dc5b9eab401a7a43f9" compoundref="_task_info__table_8hpp" startline="15">TASKINFO_TYPE_ZHANYI</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cafce21a82d146e9539ce9d2ae9733256b" compoundref="_task_info__table_8hpp" startline="11">TASKINFO_TYPE_ZHUXIAN</references>
+        <referencedby refid="class_se_player_1a6a04c28f9bb38896f106fbf42e732f36" compoundref="_world_server_2_src_2_se_player_8cpp" startline="651" endline="725">SePlayer::OperateLoading</referencedby>
+        <referencedby refid="class_task_mgr_1a613f3e9b41717ae81aa967ea63a6695e" compoundref="_src_2_task_mgr_8cpp" startline="39" endline="53">QueryTaskInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a0492a0574c2410b015c981467eeb6afd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TaskMgr::RefreshTaskByEvent</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshTaskByEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="68" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="300" bodyend="327"/>
+        <references refid="class_task_mgr_1a5107cc9e0ecd71571a370fbcdebd2f97" compoundref="_src_2_task_mgr_8cpp" startline="550" endline="554">CharTaskInfoUpdate</references>
+        <references refid="class_task_mgr_1a2777106ae2f76bad46dfbd57c582e51b" compoundref="_src_2_task_mgr_8cpp" startline="331" endline="367">CheckReceiveCondition</references>
+        <references refid="class_task_mgr_1a0dc3930176bbe10525f2beb3eebcbe34" compoundref="_src_2_task_mgr_8cpp" startline="568" endline="571">GetTaskVInfo</references>
+        <references refid="_se_ptl_comm_define_8h_1a1e1689859754356057d281744bef6493a5538e167f2ee524b2fb34a713d101ac4" compoundref="_se_ptl_comm_define_8h" startline="251">STS_DOING</references>
+        <references refid="_se_ptl_comm_define_8h_1a1e1689859754356057d281744bef6493af3957e57c7e95c7d509b28369d1c8d37" compoundref="_se_ptl_comm_define_8h" startline="250">STS_WAIT_CONDITION</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cabebde7e54de1347b289088eb2ed78481" compoundref="_task_info__table_8hpp" startline="14">TASKINFO_TYPE_RONGYU</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca5693accf773fbd6c743e04cf98f4e7ee" compoundref="_task_info__table_8hpp" startline="12">TASKINFO_TYPE_SHENGCHANG</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca45ff411372bc06a2eec9c36fbc11642c" compoundref="_task_info__table_8hpp" startline="13">TASKINFO_TYPE_YINGXIONG</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca1b3dc8c8adc207dc5b9eab401a7a43f9" compoundref="_task_info__table_8hpp" startline="15">TASKINFO_TYPE_ZHANYI</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cafce21a82d146e9539ce9d2ae9733256b" compoundref="_task_info__table_8hpp" startline="11">TASKINFO_TYPE_ZHUXIAN</references>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1ac2a56ec4804bb04827ce5156ba416e15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TaskMgr::SettleTask</definition>
+        <argsstring>(E_TASKINFOTABLE_CONDITON eConditonType, DWord dwMapId, DWord value, DWord param1)</argsstring>
+        <name>SettleTask</name>
+        <param>
+          <type><ref refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940" kindref="member">E_TASKINFOTABLE_CONDITON</ref></type>
+          <declname>eConditonType</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwMapId</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>param1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="71" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="713" bodyend="867"/>
+        <references refid="class_task_mgr_1a0dc3930176bbe10525f2beb3eebcbe34" compoundref="_src_2_task_mgr_8cpp" startline="568" endline="571">GetTaskVInfo</references>
+        <references refid="class_se_player_1acbdcd2e0c890b0bc7d1b634f58f8f068" compoundref="_world_server_2_src_2_se_player_8cpp" startline="451" endline="454">SePlayer::IsPassChapter</references>
+        <references refid="class_task_mgr_1a9645123daa6354cfc8bf566d480f7639" compoundref="_src_2_task_mgr_8h" startline="103">m_Player</references>
+        <references refid="_se_ptl_comm_define_8h_1a1e1689859754356057d281744bef6493aa885107837a9a5987d040d32f8bcdbed" compoundref="_se_ptl_comm_define_8h" startline="252">STS_COMPLETE</references>
+        <references refid="_se_ptl_comm_define_8h_1a1e1689859754356057d281744bef6493a5538e167f2ee524b2fb34a713d101ac4" compoundref="_se_ptl_comm_define_8h" startline="251">STS_DOING</references>
+        <references refid="_table_mgr_def_8h_1adf387bc27ed762f320c7655b67243a2f" compoundref="_table_mgr_def_8h" startline="13">TASK_MAP_LIST_LENGTH</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ad5e6d2d45e9314bbb4e3f2b7f3c0cec2" compoundref="_task_info__table_8hpp" startline="82">TASKINFO_CONDITON_CANTUAN</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ad6aacfc46e73c504c8424d7ad6fc3bf8" compoundref="_task_info__table_8hpp" startline="44">TASKINFO_CONDITON_CANYUYOUXI</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a193d0184ca4748e143b69317f223fbb0" compoundref="_task_info__table_8hpp" startline="81">TASKINFO_CONDITON_CHENGSHANG</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a13d1e0e468c5100e4331db3d0b4608b4" compoundref="_task_info__table_8hpp" startline="74">TASKINFO_CONDITON_CUIHUIFANGYUTA</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a981df52acad942d571f8ec60ed8ebf01" compoundref="_task_info__table_8hpp" startline="69">TASKINFO_CONDITON_DUIWUWUSIWANGTONGGUAN</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a9cea297ade9b100e05a9bf6cf53d5d8e" compoundref="_task_info__table_8hpp" startline="77">TASKINFO_CONDITON_FUJIA</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a20b6d924f97b66bfec522682c7ab596a" compoundref="_task_info__table_8hpp" startline="57">TASKINFO_CONDITON_GETGOLD</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a5eaed7e4cb2f3829d18932c2d298a439" compoundref="_task_info__table_8hpp" startline="75">TASKINFO_CONDITON_GUDAN</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940acb324b91f527cfb2f1fd1962b211e13b" compoundref="_task_info__table_8hpp" startline="63">TASKINFO_CONDITON_JIESUOPIFU</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a60f73a2ca7cd18514ba1e04d77ee5236" compoundref="_task_info__table_8hpp" startline="62">TASKINFO_CONDITON_JIESUOYINGXIONG</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a5f73c4da9f12de47128bb462f42f73b2" compoundref="_task_info__table_8hpp" startline="45">TASKINFO_CONDITON_JISHA</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a6cd94518f99e007f5c6ff5bdafe7d0ed" compoundref="_task_info__table_8hpp" startline="58">TASKINFO_CONDITON_KILLNPC</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a1e5bd535b1621cc5a8fd8209aa001740" compoundref="_task_info__table_8hpp" startline="83">TASKINFO_CONDITON_LIANSHA</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a696c5717da138c5a65c052a01caa2e07" compoundref="_task_info__table_8hpp" startline="70">TASKINFO_CONDITON_LIANXUSHENGLI</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a0ed671df1d5d553ffa3ad97654212e63" compoundref="_task_info__table_8hpp" startline="61">TASKINFO_CONDITON_MVP</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a48ee0e192395672f9b76f4fcc037a3a6" compoundref="_task_info__table_8hpp" startline="79">TASKINFO_CONDITON_POFANG</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a7e474d186c8e04871c3d5d6fdff6a281" compoundref="_task_info__table_8hpp" startline="78">TASKINFO_CONDITON_SHENZHU</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a20df57e2cd869a5655a72778e95093b5" compoundref="_task_info__table_8hpp" startline="47">TASKINFO_CONDITON_SHIYONGA</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a44bbe6dd3df7259943d5932ca1c5d336" compoundref="_task_info__table_8hpp" startline="48">TASKINFO_CONDITON_SHIYONGB</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ace8c36dd143d75769207ea024fa7ec1b" compoundref="_task_info__table_8hpp" startline="49">TASKINFO_CONDITON_SHIYONGC</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940aee56e083fbad32663550bef069d94e9e" compoundref="_task_info__table_8hpp" startline="50">TASKINFO_CONDITON_SHIYONGD</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940acd8889d8b4826d067d337193e62050d2" compoundref="_task_info__table_8hpp" startline="51">TASKINFO_CONDITON_SHIYONGE</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a45ef5e248be969596df29ec960711095" compoundref="_task_info__table_8hpp" startline="42">TASKINFO_CONDITON_SHOUSHENG</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a8250f733361148e0976b6de570ef0665" compoundref="_task_info__table_8hpp" startline="80">TASKINFO_CONDITON_SHUCHU</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a8b3808c782410c78f0ed958025551aae" compoundref="_task_info__table_8hpp" startline="59">TASKINFO_CONDITON_TEAMJOIN</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a10c917a42900264018c04ba4ebe920e4" compoundref="_task_info__table_8hpp" startline="60">TASKINFO_CONDITON_TEAMMATCHINGWIN</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ab50ad16507a467036b9f0539633d2342" compoundref="_task_info__table_8hpp" startline="65">TASKINFO_CONDITON_TIANTIJIFEN</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a66805a34a8e4c44934b2a0041fd7902b" compoundref="_task_info__table_8hpp" startline="72">TASKINFO_CONDITON_TIANTILIANXUSHENGLI</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a73dcc1ba28e1d2ac1660c461ec4d6f50" compoundref="_task_info__table_8hpp" startline="71">TASKINFO_CONDITON_TIANTISHENGLI</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ae36cffe31ca01ad08879a30e56e6c21a" compoundref="_task_info__table_8hpp" startline="43">TASKINFO_CONDITON_TONGGUANDITU</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ae87163c0d5779990a61e2ba844ab9db0" compoundref="_task_info__table_8hpp" startline="66">TASKINFO_CONDITON_WANCHENGZHANGJIE</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940aa5ca29e9f05b4a16f197108f88adceb7" compoundref="_task_info__table_8hpp" startline="52">TASKINFO_CONDITON_WINA</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ab0e2f2c0fd520361614f0733d38dc169" compoundref="_task_info__table_8hpp" startline="53">TASKINFO_CONDITON_WINB</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a2f68060aaad78b4c471b76bc23a66604" compoundref="_task_info__table_8hpp" startline="54">TASKINFO_CONDITON_WINC</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940afae4e6364487e34f8e497004980bdd28" compoundref="_task_info__table_8hpp" startline="55">TASKINFO_CONDITON_WIND</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a9c90bd2c9cff39d1eed7c37f503a9622" compoundref="_task_info__table_8hpp" startline="56">TASKINFO_CONDITON_WINE</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a5ea3f98b080ae639c29938a37ec3230c" compoundref="_task_info__table_8hpp" startline="64">TASKINFO_CONDITON_ZHANGHAODENGJI</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a260c0a7e3de4e90e48a232879820725b" compoundref="_task_info__table_8hpp" startline="76">TASKINFO_CONDITON_ZHANJIANG</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ae8b928c45819f7eea0e33090544eed68" compoundref="_task_info__table_8hpp" startline="67">TASKINFO_CONDITON_ZHIDINGSHIJIANTONGGUAN</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a865f34e129ee8826b4383a73ebd168b5" compoundref="_task_info__table_8hpp" startline="46">TASKINFO_CONDITON_ZHUGONG</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a382629d3fec82fcb6594f7731ed9c1fc" compoundref="_task_info__table_8hpp" startline="68">TASKINFO_CONDITON_ZIJIWUSIWANGTONGGUAN</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ae8626b0f68d9721d847333b029978a35" compoundref="_task_info__table_8hpp" startline="73">TASKINFO_CONDITON_ZUDUITIANTISHENGLI</references>
+        <referencedby refid="class_c_item_mgr_1ae8e0377cde5732972c5869d98576ba1b" compoundref="_src_2_item_mgr_8cpp" startline="997" endline="1026">CItemMgr::AddItem</referencedby>
+        <referencedby refid="class_block_server_1a7fafb940dfaec37d486f6f5c98de05c4" compoundref="_src_2_se_block_other_8cpp" startline="329" endline="419">BlockServer::CheckTaskGuanqia</referencedby>
+        <referencedby refid="class_block_server_1a0c690b1cd2e25dc71b8b094c100e40cb" compoundref="_src_2_se_block_other_8cpp" startline="198" endline="327">BlockServer::CheckTaskRace</referencedby>
+        <referencedby refid="class_block_server_1a295896a58e78e24c2bd3e92ea8856f23" compoundref="_src_2_se_r_b_l_process_8cpp" startline="32" endline="122">BlockServer::ProcessRBL_UpdateScore</referencedby>
+        <referencedby refid="class_hero_mgr_1a0f1d20deb76cc4c713b0f6532089a3d4" compoundref="_src_2_hero_mgr_8cpp" startline="34" endline="101">HeroMgr::unlockHero</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a5107cc9e0ecd71571a370fbcdebd2f97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TaskMgr::CharTaskInfoUpdate</definition>
+        <argsstring>(const SeTaskInfo *pkTaskInfo)</argsstring>
+        <name>CharTaskInfoUpdate</name>
+        <param>
+          <type>const <ref refid="struct_se_task_info" kindref="compound">SeTaskInfo</ref> *</type>
+          <declname>pkTaskInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="73" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="550" bodyend="554"/>
+        <references refid="class_default_player_data_strategy_1a6baced26772bd2c55f9e1caaac6d23ef" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="53" endline="56">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataUpdate</references>
+        <references refid="_d_b_server_2_src_2_char_task_strategy_8cpp_1a12c8854221975e7c4dd8d9d524e67474" compoundref="_d_b_server_2_src_2_char_task_strategy_8cpp" startline="9">g_kCharTaskStrategy</references>
+        <references refid="class_task_mgr_1ae0e6465f650523d0e7cf8840029b38e5" compoundref="_src_2_task_mgr_8cpp" startline="562" endline="565">getOwner</references>
+        <references refid="struct_se_task_info_1afd3197a6eab0ec9fb76fe54fa6b423e0" compoundref="_src_2_task_mgr_8cpp" startline="12" endline="20">SeTaskInfo::GetTaskInfo</references>
+        <references refid="class_task_mgr_1a7c4d31d84c0087d80eecc5a28c965a96" compoundref="_src_2_task_mgr_8h" startline="104">m_TemData</references>
+        <referencedby refid="class_task_mgr_1abac2b7ce1997430fe49b2dca3fb6c1dd" compoundref="_src_2_task_mgr_8cpp" startline="116" endline="165">GetTaskReward</referencedby>
+        <referencedby refid="class_task_mgr_1af70c862090441288d1d9c3c9ee821d71" compoundref="_src_2_task_mgr_8cpp" startline="213" endline="298">RefreshTask</referencedby>
+        <referencedby refid="class_task_mgr_1a0492a0574c2410b015c981467eeb6afd" compoundref="_src_2_task_mgr_8cpp" startline="300" endline="327">RefreshTaskByEvent</referencedby>
+        <referencedby refid="class_task_mgr_1ac32da102f6a03b2aa8cfb8bc54602810" compoundref="_src_2_task_mgr_8cpp" startline="56" endline="113">ResetTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a62a121be19a9ea8ac1f0fd8ed1ee2f33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TaskMgr::CharTaskInfoInsert</definition>
+        <argsstring>(const SeTaskInfo *pkTaskInfo)</argsstring>
+        <name>CharTaskInfoInsert</name>
+        <param>
+          <type>const <ref refid="struct_se_task_info" kindref="compound">SeTaskInfo</ref> *</type>
+          <declname>pkTaskInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="74" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="556" bodyend="560"/>
+        <references refid="class_default_player_data_strategy_1a01824b8ff7f25899b55f3d4d1bbd6637" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="47" endline="50">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataInsert</references>
+        <references refid="_d_b_server_2_src_2_char_task_strategy_8cpp_1a12c8854221975e7c4dd8d9d524e67474" compoundref="_d_b_server_2_src_2_char_task_strategy_8cpp" startline="9">g_kCharTaskStrategy</references>
+        <references refid="class_task_mgr_1ae0e6465f650523d0e7cf8840029b38e5" compoundref="_src_2_task_mgr_8cpp" startline="562" endline="565">getOwner</references>
+        <references refid="struct_se_task_info_1afd3197a6eab0ec9fb76fe54fa6b423e0" compoundref="_src_2_task_mgr_8cpp" startline="12" endline="20">SeTaskInfo::GetTaskInfo</references>
+        <references refid="class_task_mgr_1a7c4d31d84c0087d80eecc5a28c965a96" compoundref="_src_2_task_mgr_8h" startline="104">m_TemData</references>
+        <referencedby refid="class_task_mgr_1aa9f5fd7e69b6c7c85e9d75f18ef92978" compoundref="_src_2_task_mgr_8cpp" startline="590" endline="626">InitPlayerVTaskInfo</referencedby>
+        <referencedby refid="class_task_mgr_1af70c862090441288d1d9c3c9ee821d71" compoundref="_src_2_task_mgr_8cpp" startline="213" endline="298">RefreshTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1ae0e6465f650523d0e7cf8840029b38e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer &amp; TaskMgr::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="76" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="562" bodyend="565"/>
+        <references refid="class_task_mgr_1a9645123daa6354cfc8bf566d480f7639" compoundref="_src_2_task_mgr_8h" startline="103">m_Player</references>
+        <referencedby refid="class_task_mgr_1a62a121be19a9ea8ac1f0fd8ed1ee2f33" compoundref="_src_2_task_mgr_8cpp" startline="556" endline="560">CharTaskInfoInsert</referencedby>
+        <referencedby refid="class_task_mgr_1a5107cc9e0ecd71571a370fbcdebd2f97" compoundref="_src_2_task_mgr_8cpp" startline="550" endline="554">CharTaskInfoUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a0dc3930176bbe10525f2beb3eebcbe34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_src_2_task_mgr_8h_1a045ec149dc352a9071861fcfa3bf2f77" kindref="member">VTaskInfo</ref> &amp;</type>
+        <definition>VTaskInfo &amp; TaskMgr::GetTaskVInfo</definition>
+        <argsstring>()</argsstring>
+        <name>GetTaskVInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="79" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="568" bodyend="571"/>
+        <references refid="class_task_mgr_1a98036e8402c00fba3a54dcc393cf5355" compoundref="_src_2_task_mgr_8h" startline="102">m_akVTask</references>
+        <referencedby refid="class_task_mgr_1a82caad0e9d0bce1641357e9056ee3227" compoundref="_src_2_task_mgr_8cpp" startline="174" endline="181">CurrTaskInfo</referencedby>
+        <referencedby refid="class_task_mgr_1aa9f5fd7e69b6c7c85e9d75f18ef92978" compoundref="_src_2_task_mgr_8cpp" startline="590" endline="626">InitPlayerVTaskInfo</referencedby>
+        <referencedby refid="class_task_mgr_1a613f3e9b41717ae81aa967ea63a6695e" compoundref="_src_2_task_mgr_8cpp" startline="39" endline="53">QueryTaskInfo</referencedby>
+        <referencedby refid="class_task_mgr_1af70c862090441288d1d9c3c9ee821d71" compoundref="_src_2_task_mgr_8cpp" startline="213" endline="298">RefreshTask</referencedby>
+        <referencedby refid="class_task_mgr_1a0492a0574c2410b015c981467eeb6afd" compoundref="_src_2_task_mgr_8cpp" startline="300" endline="327">RefreshTaskByEvent</referencedby>
+        <referencedby refid="class_task_mgr_1ac2a56ec4804bb04827ce5156ba416e15" compoundref="_src_2_task_mgr_8cpp" startline="713" endline="867">SettleTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a1cadcab5520e56de81d10a050c7d8e8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TaskMgr::loadData</definition>
+        <argsstring>(const SeDBCharTask &amp;skTaskInfo)</argsstring>
+        <name>loadData</name>
+        <reimplements refid="class_data_mgr_1a19fd585291b3911a1f43d63dfbcc71c6">loadData</reimplements>
+        <param>
+          <type>const SeDBCharTask &amp;</type>
+          <declname>skTaskInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="81" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="573" bodyend="587"/>
+        <references refid="struct_se_task_info_1a4eb991c452e17eceddc2581fd1e9ec61" compoundref="_src_2_task_mgr_8h" startline="19" endline="27">SeTaskInfo::Copy</references>
+        <references refid="struct_se_task_info_1acc0347721afe3931bc030a9a9d211368" compoundref="_src_2_task_mgr_8h" startline="30">SeTaskInfo::eTaskType</references>
+        <references refid="class_task_info_table_mgr_1a4b44c8bdcc538a05e72720f9887c9ee5" compoundref="_task_info__table_8cpp" startline="6" endline="13">TaskInfoTableMgr::Get</references>
+        <references refid="class_task_info_table_mgr_1ad4e124dcccab58d2b3d8ce227ef2cd12" compoundref="_task_info__table_8cpp" startline="42" endline="50">TaskInfoTableMgr::GetTaskInfoTable</references>
+        <references refid="class_task_mgr_1a98036e8402c00fba3a54dcc393cf5355" compoundref="_src_2_task_mgr_8h" startline="102">m_akVTask</references>
+        <references refid="struct_se_task_info_1ada7d9198ff01997a658a5de246331741" compoundref="_src_2_task_mgr_8h" startline="35">SeTaskInfo::pkRes</references>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a0f438c49280a3a24144aeef71235ff12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TaskMgr::Finalize</definition>
+        <argsstring>()</argsstring>
+        <name>Finalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="83" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="869" bodyend="879"/>
+        <references refid="class_task_mgr_1a98036e8402c00fba3a54dcc393cf5355" compoundref="_src_2_task_mgr_8h" startline="102">m_akVTask</references>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a7f2e742302f7a0e9f799718b04455165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TaskMgr::TaskMgr</definition>
+        <argsstring>(SePlayer &amp;m_Player)</argsstring>
+        <name>TaskMgr</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>m_Player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1ab0051ec37696b6a8115c9e1c605dff57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TaskMgr::~TaskMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~TaskMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a613f3e9b41717ae81aa967ea63a6695e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TaskMgr::QueryTaskInfo</definition>
+        <argsstring>(VPtlTask &amp;vTaskInfo)</argsstring>
+        <name>QueryTaskInfo</name>
+        <param>
+          <type><ref refid="_src_2_task_mgr_8h_1aa90d2704f5c3ee97967e1f9c44dc467f" kindref="member">VPtlTask</ref> &amp;</type>
+          <declname>vTaskInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1ac32da102f6a03b2aa8cfb8bc54602810" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a56df279917e9b9a13ce063c1bec4bf0d" kindref="member">SeTaskAckCode</ref></type>
+        <definition>SeTaskAckCode TaskMgr::ResetTask</definition>
+        <argsstring>(E_TASKINFOTABLE_TYPE eType)</argsstring>
+        <name>ResetTask</name>
+        <param>
+          <type><ref refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91c" kindref="member">E_TASKINFOTABLE_TYPE</ref></type>
+          <declname>eType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1abac2b7ce1997430fe49b2dca3fb6c1dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a56df279917e9b9a13ce063c1bec4bf0d" kindref="member">SeTaskAckCode</ref></type>
+        <definition>SeTaskAckCode TaskMgr::GetTaskReward</definition>
+        <argsstring>(E_TASKINFOTABLE_TYPE eType)</argsstring>
+        <name>GetTaskReward</name>
+        <param>
+          <type><ref refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91c" kindref="member">E_TASKINFOTABLE_TYPE</ref></type>
+          <declname>eType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1aac92d57429f0d123bfc0e9245d33fb8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_se_task_info" kindref="compound">SeTaskInfo</ref> *</type>
+        <definition>const SeTaskInfo* TaskMgr::GetCurrTaskInfo</definition>
+        <argsstring>(E_TASKINFOTABLE_TYPE eType)</argsstring>
+        <name>GetCurrTaskInfo</name>
+        <param>
+          <type><ref refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91c" kindref="member">E_TASKINFOTABLE_TYPE</ref></type>
+          <declname>eType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a679969a45a4e3100dd119f4d2b07e31c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TaskMgr::GetNextTaskInfo</definition>
+        <argsstring>(SeTaskInfo *skTask, bool bIsDiffDay=false)</argsstring>
+        <name>GetNextTaskInfo</name>
+        <param>
+          <type><ref refid="struct_se_task_info" kindref="compound">SeTaskInfo</ref> *</type>
+          <declname>skTask</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bIsDiffDay</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1af70c862090441288d1d9c3c9ee821d71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TaskMgr::RefreshTask</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshTask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a0492a0574c2410b015c981467eeb6afd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TaskMgr::RefreshTaskByEvent</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshTaskByEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1ac2a56ec4804bb04827ce5156ba416e15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TaskMgr::SettleTask</definition>
+        <argsstring>(E_TASKINFOTABLE_CONDITON eConditonType, DWord dwMapId, DWord value, DWord param1)</argsstring>
+        <name>SettleTask</name>
+        <param>
+          <type><ref refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940" kindref="member">E_TASKINFOTABLE_CONDITON</ref></type>
+          <declname>eConditonType</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwMapId</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>param1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a5107cc9e0ecd71571a370fbcdebd2f97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TaskMgr::CharTaskInfoUpdate</definition>
+        <argsstring>(const SeTaskInfo *pkTaskInfo)</argsstring>
+        <name>CharTaskInfoUpdate</name>
+        <param>
+          <type>const <ref refid="struct_se_task_info" kindref="compound">SeTaskInfo</ref> *</type>
+          <declname>pkTaskInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a62a121be19a9ea8ac1f0fd8ed1ee2f33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TaskMgr::CharTaskInfoInsert</definition>
+        <argsstring>(const SeTaskInfo *pkTaskInfo)</argsstring>
+        <name>CharTaskInfoInsert</name>
+        <param>
+          <type>const <ref refid="struct_se_task_info" kindref="compound">SeTaskInfo</ref> *</type>
+          <declname>pkTaskInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a44e98922f47e436b70ac9985e88aecd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer&amp; TaskMgr::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a1d8ceb2b52f6bfd61b2aca73768639f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_src_2_task_mgr_8h_1a045ec149dc352a9071861fcfa3bf2f77" kindref="member">VTaskInfo</ref> &amp;</type>
+        <definition>VTaskInfo&amp; TaskMgr::GetTaskVInfo</definition>
+        <argsstring>()</argsstring>
+        <name>GetTaskVInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a1cadcab5520e56de81d10a050c7d8e8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TaskMgr::loadData</definition>
+        <argsstring>(const SeDBCharTask &amp;skTaskInfo)</argsstring>
+        <name>loadData</name>
+        <reimplements refid="class_data_mgr_1a19fd585291b3911a1f43d63dfbcc71c6">loadData</reimplements>
+        <param>
+          <type>const SeDBCharTask &amp;</type>
+          <declname>skTaskInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a0f438c49280a3a24144aeef71235ff12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TaskMgr::Finalize</definition>
+        <argsstring>()</argsstring>
+        <name>Finalize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="83" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_task_mgr_1aa9f5fd7e69b6c7c85e9d75f18ef92978" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TaskMgr::InitPlayerVTaskInfo</definition>
+        <argsstring>()</argsstring>
+        <name>InitPlayerVTaskInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="86" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="590" bodyend="626"/>
+        <references refid="class_task_mgr_1a62a121be19a9ea8ac1f0fd8ed1ee2f33" compoundref="_src_2_task_mgr_8cpp" startline="556" endline="560">CharTaskInfoInsert</references>
+        <references refid="struct_se_task_info_1acc0347721afe3931bc030a9a9d211368" compoundref="_src_2_task_mgr_8h" startline="30">SeTaskInfo::eTaskType</references>
+        <references refid="class_task_mgr_1a0b713ce49930e4071b47136dcddba6ce" compoundref="_src_2_task_mgr_8cpp" startline="391" endline="459">GetDailyTaskNextTask</references>
+        <references refid="class_task_mgr_1a2bc47dbab7475fd8f497fdf9f8d7738f" compoundref="_src_2_task_mgr_8cpp" startline="370" endline="388">GetMainTaskNextTask</references>
+        <references refid="class_task_mgr_1a0dc3930176bbe10525f2beb3eebcbe34" compoundref="_src_2_task_mgr_8cpp" startline="568" endline="571">GetTaskVInfo</references>
+        <references refid="class_task_mgr_1a342a99e25f638e680a4a3303ca0b22d7" compoundref="_src_2_task_mgr_8cpp" startline="462" endline="548">GetWinTaskNextTask</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cabebde7e54de1347b289088eb2ed78481" compoundref="_task_info__table_8hpp" startline="14">TASKINFO_TYPE_RONGYU</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca5693accf773fbd6c743e04cf98f4e7ee" compoundref="_task_info__table_8hpp" startline="12">TASKINFO_TYPE_SHENGCHANG</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca45ff411372bc06a2eec9c36fbc11642c" compoundref="_task_info__table_8hpp" startline="13">TASKINFO_TYPE_YINGXIONG</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca1b3dc8c8adc207dc5b9eab401a7a43f9" compoundref="_task_info__table_8hpp" startline="15">TASKINFO_TYPE_ZHANYI</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91cafce21a82d146e9539ce9d2ae9733256b" compoundref="_task_info__table_8hpp" startline="11">TASKINFO_TYPE_ZHUXIAN</references>
+        <referencedby refid="class_task_mgr_1af70c862090441288d1d9c3c9ee821d71" compoundref="_src_2_task_mgr_8cpp" startline="213" endline="298">RefreshTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a2777106ae2f76bad46dfbd57c582e51b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TaskMgr::CheckReceiveCondition</definition>
+        <argsstring>(const TaskInfoTable *pkTaskTable)</argsstring>
+        <name>CheckReceiveCondition</name>
+        <param>
+          <type>const <ref refid="struct_task_info_table" kindref="compound">TaskInfoTable</ref> *</type>
+          <declname>pkTaskTable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="88" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="331" bodyend="367"/>
+        <references refid="class_se_player_1ab97e8a7e230dfb05a2662a065ba77bb8" compoundref="_world_server_2_src_2_se_player_8h" startline="264" endline="267">SePlayer::GetCharLevel</references>
+        <references refid="class_se_player_1adb99685f91ed8cd6bffeef5d32fc0c1d" compoundref="_world_server_2_src_2_se_player_8h" startline="515" endline="518">SePlayer::GetEquipFightScore</references>
+        <references refid="class_se_player_1aa1afbaca75db9af3457085dd40309ba9" compoundref="_world_server_2_src_2_se_player_8cpp" startline="940" endline="961">SePlayer::GetLadder</references>
+        <references refid="class_task_mgr_1a9645123daa6354cfc8bf566d480f7639" compoundref="_src_2_task_mgr_8h" startline="103">m_Player</references>
+        <references refid="_task_info__table_8hpp_1a281cc0fb5c780db0db505e1359a6e6f1a98d20c047f3aa3ef39fb979a311e8339" compoundref="_task_info__table_8hpp" startline="21">TASKINFO_RECEIVECONDITION_DENGJI</references>
+        <references refid="_task_info__table_8hpp_1a281cc0fb5c780db0db505e1359a6e6f1ac6a556733a58648cc7adc07e8fb7b08a" compoundref="_task_info__table_8hpp" startline="24">TASKINFO_RECEIVECONDITION_PVEZHANGJIE</references>
+        <references refid="_task_info__table_8hpp_1a281cc0fb5c780db0db505e1359a6e6f1a21ac253aefc9fb606795955224fe5473" compoundref="_task_info__table_8hpp" startline="22">TASKINFO_RECEIVECONDITION_SHILI</references>
+        <references refid="_task_info__table_8hpp_1a281cc0fb5c780db0db505e1359a6e6f1a57b5fe67caa1877fcded9e6f6fa6cbdf" compoundref="_task_info__table_8hpp" startline="23">TASKINFO_RECEIVECONDITION_TIANTIJIFEN</references>
+        <references refid="_task_info__table_8hpp_1a281cc0fb5c780db0db505e1359a6e6f1a17ddbae8247280cf97f9dc47256c568f" compoundref="_task_info__table_8hpp" startline="20">TASKINFO_RECEIVECONDITION_WU</references>
+        <references refid="struct_task_info_table_1aaf674a79b47823b039d0dbf0d7a12943" compoundref="_task_info__table_8hpp" startline="99">TaskInfoTable::uiConditionParam</references>
+        <references refid="struct_task_info_table_1a2a6c5f59ffe4cd1d6f4eb3822b2a1b83" compoundref="_task_info__table_8hpp" startline="98">TaskInfoTable::uiReceiveCondition</references>
+        <referencedby refid="class_task_mgr_1a0b713ce49930e4071b47136dcddba6ce" compoundref="_src_2_task_mgr_8cpp" startline="391" endline="459">GetDailyTaskNextTask</referencedby>
+        <referencedby refid="class_task_mgr_1a2bc47dbab7475fd8f497fdf9f8d7738f" compoundref="_src_2_task_mgr_8cpp" startline="370" endline="388">GetMainTaskNextTask</referencedby>
+        <referencedby refid="class_task_mgr_1a342a99e25f638e680a4a3303ca0b22d7" compoundref="_src_2_task_mgr_8cpp" startline="462" endline="548">GetWinTaskNextTask</referencedby>
+        <referencedby refid="class_task_mgr_1af70c862090441288d1d9c3c9ee821d71" compoundref="_src_2_task_mgr_8cpp" startline="213" endline="298">RefreshTask</referencedby>
+        <referencedby refid="class_task_mgr_1a0492a0574c2410b015c981467eeb6afd" compoundref="_src_2_task_mgr_8cpp" startline="300" endline="327">RefreshTaskByEvent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a82caad0e9d0bce1641357e9056ee3227" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_se_task_info" kindref="compound">SeTaskInfo</ref> *</type>
+        <definition>SeTaskInfo * TaskMgr::CurrTaskInfo</definition>
+        <argsstring>(E_TASKINFOTABLE_TYPE eType)</argsstring>
+        <name>CurrTaskInfo</name>
+        <param>
+          <type><ref refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91c" kindref="member">E_TASKINFOTABLE_TYPE</ref></type>
+          <declname>eType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="90" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="174" bodyend="181"/>
+        <references refid="class_task_mgr_1a0dc3930176bbe10525f2beb3eebcbe34" compoundref="_src_2_task_mgr_8cpp" startline="568" endline="571">GetTaskVInfo</references>
+        <referencedby refid="class_task_mgr_1ae21e77867141da9b835f65dc4580a262" compoundref="_src_2_task_mgr_8cpp" startline="168" endline="172">GetCurrTaskInfo</referencedby>
+        <referencedby refid="class_task_mgr_1abac2b7ce1997430fe49b2dca3fb6c1dd" compoundref="_src_2_task_mgr_8cpp" startline="116" endline="165">GetTaskReward</referencedby>
+        <referencedby refid="class_task_mgr_1ac32da102f6a03b2aa8cfb8bc54602810" compoundref="_src_2_task_mgr_8cpp" startline="56" endline="113">ResetTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a2bc47dbab7475fd8f497fdf9f8d7738f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TaskMgr::GetMainTaskNextTask</definition>
+        <argsstring>(SeTaskInfo *skTask)</argsstring>
+        <name>GetMainTaskNextTask</name>
+        <param>
+          <type><ref refid="struct_se_task_info" kindref="compound">SeTaskInfo</ref> *</type>
+          <declname>skTask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="93" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="370" bodyend="388"/>
+        <references refid="class_task_mgr_1a2777106ae2f76bad46dfbd57c582e51b" compoundref="_src_2_task_mgr_8cpp" startline="331" endline="367">CheckReceiveCondition</references>
+        <references refid="struct_se_task_info_1a424d58546452c38a1c6bfeb5fce4a424" compoundref="_src_2_task_mgr_8h" startline="29">SeTaskInfo::dwTaskID</references>
+        <references refid="struct_se_task_info_1a477fa1dbc58db1433aa242054158ec8d" compoundref="_src_2_task_mgr_8h" startline="31">SeTaskInfo::eState</references>
+        <references refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" compoundref="_table_mgr1_8cpp" startline="36" endline="43">TableMgr::Get</references>
+        <references refid="class_table_mgr_1a63ef6ccfb78a618d0d6fca442241ced5" compoundref="_table_mgr1_8cpp" startline="1095" endline="1108">TableMgr::GetNextMainTaskID</references>
+        <references refid="class_task_mgr_1a2632ef8cb9e0c1ee774e0b098ebeabb7" compoundref="_src_2_task_mgr_8cpp" startline="630" endline="710">GetTaskConditionNum</references>
+        <references refid="struct_se_task_info_1a66074b1e0a3ecee7405edd57a49c28d3" compoundref="_src_2_task_mgr_8h" startline="32">SeTaskInfo::iConditionNum</references>
+        <references refid="struct_se_task_info_1a297d6f765198bd9db91f941380a0d848" compoundref="_src_2_task_mgr_8h" startline="34">SeTaskInfo::ifinishCount</references>
+        <references refid="struct_se_task_info_1ae7aa07da5f8c91931e697d632ba3eaf4" compoundref="_src_2_task_mgr_8h" startline="33">SeTaskInfo::iSchedule</references>
+        <references refid="struct_se_task_info_1ada7d9198ff01997a658a5de246331741" compoundref="_src_2_task_mgr_8h" startline="35">SeTaskInfo::pkRes</references>
+        <references refid="_se_ptl_comm_define_8h_1a1e1689859754356057d281744bef6493a5538e167f2ee524b2fb34a713d101ac4" compoundref="_se_ptl_comm_define_8h" startline="251">STS_DOING</references>
+        <references refid="_se_ptl_comm_define_8h_1a1e1689859754356057d281744bef6493af3957e57c7e95c7d509b28369d1c8d37" compoundref="_se_ptl_comm_define_8h" startline="250">STS_WAIT_CONDITION</references>
+        <referencedby refid="class_task_mgr_1a679969a45a4e3100dd119f4d2b07e31c" compoundref="_src_2_task_mgr_8cpp" startline="185" endline="208">GetNextTaskInfo</referencedby>
+        <referencedby refid="class_task_mgr_1aa9f5fd7e69b6c7c85e9d75f18ef92978" compoundref="_src_2_task_mgr_8cpp" startline="590" endline="626">InitPlayerVTaskInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a0b713ce49930e4071b47136dcddba6ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TaskMgr::GetDailyTaskNextTask</definition>
+        <argsstring>(SeTaskInfo *skTask)</argsstring>
+        <name>GetDailyTaskNextTask</name>
+        <param>
+          <type><ref refid="struct_se_task_info" kindref="compound">SeTaskInfo</ref> *</type>
+          <declname>skTask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="95" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="391" bodyend="459"/>
+        <references refid="class_task_mgr_1a2777106ae2f76bad46dfbd57c582e51b" compoundref="_src_2_task_mgr_8cpp" startline="331" endline="367">CheckReceiveCondition</references>
+        <references refid="struct_se_task_info_1a424d58546452c38a1c6bfeb5fce4a424" compoundref="_src_2_task_mgr_8h" startline="29">SeTaskInfo::dwTaskID</references>
+        <references refid="struct_se_task_info_1a477fa1dbc58db1433aa242054158ec8d" compoundref="_src_2_task_mgr_8h" startline="31">SeTaskInfo::eState</references>
+        <references refid="struct_se_task_info_1acc0347721afe3931bc030a9a9d211368" compoundref="_src_2_task_mgr_8h" startline="30">SeTaskInfo::eTaskType</references>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="class_task_info_table_mgr_1a4b44c8bdcc538a05e72720f9887c9ee5" compoundref="_task_info__table_8cpp" startline="6" endline="13">TaskInfoTableMgr::Get</references>
+        <references refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" compoundref="_table_mgr1_8cpp" startline="36" endline="43">TableMgr::Get</references>
+        <references refid="class_table_mgr_1acea52d6373f03b5ece326a1c996936ab" compoundref="_table_mgr1_8cpp" startline="1110" endline="1128">TableMgr::GetDailyTaskIDList</references>
+        <references refid="class_task_mgr_1a2632ef8cb9e0c1ee774e0b098ebeabb7" compoundref="_src_2_task_mgr_8cpp" startline="630" endline="710">GetTaskConditionNum</references>
+        <references refid="class_task_info_table_mgr_1ad4e124dcccab58d2b3d8ce227ef2cd12" compoundref="_task_info__table_8cpp" startline="42" endline="50">TaskInfoTableMgr::GetTaskInfoTable</references>
+        <references refid="struct_se_task_info_1a66074b1e0a3ecee7405edd57a49c28d3" compoundref="_src_2_task_mgr_8h" startline="32">SeTaskInfo::iConditionNum</references>
+        <references refid="struct_se_task_info_1ae7aa07da5f8c91931e697d632ba3eaf4" compoundref="_src_2_task_mgr_8h" startline="33">SeTaskInfo::iSchedule</references>
+        <references refid="struct_se_task_info_1ada7d9198ff01997a658a5de246331741" compoundref="_src_2_task_mgr_8h" startline="35">SeTaskInfo::pkRes</references>
+        <references refid="class_world_server_1af184e05fb8902aee3745007e51ac7c1f" compoundref="_src_2_se_world_logic_8cpp" startline="78" endline="81">WorldServer::RandInt</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_ptl_comm_define_8h_1a1e1689859754356057d281744bef6493a5538e167f2ee524b2fb34a713d101ac4" compoundref="_se_ptl_comm_define_8h" startline="251">STS_DOING</references>
+        <referencedby refid="class_task_mgr_1a679969a45a4e3100dd119f4d2b07e31c" compoundref="_src_2_task_mgr_8cpp" startline="185" endline="208">GetNextTaskInfo</referencedby>
+        <referencedby refid="class_task_mgr_1aa9f5fd7e69b6c7c85e9d75f18ef92978" compoundref="_src_2_task_mgr_8cpp" startline="590" endline="626">InitPlayerVTaskInfo</referencedby>
+        <referencedby refid="class_task_mgr_1af70c862090441288d1d9c3c9ee821d71" compoundref="_src_2_task_mgr_8cpp" startline="213" endline="298">RefreshTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a342a99e25f638e680a4a3303ca0b22d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TaskMgr::GetWinTaskNextTask</definition>
+        <argsstring>(SeTaskInfo *skTask, bool bDiffDay)</argsstring>
+        <name>GetWinTaskNextTask</name>
+        <param>
+          <type><ref refid="struct_se_task_info" kindref="compound">SeTaskInfo</ref> *</type>
+          <declname>skTask</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bDiffDay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="97" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="462" bodyend="548"/>
+        <references refid="class_task_mgr_1a2777106ae2f76bad46dfbd57c582e51b" compoundref="_src_2_task_mgr_8cpp" startline="331" endline="367">CheckReceiveCondition</references>
+        <references refid="struct_se_task_info_1a424d58546452c38a1c6bfeb5fce4a424" compoundref="_src_2_task_mgr_8h" startline="29">SeTaskInfo::dwTaskID</references>
+        <references refid="struct_se_task_info_1a477fa1dbc58db1433aa242054158ec8d" compoundref="_src_2_task_mgr_8h" startline="31">SeTaskInfo::eState</references>
+        <references refid="struct_se_task_info_1acc0347721afe3931bc030a9a9d211368" compoundref="_src_2_task_mgr_8h" startline="30">SeTaskInfo::eTaskType</references>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="class_task_info_table_mgr_1a4b44c8bdcc538a05e72720f9887c9ee5" compoundref="_task_info__table_8cpp" startline="6" endline="13">TaskInfoTableMgr::Get</references>
+        <references refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" compoundref="_table_mgr1_8cpp" startline="36" endline="43">TableMgr::Get</references>
+        <references refid="class_table_mgr_1acea52d6373f03b5ece326a1c996936ab" compoundref="_table_mgr1_8cpp" startline="1110" endline="1128">TableMgr::GetDailyTaskIDList</references>
+        <references refid="class_table_mgr_1aca0b7147592a6dbf62766e2cb8f33e92" compoundref="_table_mgr1_8cpp" startline="1131" endline="1154">TableMgr::GetFirstDailyTaskID</references>
+        <references refid="class_task_mgr_1a2632ef8cb9e0c1ee774e0b098ebeabb7" compoundref="_src_2_task_mgr_8cpp" startline="630" endline="710">GetTaskConditionNum</references>
+        <references refid="class_task_info_table_mgr_1ad4e124dcccab58d2b3d8ce227ef2cd12" compoundref="_task_info__table_8cpp" startline="42" endline="50">TaskInfoTableMgr::GetTaskInfoTable</references>
+        <references refid="struct_se_task_info_1a66074b1e0a3ecee7405edd57a49c28d3" compoundref="_src_2_task_mgr_8h" startline="32">SeTaskInfo::iConditionNum</references>
+        <references refid="struct_se_task_info_1ae7aa07da5f8c91931e697d632ba3eaf4" compoundref="_src_2_task_mgr_8h" startline="33">SeTaskInfo::iSchedule</references>
+        <references refid="struct_se_task_info_1ada7d9198ff01997a658a5de246331741" compoundref="_src_2_task_mgr_8h" startline="35">SeTaskInfo::pkRes</references>
+        <references refid="class_world_server_1af184e05fb8902aee3745007e51ac7c1f" compoundref="_src_2_se_world_logic_8cpp" startline="78" endline="81">WorldServer::RandInt</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_ptl_comm_define_8h_1a1e1689859754356057d281744bef6493a5538e167f2ee524b2fb34a713d101ac4" compoundref="_se_ptl_comm_define_8h" startline="251">STS_DOING</references>
+        <references refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91ca5693accf773fbd6c743e04cf98f4e7ee" compoundref="_task_info__table_8hpp" startline="12">TASKINFO_TYPE_SHENGCHANG</references>
+        <referencedby refid="class_task_mgr_1a679969a45a4e3100dd119f4d2b07e31c" compoundref="_src_2_task_mgr_8cpp" startline="185" endline="208">GetNextTaskInfo</referencedby>
+        <referencedby refid="class_task_mgr_1aa9f5fd7e69b6c7c85e9d75f18ef92978" compoundref="_src_2_task_mgr_8cpp" startline="590" endline="626">InitPlayerVTaskInfo</referencedby>
+        <referencedby refid="class_task_mgr_1af70c862090441288d1d9c3c9ee821d71" compoundref="_src_2_task_mgr_8cpp" startline="213" endline="298">RefreshTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a2632ef8cb9e0c1ee774e0b098ebeabb7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_task_info_table" kindref="compound">TaskInfoTable</ref> *</type>
+        <definition>const TaskInfoTable * TaskMgr::GetTaskConditionNum</definition>
+        <argsstring>(DWord dwTaskID, int &amp;value)</argsstring>
+        <name>GetTaskConditionNum</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwTaskID</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="100" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.cpp" bodystart="630" bodyend="710"/>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="class_task_info_table_mgr_1a4b44c8bdcc538a05e72720f9887c9ee5" compoundref="_task_info__table_8cpp" startline="6" endline="13">TaskInfoTableMgr::Get</references>
+        <references refid="class_task_info_table_mgr_1ad4e124dcccab58d2b3d8ce227ef2cd12" compoundref="_task_info__table_8cpp" startline="42" endline="50">TaskInfoTableMgr::GetTaskInfoTable</references>
+        <references refid="struct_task_info_table_1a481786a3954a571832af3fc8d2df795d" compoundref="_task_info__table_8hpp" startline="105">TaskInfoTable::iCondValue1</references>
+        <references refid="struct_task_info_table_1a23350f34ad14907166eaf9b13382cb2f" compoundref="_task_info__table_8hpp" startline="106">TaskInfoTable::iCondValue2</references>
+        <references refid="class_world_server_1af184e05fb8902aee3745007e51ac7c1f" compoundref="_src_2_se_world_logic_8cpp" startline="78" endline="81">WorldServer::RandInt</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ad5e6d2d45e9314bbb4e3f2b7f3c0cec2" compoundref="_task_info__table_8hpp" startline="82">TASKINFO_CONDITON_CANTUAN</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ad6aacfc46e73c504c8424d7ad6fc3bf8" compoundref="_task_info__table_8hpp" startline="44">TASKINFO_CONDITON_CANYUYOUXI</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a193d0184ca4748e143b69317f223fbb0" compoundref="_task_info__table_8hpp" startline="81">TASKINFO_CONDITON_CHENGSHANG</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a13d1e0e468c5100e4331db3d0b4608b4" compoundref="_task_info__table_8hpp" startline="74">TASKINFO_CONDITON_CUIHUIFANGYUTA</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a981df52acad942d571f8ec60ed8ebf01" compoundref="_task_info__table_8hpp" startline="69">TASKINFO_CONDITON_DUIWUWUSIWANGTONGGUAN</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a9cea297ade9b100e05a9bf6cf53d5d8e" compoundref="_task_info__table_8hpp" startline="77">TASKINFO_CONDITON_FUJIA</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a20b6d924f97b66bfec522682c7ab596a" compoundref="_task_info__table_8hpp" startline="57">TASKINFO_CONDITON_GETGOLD</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a5eaed7e4cb2f3829d18932c2d298a439" compoundref="_task_info__table_8hpp" startline="75">TASKINFO_CONDITON_GUDAN</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940acb324b91f527cfb2f1fd1962b211e13b" compoundref="_task_info__table_8hpp" startline="63">TASKINFO_CONDITON_JIESUOPIFU</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a60f73a2ca7cd18514ba1e04d77ee5236" compoundref="_task_info__table_8hpp" startline="62">TASKINFO_CONDITON_JIESUOYINGXIONG</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a5f73c4da9f12de47128bb462f42f73b2" compoundref="_task_info__table_8hpp" startline="45">TASKINFO_CONDITON_JISHA</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a6cd94518f99e007f5c6ff5bdafe7d0ed" compoundref="_task_info__table_8hpp" startline="58">TASKINFO_CONDITON_KILLNPC</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a1e5bd535b1621cc5a8fd8209aa001740" compoundref="_task_info__table_8hpp" startline="83">TASKINFO_CONDITON_LIANSHA</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a696c5717da138c5a65c052a01caa2e07" compoundref="_task_info__table_8hpp" startline="70">TASKINFO_CONDITON_LIANXUSHENGLI</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a0ed671df1d5d553ffa3ad97654212e63" compoundref="_task_info__table_8hpp" startline="61">TASKINFO_CONDITON_MVP</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a48ee0e192395672f9b76f4fcc037a3a6" compoundref="_task_info__table_8hpp" startline="79">TASKINFO_CONDITON_POFANG</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a7e474d186c8e04871c3d5d6fdff6a281" compoundref="_task_info__table_8hpp" startline="78">TASKINFO_CONDITON_SHENZHU</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a20df57e2cd869a5655a72778e95093b5" compoundref="_task_info__table_8hpp" startline="47">TASKINFO_CONDITON_SHIYONGA</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a44bbe6dd3df7259943d5932ca1c5d336" compoundref="_task_info__table_8hpp" startline="48">TASKINFO_CONDITON_SHIYONGB</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ace8c36dd143d75769207ea024fa7ec1b" compoundref="_task_info__table_8hpp" startline="49">TASKINFO_CONDITON_SHIYONGC</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940aee56e083fbad32663550bef069d94e9e" compoundref="_task_info__table_8hpp" startline="50">TASKINFO_CONDITON_SHIYONGD</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940acd8889d8b4826d067d337193e62050d2" compoundref="_task_info__table_8hpp" startline="51">TASKINFO_CONDITON_SHIYONGE</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a45ef5e248be969596df29ec960711095" compoundref="_task_info__table_8hpp" startline="42">TASKINFO_CONDITON_SHOUSHENG</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a8250f733361148e0976b6de570ef0665" compoundref="_task_info__table_8hpp" startline="80">TASKINFO_CONDITON_SHUCHU</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a8b3808c782410c78f0ed958025551aae" compoundref="_task_info__table_8hpp" startline="59">TASKINFO_CONDITON_TEAMJOIN</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a10c917a42900264018c04ba4ebe920e4" compoundref="_task_info__table_8hpp" startline="60">TASKINFO_CONDITON_TEAMMATCHINGWIN</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ab50ad16507a467036b9f0539633d2342" compoundref="_task_info__table_8hpp" startline="65">TASKINFO_CONDITON_TIANTIJIFEN</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a66805a34a8e4c44934b2a0041fd7902b" compoundref="_task_info__table_8hpp" startline="72">TASKINFO_CONDITON_TIANTILIANXUSHENGLI</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a73dcc1ba28e1d2ac1660c461ec4d6f50" compoundref="_task_info__table_8hpp" startline="71">TASKINFO_CONDITON_TIANTISHENGLI</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ae36cffe31ca01ad08879a30e56e6c21a" compoundref="_task_info__table_8hpp" startline="43">TASKINFO_CONDITON_TONGGUANDITU</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ae87163c0d5779990a61e2ba844ab9db0" compoundref="_task_info__table_8hpp" startline="66">TASKINFO_CONDITON_WANCHENGZHANGJIE</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940aa5ca29e9f05b4a16f197108f88adceb7" compoundref="_task_info__table_8hpp" startline="52">TASKINFO_CONDITON_WINA</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ab0e2f2c0fd520361614f0733d38dc169" compoundref="_task_info__table_8hpp" startline="53">TASKINFO_CONDITON_WINB</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a2f68060aaad78b4c471b76bc23a66604" compoundref="_task_info__table_8hpp" startline="54">TASKINFO_CONDITON_WINC</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940afae4e6364487e34f8e497004980bdd28" compoundref="_task_info__table_8hpp" startline="55">TASKINFO_CONDITON_WIND</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a9c90bd2c9cff39d1eed7c37f503a9622" compoundref="_task_info__table_8hpp" startline="56">TASKINFO_CONDITON_WINE</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a5ea3f98b080ae639c29938a37ec3230c" compoundref="_task_info__table_8hpp" startline="64">TASKINFO_CONDITON_ZHANGHAODENGJI</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a260c0a7e3de4e90e48a232879820725b" compoundref="_task_info__table_8hpp" startline="76">TASKINFO_CONDITON_ZHANJIANG</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ae8b928c45819f7eea0e33090544eed68" compoundref="_task_info__table_8hpp" startline="67">TASKINFO_CONDITON_ZHIDINGSHIJIANTONGGUAN</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a865f34e129ee8826b4383a73ebd168b5" compoundref="_task_info__table_8hpp" startline="46">TASKINFO_CONDITON_ZHUGONG</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940a382629d3fec82fcb6594f7731ed9c1fc" compoundref="_task_info__table_8hpp" startline="68">TASKINFO_CONDITON_ZIJIWUSIWANGTONGGUAN</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940ae8626b0f68d9721d847333b029978a35" compoundref="_task_info__table_8hpp" startline="73">TASKINFO_CONDITON_ZUDUITIANTISHENGLI</references>
+        <references refid="struct_task_info_table_1a8bde8aebdf3835514563ab95a3d1cf14" compoundref="_task_info__table_8hpp" startline="103">TaskInfoTable::uiConditon</references>
+        <references refid="struct_task_info_table_1a500fe95f7c1392f402b1633b6ad80405" compoundref="_task_info__table_8hpp" startline="104">TaskInfoTable::uiSpecialConditon</references>
+        <referencedby refid="class_task_mgr_1a0b713ce49930e4071b47136dcddba6ce" compoundref="_src_2_task_mgr_8cpp" startline="391" endline="459">GetDailyTaskNextTask</referencedby>
+        <referencedby refid="class_task_mgr_1a2bc47dbab7475fd8f497fdf9f8d7738f" compoundref="_src_2_task_mgr_8cpp" startline="370" endline="388">GetMainTaskNextTask</referencedby>
+        <referencedby refid="class_task_mgr_1a342a99e25f638e680a4a3303ca0b22d7" compoundref="_src_2_task_mgr_8cpp" startline="462" endline="548">GetWinTaskNextTask</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1aa9f5fd7e69b6c7c85e9d75f18ef92978" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TaskMgr::InitPlayerVTaskInfo</definition>
+        <argsstring>()</argsstring>
+        <name>InitPlayerVTaskInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a2777106ae2f76bad46dfbd57c582e51b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TaskMgr::CheckReceiveCondition</definition>
+        <argsstring>(const TaskInfoTable *pkTaskTable)</argsstring>
+        <name>CheckReceiveCondition</name>
+        <param>
+          <type>const <ref refid="struct_task_info_table" kindref="compound">TaskInfoTable</ref> *</type>
+          <declname>pkTaskTable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a318ec540eb0c2351e22b9e95f280de9a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_se_task_info" kindref="compound">SeTaskInfo</ref> *</type>
+        <definition>SeTaskInfo* TaskMgr::CurrTaskInfo</definition>
+        <argsstring>(E_TASKINFOTABLE_TYPE eType)</argsstring>
+        <name>CurrTaskInfo</name>
+        <param>
+          <type><ref refid="_task_info__table_8hpp_1aa38b7abf8a524848bed9679925f6d91c" kindref="member">E_TASKINFOTABLE_TYPE</ref></type>
+          <declname>eType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a2bc47dbab7475fd8f497fdf9f8d7738f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TaskMgr::GetMainTaskNextTask</definition>
+        <argsstring>(SeTaskInfo *skTask)</argsstring>
+        <name>GetMainTaskNextTask</name>
+        <param>
+          <type><ref refid="struct_se_task_info" kindref="compound">SeTaskInfo</ref> *</type>
+          <declname>skTask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a0b713ce49930e4071b47136dcddba6ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TaskMgr::GetDailyTaskNextTask</definition>
+        <argsstring>(SeTaskInfo *skTask)</argsstring>
+        <name>GetDailyTaskNextTask</name>
+        <param>
+          <type><ref refid="struct_se_task_info" kindref="compound">SeTaskInfo</ref> *</type>
+          <declname>skTask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a342a99e25f638e680a4a3303ca0b22d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TaskMgr::GetWinTaskNextTask</definition>
+        <argsstring>(SeTaskInfo *skTask, bool bDiffDay)</argsstring>
+        <name>GetWinTaskNextTask</name>
+        <param>
+          <type><ref refid="struct_se_task_info" kindref="compound">SeTaskInfo</ref> *</type>
+          <declname>skTask</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bDiffDay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_task_mgr_1a389caf8dd63a8cc4ce6a7d49596c1439" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_task_info_table" kindref="compound">TaskInfoTable</ref> *</type>
+        <definition>const TaskInfoTable* TaskMgr::GetTaskConditionNum</definition>
+        <argsstring>(DWord dwTaskID, int &amp;value)</argsstring>
+        <name>GetTaskConditionNum</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwTaskID</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/TaskMgr.h" line="100" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9157">
+        <label>DataMgr&lt; SeDBCharTask &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="9156">
+        <label>TaskMgr</label>
+        <link refid="class_task_mgr"/>
+        <childnode refid="9157" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9157" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9228">
+        <label>SeAchieveScheduleInfo</label>
+        <link refid="struct_se_achieve_schedule_info"/>
+      </node>
+      <node id="9176">
+        <label>std::map&lt; DWord, CItem * &gt;</label>
+        <childnode refid="9177" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9189">
+        <label>SeThreadMsgMgr</label>
+        <link refid="class_se_thread_msg_mgr"/>
+        <childnode refid="9190" relation="usage">
+          <edgelabel>m_kTemMsgData</edgelabel>
+        </childnode>
+      </node>
+      <node id="9196">
+        <label>DataMgr&lt; SeDBCharEquipSchema &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="9206">
+        <label>K</label>
+      </node>
+      <node id="9207">
+        <label>T</label>
+      </node>
+      <node id="9210">
+        <label>SeItem</label>
+        <link refid="struct_se_item"/>
+        <childnode refid="9173" relation="usage">
+          <edgelabel>kFinishTime</edgelabel>
+        </childnode>
+        <childnode refid="9211" relation="usage">
+          <edgelabel>pkItemRes</edgelabel>
+        </childnode>
+      </node>
+      <node id="9173">
+        <label>SeDBTime</label>
+        <link refid="struct_se_d_b_time"/>
+      </node>
+      <node id="9161">
+        <label>SeTaskInfo</label>
+        <link refid="struct_se_task_info"/>
+        <childnode refid="9162" relation="usage">
+          <edgelabel>pkRes</edgelabel>
+        </childnode>
+      </node>
+      <node id="9230">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="9207" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9177">
+        <label>CItem</label>
+        <link refid="struct_c_item"/>
+        <childnode refid="9178" relation="usage">
+          <edgelabel>pvpAttr</edgelabel>
+          <edgelabel>pveAttr</edgelabel>
+        </childnode>
+        <childnode refid="9179" relation="usage">
+          <edgelabel>citiaoAttr</edgelabel>
+        </childnode>
+      </node>
+      <node id="9218">
+        <label>AchieveMgr</label>
+        <link refid="class_achieve_mgr"/>
+        <childnode refid="9166" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="9166">
+        <label>SePlayer</label>
+        <link refid="class_se_player"/>
+        <childnode refid="9167" relation="usage">
+          <edgelabel>m_kCurPos</edgelabel>
+        </childnode>
+        <childnode refid="9168" relation="usage">
+          <edgelabel>m_heroMgr</edgelabel>
+        </childnode>
+        <childnode refid="9171" relation="usage">
+          <edgelabel>m_mapNexusFriendData</edgelabel>
+        </childnode>
+        <childnode refid="9174" relation="usage">
+          <edgelabel>m_PlayerItemMgr</edgelabel>
+        </childnode>
+        <childnode refid="9182" relation="usage">
+          <edgelabel>m_kMobileInfo</edgelabel>
+        </childnode>
+        <childnode refid="9173" relation="usage">
+          <edgelabel>m_kEnterTime</edgelabel>
+        </childnode>
+        <childnode refid="9183" relation="usage">
+          <edgelabel>m_pkBlockServer</edgelabel>
+        </childnode>
+        <childnode refid="9194" relation="usage">
+          <edgelabel>m_kLoadFlag2Count</edgelabel>
+        </childnode>
+        <childnode refid="9195" relation="usage">
+          <edgelabel>m_equipSchemaMgr</edgelabel>
+        </childnode>
+        <childnode refid="9197" relation="usage">
+          <edgelabel>m_raceMapMgr</edgelabel>
+        </childnode>
+        <childnode refid="9200" relation="usage">
+          <edgelabel>m_raceHeroMgr</edgelabel>
+        </childnode>
+        <childnode refid="9208" relation="usage">
+          <edgelabel>m_loadingFlag</edgelabel>
+        </childnode>
+        <childnode refid="9158" relation="usage">
+          <edgelabel>m_TaskMgr</edgelabel>
+        </childnode>
+        <childnode refid="9209" relation="usage">
+          <edgelabel>m_akItem</edgelabel>
+        </childnode>
+        <childnode refid="9212" relation="usage">
+          <edgelabel>m_FriendLadderData</edgelabel>
+        </childnode>
+        <childnode refid="9215" relation="usage">
+          <edgelabel>m_activeAvatarMgr</edgelabel>
+        </childnode>
+        <childnode refid="9218" relation="usage">
+          <edgelabel>m_AchieveMgr</edgelabel>
+        </childnode>
+        <childnode refid="9219" relation="usage">
+          <edgelabel>m_kLoadFlagCounts</edgelabel>
+        </childnode>
+        <childnode refid="9193" relation="usage">
+          <edgelabel>m_kAccountInfo</edgelabel>
+        </childnode>
+        <childnode refid="9220" relation="usage">
+          <edgelabel>m_AchieveFinishMgr</edgelabel>
+        </childnode>
+        <childnode refid="9223" relation="usage">
+          <edgelabel>m_akStatMap</edgelabel>
+        </childnode>
+        <childnode refid="9225" relation="usage">
+          <edgelabel>m_AchieveScheduleMgr</edgelabel>
+        </childnode>
+        <childnode refid="9229" relation="usage">
+          <edgelabel>m_kMAllCharMem</edgelabel>
+        </childnode>
+        <childnode refid="9231" relation="usage">
+          <edgelabel>m_akExchange</edgelabel>
+        </childnode>
+        <childnode refid="9233" relation="usage">
+          <edgelabel>m_infoMgr</edgelabel>
+        </childnode>
+        <childnode refid="9236" relation="usage">
+          <edgelabel>m_kSingleMatchInfo</edgelabel>
+        </childnode>
+        <childnode refid="9237" relation="usage">
+          <edgelabel>m_kOderItr</edgelabel>
+        </childnode>
+      </node>
+      <node id="9192">
+        <label>SeWaitPlayer</label>
+        <link refid="struct_se_wait_player"/>
+        <childnode refid="9193" relation="usage">
+          <edgelabel>kAccountInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="9205">
+        <label>std::map&lt; K, T &gt;</label>
+        <childnode refid="9206" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="9207" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9208">
+        <label>std::set&lt; SeDBTableIndex &gt;</label>
+      </node>
+      <node id="9220">
+        <label>AchieveFinishMgr</label>
+        <link refid="class_achieve_finish_mgr"/>
+        <childnode refid="9221" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9221" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9222" relation="usage">
+          <edgelabel>m_FinishMap</edgelabel>
+        </childnode>
+        <childnode refid="9166" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="9203">
+        <label>SeUserRaceMapHeroBase</label>
+        <link refid="struct_se_user_race_map_hero_base"/>
+      </node>
+      <node id="9168">
+        <label>HeroMgr</label>
+        <link refid="class_hero_mgr"/>
+        <childnode refid="9169" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9169" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9166" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="9170" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="9193">
+        <label>SePtlAccountInfo</label>
+        <link refid="struct_se_ptl_account_info"/>
+      </node>
+      <node id="9237">
+        <label>std::map&lt; K, T &gt;::iterator</label>
+      </node>
+      <node id="9185">
+        <label>SeLeagueInfo</label>
+        <link refid="struct_se_league_info"/>
+        <childnode refid="9173" relation="usage">
+          <edgelabel>kBeginTime</edgelabel>
+          <edgelabel>kEndTime</edgelabel>
+        </childnode>
+      </node>
+      <node id="9204">
+        <label>std::map&lt; DWord, MDBCharRaceHero &gt;</label>
+        <childnode refid="9205" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9209">
+        <label>std::vector&lt; SeItem * &gt;</label>
+        <childnode refid="9210" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9167">
+        <label>SePos2</label>
+        <link refid="struct_se_pos2"/>
+      </node>
+      <node id="9160">
+        <label>std::vector&lt; SeTaskInfo * &gt;</label>
+        <childnode refid="9161" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9162">
+        <label>TaskInfoTable</label>
+        <link refid="struct_task_info_table"/>
+        <childnode refid="9163" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9164" relation="usage">
+          <edgelabel>kNameID</edgelabel>
+          <edgelabel>kDescID</edgelabel>
+          <edgelabel>kName_China</edgelabel>
+          <edgelabel>kTaskDesc</edgelabel>
+          <edgelabel>kTargetDesc</edgelabel>
+        </childnode>
+      </node>
+      <node id="9172">
+        <label>SeCharNexusFriendData</label>
+        <link refid="struct_se_char_nexus_friend_data"/>
+        <childnode refid="9173" relation="usage">
+          <edgelabel>create_time</edgelabel>
+        </childnode>
+      </node>
+      <node id="9194">
+        <label>std::map&lt; int, int &gt;</label>
+      </node>
+      <node id="9233">
+        <label>InfoMgr</label>
+        <link refid="class_info_mgr"/>
+        <childnode refid="9234" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9235" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9234" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9235" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9166" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="9170" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="9199">
+        <label>std::map&lt; DWord, SeDBCharRaceArena * &gt;</label>
+      </node>
+      <node id="9188">
+        <label>SeNetAddr</label>
+        <link refid="struct_se_net_addr"/>
+      </node>
+      <node id="9178">
+        <label>SeAttrUnit</label>
+        <link refid="struct_se_attr_unit"/>
+      </node>
+      <node id="9170">
+        <label>std::map&lt; DWord, SeDBCharHero * &gt;</label>
+      </node>
+      <node id="9165">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="9163">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="9180">
+        <label>SeExternAttrUnit</label>
+        <link refid="struct_se_extern_attr_unit"/>
+      </node>
+      <node id="9175">
+        <label>DataMgr&lt; SeDBCharItem &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="9191">
+        <label>std::map&lt; DWord, SeWaitPlayer * &gt;</label>
+        <childnode refid="9192" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9223">
+        <label>std::vector&lt; SeStatMap * &gt;</label>
+        <childnode refid="9224" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9201">
+        <label>DataMgr&lt; SeDBCharRaceHero &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="9198">
+        <label>DataMgr&lt; SeDBCharRaceArena &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="9159">
+        <label>DataMgr&lt; SeDBCharTask &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="9182">
+        <label>SeMobileInfo</label>
+        <link refid="struct_se_mobile_info"/>
+      </node>
+      <node id="9181">
+        <label>std::map&lt; uint16_t, CItem * &gt;</label>
+        <childnode refid="9177" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9197">
+        <label>RaceMapMgr</label>
+        <link refid="class_race_map_mgr"/>
+        <childnode refid="9198" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9198" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9166" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="9199" relation="usage">
+          <edgelabel>m_race_map</edgelabel>
+        </childnode>
+      </node>
+      <node id="9235">
+        <label>DataMgr&lt; SeDBCharInfo &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="9215">
+        <label>ActiveAvatarMgr</label>
+        <link refid="class_active_avatar_mgr"/>
+        <childnode refid="9216" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9216" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9217" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+        <childnode refid="9166" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="9183">
+        <label>BlockServer</label>
+        <link refid="class_block_server"/>
+        <childnode refid="9184" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9184" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9185" relation="usage">
+          <edgelabel>m_kLeagueInfo</edgelabel>
+        </childnode>
+        <childnode refid="9186" relation="usage">
+          <edgelabel>m_kAllPlayer</edgelabel>
+        </childnode>
+        <childnode refid="9189" relation="usage">
+          <edgelabel>m_kThreadMsgMgr</edgelabel>
+        </childnode>
+        <childnode refid="9191" relation="usage">
+          <edgelabel>m_kWaitPlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="9174">
+        <label>CItemMgr</label>
+        <link refid="class_c_item_mgr"/>
+        <childnode refid="9175" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9175" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9176" relation="usage">
+          <edgelabel>m_idMap</edgelabel>
+        </childnode>
+        <childnode refid="9166" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+        </childnode>
+        <childnode refid="9181" relation="usage">
+          <edgelabel>m_BagMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="9232">
+        <label>SeExChangeInfo</label>
+        <link refid="struct_se_ex_change_info"/>
+        <childnode refid="9173" relation="usage">
+          <edgelabel>kRecordTime</edgelabel>
+        </childnode>
+      </node>
+      <node id="9212">
+        <label>std::unordered_map&lt; DWord, SeCharLadderData * &gt;</label>
+        <childnode refid="9213" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9227">
+        <label>std::map&lt; DWord, SeAchieveScheduleInfo * &gt;</label>
+        <childnode refid="9228" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9217">
+        <label>std::set&lt; DWord &gt;</label>
+      </node>
+      <node id="9236">
+        <label>SeSingleMatchInfo</label>
+        <link refid="struct_se_single_match_info"/>
+      </node>
+      <node id="9225">
+        <label>AchieveScheduleMgr</label>
+        <link refid="class_achieve_schedule_mgr"/>
+        <childnode refid="9226" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9226" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9166" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+        <childnode refid="9227" relation="usage">
+          <edgelabel>m_ScheduleMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="9184">
+        <label>Thread</label>
+      </node>
+      <node id="9226">
+        <label>DataMgr&lt; SeDBCharAchieveSchedule &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="9214">
+        <label>SeLadderRankInfo</label>
+        <link refid="struct_se_ladder_rank_info"/>
+      </node>
+      <node id="9221">
+        <label>DataMgr&lt; SeDBCharAchieveFinish &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="9216">
+        <label>DataMgr&lt; SeDBCharActiveAvatar &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="9171">
+        <label>std::map&lt; DWord, SeCharNexusFriendData * &gt;</label>
+        <childnode refid="9172" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9213">
+        <label>SeCharLadderData</label>
+        <link refid="struct_se_char_ladder_data"/>
+        <childnode refid="9214" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9214" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9169">
+        <label>DataMgr&lt; SeDBCharHero &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="9229">
+        <label>std::map&lt; DWord, VCharMemory &gt;</label>
+        <childnode refid="9230" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9186">
+        <label>std::map&lt; HSock, SeLoginPlayer * &gt;</label>
+        <childnode refid="9187" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9179">
+        <label>SeCiTiao</label>
+        <link refid="struct_se_ci_tiao"/>
+        <childnode refid="9180" relation="usage">
+          <edgelabel>SkillAdd</edgelabel>
+        </childnode>
+      </node>
+      <node id="9234">
+        <label>SeDBCharInfo</label>
+      </node>
+      <node id="9231">
+        <label>std::vector&lt; SeExChangeInfo * &gt;</label>
+        <childnode refid="9232" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9195">
+        <label>EquipSchemaMgr</label>
+        <link refid="class_equip_schema_mgr"/>
+        <childnode refid="9196" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9196" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9166" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="9200">
+        <label>RaceHeroMgr</label>
+        <link refid="class_race_hero_mgr"/>
+        <childnode refid="9201" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9201" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9166" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="9202" relation="usage">
+          <edgelabel>map_arena_race_heros</edgelabel>
+        </childnode>
+        <childnode refid="9204" relation="usage">
+          <edgelabel>map_race_heros</edgelabel>
+        </childnode>
+      </node>
+      <node id="9190">
+        <label>SeMsgData</label>
+        <link refid="struct_se_msg_data"/>
+      </node>
+      <node id="9222">
+        <label>std::map&lt; DWord, std::map&lt; DWord, SeAchieveFinishInfo * &gt; &gt;</label>
+      </node>
+      <node id="9158">
+        <label>TaskMgr</label>
+        <link refid="class_task_mgr"/>
+        <childnode refid="9159" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9159" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9160" relation="usage">
+          <edgelabel>m_akVTask</edgelabel>
+        </childnode>
+        <childnode refid="9166" relation="usage">
+          <edgelabel>m_Player</edgelabel>
+        </childnode>
+      </node>
+      <node id="9219">
+        <label>std::map&lt; SeDBTableIndex, int &gt;</label>
+      </node>
+      <node id="9224">
+        <label>SeStatMap</label>
+        <link refid="struct_se_stat_map"/>
+      </node>
+      <node id="9187">
+        <label>SeLoginPlayer</label>
+        <link refid="struct_se_login_player"/>
+        <childnode refid="9188" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="9164">
+        <label>std::string</label>
+        <childnode refid="9165" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9202">
+        <label>std::map&lt; DWord, SeUserRaceMapHeroBase &gt;</label>
+        <childnode refid="9203" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9211">
+        <label>TownItemTable</label>
+        <link refid="struct_town_item_table"/>
+        <childnode refid="9163" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9164" relation="usage">
+          <edgelabel>kAttachModel1</edgelabel>
+          <edgelabel>kAttachModel2</edgelabel>
+          <edgelabel>kPVPValueA</edgelabel>
+          <edgelabel>ktaozhuangID</edgelabel>
+          <edgelabel>kNameID</edgelabel>
+          <edgelabel>kPVPValueB</edgelabel>
+          <edgelabel>kDesc</edgelabel>
+          <edgelabel>kPVPValueC</edgelabel>
+          <edgelabel>kPVPValueD</edgelabel>
+          <edgelabel>kPVPValueE</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" line="43" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/TaskMgr.h" bodystart="42" bodyend="105"/>
+    <listofallmembers>
+      <member refid="class_task_mgr_1a62a121be19a9ea8ac1f0fd8ed1ee2f33" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>CharTaskInfoInsert</name></member>
+      <member refid="class_task_mgr_1a62a121be19a9ea8ac1f0fd8ed1ee2f33" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>CharTaskInfoInsert</name></member>
+      <member refid="class_task_mgr_1a5107cc9e0ecd71571a370fbcdebd2f97" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>CharTaskInfoUpdate</name></member>
+      <member refid="class_task_mgr_1a5107cc9e0ecd71571a370fbcdebd2f97" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>CharTaskInfoUpdate</name></member>
+      <member refid="class_task_mgr_1a2777106ae2f76bad46dfbd57c582e51b" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>CheckReceiveCondition</name></member>
+      <member refid="class_task_mgr_1a2777106ae2f76bad46dfbd57c582e51b" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>CheckReceiveCondition</name></member>
+      <member refid="class_task_mgr_1a82caad0e9d0bce1641357e9056ee3227" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>CurrTaskInfo</name></member>
+      <member refid="class_task_mgr_1a318ec540eb0c2351e22b9e95f280de9a" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>CurrTaskInfo</name></member>
+      <member refid="class_task_mgr_1a0f438c49280a3a24144aeef71235ff12" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>Finalize</name></member>
+      <member refid="class_task_mgr_1a0f438c49280a3a24144aeef71235ff12" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>Finalize</name></member>
+      <member refid="class_data_mgr_1ab72bd1d8bc0f210c94d235c978fbbd4c" prot="public" virt="virtual"><scope>TaskMgr</scope><name>fixData</name></member>
+      <member refid="class_data_mgr_1ab72bd1d8bc0f210c94d235c978fbbd4c" prot="public" virt="virtual"><scope>TaskMgr</scope><name>fixData</name></member>
+      <member refid="class_task_mgr_1ae21e77867141da9b835f65dc4580a262" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>GetCurrTaskInfo</name></member>
+      <member refid="class_task_mgr_1aac92d57429f0d123bfc0e9245d33fb8f" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>GetCurrTaskInfo</name></member>
+      <member refid="class_task_mgr_1a0b713ce49930e4071b47136dcddba6ce" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>GetDailyTaskNextTask</name></member>
+      <member refid="class_task_mgr_1a0b713ce49930e4071b47136dcddba6ce" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>GetDailyTaskNextTask</name></member>
+      <member refid="class_task_mgr_1a2bc47dbab7475fd8f497fdf9f8d7738f" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>GetMainTaskNextTask</name></member>
+      <member refid="class_task_mgr_1a2bc47dbab7475fd8f497fdf9f8d7738f" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>GetMainTaskNextTask</name></member>
+      <member refid="class_task_mgr_1a679969a45a4e3100dd119f4d2b07e31c" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>GetNextTaskInfo</name></member>
+      <member refid="class_task_mgr_1a679969a45a4e3100dd119f4d2b07e31c" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>GetNextTaskInfo</name></member>
+      <member refid="class_task_mgr_1ae0e6465f650523d0e7cf8840029b38e5" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>getOwner</name></member>
+      <member refid="class_task_mgr_1a44e98922f47e436b70ac9985e88aecd3" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>getOwner</name></member>
+      <member refid="class_task_mgr_1a2632ef8cb9e0c1ee774e0b098ebeabb7" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>GetTaskConditionNum</name></member>
+      <member refid="class_task_mgr_1a389caf8dd63a8cc4ce6a7d49596c1439" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>GetTaskConditionNum</name></member>
+      <member refid="class_task_mgr_1abac2b7ce1997430fe49b2dca3fb6c1dd" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>GetTaskReward</name></member>
+      <member refid="class_task_mgr_1abac2b7ce1997430fe49b2dca3fb6c1dd" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>GetTaskReward</name></member>
+      <member refid="class_task_mgr_1a0dc3930176bbe10525f2beb3eebcbe34" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>GetTaskVInfo</name></member>
+      <member refid="class_task_mgr_1a1d8ceb2b52f6bfd61b2aca73768639f4" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>GetTaskVInfo</name></member>
+      <member refid="class_task_mgr_1a342a99e25f638e680a4a3303ca0b22d7" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>GetWinTaskNextTask</name></member>
+      <member refid="class_task_mgr_1a342a99e25f638e680a4a3303ca0b22d7" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>GetWinTaskNextTask</name></member>
+      <member refid="class_task_mgr_1aa9f5fd7e69b6c7c85e9d75f18ef92978" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>InitPlayerVTaskInfo</name></member>
+      <member refid="class_task_mgr_1aa9f5fd7e69b6c7c85e9d75f18ef92978" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>InitPlayerVTaskInfo</name></member>
+      <member refid="class_task_mgr_1a1cadcab5520e56de81d10a050c7d8e8b" prot="public" virt="virtual"><scope>TaskMgr</scope><name>loadData</name></member>
+      <member refid="class_task_mgr_1a1cadcab5520e56de81d10a050c7d8e8b" prot="public" virt="virtual"><scope>TaskMgr</scope><name>loadData</name></member>
+      <member refid="class_task_mgr_1a98036e8402c00fba3a54dcc393cf5355" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>m_akVTask</name></member>
+      <member refid="class_task_mgr_1a9645123daa6354cfc8bf566d480f7639" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>m_Player</name></member>
+      <member refid="class_task_mgr_1a7c4d31d84c0087d80eecc5a28c965a96" prot="private" virt="non-virtual"><scope>TaskMgr</scope><name>m_TemData</name></member>
+      <member refid="class_task_mgr_1a613f3e9b41717ae81aa967ea63a6695e" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>QueryTaskInfo</name></member>
+      <member refid="class_task_mgr_1a613f3e9b41717ae81aa967ea63a6695e" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>QueryTaskInfo</name></member>
+      <member refid="class_task_mgr_1af70c862090441288d1d9c3c9ee821d71" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>RefreshTask</name></member>
+      <member refid="class_task_mgr_1af70c862090441288d1d9c3c9ee821d71" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>RefreshTask</name></member>
+      <member refid="class_task_mgr_1a0492a0574c2410b015c981467eeb6afd" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>RefreshTaskByEvent</name></member>
+      <member refid="class_task_mgr_1a0492a0574c2410b015c981467eeb6afd" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>RefreshTaskByEvent</name></member>
+      <member refid="class_task_mgr_1ac32da102f6a03b2aa8cfb8bc54602810" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>ResetTask</name></member>
+      <member refid="class_task_mgr_1ac32da102f6a03b2aa8cfb8bc54602810" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>ResetTask</name></member>
+      <member refid="class_task_mgr_1ac2a56ec4804bb04827ce5156ba416e15" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>SettleTask</name></member>
+      <member refid="class_task_mgr_1ac2a56ec4804bb04827ce5156ba416e15" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>SettleTask</name></member>
+      <member refid="class_task_mgr_1a7f2e742302f7a0e9f799718b04455165" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>TaskMgr</name></member>
+      <member refid="class_task_mgr_1a7f2e742302f7a0e9f799718b04455165" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>TaskMgr</name></member>
+      <member refid="class_task_mgr_1ab0051ec37696b6a8115c9e1c605dff57" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>~TaskMgr</name></member>
+      <member refid="class_task_mgr_1ab0051ec37696b6a8115c9e1c605dff57" prot="public" virt="non-virtual"><scope>TaskMgr</scope><name>~TaskMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

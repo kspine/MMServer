@@ -1,0 +1,822 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_watch_server_2_src_2race_record_save_thread_8cpp" kind="file">
+    <compoundname>raceRecordSaveThread.cpp</compoundname>
+    <includes refid="_watch_server_2_src_2race_record_save_thread_8h" local="yes">raceRecordSaveThread.h</includes>
+    <includes refid="_watch_server_def_8h" local="yes">WatchServerDef.h</includes>
+    <includes refid="_watch_server_race_def_8h" local="yes">WatchServerRaceDef.h</includes>
+    <includes refid="_watch_server_8h" local="yes">WatchServer.h</includes>
+    <includes refid="_se_tool_8h" local="yes">SeTool.h</includes>
+    <incdepgraph>
+      <node id="47767">
+        <label>SeCommStream.h</label>
+        <link refid="_se_comm_stream_8h"/>
+        <childnode refid="47753" relation="include">
+        </childnode>
+        <childnode refid="47747" relation="include">
+        </childnode>
+      </node>
+      <node id="47734">
+        <label>list</label>
+      </node>
+      <node id="47728">
+        <label>locale</label>
+      </node>
+      <node id="47768">
+        <label>SeCWCSStream.h</label>
+        <link refid="_se_c_w_c_s_stream_8h"/>
+        <childnode refid="47753" relation="include">
+        </childnode>
+        <childnode refid="47762" relation="include">
+        </childnode>
+        <childnode refid="47767" relation="include">
+        </childnode>
+      </node>
+      <node id="47799">
+        <label>SeWCSCSend.inl</label>
+        <link refid="_se_w_c_s_c_send_8inl"/>
+      </node>
+      <node id="47738">
+        <label>queue</label>
+      </node>
+      <node id="47732">
+        <label>limits</label>
+      </node>
+      <node id="47747">
+        <label>SePtlCommDefine.h</label>
+        <link refid="_se_ptl_comm_define_8h"/>
+      </node>
+      <node id="47746">
+        <label>SeMemPool.h</label>
+        <link refid="_se_mem_pool_8h"/>
+        <childnode refid="47713" relation="include">
+        </childnode>
+        <childnode refid="47741" relation="include">
+        </childnode>
+        <childnode refid="47720" relation="include">
+        </childnode>
+      </node>
+      <node id="47715">
+        <label>windows.h</label>
+      </node>
+      <node id="47720">
+        <label>assert.h</label>
+      </node>
+      <node id="47775">
+        <label>SeRaceCmd.h</label>
+        <link refid="_se_race_cmd_8h"/>
+        <childnode refid="47745" relation="include">
+        </childnode>
+        <childnode refid="47753" relation="include">
+        </childnode>
+      </node>
+      <node id="47785">
+        <label>SeTimer.h</label>
+        <link refid="_se_timer_8h"/>
+      </node>
+      <node id="47710">
+        <label>raceRecordSaveThread.h</label>
+        <link refid="_watch_server_2_src_2race_record_save_thread_8h"/>
+        <childnode refid="47711" relation="include">
+        </childnode>
+        <childnode refid="47712" relation="include">
+        </childnode>
+        <childnode refid="47738" relation="include">
+        </childnode>
+      </node>
+      <node id="47759">
+        <label>SePtl_WCS_To_RS.h</label>
+        <link refid="_se_ptl___w_c_s___to___r_s_8h"/>
+        <childnode refid="47753" relation="include">
+        </childnode>
+      </node>
+      <node id="47718">
+        <label>stdlib.h</label>
+      </node>
+      <node id="47741">
+        <label>EsLock.h</label>
+      </node>
+      <node id="47742">
+        <label>WatchServerDef.h</label>
+        <link refid="_watch_server_def_8h"/>
+        <childnode refid="47743" relation="include">
+        </childnode>
+        <childnode refid="47744" relation="include">
+        </childnode>
+        <childnode refid="47745" relation="include">
+        </childnode>
+        <childnode refid="47746" relation="include">
+        </childnode>
+        <childnode refid="47747" relation="include">
+        </childnode>
+        <childnode refid="47748" relation="include">
+        </childnode>
+        <childnode refid="47752" relation="include">
+        </childnode>
+        <childnode refid="47755" relation="include">
+        </childnode>
+        <childnode refid="47756" relation="include">
+        </childnode>
+        <childnode refid="47757" relation="include">
+        </childnode>
+        <childnode refid="47758" relation="include">
+        </childnode>
+        <childnode refid="47759" relation="include">
+        </childnode>
+        <childnode refid="47760" relation="include">
+        </childnode>
+        <childnode refid="47761" relation="include">
+        </childnode>
+        <childnode refid="47762" relation="include">
+        </childnode>
+        <childnode refid="47763" relation="include">
+        </childnode>
+        <childnode refid="47764" relation="include">
+        </childnode>
+        <childnode refid="47765" relation="include">
+        </childnode>
+        <childnode refid="47766" relation="include">
+        </childnode>
+        <childnode refid="47768" relation="include">
+        </childnode>
+      </node>
+      <node id="47779">
+        <label>SePtlStream.h</label>
+        <link refid="_se_ptl_stream_8h"/>
+        <childnode refid="47777" relation="include">
+        </childnode>
+        <childnode refid="47753" relation="include">
+        </childnode>
+        <childnode refid="47775" relation="include">
+        </childnode>
+      </node>
+      <node id="47722">
+        <label>cmath</label>
+      </node>
+      <node id="47797">
+        <label>SeTWCMSProcess.inl</label>
+        <link refid="_se_t_w_c_m_s_process_8inl"/>
+      </node>
+      <node id="47711">
+        <label>EsThread.h</label>
+      </node>
+      <node id="47731">
+        <label>string</label>
+      </node>
+      <node id="47782">
+        <label>SeFormula.h</label>
+        <link refid="_se_formula_8h"/>
+        <childnode refid="47713" relation="include">
+        </childnode>
+        <childnode refid="47753" relation="include">
+        </childnode>
+      </node>
+      <node id="47758">
+        <label>SePtl_RS_To_WCS.h</label>
+        <link refid="_se_ptl___r_s___to___w_c_s_8h"/>
+        <childnode refid="47753" relation="include">
+        </childnode>
+      </node>
+      <node id="47735">
+        <label>map</label>
+      </node>
+      <node id="47772">
+        <label>SeFileLog.h</label>
+        <link refid="_se_file_log_8h"/>
+        <childnode refid="47773" relation="include">
+        </childnode>
+        <childnode refid="47724" relation="include">
+        </childnode>
+        <childnode refid="47741" relation="include">
+        </childnode>
+      </node>
+      <node id="47717">
+        <label>conio.h</label>
+      </node>
+      <node id="47764">
+        <label>SePtl_NS_To_WCMS.h</label>
+        <link refid="_se_ptl___n_s___to___w_c_m_s_8h"/>
+        <childnode refid="47753" relation="include">
+        </childnode>
+      </node>
+      <node id="47754">
+        <label>SePtlRandomNumDef.h</label>
+        <link refid="_se_ptl_random_num_def_8h"/>
+      </node>
+      <node id="47716">
+        <label>direct.h</label>
+      </node>
+      <node id="47793">
+        <label>SeWCSSWCSSend.inl</label>
+        <link refid="_se_w_c_s_s_w_c_s_send_8inl"/>
+      </node>
+      <node id="47790">
+        <label>SeWCMSWCSProcess.inl</label>
+        <link refid="_se_w_c_m_s_w_c_s_process_8inl"/>
+      </node>
+      <node id="47777">
+        <label>SeNetStream.h</label>
+        <link refid="_se_net_stream_8h"/>
+        <childnode refid="47713" relation="include">
+        </childnode>
+        <childnode refid="47743" relation="include">
+        </childnode>
+        <childnode refid="47778" relation="include">
+        </childnode>
+      </node>
+      <node id="47729">
+        <label>fstream</label>
+      </node>
+      <node id="47769">
+        <label>WatchServerRaceDef.h</label>
+        <link refid="_watch_server_race_def_8h"/>
+        <childnode refid="47713" relation="include">
+        </childnode>
+        <childnode refid="47770" relation="include">
+        </childnode>
+        <childnode refid="47771" relation="include">
+        </childnode>
+        <childnode refid="47772" relation="include">
+        </childnode>
+        <childnode refid="47712" relation="include">
+        </childnode>
+        <childnode refid="47774" relation="include">
+        </childnode>
+        <childnode refid="47777" relation="include">
+        </childnode>
+        <childnode refid="47779" relation="include">
+        </childnode>
+        <childnode refid="47780" relation="include">
+        </childnode>
+        <childnode refid="47781" relation="include">
+        </childnode>
+        <childnode refid="47782" relation="include">
+        </childnode>
+        <childnode refid="47746" relation="include">
+        </childnode>
+        <childnode refid="47744" relation="include">
+        </childnode>
+      </node>
+      <node id="47749">
+        <label>SeTool.h</label>
+        <link refid="_se_tool_8h"/>
+        <childnode refid="47713" relation="include">
+        </childnode>
+        <childnode refid="47743" relation="include">
+        </childnode>
+        <childnode refid="47750" relation="include">
+        </childnode>
+        <childnode refid="47745" relation="include">
+        </childnode>
+        <childnode refid="47726" relation="include">
+        </childnode>
+        <childnode refid="47751" relation="include">
+        </childnode>
+      </node>
+      <node id="47798">
+        <label>SeWCMSTSend.inl</label>
+        <link refid="_se_w_c_m_s_t_send_8inl"/>
+      </node>
+      <node id="47794">
+        <label>SeWCSWCSSProcess.inl</label>
+        <link refid="_se_w_c_s_w_c_s_s_process_8inl"/>
+      </node>
+      <node id="47714">
+        <label>winsock2.h</label>
+      </node>
+      <node id="47762">
+        <label>SePtl_Cl_To_WCS.h</label>
+        <link refid="_se_ptl___c_l___to___w_c_s_8h"/>
+        <childnode refid="47753" relation="include">
+        </childnode>
+        <childnode refid="47747" relation="include">
+        </childnode>
+      </node>
+      <node id="47752">
+        <label>SePtl_WCS_To_WCMS.h</label>
+        <link refid="_se_ptl___w_c_s___to___w_c_m_s_8h"/>
+        <childnode refid="47753" relation="include">
+        </childnode>
+      </node>
+      <node id="47780">
+        <label>SeServerMainDef.h</label>
+        <link refid="_se_server_main_def_8h"/>
+        <childnode refid="47713" relation="include">
+        </childnode>
+      </node>
+      <node id="47745">
+        <label>TeMisc.h</label>
+        <link refid="_te_misc_8h"/>
+        <childnode refid="47725" relation="include">
+        </childnode>
+      </node>
+      <node id="47796">
+        <label>SeCWCSProcess.inl</label>
+        <link refid="_se_c_w_c_s_process_8inl"/>
+      </node>
+      <node id="47801">
+        <label>SeWCMSNSend.inl</label>
+        <link refid="_se_w_c_m_s_n_send_8inl"/>
+      </node>
+      <node id="47757">
+        <label>SePtl_WCS_To_WCSS.h</label>
+        <link refid="_se_ptl___w_c_s___to___w_c_s_s_8h"/>
+        <childnode refid="47753" relation="include">
+        </childnode>
+      </node>
+      <node id="47712">
+        <label>SeThreadMsg.h</label>
+        <link refid="_se_thread_msg_8h"/>
+        <childnode refid="47713" relation="include">
+        </childnode>
+        <childnode refid="47741" relation="include">
+        </childnode>
+      </node>
+      <node id="47748">
+        <label>SeServerDefine.h</label>
+        <link refid="_se_server_define_8h"/>
+        <childnode refid="47743" relation="include">
+        </childnode>
+        <childnode refid="47744" relation="include">
+        </childnode>
+        <childnode refid="47749" relation="include">
+        </childnode>
+      </node>
+      <node id="47781">
+        <label>SeSessionMgr.h</label>
+        <link refid="_se_session_mgr_8h"/>
+        <childnode refid="47713" relation="include">
+        </childnode>
+        <childnode refid="47746" relation="include">
+        </childnode>
+      </node>
+      <node id="47725">
+        <label>string.h</label>
+      </node>
+      <node id="47761">
+        <label>SePtl_WCMS_To_TS.h</label>
+        <link refid="_se_ptl___w_c_m_s___to___t_s_8h"/>
+        <childnode refid="47753" relation="include">
+        </childnode>
+      </node>
+      <node id="47800">
+        <label>SeNWCMSProcess.inl</label>
+        <link refid="_se_n_w_c_m_s_process_8inl"/>
+      </node>
+      <node id="47770">
+        <label>SeConfig.h</label>
+        <link refid="_se_config_8h"/>
+        <childnode refid="47743" relation="include">
+        </childnode>
+      </node>
+      <node id="47723">
+        <label>ctime</label>
+      </node>
+      <node id="47744">
+        <label>TeNetMgr.h</label>
+      </node>
+      <node id="47733">
+        <label>vector</label>
+      </node>
+      <node id="47786">
+        <label>SeRWCSProcess.inl</label>
+        <link refid="_se_r_w_c_s_process_8inl"/>
+      </node>
+      <node id="47739">
+        <label>new</label>
+      </node>
+      <node id="47753">
+        <label>SePtlDefine.h</label>
+        <link refid="_se_ptl_define_8h"/>
+        <childnode refid="47713" relation="include">
+        </childnode>
+        <childnode refid="47743" relation="include">
+        </childnode>
+        <childnode refid="47749" relation="include">
+        </childnode>
+        <childnode refid="47754" relation="include">
+        </childnode>
+        <childnode refid="47747" relation="include">
+        </childnode>
+        <childnode refid="47746" relation="include">
+        </childnode>
+      </node>
+      <node id="47743">
+        <label>SeShareDef.h</label>
+        <link refid="_se_share_def_8h"/>
+        <childnode refid="47713" relation="include">
+        </childnode>
+      </node>
+      <node id="47730">
+        <label>sstream</label>
+      </node>
+      <node id="47751">
+        <label>EsString.h</label>
+      </node>
+      <node id="47792">
+        <label>SeWCSSWCSProcess.inl</label>
+        <link refid="_se_w_c_s_s_w_c_s_process_8inl"/>
+      </node>
+      <node id="47784">
+        <label>SeVirtConnMgr.h</label>
+        <link refid="_se_virt_conn_mgr_8h"/>
+        <childnode refid="47743" relation="include">
+        </childnode>
+        <childnode refid="47744" relation="include">
+        </childnode>
+        <childnode refid="47753" relation="include">
+        </childnode>
+        <childnode refid="47785" relation="include">
+        </childnode>
+      </node>
+      <node id="47713">
+        <label>SeInclude.h</label>
+        <link refid="_se_include_8h"/>
+        <childnode refid="47714" relation="include">
+        </childnode>
+        <childnode refid="47715" relation="include">
+        </childnode>
+        <childnode refid="47716" relation="include">
+        </childnode>
+        <childnode refid="47717" relation="include">
+        </childnode>
+        <childnode refid="47718" relation="include">
+        </childnode>
+        <childnode refid="47719" relation="include">
+        </childnode>
+        <childnode refid="47720" relation="include">
+        </childnode>
+        <childnode refid="47721" relation="include">
+        </childnode>
+        <childnode refid="47722" relation="include">
+        </childnode>
+        <childnode refid="47723" relation="include">
+        </childnode>
+        <childnode refid="47724" relation="include">
+        </childnode>
+        <childnode refid="47725" relation="include">
+        </childnode>
+        <childnode refid="47726" relation="include">
+        </childnode>
+        <childnode refid="47727" relation="include">
+        </childnode>
+        <childnode refid="47728" relation="include">
+        </childnode>
+        <childnode refid="47729" relation="include">
+        </childnode>
+        <childnode refid="47730" relation="include">
+        </childnode>
+        <childnode refid="47731" relation="include">
+        </childnode>
+        <childnode refid="47732" relation="include">
+        </childnode>
+        <childnode refid="47733" relation="include">
+        </childnode>
+        <childnode refid="47734" relation="include">
+        </childnode>
+        <childnode refid="47735" relation="include">
+        </childnode>
+        <childnode refid="47736" relation="include">
+        </childnode>
+        <childnode refid="47737" relation="include">
+        </childnode>
+        <childnode refid="47738" relation="include">
+        </childnode>
+        <childnode refid="47739" relation="include">
+        </childnode>
+        <childnode refid="47740" relation="include">
+        </childnode>
+      </node>
+      <node id="47773">
+        <label>time.h</label>
+      </node>
+      <node id="47719">
+        <label>math.h</label>
+      </node>
+      <node id="47763">
+        <label>SePtl_WCS_To_CL.h</label>
+        <link refid="_se_ptl___w_c_s___to___c_l_8h"/>
+        <childnode refid="47753" relation="include">
+        </childnode>
+        <childnode refid="47747" relation="include">
+        </childnode>
+      </node>
+      <node id="47726">
+        <label>EsType.h</label>
+      </node>
+      <node id="47709">
+        <label>WatchServer/Src/raceRecordSaveThread.cpp</label>
+        <link refid="WatchServer/Src/raceRecordSaveThread.cpp"/>
+        <childnode refid="47710" relation="include">
+        </childnode>
+        <childnode refid="47742" relation="include">
+        </childnode>
+        <childnode refid="47769" relation="include">
+        </childnode>
+        <childnode refid="47783" relation="include">
+        </childnode>
+        <childnode refid="47749" relation="include">
+        </childnode>
+      </node>
+      <node id="47721">
+        <label>cctype</label>
+      </node>
+      <node id="47750">
+        <label>SeToolTemplate.inl</label>
+        <link refid="_se_tool_template_8inl"/>
+      </node>
+      <node id="47789">
+        <label>SeWCSWCMSSend.inl</label>
+        <link refid="_se_w_c_s_w_c_m_s_send_8inl"/>
+      </node>
+      <node id="47736">
+        <label>unordered_map</label>
+      </node>
+      <node id="47791">
+        <label>SeWCMSWCSSend.inl</label>
+        <link refid="_se_w_c_m_s_w_c_s_send_8inl"/>
+      </node>
+      <node id="47755">
+        <label>SePtl_WCMS_To_WCS.h</label>
+        <link refid="_se_ptl___w_c_m_s___to___w_c_s_8h"/>
+        <childnode refid="47753" relation="include">
+        </childnode>
+      </node>
+      <node id="47740">
+        <label>SeDefine.h</label>
+        <link refid="_se_define_8h"/>
+      </node>
+      <node id="47783">
+        <label>WatchServer.h</label>
+        <link refid="_watch_server_8h"/>
+        <childnode refid="47713" relation="include">
+        </childnode>
+        <childnode refid="47770" relation="include">
+        </childnode>
+        <childnode refid="47771" relation="include">
+        </childnode>
+        <childnode refid="47772" relation="include">
+        </childnode>
+        <childnode refid="47712" relation="include">
+        </childnode>
+        <childnode refid="47774" relation="include">
+        </childnode>
+        <childnode refid="47777" relation="include">
+        </childnode>
+        <childnode refid="47779" relation="include">
+        </childnode>
+        <childnode refid="47780" relation="include">
+        </childnode>
+        <childnode refid="47782" relation="include">
+        </childnode>
+        <childnode refid="47744" relation="include">
+        </childnode>
+        <childnode refid="47742" relation="include">
+        </childnode>
+        <childnode refid="47784" relation="include">
+        </childnode>
+        <childnode refid="47786" relation="include">
+        </childnode>
+        <childnode refid="47787" relation="include">
+        </childnode>
+        <childnode refid="47788" relation="include">
+        </childnode>
+        <childnode refid="47789" relation="include">
+        </childnode>
+        <childnode refid="47790" relation="include">
+        </childnode>
+        <childnode refid="47791" relation="include">
+        </childnode>
+        <childnode refid="47792" relation="include">
+        </childnode>
+        <childnode refid="47793" relation="include">
+        </childnode>
+        <childnode refid="47794" relation="include">
+        </childnode>
+        <childnode refid="47795" relation="include">
+        </childnode>
+        <childnode refid="47796" relation="include">
+        </childnode>
+        <childnode refid="47797" relation="include">
+        </childnode>
+        <childnode refid="47798" relation="include">
+        </childnode>
+        <childnode refid="47799" relation="include">
+        </childnode>
+        <childnode refid="47800" relation="include">
+        </childnode>
+        <childnode refid="47801" relation="include">
+        </childnode>
+      </node>
+      <node id="47771">
+        <label>SeServerTool.h</label>
+        <link refid="_se_server_tool_8h"/>
+        <childnode refid="47713" relation="include">
+        </childnode>
+        <childnode refid="47749" relation="include">
+        </childnode>
+        <childnode refid="47753" relation="include">
+        </childnode>
+      </node>
+      <node id="47756">
+        <label>SePtl_WCSS_To_WCS.h</label>
+        <link refid="_se_ptl___w_c_s_s___to___w_c_s_8h"/>
+        <childnode refid="47753" relation="include">
+        </childnode>
+      </node>
+      <node id="47760">
+        <label>SePtl_TS_To_WCMS.h</label>
+        <link refid="_se_ptl___t_s___to___w_c_m_s_8h"/>
+        <childnode refid="47753" relation="include">
+        </childnode>
+      </node>
+      <node id="47787">
+        <label>SeWCSRSend.inl</label>
+        <link refid="_se_w_c_s_r_send_8inl"/>
+      </node>
+      <node id="47765">
+        <label>SePtl_WCMS_To_NS.h</label>
+        <link refid="_se_ptl___w_c_m_s___to___n_s_8h"/>
+        <childnode refid="47753" relation="include">
+        </childnode>
+      </node>
+      <node id="47778">
+        <label>type_traits</label>
+      </node>
+      <node id="47737">
+        <label>set</label>
+      </node>
+      <node id="47727">
+        <label>algorithm</label>
+      </node>
+      <node id="47766">
+        <label>SeWCSCStream.h</label>
+        <link refid="_se_w_c_s_c_stream_8h"/>
+        <childnode refid="47753" relation="include">
+        </childnode>
+        <childnode refid="47763" relation="include">
+        </childnode>
+        <childnode refid="47767" relation="include">
+        </childnode>
+      </node>
+      <node id="47788">
+        <label>SeWCSWCMSProcess.inl</label>
+        <link refid="_se_w_c_s_w_c_m_s_process_8inl"/>
+      </node>
+      <node id="47724">
+        <label>stdio.h</label>
+      </node>
+      <node id="47774">
+        <label>SeRaceRecord.h</label>
+        <link refid="_se_race_record_8h"/>
+        <childnode refid="47713" relation="include">
+        </childnode>
+        <childnode refid="47775" relation="include">
+        </childnode>
+        <childnode refid="47776" relation="include">
+        </childnode>
+      </node>
+      <node id="47795">
+        <label>SeWCSWCSSSend.inl</label>
+        <link refid="_se_w_c_s_w_c_s_s_send_8inl"/>
+      </node>
+      <node id="47776">
+        <label>SeCommon.h</label>
+        <link refid="_se_common_8h"/>
+        <childnode refid="47731" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespace_watch_server">WatchServer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_watch_server_2_src_2race_record_save_thread_8h" kindref="compound">raceRecordSaveThread.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_watch_server_def_8h" kindref="compound">WatchServerDef.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_watch_server_race_def_8h" kindref="compound">WatchServerRaceDef.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_watch_server_8h" kindref="compound">WatchServer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_tool_8h" kindref="compound">SeTool.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">WatchServer</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="class_watch_server_1_1_se_race_record_save_thread_1a9a943a128a29a7a64888cb0e24bef424" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a9a943a128a29a7a64888cb0e24bef424" kindref="member">SeRaceRecordSaveThread::SeRaceRecordSaveThread</ref>(<ref refid="class_watch_server_1_1_c_watch_server" kindref="compound">CWatchServer</ref>*<sp/>owner,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>logciVersion)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:m_pkOwner(owner)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>m_uLogicVersion(logciVersion)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a8340c770693dd7ef30ee91108002e399" kindref="member">m_bRun</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_watch_server_1_1_se_race_record_save_thread_1ac3e249da0c4a38f4484b8b64e6aceb0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1ac3e249da0c4a38f4484b8b64e6aceb0c" kindref="member">SeRaceRecordSaveThread::~SeRaceRecordSaveThread</ref>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_watch_server_1_1_se_race_record_save_thread_1a15e230a438d9545018bdaea1a4b247e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a15e230a438d9545018bdaea1a4b247e5" kindref="member">SeRaceRecordSaveThread::PushTask</ref>(</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/><ref refid="struct_watch_server_1_1_se_race" kindref="compound">SeRace</ref>*<sp/>pTask)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1ade8f039509cf860bf2bb907e4b494d8b" kindref="member">m_pkQueueLock</ref>-&gt;Lock();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a0f1f7e0da49168875adf7cf8081d2a7c" kindref="member">m_qSaveQueue</ref>.push(pTask);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1ade8f039509cf860bf2bb907e4b494d8b" kindref="member">m_pkQueueLock</ref>-&gt;UnLock();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_watch_server_1_1_se_race_record_save_thread_1a195f97d5828265248e79642ee080e7b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a195f97d5828265248e79642ee080e7b9" kindref="member">SeRaceRecordSaveThread::Initialize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1ade8f039509cf860bf2bb907e4b494d8b" kindref="member">m_pkQueueLock</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Es::NormalLock;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a8340c770693dd7ef30ee91108002e399" kindref="member">m_bRun</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Start();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_watch_server_1_1_se_race_record_save_thread_1a5ed1b2df07fda6e520bb78ab5f598db6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a5ed1b2df07fda6e520bb78ab5f598db6" kindref="member">SeRaceRecordSaveThread::Finialize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a8340c770693dd7ef30ee91108002e399" kindref="member">m_bRun</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<ref refid="class_watch_server_1_1_se_race_record_save_thread_1a0f1f7e0da49168875adf7cf8081d2a7c" kindref="member">m_qSaveQueue</ref>.empty())</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_watch_server_1_1_se_race" kindref="compound">SeRace</ref>*<sp/>pkRace<sp/>=<sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a0f1f7e0da49168875adf7cf8081d2a7c" kindref="member">m_qSaveQueue</ref>.front();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a0f1f7e0da49168875adf7cf8081d2a7c" kindref="member">m_qSaveQueue</ref>.pop();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" kindref="member">saveRecord</ref>(pkRace);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Stop();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_watch_server_1_1_se_race_record_save_thread_1a79535d2f4037275cc7eee46c39e3c851" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a79535d2f4037275cc7eee46c39e3c851" kindref="member">SeRaceRecordSaveThread::DoWork</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iCount<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iMaxCounts<sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="class_watch_server_1_1_se_race_record_save_thread_1a8340c770693dd7ef30ee91108002e399" kindref="member">m_bRun</ref>)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iCounts<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_watch_server_1_1_se_race_record_save_thread_1a0f1f7e0da49168875adf7cf8081d2a7c" kindref="member">m_qSaveQueue</ref>.empty()<sp/>&amp;&amp;<sp/>iCounts<sp/>&lt;<sp/>iMaxCounts)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1ade8f039509cf860bf2bb907e4b494d8b" kindref="member">m_pkQueueLock</ref>-&gt;Lock();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_watch_server_1_1_se_race" kindref="compound">SeRace</ref>*<sp/>pkRace<sp/>=<sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a0f1f7e0da49168875adf7cf8081d2a7c" kindref="member">m_qSaveQueue</ref>.front();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a0f1f7e0da49168875adf7cf8081d2a7c" kindref="member">m_qSaveQueue</ref>.pop();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1ade8f039509cf860bf2bb907e4b494d8b" kindref="member">m_pkQueueLock</ref>-&gt;UnLock();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" kindref="member">saveRecord</ref>(pkRace);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1ade8f039509cf860bf2bb907e4b494d8b" kindref="member">m_pkQueueLock</ref>-&gt;Lock();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a7b48142c94f0aa71d79e5dbd7f43ea24" kindref="member">m_qFinishQueue</ref>.push(pkRace);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1ade8f039509cf860bf2bb907e4b494d8b" kindref="member">m_pkQueueLock</ref>-&gt;UnLock();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++iCounts;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sleep(1);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="class_watch_server_1_1_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" kindref="member">SeRaceRecordSaveThread::saveRecord</ref>(</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/><ref refid="struct_watch_server_1_1_se_race" kindref="compound">SeRace</ref>*<sp/>pTask)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acFilePath[512]<sp/>=<sp/>{<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>==<sp/>strlen(<ref refid="_watch_server_8cpp_1a0fe0b3e7097985c9686aa65a22e14299" kindref="member">g_kWatchServer</ref>.<ref refid="class_watch_server_1_1_c_watch_server_1a5ff7e15a13be2c896dd90f66d7ce602f" kindref="member">GetWatchConfig</ref>().<ref refid="struct_watch_server_1_1_se_watch_config_1a8f69980b974838e64e22525425919fe9" kindref="member">acGameRecordFilePath</ref>))</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_mkdir(</highlight><highlight class="stringliteral">&quot;./AutoRecord&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" kindref="member">SPrintf</ref>(acFilePath,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acFilePath),<sp/></highlight><highlight class="stringliteral">&quot;./AutoRecord/%s.rcd&quot;</highlight><highlight class="normal">,<sp/><ref refid="_se_tool_8h_1adbd57b0a2e2b5bccf6ba29ea002839e8" kindref="member">GetMD52Str</ref>(pTask-&gt;<ref refid="struct_watch_server_1_1_se_race_1aaec9fdff5d8b88f75e3ce882cf2e670c" kindref="member">kRaceID</ref>.<ref refid="struct_te_m_d5_1a4a87587ff2453882ccfb8a1fe64b9b94" kindref="member">abyMD5</ref>));</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" kindref="member">SPrintf</ref>(acFilePath,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acFilePath),<sp/></highlight><highlight class="stringliteral">&quot;%s/%s.rcd&quot;</highlight><highlight class="normal">,<sp/><ref refid="_watch_server_8cpp_1a0fe0b3e7097985c9686aa65a22e14299" kindref="member">g_kWatchServer</ref>.<ref refid="class_watch_server_1_1_c_watch_server_1a5ff7e15a13be2c896dd90f66d7ce602f" kindref="member">GetWatchConfig</ref>().<ref refid="struct_watch_server_1_1_se_watch_config_1a8f69980b974838e64e22525425919fe9" kindref="member">acGameRecordFilePath</ref>,<sp/><ref refid="_se_tool_8h_1adbd57b0a2e2b5bccf6ba29ea002839e8" kindref="member">GetMD52Str</ref>(pTask-&gt;<ref refid="struct_watch_server_1_1_se_race_1aaec9fdff5d8b88f75e3ce882cf2e670c" kindref="member">kRaceID</ref>.<ref refid="struct_te_m_d5_1a4a87587ff2453882ccfb8a1fe64b9b94" kindref="member">abyMD5</ref>));</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pTask-&gt;<ref refid="struct_watch_server_1_1_se_race_1ab7b12555df05ac67c1b9d9daf510e6d6" kindref="member">kSvrModeRecord</ref>.<ref refid="class_se_race_record_1a8371775734b57d065293a4723b6416ea" kindref="member">SaveToFile</ref>(acFilePath,<sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a39cc9876380046665bc5aeb420346369" kindref="member">m_uLogicVersion</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(0<sp/>==<sp/>strlen(g_kWatchServer.GetWatchConfig().acGameRecordFilePath))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPrintf(acFilePath,<sp/>sizeof(acFilePath),<sp/>&quot;./AutoRecord/%s_Command.rcd&quot;,<sp/>GetMD52Str(pTask-&gt;kRaceID.abyMD5));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPrintf(acFilePath,<sp/>sizeof(acFilePath),<sp/>&quot;%s/%s_Command.rcd&quot;,<sp/>g_kWatchServer.GetWatchConfig().acGameRecordFilePath,<sp/>GetMD52Str(pTask-&gt;kRaceID.abyMD5));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>SeLogInfo(&quot;Server<sp/>Record<sp/>%s&quot;,<sp/>acFilePath);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>pTask-&gt;kRecord.SaveToFile(acFilePath,<sp/>m_uLogicVersion);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="class_watch_server_1_1_se_race_record_save_thread_1a9d97a8490bfd14b5ecd36dcb6638b706" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a9d97a8490bfd14b5ecd36dcb6638b706" kindref="member">SeRaceRecordSaveThread::Update</ref>()</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<ref refid="class_watch_server_1_1_se_race_record_save_thread_1a7b48142c94f0aa71d79e5dbd7f43ea24" kindref="member">m_qFinishQueue</ref>.empty())</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1ade8f039509cf860bf2bb907e4b494d8b" kindref="member">m_pkQueueLock</ref>-&gt;Lock();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_watch_server_1_1_se_race" kindref="compound">SeRace</ref>*<sp/>pkRace<sp/>=<sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a7b48142c94f0aa71d79e5dbd7f43ea24" kindref="member">m_qFinishQueue</ref>.front();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1a7b48142c94f0aa71d79e5dbd7f43ea24" kindref="member">m_qFinishQueue</ref>.pop();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_se_race_record_save_thread_1ade8f039509cf860bf2bb907e4b494d8b" kindref="member">m_pkQueueLock</ref>-&gt;UnLock();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//这里现在只需要删除掉比赛.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SeRace::DEL(pkRace);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.cpp"/>
+  </compounddef>
+</doxygen>

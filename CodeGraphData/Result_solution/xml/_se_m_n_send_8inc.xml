@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_se_m_n_send_8inc" kind="file">
+    <compoundname>SeMNSend.inc</compoundname>
+    <includedby refid="_src_2_se_m_n_send_8cpp" local="yes">MatchServer/Src/SeMNSend.cpp</includedby>
+    <includedby refid="src_2_se_m_n_send_8cpp" local="yes">MatchServer/src/SeMNSend.cpp</includedby>
+    <invincdepgraph>
+      <node id="126856">
+        <label>MatchServer/src/SeMNSend.cpp</label>
+        <link refid="src_2_se_m_n_send_8cpp"/>
+      </node>
+      <node id="126855">
+        <label>MatchServer/Src/SeMNSend.cpp</label>
+        <link refid="_src_2_se_m_n_send_8cpp"/>
+      </node>
+      <node id="126854">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeMNSend.inc</label>
+        <link refid="SeMNSend.inc"/>
+        <childnode refid="126855" relation="include">
+        </childnode>
+        <childnode refid="126856" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_m_n_send_8inl_1a340a0c38122e35d6bc643cb6a97e1f1b" kindref="member">SERVER::SendMN_Register</ref>(DWord<sp/>dwLoginMagic,DWord<sp/>dwServerID,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_m_n___register" kindref="compound">SeMN_Register</ref>);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_m_n___register" kindref="compound">SeMN_Register</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_m_n___register" kindref="compound">SeMN_Register</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_m_n___register_1ac914e0eee5387647b1fad99d89e04de9" kindref="member">dwLoginMagic</ref><sp/>=<sp/>dwLoginMagic;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_m_n___register_1a1ba97cd5d282d7f3a1448dc7f1bfe948" kindref="member">dwServerID</ref><sp/>=<sp/>dwServerID;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_m_n_send_8inl_1a3c30005bca0999753cfb4c4f8f8ff840" kindref="member">SendMNData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_m_n_send_8inl_1a2c17d473e512e6f5cbe78ec2ec0c0a89" kindref="member">SERVER::SendMN_HeartPackage</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_m_n___heart_package" kindref="compound">SeMN_HeartPackage</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_m_n___heart_package" kindref="compound">SeMN_HeartPackage</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_m_n___heart_package" kindref="compound">SeMN_HeartPackage</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_m_n_send_8inl_1a3c30005bca0999753cfb4c4f8f8ff840" kindref="member">SendMNData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_m_n_send_8inl_1ae985703fb6a1361558c9b34ffe0631eb" kindref="member">SERVER::SendMN_MatchPunishNtf</ref>(DWord<sp/>dwPlayerID,DWord<sp/>dwMs,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_m_n___match_punish_ntf" kindref="compound">SeMN_MatchPunishNtf</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_m_n___match_punish_ntf" kindref="compound">SeMN_MatchPunishNtf</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_m_n___match_punish_ntf" kindref="compound">SeMN_MatchPunishNtf</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_m_n___match_punish_ntf_1a6777107eac8696ccc417c4c32b9cbedc" kindref="member">dwPlayerID</ref><sp/>=<sp/>dwPlayerID;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_m_n___match_punish_ntf_1a9019fad98ab4ff1c744debb81ef55427" kindref="member">dwMs</ref><sp/>=<sp/>dwMs;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_m_n_send_8inl_1a3c30005bca0999753cfb4c4f8f8ff840" kindref="member">SendMNData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeMNSend.inc"/>
+  </compounddef>
+</doxygen>

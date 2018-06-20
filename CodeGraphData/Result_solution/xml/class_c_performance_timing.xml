@@ -1,0 +1,2376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_c_performance_timing" kind="class" prot="public">
+    <compoundname>CPerformanceTiming</compoundname>
+    <basecompoundref refid="class_i_performace_timing" prot="public" virt="non-virtual">IPerformaceTiming</basecompoundref>
+    <basecompoundref refid="class_i_performace_timing" prot="public" virt="non-virtual">IPerformaceTiming</basecompoundref>
+    <includes refid="src_2_performance_timing_8h" local="no">PerformanceTiming.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_c_performance_timing_1a2b2dca7a2c1c6c0b14c0ea1a648fa682" prot="public" static="no" mutable="no">
+        <type>friend</type>
+        <definition>CRSPerformanceTimingMgr</definition>
+        <argsstring></argsstring>
+        <name>CRSPerformanceTimingMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="218" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_c_performance_timing_1af8dd0acac64f8301dafca6306a829757" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_performance_timing_1_1_c_interval" kindref="compound">PerformanceTiming::CInterval</ref> *</type>
+        <definition>static PerformanceTiming::CInterval * CPerformanceTiming::s_maxFramePktHandlerInterval</definition>
+        <argsstring></argsstring>
+        <name>s_maxFramePktHandlerInterval</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="309" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_performance_timing_1a8107d16d0be4528a552a71c5dc5795e4" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_performance_timing_1a6130968b6fd97cbca47dead327a03621" kindref="member">PerformanceTiming::TIntervalMap</ref></type>
+        <definition>PerformanceTiming::TIntervalMap CPerformanceTiming::m_mAllIntervals</definition>
+        <argsstring></argsstring>
+        <name>m_mAllIntervals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>map of the profiling interval objects registered with us </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="318" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="318" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1a21391060dfc65ee8323b8ecb782982fd" compoundref="src_2_performance_timing_8cpp" startline="426" endline="439">CreateOrLookupInterval</referencedby>
+        <referencedby refid="class_c_performance_timing_1a2f16681e87772ee9a99af1687eafeddc" compoundref="src_2_performance_timing_8cpp" startline="625" endline="635">EnumerateIntervals</referencedby>
+        <referencedby refid="class_c_performance_timing_1a1917d26420b0ac9ed7513be6f734458e" compoundref="src_2_performance_timing_8cpp" startline="392" endline="401">LookupInterval</referencedby>
+        <referencedby refid="class_c_performance_timing_1a6b06378498f520f4f955f91fa91b3d80" compoundref="src_2_performance_timing_8cpp" startline="376" endline="384">ResetAll</referencedby>
+        <referencedby refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">TickNotify</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1ae8d42af48852decf661b38550d5b31a6" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_performance_timing_1a2eff00a73075b2a38f68c50b4effd5bf" kindref="member">PerformanceTiming::THistoryCounterArray</ref></type>
+        <definition>PerformanceTiming::THistoryCounterArray CPerformanceTiming::m_vHistoryCounters</definition>
+        <argsstring></argsstring>
+        <name>m_vHistoryCounters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="319" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="319" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1ae5d381acf6111adc23457f4e6cff50d3" compoundref="src_2_performance_timing_8cpp" startline="475" endline="499">CreateOrLookupCounter</referencedby>
+        <referencedby refid="class_c_performance_timing_1adf4e577d676152b8799ad9cbdbc529c3" compoundref="src_2_performance_timing_8cpp" startline="637" endline="655">EnumerateAllCounters</referencedby>
+        <referencedby refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">TickNotify</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1a9a0bb7caaf0f1edd67af29b8ceccca57" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_performance_timing_1a0e21ade31155107a4e5cae23759d4d03" kindref="member">PerformanceTiming::TCounterArray</ref></type>
+        <definition>PerformanceTiming::TCounterArray CPerformanceTiming::m_vCounters</definition>
+        <argsstring></argsstring>
+        <name>m_vCounters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="321" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="321" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1ae5d381acf6111adc23457f4e6cff50d3" compoundref="src_2_performance_timing_8cpp" startline="475" endline="499">CreateOrLookupCounter</referencedby>
+        <referencedby refid="class_c_performance_timing_1adf4e577d676152b8799ad9cbdbc529c3" compoundref="src_2_performance_timing_8cpp" startline="637" endline="655">EnumerateAllCounters</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1a736c54d5874a99c02df5ef7d3ab05293" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_performance_timing_1a2a8f624ba350234fcd2a40699955b7ad" kindref="member">PerformanceTiming::TCounterMap</ref></type>
+        <definition>PerformanceTiming::TCounterMap CPerformanceTiming::m_mAllCounters</definition>
+        <argsstring></argsstring>
+        <name>m_mAllCounters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="322" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="322" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1ae5d381acf6111adc23457f4e6cff50d3" compoundref="src_2_performance_timing_8cpp" startline="475" endline="499">CreateOrLookupCounter</referencedby>
+        <referencedby refid="class_c_performance_timing_1aede24c2c88cbb06cfc1d6bdd0d3a21b7" compoundref="src_2_performance_timing_8cpp" startline="415" endline="424">LookupCounter</referencedby>
+        <referencedby refid="class_c_performance_timing_1ab14acbc8b35a8e68fbe8d6dcd60929f9" compoundref="src_2_performance_timing_8cpp" startline="543" endline="551">ResetCounters</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1a7d08c4246e033e522ecf39145cc30f69" prot="private" static="no" mutable="no">
+        <type><ref refid="class_performance_timing_1_1_c_pack_counter" kindref="compound">PerformanceTiming::CPackCounter</ref> *</type>
+        <definition>PerformanceTiming::CPackCounter * CPerformanceTiming::m_pPackCounter</definition>
+        <argsstring></argsstring>
+        <name>m_pPackCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="324" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="324" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1ae0962ac17cf87db64135b757cce4b8a6" compoundref="src_2_performance_timing_8cpp" startline="537" endline="541">addPacketRealTotalSize</referencedby>
+        <referencedby refid="class_c_performance_timing_1ad185bb86b437ea3a1847e57af28d5ea8" compoundref="src_2_performance_timing_8cpp" startline="342" endline="355">CPerformanceTiming</referencedby>
+        <referencedby refid="class_c_performance_timing_1acf4828f27669dda0241b128e4ccb6894" compoundref="src_2_performance_timing_8h" startline="311" endline="311">getPacketCounter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1a82a718e9fe4e5078c5068b5d333df0e2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_i_interval" kindref="compound">IInterval</ref> *</type>
+        <definition>IInterval * CPerformanceTiming::_InnerArray</definition>
+        <argsstring>[EPERF_MAX_NODE]</argsstring>
+        <name>_InnerArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="325" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="325" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1ae9f46cf5c0e05a5212552d1e6aec6787" compoundref="src_2_performance_timing_8h" startline="253" endline="253">GetAllInterval</referencedby>
+        <referencedby refid="class_c_performance_timing_1a4f88adba887fed6e7d048d5cd56ea83a" compoundref="src_2_performance_timing_8cpp" startline="364" endline="374">Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1af882002a34968ce845e046c3fd138b02" prot="private" static="no" mutable="no">
+        <type>UInt64</type>
+        <definition>UInt64 CPerformanceTiming::m_DeltaTime</definition>
+        <argsstring></argsstring>
+        <name>m_DeltaTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="327" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="327" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1a309f6a26626eada0b1758913aeaf9384" compoundref="src_2_performance_timing_8h" startline="269" endline="273">GetLastRealTimeDeltaSec</referencedby>
+        <referencedby refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">TickNotify</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1a3e714c73702b37645c49c29d91aa788f" prot="private" static="no" mutable="no">
+        <type>UInt64</type>
+        <definition>UInt64 CPerformanceTiming::m_LastTime</definition>
+        <argsstring></argsstring>
+        <name>m_LastTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="328" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="328" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1ab01a87ccbdb82fba98e714b467c7af02" compoundref="src_2_performance_timing_8cpp" startline="712" endline="723">BeginTrack</referencedby>
+        <referencedby refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">TickNotify</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1ae1d14f126a144f73916d570d0ac72624" prot="private" static="no" mutable="no">
+        <type>UInt64</type>
+        <definition>UInt64 CPerformanceTiming::m_LastFrameTime</definition>
+        <argsstring></argsstring>
+        <name>m_LastFrameTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="329" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="329" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1a1a6d876c5a79bd3fc83e7df140173939" compoundref="src_2_performance_timing_8cpp" startline="553" endline="557">Start</referencedby>
+        <referencedby refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">TickNotify</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1aac7085b28d25132967d4d47bd692c07d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CPerformanceTiming::m_fLastDumpTotalTime</definition>
+        <argsstring></argsstring>
+        <name>m_fLastDumpTotalTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="330" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="330" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1a17117a8b903e2ab542875e418264b9b4" compoundref="src_2_performance_timing_8h" startline="285" endline="288">GetLastDumpTotalTime</referencedby>
+        <referencedby refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">TickNotify</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1ae591921c35116087f40c9a365493085f" prot="private" static="no" mutable="no">
+        <type>UInt64</type>
+        <definition>UInt64 CPerformanceTiming::m_TotalElapsedTime</definition>
+        <argsstring></argsstring>
+        <name>m_TotalElapsedTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>total elapsed time </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="331" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="331" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1a884eea574a1bf703273f51715075b10b" compoundref="src_2_performance_timing_8h" startline="264" endline="267">GetTotalElapsedTime</referencedby>
+        <referencedby refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">TickNotify</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1afd3eaa87641035ae97b744f9b360c95f" prot="private" static="no" mutable="no">
+        <type>UInt64</type>
+        <definition>UInt64 CPerformanceTiming::m_uTotalCounts</definition>
+        <argsstring></argsstring>
+        <name>m_uTotalCounts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="332" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="332" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">TickNotify</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1aefa629435715e9418aa14e3952f391ad" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_c_performance_timing_sink" kindref="compound">CPerformanceTimingSink</ref> * &gt;</type>
+        <definition>std::vector&lt; CPerformanceTimingSink * &gt; CPerformanceTiming::m_vSinks</definition>
+        <argsstring></argsstring>
+        <name>m_vSinks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="333" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="333" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1ae56ca41ef27a84f3558c02102b21d9e9" compoundref="src_2_performance_timing_8cpp" startline="386" endline="390">AddSink</referencedby>
+        <referencedby refid="class_c_performance_timing_1ab01a87ccbdb82fba98e714b467c7af02" compoundref="src_2_performance_timing_8cpp" startline="712" endline="723">BeginTrack</referencedby>
+        <referencedby refid="class_c_performance_timing_1a736e7e8b2284f459cf6088eb362e3789" compoundref="src_2_performance_timing_8cpp" startline="725" endline="734">EndTrack</referencedby>
+        <referencedby refid="class_c_performance_timing_1af74447b0767444a5dda7dd6b1e9085ed" compoundref="src_2_performance_timing_8cpp" startline="736" endline="745">ForceDump</referencedby>
+        <referencedby refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">TickNotify</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1aa130a27ee7532df304a71458a7cfa3de" prot="private" static="no" mutable="no">
+        <type>UInt32</type>
+        <definition>UInt32 CPerformanceTiming::m_uLastCounts</definition>
+        <argsstring></argsstring>
+        <name>m_uLastCounts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="338" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="338" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">TickNotify</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1a04530c0d9cc84316957c3a0bcb62c314" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CPerformanceTiming::m_fLastFps</definition>
+        <argsstring></argsstring>
+        <name>m_fLastFps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="339" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="339" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1a709f75de324dd9a6f431ecda3e73b222" compoundref="src_2_performance_timing_8h" startline="280" endline="283">GetLastFps</referencedby>
+        <referencedby refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">TickNotify</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1a1b95ef8712b17d3d8afdffe39ab7b462" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CPerformanceTiming::m_fFpsTime</definition>
+        <argsstring></argsstring>
+        <name>m_fFpsTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="340" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="340" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">TickNotify</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1a4ebda6453be41abfe61e569346deaf79" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CPerformanceTiming::m_fTotalAvgFps</definition>
+        <argsstring></argsstring>
+        <name>m_fTotalAvgFps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="341" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="341" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1a1b141517c944ead5d45cf24b49d162a6" compoundref="src_2_performance_timing_8h" startline="275" endline="278">GetTotalAvgFPS</referencedby>
+        <referencedby refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">TickNotify</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_c_performance_timing_1a5b6141b16f1df83a9727e9df8f84a920" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>static bool CPerformanceTiming::m_sbIntervalsActive</definition>
+        <argsstring></argsstring>
+        <name>m_sbIntervalsActive</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>dynamic enabling/disabling of intervals processing based on visibility/usage </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="334" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="334" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1a5e37893610bf0c85252f5386607b8f46" compoundref="src_2_performance_timing_8h" startline="298" endline="298">GetIntervalsActive</referencedby>
+        <referencedby refid="class_c_performance_timing_1a8b252edf3eb2049e630e3b4b56ac8e2b" compoundref="src_2_performance_timing_8h" startline="299" endline="299">SetIntervalsActive</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1a519c3db9b5e617acab3f4e9a77e05996" prot="private" static="yes" mutable="no">
+        <type>UInt32</type>
+        <definition>static UInt32 CPerformanceTiming::m_suiIntervalsVerboseLevel</definition>
+        <argsstring></argsstring>
+        <name>m_suiIntervalsVerboseLevel</name>
+        <initializer>= 8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>current interval verbose level </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="335" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="335" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1a1dc5df455010f4ef4cb7c4b3a4ec5671" compoundref="src_2_performance_timing_8h" startline="301" endline="301">GetIntervalsVerboseLevel</referencedby>
+        <referencedby refid="class_c_performance_timing_1a0027bc08e77aa73e3a91a951ed06cce6" compoundref="src_2_performance_timing_8h" startline="302" endline="302">SetIntervalsVerboseLevel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_performance_timing_1aa376b197ade415fa335504ed422c7283" prot="private" static="yes" mutable="no">
+        <type>UInt32</type>
+        <definition>static UInt32 CPerformanceTiming::m_suiIntervalDispWidth</definition>
+        <argsstring></argsstring>
+        <name>m_suiIntervalDispWidth</name>
+        <initializer>= 48</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="336" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="336" bodyend="-1"/>
+        <referencedby refid="class_c_performance_timing_1afd1e3ccc86440c60e4e71cf8aec0070b" compoundref="src_2_performance_timing_8h" startline="304" endline="304">GetIntervalsDispWidth</referencedby>
+        <referencedby refid="class_c_performance_timing_1ac5e78c30f02c4d7c072bc346106f9eba" compoundref="src_2_performance_timing_8h" startline="305" endline="305">SetIntervalsDispWidth</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_c_performance_timing_1a5b59f88895ce835a1ce7443d0812d43f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_performance_timing" kindref="compound">CPerformanceTiming</ref> *</type>
+        <definition>static CPerformanceTiming* CPerformanceTiming::Instance</definition>
+        <argsstring>()</argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="219" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="219" bodyend="222"/>
+        <references refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" compoundref="_performacen_timing_mgr_8cpp" startline="5" endline="8">CPerformanceTimingMgr::GetInstacne</references>
+        <references refid="class_c_performance_timing_mgr_1a6a993ca57909f7d723df9873211ce185">CPerformanceTimingMgr::MutiInstance</references>
+        <referencedby refid="class_c_performance_interval_file_dump_1ab01ad3a269493af0dfccff5f879f54fb" compoundref="src_2_performance_interval_file_dump_8cpp" startline="521" endline="532">CPerformanceIntervalFileDump::BeginTrack</referencedby>
+        <referencedby refid="class_c_performance_interval_file_dump_1a6ac4f582ee0b32865b462fed0ba8f5b6" compoundref="src_2_performance_interval_file_dump_8cpp" startline="233" endline="519">CPerformanceIntervalFileDump::DumpIntervals</referencedby>
+        <referencedby refid="class_c_performance_timing_1a607525bd7cee344ebc537cb82cfdc833" compoundref="src_2_performance_timing_8h" startline="228" endline="231">MutiInstance</referencedby>
+        <referencedby refid="class_c_performance_interval_file_dump_1aa76d178c06c25f4938cd3ef093bbaca1" compoundref="src_2_performance_interval_file_dump_8cpp" startline="49" endline="115">CPerformanceIntervalFileDump::Tick</referencedby>
+        <referencedby refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">TickNotify</referencedby>
+        <referencedby refid="class_race_service_1ac75744355bee316fe6e3cfd834d2c76c" compoundref="src_2_race_service_8cpp" startline="62" endline="125">RaceService::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a0cd9ac671cfeca01bd8fb12f948f6ba3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_performance_timing" kindref="compound">CPerformanceTiming</ref> *</type>
+        <definition>static CPerformanceTiming* CPerformanceTiming::InstanceQuick</definition>
+        <argsstring>()</argsstring>
+        <name>InstanceQuick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="223" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="223" bodyend="226"/>
+        <references refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" compoundref="_performacen_timing_mgr_8cpp" startline="5" endline="8">CPerformanceTimingMgr::GetInstacne</references>
+        <references refid="class_c_performance_timing_mgr_1a7d8dcc63c60feee8e4ac1e0f10be5164">CPerformanceTimingMgr::MutiInstanceQuick</references>
+        <referencedby refid="class_c_performance_interval_file_dump_1a6ac4f582ee0b32865b462fed0ba8f5b6" compoundref="src_2_performance_interval_file_dump_8cpp" startline="233" endline="519">CPerformanceIntervalFileDump::DumpIntervals</referencedby>
+        <referencedby refid="class_performance_timing_1_1_c_interval_1a78e81d64e188c8544069f2d44bbfb15d" compoundref="src_2_performance_timing_8cpp" startline="788" endline="792">PerformanceTiming::CInterval::GetIntervalPercentage</referencedby>
+        <referencedby refid="class_c_performance_timing_1a428e4334c79e46285662398371099450" compoundref="src_2_performance_timing_8h" startline="232" endline="235">MutiInstanceQuick</referencedby>
+        <referencedby refid="class_c_performance_interval_file_dump_1aa76d178c06c25f4938cd3ef093bbaca1" compoundref="src_2_performance_interval_file_dump_8cpp" startline="49" endline="115">CPerformanceIntervalFileDump::Tick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a607525bd7cee344ebc537cb82cfdc833" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_performance_timing" kindref="compound">CPerformanceTiming</ref> *</type>
+        <definition>static CPerformanceTiming* CPerformanceTiming::MutiInstance</definition>
+        <argsstring>()</argsstring>
+        <name>MutiInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="228" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="228" bodyend="231"/>
+        <references refid="class_c_performance_timing_1a5b59f88895ce835a1ce7443d0812d43f" compoundref="src_2_performance_timing_8h" startline="219" endline="222">Instance</references>
+        <referencedby refid="class_race_service_1a0e549baec6fe2d1d67a662387cfaf4a0" compoundref="src_2_race_service_8cpp" startline="361" endline="369">RaceService::DoWork</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a428e4334c79e46285662398371099450" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_performance_timing" kindref="compound">CPerformanceTiming</ref> *</type>
+        <definition>static CPerformanceTiming* CPerformanceTiming::MutiInstanceQuick</definition>
+        <argsstring>()</argsstring>
+        <name>MutiInstanceQuick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="232" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="232" bodyend="235"/>
+        <references refid="class_c_performance_timing_1a0cd9ac671cfeca01bd8fb12f948f6ba3" compoundref="src_2_performance_timing_8h" startline="223" endline="226">InstanceQuick</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a5e37893610bf0c85252f5386607b8f46" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool CPerformanceTiming::GetIntervalsActive</definition>
+        <argsstring>()</argsstring>
+        <name>GetIntervalsActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="298" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="298" bodyend="298"/>
+        <references refid="class_c_performance_timing_1a5b6141b16f1df83a9727e9df8f84a920" compoundref="src_2_performance_timing_8h" startline="334">m_sbIntervalsActive</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a8b252edf3eb2049e630e3b4b56ac8e2b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CPerformanceTiming::SetIntervalsActive</definition>
+        <argsstring>(bool bActive)</argsstring>
+        <name>SetIntervalsActive</name>
+        <param>
+          <type>bool</type>
+          <declname>bActive</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="299" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="299" bodyend="299"/>
+        <references refid="class_c_performance_timing_1a5b6141b16f1df83a9727e9df8f84a920" compoundref="src_2_performance_timing_8h" startline="334">m_sbIntervalsActive</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a1dc5df455010f4ef4cb7c4b3a4ec5671" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt32</type>
+        <definition>static UInt32 CPerformanceTiming::GetIntervalsVerboseLevel</definition>
+        <argsstring>()</argsstring>
+        <name>GetIntervalsVerboseLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="301" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="301" bodyend="301"/>
+        <references refid="class_c_performance_timing_1a519c3db9b5e617acab3f4e9a77e05996" compoundref="src_2_performance_timing_8h" startline="335">m_suiIntervalsVerboseLevel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a0027bc08e77aa73e3a91a951ed06cce6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CPerformanceTiming::SetIntervalsVerboseLevel</definition>
+        <argsstring>(UInt32 uLvl)</argsstring>
+        <name>SetIntervalsVerboseLevel</name>
+        <param>
+          <type>UInt32</type>
+          <declname>uLvl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="302" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="302" bodyend="302"/>
+        <references refid="class_c_performance_timing_1a519c3db9b5e617acab3f4e9a77e05996" compoundref="src_2_performance_timing_8h" startline="335">m_suiIntervalsVerboseLevel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1afd1e3ccc86440c60e4e71cf8aec0070b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt32</type>
+        <definition>static UInt32 CPerformanceTiming::GetIntervalsDispWidth</definition>
+        <argsstring>()</argsstring>
+        <name>GetIntervalsDispWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="304" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="304" bodyend="304"/>
+        <references refid="class_c_performance_timing_1aa376b197ade415fa335504ed422c7283" compoundref="src_2_performance_timing_8h" startline="336">m_suiIntervalDispWidth</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ac5e78c30f02c4d7c072bc346106f9eba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CPerformanceTiming::SetIntervalsDispWidth</definition>
+        <argsstring>(UInt32 uWidth)</argsstring>
+        <name>SetIntervalsDispWidth</name>
+        <param>
+          <type>UInt32</type>
+          <declname>uWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="305" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="305" bodyend="305"/>
+        <references refid="class_c_performance_timing_1aa376b197ade415fa335504ed422c7283" compoundref="src_2_performance_timing_8h" startline="336">m_suiIntervalDispWidth</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a5b59f88895ce835a1ce7443d0812d43f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_performance_timing" kindref="compound">CPerformanceTiming</ref> *</type>
+        <definition>static CPerformanceTiming* CPerformanceTiming::Instance</definition>
+        <argsstring>()</argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="219" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="219" bodyend="222"/>
+        <references refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" compoundref="_performacen_timing_mgr_8cpp" startline="5" endline="8">CPerformanceTimingMgr::GetInstacne</references>
+        <references refid="class_c_performance_timing_mgr_1a6a993ca57909f7d723df9873211ce185">CPerformanceTimingMgr::MutiInstance</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a0cd9ac671cfeca01bd8fb12f948f6ba3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_performance_timing" kindref="compound">CPerformanceTiming</ref> *</type>
+        <definition>static CPerformanceTiming* CPerformanceTiming::InstanceQuick</definition>
+        <argsstring>()</argsstring>
+        <name>InstanceQuick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="223" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="223" bodyend="226"/>
+        <references refid="class_c_performance_timing_mgr_1aebce12c251bbe678a0cc8fd0fc787bcd" compoundref="_performacen_timing_mgr_8cpp" startline="5" endline="8">CPerformanceTimingMgr::GetInstacne</references>
+        <references refid="class_c_performance_timing_mgr_1a7d8dcc63c60feee8e4ac1e0f10be5164">CPerformanceTimingMgr::MutiInstanceQuick</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a607525bd7cee344ebc537cb82cfdc833" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_performance_timing" kindref="compound">CPerformanceTiming</ref> *</type>
+        <definition>static CPerformanceTiming* CPerformanceTiming::MutiInstance</definition>
+        <argsstring>()</argsstring>
+        <name>MutiInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="228" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="228" bodyend="231"/>
+        <references refid="class_c_performance_timing_1a5b59f88895ce835a1ce7443d0812d43f" compoundref="src_2_performance_timing_8h" startline="219" endline="222">Instance</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a428e4334c79e46285662398371099450" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_performance_timing" kindref="compound">CPerformanceTiming</ref> *</type>
+        <definition>static CPerformanceTiming* CPerformanceTiming::MutiInstanceQuick</definition>
+        <argsstring>()</argsstring>
+        <name>MutiInstanceQuick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="232" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="232" bodyend="235"/>
+        <references refid="class_c_performance_timing_1a0cd9ac671cfeca01bd8fb12f948f6ba3" compoundref="src_2_performance_timing_8h" startline="223" endline="226">InstanceQuick</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a5e37893610bf0c85252f5386607b8f46" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool CPerformanceTiming::GetIntervalsActive</definition>
+        <argsstring>()</argsstring>
+        <name>GetIntervalsActive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="298" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="298" bodyend="298"/>
+        <references refid="class_c_performance_timing_1a5b6141b16f1df83a9727e9df8f84a920" compoundref="src_2_performance_timing_8h" startline="334">m_sbIntervalsActive</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a8b252edf3eb2049e630e3b4b56ac8e2b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CPerformanceTiming::SetIntervalsActive</definition>
+        <argsstring>(bool bActive)</argsstring>
+        <name>SetIntervalsActive</name>
+        <param>
+          <type>bool</type>
+          <declname>bActive</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="299" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="299" bodyend="299"/>
+        <references refid="class_c_performance_timing_1a5b6141b16f1df83a9727e9df8f84a920" compoundref="src_2_performance_timing_8h" startline="334">m_sbIntervalsActive</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a1dc5df455010f4ef4cb7c4b3a4ec5671" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt32</type>
+        <definition>static UInt32 CPerformanceTiming::GetIntervalsVerboseLevel</definition>
+        <argsstring>()</argsstring>
+        <name>GetIntervalsVerboseLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="301" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="301" bodyend="301"/>
+        <references refid="class_c_performance_timing_1a519c3db9b5e617acab3f4e9a77e05996" compoundref="src_2_performance_timing_8h" startline="335">m_suiIntervalsVerboseLevel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a0027bc08e77aa73e3a91a951ed06cce6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CPerformanceTiming::SetIntervalsVerboseLevel</definition>
+        <argsstring>(UInt32 uLvl)</argsstring>
+        <name>SetIntervalsVerboseLevel</name>
+        <param>
+          <type>UInt32</type>
+          <declname>uLvl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="302" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="302" bodyend="302"/>
+        <references refid="class_c_performance_timing_1a519c3db9b5e617acab3f4e9a77e05996" compoundref="src_2_performance_timing_8h" startline="335">m_suiIntervalsVerboseLevel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1afd1e3ccc86440c60e4e71cf8aec0070b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt32</type>
+        <definition>static UInt32 CPerformanceTiming::GetIntervalsDispWidth</definition>
+        <argsstring>()</argsstring>
+        <name>GetIntervalsDispWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="304" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="304" bodyend="304"/>
+        <references refid="class_c_performance_timing_1aa376b197ade415fa335504ed422c7283" compoundref="src_2_performance_timing_8h" startline="336">m_suiIntervalDispWidth</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ac5e78c30f02c4d7c072bc346106f9eba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void CPerformanceTiming::SetIntervalsDispWidth</definition>
+        <argsstring>(UInt32 uWidth)</argsstring>
+        <name>SetIntervalsDispWidth</name>
+        <param>
+          <type>UInt32</type>
+          <declname>uWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="305" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="305" bodyend="305"/>
+        <references refid="class_c_performance_timing_1aa376b197ade415fa335504ed422c7283" compoundref="src_2_performance_timing_8h" startline="336">m_suiIntervalDispWidth</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_performance_timing_1a4f88adba887fed6e7d048d5cd56ea83a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="237" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="364" bodyend="374"/>
+        <references refid="class_c_performance_timing_1a82a718e9fe4e5078c5068b5d333df0e2" compoundref="src_2_performance_timing_8h" startline="325">_InnerArray</references>
+        <referencedby refid="class_race_service_1a0e549baec6fe2d1d67a662387cfaf4a0" compoundref="src_2_race_service_8cpp" startline="361" endline="369">RaceService::DoWork</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a6b06378498f520f4f955f91fa91b3d80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::ResetAll</definition>
+        <argsstring>()</argsstring>
+        <name>ResetAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="238" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="376" bodyend="384"/>
+        <references refid="class_c_performance_timing_1a8107d16d0be4528a552a71c5dc5795e4" compoundref="src_2_performance_timing_8h" startline="318">m_mAllIntervals</references>
+        <referencedby refid="class_c_performance_interval_file_dump_1ab01ad3a269493af0dfccff5f879f54fb" compoundref="src_2_performance_interval_file_dump_8cpp" startline="521" endline="532">CPerformanceIntervalFileDump::BeginTrack</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ae56ca41ef27a84f3558c02102b21d9e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::AddSink</definition>
+        <argsstring>(CPerformanceTimingSink *pSink)</argsstring>
+        <name>AddSink</name>
+        <param>
+          <type><ref refid="class_c_performance_timing_sink" kindref="compound">CPerformanceTimingSink</ref> *</type>
+          <declname>pSink</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="240" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="386" bodyend="390"/>
+        <references refid="class_c_performance_timing_1aefa629435715e9418aa14e3952f391ad" compoundref="src_2_performance_timing_8h" startline="333">m_vSinks</references>
+        <references refid="class_c_performance_timing_sink_1a206ecc29d06a87ad96f408ef88569ea4" compoundref="src_2_performance_timing_8h" startline="194" endline="194">CPerformanceTimingSink::SetOwner</references>
+        <referencedby refid="class_race_service_1a0e549baec6fe2d1d67a662387cfaf4a0" compoundref="src_2_race_service_8cpp" startline="361" endline="369">RaceService::DoWork</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ab01a87ccbdb82fba98e714b467c7af02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::BeginTrack</definition>
+        <argsstring>()</argsstring>
+        <name>BeginTrack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="241" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="712" bodyend="723"/>
+        <references refid="class_c_performance_timing_1a3e714c73702b37645c49c29d91aa788f" compoundref="src_2_performance_timing_8h" startline="328">m_LastTime</references>
+        <references refid="class_c_performance_timing_1aefa629435715e9418aa14e3952f391ad" compoundref="src_2_performance_timing_8h" startline="333">m_vSinks</references>
+        <referencedby refid="class_race_service_1a0e549baec6fe2d1d67a662387cfaf4a0" compoundref="src_2_race_service_8cpp" startline="361" endline="369">RaceService::DoWork</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a736e7e8b2284f459cf6088eb362e3789" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::EndTrack</definition>
+        <argsstring>()</argsstring>
+        <name>EndTrack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="242" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="725" bodyend="734"/>
+        <references refid="class_c_performance_timing_1aefa629435715e9418aa14e3952f391ad" compoundref="src_2_performance_timing_8h" startline="333">m_vSinks</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ac08c7af33d9cce3d7276af1ef5eacee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_performance_timing_1_1_c_interval" kindref="compound">PerformanceTiming::CInterval</ref> *</type>
+        <definition>PerformanceTiming::CInterval * CPerformanceTiming::LookupInterval</definition>
+        <argsstring>(const char *szName, bool bOnlyIncludeTouched)</argsstring>
+        <name>LookupInterval</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOnlyIncludeTouched</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="244" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="403" bodyend="413"/>
+        <references refid="namespace_performance_timing_1aaa1359d75567ed83fbfbfcfbfc7563d1" compoundref="_performacen_timing_mgr_8cpp" startline="80" endline="111">PerformanceTiming::CRCString</references>
+        <references refid="class_performance_timing_1_1_c_performance_stat_1a30c9f32df81a8b04a88ff77d4b1ed99f" compoundref="src_2_performance_timing_8h" startline="369" endline="372">PerformanceTiming::CPerformanceStat::IsTouched</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1aede24c2c88cbb06cfc1d6bdd0d3a21b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_performance_timing_1_1_c_counter" kindref="compound">PerformanceTiming::CCounter</ref> *</type>
+        <definition>PerformanceTiming::CCounter * CPerformanceTiming::LookupCounter</definition>
+        <argsstring>(CRC_ID id, bool bOnlyIncludeTouched=false)</argsstring>
+        <name>LookupCounter</name>
+        <param>
+          <type><ref refid="src_2_performance_timing_fwd_decl_8h_1abeb679dbf226046cf865060f1ee6398f" kindref="member">CRC_ID</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOnlyIncludeTouched</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="245" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="415" bodyend="424"/>
+        <references refid="class_c_performance_timing_1a736c54d5874a99c02df5ef7d3ab05293" compoundref="src_2_performance_timing_8h" startline="322">m_mAllCounters</references>
+        <referencedby refid="class_c_performance_timing_1ae5d381acf6111adc23457f4e6cff50d3" compoundref="src_2_performance_timing_8cpp" startline="475" endline="499">CreateOrLookupCounter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a21391060dfc65ee8323b8ecb782982fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_i_interval" kindref="compound">IInterval</ref> *</type>
+        <definition>IInterval * CPerformanceTiming::CreateOrLookupInterval</definition>
+        <argsstring>(const char *szName, UInt32 uiFlags=0, double dWarning=0.0, double dCritical=0.0)</argsstring>
+        <name>CreateOrLookupInterval</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>UInt32</type>
+          <declname>uiFlags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dWarning</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dCritical</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="247" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="426" bodyend="439"/>
+        <references refid="namespace_performance_timing_1aaa1359d75567ed83fbfbfcfbfc7563d1" compoundref="_performacen_timing_mgr_8cpp" startline="80" endline="111">PerformanceTiming::CRCString</references>
+        <references refid="class_c_performance_timing_1a8107d16d0be4528a552a71c5dc5795e4" compoundref="src_2_performance_timing_8h" startline="318">m_mAllIntervals</references>
+        <referencedby refid="class_c_performance_timing_1ab9b24d90377352506b39c6b7d0214170" compoundref="src_2_performance_timing_8cpp" startline="521" endline="527">CreateOrLookupChildInterval</referencedby>
+        <referencedby refid="class_c_performance_timing_1aed424e089bf3124a4a39792070079604" compoundref="src_2_performance_timing_8cpp" startline="455" endline="473">CreateOrLookupInterval</referencedby>
+        <referencedby refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">TickNotify</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ab4f3b239b4b98a2d00dc8d2158ef583b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_i_interval" kindref="compound">IInterval</ref> *</type>
+        <definition>IInterval * CPerformanceTiming::CreateOrLookupInterval</definition>
+        <argsstring>(CRC_ID id, char *szName, unsigned int uiFlags=0, double dWarning=0.0, double dCritical=0.0)</argsstring>
+        <name>CreateOrLookupInterval</name>
+        <reimplements refid="class_i_performace_timing_1a5f188a98e467b16be5a7a47bf4a5e507">CreateOrLookupInterval</reimplements>
+        <param>
+          <type><ref refid="src_2_performance_timing_fwd_decl_8h_1abeb679dbf226046cf865060f1ee6398f" kindref="member">CRC_ID</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>uiFlags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dWarning</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dCritical</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="248" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="441" bodyend="453"/>
+        <references refid="class_c_performance_timing_1a8107d16d0be4528a552a71c5dc5795e4" compoundref="src_2_performance_timing_8h" startline="318">m_mAllIntervals</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ae5d381acf6111adc23457f4e6cff50d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_i_counter" kindref="compound">ICounter</ref> *</type>
+        <definition>ICounter * CPerformanceTiming::CreateOrLookupCounter</definition>
+        <argsstring>(CRC_ID id, char *szName, unsigned int uiFlags=0, double dWarning=0.0, double dCritical=0.0)</argsstring>
+        <name>CreateOrLookupCounter</name>
+        <reimplements refid="class_i_performace_timing_1abb2efef61db23e52aa58d07f4cebe73b">CreateOrLookupCounter</reimplements>
+        <param>
+          <type><ref refid="src_2_performance_timing_fwd_decl_8h_1abeb679dbf226046cf865060f1ee6398f" kindref="member">CRC_ID</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>uiFlags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dWarning</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dCritical</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="250" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="475" bodyend="499"/>
+        <references refid="_performacen_timing_mgr_8h_1a282820dcf883c4eff902816f24e608fea3d4a2275554f29eb1b451773409912c1" compoundref="_performacen_timing_mgr_8h" startline="11">eCounterFlags_ResetEachFrame</references>
+        <references refid="class_c_performance_timing_1aede24c2c88cbb06cfc1d6bdd0d3a21b7" compoundref="src_2_performance_timing_8cpp" startline="415" endline="424">LookupCounter</references>
+        <references refid="class_c_performance_timing_1a736c54d5874a99c02df5ef7d3ab05293" compoundref="src_2_performance_timing_8h" startline="322">m_mAllCounters</references>
+        <references refid="class_c_performance_timing_1a9a0bb7caaf0f1edd67af29b8ceccca57" compoundref="src_2_performance_timing_8h" startline="321">m_vCounters</references>
+        <references refid="class_c_performance_timing_1ae8d42af48852decf661b38550d5b31a6" compoundref="src_2_performance_timing_8h" startline="319">m_vHistoryCounters</references>
+        <referencedby refid="class_c_performance_timing_1a6fe6a3b8e54b3d5ca415a238933c19b3" compoundref="src_2_performance_timing_8cpp" startline="501" endline="519">CreateOrLookupCounter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1aed424e089bf3124a4a39792070079604" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_i_interval" kindref="compound">IInterval</ref> *</type>
+        <definition>IInterval * CPerformanceTiming::CreateOrLookupInterval</definition>
+        <argsstring>(CRC_ID id, char *szName, char *szFolderName, unsigned int uiFlags=0, double dWarning=0.0, double dCritical=0.0)</argsstring>
+        <name>CreateOrLookupInterval</name>
+        <reimplements refid="class_i_performace_timing_1a8ec39932d40e83fcc6d582c16b085a31">CreateOrLookupInterval</reimplements>
+        <param>
+          <type><ref refid="src_2_performance_timing_fwd_decl_8h_1abeb679dbf226046cf865060f1ee6398f" kindref="member">CRC_ID</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szFolderName</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>uiFlags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dWarning</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dCritical</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="251" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="455" bodyend="473"/>
+        <references refid="class_c_performance_timing_1a21391060dfc65ee8323b8ecb782982fd" compoundref="src_2_performance_timing_8cpp" startline="426" endline="439">CreateOrLookupInterval</references>
+        <references refid="class_c_performance_timing_1a8107d16d0be4528a552a71c5dc5795e4" compoundref="src_2_performance_timing_8h" startline="318">m_mAllIntervals</references>
+        <references refid="class_i_interval_1abe2b0e8b0142c003e71bb69450337425">IInterval::SetFolderName</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a6fe6a3b8e54b3d5ca415a238933c19b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_i_counter" kindref="compound">ICounter</ref> *</type>
+        <definition>ICounter * CPerformanceTiming::CreateOrLookupCounter</definition>
+        <argsstring>(CRC_ID id, char *szName, char *szFolderName, unsigned int uiFlags=0, double dWarning=0.0, double dCritical=0.0)</argsstring>
+        <name>CreateOrLookupCounter</name>
+        <reimplements refid="class_i_performace_timing_1a0227e3efc1d48a88ff464a4d72eba310">CreateOrLookupCounter</reimplements>
+        <param>
+          <type><ref refid="src_2_performance_timing_fwd_decl_8h_1abeb679dbf226046cf865060f1ee6398f" kindref="member">CRC_ID</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szFolderName</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>uiFlags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dWarning</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dCritical</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="252" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="501" bodyend="519"/>
+        <references refid="class_c_performance_timing_1ae5d381acf6111adc23457f4e6cff50d3" compoundref="src_2_performance_timing_8cpp" startline="475" endline="499">CreateOrLookupCounter</references>
+        <references refid="class_c_performance_timing_1a736c54d5874a99c02df5ef7d3ab05293" compoundref="src_2_performance_timing_8h" startline="322">m_mAllCounters</references>
+        <references refid="class_i_counter_1a514686e8a4cdea17447ec0eb1910cf7e">ICounter::SetFolderName</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ae9f46cf5c0e05a5212552d1e6aec6787" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="_performacen_timing_mgr_8h_1a83b01672c3c7c4c2490ffaee8d367ea3" kindref="member">IIntervalArray</ref> &amp;</type>
+        <definition>virtual IIntervalArray&amp; CPerformanceTiming::GetAllInterval</definition>
+        <argsstring>()</argsstring>
+        <name>GetAllInterval</name>
+        <reimplements refid="class_i_performace_timing_1abc7aeea2c1f1e42298cde0c229695670">GetAllInterval</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="253" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="253" bodyend="253"/>
+        <references refid="class_c_performance_timing_1a82a718e9fe4e5078c5068b5d333df0e2" compoundref="src_2_performance_timing_8h" startline="325">_InnerArray</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a3cc6c2bbe3e104f0432aa47adce1004b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::addPacketStatu</definition>
+        <argsstring>(const TeMD5 &amp;rRaceID, UInt32 iPacketID, UInt32 iSize)</argsstring>
+        <name>addPacketStatu</name>
+        <reimplements refid="class_i_performace_timing_1aaaf070073868cea2dd9bf99e04b1d4bb">addPacketStatu</reimplements>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rRaceID</declname>
+        </param>
+        <param>
+          <type>UInt32</type>
+          <declname>iPacketID</declname>
+        </param>
+        <param>
+          <type>UInt32</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="255" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="529" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ae0962ac17cf87db64135b757cce4b8a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::addPacketRealTotalSize</definition>
+        <argsstring>(const TeMD5 &amp;rRaceID, UInt32 iSize)</argsstring>
+        <name>addPacketRealTotalSize</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rRaceID</declname>
+        </param>
+        <param>
+          <type>UInt32</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="256" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="537" bodyend="541"/>
+        <references refid="class_performance_timing_1_1_c_pack_counter_1a626120bea388485c0abecdf36e2bf491" compoundref="src_2_performance_timing_8h" startline="576">PerformanceTiming::CPackCounter::m_mMaxPackTotalSize</references>
+        <references refid="class_performance_timing_1_1_c_pack_counter_1a69d7d6a47365a159264a11bcd4fe6510" compoundref="src_2_performance_timing_8h" startline="575">PerformanceTiming::CPackCounter::m_mRaceRealPackTotalSize</references>
+        <references refid="class_c_performance_timing_1a7d08c4246e033e522ecf39145cc30f69" compoundref="src_2_performance_timing_8h" startline="324">m_pPackCounter</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ab14acbc8b35a8e68fbe8d6dcd60929f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::ResetCounters</definition>
+        <argsstring>()</argsstring>
+        <name>ResetCounters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="258" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="543" bodyend="551"/>
+        <references refid="class_c_performance_timing_1a736c54d5874a99c02df5ef7d3ab05293" compoundref="src_2_performance_timing_8h" startline="322">m_mAllCounters</references>
+        <references refid="class_performance_timing_1_1_c_counter_1a58a4b8def5c6a539d0e5c8035bc81553" compoundref="src_2_performance_timing_8h" startline="446" endline="449">PerformanceTiming::CCounter::Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ab9b24d90377352506b39c6b7d0214170" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_performance_timing_1_1_c_interval" kindref="compound">PerformanceTiming::CInterval</ref> *</type>
+        <definition>PerformanceTiming::CInterval * CPerformanceTiming::CreateOrLookupChildInterval</definition>
+        <argsstring>(const char *szName, const char *szChild, UInt32 uiFlags=0)</argsstring>
+        <name>CreateOrLookupChildInterval</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>szChild</declname>
+        </param>
+        <param>
+          <type>UInt32</type>
+          <declname>uiFlags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="260" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="521" bodyend="527"/>
+        <references refid="class_performance_timing_1_1_c_interval_1a07df2b2cd69021c9c0f4fc86a6109340" compoundref="src_2_performance_timing_8h" startline="735" endline="742">PerformanceTiming::CInterval::AddChild</references>
+        <references refid="class_c_performance_timing_1a21391060dfc65ee8323b8ecb782982fd" compoundref="src_2_performance_timing_8cpp" startline="426" endline="439">CreateOrLookupInterval</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::TickNotify</definition>
+        <argsstring>()</argsstring>
+        <name>TickNotify</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="261" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="559" bodyend="623"/>
+        <references refid="class_performance_timing_1_1_c_interval_1aa7f6f231b8eb7b78bdb3f641c2478738" compoundref="src_2_performance_timing_8h" startline="695" endline="707">PerformanceTiming::CInterval::AdvanceFrame</references>
+        <references refid="class_performance_timing_1_1_c_interval_1a56f0db05638f8f054cb0224f4e99ff1d" compoundref="src_2_performance_timing_8h" startline="709" endline="713">PerformanceTiming::CInterval::AdvanceFrameStatic</references>
+        <references refid="namespace_performance_timing_1aaa1359d75567ed83fbfbfcfbfc7563d1" compoundref="_performacen_timing_mgr_8cpp" startline="80" endline="111">PerformanceTiming::CRCString</references>
+        <references refid="class_c_performance_timing_1a21391060dfc65ee8323b8ecb782982fd" compoundref="src_2_performance_timing_8cpp" startline="426" endline="439">CreateOrLookupInterval</references>
+        <references refid="class_performance_timing_1_1_c_interval_1a05192a46041bdca7c17ff4d95d239025" compoundref="src_2_performance_timing_8cpp" startline="824" endline="844">PerformanceTiming::CInterval::End</references>
+        <references refid="namespacemake_callback_1a0c646a8863d44327e020456c954f4b2d" compoundref="make_callback_8py" startline="145">makeCallback.f</references>
+        <references refid="class_c_performance_timing_1a5b59f88895ce835a1ce7443d0812d43f" compoundref="src_2_performance_timing_8h" startline="219" endline="222">Instance</references>
+        <references refid="class_c_performance_timing_1af882002a34968ce845e046c3fd138b02" compoundref="src_2_performance_timing_8h" startline="327">m_DeltaTime</references>
+        <references refid="_performacen_timing_mgr_8h_1a06280e0121db5579b38acbebe5b3899a" compoundref="_performacen_timing_mgr_8h" startline="144">M_DoMutiInterval_FN</references>
+        <references refid="class_c_performance_timing_1a1b95ef8712b17d3d8afdffe39ab7b462" compoundref="src_2_performance_timing_8h" startline="340">m_fFpsTime</references>
+        <references refid="class_c_performance_timing_1aac7085b28d25132967d4d47bd692c07d" compoundref="src_2_performance_timing_8h" startline="330">m_fLastDumpTotalTime</references>
+        <references refid="class_c_performance_timing_1a04530c0d9cc84316957c3a0bcb62c314" compoundref="src_2_performance_timing_8h" startline="339">m_fLastFps</references>
+        <references refid="class_c_performance_timing_1a4ebda6453be41abfe61e569346deaf79" compoundref="src_2_performance_timing_8h" startline="341">m_fTotalAvgFps</references>
+        <references refid="class_c_performance_timing_1ae1d14f126a144f73916d570d0ac72624" compoundref="src_2_performance_timing_8h" startline="329">m_LastFrameTime</references>
+        <references refid="class_c_performance_timing_1a3e714c73702b37645c49c29d91aa788f" compoundref="src_2_performance_timing_8h" startline="328">m_LastTime</references>
+        <references refid="class_c_performance_timing_1a8107d16d0be4528a552a71c5dc5795e4" compoundref="src_2_performance_timing_8h" startline="318">m_mAllIntervals</references>
+        <references refid="class_c_performance_timing_1ae591921c35116087f40c9a365493085f" compoundref="src_2_performance_timing_8h" startline="331">m_TotalElapsedTime</references>
+        <references refid="class_c_performance_timing_1aa130a27ee7532df304a71458a7cfa3de" compoundref="src_2_performance_timing_8h" startline="338">m_uLastCounts</references>
+        <references refid="class_c_performance_timing_1afd3eaa87641035ae97b744f9b360c95f" compoundref="src_2_performance_timing_8h" startline="332">m_uTotalCounts</references>
+        <references refid="class_c_performance_timing_1ae8d42af48852decf661b38550d5b31a6" compoundref="src_2_performance_timing_8h" startline="319">m_vHistoryCounters</references>
+        <references refid="class_c_performance_timing_1aefa629435715e9418aa14e3952f391ad" compoundref="src_2_performance_timing_8h" startline="333">m_vSinks</references>
+        <references refid="class_i_interval_1abe2b0e8b0142c003e71bb69450337425">IInterval::SetFolderName</references>
+        <references refid="class_performance_timing_1_1_c_interval_1ac7dffd5c24210fa8b55f2fe59eb9b5e3" compoundref="src_2_performance_timing_8cpp" startline="797" endline="818">PerformanceTiming::CInterval::Start</references>
+        <referencedby refid="class_race_service_1ac75744355bee316fe6e3cfd834d2c76c" compoundref="src_2_race_service_8cpp" startline="62" endline="125">RaceService::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a1a6d876c5a79bd3fc83e7df140173939" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="262" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="553" bodyend="557"/>
+        <references refid="class_c_performance_timing_1ae1d14f126a144f73916d570d0ac72624" compoundref="src_2_performance_timing_8h" startline="329">m_LastFrameTime</references>
+        <referencedby refid="class_race_service_1ac75744355bee316fe6e3cfd834d2c76c" compoundref="src_2_race_service_8cpp" startline="62" endline="125">RaceService::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a884eea574a1bf703273f51715075b10b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Float64</type>
+        <definition>Float64 CPerformanceTiming::GetTotalElapsedTime</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTotalElapsedTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="264" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="264" bodyend="267"/>
+        <references refid="class_c_performance_timing_1ae591921c35116087f40c9a365493085f" compoundref="src_2_performance_timing_8h" startline="331">m_TotalElapsedTime</references>
+        <referencedby refid="class_performance_timing_1_1_c_interval_1a78e81d64e188c8544069f2d44bbfb15d" compoundref="src_2_performance_timing_8cpp" startline="788" endline="792">PerformanceTiming::CInterval::GetIntervalPercentage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a309f6a26626eada0b1758913aeaf9384" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Float64</type>
+        <definition>Float64 CPerformanceTiming::GetLastRealTimeDeltaSec</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLastRealTimeDeltaSec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="269" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="269" bodyend="273"/>
+        <references refid="class_c_performance_timing_1af882002a34968ce845e046c3fd138b02" compoundref="src_2_performance_timing_8h" startline="327">m_DeltaTime</references>
+        <referencedby refid="class_c_performance_interval_file_dump_1a6ac4f582ee0b32865b462fed0ba8f5b6" compoundref="src_2_performance_interval_file_dump_8cpp" startline="233" endline="519">CPerformanceIntervalFileDump::DumpIntervals</referencedby>
+        <referencedby refid="class_c_performance_interval_file_dump_1aa76d178c06c25f4938cd3ef093bbaca1" compoundref="src_2_performance_interval_file_dump_8cpp" startline="49" endline="115">CPerformanceIntervalFileDump::Tick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a1b141517c944ead5d45cf24b49d162a6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float CPerformanceTiming::GetTotalAvgFPS</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTotalAvgFPS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="275" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="275" bodyend="278"/>
+        <references refid="class_c_performance_timing_1a4ebda6453be41abfe61e569346deaf79" compoundref="src_2_performance_timing_8h" startline="341">m_fTotalAvgFps</references>
+        <referencedby refid="class_c_performance_interval_file_dump_1a6ac4f582ee0b32865b462fed0ba8f5b6" compoundref="src_2_performance_interval_file_dump_8cpp" startline="233" endline="519">CPerformanceIntervalFileDump::DumpIntervals</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a709f75de324dd9a6f431ecda3e73b222" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float CPerformanceTiming::GetLastFps</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLastFps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="280" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="280" bodyend="283"/>
+        <references refid="class_c_performance_timing_1a04530c0d9cc84316957c3a0bcb62c314" compoundref="src_2_performance_timing_8h" startline="339">m_fLastFps</references>
+        <referencedby refid="class_c_performance_interval_file_dump_1a6ac4f582ee0b32865b462fed0ba8f5b6" compoundref="src_2_performance_interval_file_dump_8cpp" startline="233" endline="519">CPerformanceIntervalFileDump::DumpIntervals</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a17117a8b903e2ab542875e418264b9b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float CPerformanceTiming::GetLastDumpTotalTime</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLastDumpTotalTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="285" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="285" bodyend="288"/>
+        <references refid="class_c_performance_timing_1aac7085b28d25132967d4d47bd692c07d" compoundref="src_2_performance_timing_8h" startline="330">m_fLastDumpTotalTime</references>
+        <referencedby refid="class_c_performance_interval_file_dump_1a6ac4f582ee0b32865b462fed0ba8f5b6" compoundref="src_2_performance_interval_file_dump_8cpp" startline="233" endline="519">CPerformanceIntervalFileDump::DumpIntervals</referencedby>
+        <referencedby refid="class_c_performance_interval_file_dump_1aa76d178c06c25f4938cd3ef093bbaca1" compoundref="src_2_performance_interval_file_dump_8cpp" startline="49" endline="115">CPerformanceIntervalFileDump::Tick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a2f16681e87772ee9a99af1687eafeddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::EnumerateIntervals</definition>
+        <argsstring>(PerformanceTiming::TConstIntervalArray &amp;vIntervals, bool bOnlyIncludeTouched=true)</argsstring>
+        <name>EnumerateIntervals</name>
+        <param>
+          <type><ref refid="namespace_performance_timing_1a5b5f704d02e5edeabd1c6b97d4745ec1" kindref="member">PerformanceTiming::TConstIntervalArray</ref> &amp;</type>
+          <declname>vIntervals</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOnlyIncludeTouched</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="290" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="625" bodyend="635"/>
+        <references refid="class_c_performance_timing_1a8107d16d0be4528a552a71c5dc5795e4" compoundref="src_2_performance_timing_8h" startline="318">m_mAllIntervals</references>
+        <referencedby refid="class_c_performance_interval_file_dump_1a6ac4f582ee0b32865b462fed0ba8f5b6" compoundref="src_2_performance_interval_file_dump_8cpp" startline="233" endline="519">CPerformanceIntervalFileDump::DumpIntervals</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1adf4e577d676152b8799ad9cbdbc529c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::EnumerateAllCounters</definition>
+        <argsstring>(PerformanceTiming::TConstCounterArray &amp;vAllCounters, bool bOnlyIncludeTouched=true)</argsstring>
+        <name>EnumerateAllCounters</name>
+        <param>
+          <type><ref refid="namespace_performance_timing_1a2f19e1a12beadfd5b60325a7f4ccd465" kindref="member">PerformanceTiming::TConstCounterArray</ref> &amp;</type>
+          <declname>vAllCounters</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOnlyIncludeTouched</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="291" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="637" bodyend="655"/>
+        <references refid="class_c_performance_timing_1a9a0bb7caaf0f1edd67af29b8ceccca57" compoundref="src_2_performance_timing_8h" startline="321">m_vCounters</references>
+        <references refid="class_c_performance_timing_1ae8d42af48852decf661b38550d5b31a6" compoundref="src_2_performance_timing_8h" startline="319">m_vHistoryCounters</references>
+        <referencedby refid="class_c_performance_interval_file_dump_1a6ac4f582ee0b32865b462fed0ba8f5b6" compoundref="src_2_performance_interval_file_dump_8cpp" startline="233" endline="519">CPerformanceIntervalFileDump::DumpIntervals</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a38561b85313af8dcbef1bac3b4d6087f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::EnumerateIntervals</definition>
+        <argsstring>(PerformanceTiming::TIntervalCloneArray &amp;vIntervals, bool bOnlyIncludeTouched=true)</argsstring>
+        <name>EnumerateIntervals</name>
+        <param>
+          <type><ref refid="namespace_performance_timing_1ac6707feaaa4f4727d7bf2f86f2539dbb" kindref="member">PerformanceTiming::TIntervalCloneArray</ref> &amp;</type>
+          <declname>vIntervals</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOnlyIncludeTouched</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="293" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="657" bodyend="675"/>
+        <references refid="class_performance_timing_1_1_c_performance_stat_1ad29415a1240f66800c4330e2053c0dd1" compoundref="src_2_performance_timing_8h" startline="359" endline="362">PerformanceTiming::CPerformanceStat::GetFolderName</references>
+        <references refid="class_performance_timing_1_1_c_performance_stat_1a6cb5b9cb52e92cbd593b1fbb8a1a37cb" compoundref="src_2_performance_timing_8h" startline="364" endline="367">PerformanceTiming::CPerformanceStat::GetFolderNameCRC</references>
+        <references refid="class_performance_timing_1_1_c_interval_1a83ce0154483f4b782858becda70a6108" compoundref="src_2_performance_timing_8h" startline="670" endline="673">PerformanceTiming::CInterval::GetLastFrameIntervalEntries</references>
+        <references refid="class_performance_timing_1_1_c_interval_1aa83b2b192b2cdf562afb68a118f4ddeb" compoundref="src_2_performance_timing_8h" startline="665" endline="668">PerformanceTiming::CInterval::GetLastFrameIntervalTimeSec</references>
+        <references refid="class_performance_timing_1_1_c_interval_1abf524b8731c32cc6e6fba1617393a995" compoundref="src_2_performance_timing_8h" startline="685" endline="688">PerformanceTiming::CInterval::IsLastFrameClosed</references>
+        <references refid="class_performance_timing_1_1_c_interval_clone_1a912dce753588283b72cc25dfbab72338" compoundref="src_2_performance_timing_fwd_decl_8h" startline="135">PerformanceTiming::CIntervalClone::m_bLastFrameClosed</references>
+        <references refid="class_performance_timing_1_1_c_interval_clone_1aa4fbaf47041230588e80026115c7898b" compoundref="src_2_performance_timing_fwd_decl_8h" startline="138">PerformanceTiming::CIntervalClone::m_crcID</references>
+        <references refid="class_performance_timing_1_1_c_interval_clone_1a5263d568ee10c4f1bb352143a8fe40e3" compoundref="src_2_performance_timing_fwd_decl_8h" startline="137">PerformanceTiming::CIntervalClone::m_dLastFrameIntervalTimeSec</references>
+        <references refid="class_performance_timing_1_1_c_interval_clone_1a5c9817470b83bdf4d63cd40216985f81" compoundref="src_2_performance_timing_fwd_decl_8h" startline="139">PerformanceTiming::CIntervalClone::m_iKey</references>
+        <references refid="class_performance_timing_1_1_c_interval_clone_1a2b0c5ce95db9b90d1145aec8af6b569b" compoundref="src_2_performance_timing_fwd_decl_8h" startline="136">PerformanceTiming::CIntervalClone::m_iLastFrameIntervalEntries</references>
+        <references refid="class_c_performance_timing_1a8107d16d0be4528a552a71c5dc5795e4" compoundref="src_2_performance_timing_8h" startline="318">m_mAllIntervals</references>
+        <references refid="class_performance_timing_1_1_c_interval_clone_1ac431adb8472bdf81017a2111f68147d9" compoundref="src_2_performance_timing_fwd_decl_8h" startline="133">PerformanceTiming::CIntervalClone::m_strFolderName</references>
+        <references refid="class_performance_timing_1_1_c_interval_clone_1a088e06bdaf48ed6ad05341c3626196b1" compoundref="src_2_performance_timing_fwd_decl_8h" startline="134">PerformanceTiming::CIntervalClone::m_StrName</references>
+        <references refid="class_performance_timing_1_1_c_performance_stat_1a52826ace51151b5511dc91d2bff39a4a" compoundref="src_2_performance_timing_8cpp" startline="754" endline="757">PerformanceTiming::CPerformanceStat::Name</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a5bfd75b3a3c3933063244609888e2dfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::EnumerateAllCounters</definition>
+        <argsstring>(PerformanceTiming::TCounterCloneArray &amp;vAllCounters, bool bOnlyIncludeTouched=true)</argsstring>
+        <name>EnumerateAllCounters</name>
+        <param>
+          <type><ref refid="namespace_performance_timing_1ac964deca5e0cd7c10b938682b5ec145b" kindref="member">PerformanceTiming::TCounterCloneArray</ref> &amp;</type>
+          <declname>vAllCounters</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOnlyIncludeTouched</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="294" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="677" bodyend="710"/>
+        <references refid="class_performance_timing_1_1_c_performance_stat_1ad29415a1240f66800c4330e2053c0dd1" compoundref="src_2_performance_timing_8h" startline="359" endline="362">PerformanceTiming::CPerformanceStat::GetFolderName</references>
+        <references refid="class_performance_timing_1_1_c_performance_stat_1a6cb5b9cb52e92cbd593b1fbb8a1a37cb" compoundref="src_2_performance_timing_8h" startline="364" endline="367">PerformanceTiming::CPerformanceStat::GetFolderNameCRC</references>
+        <references refid="class_performance_timing_1_1_c_history_counter_1ac089b9b3675c4934198a51250d329537" compoundref="src_2_performance_timing_8h" startline="503" endline="506">PerformanceTiming::CHistoryCounter::GetHistory</references>
+        <references refid="class_performance_timing_1_1_c_counter_history_1a0a764fc8ff4b798fca04a79d588a12ae" compoundref="src_2_performance_timing_8h" startline="141" endline="144">PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetLastValue</references>
+        <references refid="class_performance_timing_1_1_c_counter_1aa5d63880c689367d5703536f9e767e74" compoundref="src_2_performance_timing_8h" startline="451" endline="454">PerformanceTiming::CCounter::GetValue</references>
+        <references refid="class_performance_timing_1_1_c_counter_clone_1acb115d604b750864509f4da2d7fc2e07" compoundref="src_2_performance_timing_fwd_decl_8h" startline="85">PerformanceTiming::CCounterClone::m_bHistory</references>
+        <references refid="class_performance_timing_1_1_c_counter_clone_1a9c3072ecaeffd814f9fdef0542ab5e93" compoundref="src_2_performance_timing_fwd_decl_8h" startline="86">PerformanceTiming::CCounterClone::m_crcID</references>
+        <references refid="class_performance_timing_1_1_c_counter_clone_1aad07c21e84d1bd4aee019907b9a838a1" compoundref="src_2_performance_timing_fwd_decl_8h" startline="83">PerformanceTiming::CCounterClone::m_LastValueAdded</references>
+        <references refid="class_performance_timing_1_1_c_counter_clone_1a11cc0089ef431bae66a8cc5caaefc4f4" compoundref="src_2_performance_timing_fwd_decl_8h" startline="84">PerformanceTiming::CCounterClone::m_RunningTotal</references>
+        <references refid="class_performance_timing_1_1_c_counter_clone_1acc1561842690d5abc440daaf6c841645" compoundref="src_2_performance_timing_fwd_decl_8h" startline="81">PerformanceTiming::CCounterClone::m_strFolderName</references>
+        <references refid="class_performance_timing_1_1_c_counter_clone_1a1bb77e8cbe8e8a071b052db1cddc4cee" compoundref="src_2_performance_timing_fwd_decl_8h" startline="80">PerformanceTiming::CCounterClone::m_strName</references>
+        <references refid="class_performance_timing_1_1_c_counter_clone_1ad9e560c4ce8a374bf0b698d268eee99f" compoundref="src_2_performance_timing_fwd_decl_8h" startline="82">PerformanceTiming::CCounterClone::m_uValue</references>
+        <references refid="class_c_performance_timing_1a9a0bb7caaf0f1edd67af29b8ceccca57" compoundref="src_2_performance_timing_8h" startline="321">m_vCounters</references>
+        <references refid="class_c_performance_timing_1ae8d42af48852decf661b38550d5b31a6" compoundref="src_2_performance_timing_8h" startline="319">m_vHistoryCounters</references>
+        <references refid="class_performance_timing_1_1_c_performance_stat_1a52826ace51151b5511dc91d2bff39a4a" compoundref="src_2_performance_timing_8cpp" startline="754" endline="757">PerformanceTiming::CPerformanceStat::Name</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1af74447b0767444a5dda7dd6b1e9085ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::ForceDump</definition>
+        <argsstring>()</argsstring>
+        <name>ForceDump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="296" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="736" bodyend="745"/>
+        <references refid="class_c_performance_timing_1aefa629435715e9418aa14e3952f391ad" compoundref="src_2_performance_timing_8h" startline="333">m_vSinks</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a1917d26420b0ac9ed7513be6f734458e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_performance_timing_1_1_c_interval" kindref="compound">PerformanceTiming::CInterval</ref> *</type>
+        <definition>PerformanceTiming::CInterval * CPerformanceTiming::LookupInterval</definition>
+        <argsstring>(CRC_ID nameID)</argsstring>
+        <name>LookupInterval</name>
+        <param>
+          <type><ref refid="src_2_performance_timing_fwd_decl_8h_1abeb679dbf226046cf865060f1ee6398f" kindref="member">CRC_ID</ref></type>
+          <declname>nameID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="307" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="392" bodyend="401"/>
+        <references refid="class_c_performance_timing_1a8107d16d0be4528a552a71c5dc5795e4" compoundref="src_2_performance_timing_8h" startline="318">m_mAllIntervals</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1acf4828f27669dda0241b128e4ccb6894" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_performance_timing_1_1_c_pack_counter" kindref="compound">PerformanceTiming::CPackCounter</ref> *</type>
+        <definition>PerformanceTiming::CPackCounter* CPerformanceTiming::getPacketCounter</definition>
+        <argsstring>()</argsstring>
+        <name>getPacketCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="311" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="311" bodyend="311"/>
+        <references refid="class_c_performance_timing_1a7d08c4246e033e522ecf39145cc30f69" compoundref="src_2_performance_timing_8h" startline="324">m_pPackCounter</references>
+        <referencedby refid="class_c_performance_interval_file_dump_1aa76d178c06c25f4938cd3ef093bbaca1" compoundref="src_2_performance_interval_file_dump_8cpp" startline="49" endline="115">CPerformanceIntervalFileDump::Tick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a4f88adba887fed6e7d048d5cd56ea83a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="237" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a6b06378498f520f4f955f91fa91b3d80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::ResetAll</definition>
+        <argsstring>()</argsstring>
+        <name>ResetAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="238" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ae56ca41ef27a84f3558c02102b21d9e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::AddSink</definition>
+        <argsstring>(CPerformanceTimingSink *pSink)</argsstring>
+        <name>AddSink</name>
+        <param>
+          <type><ref refid="class_c_performance_timing_sink" kindref="compound">CPerformanceTimingSink</ref> *</type>
+          <declname>pSink</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="240" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ab01a87ccbdb82fba98e714b467c7af02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::BeginTrack</definition>
+        <argsstring>()</argsstring>
+        <name>BeginTrack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="241" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a736e7e8b2284f459cf6088eb362e3789" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::EndTrack</definition>
+        <argsstring>()</argsstring>
+        <name>EndTrack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1aab712599c4d6f16d2d8791aa488dab2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_performance_timing_1_1_c_interval" kindref="compound">PerformanceTiming::CInterval</ref> *</type>
+        <definition>PerformanceTiming::CInterval* CPerformanceTiming::LookupInterval</definition>
+        <argsstring>(const char *szName, bool bOnlyIncludeTouched)</argsstring>
+        <name>LookupInterval</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOnlyIncludeTouched</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="244" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ae0cf89abf7686a4a06d3e7383162cbe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_performance_timing_1_1_c_counter" kindref="compound">PerformanceTiming::CCounter</ref> *</type>
+        <definition>PerformanceTiming::CCounter* CPerformanceTiming::LookupCounter</definition>
+        <argsstring>(CRC_ID id, bool bOnlyIncludeTouched=false)</argsstring>
+        <name>LookupCounter</name>
+        <param>
+          <type><ref refid="src_2_performance_timing_fwd_decl_8h_1abeb679dbf226046cf865060f1ee6398f" kindref="member">CRC_ID</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOnlyIncludeTouched</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="245" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a040f32987f29f4dcc23797e22903942e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_i_interval" kindref="compound">IInterval</ref> *</type>
+        <definition>IInterval* CPerformanceTiming::CreateOrLookupInterval</definition>
+        <argsstring>(const char *szName, UInt32 uiFlags=0, double dWarning=0.0, double dCritical=0.0)</argsstring>
+        <name>CreateOrLookupInterval</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>UInt32</type>
+          <declname>uiFlags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dWarning</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dCritical</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="247" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a2fa62e3588fb8d7bb10111ca2df67a63" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_i_interval" kindref="compound">IInterval</ref> *</type>
+        <definition>IInterval* CPerformanceTiming::CreateOrLookupInterval</definition>
+        <argsstring>(CRC_ID id, char *szName, unsigned int uiFlags=0, double dWarning=0.0, double dCritical=0.0)</argsstring>
+        <name>CreateOrLookupInterval</name>
+        <reimplements refid="class_i_performace_timing_1a5f188a98e467b16be5a7a47bf4a5e507">CreateOrLookupInterval</reimplements>
+        <param>
+          <type><ref refid="src_2_performance_timing_fwd_decl_8h_1abeb679dbf226046cf865060f1ee6398f" kindref="member">CRC_ID</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>uiFlags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dWarning</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dCritical</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1af5f6c11d25e8c9e40c328d9f860f798a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_i_counter" kindref="compound">ICounter</ref> *</type>
+        <definition>ICounter* CPerformanceTiming::CreateOrLookupCounter</definition>
+        <argsstring>(CRC_ID id, char *szName, unsigned int uiFlags=0, double dWarning=0.0, double dCritical=0.0)</argsstring>
+        <name>CreateOrLookupCounter</name>
+        <reimplements refid="class_i_performace_timing_1abb2efef61db23e52aa58d07f4cebe73b">CreateOrLookupCounter</reimplements>
+        <param>
+          <type><ref refid="src_2_performance_timing_fwd_decl_8h_1abeb679dbf226046cf865060f1ee6398f" kindref="member">CRC_ID</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>uiFlags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dWarning</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dCritical</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="250" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a122c008160fd054f67abc77239001041" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_i_interval" kindref="compound">IInterval</ref> *</type>
+        <definition>virtual IInterval* CPerformanceTiming::CreateOrLookupInterval</definition>
+        <argsstring>(CRC_ID id, char *szName, char *szFolderName, unsigned int uiFlags=0, double dWarning=0.0, double dCritical=0.0)</argsstring>
+        <name>CreateOrLookupInterval</name>
+        <reimplements refid="class_i_performace_timing_1a8ec39932d40e83fcc6d582c16b085a31">CreateOrLookupInterval</reimplements>
+        <param>
+          <type><ref refid="src_2_performance_timing_fwd_decl_8h_1abeb679dbf226046cf865060f1ee6398f" kindref="member">CRC_ID</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szFolderName</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>uiFlags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dWarning</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dCritical</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="251" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ad1cb861d21ed6c5da9270f27a8b27e9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_i_counter" kindref="compound">ICounter</ref> *</type>
+        <definition>virtual ICounter* CPerformanceTiming::CreateOrLookupCounter</definition>
+        <argsstring>(CRC_ID id, char *szName, char *szFolderName, unsigned int uiFlags=0, double dWarning=0.0, double dCritical=0.0)</argsstring>
+        <name>CreateOrLookupCounter</name>
+        <reimplements refid="class_i_performace_timing_1a0227e3efc1d48a88ff464a4d72eba310">CreateOrLookupCounter</reimplements>
+        <param>
+          <type><ref refid="src_2_performance_timing_fwd_decl_8h_1abeb679dbf226046cf865060f1ee6398f" kindref="member">CRC_ID</ref></type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>szFolderName</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>uiFlags</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dWarning</declname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dCritical</declname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ae9f46cf5c0e05a5212552d1e6aec6787" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="_performacen_timing_mgr_8h_1a83b01672c3c7c4c2490ffaee8d367ea3" kindref="member">IIntervalArray</ref> &amp;</type>
+        <definition>virtual IIntervalArray&amp; CPerformanceTiming::GetAllInterval</definition>
+        <argsstring>()</argsstring>
+        <name>GetAllInterval</name>
+        <reimplements refid="class_i_performace_timing_1abc7aeea2c1f1e42298cde0c229695670">GetAllInterval</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="253" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="253" bodyend="253"/>
+        <references refid="class_c_performance_timing_1a82a718e9fe4e5078c5068b5d333df0e2" compoundref="src_2_performance_timing_8h" startline="325">_InnerArray</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a3cc6c2bbe3e104f0432aa47adce1004b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::addPacketStatu</definition>
+        <argsstring>(const TeMD5 &amp;rRaceID, UInt32 iPacketID, UInt32 iSize)</argsstring>
+        <name>addPacketStatu</name>
+        <reimplements refid="class_i_performace_timing_1aaaf070073868cea2dd9bf99e04b1d4bb">addPacketStatu</reimplements>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rRaceID</declname>
+        </param>
+        <param>
+          <type>UInt32</type>
+          <declname>iPacketID</declname>
+        </param>
+        <param>
+          <type>UInt32</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ae0962ac17cf87db64135b757cce4b8a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::addPacketRealTotalSize</definition>
+        <argsstring>(const TeMD5 &amp;rRaceID, UInt32 iSize)</argsstring>
+        <name>addPacketRealTotalSize</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rRaceID</declname>
+        </param>
+        <param>
+          <type>UInt32</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="256" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ab14acbc8b35a8e68fbe8d6dcd60929f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::ResetCounters</definition>
+        <argsstring>()</argsstring>
+        <name>ResetCounters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="258" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a1228068bd11bbd111b202d9e3e0f7b58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_performance_timing_1_1_c_interval" kindref="compound">PerformanceTiming::CInterval</ref> *</type>
+        <definition>PerformanceTiming::CInterval* CPerformanceTiming::CreateOrLookupChildInterval</definition>
+        <argsstring>(const char *szName, const char *szChild, UInt32 uiFlags=0)</argsstring>
+        <name>CreateOrLookupChildInterval</name>
+        <param>
+          <type>const char *</type>
+          <declname>szName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>szChild</declname>
+        </param>
+        <param>
+          <type>UInt32</type>
+          <declname>uiFlags</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="260" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::TickNotify</definition>
+        <argsstring>()</argsstring>
+        <name>TickNotify</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="261" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a1a6d876c5a79bd3fc83e7df140173939" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="262" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a884eea574a1bf703273f51715075b10b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Float64</type>
+        <definition>Float64 CPerformanceTiming::GetTotalElapsedTime</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTotalElapsedTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="264" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="264" bodyend="267"/>
+        <references refid="class_c_performance_timing_1ae591921c35116087f40c9a365493085f" compoundref="src_2_performance_timing_8h" startline="331">m_TotalElapsedTime</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a309f6a26626eada0b1758913aeaf9384" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>Float64</type>
+        <definition>Float64 CPerformanceTiming::GetLastRealTimeDeltaSec</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLastRealTimeDeltaSec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="269" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="269" bodyend="273"/>
+        <references refid="class_c_performance_timing_1af882002a34968ce845e046c3fd138b02" compoundref="src_2_performance_timing_8h" startline="327">m_DeltaTime</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a1b141517c944ead5d45cf24b49d162a6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float CPerformanceTiming::GetTotalAvgFPS</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTotalAvgFPS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="275" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="275" bodyend="278"/>
+        <references refid="class_c_performance_timing_1a4ebda6453be41abfe61e569346deaf79" compoundref="src_2_performance_timing_8h" startline="341">m_fTotalAvgFps</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a709f75de324dd9a6f431ecda3e73b222" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float CPerformanceTiming::GetLastFps</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLastFps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="280" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="280" bodyend="283"/>
+        <references refid="class_c_performance_timing_1a04530c0d9cc84316957c3a0bcb62c314" compoundref="src_2_performance_timing_8h" startline="339">m_fLastFps</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a17117a8b903e2ab542875e418264b9b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float CPerformanceTiming::GetLastDumpTotalTime</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLastDumpTotalTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="285" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="285" bodyend="288"/>
+        <references refid="class_c_performance_timing_1aac7085b28d25132967d4d47bd692c07d" compoundref="src_2_performance_timing_8h" startline="330">m_fLastDumpTotalTime</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a2f16681e87772ee9a99af1687eafeddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::EnumerateIntervals</definition>
+        <argsstring>(PerformanceTiming::TConstIntervalArray &amp;vIntervals, bool bOnlyIncludeTouched=true)</argsstring>
+        <name>EnumerateIntervals</name>
+        <param>
+          <type><ref refid="namespace_performance_timing_1a5b5f704d02e5edeabd1c6b97d4745ec1" kindref="member">PerformanceTiming::TConstIntervalArray</ref> &amp;</type>
+          <declname>vIntervals</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOnlyIncludeTouched</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="290" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1adf4e577d676152b8799ad9cbdbc529c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::EnumerateAllCounters</definition>
+        <argsstring>(PerformanceTiming::TConstCounterArray &amp;vAllCounters, bool bOnlyIncludeTouched=true)</argsstring>
+        <name>EnumerateAllCounters</name>
+        <param>
+          <type><ref refid="namespace_performance_timing_1a2f19e1a12beadfd5b60325a7f4ccd465" kindref="member">PerformanceTiming::TConstCounterArray</ref> &amp;</type>
+          <declname>vAllCounters</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOnlyIncludeTouched</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="291" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a38561b85313af8dcbef1bac3b4d6087f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::EnumerateIntervals</definition>
+        <argsstring>(PerformanceTiming::TIntervalCloneArray &amp;vIntervals, bool bOnlyIncludeTouched=true)</argsstring>
+        <name>EnumerateIntervals</name>
+        <param>
+          <type><ref refid="namespace_performance_timing_1ac6707feaaa4f4727d7bf2f86f2539dbb" kindref="member">PerformanceTiming::TIntervalCloneArray</ref> &amp;</type>
+          <declname>vIntervals</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOnlyIncludeTouched</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="293" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a5bfd75b3a3c3933063244609888e2dfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::EnumerateAllCounters</definition>
+        <argsstring>(PerformanceTiming::TCounterCloneArray &amp;vAllCounters, bool bOnlyIncludeTouched=true)</argsstring>
+        <name>EnumerateAllCounters</name>
+        <param>
+          <type><ref refid="namespace_performance_timing_1ac964deca5e0cd7c10b938682b5ec145b" kindref="member">PerformanceTiming::TCounterCloneArray</ref> &amp;</type>
+          <declname>vAllCounters</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bOnlyIncludeTouched</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="294" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1af74447b0767444a5dda7dd6b1e9085ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPerformanceTiming::ForceDump</definition>
+        <argsstring>()</argsstring>
+        <name>ForceDump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="296" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1aa3bdadc751d08ca725d8eed77ea29c65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_performance_timing_1_1_c_interval" kindref="compound">PerformanceTiming::CInterval</ref> *</type>
+        <definition>PerformanceTiming::CInterval* CPerformanceTiming::LookupInterval</definition>
+        <argsstring>(CRC_ID nameID)</argsstring>
+        <name>LookupInterval</name>
+        <param>
+          <type><ref refid="src_2_performance_timing_fwd_decl_8h_1abeb679dbf226046cf865060f1ee6398f" kindref="member">CRC_ID</ref></type>
+          <declname>nameID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="307" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1acf4828f27669dda0241b128e4ccb6894" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_performance_timing_1_1_c_pack_counter" kindref="compound">PerformanceTiming::CPackCounter</ref> *</type>
+        <definition>PerformanceTiming::CPackCounter* CPerformanceTiming::getPacketCounter</definition>
+        <argsstring>()</argsstring>
+        <name>getPacketCounter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="311" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="311" bodyend="311"/>
+        <references refid="class_c_performance_timing_1a7d08c4246e033e522ecf39145cc30f69" compoundref="src_2_performance_timing_8h" startline="324">m_pPackCounter</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_c_performance_timing_1ad185bb86b437ea3a1847e57af28d5ea8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPerformanceTiming::CPerformanceTiming</definition>
+        <argsstring>()</argsstring>
+        <name>CPerformanceTiming</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="315" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="342" bodyend="355"/>
+        <references refid="class_performance_timing_1_1_c_performance_stat_1ad9d23cd316f85d975cb7cb4cdfb30979" compoundref="src_2_performance_timing_8cpp" startline="759" endline="767">PerformanceTiming::CPerformanceStat::DoSetFolderName</references>
+        <references refid="class_c_performance_timing_1a7d08c4246e033e522ecf39145cc30f69" compoundref="src_2_performance_timing_8h" startline="324">m_pPackCounter</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a09ebed7ab6542b0de4990a28fa565617" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPerformanceTiming::~CPerformanceTiming</definition>
+        <argsstring>()</argsstring>
+        <name>~CPerformanceTiming</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_c_performance_timing" kindref="compound">CPerformanceTiming</ref> destructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="316" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.cpp" bodystart="360" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1ad185bb86b437ea3a1847e57af28d5ea8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPerformanceTiming::CPerformanceTiming</definition>
+        <argsstring>()</argsstring>
+        <name>CPerformanceTiming</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="315" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_performance_timing_1a09ebed7ab6542b0de4990a28fa565617" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPerformanceTiming::~CPerformanceTiming</definition>
+        <argsstring>()</argsstring>
+        <name>~CPerformanceTiming</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="316" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Performance Timing <ref refid="class_singleton" kindref="compound">Singleton</ref> class. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1063">
+        <label>IPerformaceTiming</label>
+        <link refid="class_i_performace_timing"/>
+      </node>
+      <node id="1062">
+        <label>CPerformanceTiming</label>
+        <link refid="class_c_performance_timing"/>
+        <childnode refid="1063" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1063" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1065">
+        <label>IPerformaceTiming</label>
+        <link refid="class_i_performace_timing"/>
+      </node>
+      <node id="1072">
+        <label>K</label>
+      </node>
+      <node id="1073">
+        <label>T</label>
+      </node>
+      <node id="1079">
+        <label>PerformanceTiming::CInterval</label>
+        <link refid="class_performance_timing_1_1_c_interval"/>
+        <childnode refid="1067" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1076" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1067" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1076" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1080" relation="usage">
+          <edgelabel>m_vChildren</edgelabel>
+        </childnode>
+      </node>
+      <node id="1075">
+        <label>std::map&lt; TeMD5, UInt32 &gt;</label>
+        <childnode refid="1074" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1071">
+        <label>std::map&lt; K, T &gt;</label>
+        <childnode refid="1072" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="1073" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1078">
+        <label>std::vector&lt; CCounter * &gt;</label>
+      </node>
+      <node id="1081">
+        <label>std::vector&lt; CPerformanceTimingSink * &gt;</label>
+        <childnode refid="1082" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1064">
+        <label>CPerformanceTiming</label>
+        <link refid="class_c_performance_timing"/>
+        <childnode refid="1065" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1065" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1066" relation="usage">
+          <edgelabel>m_pPackCounter</edgelabel>
+        </childnode>
+        <childnode refid="1076" relation="usage">
+          <edgelabel>_InnerArray</edgelabel>
+        </childnode>
+        <childnode refid="1077" relation="usage">
+          <edgelabel>m_vHistoryCounters</edgelabel>
+        </childnode>
+        <childnode refid="1078" relation="usage">
+          <edgelabel>m_vCounters</edgelabel>
+        </childnode>
+        <childnode refid="1079" relation="usage">
+          <edgelabel>s_maxFramePktHandlerInterval</edgelabel>
+        </childnode>
+        <childnode refid="1081" relation="usage">
+          <edgelabel>m_vSinks</edgelabel>
+        </childnode>
+      </node>
+      <node id="1080">
+        <label>std::vector&lt; CInterval * &gt;</label>
+        <childnode refid="1079" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1069">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1074">
+        <label>TeMD5</label>
+        <link refid="struct_te_m_d5"/>
+      </node>
+      <node id="1082">
+        <label>CPerformanceTimingSink</label>
+        <link refid="class_c_performance_timing_sink"/>
+      </node>
+      <node id="1066">
+        <label>PerformanceTiming::CPackCounter</label>
+        <link refid="class_performance_timing_1_1_c_pack_counter"/>
+        <childnode refid="1067" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1067" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1070" relation="usage">
+          <edgelabel>m_mRacePackDatas</edgelabel>
+        </childnode>
+        <childnode refid="1075" relation="usage">
+          <edgelabel>m_mRacePackTotalSize</edgelabel>
+          <edgelabel>m_mRaceRealPackTotalSize</edgelabel>
+        </childnode>
+      </node>
+      <node id="1077">
+        <label>std::vector&lt; CHistoryCounter * &gt;</label>
+      </node>
+      <node id="1067">
+        <label>PerformanceTiming::CPerformanceStat</label>
+        <link refid="class_performance_timing_1_1_c_performance_stat"/>
+        <childnode refid="1068" relation="usage">
+          <edgelabel>m_sFolderName</edgelabel>
+          <edgelabel>m_sName</edgelabel>
+        </childnode>
+      </node>
+      <node id="1070">
+        <label>std::map&lt; TeMD5, TPackCounterMap &gt;</label>
+        <childnode refid="1071" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="1074" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1076">
+        <label>IInterval</label>
+        <link refid="class_i_interval"/>
+      </node>
+      <node id="1068">
+        <label>std::string</label>
+        <childnode refid="1069" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="216" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="215" bodyend="342"/>
+    <listofallmembers>
+      <member refid="class_c_performance_timing_1a82a718e9fe4e5078c5068b5d333df0e2" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>_InnerArray</name></member>
+      <member refid="class_c_performance_timing_1ae0962ac17cf87db64135b757cce4b8a6" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>addPacketRealTotalSize</name></member>
+      <member refid="class_c_performance_timing_1ae0962ac17cf87db64135b757cce4b8a6" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>addPacketRealTotalSize</name></member>
+      <member refid="class_c_performance_timing_1a3cc6c2bbe3e104f0432aa47adce1004b" prot="public" virt="virtual"><scope>CPerformanceTiming</scope><name>addPacketStatu</name></member>
+      <member refid="class_c_performance_timing_1a3cc6c2bbe3e104f0432aa47adce1004b" prot="public" virt="virtual"><scope>CPerformanceTiming</scope><name>addPacketStatu</name></member>
+      <member refid="class_c_performance_timing_1ae56ca41ef27a84f3558c02102b21d9e9" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>AddSink</name></member>
+      <member refid="class_c_performance_timing_1ae56ca41ef27a84f3558c02102b21d9e9" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>AddSink</name></member>
+      <member refid="class_c_performance_timing_1ab01a87ccbdb82fba98e714b467c7af02" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>BeginTrack</name></member>
+      <member refid="class_c_performance_timing_1ab01a87ccbdb82fba98e714b467c7af02" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>BeginTrack</name></member>
+      <member refid="class_c_performance_timing_1ad185bb86b437ea3a1847e57af28d5ea8" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>CPerformanceTiming</name></member>
+      <member refid="class_c_performance_timing_1ad185bb86b437ea3a1847e57af28d5ea8" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>CPerformanceTiming</name></member>
+      <member refid="class_c_performance_timing_1ab9b24d90377352506b39c6b7d0214170" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>CreateOrLookupChildInterval</name></member>
+      <member refid="class_c_performance_timing_1a1228068bd11bbd111b202d9e3e0f7b58" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>CreateOrLookupChildInterval</name></member>
+      <member refid="class_c_performance_timing_1ae5d381acf6111adc23457f4e6cff50d3" prot="public" virt="virtual"><scope>CPerformanceTiming</scope><name>CreateOrLookupCounter</name></member>
+      <member refid="class_c_performance_timing_1a6fe6a3b8e54b3d5ca415a238933c19b3" prot="public" virt="virtual"><scope>CPerformanceTiming</scope><name>CreateOrLookupCounter</name></member>
+      <member refid="class_c_performance_timing_1af5f6c11d25e8c9e40c328d9f860f798a" prot="public" virt="virtual"><scope>CPerformanceTiming</scope><name>CreateOrLookupCounter</name></member>
+      <member refid="class_c_performance_timing_1ad1cb861d21ed6c5da9270f27a8b27e9e" prot="public" virt="virtual"><scope>CPerformanceTiming</scope><name>CreateOrLookupCounter</name></member>
+      <member refid="class_c_performance_timing_1a21391060dfc65ee8323b8ecb782982fd" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>CreateOrLookupInterval</name></member>
+      <member refid="class_c_performance_timing_1ab4f3b239b4b98a2d00dc8d2158ef583b" prot="public" virt="virtual"><scope>CPerformanceTiming</scope><name>CreateOrLookupInterval</name></member>
+      <member refid="class_c_performance_timing_1aed424e089bf3124a4a39792070079604" prot="public" virt="virtual"><scope>CPerformanceTiming</scope><name>CreateOrLookupInterval</name></member>
+      <member refid="class_c_performance_timing_1a040f32987f29f4dcc23797e22903942e" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>CreateOrLookupInterval</name></member>
+      <member refid="class_c_performance_timing_1a2fa62e3588fb8d7bb10111ca2df67a63" prot="public" virt="virtual"><scope>CPerformanceTiming</scope><name>CreateOrLookupInterval</name></member>
+      <member refid="class_c_performance_timing_1a122c008160fd054f67abc77239001041" prot="public" virt="virtual"><scope>CPerformanceTiming</scope><name>CreateOrLookupInterval</name></member>
+      <member refid="class_i_performace_timing_1ab38997a35fbae33621c08d8e6012c73b" prot="public" virt="pure-virtual" ambiguityscope="IPerformaceTiming::"><scope>CPerformanceTiming</scope><name>CreateOrLookupInterval</name></member>
+      <member refid="class_c_performance_timing_1a2b2dca7a2c1c6c0b14c0ea1a648fa682" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>CRSPerformanceTimingMgr</name></member>
+      <member refid="class_c_performance_timing_1a736e7e8b2284f459cf6088eb362e3789" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>EndTrack</name></member>
+      <member refid="class_c_performance_timing_1a736e7e8b2284f459cf6088eb362e3789" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>EndTrack</name></member>
+      <member refid="class_c_performance_timing_1adf4e577d676152b8799ad9cbdbc529c3" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>EnumerateAllCounters</name></member>
+      <member refid="class_c_performance_timing_1a5bfd75b3a3c3933063244609888e2dfc" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>EnumerateAllCounters</name></member>
+      <member refid="class_c_performance_timing_1adf4e577d676152b8799ad9cbdbc529c3" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>EnumerateAllCounters</name></member>
+      <member refid="class_c_performance_timing_1a5bfd75b3a3c3933063244609888e2dfc" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>EnumerateAllCounters</name></member>
+      <member refid="class_c_performance_timing_1a2f16681e87772ee9a99af1687eafeddc" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>EnumerateIntervals</name></member>
+      <member refid="class_c_performance_timing_1a38561b85313af8dcbef1bac3b4d6087f" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>EnumerateIntervals</name></member>
+      <member refid="class_c_performance_timing_1a2f16681e87772ee9a99af1687eafeddc" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>EnumerateIntervals</name></member>
+      <member refid="class_c_performance_timing_1a38561b85313af8dcbef1bac3b4d6087f" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>EnumerateIntervals</name></member>
+      <member refid="class_c_performance_timing_1af74447b0767444a5dda7dd6b1e9085ed" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>ForceDump</name></member>
+      <member refid="class_c_performance_timing_1af74447b0767444a5dda7dd6b1e9085ed" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>ForceDump</name></member>
+      <member refid="class_c_performance_timing_1ae9f46cf5c0e05a5212552d1e6aec6787" prot="public" virt="virtual"><scope>CPerformanceTiming</scope><name>GetAllInterval</name></member>
+      <member refid="class_c_performance_timing_1ae9f46cf5c0e05a5212552d1e6aec6787" prot="public" virt="virtual"><scope>CPerformanceTiming</scope><name>GetAllInterval</name></member>
+      <member refid="class_c_performance_timing_1a5e37893610bf0c85252f5386607b8f46" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>GetIntervalsActive</name></member>
+      <member refid="class_c_performance_timing_1a5e37893610bf0c85252f5386607b8f46" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>GetIntervalsActive</name></member>
+      <member refid="class_c_performance_timing_1afd1e3ccc86440c60e4e71cf8aec0070b" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>GetIntervalsDispWidth</name></member>
+      <member refid="class_c_performance_timing_1afd1e3ccc86440c60e4e71cf8aec0070b" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>GetIntervalsDispWidth</name></member>
+      <member refid="class_c_performance_timing_1a1dc5df455010f4ef4cb7c4b3a4ec5671" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>GetIntervalsVerboseLevel</name></member>
+      <member refid="class_c_performance_timing_1a1dc5df455010f4ef4cb7c4b3a4ec5671" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>GetIntervalsVerboseLevel</name></member>
+      <member refid="class_c_performance_timing_1a17117a8b903e2ab542875e418264b9b4" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>GetLastDumpTotalTime</name></member>
+      <member refid="class_c_performance_timing_1a17117a8b903e2ab542875e418264b9b4" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>GetLastDumpTotalTime</name></member>
+      <member refid="class_c_performance_timing_1a709f75de324dd9a6f431ecda3e73b222" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>GetLastFps</name></member>
+      <member refid="class_c_performance_timing_1a709f75de324dd9a6f431ecda3e73b222" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>GetLastFps</name></member>
+      <member refid="class_c_performance_timing_1a309f6a26626eada0b1758913aeaf9384" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>GetLastRealTimeDeltaSec</name></member>
+      <member refid="class_c_performance_timing_1a309f6a26626eada0b1758913aeaf9384" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>GetLastRealTimeDeltaSec</name></member>
+      <member refid="class_c_performance_timing_1acf4828f27669dda0241b128e4ccb6894" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>getPacketCounter</name></member>
+      <member refid="class_c_performance_timing_1acf4828f27669dda0241b128e4ccb6894" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>getPacketCounter</name></member>
+      <member refid="class_c_performance_timing_1a1b141517c944ead5d45cf24b49d162a6" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>GetTotalAvgFPS</name></member>
+      <member refid="class_c_performance_timing_1a1b141517c944ead5d45cf24b49d162a6" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>GetTotalAvgFPS</name></member>
+      <member refid="class_c_performance_timing_1a884eea574a1bf703273f51715075b10b" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>GetTotalElapsedTime</name></member>
+      <member refid="class_c_performance_timing_1a884eea574a1bf703273f51715075b10b" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>GetTotalElapsedTime</name></member>
+      <member refid="class_c_performance_timing_1a4f88adba887fed6e7d048d5cd56ea83a" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>Init</name></member>
+      <member refid="class_c_performance_timing_1a4f88adba887fed6e7d048d5cd56ea83a" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>Init</name></member>
+      <member refid="class_c_performance_timing_1a5b59f88895ce835a1ce7443d0812d43f" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>Instance</name></member>
+      <member refid="class_c_performance_timing_1a5b59f88895ce835a1ce7443d0812d43f" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>Instance</name></member>
+      <member refid="class_c_performance_timing_1a0cd9ac671cfeca01bd8fb12f948f6ba3" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>InstanceQuick</name></member>
+      <member refid="class_c_performance_timing_1a0cd9ac671cfeca01bd8fb12f948f6ba3" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>InstanceQuick</name></member>
+      <member refid="class_c_performance_timing_1aede24c2c88cbb06cfc1d6bdd0d3a21b7" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>LookupCounter</name></member>
+      <member refid="class_c_performance_timing_1ae0cf89abf7686a4a06d3e7383162cbe1" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>LookupCounter</name></member>
+      <member refid="class_c_performance_timing_1ac08c7af33d9cce3d7276af1ef5eacee4" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>LookupInterval</name></member>
+      <member refid="class_c_performance_timing_1a1917d26420b0ac9ed7513be6f734458e" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>LookupInterval</name></member>
+      <member refid="class_c_performance_timing_1aab712599c4d6f16d2d8791aa488dab2e" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>LookupInterval</name></member>
+      <member refid="class_c_performance_timing_1aa3bdadc751d08ca725d8eed77ea29c65" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>LookupInterval</name></member>
+      <member refid="class_c_performance_timing_1af882002a34968ce845e046c3fd138b02" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_DeltaTime</name></member>
+      <member refid="class_c_performance_timing_1a1b95ef8712b17d3d8afdffe39ab7b462" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_fFpsTime</name></member>
+      <member refid="class_c_performance_timing_1aac7085b28d25132967d4d47bd692c07d" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_fLastDumpTotalTime</name></member>
+      <member refid="class_c_performance_timing_1a04530c0d9cc84316957c3a0bcb62c314" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_fLastFps</name></member>
+      <member refid="class_c_performance_timing_1a4ebda6453be41abfe61e569346deaf79" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_fTotalAvgFps</name></member>
+      <member refid="class_c_performance_timing_1ae1d14f126a144f73916d570d0ac72624" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_LastFrameTime</name></member>
+      <member refid="class_c_performance_timing_1a3e714c73702b37645c49c29d91aa788f" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_LastTime</name></member>
+      <member refid="class_c_performance_timing_1a736c54d5874a99c02df5ef7d3ab05293" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_mAllCounters</name></member>
+      <member refid="class_c_performance_timing_1a8107d16d0be4528a552a71c5dc5795e4" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_mAllIntervals</name></member>
+      <member refid="class_c_performance_timing_1a7d08c4246e033e522ecf39145cc30f69" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_pPackCounter</name></member>
+      <member refid="class_c_performance_timing_1a5b6141b16f1df83a9727e9df8f84a920" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_sbIntervalsActive</name></member>
+      <member refid="class_c_performance_timing_1aa376b197ade415fa335504ed422c7283" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_suiIntervalDispWidth</name></member>
+      <member refid="class_c_performance_timing_1a519c3db9b5e617acab3f4e9a77e05996" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_suiIntervalsVerboseLevel</name></member>
+      <member refid="class_c_performance_timing_1ae591921c35116087f40c9a365493085f" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_TotalElapsedTime</name></member>
+      <member refid="class_c_performance_timing_1aa130a27ee7532df304a71458a7cfa3de" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_uLastCounts</name></member>
+      <member refid="class_c_performance_timing_1afd3eaa87641035ae97b744f9b360c95f" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_uTotalCounts</name></member>
+      <member refid="class_c_performance_timing_1a9a0bb7caaf0f1edd67af29b8ceccca57" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_vCounters</name></member>
+      <member refid="class_c_performance_timing_1ae8d42af48852decf661b38550d5b31a6" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_vHistoryCounters</name></member>
+      <member refid="class_c_performance_timing_1aefa629435715e9418aa14e3952f391ad" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>m_vSinks</name></member>
+      <member refid="class_c_performance_timing_1a607525bd7cee344ebc537cb82cfdc833" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>MutiInstance</name></member>
+      <member refid="class_c_performance_timing_1a607525bd7cee344ebc537cb82cfdc833" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>MutiInstance</name></member>
+      <member refid="class_c_performance_timing_1a428e4334c79e46285662398371099450" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>MutiInstanceQuick</name></member>
+      <member refid="class_c_performance_timing_1a428e4334c79e46285662398371099450" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>MutiInstanceQuick</name></member>
+      <member refid="class_c_performance_timing_1a6b06378498f520f4f955f91fa91b3d80" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>ResetAll</name></member>
+      <member refid="class_c_performance_timing_1a6b06378498f520f4f955f91fa91b3d80" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>ResetAll</name></member>
+      <member refid="class_c_performance_timing_1ab14acbc8b35a8e68fbe8d6dcd60929f9" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>ResetCounters</name></member>
+      <member refid="class_c_performance_timing_1ab14acbc8b35a8e68fbe8d6dcd60929f9" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>ResetCounters</name></member>
+      <member refid="class_c_performance_timing_1af8dd0acac64f8301dafca6306a829757" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>s_maxFramePktHandlerInterval</name></member>
+      <member refid="class_c_performance_timing_1a8b252edf3eb2049e630e3b4b56ac8e2b" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>SetIntervalsActive</name></member>
+      <member refid="class_c_performance_timing_1a8b252edf3eb2049e630e3b4b56ac8e2b" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>SetIntervalsActive</name></member>
+      <member refid="class_c_performance_timing_1ac5e78c30f02c4d7c072bc346106f9eba" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>SetIntervalsDispWidth</name></member>
+      <member refid="class_c_performance_timing_1ac5e78c30f02c4d7c072bc346106f9eba" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>SetIntervalsDispWidth</name></member>
+      <member refid="class_c_performance_timing_1a0027bc08e77aa73e3a91a951ed06cce6" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>SetIntervalsVerboseLevel</name></member>
+      <member refid="class_c_performance_timing_1a0027bc08e77aa73e3a91a951ed06cce6" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>SetIntervalsVerboseLevel</name></member>
+      <member refid="class_c_performance_timing_1a1a6d876c5a79bd3fc83e7df140173939" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>Start</name></member>
+      <member refid="class_c_performance_timing_1a1a6d876c5a79bd3fc83e7df140173939" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>Start</name></member>
+      <member refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>TickNotify</name></member>
+      <member refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" prot="public" virt="non-virtual"><scope>CPerformanceTiming</scope><name>TickNotify</name></member>
+      <member refid="class_c_performance_timing_1a09ebed7ab6542b0de4990a28fa565617" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>~CPerformanceTiming</name></member>
+      <member refid="class_c_performance_timing_1a09ebed7ab6542b0de4990a28fa565617" prot="private" virt="non-virtual"><scope>CPerformanceTiming</scope><name>~CPerformanceTiming</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

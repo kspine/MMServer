@@ -1,0 +1,775 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_se_n_t_send_8inl" kind="file">
+    <compoundname>SeNTSend.inl</compoundname>
+    <includedby refid="_nexus_server_8h" local="yes">NexusServer/Src/NexusServer.h</includedby>
+    <invincdepgraph>
+      <node id="127782">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl</label>
+        <link refid="SeNTSend.inl"/>
+        <childnode refid="127783" relation="include">
+        </childnode>
+      </node>
+      <node id="127798">
+        <label>NexusServer/Src/SeNWSend.cpp</label>
+        <link refid="_se_n_w_send_8cpp"/>
+      </node>
+      <node id="127785">
+        <label>NexusServer/Src/NexusLinkUserMgr.cpp</label>
+        <link refid="_nexus_link_user_mgr_8cpp"/>
+      </node>
+      <node id="127796">
+        <label>NexusServer/Src/SeNTSend.cpp</label>
+        <link refid="_se_n_t_send_8cpp"/>
+      </node>
+      <node id="127802">
+        <label>NexusServer/Src/SeWNProcess.cpp</label>
+        <link refid="_se_w_n_process_8cpp"/>
+      </node>
+      <node id="127788">
+        <label>NexusServer/Src/NexusTeamMgr.cpp</label>
+        <link refid="_nexus_team_mgr_8cpp"/>
+      </node>
+      <node id="127787">
+        <label>NexusServer/Src/NexusServer.cpp</label>
+        <link refid="_nexus_server_8cpp"/>
+      </node>
+      <node id="127791">
+        <label>NexusServer/Src/SeMNProcess.cpp</label>
+        <link refid="_se_m_n_process_8cpp"/>
+      </node>
+      <node id="127783">
+        <label>NexusServer/Src/NexusServer.h</label>
+        <link refid="_nexus_server_8h"/>
+        <childnode refid="127784" relation="include">
+        </childnode>
+        <childnode refid="127785" relation="include">
+        </childnode>
+        <childnode refid="127786" relation="include">
+        </childnode>
+        <childnode refid="127787" relation="include">
+        </childnode>
+        <childnode refid="127788" relation="include">
+        </childnode>
+        <childnode refid="127789" relation="include">
+        </childnode>
+        <childnode refid="127790" relation="include">
+        </childnode>
+        <childnode refid="127791" relation="include">
+        </childnode>
+        <childnode refid="127792" relation="include">
+        </childnode>
+        <childnode refid="127793" relation="include">
+        </childnode>
+        <childnode refid="127794" relation="include">
+        </childnode>
+        <childnode refid="127795" relation="include">
+        </childnode>
+        <childnode refid="127796" relation="include">
+        </childnode>
+        <childnode refid="127797" relation="include">
+        </childnode>
+        <childnode refid="127798" relation="include">
+        </childnode>
+        <childnode refid="127799" relation="include">
+        </childnode>
+        <childnode refid="127800" relation="include">
+        </childnode>
+        <childnode refid="127801" relation="include">
+        </childnode>
+        <childnode refid="127802" relation="include">
+        </childnode>
+      </node>
+      <node id="127790">
+        <label>NexusServer/Src/SeBLNProcess.cpp</label>
+        <link refid="_se_b_l_n_process_8cpp"/>
+      </node>
+      <node id="127784">
+        <label>NexusServer/Src/Main.cpp</label>
+        <link refid="_nexus_server_2_src_2_main_8cpp"/>
+      </node>
+      <node id="127797">
+        <label>NexusServer/Src/SeNWCMSSend.cpp</label>
+        <link refid="_se_n_w_c_m_s_send_8cpp"/>
+      </node>
+      <node id="127794">
+        <label>NexusServer/Src/SeNMSend.cpp</label>
+        <link refid="_se_n_m_send_8cpp"/>
+      </node>
+      <node id="127799">
+        <label>NexusServer/Src/SeRNProcess.cpp</label>
+        <link refid="_se_r_n_process_8cpp"/>
+      </node>
+      <node id="127786">
+        <label>NexusServer/Src/NexusMeasureMgr.cpp</label>
+        <link refid="_nexus_measure_mgr_8cpp"/>
+      </node>
+      <node id="127801">
+        <label>NexusServer/Src/SeWCMSNProcess.cpp</label>
+        <link refid="_se_w_c_m_s_n_process_8cpp"/>
+      </node>
+      <node id="127793">
+        <label>NexusServer/Src/SeNBLSend.cpp</label>
+        <link refid="_se_n_b_l_send_8cpp"/>
+      </node>
+      <node id="127792">
+        <label>NexusServer/Src/SeNBKSSend.cpp</label>
+        <link refid="_se_n_b_k_s_send_8cpp"/>
+      </node>
+      <node id="127795">
+        <label>NexusServer/Src/SeNRSend.cpp</label>
+        <link refid="_se_n_r_send_8cpp"/>
+      </node>
+      <node id="127789">
+        <label>NexusServer/Src/SeBKSNProcess.cpp</label>
+        <link refid="_se_b_k_s_n_process_8cpp"/>
+      </node>
+      <node id="127800">
+        <label>NexusServer/Src/SeTNProcess.cpp</label>
+        <link refid="_se_t_n_process_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_se_n_t_send_8inl_1a5f8b9be27db64fb3862c30830765fc6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_RegisterRet</definition>
+        <argsstring>(const SeRegisterRet &amp;eRet, DWord dwAreaID, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_RegisterRet</name>
+        <param>
+          <type>const <ref refid="_se_server_define_8h_1a83f922065d39660cc6ff3ff3e193daa1" kindref="member">SeRegisterRet</ref> &amp;</type>
+          <declname>eRet</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwAreaID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="1" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1ac7dc425165322025d0b7bfd65befcc74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_HeartPackageRet</definition>
+        <argsstring>(void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_HeartPackageRet</name>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="2" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1a7a44a85f0a0079499493bf3deb1de9e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_NexusFriendDetailInfoRes</definition>
+        <argsstring>(DWord dwPlayerID, int page_number, int page_max_number, int iNum, const SeNexusPlayerInfo *akNexusFriendInfo, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_NexusFriendDetailInfoRes</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_number</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_max_number</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iNum</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_se_nexus_player_info" kindref="compound">SeNexusPlayerInfo</ref> *</type>
+          <declname>akNexusFriendInfo</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="3" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1a394e9b67d265152dc7c7810706fe3c7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_NexusFriendDetailInfoRes</definition>
+        <argsstring>(DWord dwPlayerID, int page_number, int page_max_number, int iNum, std::vector&lt; SeNexusPlayerInfo &gt; &amp;akNexusFriendInfo, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_NexusFriendDetailInfoRes</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_number</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_max_number</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iNum</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_se_nexus_player_info" kindref="compound">SeNexusPlayerInfo</ref> &gt; &amp;</type>
+          <declname>akNexusFriendInfo</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="4" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1abca5e38aaa10c197f16086607d30b873" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_NexusUserActionSync</definition>
+        <argsstring>(DWord dwPlayerID, const SeNexusUserInfo &amp;sync_info, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_NexusUserActionSync</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_se_nexus_user_info" kindref="compound">SeNexusUserInfo</ref> &amp;</type>
+          <declname>sync_info</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="5" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1a89fbacbe2554330f00c83623d6b951b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_TeamChangeSync</definition>
+        <argsstring>(DWord dwPlayerID, DWord dwTeamID, DWord dwLeaderID, const char *acLeaderName, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_TeamChangeSync</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwTeamID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwLeaderID</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>acLeaderName</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="6" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1a56c0475f1dbe67ca74a392c8d2f8befa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_TeamLeaderSync</definition>
+        <argsstring>(DWord dwPlayerID, DWord dwGuestID, const char *acGuestName, DWord dwMark, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_TeamLeaderSync</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwGuestID</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>acGuestName</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwMark</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="7" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1a7ae3d169c3260eb0ab20b76778c1efe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_TeamMemberSync</definition>
+        <argsstring>(DWord dwPlayerID, DWord dwTeamID, DWord dwInviterID, const char *acInviterName, DWord dwMark, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_TeamMemberSync</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwTeamID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwInviterID</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>acInviterName</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwMark</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="8" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1a13a7986b0b74006959c499608a831878" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_TeamUserStateRes</definition>
+        <argsstring>(DWord dwPlayerID, DWord dwStateID, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_TeamUserStateRes</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwStateID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="9" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1a4cc6555aa2a9dd0a7637523ff80c1111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_TeamMemberInfoRes</definition>
+        <argsstring>(DWord dwPlayerID, DWord dwTeamID, int iNum, const SeTeamMemberBaseInfo *member_info, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_TeamMemberInfoRes</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwTeamID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iNum</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_se_team_member_base_info" kindref="compound">SeTeamMemberBaseInfo</ref> *</type>
+          <declname>member_info</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="10" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1a2bd5ddcb11dc92f2e670aa32b0141289" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_TeamMemberInfoRes</definition>
+        <argsstring>(DWord dwPlayerID, DWord dwTeamID, int iNum, std::vector&lt; SeTeamMemberBaseInfo &gt; &amp;member_info, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_TeamMemberInfoRes</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwTeamID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iNum</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_se_team_member_base_info" kindref="compound">SeTeamMemberBaseInfo</ref> &gt; &amp;</type>
+          <declname>member_info</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="11" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1aa24fc949b0c03c21eda073c658fe8eaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_NexusFriendStatusSync</definition>
+        <argsstring>(DWord dwPlayerID, DWord dwFriendID, DWord dwOnlineID, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_NexusFriendStatusSync</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwFriendID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwOnlineID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1a113563cbe4fd1b529aa802a3eacb3bea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_NexusFriendLimitRes</definition>
+        <argsstring>(DWord dwPlayerID, DWord dwLimitID, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_NexusFriendLimitRes</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwLimitID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1a297a680967451be9aadc9bdc257b6ce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_MatchTeamMemberRes</definition>
+        <argsstring>(DWord dwPlayerID, const MatchReqResult &amp;result, DWord MemberNum, const DWord *IDArray, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_MatchTeamMemberRes</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_se_ptl_comm_define_8h_1a89b73f1dc810e11801b5b7f3ecde8abd" kindref="member">MatchReqResult</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>MemberNum</declname>
+        </param>
+        <param>
+          <type>const DWord *</type>
+          <declname>IDArray</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1a0d3144ad5ff69540287a9858bdbf1452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_MatchTeamMemberRes</definition>
+        <argsstring>(DWord dwPlayerID, const MatchReqResult &amp;result, DWord MemberNum, std::vector&lt; DWord &gt; &amp;IDArray, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_MatchTeamMemberRes</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_se_ptl_comm_define_8h_1a89b73f1dc810e11801b5b7f3ecde8abd" kindref="member">MatchReqResult</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>MemberNum</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; DWord &gt; &amp;</type>
+          <declname>IDArray</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1a3c865796a01f28a21357dc2cab10ccf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_NexusFriendCleanRefuseNoticeRes</definition>
+        <argsstring>(DWord dwPlayerID, DWord dwGuestID, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_NexusFriendCleanRefuseNoticeRes</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwGuestID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1afd43454b517eaf7298831515cb0daca5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_UserStatusQueryRes</definition>
+        <argsstring>(DWord dwPlayerID, int iNum, const SeUserStatusBaseInfo *base_info, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_UserStatusQueryRes</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iNum</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_se_user_status_base_info" kindref="compound">SeUserStatusBaseInfo</ref> *</type>
+          <declname>base_info</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1adffb7b1bd4429b68d42ba5a170128d0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_UserStatusQueryRes</definition>
+        <argsstring>(DWord dwPlayerID, int iNum, std::vector&lt; SeUserStatusBaseInfo &gt; &amp;base_info, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_UserStatusQueryRes</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iNum</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_se_user_status_base_info" kindref="compound">SeUserStatusBaseInfo</ref> &gt; &amp;</type>
+          <declname>base_info</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1ac10739de6ea7b5caf0f66905dd7d54d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNT_RoomInviteNotifyVerifyRsp</definition>
+        <argsstring>(DWord dwInviteeID, DWord dwRoomID, DWord dwPlayerID, void *pkReceiver=NULL)</argsstring>
+        <name>SendNT_RoomInviteNotifyVerifyRsp</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwInviteeID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwRoomID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_se_n_t_send_8inl_1a29217180bd29945dc43763e2656413c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SendNTData</definition>
+        <argsstring>(void *pkData, int iSize, void *pkReceiver)</argsstring>
+        <name>SendNTData</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl" line="22" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1a5f8b9be27db64fb3862c30830765fc6c" kindref="member">SendNT_RegisterRet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_se_server_define_8h_1a83f922065d39660cc6ff3ff3e193daa1" kindref="member">SeRegisterRet</ref>&amp;<sp/>eRet,DWord<sp/>dwAreaID,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1ac7dc425165322025d0b7bfd65befcc74" kindref="member">SendNT_HeartPackageRet</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1a7a44a85f0a0079499493bf3deb1de9e5" kindref="member">SendNT_NexusFriendDetailInfoRes</ref>(DWord<sp/>dwPlayerID,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>page_number,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>page_max_number,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iNum,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_se_nexus_player_info" kindref="compound">SeNexusPlayerInfo</ref>*<sp/>akNexusFriendInfo,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1a7a44a85f0a0079499493bf3deb1de9e5" kindref="member">SendNT_NexusFriendDetailInfoRes</ref>(DWord<sp/>dwPlayerID,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>page_number,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>page_max_number,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iNum,std::vector&lt;SeNexusPlayerInfo&gt;&amp;<sp/>akNexusFriendInfo,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1abca5e38aaa10c197f16086607d30b873" kindref="member">SendNT_NexusUserActionSync</ref>(DWord<sp/>dwPlayerID,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_se_nexus_user_info" kindref="compound">SeNexusUserInfo</ref>&amp;<sp/>sync_info,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1a89fbacbe2554330f00c83623d6b951b2" kindref="member">SendNT_TeamChangeSync</ref>(DWord<sp/>dwPlayerID,DWord<sp/>dwTeamID,DWord<sp/>dwLeaderID,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>acLeaderName,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1a56c0475f1dbe67ca74a392c8d2f8befa" kindref="member">SendNT_TeamLeaderSync</ref>(DWord<sp/>dwPlayerID,DWord<sp/>dwGuestID,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>acGuestName,DWord<sp/>dwMark,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1a7ae3d169c3260eb0ab20b76778c1efe9" kindref="member">SendNT_TeamMemberSync</ref>(DWord<sp/>dwPlayerID,DWord<sp/>dwTeamID,DWord<sp/>dwInviterID,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>acInviterName,DWord<sp/>dwMark,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1a13a7986b0b74006959c499608a831878" kindref="member">SendNT_TeamUserStateRes</ref>(DWord<sp/>dwPlayerID,DWord<sp/>dwStateID,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1a4cc6555aa2a9dd0a7637523ff80c1111" kindref="member">SendNT_TeamMemberInfoRes</ref>(DWord<sp/>dwPlayerID,DWord<sp/>dwTeamID,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iNum,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_se_team_member_base_info" kindref="compound">SeTeamMemberBaseInfo</ref>*<sp/>member_info,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1a4cc6555aa2a9dd0a7637523ff80c1111" kindref="member">SendNT_TeamMemberInfoRes</ref>(DWord<sp/>dwPlayerID,DWord<sp/>dwTeamID,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iNum,std::vector&lt;SeTeamMemberBaseInfo&gt;&amp;<sp/>member_info,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1aa24fc949b0c03c21eda073c658fe8eaa" kindref="member">SendNT_NexusFriendStatusSync</ref>(DWord<sp/>dwPlayerID,DWord<sp/>dwFriendID,DWord<sp/>dwOnlineID,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1a113563cbe4fd1b529aa802a3eacb3bea" kindref="member">SendNT_NexusFriendLimitRes</ref>(DWord<sp/>dwPlayerID,DWord<sp/>dwLimitID,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1a297a680967451be9aadc9bdc257b6ce1" kindref="member">SendNT_MatchTeamMemberRes</ref>(DWord<sp/>dwPlayerID,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_se_ptl_comm_define_8h_1a89b73f1dc810e11801b5b7f3ecde8abd" kindref="member">MatchReqResult</ref>&amp;<sp/>result,DWord<sp/>MemberNum,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DWord*<sp/>IDArray,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1a297a680967451be9aadc9bdc257b6ce1" kindref="member">SendNT_MatchTeamMemberRes</ref>(DWord<sp/>dwPlayerID,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_se_ptl_comm_define_8h_1a89b73f1dc810e11801b5b7f3ecde8abd" kindref="member">MatchReqResult</ref>&amp;<sp/>result,DWord<sp/>MemberNum,std::vector&lt;DWord&gt;&amp;<sp/>IDArray,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1a3c865796a01f28a21357dc2cab10ccf7" kindref="member">SendNT_NexusFriendCleanRefuseNoticeRes</ref>(DWord<sp/>dwPlayerID,DWord<sp/>dwGuestID,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1afd43454b517eaf7298831515cb0daca5" kindref="member">SendNT_UserStatusQueryRes</ref>(DWord<sp/>dwPlayerID,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iNum,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_se_user_status_base_info" kindref="compound">SeUserStatusBaseInfo</ref>*<sp/>base_info,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1afd43454b517eaf7298831515cb0daca5" kindref="member">SendNT_UserStatusQueryRes</ref>(DWord<sp/>dwPlayerID,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iNum,std::vector&lt;SeUserStatusBaseInfo&gt;&amp;<sp/>base_info,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1ac10739de6ea7b5caf0f66905dd7d54d8" kindref="member">SendNT_RoomInviteNotifyVerifyRsp</ref>(DWord<sp/>dwInviteeID,DWord<sp/>dwRoomID,DWord<sp/>dwPlayerID,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver<sp/>=<sp/>NULL);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>以下函数需要实现</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_n_t_send_8inl_1a29217180bd29945dc43763e2656413c3" kindref="member">SendNTData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver);</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNTSend.inl"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1909 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="src_2_match_server_8h" kind="file">
+    <compoundname>MatchServer.h</compoundname>
+    <includes refid="_se_config_8h" local="yes">SeConfig.h</includes>
+    <includes refid="_se_server_tool_8h" local="yes">SeServerTool.h</includes>
+    <includes refid="src_2_match_server_def_8h" local="yes">MatchServerDef.h</includes>
+    <includes refid="_se_file_log_8h" local="yes">SeFileLog.h</includes>
+    <includes refid="_se_rand_num_8h" local="yes">SeRandNum.h</includes>
+    <includes refid="_se_server_define_8h" local="yes">SeServerDefine.h</includes>
+    <includes refid="_se_server_main_def_8h" local="yes">SeServerMainDef.h</includes>
+    <includes refid="_se_mem_pool_8h" local="yes">SeMemPool.h</includes>
+    <includes refid="_match_server_2src_2_se_town_mgr_8h" local="yes">SeTownMgr.h</includes>
+    <includes refid="src_2_se_race_svr_mgr_8h" local="yes">SeRaceSvrMgr.h</includes>
+    <includes refid="_match_server_2src_2_se_race_mgr_def_8h" local="yes">SeRaceMgrDef.h</includes>
+    <includes refid="src_2_se_race_query_mgr_def_8h" local="yes">SeRaceQueryMgrDef.h</includes>
+    <includes refid="_table_mgr_8h" local="yes">TableMgr.h</includes>
+    <includes refid="_match_server_2src_2_se_res_mgr_8h" local="yes">SeResMgr.h</includes>
+    <includes refid="_se_virt_conn_mgr_8h" local="yes">SeVirtConnMgr.h</includes>
+    <includes refid="_se_ptl_comm_define_8h" local="yes">SePtlCommDefine.h</includes>
+    <includes refid="src_2_se_match_mgr_8h" local="yes">SeMatchMgr.h</includes>
+    <includes refid="_se_m_t_send_8inl" local="yes">SeMTSend.inl</includes>
+    <includes refid="_se_m_r_send_8inl" local="yes">SeMRSend.inl</includes>
+    <includes refid="src_2_se_match_other_8inl" local="yes">SeMatchOther.inl</includes>
+    <includes refid="_match_server_2src_2_se_http_send_8inl" local="yes">SeHttpSend.inl</includes>
+    <includes refid="_match_server_2src_2_se_http_process_8inl" local="yes">SeHttpProcess.inl</includes>
+    <includes refid="_se_t_m_process_8inl" local="yes">SeTMProcess.inl</includes>
+    <includes refid="_se_r_m_process_8inl" local="yes">SeRMProcess.inl</includes>
+    <includes refid="_se_m_w_send_8inl" local="yes">SeMWSend.inl</includes>
+    <includes refid="_se_w_m_process_8inl" local="yes">SeWMProcess.inl</includes>
+    <includes refid="_se_m_b_l_send_8inl" local="yes">SeMBLSend.inl</includes>
+    <includes refid="_se_b_l_m_process_8inl" local="yes">SeBLMProcess.inl</includes>
+    <includes refid="_se_m_n_send_8inl" local="yes">SeMNSend.inl</includes>
+    <includes refid="_se_n_m_process_8inl" local="yes">SeNMProcess.inl</includes>
+    <includedby refid="_match_server_2src_2_main_8cpp" local="yes">MatchServer/src/Main.cpp</includedby>
+    <includedby refid="src_2_match_ban_mgr_8cpp" local="yes">MatchServer/src/MatchBanMgr.cpp</includedby>
+    <includedby refid="src_2_match_prepare_mgr_8cpp" local="yes">MatchServer/src/MatchPrepareMgr.cpp</includedby>
+    <includedby refid="src_2_match_server_8cpp" local="yes">MatchServer/src/MatchServer.cpp</includedby>
+    <includedby refid="src_2_se_b_l_m_process_8cpp" local="yes">MatchServer/src/SeBLMProcess.cpp</includedby>
+    <includedby refid="_match_server_2src_2_se_http_process_8cpp" local="yes">MatchServer/src/SeHttpProcess.cpp</includedby>
+    <includedby refid="_match_server_2src_2_se_http_send_8cpp" local="yes">MatchServer/src/SeHttpSend.cpp</includedby>
+    <includedby refid="src_2_se_match_mgr_8cpp" local="yes">MatchServer/src/SeMatchMgr.cpp</includedby>
+    <includedby refid="src_2_se_match_other_8cpp" local="yes">MatchServer/src/SeMatchOther.cpp</includedby>
+    <includedby refid="src_2_se_m_b_l_send_8cpp" local="yes">MatchServer/src/SeMBLSend.cpp</includedby>
+    <includedby refid="src_2_se_m_n_send_8cpp" local="yes">MatchServer/src/SeMNSend.cpp</includedby>
+    <includedby refid="src_2_se_m_r_send_8cpp" local="yes">MatchServer/src/SeMRSend.cpp</includedby>
+    <includedby refid="src_2_se_m_t_send_8cpp" local="yes">MatchServer/src/SeMTSend.cpp</includedby>
+    <includedby refid="src_2_se_m_w_send_8cpp" local="yes">MatchServer/src/SeMWSend.cpp</includedby>
+    <includedby refid="src_2_se_n_m_process_8cpp" local="yes">MatchServer/src/SeNMProcess.cpp</includedby>
+    <includedby refid="src_2_se_open_room_mgr_8cpp" local="yes">MatchServer/src/SeOpenRoomMgr.cpp</includedby>
+    <includedby refid="_match_server_2src_2_se_race_mgr_8cpp" local="yes">MatchServer/src/SeRaceMgr.cpp</includedby>
+    <includedby refid="src_2_se_race_query_mgr_8cpp" local="yes">MatchServer/src/SeRaceQueryMgr.cpp</includedby>
+    <includedby refid="src_2_se_race_svr_mgr_8cpp" local="yes">MatchServer/src/SeRaceSvrMgr.cpp</includedby>
+    <includedby refid="src_2_se_r_m_process_8cpp" local="yes">MatchServer/src/SeRMProcess.cpp</includedby>
+    <includedby refid="src_2_se_t_m_process_8cpp" local="yes">MatchServer/src/SeTMProcess.cpp</includedby>
+    <includedby refid="_match_server_2src_2_se_town_mgr_8cpp" local="yes">MatchServer/src/SeTownMgr.cpp</includedby>
+    <includedby refid="src_2_se_w_m_process_8cpp" local="yes">MatchServer/src/SeWMProcess.cpp</includedby>
+    <incdepgraph>
+      <node id="32166">
+        <label>list</label>
+      </node>
+      <node id="32160">
+        <label>locale</label>
+      </node>
+      <node id="32282">
+        <label>AchievementTask_table.hpp</label>
+        <link refid="_achievement_task__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32293">
+        <label>SeHttpProcess.inl</label>
+        <link refid="_match_server_2src_2_se_http_process_8inl"/>
+      </node>
+      <node id="32193">
+        <label>SePtl_MS_To_WS.h</label>
+        <link refid="_se_ptl___m_s___to___w_s_8h"/>
+        <childnode refid="32178" relation="include">
+        </childnode>
+      </node>
+      <node id="32192">
+        <label>SePtl_WS_To_MS.h</label>
+        <link refid="_se_ptl___w_s___to___m_s_8h"/>
+        <childnode refid="32178" relation="include">
+        </childnode>
+      </node>
+      <node id="32292">
+        <label>SeHttpSend.inl</label>
+        <link refid="_match_server_2src_2_se_http_send_8inl"/>
+      </node>
+      <node id="32253">
+        <label>MGClientExport.h</label>
+        <link refid="_m_g_client_export_8h"/>
+      </node>
+      <node id="32246">
+        <label>EffectSwitch_table.hpp</label>
+        <link refid="_effect_switch__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32221">
+        <label>Racehelp_table.hpp</label>
+        <link refid="_racehelp__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32170">
+        <label>queue</label>
+      </node>
+      <node id="32164">
+        <label>limits</label>
+      </node>
+      <node id="32203">
+        <label>SeTownMgr.h</label>
+        <link refid="_match_server_2src_2_se_town_mgr_8h"/>
+        <childnode refid="32204" relation="include">
+        </childnode>
+      </node>
+      <node id="32180">
+        <label>SePtlCommDefine.h</label>
+        <link refid="_se_ptl_comm_define_8h"/>
+      </node>
+      <node id="32279">
+        <label>KillBounty_table.hpp</label>
+        <link refid="_kill_bounty__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32205">
+        <label>SeRaceSvrMgr.h</label>
+        <link refid="src_2_se_race_svr_mgr_8h"/>
+        <childnode refid="32206" relation="include">
+        </childnode>
+      </node>
+      <node id="32181">
+        <label>SeMemPool.h</label>
+        <link refid="_se_mem_pool_8h"/>
+        <childnode refid="32145" relation="include">
+        </childnode>
+        <childnode refid="32182" relation="include">
+        </childnode>
+        <childnode refid="32152" relation="include">
+        </childnode>
+      </node>
+      <node id="32147">
+        <label>windows.h</label>
+      </node>
+      <node id="32234">
+        <label>Pet_table.hpp</label>
+        <link refid="_pet__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32294">
+        <label>SeTMProcess.inl</label>
+        <link refid="_se_t_m_process_8inl"/>
+      </node>
+      <node id="32152">
+        <label>assert.h</label>
+      </node>
+      <node id="32274">
+        <label>FreeHeroes_table.hpp</label>
+        <link refid="_free_heroes__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32289">
+        <label>SeMTSend.inl</label>
+        <link refid="_se_m_t_send_8inl"/>
+      </node>
+      <node id="32194">
+        <label>SePtl_BLS_To_MS.h</label>
+        <link refid="_se_ptl___b_l_s___to___m_s_8h"/>
+        <childnode refid="32178" relation="include">
+        </childnode>
+        <childnode refid="32186" relation="include">
+        </childnode>
+      </node>
+      <node id="32286">
+        <label>SeMatchMgr.h</label>
+        <link refid="src_2_se_match_mgr_8h"/>
+        <childnode refid="32145" relation="include">
+        </childnode>
+        <childnode refid="32180" relation="include">
+        </childnode>
+        <childnode refid="32186" relation="include">
+        </childnode>
+        <childnode refid="32204" relation="include">
+        </childnode>
+        <childnode refid="32181" relation="include">
+        </childnode>
+        <childnode refid="32207" relation="include">
+        </childnode>
+        <childnode refid="32287" relation="include">
+        </childnode>
+      </node>
+      <node id="32243">
+        <label>RandomName_table.hpp</label>
+        <link refid="_random_name__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32196">
+        <label>SeDBDefine.h</label>
+        <link refid="_se_d_b_define_8h"/>
+        <childnode refid="32178" relation="include">
+        </childnode>
+      </node>
+      <node id="32285">
+        <label>SeTimer.h</label>
+        <link refid="_se_timer_8h"/>
+      </node>
+      <node id="32261">
+        <label>MapShopRes_table.hpp</label>
+        <link refid="_map_shop_res__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32237">
+        <label>chance_table.hpp</label>
+        <link refid="_chance__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32150">
+        <label>stdlib.h</label>
+      </node>
+      <node id="32182">
+        <label>EsLock.h</label>
+      </node>
+      <node id="32212">
+        <label>Unit_table.hpp</label>
+        <link refid="_unit__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32142">
+        <label>MatchServer/src/MatchServer.h</label>
+        <link refid="src/MatchServer.h"/>
+        <childnode refid="32143" relation="include">
+        </childnode>
+        <childnode refid="32173" relation="include">
+        </childnode>
+        <childnode refid="32183" relation="include">
+        </childnode>
+        <childnode refid="32199" relation="include">
+        </childnode>
+        <childnode refid="32201" relation="include">
+        </childnode>
+        <childnode refid="32186" relation="include">
+        </childnode>
+        <childnode refid="32202" relation="include">
+        </childnode>
+        <childnode refid="32181" relation="include">
+        </childnode>
+        <childnode refid="32203" relation="include">
+        </childnode>
+        <childnode refid="32205" relation="include">
+        </childnode>
+        <childnode refid="32207" relation="include">
+        </childnode>
+        <childnode refid="32208" relation="include">
+        </childnode>
+        <childnode refid="32209" relation="include">
+        </childnode>
+        <childnode refid="32283" relation="include">
+        </childnode>
+        <childnode refid="32284" relation="include">
+        </childnode>
+        <childnode refid="32180" relation="include">
+        </childnode>
+        <childnode refid="32286" relation="include">
+        </childnode>
+        <childnode refid="32289" relation="include">
+        </childnode>
+        <childnode refid="32290" relation="include">
+        </childnode>
+        <childnode refid="32291" relation="include">
+        </childnode>
+        <childnode refid="32292" relation="include">
+        </childnode>
+        <childnode refid="32293" relation="include">
+        </childnode>
+        <childnode refid="32294" relation="include">
+        </childnode>
+        <childnode refid="32295" relation="include">
+        </childnode>
+        <childnode refid="32296" relation="include">
+        </childnode>
+        <childnode refid="32297" relation="include">
+        </childnode>
+        <childnode refid="32298" relation="include">
+        </childnode>
+        <childnode refid="32299" relation="include">
+        </childnode>
+        <childnode refid="32300" relation="include">
+        </childnode>
+        <childnode refid="32301" relation="include">
+        </childnode>
+      </node>
+      <node id="32207">
+        <label>SeRaceMgrDef.h</label>
+        <link refid="_match_server_2src_2_se_race_mgr_def_8h"/>
+        <childnode refid="32145" relation="include">
+        </childnode>
+        <childnode refid="32186" relation="include">
+        </childnode>
+        <childnode refid="32178" relation="include">
+        </childnode>
+      </node>
+      <node id="32295">
+        <label>SeRMProcess.inl</label>
+        <link refid="_se_r_m_process_8inl"/>
+      </node>
+      <node id="32228">
+        <label>RenJiCustomData_table.hpp</label>
+        <link refid="_ren_ji_custom_data__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32236">
+        <label>Dress_table.hpp</label>
+        <link refid="_dress__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32154">
+        <label>cmath</label>
+      </node>
+      <node id="32259">
+        <label>AvatarEffect_table.hpp</label>
+        <link refid="_avatar_effect__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32264">
+        <label>MapMisc_table.hpp</label>
+        <link refid="_map_misc__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32268">
+        <label>UpgradeCost_table.hpp</label>
+        <link refid="_upgrade_cost__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32281">
+        <label>VideoTag_table.hpp</label>
+        <link refid="_video_tag__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32226">
+        <label>RenJiActions_table.hpp</label>
+        <link refid="_ren_ji_actions__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32211">
+        <label>SeTableResBase.h</label>
+        <link refid="_se_table_res_base_8h"/>
+        <childnode refid="32165" relation="include">
+        </childnode>
+      </node>
+      <node id="32163">
+        <label>string</label>
+      </node>
+      <node id="32191">
+        <label>SePtl_HS_To_HS.h</label>
+        <link refid="_se_ptl___h_s___to___h_s_8h"/>
+        <childnode refid="32178" relation="include">
+        </childnode>
+      </node>
+      <node id="32270">
+        <label>AppendSkill_table.hpp</label>
+        <link refid="_append_skill__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32167">
+        <label>map</label>
+      </node>
+      <node id="32199">
+        <label>SeFileLog.h</label>
+        <link refid="_se_file_log_8h"/>
+        <childnode refid="32200" relation="include">
+        </childnode>
+        <childnode refid="32156" relation="include">
+        </childnode>
+        <childnode refid="32182" relation="include">
+        </childnode>
+      </node>
+      <node id="32206">
+        <label>SeRaceSvrMgrDef.h</label>
+        <link refid="src_2_se_race_svr_mgr_def_8h"/>
+        <childnode refid="32183" relation="include">
+        </childnode>
+      </node>
+      <node id="32208">
+        <label>SeRaceQueryMgrDef.h</label>
+        <link refid="src_2_se_race_query_mgr_def_8h"/>
+        <childnode refid="32145" relation="include">
+        </childnode>
+        <childnode refid="32178" relation="include">
+        </childnode>
+        <childnode refid="32207" relation="include">
+        </childnode>
+      </node>
+      <node id="32149">
+        <label>conio.h</label>
+      </node>
+      <node id="32227">
+        <label>RenJiConditions_table.hpp</label>
+        <link refid="_ren_ji_conditions__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32179">
+        <label>SePtlRandomNumDef.h</label>
+        <link refid="_se_ptl_random_num_def_8h"/>
+      </node>
+      <node id="32198">
+        <label>SePtl_MS_To_NS.h</label>
+        <link refid="_se_ptl___m_s___to___n_s_8h"/>
+        <childnode refid="32178" relation="include">
+        </childnode>
+      </node>
+      <node id="32197">
+        <label>SePtl_NS_To_MS.h</label>
+        <link refid="_se_ptl___n_s___to___m_s_8h"/>
+        <childnode refid="32178" relation="include">
+        </childnode>
+      </node>
+      <node id="32269">
+        <label>Decompose_table.hpp</label>
+        <link refid="_decompose__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32223">
+        <label>ItemExchange_table.hpp</label>
+        <link refid="_item_exchange__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32255">
+        <label>HeroInfo_table.hpp</label>
+        <link refid="_hero_info__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32148">
+        <label>direct.h</label>
+      </node>
+      <node id="32252">
+        <label>GlobalTableMgr.h</label>
+        <link refid="_global_table_mgr_8h"/>
+        <childnode refid="32253" relation="include">
+        </childnode>
+        <childnode refid="32215" relation="include">
+        </childnode>
+        <childnode refid="32213" relation="include">
+        </childnode>
+        <childnode refid="32218" relation="include">
+        </childnode>
+        <childnode refid="32212" relation="include">
+        </childnode>
+        <childnode refid="32216" relation="include">
+        </childnode>
+        <childnode refid="32248" relation="include">
+        </childnode>
+        <childnode refid="32249" relation="include">
+        </childnode>
+        <childnode refid="32251" relation="include">
+        </childnode>
+        <childnode refid="32254" relation="include">
+        </childnode>
+        <childnode refid="32255" relation="include">
+        </childnode>
+        <childnode refid="32256" relation="include">
+        </childnode>
+        <childnode refid="32257" relation="include">
+        </childnode>
+        <childnode refid="32258" relation="include">
+        </childnode>
+        <childnode refid="32259" relation="include">
+        </childnode>
+        <childnode refid="32214" relation="include">
+        </childnode>
+        <childnode refid="32260" relation="include">
+        </childnode>
+        <childnode refid="32241" relation="include">
+        </childnode>
+        <childnode refid="32261" relation="include">
+        </childnode>
+        <childnode refid="32262" relation="include">
+        </childnode>
+        <childnode refid="32263" relation="include">
+        </childnode>
+        <childnode refid="32250" relation="include">
+        </childnode>
+        <childnode refid="32264" relation="include">
+        </childnode>
+        <childnode refid="32265" relation="include">
+        </childnode>
+        <childnode refid="32220" relation="include">
+        </childnode>
+        <childnode refid="32266" relation="include">
+        </childnode>
+        <childnode refid="32267" relation="include">
+        </childnode>
+        <childnode refid="32268" relation="include">
+        </childnode>
+        <childnode refid="32269" relation="include">
+        </childnode>
+        <childnode refid="32270" relation="include">
+        </childnode>
+        <childnode refid="32224" relation="include">
+        </childnode>
+        <childnode refid="32222" relation="include">
+        </childnode>
+        <childnode refid="32271" relation="include">
+        </childnode>
+        <childnode refid="32272" relation="include">
+        </childnode>
+        <childnode refid="32273" relation="include">
+        </childnode>
+        <childnode refid="32274" relation="include">
+        </childnode>
+        <childnode refid="32237" relation="include">
+        </childnode>
+        <childnode refid="32275" relation="include">
+        </childnode>
+      </node>
+      <node id="32250">
+        <label>BattleTips_table.hpp</label>
+        <link refid="_battle_tips__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32232">
+        <label>TaskInfo_table.hpp</label>
+        <link refid="_task_info__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32273">
+        <label>Propaganda_table.hpp</label>
+        <link refid="_propaganda__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32265">
+        <label>MapsInfo_table.hpp</label>
+        <link refid="_maps_info__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32161">
+        <label>fstream</label>
+      </node>
+      <node id="32183">
+        <label>MatchServerDef.h</label>
+        <link refid="src_2_match_server_def_8h"/>
+        <childnode refid="32144" relation="include">
+        </childnode>
+        <childnode refid="32181" relation="include">
+        </childnode>
+        <childnode refid="32184" relation="include">
+        </childnode>
+        <childnode refid="32178" relation="include">
+        </childnode>
+        <childnode refid="32185" relation="include">
+        </childnode>
+        <childnode refid="32186" relation="include">
+        </childnode>
+        <childnode refid="32187" relation="include">
+        </childnode>
+        <childnode refid="32188" relation="include">
+        </childnode>
+        <childnode refid="32189" relation="include">
+        </childnode>
+        <childnode refid="32190" relation="include">
+        </childnode>
+        <childnode refid="32191" relation="include">
+        </childnode>
+        <childnode refid="32192" relation="include">
+        </childnode>
+        <childnode refid="32193" relation="include">
+        </childnode>
+        <childnode refid="32194" relation="include">
+        </childnode>
+        <childnode refid="32195" relation="include">
+        </childnode>
+        <childnode refid="32197" relation="include">
+        </childnode>
+        <childnode refid="32198" relation="include">
+        </childnode>
+      </node>
+      <node id="32174">
+        <label>SeTool.h</label>
+        <link refid="_se_tool_8h"/>
+        <childnode refid="32145" relation="include">
+        </childnode>
+        <childnode refid="32144" relation="include">
+        </childnode>
+        <childnode refid="32175" relation="include">
+        </childnode>
+        <childnode refid="32176" relation="include">
+        </childnode>
+        <childnode refid="32158" relation="include">
+        </childnode>
+        <childnode refid="32177" relation="include">
+        </childnode>
+      </node>
+      <node id="32201">
+        <label>SeRandNum.h</label>
+        <link refid="_se_rand_num_8h"/>
+        <childnode refid="32145" relation="include">
+        </childnode>
+      </node>
+      <node id="32146">
+        <label>winsock2.h</label>
+      </node>
+      <node id="32247">
+        <label>SearchChoice_table.hpp</label>
+        <link refid="_search_choice__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32271">
+        <label>AcSystem_table.hpp</label>
+        <link refid="_ac_system__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32222">
+        <label>ModelRes_table.hpp</label>
+        <link refid="_model_res__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32220">
+        <label>TownItem_table.hpp</label>
+        <link refid="_town_item__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32202">
+        <label>SeServerMainDef.h</label>
+        <link refid="_se_server_main_def_8h"/>
+        <childnode refid="32145" relation="include">
+        </childnode>
+      </node>
+      <node id="32176">
+        <label>TeMisc.h</label>
+        <link refid="_te_misc_8h"/>
+        <childnode refid="32157" relation="include">
+        </childnode>
+      </node>
+      <node id="32299">
+        <label>SeBLMProcess.inl</label>
+        <link refid="_se_b_l_m_process_8inl"/>
+      </node>
+      <node id="32280">
+        <label>CreepTowerGrowth_table.hpp</label>
+        <link refid="_creep_tower_growth__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32210">
+        <label>Addtional_table.hpp</label>
+        <link refid="_addtional__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32190">
+        <label>SePtl_MS_To_RS.h</label>
+        <link refid="_se_ptl___m_s___to___r_s_8h"/>
+        <childnode refid="32178" relation="include">
+        </childnode>
+      </node>
+      <node id="32189">
+        <label>SePtl_RS_To_MS.h</label>
+        <link refid="_se_ptl___r_s___to___m_s_8h"/>
+        <childnode refid="32178" relation="include">
+        </childnode>
+      </node>
+      <node id="32186">
+        <label>SeServerDefine.h</label>
+        <link refid="_se_server_define_8h"/>
+        <childnode refid="32144" relation="include">
+        </childnode>
+        <childnode refid="32184" relation="include">
+        </childnode>
+        <childnode refid="32174" relation="include">
+        </childnode>
+      </node>
+      <node id="32278">
+        <label>AttackArmorRatio_table.hpp</label>
+        <link refid="_attack_armor_ratio__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32213">
+        <label>Skill_table.hpp</label>
+        <link refid="_skill__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32157">
+        <label>string.h</label>
+      </node>
+      <node id="32263">
+        <label>Level_table.hpp</label>
+        <link refid="_level__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32143">
+        <label>SeConfig.h</label>
+        <link refid="_se_config_8h"/>
+        <childnode refid="32144" relation="include">
+        </childnode>
+      </node>
+      <node id="32155">
+        <label>ctime</label>
+      </node>
+      <node id="32241">
+        <label>Voice_table.hpp</label>
+        <link refid="_voice__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32209">
+        <label>TableMgr.h</label>
+        <link refid="_table_mgr_8h"/>
+        <childnode refid="32210" relation="include">
+        </childnode>
+        <childnode refid="32212" relation="include">
+        </childnode>
+        <childnode refid="32213" relation="include">
+        </childnode>
+        <childnode refid="32214" relation="include">
+        </childnode>
+        <childnode refid="32215" relation="include">
+        </childnode>
+        <childnode refid="32216" relation="include">
+        </childnode>
+        <childnode refid="32217" relation="include">
+        </childnode>
+        <childnode refid="32218" relation="include">
+        </childnode>
+        <childnode refid="32219" relation="include">
+        </childnode>
+        <childnode refid="32220" relation="include">
+        </childnode>
+        <childnode refid="32221" relation="include">
+        </childnode>
+        <childnode refid="32222" relation="include">
+        </childnode>
+        <childnode refid="32223" relation="include">
+        </childnode>
+        <childnode refid="32224" relation="include">
+        </childnode>
+        <childnode refid="32225" relation="include">
+        </childnode>
+        <childnode refid="32226" relation="include">
+        </childnode>
+        <childnode refid="32227" relation="include">
+        </childnode>
+        <childnode refid="32228" relation="include">
+        </childnode>
+        <childnode refid="32229" relation="include">
+        </childnode>
+        <childnode refid="32230" relation="include">
+        </childnode>
+        <childnode refid="32231" relation="include">
+        </childnode>
+        <childnode refid="32232" relation="include">
+        </childnode>
+        <childnode refid="32233" relation="include">
+        </childnode>
+        <childnode refid="32234" relation="include">
+        </childnode>
+        <childnode refid="32235" relation="include">
+        </childnode>
+        <childnode refid="32236" relation="include">
+        </childnode>
+        <childnode refid="32237" relation="include">
+        </childnode>
+        <childnode refid="32238" relation="include">
+        </childnode>
+        <childnode refid="32239" relation="include">
+        </childnode>
+        <childnode refid="32240" relation="include">
+        </childnode>
+        <childnode refid="32241" relation="include">
+        </childnode>
+        <childnode refid="32242" relation="include">
+        </childnode>
+        <childnode refid="32243" relation="include">
+        </childnode>
+        <childnode refid="32244" relation="include">
+        </childnode>
+        <childnode refid="32245" relation="include">
+        </childnode>
+        <childnode refid="32165" relation="include">
+        </childnode>
+        <childnode refid="32246" relation="include">
+        </childnode>
+        <childnode refid="32247" relation="include">
+        </childnode>
+        <childnode refid="32248" relation="include">
+        </childnode>
+        <childnode refid="32249" relation="include">
+        </childnode>
+        <childnode refid="32250" relation="include">
+        </childnode>
+        <childnode refid="32251" relation="include">
+        </childnode>
+        <childnode refid="32252" relation="include">
+        </childnode>
+        <childnode refid="32260" relation="include">
+        </childnode>
+        <childnode refid="32254" relation="include">
+        </childnode>
+        <childnode refid="32255" relation="include">
+        </childnode>
+        <childnode refid="32257" relation="include">
+        </childnode>
+        <childnode refid="32276" relation="include">
+        </childnode>
+        <childnode refid="32259" relation="include">
+        </childnode>
+        <childnode refid="32258" relation="include">
+        </childnode>
+        <childnode refid="32277" relation="include">
+        </childnode>
+        <childnode refid="32256" relation="include">
+        </childnode>
+        <childnode refid="32261" relation="include">
+        </childnode>
+        <childnode refid="32263" relation="include">
+        </childnode>
+        <childnode refid="32278" relation="include">
+        </childnode>
+        <childnode refid="32262" relation="include">
+        </childnode>
+        <childnode refid="32279" relation="include">
+        </childnode>
+        <childnode refid="32280" relation="include">
+        </childnode>
+        <childnode refid="32266" relation="include">
+        </childnode>
+        <childnode refid="32270" relation="include">
+        </childnode>
+        <childnode refid="32281" relation="include">
+        </childnode>
+        <childnode refid="32271" relation="include">
+        </childnode>
+        <childnode refid="32272" relation="include">
+        </childnode>
+        <childnode refid="32273" relation="include">
+        </childnode>
+        <childnode refid="32274" relation="include">
+        </childnode>
+        <childnode refid="32282" relation="include">
+        </childnode>
+      </node>
+      <node id="32184">
+        <label>TeNetMgr.h</label>
+      </node>
+      <node id="32165">
+        <label>vector</label>
+      </node>
+      <node id="32244">
+        <label>TableMgrDef.h</label>
+        <link refid="_table_mgr_def_8h"/>
+        <childnode refid="32165" relation="include">
+        </childnode>
+        <childnode refid="32168" relation="include">
+        </childnode>
+      </node>
+      <node id="32288">
+        <label>MobaApi.hpp</label>
+        <link refid="_moba_api_8hpp"/>
+      </node>
+      <node id="32215">
+        <label>MapInfo_table.hpp</label>
+        <link refid="_map_info__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32214">
+        <label>Buffer_table.hpp</label>
+        <link refid="_buffer__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32290">
+        <label>SeMRSend.inl</label>
+        <link refid="_se_m_r_send_8inl"/>
+      </node>
+      <node id="32257">
+        <label>Avatar_table.hpp</label>
+        <link refid="_avatar__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32171">
+        <label>new</label>
+      </node>
+      <node id="32291">
+        <label>SeMatchOther.inl</label>
+        <link refid="src_2_se_match_other_8inl"/>
+      </node>
+      <node id="32283">
+        <label>SeResMgr.h</label>
+        <link refid="_match_server_2src_2_se_res_mgr_8h"/>
+        <childnode refid="32209" relation="include">
+        </childnode>
+        <childnode refid="32183" relation="include">
+        </childnode>
+      </node>
+      <node id="32178">
+        <label>SePtlDefine.h</label>
+        <link refid="_se_ptl_define_8h"/>
+        <childnode refid="32145" relation="include">
+        </childnode>
+        <childnode refid="32144" relation="include">
+        </childnode>
+        <childnode refid="32174" relation="include">
+        </childnode>
+        <childnode refid="32179" relation="include">
+        </childnode>
+        <childnode refid="32180" relation="include">
+        </childnode>
+        <childnode refid="32181" relation="include">
+        </childnode>
+      </node>
+      <node id="32144">
+        <label>SeShareDef.h</label>
+        <link refid="_se_share_def_8h"/>
+        <childnode refid="32145" relation="include">
+        </childnode>
+      </node>
+      <node id="32204">
+        <label>SeTownMgrDef.h</label>
+        <link refid="_match_server_2src_2_se_town_mgr_def_8h"/>
+        <childnode refid="32183" relation="include">
+        </childnode>
+      </node>
+      <node id="32162">
+        <label>sstream</label>
+      </node>
+      <node id="32248">
+        <label>ItemCompose_table.hpp</label>
+        <link refid="_item_compose__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32177">
+        <label>EsString.h</label>
+      </node>
+      <node id="32230">
+        <label>Indexoffer_table.hpp</label>
+        <link refid="_indexoffer__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32284">
+        <label>SeVirtConnMgr.h</label>
+        <link refid="_se_virt_conn_mgr_8h"/>
+        <childnode refid="32144" relation="include">
+        </childnode>
+        <childnode refid="32184" relation="include">
+        </childnode>
+        <childnode refid="32178" relation="include">
+        </childnode>
+        <childnode refid="32285" relation="include">
+        </childnode>
+      </node>
+      <node id="32224">
+        <label>Rack_table.hpp</label>
+        <link refid="_rack__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32145">
+        <label>SeInclude.h</label>
+        <link refid="_se_include_8h"/>
+        <childnode refid="32146" relation="include">
+        </childnode>
+        <childnode refid="32147" relation="include">
+        </childnode>
+        <childnode refid="32148" relation="include">
+        </childnode>
+        <childnode refid="32149" relation="include">
+        </childnode>
+        <childnode refid="32150" relation="include">
+        </childnode>
+        <childnode refid="32151" relation="include">
+        </childnode>
+        <childnode refid="32152" relation="include">
+        </childnode>
+        <childnode refid="32153" relation="include">
+        </childnode>
+        <childnode refid="32154" relation="include">
+        </childnode>
+        <childnode refid="32155" relation="include">
+        </childnode>
+        <childnode refid="32156" relation="include">
+        </childnode>
+        <childnode refid="32157" relation="include">
+        </childnode>
+        <childnode refid="32158" relation="include">
+        </childnode>
+        <childnode refid="32159" relation="include">
+        </childnode>
+        <childnode refid="32160" relation="include">
+        </childnode>
+        <childnode refid="32161" relation="include">
+        </childnode>
+        <childnode refid="32162" relation="include">
+        </childnode>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32164" relation="include">
+        </childnode>
+        <childnode refid="32165" relation="include">
+        </childnode>
+        <childnode refid="32166" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32168" relation="include">
+        </childnode>
+        <childnode refid="32169" relation="include">
+        </childnode>
+        <childnode refid="32170" relation="include">
+        </childnode>
+        <childnode refid="32171" relation="include">
+        </childnode>
+        <childnode refid="32172" relation="include">
+        </childnode>
+      </node>
+      <node id="32200">
+        <label>time.h</label>
+      </node>
+      <node id="32151">
+        <label>math.h</label>
+      </node>
+      <node id="32249">
+        <label>PresetShop_table.hpp</label>
+        <link refid="_preset_shop__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32238">
+        <label>Language_table.hpp</label>
+        <link refid="_language__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32185">
+        <label>SeSynMgr.h</label>
+        <link refid="_se_syn_mgr_8h"/>
+        <childnode refid="32145" relation="include">
+        </childnode>
+      </node>
+      <node id="32158">
+        <label>EsType.h</label>
+      </node>
+      <node id="32267">
+        <label>AppendCost_table.hpp</label>
+        <link refid="_append_cost__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32229">
+        <label>RaceText_table.hpp</label>
+        <link refid="_race_text__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32153">
+        <label>cctype</label>
+      </node>
+      <node id="32175">
+        <label>SeToolTemplate.inl</label>
+        <link refid="_se_tool_template_8inl"/>
+      </node>
+      <node id="32300">
+        <label>SeMNSend.inl</label>
+        <link refid="_se_m_n_send_8inl"/>
+      </node>
+      <node id="32231">
+        <label>UnitHeadArea_table.hpp</label>
+        <link refid="_unit_head_area__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32272">
+        <label>RankStage_table.hpp</label>
+        <link refid="_rank_stage__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32287">
+        <label>utils/Clock.hpp</label>
+        <link refid="_clock_8hpp"/>
+        <childnode refid="32182" relation="include">
+        </childnode>
+        <childnode refid="32200" relation="include">
+        </childnode>
+        <childnode refid="32288" relation="include">
+        </childnode>
+      </node>
+      <node id="32275">
+        <label>MissionInfo_table.hpp</label>
+        <link refid="_mission_info__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32262">
+        <label>ChoiceItem_table.hpp</label>
+        <link refid="_choice_item__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32258">
+        <label>AvatarModel_table.hpp</label>
+        <link refid="_avatar_model__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32168">
+        <label>unordered_map</label>
+      </node>
+      <node id="32251">
+        <label>Shop_table.hpp</label>
+        <link refid="_shop__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32172">
+        <label>SeDefine.h</label>
+        <link refid="_se_define_8h"/>
+      </node>
+      <node id="32239">
+        <label>StarWheel_table.hpp</label>
+        <link refid="_star_wheel__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32217">
+        <label>Racedrop_table.hpp</label>
+        <link refid="_racedrop__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32296">
+        <label>SeMWSend.inl</label>
+        <link refid="_se_m_w_send_8inl"/>
+      </node>
+      <node id="32276">
+        <label>AvatarAnimation_table.hpp</label>
+        <link refid="_avatar_animation__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32173">
+        <label>SeServerTool.h</label>
+        <link refid="_se_server_tool_8h"/>
+        <childnode refid="32145" relation="include">
+        </childnode>
+        <childnode refid="32174" relation="include">
+        </childnode>
+        <childnode refid="32178" relation="include">
+        </childnode>
+      </node>
+      <node id="32188">
+        <label>SePtl_MS_To_TS.h</label>
+        <link refid="_se_ptl___m_s___to___t_s_8h"/>
+        <childnode refid="32178" relation="include">
+        </childnode>
+      </node>
+      <node id="32187">
+        <label>SePtl_TS_To_MS.h</label>
+        <link refid="_se_ptl___t_s___to___m_s_8h"/>
+        <childnode refid="32178" relation="include">
+        </childnode>
+      </node>
+      <node id="32225">
+        <label>RenJi_table.hpp</label>
+        <link refid="_ren_ji__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32233">
+        <label>TaskRecom_table.hpp</label>
+        <link refid="_task_recom__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32216">
+        <label>Item_table.hpp</label>
+        <link refid="_item__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32169" relation="include">
+        </childnode>
+        <childnode refid="32165" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32277">
+        <label>AvatarShop_table.hpp</label>
+        <link refid="_avatar_shop__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32240">
+        <label>LeagueRank_table.hpp</label>
+        <link refid="_league_rank__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32235">
+        <label>Horse_table.hpp</label>
+        <link refid="_horse__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32298">
+        <label>SeMBLSend.inl</label>
+        <link refid="_se_m_b_l_send_8inl"/>
+      </node>
+      <node id="32256">
+        <label>Achievement_table.hpp</label>
+        <link refid="_achievement__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32169">
+        <label>set</label>
+      </node>
+      <node id="32242">
+        <label>TableLoader.h</label>
+        <link refid="_table_loader_8h"/>
+      </node>
+      <node id="32260">
+        <label>SkillTips_table.hpp</label>
+        <link refid="_skill_tips__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32169" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32159">
+        <label>algorithm</label>
+      </node>
+      <node id="32301">
+        <label>SeNMProcess.inl</label>
+        <link refid="_se_n_m_process_8inl"/>
+      </node>
+      <node id="32245">
+        <label>AddtionalFunction.h</label>
+        <link refid="_addtional_function_8h"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32210" relation="include">
+        </childnode>
+      </node>
+      <node id="32297">
+        <label>SeWMProcess.inl</label>
+        <link refid="_se_w_m_process_8inl"/>
+      </node>
+      <node id="32218">
+        <label>SelHero_table.hpp</label>
+        <link refid="_sel_hero__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32156">
+        <label>stdio.h</label>
+      </node>
+      <node id="32219">
+        <label>AI_table.hpp</label>
+        <link refid="_a_i__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32254">
+        <label>SystemPrompt_table.hpp</label>
+        <link refid="_system_prompt__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32266">
+        <label>Strengthen_table.hpp</label>
+        <link refid="_strengthen__table_8hpp"/>
+        <childnode refid="32163" relation="include">
+        </childnode>
+        <childnode refid="32167" relation="include">
+        </childnode>
+        <childnode refid="32211" relation="include">
+        </childnode>
+      </node>
+      <node id="32195">
+        <label>SePtl_MS_To_BLS.h</label>
+        <link refid="_se_ptl___m_s___to___b_l_s_8h"/>
+        <childnode refid="32178" relation="include">
+        </childnode>
+        <childnode refid="32186" relation="include">
+        </childnode>
+        <childnode refid="32196" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="32308">
+        <label>MatchServer/src/SeHttpProcess.cpp</label>
+        <link refid="_match_server_2src_2_se_http_process_8cpp"/>
+      </node>
+      <node id="32309">
+        <label>MatchServer/src/SeHttpSend.cpp</label>
+        <link refid="_match_server_2src_2_se_http_send_8cpp"/>
+      </node>
+      <node id="32324">
+        <label>MatchServer/src/SeTownMgr.cpp</label>
+        <link refid="_match_server_2src_2_se_town_mgr_8cpp"/>
+      </node>
+      <node id="32303">
+        <label>MatchServer/src/Main.cpp</label>
+        <link refid="_match_server_2src_2_main_8cpp"/>
+      </node>
+      <node id="32311">
+        <label>MatchServer/src/SeMatchOther.cpp</label>
+        <link refid="src_2_se_match_other_8cpp"/>
+      </node>
+      <node id="32322">
+        <label>MatchServer/src/SeRMProcess.cpp</label>
+        <link refid="src_2_se_r_m_process_8cpp"/>
+      </node>
+      <node id="32302">
+        <label>MatchServer/src/MatchServer.h</label>
+        <link refid="src/MatchServer.h"/>
+        <childnode refid="32303" relation="include">
+        </childnode>
+        <childnode refid="32304" relation="include">
+        </childnode>
+        <childnode refid="32305" relation="include">
+        </childnode>
+        <childnode refid="32306" relation="include">
+        </childnode>
+        <childnode refid="32307" relation="include">
+        </childnode>
+        <childnode refid="32308" relation="include">
+        </childnode>
+        <childnode refid="32309" relation="include">
+        </childnode>
+        <childnode refid="32310" relation="include">
+        </childnode>
+        <childnode refid="32311" relation="include">
+        </childnode>
+        <childnode refid="32312" relation="include">
+        </childnode>
+        <childnode refid="32313" relation="include">
+        </childnode>
+        <childnode refid="32314" relation="include">
+        </childnode>
+        <childnode refid="32315" relation="include">
+        </childnode>
+        <childnode refid="32316" relation="include">
+        </childnode>
+        <childnode refid="32317" relation="include">
+        </childnode>
+        <childnode refid="32318" relation="include">
+        </childnode>
+        <childnode refid="32319" relation="include">
+        </childnode>
+        <childnode refid="32320" relation="include">
+        </childnode>
+        <childnode refid="32321" relation="include">
+        </childnode>
+        <childnode refid="32322" relation="include">
+        </childnode>
+        <childnode refid="32323" relation="include">
+        </childnode>
+        <childnode refid="32324" relation="include">
+        </childnode>
+        <childnode refid="32325" relation="include">
+        </childnode>
+      </node>
+      <node id="32307">
+        <label>MatchServer/src/SeBLMProcess.cpp</label>
+        <link refid="src_2_se_b_l_m_process_8cpp"/>
+      </node>
+      <node id="32305">
+        <label>MatchServer/src/MatchPrepareMgr.cpp</label>
+        <link refid="src_2_match_prepare_mgr_8cpp"/>
+      </node>
+      <node id="32318">
+        <label>MatchServer/src/SeOpenRoomMgr.cpp</label>
+        <link refid="src_2_se_open_room_mgr_8cpp"/>
+      </node>
+      <node id="32304">
+        <label>MatchServer/src/MatchBanMgr.cpp</label>
+        <link refid="src_2_match_ban_mgr_8cpp"/>
+      </node>
+      <node id="32323">
+        <label>MatchServer/src/SeTMProcess.cpp</label>
+        <link refid="src_2_se_t_m_process_8cpp"/>
+      </node>
+      <node id="32313">
+        <label>MatchServer/src/SeMNSend.cpp</label>
+        <link refid="src_2_se_m_n_send_8cpp"/>
+      </node>
+      <node id="32321">
+        <label>MatchServer/src/SeRaceSvrMgr.cpp</label>
+        <link refid="src_2_se_race_svr_mgr_8cpp"/>
+      </node>
+      <node id="32320">
+        <label>MatchServer/src/SeRaceQueryMgr.cpp</label>
+        <link refid="src_2_se_race_query_mgr_8cpp"/>
+      </node>
+      <node id="32314">
+        <label>MatchServer/src/SeMRSend.cpp</label>
+        <link refid="src_2_se_m_r_send_8cpp"/>
+      </node>
+      <node id="32317">
+        <label>MatchServer/src/SeNMProcess.cpp</label>
+        <link refid="src_2_se_n_m_process_8cpp"/>
+      </node>
+      <node id="32316">
+        <label>MatchServer/src/SeMWSend.cpp</label>
+        <link refid="src_2_se_m_w_send_8cpp"/>
+      </node>
+      <node id="32312">
+        <label>MatchServer/src/SeMBLSend.cpp</label>
+        <link refid="src_2_se_m_b_l_send_8cpp"/>
+      </node>
+      <node id="32310">
+        <label>MatchServer/src/SeMatchMgr.cpp</label>
+        <link refid="src_2_se_match_mgr_8cpp"/>
+      </node>
+      <node id="32325">
+        <label>MatchServer/src/SeWMProcess.cpp</label>
+        <link refid="src_2_se_w_m_process_8cpp"/>
+      </node>
+      <node id="32306">
+        <label>MatchServer/src/MatchServer.cpp</label>
+        <link refid="src_2_match_server_8cpp"/>
+      </node>
+      <node id="32315">
+        <label>MatchServer/src/SeMTSend.cpp</label>
+        <link refid="src_2_se_m_t_send_8cpp"/>
+      </node>
+      <node id="32319">
+        <label>MatchServer/src/SeRaceMgr.cpp</label>
+        <link refid="_match_server_2src_2_se_race_mgr_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_match_server" prot="public">MatchServer</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="src_2_match_server_8h_1a1cd9d6d0396497f8a9d48e44d672f368" prot="public" static="no" mutable="no">
+        <type><ref refid="class_match_server" kindref="compound">MatchServer</ref></type>
+        <definition>MatchServer g_kMatchServer</definition>
+        <argsstring></argsstring>
+        <name>g_kMatchServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/MatchServer.h" line="85" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/MatchServer.cpp" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_se_match_mgr_1a8d0caf15f9478fb8580a074284e66b58" compoundref="_src_2_se_match_mgr_8cpp" startline="744" endline="808">SeMatchMgr::addWaitRoom</referencedby>
+        <referencedby refid="class_match_ban_mgr_1a5d889629515e43ad143878aaeb64e296" compoundref="_src_2_match_ban_mgr_8cpp" startline="47" endline="61">MatchBanMgr::banPlayer</referencedby>
+        <referencedby refid="class_se_race_mgr_1a1cf22374cc014113c7dd7c09a73ac19a" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="145" endline="154">SeRaceMgr::CreatEmptyRace</referencedby>
+        <referencedby refid="class_se_open_room_mgr_1a0bc3adef953bd40ba03a0ab721738962" compoundref="_src_2_se_open_room_mgr_8cpp" startline="923" endline="1012">SeOpenRoomMgr::CreateRaceInfo</referencedby>
+        <referencedby refid="class_se_race_mgr_1a555f6464f6b7113ca16fbe22555faa9f" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="968" endline="996">SeRaceMgr::DoRaceOver</referencedby>
+        <referencedby refid="class_se_race_svr_mgr_1afbc882fcb1d1600b4049e95eaf5bb5be" compoundref="_src_2_se_race_svr_mgr_8cpp" startline="112" endline="186">SeRaceSvrMgr::GetBestNormalRaceSvr</referencedby>
+        <referencedby refid="class_se_race_query_mgr_1ae2b72192e31b8a68b0d9c68f5efce7ca" compoundref="_src_2_se_race_query_mgr_8cpp" startline="329" endline="357">SeRaceQueryMgr::GetRoomFun</referencedby>
+        <referencedby refid="class_se_match_mgr_1ac4e1f79cc61e7824b61e655524c89d4f" compoundref="_src_2_se_match_mgr_8cpp" startline="635" endline="742">SeMatchMgr::match</referencedby>
+        <referencedby refid="class_se_race_mgr_1af4493ec425bebc0a9343fe600a5d863e" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="846" endline="875">SeRaceMgr::OnBiVoiceCreateRoom</referencedby>
+        <referencedby refid="class_se_match_mgr_1a565ced66e5b6e7edb32cf98fbc448e65" compoundref="_src_2_se_match_mgr_8cpp" startline="413" endline="480">SeMatchMgr::OnConfirm</referencedby>
+        <referencedby refid="class_se_open_room_mgr_1a864ad73adcf4df7d2d3a7a11960d228c" compoundref="_src_2_se_open_room_mgr_8cpp" startline="101" endline="201">SeOpenRoomMgr::OnCreateRoom</referencedby>
+        <referencedby refid="class_match_prepare_mgr_1acb9775ed6f51b7cbbc876c65c9908f88" compoundref="_src_2_match_prepare_mgr_8cpp" startline="93" endline="132">MatchPrepareMgr::onDataResult</referencedby>
+        <referencedby refid="class_se_match_mgr_1a1e1a9e8cbb2f52a7f099edfd11f71b9c" compoundref="_src_2_se_match_mgr_8cpp" startline="334" endline="357">SeMatchMgr::OnMatchCancel</referencedby>
+        <referencedby refid="class_match_prepare_mgr_1ad0171f6ed832766ea8462cb3299b4de0" compoundref="_src_2_match_prepare_mgr_8cpp" startline="134" endline="148">MatchPrepareMgr::OnPlayerLeave</referencedby>
+        <referencedby refid="class_se_race_query_mgr_1ad90c16ba78f123bdee61b91699dc115f" compoundref="_src_2_se_race_query_mgr_8cpp" startline="100" endline="110">SeRaceQueryMgr::OnPlayerQueryRoomList</referencedby>
+        <referencedby refid="class_se_race_mgr_1a5e909ffab780d9d8193107c875cc1ef9" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="764" endline="787">SeRaceMgr::OnProcessAddIncompleteRace</referencedby>
+        <referencedby refid="class_se_race_mgr_1a5a38c592cc990a8049a08f87512860d5" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="432" endline="483">SeRaceMgr::OnProcessCommRaceMsg</referencedby>
+        <referencedby refid="class_se_race_mgr_1a9f0dc9d2ca549de472fe4ca915ad1642" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="672" endline="696">SeRaceMgr::OnProcessMatchRaceLoad</referencedby>
+        <referencedby refid="class_se_race_mgr_1ab70d7cfd8f3f04643db17117e842c4cd" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="698" endline="724">SeRaceMgr::OnProcessRaceBuy</referencedby>
+        <referencedby refid="class_se_race_mgr_1a1f8b9e3b0043002176ad9cd33b69afc1" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="726" endline="739">SeRaceMgr::OnProcessRaceBuyRet</referencedby>
+        <referencedby refid="class_se_race_mgr_1a883a0435bb8fb11955f93d6e3214f373" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="384" endline="430">SeRaceMgr::OnProcessRaceEndGuanqia</referencedby>
+        <referencedby refid="class_se_race_mgr_1a0694b0603edde7b9a9ca3cb04d12dfbd" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="334" endline="382">SeRaceMgr::OnProcessRaceEndReport</referencedby>
+        <referencedby refid="class_se_race_mgr_1abbb52196d0a28be23f351a8fa148695b" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="815" endline="828">SeRaceMgr::OnProcessReconPlayerName</referencedby>
+        <referencedby refid="class_se_race_mgr_1a5ad018a80d073711ef0832d34ed93550" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="202" endline="216">SeRaceMgr::OnProcessReconQuery</referencedby>
+        <referencedby refid="class_se_race_mgr_1a19038a3183d29249b81dd4110db567f1" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="485" endline="509">SeRaceMgr::OnProcessReconQuerySuccess</referencedby>
+        <referencedby refid="class_se_race_mgr_1acf3cbf4e4445c515d1c82f342245447c" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="567" endline="609">SeRaceMgr::OnProcessReconViewValid</referencedby>
+        <referencedby refid="class_se_race_mgr_1a81d87e41081d3d73d69f6ca9c04301e7" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="611" endline="670">SeRaceMgr::OnProcessReloadRoomList</referencedby>
+        <referencedby refid="class_se_race_mgr_1ace94e8eda413a3dc4ec9424a8d49fde5" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="293" endline="332">SeRaceMgr::OnProcessUpdateMisc</referencedby>
+        <referencedby refid="class_se_race_mgr_1ad1148f9b642dd42adf497575c5b73040" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="244" endline="291">SeRaceMgr::OnProcessValidateInfoRet</referencedby>
+        <referencedby refid="class_se_race_mgr_1a75b9922a0ef07db529d63652679dc05c" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="218" endline="242">SeRaceMgr::OnProcessViewQuery</referencedby>
+        <referencedby refid="class_se_race_mgr_1a41cde4726b8109dc2c4bc4d622ebc659" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="511" endline="565">SeRaceMgr::OnProcessViewQuerySuccess</referencedby>
+        <referencedby refid="class_se_open_room_mgr_1a08709876dc544b12083e8e74c8a03265" compoundref="_src_2_se_open_room_mgr_8cpp" startline="258" endline="289">SeOpenRoomMgr::OnQueryRoomList</referencedby>
+        <referencedby refid="class_se_open_room_mgr_1a51a9bdceae3cbbd0f6b80fb30384d0ca" compoundref="_src_2_se_open_room_mgr_8cpp" startline="763" endline="831">SeOpenRoomMgr::OnRoomInvite</referencedby>
+        <referencedby refid="class_se_open_room_mgr_1addfded1afe02cbeb4fa1692fd1fd0931" compoundref="_src_2_se_open_room_mgr_8cpp" startline="833" endline="905">SeOpenRoomMgr::OnRoomInviteRspOk</referencedby>
+        <referencedby refid="class_se_open_room_mgr_1afe2195e6282fc0d6b2f1260574537119" compoundref="_src_2_se_open_room_mgr_8cpp" startline="377" endline="455">SeOpenRoomMgr::OnRoomJoin</referencedby>
+        <referencedby refid="class_se_open_room_mgr_1ad4834862a9ab46461087c42731178ac9" compoundref="_src_2_se_open_room_mgr_8cpp" startline="639" endline="761">SeOpenRoomMgr::OnRoomKickSomeone</referencedby>
+        <referencedby refid="class_se_open_room_mgr_1a6cd5fe6c1707728a799bf4257851006a" compoundref="_src_2_se_open_room_mgr_8cpp" startline="457" endline="571">SeOpenRoomMgr::OnRoomLeave</referencedby>
+        <referencedby refid="class_se_open_room_mgr_1ab755853f93f32227d5ce55fd9b9a5cff" compoundref="_src_2_se_open_room_mgr_8cpp" startline="573" endline="637">SeOpenRoomMgr::OnRoomSwitchSeat</referencedby>
+        <referencedby refid="class_se_race_svr_mgr_1a5e99c42409521b7e03bce07e2d387204" compoundref="_src_2_se_race_svr_mgr_8cpp" startline="87" endline="99">SeRaceSvrMgr::OnRSUpdateLoadNum</referencedby>
+        <referencedby refid="class_match_server_1ae7f1e7cc16a32052412bf0084955b9b3" compoundref="_src_2_se_match_other_8cpp" startline="70" endline="91">MatchServer::OnSendTSQueryRoomListRet</referencedby>
+        <referencedby refid="class_se_town_mgr_1a430e379437172790d7d3ed40f45239f1" compoundref="_match_server_2_src_2_se_town_mgr_8cpp" startline="77" endline="89">SeTownMgr::OnTSUpdateLoadNum</referencedby>
+        <referencedby refid="class_se_match_mgr_1a6252d5e57e70815a9e9f294239dd35ec" compoundref="_src_2_se_match_mgr_8cpp" startline="117" endline="163">SeMatchMgr::openRoom</referencedby>
+        <referencedby refid="class_match_server_1a931e9c44b4f99f2dbf0a94703d783687" compoundref="_src_2_se_r_m_process_8cpp" startline="182" endline="193">MatchServer::ProcessRM_ViewQueryFail</referencedby>
+        <referencedby refid="class_se_race_mgr_1a110c81b7444d524500f527f553a661a5" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="998" endline="1077">SeRaceMgr::RaceUpdate</referencedby>
+        <referencedby refid="class_se_race_query_mgr_1af4d6bcf530c772872ef09969c5b7af4d" compoundref="_src_2_se_race_query_mgr_8cpp" startline="448" endline="475">SeRaceQueryMgr::RoomFilter</referencedby>
+        <referencedby refid="class_se_race_mgr_1a51dd9494f018279ef23edbf579d0b525" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="906" endline="966">SeRaceMgr::SendMatchAddrMsg</referencedby>
+        <referencedby refid="class_se_race_mgr_1aed313cc17a805bea5daeb0366013bae6" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="877" endline="904">SeRaceMgr::SendMatchCommMsg</referencedby>
+        <referencedby refid="class_se_open_room_mgr_1a7679e6c1a97835b295397465fea98a17" compoundref="_src_2_se_open_room_mgr_8cpp" startline="316" endline="330">SeOpenRoomMgr::SendRoomJoinRet</referencedby>
+        <referencedby refid="class_se_open_room_mgr_1a9cf75400b57dac78c98384490b6b5dcd" compoundref="_src_2_se_open_room_mgr_8cpp" startline="333" endline="361">SeOpenRoomMgr::SendRoomNotify</referencedby>
+        <referencedby refid="struct_se_open_room_1ab636757c6fb6d239e1d47218d441ce1f" compoundref="_src_2_se_open_room_mgr_8cpp" startline="12" endline="26">SeOpenRoom::SeOpenRoom</referencedby>
+        <referencedby refid="class_se_open_room_mgr_1aa1945212f27dea724d46dffc70aba503" compoundref="_src_2_se_open_room_mgr_8cpp" startline="1014" endline="1022">SeOpenRoomMgr::StartMatch</referencedby>
+        <referencedby refid="class_match_prepare_mgr_1a214f9df4c7cc2209d74be6e1ef5ec445" compoundref="_src_2_match_prepare_mgr_8cpp" startline="67" endline="81">MatchPrepareMgr::update</referencedby>
+        <referencedby refid="class_se_race_query_mgr_1a24f0d59c98e1e9d3a4fce15206be11a7" compoundref="_src_2_se_race_query_mgr_8cpp" startline="258" endline="279">SeRaceQueryMgr::UpdateMD5VRoom</referencedby>
+        <referencedby refid="class_se_match_mgr_1aea13a0ecf1bf7c29349f83822c16e994" compoundref="_src_2_se_match_mgr_8cpp" startline="181" endline="231">SeMatchMgr::UpdateRoom</referencedby>
+        <referencedby refid="class_se_race_mgr_1a3af4bb17e10c2cb191f381cea5bff3f4" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="1309" endline="1328">SeRaceMgr::UpdateSvrStaCount</referencedby>
+        <referencedby refid="struct_se_match_race_1a904f9f2268bf2c33b8adf615613d34ed" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="26" endline="38">SeMatchRace::~SeMatchRace</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="src_2_match_server_8h_1a842dd477472778ad2894948f2fb7cfd9" prot="public" static="no" mutable="no">
+        <type><ref refid="class_se_syn_mgr" kindref="compound">SeSynMgr</ref></type>
+        <definition>SeSynMgr g_kSynMgr</definition>
+        <argsstring></argsstring>
+        <name>g_kSynMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/MatchServer.h" line="86" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/GlobalServer/src/GlobalServer.cpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_config_8h" kindref="compound">SeConfig.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_server_tool_8h" kindref="compound">SeServerTool.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="src_2_match_server_def_8h" kindref="compound">MatchServerDef.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_file_log_8h" kindref="compound">SeFileLog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_rand_num_8h" kindref="compound">SeRandNum.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_server_define_8h" kindref="compound">SeServerDefine.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_server_main_def_8h" kindref="compound">SeServerMainDef.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_mem_pool_8h" kindref="compound">SeMemPool.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_match_server_2src_2_se_town_mgr_8h" kindref="compound">SeTownMgr.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="src_2_se_race_svr_mgr_8h" kindref="compound">SeRaceSvrMgr.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_match_server_2src_2_se_race_mgr_def_8h" kindref="compound">SeRaceMgrDef.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="src_2_se_race_query_mgr_def_8h" kindref="compound">SeRaceQueryMgrDef.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_table_mgr_8h" kindref="compound">TableMgr.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_match_server_2src_2_se_res_mgr_8h" kindref="compound">SeResMgr.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/>&quot;<ref refid="_se_virt_conn_mgr_8h" kindref="compound">SeVirtConnMgr.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_ptl_comm_define_8h" kindref="compound">SePtlCommDefine.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="src_2_se_match_mgr_8h" kindref="compound">SeMatchMgr.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_match_server" kindref="compound">MatchServer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>TeNetCall,</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_se_base_server" kindref="compound">SeBaseServer</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a5bdc6aac69e3fdbc3db9f8dfaca0f9c5" kindref="member">MatchServer</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a6e8cc6c535f682f8f2c4d985e8b19335" kindref="member">~MatchServer</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25" refid="class_match_server_1afcffa3c5b48c94fc6ca04df072450526" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_se_match_config" kindref="compound">SeMatchConfig</ref>&amp;<sp/><ref refid="class_match_server_1afcffa3c5b48c94fc6ca04df072450526" kindref="member">GetConfig</ref>(){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_match_server_1ac46c05f1462b4f827d565848bf136a1a" kindref="member">m_kConfig</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a3f0839420ac96d8b744d28b1e0f779f8" kindref="member">Initialize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1aa0c969f78b0a7c57be07f1edeea929cf" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1abdec492d2a70fb492be043eeacf70366" kindref="member">Finialize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a27d06e75bf588b01632455343296bae3" kindref="member">ShowConsoleTitle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iDTime);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_se_server_main_def_8h_1a6856d2f3d34c3913f55b991c0d63e89d" kindref="member">SeServerActionResult</ref><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a61cda96f07db7bd4ada5489b18414f09" kindref="member">ExecuteAction</ref>(<ref refid="_se_server_main_def_8h_1abbd63e694a43e9bc292e0e0b55ae79bd" kindref="member">SeServerActionIndex</ref><sp/>eActionIndex);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a052967673a1e01664998a1dee97a4d86" kindref="member">OnNetConnected</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HSock&amp;<sp/>rkSock,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcIP,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iPort);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a7d44410136314148817e0c71ef5388e4" kindref="member">OnNetAccept</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HSock&amp;<sp/>rkSock,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iListenPort,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcIP,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iPort);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a6ca18e9265672410b2b0b4e326f06c05" kindref="member">OnNetRecv</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HSock&amp;<sp/>rkSock,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a190acd16e2bd6be6bdf82e3159d811dc" kindref="member">OnNetDisconnect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HSock&amp;<sp/>rkSock,<sp/>TeDisconnectCode<sp/>eCode,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iParam);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_match_server_1aea9304499f75d5f73c498cb8af6cb11f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_src_2_match_server_def_8h_1a4932e253766909a605e124d24249d8d2" kindref="member">MapAllConnect</ref>&amp;<sp/><ref refid="class_match_server_1aea9304499f75d5f73c498cb8af6cb11f" kindref="member">getAllConnect</ref>()</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_match_server_1a11a015f5d7320310de4d0eda72b08d8e" kindref="member">m_kAllConnect</ref>;<sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;<ref refid="_se_m_t_send_8inl" kindref="compound">SeMTSend.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;<ref refid="_se_m_r_send_8inl" kindref="compound">SeMRSend.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;<ref refid="src_2_se_match_other_8inl" kindref="compound">SeMatchOther.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;<ref refid="_match_server_2src_2_se_http_send_8inl" kindref="compound">SeHttpSend.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;<ref refid="_match_server_2src_2_se_http_process_8inl" kindref="compound">SeHttpProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;<ref refid="_se_t_m_process_8inl" kindref="compound">SeTMProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;<ref refid="_se_r_m_process_8inl" kindref="compound">SeRMProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;<ref refid="_se_m_w_send_8inl" kindref="compound">SeMWSend.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;<ref refid="_se_w_m_process_8inl" kindref="compound">SeWMProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;<ref refid="_se_m_b_l_send_8inl" kindref="compound">SeMBLSend.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;<ref refid="_se_b_l_m_process_8inl" kindref="compound">SeBLMProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;<ref refid="_se_m_n_send_8inl" kindref="compound">SeMNSend.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;<ref refid="_se_n_m_process_8inl" kindref="compound">SeNMProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_match_server_1a709589eba993b724db2e07ab23ca345c" kindref="member">loadMatchDetail</ref>(DWord<sp/>dwPlayerID,DWord<sp/>dwMatchSession,<sp/><ref refid="_se_ptl_comm_define_8h_1a747637046be33d7273262104aad8069d" kindref="member">MatchType</ref><sp/>eMatchType,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iEquipmentType,<sp/>HSock<sp/>kTownSock);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a16c0a4c43f480d67e41613066925888a" kindref="member">LoadConfig</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcFile);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a966af313cd7394328cfde57318c53b0f" kindref="member">LoadDynamicConfig</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a33e0d5c9849a536cfa8e681f85d734bd" kindref="member">InitializeNet</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a48b47a2420ae7f25052ba11ae09060c8" kindref="member">UpdatePackage</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a18aaad4b9753c951e902a30317b9520b" kindref="member">UpdateTSTOMSTime</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1ad51a639a56f61e2319426d8551e1145e" kindref="member">UpdateRSTOMSTime</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a2cbbf12d6165bb746e192276b55cbb10" kindref="member">m_acSend</ref>[<ref refid="_src_2_match_server_def_8h_1ab83c5d8303114e8ff1ad0ec003919427acd2ded6da4c828d51c5edb2fdb27a9ed" kindref="member">MATCH_SEND_SIZE</ref>];<sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>DWord<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a241228fa9a7da6a72888ad66b1176efc" kindref="member">m_dwTickCount</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>DWord<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1abdfa8a261b01d9b2e22fa05605a631fa" kindref="member">m_dwCurTime</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_match_config" kindref="compound">SeMatchConfig</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1ac46c05f1462b4f827d565848bf136a1a" kindref="member">m_kConfig</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_se_rand_num" kindref="compound">SeRandNum</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a92f2b354054a5516bd267c7d76a8e318" kindref="member">m_kRandNum</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a08abe3c2b0ee2e2bef00b8c326c70b9b" kindref="member">m_bRunning</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>TeNetMgr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a2a2d8917fed5cd69d43afa106e32de9f" kindref="member">m_kNetMgr</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a4b3280513983899fc6d148349be83853" kindref="member">m_pkWSConn</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a52327a628c886767871ee38dfaa89929" kindref="member">m_pkNSConn</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_src_2_match_server_def_8h_1a4932e253766909a605e124d24249d8d2" kindref="member">MapAllConnect</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a11a015f5d7320310de4d0eda72b08d8e" kindref="member">m_kAllConnect</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>DWord<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a94348472da01358d5f240c40c2ce66c3" kindref="member">m_dwLogHeartPackage</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_race_bet" kindref="compound">SeRaceBet</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a3acc59cb5f06d99e3bb58a14742242f6" kindref="member">m_kRaceBet</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>DWord<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_match_server_1a20e6795ada5886d71a4db09cdb72e402" kindref="member">m_dwBetRaceCheckTime</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><sp/><ref refid="class_match_server" kindref="compound">MatchServer</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_src_2_match_server_8h_1a1cd9d6d0396497f8a9d48e44d672f368" kindref="member">g_kMatchServer</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><sp/><ref refid="class_se_syn_mgr" kindref="compound">SeSynMgr</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_src_2_match_server_8h_1a842dd477472778ad2894948f2fb7cfd9" kindref="member">g_kSynMgr</ref>;</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/MatchServer.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1520 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_race_hero_mgr" kind="class" prot="public">
+    <compoundname>RaceHeroMgr</compoundname>
+    <basecompoundref refid="class_data_mgr" prot="public" virt="non-virtual">DataMgr&lt; SeDBCharRaceHero &gt;</basecompoundref>
+    <basecompoundref refid="class_data_mgr" prot="public" virt="non-virtual">DataMgr&lt; SeDBCharRaceHero &gt;</basecompoundref>
+    <includes refid="_src_2_race_hero_mgr_8h" local="no">RaceHeroMgr.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_race_hero_mgr_1a28142c388044ae6541acdf7d1f14fdbe" prot="private" static="no" mutable="no">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer &amp; RaceHeroMgr::m_owner</definition>
+        <argsstring></argsstring>
+        <name>m_owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="48" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="class_race_hero_mgr_1aca3c186fa5a8cdcecc282d6c21d849ec" compoundref="_src_2_race_hero_mgr_8cpp" startline="217" endline="220">getOwner</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_race_hero_mgr_1adb157c06d1072d4387a98b7660d19b75" prot="private" static="no" mutable="no">
+        <type><ref refid="_src_2_race_hero_mgr_8h_1a19c94f63690dbbed57d4ca8084e42e8d" kindref="member">MMDBCharRaceHeros</ref></type>
+        <definition>MMDBCharRaceHeros RaceHeroMgr::map_race_heros</definition>
+        <argsstring></argsstring>
+        <name>map_race_heros</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="50" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_race_hero_mgr_1a98d7bb72c2ce445d28ca7ba372ce03d8" compoundref="_src_2_race_hero_mgr_8cpp" startline="142" endline="149">createHero</referencedby>
+        <referencedby refid="class_race_hero_mgr_1af075ae807ec2bb30f59f560312f5b4cf" compoundref="_src_2_race_hero_mgr_8cpp" startline="75" endline="87">getHero</referencedby>
+        <referencedby refid="class_race_hero_mgr_1a7dce8b85b4e230208c0505fccc251fcd" compoundref="_src_2_race_hero_mgr_8cpp" startline="182" endline="192">getRaceHeroMap</referencedby>
+        <referencedby refid="class_race_hero_mgr_1a2808871aa69b5bfb18cc0ca7f72aa4fe" compoundref="_src_2_race_hero_mgr_8cpp" startline="194" endline="197">getRaceHerosMap</referencedby>
+        <referencedby refid="class_race_hero_mgr_1a5e75aeb240c338823da80888a2a710ad" compoundref="_src_2_race_hero_mgr_8cpp" startline="44" endline="52">loadData</referencedby>
+        <referencedby refid="class_race_hero_mgr_1a53a0f83ba40911071e2299865cc71f1b" compoundref="_src_2_race_hero_mgr_8cpp" startline="16" endline="42">~RaceHeroMgr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_race_hero_mgr_1a934e2505f2c233fd343b72ad5a671852" prot="private" static="no" mutable="no">
+        <type><ref refid="_src_2_race_hero_mgr_8h_1ab22459b48df85f6b4fe5370747966239" kindref="member">MUserRaceMapHeroBase</ref></type>
+        <definition>MUserRaceMapHeroBase RaceHeroMgr::map_arena_race_heros</definition>
+        <argsstring></argsstring>
+        <name>map_arena_race_heros</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="52" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="class_race_hero_mgr_1ac76a3d3cb5e4baf225f91218d6e6e39b" compoundref="_src_2_race_hero_mgr_8cpp" startline="108" endline="114">checkHero_Arena</referencedby>
+        <referencedby refid="class_race_hero_mgr_1a235a840d60e21cea738dd3063158dfa5" compoundref="_src_2_race_hero_mgr_8cpp" startline="151" endline="158">createHero_Arena</referencedby>
+        <referencedby refid="class_race_hero_mgr_1a269f1f307674fe1f4b9c74ba8f41fbc6" compoundref="_src_2_race_hero_mgr_8cpp" startline="199" endline="215">get_race_hero_data</referencedby>
+        <referencedby refid="class_race_hero_mgr_1a880314f18aa6ad987957697e805bee06" compoundref="_src_2_race_hero_mgr_8cpp" startline="89" endline="98">getHero_Arena</referencedby>
+        <referencedby refid="class_race_hero_mgr_1a53a0f83ba40911071e2299865cc71f1b" compoundref="_src_2_race_hero_mgr_8cpp" startline="16" endline="42">~RaceHeroMgr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_race_hero_mgr_1ae420cdc60632ea583863b4ede69a8f4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RaceHeroMgr::RaceHeroMgr</definition>
+        <argsstring>(SePlayer &amp;owner)</argsstring>
+        <name>RaceHeroMgr</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="15" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a53a0f83ba40911071e2299865cc71f1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RaceHeroMgr::~RaceHeroMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~RaceHeroMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="16" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="16" bodyend="42"/>
+        <references refid="class_race_hero_mgr_1a934e2505f2c233fd343b72ad5a671852" compoundref="_src_2_race_hero_mgr_8h" startline="52">map_arena_race_heros</references>
+        <references refid="class_race_hero_mgr_1adb157c06d1072d4387a98b7660d19b75" compoundref="_src_2_race_hero_mgr_8h" startline="50">map_race_heros</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a5e75aeb240c338823da80888a2a710ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::loadData</definition>
+        <argsstring>(const SeDBCharRaceHero &amp;info)</argsstring>
+        <name>loadData</name>
+        <reimplements refid="class_data_mgr_1a19fd585291b3911a1f43d63dfbcc71c6">loadData</reimplements>
+        <param>
+          <type>const SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="18" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="44" bodyend="52"/>
+        <references refid="class_race_hero_mgr_1a670904a37340470560794ec4703030e7" compoundref="_src_2_race_hero_mgr_8cpp" startline="100" endline="106">checkHero</references>
+        <references refid="class_race_hero_mgr_1a235a840d60e21cea738dd3063158dfa5" compoundref="_src_2_race_hero_mgr_8cpp" startline="151" endline="158">createHero_Arena</references>
+        <references refid="class_race_hero_mgr_1adb157c06d1072d4387a98b7660d19b75" compoundref="_src_2_race_hero_mgr_8h" startline="50">map_race_heros</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1ac6862fb4ba98db9161b3d1dd2e5f0a49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::saveData</definition>
+        <argsstring>(SeDBCharRaceHero &amp;info)</argsstring>
+        <name>saveData</name>
+        <param>
+          <type>SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="20" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="54" bodyend="57"/>
+        <references refid="class_default_player_data_strategy_1a01824b8ff7f25899b55f3d4d1bbd6637" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="47" endline="50">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataInsert</references>
+        <references refid="_d_b_server_2_src_2_char_race_hero_strategy_8cpp_1ae70d0c6ae97672135d411dc3f54b58f8" compoundref="_d_b_server_2_src_2_char_race_hero_strategy_8cpp" startline="3">g_kCharRaceHeroStrategy</references>
+        <references refid="class_race_hero_mgr_1aca3c186fa5a8cdcecc282d6c21d849ec" compoundref="_src_2_race_hero_mgr_8cpp" startline="217" endline="220">getOwner</references>
+        <referencedby refid="class_race_hero_mgr_1a187055982bcaf4cfbb89baab16ba0d8a" compoundref="_src_2_race_hero_mgr_8cpp" startline="116" endline="127">makeHero</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a53f63d2f215436734e8cf4e20feff54c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::updateData</definition>
+        <argsstring>(SeDBCharRaceHero &amp;info)</argsstring>
+        <name>updateData</name>
+        <param>
+          <type>SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="22" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="59" bodyend="62"/>
+        <references refid="class_default_player_data_strategy_1a6baced26772bd2c55f9e1caaac6d23ef" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="53" endline="56">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataUpdate</references>
+        <references refid="_d_b_server_2_src_2_char_race_hero_strategy_8cpp_1ae70d0c6ae97672135d411dc3f54b58f8" compoundref="_d_b_server_2_src_2_char_race_hero_strategy_8cpp" startline="3">g_kCharRaceHeroStrategy</references>
+        <references refid="class_race_hero_mgr_1aca3c186fa5a8cdcecc282d6c21d849ec" compoundref="_src_2_race_hero_mgr_8cpp" startline="217" endline="220">getOwner</references>
+        <referencedby refid="class_race_hero_mgr_1a187055982bcaf4cfbb89baab16ba0d8a" compoundref="_src_2_race_hero_mgr_8cpp" startline="116" endline="127">makeHero</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a6efaf90421ad6b15e4e816d481ab1560" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SeDBCharRaceHero</type>
+        <definition>SeDBCharRaceHero RaceHeroMgr::genHeroParam</definition>
+        <argsstring>(const DWord char_id, const DWord map_id, const DWord hero_id, const DWord win_counts)</argsstring>
+        <name>genHeroParam</name>
+        <param>
+          <type>const DWord</type>
+          <declname>char_id</declname>
+        </param>
+        <param>
+          <type>const DWord</type>
+          <declname>map_id</declname>
+        </param>
+        <param>
+          <type>const DWord</type>
+          <declname>hero_id</declname>
+        </param>
+        <param>
+          <type>const DWord</type>
+          <declname>win_counts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="24" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="64" bodyend="73"/>
+        <referencedby refid="class_block_server_1ad2bd10feff123f3f53125407b763364d" compoundref="_src_2_se_r_b_l_process_8cpp" startline="168" endline="181">BlockServer::ProcessRBL_SetRaceMapHeroNtf</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1af075ae807ec2bb30f59f560312f5b4cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SeDBCharRaceHero *</type>
+        <definition>SeDBCharRaceHero * RaceHeroMgr::getHero</definition>
+        <argsstring>(const DWord dw_map_id, const DWord dw_hero_id)</argsstring>
+        <name>getHero</name>
+        <param>
+          <type>const DWord</type>
+          <declname>dw_map_id</declname>
+        </param>
+        <param>
+          <type>const DWord</type>
+          <declname>dw_hero_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="26" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="75" bodyend="87"/>
+        <references refid="class_race_hero_mgr_1adb157c06d1072d4387a98b7660d19b75" compoundref="_src_2_race_hero_mgr_8h" startline="50">map_race_heros</references>
+        <referencedby refid="class_race_hero_mgr_1a670904a37340470560794ec4703030e7" compoundref="_src_2_race_hero_mgr_8cpp" startline="100" endline="106">checkHero</referencedby>
+        <referencedby refid="class_race_hero_mgr_1ad0932f271b9104809fc29c64926ce915" compoundref="_src_2_race_hero_mgr_8cpp" startline="160" endline="173">updateHero</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a880314f18aa6ad987957697e805bee06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_se_user_race_map_hero_base" kindref="compound">SeUserRaceMapHeroBase</ref></type>
+        <definition>SeUserRaceMapHeroBase RaceHeroMgr::getHero_Arena</definition>
+        <argsstring>(const DWord dw_hero_id)</argsstring>
+        <name>getHero_Arena</name>
+        <param>
+          <type>const DWord</type>
+          <declname>dw_hero_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="27" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="89" bodyend="98"/>
+        <references refid="class_race_hero_mgr_1a934e2505f2c233fd343b72ad5a671852" compoundref="_src_2_race_hero_mgr_8h" startline="52">map_arena_race_heros</references>
+        <referencedby refid="class_race_hero_mgr_1a02a4b3b769e3722bf680cb158ed4e790" compoundref="_src_2_race_hero_mgr_8cpp" startline="175" endline="180">updateHero_Arena</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a670904a37340470560794ec4703030e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RaceHeroMgr::checkHero</definition>
+        <argsstring>(const DWord dw_map_id, const DWord dw_hero_id)</argsstring>
+        <name>checkHero</name>
+        <param>
+          <type>const DWord</type>
+          <declname>dw_map_id</declname>
+        </param>
+        <param>
+          <type>const DWord</type>
+          <declname>dw_hero_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="29" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="100" bodyend="106"/>
+        <references refid="class_race_hero_mgr_1af075ae807ec2bb30f59f560312f5b4cf" compoundref="_src_2_race_hero_mgr_8cpp" startline="75" endline="87">getHero</references>
+        <referencedby refid="class_race_hero_mgr_1a5e75aeb240c338823da80888a2a710ad" compoundref="_src_2_race_hero_mgr_8cpp" startline="44" endline="52">loadData</referencedby>
+        <referencedby refid="class_race_hero_mgr_1a187055982bcaf4cfbb89baab16ba0d8a" compoundref="_src_2_race_hero_mgr_8cpp" startline="116" endline="127">makeHero</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1ac76a3d3cb5e4baf225f91218d6e6e39b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RaceHeroMgr::checkHero_Arena</definition>
+        <argsstring>(const DWord dw_hero_id)</argsstring>
+        <name>checkHero_Arena</name>
+        <param>
+          <type>const DWord</type>
+          <declname>dw_hero_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="30" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="108" bodyend="114"/>
+        <references refid="class_race_hero_mgr_1a934e2505f2c233fd343b72ad5a671852" compoundref="_src_2_race_hero_mgr_8h" startline="52">map_arena_race_heros</references>
+        <referencedby refid="class_race_hero_mgr_1aa5a61aad79459f39236edb89c16e9f96" compoundref="_src_2_race_hero_mgr_8cpp" startline="129" endline="140">makeHero_Arena</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a187055982bcaf4cfbb89baab16ba0d8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::makeHero</definition>
+        <argsstring>(SeDBCharRaceHero &amp;info)</argsstring>
+        <name>makeHero</name>
+        <param>
+          <type>SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="32" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="116" bodyend="127"/>
+        <references refid="class_race_hero_mgr_1a670904a37340470560794ec4703030e7" compoundref="_src_2_race_hero_mgr_8cpp" startline="100" endline="106">checkHero</references>
+        <references refid="class_race_hero_mgr_1a98d7bb72c2ce445d28ca7ba372ce03d8" compoundref="_src_2_race_hero_mgr_8cpp" startline="142" endline="149">createHero</references>
+        <references refid="class_race_hero_mgr_1ac6862fb4ba98db9161b3d1dd2e5f0a49" compoundref="_src_2_race_hero_mgr_8cpp" startline="54" endline="57">saveData</references>
+        <references refid="class_race_hero_mgr_1a53f63d2f215436734e8cf4e20feff54c" compoundref="_src_2_race_hero_mgr_8cpp" startline="59" endline="62">updateData</references>
+        <references refid="class_race_hero_mgr_1ad0932f271b9104809fc29c64926ce915" compoundref="_src_2_race_hero_mgr_8cpp" startline="160" endline="173">updateHero</references>
+        <referencedby refid="class_block_server_1ad2bd10feff123f3f53125407b763364d" compoundref="_src_2_se_r_b_l_process_8cpp" startline="168" endline="181">BlockServer::ProcessRBL_SetRaceMapHeroNtf</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1aa5a61aad79459f39236edb89c16e9f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::makeHero_Arena</definition>
+        <argsstring>(SeDBCharRaceHero &amp;info)</argsstring>
+        <name>makeHero_Arena</name>
+        <param>
+          <type>SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="33" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="129" bodyend="140"/>
+        <references refid="class_race_hero_mgr_1ac76a3d3cb5e4baf225f91218d6e6e39b" compoundref="_src_2_race_hero_mgr_8cpp" startline="108" endline="114">checkHero_Arena</references>
+        <references refid="class_world_server_1a7835a8b6b50a5c73e5470d0f02e3b0b6" compoundref="_src_2_world_server_8cpp" startline="1107" endline="1116">WorldServer::CheckMapType</references>
+        <references refid="class_race_hero_mgr_1a235a840d60e21cea738dd3063158dfa5" compoundref="_src_2_race_hero_mgr_8cpp" startline="151" endline="158">createHero_Arena</references>
+        <references refid="_src_2_race_map_mgr_8h_1a781938fa0a81d95394ac0faef00f0ed6a2b0eafd55e80748e0a17d67d7cd31035" compoundref="_src_2_race_map_mgr_8h" startline="7">EPVPMapType_Race</references>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="class_race_hero_mgr_1a02a4b3b769e3722bf680cb158ed4e790" compoundref="_src_2_race_hero_mgr_8cpp" startline="175" endline="180">updateHero_Arena</references>
+        <referencedby refid="class_block_server_1ad2bd10feff123f3f53125407b763364d" compoundref="_src_2_se_r_b_l_process_8cpp" startline="168" endline="181">BlockServer::ProcessRBL_SetRaceMapHeroNtf</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a98d7bb72c2ce445d28ca7ba372ce03d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::createHero</definition>
+        <argsstring>(SeDBCharRaceHero &amp;info)</argsstring>
+        <name>createHero</name>
+        <param>
+          <type>SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="35" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="142" bodyend="149"/>
+        <references refid="_d_b_server_2_src_2_char_race_hero_strategy_8cpp_1ae70d0c6ae97672135d411dc3f54b58f8" compoundref="_d_b_server_2_src_2_char_race_hero_strategy_8cpp" startline="3">g_kCharRaceHeroStrategy</references>
+        <references refid="class_player_data_strategy_1a5f33fc51eb6066e5fe9545dd9e273a3a" compoundref="_world_server_2_src_2_player_data_strategy_8cpp" startline="22" endline="26">PlayerDataStrategy::getGenID</references>
+        <references refid="class_race_hero_mgr_1adb157c06d1072d4387a98b7660d19b75" compoundref="_src_2_race_hero_mgr_8h" startline="50">map_race_heros</references>
+        <referencedby refid="class_race_hero_mgr_1a187055982bcaf4cfbb89baab16ba0d8a" compoundref="_src_2_race_hero_mgr_8cpp" startline="116" endline="127">makeHero</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a235a840d60e21cea738dd3063158dfa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::createHero_Arena</definition>
+        <argsstring>(const SeDBCharRaceHero &amp;info)</argsstring>
+        <name>createHero_Arena</name>
+        <param>
+          <type>const SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="36" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="151" bodyend="158"/>
+        <references refid="struct_se_user_race_map_hero_base_1ae2744e031056adc43a2e26175fcf8ffe" compoundref="_se_ptl_comm_define_8h" startline="2127">SeUserRaceMapHeroBase::dwHeroID</references>
+        <references refid="struct_se_user_race_map_hero_base_1a40bdbfaa646b61643de2c335d0b9577e" compoundref="_se_ptl_comm_define_8h" startline="2128">SeUserRaceMapHeroBase::dwUseCounts</references>
+        <references refid="struct_se_user_race_map_hero_base_1acb63d5ff24bdf4884c38c1326455dc96" compoundref="_se_ptl_comm_define_8h" startline="2129">SeUserRaceMapHeroBase::dwWinCounts</references>
+        <references refid="class_race_hero_mgr_1a934e2505f2c233fd343b72ad5a671852" compoundref="_src_2_race_hero_mgr_8h" startline="52">map_arena_race_heros</references>
+        <referencedby refid="class_race_hero_mgr_1a5e75aeb240c338823da80888a2a710ad" compoundref="_src_2_race_hero_mgr_8cpp" startline="44" endline="52">loadData</referencedby>
+        <referencedby refid="class_race_hero_mgr_1aa5a61aad79459f39236edb89c16e9f96" compoundref="_src_2_race_hero_mgr_8cpp" startline="129" endline="140">makeHero_Arena</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1ad0932f271b9104809fc29c64926ce915" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::updateHero</definition>
+        <argsstring>(SeDBCharRaceHero &amp;info)</argsstring>
+        <name>updateHero</name>
+        <param>
+          <type>SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="38" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="160" bodyend="173"/>
+        <references refid="class_race_hero_mgr_1af075ae807ec2bb30f59f560312f5b4cf" compoundref="_src_2_race_hero_mgr_8cpp" startline="75" endline="87">getHero</references>
+        <referencedby refid="class_race_hero_mgr_1a187055982bcaf4cfbb89baab16ba0d8a" compoundref="_src_2_race_hero_mgr_8cpp" startline="116" endline="127">makeHero</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a02a4b3b769e3722bf680cb158ed4e790" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::updateHero_Arena</definition>
+        <argsstring>(SeDBCharRaceHero &amp;info)</argsstring>
+        <name>updateHero_Arena</name>
+        <param>
+          <type>SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="39" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="175" bodyend="180"/>
+        <references refid="struct_se_user_race_map_hero_base_1a40bdbfaa646b61643de2c335d0b9577e" compoundref="_se_ptl_comm_define_8h" startline="2128">SeUserRaceMapHeroBase::dwUseCounts</references>
+        <references refid="struct_se_user_race_map_hero_base_1acb63d5ff24bdf4884c38c1326455dc96" compoundref="_se_ptl_comm_define_8h" startline="2129">SeUserRaceMapHeroBase::dwWinCounts</references>
+        <references refid="class_race_hero_mgr_1a880314f18aa6ad987957697e805bee06" compoundref="_src_2_race_hero_mgr_8cpp" startline="89" endline="98">getHero_Arena</references>
+        <referencedby refid="class_race_hero_mgr_1aa5a61aad79459f39236edb89c16e9f96" compoundref="_src_2_race_hero_mgr_8cpp" startline="129" endline="140">makeHero_Arena</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a7dce8b85b4e230208c0505fccc251fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_src_2_race_hero_mgr_8h_1a64887a7f0d931e649febab8b105b6597" kindref="member">MDBCharRaceHero</ref> &amp;</type>
+        <definition>MDBCharRaceHero &amp; RaceHeroMgr::getRaceHeroMap</definition>
+        <argsstring>(const DWord dw_map_id)</argsstring>
+        <name>getRaceHeroMap</name>
+        <param>
+          <type>const DWord</type>
+          <declname>dw_map_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="41" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="182" bodyend="192"/>
+        <references refid="class_race_hero_mgr_1adb157c06d1072d4387a98b7660d19b75" compoundref="_src_2_race_hero_mgr_8h" startline="50">map_race_heros</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a2808871aa69b5bfb18cc0ca7f72aa4fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_src_2_race_hero_mgr_8h_1a19c94f63690dbbed57d4ca8084e42e8d" kindref="member">MMDBCharRaceHeros</ref> &amp;</type>
+        <definition>MMDBCharRaceHeros &amp; RaceHeroMgr::getRaceHerosMap</definition>
+        <argsstring>()</argsstring>
+        <name>getRaceHerosMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="42" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="194" bodyend="197"/>
+        <references refid="class_race_hero_mgr_1adb157c06d1072d4387a98b7660d19b75" compoundref="_src_2_race_hero_mgr_8h" startline="50">map_race_heros</references>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a269f1f307674fe1f4b9c74ba8f41fbc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::get_race_hero_data</definition>
+        <argsstring>(std::vector&lt; SeUserRaceMapHeroBase &gt; &amp;vDat, const DWord map_type)</argsstring>
+        <name>get_race_hero_data</name>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_se_user_race_map_hero_base" kindref="compound">SeUserRaceMapHeroBase</ref> &gt; &amp;</type>
+          <declname>vDat</declname>
+        </param>
+        <param>
+          <type>const DWord</type>
+          <declname>map_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="44" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="199" bodyend="215"/>
+        <references refid="struct_se_user_race_map_hero_base_1ae2744e031056adc43a2e26175fcf8ffe" compoundref="_se_ptl_comm_define_8h" startline="2127">SeUserRaceMapHeroBase::dwHeroID</references>
+        <references refid="struct_se_user_race_map_hero_base_1a40bdbfaa646b61643de2c335d0b9577e" compoundref="_se_ptl_comm_define_8h" startline="2128">SeUserRaceMapHeroBase::dwUseCounts</references>
+        <references refid="struct_se_user_race_map_hero_base_1acb63d5ff24bdf4884c38c1326455dc96" compoundref="_se_ptl_comm_define_8h" startline="2129">SeUserRaceMapHeroBase::dwWinCounts</references>
+        <references refid="_src_2_race_map_mgr_8h_1a781938fa0a81d95394ac0faef00f0ed6a2b0eafd55e80748e0a17d67d7cd31035" compoundref="_src_2_race_map_mgr_8h" startline="7">EPVPMapType_Race</references>
+        <references refid="class_race_hero_mgr_1a934e2505f2c233fd343b72ad5a671852" compoundref="_src_2_race_hero_mgr_8h" startline="52">map_arena_race_heros</references>
+        <referencedby refid="class_block_server_1a9b028997d43072f059152cdb3406a93b" compoundref="_src_2_se_t_b_l_process_8cpp" startline="195" endline="209">BlockServer::ProcessTBL_UserMapRaceHeroReq</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1ae420cdc60632ea583863b4ede69a8f4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RaceHeroMgr::RaceHeroMgr</definition>
+        <argsstring>(SePlayer &amp;owner)</argsstring>
+        <name>RaceHeroMgr</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a53a0f83ba40911071e2299865cc71f1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RaceHeroMgr::~RaceHeroMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~RaceHeroMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a5e75aeb240c338823da80888a2a710ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::loadData</definition>
+        <argsstring>(const SeDBCharRaceHero &amp;info)</argsstring>
+        <name>loadData</name>
+        <reimplements refid="class_data_mgr_1a19fd585291b3911a1f43d63dfbcc71c6">loadData</reimplements>
+        <param>
+          <type>const SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1ac6862fb4ba98db9161b3d1dd2e5f0a49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::saveData</definition>
+        <argsstring>(SeDBCharRaceHero &amp;info)</argsstring>
+        <name>saveData</name>
+        <param>
+          <type>SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a53f63d2f215436734e8cf4e20feff54c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::updateData</definition>
+        <argsstring>(SeDBCharRaceHero &amp;info)</argsstring>
+        <name>updateData</name>
+        <param>
+          <type>SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a6efaf90421ad6b15e4e816d481ab1560" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SeDBCharRaceHero</type>
+        <definition>SeDBCharRaceHero RaceHeroMgr::genHeroParam</definition>
+        <argsstring>(const DWord char_id, const DWord map_id, const DWord hero_id, const DWord win_counts)</argsstring>
+        <name>genHeroParam</name>
+        <param>
+          <type>const DWord</type>
+          <declname>char_id</declname>
+        </param>
+        <param>
+          <type>const DWord</type>
+          <declname>map_id</declname>
+        </param>
+        <param>
+          <type>const DWord</type>
+          <declname>hero_id</declname>
+        </param>
+        <param>
+          <type>const DWord</type>
+          <declname>win_counts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a0bc8c43aa4e42db579dfb3c745deaffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>SeDBCharRaceHero *</type>
+        <definition>SeDBCharRaceHero* RaceHeroMgr::getHero</definition>
+        <argsstring>(const DWord dw_map_id, const DWord dw_hero_id)</argsstring>
+        <name>getHero</name>
+        <param>
+          <type>const DWord</type>
+          <declname>dw_map_id</declname>
+        </param>
+        <param>
+          <type>const DWord</type>
+          <declname>dw_hero_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a880314f18aa6ad987957697e805bee06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_se_user_race_map_hero_base" kindref="compound">SeUserRaceMapHeroBase</ref></type>
+        <definition>SeUserRaceMapHeroBase RaceHeroMgr::getHero_Arena</definition>
+        <argsstring>(const DWord dw_hero_id)</argsstring>
+        <name>getHero_Arena</name>
+        <param>
+          <type>const DWord</type>
+          <declname>dw_hero_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a670904a37340470560794ec4703030e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RaceHeroMgr::checkHero</definition>
+        <argsstring>(const DWord dw_map_id, const DWord dw_hero_id)</argsstring>
+        <name>checkHero</name>
+        <param>
+          <type>const DWord</type>
+          <declname>dw_map_id</declname>
+        </param>
+        <param>
+          <type>const DWord</type>
+          <declname>dw_hero_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1ac76a3d3cb5e4baf225f91218d6e6e39b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RaceHeroMgr::checkHero_Arena</definition>
+        <argsstring>(const DWord dw_hero_id)</argsstring>
+        <name>checkHero_Arena</name>
+        <param>
+          <type>const DWord</type>
+          <declname>dw_hero_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a187055982bcaf4cfbb89baab16ba0d8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::makeHero</definition>
+        <argsstring>(SeDBCharRaceHero &amp;info)</argsstring>
+        <name>makeHero</name>
+        <param>
+          <type>SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1aa5a61aad79459f39236edb89c16e9f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::makeHero_Arena</definition>
+        <argsstring>(SeDBCharRaceHero &amp;info)</argsstring>
+        <name>makeHero_Arena</name>
+        <param>
+          <type>SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a98d7bb72c2ce445d28ca7ba372ce03d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::createHero</definition>
+        <argsstring>(SeDBCharRaceHero &amp;info)</argsstring>
+        <name>createHero</name>
+        <param>
+          <type>SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a235a840d60e21cea738dd3063158dfa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::createHero_Arena</definition>
+        <argsstring>(const SeDBCharRaceHero &amp;info)</argsstring>
+        <name>createHero_Arena</name>
+        <param>
+          <type>const SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1ad0932f271b9104809fc29c64926ce915" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::updateHero</definition>
+        <argsstring>(SeDBCharRaceHero &amp;info)</argsstring>
+        <name>updateHero</name>
+        <param>
+          <type>SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a02a4b3b769e3722bf680cb158ed4e790" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::updateHero_Arena</definition>
+        <argsstring>(SeDBCharRaceHero &amp;info)</argsstring>
+        <name>updateHero_Arena</name>
+        <param>
+          <type>SeDBCharRaceHero &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a657b11850c04ba3dfd6b5380c87bbbff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_src_2_race_hero_mgr_8h_1a64887a7f0d931e649febab8b105b6597" kindref="member">MDBCharRaceHero</ref> &amp;</type>
+        <definition>MDBCharRaceHero&amp; RaceHeroMgr::getRaceHeroMap</definition>
+        <argsstring>(const DWord dw_map_id)</argsstring>
+        <name>getRaceHeroMap</name>
+        <param>
+          <type>const DWord</type>
+          <declname>dw_map_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a9493cf3f3245892b78d03a8cb489522d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_src_2_race_hero_mgr_8h_1a19c94f63690dbbed57d4ca8084e42e8d" kindref="member">MMDBCharRaceHeros</ref> &amp;</type>
+        <definition>MMDBCharRaceHeros&amp; RaceHeroMgr::getRaceHerosMap</definition>
+        <argsstring>()</argsstring>
+        <name>getRaceHerosMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a269f1f307674fe1f4b9c74ba8f41fbc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RaceHeroMgr::get_race_hero_data</definition>
+        <argsstring>(std::vector&lt; SeUserRaceMapHeroBase &gt; &amp;vDat, const DWord map_type)</argsstring>
+        <name>get_race_hero_data</name>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_se_user_race_map_hero_base" kindref="compound">SeUserRaceMapHeroBase</ref> &gt; &amp;</type>
+          <declname>vDat</declname>
+        </param>
+        <param>
+          <type>const DWord</type>
+          <declname>map_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="44" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_race_hero_mgr_1aca3c186fa5a8cdcecc282d6c21d849ec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer &amp; RaceHeroMgr::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="46" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.cpp" bodystart="217" bodyend="220"/>
+        <references refid="class_race_hero_mgr_1a28142c388044ae6541acdf7d1f14fdbe" compoundref="_src_2_race_hero_mgr_8h" startline="48">m_owner</references>
+        <referencedby refid="class_race_hero_mgr_1ac6862fb4ba98db9161b3d1dd2e5f0a49" compoundref="_src_2_race_hero_mgr_8cpp" startline="54" endline="57">saveData</referencedby>
+        <referencedby refid="class_race_hero_mgr_1a53f63d2f215436734e8cf4e20feff54c" compoundref="_src_2_race_hero_mgr_8cpp" startline="59" endline="62">updateData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_race_hero_mgr_1a4d72b9084d7e5bdd9d52270049c62c07" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer&amp; RaceHeroMgr::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/RaceHeroMgr.h" line="46" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2207">
+        <label>DataMgr&lt; SeDBCharRaceHero &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="2206">
+        <label>RaceHeroMgr</label>
+        <link refid="class_race_hero_mgr"/>
+        <childnode refid="2207" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2207" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2272">
+        <label>SeAchieveScheduleInfo</label>
+        <link refid="struct_se_achieve_schedule_info"/>
+      </node>
+      <node id="2220">
+        <label>std::map&lt; DWord, CItem * &gt;</label>
+        <childnode refid="2221" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2233">
+        <label>SeThreadMsgMgr</label>
+        <link refid="class_se_thread_msg_mgr"/>
+        <childnode refid="2234" relation="usage">
+          <edgelabel>m_kTemMsgData</edgelabel>
+        </childnode>
+      </node>
+      <node id="2240">
+        <label>DataMgr&lt; SeDBCharEquipSchema &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="2287">
+        <label>K</label>
+      </node>
+      <node id="2275">
+        <label>T</label>
+      </node>
+      <node id="2254">
+        <label>SeItem</label>
+        <link refid="struct_se_item"/>
+        <childnode refid="2217" relation="usage">
+          <edgelabel>kFinishTime</edgelabel>
+        </childnode>
+        <childnode refid="2255" relation="usage">
+          <edgelabel>pkItemRes</edgelabel>
+        </childnode>
+      </node>
+      <node id="2217">
+        <label>SeDBTime</label>
+        <link refid="struct_se_d_b_time"/>
+      </node>
+      <node id="2248">
+        <label>SeTaskInfo</label>
+        <link refid="struct_se_task_info"/>
+        <childnode refid="2249" relation="usage">
+          <edgelabel>pkRes</edgelabel>
+        </childnode>
+      </node>
+      <node id="2274">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="2275" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2221">
+        <label>CItem</label>
+        <link refid="struct_c_item"/>
+        <childnode refid="2222" relation="usage">
+          <edgelabel>pvpAttr</edgelabel>
+          <edgelabel>pveAttr</edgelabel>
+        </childnode>
+        <childnode refid="2223" relation="usage">
+          <edgelabel>citiaoAttr</edgelabel>
+        </childnode>
+      </node>
+      <node id="2262">
+        <label>AchieveMgr</label>
+        <link refid="class_achieve_mgr"/>
+        <childnode refid="2210" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="2210">
+        <label>SePlayer</label>
+        <link refid="class_se_player"/>
+        <childnode refid="2211" relation="usage">
+          <edgelabel>m_kCurPos</edgelabel>
+        </childnode>
+        <childnode refid="2212" relation="usage">
+          <edgelabel>m_heroMgr</edgelabel>
+        </childnode>
+        <childnode refid="2215" relation="usage">
+          <edgelabel>m_mapNexusFriendData</edgelabel>
+        </childnode>
+        <childnode refid="2218" relation="usage">
+          <edgelabel>m_PlayerItemMgr</edgelabel>
+        </childnode>
+        <childnode refid="2226" relation="usage">
+          <edgelabel>m_kMobileInfo</edgelabel>
+        </childnode>
+        <childnode refid="2217" relation="usage">
+          <edgelabel>m_kEnterTime</edgelabel>
+        </childnode>
+        <childnode refid="2227" relation="usage">
+          <edgelabel>m_pkBlockServer</edgelabel>
+        </childnode>
+        <childnode refid="2238" relation="usage">
+          <edgelabel>m_kLoadFlag2Count</edgelabel>
+        </childnode>
+        <childnode refid="2239" relation="usage">
+          <edgelabel>m_equipSchemaMgr</edgelabel>
+        </childnode>
+        <childnode refid="2241" relation="usage">
+          <edgelabel>m_raceMapMgr</edgelabel>
+        </childnode>
+        <childnode refid="2208" relation="usage">
+          <edgelabel>m_raceHeroMgr</edgelabel>
+        </childnode>
+        <childnode refid="2244" relation="usage">
+          <edgelabel>m_loadingFlag</edgelabel>
+        </childnode>
+        <childnode refid="2245" relation="usage">
+          <edgelabel>m_TaskMgr</edgelabel>
+        </childnode>
+        <childnode refid="2253" relation="usage">
+          <edgelabel>m_akItem</edgelabel>
+        </childnode>
+        <childnode refid="2256" relation="usage">
+          <edgelabel>m_FriendLadderData</edgelabel>
+        </childnode>
+        <childnode refid="2259" relation="usage">
+          <edgelabel>m_activeAvatarMgr</edgelabel>
+        </childnode>
+        <childnode refid="2262" relation="usage">
+          <edgelabel>m_AchieveMgr</edgelabel>
+        </childnode>
+        <childnode refid="2263" relation="usage">
+          <edgelabel>m_kLoadFlagCounts</edgelabel>
+        </childnode>
+        <childnode refid="2237" relation="usage">
+          <edgelabel>m_kAccountInfo</edgelabel>
+        </childnode>
+        <childnode refid="2264" relation="usage">
+          <edgelabel>m_AchieveFinishMgr</edgelabel>
+        </childnode>
+        <childnode refid="2267" relation="usage">
+          <edgelabel>m_akStatMap</edgelabel>
+        </childnode>
+        <childnode refid="2269" relation="usage">
+          <edgelabel>m_AchieveScheduleMgr</edgelabel>
+        </childnode>
+        <childnode refid="2273" relation="usage">
+          <edgelabel>m_kMAllCharMem</edgelabel>
+        </childnode>
+        <childnode refid="2276" relation="usage">
+          <edgelabel>m_akExchange</edgelabel>
+        </childnode>
+        <childnode refid="2278" relation="usage">
+          <edgelabel>m_infoMgr</edgelabel>
+        </childnode>
+        <childnode refid="2281" relation="usage">
+          <edgelabel>m_kSingleMatchInfo</edgelabel>
+        </childnode>
+        <childnode refid="2282" relation="usage">
+          <edgelabel>m_kOderItr</edgelabel>
+        </childnode>
+      </node>
+      <node id="2236">
+        <label>SeWaitPlayer</label>
+        <link refid="struct_se_wait_player"/>
+        <childnode refid="2237" relation="usage">
+          <edgelabel>kAccountInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="2286">
+        <label>std::map&lt; K, T &gt;</label>
+        <childnode refid="2287" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="2275" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2244">
+        <label>std::set&lt; SeDBTableIndex &gt;</label>
+      </node>
+      <node id="2264">
+        <label>AchieveFinishMgr</label>
+        <link refid="class_achieve_finish_mgr"/>
+        <childnode refid="2265" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2265" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2266" relation="usage">
+          <edgelabel>m_FinishMap</edgelabel>
+        </childnode>
+        <childnode refid="2210" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="2284">
+        <label>SeUserRaceMapHeroBase</label>
+        <link refid="struct_se_user_race_map_hero_base"/>
+      </node>
+      <node id="2212">
+        <label>HeroMgr</label>
+        <link refid="class_hero_mgr"/>
+        <childnode refid="2213" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2213" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2210" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="2214" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="2237">
+        <label>SePtlAccountInfo</label>
+        <link refid="struct_se_ptl_account_info"/>
+      </node>
+      <node id="2282">
+        <label>std::map&lt; K, T &gt;::iterator</label>
+      </node>
+      <node id="2229">
+        <label>SeLeagueInfo</label>
+        <link refid="struct_se_league_info"/>
+        <childnode refid="2217" relation="usage">
+          <edgelabel>kBeginTime</edgelabel>
+          <edgelabel>kEndTime</edgelabel>
+        </childnode>
+      </node>
+      <node id="2285">
+        <label>std::map&lt; DWord, MDBCharRaceHero &gt;</label>
+        <childnode refid="2286" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2253">
+        <label>std::vector&lt; SeItem * &gt;</label>
+        <childnode refid="2254" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2211">
+        <label>SePos2</label>
+        <link refid="struct_se_pos2"/>
+      </node>
+      <node id="2247">
+        <label>std::vector&lt; SeTaskInfo * &gt;</label>
+        <childnode refid="2248" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2249">
+        <label>TaskInfoTable</label>
+        <link refid="struct_task_info_table"/>
+        <childnode refid="2250" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2251" relation="usage">
+          <edgelabel>kNameID</edgelabel>
+          <edgelabel>kDescID</edgelabel>
+          <edgelabel>kName_China</edgelabel>
+          <edgelabel>kTaskDesc</edgelabel>
+          <edgelabel>kTargetDesc</edgelabel>
+        </childnode>
+      </node>
+      <node id="2216">
+        <label>SeCharNexusFriendData</label>
+        <link refid="struct_se_char_nexus_friend_data"/>
+        <childnode refid="2217" relation="usage">
+          <edgelabel>create_time</edgelabel>
+        </childnode>
+      </node>
+      <node id="2238">
+        <label>std::map&lt; int, int &gt;</label>
+      </node>
+      <node id="2278">
+        <label>InfoMgr</label>
+        <link refid="class_info_mgr"/>
+        <childnode refid="2279" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2280" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2279" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2280" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2210" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="2214" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="2243">
+        <label>std::map&lt; DWord, SeDBCharRaceArena * &gt;</label>
+      </node>
+      <node id="2232">
+        <label>SeNetAddr</label>
+        <link refid="struct_se_net_addr"/>
+      </node>
+      <node id="2222">
+        <label>SeAttrUnit</label>
+        <link refid="struct_se_attr_unit"/>
+      </node>
+      <node id="2214">
+        <label>std::map&lt; DWord, SeDBCharHero * &gt;</label>
+      </node>
+      <node id="2252">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="2250">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="2224">
+        <label>SeExternAttrUnit</label>
+        <link refid="struct_se_extern_attr_unit"/>
+      </node>
+      <node id="2219">
+        <label>DataMgr&lt; SeDBCharItem &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="2235">
+        <label>std::map&lt; DWord, SeWaitPlayer * &gt;</label>
+        <childnode refid="2236" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2267">
+        <label>std::vector&lt; SeStatMap * &gt;</label>
+        <childnode refid="2268" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2209">
+        <label>DataMgr&lt; SeDBCharRaceHero &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="2242">
+        <label>DataMgr&lt; SeDBCharRaceArena &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="2246">
+        <label>DataMgr&lt; SeDBCharTask &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="2226">
+        <label>SeMobileInfo</label>
+        <link refid="struct_se_mobile_info"/>
+      </node>
+      <node id="2225">
+        <label>std::map&lt; uint16_t, CItem * &gt;</label>
+        <childnode refid="2221" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2241">
+        <label>RaceMapMgr</label>
+        <link refid="class_race_map_mgr"/>
+        <childnode refid="2242" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2242" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2210" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="2243" relation="usage">
+          <edgelabel>m_race_map</edgelabel>
+        </childnode>
+      </node>
+      <node id="2280">
+        <label>DataMgr&lt; SeDBCharInfo &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="2259">
+        <label>ActiveAvatarMgr</label>
+        <link refid="class_active_avatar_mgr"/>
+        <childnode refid="2260" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2260" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2261" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+        <childnode refid="2210" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="2227">
+        <label>BlockServer</label>
+        <link refid="class_block_server"/>
+        <childnode refid="2228" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2228" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2229" relation="usage">
+          <edgelabel>m_kLeagueInfo</edgelabel>
+        </childnode>
+        <childnode refid="2230" relation="usage">
+          <edgelabel>m_kAllPlayer</edgelabel>
+        </childnode>
+        <childnode refid="2233" relation="usage">
+          <edgelabel>m_kThreadMsgMgr</edgelabel>
+        </childnode>
+        <childnode refid="2235" relation="usage">
+          <edgelabel>m_kWaitPlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="2218">
+        <label>CItemMgr</label>
+        <link refid="class_c_item_mgr"/>
+        <childnode refid="2219" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2219" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2220" relation="usage">
+          <edgelabel>m_idMap</edgelabel>
+        </childnode>
+        <childnode refid="2210" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+        </childnode>
+        <childnode refid="2225" relation="usage">
+          <edgelabel>m_BagMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="2277">
+        <label>SeExChangeInfo</label>
+        <link refid="struct_se_ex_change_info"/>
+        <childnode refid="2217" relation="usage">
+          <edgelabel>kRecordTime</edgelabel>
+        </childnode>
+      </node>
+      <node id="2256">
+        <label>std::unordered_map&lt; DWord, SeCharLadderData * &gt;</label>
+        <childnode refid="2257" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2271">
+        <label>std::map&lt; DWord, SeAchieveScheduleInfo * &gt;</label>
+        <childnode refid="2272" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2261">
+        <label>std::set&lt; DWord &gt;</label>
+      </node>
+      <node id="2281">
+        <label>SeSingleMatchInfo</label>
+        <link refid="struct_se_single_match_info"/>
+      </node>
+      <node id="2269">
+        <label>AchieveScheduleMgr</label>
+        <link refid="class_achieve_schedule_mgr"/>
+        <childnode refid="2270" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2270" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2210" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+        <childnode refid="2271" relation="usage">
+          <edgelabel>m_ScheduleMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="2228">
+        <label>Thread</label>
+      </node>
+      <node id="2270">
+        <label>DataMgr&lt; SeDBCharAchieveSchedule &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="2258">
+        <label>SeLadderRankInfo</label>
+        <link refid="struct_se_ladder_rank_info"/>
+      </node>
+      <node id="2265">
+        <label>DataMgr&lt; SeDBCharAchieveFinish &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="2260">
+        <label>DataMgr&lt; SeDBCharActiveAvatar &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="2215">
+        <label>std::map&lt; DWord, SeCharNexusFriendData * &gt;</label>
+        <childnode refid="2216" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2257">
+        <label>SeCharLadderData</label>
+        <link refid="struct_se_char_ladder_data"/>
+        <childnode refid="2258" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2258" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2213">
+        <label>DataMgr&lt; SeDBCharHero &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="2273">
+        <label>std::map&lt; DWord, VCharMemory &gt;</label>
+        <childnode refid="2274" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2230">
+        <label>std::map&lt; HSock, SeLoginPlayer * &gt;</label>
+        <childnode refid="2231" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2223">
+        <label>SeCiTiao</label>
+        <link refid="struct_se_ci_tiao"/>
+        <childnode refid="2224" relation="usage">
+          <edgelabel>SkillAdd</edgelabel>
+        </childnode>
+      </node>
+      <node id="2279">
+        <label>SeDBCharInfo</label>
+      </node>
+      <node id="2276">
+        <label>std::vector&lt; SeExChangeInfo * &gt;</label>
+        <childnode refid="2277" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2239">
+        <label>EquipSchemaMgr</label>
+        <link refid="class_equip_schema_mgr"/>
+        <childnode refid="2240" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2240" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2210" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="2208">
+        <label>RaceHeroMgr</label>
+        <link refid="class_race_hero_mgr"/>
+        <childnode refid="2209" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2209" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2210" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="2283" relation="usage">
+          <edgelabel>map_arena_race_heros</edgelabel>
+        </childnode>
+        <childnode refid="2285" relation="usage">
+          <edgelabel>map_race_heros</edgelabel>
+        </childnode>
+      </node>
+      <node id="2234">
+        <label>SeMsgData</label>
+        <link refid="struct_se_msg_data"/>
+      </node>
+      <node id="2266">
+        <label>std::map&lt; DWord, std::map&lt; DWord, SeAchieveFinishInfo * &gt; &gt;</label>
+      </node>
+      <node id="2245">
+        <label>TaskMgr</label>
+        <link refid="class_task_mgr"/>
+        <childnode refid="2246" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2246" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2247" relation="usage">
+          <edgelabel>m_akVTask</edgelabel>
+        </childnode>
+        <childnode refid="2210" relation="usage">
+          <edgelabel>m_Player</edgelabel>
+        </childnode>
+      </node>
+      <node id="2263">
+        <label>std::map&lt; SeDBTableIndex, int &gt;</label>
+      </node>
+      <node id="2268">
+        <label>SeStatMap</label>
+        <link refid="struct_se_stat_map"/>
+      </node>
+      <node id="2231">
+        <label>SeLoginPlayer</label>
+        <link refid="struct_se_login_player"/>
+        <childnode refid="2232" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="2251">
+        <label>std::string</label>
+        <childnode refid="2252" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2283">
+        <label>std::map&lt; DWord, SeUserRaceMapHeroBase &gt;</label>
+        <childnode refid="2284" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2255">
+        <label>TownItemTable</label>
+        <link refid="struct_town_item_table"/>
+        <childnode refid="2250" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2251" relation="usage">
+          <edgelabel>kAttachModel1</edgelabel>
+          <edgelabel>kAttachModel2</edgelabel>
+          <edgelabel>kPVPValueA</edgelabel>
+          <edgelabel>ktaozhuangID</edgelabel>
+          <edgelabel>kNameID</edgelabel>
+          <edgelabel>kPVPValueB</edgelabel>
+          <edgelabel>kDesc</edgelabel>
+          <edgelabel>kPVPValueC</edgelabel>
+          <edgelabel>kPVPValueD</edgelabel>
+          <edgelabel>kPVPValueE</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" line="13" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/RaceHeroMgr.h" bodystart="12" bodyend="53"/>
+    <listofallmembers>
+      <member refid="class_race_hero_mgr_1a670904a37340470560794ec4703030e7" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>checkHero</name></member>
+      <member refid="class_race_hero_mgr_1a670904a37340470560794ec4703030e7" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>checkHero</name></member>
+      <member refid="class_race_hero_mgr_1ac76a3d3cb5e4baf225f91218d6e6e39b" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>checkHero_Arena</name></member>
+      <member refid="class_race_hero_mgr_1ac76a3d3cb5e4baf225f91218d6e6e39b" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>checkHero_Arena</name></member>
+      <member refid="class_race_hero_mgr_1a98d7bb72c2ce445d28ca7ba372ce03d8" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>createHero</name></member>
+      <member refid="class_race_hero_mgr_1a98d7bb72c2ce445d28ca7ba372ce03d8" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>createHero</name></member>
+      <member refid="class_race_hero_mgr_1a235a840d60e21cea738dd3063158dfa5" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>createHero_Arena</name></member>
+      <member refid="class_race_hero_mgr_1a235a840d60e21cea738dd3063158dfa5" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>createHero_Arena</name></member>
+      <member refid="class_data_mgr_1ab72bd1d8bc0f210c94d235c978fbbd4c" prot="public" virt="virtual"><scope>RaceHeroMgr</scope><name>fixData</name></member>
+      <member refid="class_data_mgr_1ab72bd1d8bc0f210c94d235c978fbbd4c" prot="public" virt="virtual"><scope>RaceHeroMgr</scope><name>fixData</name></member>
+      <member refid="class_race_hero_mgr_1a6efaf90421ad6b15e4e816d481ab1560" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>genHeroParam</name></member>
+      <member refid="class_race_hero_mgr_1a6efaf90421ad6b15e4e816d481ab1560" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>genHeroParam</name></member>
+      <member refid="class_race_hero_mgr_1a269f1f307674fe1f4b9c74ba8f41fbc6" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>get_race_hero_data</name></member>
+      <member refid="class_race_hero_mgr_1a269f1f307674fe1f4b9c74ba8f41fbc6" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>get_race_hero_data</name></member>
+      <member refid="class_race_hero_mgr_1af075ae807ec2bb30f59f560312f5b4cf" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>getHero</name></member>
+      <member refid="class_race_hero_mgr_1a0bc8c43aa4e42db579dfb3c745deaffe" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>getHero</name></member>
+      <member refid="class_race_hero_mgr_1a880314f18aa6ad987957697e805bee06" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>getHero_Arena</name></member>
+      <member refid="class_race_hero_mgr_1a880314f18aa6ad987957697e805bee06" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>getHero_Arena</name></member>
+      <member refid="class_race_hero_mgr_1aca3c186fa5a8cdcecc282d6c21d849ec" prot="private" virt="non-virtual"><scope>RaceHeroMgr</scope><name>getOwner</name></member>
+      <member refid="class_race_hero_mgr_1a4d72b9084d7e5bdd9d52270049c62c07" prot="private" virt="non-virtual"><scope>RaceHeroMgr</scope><name>getOwner</name></member>
+      <member refid="class_race_hero_mgr_1a7dce8b85b4e230208c0505fccc251fcd" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>getRaceHeroMap</name></member>
+      <member refid="class_race_hero_mgr_1a657b11850c04ba3dfd6b5380c87bbbff" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>getRaceHeroMap</name></member>
+      <member refid="class_race_hero_mgr_1a2808871aa69b5bfb18cc0ca7f72aa4fe" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>getRaceHerosMap</name></member>
+      <member refid="class_race_hero_mgr_1a9493cf3f3245892b78d03a8cb489522d" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>getRaceHerosMap</name></member>
+      <member refid="class_race_hero_mgr_1a5e75aeb240c338823da80888a2a710ad" prot="public" virt="virtual"><scope>RaceHeroMgr</scope><name>loadData</name></member>
+      <member refid="class_race_hero_mgr_1a5e75aeb240c338823da80888a2a710ad" prot="public" virt="virtual"><scope>RaceHeroMgr</scope><name>loadData</name></member>
+      <member refid="class_race_hero_mgr_1a28142c388044ae6541acdf7d1f14fdbe" prot="private" virt="non-virtual"><scope>RaceHeroMgr</scope><name>m_owner</name></member>
+      <member refid="class_race_hero_mgr_1a187055982bcaf4cfbb89baab16ba0d8a" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>makeHero</name></member>
+      <member refid="class_race_hero_mgr_1a187055982bcaf4cfbb89baab16ba0d8a" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>makeHero</name></member>
+      <member refid="class_race_hero_mgr_1aa5a61aad79459f39236edb89c16e9f96" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>makeHero_Arena</name></member>
+      <member refid="class_race_hero_mgr_1aa5a61aad79459f39236edb89c16e9f96" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>makeHero_Arena</name></member>
+      <member refid="class_race_hero_mgr_1a934e2505f2c233fd343b72ad5a671852" prot="private" virt="non-virtual"><scope>RaceHeroMgr</scope><name>map_arena_race_heros</name></member>
+      <member refid="class_race_hero_mgr_1adb157c06d1072d4387a98b7660d19b75" prot="private" virt="non-virtual"><scope>RaceHeroMgr</scope><name>map_race_heros</name></member>
+      <member refid="class_race_hero_mgr_1ae420cdc60632ea583863b4ede69a8f4f" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>RaceHeroMgr</name></member>
+      <member refid="class_race_hero_mgr_1ae420cdc60632ea583863b4ede69a8f4f" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>RaceHeroMgr</name></member>
+      <member refid="class_race_hero_mgr_1ac6862fb4ba98db9161b3d1dd2e5f0a49" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>saveData</name></member>
+      <member refid="class_race_hero_mgr_1ac6862fb4ba98db9161b3d1dd2e5f0a49" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>saveData</name></member>
+      <member refid="class_race_hero_mgr_1a53f63d2f215436734e8cf4e20feff54c" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>updateData</name></member>
+      <member refid="class_race_hero_mgr_1a53f63d2f215436734e8cf4e20feff54c" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>updateData</name></member>
+      <member refid="class_race_hero_mgr_1ad0932f271b9104809fc29c64926ce915" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>updateHero</name></member>
+      <member refid="class_race_hero_mgr_1ad0932f271b9104809fc29c64926ce915" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>updateHero</name></member>
+      <member refid="class_race_hero_mgr_1a02a4b3b769e3722bf680cb158ed4e790" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>updateHero_Arena</name></member>
+      <member refid="class_race_hero_mgr_1a02a4b3b769e3722bf680cb158ed4e790" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>updateHero_Arena</name></member>
+      <member refid="class_race_hero_mgr_1a53a0f83ba40911071e2299865cc71f1b" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>~RaceHeroMgr</name></member>
+      <member refid="class_race_hero_mgr_1a53a0f83ba40911071e2299865cc71f1b" prot="public" virt="non-virtual"><scope>RaceHeroMgr</scope><name>~RaceHeroMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

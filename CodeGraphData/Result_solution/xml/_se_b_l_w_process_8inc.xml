@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_se_b_l_w_process_8inc" kind="file">
+    <compoundname>SeBLWProcess.inc</compoundname>
+    <includedby refid="_src_2_se_b_l_w_process_8cpp" local="yes">WorldServer/Src/SeBLWProcess.cpp</includedby>
+    <includedby refid="src_2_se_b_l_w_process_8cpp" local="yes">WorldServer/src/SeBLWProcess.cpp</includedby>
+    <invincdepgraph>
+      <node id="125510">
+        <label>WorldServer/src/SeBLWProcess.cpp</label>
+        <link refid="src_2_se_b_l_w_process_8cpp"/>
+      </node>
+      <node id="125508">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeBLWProcess.inc</label>
+        <link refid="SeBLWProcess.inc"/>
+        <childnode refid="125509" relation="include">
+        </childnode>
+        <childnode refid="125510" relation="include">
+        </childnode>
+      </node>
+      <node id="125509">
+        <label>WorldServer/Src/SeBLWProcess.cpp</label>
+        <link refid="_src_2_se_b_l_w_process_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_b_l_w_process_8inl_1a41e7c6395f207bb0a6e27fbc457c1c8d" kindref="member">SERVER::ProcessBLWData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkSender)</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_c_m_d" kindref="compound">SeCMD</ref>))</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_c_m_d" kindref="compound">SeCMD</ref>*<sp/>pkCmd<sp/>=<sp/>(<ref refid="struct_se_c_m_d" kindref="compound">SeCMD</ref>*)pkData;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pkCmd-&gt;<ref refid="struct_se_c_m_d_1a2efa122a60040d09cfca777f9155394c" kindref="member">wCmd</ref><sp/>&lt;<sp/><ref refid="_se_server_define_8h_1a5ef39269c62c879ff0b5584312980bc2ad02b04f11b8c28fbae41246163454e3a" kindref="member">STCB_BLS_WS</ref><sp/>||<sp/>pkCmd-&gt;<ref refid="struct_se_c_m_d_1a2efa122a60040d09cfca777f9155394c" kindref="member">wCmd</ref><sp/>&gt;<sp/><ref refid="_se_server_define_8h_1a5ef39269c62c879ff0b5584312980bc2ad02b04f11b8c28fbae41246163454e3a" kindref="member">STCB_BLS_WS</ref><sp/>+<sp/><ref refid="_se_server_define_8h_1a7e57d75ea3d17743d491908f4fb5cc93" kindref="member">STCB_INTERVAL</ref>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="_se_b_l_w_process_8inl_1a22bef7dfbec66b07ad4a4e3ca0acb314" kindref="member">PreProcessBLW</ref>(pkData,<sp/>iSize,<sp/>pkSender))</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//根据命令头做各种处理</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(pkCmd-&gt;<ref refid="struct_se_c_m_d_1a2efa122a60040d09cfca777f9155394c" kindref="member">wCmd</ref>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___b_l_s___to___w_s_8h_1a27bd07316c7fe89c2f35c0eeb65d518aa2e7eeee299eedc7756c1df21f6f934f5" kindref="member">CMD_BLW_TSINCNUM</ref>:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_b_l_w___t_s_inc_num" kindref="compound">SeBLW_TSIncNum</ref>))</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_b_l_w_process_8inl_1a9edd69712679c8b557f80d5181cd4c12" kindref="member">ProcessBLW_TSIncNum</ref>((<ref refid="struct_se_b_l_w___t_s_inc_num" kindref="compound">SeBLW_TSIncNum</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___b_l_s___to___w_s_8h_1a27bd07316c7fe89c2f35c0eeb65d518aa6a79ade35565a9790e459661c3ba3cf1" kindref="member">CMD_BLW_SHOWNOTICE</ref>:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)offsetof(<ref refid="struct_se_b_l_w___show_notice" kindref="compound">SeBLW_ShowNotice</ref>,<sp/>acMessage))</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)offsetof(<ref refid="struct_se_b_l_w___show_notice" kindref="compound">SeBLW_ShowNotice</ref>,<sp/>acMessage)<sp/>+<sp/>((<ref refid="struct_se_b_l_w___show_notice" kindref="compound">SeBLW_ShowNotice</ref>*)pkData)-&gt;iSize<sp/>*<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_b_l_w_process_8inl_1a33b544b064697fb18d970f0007bb06fb" kindref="member">ProcessBLW_ShowNotice</ref>((<ref refid="struct_se_b_l_w___show_notice" kindref="compound">SeBLW_ShowNotice</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___b_l_s___to___w_s_8h_1a27bd07316c7fe89c2f35c0eeb65d518aafe385176d6d4df34826df3f9a50e9e3e" kindref="member">CMD_BLW_LOADPLAYERINFOAGAINRET</ref>:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)offsetof(<ref refid="struct_se_b_l_w___load_player_info_again_ret" kindref="compound">SeBLW_LoadPlayerInfoAgainRet</ref>,<sp/>adwPlayerID))</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)offsetof(<ref refid="struct_se_b_l_w___load_player_info_again_ret" kindref="compound">SeBLW_LoadPlayerInfoAgainRet</ref>,<sp/>adwPlayerID)<sp/>+<sp/>((<ref refid="struct_se_b_l_w___load_player_info_again_ret" kindref="compound">SeBLW_LoadPlayerInfoAgainRet</ref>*)pkData)-&gt;iNum<sp/>*<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(DWord))</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_b_l_w_process_8inl_1a6584568eb47e65378558a32247d195ca" kindref="member">ProcessBLW_LoadPlayerInfoAgainRet</ref>((<ref refid="struct_se_b_l_w___load_player_info_again_ret" kindref="compound">SeBLW_LoadPlayerInfoAgainRet</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___b_l_s___to___w_s_8h_1a27bd07316c7fe89c2f35c0eeb65d518aa79ac57099a2b5eeff908b3100b3c8e39" kindref="member">CMD_BLW_PLAYERLEAVE</ref>:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_b_l_w___player_leave" kindref="compound">SeBLW_PlayerLeave</ref>))</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_b_l_w_process_8inl_1a4c2c1579c8c3ff667beda0309756b4c5" kindref="member">ProcessBLW_PlayerLeave</ref>((<ref refid="struct_se_b_l_w___player_leave" kindref="compound">SeBLW_PlayerLeave</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___b_l_s___to___w_s_8h_1a27bd07316c7fe89c2f35c0eeb65d518aab0f2181f9142bb2f9f0f288bd34528aa" kindref="member">CMD_BLW_PLAYERLOADCOMPLETE</ref>:</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_b_l_w___player_load_complete" kindref="compound">SeBLW_PlayerLoadComplete</ref>))</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_b_l_w_process_8inl_1a8fc3a74b8b96e35edbe7168ecbf1ef0f" kindref="member">ProcessBLW_PlayerLoadComplete</ref>((<ref refid="struct_se_b_l_w___player_load_complete" kindref="compound">SeBLW_PlayerLoadComplete</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___b_l_s___to___w_s_8h_1a27bd07316c7fe89c2f35c0eeb65d518aa8f5b7f2019f0db70e95da81626dc69a6" kindref="member">CMD_BLW_PLAYEROPERREP</ref>:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_b_l_w___player_oper_rep" kindref="compound">SeBLW_PlayerOperRep</ref>))</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_b_l_w_process_8inl_1a7613dc951dddad119875de6e63661942" kindref="member">ProcessBLW_PlayerOperRep</ref>((<ref refid="struct_se_b_l_w___player_oper_rep" kindref="compound">SeBLW_PlayerOperRep</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___b_l_s___to___w_s_8h_1a27bd07316c7fe89c2f35c0eeb65d518aad79dc5dd636504badf71bba473d4921c" kindref="member">CMD_BLW_SHOPITEMGMREP</ref>:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_b_l_w___shop_item_gm_rep" kindref="compound">SeBLW_ShopItemGmRep</ref>))</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_b_l_w_process_8inl_1aad4542a09505d601f35055e891c3181b" kindref="member">ProcessBLW_ShopItemGmRep</ref>((<ref refid="struct_se_b_l_w___shop_item_gm_rep" kindref="compound">SeBLW_ShopItemGmRep</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeBLWProcess.inc"/>
+  </compounddef>
+</doxygen>

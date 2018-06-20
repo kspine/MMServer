@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_json_1_1_our_char_reader" kind="class" prot="public">
+    <compoundname>Json::OurCharReader</compoundname>
+    <basecompoundref refid="class_json_1_1_char_reader" prot="public" virt="non-virtual">Json::CharReader</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_json_1_1_our_char_reader_1aa6afd3d0f754cadad0f6d2be38bcfee0" prot="private" static="no" mutable="no">
+        <type>bool const</type>
+        <definition>bool const Json::OurCharReader::collectComments_</definition>
+        <argsstring></argsstring>
+        <name>collectComments_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" line="1893" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="1893" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_our_char_reader_1a52a1fb5fee88d9b63dd462f63b1c9570" compoundref="json__reader_8cpp" startline="1902" endline="1910">parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_our_char_reader_1aedd4520b8570654ed7aa0726075ee58d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_our_reader" kindref="compound">OurReader</ref></type>
+        <definition>OurReader Json::OurCharReader::reader_</definition>
+        <argsstring></argsstring>
+        <name>reader_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" line="1894" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="1894" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_our_char_reader_1a52a1fb5fee88d9b63dd462f63b1c9570" compoundref="json__reader_8cpp" startline="1902" endline="1910">parse</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_our_char_reader_1a5015506620e7ba7bab417756fa1ca9fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Json::OurCharReader::OurCharReader</definition>
+        <argsstring>(bool collectComments, OurFeatures const &amp;features)</argsstring>
+        <name>OurCharReader</name>
+        <param>
+          <type>bool</type>
+          <declname>collectComments</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_our_features" kindref="compound">OurFeatures</ref> const &amp;</type>
+          <declname>features</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" line="1896" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="1896" bodyend="1901"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_our_char_reader_1a52a1fb5fee88d9b63dd462f63b1c9570" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool Json::OurCharReader::parse</definition>
+        <argsstring>(char const *beginDoc, char const *endDoc, Value *root, std::string *errs) override</argsstring>
+        <name>parse</name>
+        <reimplements refid="class_json_1_1_char_reader_1a48e320be8b13bbc0960cc5808cafec98">parse</reimplements>
+        <param>
+          <type>char const *</type>
+          <declname>beginDoc</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>endDoc</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> *</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>errs</declname>
+        </param>
+        <briefdescription>
+<para>Read a <ref refid="class_json_1_1_value" kindref="compound">Value</ref> from a <ulink url="http://www.json.org">JSON</ulink> document. The document must be a UTF-8 encoded string containing the document to read. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>beginDoc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer on the beginning of the UTF-8 encoded string of the document to read. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endDoc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer on the end of the UTF-8 encoded string of the document to read. Must be &gt;= beginDoc. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[out] Contains the root value of the document if it was successfully parsed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>errs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[out] Formatted error messages (if not NULL) a user friendly string that lists errors in the parsed document. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the document was successfully parsed, <computeroutput>false</computeroutput> if an error occurred. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" line="1902" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="1902" bodyend="1910"/>
+        <references refid="class_json_1_1_our_char_reader_1aa6afd3d0f754cadad0f6d2be38bcfee0" compoundref="json__reader_8cpp" startline="1893">collectComments_</references>
+        <references refid="class_json_1_1_our_reader_1ae9cbb7dbd9c6c96be37432e8dfa1afcb" compoundref="json__reader_8cpp" startline="1821" endline="1835">Json::OurReader::getFormattedErrorMessages</references>
+        <references refid="class_json_1_1_our_reader_1aba4f8749aab7f02ec17f107e392caf80" compoundref="json__reader_8cpp" startline="1042" endline="1088">Json::OurReader::parse</references>
+        <references refid="class_json_1_1_our_char_reader_1aedd4520b8570654ed7aa0726075ee58d" compoundref="json__reader_8cpp" startline="1894">reader_</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2005">
+        <label>Json::CharReader</label>
+        <link refid="class_json_1_1_char_reader"/>
+      </node>
+      <node id="2004">
+        <label>Json::OurCharReader</label>
+        <link refid="class_json_1_1_our_char_reader"/>
+        <childnode refid="2005" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2007">
+        <label>Json::CharReader</label>
+        <link refid="class_json_1_1_char_reader"/>
+      </node>
+      <node id="2013">
+        <label>K</label>
+      </node>
+      <node id="2014">
+        <label>T</label>
+      </node>
+      <node id="2020">
+        <label>std::stack&lt; Value * &gt;</label>
+        <childnode refid="2009" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2009">
+        <label>Json::Value</label>
+        <link refid="class_json_1_1_value"/>
+        <childnode refid="2009" relation="usage">
+          <edgelabel>null</edgelabel>
+          <edgelabel>nullRef</edgelabel>
+        </childnode>
+        <childnode refid="2010" relation="usage">
+          <edgelabel>comments_</edgelabel>
+        </childnode>
+        <childnode refid="2011" relation="usage">
+          <edgelabel>value_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2012">
+        <label>std::map&lt; K, T &gt;</label>
+        <childnode refid="2013" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="2014" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2011">
+        <label>Json::Value::ValueHolder</label>
+        <link refid="union_json_1_1_value_1_1_value_holder"/>
+        <childnode refid="2012" relation="usage">
+          <edgelabel>map_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2010">
+        <label>Json::Value::CommentInfo</label>
+        <link refid="struct_json_1_1_value_1_1_comment_info"/>
+      </node>
+      <node id="2021">
+        <label>Json::OurFeatures</label>
+        <link refid="class_json_1_1_our_features"/>
+      </node>
+      <node id="2008">
+        <label>Json::OurReader</label>
+        <link refid="class_json_1_1_our_reader"/>
+        <childnode refid="2009" relation="usage">
+          <edgelabel>lastValue_</edgelabel>
+        </childnode>
+        <childnode refid="2015" relation="usage">
+          <edgelabel>errors_</edgelabel>
+        </childnode>
+        <childnode refid="2017" relation="usage">
+          <edgelabel>document_</edgelabel>
+          <edgelabel>commentsBefore_</edgelabel>
+        </childnode>
+        <childnode refid="2020" relation="usage">
+          <edgelabel>nodes_</edgelabel>
+        </childnode>
+        <childnode refid="2021" relation="usage">
+          <edgelabel>features_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2016">
+        <label>Json::OurReader::ErrorInfo</label>
+        <link refid="class_json_1_1_our_reader_1_1_error_info"/>
+        <childnode refid="2017" relation="usage">
+          <edgelabel>message_</edgelabel>
+        </childnode>
+        <childnode refid="2019" relation="usage">
+          <edgelabel>token_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2018">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="2019">
+        <label>Json::OurReader::Token</label>
+        <link refid="class_json_1_1_our_reader_1_1_token"/>
+      </node>
+      <node id="2006">
+        <label>Json::OurCharReader</label>
+        <link refid="class_json_1_1_our_char_reader"/>
+        <childnode refid="2007" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2008" relation="usage">
+          <edgelabel>reader_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2015">
+        <label>std::deque&lt; ErrorInfo &gt;</label>
+        <childnode refid="2016" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2017">
+        <label>std::string</label>
+        <childnode refid="2018" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" line="1892" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="1892" bodyend="1911"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_our_char_reader_1aa6afd3d0f754cadad0f6d2be38bcfee0" prot="private" virt="non-virtual"><scope>Json::OurCharReader</scope><name>collectComments_</name></member>
+      <member refid="class_json_1_1_our_char_reader_1a5015506620e7ba7bab417756fa1ca9fe" prot="public" virt="non-virtual"><scope>Json::OurCharReader</scope><name>OurCharReader</name></member>
+      <member refid="class_json_1_1_our_char_reader_1a52a1fb5fee88d9b63dd462f63b1c9570" prot="public" virt="virtual"><scope>Json::OurCharReader</scope><name>parse</name></member>
+      <member refid="class_json_1_1_our_char_reader_1aedd4520b8570654ed7aa0726075ee58d" prot="private" virt="non-virtual"><scope>Json::OurCharReader</scope><name>reader_</name></member>
+      <member refid="class_json_1_1_char_reader_1acaa7b6ad04fe1cf2ddfca06e66550d7e" prot="public" virt="virtual"><scope>Json::OurCharReader</scope><name>~CharReader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

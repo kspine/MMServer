@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_json_1_1_static_string" kind="class" prot="public">
+    <compoundname>Json::StaticString</compoundname>
+    <includes refid="value_8h" local="no">value.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_json_1_1_static_string_1a9f0d9e8caee8f8db14e2c8c24760dffd" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Json::StaticString::c_str_</definition>
+        <argsstring></argsstring>
+        <name>c_str_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/value.h" line="125" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/value.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_static_string_1afb6baf1ec078ce76f0b0f9b39d19437f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Json::StaticString::StaticString</definition>
+        <argsstring>(const char *czstring)</argsstring>
+        <name>StaticString</name>
+        <param>
+          <type>const char *</type>
+          <declname>czstring</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/value.h" line="118" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/value.h" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_static_string_1ac2b334d46bbea4c0227e508fc66433e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Json::StaticString::operator const char *</definition>
+        <argsstring>() const </argsstring>
+        <name>operator const char *</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/value.h" line="120" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/value.h" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_static_string_1ab86fc6a3183adf12fdba4b370acf1754" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* Json::StaticString::c_str</definition>
+        <argsstring>() const </argsstring>
+        <name>c_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/value.h" line="122" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/value.h" bodystart="122" bodyend="122"/>
+        <referencedby refid="class_json_1_1_value_1ac3763d7d315ca65dc188e273722f7955" compoundref="json__value_8cpp" startline="1048" endline="1050">Json::Value::operator[]</referencedby>
+        <referencedby refid="class_json_1_1_value_1a081830e95f88a37054da7e46c65b0766" compoundref="json__value_8cpp" startline="372" endline="375">Json::Value::Value</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Lightweight wrapper to tag static string. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_json_1_1_value" kindref="compound">Value</ref> constructor and objectValue member assignement takes advantage of the <ref refid="class_json_1_1_static_string" kindref="compound">StaticString</ref> and avoid the cost of string duplication when storing the string or the member name.</para><para>Example of usage: <programlisting><codeline><highlight class="normal"><ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref><sp/>aValue(<sp/><ref refid="class_json_1_1_static_string_1afb6baf1ec078ce76f0b0f9b39d19437f" kindref="member">StaticString</ref>(</highlight><highlight class="stringliteral">&quot;some<sp/>text&quot;</highlight><highlight class="normal">)<sp/>);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref><sp/>object;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_json_1_1_static_string_1afb6baf1ec078ce76f0b0f9b39d19437f" kindref="member">StaticString</ref><sp/>code(</highlight><highlight class="stringliteral">&quot;code&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">[code]<sp/>=<sp/>1234;</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/value.h" line="116" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/value.h" bodystart="116" bodyend="126"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_static_string_1ab86fc6a3183adf12fdba4b370acf1754" prot="public" virt="non-virtual"><scope>Json::StaticString</scope><name>c_str</name></member>
+      <member refid="class_json_1_1_static_string_1a9f0d9e8caee8f8db14e2c8c24760dffd" prot="private" virt="non-virtual"><scope>Json::StaticString</scope><name>c_str_</name></member>
+      <member refid="class_json_1_1_static_string_1ac2b334d46bbea4c0227e508fc66433e9" prot="public" virt="non-virtual"><scope>Json::StaticString</scope><name>operator const char *</name></member>
+      <member refid="class_json_1_1_static_string_1afb6baf1ec078ce76f0b0f9b39d19437f" prot="public" virt="non-virtual"><scope>Json::StaticString</scope><name>StaticString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

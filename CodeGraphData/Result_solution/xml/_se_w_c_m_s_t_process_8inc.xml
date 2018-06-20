@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_se_w_c_m_s_t_process_8inc" kind="file">
+    <compoundname>SeWCMSTProcess.inc</compoundname>
+    <includedby refid="_src_2_se_w_c_s_t_process_8cpp" local="yes">TownServer/Src/SeWCSTProcess.cpp</includedby>
+    <includedby refid="src_2_se_w_c_s_t_process_8cpp" local="yes">TownServer/src/SeWCSTProcess.cpp</includedby>
+    <invincdepgraph>
+      <node id="130180">
+        <label>TownServer/Src/SeWCSTProcess.cpp</label>
+        <link refid="_src_2_se_w_c_s_t_process_8cpp"/>
+      </node>
+      <node id="130181">
+        <label>TownServer/src/SeWCSTProcess.cpp</label>
+        <link refid="src_2_se_w_c_s_t_process_8cpp"/>
+      </node>
+      <node id="130179">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeWCMSTProcess.inc</label>
+        <link refid="SeWCMSTProcess.inc"/>
+        <childnode refid="130180" relation="include">
+        </childnode>
+        <childnode refid="130181" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_w_c_m_s_t_process_8inl_1a991fa732520d9676d402861ccabb76e9" kindref="member">SERVER::ProcessWCMSTData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkSender)</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_c_m_d" kindref="compound">SeCMD</ref>))</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_c_m_d" kindref="compound">SeCMD</ref>*<sp/>pkCmd<sp/>=<sp/>(<ref refid="struct_se_c_m_d" kindref="compound">SeCMD</ref>*)pkData;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="_se_ptl_define_8h_1a96fba8058f54e42dc6fd70f4fc871d5f" kindref="member">IsValidCMD</ref>(pkCmd-&gt;<ref refid="struct_se_c_m_d_1a2efa122a60040d09cfca777f9155394c" kindref="member">wCmd</ref>,<ref refid="_se_ptl_define_8h_1aefb47f3959b8be9e164448819e4bb7f9a82121ead578ef3a73fde8eb38189c178" kindref="member">SSI_WCMS</ref>,<ref refid="_se_ptl_define_8h_1aefb47f3959b8be9e164448819e4bb7f9ae139eef3db4728a79b263af09cecca79" kindref="member">SSI_TS</ref>))</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="_se_w_c_m_s_t_process_8inl_1ab466eb689dd03610037ae727bdc3e8d4" kindref="member">PreProcessWCMST</ref>(pkData,<sp/>iSize,<sp/>pkSender))</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//根据命令头做各种处理</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(pkCmd-&gt;<ref refid="struct_se_c_m_d_1a2efa122a60040d09cfca777f9155394c" kindref="member">wCmd</ref>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___w_c_m_s___to___t_s_8h_1a17e6ba0166a7acfdcacdf8b9a189094aa3b8b4393b4c24c1b57641ae7c2944eea" kindref="member">CMD_WCMST_REGISTERRET</ref>:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_w_c_m_s_t___register_ret" kindref="compound">SeWCMST_RegisterRet</ref>))</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_w_c_m_s_t_process_8inl_1a41578c33d6e63e6809514d56359b83ac" kindref="member">ProcessWCMST_RegisterRet</ref>((<ref refid="struct_se_w_c_m_s_t___register_ret" kindref="compound">SeWCMST_RegisterRet</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___w_c_m_s___to___t_s_8h_1a17e6ba0166a7acfdcacdf8b9a189094aafec95d873b79dfdb5ba4891108f52388" kindref="member">CMD_WCMST_HEARTPACKAGERET</ref>:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_w_c_m_s_t___heart_package_ret" kindref="compound">SeWCMST_HeartPackageRet</ref>))</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_w_c_m_s_t_process_8inl_1a63e51876add024c8433a3891407acf62" kindref="member">ProcessWCMST_HeartPackageRet</ref>((<ref refid="struct_se_w_c_m_s_t___heart_package_ret" kindref="compound">SeWCMST_HeartPackageRet</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___w_c_m_s___to___t_s_8h_1a17e6ba0166a7acfdcacdf8b9a189094aa458b2f99ab9916cbd45d7f174c8dbc04" kindref="member">CMD_WCMST_RESVIEW</ref>:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_w_c_m_s_t___res_view" kindref="compound">SeWCMST_ResView</ref>))</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_w_c_m_s_t_process_8inl_1a19d0944c822f07746805a5beec96d761" kindref="member">ProcessWCMST_ResView</ref>((<ref refid="struct_se_w_c_m_s_t___res_view" kindref="compound">SeWCMST_ResView</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___w_c_m_s___to___t_s_8h_1a17e6ba0166a7acfdcacdf8b9a189094aa708058b0de2f1786f8e8c388b051497f" kindref="member">CMD_WCMST_RESVIEWLIST</ref>:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)offsetof(<ref refid="struct_se_w_c_m_s_t___res_view_list" kindref="compound">SeWCMST_ResViewList</ref>,<sp/>akSeViewList))</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)offsetof(<ref refid="struct_se_w_c_m_s_t___res_view_list" kindref="compound">SeWCMST_ResViewList</ref>,<sp/>akSeViewList)<sp/>+<sp/>((<ref refid="struct_se_w_c_m_s_t___res_view_list" kindref="compound">SeWCMST_ResViewList</ref>*)pkData)-&gt;iNum<sp/>*<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_view_list" kindref="compound">SeViewList</ref>))</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_w_c_m_s_t_process_8inl_1ab875dd58adbddd16f76a7bb472b84334" kindref="member">ProcessWCMST_ResViewList</ref>((<ref refid="struct_se_w_c_m_s_t___res_view_list" kindref="compound">SeWCMST_ResViewList</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_se_ptl___w_c_m_s___to___t_s_8h_1a17e6ba0166a7acfdcacdf8b9a189094aa74c6e14bf77aba3eb5c7a686903e7c5b" kindref="member">CMD_WCMST_RESRACEDETAILINFO</ref>:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)offsetof(<ref refid="struct_se_w_c_m_s_t___res_race_detail_info" kindref="compound">SeWCMST_ResRaceDetailInfo</ref>,<sp/>akRaceDetailInfo))</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)offsetof(<ref refid="struct_se_w_c_m_s_t___res_race_detail_info" kindref="compound">SeWCMST_ResRaceDetailInfo</ref>,<sp/>akRaceDetailInfo)<sp/>+<sp/>((<ref refid="struct_se_w_c_m_s_t___res_race_detail_info" kindref="compound">SeWCMST_ResRaceDetailInfo</ref>*)pkData)-&gt;iNum<sp/>*<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_race_detail_info" kindref="compound">SeRaceDetailInfo</ref>))</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_w_c_m_s_t_process_8inl_1a75001c600d78a275c1d9e28136c3c45e" kindref="member">ProcessWCMST_ResRaceDetailInfo</ref>((<ref refid="struct_se_w_c_m_s_t___res_race_detail_info" kindref="compound">SeWCMST_ResRaceDetailInfo</ref>*)pkData,<sp/>iSize,<sp/>pkSender);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeWCMSTProcess.inc"/>
+  </compounddef>
+</doxygen>

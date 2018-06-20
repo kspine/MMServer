@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacemake_callback" kind="namespace">
+    <compoundname>makeCallback</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacemake_callback_1acf60b774f65bb9dc0bf0b1289b5cf7c2" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string makeCallback.content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <initializer>= &quot;&quot;&quot;
+		//!@cond
+#define P0 typename execute_traits&lt;decltype(&amp;B::execute)&gt;::PARAM_TYPE
+
+		template &lt;typename B,typename T&gt;
+		class TCallback;
+		
+		template &lt;typename T&gt;
+		struct execute_traits;
+		
+		template &lt;typename C, typename <ref refid="_se_multi_fun_tcp_8cpp_1a2748566f4c443ee77aa831e63dbb5ebe" kindref="member">P</ref>&gt;
+		struct execute_traits&lt;void (C::*)(<ref refid="_se_multi_fun_tcp_8cpp_1a2748566f4c443ee77aa831e63dbb5ebe" kindref="member">P</ref>)&gt;
+		{
+			typedef <ref refid="_se_multi_fun_tcp_8cpp_1a2748566f4c443ee77aa831e63dbb5ebe" kindref="member">P</ref> PARAM_TYPE;
+		};
+
+&quot;&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/utils/makeCallback.py" line="117" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/utils/makeCallback.py" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemake_callback_1a0c646a8863d44327e020456c954f4b2d" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple makeCallback.f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <initializer>= file(&quot;makeCallback.hpp&quot;, &quot;w&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/utils/makeCallback.py" line="145" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/utils/makeCallback.py" bodystart="145" bodyend="-1"/>
+        <referencedby refid="_src_2_item_mgr_8cpp_1a408cae4c4dd5014b5232f8d485b79a2f" compoundref="_src_2_item_mgr_8cpp" startline="294" endline="349">AddStrenAttr</referencedby>
+        <referencedby refid="struct_be_pointer_type_1a0b73b055ce734ad11a695b478579b3b5" compoundref="_se_share_logic_define_8h" startline="134" endline="139">BePointerType::BePointerType</referencedby>
+        <referencedby refid="class_block_server_1a0d9d170c7759f365958b24dba2b08d21" compoundref="_src_2_se_block_other_8cpp" startline="569" endline="588">BlockServer::CalcChangedLeagueScore</referencedby>
+        <referencedby refid="class_race_service_1a0e549baec6fe2d1d67a662387cfaf4a0" compoundref="src_2_race_service_8cpp" startline="361" endline="369">RaceService::DoWork</referencedby>
+        <referencedby refid="class_performance_timing_1_1_se_performance_save_1a1c7f805b56cac326b8f7d4642dee26d2" compoundref="src_2_performance_timing_8cpp" startline="93" endline="275">PerformanceTiming::SePerformanceSave::DoWork</referencedby>
+        <referencedby refid="class_performance_timing_1_1_c_interval_1a05192a46041bdca7c17ff4d95d239025" compoundref="src_2_performance_timing_8cpp" startline="824" endline="844">PerformanceTiming::CInterval::End</referencedby>
+        <referencedby refid="_be_utility_8h_1a1409d85984c3a8a3528036eccd5c19da" compoundref="_be_utility_8cpp" startline="41" endline="44">GetBuyDistance</referencedby>
+        <referencedby refid="_src_2_item_mgr_8cpp_1aea543c305b7c6270acfc0a7a80255cb5" compoundref="_src_2_item_mgr_8cpp" startline="257" endline="266">GetFloatRand</referencedby>
+        <referencedby refid="_be_utility_8h_1a789399cc979289b716642183acd793b1" compoundref="_be_utility_8cpp" startline="215" endline="232">GetPosByDistance</referencedby>
+        <referencedby refid="class_se_rand_num_fomula_1a8341cc080730452d74460f3b7701a4f0" compoundref="_se_rand_num_fomula_8cpp" startline="169" endline="208">SeRandNumFomula::InsertRandPool</referencedby>
+        <referencedby refid="_be_utility_8h_1a78e9bce1dbccba84bce3c3fad6159f28" compoundref="_be_utility_8cpp" startline="179" endline="195">IsAngleBetween</referencedby>
+        <referencedby refid="class_se_race_record_1acb798f6605f1c3f959ba4e2132aaea19" compoundref="_se_race_record_8cpp" startline="1031" endline="1069">SeRaceRecord::LoadReplayReportFromFile</referencedby>
+        <referencedby refid="class_se_rand_num_fomula_1a2d6b13f4dca181a54633d4a318f301e7" compoundref="_se_rand_num_fomula_8cpp" startline="50" endline="95">SeRandNumFomula::RandFloatInRate</referencedby>
+        <referencedby refid="class_se_rand_num_1a8007e7959093d37680c20767a795b343" compoundref="_se_rand_num_8cpp" startline="59" endline="83">SeRandNum::RandInt</referencedby>
+        <referencedby refid="class_se_rand_num_1a6af06d178bf8d262bf062f892838896c" compoundref="_se_rand_num_8cpp" startline="116" endline="152">SeRandNum::RandInteger</referencedby>
+        <referencedby refid="struct_se_race_bet_1a8fdaee439eac6bc3d6f182527ed38ac8" compoundref="_src_2_match_server_def_8h" startline="92" endline="111">SeRaceBet::SetOadds</referencedby>
+        <referencedby refid="class_c_performance_interval_file_dump_1aa76d178c06c25f4938cd3ef093bbaca1" compoundref="src_2_performance_interval_file_dump_8cpp" startline="49" endline="115">CPerformanceIntervalFileDump::Tick</referencedby>
+        <referencedby refid="class_c_performance_timing_1a38cc438ad24d97b86a37a4e0fd63e185" compoundref="src_2_performance_timing_8cpp" startline="559" endline="623">CPerformanceTiming::TickNotify</referencedby>
+        <referencedby refid="_be_utility_8h_1a3dc862dd8e3a698fdc7424ac10e9e1be" compoundref="_be_utility_8cpp" startline="371" endline="403">TruncToInt</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacemake_callback_1a000a1ba67e49541dc29e6bccab110b3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def makeCallback.genFunctionTemplate</definition>
+        <argsstring></argsstring>
+        <name>genFunctionTemplate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/utils/makeCallback.py" line="2" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/utils/makeCallback.py" bodystart="2" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacemake_callback_1abf5a323f678d8194f25cb0c8eed5bd89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def makeCallback.genClassFunctionTemplate</definition>
+        <argsstring></argsstring>
+        <name>genClassFunctionTemplate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/utils/makeCallback.py" line="58" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/utils/makeCallback.py" bodystart="58" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/utils/makeCallback.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

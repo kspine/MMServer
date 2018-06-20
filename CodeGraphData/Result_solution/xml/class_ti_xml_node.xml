@@ -1,0 +1,1827 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_ti_xml_node" kind="class" prot="public" abstract="yes">
+    <compoundname>TiXmlNode</compoundname>
+    <basecompoundref refid="class_ti_xml_base" prot="public" virt="non-virtual">TiXmlBase</basecompoundref>
+    <derivedcompoundref refid="class_ti_xml_comment" prot="public" virt="non-virtual">TiXmlComment</derivedcompoundref>
+    <derivedcompoundref refid="class_ti_xml_declaration" prot="public" virt="non-virtual">TiXmlDeclaration</derivedcompoundref>
+    <derivedcompoundref refid="class_ti_xml_document" prot="public" virt="non-virtual">TiXmlDocument</derivedcompoundref>
+    <derivedcompoundref refid="class_ti_xml_element" prot="public" virt="non-virtual">TiXmlElement</derivedcompoundref>
+    <derivedcompoundref refid="class_ti_xml_text" prot="public" virt="non-virtual">TiXmlText</derivedcompoundref>
+    <derivedcompoundref refid="class_ti_xml_unknown" prot="public" virt="non-virtual">TiXmlUnknown</derivedcompoundref>
+    <includes refid="tinyxml_8h" local="no">tinyxml.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2" prot="public" static="no">
+        <name>NodeType</name>
+        <enumvalue id="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2a31b8d14e0558445bb40e36a532b24127" prot="public">
+          <name>DOCUMENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2aaf2344bcea122ef52d47c4dcc357f070" prot="public">
+          <name>ELEMENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2a7737f35757c7152ca4f612d449ea0e4b" prot="public">
+          <name>COMMENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2af521ee2fb1e05705776b28fc55a70037" prot="public">
+          <name>UNKNOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2a672617f36c5606a966ac378e6ddc0fd8" prot="public">
+          <name>TEXT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2ac02445686c2b72d11385002b3466c28b" prot="public">
+          <name>DECLARATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2a8334037fb3fe05c67d6110975b38a8bf" prot="public">
+          <name>TYPECOUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The types of XML nodes supported by TinyXml. (All the unsupported types are picked up by UNKNOWN.) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="458" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="457" bodyend="466"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_ti_xml_node_1a173617f6dfe902cf484ce5552b950475" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TiXmlDocument</definition>
+        <argsstring></argsstring>
+        <name>TiXmlDocument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="420" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_ti_xml_node_1ab6592e32cb9132be517cc12a70564c4b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TiXmlElement</definition>
+        <argsstring></argsstring>
+        <name>TiXmlElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="421" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="421" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_node_1ac1e3a8e7578be463b04617786120c2bb" compoundref="tinyxmlparser_8cpp" startline="819" endline="906">Identify</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_ti_xml_node_1a662c4de61244e4fa5bd4e2d8c63143a5" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode* TiXmlNode::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="748" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="748" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_node_1aa66f4ebcd175204a168ed7c2d7b43071" compoundref="tinyxml_8cpp" startline="480" endline="490">GetDocument</referencedby>
+        <referencedby refid="class_ti_xml_node_1ac1e3a8e7578be463b04617786120c2bb" compoundref="tinyxmlparser_8cpp" startline="819" endline="906">Identify</referencedby>
+        <referencedby refid="class_ti_xml_node_1a274db3292218202805c093f66a964cb5" compoundref="tinyxml_8cpp" startline="247" endline="276">InsertAfterChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a71e54e393336382bc9875f64aab5cb15" compoundref="tinyxml_8cpp" startline="215" endline="244">InsertBeforeChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1aaef7ac3978c4bb1cc8a24ffae7bced75" compoundref="tinyxml_8cpp" startline="353" endline="364">IterateChildren</referencedby>
+        <referencedby refid="class_ti_xml_node_1a1a881212554b759865f6cac79a851d38" compoundref="tinyxml_8cpp" startline="173" endline="197">LinkEndChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1ab643043132ffd794f8602685d34a982e" compoundref="tinyxml_8h" startline="512" endline="512">Parent</referencedby>
+        <referencedby refid="class_ti_xml_node_1ae19d8510efc90596552f4feeac9a8fbf" compoundref="tinyxml_8cpp" startline="307" endline="327">RemoveChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a543208c2c801c84a213529541e904b9f" compoundref="tinyxml_8cpp" startline="279" endline="304">ReplaceChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a3f46721695868667113c7487ff123f20" compoundref="tinyxml_8cpp" startline="124" endline="132">TiXmlNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ti_xml_node_1a2619c6379181c16ba95ae6922e2ca839" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2" kindref="member">NodeType</ref></type>
+        <definition>NodeType TiXmlNode::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="749" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="749" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_node_1a3f46721695868667113c7487ff123f20" compoundref="tinyxml_8cpp" startline="124" endline="132">TiXmlNode</referencedby>
+        <referencedby refid="class_ti_xml_node_1a57b99d5c97d67a42b9752f5210a1ba5e" compoundref="tinyxml_8h" startline="677" endline="677">Type</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ti_xml_node_1af749fb7f22010b80e8f904c32653d50e" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode* TiXmlNode::firstChild</definition>
+        <argsstring></argsstring>
+        <name>firstChild</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="751" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="751" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_node_1a708e7f953df61d4d2d12f73171550a4b" compoundref="tinyxml_8cpp" startline="156" endline="170">Clear</referencedby>
+        <referencedby refid="class_ti_xml_element_1a9e0c1983b840de4134f1f6bf7af00b0f" compoundref="tinyxml_8cpp" startline="813" endline="833">TiXmlElement::CopyTo</referencedby>
+        <referencedby refid="class_ti_xml_document_1af69deeb984e060bd00f668460dec8ef2" compoundref="tinyxml_8cpp" startline="1108" endline="1120">TiXmlDocument::CopyTo</referencedby>
+        <referencedby refid="class_ti_xml_node_1ab5f722624113c8203227de4f56576d31" compoundref="tinyxml_8cpp" startline="329" endline="338">FirstChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a71e54e393336382bc9875f64aab5cb15" compoundref="tinyxml_8cpp" startline="215" endline="244">InsertBeforeChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a1a881212554b759865f6cac79a851d38" compoundref="tinyxml_8cpp" startline="173" endline="197">LinkEndChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1aeed21ad30630ef6e7faf096127edc9f3" compoundref="tinyxml_8h" startline="688" endline="688">NoChildren</referencedby>
+        <referencedby refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</referencedby>
+        <referencedby refid="class_ti_xml_element_1ad9d0c008866982ab8d9aafae7e14d692" compoundref="tinyxml_8cpp" startline="760" endline="810">TiXmlElement::Print</referencedby>
+        <referencedby refid="class_ti_xml_node_1ae19d8510efc90596552f4feeac9a8fbf" compoundref="tinyxml_8cpp" startline="307" endline="327">RemoveChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a543208c2c801c84a213529541e904b9f" compoundref="tinyxml_8cpp" startline="279" endline="304">ReplaceChild</referencedby>
+        <referencedby refid="class_ti_xml_element_1a01bc3ab372d35da08efcbbe65ad90c60" compoundref="tinyxml_8cpp" startline="493" endline="498">TiXmlElement::TiXmlElement</referencedby>
+        <referencedby refid="class_ti_xml_node_1a3f46721695868667113c7487ff123f20" compoundref="tinyxml_8cpp" startline="124" endline="132">TiXmlNode</referencedby>
+        <referencedby refid="class_ti_xml_node_1a027a76cccd359c831ee4024b58c49625" compoundref="tinyxml_8cpp" startline="135" endline="146">~TiXmlNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ti_xml_node_1a5b30756d21b304580d22a841ec9d61f8" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode* TiXmlNode::lastChild</definition>
+        <argsstring></argsstring>
+        <name>lastChild</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="752" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="752" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_node_1a708e7f953df61d4d2d12f73171550a4b" compoundref="tinyxml_8cpp" startline="156" endline="170">Clear</referencedby>
+        <referencedby refid="class_ti_xml_node_1a274db3292218202805c093f66a964cb5" compoundref="tinyxml_8cpp" startline="247" endline="276">InsertAfterChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1acdd3fdc436aa7433023310a041e5e63f" compoundref="tinyxml_8cpp" startline="341" endline="350">LastChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a1a881212554b759865f6cac79a851d38" compoundref="tinyxml_8cpp" startline="173" endline="197">LinkEndChild</referencedby>
+        <referencedby refid="class_ti_xml_element_1ad9d0c008866982ab8d9aafae7e14d692" compoundref="tinyxml_8cpp" startline="760" endline="810">TiXmlElement::Print</referencedby>
+        <referencedby refid="class_ti_xml_node_1ae19d8510efc90596552f4feeac9a8fbf" compoundref="tinyxml_8cpp" startline="307" endline="327">RemoveChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a543208c2c801c84a213529541e904b9f" compoundref="tinyxml_8cpp" startline="279" endline="304">ReplaceChild</referencedby>
+        <referencedby refid="class_ti_xml_element_1a01bc3ab372d35da08efcbbe65ad90c60" compoundref="tinyxml_8cpp" startline="493" endline="498">TiXmlElement::TiXmlElement</referencedby>
+        <referencedby refid="class_ti_xml_node_1a3f46721695868667113c7487ff123f20" compoundref="tinyxml_8cpp" startline="124" endline="132">TiXmlNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ti_xml_node_1aead528b3cedc33c16a6c539872c7cc8b" prot="protected" static="no" mutable="no">
+        <type><ref refid="tinyxml_8h_1a92bada05fd84d9a0c9a5bbe53de26887" kindref="member">TIXML_STRING</ref></type>
+        <definition>TIXML_STRING TiXmlNode::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="754" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="754" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_text_1a1c120428e3b3cf24d79706e6d2b65aa6" compoundref="tinyxmlparser_8cpp" startline="1619" endline="1625">TiXmlText::Blank</referencedby>
+        <referencedby refid="class_ti_xml_node_1ab6056978923ad8350fb5164af32d8038" compoundref="tinyxml_8cpp" startline="149" endline="153">CopyTo</referencedby>
+        <referencedby refid="class_ti_xml_document_1a879cdf5e981b8b2d2ef82f2546dd28fb" compoundref="tinyxml_8cpp" startline="934" endline="960">TiXmlDocument::LoadFile</referencedby>
+        <referencedby refid="class_ti_xml_element_1af95c9165159fd9dfdcc5b894a3fcf85b" compoundref="tinyxmlparser_8cpp" startline="1050" endline="1190">TiXmlElement::Parse</referencedby>
+        <referencedby refid="class_ti_xml_comment_1a43bddc18ac057734b41d84653b71d3e0" compoundref="tinyxmlparser_8cpp" startline="1351" endline="1374">TiXmlComment::Parse</referencedby>
+        <referencedby refid="class_ti_xml_text_1a8d2dcfa41fc73d3e62dacc2fcf633819" compoundref="tinyxmlparser_8cpp" startline="1486" endline="1534">TiXmlText::Parse</referencedby>
+        <referencedby refid="class_ti_xml_unknown_1aa51c2694e4177b5f0b5429ee5a81b58d" compoundref="tinyxmlparser_8cpp" startline="1290" endline="1321">TiXmlUnknown::Parse</referencedby>
+        <referencedby refid="class_ti_xml_element_1ad9d0c008866982ab8d9aafae7e14d692" compoundref="tinyxml_8cpp" startline="760" endline="810">TiXmlElement::Print</referencedby>
+        <referencedby refid="class_ti_xml_comment_1a17398061d62c470f57801ce28fa33ad4" compoundref="tinyxml_8cpp" startline="1285" endline="1293">TiXmlComment::Print</referencedby>
+        <referencedby refid="class_ti_xml_text_1ae74d56c5b3ddec6cc3103dd51821af92" compoundref="tinyxml_8cpp" startline="1320" endline="1338">TiXmlText::Print</referencedby>
+        <referencedby refid="class_ti_xml_unknown_1a025f19c21ef01ea9be50febb8fe0ba06" compoundref="tinyxml_8cpp" startline="1455" endline="1460">TiXmlUnknown::Print</referencedby>
+        <referencedby refid="class_ti_xml_node_1a2a38329ca5d3f28f98ce932b8299ae90" compoundref="tinyxml_8h" startline="501" endline="501">SetValue</referencedby>
+        <referencedby refid="class_ti_xml_document_1ae4508b452d0c3061db085f3db27b8396" compoundref="tinyxml_8cpp" startline="880" endline="886">TiXmlDocument::TiXmlDocument</referencedby>
+        <referencedby refid="class_ti_xml_element_1a01bc3ab372d35da08efcbbe65ad90c60" compoundref="tinyxml_8cpp" startline="493" endline="498">TiXmlElement::TiXmlElement</referencedby>
+        <referencedby refid="class_ti_xml_node_1a77943eb90d12c2892b1337a9f5918b41" compoundref="tinyxml_8h" startline="482" endline="482">Value</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ti_xml_node_1a9c5370ea2cbfd9f0e0f7b30a57fd68f5" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode* TiXmlNode::prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="756" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="756" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_node_1a274db3292218202805c093f66a964cb5" compoundref="tinyxml_8cpp" startline="247" endline="276">InsertAfterChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a71e54e393336382bc9875f64aab5cb15" compoundref="tinyxml_8cpp" startline="215" endline="244">InsertBeforeChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1acdd3fdc436aa7433023310a041e5e63f" compoundref="tinyxml_8cpp" startline="341" endline="350">LastChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a1a881212554b759865f6cac79a851d38" compoundref="tinyxml_8cpp" startline="173" endline="197">LinkEndChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1abbb3b8c1f38fa7b9e52d584a4aeca795" compoundref="tinyxml_8cpp" startline="393" endline="402">PreviousSibling</referencedby>
+        <referencedby refid="class_ti_xml_node_1ae19d8510efc90596552f4feeac9a8fbf" compoundref="tinyxml_8cpp" startline="307" endline="327">RemoveChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a543208c2c801c84a213529541e904b9f" compoundref="tinyxml_8cpp" startline="279" endline="304">ReplaceChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a3f46721695868667113c7487ff123f20" compoundref="tinyxml_8cpp" startline="124" endline="132">TiXmlNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ti_xml_node_1a2f329cc993d2d34df76e17dcbb776b45" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode* TiXmlNode::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="757" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="757" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_node_1a708e7f953df61d4d2d12f73171550a4b" compoundref="tinyxml_8cpp" startline="156" endline="170">Clear</referencedby>
+        <referencedby refid="class_ti_xml_node_1ab5f722624113c8203227de4f56576d31" compoundref="tinyxml_8cpp" startline="329" endline="338">FirstChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a274db3292218202805c093f66a964cb5" compoundref="tinyxml_8cpp" startline="247" endline="276">InsertAfterChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a71e54e393336382bc9875f64aab5cb15" compoundref="tinyxml_8cpp" startline="215" endline="244">InsertBeforeChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a1a881212554b759865f6cac79a851d38" compoundref="tinyxml_8cpp" startline="173" endline="197">LinkEndChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1acaf9dc17531ac041f602f9ad579573ea" compoundref="tinyxml_8cpp" startline="381" endline="390">NextSibling</referencedby>
+        <referencedby refid="class_ti_xml_node_1ae19d8510efc90596552f4feeac9a8fbf" compoundref="tinyxml_8cpp" startline="307" endline="327">RemoveChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a543208c2c801c84a213529541e904b9f" compoundref="tinyxml_8cpp" startline="279" endline="304">ReplaceChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a3f46721695868667113c7487ff123f20" compoundref="tinyxml_8cpp" startline="124" endline="132">TiXmlNode</referencedby>
+        <referencedby refid="class_ti_xml_node_1a027a76cccd359c831ee4024b58c49625" compoundref="tinyxml_8cpp" startline="135" endline="146">~TiXmlNode</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ti_xml_node_1a027a76cccd359c831ee4024b58c49625" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>TiXmlNode::~TiXmlNode</definition>
+        <argsstring>()</argsstring>
+        <name>~TiXmlNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="468" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="135" bodyend="146"/>
+        <references refid="class_ti_xml_node_1af749fb7f22010b80e8f904c32653d50e" compoundref="tinyxml_8h" startline="751">firstChild</references>
+        <references refid="class_ti_xml_node_1a2f329cc993d2d34df76e17dcbb776b45" compoundref="tinyxml_8h" startline="757">next</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a77943eb90d12c2892b1337a9f5918b41" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* TiXmlNode::Value</definition>
+        <argsstring>() const </argsstring>
+        <name>Value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The meaning of &apos;value&apos; changes for the specific type of <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref>. <verbatim>Document:   filename of the xml file
+Element:    name of the element
+Comment:    the comment text
+Unknown:    the tag contents
+Text:       the text string
+</verbatim></para><para>The subclasses will wrap this function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="482" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="482" bodyend="482"/>
+        <references refid="class_ti_xml_node_1aead528b3cedc33c16a6c539872c7cc8b" compoundref="tinyxml_8h" startline="754">value</references>
+        <referencedby refid="class_ti_xml_element_1a13f6df105ebb1e8dc636e75cc883be32" compoundref="tinyxml_8cpp" startline="849" endline="857">TiXmlElement::Clone</referencedby>
+        <referencedby refid="class_ti_xml_node_1ab5f722624113c8203227de4f56576d31" compoundref="tinyxml_8cpp" startline="329" endline="338">FirstChild</referencedby>
+        <referencedby refid="class_ti_xml_element_1aa6dedd8a146acf3b1bc0903deb2d411a" compoundref="tinyxml_8cpp" startline="860" endline="870">TiXmlElement::GetText</referencedby>
+        <referencedby refid="class_ti_xml_node_1acdd3fdc436aa7433023310a041e5e63f" compoundref="tinyxml_8cpp" startline="341" endline="350">LastChild</referencedby>
+        <referencedby refid="class_ti_xml_document_1a4c852a889c02cf251117fd1d9fe1845f" compoundref="tinyxml_8cpp" startline="913" endline="919">TiXmlDocument::LoadFile</referencedby>
+        <referencedby refid="class_ti_xml_node_1acaf9dc17531ac041f602f9ad579573ea" compoundref="tinyxml_8cpp" startline="381" endline="390">NextSibling</referencedby>
+        <referencedby refid="class_ti_xml_node_1abbb3b8c1f38fa7b9e52d584a4aeca795" compoundref="tinyxml_8cpp" startline="393" endline="402">PreviousSibling</referencedby>
+        <referencedby refid="class_ti_xml_document_1a21c0aeb0d0a720169ad4ac89523ebe93" compoundref="tinyxml_8cpp" startline="922" endline="932">TiXmlDocument::SaveFile</referencedby>
+        <referencedby refid="class_ti_xml_printer_1a0857c5d32c59b9a257f9a49cb9411df5" compoundref="tinyxml_8cpp" startline="1816" endline="1837">TiXmlPrinter::Visit</referencedby>
+        <referencedby refid="class_ti_xml_printer_1a6dccaf5ee4979f13877690afe28721e8" compoundref="tinyxml_8cpp" startline="1753" endline="1787">TiXmlPrinter::VisitEnter</referencedby>
+        <referencedby refid="class_ti_xml_printer_1ae6a1df8271df4bf62d7873c38e34aa69" compoundref="tinyxml_8cpp" startline="1790" endline="1813">TiXmlPrinter::VisitExit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a2a38329ca5d3f28f98ce932b8299ae90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlNode::SetValue</definition>
+        <argsstring>(const char *_value)</argsstring>
+        <name>SetValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Changes the value of the node. Defined as: <verbatim>Document:   filename of the xml file
+Element:    name of the element
+Comment:    the comment text
+Unknown:    the tag contents
+Text:       the text string
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="501" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="501" bodyend="501"/>
+        <references refid="class_ti_xml_node_1aead528b3cedc33c16a6c539872c7cc8b" compoundref="tinyxml_8h" startline="754">value</references>
+        <referencedby refid="class_ti_xml_node_1ab6056978923ad8350fb5164af32d8038" compoundref="tinyxml_8cpp" startline="149" endline="153">CopyTo</referencedby>
+        <referencedby refid="class_ti_xml_comment_1a37e7802ef17bc03ebe5ae79bf0713d47" compoundref="tinyxml_8h" startline="1134" endline="1136">TiXmlComment::TiXmlComment</referencedby>
+        <referencedby refid="class_ti_xml_text_1af659e77c6b87d684827f35a8f4895960" compoundref="tinyxml_8h" startline="1186" endline="1190">TiXmlText::TiXmlText</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a708e7f953df61d4d2d12f73171550a4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlNode::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+<para>Delete all the children of this node. Does not affect &apos;this&apos;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="509" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="156" bodyend="170"/>
+        <references refid="class_ti_xml_node_1af749fb7f22010b80e8f904c32653d50e" compoundref="tinyxml_8h" startline="751">firstChild</references>
+        <references refid="class_ti_xml_node_1a5b30756d21b304580d22a841ec9d61f8" compoundref="tinyxml_8h" startline="752">lastChild</references>
+        <references refid="class_ti_xml_node_1a2f329cc993d2d34df76e17dcbb776b45" compoundref="tinyxml_8h" startline="757">next</references>
+        <referencedby refid="class_ti_xml_element_1a5670933ec2d7d9763b9891acc05d7f7d" compoundref="tinyxml_8cpp" startline="532" endline="541">TiXmlElement::ClearThis</referencedby>
+        <referencedby refid="class_ti_xml_document_1a41f6fe7200864d1dca663d230caf8db6" compoundref="tinyxml_8cpp" startline="962" endline="1074">TiXmlDocument::LoadFile</referencedby>
+        <referencedby refid="class_ti_xml_comment_1a46373f99b65cb960637dccb1f126bd49" compoundref="tinyxml_8cpp" startline="1278" endline="1282">TiXmlComment::operator=</referencedby>
+        <referencedby refid="class_ti_xml_declaration_1a0fedc57539af9049be8db2d7d9d9ba33" compoundref="tinyxml_8cpp" startline="1398" endline="1402">TiXmlDeclaration::operator=</referencedby>
+        <referencedby refid="class_ti_xml_document_1aafbfacc3414008f619b1345775ef12a4" compoundref="tinyxml_8cpp" startline="906" endline="910">TiXmlDocument::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1ab643043132ffd794f8602685d34a982e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode* TiXmlNode::Parent</definition>
+        <argsstring>()</argsstring>
+        <name>Parent</name>
+        <briefdescription>
+<para>One step up the DOM. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="512" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="512" bodyend="512"/>
+        <references refid="class_ti_xml_node_1a662c4de61244e4fa5bd4e2d8c63143a5" compoundref="tinyxml_8h" startline="748">parent</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a78878709e53066f06eb4fcbcdd3a5260" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>const TiXmlNode* TiXmlNode::Parent</definition>
+        <argsstring>() const </argsstring>
+        <name>Parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="513" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="513" bodyend="513"/>
+        <references refid="class_ti_xml_node_1a662c4de61244e4fa5bd4e2d8c63143a5" compoundref="tinyxml_8h" startline="748">parent</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a44c8eee26bbe2d1b2762038df9dde2f0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>const TiXmlNode* TiXmlNode::FirstChild</definition>
+        <argsstring>() const </argsstring>
+        <name>FirstChild</name>
+        <briefdescription>
+<para>The first child of this node. Will be null if there are no children. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="515" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="515" bodyend="-1"/>
+        <references refid="class_ti_xml_node_1af749fb7f22010b80e8f904c32653d50e" compoundref="tinyxml_8h" startline="751">firstChild</references>
+        <referencedby refid="class_ti_xml_element_1a31ab28cc3b892a69254391d6bbe08df3" compoundref="tinyxml_8cpp" startline="835" endline="846">TiXmlElement::Accept</referencedby>
+        <referencedby refid="class_ti_xml_document_1a3daab2f472418ef66315750202f762ae" compoundref="tinyxml_8cpp" startline="1145" endline="1156">TiXmlDocument::Accept</referencedby>
+        <referencedby refid="class_ti_xml_node_1ab1f8d8e70d88aea4c5efedfe00862d55" compoundref="tinyxml_8cpp" startline="420" endline="432">FirstChildElement</referencedby>
+        <referencedby refid="class_ti_xml_element_1aa6dedd8a146acf3b1bc0903deb2d411a" compoundref="tinyxml_8cpp" startline="860" endline="870">TiXmlElement::GetText</referencedby>
+        <referencedby refid="class_ti_xml_node_1aaef7ac3978c4bb1cc8a24ffae7bced75" compoundref="tinyxml_8cpp" startline="353" endline="364">IterateChildren</referencedby>
+        <referencedby refid="class_ti_xml_document_1a7b1aea204fee266b70b9c105c8bf2ada" compoundref="tinyxml_8cpp" startline="1134" endline="1142">TiXmlDocument::Print</referencedby>
+        <referencedby refid="class_ti_xml_printer_1a6dccaf5ee4979f13877690afe28721e8" compoundref="tinyxml_8cpp" startline="1753" endline="1787">TiXmlPrinter::VisitEnter</referencedby>
+        <referencedby refid="class_ti_xml_printer_1ae6a1df8271df4bf62d7873c38e34aa69" compoundref="tinyxml_8cpp" startline="1790" endline="1813">TiXmlPrinter::VisitExit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a5e97d69b7c0ebd27fb7286be56559b77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode* TiXmlNode::FirstChild</definition>
+        <argsstring>()</argsstring>
+        <name>FirstChild</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="516" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="516" bodyend="516"/>
+        <references refid="class_ti_xml_node_1af749fb7f22010b80e8f904c32653d50e" compoundref="tinyxml_8h" startline="751">firstChild</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1ab5f722624113c8203227de4f56576d31" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>const TiXmlNode * TiXmlNode::FirstChild</definition>
+        <argsstring>(const char *value) const </argsstring>
+        <name>FirstChild</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The first child of this node with the matching &apos;value&apos;. Will be null if none found. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="517" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="329" bodyend="338"/>
+        <references refid="class_ti_xml_node_1af749fb7f22010b80e8f904c32653d50e" compoundref="tinyxml_8h" startline="751">firstChild</references>
+        <references refid="class_ti_xml_node_1a2f329cc993d2d34df76e17dcbb776b45" compoundref="tinyxml_8h" startline="757">next</references>
+        <references refid="class_ti_xml_node_1a77943eb90d12c2892b1337a9f5918b41" compoundref="tinyxml_8h" startline="482" endline="482">Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1abc8bf32be6419ec453a731868de19554" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode* TiXmlNode::FirstChild</definition>
+        <argsstring>(const char *_value)</argsstring>
+        <name>FirstChild</name>
+        <param>
+          <type>const char *</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>The first child of this node with the matching &apos;value&apos;. Will be null if none found. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="519" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="519" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a6d671107e00cca1d28cb2d7f3a87a21e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>const TiXmlNode* TiXmlNode::LastChild</definition>
+        <argsstring>() const </argsstring>
+        <name>LastChild</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="524" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="524" bodyend="524"/>
+        <references refid="class_ti_xml_node_1a5b30756d21b304580d22a841ec9d61f8" compoundref="tinyxml_8h" startline="752">lastChild</references>
+        <referencedby refid="class_ti_xml_printer_1a6dccaf5ee4979f13877690afe28721e8" compoundref="tinyxml_8cpp" startline="1753" endline="1787">TiXmlPrinter::VisitEnter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a6432d2b2495f6caf9cb4278df706a031" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode* TiXmlNode::LastChild</definition>
+        <argsstring>()</argsstring>
+        <name>LastChild</name>
+        <briefdescription>
+<para>The last child of this node. Will be null if there are no children. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="525" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="525" bodyend="525"/>
+        <references refid="class_ti_xml_node_1a5b30756d21b304580d22a841ec9d61f8" compoundref="tinyxml_8h" startline="752">lastChild</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1acdd3fdc436aa7433023310a041e5e63f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>const TiXmlNode * TiXmlNode::LastChild</definition>
+        <argsstring>(const char *value) const </argsstring>
+        <name>LastChild</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="527" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="341" bodyend="350"/>
+        <references refid="class_ti_xml_node_1a5b30756d21b304580d22a841ec9d61f8" compoundref="tinyxml_8h" startline="752">lastChild</references>
+        <references refid="class_ti_xml_node_1a9c5370ea2cbfd9f0e0f7b30a57fd68f5" compoundref="tinyxml_8h" startline="756">prev</references>
+        <references refid="class_ti_xml_node_1a77943eb90d12c2892b1337a9f5918b41" compoundref="tinyxml_8h" startline="482" endline="482">Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1abad5bf1059c48127b958711ef89e8e5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode* TiXmlNode::LastChild</definition>
+        <argsstring>(const char *_value)</argsstring>
+        <name>LastChild</name>
+        <param>
+          <type>const char *</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>The last child of this node matching &apos;value&apos;. Will be null if there are no children. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="528" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="528" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1aaef7ac3978c4bb1cc8a24ffae7bced75" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>const TiXmlNode * TiXmlNode::IterateChildren</definition>
+        <argsstring>(const TiXmlNode *previous) const </argsstring>
+        <name>IterateChildren</name>
+        <param>
+          <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+          <declname>previous</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An alternate way to walk the children of a node. One way to iterate over nodes is: <verbatim>    for( child = parent-&gt;FirstChild(); child; child = child-&gt;NextSibling() )
+</verbatim></para><para>IterateChildren does the same thing with the syntax: <verbatim>    child = 0;
+    while( child = parent-&gt;IterateChildren( child ) )
+</verbatim></para><para>IterateChildren takes the previous child as input and finds the next one. If the previous child is null, it returns the first. IterateChildren will return null when done. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="555" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="353" bodyend="364"/>
+        <references refid="class_ti_xml_node_1a44c8eee26bbe2d1b2762038df9dde2f0" compoundref="tinyxml_8h" startline="515">FirstChild</references>
+        <references refid="class_ti_xml_node_1af854baeba384f5fe9859f5aee03b548e" compoundref="tinyxml_8h" startline="624" endline="624">NextSibling</references>
+        <references refid="class_ti_xml_node_1a662c4de61244e4fa5bd4e2d8c63143a5" compoundref="tinyxml_8h" startline="748">parent</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a2358e747118fdbf0e467b1e4f7d03de1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode* TiXmlNode::IterateChildren</definition>
+        <argsstring>(const TiXmlNode *previous)</argsstring>
+        <name>IterateChildren</name>
+        <param>
+          <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+          <declname>previous</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="556" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="556" bodyend="558"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1af2b86dbe25d3d26fa48180edc5e2a9fc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>const TiXmlNode * TiXmlNode::IterateChildren</definition>
+        <argsstring>(const char *value, const TiXmlNode *previous) const </argsstring>
+        <name>IterateChildren</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+          <declname>previous</declname>
+        </param>
+        <briefdescription>
+<para>This flavor of IterateChildren searches for children with a particular &apos;value&apos;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="561" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="367" bodyend="378"/>
+        <references refid="class_ti_xml_node_1a44c8eee26bbe2d1b2762038df9dde2f0" compoundref="tinyxml_8h" startline="515">FirstChild</references>
+        <references refid="class_ti_xml_node_1af854baeba384f5fe9859f5aee03b548e" compoundref="tinyxml_8h" startline="624" endline="624">NextSibling</references>
+        <references refid="class_ti_xml_node_1a662c4de61244e4fa5bd4e2d8c63143a5" compoundref="tinyxml_8h" startline="748">parent</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a67ba8275e533e6f76340236c42ea0aea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode* TiXmlNode::IterateChildren</definition>
+        <argsstring>(const char *_value, const TiXmlNode *previous)</argsstring>
+        <name>IterateChildren</name>
+        <param>
+          <type>const char *</type>
+          <declname>_value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+          <declname>previous</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="562" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="562" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1af287a913ce46d8dbf7ef24fec69bbaf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode * TiXmlNode::InsertEndChild</definition>
+        <argsstring>(const TiXmlNode &amp;addThis)</argsstring>
+        <name>InsertEndChild</name>
+        <param>
+          <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> &amp;</type>
+          <declname>addThis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new node related to this. Adds a child past the LastChild. Returns a pointer to the new object or NULL if an error occured. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="574" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="200" bodyend="212"/>
+        <references refid="class_ti_xml_node_1a4508cc3a2d7a98e96a54cc09c37a78a4">Clone</references>
+        <references refid="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2a31b8d14e0558445bb40e36a532b24127" compoundref="tinyxml_8h" startline="459">DOCUMENT</references>
+        <references refid="class_ti_xml_node_1aa66f4ebcd175204a168ed7c2d7b43071" compoundref="tinyxml_8cpp" startline="480" endline="490">GetDocument</references>
+        <references refid="class_ti_xml_node_1a1a881212554b759865f6cac79a851d38" compoundref="tinyxml_8cpp" startline="173" endline="197">LinkEndChild</references>
+        <references refid="class_ti_xml_document_1a735c23e318597b920c94eae77fa206de" compoundref="tinyxmlparser_8cpp" startline="799" endline="816">TiXmlDocument::SetError</references>
+        <references refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96a4f7cb4a48feb16284f2c1620454b3909" compoundref="tinyxml_8h" startline="161">TIXML_ENCODING_UNKNOWN</references>
+        <references refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba679b15d950f29257700a724bb118c34d" compoundref="tinyxml_8h" startline="273">TiXmlBase::TIXML_ERROR_DOCUMENT_TOP_ONLY</references>
+        <references refid="class_ti_xml_node_1a57b99d5c97d67a42b9752f5210a1ba5e" compoundref="tinyxml_8h" startline="677" endline="677">Type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a1a881212554b759865f6cac79a851d38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode * TiXmlNode::LinkEndChild</definition>
+        <argsstring>(TiXmlNode *addThis)</argsstring>
+        <name>LinkEndChild</name>
+        <param>
+          <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+          <declname>addThis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new node related to this. Adds a child past the LastChild.</para><para>NOTE: the node to be added is passed by pointer, and will be henceforth owned (and deleted) by tinyXml. This method is efficient and avoids an extra copy, but should be used with care as it uses a different memory model than the other insert functions.</para><para><simplesect kind="see"><para><ref refid="class_ti_xml_node_1af287a913ce46d8dbf7ef24fec69bbaf0" kindref="member">InsertEndChild</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="586" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="173" bodyend="197"/>
+        <references refid="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2a31b8d14e0558445bb40e36a532b24127" compoundref="tinyxml_8h" startline="459">DOCUMENT</references>
+        <references refid="class_ti_xml_node_1af749fb7f22010b80e8f904c32653d50e" compoundref="tinyxml_8h" startline="751">firstChild</references>
+        <references refid="class_ti_xml_node_1aa66f4ebcd175204a168ed7c2d7b43071" compoundref="tinyxml_8cpp" startline="480" endline="490">GetDocument</references>
+        <references refid="class_ti_xml_node_1a5b30756d21b304580d22a841ec9d61f8" compoundref="tinyxml_8h" startline="752">lastChild</references>
+        <references refid="class_ti_xml_node_1a2f329cc993d2d34df76e17dcbb776b45" compoundref="tinyxml_8h" startline="757">next</references>
+        <references refid="class_ti_xml_node_1a662c4de61244e4fa5bd4e2d8c63143a5" compoundref="tinyxml_8h" startline="748">parent</references>
+        <references refid="class_ti_xml_node_1a9c5370ea2cbfd9f0e0f7b30a57fd68f5" compoundref="tinyxml_8h" startline="756">prev</references>
+        <references refid="class_ti_xml_document_1a735c23e318597b920c94eae77fa206de" compoundref="tinyxmlparser_8cpp" startline="799" endline="816">TiXmlDocument::SetError</references>
+        <references refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96a4f7cb4a48feb16284f2c1620454b3909" compoundref="tinyxml_8h" startline="161">TIXML_ENCODING_UNKNOWN</references>
+        <references refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba679b15d950f29257700a724bb118c34d" compoundref="tinyxml_8h" startline="273">TiXmlBase::TIXML_ERROR_DOCUMENT_TOP_ONLY</references>
+        <references refid="class_ti_xml_node_1a57b99d5c97d67a42b9752f5210a1ba5e" compoundref="tinyxml_8h" startline="677" endline="677">Type</references>
+        <referencedby refid="class_ti_xml_element_1a9e0c1983b840de4134f1f6bf7af00b0f" compoundref="tinyxml_8cpp" startline="813" endline="833">TiXmlElement::CopyTo</referencedby>
+        <referencedby refid="class_ti_xml_document_1af69deeb984e060bd00f668460dec8ef2" compoundref="tinyxml_8cpp" startline="1108" endline="1120">TiXmlDocument::CopyTo</referencedby>
+        <referencedby refid="class_ti_xml_node_1af287a913ce46d8dbf7ef24fec69bbaf0" compoundref="tinyxml_8cpp" startline="200" endline="212">InsertEndChild</referencedby>
+        <referencedby refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</referencedby>
+        <referencedby refid="class_ti_xml_element_1ac786bce103042d3837c4cc2ff6967d41" compoundref="tinyxmlparser_8cpp" startline="1193" endline="1262">TiXmlElement::ReadValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a71e54e393336382bc9875f64aab5cb15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode * TiXmlNode::InsertBeforeChild</definition>
+        <argsstring>(TiXmlNode *beforeThis, const TiXmlNode &amp;addThis)</argsstring>
+        <name>InsertBeforeChild</name>
+        <param>
+          <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+          <declname>beforeThis</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> &amp;</type>
+          <declname>addThis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new node related to this. Adds a child before the specified child. Returns a pointer to the new object or NULL if an error occured. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="591" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="215" bodyend="244"/>
+        <references refid="class_ti_xml_node_1a4508cc3a2d7a98e96a54cc09c37a78a4">Clone</references>
+        <references refid="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2a31b8d14e0558445bb40e36a532b24127" compoundref="tinyxml_8h" startline="459">DOCUMENT</references>
+        <references refid="class_ti_xml_node_1af749fb7f22010b80e8f904c32653d50e" compoundref="tinyxml_8h" startline="751">firstChild</references>
+        <references refid="class_ti_xml_node_1aa66f4ebcd175204a168ed7c2d7b43071" compoundref="tinyxml_8cpp" startline="480" endline="490">GetDocument</references>
+        <references refid="class_ti_xml_node_1a2f329cc993d2d34df76e17dcbb776b45" compoundref="tinyxml_8h" startline="757">next</references>
+        <references refid="class_ti_xml_node_1a662c4de61244e4fa5bd4e2d8c63143a5" compoundref="tinyxml_8h" startline="748">parent</references>
+        <references refid="class_ti_xml_node_1a9c5370ea2cbfd9f0e0f7b30a57fd68f5" compoundref="tinyxml_8h" startline="756">prev</references>
+        <references refid="class_ti_xml_document_1a735c23e318597b920c94eae77fa206de" compoundref="tinyxmlparser_8cpp" startline="799" endline="816">TiXmlDocument::SetError</references>
+        <references refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96a4f7cb4a48feb16284f2c1620454b3909" compoundref="tinyxml_8h" startline="161">TIXML_ENCODING_UNKNOWN</references>
+        <references refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba679b15d950f29257700a724bb118c34d" compoundref="tinyxml_8h" startline="273">TiXmlBase::TIXML_ERROR_DOCUMENT_TOP_ONLY</references>
+        <references refid="class_ti_xml_node_1a57b99d5c97d67a42b9752f5210a1ba5e" compoundref="tinyxml_8h" startline="677" endline="677">Type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a274db3292218202805c093f66a964cb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode * TiXmlNode::InsertAfterChild</definition>
+        <argsstring>(TiXmlNode *afterThis, const TiXmlNode &amp;addThis)</argsstring>
+        <name>InsertAfterChild</name>
+        <param>
+          <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+          <declname>afterThis</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> &amp;</type>
+          <declname>addThis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new node related to this. Adds a child after the specified child. Returns a pointer to the new object or NULL if an error occured. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="596" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="247" bodyend="276"/>
+        <references refid="class_ti_xml_node_1a4508cc3a2d7a98e96a54cc09c37a78a4">Clone</references>
+        <references refid="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2a31b8d14e0558445bb40e36a532b24127" compoundref="tinyxml_8h" startline="459">DOCUMENT</references>
+        <references refid="class_ti_xml_node_1aa66f4ebcd175204a168ed7c2d7b43071" compoundref="tinyxml_8cpp" startline="480" endline="490">GetDocument</references>
+        <references refid="class_ti_xml_node_1a5b30756d21b304580d22a841ec9d61f8" compoundref="tinyxml_8h" startline="752">lastChild</references>
+        <references refid="class_ti_xml_node_1a2f329cc993d2d34df76e17dcbb776b45" compoundref="tinyxml_8h" startline="757">next</references>
+        <references refid="class_ti_xml_node_1a662c4de61244e4fa5bd4e2d8c63143a5" compoundref="tinyxml_8h" startline="748">parent</references>
+        <references refid="class_ti_xml_node_1a9c5370ea2cbfd9f0e0f7b30a57fd68f5" compoundref="tinyxml_8h" startline="756">prev</references>
+        <references refid="class_ti_xml_document_1a735c23e318597b920c94eae77fa206de" compoundref="tinyxmlparser_8cpp" startline="799" endline="816">TiXmlDocument::SetError</references>
+        <references refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96a4f7cb4a48feb16284f2c1620454b3909" compoundref="tinyxml_8h" startline="161">TIXML_ENCODING_UNKNOWN</references>
+        <references refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba679b15d950f29257700a724bb118c34d" compoundref="tinyxml_8h" startline="273">TiXmlBase::TIXML_ERROR_DOCUMENT_TOP_ONLY</references>
+        <references refid="class_ti_xml_node_1a57b99d5c97d67a42b9752f5210a1ba5e" compoundref="tinyxml_8h" startline="677" endline="677">Type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a543208c2c801c84a213529541e904b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode * TiXmlNode::ReplaceChild</definition>
+        <argsstring>(TiXmlNode *replaceThis, const TiXmlNode &amp;withThis)</argsstring>
+        <name>ReplaceChild</name>
+        <param>
+          <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+          <declname>replaceThis</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> &amp;</type>
+          <declname>withThis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Replace a child of this node. Returns a pointer to the new object or NULL if an error occured. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="601" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="279" bodyend="304"/>
+        <references refid="class_ti_xml_node_1a4508cc3a2d7a98e96a54cc09c37a78a4">Clone</references>
+        <references refid="class_ti_xml_node_1af749fb7f22010b80e8f904c32653d50e" compoundref="tinyxml_8h" startline="751">firstChild</references>
+        <references refid="class_ti_xml_node_1a5b30756d21b304580d22a841ec9d61f8" compoundref="tinyxml_8h" startline="752">lastChild</references>
+        <references refid="class_ti_xml_node_1a2f329cc993d2d34df76e17dcbb776b45" compoundref="tinyxml_8h" startline="757">next</references>
+        <references refid="class_ti_xml_node_1a662c4de61244e4fa5bd4e2d8c63143a5" compoundref="tinyxml_8h" startline="748">parent</references>
+        <references refid="class_ti_xml_node_1a9c5370ea2cbfd9f0e0f7b30a57fd68f5" compoundref="tinyxml_8h" startline="756">prev</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1ae19d8510efc90596552f4feeac9a8fbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TiXmlNode::RemoveChild</definition>
+        <argsstring>(TiXmlNode *removeThis)</argsstring>
+        <name>RemoveChild</name>
+        <param>
+          <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+          <declname>removeThis</declname>
+        </param>
+        <briefdescription>
+<para>Delete a child of this node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="604" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="307" bodyend="327"/>
+        <references refid="class_ti_xml_node_1af749fb7f22010b80e8f904c32653d50e" compoundref="tinyxml_8h" startline="751">firstChild</references>
+        <references refid="class_ti_xml_node_1a5b30756d21b304580d22a841ec9d61f8" compoundref="tinyxml_8h" startline="752">lastChild</references>
+        <references refid="class_ti_xml_node_1a2f329cc993d2d34df76e17dcbb776b45" compoundref="tinyxml_8h" startline="757">next</references>
+        <references refid="class_ti_xml_node_1a662c4de61244e4fa5bd4e2d8c63143a5" compoundref="tinyxml_8h" startline="748">parent</references>
+        <references refid="class_ti_xml_node_1a9c5370ea2cbfd9f0e0f7b30a57fd68f5" compoundref="tinyxml_8h" startline="756">prev</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1ac2cd892768726270e511b2ab32de4d10" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>const TiXmlNode* TiXmlNode::PreviousSibling</definition>
+        <argsstring>() const </argsstring>
+        <name>PreviousSibling</name>
+        <briefdescription>
+<para>Navigate to a sibling node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="607" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="607" bodyend="607"/>
+        <references refid="class_ti_xml_node_1a9c5370ea2cbfd9f0e0f7b30a57fd68f5" compoundref="tinyxml_8h" startline="756">prev</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1af8c0642ad6ecc03f62953e68896ed1cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode* TiXmlNode::PreviousSibling</definition>
+        <argsstring>()</argsstring>
+        <name>PreviousSibling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="608" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="608" bodyend="608"/>
+        <references refid="class_ti_xml_node_1a9c5370ea2cbfd9f0e0f7b30a57fd68f5" compoundref="tinyxml_8h" startline="756">prev</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1abbb3b8c1f38fa7b9e52d584a4aeca795" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>const TiXmlNode * TiXmlNode::PreviousSibling</definition>
+        <argsstring>(const char *) const </argsstring>
+        <name>PreviousSibling</name>
+        <param>
+          <type>const char *</type>
+          <defname>_value</defname>
+        </param>
+        <briefdescription>
+<para>Navigate to a sibling node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="611" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="393" bodyend="402"/>
+        <references refid="class_ti_xml_node_1a9c5370ea2cbfd9f0e0f7b30a57fd68f5" compoundref="tinyxml_8h" startline="756">prev</references>
+        <references refid="class_ti_xml_node_1a77943eb90d12c2892b1337a9f5918b41" compoundref="tinyxml_8h" startline="482" endline="482">Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a6c977049207177ef21b51972315c2053" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode* TiXmlNode::PreviousSibling</definition>
+        <argsstring>(const char *_prev)</argsstring>
+        <name>PreviousSibling</name>
+        <param>
+          <type>const char *</type>
+          <declname>_prev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="612" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="612" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1af854baeba384f5fe9859f5aee03b548e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>const TiXmlNode* TiXmlNode::NextSibling</definition>
+        <argsstring>() const </argsstring>
+        <name>NextSibling</name>
+        <briefdescription>
+<para>Navigate to a sibling node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="624" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="624" bodyend="624"/>
+        <references refid="class_ti_xml_node_1a2f329cc993d2d34df76e17dcbb776b45" compoundref="tinyxml_8h" startline="757">next</references>
+        <referencedby refid="class_ti_xml_handle_1af9cf6a7d08a5da94a8924425ad0cd5ac" compoundref="tinyxml_8cpp" startline="1667" endline="1683">TiXmlHandle::Child</referencedby>
+        <referencedby refid="class_ti_xml_element_1a9e0c1983b840de4134f1f6bf7af00b0f" compoundref="tinyxml_8cpp" startline="813" endline="833">TiXmlElement::CopyTo</referencedby>
+        <referencedby refid="class_ti_xml_document_1af69deeb984e060bd00f668460dec8ef2" compoundref="tinyxml_8cpp" startline="1108" endline="1120">TiXmlDocument::CopyTo</referencedby>
+        <referencedby refid="class_ti_xml_node_1ab1f8d8e70d88aea4c5efedfe00862d55" compoundref="tinyxml_8cpp" startline="420" endline="432">FirstChildElement</referencedby>
+        <referencedby refid="class_ti_xml_node_1aaef7ac3978c4bb1cc8a24ffae7bced75" compoundref="tinyxml_8cpp" startline="353" endline="364">IterateChildren</referencedby>
+        <referencedby refid="class_ti_xml_node_1a7667217e269e0da01d1f82aee94d1a3d" compoundref="tinyxml_8cpp" startline="450" endline="462">NextSiblingElement</referencedby>
+        <referencedby refid="class_ti_xml_element_1ad9d0c008866982ab8d9aafae7e14d692" compoundref="tinyxml_8cpp" startline="760" endline="810">TiXmlElement::Print</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a4d05f7b1d7b470ac6887edd072d4892a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode* TiXmlNode::NextSibling</definition>
+        <argsstring>()</argsstring>
+        <name>NextSibling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="625" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="625" bodyend="625"/>
+        <references refid="class_ti_xml_node_1a2f329cc993d2d34df76e17dcbb776b45" compoundref="tinyxml_8h" startline="757">next</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1acaf9dc17531ac041f602f9ad579573ea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>const TiXmlNode * TiXmlNode::NextSibling</definition>
+        <argsstring>(const char *) const </argsstring>
+        <name>NextSibling</name>
+        <param>
+          <type>const char *</type>
+          <defname>_value</defname>
+        </param>
+        <briefdescription>
+<para>Navigate to a sibling node with the given &apos;value&apos;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="628" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="381" bodyend="390"/>
+        <references refid="class_ti_xml_node_1a2f329cc993d2d34df76e17dcbb776b45" compoundref="tinyxml_8h" startline="757">next</references>
+        <references refid="class_ti_xml_node_1a77943eb90d12c2892b1337a9f5918b41" compoundref="tinyxml_8h" startline="482" endline="482">Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a4080bc5cc8a5c139e7cf308669e850fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode* TiXmlNode::NextSibling</definition>
+        <argsstring>(const char *_next)</argsstring>
+        <name>NextSibling</name>
+        <param>
+          <type>const char *</type>
+          <declname>_next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="629" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="629" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a7667217e269e0da01d1f82aee94d1a3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+        <definition>const TiXmlElement * TiXmlNode::NextSiblingElement</definition>
+        <argsstring>() const </argsstring>
+        <name>NextSiblingElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience function to get through elements. Calls NextSibling and ToElement. Will skip all non-Element nodes. Returns 0 if there is not another element. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="637" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="450" bodyend="462"/>
+        <references refid="class_ti_xml_node_1af854baeba384f5fe9859f5aee03b548e" compoundref="tinyxml_8h" startline="624" endline="624">NextSibling</references>
+        <references refid="class_ti_xml_node_1a72abed96dc9667ab9e0a2a275301bb1c" compoundref="tinyxml_8h" startline="691" endline="690">ToElement</references>
+        <referencedby refid="class_ti_xml_handle_1a8786475b9d1f1518492e3a46704c7ef0" compoundref="tinyxml_8cpp" startline="1705" endline="1721">TiXmlHandle::ChildElement</referencedby>
+        <referencedby refid="class_kill_bounty_table_mgr_1adb250e467de144138bf84e40d2d6831b" compoundref="_kill_bounty__table_8cpp" startline="62" endline="102">KillBountyTableMgr::Load</referencedby>
+        <referencedby refid="class_append_group_table_mgr_1abc58e6cc64585da7c604447a2a544e3d" compoundref="_append_group__table_8cpp" startline="62" endline="102">AppendGroupTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_shop_table_mgr_1aa7ee36f4eb3a95bcd568d498c381378c" compoundref="_avatar_shop__table_8cpp" startline="62" endline="102">AvatarShopTableMgr::Load</referencedby>
+        <referencedby refid="class_task_recom_table_mgr_1a7a33433eff0fd0c309899d6644c8e84b" compoundref="_task_recom__table_8cpp" startline="62" endline="102">TaskRecomTableMgr::Load</referencedby>
+        <referencedby refid="class_map_shop_res_table_mgr_1a7d83421880ea8b941b3dd7d9d870d96d" compoundref="_map_shop_res__table_8cpp" startline="62" endline="102">MapShopResTableMgr::Load</referencedby>
+        <referencedby refid="class_choice_item_table_mgr_1abad55b40544ff352423c54d293a397da" compoundref="_choice_item__table_8cpp" startline="62" endline="102">ChoiceItemTableMgr::Load</referencedby>
+        <referencedby refid="class_addtional_table_mgr_1a249ef08bcb2f537b9452f7c43d0cedaa" compoundref="_addtional__table_8cpp" startline="62" endline="102">AddtionalTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_model_table_mgr_1ae6b8e03739ca0c6c511addece0943684" compoundref="_avatar_model__table_8cpp" startline="62" endline="102">AvatarModelTableMgr::Load</referencedby>
+        <referencedby refid="class_race_text_table_mgr_1aa8cdba6ebbc23d8e5714186bc6ca25d1" compoundref="_race_text__table_8cpp" startline="62" endline="102">RaceTextTableMgr::Load</referencedby>
+        <referencedby refid="class_random_name_table_mgr_1a64f2090c4ae646a4ace61bbcd9ff9e8e" compoundref="_random_name__table_8cpp" startline="62" endline="102">RandomNameTableMgr::Load</referencedby>
+        <referencedby refid="class_system_prompt_table_mgr_1ae6d04247f9e9fa3382f653f31b3d4670" compoundref="_system_prompt__table_8cpp" startline="71" endline="112">SystemPromptTableMgr::Load</referencedby>
+        <referencedby refid="class_unit_head_area_table_mgr_1a7d0bc9d0a09462a9de517d15262c8cef" compoundref="_unit_head_area__table_8cpp" startline="62" endline="102">UnitHeadAreaTableMgr::Load</referencedby>
+        <referencedby refid="class_level_table_mgr_1a8a8d81638699acf529a511a0217eb77f" compoundref="_level__table_8cpp" startline="62" endline="102">LevelTableMgr::Load</referencedby>
+        <referencedby refid="class_attack_armor_ratio_table_mgr_1a34928520708d970bd80724f8f77f90ec" compoundref="_attack_armor_ratio__table_8cpp" startline="62" endline="102">AttackArmorRatioTableMgr::Load</referencedby>
+        <referencedby refid="class_effect_switch_table_mgr_1aaddf1f8d0397ee79bd44fb6c0ad1af74" compoundref="_effect_switch__table_8cpp" startline="74" endline="114">EffectSwitchTableMgr::Load</referencedby>
+        <referencedby refid="class_language_table_mgr_1a1b543bf6d489bda48c23e45d9f154b09" compoundref="_language__table_8cpp" startline="63" endline="103">LanguageTableMgr::Load</referencedby>
+        <referencedby refid="class_dress_table_mgr_1ae556fb6ecf40b64dc08ed4e18136e686" compoundref="_dress__table_8cpp" startline="62" endline="102">DressTableMgr::Load</referencedby>
+        <referencedby refid="class_racehelp_table_mgr_1a52fb79dc5f29a34dc284921c1e0d7d7b" compoundref="_racehelp__table_8cpp" startline="62" endline="102">RacehelpTableMgr::Load</referencedby>
+        <referencedby refid="class_a_i_table_mgr_1a745e4c9d603e4364676b12f1b9f40a24" compoundref="_a_i__table_8cpp" startline="62" endline="102">AITableMgr::Load</referencedby>
+        <referencedby refid="class_achievement_table_mgr_1afcc0892d13ff6c20142b3a4398dc832b" compoundref="_achievement__table_8cpp" startline="78" endline="118">AchievementTableMgr::Load</referencedby>
+        <referencedby refid="class_a_i_prio_table_mgr_1af3a0af8696385e7803a7c859d616317a" compoundref="_a_i_prio__table_8cpp" startline="62" endline="102">AIPrioTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_animation_table_mgr_1a5122df02998be1a9d395f76512707ea1" compoundref="_avatar_animation__table_8cpp" startline="62" endline="102">AvatarAnimationTableMgr::Load</referencedby>
+        <referencedby refid="class_horse_table_mgr_1aaf438c96e82287a6fd30820d7fb4f0ff" compoundref="_horse__table_8cpp" startline="62" endline="102">HorseTableMgr::Load</referencedby>
+        <referencedby refid="class_voice_table_mgr_1acdffff4eabfe1409676f829dc5d2e5d2" compoundref="_voice__table_8cpp" startline="62" endline="102">VoiceTableMgr::Load</referencedby>
+        <referencedby refid="class_preset_shop_table_mgr_1ae9ffbb84a206d4a5fd816e83875913ce" compoundref="_preset_shop__table_8cpp" startline="62" endline="102">PresetShopTableMgr::Load</referencedby>
+        <referencedby refid="class_indexoffer_table_mgr_1a795ecf94988a510b954afe871b34144f" compoundref="_indexoffer__table_8cpp" startline="62" endline="102">IndexofferTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_effect_table_mgr_1ac19d759accbc2143122158d03fb8c149" compoundref="_avatar_effect__table_8cpp" startline="62" endline="102">AvatarEffectTableMgr::Load</referencedby>
+        <referencedby refid="class_ac_system_table_mgr_1aaa1477228c364b0660eb13370885a0a8" compoundref="_ac_system__table_8cpp" startline="62" endline="102">AcSystemTableMgr::Load</referencedby>
+        <referencedby refid="class_account_level_table_mgr_1a89b26412b6353366b28499ea941a6d80" compoundref="_account_level__table_8cpp" startline="62" endline="102">AccountLevelTableMgr::Load</referencedby>
+        <referencedby refid="class_upgrade_cost_table_mgr_1ac0602c2f51a6af0d6737f8fe5038dc3f" compoundref="_upgrade_cost__table_8cpp" startline="62" endline="102">UpgradeCostTableMgr::Load</referencedby>
+        <referencedby refid="class_chance_table_mgr_1ac7c4dfa0ba73e985f82fb8547e8bfea1" compoundref="_chance__table_8cpp" startline="62" endline="102">ChanceTableMgr::Load</referencedby>
+        <referencedby refid="class_append_cost_table_mgr_1aefc5bc86880b3fe17cb01b529335d435" compoundref="_append_cost__table_8cpp" startline="62" endline="102">AppendCostTableMgr::Load</referencedby>
+        <referencedby refid="class_search_choice_table_mgr_1a0ee82c5241b01f37d8b74259973dd155" compoundref="_search_choice__table_8cpp" startline="62" endline="102">SearchChoiceTableMgr::Load</referencedby>
+        <referencedby refid="class_pet_table_mgr_1afdea0f199fb94e6443c8442959ad24fb" compoundref="_pet__table_8cpp" startline="62" endline="102">PetTableMgr::Load</referencedby>
+        <referencedby refid="class_ren_ji_table_mgr_1aa6ac248af0aef192dd09d577bfe67bcb" compoundref="_ren_ji__table_8cpp" startline="62" endline="102">RenJiTableMgr::Load</referencedby>
+        <referencedby refid="class_item_compose_table_mgr_1a752edcdd8eab18402f6f05a1c882dd2a" compoundref="_item_compose__table_8cpp" startline="62" endline="102">ItemComposeTableMgr::Load</referencedby>
+        <referencedby refid="class_creep_tower_growth_table_mgr_1a8c99af615ed056cb553a9ba5f7d29978" compoundref="_creep_tower_growth__table_8cpp" startline="62" endline="102">CreepTowerGrowthTableMgr::Load</referencedby>
+        <referencedby refid="class_rank_stage_table_mgr_1a92a0520acab5da8e863e2130ffc4e699" compoundref="_rank_stage__table_8cpp" startline="72" endline="113">RankStageTableMgr::Load</referencedby>
+        <referencedby refid="class_free_heroes_table_mgr_1a51e3bb60bf65ba5d5618e9a64656dde7" compoundref="_free_heroes__table_8cpp" startline="62" endline="102">FreeHeroesTableMgr::Load</referencedby>
+        <referencedby refid="class_league_rank_table_mgr_1a4717acfca30cf455ba4a4d968eb7c2cc" compoundref="_league_rank__table_8cpp" startline="62" endline="102">LeagueRankTableMgr::Load</referencedby>
+        <referencedby refid="class_shop_table_mgr_1a34fbbe169593748d337c3270834ebbee" compoundref="_shop__table_8cpp" startline="62" endline="102">ShopTableMgr::Load</referencedby>
+        <referencedby refid="class_propaganda_table_mgr_1a71b4b10f082060ae54b68327a91044b9" compoundref="_propaganda__table_8cpp" startline="72" endline="113">PropagandaTableMgr::Load</referencedby>
+        <referencedby refid="class_decompose_table_mgr_1a0b6c7d40655cfd3d0c1fd1bdd2db652a" compoundref="_decompose__table_8cpp" startline="62" endline="102">DecomposeTableMgr::Load</referencedby>
+        <referencedby refid="class_map_misc_table_mgr_1a127d11f395fcaadeccf0607564ec2702" compoundref="_map_misc__table_8cpp" startline="62" endline="102">MapMiscTableMgr::Load</referencedby>
+        <referencedby refid="class_model_res_table_mgr_1acc87d8d970c0f9412565631cae185385" compoundref="_model_res__table_8cpp" startline="62" endline="102">ModelResTableMgr::Load</referencedby>
+        <referencedby refid="class_ren_ji_actions_table_mgr_1ad2a530426a02404de4dc69a0d552cef3" compoundref="_ren_ji_actions__table_8cpp" startline="62" endline="102">RenJiActionsTableMgr::Load</referencedby>
+        <referencedby refid="class_ren_ji_custom_data_table_mgr_1a34f51aca8f50b45a76fa4d8780b342a9" compoundref="_ren_ji_custom_data__table_8cpp" startline="62" endline="102">RenJiCustomDataTableMgr::Load</referencedby>
+        <referencedby refid="class_hero_info_table_mgr_1acf7375278ed1d171da3d632a0005d37c" compoundref="_hero_info__table_8cpp" startline="78" endline="119">HeroInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_star_wheel_table_mgr_1a4a18eabc8044fe1b148a1f8e4d4dfdbe" compoundref="_star_wheel__table_8cpp" startline="62" endline="102">StarWheelTableMgr::Load</referencedby>
+        <referencedby refid="class_racedrop_table_mgr_1a5a736a966cc69e1daafed9c98c8448c0" compoundref="_racedrop__table_8cpp" startline="62" endline="102">RacedropTableMgr::Load</referencedby>
+        <referencedby refid="class_rack_table_mgr_1ab35f2db90bcbfe3572387c7159e4331f" compoundref="_rack__table_8cpp" startline="62" endline="102">RackTableMgr::Load</referencedby>
+        <referencedby refid="class_buffer_table_mgr_1af902373e933faf61fd9ad9cfe7f2c46b" compoundref="_buffer__table_8cpp" startline="62" endline="102">BufferTableMgr::Load</referencedby>
+        <referencedby refid="class_battle_tips_table_mgr_1aa9abdc929c067c1fe088a6c843cf0b60" compoundref="_battle_tips__table_8cpp" startline="71" endline="112">BattleTipsTableMgr::Load</referencedby>
+        <referencedby refid="class_mission_info_table_mgr_1a1b8927e86350a9a5c073464dd2996dd1" compoundref="_mission_info__table_8cpp" startline="74" endline="116">MissionInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_p_v_e_rule_table_mgr_1aaa67021a6c7ccf8b2d9aef3f2ab7fa4d" compoundref="_p_v_e_rule__table_8cpp" startline="62" endline="102">PVERuleTableMgr::Load</referencedby>
+        <referencedby refid="class_video_tag_table_mgr_1a64f1a525c7ee58716240beab5ba74ef3" compoundref="_video_tag__table_8cpp" startline="62" endline="102">VideoTagTableMgr::Load</referencedby>
+        <referencedby refid="class_append_skill_p_r_table_mgr_1aa9116b4a12c456635f7e3aabccda0cb1" compoundref="_append_skill_p_r__table_8cpp" startline="62" endline="102">AppendSkillPRTableMgr::Load</referencedby>
+        <referencedby refid="class_race_sta_mission_table_mgr_1ac4336f0c5ed03ee53a47404021da91fd" compoundref="_race_sta_mission__table_8cpp" startline="62" endline="102">RaceStaMissionTableMgr::Load</referencedby>
+        <referencedby refid="class_ren_ji_conditions_table_mgr_1ad4e68f604cf6886b839de42c630d9882" compoundref="_ren_ji_conditions__table_8cpp" startline="62" endline="102">RenJiConditionsTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_table_mgr_1a7f0386c3528c677c1d1fe4bf8ef6bf42" compoundref="_avatar__table_8cpp" startline="62" endline="102">AvatarTableMgr::Load</referencedby>
+        <referencedby refid="class_maps_info_table_mgr_1ae1e01a926772d2cf076dd0e16edf0f48" compoundref="_maps_info__table_8cpp" startline="62" endline="102">MapsInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_append_skill_table_mgr_1ac56d7c32f5a819dc19cca4587efdd046" compoundref="_append_skill__table_8cpp" startline="62" endline="102">AppendSkillTableMgr::Load</referencedby>
+        <referencedby refid="class_sel_hero_table_mgr_1a41ea849afb79b47430442dc72744ca3c" compoundref="_sel_hero__table_8cpp" startline="71" endline="112">SelHeroTableMgr::Load</referencedby>
+        <referencedby refid="class_item_exchange_table_mgr_1ac8cb50b578b976ed93bf4519b98f0a1a" compoundref="_item_exchange__table_8cpp" startline="62" endline="102">ItemExchangeTableMgr::Load</referencedby>
+        <referencedby refid="class_task_info_table_mgr_1a5ac142d83d027ede57fb4a61cb90a170" compoundref="_task_info__table_8cpp" startline="62" endline="102">TaskInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_achievement_task_table_mgr_1abc620fe6e9f2a0e47cffbab2dfd5a012" compoundref="_achievement_task__table_8cpp" startline="62" endline="102">AchievementTaskTableMgr::Load</referencedby>
+        <referencedby refid="class_map_info_table_mgr_1a6f3d2a28522e251e0b7a9bcc57fc7a2b" compoundref="_map_info__table_8cpp" startline="73" endline="113">MapInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_strengthen_table_mgr_1ae9eb8970968f5a1d88d6abc1cb2bdde9" compoundref="_strengthen__table_8cpp" startline="62" endline="102">StrengthenTableMgr::Load</referencedby>
+        <referencedby refid="class_unit_table_mgr_1a1f1a4fe49cb048773f3bd4fab1273ee3" compoundref="_unit__table_8cpp" startline="72" endline="112">UnitTableMgr::Load</referencedby>
+        <referencedby refid="class_item_table_mgr_1a571494a6f0138a944bbb1bf2af591bcf" compoundref="_item__table_8cpp" startline="127" endline="168">ItemTableMgr::Load</referencedby>
+        <referencedby refid="class_town_item_table_mgr_1a75b541cb98ad97b219724e7ca27e2524" compoundref="_town_item__table_8cpp" startline="62" endline="102">TownItemTableMgr::Load</referencedby>
+        <referencedby refid="class_skill_table_mgr_1a113e3c8b9ec50d1c32e8aabf2d827dad" compoundref="_skill__table_8cpp" startline="67" endline="106">SkillTableMgr::LoadSkillFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a1b211cb5034655a04358e0e2f6fc5010" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+        <definition>TiXmlElement* TiXmlNode::NextSiblingElement</definition>
+        <argsstring>()</argsstring>
+        <name>NextSiblingElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="638" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="638" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a3d7897999f99cf4870dd59df6331d7ff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+        <definition>const TiXmlElement * TiXmlNode::NextSiblingElement</definition>
+        <argsstring>(const char *) const </argsstring>
+        <name>NextSiblingElement</name>
+        <param>
+          <type>const char *</type>
+          <defname>_value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience function to get through elements. Calls NextSibling and ToElement. Will skip all non-Element nodes. Returns 0 if there is not another element. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="646" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="465" bodyend="477"/>
+        <references refid="class_ti_xml_node_1af854baeba384f5fe9859f5aee03b548e" compoundref="tinyxml_8h" startline="624" endline="624">NextSibling</references>
+        <references refid="class_ti_xml_node_1a72abed96dc9667ab9e0a2a275301bb1c" compoundref="tinyxml_8h" startline="691" endline="690">ToElement</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a6e1ac6b800e18049bc75e9f8e63a8e5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+        <definition>TiXmlElement* TiXmlNode::NextSiblingElement</definition>
+        <argsstring>(const char *_next)</argsstring>
+        <name>NextSiblingElement</name>
+        <param>
+          <type>const char *</type>
+          <declname>_next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="647" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="647" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1ab1f8d8e70d88aea4c5efedfe00862d55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+        <definition>const TiXmlElement * TiXmlNode::FirstChildElement</definition>
+        <argsstring>() const </argsstring>
+        <name>FirstChildElement</name>
+        <briefdescription>
+<para>Convenience function to get through elements. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="657" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="420" bodyend="432"/>
+        <references refid="class_ti_xml_node_1a44c8eee26bbe2d1b2762038df9dde2f0" compoundref="tinyxml_8h" startline="515">FirstChild</references>
+        <references refid="class_ti_xml_node_1af854baeba384f5fe9859f5aee03b548e" compoundref="tinyxml_8h" startline="624" endline="624">NextSibling</references>
+        <references refid="class_ti_xml_node_1a72abed96dc9667ab9e0a2a275301bb1c" compoundref="tinyxml_8h" startline="691" endline="690">ToElement</references>
+        <referencedby refid="class_kill_bounty_table_mgr_1adb250e467de144138bf84e40d2d6831b" compoundref="_kill_bounty__table_8cpp" startline="62" endline="102">KillBountyTableMgr::Load</referencedby>
+        <referencedby refid="class_append_group_table_mgr_1abc58e6cc64585da7c604447a2a544e3d" compoundref="_append_group__table_8cpp" startline="62" endline="102">AppendGroupTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_shop_table_mgr_1aa7ee36f4eb3a95bcd568d498c381378c" compoundref="_avatar_shop__table_8cpp" startline="62" endline="102">AvatarShopTableMgr::Load</referencedby>
+        <referencedby refid="class_task_recom_table_mgr_1a7a33433eff0fd0c309899d6644c8e84b" compoundref="_task_recom__table_8cpp" startline="62" endline="102">TaskRecomTableMgr::Load</referencedby>
+        <referencedby refid="class_map_shop_res_table_mgr_1a7d83421880ea8b941b3dd7d9d870d96d" compoundref="_map_shop_res__table_8cpp" startline="62" endline="102">MapShopResTableMgr::Load</referencedby>
+        <referencedby refid="class_choice_item_table_mgr_1abad55b40544ff352423c54d293a397da" compoundref="_choice_item__table_8cpp" startline="62" endline="102">ChoiceItemTableMgr::Load</referencedby>
+        <referencedby refid="class_addtional_table_mgr_1a249ef08bcb2f537b9452f7c43d0cedaa" compoundref="_addtional__table_8cpp" startline="62" endline="102">AddtionalTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_model_table_mgr_1ae6b8e03739ca0c6c511addece0943684" compoundref="_avatar_model__table_8cpp" startline="62" endline="102">AvatarModelTableMgr::Load</referencedby>
+        <referencedby refid="class_race_text_table_mgr_1aa8cdba6ebbc23d8e5714186bc6ca25d1" compoundref="_race_text__table_8cpp" startline="62" endline="102">RaceTextTableMgr::Load</referencedby>
+        <referencedby refid="class_random_name_table_mgr_1a64f2090c4ae646a4ace61bbcd9ff9e8e" compoundref="_random_name__table_8cpp" startline="62" endline="102">RandomNameTableMgr::Load</referencedby>
+        <referencedby refid="class_system_prompt_table_mgr_1ae6d04247f9e9fa3382f653f31b3d4670" compoundref="_system_prompt__table_8cpp" startline="71" endline="112">SystemPromptTableMgr::Load</referencedby>
+        <referencedby refid="class_unit_head_area_table_mgr_1a7d0bc9d0a09462a9de517d15262c8cef" compoundref="_unit_head_area__table_8cpp" startline="62" endline="102">UnitHeadAreaTableMgr::Load</referencedby>
+        <referencedby refid="class_level_table_mgr_1a8a8d81638699acf529a511a0217eb77f" compoundref="_level__table_8cpp" startline="62" endline="102">LevelTableMgr::Load</referencedby>
+        <referencedby refid="class_attack_armor_ratio_table_mgr_1a34928520708d970bd80724f8f77f90ec" compoundref="_attack_armor_ratio__table_8cpp" startline="62" endline="102">AttackArmorRatioTableMgr::Load</referencedby>
+        <referencedby refid="class_effect_switch_table_mgr_1aaddf1f8d0397ee79bd44fb6c0ad1af74" compoundref="_effect_switch__table_8cpp" startline="74" endline="114">EffectSwitchTableMgr::Load</referencedby>
+        <referencedby refid="class_language_table_mgr_1a1b543bf6d489bda48c23e45d9f154b09" compoundref="_language__table_8cpp" startline="63" endline="103">LanguageTableMgr::Load</referencedby>
+        <referencedby refid="class_dress_table_mgr_1ae556fb6ecf40b64dc08ed4e18136e686" compoundref="_dress__table_8cpp" startline="62" endline="102">DressTableMgr::Load</referencedby>
+        <referencedby refid="class_racehelp_table_mgr_1a52fb79dc5f29a34dc284921c1e0d7d7b" compoundref="_racehelp__table_8cpp" startline="62" endline="102">RacehelpTableMgr::Load</referencedby>
+        <referencedby refid="class_a_i_table_mgr_1a745e4c9d603e4364676b12f1b9f40a24" compoundref="_a_i__table_8cpp" startline="62" endline="102">AITableMgr::Load</referencedby>
+        <referencedby refid="class_achievement_table_mgr_1afcc0892d13ff6c20142b3a4398dc832b" compoundref="_achievement__table_8cpp" startline="78" endline="118">AchievementTableMgr::Load</referencedby>
+        <referencedby refid="class_a_i_prio_table_mgr_1af3a0af8696385e7803a7c859d616317a" compoundref="_a_i_prio__table_8cpp" startline="62" endline="102">AIPrioTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_animation_table_mgr_1a5122df02998be1a9d395f76512707ea1" compoundref="_avatar_animation__table_8cpp" startline="62" endline="102">AvatarAnimationTableMgr::Load</referencedby>
+        <referencedby refid="class_horse_table_mgr_1aaf438c96e82287a6fd30820d7fb4f0ff" compoundref="_horse__table_8cpp" startline="62" endline="102">HorseTableMgr::Load</referencedby>
+        <referencedby refid="class_voice_table_mgr_1acdffff4eabfe1409676f829dc5d2e5d2" compoundref="_voice__table_8cpp" startline="62" endline="102">VoiceTableMgr::Load</referencedby>
+        <referencedby refid="class_preset_shop_table_mgr_1ae9ffbb84a206d4a5fd816e83875913ce" compoundref="_preset_shop__table_8cpp" startline="62" endline="102">PresetShopTableMgr::Load</referencedby>
+        <referencedby refid="class_indexoffer_table_mgr_1a795ecf94988a510b954afe871b34144f" compoundref="_indexoffer__table_8cpp" startline="62" endline="102">IndexofferTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_effect_table_mgr_1ac19d759accbc2143122158d03fb8c149" compoundref="_avatar_effect__table_8cpp" startline="62" endline="102">AvatarEffectTableMgr::Load</referencedby>
+        <referencedby refid="class_ac_system_table_mgr_1aaa1477228c364b0660eb13370885a0a8" compoundref="_ac_system__table_8cpp" startline="62" endline="102">AcSystemTableMgr::Load</referencedby>
+        <referencedby refid="class_account_level_table_mgr_1a89b26412b6353366b28499ea941a6d80" compoundref="_account_level__table_8cpp" startline="62" endline="102">AccountLevelTableMgr::Load</referencedby>
+        <referencedby refid="class_upgrade_cost_table_mgr_1ac0602c2f51a6af0d6737f8fe5038dc3f" compoundref="_upgrade_cost__table_8cpp" startline="62" endline="102">UpgradeCostTableMgr::Load</referencedby>
+        <referencedby refid="class_chance_table_mgr_1ac7c4dfa0ba73e985f82fb8547e8bfea1" compoundref="_chance__table_8cpp" startline="62" endline="102">ChanceTableMgr::Load</referencedby>
+        <referencedby refid="class_append_cost_table_mgr_1aefc5bc86880b3fe17cb01b529335d435" compoundref="_append_cost__table_8cpp" startline="62" endline="102">AppendCostTableMgr::Load</referencedby>
+        <referencedby refid="class_pet_table_mgr_1afdea0f199fb94e6443c8442959ad24fb" compoundref="_pet__table_8cpp" startline="62" endline="102">PetTableMgr::Load</referencedby>
+        <referencedby refid="class_search_choice_table_mgr_1a0ee82c5241b01f37d8b74259973dd155" compoundref="_search_choice__table_8cpp" startline="62" endline="102">SearchChoiceTableMgr::Load</referencedby>
+        <referencedby refid="class_ren_ji_table_mgr_1aa6ac248af0aef192dd09d577bfe67bcb" compoundref="_ren_ji__table_8cpp" startline="62" endline="102">RenJiTableMgr::Load</referencedby>
+        <referencedby refid="class_item_compose_table_mgr_1a752edcdd8eab18402f6f05a1c882dd2a" compoundref="_item_compose__table_8cpp" startline="62" endline="102">ItemComposeTableMgr::Load</referencedby>
+        <referencedby refid="class_creep_tower_growth_table_mgr_1a8c99af615ed056cb553a9ba5f7d29978" compoundref="_creep_tower_growth__table_8cpp" startline="62" endline="102">CreepTowerGrowthTableMgr::Load</referencedby>
+        <referencedby refid="class_rank_stage_table_mgr_1a92a0520acab5da8e863e2130ffc4e699" compoundref="_rank_stage__table_8cpp" startline="72" endline="113">RankStageTableMgr::Load</referencedby>
+        <referencedby refid="class_free_heroes_table_mgr_1a51e3bb60bf65ba5d5618e9a64656dde7" compoundref="_free_heroes__table_8cpp" startline="62" endline="102">FreeHeroesTableMgr::Load</referencedby>
+        <referencedby refid="class_league_rank_table_mgr_1a4717acfca30cf455ba4a4d968eb7c2cc" compoundref="_league_rank__table_8cpp" startline="62" endline="102">LeagueRankTableMgr::Load</referencedby>
+        <referencedby refid="class_shop_table_mgr_1a34fbbe169593748d337c3270834ebbee" compoundref="_shop__table_8cpp" startline="62" endline="102">ShopTableMgr::Load</referencedby>
+        <referencedby refid="class_propaganda_table_mgr_1a71b4b10f082060ae54b68327a91044b9" compoundref="_propaganda__table_8cpp" startline="72" endline="113">PropagandaTableMgr::Load</referencedby>
+        <referencedby refid="class_decompose_table_mgr_1a0b6c7d40655cfd3d0c1fd1bdd2db652a" compoundref="_decompose__table_8cpp" startline="62" endline="102">DecomposeTableMgr::Load</referencedby>
+        <referencedby refid="class_map_misc_table_mgr_1a127d11f395fcaadeccf0607564ec2702" compoundref="_map_misc__table_8cpp" startline="62" endline="102">MapMiscTableMgr::Load</referencedby>
+        <referencedby refid="class_model_res_table_mgr_1acc87d8d970c0f9412565631cae185385" compoundref="_model_res__table_8cpp" startline="62" endline="102">ModelResTableMgr::Load</referencedby>
+        <referencedby refid="class_ren_ji_actions_table_mgr_1ad2a530426a02404de4dc69a0d552cef3" compoundref="_ren_ji_actions__table_8cpp" startline="62" endline="102">RenJiActionsTableMgr::Load</referencedby>
+        <referencedby refid="class_ren_ji_custom_data_table_mgr_1a34f51aca8f50b45a76fa4d8780b342a9" compoundref="_ren_ji_custom_data__table_8cpp" startline="62" endline="102">RenJiCustomDataTableMgr::Load</referencedby>
+        <referencedby refid="class_hero_info_table_mgr_1acf7375278ed1d171da3d632a0005d37c" compoundref="_hero_info__table_8cpp" startline="78" endline="119">HeroInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_star_wheel_table_mgr_1a4a18eabc8044fe1b148a1f8e4d4dfdbe" compoundref="_star_wheel__table_8cpp" startline="62" endline="102">StarWheelTableMgr::Load</referencedby>
+        <referencedby refid="class_racedrop_table_mgr_1a5a736a966cc69e1daafed9c98c8448c0" compoundref="_racedrop__table_8cpp" startline="62" endline="102">RacedropTableMgr::Load</referencedby>
+        <referencedby refid="class_rack_table_mgr_1ab35f2db90bcbfe3572387c7159e4331f" compoundref="_rack__table_8cpp" startline="62" endline="102">RackTableMgr::Load</referencedby>
+        <referencedby refid="class_buffer_table_mgr_1af902373e933faf61fd9ad9cfe7f2c46b" compoundref="_buffer__table_8cpp" startline="62" endline="102">BufferTableMgr::Load</referencedby>
+        <referencedby refid="class_battle_tips_table_mgr_1aa9abdc929c067c1fe088a6c843cf0b60" compoundref="_battle_tips__table_8cpp" startline="71" endline="112">BattleTipsTableMgr::Load</referencedby>
+        <referencedby refid="class_mission_info_table_mgr_1a1b8927e86350a9a5c073464dd2996dd1" compoundref="_mission_info__table_8cpp" startline="74" endline="116">MissionInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_p_v_e_rule_table_mgr_1aaa67021a6c7ccf8b2d9aef3f2ab7fa4d" compoundref="_p_v_e_rule__table_8cpp" startline="62" endline="102">PVERuleTableMgr::Load</referencedby>
+        <referencedby refid="class_video_tag_table_mgr_1a64f1a525c7ee58716240beab5ba74ef3" compoundref="_video_tag__table_8cpp" startline="62" endline="102">VideoTagTableMgr::Load</referencedby>
+        <referencedby refid="class_append_skill_p_r_table_mgr_1aa9116b4a12c456635f7e3aabccda0cb1" compoundref="_append_skill_p_r__table_8cpp" startline="62" endline="102">AppendSkillPRTableMgr::Load</referencedby>
+        <referencedby refid="class_race_sta_mission_table_mgr_1ac4336f0c5ed03ee53a47404021da91fd" compoundref="_race_sta_mission__table_8cpp" startline="62" endline="102">RaceStaMissionTableMgr::Load</referencedby>
+        <referencedby refid="class_ren_ji_conditions_table_mgr_1ad4e68f604cf6886b839de42c630d9882" compoundref="_ren_ji_conditions__table_8cpp" startline="62" endline="102">RenJiConditionsTableMgr::Load</referencedby>
+        <referencedby refid="class_avatar_table_mgr_1a7f0386c3528c677c1d1fe4bf8ef6bf42" compoundref="_avatar__table_8cpp" startline="62" endline="102">AvatarTableMgr::Load</referencedby>
+        <referencedby refid="class_maps_info_table_mgr_1ae1e01a926772d2cf076dd0e16edf0f48" compoundref="_maps_info__table_8cpp" startline="62" endline="102">MapsInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_append_skill_table_mgr_1ac56d7c32f5a819dc19cca4587efdd046" compoundref="_append_skill__table_8cpp" startline="62" endline="102">AppendSkillTableMgr::Load</referencedby>
+        <referencedby refid="class_sel_hero_table_mgr_1a41ea849afb79b47430442dc72744ca3c" compoundref="_sel_hero__table_8cpp" startline="71" endline="112">SelHeroTableMgr::Load</referencedby>
+        <referencedby refid="class_item_exchange_table_mgr_1ac8cb50b578b976ed93bf4519b98f0a1a" compoundref="_item_exchange__table_8cpp" startline="62" endline="102">ItemExchangeTableMgr::Load</referencedby>
+        <referencedby refid="class_task_info_table_mgr_1a5ac142d83d027ede57fb4a61cb90a170" compoundref="_task_info__table_8cpp" startline="62" endline="102">TaskInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_achievement_task_table_mgr_1abc620fe6e9f2a0e47cffbab2dfd5a012" compoundref="_achievement_task__table_8cpp" startline="62" endline="102">AchievementTaskTableMgr::Load</referencedby>
+        <referencedby refid="class_map_info_table_mgr_1a6f3d2a28522e251e0b7a9bcc57fc7a2b" compoundref="_map_info__table_8cpp" startline="73" endline="113">MapInfoTableMgr::Load</referencedby>
+        <referencedby refid="class_strengthen_table_mgr_1ae9eb8970968f5a1d88d6abc1cb2bdde9" compoundref="_strengthen__table_8cpp" startline="62" endline="102">StrengthenTableMgr::Load</referencedby>
+        <referencedby refid="class_unit_table_mgr_1a1f1a4fe49cb048773f3bd4fab1273ee3" compoundref="_unit__table_8cpp" startline="72" endline="112">UnitTableMgr::Load</referencedby>
+        <referencedby refid="class_item_table_mgr_1a571494a6f0138a944bbb1bf2af591bcf" compoundref="_item__table_8cpp" startline="127" endline="168">ItemTableMgr::Load</referencedby>
+        <referencedby refid="class_town_item_table_mgr_1a75b541cb98ad97b219724e7ca27e2524" compoundref="_town_item__table_8cpp" startline="62" endline="102">TownItemTableMgr::Load</referencedby>
+        <referencedby refid="class_skill_table_mgr_1a113e3c8b9ec50d1c32e8aabf2d827dad" compoundref="_skill__table_8cpp" startline="67" endline="106">SkillTableMgr::LoadSkillFile</referencedby>
+        <referencedby refid="class_ti_xml_document_1ad09d17927f908f40efb406af2fb873be" compoundref="tinyxml_8h" startline="1422" endline="1422">TiXmlDocument::RootElement</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1aa0fecff1f3866ab33a8a25506e95db1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+        <definition>TiXmlElement* TiXmlNode::FirstChildElement</definition>
+        <argsstring>()</argsstring>
+        <name>FirstChildElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="658" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="658" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a0ec361bfef1cf1978d060295f597e0d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+        <definition>const TiXmlElement * TiXmlNode::FirstChildElement</definition>
+        <argsstring>(const char *_value) const </argsstring>
+        <name>FirstChildElement</name>
+        <param>
+          <type>const char *</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>Convenience function to get through elements. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="663" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="435" bodyend="447"/>
+        <references refid="class_ti_xml_node_1a44c8eee26bbe2d1b2762038df9dde2f0" compoundref="tinyxml_8h" startline="515">FirstChild</references>
+        <references refid="class_ti_xml_node_1af854baeba384f5fe9859f5aee03b548e" compoundref="tinyxml_8h" startline="624" endline="624">NextSibling</references>
+        <references refid="class_ti_xml_node_1a72abed96dc9667ab9e0a2a275301bb1c" compoundref="tinyxml_8h" startline="691" endline="690">ToElement</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a6936ae323675071808ac4840379e57f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+        <definition>TiXmlElement* TiXmlNode::FirstChildElement</definition>
+        <argsstring>(const char *_value)</argsstring>
+        <name>FirstChildElement</name>
+        <param>
+          <type>const char *</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="664" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="664" bodyend="666"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a57b99d5c97d67a42b9752f5210a1ba5e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int TiXmlNode::Type</definition>
+        <argsstring>() const </argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query the type (as an enumerated value, above) of this node. The possible types are: DOCUMENT, ELEMENT, COMMENT, UNKNOWN, TEXT, and DECLARATION. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="677" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="677" bodyend="677"/>
+        <references refid="class_ti_xml_node_1a2619c6379181c16ba95ae6922e2ca839" compoundref="tinyxml_8h" startline="749">type</references>
+        <referencedby refid="class_ti_xml_node_1a274db3292218202805c093f66a964cb5" compoundref="tinyxml_8cpp" startline="247" endline="276">InsertAfterChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a71e54e393336382bc9875f64aab5cb15" compoundref="tinyxml_8cpp" startline="215" endline="244">InsertBeforeChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1af287a913ce46d8dbf7ef24fec69bbaf0" compoundref="tinyxml_8cpp" startline="200" endline="212">InsertEndChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a1a881212554b759865f6cac79a851d38" compoundref="tinyxml_8cpp" startline="173" endline="197">LinkEndChild</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1aa66f4ebcd175204a168ed7c2d7b43071" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_ti_xml_document" kindref="compound">TiXmlDocument</ref> *</type>
+        <definition>const TiXmlDocument * TiXmlNode::GetDocument</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDocument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a pointer to the Document this node lives in. Returns null if not in a document. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="682" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="480" bodyend="490"/>
+        <references refid="class_ti_xml_node_1a662c4de61244e4fa5bd4e2d8c63143a5" compoundref="tinyxml_8h" startline="748">parent</references>
+        <references refid="class_ti_xml_node_1a8a4cda4b15c29f64cff419309aebed08" compoundref="tinyxml_8h" startline="690">ToDocument</references>
+        <referencedby refid="class_ti_xml_node_1ac1e3a8e7578be463b04617786120c2bb" compoundref="tinyxmlparser_8cpp" startline="819" endline="906">Identify</referencedby>
+        <referencedby refid="class_ti_xml_node_1a274db3292218202805c093f66a964cb5" compoundref="tinyxml_8cpp" startline="247" endline="276">InsertAfterChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a71e54e393336382bc9875f64aab5cb15" compoundref="tinyxml_8cpp" startline="215" endline="244">InsertBeforeChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1af287a913ce46d8dbf7ef24fec69bbaf0" compoundref="tinyxml_8cpp" startline="200" endline="212">InsertEndChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a1a881212554b759865f6cac79a851d38" compoundref="tinyxml_8cpp" startline="173" endline="197">LinkEndChild</referencedby>
+        <referencedby refid="class_ti_xml_element_1af95c9165159fd9dfdcc5b894a3fcf85b" compoundref="tinyxmlparser_8cpp" startline="1050" endline="1190">TiXmlElement::Parse</referencedby>
+        <referencedby refid="class_ti_xml_comment_1a43bddc18ac057734b41d84653b71d3e0" compoundref="tinyxmlparser_8cpp" startline="1351" endline="1374">TiXmlComment::Parse</referencedby>
+        <referencedby refid="class_ti_xml_text_1a8d2dcfa41fc73d3e62dacc2fcf633819" compoundref="tinyxmlparser_8cpp" startline="1486" endline="1534">TiXmlText::Parse</referencedby>
+        <referencedby refid="class_ti_xml_declaration_1a9839ea97ed687a2b7342fd7b0f04361b" compoundref="tinyxmlparser_8cpp" startline="1560" endline="1617">TiXmlDeclaration::Parse</referencedby>
+        <referencedby refid="class_ti_xml_unknown_1aa51c2694e4177b5f0b5429ee5a81b58d" compoundref="tinyxmlparser_8cpp" startline="1290" endline="1321">TiXmlUnknown::Parse</referencedby>
+        <referencedby refid="class_ti_xml_element_1ac786bce103042d3837c4cc2ff6967d41" compoundref="tinyxmlparser_8cpp" startline="1193" endline="1262">TiXmlElement::ReadValue</referencedby>
+        <referencedby refid="class_ti_xml_element_1abf0b3bd7f0e4c746a89ec6e7f101fc32" compoundref="tinyxml_8cpp" startline="706" endline="733">TiXmlElement::SetAttribute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a7b2372c0e7adfb32f5b6902fe49a39b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_document" kindref="compound">TiXmlDocument</ref> *</type>
+        <definition>TiXmlDocument* TiXmlNode::GetDocument</definition>
+        <argsstring>()</argsstring>
+        <name>GetDocument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="683" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="683" bodyend="685"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1aeed21ad30630ef6e7faf096127edc9f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TiXmlNode::NoChildren</definition>
+        <argsstring>() const </argsstring>
+        <name>NoChildren</name>
+        <briefdescription>
+<para>Returns true if this node has no children. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="688" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="688" bodyend="688"/>
+        <references refid="class_ti_xml_node_1af749fb7f22010b80e8f904c32653d50e" compoundref="tinyxml_8h" startline="751">firstChild</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a8a4cda4b15c29f64cff419309aebed08" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="class_ti_xml_document" kindref="compound">TiXmlDocument</ref> *</type>
+        <definition>virtual const TiXmlDocument* TiXmlNode::ToDocument</definition>
+        <argsstring>() const </argsstring>
+        <name>ToDocument</name>
+        <reimplementedby refid="class_ti_xml_document_1a1dc977bde3e4fe85a8eb9d88a35ef5a4">ToDocument</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="690" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="690" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_node_1aa66f4ebcd175204a168ed7c2d7b43071" compoundref="tinyxml_8cpp" startline="480" endline="490">GetDocument</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a72abed96dc9667ab9e0a2a275301bb1c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+        <definition>virtual const TiXmlElement* TiXmlNode::ToElement</definition>
+        <argsstring>() const </argsstring>
+        <name>ToElement</name>
+        <reimplementedby refid="class_ti_xml_element_1ac5b8d0e25fa23fd9acbb6d146082901c">ToElement</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="691" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="691" bodyend="690"/>
+        <referencedby refid="class_ti_xml_node_1ab1f8d8e70d88aea4c5efedfe00862d55" compoundref="tinyxml_8cpp" startline="420" endline="432">FirstChildElement</referencedby>
+        <referencedby refid="class_ti_xml_node_1a7667217e269e0da01d1f82aee94d1a3d" compoundref="tinyxml_8cpp" startline="450" endline="462">NextSiblingElement</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1aa0a5086f9eaee910bbfdc7f975e26574" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="class_ti_xml_comment" kindref="compound">TiXmlComment</ref> *</type>
+        <definition>virtual const TiXmlComment* TiXmlNode::ToComment</definition>
+        <argsstring>() const </argsstring>
+        <name>ToComment</name>
+        <reimplementedby refid="class_ti_xml_comment_1a00fb4215c20a2399ea05ac9b9e7e68a0">ToComment</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="692" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="692" bodyend="691"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1afd7205cf31d7a376929f8a36930627a2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="class_ti_xml_unknown" kindref="compound">TiXmlUnknown</ref> *</type>
+        <definition>virtual const TiXmlUnknown* TiXmlNode::ToUnknown</definition>
+        <argsstring>() const </argsstring>
+        <name>ToUnknown</name>
+        <reimplementedby refid="class_ti_xml_unknown_1ab0313e5fe77987d746ac1a97a254419d">ToUnknown</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="693" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="693" bodyend="692"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a95a46a52c525992d6b4ee08beb14cd69" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="class_ti_xml_text" kindref="compound">TiXmlText</ref> *</type>
+        <definition>virtual const TiXmlText* TiXmlNode::ToText</definition>
+        <argsstring>() const </argsstring>
+        <name>ToText</name>
+        <reimplementedby refid="class_ti_xml_text_1a895bf34ffad17f7439ab2a52b9651648">ToText</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="694" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="694" bodyend="693"/>
+        <referencedby refid="class_ti_xml_element_1aa6dedd8a146acf3b1bc0903deb2d411a" compoundref="tinyxml_8cpp" startline="860" endline="870">TiXmlElement::GetText</referencedby>
+        <referencedby refid="class_ti_xml_element_1ad9d0c008866982ab8d9aafae7e14d692" compoundref="tinyxml_8cpp" startline="760" endline="810">TiXmlElement::Print</referencedby>
+        <referencedby refid="class_ti_xml_printer_1a6dccaf5ee4979f13877690afe28721e8" compoundref="tinyxml_8cpp" startline="1753" endline="1787">TiXmlPrinter::VisitEnter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a9f43e6984fc7d4afd6eb32714c6b7b72" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="class_ti_xml_declaration" kindref="compound">TiXmlDeclaration</ref> *</type>
+        <definition>virtual const TiXmlDeclaration* TiXmlNode::ToDeclaration</definition>
+        <argsstring>() const </argsstring>
+        <name>ToDeclaration</name>
+        <reimplementedby refid="class_ti_xml_declaration_1a1e085d3fefd1dbf5ccdbff729931a967">ToDeclaration</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="695" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="695" bodyend="694"/>
+        <referencedby refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a6a4c8ac28ee7a745d059db6691e03bae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_ti_xml_document" kindref="compound">TiXmlDocument</ref> *</type>
+        <definition>virtual TiXmlDocument* TiXmlNode::ToDocument</definition>
+        <argsstring>()</argsstring>
+        <name>ToDocument</name>
+        <reimplementedby refid="class_ti_xml_document_1a1025d942a1f328fd742d545e37efdd42">ToDocument</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="697" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="697" bodyend="695"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1aa65d000223187d22a4dcebd7479e9ebc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+        <definition>virtual TiXmlElement* TiXmlNode::ToElement</definition>
+        <argsstring>()</argsstring>
+        <name>ToElement</name>
+        <reimplementedby refid="class_ti_xml_element_1a9def86337ea7a755eb41cac980f60c7a">ToElement</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="698" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="698" bodyend="697"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a383e06a0787f7063953934867990f849" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_ti_xml_comment" kindref="compound">TiXmlComment</ref> *</type>
+        <definition>virtual TiXmlComment* TiXmlNode::ToComment</definition>
+        <argsstring>()</argsstring>
+        <name>ToComment</name>
+        <reimplementedby refid="class_ti_xml_comment_1acc7c7e07e13c23f17797d642981511df">ToComment</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="699" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="699" bodyend="698"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a06de5af852668c7e4af0d09c205f0b0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_ti_xml_unknown" kindref="compound">TiXmlUnknown</ref> *</type>
+        <definition>virtual TiXmlUnknown* TiXmlNode::ToUnknown</definition>
+        <argsstring>()</argsstring>
+        <name>ToUnknown</name>
+        <reimplementedby refid="class_ti_xml_unknown_1a67c9fd22940e8c47f706a72cdd2e332c">ToUnknown</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="700" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="700" bodyend="699"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a3ddfbcac78fbea041fad57e5c6d60a03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_ti_xml_text" kindref="compound">TiXmlText</ref> *</type>
+        <definition>virtual TiXmlText* TiXmlNode::ToText</definition>
+        <argsstring>()</argsstring>
+        <name>ToText</name>
+        <reimplementedby refid="class_ti_xml_text_1ae7c3a8fd3e4dbf6c0c4363a943d72f5b">ToText</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="701" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="701" bodyend="700"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a4027136ca820ff4a636b607231b6a6df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_ti_xml_declaration" kindref="compound">TiXmlDeclaration</ref> *</type>
+        <definition>virtual TiXmlDeclaration* TiXmlNode::ToDeclaration</definition>
+        <argsstring>()</argsstring>
+        <name>ToDeclaration</name>
+        <reimplementedby refid="class_ti_xml_declaration_1a6bd3d1daddcaeb9543c24bfd090969ce">ToDeclaration</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="702" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="702" bodyend="701"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a4508cc3a2d7a98e96a54cc09c37a78a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>virtual TiXmlNode* TiXmlNode::Clone</definition>
+        <argsstring>() const =0</argsstring>
+        <name>Clone</name>
+        <reimplementedby refid="class_ti_xml_element_1a13f6df105ebb1e8dc636e75cc883be32">Clone</reimplementedby>
+        <reimplementedby refid="class_ti_xml_comment_1a4f6590c9c9a2b63a48972655b78eb853">Clone</reimplementedby>
+        <reimplementedby refid="class_ti_xml_text_1adde1869dfb029be50713fbfd8ce4d21f">Clone</reimplementedby>
+        <reimplementedby refid="class_ti_xml_declaration_1aff8231266d735943d8a7514a9c9822b9">Clone</reimplementedby>
+        <reimplementedby refid="class_ti_xml_unknown_1a675c4b2684af35e4c7649b7fd5ae598d">Clone</reimplementedby>
+        <reimplementedby refid="class_ti_xml_document_1ac9e8f09b23454d953b32d1b65cd1409e">Clone</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an exact duplicate of this node and return it. The memory must be deleted by the caller. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="707" column="1"/>
+        <referencedby refid="class_ti_xml_element_1a9e0c1983b840de4134f1f6bf7af00b0f" compoundref="tinyxml_8cpp" startline="813" endline="833">TiXmlElement::CopyTo</referencedby>
+        <referencedby refid="class_ti_xml_document_1af69deeb984e060bd00f668460dec8ef2" compoundref="tinyxml_8cpp" startline="1108" endline="1120">TiXmlDocument::CopyTo</referencedby>
+        <referencedby refid="class_ti_xml_node_1a274db3292218202805c093f66a964cb5" compoundref="tinyxml_8cpp" startline="247" endline="276">InsertAfterChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a71e54e393336382bc9875f64aab5cb15" compoundref="tinyxml_8cpp" startline="215" endline="244">InsertBeforeChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1af287a913ce46d8dbf7ef24fec69bbaf0" compoundref="tinyxml_8cpp" startline="200" endline="212">InsertEndChild</referencedby>
+        <referencedby refid="class_ti_xml_node_1a543208c2c801c84a213529541e904b9f" compoundref="tinyxml_8cpp" startline="279" endline="304">ReplaceChild</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1acc0f88b7462c6cb73809d410a4f5bb86" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool TiXmlNode::Accept</definition>
+        <argsstring>(TiXmlVisitor *visitor) const =0</argsstring>
+        <name>Accept</name>
+        <reimplementedby refid="class_ti_xml_element_1a31ab28cc3b892a69254391d6bbe08df3">Accept</reimplementedby>
+        <reimplementedby refid="class_ti_xml_comment_1a4382de0e50da973f11a23ea5852568bd">Accept</reimplementedby>
+        <reimplementedby refid="class_ti_xml_text_1a43b9954ebf679557fac1a4453f337b7c">Accept</reimplementedby>
+        <reimplementedby refid="class_ti_xml_declaration_1ab6a6b178161ba9abc2c35058de689864">Accept</reimplementedby>
+        <reimplementedby refid="class_ti_xml_unknown_1a4e54d7482e05a837cf83c925cc683380">Accept</reimplementedby>
+        <reimplementedby refid="class_ti_xml_document_1a3daab2f472418ef66315750202f762ae">Accept</reimplementedby>
+        <param>
+          <type><ref refid="class_ti_xml_visitor" kindref="compound">TiXmlVisitor</ref> *</type>
+          <declname>visitor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Accept a hierchical visit the nodes in the TinyXML DOM. Every node in the XML tree will be conditionally visited and the host will be called back via the <ref refid="class_ti_xml_visitor" kindref="compound">TiXmlVisitor</ref> interface.</para><para>This is essentially a SAX interface for TinyXML. (Note however it doesn&apos;t re-parse the XML for the callbacks, so the performance of TinyXML is unchanged by using this interface versus any other.)</para><para>The interface has been based on ideas from:</para><para><itemizedlist>
+<listitem><para><ulink url="http://www.saxproject.org/">http://www.saxproject.org/</ulink></para></listitem><listitem><para><ulink url="http://c2.com/cgi/wiki?HierarchicalVisitorPattern">http://c2.com/cgi/wiki?HierarchicalVisitorPattern</ulink></para></listitem></itemizedlist>
+</para><para>Which are both good references for &quot;visiting&quot;.</para><para>An example of using <ref refid="class_ti_xml_node_1acc0f88b7462c6cb73809d410a4f5bb86" kindref="member">Accept()</ref>: <verbatim>TiXmlPrinter printer;
+tinyxmlDoc.Accept( &amp;printer );
+const char* xmlcstr = printer.CStr();
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="731" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_ti_xml_node_1a3f46721695868667113c7487ff123f20" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TiXmlNode::TiXmlNode</definition>
+        <argsstring>(NodeType _type)</argsstring>
+        <name>TiXmlNode</name>
+        <param>
+          <type><ref refid="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2" kindref="member">NodeType</ref></type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="734" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="124" bodyend="132"/>
+        <references refid="class_ti_xml_node_1af749fb7f22010b80e8f904c32653d50e" compoundref="tinyxml_8h" startline="751">firstChild</references>
+        <references refid="class_ti_xml_node_1a5b30756d21b304580d22a841ec9d61f8" compoundref="tinyxml_8h" startline="752">lastChild</references>
+        <references refid="class_ti_xml_node_1a2f329cc993d2d34df76e17dcbb776b45" compoundref="tinyxml_8h" startline="757">next</references>
+        <references refid="class_ti_xml_node_1a662c4de61244e4fa5bd4e2d8c63143a5" compoundref="tinyxml_8h" startline="748">parent</references>
+        <references refid="class_ti_xml_node_1a9c5370ea2cbfd9f0e0f7b30a57fd68f5" compoundref="tinyxml_8h" startline="756">prev</references>
+        <references refid="class_ti_xml_node_1a2619c6379181c16ba95ae6922e2ca839" compoundref="tinyxml_8h" startline="749">type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1ab6056978923ad8350fb5164af32d8038" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlNode::CopyTo</definition>
+        <argsstring>(TiXmlNode *target) const </argsstring>
+        <name>CopyTo</name>
+        <param>
+          <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="738" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.cpp" bodystart="149" bodyend="153"/>
+        <references refid="class_ti_xml_node_1a2a38329ca5d3f28f98ce932b8299ae90" compoundref="tinyxml_8h" startline="501" endline="501">SetValue</references>
+        <references refid="class_ti_xml_base_1ab242c01590191f644569fa89a080d97c" compoundref="tinyxml_8h" startline="371">TiXmlBase::userData</references>
+        <references refid="class_ti_xml_node_1aead528b3cedc33c16a6c539872c7cc8b" compoundref="tinyxml_8h" startline="754">value</references>
+        <referencedby refid="class_ti_xml_element_1a9e0c1983b840de4134f1f6bf7af00b0f" compoundref="tinyxml_8cpp" startline="813" endline="833">TiXmlElement::CopyTo</referencedby>
+        <referencedby refid="class_ti_xml_comment_1a3175b2f27628f4fb7a043897930cd934" compoundref="tinyxml_8cpp" startline="1296" endline="1299">TiXmlComment::CopyTo</referencedby>
+        <referencedby refid="class_ti_xml_text_1adcec7d9b6fccfc5777452bb97e6031c1" compoundref="tinyxml_8cpp" startline="1341" endline="1345">TiXmlText::CopyTo</referencedby>
+        <referencedby refid="class_ti_xml_declaration_1a9d08959f935421a593032bd3efb30c38" compoundref="tinyxml_8cpp" startline="1427" endline="1434">TiXmlDeclaration::CopyTo</referencedby>
+        <referencedby refid="class_ti_xml_unknown_1a08ca7b225a2bcb604d3c72e199d33408" compoundref="tinyxml_8cpp" startline="1463" endline="1466">TiXmlUnknown::CopyTo</referencedby>
+        <referencedby refid="class_ti_xml_document_1af69deeb984e060bd00f668460dec8ef2" compoundref="tinyxml_8cpp" startline="1108" endline="1120">TiXmlDocument::CopyTo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1ac1e3a8e7578be463b04617786120c2bb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> *</type>
+        <definition>TiXmlNode * TiXmlNode::Identify</definition>
+        <argsstring>(const char *start, TiXmlEncoding encoding)</argsstring>
+        <name>Identify</name>
+        <param>
+          <type>const char *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96" kindref="member">TiXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="746" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxmlparser.cpp" bodystart="819" bodyend="906"/>
+        <references refid="class_ti_xml_node_1aa66f4ebcd175204a168ed7c2d7b43071" compoundref="tinyxml_8cpp" startline="480" endline="490">GetDocument</references>
+        <references refid="class_ti_xml_base_1ae22522b2e8e1ac43102d16394f639fc8" compoundref="tinyxmlparser_8cpp" startline="130" endline="148">TiXmlBase::IsAlpha</references>
+        <references refid="class_ti_xml_node_1a662c4de61244e4fa5bd4e2d8c63143a5" compoundref="tinyxml_8h" startline="748">parent</references>
+        <references refid="class_ti_xml_text_1acb17ff7c5d09b2c839393445a3de5ea9" compoundref="tinyxml_8h" startline="1211" endline="1211">TiXmlText::SetCDATA</references>
+        <references refid="class_ti_xml_document_1a735c23e318597b920c94eae77fa206de" compoundref="tinyxmlparser_8cpp" startline="799" endline="816">TiXmlDocument::SetError</references>
+        <references refid="class_ti_xml_base_1ac0c3d66d8a9e6996a1fa016275e16875" compoundref="tinyxmlparser_8cpp" startline="315" endline="363">TiXmlBase::SkipWhiteSpace</references>
+        <references refid="class_ti_xml_base_1a51631e6986179558b9e5850723ed165a" compoundref="tinyxmlparser_8cpp" startline="535" endline="573">TiXmlBase::StringEqual</references>
+        <references refid="tinyxml_8h_1a88d51847a13ee0f4b4d320d03d2c4d96a4f7cb4a48feb16284f2c1620454b3909" compoundref="tinyxml_8h" startline="161">TIXML_ENCODING_UNKNOWN</references>
+        <references refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba92e3bfc96126d3544f47e8b3f031e7bb" compoundref="tinyxml_8h" startline="260">TiXmlBase::TIXML_ERROR_OUT_OF_MEMORY</references>
+        <references refid="class_ti_xml_node_1ab6592e32cb9132be517cc12a70564c4b" compoundref="tinyxml_8h" startline="421">TiXmlElement</references>
+        <referencedby refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</referencedby>
+        <referencedby refid="class_ti_xml_element_1ac786bce103042d3837c4cc2ff6967d41" compoundref="tinyxmlparser_8cpp" startline="1193" endline="1262">TiXmlElement::ReadValue</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ti_xml_node_1a5ca3233e05032d121b13fac8273de68d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TiXmlNode::TiXmlNode</definition>
+        <argsstring>(const TiXmlNode &amp;)</argsstring>
+        <name>TiXmlNode</name>
+        <param>
+          <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="760" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_node_1a9eb62a8d95b8a98ec2df481cc9e5a7e2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlNode::operator=</definition>
+        <argsstring>(const TiXmlNode &amp;base)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> &amp;</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="761" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The parent class for everything in the Document Object Model. (Except for attributes). Nodes have siblings, a parent, and children. A node can be in a document, or stand on its own. The type of a <ref refid="class_ti_xml_node" kindref="compound">TiXmlNode</ref> can be queried, and it can be cast to its more defined type. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="9345">
+        <label>TiXmlDeclaration</label>
+        <link refid="class_ti_xml_declaration"/>
+        <childnode refid="9342" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9344">
+        <label>TiXmlComment</label>
+        <link refid="class_ti_xml_comment"/>
+        <childnode refid="9342" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9342">
+        <label>TiXmlNode</label>
+        <link refid="class_ti_xml_node"/>
+        <childnode refid="9343" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9346">
+        <label>TiXmlDocument</label>
+        <link refid="class_ti_xml_document"/>
+        <childnode refid="9342" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9349">
+        <label>TiXmlUnknown</label>
+        <link refid="class_ti_xml_unknown"/>
+        <childnode refid="9342" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9348">
+        <label>TiXmlText</label>
+        <link refid="class_ti_xml_text"/>
+        <childnode refid="9342" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9343">
+        <label>TiXmlBase</label>
+        <link refid="class_ti_xml_base"/>
+      </node>
+      <node id="9347">
+        <label>TiXmlElement</label>
+        <link refid="class_ti_xml_element"/>
+        <childnode refid="9342" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9352">
+        <label>TiXmlCursor</label>
+        <link refid="struct_ti_xml_cursor"/>
+      </node>
+      <node id="9350">
+        <label>TiXmlNode</label>
+        <link refid="class_ti_xml_node"/>
+        <childnode refid="9351" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9350" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>firstChild</edgelabel>
+          <edgelabel>lastChild</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="9351">
+        <label>TiXmlBase</label>
+        <link refid="class_ti_xml_base"/>
+        <childnode refid="9352" relation="usage">
+          <edgelabel>location</edgelabel>
+        </childnode>
+        <childnode refid="9353" relation="usage">
+          <edgelabel>entity</edgelabel>
+        </childnode>
+      </node>
+      <node id="9353">
+        <label>TiXmlBase::Entity</label>
+        <link refid="struct_ti_xml_base_1_1_entity"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" line="419" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinyxml.h" bodystart="418" bodyend="762"/>
+    <listofallmembers>
+      <member refid="class_ti_xml_node_1acc0f88b7462c6cb73809d410a4f5bb86" prot="public" virt="pure-virtual"><scope>TiXmlNode</scope><name>Accept</name></member>
+      <member refid="class_ti_xml_node_1a708e7f953df61d4d2d12f73171550a4b" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>Clear</name></member>
+      <member refid="class_ti_xml_node_1a4508cc3a2d7a98e96a54cc09c37a78a4" prot="public" virt="pure-virtual"><scope>TiXmlNode</scope><name>Clone</name></member>
+      <member refid="class_ti_xml_base_1ab54bfb9b70fe6dd276e7b279cab7f003" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>Column</name></member>
+      <member refid="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2a7737f35757c7152ca4f612d449ea0e4b" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>COMMENT</name></member>
+      <member refid="class_ti_xml_base_1a07c765e3a7f979d343e646ea797b180b" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>ConvertUTF32ToUTF8</name></member>
+      <member refid="class_ti_xml_node_1ab6056978923ad8350fb5164af32d8038" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>CopyTo</name></member>
+      <member refid="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2ac02445686c2b72d11385002b3466c28b" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>DECLARATION</name></member>
+      <member refid="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2a31b8d14e0558445bb40e36a532b24127" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>DOCUMENT</name></member>
+      <member refid="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2aaf2344bcea122ef52d47c4dcc357f070" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>ELEMENT</name></member>
+      <member refid="class_ti_xml_base_1a7ac8feec4100e446b3d78e1ac0659700" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>errorString</name></member>
+      <member refid="class_ti_xml_node_1af749fb7f22010b80e8f904c32653d50e" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>firstChild</name></member>
+      <member refid="class_ti_xml_node_1a44c8eee26bbe2d1b2762038df9dde2f0" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>FirstChild</name></member>
+      <member refid="class_ti_xml_node_1a5e97d69b7c0ebd27fb7286be56559b77" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>FirstChild</name></member>
+      <member refid="class_ti_xml_node_1ab5f722624113c8203227de4f56576d31" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>FirstChild</name></member>
+      <member refid="class_ti_xml_node_1abc8bf32be6419ec453a731868de19554" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>FirstChild</name></member>
+      <member refid="class_ti_xml_node_1ab1f8d8e70d88aea4c5efedfe00862d55" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>FirstChildElement</name></member>
+      <member refid="class_ti_xml_node_1aa0fecff1f3866ab33a8a25506e95db1d" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>FirstChildElement</name></member>
+      <member refid="class_ti_xml_node_1a0ec361bfef1cf1978d060295f597e0d9" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>FirstChildElement</name></member>
+      <member refid="class_ti_xml_node_1a6936ae323675071808ac4840379e57f5" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>FirstChildElement</name></member>
+      <member refid="class_ti_xml_base_1a5b0fde72d6f662ae1fd6303195d2159b" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>GetChar</name></member>
+      <member refid="class_ti_xml_node_1aa66f4ebcd175204a168ed7c2d7b43071" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>GetDocument</name></member>
+      <member refid="class_ti_xml_node_1a7b2372c0e7adfb32f5b6902fe49a39b2" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>GetDocument</name></member>
+      <member refid="class_ti_xml_base_1ac5c08bf3deffcda0bf8ce2958372b584" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>GetEntity</name></member>
+      <member refid="class_ti_xml_base_1a6559a530ca6763fc301a14d77ed28c17" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>GetUserData</name></member>
+      <member refid="class_ti_xml_base_1ad0120210e4680ef2088601753ce0ede4" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>GetUserData</name></member>
+      <member refid="class_ti_xml_node_1ac1e3a8e7578be463b04617786120c2bb" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>Identify</name></member>
+      <member refid="class_ti_xml_node_1a274db3292218202805c093f66a964cb5" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>InsertAfterChild</name></member>
+      <member refid="class_ti_xml_node_1a71e54e393336382bc9875f64aab5cb15" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>InsertBeforeChild</name></member>
+      <member refid="class_ti_xml_node_1af287a913ce46d8dbf7ef24fec69bbaf0" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>InsertEndChild</name></member>
+      <member refid="class_ti_xml_base_1ae22522b2e8e1ac43102d16394f639fc8" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>IsAlpha</name></member>
+      <member refid="class_ti_xml_base_1a321919055c115c78ded17f85a793f368" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>IsAlphaNum</name></member>
+      <member refid="class_ti_xml_base_1af56296d561c0bab4bc8e198cdcf5c48e" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>IsWhiteSpace</name></member>
+      <member refid="class_ti_xml_base_1a3de391ea9f4c4a8aa10d04480b048795" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>IsWhiteSpace</name></member>
+      <member refid="class_ti_xml_base_1ad4b1472531c647a25b1840a87ae42438" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>IsWhiteSpaceCondensed</name></member>
+      <member refid="class_ti_xml_node_1aaef7ac3978c4bb1cc8a24ffae7bced75" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>IterateChildren</name></member>
+      <member refid="class_ti_xml_node_1a2358e747118fdbf0e467b1e4f7d03de1" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>IterateChildren</name></member>
+      <member refid="class_ti_xml_node_1af2b86dbe25d3d26fa48180edc5e2a9fc" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>IterateChildren</name></member>
+      <member refid="class_ti_xml_node_1a67ba8275e533e6f76340236c42ea0aea" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>IterateChildren</name></member>
+      <member refid="class_ti_xml_node_1a6d671107e00cca1d28cb2d7f3a87a21e" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>LastChild</name></member>
+      <member refid="class_ti_xml_node_1a6432d2b2495f6caf9cb4278df706a031" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>LastChild</name></member>
+      <member refid="class_ti_xml_node_1acdd3fdc436aa7433023310a041e5e63f" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>LastChild</name></member>
+      <member refid="class_ti_xml_node_1abad5bf1059c48127b958711ef89e8e5d" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>LastChild</name></member>
+      <member refid="class_ti_xml_node_1a5b30756d21b304580d22a841ec9d61f8" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>lastChild</name></member>
+      <member refid="class_ti_xml_node_1a1a881212554b759865f6cac79a851d38" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>LinkEndChild</name></member>
+      <member refid="class_ti_xml_base_1a0d992580f3bc264909f898e942677a3c" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>location</name></member>
+      <member refid="class_ti_xml_node_1a2f329cc993d2d34df76e17dcbb776b45" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>next</name></member>
+      <member refid="class_ti_xml_node_1af854baeba384f5fe9859f5aee03b548e" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>NextSibling</name></member>
+      <member refid="class_ti_xml_node_1a4d05f7b1d7b470ac6887edd072d4892a" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>NextSibling</name></member>
+      <member refid="class_ti_xml_node_1acaf9dc17531ac041f602f9ad579573ea" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>NextSibling</name></member>
+      <member refid="class_ti_xml_node_1a4080bc5cc8a5c139e7cf308669e850fc" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>NextSibling</name></member>
+      <member refid="class_ti_xml_node_1a7667217e269e0da01d1f82aee94d1a3d" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>NextSiblingElement</name></member>
+      <member refid="class_ti_xml_node_1a1b211cb5034655a04358e0e2f6fc5010" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>NextSiblingElement</name></member>
+      <member refid="class_ti_xml_node_1a3d7897999f99cf4870dd59df6331d7ff" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>NextSiblingElement</name></member>
+      <member refid="class_ti_xml_node_1a6e1ac6b800e18049bc75e9f8e63a8e5f" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>NextSiblingElement</name></member>
+      <member refid="class_ti_xml_node_1aeed21ad30630ef6e7faf096127edc9f3" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>NoChildren</name></member>
+      <member refid="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>NodeType</name></member>
+      <member refid="class_ti_xml_node_1a9eb62a8d95b8a98ec2df481cc9e5a7e2" prot="private" virt="non-virtual"><scope>TiXmlNode</scope><name>operator=</name></member>
+      <member refid="class_ti_xml_node_1ab643043132ffd794f8602685d34a982e" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>Parent</name></member>
+      <member refid="class_ti_xml_node_1a78878709e53066f06eb4fcbcdd3a5260" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>Parent</name></member>
+      <member refid="class_ti_xml_node_1a662c4de61244e4fa5bd4e2d8c63143a5" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>parent</name></member>
+      <member refid="class_ti_xml_base_1a00e4edb0219d00a1379c856e5a1d2025" prot="public" virt="pure-virtual"><scope>TiXmlNode</scope><name>Parse</name></member>
+      <member refid="class_ti_xml_node_1a9c5370ea2cbfd9f0e0f7b30a57fd68f5" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>prev</name></member>
+      <member refid="class_ti_xml_node_1ac2cd892768726270e511b2ab32de4d10" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>PreviousSibling</name></member>
+      <member refid="class_ti_xml_node_1af8c0642ad6ecc03f62953e68896ed1cc" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>PreviousSibling</name></member>
+      <member refid="class_ti_xml_node_1abbb3b8c1f38fa7b9e52d584a4aeca795" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>PreviousSibling</name></member>
+      <member refid="class_ti_xml_node_1a6c977049207177ef21b51972315c2053" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>PreviousSibling</name></member>
+      <member refid="class_ti_xml_base_1a0de56b3f2ef14c65091a3b916437b512" prot="public" virt="pure-virtual"><scope>TiXmlNode</scope><name>Print</name></member>
+      <member refid="class_ti_xml_base_1a283ddc4f1f53a53e7111eff4e12a63d9" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>PutString</name></member>
+      <member refid="class_ti_xml_base_1a1c21a6ab5f7b503acd91f35f183734b3" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>ReadName</name></member>
+      <member refid="class_ti_xml_base_1aa646c74921aa33156968b802bbf5566e" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>ReadText</name></member>
+      <member refid="class_ti_xml_node_1ae19d8510efc90596552f4feeac9a8fbf" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>RemoveChild</name></member>
+      <member refid="class_ti_xml_node_1a543208c2c801c84a213529541e904b9f" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>ReplaceChild</name></member>
+      <member refid="class_ti_xml_base_1a024bceb070188df92c2a8d8852dd0853" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>Row</name></member>
+      <member refid="class_ti_xml_base_1a0f799ec645bfb8d8a969e83478f379c1" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>SetCondenseWhiteSpace</name></member>
+      <member refid="class_ti_xml_base_1ac6b3e0f790930d4970ec30764e937b5d" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>SetUserData</name></member>
+      <member refid="class_ti_xml_node_1a2a38329ca5d3f28f98ce932b8299ae90" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>SetValue</name></member>
+      <member refid="class_ti_xml_base_1ac0c3d66d8a9e6996a1fa016275e16875" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>SkipWhiteSpace</name></member>
+      <member refid="class_ti_xml_base_1a51631e6986179558b9e5850723ed165a" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>StringEqual</name></member>
+      <member refid="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2a672617f36c5606a966ac378e6ddc0fd8" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TEXT</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fbabcabc1b8efabeda1cc4352aa73d64390" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fbab345f3e42e6ae9cdedee2b95e4d461b9" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR_DOCUMENT_EMPTY</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba679b15d950f29257700a724bb118c34d" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR_DOCUMENT_TOP_ONLY</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fbade7edbad3a94a6c161cac2638f380e17" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR_EMBEDDED_NULL</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fbadcc31ca78a9d507a88c9fafb3d18a3c4" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR_FAILED_TO_READ_ELEMENT_NAME</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fbab803949b8f12e03b5b57f86d9c52b614" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR_OPENING_FILE</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba92e3bfc96126d3544f47e8b3f031e7bb" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR_OUT_OF_MEMORY</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fbaab2c858631b5d38eae1e6675949b9cd4" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR_PARSING_CDATA</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba72e3072a44be499edb89593f6ce10f6c" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR_PARSING_COMMENT</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba4c200f9d125027ab449e2be7be471ba0" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR_PARSING_DECLARATION</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba5cbfcf7fe5e67f0cd1aef98deac55dd2" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR_PARSING_ELEMENT</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba5f2aee664733a20f13f6f77556b9fa85" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR_PARSING_EMPTY</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba24c814fdcf1d84704869e6f76b19cb6e" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR_PARSING_UNKNOWN</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba670fac23171b64829f90639cc3696d6e" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR_READING_ATTRIBUTES</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fbafefdc75db23215e846605a2b5af0c2d3" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR_READING_ELEMENT_VALUE</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba175f7c72e2f9630bb96ef5137b325502" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR_READING_END_TAG</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba14552894942250efcec6b00dc52fc48a" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_ERROR_STRING_COUNT</name></member>
+      <member refid="class_ti_xml_base_1a645605650754ab74331c18d9106012fba750a76ca602241c416d5ec357d55fba1" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TIXML_NO_ERROR</name></member>
+      <member refid="class_ti_xml_base_1ac6753fe8a2c89669038fcf281cb301bf" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TiXmlBase</name></member>
+      <member refid="class_ti_xml_node_1a173617f6dfe902cf484ce5552b950475" prot="private" virt="non-virtual"><scope>TiXmlNode</scope><name>TiXmlDocument</name></member>
+      <member refid="class_ti_xml_node_1ab6592e32cb9132be517cc12a70564c4b" prot="private" virt="non-virtual"><scope>TiXmlNode</scope><name>TiXmlElement</name></member>
+      <member refid="class_ti_xml_node_1a3f46721695868667113c7487ff123f20" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>TiXmlNode</name></member>
+      <member refid="class_ti_xml_node_1a5ca3233e05032d121b13fac8273de68d" prot="private" virt="non-virtual"><scope>TiXmlNode</scope><name>TiXmlNode</name></member>
+      <member refid="class_ti_xml_node_1aa0a5086f9eaee910bbfdc7f975e26574" prot="public" virt="virtual"><scope>TiXmlNode</scope><name>ToComment</name></member>
+      <member refid="class_ti_xml_node_1a383e06a0787f7063953934867990f849" prot="public" virt="virtual"><scope>TiXmlNode</scope><name>ToComment</name></member>
+      <member refid="class_ti_xml_node_1a9f43e6984fc7d4afd6eb32714c6b7b72" prot="public" virt="virtual"><scope>TiXmlNode</scope><name>ToDeclaration</name></member>
+      <member refid="class_ti_xml_node_1a4027136ca820ff4a636b607231b6a6df" prot="public" virt="virtual"><scope>TiXmlNode</scope><name>ToDeclaration</name></member>
+      <member refid="class_ti_xml_node_1a8a4cda4b15c29f64cff419309aebed08" prot="public" virt="virtual"><scope>TiXmlNode</scope><name>ToDocument</name></member>
+      <member refid="class_ti_xml_node_1a6a4c8ac28ee7a745d059db6691e03bae" prot="public" virt="virtual"><scope>TiXmlNode</scope><name>ToDocument</name></member>
+      <member refid="class_ti_xml_node_1a72abed96dc9667ab9e0a2a275301bb1c" prot="public" virt="virtual"><scope>TiXmlNode</scope><name>ToElement</name></member>
+      <member refid="class_ti_xml_node_1aa65d000223187d22a4dcebd7479e9ebc" prot="public" virt="virtual"><scope>TiXmlNode</scope><name>ToElement</name></member>
+      <member refid="class_ti_xml_base_1a799f17405a86a5c2029618e85f11a097" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>ToLower</name></member>
+      <member refid="class_ti_xml_node_1a95a46a52c525992d6b4ee08beb14cd69" prot="public" virt="virtual"><scope>TiXmlNode</scope><name>ToText</name></member>
+      <member refid="class_ti_xml_node_1a3ddfbcac78fbea041fad57e5c6d60a03" prot="public" virt="virtual"><scope>TiXmlNode</scope><name>ToText</name></member>
+      <member refid="class_ti_xml_node_1afd7205cf31d7a376929f8a36930627a2" prot="public" virt="virtual"><scope>TiXmlNode</scope><name>ToUnknown</name></member>
+      <member refid="class_ti_xml_node_1a06de5af852668c7e4af0d09c205f0b0d" prot="public" virt="virtual"><scope>TiXmlNode</scope><name>ToUnknown</name></member>
+      <member refid="class_ti_xml_node_1a57b99d5c97d67a42b9752f5210a1ba5e" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>Type</name></member>
+      <member refid="class_ti_xml_node_1a2619c6379181c16ba95ae6922e2ca839" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>type</name></member>
+      <member refid="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2a8334037fb3fe05c67d6110975b38a8bf" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>TYPECOUNT</name></member>
+      <member refid="class_ti_xml_node_1a836eded4920ab9e9ef28496f48cd95a2af521ee2fb1e05705776b28fc55a70037" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>UNKNOWN</name></member>
+      <member refid="class_ti_xml_base_1ab242c01590191f644569fa89a080d97c" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>userData</name></member>
+      <member refid="class_ti_xml_base_1ac8c86058137bdb4b413c3eca58f2d467" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>utf8ByteTable</name></member>
+      <member refid="class_ti_xml_node_1a77943eb90d12c2892b1337a9f5918b41" prot="public" virt="non-virtual"><scope>TiXmlNode</scope><name>Value</name></member>
+      <member refid="class_ti_xml_node_1aead528b3cedc33c16a6c539872c7cc8b" prot="protected" virt="non-virtual"><scope>TiXmlNode</scope><name>value</name></member>
+      <member refid="class_ti_xml_base_1ad1837ecb25a913612fa1115f090cbb56" prot="public" virt="virtual"><scope>TiXmlNode</scope><name>~TiXmlBase</name></member>
+      <member refid="class_ti_xml_node_1a027a76cccd359c831ee4024b58c49625" prot="public" virt="virtual"><scope>TiXmlNode</scope><name>~TiXmlNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

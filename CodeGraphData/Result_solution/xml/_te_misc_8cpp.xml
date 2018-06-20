@@ -1,0 +1,797 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_te_misc_8cpp" kind="file">
+    <compoundname>TeMisc.cpp</compoundname>
+    <includes local="yes">EsType.h</includes>
+    <includes refid="_te_misc_8h" local="yes">TeMisc.h</includes>
+    <includes refid="_te_m_d5_check_8h" local="yes">TeMD5Check.h</includes>
+    <incdepgraph>
+      <node id="111319">
+        <label>TeMD5Check.inl</label>
+        <link refid="_te_m_d5_check_8inl"/>
+      </node>
+      <node id="111318">
+        <label>TeMD5Check.h</label>
+        <link refid="_te_m_d5_check_8h"/>
+        <childnode refid="111316" relation="include">
+        </childnode>
+        <childnode refid="111319" relation="include">
+        </childnode>
+      </node>
+      <node id="111316">
+        <label>TeMisc.h</label>
+        <link refid="_te_misc_8h"/>
+        <childnode refid="111317" relation="include">
+        </childnode>
+      </node>
+      <node id="111317">
+        <label>string.h</label>
+      </node>
+      <node id="111314">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp</label>
+        <link refid="TeMisc.cpp"/>
+        <childnode refid="111315" relation="include">
+        </childnode>
+        <childnode refid="111316" relation="include">
+        </childnode>
+        <childnode refid="111318" relation="include">
+        </childnode>
+      </node>
+      <node id="111315">
+        <label>EsType.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_te_misc_8cpp_1a72fa518096e79849c2d4a52a435ec8c7" prot="public" static="no">
+        <name>PRIVATE_CODE</name>
+        <initializer>&quot;4d034ab96a02aae99f6d245a324299a3&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="201" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="201" bodyend="-1"/>
+        <referencedby refid="_te_misc_8h_1a6855b9f2c9dec88a472b73a8a8272018" compoundref="_te_misc_8cpp" startline="211" endline="218">FilterText</referencedby>
+        <referencedby refid="_te_misc_8h_1a78e612f0c02ef20e32932111d877b4b2" compoundref="_te_misc_8cpp" startline="202" endline="209">IsFilterText</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6a" prot="public" static="no">
+        <name>TeEnDef</name>
+        <enumvalue id="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aaef2c1780660eb9bf4e474ab6aa42be3e" prot="public">
+          <name>TED_DIG_NUM</name>
+          <initializer>= (&apos;9&apos; - &apos;0&apos; + 1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa78692df271b25a7920404416cad1b698" prot="public">
+          <name>TED_LOW_NUM</name>
+          <initializer>= (&apos;z&apos; - &apos;a&apos; + 1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa70072dd39bc737e632b2fe111a336132" prot="public">
+          <name>TED_SUP_NUM</name>
+          <initializer>= (&apos;Z&apos; - &apos;A&apos; + 1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aaeb0178544024fb6f4ae794915046c1d5" prot="public">
+          <name>TED_DIG_POS</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa71af67e55f396d9db217b2840b743749" prot="public">
+          <name>TED_LOW_POS</name>
+          <initializer>= TED_DIG_NUM</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa651501fd4b8dc26fdab0db2cc22315d5" prot="public">
+          <name>TED_SUP_POS</name>
+          <initializer>= TED_LOW_POS + TED_LOW_NUM</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa53d47f46100946fb18ba58876058db3c" prot="public">
+          <name>TED_END_POS</name>
+          <initializer>= TED_SUP_POS + TED_SUP_NUM</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="9" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="8" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_te_misc_8cpp_1aaa5f63a9cec96ca8f6ad29cbd1cf6da3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Char2Index</definition>
+        <argsstring>(char cChar)</argsstring>
+        <name>Char2Index</name>
+        <param>
+          <type>char</type>
+          <declname>cChar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="20" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="20" bodyend="35"/>
+        <references refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aaeb0178544024fb6f4ae794915046c1d5" compoundref="_te_misc_8cpp" startline="14">TED_DIG_POS</references>
+        <references refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa71af67e55f396d9db217b2840b743749" compoundref="_te_misc_8cpp" startline="15">TED_LOW_POS</references>
+        <references refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa651501fd4b8dc26fdab0db2cc22315d5" compoundref="_te_misc_8cpp" startline="16">TED_SUP_POS</references>
+        <referencedby refid="_te_misc_8h_1a8f1731327f5b47bbeca3b57a7747973f" compoundref="_te_misc_8cpp" startline="86" endline="120">DecodePassword</referencedby>
+        <referencedby refid="_te_misc_8h_1a560f2e18f389437351b408bf5022e291" compoundref="_te_misc_8cpp" startline="56" endline="84">EncodePassword</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_te_misc_8cpp_1a6c2ce31062b4652417a057f66eb27cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char Index2Char</definition>
+        <argsstring>(int iIndex)</argsstring>
+        <name>Index2Char</name>
+        <param>
+          <type>int</type>
+          <declname>iIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="37" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="37" bodyend="54"/>
+        <references refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa53d47f46100946fb18ba58876058db3c" compoundref="_te_misc_8cpp" startline="17">TED_END_POS</references>
+        <references refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa71af67e55f396d9db217b2840b743749" compoundref="_te_misc_8cpp" startline="15">TED_LOW_POS</references>
+        <references refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa651501fd4b8dc26fdab0db2cc22315d5" compoundref="_te_misc_8cpp" startline="16">TED_SUP_POS</references>
+        <referencedby refid="_te_misc_8h_1a8f1731327f5b47bbeca3b57a7747973f" compoundref="_te_misc_8cpp" startline="86" endline="120">DecodePassword</referencedby>
+        <referencedby refid="_te_misc_8h_1a560f2e18f389437351b408bf5022e291" compoundref="_te_misc_8cpp" startline="56" endline="84">EncodePassword</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_te_misc_8cpp_1a560f2e18f389437351b408bf5022e291" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EncodePassword</definition>
+        <argsstring>(char *pcPassword)</argsstring>
+        <name>EncodePassword</name>
+        <param>
+          <type>char *</type>
+          <declname>pcPassword</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="56" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="56" bodyend="84"/>
+        <references refid="_te_misc_8cpp_1aaa5f63a9cec96ca8f6ad29cbd1cf6da3" compoundref="_te_misc_8cpp" startline="20" endline="35">Char2Index</references>
+        <references refid="_te_misc_8cpp_1a6c2ce31062b4652417a057f66eb27cbc" compoundref="_te_misc_8cpp" startline="37" endline="54">Index2Char</references>
+        <references refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa53d47f46100946fb18ba58876058db3c" compoundref="_te_misc_8cpp" startline="17">TED_END_POS</references>
+      </memberdef>
+      <memberdef kind="function" id="_te_misc_8cpp_1a8f1731327f5b47bbeca3b57a7747973f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DecodePassword</definition>
+        <argsstring>(char *pcPassword)</argsstring>
+        <name>DecodePassword</name>
+        <param>
+          <type>char *</type>
+          <declname>pcPassword</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="86" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="86" bodyend="120"/>
+        <references refid="_te_misc_8cpp_1aaa5f63a9cec96ca8f6ad29cbd1cf6da3" compoundref="_te_misc_8cpp" startline="20" endline="35">Char2Index</references>
+        <references refid="_te_misc_8cpp_1a6c2ce31062b4652417a057f66eb27cbc" compoundref="_te_misc_8cpp" startline="37" endline="54">Index2Char</references>
+        <references refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa53d47f46100946fb18ba58876058db3c" compoundref="_te_misc_8cpp" startline="17">TED_END_POS</references>
+      </memberdef>
+      <memberdef kind="function" id="_te_misc_8cpp_1ad9ef9f3cdb9424a235ee6a104f1fff02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EncodeData</definition>
+        <argsstring>(void *pkData, int iSize, Byte abyKey[])</argsstring>
+        <name>EncodeData</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>Byte</type>
+          <declname>abyKey</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="122" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="122" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="_te_misc_8cpp_1addbd658d05edeae92a94134441e575d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DecodeData</definition>
+        <argsstring>(void *pkData, int iSize, Byte abyKey[])</argsstring>
+        <name>DecodeData</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>Byte</type>
+          <declname>abyKey</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="144" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="144" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="_te_misc_8cpp_1aa5eb909ca5be77acc749cac0343a2694" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CompressData</definition>
+        <argsstring>(void *pkDst, int &amp;iDstSize, void *pkSrc, int iSrcSize)</argsstring>
+        <name>CompressData</name>
+        <param>
+          <type>void *</type>
+          <declname>pkDst</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>iDstSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkSrc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSrcSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="167" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="167" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="_te_misc_8cpp_1acae652504c8085ab694b1606d0d7b819" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UncompressData</definition>
+        <argsstring>(void *pkDst, int &amp;iDstSize, void *pkSrc, int iSrcSize)</argsstring>
+        <name>UncompressData</name>
+        <param>
+          <type>void *</type>
+          <declname>pkDst</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>iDstSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkSrc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSrcSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="174" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="174" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="_te_misc_8cpp_1a5ee28419303b2f147020250f145129cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetCRC32</definition>
+        <argsstring>(void *pkData, int iSize, int iOrgCrc)</argsstring>
+        <name>GetCRC32</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iOrgCrc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="181" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="181" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="_te_misc_8cpp_1aabf953ad61a495b9024aef916dd8bbd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+        <definition>const TeMD5&amp; GetMD5</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>GetMD5</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="188" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="188" bodyend="198"/>
+        <references refid="struct_te_m_d5_1a4a87587ff2453882ccfb8a1fe64b9b94" compoundref="_te_misc_8h" startline="53">TeMD5::abyMD5</references>
+        <references refid="_te_m_d5_check_8cpp_1af61c9a50ec82d67d009055d4444d2c33" compoundref="_te_m_d5_check_8cpp" startline="4">g_kMD5Check</references>
+        <references refid="class_te_m_d5_check_1ad565b8bc33b6b708dab35794265b25f5" compoundref="_te_m_d5_check_8cpp" startline="19" endline="46">TeMD5Check::GetMD5</references>
+        <referencedby refid="class_se_race_mgr_1ae7b8f0b07008c3a82b118ef3dd8bd5ea" compoundref="_race_server_2src_2_se_race_mgr_8cpp" startline="728" endline="750">SeRaceMgr::GenRaceID</referencedby>
+        <referencedby refid="class_global_server_1a342f1a57819ea63f16c403e3911ff1b0" compoundref="src_2_se_l_g_process_8cpp" startline="146" endline="231">GlobalServer::ProcessLG_PlayerLogin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_te_misc_8cpp_1a78e612f0c02ef20e32932111d877b4b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IsFilterText</definition>
+        <argsstring>(const char *pcText)</argsstring>
+        <name>IsFilterText</name>
+        <param>
+          <type>const char *</type>
+          <declname>pcText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="202" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="202" bodyend="209"/>
+        <references refid="_te_misc_8cpp_1a72fa518096e79849c2d4a52a435ec8c7" compoundref="_te_misc_8cpp" startline="201">PRIVATE_CODE</references>
+      </memberdef>
+      <memberdef kind="function" id="_te_misc_8cpp_1a6855b9f2c9dec88a472b73a8a8272018" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterText</definition>
+        <argsstring>(const char *pcText)</argsstring>
+        <name>FilterText</name>
+        <param>
+          <type>const char *</type>
+          <declname>pcText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="211" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="211" bodyend="218"/>
+        <references refid="_te_misc_8cpp_1a72fa518096e79849c2d4a52a435ec8c7" compoundref="_te_misc_8cpp" startline="201">PRIVATE_CODE</references>
+      </memberdef>
+      <memberdef kind="function" id="_te_misc_8cpp_1aba42072b3b92b37cd3c60a01d25312e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord GetClientVersion</definition>
+        <argsstring>(Byte *abyEncryptKey, Byte *abyClientVersion)</argsstring>
+        <name>GetClientVersion</name>
+        <param>
+          <type>Byte *</type>
+          <declname>abyEncryptKey</declname>
+        </param>
+        <param>
+          <type>Byte *</type>
+          <declname>abyClientVersion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="221" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="221" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="_te_misc_8cpp_1aa7f02cbb5cf161ad10f1a043288b85b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord GetClientNum</definition>
+        <argsstring>(Byte *abyEncryptKey, Byte *abyClientVersion)</argsstring>
+        <name>GetClientNum</name>
+        <param>
+          <type>Byte *</type>
+          <declname>abyEncryptKey</declname>
+        </param>
+        <param>
+          <type>Byte *</type>
+          <declname>abyClientVersion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="246" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="246" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="_te_misc_8cpp_1a191f931c44446ed55528abcf9c313215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DecryptData</definition>
+        <argsstring>(Byte *abyEncryptKey, Byte abyDstData[], int iDstLen, Byte abySrcData[])</argsstring>
+        <name>DecryptData</name>
+        <param>
+          <type>Byte *</type>
+          <declname>abyEncryptKey</declname>
+        </param>
+        <param>
+          <type>Byte</type>
+          <declname>abyDstData</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iDstLen</declname>
+        </param>
+        <param>
+          <type>Byte</type>
+          <declname>abySrcData</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" line="271" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp" bodystart="271" bodyend="306"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//#include<sp/>&quot;TeInclude.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;EsType.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_te_misc_8h" kindref="compound">TeMisc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;TeCompress.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;TeCrc32.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_te_m_d5_check_8h" kindref="compound">TeMD5Check.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6a" kindref="member">TeEnDef</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10" refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aaef2c1780660eb9bf4e474ab6aa42be3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aaef2c1780660eb9bf4e474ab6aa42be3e" kindref="member">TED_DIG_NUM</ref><sp/>=<sp/>(</highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal"><sp/>-<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>+<sp/>1),</highlight></codeline>
+<codeline lineno="11" refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa78692df271b25a7920404416cad1b698" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa78692df271b25a7920404416cad1b698" kindref="member">TED_LOW_NUM</ref><sp/>=<sp/>(</highlight><highlight class="charliteral">&apos;z&apos;</highlight><highlight class="normal"><sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal"><sp/>+<sp/>1),</highlight></codeline>
+<codeline lineno="12" refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa70072dd39bc737e632b2fe111a336132" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa70072dd39bc737e632b2fe111a336132" kindref="member">TED_SUP_NUM</ref><sp/>=<sp/>(</highlight><highlight class="charliteral">&apos;Z&apos;</highlight><highlight class="normal"><sp/>-<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal"><sp/>+<sp/>1),</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aaeb0178544024fb6f4ae794915046c1d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aaeb0178544024fb6f4ae794915046c1d5" kindref="member">TED_DIG_POS</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="15" refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa71af67e55f396d9db217b2840b743749" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa71af67e55f396d9db217b2840b743749" kindref="member">TED_LOW_POS</ref><sp/>=<sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aaef2c1780660eb9bf4e474ab6aa42be3e" kindref="member">TED_DIG_NUM</ref>,</highlight></codeline>
+<codeline lineno="16" refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa651501fd4b8dc26fdab0db2cc22315d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa651501fd4b8dc26fdab0db2cc22315d5" kindref="member">TED_SUP_POS</ref><sp/>=<sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa71af67e55f396d9db217b2840b743749" kindref="member">TED_LOW_POS</ref><sp/>+<sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa78692df271b25a7920404416cad1b698" kindref="member">TED_LOW_NUM</ref>,</highlight></codeline>
+<codeline lineno="17" refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa53d47f46100946fb18ba58876058db3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa53d47f46100946fb18ba58876058db3c" kindref="member">TED_END_POS</ref><sp/>=<sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa651501fd4b8dc26fdab0db2cc22315d5" kindref="member">TED_SUP_POS</ref><sp/>+<sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa70072dd39bc737e632b2fe111a336132" kindref="member">TED_SUP_NUM</ref>,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="_te_misc_8cpp_1aaa5f63a9cec96ca8f6ad29cbd1cf6da3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_te_misc_8cpp_1aaa5f63a9cec96ca8f6ad29cbd1cf6da3" kindref="member">Char2Index</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>cChar)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cChar<sp/>&gt;=<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>cChar<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aaeb0178544024fb6f4ae794915046c1d5" kindref="member">TED_DIG_POS</ref><sp/>+<sp/>cChar<sp/>-<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cChar<sp/>&gt;=<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>cChar<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;z&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa71af67e55f396d9db217b2840b743749" kindref="member">TED_LOW_POS</ref><sp/>+<sp/>cChar<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cChar<sp/>&gt;=<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>cChar<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;Z&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa651501fd4b8dc26fdab0db2cc22315d5" kindref="member">TED_SUP_POS</ref><sp/>+<sp/>cChar<sp/>-<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="_te_misc_8cpp_1a6c2ce31062b4652417a057f66eb27cbc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_te_misc_8cpp_1a6c2ce31062b4652417a057f66eb27cbc" kindref="member">Index2Char</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iIndex)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iIndex<sp/>&lt;<sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa71af67e55f396d9db217b2840b743749" kindref="member">TED_LOW_POS</ref>)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>+<sp/>iIndex;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iIndex<sp/>&lt;<sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa651501fd4b8dc26fdab0db2cc22315d5" kindref="member">TED_SUP_POS</ref>)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iIndex<sp/>-=<sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa71af67e55f396d9db217b2840b743749" kindref="member">TED_LOW_POS</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal"><sp/>+<sp/>iIndex;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iIndex<sp/>&lt;<sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa53d47f46100946fb18ba58876058db3c" kindref="member">TED_END_POS</ref>)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iIndex<sp/>-=<sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa651501fd4b8dc26fdab0db2cc22315d5" kindref="member">TED_SUP_POS</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal"><sp/>+<sp/>iIndex;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="_te_misc_8h_1a560f2e18f389437351b408bf5022e291" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_te_misc_8cpp_1a560f2e18f389437351b408bf5022e291" kindref="member">EncodePassword</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcPassword)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acEnChar[<ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa53d47f46100946fb18ba58876058db3c" kindref="member">TED_END_POS</ref>]<sp/>=<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>18,48,30,58,<sp/>1,43,17,25,<sp/>3,44,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>61,38,22,35,14,<sp/>0,50,28,23,21,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>45,54,29,52,41,12,42,<sp/>7,31,13,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>60,40,26,47,19,32,<sp/>2,53,37,<sp/>5,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>59,36,55,33,16,46,20,<sp/>9,34,<sp/>8,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>56,49,27,<sp/>4,39,10,51,15,11,57,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6,24</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/>(int)strlen(pcPassword);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;i<sp/>&lt;<sp/>iLen;i++)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iIndex<sp/>=<sp/><ref refid="_te_misc_8cpp_1aaa5f63a9cec96ca8f6ad29cbd1cf6da3" kindref="member">Char2Index</ref>(pcPassword[i]);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iIndex<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iIndex<sp/>+=<sp/>iLen<sp/>+<sp/>i<sp/>*<sp/>7;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iIndex<sp/>%=<sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa53d47f46100946fb18ba58876058db3c" kindref="member">TED_END_POS</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pcPassword[i]<sp/>=<sp/><ref refid="_te_misc_8cpp_1a6c2ce31062b4652417a057f66eb27cbc" kindref="member">Index2Char</ref>(iIndex);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="_te_misc_8h_1a8f1731327f5b47bbeca3b57a7747973f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_te_misc_8cpp_1a8f1731327f5b47bbeca3b57a7747973f" kindref="member">DecodePassword</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcPassword)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acDeChar[<ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa53d47f46100946fb18ba58876058db3c" kindref="member">TED_END_POS</ref>]<sp/>=<sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>15,<sp/>4,36,<sp/>8,53,39,60,27,49,47,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>55,58,25,29,14,57,44,<sp/>6,<sp/>0,34,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>46,19,12,18,61,<sp/>7,32,52,17,22,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2,28,35,43,48,13,41,38,11,54,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>31,24,26,<sp/>5,<sp/>9,20,45,33,<sp/>1,51,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>16,56,23,37,21,42,50,59,<sp/>3,40,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>30,10</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/>(int)strlen(pcPassword);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;i<sp/>&lt;<sp/>iLen;i++)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iIndex<sp/>=<sp/><ref refid="_te_misc_8cpp_1aaa5f63a9cec96ca8f6ad29cbd1cf6da3" kindref="member">Char2Index</ref>(pcPassword[i]);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iIndex<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iIndex<sp/>-=<sp/>iLen<sp/>+<sp/>i<sp/>*<sp/>7;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iIndex<sp/>%=<sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa53d47f46100946fb18ba58876058db3c" kindref="member">TED_END_POS</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iIndex<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iIndex<sp/>+=<sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa53d47f46100946fb18ba58876058db3c" kindref="member">TED_END_POS</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iIndex<sp/>%=<sp/><ref refid="_te_misc_8cpp_1a867a4787bac5073cc7fa866a0099bb6aa53d47f46100946fb18ba58876058db3c" kindref="member">TED_END_POS</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pcPassword[i]<sp/>=<sp/><ref refid="_te_misc_8cpp_1a6c2ce31062b4652417a057f66eb27cbc" kindref="member">Index2Char</ref>(iIndex);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>pcPassword[iLen]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="_te_misc_8cpp_1ad9ef9f3cdb9424a235ee6a104f1fff02" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_te_misc_8cpp_1ad9ef9f3cdb9424a235ee6a104f1fff02" kindref="member">EncodeData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize,Byte<sp/>abyKey[])</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!pkData<sp/>||<sp/>iSize<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>Byte*<sp/>pbyData<sp/>=<sp/>(Byte<sp/>*)pkData;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;i<sp/>&lt;<sp/>iSize;i++,pbyData++)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Byte<sp/>byData<sp/>=<sp/>*pbyData<sp/>^<sp/>abyKey[i<sp/>%<sp/>3];</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iBit<sp/>=<sp/>abyKey[(i<sp/>+<sp/>1)<sp/>%<sp/>3]<sp/>%<sp/>8;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iBit<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>byData<sp/>=<sp/>(byData<sp/>&lt;&lt;<sp/>iBit)<sp/>|<sp/>(byData<sp/>&gt;&gt;<sp/>(8<sp/>-<sp/>iBit));</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pbyData<sp/>=<sp/>byData;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="_te_misc_8cpp_1addbd658d05edeae92a94134441e575d9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_te_misc_8cpp_1addbd658d05edeae92a94134441e575d9" kindref="member">DecodeData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize,Byte<sp/>abyKey[])</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!pkData<sp/>||<sp/>iSize<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>Byte*<sp/>pbyData<sp/>=<sp/>(Byte<sp/>*)pkData;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;i<sp/>&lt;<sp/>iSize;i++,pbyData++)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Byte<sp/>byData<sp/>=<sp/>*pbyData;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iBit<sp/>=<sp/>abyKey[(i<sp/>+<sp/>1)<sp/>%<sp/>3]<sp/>%<sp/>8;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iBit<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>byData<sp/>=<sp/>(byData<sp/>&gt;&gt;<sp/>iBit)<sp/>|<sp/>(byData<sp/>&lt;&lt;<sp/>(8<sp/>-<sp/>iBit));</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pbyData<sp/>=<sp/>byData<sp/>^<sp/>abyKey[i<sp/>%<sp/>3];</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">//<sp/>压缩函数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="_te_misc_8h_1aa5eb909ca5be77acc749cac0343a2694" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_te_misc_8cpp_1aa5eb909ca5be77acc749cac0343a2694" kindref="member">CompressData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pkDst,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>iDstSize,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pkSrc,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSrcSize)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>Compress((Byte<sp/>*)pkDst,<sp/>(DWord<sp/>*)&amp;iDstSize,<sp/>(Byte<sp/>*)pkSrc,<sp/>(DWord)iSrcSize,<sp/>CL_DEFAULT_COMPRESS);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">//<sp/>解压缩函数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="_te_misc_8h_1acae652504c8085ab694b1606d0d7b819" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_te_misc_8cpp_1acae652504c8085ab694b1606d0d7b819" kindref="member">UncompressData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pkDst,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>iDstSize,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pkSrc,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSrcSize)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>Uncompress((Byte<sp/>*)pkDst,<sp/>(DWord<sp/>*)&amp;iDstSize,<sp/>(Byte<sp/>*)pkSrc,<sp/>(DWord)iSrcSize);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment">//<sp/>获取CRC32校验码</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="_te_misc_8h_1a6d94ae12b7ba066a8ad776c3cd292a4e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_te_misc_8cpp_1a5ee28419303b2f147020250f145129cb" kindref="member">GetCRC32</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iOrgCrc)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>g_kCRC32.GetCRC(pkData,iSize,iOrgCrc);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">//<sp/>获取MD5码</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="_te_misc_8h_1aabf953ad61a495b9024aef916dd8bbd0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/><ref refid="_te_misc_8cpp_1aabf953ad61a495b9024aef916dd8bbd0" kindref="member">GetMD5</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref><sp/>s_kMD5;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//for<sp/>(int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>16;<sp/>++i)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>s_kMD5.abyMD5[i]<sp/>=<sp/>rand()<sp/>%<sp/>128;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>todo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(s_kMD5.<ref refid="struct_te_m_d5_1a4a87587ff2453882ccfb8a1fe64b9b94" kindref="member">abyMD5</ref>,<ref refid="_te_m_d5_check_8cpp_1af61c9a50ec82d67d009055d4444d2c33" kindref="member">g_kMD5Check</ref>.<ref refid="class_te_m_d5_check_1ad565b8bc33b6b708dab35794265b25f5" kindref="member">GetMD5</ref>((Byte<sp/>*)pkData,iSize),16);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s_kMD5;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">//<sp/>额外的过滤函数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="_te_misc_8cpp_1a72fa518096e79849c2d4a52a435ec8c7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRIVATE_CODE<sp/>&quot;4d034ab96a02aae99f6d245a324299a3&quot;</highlight></codeline>
+<codeline lineno="202" refid="_te_misc_8h_1a78e612f0c02ef20e32932111d877b4b2" refkind="member"><highlight class="preprocessor"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_te_misc_8cpp_1a78e612f0c02ef20e32932111d877b4b2" kindref="member">IsFilterText</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcText)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pcText<sp/>&amp;&amp;<sp/>strcmp(pcText,<ref refid="_te_misc_8cpp_1a72fa518096e79849c2d4a52a435ec8c7" kindref="member">PRIVATE_CODE</ref>)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="_te_misc_8h_1a6855b9f2c9dec88a472b73a8a8272018" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_te_misc_8cpp_1a6855b9f2c9dec88a472b73a8a8272018" kindref="member">FilterText</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcText)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pcText<sp/>&amp;&amp;<sp/>strcmp(pcText,<ref refid="_te_misc_8cpp_1a72fa518096e79849c2d4a52a435ec8c7" kindref="member">PRIVATE_CODE</ref>)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(0);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment">//<sp/>获取客户端返回的版本号</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="_te_misc_8cpp_1aba42072b3b92b37cd3c60a01d25312e9" refkind="member"><highlight class="normal">DWord<sp/><ref refid="_te_misc_8cpp_1aba42072b3b92b37cd3c60a01d25312e9" kindref="member">GetClientVersion</ref>(Byte*<sp/>abyEncryptKey,Byte*<sp/>abyClientVersion)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>DWord<sp/>dwCheckSum<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>Byte*<sp/>abySrc<sp/>=<sp/>(Byte<sp/>*)&amp;dwCheckSum;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>DWord<sp/>dwEncryptKey<sp/>=<sp/>*((DWord<sp/>*)abyEncryptKey);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dwEncryptKey<sp/>%<sp/>18<sp/>&gt;=<sp/>9)</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrc[0]<sp/>=<sp/>abyClientVersion[1];</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrc[1]<sp/>=<sp/>abyClientVersion[3];</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrc[2]<sp/>=<sp/>abyClientVersion[5];</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrc[3]<sp/>=<sp/>abyClientVersion[7];</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrc[0]<sp/>=<sp/>abyClientVersion[0];</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrc[1]<sp/>=<sp/>abyClientVersion[2];</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrc[2]<sp/>=<sp/>abyClientVersion[4];</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrc[3]<sp/>=<sp/>abyClientVersion[6];</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>dwCheckSum<sp/>^=<sp/>dwEncryptKey;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>DWord<sp/>dwVersion<sp/>=<sp/>(dwCheckSum&gt;&gt;5)<sp/>|<sp/>(dwCheckSum&lt;&lt;27);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dwVersion;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="_te_misc_8cpp_1aa7f02cbb5cf161ad10f1a043288b85b6" refkind="member"><highlight class="normal">DWord<sp/><ref refid="_te_misc_8cpp_1aa7f02cbb5cf161ad10f1a043288b85b6" kindref="member">GetClientNum</ref>(Byte*<sp/>abyEncryptKey,Byte*<sp/>abyClientVersion)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>DWord<sp/>dwClientNum<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>Byte*<sp/>abySrc<sp/>=<sp/>(Byte<sp/>*)&amp;dwClientNum;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>DWord<sp/>dwEncryptKey<sp/>=<sp/>*((DWord<sp/>*)abyEncryptKey);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dwEncryptKey<sp/>%<sp/>18<sp/>&gt;=<sp/>9)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrc[0]<sp/>=<sp/>abyClientVersion[0];</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrc[1]<sp/>=<sp/>abyClientVersion[2];</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrc[2]<sp/>=<sp/>abyClientVersion[4];</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrc[3]<sp/>=<sp/>abyClientVersion[6];</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrc[0]<sp/>=<sp/>abyClientVersion[1];</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrc[1]<sp/>=<sp/>abyClientVersion[3];</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrc[2]<sp/>=<sp/>abyClientVersion[5];</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrc[3]<sp/>=<sp/>abyClientVersion[7];</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>dwClientNum<sp/>^=<sp/>dwEncryptKey;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>Byte<sp/>byClientNum<sp/>=<sp/>abySrc[dwEncryptKey<sp/>%<sp/>4];</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>byClientNum;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271" refid="_te_misc_8cpp_1a191f931c44446ed55528abcf9c313215" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_te_misc_8cpp_1a191f931c44446ed55528abcf9c313215" kindref="member">DecryptData</ref>(Byte*<sp/>abyEncryptKey,Byte<sp/>abyDstData[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iDstLen,Byte<sp/>abySrcData[])</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iDstLen<sp/>&lt;<sp/>8)</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(abyEncryptKey[0]<sp/>==<sp/>0)<sp/><sp/><sp/>abyEncryptKey[0]<sp/>=<sp/>0x19;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(abyEncryptKey[1]<sp/>==<sp/>0)<sp/><sp/><sp/>abyEncryptKey[1]<sp/>=<sp/>0x80;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(abyEncryptKey[2]<sp/>==<sp/>0)<sp/><sp/><sp/>abyEncryptKey[2]<sp/>=<sp/>0x10;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(abyEncryptKey[3]<sp/>==<sp/>0)<sp/><sp/><sp/>abyEncryptKey[3]<sp/>=<sp/>0x13;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>Byte<sp/>abyCRC[4]<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>abyCRC[0]<sp/>=<sp/>abyEncryptKey[0]<sp/>+<sp/>abyDstData[0];</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>abyCRC[1]<sp/>=<sp/>abyEncryptKey[1]<sp/>+<sp/>abyDstData[1];</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>abyCRC[2]<sp/>=<sp/>abyEncryptKey[2]<sp/>+<sp/>abyDstData[2];</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>abyCRC[3]<sp/>=<sp/>abyEncryptKey[3]<sp/>+<sp/>abyDstData[3];</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSrcLen<sp/>=<sp/>iDstLen<sp/>-<sp/>8;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;i<sp/>&lt;<sp/>iSrcLen;i++)</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abyCRC[i<sp/>%<sp/>4]<sp/>+=<sp/>abyDstData[8<sp/>+<sp/>i];</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>i<sp/>%<sp/>8;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>(i&lt;&lt;(7<sp/>-<sp/>j)|i&gt;&gt;j);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Byte<sp/>byKey<sp/>=<sp/>abyEncryptKey[i<sp/>%<sp/>4]<sp/>+<sp/>abyDstData[k<sp/>%<sp/>4]<sp/>+<sp/>k;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abySrcData[i]<sp/>=<sp/>abyDstData[8<sp/>+<sp/>i]<sp/>^<sp/>byKey;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(memcmp(abyCRC,abyDstData<sp/>+<sp/>4,4)<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/TeMisc.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_se_w_n_send_8inc" kind="file">
+    <compoundname>SeWNSend.inc</compoundname>
+    <includedby refid="_src_2_se_w_n_send_8cpp" local="yes">WorldServer/Src/SeWNSend.cpp</includedby>
+    <includedby refid="src_2_se_w_n_send_8cpp" local="yes">WorldServer/src/SeWNSend.cpp</includedby>
+    <invincdepgraph>
+      <node id="131059">
+        <label>WorldServer/src/SeWNSend.cpp</label>
+        <link refid="src_2_se_w_n_send_8cpp"/>
+      </node>
+      <node id="131058">
+        <label>WorldServer/Src/SeWNSend.cpp</label>
+        <link refid="_src_2_se_w_n_send_8cpp"/>
+      </node>
+      <node id="131057">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeWNSend.inc</label>
+        <link refid="SeWNSend.inc"/>
+        <childnode refid="131058" relation="include">
+        </childnode>
+        <childnode refid="131059" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_w_n_send_8inl_1a08fac955a125adad9d246fd657d67dab" kindref="member">SERVER::SendWN_RegisterRet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_se_server_define_8h_1a83f922065d39660cc6ff3ff3e193daa1" kindref="member">SeRegisterRet</ref>&amp;<sp/>eRegisterRet,DWord<sp/>dwAreaID,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_w_n___register_ret" kindref="compound">SeWN_RegisterRet</ref>);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_w_n___register_ret" kindref="compound">SeWN_RegisterRet</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_w_n___register_ret" kindref="compound">SeWN_RegisterRet</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_n___register_ret_1a43a0a39dc912a6406ab592ad8a55ee1d" kindref="member">eRegisterRet</ref><sp/>=<sp/>eRegisterRet;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_n___register_ret_1aac2d09319a3fed65f4497c9850d93939" kindref="member">dwAreaID</ref><sp/>=<sp/>dwAreaID;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_w_n_send_8inl_1a60b4408275b91db301a6e6ce207f6391" kindref="member">SendWNData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_w_n_send_8inl_1a07f63de384f8a305463b8fd0b65247e9" kindref="member">SERVER::SendWN_HeartPackageRet</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_w_n___heart_package_ret" kindref="compound">SeWN_HeartPackageRet</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_w_n___heart_package_ret" kindref="compound">SeWN_HeartPackageRet</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_w_n___heart_package_ret" kindref="compound">SeWN_HeartPackageRet</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_w_n_send_8inl_1a60b4408275b91db301a6e6ce207f6391" kindref="member">SendWNData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_w_n_send_8inl_1aa19d16424ade8b54f5050ca1d645c173" kindref="member">SERVER::SendWN_NexusFriendInfoSyn</ref>(DWord<sp/>dwPlayerID,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>acName,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iNum,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_se_nexus_friend_sync_info" kindref="compound">SeNexusFriendSyncInfo</ref>*<sp/>akNexusFriendSync,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_w_n___nexus_friend_info_syn" kindref="compound">SeWN_NexusFriendInfoSyn</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_w_n___nexus_friend_info_syn" kindref="compound">SeWN_NexusFriendInfoSyn</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_w_n___nexus_friend_info_syn" kindref="compound">SeWN_NexusFriendInfoSyn</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_n___nexus_friend_info_syn_1a92a0c21cef0e97b14aa6703b45ec971b" kindref="member">dwPlayerID</ref><sp/>=<sp/>dwPlayerID;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_se_tool_8cpp_1a4d30fbe56257fc998ebc1346e53be0d8" kindref="member">StrCpy</ref>(pkData-&gt;<ref refid="struct_se_w_n___nexus_friend_info_syn_1a08f86fec451e79d8e30505105e4159e3" kindref="member">acName</ref>,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(pkData-&gt;<ref refid="struct_se_w_n___nexus_friend_info_syn_1a08f86fec451e79d8e30505105e4159e3" kindref="member">acName</ref>),<sp/>acName);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_n___nexus_friend_info_syn_1aa2ef82c96526a65b472f281328a913c5" kindref="member">iNum</ref><sp/>=<sp/>iNum;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>iLen<sp/>=<sp/>offsetof(<ref refid="struct_se_w_n___nexus_friend_info_syn" kindref="compound">SeWN_NexusFriendInfoSyn</ref>,<sp/>akNexusFriendSync)<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_nexus_friend_sync_info" kindref="compound">SeNexusFriendSyncInfo</ref>)<sp/>*<sp/>max(100,<sp/>iNum);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>iNum;<sp/>++i)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_n___nexus_friend_info_syn_1a0ee7f99eea2eca7e5ac9dd0b45fc462a" kindref="member">akNexusFriendSync</ref>[i]<sp/>=<sp/>akNexusFriendSync[i];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_w_n_send_8inl_1a60b4408275b91db301a6e6ce207f6391" kindref="member">SendWNData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_w_n_send_8inl_1aa19d16424ade8b54f5050ca1d645c173" kindref="member">SERVER::SendWN_NexusFriendInfoSyn</ref>(DWord<sp/>dwPlayerID,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>acName,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iNum,std::vector&lt;SeNexusFriendSyncInfo&gt;&amp;<sp/>akNexusFriendSync,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_w_n___nexus_friend_info_syn" kindref="compound">SeWN_NexusFriendInfoSyn</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_w_n___nexus_friend_info_syn" kindref="compound">SeWN_NexusFriendInfoSyn</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_w_n___nexus_friend_info_syn" kindref="compound">SeWN_NexusFriendInfoSyn</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_n___nexus_friend_info_syn_1a92a0c21cef0e97b14aa6703b45ec971b" kindref="member">dwPlayerID</ref><sp/>=<sp/>dwPlayerID;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_se_tool_8cpp_1a4d30fbe56257fc998ebc1346e53be0d8" kindref="member">StrCpy</ref>(pkData-&gt;<ref refid="struct_se_w_n___nexus_friend_info_syn_1a08f86fec451e79d8e30505105e4159e3" kindref="member">acName</ref>,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(pkData-&gt;<ref refid="struct_se_w_n___nexus_friend_info_syn_1a08f86fec451e79d8e30505105e4159e3" kindref="member">acName</ref>),<sp/>acName);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_n___nexus_friend_info_syn_1aa2ef82c96526a65b472f281328a913c5" kindref="member">iNum</ref><sp/>=<sp/>iNum;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>iLen<sp/>=<sp/>offsetof(<ref refid="struct_se_w_n___nexus_friend_info_syn" kindref="compound">SeWN_NexusFriendInfoSyn</ref>,<sp/>akNexusFriendSync)<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_nexus_friend_sync_info" kindref="compound">SeNexusFriendSyncInfo</ref>)<sp/>*<sp/>max(100,<sp/>iNum);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iNum<sp/>&gt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)akNexusFriendSync.size())</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>iNum;<sp/>++i)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_n___nexus_friend_info_syn_1a0ee7f99eea2eca7e5ac9dd0b45fc462a" kindref="member">akNexusFriendSync</ref>[i]<sp/>=<sp/>akNexusFriendSync[i];</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_w_n_send_8inl_1a60b4408275b91db301a6e6ce207f6391" kindref="member">SendWNData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_w_n_send_8inl_1abc32c8bab2c12ae49a6572e937ba17f2" kindref="member">SERVER::SendWN_PlayerScoreNtf</ref>(DWord<sp/>dwPlayerID,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_se_ptl_comm_define_8h_1a747637046be33d7273262104aad8069d" kindref="member">MatchType</ref>&amp;<sp/>dwMatchType,DWord<sp/>dwScore,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_w_n___player_score_ntf" kindref="compound">SeWN_PlayerScoreNtf</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_w_n___player_score_ntf" kindref="compound">SeWN_PlayerScoreNtf</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_w_n___player_score_ntf" kindref="compound">SeWN_PlayerScoreNtf</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_n___player_score_ntf_1ab932bcd86a7733be1998ba1b8f99088a" kindref="member">dwPlayerID</ref><sp/>=<sp/>dwPlayerID;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_n___player_score_ntf_1a16e7b06c3063c0644a5b0f94d3d870f5" kindref="member">dwMatchType</ref><sp/>=<sp/>dwMatchType;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_n___player_score_ntf_1a5ee9c88df62e0e446aaf5e6e3b5cc1a8" kindref="member">dwScore</ref><sp/>=<sp/>dwScore;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_w_n_send_8inl_1a60b4408275b91db301a6e6ce207f6391" kindref="member">SendWNData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeWNSend.inc"/>
+  </compounddef>
+</doxygen>

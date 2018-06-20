@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_se_thread_msg_mgr" kind="class" prot="public">
+    <compoundname>SeThreadMsgMgr</compoundname>
+    <includes refid="_se_thread_msg_8h" local="no">SeThreadMsg.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_se_thread_msg_mgr_1a2678e077b8814d787c921143f8310d30" prot="protected" static="no" mutable="no">
+        <type>Es::NormalLock</type>
+        <definition>Es::NormalLock SeThreadMsgMgr::m_kLock</definition>
+        <argsstring></argsstring>
+        <name>m_kLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="51" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_se_thread_msg_mgr_1a52971b4c54d6823ac5fe4b3930a04187" compoundref="_se_thread_msg_8cpp" startline="117" endline="130">Empty</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1a17a52c12f2e4e958b566effa638ee534" compoundref="_se_thread_msg_8cpp" startline="132" endline="137">GetBuffSize</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1a143465b2c3e037cac44183f87355d23f" compoundref="_se_thread_msg_8cpp" startline="60" endline="82">PopMsg</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1a2138303823638539c975f7cd63cb46d4" compoundref="_se_thread_msg_8cpp" startline="36" endline="58">PushMsg</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_thread_msg_mgr_1a0c52130cdae4931432d76bf3805a42ab" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeThreadMsgMgr::m_iBufSize</definition>
+        <argsstring></argsstring>
+        <name>m_iBufSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="53" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="class_se_thread_msg_mgr_1a52971b4c54d6823ac5fe4b3930a04187" compoundref="_se_thread_msg_8cpp" startline="117" endline="130">Empty</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1ab7eebaf86f9b1a9145ec30efc692fcb1" compoundref="_se_thread_msg_8cpp" startline="139" endline="170">ExpandBuffer</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1a17a52c12f2e4e958b566effa638ee534" compoundref="_se_thread_msg_8cpp" startline="132" endline="137">GetBuffSize</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1ae74c5d933cc0cac0732d472c6df97107" compoundref="_se_thread_msg_8cpp" startline="28" endline="34">Initialize</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1a2138303823638539c975f7cd63cb46d4" compoundref="_se_thread_msg_8cpp" startline="36" endline="58">PushMsg</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1aebf3925c6c606415ad865c8624652e1f" compoundref="_se_thread_msg_8cpp" startline="7" endline="17">SeThreadMsgMgr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_thread_msg_mgr_1a95519e7443510e150302527afc39be4a" prot="protected" static="no" mutable="no">
+        <type>Byte *</type>
+        <definition>Byte* SeThreadMsgMgr::m_pbyBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_pbyBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="54" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="class_se_thread_msg_mgr_1a52971b4c54d6823ac5fe4b3930a04187" compoundref="_se_thread_msg_8cpp" startline="117" endline="130">Empty</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1ab7eebaf86f9b1a9145ec30efc692fcb1" compoundref="_se_thread_msg_8cpp" startline="139" endline="170">ExpandBuffer</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1ae74c5d933cc0cac0732d472c6df97107" compoundref="_se_thread_msg_8cpp" startline="28" endline="34">Initialize</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1a143465b2c3e037cac44183f87355d23f" compoundref="_se_thread_msg_8cpp" startline="60" endline="82">PopMsg</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1a2138303823638539c975f7cd63cb46d4" compoundref="_se_thread_msg_8cpp" startline="36" endline="58">PushMsg</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1aebf3925c6c606415ad865c8624652e1f" compoundref="_se_thread_msg_8cpp" startline="7" endline="17">SeThreadMsgMgr</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1ae9a567de79edbdaef44554604c629e24" compoundref="_se_thread_msg_8cpp" startline="19" endline="26">~SeThreadMsgMgr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_thread_msg_mgr_1adca197b88d1f86f843b687044f07cccf" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeThreadMsgMgr::m_iPushOffset</definition>
+        <argsstring></argsstring>
+        <name>m_iPushOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="55" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_se_thread_msg_mgr_1a52971b4c54d6823ac5fe4b3930a04187" compoundref="_se_thread_msg_8cpp" startline="117" endline="130">Empty</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1ab7eebaf86f9b1a9145ec30efc692fcb1" compoundref="_se_thread_msg_8cpp" startline="139" endline="170">ExpandBuffer</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1a143465b2c3e037cac44183f87355d23f" compoundref="_se_thread_msg_8cpp" startline="60" endline="82">PopMsg</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1a2138303823638539c975f7cd63cb46d4" compoundref="_se_thread_msg_8cpp" startline="36" endline="58">PushMsg</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1aebf3925c6c606415ad865c8624652e1f" compoundref="_se_thread_msg_8cpp" startline="7" endline="17">SeThreadMsgMgr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_thread_msg_mgr_1ae1f72cd1c0caf9398829f1e7a14c64b3" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeThreadMsgMgr::m_iPopOffset</definition>
+        <argsstring></argsstring>
+        <name>m_iPopOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="56" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_se_thread_msg_mgr_1a52971b4c54d6823ac5fe4b3930a04187" compoundref="_se_thread_msg_8cpp" startline="117" endline="130">Empty</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1a143465b2c3e037cac44183f87355d23f" compoundref="_se_thread_msg_8cpp" startline="60" endline="82">PopMsg</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1aebf3925c6c606415ad865c8624652e1f" compoundref="_se_thread_msg_8cpp" startline="7" endline="17">SeThreadMsgMgr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_thread_msg_mgr_1afe90b6eb46f8bb4c6f4b4682ae697882" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_se_msg_data" kindref="compound">SeMsgData</ref></type>
+        <definition>SeMsgData SeThreadMsgMgr::m_kTemMsgData</definition>
+        <argsstring></argsstring>
+        <name>m_kTemMsgData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="58" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="class_se_thread_msg_mgr_1a143465b2c3e037cac44183f87355d23f" compoundref="_se_thread_msg_8cpp" startline="60" endline="82">PopMsg</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1aebf3925c6c606415ad865c8624652e1f" compoundref="_se_thread_msg_8cpp" startline="7" endline="17">SeThreadMsgMgr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_thread_msg_mgr_1a3fc659ba392d64b0fde23c0481b576be" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeThreadMsgMgr::m_iCmdNum</definition>
+        <argsstring></argsstring>
+        <name>m_iCmdNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="59" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_se_thread_msg_mgr_1a350e41bb094ec646442bc8be25804cda" compoundref="_se_thread_msg_8h" startline="42" endline="42">GetCmdNum</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1a143465b2c3e037cac44183f87355d23f" compoundref="_se_thread_msg_8cpp" startline="60" endline="82">PopMsg</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1a2138303823638539c975f7cd63cb46d4" compoundref="_se_thread_msg_8cpp" startline="36" endline="58">PushMsg</referencedby>
+        <referencedby refid="class_se_thread_msg_mgr_1aebf3925c6c606415ad865c8624652e1f" compoundref="_se_thread_msg_8cpp" startline="7" endline="17">SeThreadMsgMgr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_se_thread_msg_mgr_1aebf3925c6c606415ad865c8624652e1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeThreadMsgMgr::SeThreadMsgMgr</definition>
+        <argsstring>()</argsstring>
+        <name>SeThreadMsgMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="32" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.cpp" bodystart="7" bodyend="17"/>
+        <references refid="class_se_thread_msg_mgr_1a0c52130cdae4931432d76bf3805a42ab" compoundref="_se_thread_msg_8h" startline="53">m_iBufSize</references>
+        <references refid="class_se_thread_msg_mgr_1a3fc659ba392d64b0fde23c0481b576be" compoundref="_se_thread_msg_8h" startline="59">m_iCmdNum</references>
+        <references refid="class_se_thread_msg_mgr_1ae1f72cd1c0caf9398829f1e7a14c64b3" compoundref="_se_thread_msg_8h" startline="56">m_iPopOffset</references>
+        <references refid="class_se_thread_msg_mgr_1adca197b88d1f86f843b687044f07cccf" compoundref="_se_thread_msg_8h" startline="55">m_iPushOffset</references>
+        <references refid="class_se_thread_msg_mgr_1afe90b6eb46f8bb4c6f4b4682ae697882" compoundref="_se_thread_msg_8h" startline="58">m_kTemMsgData</references>
+        <references refid="class_se_thread_msg_mgr_1a95519e7443510e150302527afc39be4a" compoundref="_se_thread_msg_8h" startline="54">m_pbyBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_msg_mgr_1ae9a567de79edbdaef44554604c629e24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeThreadMsgMgr::~SeThreadMsgMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~SeThreadMsgMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="33" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.cpp" bodystart="19" bodyend="26"/>
+        <references refid="class_se_thread_msg_mgr_1a95519e7443510e150302527afc39be4a" compoundref="_se_thread_msg_8h" startline="54">m_pbyBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_msg_mgr_1ae74c5d933cc0cac0732d472c6df97107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeThreadMsgMgr::Initialize</definition>
+        <argsstring>(int iBaseBuffSize)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type>int</type>
+          <declname>iBaseBuffSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="35" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.cpp" bodystart="28" bodyend="34"/>
+        <references refid="class_se_thread_msg_mgr_1a0c52130cdae4931432d76bf3805a42ab" compoundref="_se_thread_msg_8h" startline="53">m_iBufSize</references>
+        <references refid="class_se_thread_msg_mgr_1a95519e7443510e150302527afc39be4a" compoundref="_se_thread_msg_8h" startline="54">m_pbyBuffer</references>
+        <referencedby refid="class_se_log_thread_1acb994d982ec89ada3684a25bc29f2488" compoundref="_se_log_thread_8cpp" startline="22" endline="30">SeLogThread::Initialize</referencedby>
+        <referencedby refid="class_d_b_server_1a1ba3dcc5f2738939ec6d41e46aaea976" compoundref="_src_2_d_b_server_8cpp" startline="56" endline="93">DBServer::Initialize</referencedby>
+        <referencedby refid="class_race_service_1abfccad7fabdcc62ee709c93555eb3996" compoundref="src_2_race_service_8cpp" startline="23" endline="47">RaceService::Initialize</referencedby>
+        <referencedby refid="class_world_server_1aa1c10ee088e17e4046c812c31eabee41" compoundref="_src_2_world_server_8cpp" startline="332" endline="393">WorldServer::Initialize</referencedby>
+        <referencedby refid="class_block_server_1a2eb5cdb5aea3b9e25a5023f58e04eb82" compoundref="_src_2_block_server_8cpp" startline="27" endline="36">BlockServer::Initialize</referencedby>
+        <referencedby refid="class_race_server_1a0c77af41b0b3b16bf8809597d30e123e" compoundref="src_2_race_server_8cpp" startline="1028" endline="1051">RaceServer::InitializeRaceService</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_msg_mgr_1a2138303823638539c975f7cd63cb46d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeThreadMsgMgr::PushMsg</definition>
+        <argsstring>(void *pkData, int iSize)</argsstring>
+        <name>PushMsg</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="37" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.cpp" bodystart="36" bodyend="58"/>
+        <references refid="class_se_thread_msg_mgr_1ab7eebaf86f9b1a9145ec30efc692fcb1" compoundref="_se_thread_msg_8cpp" startline="139" endline="170">ExpandBuffer</references>
+        <references refid="struct_se_thread_msg_head_1a8ea695229145d0e48dfa8bb5731dad57" compoundref="_se_thread_msg_8h" startline="14">SeThreadMsgHead::iSize</references>
+        <references refid="class_se_thread_msg_mgr_1a0c52130cdae4931432d76bf3805a42ab" compoundref="_se_thread_msg_8h" startline="53">m_iBufSize</references>
+        <references refid="class_se_thread_msg_mgr_1a3fc659ba392d64b0fde23c0481b576be" compoundref="_se_thread_msg_8h" startline="59">m_iCmdNum</references>
+        <references refid="class_se_thread_msg_mgr_1adca197b88d1f86f843b687044f07cccf" compoundref="_se_thread_msg_8h" startline="55">m_iPushOffset</references>
+        <references refid="class_se_thread_msg_mgr_1a2678e077b8814d787c921143f8310d30" compoundref="_se_thread_msg_8h" startline="51">m_kLock</references>
+        <references refid="class_se_thread_msg_mgr_1a95519e7443510e150302527afc39be4a" compoundref="_se_thread_msg_8h" startline="54">m_pbyBuffer</references>
+        <references refid="_se_tool_8cpp_1a4697a1b0adee30e7c3810134c6cfe519" compoundref="_se_tool_8cpp" startline="76" endline="91">MemCpy</references>
+        <referencedby refid="class_se_log_thread_1a4276900530ef7395ddf072c1750686f7" compoundref="_se_log_thread_8cpp" startline="65" endline="68">SeLogThread::PushLog</referencedby>
+        <referencedby refid="class_block_server_1ac91eb53e557adc455b16e47090c6052b" compoundref="_src_2_block_server_8cpp" startline="151" endline="159">BlockServer::PushMsg</referencedby>
+        <referencedby refid="class_race_service_1a830024286ee919364c182cd9c61b4e7c" compoundref="src_2_race_service_8cpp" startline="336" endline="339">RaceService::PushMsg</referencedby>
+        <referencedby refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</referencedby>
+        <referencedby refid="class_world_server_1a1b7461fb321d30c8c2f51f58e8ef3847" compoundref="_src_2_se_world_other_8cpp" startline="377" endline="380">WorldServer::PushWSMsg</referencedby>
+        <referencedby refid="class_d_b_server_1a2b60f83f27671162e696c2dc7c31ea69" compoundref="_src_2_d_b_server_8cpp" startline="1314" endline="1332">DBServer::SendDBLog_SqlLog</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_msg_mgr_1a143465b2c3e037cac44183f87355d23f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_se_msg_data" kindref="compound">SeMsgData</ref> *</type>
+        <definition>SeMsgData * SeThreadMsgMgr::PopMsg</definition>
+        <argsstring>(void)</argsstring>
+        <name>PopMsg</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="38" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.cpp" bodystart="60" bodyend="82"/>
+        <references refid="struct_se_msg_data_1ab6577c6c65bcf31204ca984053313335" compoundref="_se_thread_msg_8h" startline="26">SeMsgData::abyData</references>
+        <references refid="struct_se_thread_msg_head_1a8ea695229145d0e48dfa8bb5731dad57" compoundref="_se_thread_msg_8h" startline="14">SeThreadMsgHead::iSize</references>
+        <references refid="struct_se_msg_data_1aecd603d6ee9e3ec757d167f364508db0" compoundref="_se_thread_msg_8h" startline="25">SeMsgData::iSize</references>
+        <references refid="class_se_thread_msg_mgr_1a3fc659ba392d64b0fde23c0481b576be" compoundref="_se_thread_msg_8h" startline="59">m_iCmdNum</references>
+        <references refid="class_se_thread_msg_mgr_1ae1f72cd1c0caf9398829f1e7a14c64b3" compoundref="_se_thread_msg_8h" startline="56">m_iPopOffset</references>
+        <references refid="class_se_thread_msg_mgr_1adca197b88d1f86f843b687044f07cccf" compoundref="_se_thread_msg_8h" startline="55">m_iPushOffset</references>
+        <references refid="class_se_thread_msg_mgr_1a2678e077b8814d787c921143f8310d30" compoundref="_se_thread_msg_8h" startline="51">m_kLock</references>
+        <references refid="class_se_thread_msg_mgr_1afe90b6eb46f8bb4c6f4b4682ae697882" compoundref="_se_thread_msg_8h" startline="58">m_kTemMsgData</references>
+        <references refid="class_se_thread_msg_mgr_1a95519e7443510e150302527afc39be4a" compoundref="_se_thread_msg_8h" startline="54">m_pbyBuffer</references>
+        <referencedby refid="class_se_log_thread_1ad33887faaa910b8dc0bd274e5a946478" compoundref="_se_log_thread_8cpp" startline="32" endline="63">SeLogThread::DoWork</referencedby>
+        <referencedby refid="class_block_server_1ad14f698f2fd50cbf47963199b3c4acfe" compoundref="_src_2_block_server_8cpp" startline="38" endline="107">BlockServer::Update</referencedby>
+        <referencedby refid="class_race_service_1ace1c37675c9bc256b137d4860f57888f" compoundref="src_2_race_service_8cpp" startline="347" endline="359">RaceService::UpdateRSCMsg</referencedby>
+        <referencedby refid="class_race_server_1a1d04e77d743cd19eb6ac6b20f09bc855" compoundref="src_2_race_server_8cpp" startline="1388" endline="1396">RaceServer::UpdateRSMsg</referencedby>
+        <referencedby refid="class_world_server_1a6b7c9c2b1d41a292844c50f7a8719270" compoundref="_src_2_world_server_8cpp" startline="414" endline="421">WorldServer::UpdateWSMsg</referencedby>
+        <referencedby refid="class_d_b_server_1abfa0295559e2e6d1038058df15cb2be2" compoundref="_src_2_d_b_server_8cpp" startline="323" endline="346">DBServer::WriteLogUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_msg_mgr_1a7e10ee8eb285733048d2ecad36018817" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeThreadMsgMgr::PopMsg</definition>
+        <argsstring>(Byte *pkByte, int &amp;riSize)</argsstring>
+        <name>PopMsg</name>
+        <param>
+          <type>Byte *</type>
+          <declname>pkByte</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>riSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="39" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.cpp" bodystart="84" bodyend="115"/>
+        <references refid="struct_se_thread_msg_head_1a8ea695229145d0e48dfa8bb5731dad57" compoundref="_se_thread_msg_8h" startline="14">SeThreadMsgHead::iSize</references>
+        <references refid="class_se_thread_msg_mgr_1a3fc659ba392d64b0fde23c0481b576be" compoundref="_se_thread_msg_8h" startline="59">m_iCmdNum</references>
+        <references refid="class_se_thread_msg_mgr_1ae1f72cd1c0caf9398829f1e7a14c64b3" compoundref="_se_thread_msg_8h" startline="56">m_iPopOffset</references>
+        <references refid="class_se_thread_msg_mgr_1adca197b88d1f86f843b687044f07cccf" compoundref="_se_thread_msg_8h" startline="55">m_iPushOffset</references>
+        <references refid="class_se_thread_msg_mgr_1a2678e077b8814d787c921143f8310d30" compoundref="_se_thread_msg_8h" startline="51">m_kLock</references>
+        <references refid="class_se_thread_msg_mgr_1a95519e7443510e150302527afc39be4a" compoundref="_se_thread_msg_8h" startline="54">m_pbyBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_msg_mgr_1a52971b4c54d6823ac5fe4b3930a04187" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeThreadMsgMgr::Empty</definition>
+        <argsstring>(void)</argsstring>
+        <name>Empty</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="40" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.cpp" bodystart="117" bodyend="130"/>
+        <references refid="class_se_thread_msg_mgr_1a0c52130cdae4931432d76bf3805a42ab" compoundref="_se_thread_msg_8h" startline="53">m_iBufSize</references>
+        <references refid="class_se_thread_msg_mgr_1ae1f72cd1c0caf9398829f1e7a14c64b3" compoundref="_se_thread_msg_8h" startline="56">m_iPopOffset</references>
+        <references refid="class_se_thread_msg_mgr_1adca197b88d1f86f843b687044f07cccf" compoundref="_se_thread_msg_8h" startline="55">m_iPushOffset</references>
+        <references refid="class_se_thread_msg_mgr_1a2678e077b8814d787c921143f8310d30" compoundref="_se_thread_msg_8h" startline="51">m_kLock</references>
+        <references refid="class_se_thread_msg_mgr_1a95519e7443510e150302527afc39be4a" compoundref="_se_thread_msg_8h" startline="54">m_pbyBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_msg_mgr_1a350e41bb094ec646442bc8be25804cda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SeThreadMsgMgr::GetCmdNum</definition>
+        <argsstring>()</argsstring>
+        <name>GetCmdNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="42" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" bodystart="42" bodyend="42"/>
+        <references refid="class_se_thread_msg_mgr_1a3fc659ba392d64b0fde23c0481b576be" compoundref="_se_thread_msg_8h" startline="59">m_iCmdNum</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_msg_mgr_1a17a52c12f2e4e958b566effa638ee534" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SeThreadMsgMgr::GetBuffSize</definition>
+        <argsstring>()</argsstring>
+        <name>GetBuffSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="45" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.cpp" bodystart="132" bodyend="137"/>
+        <references refid="class_se_thread_msg_mgr_1a0c52130cdae4931432d76bf3805a42ab" compoundref="_se_thread_msg_8h" startline="53">m_iBufSize</references>
+        <references refid="class_se_thread_msg_mgr_1a2678e077b8814d787c921143f8310d30" compoundref="_se_thread_msg_8h" startline="51">m_kLock</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_se_thread_msg_mgr_1ab7eebaf86f9b1a9145ec30efc692fcb1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeThreadMsgMgr::ExpandBuffer</definition>
+        <argsstring>(int iSize)</argsstring>
+        <name>ExpandBuffer</name>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="48" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.cpp" bodystart="139" bodyend="170"/>
+        <references refid="class_se_thread_msg_mgr_1a0c52130cdae4931432d76bf3805a42ab" compoundref="_se_thread_msg_8h" startline="53">m_iBufSize</references>
+        <references refid="class_se_thread_msg_mgr_1adca197b88d1f86f843b687044f07cccf" compoundref="_se_thread_msg_8h" startline="55">m_iPushOffset</references>
+        <references refid="class_se_thread_msg_mgr_1a95519e7443510e150302527afc39be4a" compoundref="_se_thread_msg_8h" startline="54">m_pbyBuffer</references>
+        <references refid="_se_file_log_8h_1ab19c516672348b15ddabafb0bfb9d0a7" compoundref="_se_file_log_8h" startline="89">SeLogDebug</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <referencedby refid="class_se_thread_msg_mgr_1a2138303823638539c975f7cd63cb46d4" compoundref="_se_thread_msg_8cpp" startline="36" endline="58">PushMsg</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7765">
+        <label>SeThreadMsgMgr</label>
+        <link refid="class_se_thread_msg_mgr"/>
+        <childnode refid="7766" relation="usage">
+          <edgelabel>m_kTemMsgData</edgelabel>
+        </childnode>
+      </node>
+      <node id="7766">
+        <label>SeMsgData</label>
+        <link refid="struct_se_msg_data"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" line="30" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeThreadMsg.h" bodystart="29" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_se_thread_msg_mgr_1a52971b4c54d6823ac5fe4b3930a04187" prot="public" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>Empty</name></member>
+      <member refid="class_se_thread_msg_mgr_1ab7eebaf86f9b1a9145ec30efc692fcb1" prot="protected" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>ExpandBuffer</name></member>
+      <member refid="class_se_thread_msg_mgr_1a17a52c12f2e4e958b566effa638ee534" prot="public" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>GetBuffSize</name></member>
+      <member refid="class_se_thread_msg_mgr_1a350e41bb094ec646442bc8be25804cda" prot="public" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>GetCmdNum</name></member>
+      <member refid="class_se_thread_msg_mgr_1ae74c5d933cc0cac0732d472c6df97107" prot="public" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>Initialize</name></member>
+      <member refid="class_se_thread_msg_mgr_1a0c52130cdae4931432d76bf3805a42ab" prot="protected" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>m_iBufSize</name></member>
+      <member refid="class_se_thread_msg_mgr_1a3fc659ba392d64b0fde23c0481b576be" prot="protected" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>m_iCmdNum</name></member>
+      <member refid="class_se_thread_msg_mgr_1ae1f72cd1c0caf9398829f1e7a14c64b3" prot="protected" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>m_iPopOffset</name></member>
+      <member refid="class_se_thread_msg_mgr_1adca197b88d1f86f843b687044f07cccf" prot="protected" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>m_iPushOffset</name></member>
+      <member refid="class_se_thread_msg_mgr_1a2678e077b8814d787c921143f8310d30" prot="protected" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>m_kLock</name></member>
+      <member refid="class_se_thread_msg_mgr_1afe90b6eb46f8bb4c6f4b4682ae697882" prot="protected" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>m_kTemMsgData</name></member>
+      <member refid="class_se_thread_msg_mgr_1a95519e7443510e150302527afc39be4a" prot="protected" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>m_pbyBuffer</name></member>
+      <member refid="class_se_thread_msg_mgr_1a143465b2c3e037cac44183f87355d23f" prot="public" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>PopMsg</name></member>
+      <member refid="class_se_thread_msg_mgr_1a7e10ee8eb285733048d2ecad36018817" prot="public" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>PopMsg</name></member>
+      <member refid="class_se_thread_msg_mgr_1a2138303823638539c975f7cd63cb46d4" prot="public" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>PushMsg</name></member>
+      <member refid="class_se_thread_msg_mgr_1aebf3925c6c606415ad865c8624652e1f" prot="public" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>SeThreadMsgMgr</name></member>
+      <member refid="class_se_thread_msg_mgr_1ae9a567de79edbdaef44554604c629e24" prot="public" virt="non-virtual"><scope>SeThreadMsgMgr</scope><name>~SeThreadMsgMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_town_item_table_mgr" kind="class" prot="public">
+    <compoundname>TownItemTableMgr</compoundname>
+    <includes refid="_town_item__table_8hpp" local="no">TownItem_table.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_town_item_table_mgr_1a1e152dfa8f07f6fc055622720edfa70d" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned int, <ref refid="struct_town_item_table" kindref="compound">TownItemTable</ref> * &gt;</type>
+        <definition>std::map&lt;unsigned int,TownItemTable*&gt; TownItemTableMgr::m_kTownItemTableMap</definition>
+        <argsstring></argsstring>
+        <name>m_kTownItemTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.hpp" line="1251" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.hpp" bodystart="1251" bodyend="-1"/>
+        <referencedby refid="class_town_item_table_mgr_1a14305963fb9cca88b45119cd59c90c2a" compoundref="_town_item__table_8cpp" startline="104" endline="385">FillData</referencedby>
+        <referencedby refid="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" compoundref="_town_item__table_8cpp" startline="42" endline="50">GetTownItemTable</referencedby>
+        <referencedby refid="class_town_item_table_mgr_1a8f79f5d8dfd613d7b2003dc0d673c0ff" compoundref="_town_item__table_8cpp" startline="26" endline="29">GetTownItemTableMap</referencedby>
+        <referencedby refid="class_town_item_table_mgr_1a62a47108e5f1104981a3637d001690cc" compoundref="_town_item__table_8cpp" startline="31" endline="40">GetTownItemTableVec</referencedby>
+        <referencedby refid="class_town_item_table_mgr_1a3f7845b0dc1e035b37f3d49a64eafe7b" compoundref="_town_item__table_8cpp" startline="57" endline="60">~TownItemTableMgr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_town_item_table_mgr_1a2765cf7d5e1833b94f63a0206a5557b7" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_town_item_table_mgr" kindref="compound">TownItemTableMgr</ref> *</type>
+        <definition>TownItemTableMgr * TownItemTableMgr::m_pkTownItemTableMgr</definition>
+        <argsstring></argsstring>
+        <name>m_pkTownItemTableMgr</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.hpp" line="1252" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.hpp" bodystart="1252" bodyend="-1"/>
+        <referencedby refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">Get</referencedby>
+        <referencedby refid="class_town_item_table_mgr_1ac0e7d9495faa7a17014804afcfea87c8" compoundref="_town_item__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_town_item_table_mgr" kindref="compound">TownItemTableMgr</ref> *</type>
+        <definition>TownItemTableMgr * TownItemTableMgr::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.hpp" line="1238" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.cpp" bodystart="6" bodyend="13"/>
+        <references refid="class_town_item_table_mgr_1a2765cf7d5e1833b94f63a0206a5557b7" compoundref="_town_item__table_8hpp" startline="1252">m_pkTownItemTableMgr</references>
+        <references refid="class_town_item_table_mgr_1ab2a131140826d518e58b9252b628aad5" compoundref="_town_item__table_8cpp" startline="52" endline="55">TownItemTableMgr</references>
+        <referencedby refid="class_c_item_mgr_1ae8e0377cde5732972c5869d98576ba1b" compoundref="_src_2_item_mgr_8cpp" startline="997" endline="1026">CItemMgr::AddItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a310acd889559341a8f360da79d3bf106" compoundref="_src_2_item_mgr_8cpp" startline="809" endline="894">CItemMgr::AddNewMultiItem</referencedby>
+        <referencedby refid="class_c_shop_1af16d650a4e31be0dafdbc3495485ef1c" compoundref="_src_2_shop_8cpp" startline="171" endline="244">CShop::BuyItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1af5880cf904902fd27716bf920ade1c88" compoundref="_src_2_item_mgr_8cpp" startline="545" endline="633">CItemMgr::ChangeCiTiao</referencedby>
+        <referencedby refid="class_c_item_mgr_1a5428c3f3553f9869853b15e6fae0f28b" compoundref="_src_2_item_mgr_8cpp" startline="783" endline="807">CItemMgr::CountNeedSlotNumByItemID</referencedby>
+        <referencedby refid="class_c_shop_1a663f5c6d1730e05821feab8055a7b962" compoundref="_src_2_shop_8cpp" startline="421" endline="505">CShop::CurrencyBuyItem_Diamond</referencedby>
+        <referencedby refid="class_c_shop_1a009df25456150f7a7ffcf66732bdc3a1" compoundref="_src_2_shop_8cpp" startline="338" endline="419">CShop::CurrencyBuyItem_Gold</referencedby>
+        <referencedby refid="class_c_item_mgr_1a248caadff7a02818823523daa027dfa1" compoundref="_src_2_item_mgr_8cpp" startline="1491" endline="1520">CItemMgr::decRespawnItem</referencedby>
+        <referencedby refid="_src_2_item_mgr_8cpp_1a5103eef4ff7ed5b5928aaaacde49140d" compoundref="_src_2_item_mgr_8cpp" startline="635" endline="690">GenerateAddedAttr</referencedby>
+        <referencedby refid="_src_2_item_mgr_8cpp_1a0d239e3019851bc899d583e7228f69c2" compoundref="_src_2_item_mgr_8cpp" startline="692" endline="728">GenerateAddedSkill</referencedby>
+        <referencedby refid="class_c_item_mgr_1a1578c6a5fa4ec12cb06f57031239877e" compoundref="_src_2_item_mgr_8cpp" startline="752" endline="780">CItemMgr::GetExistItemIndex</referencedby>
+        <referencedby refid="class_c_item_mgr_1abf7f3fd749d2e0bbe9ccb60c2c1d934c" compoundref="_src_2_item_mgr_8cpp" startline="1471" endline="1489">CItemMgr::getRespawnItemCount</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae30d35df373466d539c1cb8f6c34b71d" compoundref="_src_2_item_mgr_8cpp" startline="1524" endline="1558">CItemMgr::getSelectableAvatars</referencedby>
+        <referencedby refid="class_global_table_mgr_1a128abbc478c98e6c11a38da867742a34" compoundref="_global_table_mgr_8cpp" startline="203" endline="206">GlobalTableMgr::GetTownItemTable</referencedby>
+        <referencedby refid="class_c_shop_1a2ec67310fd1d851c809b0e01ae82fb35" compoundref="_src_2_shop_8cpp" startline="246" endline="286">CShop::GMModiItem</referencedby>
+        <referencedby refid="class_hero_mgr_1a95a298c7d6927414102db7dcae89ef82" compoundref="_src_2_hero_mgr_8cpp" startline="284" endline="318">HeroMgr::isValidAvatar</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1a55c5e1458eece92e6f5d6982ae0f088b" compoundref="_src_2_equip_schema_mgr_8cpp" startline="120" endline="137">EquipSchemaMgr::isValidEquip</referencedby>
+        <referencedby refid="class_c_item_mgr_1a323ebd3efe07f6f0b5ba60ceaf50db4a" compoundref="_src_2_item_mgr_8cpp" startline="896" endline="995">CItemMgr::ItemDepart</referencedby>
+        <referencedby refid="struct_c_item_1ac8447ab1df31981bec3c1e42d6a71d83" compoundref="_src_2_item_mgr_8cpp" startline="1132" endline="1240">CItem::loadData</referencedby>
+        <referencedby refid="class_c_item_mgr_1a87a78d8e3ef7acf5ee9f1c22b8a87716" compoundref="_src_2_item_mgr_8cpp" startline="44" endline="64">CItemMgr::loadData</referencedby>
+        <referencedby refid="class_table_mgr_1ae1ceeb5a4a6212a8497ef7dd92f87885" compoundref="_table_mgr_8h" startline="79" endline="132">TableMgr::LoadTable</referencedby>
+        <referencedby refid="class_se_player_1a5e7d4268435523a354b097868d805c66" compoundref="_world_server_2_src_2_se_player_8cpp" startline="773" endline="794">SePlayer::OnUseItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae2c680a6a6599c75076c85fcc9653bc5" compoundref="_src_2_item_mgr_8cpp" startline="1371" endline="1445">CItemMgr::openRandBox</referencedby>
+        <referencedby refid="class_block_server_1aae8eea54996be439672b6e569a2db5b1" compoundref="_src_2_se_w_b_l_process_8cpp" startline="694" endline="726">BlockServer::ProcessWBL_UserAlterNickNameReq</referencedby>
+        <referencedby refid="class_town_item_table_mgr_1ac0e7d9495faa7a17014804afcfea87c8" compoundref="_town_item__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+        <referencedby refid="struct_c_item_1a78a62a5fe370896e1afe98bab3898087" compoundref="_src_2_item_mgr_8cpp" startline="1272" endline="1343">CItem::saveData</referencedby>
+        <referencedby refid="class_c_item_mgr_1a42da54f383ba4e19914e723d63e24e89" compoundref="_src_2_item_mgr_8cpp" startline="380" endline="460">CItemMgr::StrenthEquip</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_town_item_table_mgr_1ac0e7d9495faa7a17014804afcfea87c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_town_item_table_mgr" kindref="compound">TownItemTableMgr</ref> *</type>
+        <definition>TownItemTableMgr * TownItemTableMgr::ReLoad</definition>
+        <argsstring>()</argsstring>
+        <name>ReLoad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.hpp" line="1239" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.cpp" bodystart="15" bodyend="23"/>
+        <references refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">Get</references>
+        <references refid="class_town_item_table_mgr_1a2765cf7d5e1833b94f63a0206a5557b7" compoundref="_town_item__table_8hpp" startline="1252">m_pkTownItemTableMgr</references>
+        <referencedby refid="class_table_mgr_1a6298f0e9b81636b481a25c06016e237a" compoundref="_table_mgr1_8cpp" startline="860" endline="914">TableMgr::ReloadTable</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_town_item_table_mgr_1ab2a131140826d518e58b9252b628aad5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TownItemTableMgr::TownItemTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>TownItemTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.hpp" line="1240" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.cpp" bodystart="52" bodyend="55"/>
+        <references refid="class_town_item_table_mgr_1a75b541cb98ad97b219724e7ca27e2524" compoundref="_town_item__table_8cpp" startline="62" endline="102">Load</references>
+        <referencedby refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">Get</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_town_item_table_mgr_1a3f7845b0dc1e035b37f3d49a64eafe7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TownItemTableMgr::~TownItemTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~TownItemTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.hpp" line="1241" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.cpp" bodystart="57" bodyend="60"/>
+        <references refid="class_town_item_table_mgr_1a1e152dfa8f07f6fc055622720edfa70d" compoundref="_town_item__table_8hpp" startline="1251">m_kTownItemTableMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_town_item_table" kindref="compound">TownItemTable</ref> *</type>
+        <definition>const TownItemTable * TownItemTableMgr::GetTownItemTable</definition>
+        <argsstring>(unsigned int iTypeID)</argsstring>
+        <name>GetTownItemTable</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>iTypeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.hpp" line="1243" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.cpp" bodystart="42" bodyend="50"/>
+        <references refid="class_town_item_table_mgr_1a1e152dfa8f07f6fc055622720edfa70d" compoundref="_town_item__table_8hpp" startline="1251">m_kTownItemTableMap</references>
+        <referencedby refid="class_c_item_mgr_1ae8e0377cde5732972c5869d98576ba1b" compoundref="_src_2_item_mgr_8cpp" startline="997" endline="1026">CItemMgr::AddItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a310acd889559341a8f360da79d3bf106" compoundref="_src_2_item_mgr_8cpp" startline="809" endline="894">CItemMgr::AddNewMultiItem</referencedby>
+        <referencedby refid="class_c_shop_1af16d650a4e31be0dafdbc3495485ef1c" compoundref="_src_2_shop_8cpp" startline="171" endline="244">CShop::BuyItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1af5880cf904902fd27716bf920ade1c88" compoundref="_src_2_item_mgr_8cpp" startline="545" endline="633">CItemMgr::ChangeCiTiao</referencedby>
+        <referencedby refid="class_c_item_mgr_1a5428c3f3553f9869853b15e6fae0f28b" compoundref="_src_2_item_mgr_8cpp" startline="783" endline="807">CItemMgr::CountNeedSlotNumByItemID</referencedby>
+        <referencedby refid="class_c_shop_1a663f5c6d1730e05821feab8055a7b962" compoundref="_src_2_shop_8cpp" startline="421" endline="505">CShop::CurrencyBuyItem_Diamond</referencedby>
+        <referencedby refid="class_c_shop_1a009df25456150f7a7ffcf66732bdc3a1" compoundref="_src_2_shop_8cpp" startline="338" endline="419">CShop::CurrencyBuyItem_Gold</referencedby>
+        <referencedby refid="class_c_item_mgr_1a248caadff7a02818823523daa027dfa1" compoundref="_src_2_item_mgr_8cpp" startline="1491" endline="1520">CItemMgr::decRespawnItem</referencedby>
+        <referencedby refid="_src_2_item_mgr_8cpp_1a5103eef4ff7ed5b5928aaaacde49140d" compoundref="_src_2_item_mgr_8cpp" startline="635" endline="690">GenerateAddedAttr</referencedby>
+        <referencedby refid="_src_2_item_mgr_8cpp_1a0d239e3019851bc899d583e7228f69c2" compoundref="_src_2_item_mgr_8cpp" startline="692" endline="728">GenerateAddedSkill</referencedby>
+        <referencedby refid="class_c_item_mgr_1a1578c6a5fa4ec12cb06f57031239877e" compoundref="_src_2_item_mgr_8cpp" startline="752" endline="780">CItemMgr::GetExistItemIndex</referencedby>
+        <referencedby refid="class_c_item_mgr_1abf7f3fd749d2e0bbe9ccb60c2c1d934c" compoundref="_src_2_item_mgr_8cpp" startline="1471" endline="1489">CItemMgr::getRespawnItemCount</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae30d35df373466d539c1cb8f6c34b71d" compoundref="_src_2_item_mgr_8cpp" startline="1524" endline="1558">CItemMgr::getSelectableAvatars</referencedby>
+        <referencedby refid="class_global_table_mgr_1a128abbc478c98e6c11a38da867742a34" compoundref="_global_table_mgr_8cpp" startline="203" endline="206">GlobalTableMgr::GetTownItemTable</referencedby>
+        <referencedby refid="class_c_shop_1a2ec67310fd1d851c809b0e01ae82fb35" compoundref="_src_2_shop_8cpp" startline="246" endline="286">CShop::GMModiItem</referencedby>
+        <referencedby refid="class_hero_mgr_1a95a298c7d6927414102db7dcae89ef82" compoundref="_src_2_hero_mgr_8cpp" startline="284" endline="318">HeroMgr::isValidAvatar</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1a55c5e1458eece92e6f5d6982ae0f088b" compoundref="_src_2_equip_schema_mgr_8cpp" startline="120" endline="137">EquipSchemaMgr::isValidEquip</referencedby>
+        <referencedby refid="class_c_item_mgr_1a323ebd3efe07f6f0b5ba60ceaf50db4a" compoundref="_src_2_item_mgr_8cpp" startline="896" endline="995">CItemMgr::ItemDepart</referencedby>
+        <referencedby refid="struct_c_item_1ac8447ab1df31981bec3c1e42d6a71d83" compoundref="_src_2_item_mgr_8cpp" startline="1132" endline="1240">CItem::loadData</referencedby>
+        <referencedby refid="class_c_item_mgr_1a87a78d8e3ef7acf5ee9f1c22b8a87716" compoundref="_src_2_item_mgr_8cpp" startline="44" endline="64">CItemMgr::loadData</referencedby>
+        <referencedby refid="class_se_player_1a5e7d4268435523a354b097868d805c66" compoundref="_world_server_2_src_2_se_player_8cpp" startline="773" endline="794">SePlayer::OnUseItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae2c680a6a6599c75076c85fcc9653bc5" compoundref="_src_2_item_mgr_8cpp" startline="1371" endline="1445">CItemMgr::openRandBox</referencedby>
+        <referencedby refid="class_block_server_1aae8eea54996be439672b6e569a2db5b1" compoundref="_src_2_se_w_b_l_process_8cpp" startline="694" endline="726">BlockServer::ProcessWBL_UserAlterNickNameReq</referencedby>
+        <referencedby refid="struct_c_item_1a78a62a5fe370896e1afe98bab3898087" compoundref="_src_2_item_mgr_8cpp" startline="1272" endline="1343">CItem::saveData</referencedby>
+        <referencedby refid="class_c_item_mgr_1a42da54f383ba4e19914e723d63e24e89" compoundref="_src_2_item_mgr_8cpp" startline="380" endline="460">CItemMgr::StrenthEquip</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_town_item_table_mgr_1a8f79f5d8dfd613d7b2003dc0d673c0ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; unsigned int, <ref refid="struct_town_item_table" kindref="compound">TownItemTable</ref> * &gt; &amp;</type>
+        <definition>const std::map&lt; unsigned int, TownItemTable * &gt; &amp; TownItemTableMgr::GetTownItemTableMap</definition>
+        <argsstring>()</argsstring>
+        <name>GetTownItemTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.hpp" line="1244" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.cpp" bodystart="26" bodyend="29"/>
+        <references refid="class_town_item_table_mgr_1a1e152dfa8f07f6fc055622720edfa70d" compoundref="_town_item__table_8hpp" startline="1251">m_kTownItemTableMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_town_item_table_mgr_1a62a47108e5f1104981a3637d001690cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_table_res_array" kindref="compound">TableResArray</ref></type>
+        <definition>TableResArray TownItemTableMgr::GetTownItemTableVec</definition>
+        <argsstring>()</argsstring>
+        <name>GetTownItemTableVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.hpp" line="1245" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.cpp" bodystart="31" bodyend="40"/>
+        <references refid="class_town_item_table_mgr_1a1e152dfa8f07f6fc055622720edfa70d" compoundref="_town_item__table_8hpp" startline="1251">m_kTownItemTableMap</references>
+        <references refid="class_table_res_array_1ab7fbd71c9a00bfd30ae2282a4955dbc0" compoundref="_se_table_res_base_8cpp" startline="13" endline="16">TableResArray::pushBack</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_town_item_table_mgr_1a75b541cb98ad97b219724e7ca27e2524" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TownItemTableMgr::Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.hpp" line="1248" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.cpp" bodystart="62" bodyend="102"/>
+        <references refid="class_ti_xml_document_1a6dfc01a6e5d58e56acd537dfd3bdeb29" compoundref="tinyxml_8h" startline="1430" endline="1430">TiXmlDocument::Error</references>
+        <references refid="class_ti_xml_document_1a9d0f689f6e09ea494ea547be8d79c25e" compoundref="tinyxml_8h" startline="1433" endline="1433">TiXmlDocument::ErrorDesc</references>
+        <references refid="class_town_item_table_mgr_1a14305963fb9cca88b45119cd59c90c2a" compoundref="_town_item__table_8cpp" startline="104" endline="385">FillData</references>
+        <references refid="class_ti_xml_node_1ab1f8d8e70d88aea4c5efedfe00862d55" compoundref="tinyxml_8cpp" startline="420" endline="432">TiXmlNode::FirstChildElement</references>
+        <references refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" compoundref="_table_mgr1_8cpp" startline="36" endline="43">TableMgr::Get</references>
+        <references refid="class_table_mgr_1af1a60a8b2807abd34ceb6002cf8f4b80" compoundref="_table_mgr1_8cpp" startline="851" endline="858">TableMgr::GetTableLoader</references>
+        <references refid="class_table_loader_1a8d06b11d37cde9ff76d98901dd39bab4">TableLoader::LoadTable</references>
+        <references refid="class_ti_xml_node_1a7667217e269e0da01d1f82aee94d1a3d" compoundref="tinyxml_8cpp" startline="450" endline="462">TiXmlNode::NextSiblingElement</references>
+        <references refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</references>
+        <referencedby refid="class_town_item_table_mgr_1ab2a131140826d518e58b9252b628aad5" compoundref="_town_item__table_8cpp" startline="52" endline="55">TownItemTableMgr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_town_item_table_mgr_1a14305963fb9cca88b45119cd59c90c2a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TownItemTableMgr::FillData</definition>
+        <argsstring>(TownItemTable *row, TiXmlElement *element)</argsstring>
+        <name>FillData</name>
+        <param>
+          <type><ref refid="struct_town_item_table" kindref="compound">TownItemTable</ref> *</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.hpp" line="1249" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.cpp" bodystart="104" bodyend="385"/>
+        <references refid="class_ti_xml_element_1ac1e4691e9375ba4e665dce7e46a50a9c" compoundref="tinyxml_8cpp" startline="544" endline="550">TiXmlElement::Attribute</references>
+        <references refid="struct_town_item_table_1abb9c69971e9cbcbe26c1cc9ca7f1547e" compoundref="_town_item__table_8hpp" startline="1229">TownItemTable::fEquipmentlevel</references>
+        <references refid="struct_town_item_table_1a724cf9f4685ce86a5076e675d3055cf0" compoundref="_town_item__table_8hpp" startline="1231">TownItemTable::fRemarks</references>
+        <references refid="struct_town_item_table_1acf6fd415e12faa049264335362908716" compoundref="_town_item__table_8hpp" startline="1182">TownItemTable::iBaseDissolveValue</references>
+        <references refid="struct_town_item_table_1a7b18789356a89104e3df5b65652d0cd5" compoundref="_town_item__table_8hpp" startline="1181">TownItemTable::iCanUseDay</references>
+        <references refid="struct_town_item_table_1a5826c957c2211369affd145be0d4a381" compoundref="_town_item__table_8hpp" startline="1177">TownItemTable::iitemlevel</references>
+        <references refid="struct_town_item_table_1a7c4ae0be015b0838016ecb71d39af44d" compoundref="_town_item__table_8hpp" startline="1179">TownItemTable::iitemlevelmax</references>
+        <references refid="struct_town_item_table_1a79623b4ef60d99c290676c19a7fb54e2" compoundref="_town_item__table_8hpp" startline="1178">TownItemTable::iitemlevelmin</references>
+        <references refid="struct_town_item_table_1a077ece5e0a7120e830abf579c54a18ca" compoundref="_town_item__table_8hpp" startline="1180">TownItemTable::iitemMaxLevel</references>
+        <references refid="struct_town_item_table_1a4e7866953bcda8c3b499cb0daa2841c1" compoundref="_town_item__table_8hpp" startline="1227">TownItemTable::iMagnification</references>
+        <references refid="struct_town_item_table_1a3e5399c57eb30302dda66732e3ccdb51" compoundref="_town_item__table_8hpp" startline="1176">TownItemTable::iNeedLevel</references>
+        <references refid="struct_town_item_table_1a6c5d7d22a4f2b431100cfeaff67122b0" compoundref="_town_item__table_8hpp" startline="1226">TownItemTable::iPackage</references>
+        <references refid="struct_town_item_table_1a9fb64259360349c974811b8129f744a5" compoundref="_town_item__table_8hpp" startline="1183">TownItemTable::iPileCount</references>
+        <references refid="struct_town_item_table_1a3a0d5d0a8f20108bbb6baf5abcc2f25d" compoundref="_town_item__table_8hpp" startline="1228">TownItemTable::iPower</references>
+        <references refid="struct_town_item_table_1aebf2e61ce4c9be45deb9607d7b3d8483" compoundref="_town_item__table_8hpp" startline="1184">TownItemTable::kAttachModel1</references>
+        <references refid="struct_town_item_table_1a27e43e14ead94651291c189f1e70420f" compoundref="_town_item__table_8hpp" startline="1190">TownItemTable::kAttachModel2</references>
+        <references refid="struct_town_item_table_1ad5cdbb0de4e7ee94e6904e79fc2f0fe7" compoundref="_town_item__table_8hpp" startline="1224">TownItemTable::kBigIcon</references>
+        <references refid="struct_town_item_table_1aa04db21da6c074c2d9596083aaad880a" compoundref="_town_item__table_8hpp" startline="1230">TownItemTable::kchapter</references>
+        <references refid="struct_town_item_table_1a2539804803fff676474b1288be4ab01f" compoundref="_town_item__table_8hpp" startline="1168">TownItemTable::kDesc</references>
+        <references refid="struct_town_item_table_1a2abd46fb6d43bf20bf650b25387e66bc" compoundref="_town_item__table_8hpp" startline="1169">TownItemTable::kDescID</references>
+        <references refid="struct_town_item_table_1a30ecdbf27acc8ada7a30c85ce160cb05" compoundref="_town_item__table_8hpp" startline="1223">TownItemTable::kIcon</references>
+        <references refid="struct_town_item_table_1aec3733de3c52687defe15cc31649658c" compoundref="_town_item__table_8hpp" startline="1225">TownItemTable::kItemModel</references>
+        <references refid="struct_town_item_table_1a3f2fbdd6369ab12804e4c0a69bb4c71c" compoundref="_town_item__table_8hpp" startline="1166">TownItemTable::kName</references>
+        <references refid="struct_town_item_table_1a292fbbdcb6bccc9df82018916ced1a5f" compoundref="_town_item__table_8hpp" startline="1167">TownItemTable::kNameID</references>
+        <references refid="struct_town_item_table_1a7fcf405ea76d41e6ab13285f43c09652" compoundref="_town_item__table_8hpp" startline="1192">TownItemTable::kPVEValueA</references>
+        <references refid="struct_town_item_table_1ae41cd9a587f8065d543e953d278140cb" compoundref="_town_item__table_8hpp" startline="1194">TownItemTable::kPVEValueB</references>
+        <references refid="struct_town_item_table_1af6ca3cc97571b87045a3d2dacb6a1868" compoundref="_town_item__table_8hpp" startline="1196">TownItemTable::kPVEValueC</references>
+        <references refid="struct_town_item_table_1a56d62958a65c1f728c7d2f0b5fa2a90c" compoundref="_town_item__table_8hpp" startline="1198">TownItemTable::kPVEValueD</references>
+        <references refid="struct_town_item_table_1a421353dbe26435c1c7099ea68facdece" compoundref="_town_item__table_8hpp" startline="1200">TownItemTable::kPVEValueE</references>
+        <references refid="struct_town_item_table_1a614642b21e0f3ca44913e04248121372" compoundref="_town_item__table_8hpp" startline="1202">TownItemTable::kPVEValueF</references>
+        <references refid="struct_town_item_table_1a230fafe3fb4d1dc1e397bd438493e757" compoundref="_town_item__table_8hpp" startline="1204">TownItemTable::kPVEValueG</references>
+        <references refid="struct_town_item_table_1a5a5263d63d1a81db7cdf84cd84771b81" compoundref="_town_item__table_8hpp" startline="1206">TownItemTable::kPVEValueH</references>
+        <references refid="struct_town_item_table_1a20164f70070fdaaf5ec30a1cecf63e13" compoundref="_town_item__table_8hpp" startline="1208">TownItemTable::kPVPValueA</references>
+        <references refid="struct_town_item_table_1a239f799ed2fcefa58186940deaf792b8" compoundref="_town_item__table_8hpp" startline="1210">TownItemTable::kPVPValueB</references>
+        <references refid="struct_town_item_table_1a65406ddb16e51d3395e32264e24a881a" compoundref="_town_item__table_8hpp" startline="1212">TownItemTable::kPVPValueC</references>
+        <references refid="struct_town_item_table_1a1161671222c79f1a30025ef70b138609" compoundref="_town_item__table_8hpp" startline="1214">TownItemTable::kPVPValueD</references>
+        <references refid="struct_town_item_table_1ab182d4ffe13af3f51295537cb18fb9c7" compoundref="_town_item__table_8hpp" startline="1216">TownItemTable::kPVPValueE</references>
+        <references refid="struct_town_item_table_1a7eda65a157886b15865c4b8af7672c8d" compoundref="_town_item__table_8hpp" startline="1218">TownItemTable::kPVPValueF</references>
+        <references refid="struct_town_item_table_1ab3967d16e7b6d81659291fdc36e8658d" compoundref="_town_item__table_8hpp" startline="1220">TownItemTable::kPVPValueG</references>
+        <references refid="struct_town_item_table_1afa92d8520b5aa8209a78fef1e86eb582" compoundref="_town_item__table_8hpp" startline="1222">TownItemTable::kPVPValueH</references>
+        <references refid="struct_town_item_table_1aca1d656e68104944c8ce69d891a47466" compoundref="_town_item__table_8hpp" startline="1174">TownItemTable::ktaozhuangID</references>
+        <references refid="class_town_item_table_mgr_1a1e152dfa8f07f6fc055622720edfa70d" compoundref="_town_item__table_8hpp" startline="1251">m_kTownItemTableMap</references>
+        <references refid="struct_town_item_table_1a2cf534cd862e009e4df8d8cdfc495256" compoundref="_town_item__table_8hpp" startline="1185">TownItemTable::uicitiao1</references>
+        <references refid="struct_town_item_table_1a53b54f3f0050088f9b7c1e637cedf073" compoundref="_town_item__table_8hpp" startline="1186">TownItemTable::uicitiao2</references>
+        <references refid="struct_town_item_table_1ab22ada6b3f839a448a1218b5a9d1e9e9" compoundref="_town_item__table_8hpp" startline="1187">TownItemTable::uicitiao3</references>
+        <references refid="struct_town_item_table_1a631421279dbc1bd2ce3d309c6cea25df" compoundref="_town_item__table_8hpp" startline="1188">TownItemTable::uicitiao4</references>
+        <references refid="struct_town_item_table_1a50cff64e1bf28b2c1d146b885cc4da77" compoundref="_town_item__table_8hpp" startline="1189">TownItemTable::uicitiao5</references>
+        <references refid="struct_town_item_table_1a50f128b2bc726da3161c11a9edb7787a" compoundref="_town_item__table_8hpp" startline="1170">TownItemTable::uiClass</references>
+        <references refid="struct_town_item_table_1aa3b2fcbc7d98009b1109ce87832bdfeb" compoundref="_town_item__table_8hpp" startline="1164">TownItemTable::uiItemID</references>
+        <references refid="struct_town_item_table_1aff8c8a5bfdf8a753e2900fc90b6218cb" compoundref="_town_item__table_8hpp" startline="1175">TownItemTable::uiLevel</references>
+        <references refid="struct_town_item_table_1aa35e20c19bdb50a9ae42daeeedca7bd4" compoundref="_town_item__table_8hpp" startline="1173">TownItemTable::uiProperty</references>
+        <references refid="struct_town_item_table_1ae58f739bea5cf9b2e7a1d2e2fa90918b" compoundref="_town_item__table_8hpp" startline="1191">TownItemTable::uiPVEDataA</references>
+        <references refid="struct_town_item_table_1aae6acd7c39274897a49dcc0d2fa98a54" compoundref="_town_item__table_8hpp" startline="1193">TownItemTable::uiPVEDataB</references>
+        <references refid="struct_town_item_table_1ad715fd4d3b8acccfe33bfaa7e2674bfe" compoundref="_town_item__table_8hpp" startline="1195">TownItemTable::uiPVEDataC</references>
+        <references refid="struct_town_item_table_1afe76ea62d4dad50d81815cdd56ae2126" compoundref="_town_item__table_8hpp" startline="1197">TownItemTable::uiPVEDataD</references>
+        <references refid="struct_town_item_table_1a714f700cfa599c488549034f99202081" compoundref="_town_item__table_8hpp" startline="1199">TownItemTable::uiPVEDataE</references>
+        <references refid="struct_town_item_table_1a15879eb13e3b9428b14d8607349a69bc" compoundref="_town_item__table_8hpp" startline="1201">TownItemTable::uiPVEDataF</references>
+        <references refid="struct_town_item_table_1ac438a5b9b5f825dad1497b9667be145b" compoundref="_town_item__table_8hpp" startline="1203">TownItemTable::uiPVEDataG</references>
+        <references refid="struct_town_item_table_1a0b7af981bafedac703baa1f83b6740f3" compoundref="_town_item__table_8hpp" startline="1205">TownItemTable::uiPVEDataH</references>
+        <references refid="struct_town_item_table_1a63bb928232284255b7ff207e8fea7073" compoundref="_town_item__table_8hpp" startline="1207">TownItemTable::uiPVPDataA</references>
+        <references refid="struct_town_item_table_1aaa9db44786ed34be673ea8deb2deb7e9" compoundref="_town_item__table_8hpp" startline="1209">TownItemTable::uiPVPDataB</references>
+        <references refid="struct_town_item_table_1a655e652623f0bf07edf8723b14bf81e5" compoundref="_town_item__table_8hpp" startline="1211">TownItemTable::uiPVPDataC</references>
+        <references refid="struct_town_item_table_1a997445f50b7954215142951e95968f4a" compoundref="_town_item__table_8hpp" startline="1213">TownItemTable::uiPVPDataD</references>
+        <references refid="struct_town_item_table_1a1bc4504d88a4126a3fb33f054d40309f" compoundref="_town_item__table_8hpp" startline="1215">TownItemTable::uiPVPDataE</references>
+        <references refid="struct_town_item_table_1a32ea83d530b18309776953ef6acf6fa8" compoundref="_town_item__table_8hpp" startline="1217">TownItemTable::uiPVPDataF</references>
+        <references refid="struct_town_item_table_1ad8c86b2923e1ca7b04d3d27eb1e6eb42" compoundref="_town_item__table_8hpp" startline="1219">TownItemTable::uiPVPDataG</references>
+        <references refid="struct_town_item_table_1adb6f5051552e6616049377dc2d582a31" compoundref="_town_item__table_8hpp" startline="1221">TownItemTable::uiPVPDataH</references>
+        <references refid="struct_town_item_table_1a13c33d704af9a1d0d115c9d4b8a5b943" compoundref="_town_item__table_8hpp" startline="1171">TownItemTable::uiSubClass</references>
+        <references refid="struct_town_item_table_1a7c88c708064771a84801466e7840d1d0" compoundref="_town_item__table_8hpp" startline="1165">TownItemTable::uiTypeID</references>
+        <references refid="struct_town_item_table_1a2e2b6fe0431fd528962ed6a00b21e7df" compoundref="_town_item__table_8hpp" startline="1172">TownItemTable::uiWeaponClass</references>
+        <referencedby refid="class_town_item_table_mgr_1a75b541cb98ad97b219724e7ca27e2524" compoundref="_town_item__table_8cpp" startline="62" endline="102">Load</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9405">
+        <label>std::map&lt; unsigned int, TownItemTable * &gt;</label>
+        <childnode refid="9406" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9404">
+        <label>TownItemTableMgr</label>
+        <link refid="class_town_item_table_mgr"/>
+        <childnode refid="9405" relation="usage">
+          <edgelabel>m_kTownItemTableMap</edgelabel>
+        </childnode>
+        <childnode refid="9404" relation="usage">
+          <edgelabel>m_pkTownItemTableMgr</edgelabel>
+        </childnode>
+      </node>
+      <node id="9409">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="9407">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="9408">
+        <label>std::string</label>
+        <childnode refid="9409" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9406">
+        <label>TownItemTable</label>
+        <link refid="struct_town_item_table"/>
+        <childnode refid="9407" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9408" relation="usage">
+          <edgelabel>kAttachModel1</edgelabel>
+          <edgelabel>kAttachModel2</edgelabel>
+          <edgelabel>kPVPValueA</edgelabel>
+          <edgelabel>ktaozhuangID</edgelabel>
+          <edgelabel>kNameID</edgelabel>
+          <edgelabel>kPVPValueB</edgelabel>
+          <edgelabel>kDesc</edgelabel>
+          <edgelabel>kPVPValueC</edgelabel>
+          <edgelabel>kPVPValueD</edgelabel>
+          <edgelabel>kPVPValueE</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.hpp" line="1236" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TownItem_table.hpp" bodystart="1235" bodyend="1253"/>
+    <listofallmembers>
+      <member refid="class_town_item_table_mgr_1a14305963fb9cca88b45119cd59c90c2a" prot="private" virt="non-virtual"><scope>TownItemTableMgr</scope><name>FillData</name></member>
+      <member refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" prot="public" virt="non-virtual"><scope>TownItemTableMgr</scope><name>Get</name></member>
+      <member refid="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" prot="public" virt="non-virtual"><scope>TownItemTableMgr</scope><name>GetTownItemTable</name></member>
+      <member refid="class_town_item_table_mgr_1a8f79f5d8dfd613d7b2003dc0d673c0ff" prot="public" virt="non-virtual"><scope>TownItemTableMgr</scope><name>GetTownItemTableMap</name></member>
+      <member refid="class_town_item_table_mgr_1a62a47108e5f1104981a3637d001690cc" prot="public" virt="non-virtual"><scope>TownItemTableMgr</scope><name>GetTownItemTableVec</name></member>
+      <member refid="class_town_item_table_mgr_1a75b541cb98ad97b219724e7ca27e2524" prot="private" virt="non-virtual"><scope>TownItemTableMgr</scope><name>Load</name></member>
+      <member refid="class_town_item_table_mgr_1a1e152dfa8f07f6fc055622720edfa70d" prot="private" virt="non-virtual"><scope>TownItemTableMgr</scope><name>m_kTownItemTableMap</name></member>
+      <member refid="class_town_item_table_mgr_1a2765cf7d5e1833b94f63a0206a5557b7" prot="private" virt="non-virtual"><scope>TownItemTableMgr</scope><name>m_pkTownItemTableMgr</name></member>
+      <member refid="class_town_item_table_mgr_1ac0e7d9495faa7a17014804afcfea87c8" prot="public" virt="non-virtual"><scope>TownItemTableMgr</scope><name>ReLoad</name></member>
+      <member refid="class_town_item_table_mgr_1ab2a131140826d518e58b9252b628aad5" prot="public" virt="non-virtual"><scope>TownItemTableMgr</scope><name>TownItemTableMgr</name></member>
+      <member refid="class_town_item_table_mgr_1a3f7845b0dc1e035b37f3d49a64eafe7b" prot="public" virt="non-virtual"><scope>TownItemTableMgr</scope><name>~TownItemTableMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

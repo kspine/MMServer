@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_buffer_table_mgr" kind="class" prot="public">
+    <compoundname>BufferTableMgr</compoundname>
+    <includes refid="_buffer__table_8hpp" local="no">Buffer_table.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_buffer_table_mgr_1ac6c3b6dfc7b64138f6d748b8cd2bf47a" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned int, <ref refid="struct_buffer_table" kindref="compound">BufferTable</ref> * &gt;</type>
+        <definition>std::map&lt;unsigned int,BufferTable*&gt; BufferTableMgr::m_kBufferTableMap</definition>
+        <argsstring></argsstring>
+        <name>m_kBufferTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.hpp" line="74" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.hpp" bodystart="74" bodyend="-1"/>
+        <referencedby refid="class_buffer_table_mgr_1ab1a64905da46d3522d7bcf1749c0c1d7" compoundref="_buffer__table_8cpp" startline="104" endline="165">FillData</referencedby>
+        <referencedby refid="class_buffer_table_mgr_1ab98bf14ff648fee0e275bee73e10e4a6" compoundref="_buffer__table_8cpp" startline="42" endline="50">GetBufferTable</referencedby>
+        <referencedby refid="class_buffer_table_mgr_1a2ffb2e0fb3e2538a47519cf4a750a2bc" compoundref="_buffer__table_8cpp" startline="26" endline="29">GetBufferTableMap</referencedby>
+        <referencedby refid="class_buffer_table_mgr_1ae2999c1b2e4754852d36b0261f3bb0d0" compoundref="_buffer__table_8cpp" startline="31" endline="40">GetBufferTableVec</referencedby>
+        <referencedby refid="class_buffer_table_mgr_1a122a59d7a0143e9b98469048d1e71edd" compoundref="_buffer__table_8cpp" startline="57" endline="60">~BufferTableMgr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_buffer_table_mgr_1a5a9c04204886e3ac5682b6a843755ed1" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_buffer_table_mgr" kindref="compound">BufferTableMgr</ref> *</type>
+        <definition>BufferTableMgr * BufferTableMgr::m_pkBufferTableMgr</definition>
+        <argsstring></argsstring>
+        <name>m_pkBufferTableMgr</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.hpp" line="75" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.hpp" bodystart="75" bodyend="-1"/>
+        <referencedby refid="class_buffer_table_mgr_1a0d5b131fe64966196d3e19ded5e833ca" compoundref="_buffer__table_8cpp" startline="6" endline="13">Get</referencedby>
+        <referencedby refid="class_buffer_table_mgr_1a7389266b4fe65c337eee468c0546890b" compoundref="_buffer__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_buffer_table_mgr_1a0d5b131fe64966196d3e19ded5e833ca" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_buffer_table_mgr" kindref="compound">BufferTableMgr</ref> *</type>
+        <definition>BufferTableMgr * BufferTableMgr::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.hpp" line="61" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.cpp" bodystart="6" bodyend="13"/>
+        <references refid="class_buffer_table_mgr_1a7c6d8e2977c4db7d626ce16e771e21d6" compoundref="_buffer__table_8cpp" startline="52" endline="55">BufferTableMgr</references>
+        <references refid="class_buffer_table_mgr_1a5a9c04204886e3ac5682b6a843755ed1" compoundref="_buffer__table_8hpp" startline="75">m_pkBufferTableMgr</references>
+        <referencedby refid="class_global_table_mgr_1a49aff1d054df834db97071ef11ceea95" compoundref="_global_table_mgr_8cpp" startline="104" endline="107">GlobalTableMgr::GetBufferTable</referencedby>
+        <referencedby refid="class_table_mgr_1ae1ceeb5a4a6212a8497ef7dd92f87885" compoundref="_table_mgr_8h" startline="79" endline="132">TableMgr::LoadTable</referencedby>
+        <referencedby refid="class_buffer_table_mgr_1a7389266b4fe65c337eee468c0546890b" compoundref="_buffer__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_buffer_table_mgr_1a7389266b4fe65c337eee468c0546890b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_buffer_table_mgr" kindref="compound">BufferTableMgr</ref> *</type>
+        <definition>BufferTableMgr * BufferTableMgr::ReLoad</definition>
+        <argsstring>()</argsstring>
+        <name>ReLoad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.hpp" line="62" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.cpp" bodystart="15" bodyend="23"/>
+        <references refid="class_buffer_table_mgr_1a0d5b131fe64966196d3e19ded5e833ca" compoundref="_buffer__table_8cpp" startline="6" endline="13">Get</references>
+        <references refid="class_buffer_table_mgr_1a5a9c04204886e3ac5682b6a843755ed1" compoundref="_buffer__table_8hpp" startline="75">m_pkBufferTableMgr</references>
+        <referencedby refid="class_table_mgr_1a6298f0e9b81636b481a25c06016e237a" compoundref="_table_mgr1_8cpp" startline="860" endline="914">TableMgr::ReloadTable</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_buffer_table_mgr_1a7c6d8e2977c4db7d626ce16e771e21d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BufferTableMgr::BufferTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>BufferTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.hpp" line="63" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.cpp" bodystart="52" bodyend="55"/>
+        <references refid="class_buffer_table_mgr_1af902373e933faf61fd9ad9cfe7f2c46b" compoundref="_buffer__table_8cpp" startline="62" endline="102">Load</references>
+        <referencedby refid="class_buffer_table_mgr_1a0d5b131fe64966196d3e19ded5e833ca" compoundref="_buffer__table_8cpp" startline="6" endline="13">Get</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_buffer_table_mgr_1a122a59d7a0143e9b98469048d1e71edd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BufferTableMgr::~BufferTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~BufferTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.hpp" line="64" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.cpp" bodystart="57" bodyend="60"/>
+        <references refid="class_buffer_table_mgr_1ac6c3b6dfc7b64138f6d748b8cd2bf47a" compoundref="_buffer__table_8hpp" startline="74">m_kBufferTableMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_buffer_table_mgr_1ab98bf14ff648fee0e275bee73e10e4a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_buffer_table" kindref="compound">BufferTable</ref> *</type>
+        <definition>const BufferTable * BufferTableMgr::GetBufferTable</definition>
+        <argsstring>(unsigned int iTypeID)</argsstring>
+        <name>GetBufferTable</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>iTypeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.hpp" line="66" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.cpp" bodystart="42" bodyend="50"/>
+        <references refid="class_buffer_table_mgr_1ac6c3b6dfc7b64138f6d748b8cd2bf47a" compoundref="_buffer__table_8hpp" startline="74">m_kBufferTableMap</references>
+        <referencedby refid="class_global_table_mgr_1a49aff1d054df834db97071ef11ceea95" compoundref="_global_table_mgr_8cpp" startline="104" endline="107">GlobalTableMgr::GetBufferTable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_buffer_table_mgr_1a2ffb2e0fb3e2538a47519cf4a750a2bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; unsigned int, <ref refid="struct_buffer_table" kindref="compound">BufferTable</ref> * &gt; &amp;</type>
+        <definition>const std::map&lt; unsigned int, BufferTable * &gt; &amp; BufferTableMgr::GetBufferTableMap</definition>
+        <argsstring>()</argsstring>
+        <name>GetBufferTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.hpp" line="67" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.cpp" bodystart="26" bodyend="29"/>
+        <references refid="class_buffer_table_mgr_1ac6c3b6dfc7b64138f6d748b8cd2bf47a" compoundref="_buffer__table_8hpp" startline="74">m_kBufferTableMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_buffer_table_mgr_1ae2999c1b2e4754852d36b0261f3bb0d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_table_res_array" kindref="compound">TableResArray</ref></type>
+        <definition>TableResArray BufferTableMgr::GetBufferTableVec</definition>
+        <argsstring>()</argsstring>
+        <name>GetBufferTableVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.hpp" line="68" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.cpp" bodystart="31" bodyend="40"/>
+        <references refid="class_buffer_table_mgr_1ac6c3b6dfc7b64138f6d748b8cd2bf47a" compoundref="_buffer__table_8hpp" startline="74">m_kBufferTableMap</references>
+        <references refid="class_table_res_array_1ab7fbd71c9a00bfd30ae2282a4955dbc0" compoundref="_se_table_res_base_8cpp" startline="13" endline="16">TableResArray::pushBack</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_buffer_table_mgr_1af902373e933faf61fd9ad9cfe7f2c46b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BufferTableMgr::Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.hpp" line="71" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.cpp" bodystart="62" bodyend="102"/>
+        <references refid="class_ti_xml_document_1a6dfc01a6e5d58e56acd537dfd3bdeb29" compoundref="tinyxml_8h" startline="1430" endline="1430">TiXmlDocument::Error</references>
+        <references refid="class_ti_xml_document_1a9d0f689f6e09ea494ea547be8d79c25e" compoundref="tinyxml_8h" startline="1433" endline="1433">TiXmlDocument::ErrorDesc</references>
+        <references refid="class_buffer_table_mgr_1ab1a64905da46d3522d7bcf1749c0c1d7" compoundref="_buffer__table_8cpp" startline="104" endline="165">FillData</references>
+        <references refid="class_ti_xml_node_1ab1f8d8e70d88aea4c5efedfe00862d55" compoundref="tinyxml_8cpp" startline="420" endline="432">TiXmlNode::FirstChildElement</references>
+        <references refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" compoundref="_table_mgr1_8cpp" startline="36" endline="43">TableMgr::Get</references>
+        <references refid="class_table_mgr_1af1a60a8b2807abd34ceb6002cf8f4b80" compoundref="_table_mgr1_8cpp" startline="851" endline="858">TableMgr::GetTableLoader</references>
+        <references refid="class_table_loader_1a8d06b11d37cde9ff76d98901dd39bab4">TableLoader::LoadTable</references>
+        <references refid="class_ti_xml_node_1a7667217e269e0da01d1f82aee94d1a3d" compoundref="tinyxml_8cpp" startline="450" endline="462">TiXmlNode::NextSiblingElement</references>
+        <references refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</references>
+        <referencedby refid="class_buffer_table_mgr_1a7c6d8e2977c4db7d626ce16e771e21d6" compoundref="_buffer__table_8cpp" startline="52" endline="55">BufferTableMgr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_buffer_table_mgr_1ab1a64905da46d3522d7bcf1749c0c1d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BufferTableMgr::FillData</definition>
+        <argsstring>(BufferTable *row, TiXmlElement *element)</argsstring>
+        <name>FillData</name>
+        <param>
+          <type><ref refid="struct_buffer_table" kindref="compound">BufferTable</ref> *</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.hpp" line="72" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.cpp" bodystart="104" bodyend="165"/>
+        <references refid="class_ti_xml_element_1ac1e4691e9375ba4e665dce7e46a50a9c" compoundref="tinyxml_8cpp" startline="544" endline="550">TiXmlElement::Attribute</references>
+        <references refid="struct_buffer_table_1a6f0ef0cfa23170db2e3e5d361fd8f5ec" compoundref="_buffer__table_8hpp" startline="53">BufferTable::ibuffcolour</references>
+        <references refid="struct_buffer_table_1a481a6e8c7c070c59050606dae7989f4d" compoundref="_buffer__table_8hpp" startline="49">BufferTable::iEffectID</references>
+        <references refid="struct_buffer_table_1afdba4e544319f2db0d18707bec95f364" compoundref="_buffer__table_8hpp" startline="48">BufferTable::iMultiSpliceNum</references>
+        <references refid="struct_buffer_table_1a0e07772655ee96a92818dbcac1719cd1" compoundref="_buffer__table_8hpp" startline="47">BufferTable::iSingleSpliceNum</references>
+        <references refid="struct_buffer_table_1adce1b296f3a6236bf6bf4dcb58eb0018" compoundref="_buffer__table_8hpp" startline="54">BufferTable::kbufficon</references>
+        <references refid="struct_buffer_table_1aa4b1d184e79fa2baf038f3b58fc541c2" compoundref="_buffer__table_8hpp" startline="45">BufferTable::kDesc</references>
+        <references refid="struct_buffer_table_1acf56565f961770b81510db9c64c84f2a" compoundref="_buffer__table_8hpp" startline="50">BufferTable::kIcon</references>
+        <references refid="struct_buffer_table_1a0d5b03299a481bc9f18f86920acad5cd" compoundref="_buffer__table_8hpp" startline="44">BufferTable::kName</references>
+        <references refid="struct_buffer_table_1ab7fd02fb175ed5efc9bf3b0bbe788d41" compoundref="_buffer__table_8hpp" startline="51">BufferTable::kVoice</references>
+        <references refid="struct_buffer_table_1ab4472d4717c9929fc6c31feac8b00347" compoundref="_buffer__table_8hpp" startline="52">BufferTable::kVoiceCycle</references>
+        <references refid="class_buffer_table_mgr_1ac6c3b6dfc7b64138f6d748b8cd2bf47a" compoundref="_buffer__table_8hpp" startline="74">m_kBufferTableMap</references>
+        <references refid="struct_buffer_table_1a2fe2644db14892aacd82d0349fee977a" compoundref="_buffer__table_8hpp" startline="43">BufferTable::uiBufferTypeID</references>
+        <references refid="struct_buffer_table_1a0f3a2682d1af279b684c422e1a9edba5" compoundref="_buffer__table_8hpp" startline="46">BufferTable::uiProperty</references>
+        <referencedby refid="class_buffer_table_mgr_1af902373e933faf61fd9ad9cfe7f2c46b" compoundref="_buffer__table_8cpp" startline="62" endline="102">Load</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="724">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="722">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="721">
+        <label>BufferTable</label>
+        <link refid="struct_buffer_table"/>
+        <childnode refid="722" relation="public-inheritance">
+        </childnode>
+        <childnode refid="723" relation="usage">
+          <edgelabel>kDesc</edgelabel>
+          <edgelabel>kVoiceCycle</edgelabel>
+          <edgelabel>kVoice</edgelabel>
+          <edgelabel>kIcon</edgelabel>
+          <edgelabel>kbufficon</edgelabel>
+          <edgelabel>kName</edgelabel>
+        </childnode>
+      </node>
+      <node id="720">
+        <label>std::map&lt; unsigned int, BufferTable * &gt;</label>
+        <childnode refid="721" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="719">
+        <label>BufferTableMgr</label>
+        <link refid="class_buffer_table_mgr"/>
+        <childnode refid="719" relation="usage">
+          <edgelabel>m_pkBufferTableMgr</edgelabel>
+        </childnode>
+        <childnode refid="720" relation="usage">
+          <edgelabel>m_kBufferTableMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="723">
+        <label>std::string</label>
+        <childnode refid="724" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.hpp" line="59" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Buffer_table.hpp" bodystart="58" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_buffer_table_mgr_1a7c6d8e2977c4db7d626ce16e771e21d6" prot="public" virt="non-virtual"><scope>BufferTableMgr</scope><name>BufferTableMgr</name></member>
+      <member refid="class_buffer_table_mgr_1ab1a64905da46d3522d7bcf1749c0c1d7" prot="private" virt="non-virtual"><scope>BufferTableMgr</scope><name>FillData</name></member>
+      <member refid="class_buffer_table_mgr_1a0d5b131fe64966196d3e19ded5e833ca" prot="public" virt="non-virtual"><scope>BufferTableMgr</scope><name>Get</name></member>
+      <member refid="class_buffer_table_mgr_1ab98bf14ff648fee0e275bee73e10e4a6" prot="public" virt="non-virtual"><scope>BufferTableMgr</scope><name>GetBufferTable</name></member>
+      <member refid="class_buffer_table_mgr_1a2ffb2e0fb3e2538a47519cf4a750a2bc" prot="public" virt="non-virtual"><scope>BufferTableMgr</scope><name>GetBufferTableMap</name></member>
+      <member refid="class_buffer_table_mgr_1ae2999c1b2e4754852d36b0261f3bb0d0" prot="public" virt="non-virtual"><scope>BufferTableMgr</scope><name>GetBufferTableVec</name></member>
+      <member refid="class_buffer_table_mgr_1af902373e933faf61fd9ad9cfe7f2c46b" prot="private" virt="non-virtual"><scope>BufferTableMgr</scope><name>Load</name></member>
+      <member refid="class_buffer_table_mgr_1ac6c3b6dfc7b64138f6d748b8cd2bf47a" prot="private" virt="non-virtual"><scope>BufferTableMgr</scope><name>m_kBufferTableMap</name></member>
+      <member refid="class_buffer_table_mgr_1a5a9c04204886e3ac5682b6a843755ed1" prot="private" virt="non-virtual"><scope>BufferTableMgr</scope><name>m_pkBufferTableMgr</name></member>
+      <member refid="class_buffer_table_mgr_1a7389266b4fe65c337eee468c0546890b" prot="public" virt="non-virtual"><scope>BufferTableMgr</scope><name>ReLoad</name></member>
+      <member refid="class_buffer_table_mgr_1a122a59d7a0143e9b98469048d1e71edd" prot="public" virt="non-virtual"><scope>BufferTableMgr</scope><name>~BufferTableMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

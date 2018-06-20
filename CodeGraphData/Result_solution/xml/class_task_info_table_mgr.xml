@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_task_info_table_mgr" kind="class" prot="public">
+    <compoundname>TaskInfoTableMgr</compoundname>
+    <includes refid="_task_info__table_8hpp" local="no">TaskInfo_table.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_task_info_table_mgr_1a8f76aa3afb5b225c71ba33c0bb540ec8" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned int, <ref refid="struct_task_info_table" kindref="compound">TaskInfoTable</ref> * &gt;</type>
+        <definition>std::map&lt;unsigned int,TaskInfoTable*&gt; TaskInfoTableMgr::m_kTaskInfoTableMap</definition>
+        <argsstring></argsstring>
+        <name>m_kTaskInfoTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.hpp" line="131" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.hpp" bodystart="131" bodyend="-1"/>
+        <referencedby refid="class_task_info_table_mgr_1af10a7332adc88b396f35895a61bd35f7" compoundref="_task_info__table_8cpp" startline="104" endline="209">FillData</referencedby>
+        <referencedby refid="class_task_info_table_mgr_1ad4e124dcccab58d2b3d8ce227ef2cd12" compoundref="_task_info__table_8cpp" startline="42" endline="50">GetTaskInfoTable</referencedby>
+        <referencedby refid="class_task_info_table_mgr_1a84b934defcce3723a9d6bfae333bd942" compoundref="_task_info__table_8cpp" startline="26" endline="29">GetTaskInfoTableMap</referencedby>
+        <referencedby refid="class_task_info_table_mgr_1a24110ba918b23bdf77ae3d51ee5cac6f" compoundref="_task_info__table_8cpp" startline="31" endline="40">GetTaskInfoTableVec</referencedby>
+        <referencedby refid="class_task_info_table_mgr_1a5945ee54299fc5a298364aaf3b1203e6" compoundref="_task_info__table_8cpp" startline="57" endline="60">~TaskInfoTableMgr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_task_info_table_mgr_1afa7f625de50e94bdc74cec5e317471b4" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_task_info_table_mgr" kindref="compound">TaskInfoTableMgr</ref> *</type>
+        <definition>TaskInfoTableMgr * TaskInfoTableMgr::m_pkTaskInfoTableMgr</definition>
+        <argsstring></argsstring>
+        <name>m_pkTaskInfoTableMgr</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.hpp" line="132" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.hpp" bodystart="132" bodyend="-1"/>
+        <referencedby refid="class_task_info_table_mgr_1a4b44c8bdcc538a05e72720f9887c9ee5" compoundref="_task_info__table_8cpp" startline="6" endline="13">Get</referencedby>
+        <referencedby refid="class_task_info_table_mgr_1a2a741bc6a30afe140faf97c1e74fc127" compoundref="_task_info__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_task_info_table_mgr_1a4b44c8bdcc538a05e72720f9887c9ee5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_task_info_table_mgr" kindref="compound">TaskInfoTableMgr</ref> *</type>
+        <definition>TaskInfoTableMgr * TaskInfoTableMgr::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.hpp" line="118" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.cpp" bodystart="6" bodyend="13"/>
+        <references refid="class_task_info_table_mgr_1afa7f625de50e94bdc74cec5e317471b4" compoundref="_task_info__table_8hpp" startline="132">m_pkTaskInfoTableMgr</references>
+        <references refid="class_task_info_table_mgr_1a65dfb5f24ae6e0adc1378bb1b6a709f1" compoundref="_task_info__table_8cpp" startline="52" endline="55">TaskInfoTableMgr</references>
+        <referencedby refid="class_task_mgr_1a0b713ce49930e4071b47136dcddba6ce" compoundref="_src_2_task_mgr_8cpp" startline="391" endline="459">TaskMgr::GetDailyTaskNextTask</referencedby>
+        <referencedby refid="class_task_mgr_1a2632ef8cb9e0c1ee774e0b098ebeabb7" compoundref="_src_2_task_mgr_8cpp" startline="630" endline="710">TaskMgr::GetTaskConditionNum</referencedby>
+        <referencedby refid="class_table_mgr_1a14df1ec726904a656262795b7adc26ac" compoundref="_table_mgr1_8cpp" startline="1042" endline="1045">TableMgr::GetTaskInfo</referencedby>
+        <referencedby refid="class_task_mgr_1a342a99e25f638e680a4a3303ca0b22d7" compoundref="_src_2_task_mgr_8cpp" startline="462" endline="548">TaskMgr::GetWinTaskNextTask</referencedby>
+        <referencedby refid="class_table_mgr_1ad0d44a4ae56a515ab9bafa62298ac4a0" compoundref="_table_mgr1_8cpp" startline="1063" endline="1087">TableMgr::InitTaskList</referencedby>
+        <referencedby refid="class_task_mgr_1a1cadcab5520e56de81d10a050c7d8e8b" compoundref="_src_2_task_mgr_8cpp" startline="573" endline="587">TaskMgr::loadData</referencedby>
+        <referencedby refid="class_table_mgr_1ae1ceeb5a4a6212a8497ef7dd92f87885" compoundref="_table_mgr_8h" startline="79" endline="132">TableMgr::LoadTable</referencedby>
+        <referencedby refid="class_task_info_table_mgr_1a2a741bc6a30afe140faf97c1e74fc127" compoundref="_task_info__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_info_table_mgr_1a2a741bc6a30afe140faf97c1e74fc127" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_task_info_table_mgr" kindref="compound">TaskInfoTableMgr</ref> *</type>
+        <definition>TaskInfoTableMgr * TaskInfoTableMgr::ReLoad</definition>
+        <argsstring>()</argsstring>
+        <name>ReLoad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.hpp" line="119" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.cpp" bodystart="15" bodyend="23"/>
+        <references refid="class_task_info_table_mgr_1a4b44c8bdcc538a05e72720f9887c9ee5" compoundref="_task_info__table_8cpp" startline="6" endline="13">Get</references>
+        <references refid="class_task_info_table_mgr_1afa7f625de50e94bdc74cec5e317471b4" compoundref="_task_info__table_8hpp" startline="132">m_pkTaskInfoTableMgr</references>
+        <referencedby refid="class_table_mgr_1a6298f0e9b81636b481a25c06016e237a" compoundref="_table_mgr1_8cpp" startline="860" endline="914">TableMgr::ReloadTable</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_task_info_table_mgr_1a65dfb5f24ae6e0adc1378bb1b6a709f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TaskInfoTableMgr::TaskInfoTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>TaskInfoTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.hpp" line="120" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.cpp" bodystart="52" bodyend="55"/>
+        <references refid="class_task_info_table_mgr_1a5ac142d83d027ede57fb4a61cb90a170" compoundref="_task_info__table_8cpp" startline="62" endline="102">Load</references>
+        <referencedby refid="class_task_info_table_mgr_1a4b44c8bdcc538a05e72720f9887c9ee5" compoundref="_task_info__table_8cpp" startline="6" endline="13">Get</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_info_table_mgr_1a5945ee54299fc5a298364aaf3b1203e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TaskInfoTableMgr::~TaskInfoTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~TaskInfoTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.hpp" line="121" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.cpp" bodystart="57" bodyend="60"/>
+        <references refid="class_task_info_table_mgr_1a8f76aa3afb5b225c71ba33c0bb540ec8" compoundref="_task_info__table_8hpp" startline="131">m_kTaskInfoTableMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_task_info_table_mgr_1ad4e124dcccab58d2b3d8ce227ef2cd12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_task_info_table" kindref="compound">TaskInfoTable</ref> *</type>
+        <definition>const TaskInfoTable * TaskInfoTableMgr::GetTaskInfoTable</definition>
+        <argsstring>(unsigned int iTypeID)</argsstring>
+        <name>GetTaskInfoTable</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>iTypeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.hpp" line="123" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.cpp" bodystart="42" bodyend="50"/>
+        <references refid="class_task_info_table_mgr_1a8f76aa3afb5b225c71ba33c0bb540ec8" compoundref="_task_info__table_8hpp" startline="131">m_kTaskInfoTableMap</references>
+        <referencedby refid="class_task_mgr_1a0b713ce49930e4071b47136dcddba6ce" compoundref="_src_2_task_mgr_8cpp" startline="391" endline="459">TaskMgr::GetDailyTaskNextTask</referencedby>
+        <referencedby refid="class_task_mgr_1a2632ef8cb9e0c1ee774e0b098ebeabb7" compoundref="_src_2_task_mgr_8cpp" startline="630" endline="710">TaskMgr::GetTaskConditionNum</referencedby>
+        <referencedby refid="class_table_mgr_1a14df1ec726904a656262795b7adc26ac" compoundref="_table_mgr1_8cpp" startline="1042" endline="1045">TableMgr::GetTaskInfo</referencedby>
+        <referencedby refid="class_task_mgr_1a342a99e25f638e680a4a3303ca0b22d7" compoundref="_src_2_task_mgr_8cpp" startline="462" endline="548">TaskMgr::GetWinTaskNextTask</referencedby>
+        <referencedby refid="class_task_mgr_1a1cadcab5520e56de81d10a050c7d8e8b" compoundref="_src_2_task_mgr_8cpp" startline="573" endline="587">TaskMgr::loadData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_info_table_mgr_1a84b934defcce3723a9d6bfae333bd942" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; unsigned int, <ref refid="struct_task_info_table" kindref="compound">TaskInfoTable</ref> * &gt; &amp;</type>
+        <definition>const std::map&lt; unsigned int, TaskInfoTable * &gt; &amp; TaskInfoTableMgr::GetTaskInfoTableMap</definition>
+        <argsstring>()</argsstring>
+        <name>GetTaskInfoTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.hpp" line="124" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.cpp" bodystart="26" bodyend="29"/>
+        <references refid="class_task_info_table_mgr_1a8f76aa3afb5b225c71ba33c0bb540ec8" compoundref="_task_info__table_8hpp" startline="131">m_kTaskInfoTableMap</references>
+        <referencedby refid="class_table_mgr_1ad0d44a4ae56a515ab9bafa62298ac4a0" compoundref="_table_mgr1_8cpp" startline="1063" endline="1087">TableMgr::InitTaskList</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_info_table_mgr_1a24110ba918b23bdf77ae3d51ee5cac6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_table_res_array" kindref="compound">TableResArray</ref></type>
+        <definition>TableResArray TaskInfoTableMgr::GetTaskInfoTableVec</definition>
+        <argsstring>()</argsstring>
+        <name>GetTaskInfoTableVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.hpp" line="125" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.cpp" bodystart="31" bodyend="40"/>
+        <references refid="class_task_info_table_mgr_1a8f76aa3afb5b225c71ba33c0bb540ec8" compoundref="_task_info__table_8hpp" startline="131">m_kTaskInfoTableMap</references>
+        <references refid="class_table_res_array_1ab7fbd71c9a00bfd30ae2282a4955dbc0" compoundref="_se_table_res_base_8cpp" startline="13" endline="16">TableResArray::pushBack</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_task_info_table_mgr_1a5ac142d83d027ede57fb4a61cb90a170" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TaskInfoTableMgr::Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.hpp" line="128" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.cpp" bodystart="62" bodyend="102"/>
+        <references refid="class_ti_xml_document_1a6dfc01a6e5d58e56acd537dfd3bdeb29" compoundref="tinyxml_8h" startline="1430" endline="1430">TiXmlDocument::Error</references>
+        <references refid="class_ti_xml_document_1a9d0f689f6e09ea494ea547be8d79c25e" compoundref="tinyxml_8h" startline="1433" endline="1433">TiXmlDocument::ErrorDesc</references>
+        <references refid="class_task_info_table_mgr_1af10a7332adc88b396f35895a61bd35f7" compoundref="_task_info__table_8cpp" startline="104" endline="209">FillData</references>
+        <references refid="class_ti_xml_node_1ab1f8d8e70d88aea4c5efedfe00862d55" compoundref="tinyxml_8cpp" startline="420" endline="432">TiXmlNode::FirstChildElement</references>
+        <references refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" compoundref="_table_mgr1_8cpp" startline="36" endline="43">TableMgr::Get</references>
+        <references refid="class_table_mgr_1af1a60a8b2807abd34ceb6002cf8f4b80" compoundref="_table_mgr1_8cpp" startline="851" endline="858">TableMgr::GetTableLoader</references>
+        <references refid="class_table_loader_1a8d06b11d37cde9ff76d98901dd39bab4">TableLoader::LoadTable</references>
+        <references refid="class_ti_xml_node_1a7667217e269e0da01d1f82aee94d1a3d" compoundref="tinyxml_8cpp" startline="450" endline="462">TiXmlNode::NextSiblingElement</references>
+        <references refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</references>
+        <referencedby refid="class_task_info_table_mgr_1a65dfb5f24ae6e0adc1378bb1b6a709f1" compoundref="_task_info__table_8cpp" startline="52" endline="55">TaskInfoTableMgr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_task_info_table_mgr_1af10a7332adc88b396f35895a61bd35f7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TaskInfoTableMgr::FillData</definition>
+        <argsstring>(TaskInfoTable *row, TiXmlElement *element)</argsstring>
+        <name>FillData</name>
+        <param>
+          <type><ref refid="struct_task_info_table" kindref="compound">TaskInfoTable</ref> *</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.hpp" line="129" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.cpp" bodystart="104" bodyend="209"/>
+        <references refid="class_ti_xml_element_1ac1e4691e9375ba4e665dce7e46a50a9c" compoundref="tinyxml_8cpp" startline="544" endline="550">TiXmlElement::Attribute</references>
+        <references refid="struct_task_info_table_1a3adb4bfb3e61c5c5eedf88904c951109" compoundref="_task_info__table_8hpp" startline="110">TaskInfoTable::fValue</references>
+        <references refid="struct_task_info_table_1a4d97fb11ccbbe8bd84701639953317b8" compoundref="_task_info__table_8hpp" startline="108">TaskInfoTable::iAwardExp</references>
+        <references refid="struct_task_info_table_1a2a115f3d077e023dfbf9b1f4ead7ee7d" compoundref="_task_info__table_8hpp" startline="109">TaskInfoTable::iAwardGold</references>
+        <references refid="struct_task_info_table_1a9661a05cf62397f3ee31a03a8e26bf96" compoundref="_task_info__table_8hpp" startline="111">TaskInfoTable::iAwardItem</references>
+        <references refid="struct_task_info_table_1a481786a3954a571832af3fc8d2df795d" compoundref="_task_info__table_8hpp" startline="105">TaskInfoTable::iCondValue1</references>
+        <references refid="struct_task_info_table_1a23350f34ad14907166eaf9b13382cb2f" compoundref="_task_info__table_8hpp" startline="106">TaskInfoTable::iCondValue2</references>
+        <references refid="struct_task_info_table_1a428c3c8e94714e623179db45555d8e0c" compoundref="_task_info__table_8hpp" startline="107">TaskInfoTable::iLimit</references>
+        <references refid="struct_task_info_table_1aec66071b042f992e319553f26fcd45d2" compoundref="_task_info__table_8hpp" startline="97">TaskInfoTable::iMapList</references>
+        <references refid="struct_task_info_table_1a96323af01ceb18fb88779a66e88ff19f" compoundref="_task_info__table_8hpp" startline="93">TaskInfoTable::kDescID</references>
+        <references refid="struct_task_info_table_1a72f3bfc27020b2a7662e188f6741b6f8" compoundref="_task_info__table_8hpp" startline="92">TaskInfoTable::kName_China</references>
+        <references refid="struct_task_info_table_1a6ce0500cf2e35d1c07e2864f37b5c034" compoundref="_task_info__table_8hpp" startline="91">TaskInfoTable::kNameID</references>
+        <references refid="struct_task_info_table_1a7790101e67b81cb857a0b606ab992f3f" compoundref="_task_info__table_8hpp" startline="94">TaskInfoTable::kTargetDesc</references>
+        <references refid="struct_task_info_table_1a3381d15d33238431773bd809d703490a" compoundref="_task_info__table_8hpp" startline="95">TaskInfoTable::kTaskDesc</references>
+        <references refid="class_task_info_table_mgr_1a8f76aa3afb5b225c71ba33c0bb540ec8" compoundref="_task_info__table_8hpp" startline="131">m_kTaskInfoTableMap</references>
+        <references refid="struct_task_info_table_1af745384b60f38feece1b2d98dd86eb36" compoundref="_task_info__table_8hpp" startline="102">TaskInfoTable::uiChange</references>
+        <references refid="struct_task_info_table_1aaf674a79b47823b039d0dbf0d7a12943" compoundref="_task_info__table_8hpp" startline="99">TaskInfoTable::uiConditionParam</references>
+        <references refid="struct_task_info_table_1a8bde8aebdf3835514563ab95a3d1cf14" compoundref="_task_info__table_8hpp" startline="103">TaskInfoTable::uiConditon</references>
+        <references refid="struct_task_info_table_1a296ee8b118d24f3a2e0e185609740b3e" compoundref="_task_info__table_8hpp" startline="101">TaskInfoTable::uiPreconditionTaskID</references>
+        <references refid="struct_task_info_table_1a2a6c5f59ffe4cd1d6f4eb3822b2a1b83" compoundref="_task_info__table_8hpp" startline="98">TaskInfoTable::uiReceiveCondition</references>
+        <references refid="struct_task_info_table_1a500fe95f7c1392f402b1633b6ad80405" compoundref="_task_info__table_8hpp" startline="104">TaskInfoTable::uiSpecialConditon</references>
+        <references refid="struct_task_info_table_1ac98fcfb2ee19a8d120a3e7893a56644a" compoundref="_task_info__table_8hpp" startline="90">TaskInfoTable::uiTaskID</references>
+        <references refid="struct_task_info_table_1aa62f1135a8732c29ecb10be65707c430" compoundref="_task_info__table_8hpp" startline="100">TaskInfoTable::uiTriggerType</references>
+        <references refid="struct_task_info_table_1aa21612d9c8b4822ecf8087111214f1d0" compoundref="_task_info__table_8hpp" startline="96">TaskInfoTable::uiType</references>
+        <referencedby refid="class_task_info_table_mgr_1a5ac142d83d027ede57fb4a61cb90a170" compoundref="_task_info__table_8cpp" startline="62" endline="102">Load</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9152">
+        <label>TaskInfoTable</label>
+        <link refid="struct_task_info_table"/>
+        <childnode refid="9153" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9154" relation="usage">
+          <edgelabel>kNameID</edgelabel>
+          <edgelabel>kDescID</edgelabel>
+          <edgelabel>kName_China</edgelabel>
+          <edgelabel>kTaskDesc</edgelabel>
+          <edgelabel>kTargetDesc</edgelabel>
+        </childnode>
+      </node>
+      <node id="9155">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="9153">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="9151">
+        <label>std::map&lt; unsigned int, TaskInfoTable * &gt;</label>
+        <childnode refid="9152" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9150">
+        <label>TaskInfoTableMgr</label>
+        <link refid="class_task_info_table_mgr"/>
+        <childnode refid="9150" relation="usage">
+          <edgelabel>m_pkTaskInfoTableMgr</edgelabel>
+        </childnode>
+        <childnode refid="9151" relation="usage">
+          <edgelabel>m_kTaskInfoTableMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="9154">
+        <label>std::string</label>
+        <childnode refid="9155" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.hpp" line="116" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/TaskInfo_table.hpp" bodystart="115" bodyend="133"/>
+    <listofallmembers>
+      <member refid="class_task_info_table_mgr_1af10a7332adc88b396f35895a61bd35f7" prot="private" virt="non-virtual"><scope>TaskInfoTableMgr</scope><name>FillData</name></member>
+      <member refid="class_task_info_table_mgr_1a4b44c8bdcc538a05e72720f9887c9ee5" prot="public" virt="non-virtual"><scope>TaskInfoTableMgr</scope><name>Get</name></member>
+      <member refid="class_task_info_table_mgr_1ad4e124dcccab58d2b3d8ce227ef2cd12" prot="public" virt="non-virtual"><scope>TaskInfoTableMgr</scope><name>GetTaskInfoTable</name></member>
+      <member refid="class_task_info_table_mgr_1a84b934defcce3723a9d6bfae333bd942" prot="public" virt="non-virtual"><scope>TaskInfoTableMgr</scope><name>GetTaskInfoTableMap</name></member>
+      <member refid="class_task_info_table_mgr_1a24110ba918b23bdf77ae3d51ee5cac6f" prot="public" virt="non-virtual"><scope>TaskInfoTableMgr</scope><name>GetTaskInfoTableVec</name></member>
+      <member refid="class_task_info_table_mgr_1a5ac142d83d027ede57fb4a61cb90a170" prot="private" virt="non-virtual"><scope>TaskInfoTableMgr</scope><name>Load</name></member>
+      <member refid="class_task_info_table_mgr_1a8f76aa3afb5b225c71ba33c0bb540ec8" prot="private" virt="non-virtual"><scope>TaskInfoTableMgr</scope><name>m_kTaskInfoTableMap</name></member>
+      <member refid="class_task_info_table_mgr_1afa7f625de50e94bdc74cec5e317471b4" prot="private" virt="non-virtual"><scope>TaskInfoTableMgr</scope><name>m_pkTaskInfoTableMgr</name></member>
+      <member refid="class_task_info_table_mgr_1a2a741bc6a30afe140faf97c1e74fc127" prot="public" virt="non-virtual"><scope>TaskInfoTableMgr</scope><name>ReLoad</name></member>
+      <member refid="class_task_info_table_mgr_1a65dfb5f24ae6e0adc1378bb1b6a709f1" prot="public" virt="non-virtual"><scope>TaskInfoTableMgr</scope><name>TaskInfoTableMgr</name></member>
+      <member refid="class_task_info_table_mgr_1a5945ee54299fc5a298364aaf3b1203e6" prot="public" virt="non-virtual"><scope>TaskInfoTableMgr</scope><name>~TaskInfoTableMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,590 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_watch_server_1_1_se_race_record_save_thread" kind="class" prot="public">
+    <compoundname>WatchServer::SeRaceRecordSaveThread</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Thread</basecompoundref>
+    <includes refid="_watch_server_2_src_2race_record_save_thread_8h" local="no">raceRecordSaveThread.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_watch_server_1_1_se_race_record_save_thread_1a8340c770693dd7ef30ee91108002e399" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool WatchServer::SeRaceRecordSaveThread::m_bRun</definition>
+        <argsstring></argsstring>
+        <name>m_bRun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" line="32" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a79535d2f4037275cc7eee46c39e3c851" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="49" endline="75">DoWork</referencedby>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a5ed1b2df07fda6e520bb78ab5f598db6" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="35" endline="47">Finialize</referencedby>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a195f97d5828265248e79642ee080e7b9" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="27" endline="33">Initialize</referencedby>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a9a943a128a29a7a64888cb0e24bef424" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="9" endline="14">SeRaceRecordSaveThread</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_watch_server_1_1_se_race_record_save_thread_1a8372df948ec492aa2e23cb14e66364fa" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_watch_server_1_1_c_watch_server" kindref="compound">CWatchServer</ref> *</type>
+        <definition>CWatchServer* WatchServer::SeRaceRecordSaveThread::m_pkOwner</definition>
+        <argsstring></argsstring>
+        <name>m_pkOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" line="33" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_watch_server_1_1_se_race_record_save_thread_1a39cc9876380046665bc5aeb420346369" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int WatchServer::SeRaceRecordSaveThread::m_uLogicVersion</definition>
+        <argsstring></argsstring>
+        <name>m_uLogicVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" line="34" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="77" endline="107">saveRecord</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_watch_server_1_1_se_race_record_save_thread_1a0f1f7e0da49168875adf7cf8081d2a7c" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespace_watch_server_1a8780c372bc2dc6af217d921fb5f2d61a" kindref="member">TRaceTaskQueue</ref></type>
+        <definition>TRaceTaskQueue WatchServer::SeRaceRecordSaveThread::m_qSaveQueue</definition>
+        <argsstring></argsstring>
+        <name>m_qSaveQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" line="36" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a79535d2f4037275cc7eee46c39e3c851" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="49" endline="75">DoWork</referencedby>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a5ed1b2df07fda6e520bb78ab5f598db6" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="35" endline="47">Finialize</referencedby>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a15e230a438d9545018bdaea1a4b247e5" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="20" endline="25">PushTask</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_watch_server_1_1_se_race_record_save_thread_1a7b48142c94f0aa71d79e5dbd7f43ea24" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespace_watch_server_1a8780c372bc2dc6af217d921fb5f2d61a" kindref="member">TRaceTaskQueue</ref></type>
+        <definition>TRaceTaskQueue WatchServer::SeRaceRecordSaveThread::m_qFinishQueue</definition>
+        <argsstring></argsstring>
+        <name>m_qFinishQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" line="37" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a79535d2f4037275cc7eee46c39e3c851" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="49" endline="75">DoWork</referencedby>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a9d97a8490bfd14b5ecd36dcb6638b706" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="110" endline="122">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_watch_server_1_1_se_race_record_save_thread_1ade8f039509cf860bf2bb907e4b494d8b" prot="protected" static="no" mutable="no">
+        <type>Es::NormalLock *</type>
+        <definition>Es::NormalLock* WatchServer::SeRaceRecordSaveThread::m_pkQueueLock</definition>
+        <argsstring></argsstring>
+        <name>m_pkQueueLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" line="39" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a79535d2f4037275cc7eee46c39e3c851" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="49" endline="75">DoWork</referencedby>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a195f97d5828265248e79642ee080e7b9" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="27" endline="33">Initialize</referencedby>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a15e230a438d9545018bdaea1a4b247e5" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="20" endline="25">PushTask</referencedby>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a9d97a8490bfd14b5ecd36dcb6638b706" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="110" endline="122">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_watch_server_1_1_se_race_record_save_thread_1a9a943a128a29a7a64888cb0e24bef424" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeRaceRecordSaveThread::SeRaceRecordSaveThread</definition>
+        <argsstring>(CWatchServer *owner, unsigned int logciVersion)</argsstring>
+        <name>SeRaceRecordSaveThread</name>
+        <param>
+          <type><ref refid="class_watch_server_1_1_c_watch_server" kindref="compound">CWatchServer</ref> *</type>
+          <declname>owner</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>logciVersion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" line="15" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.cpp" bodystart="9" bodyend="14"/>
+        <references refid="class_watch_server_1_1_se_race_record_save_thread_1a8340c770693dd7ef30ee91108002e399" compoundref="_watch_server_2_src_2race_record_save_thread_8h" startline="32">m_bRun</references>
+      </memberdef>
+      <memberdef kind="function" id="class_watch_server_1_1_se_race_record_save_thread_1ac3e249da0c4a38f4484b8b64e6aceb0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>SeRaceRecordSaveThread::~SeRaceRecordSaveThread</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SeRaceRecordSaveThread</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" line="16" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_watch_server_1_1_se_race_record_save_thread_1a15e230a438d9545018bdaea1a4b247e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeRaceRecordSaveThread::PushTask</definition>
+        <argsstring>(class SeRace *pTask)</argsstring>
+        <name>PushTask</name>
+        <param>
+          <type>class <ref refid="struct_watch_server_1_1_se_race" kindref="compound">SeRace</ref> *</type>
+          <declname>pTask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" line="18" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.cpp" bodystart="20" bodyend="25"/>
+        <references refid="class_watch_server_1_1_se_race_record_save_thread_1ade8f039509cf860bf2bb907e4b494d8b" compoundref="_watch_server_2_src_2race_record_save_thread_8h" startline="39">m_pkQueueLock</references>
+        <references refid="class_watch_server_1_1_se_race_record_save_thread_1a0f1f7e0da49168875adf7cf8081d2a7c" compoundref="_watch_server_2_src_2race_record_save_thread_8h" startline="36">m_qSaveQueue</references>
+        <referencedby refid="class_watch_server_1_1_c_se_race_mgr_1afa0e0135b773e24c67a4b2ee49e205fa" compoundref="_watch_server_2_src_2_se_race_mgr_8cpp" startline="179" endline="213">WatchServer::CSeRaceMgr::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_watch_server_1_1_se_race_record_save_thread_1a195f97d5828265248e79642ee080e7b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeRaceRecordSaveThread::Initialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" line="19" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.cpp" bodystart="27" bodyend="33"/>
+        <references refid="class_watch_server_1_1_se_race_record_save_thread_1a8340c770693dd7ef30ee91108002e399" compoundref="_watch_server_2_src_2race_record_save_thread_8h" startline="32">m_bRun</references>
+        <references refid="class_watch_server_1_1_se_race_record_save_thread_1ade8f039509cf860bf2bb907e4b494d8b" compoundref="_watch_server_2_src_2race_record_save_thread_8h" startline="39">m_pkQueueLock</references>
+        <referencedby refid="class_watch_server_1_1_c_se_race_mgr_1a76fd8f6a78749eb416e88db6d762736c" compoundref="_watch_server_2_src_2_se_race_mgr_8cpp" startline="11" endline="15">WatchServer::CSeRaceMgr::CSeRaceMgr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_watch_server_1_1_se_race_record_save_thread_1a5ed1b2df07fda6e520bb78ab5f598db6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeRaceRecordSaveThread::Finialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Finialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" line="20" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.cpp" bodystart="35" bodyend="47"/>
+        <references refid="class_watch_server_1_1_se_race_record_save_thread_1a8340c770693dd7ef30ee91108002e399" compoundref="_watch_server_2_src_2race_record_save_thread_8h" startline="32">m_bRun</references>
+        <references refid="class_watch_server_1_1_se_race_record_save_thread_1a0f1f7e0da49168875adf7cf8081d2a7c" compoundref="_watch_server_2_src_2race_record_save_thread_8h" startline="36">m_qSaveQueue</references>
+        <references refid="class_watch_server_1_1_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="77" endline="107">saveRecord</references>
+        <referencedby refid="class_watch_server_1_1_c_se_race_mgr_1ad4afae06f3ba514be6b8d70ec226ae44" compoundref="_watch_server_2_src_2_se_race_mgr_8cpp" startline="17" endline="21">WatchServer::CSeRaceMgr::~CSeRaceMgr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_watch_server_1_1_se_race_record_save_thread_1a9d97a8490bfd14b5ecd36dcb6638b706" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeRaceRecordSaveThread::Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" line="22" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.cpp" bodystart="110" bodyend="122"/>
+        <references refid="class_watch_server_1_1_se_race_record_save_thread_1ade8f039509cf860bf2bb907e4b494d8b" compoundref="_watch_server_2_src_2race_record_save_thread_8h" startline="39">m_pkQueueLock</references>
+        <references refid="class_watch_server_1_1_se_race_record_save_thread_1a7b48142c94f0aa71d79e5dbd7f43ea24" compoundref="_watch_server_2_src_2race_record_save_thread_8h" startline="37">m_qFinishQueue</references>
+        <referencedby refid="class_watch_server_1_1_c_se_race_mgr_1afa0e0135b773e24c67a4b2ee49e205fa" compoundref="_watch_server_2_src_2_se_race_mgr_8cpp" startline="179" endline="213">WatchServer::CSeRaceMgr::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_watch_server_1_1_se_race_record_save_thread_1a79535d2f4037275cc7eee46c39e3c851" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SeRaceRecordSaveThread::DoWork</definition>
+        <argsstring>(void)</argsstring>
+        <name>DoWork</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" line="24" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.cpp" bodystart="49" bodyend="75"/>
+        <references refid="class_watch_server_1_1_se_race_record_save_thread_1a8340c770693dd7ef30ee91108002e399" compoundref="_watch_server_2_src_2race_record_save_thread_8h" startline="32">m_bRun</references>
+        <references refid="class_watch_server_1_1_se_race_record_save_thread_1ade8f039509cf860bf2bb907e4b494d8b" compoundref="_watch_server_2_src_2race_record_save_thread_8h" startline="39">m_pkQueueLock</references>
+        <references refid="class_watch_server_1_1_se_race_record_save_thread_1a7b48142c94f0aa71d79e5dbd7f43ea24" compoundref="_watch_server_2_src_2race_record_save_thread_8h" startline="37">m_qFinishQueue</references>
+        <references refid="class_watch_server_1_1_se_race_record_save_thread_1a0f1f7e0da49168875adf7cf8081d2a7c" compoundref="_watch_server_2_src_2race_record_save_thread_8h" startline="36">m_qSaveQueue</references>
+        <references refid="class_watch_server_1_1_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="77" endline="107">saveRecord</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_watch_server_1_1_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeRaceRecordSaveThread::saveRecord</definition>
+        <argsstring>(class SeRace *pTask)</argsstring>
+        <name>saveRecord</name>
+        <param>
+          <type>class <ref refid="struct_watch_server_1_1_se_race" kindref="compound">SeRace</ref> *</type>
+          <declname>pTask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" line="28" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.cpp" bodystart="77" bodyend="107"/>
+        <references refid="struct_te_m_d5_1a4a87587ff2453882ccfb8a1fe64b9b94" compoundref="_te_misc_8h" startline="53">TeMD5::abyMD5</references>
+        <references refid="struct_watch_server_1_1_se_watch_config_1a8f69980b974838e64e22525425919fe9" compoundref="_watch_server_def_8h" startline="54">WatchServer::SeWatchConfig::acGameRecordFilePath</references>
+        <references refid="_watch_server_8cpp_1a0fe0b3e7097985c9686aa65a22e14299" compoundref="_watch_server_8cpp" startline="6">g_kWatchServer</references>
+        <references refid="_se_tool_8h_1adbd57b0a2e2b5bccf6ba29ea002839e8" compoundref="_se_tool_8h" startline="102">GetMD52Str</references>
+        <references refid="class_watch_server_1_1_c_watch_server_1a5ff7e15a13be2c896dd90f66d7ce602f" compoundref="_watch_server_8h" startline="60" endline="60">WatchServer::CWatchServer::GetWatchConfig</references>
+        <references refid="struct_watch_server_1_1_se_race_1aaec9fdff5d8b88f75e3ce882cf2e670c" compoundref="_watch_server_race_def_8h" startline="54">WatchServer::SeRace::kRaceID</references>
+        <references refid="struct_watch_server_1_1_se_race_1ab7b12555df05ac67c1b9d9daf510e6d6" compoundref="_watch_server_race_def_8h" startline="55">WatchServer::SeRace::kSvrModeRecord</references>
+        <references refid="class_watch_server_1_1_se_race_record_save_thread_1a39cc9876380046665bc5aeb420346369" compoundref="_watch_server_2_src_2race_record_save_thread_8h" startline="34">m_uLogicVersion</references>
+        <references refid="class_se_race_record_1a8371775734b57d065293a4723b6416ea" compoundref="_se_race_record_8cpp" startline="915" endline="960">SeRaceRecord::SaveToFile</references>
+        <references refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" compoundref="_se_server_tool_8cpp" startline="31" endline="64">SPrintf</references>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a79535d2f4037275cc7eee46c39e3c851" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="49" endline="75">DoWork</referencedby>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a5ed1b2df07fda6e520bb78ab5f598db6" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="35" endline="47">Finialize</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6315">
+        <label>WatchServer::SeRaceRecordSaveThread</label>
+        <link refid="class_watch_server_1_1_se_race_record_save_thread"/>
+        <childnode refid="6316" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6316">
+        <label>Thread</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6331">
+        <label>WatchServer::SeWatchConfig</label>
+        <link refid="struct_watch_server_1_1_se_watch_config"/>
+        <childnode refid="6324" relation="usage">
+          <edgelabel>kLocalServer</edgelabel>
+          <edgelabel>kAddrToPlayer</edgelabel>
+          <edgelabel>kWatchMgrServer</edgelabel>
+          <edgelabel>kAddrRS</edgelabel>
+          <edgelabel>kMasterServer</edgelabel>
+        </childnode>
+        <childnode refid="6332" relation="usage">
+          <edgelabel>vAddrRS</edgelabel>
+        </childnode>
+      </node>
+      <node id="6336">
+        <label>SeRaceRecord</label>
+        <link refid="class_se_race_record"/>
+        <childnode refid="6337" relation="usage">
+          <edgelabel>m_kReplayInfo</edgelabel>
+        </childnode>
+        <childnode refid="6338" relation="usage">
+          <edgelabel>m_vecRecordLabel</edgelabel>
+        </childnode>
+        <childnode refid="6340" relation="usage">
+          <edgelabel>m_akPackInfo</edgelabel>
+        </childnode>
+        <childnode refid="6341" relation="usage">
+          <edgelabel>m_kTmpRacePack</edgelabel>
+        </childnode>
+        <childnode refid="6342" relation="usage">
+          <edgelabel>m_vecRecordReport</edgelabel>
+        </childnode>
+        <childnode refid="6346" relation="usage">
+          <edgelabel>m_aiReconDataOffPos</edgelabel>
+        </childnode>
+        <childnode refid="6347" relation="usage">
+          <edgelabel>m_ClientWatchLogFile</edgelabel>
+        </childnode>
+        <childnode refid="6352" relation="usage">
+          <edgelabel>m_kPlayerInfo</edgelabel>
+        </childnode>
+        <childnode refid="6354" relation="usage">
+          <edgelabel>m_kTmpRaceHead</edgelabel>
+        </childnode>
+      </node>
+      <node id="6342">
+        <label>std::vector&lt; RecordReport &gt;</label>
+        <childnode refid="6343" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6317">
+        <label>WatchServer::SeRaceRecordSaveThread</label>
+        <link refid="class_watch_server_1_1_se_race_record_save_thread"/>
+        <childnode refid="6318" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6319" relation="usage">
+          <edgelabel>m_pkOwner</edgelabel>
+        </childnode>
+        <childnode refid="6334" relation="usage">
+          <edgelabel>m_qFinishQueue</edgelabel>
+          <edgelabel>m_qSaveQueue</edgelabel>
+        </childnode>
+      </node>
+      <node id="6338">
+        <label>std::vector&lt; RecordLabel &gt;</label>
+        <childnode refid="6339" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6327">
+        <label>WatchServer::SeInnerConnect</label>
+        <link refid="struct_watch_server_1_1_se_inner_connect"/>
+        <childnode refid="6324" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+        <childnode refid="6325" relation="usage">
+          <edgelabel>kTownSign</edgelabel>
+        </childnode>
+      </node>
+      <node id="6326">
+        <label>std::map&lt; HSock, SeInnerConnect * &gt;</label>
+        <childnode refid="6327" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6348">
+        <label>std::basic_ofstream&lt; char &gt;</label>
+        <childnode refid="6349" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6334">
+        <label>std::queue&lt; class SeRace * &gt;</label>
+        <childnode refid="6335" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6343">
+        <label>RecordReport</label>
+        <link refid="struct_record_report"/>
+        <childnode refid="6344" relation="usage">
+          <edgelabel>strMsg</edgelabel>
+        </childnode>
+      </node>
+      <node id="6332">
+        <label>std::vector&lt; SeNetAddr &gt;</label>
+        <childnode refid="6324" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6352">
+        <label>std::vector&lt; SePlayerInfoSeat &gt;</label>
+        <childnode refid="6353" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6353">
+        <label>SePlayerInfoSeat</label>
+        <link refid="struct_se_player_info_seat"/>
+      </node>
+      <node id="6347">
+        <label>std::ofstream</label>
+        <childnode refid="6348" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6323">
+        <label>SeConnect</label>
+        <link refid="struct_se_connect"/>
+        <childnode refid="6324" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+        <childnode refid="6325" relation="usage">
+          <edgelabel>kTownSign</edgelabel>
+        </childnode>
+      </node>
+      <node id="6321">
+        <label>SeBaseServer</label>
+        <link refid="class_se_base_server"/>
+      </node>
+      <node id="6324">
+        <label>SeNetAddr</label>
+        <link refid="struct_se_net_addr"/>
+      </node>
+      <node id="6341">
+        <label>SeRacePack</label>
+        <link refid="struct_se_race_pack"/>
+      </node>
+      <node id="6345">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="6357">
+        <label>std::unordered_map&lt; DWord, SeViewPlayer &gt;</label>
+        <childnode refid="6358" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6333">
+        <label>std::map&lt; HSock, DWord &gt;</label>
+      </node>
+      <node id="6337">
+        <label>SeReplayInfo</label>
+        <link refid="struct_se_replay_info"/>
+      </node>
+      <node id="6356">
+        <label>TeMD5</label>
+        <link refid="struct_te_m_d5"/>
+      </node>
+      <node id="6339">
+        <label>RecordLabel</label>
+        <link refid="struct_record_label"/>
+      </node>
+      <node id="6340">
+        <label>SePackInfo</label>
+        <link refid="struct_se_pack_info"/>
+      </node>
+      <node id="6328">
+        <label>SeVirtConn</label>
+        <link refid="struct_se_virt_conn"/>
+        <childnode refid="6324" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6319">
+        <label>WatchServer::CWatchServer</label>
+        <link refid="class_watch_server_1_1_c_watch_server"/>
+        <childnode refid="6320" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6321" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6322" relation="usage">
+          <edgelabel>m_kAllConnect</edgelabel>
+        </childnode>
+        <childnode refid="6326" relation="usage">
+          <edgelabel>m_kAllInnerConnect</edgelabel>
+        </childnode>
+        <childnode refid="6328" relation="usage">
+          <edgelabel>m_pkNSConn</edgelabel>
+        </childnode>
+        <childnode refid="6329" relation="usage">
+          <edgelabel>m_vRsServerData</edgelabel>
+        </childnode>
+        <childnode refid="6331" relation="usage">
+          <edgelabel>m_kConfig</edgelabel>
+        </childnode>
+        <childnode refid="6333" relation="usage">
+          <edgelabel>m_mSockRsServerData</edgelabel>
+        </childnode>
+        <childnode refid="6330" relation="usage">
+          <edgelabel>m_vWcsMgrServerData</edgelabel>
+          <edgelabel>m_vWCSMasterServerData</edgelabel>
+        </childnode>
+      </node>
+      <node id="6322">
+        <label>std::map&lt; HSock, SeConnect * &gt;</label>
+        <childnode refid="6323" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6349">
+        <label>std::basic_ostream&lt; Char &gt;</label>
+        <childnode refid="6350" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6350">
+        <label>std::basic_ios&lt; Char &gt;</label>
+        <childnode refid="6351" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6318">
+        <label>Thread</label>
+      </node>
+      <node id="6325">
+        <label>HTownSign</label>
+        <link refid="struct_h_town_sign"/>
+      </node>
+      <node id="6351">
+        <label>std::ios_base</label>
+      </node>
+      <node id="6355">
+        <label>SeRaceCmd</label>
+        <link refid="struct_se_race_cmd"/>
+      </node>
+      <node id="6354">
+        <label>SeRaceFrame</label>
+        <link refid="struct_se_race_frame"/>
+        <childnode refid="6355" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6329">
+        <label>std::vector&lt; SeServerData &gt;</label>
+        <childnode refid="6330" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6335">
+        <label>WatchServer::SeRace</label>
+        <link refid="struct_watch_server_1_1_se_race"/>
+        <childnode refid="6336" relation="usage">
+          <edgelabel>kRecord</edgelabel>
+          <edgelabel>kSvrModeRecord</edgelabel>
+        </childnode>
+        <childnode refid="6356" relation="usage">
+          <edgelabel>kRaceID</edgelabel>
+        </childnode>
+        <childnode refid="6357" relation="usage">
+          <edgelabel>mViewPlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="6330">
+        <label>SeServerData</label>
+        <link refid="struct_se_server_data"/>
+      </node>
+      <node id="6358">
+        <label>WatchServer::SeViewPlayer</label>
+        <link refid="struct_watch_server_1_1_se_view_player"/>
+      </node>
+      <node id="6346">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+      <node id="6320">
+        <label>TeNetCall</label>
+      </node>
+      <node id="6344">
+        <label>std::string</label>
+        <childnode refid="6345" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" line="13" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/raceRecordSaveThread.h" bodystart="12" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_watch_server_1_1_se_race_record_save_thread_1a79535d2f4037275cc7eee46c39e3c851" prot="public" virt="virtual"><scope>WatchServer::SeRaceRecordSaveThread</scope><name>DoWork</name></member>
+      <member refid="class_watch_server_1_1_se_race_record_save_thread_1a5ed1b2df07fda6e520bb78ab5f598db6" prot="public" virt="non-virtual"><scope>WatchServer::SeRaceRecordSaveThread</scope><name>Finialize</name></member>
+      <member refid="class_watch_server_1_1_se_race_record_save_thread_1a195f97d5828265248e79642ee080e7b9" prot="public" virt="non-virtual"><scope>WatchServer::SeRaceRecordSaveThread</scope><name>Initialize</name></member>
+      <member refid="class_watch_server_1_1_se_race_record_save_thread_1a8340c770693dd7ef30ee91108002e399" prot="protected" virt="non-virtual"><scope>WatchServer::SeRaceRecordSaveThread</scope><name>m_bRun</name></member>
+      <member refid="class_watch_server_1_1_se_race_record_save_thread_1a8372df948ec492aa2e23cb14e66364fa" prot="protected" virt="non-virtual"><scope>WatchServer::SeRaceRecordSaveThread</scope><name>m_pkOwner</name></member>
+      <member refid="class_watch_server_1_1_se_race_record_save_thread_1ade8f039509cf860bf2bb907e4b494d8b" prot="protected" virt="non-virtual"><scope>WatchServer::SeRaceRecordSaveThread</scope><name>m_pkQueueLock</name></member>
+      <member refid="class_watch_server_1_1_se_race_record_save_thread_1a7b48142c94f0aa71d79e5dbd7f43ea24" prot="protected" virt="non-virtual"><scope>WatchServer::SeRaceRecordSaveThread</scope><name>m_qFinishQueue</name></member>
+      <member refid="class_watch_server_1_1_se_race_record_save_thread_1a0f1f7e0da49168875adf7cf8081d2a7c" prot="protected" virt="non-virtual"><scope>WatchServer::SeRaceRecordSaveThread</scope><name>m_qSaveQueue</name></member>
+      <member refid="class_watch_server_1_1_se_race_record_save_thread_1a39cc9876380046665bc5aeb420346369" prot="protected" virt="non-virtual"><scope>WatchServer::SeRaceRecordSaveThread</scope><name>m_uLogicVersion</name></member>
+      <member refid="class_watch_server_1_1_se_race_record_save_thread_1a15e230a438d9545018bdaea1a4b247e5" prot="public" virt="non-virtual"><scope>WatchServer::SeRaceRecordSaveThread</scope><name>PushTask</name></member>
+      <member refid="class_watch_server_1_1_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" prot="private" virt="non-virtual"><scope>WatchServer::SeRaceRecordSaveThread</scope><name>saveRecord</name></member>
+      <member refid="class_watch_server_1_1_se_race_record_save_thread_1a9a943a128a29a7a64888cb0e24bef424" prot="public" virt="non-virtual"><scope>WatchServer::SeRaceRecordSaveThread</scope><name>SeRaceRecordSaveThread</name></member>
+      <member refid="class_watch_server_1_1_se_race_record_save_thread_1a9d97a8490bfd14b5ecd36dcb6638b706" prot="public" virt="non-virtual"><scope>WatchServer::SeRaceRecordSaveThread</scope><name>Update</name></member>
+      <member refid="class_watch_server_1_1_se_race_record_save_thread_1ac3e249da0c4a38f4484b8b64e6aceb0c" prot="public" virt="virtual"><scope>WatchServer::SeRaceRecordSaveThread</scope><name>~SeRaceRecordSaveThread</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

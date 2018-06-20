@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_se_log_thread" kind="class" prot="public">
+    <compoundname>SeLogThread</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Thread</basecompoundref>
+    <includes refid="_se_log_thread_8h" local="no">SeLogThread.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_se_log_thread_1a0a9cd6e28e44a2dbc168e571f5d73bd6" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_se_thread_msg_mgr" kindref="compound">SeThreadMsgMgr</ref></type>
+        <definition>SeThreadMsgMgr SeLogThread::m_kLogDataCache</definition>
+        <argsstring></argsstring>
+        <name>m_kLogDataCache</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.h" line="20" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_se_log_thread_1ad33887faaa910b8dc0bd274e5a946478" compoundref="_se_log_thread_8cpp" startline="32" endline="63">DoWork</referencedby>
+        <referencedby refid="class_se_log_thread_1acb994d982ec89ada3684a25bc29f2488" compoundref="_se_log_thread_8cpp" startline="22" endline="30">Initialize</referencedby>
+        <referencedby refid="class_se_log_thread_1a4276900530ef7395ddf072c1750686f7" compoundref="_se_log_thread_8cpp" startline="65" endline="68">PushLog</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_log_thread_1ad15b95b71a36f5af32d8d86796b36995" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SeLogThread::m_bRun</definition>
+        <argsstring></argsstring>
+        <name>m_bRun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.h" line="21" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_se_log_thread_1ad33887faaa910b8dc0bd274e5a946478" compoundref="_se_log_thread_8cpp" startline="32" endline="63">DoWork</referencedby>
+        <referencedby refid="class_se_log_thread_1a229c14c11072b73ed7121d10280ceaed" compoundref="_se_log_thread_8cpp" startline="16" endline="20">Finialize</referencedby>
+        <referencedby refid="class_se_log_thread_1acb994d982ec89ada3684a25bc29f2488" compoundref="_se_log_thread_8cpp" startline="22" endline="30">Initialize</referencedby>
+        <referencedby refid="class_se_log_thread_1a3ae8c7b4139bbc8cf7b8f225a7f40911" compoundref="_se_log_thread_8cpp" startline="6" endline="10">SeLogThread</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_log_thread_1ad10fea27a378cf4ccdcf382426632d43" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_se_file_log" kindref="compound">SeFileLog</ref> *</type>
+        <definition>SeFileLog* SeLogThread::m_pkFileLog</definition>
+        <argsstring></argsstring>
+        <name>m_pkFileLog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.h" line="22" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.h" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_se_log_thread_1ad33887faaa910b8dc0bd274e5a946478" compoundref="_se_log_thread_8cpp" startline="32" endline="63">DoWork</referencedby>
+        <referencedby refid="class_se_log_thread_1a3ae8c7b4139bbc8cf7b8f225a7f40911" compoundref="_se_log_thread_8cpp" startline="6" endline="10">SeLogThread</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_se_log_thread_1a3ae8c7b4139bbc8cf7b8f225a7f40911" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeLogThread::SeLogThread</definition>
+        <argsstring>(SeFileLog *pkFileLog)</argsstring>
+        <name>SeLogThread</name>
+        <param>
+          <type><ref refid="class_se_file_log" kindref="compound">SeFileLog</ref> *</type>
+          <declname>pkFileLog</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.h" line="9" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.cpp" bodystart="6" bodyend="10"/>
+        <references refid="class_se_log_thread_1ad15b95b71a36f5af32d8d86796b36995" compoundref="_se_log_thread_8h" startline="21">m_bRun</references>
+        <references refid="class_se_log_thread_1ad10fea27a378cf4ccdcf382426632d43" compoundref="_se_log_thread_8h" startline="22">m_pkFileLog</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_log_thread_1a2e524a70457b1d348df0ba080242c83e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>SeLogThread::~SeLogThread</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SeLogThread</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.h" line="10" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_log_thread_1acb994d982ec89ada3684a25bc29f2488" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeLogThread::Initialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.h" line="12" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.cpp" bodystart="22" bodyend="30"/>
+        <references refid="class_se_thread_msg_mgr_1ae74c5d933cc0cac0732d472c6df97107" compoundref="_se_thread_msg_8cpp" startline="28" endline="34">SeThreadMsgMgr::Initialize</references>
+        <references refid="class_se_log_thread_1ad15b95b71a36f5af32d8d86796b36995" compoundref="_se_log_thread_8h" startline="21">m_bRun</references>
+        <references refid="class_se_log_thread_1a0a9cd6e28e44a2dbc168e571f5d73bd6" compoundref="_se_log_thread_8h" startline="20">m_kLogDataCache</references>
+        <referencedby refid="class_se_file_log_1af463767ecda1363cd0525687cfd8db26" compoundref="_se_file_log_8cpp" startline="96" endline="128">SeFileLog::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_log_thread_1a229c14c11072b73ed7121d10280ceaed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeLogThread::Finialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Finialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.h" line="13" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.cpp" bodystart="16" bodyend="20"/>
+        <references refid="class_se_log_thread_1ad15b95b71a36f5af32d8d86796b36995" compoundref="_se_log_thread_8h" startline="21">m_bRun</references>
+        <referencedby refid="class_se_file_log_1a08acddcdf0ea90facf839f63175cd5ec" compoundref="_se_file_log_8cpp" startline="74" endline="94">SeFileLog::~SeFileLog</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_log_thread_1ad33887faaa910b8dc0bd274e5a946478" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SeLogThread::DoWork</definition>
+        <argsstring>(void)</argsstring>
+        <name>DoWork</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.h" line="15" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.cpp" bodystart="32" bodyend="63"/>
+        <references refid="class_se_file_log_1ade06b2762fdb8869f0173693546708b8" compoundref="_se_file_log_8cpp" startline="278" endline="284">SeFileLog::FlushLog</references>
+        <references refid="class_se_file_log_1a94903c0d3601713e89bb8a2907d78c1f" compoundref="_se_file_log_8cpp" startline="286" endline="353">SeFileLog::Log</references>
+        <references refid="class_se_log_thread_1ad15b95b71a36f5af32d8d86796b36995" compoundref="_se_log_thread_8h" startline="21">m_bRun</references>
+        <references refid="class_se_log_thread_1a0a9cd6e28e44a2dbc168e571f5d73bd6" compoundref="_se_log_thread_8h" startline="20">m_kLogDataCache</references>
+        <references refid="class_se_log_thread_1ad10fea27a378cf4ccdcf382426632d43" compoundref="_se_log_thread_8h" startline="22">m_pkFileLog</references>
+        <references refid="class_se_thread_msg_mgr_1a143465b2c3e037cac44183f87355d23f" compoundref="_se_thread_msg_8cpp" startline="60" endline="82">SeThreadMsgMgr::PopMsg</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_log_thread_1a4276900530ef7395ddf072c1750686f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeLogThread::PushLog</definition>
+        <argsstring>(char *pcData, size_t szSize)</argsstring>
+        <name>PushLog</name>
+        <param>
+          <type>char *</type>
+          <declname>pcData</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>szSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.h" line="17" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.cpp" bodystart="65" bodyend="68"/>
+        <references refid="class_se_log_thread_1a0a9cd6e28e44a2dbc168e571f5d73bd6" compoundref="_se_log_thread_8h" startline="20">m_kLogDataCache</references>
+        <references refid="class_se_thread_msg_mgr_1a2138303823638539c975f7cd63cb46d4" compoundref="_se_thread_msg_8cpp" startline="36" endline="58">SeThreadMsgMgr::PushMsg</references>
+        <referencedby refid="class_se_file_log_1a22d35a686f6e13a1465f6de497210c84" compoundref="_se_file_log_8cpp" startline="266" endline="276">SeFileLog::Flush</referencedby>
+        <referencedby refid="class_se_file_log_1a5ebd2056c8da0c162b4b7051f420f343" compoundref="_se_file_log_8cpp" startline="135" endline="178">SeFileLog::LogAsLevel</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4394">
+        <label>SeLogThread</label>
+        <link refid="class_se_log_thread"/>
+        <childnode refid="4395" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4395">
+        <label>Es::Thread</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4396">
+        <label>SeLogThread</label>
+        <link refid="class_se_log_thread"/>
+        <childnode refid="4397" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4398" relation="usage">
+          <edgelabel>m_kLogDataCache</edgelabel>
+        </childnode>
+        <childnode refid="4400" relation="usage">
+          <edgelabel>m_pkFileLog</edgelabel>
+        </childnode>
+      </node>
+      <node id="4398">
+        <label>SeThreadMsgMgr</label>
+        <link refid="class_se_thread_msg_mgr"/>
+        <childnode refid="4399" relation="usage">
+          <edgelabel>m_kTemMsgData</edgelabel>
+        </childnode>
+      </node>
+      <node id="4400">
+        <label>SeFileLog</label>
+        <link refid="class_se_file_log"/>
+        <childnode refid="4396" relation="usage">
+          <edgelabel>m_pkLogThread</edgelabel>
+        </childnode>
+      </node>
+      <node id="4399">
+        <label>SeMsgData</label>
+        <link refid="struct_se_msg_data"/>
+      </node>
+      <node id="4397">
+        <label>Es::Thread</label>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.h" line="7" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeLogThread.h" bodystart="6" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_se_log_thread_1ad33887faaa910b8dc0bd274e5a946478" prot="public" virt="virtual"><scope>SeLogThread</scope><name>DoWork</name></member>
+      <member refid="class_se_log_thread_1a229c14c11072b73ed7121d10280ceaed" prot="public" virt="non-virtual"><scope>SeLogThread</scope><name>Finialize</name></member>
+      <member refid="class_se_log_thread_1acb994d982ec89ada3684a25bc29f2488" prot="public" virt="non-virtual"><scope>SeLogThread</scope><name>Initialize</name></member>
+      <member refid="class_se_log_thread_1ad15b95b71a36f5af32d8d86796b36995" prot="protected" virt="non-virtual"><scope>SeLogThread</scope><name>m_bRun</name></member>
+      <member refid="class_se_log_thread_1a0a9cd6e28e44a2dbc168e571f5d73bd6" prot="protected" virt="non-virtual"><scope>SeLogThread</scope><name>m_kLogDataCache</name></member>
+      <member refid="class_se_log_thread_1ad10fea27a378cf4ccdcf382426632d43" prot="protected" virt="non-virtual"><scope>SeLogThread</scope><name>m_pkFileLog</name></member>
+      <member refid="class_se_log_thread_1a4276900530ef7395ddf072c1750686f7" prot="public" virt="non-virtual"><scope>SeLogThread</scope><name>PushLog</name></member>
+      <member refid="class_se_log_thread_1a3ae8c7b4139bbc8cf7b8f225a7f40911" prot="public" virt="non-virtual"><scope>SeLogThread</scope><name>SeLogThread</name></member>
+      <member refid="class_se_log_thread_1a2e524a70457b1d348df0ba080242c83e" prot="public" virt="virtual"><scope>SeLogThread</scope><name>~SeLogThread</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

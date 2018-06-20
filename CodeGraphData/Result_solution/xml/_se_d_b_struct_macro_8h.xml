@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_se_d_b_struct_macro_8h" kind="file">
+    <compoundname>SeDBStructMacro.h</compoundname>
+    <includedby refid="_src_2_se_char_info_8h" local="yes">DBServer/Src/SeCharInfo.h</includedby>
+    <includedby refid="src_2_se_char_info_8h" local="yes">DBServer/src/SeCharInfo.h</includedby>
+    <invincdepgraph>
+      <node id="138866">
+        <label>DBServer/src/SeCharInfo.h</label>
+        <link refid="src_2_se_char_info_8h"/>
+      </node>
+      <node id="138865">
+        <label>DBServer/Src/SeCharInfo.h</label>
+        <link refid="_src_2_se_char_info_8h"/>
+      </node>
+      <node id="138864">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h</label>
+        <link refid="SeDBStructMacro.h"/>
+        <childnode refid="138865" relation="include">
+        </childnode>
+        <childnode refid="138866" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_se_d_b_struct_macro_8h_1a9b8872dbd74e35d9d288a08e22f5b86d" prot="public" static="no">
+        <name>DB_DEF_BEGIN</name>
+        <param><defname>name</defname></param>
+        <param><defname>tabname</defname></param>
+        <param><defname>can_del</defname></param>
+        <initializer>struct SeDB##name\
+														{\
+															<ref refid="_se_d_b_mem_pool_8h_1a91133609754faacc5d9211494e6e260c" kindref="member">DECLARE_DBPOOL</ref>(SeDB##name);\
+															friend class <ref refid="class_se_d_b_mem_mgr" kindref="compound">SeDBMemMgr</ref>;\
+															static <ref refid="struct_se_d_b_info" kindref="compound">SeDBInfo</ref> s_kDBInfo;\
+															static <ref refid="struct_se_d_b_field_info" kindref="compound">SeDBFieldInfo</ref> s_akFieldInfo[SEM_##name##_Num];\
+															static void Register(void);\
+															int UpdateData(int iIndex,void* pkData);\
+															void LoadData(int iIndex, TeDBResSet&amp; rkResSet);\
+															void LoadData(int iIndex, <ref refid="class_se_d_b_stream" kindref="compound">SeDBStream</ref> &amp; kDBStream);\
+															void SaveData(int iIndex, <ref refid="class_se_d_b_stream" kindref="compound">SeDBStream</ref> &amp; kDBStream);\
+															bool SetChangeType(<ref refid="_se_d_b_define_8h_1a3c6f2499090da69104fc0330570b0559" kindref="member">SeChangeType</ref> eType);\
+															uint64_t GetValueNum(int iIndex);\
+															char* GetValueString(int iIndex);\
+															<ref refid="struct_se_d_b_time" kindref="compound">SeDBTime</ref> GetValueTime(int iIndex);\
+															bool IsNum(int iIndex);\
+															bool IsString(int iIndex);\
+															bool IsDBTime(int iIndex);\
+															bool IsNum64(int iIndex);\
+															int  GetMaxSEMNums();\
+															<ref refid="_se_d_b_define_8h_1a3c6f2499090da69104fc0330570b0559" kindref="member">SeChangeType</ref> SaveToDB(int iDB,int iConnectNums);\
+															<ref refid="_se_d_b_define_8h_1a3c6f2499090da69104fc0330570b0559" kindref="member">SeChangeType</ref> GetChangeType();\
+															SeDB##name(){memset(this,0,sizeof(SeDB##name));}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h" line="2" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_se_d_b_struct_macro_8h_1a3d86455ca9341b7f2918927625fdcc0e" prot="public" static="no">
+        <name>DB_BYTE</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <initializer>Byte dw_##name;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h" line="25" column="10" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_se_d_b_struct_macro_8h_1abb72a7bc982d11eab4fa0e641dddc25c" prot="public" static="no">
+        <name>DB_WORD</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <initializer>Word dw_##name;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h" line="26" column="10" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_se_d_b_struct_macro_8h_1afa0c25b1a71e1c9cdc96ba9299f2634f" prot="public" static="no">
+        <name>DB_NUM</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <initializer>DWord dw_##name;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h" line="27" column="10" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_se_d_b_struct_macro_8h_1a99c6491b94802955864ecfb568fc3c89" prot="public" static="no">
+        <name>DB_NUM64</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <initializer>UInt64 dw_##name;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h" line="28" column="10" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_se_d_b_struct_macro_8h_1a8b61f7ff217e8baba8c9a0a576a1519c" prot="public" static="no">
+        <name>DB_STR</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <initializer>char ac_##name[len];</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h" line="29" column="10" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_se_d_b_struct_macro_8h_1a8d7da5f98f926c0485007f5e6bda0e89" prot="public" static="no">
+        <name>DB_TIME</name>
+        <param><defname>edef</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>len</defname></param>
+        <param><defname>flag</defname></param>
+        <initializer><ref refid="struct_se_d_b_time" kindref="compound">SeDBTime</ref> k_##name;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h" line="30" column="10" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_se_d_b_struct_macro_8h_1a3989f4bc05c6ec23b5e81f4d7891ff69" prot="public" static="no">
+        <name>DB_DEF_END</name>
+        <param><defname>name</defname></param>
+        <param><defname>tabname</defname></param>
+        <param><defname>can_del</defname></param>
+        <initializer>char ac_ChangeBit[((<ref refid="_se_d_b_define_8h_1a3c6f2499090da69104fc0330570b0559a39738a02f76fd111f0c64b5cc88c42a7" kindref="member">SCT_NUM</ref> + SEM_##name##_Num + 31) / 32) * 4];\
+															bool m_bNeedDelete;\
+														};</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h" line="31" column="10" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>DB_DEF_BEGIN</highlight></codeline>
+<codeline lineno="2" refid="_se_d_b_struct_macro_8h_1a9b8872dbd74e35d9d288a08e22f5b86d" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DB_DEF_BEGIN(name,tabname,can_del)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>struct<sp/>SeDB##name\</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{\</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DECLARE_DBPOOL(SeDB##name);\</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>friend<sp/>class<sp/>SeDBMemMgr;\</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static<sp/>SeDBInfo<sp/>s_kDBInfo;\</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static<sp/>SeDBFieldInfo<sp/>s_akFieldInfo[SEM_##name##_Num];\</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static<sp/>void<sp/>Register(void);\</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>UpdateData(int<sp/>iIndex,void*<sp/>pkData);\</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>LoadData(int<sp/>iIndex,<sp/>TeDBResSet&amp;<sp/>rkResSet);\</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>LoadData(int<sp/>iIndex,<sp/>SeDBStream<sp/>&amp;<sp/>kDBStream);\</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>SaveData(int<sp/>iIndex,<sp/>SeDBStream<sp/>&amp;<sp/>kDBStream);\</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>SetChangeType(SeChangeType<sp/>eType);\</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint64_t<sp/>GetValueNum(int<sp/>iIndex);\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>char*<sp/>GetValueString(int<sp/>iIndex);\</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SeDBTime<sp/>GetValueTime(int<sp/>iIndex);\</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>IsNum(int<sp/>iIndex);\</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>IsString(int<sp/>iIndex);\</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>IsDBTime(int<sp/>iIndex);\</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>IsNum64(int<sp/>iIndex);\</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/><sp/>GetMaxSEMNums();\</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SeChangeType<sp/>SaveToDB(int<sp/>iDB,int<sp/>iConnectNums);\</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SeChangeType<sp/>GetChangeType();\</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SeDB##name(){memset(this,0,sizeof(SeDB##name));}</highlight></codeline>
+<codeline lineno="25" refid="_se_d_b_struct_macro_8h_1a3d86455ca9341b7f2918927625fdcc0e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DB_BYTE(edef,name,len,flag)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Byte<sp/>dw_##name;</highlight></codeline>
+<codeline lineno="26" refid="_se_d_b_struct_macro_8h_1abb72a7bc982d11eab4fa0e641dddc25c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DB_WORD(edef,name,len,flag)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Word<sp/>dw_##name;</highlight></codeline>
+<codeline lineno="27" refid="_se_d_b_struct_macro_8h_1afa0c25b1a71e1c9cdc96ba9299f2634f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DB_NUM(edef,name,len,flag)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DWord<sp/>dw_##name;</highlight></codeline>
+<codeline lineno="28" refid="_se_d_b_struct_macro_8h_1a99c6491b94802955864ecfb568fc3c89" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DB_NUM64(edef,<sp/>name,<sp/>len,<sp/>flag)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UInt64<sp/>dw_##name;</highlight></codeline>
+<codeline lineno="29" refid="_se_d_b_struct_macro_8h_1a8b61f7ff217e8baba8c9a0a576a1519c" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DB_STR(edef,name,len,flag)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>char<sp/>ac_##name[len];</highlight></codeline>
+<codeline lineno="30" refid="_se_d_b_struct_macro_8h_1a8d7da5f98f926c0485007f5e6bda0e89" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DB_TIME(edef,name,len,flag)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SeDBTime<sp/>k_##name;</highlight></codeline>
+<codeline lineno="31" refid="_se_d_b_struct_macro_8h_1a3989f4bc05c6ec23b5e81f4d7891ff69" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DB_DEF_END(name,tabname,can_del)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>char<sp/>ac_ChangeBit[((SCT_NUM<sp/>+<sp/>SEM_##name##_Num<sp/>+<sp/>31)<sp/>/<sp/>32)<sp/>*<sp/>4];\</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool<sp/>m_bNeedDelete;\</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>DB_DEF_BEGIN</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>DB_BYTE</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>DB_WORD</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>DB_NUM</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>DB_STR</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>DB_TIME</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>DB_NUM64</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>DB_DEF_END</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBStructMacro.h"/>
+  </compounddef>
+</doxygen>

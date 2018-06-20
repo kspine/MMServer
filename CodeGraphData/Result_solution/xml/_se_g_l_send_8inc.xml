@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_se_g_l_send_8inc" kind="file">
+    <compoundname>SeGLSend.inc</compoundname>
+    <includedby refid="src_2_se_g_l_send_8cpp" local="yes">GlobalServer/src/SeGLSend.cpp</includedby>
+    <includedby refid="_src_2_se_g_l_send_8cpp" local="yes">GlobalServer/Src/SeGLSend.cpp</includedby>
+    <invincdepgraph>
+      <node id="126268">
+        <label>GlobalServer/Src/SeGLSend.cpp</label>
+        <link refid="_src_2_se_g_l_send_8cpp"/>
+      </node>
+      <node id="126266">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeGLSend.inc</label>
+        <link refid="SeGLSend.inc"/>
+        <childnode refid="126267" relation="include">
+        </childnode>
+        <childnode refid="126268" relation="include">
+        </childnode>
+      </node>
+      <node id="126267">
+        <label>GlobalServer/src/SeGLSend.cpp</label>
+        <link refid="src_2_se_g_l_send_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_g_l_send_8inl_1aa9a1c6d4713da6bc18d5c5c0c329c86d" kindref="member">SERVER::SendGL_RegisterRet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_se_server_define_8h_1a83f922065d39660cc6ff3ff3e193daa1" kindref="member">SeRegisterRet</ref>&amp;<sp/>eRegisterRet,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_g_l___register_ret" kindref="compound">SeGL_RegisterRet</ref>);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_g_l___register_ret" kindref="compound">SeGL_RegisterRet</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_g_l___register_ret" kindref="compound">SeGL_RegisterRet</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_g_l___register_ret_1a62552dc4b4e9f4d82bac410891f3a56c" kindref="member">eRegisterRet</ref><sp/>=<sp/>eRegisterRet;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_g_l_send_8inl_1afa190b14975892b5bf9cc2d06498ccd2" kindref="member">SendGLData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_g_l_send_8inl_1abdeff32b8d17a67f87cff09eb1a0e16a" kindref="member">SERVER::SendGL_HeartPackageRet</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_g_l___heart_package_ret" kindref="compound">SeGL_HeartPackageRet</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_g_l___heart_package_ret" kindref="compound">SeGL_HeartPackageRet</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_g_l___heart_package_ret" kindref="compound">SeGL_HeartPackageRet</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_g_l_send_8inl_1afa190b14975892b5bf9cc2d06498ccd2" kindref="member">SendGLData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_g_l_send_8inl_1a3c7c9e96bb2c3a10214a643946cda6db" kindref="member">SERVER::SendGL_KickAccount</ref>(DWord<sp/>dwPlayerID,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_g_l___kick_account" kindref="compound">SeGL_KickAccount</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_g_l___kick_account" kindref="compound">SeGL_KickAccount</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_g_l___kick_account" kindref="compound">SeGL_KickAccount</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_g_l___kick_account_1a4434873078b17992bd5f15c44be75417" kindref="member">dwPlayerID</ref><sp/>=<sp/>dwPlayerID;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_g_l_send_8inl_1afa190b14975892b5bf9cc2d06498ccd2" kindref="member">SendGLData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_g_l_send_8inl_1a1356cb0cf4a761e1448f6e4dea9e59e1" kindref="member">SERVER::SendGL_AccountLoginSuccess</ref>(DWord<sp/>dwPackKey,DWord<sp/>dwPlayerID,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_se_ptl_account_info" kindref="compound">SePtlAccountInfo</ref>&amp;<sp/>kAccountInfo,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_g_l___account_login_success" kindref="compound">SeGL_AccountLoginSuccess</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_g_l___account_login_success" kindref="compound">SeGL_AccountLoginSuccess</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_g_l___account_login_success" kindref="compound">SeGL_AccountLoginSuccess</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_g_l___account_login_success_1ae1a1cc312c9338baec6d1d4d77928c6c" kindref="member">dwPackKey</ref><sp/>=<sp/>dwPackKey;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_g_l___account_login_success_1aa5634124faa169a159d70e200f936cf0" kindref="member">dwPlayerID</ref><sp/>=<sp/>dwPlayerID;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_g_l___account_login_success_1ac0274d5dbd4f50e365de5774624a1f55" kindref="member">kAccountInfo</ref><sp/>=<sp/>kAccountInfo;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_g_l_send_8inl_1afa190b14975892b5bf9cc2d06498ccd2" kindref="member">SendGLData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_g_l_send_8inl_1a861f0aa3dafda79fe6458ef4c952bc6b" kindref="member">SERVER::SendGL_AccountLoginFailed</ref>(DWord<sp/>dwPackKey,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_se_ptl_comm_define_8h_1afcf506db0541bc2b07b7c9aa18f131f2" kindref="member">SeLoginReason</ref>&amp;<sp/>eReason,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iParam1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iParam2,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_g_l___account_login_failed" kindref="compound">SeGL_AccountLoginFailed</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_g_l___account_login_failed" kindref="compound">SeGL_AccountLoginFailed</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_g_l___account_login_failed" kindref="compound">SeGL_AccountLoginFailed</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_g_l___account_login_failed_1a75620737201822e4232d805753f6d984" kindref="member">dwPackKey</ref><sp/>=<sp/>dwPackKey;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_g_l___account_login_failed_1ac0d0d0a8fe0279d2da020201a4adb9d3" kindref="member">eReason</ref><sp/>=<sp/>eReason;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_g_l___account_login_failed_1ab7faf482a79af0551a9c6a52fe39ba33" kindref="member">iParam1</ref><sp/>=<sp/>iParam1;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_g_l___account_login_failed_1a4d53cfd01c5a5e0405114f8c903b678d" kindref="member">iParam2</ref><sp/>=<sp/>iParam2;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_g_l_send_8inl_1afa190b14975892b5bf9cc2d06498ccd2" kindref="member">SendGLData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_g_l_send_8inl_1a2f092979b5e96ad95e9a257a638dde75" kindref="member">SERVER::SendGL_AccountWillLogin</ref>(DWord<sp/>dwPlayerID,DWord<sp/>dwAreaID,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_g_l___account_will_login" kindref="compound">SeGL_AccountWillLogin</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_g_l___account_will_login" kindref="compound">SeGL_AccountWillLogin</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_g_l___account_will_login" kindref="compound">SeGL_AccountWillLogin</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_g_l___account_will_login_1a1d30401a898391ef68b6e20d6cae5710" kindref="member">dwPlayerID</ref><sp/>=<sp/>dwPlayerID;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_g_l___account_will_login_1a9b056f3154b5b1cc777da0cbd1270e78" kindref="member">dwAreaID</ref><sp/>=<sp/>dwAreaID;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_g_l_send_8inl_1afa190b14975892b5bf9cc2d06498ccd2" kindref="member">SendGLData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeGLSend.inc"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1708 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_json_1_1_reader" kind="class" prot="public">
+    <compoundname>Json::Reader</compoundname>
+    <includes refid="reader_8h" local="no">reader.h</includes>
+    <innerclass refid="class_json_1_1_reader_1_1_error_info" prot="private">Json::Reader::ErrorInfo</innerclass>
+    <innerclass refid="struct_json_1_1_reader_1_1_structured_error" prot="public">Json::Reader::StructuredError</innerclass>
+    <innerclass refid="class_json_1_1_reader_1_1_token" prot="private">Json::Reader::Token</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9" prot="private" static="no">
+        <name>TokenType</name>
+        <enumvalue id="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a87fd3ad9cae11a8afe2bd022d8ab90f4" prot="private">
+          <name>tokenEndOfStream</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a6196ce743696e6c803b130e8eef970f3" prot="private">
+          <name>tokenObjectBegin</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a12d03a3a710b2d3f1384889df3da887d" prot="private">
+          <name>tokenObjectEnd</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a366d1a18459ad0c3b5bd32a35391e35a" prot="private">
+          <name>tokenArrayBegin</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a9adc87fd67f5fc21391a4be89382a316" prot="private">
+          <name>tokenArrayEnd</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ace89d4e0342535b8c00104ed4e5e0cee" prot="private">
+          <name>tokenString</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a9b1717bee03ce7016f507bd4598fa5c6" prot="private">
+          <name>tokenNumber</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9acec3234e26f2d6bf206187fc5d949a03" prot="private">
+          <name>tokenTrue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ac24318c0842c7653c3555a82437b8eb2" prot="private">
+          <name>tokenFalse</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a11bd0ba1c34448d075022b89d5bf9853" prot="private">
+          <name>tokenNull</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9af2c235e8da86f11ffb1a1243e49ed1fa" prot="private">
+          <name>tokenArraySeparator</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a08227b96f54242f4f9a8a597403c4424" prot="private">
+          <name>tokenMemberSeparator</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ae4fcf05c3b1ce462bacd34af0ccac32b" prot="private">
+          <name>tokenComment</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a55d1ab9135c3d068b57fafdbabfa569a" prot="private">
+          <name>tokenError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="159" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="159" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_json_1_1_reader_1aae51e8f5bab3f067261c842a3ef858e5" prot="private" static="no">
+        <type>std::deque&lt; <ref refid="class_json_1_1_reader_1_1_error_info" kindref="compound">ErrorInfo</ref> &gt;</type>
+        <definition>typedef std::deque&lt;ErrorInfo&gt; Json::Reader::Errors</definition>
+        <argsstring></argsstring>
+        <name>Errors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="190" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_json_1_1_reader_1a8da2114fe8b8124d41ea2f3434f0171b" prot="private" static="no">
+        <type>std::stack&lt; <ref refid="class_json_1_1_value" kindref="compound">Value</ref> * &gt;</type>
+        <definition>typedef std::stack&lt;Value*&gt; Json::Reader::Nodes</definition>
+        <argsstring></argsstring>
+        <name>Nodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="231" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_json_1_1_reader_1a3eec9118f3e9a672ba8348c3a79d0f45" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char Json::Reader::Char</definition>
+        <argsstring></argsstring>
+        <name>Char</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="35" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" prot="public" static="no">
+        <type>const <ref refid="class_json_1_1_reader_1a3eec9118f3e9a672ba8348c3a79d0f45" kindref="member">Char</ref> *</type>
+        <definition>typedef const Char* Json::Reader::Location</definition>
+        <argsstring></argsstring>
+        <name>Location</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="36" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_json_1_1_reader_1ada3d2c47699dad662e6d156c8c78a6ac" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_reader_1a8da2114fe8b8124d41ea2f3434f0171b" kindref="member">Nodes</ref></type>
+        <definition>Nodes Json::Reader::nodes_</definition>
+        <argsstring></argsstring>
+        <name>nodes_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="232" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="232" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_reader_1a85597f763fb0148a17359b6dfc6f7326" compoundref="json__reader_8cpp" startline="778" endline="778">currentValue</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" compoundref="json__reader_8cpp" startline="118" endline="158">parse</referencedby>
+        <referencedby refid="class_json_1_1_reader_1afd9a30c0af205c9f327613f486fae6b8" compoundref="json__reader_8cpp" startline="515" endline="551">readArray</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a0068eb3d8e86e91f0e4806f60da66b9c" compoundref="json__reader_8cpp" startline="459" endline="513">readObject</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_reader_1a1bbce45dc4df753bed60c129f4b5147c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_reader_1aae51e8f5bab3f067261c842a3ef858e5" kindref="member">Errors</ref></type>
+        <definition>Errors Json::Reader::errors_</definition>
+        <argsstring></argsstring>
+        <name>errors_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="233" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="233" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_reader_1a04a3a13dbc609dfdf9e3c6723e37ff21" compoundref="json__reader_8cpp" startline="749" endline="756">addError</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a95ab50aa789132e9dee0fc1475c85acf" compoundref="json__reader_8cpp" startline="822" endline="836">getFormattedErrorMessages</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a08c2ea5ffc7d2a9c9e35020835624f0b" compoundref="json__reader_8cpp" startline="838" endline="851">getStructuredErrors</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a06b52dcc656549506b1ae6f05167ecf4" compoundref="json__reader_8cpp" startline="888" endline="890">good</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" compoundref="json__reader_8cpp" startline="118" endline="158">parse</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ade6c28e0ef00d8f2e0aa2283f91c3e37" compoundref="json__reader_8cpp" startline="853" endline="868">pushError</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a8d4ed03a43082c5ace81ba5b81425eaf" compoundref="json__reader_8cpp" startline="758" endline="769">recoverFromError</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_reader_1afde4a4311ae30597da5b6060a8d60542" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Json::Reader::document_</definition>
+        <argsstring></argsstring>
+        <name>document_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="234" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="234" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_reader_1af1da6c976ad1e96c742804c3853eef94" compoundref="json__reader_8cpp" startline="98" endline="103">parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_reader_1a327166839022ea91f0a8290960a8af76" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Location</ref></type>
+        <definition>Location Json::Reader::begin_</definition>
+        <argsstring></argsstring>
+        <name>begin_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="235" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="235" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_reader_1a2420bbb7fd6d5d3e7e2fea894dd8f70f" compoundref="json__reader_8cpp" startline="605" endline="613">decodeDouble</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a442d1f23edf0f4350f5eeab3ee3f7d46" compoundref="json__reader_8cpp" startline="553" endline="561">decodeNumber</referencedby>
+        <referencedby refid="class_json_1_1_reader_1aaf736937912f5c9b8d221e57f209e3e0" compoundref="json__reader_8cpp" startline="627" endline="636">decodeString</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a20b3023dc422726e2e4ebe41b8ba0515" compoundref="json__reader_8cpp" startline="786" endline="807">getLocationLineAndColumn</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a08c2ea5ffc7d2a9c9e35020835624f0b" compoundref="json__reader_8cpp" startline="838" endline="851">getStructuredErrors</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" compoundref="json__reader_8cpp" startline="118" endline="158">parse</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ade6c28e0ef00d8f2e0aa2283f91c3e37" compoundref="json__reader_8cpp" startline="853" endline="868">pushError</referencedby>
+        <referencedby refid="class_json_1_1_reader_1afd9a30c0af205c9f327613f486fae6b8" compoundref="json__reader_8cpp" startline="515" endline="551">readArray</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a0068eb3d8e86e91f0e4806f60da66b9c" compoundref="json__reader_8cpp" startline="459" endline="513">readObject</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_reader_1a714793579cbf4ee7c5a7223d2c8d77c1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Location</ref></type>
+        <definition>Location Json::Reader::end_</definition>
+        <argsstring></argsstring>
+        <name>end_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="236" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="236" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_reader_1a20b3023dc422726e2e4ebe41b8ba0515" compoundref="json__reader_8cpp" startline="786" endline="807">getLocationLineAndColumn</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ab61eb61333cc9ec3afe785663a53ce90" compoundref="json__reader_8cpp" startline="780" endline="784">getNextChar</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a3e5a7bc6b7b53f2ca8cb9da42f8ffb21" compoundref="json__reader_8cpp" startline="335" endline="344">match</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" compoundref="json__reader_8cpp" startline="118" endline="158">parse</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ade6c28e0ef00d8f2e0aa2283f91c3e37" compoundref="json__reader_8cpp" startline="853" endline="868">pushError</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a6716ef6290b0f469efaf8d379c357967" compoundref="json__reader_8cpp" startline="409" endline="423">readCppStyleComment</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ae0ffe796abdc3c5851589ee500e28c79" compoundref="json__reader_8cpp" startline="400" endline="407">readCStyleComment</referencedby>
+        <referencedby refid="class_json_1_1_reader_1afb31bfda6bb27d6453057a47655e8363" compoundref="json__reader_8cpp" startline="425" endline="445">readNumber</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a6328a0b1994e05118886f9fc9c608643" compoundref="json__reader_8cpp" startline="447" endline="457">readString</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a40d0f69d15aeb2d52ff78d794f5ab8b2" compoundref="json__reader_8cpp" startline="325" endline="333">skipSpaces</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_reader_1a2f2feb5201a26da7aa133d2f7434479b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Location</ref></type>
+        <definition>Location Json::Reader::current_</definition>
+        <argsstring></argsstring>
+        <name>current_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="237" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="237" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_reader_1ab61eb61333cc9ec3afe785663a53ce90" compoundref="json__reader_8cpp" startline="780" endline="784">getNextChar</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a3e5a7bc6b7b53f2ca8cb9da42f8ffb21" compoundref="json__reader_8cpp" startline="335" endline="344">match</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" compoundref="json__reader_8cpp" startline="118" endline="158">parse</referencedby>
+        <referencedby refid="class_json_1_1_reader_1afd9a30c0af205c9f327613f486fae6b8" compoundref="json__reader_8cpp" startline="515" endline="551">readArray</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ad2690e860a1b3332c5401fb0850ba065" compoundref="json__reader_8cpp" startline="346" endline="367">readComment</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a6716ef6290b0f469efaf8d379c357967" compoundref="json__reader_8cpp" startline="409" endline="423">readCppStyleComment</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ae0ffe796abdc3c5851589ee500e28c79" compoundref="json__reader_8cpp" startline="400" endline="407">readCStyleComment</referencedby>
+        <referencedby refid="class_json_1_1_reader_1afb31bfda6bb27d6453057a47655e8363" compoundref="json__reader_8cpp" startline="425" endline="445">readNumber</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a6328a0b1994e05118886f9fc9c608643" compoundref="json__reader_8cpp" startline="447" endline="457">readString</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a7cb0631963cc0fd4ff6ed0f570976864" compoundref="json__reader_8cpp" startline="254" endline="323">readToken</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a40d0f69d15aeb2d52ff78d794f5ab8b2" compoundref="json__reader_8cpp" startline="325" endline="333">skipSpaces</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_reader_1a497a114f7b760f1b794b8fff9876615a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Location</ref></type>
+        <definition>Location Json::Reader::lastValueEnd_</definition>
+        <argsstring></argsstring>
+        <name>lastValueEnd_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="238" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="238" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" compoundref="json__reader_8cpp" startline="118" endline="158">parse</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ad2690e860a1b3332c5401fb0850ba065" compoundref="json__reader_8cpp" startline="346" endline="367">readComment</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_reader_1a87cc75ae5adc6a6755f0ba1c7255ff6c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> *</type>
+        <definition>Value* Json::Reader::lastValue_</definition>
+        <argsstring></argsstring>
+        <name>lastValue_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="239" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="239" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_reader_1aaea3bd62d12ffb6117a61476c0685049" compoundref="json__reader_8cpp" startline="389" endline="398">addComment</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" compoundref="json__reader_8cpp" startline="118" endline="158">parse</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_reader_1a240d10ca88620e06a5bd25cc633e9a8a" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Json::Reader::commentsBefore_</definition>
+        <argsstring></argsstring>
+        <name>commentsBefore_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="240" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="240" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_reader_1aaea3bd62d12ffb6117a61476c0685049" compoundref="json__reader_8cpp" startline="389" endline="398">addComment</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" compoundref="json__reader_8cpp" startline="118" endline="158">parse</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_reader_1aa9984ff8f519b5541346157b7aebf97b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_json_1_1_features" kindref="compound">Features</ref></type>
+        <definition>Features Json::Reader::features_</definition>
+        <argsstring></argsstring>
+        <name>features_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="241" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="241" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" compoundref="json__reader_8cpp" startline="118" endline="158">parse</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a0068eb3d8e86e91f0e4806f60da66b9c" compoundref="json__reader_8cpp" startline="459" endline="513">readObject</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a22e677ef400d8223f27e631b4cd4b821" compoundref="json__reader_8cpp" startline="244" endline="252">skipCommentTokens</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_json_1_1_reader_1a8e9ce743f6004f0596692f0a9ee4626c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Json::Reader::collectComments_</definition>
+        <argsstring></argsstring>
+        <name>collectComments_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="242" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="242" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_reader_1aaea3bd62d12ffb6117a61476c0685049" compoundref="json__reader_8cpp" startline="389" endline="398">addComment</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" compoundref="json__reader_8cpp" startline="118" endline="158">parse</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ad2690e860a1b3332c5401fb0850ba065" compoundref="json__reader_8cpp" startline="346" endline="367">readComment</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_1_1_reader_1a0b3c4e24c8393354bab57a6ba3ffc27f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::Reader::Reader</definition>
+        <argsstring>()</argsstring>
+        <name>Reader</name>
+        <briefdescription>
+<para>Constructs a <ref refid="class_json_1_1_reader" kindref="compound">Reader</ref> allowing all features for parsing. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="53" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a45f17831118337309180313e93ac33f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Json::Reader::Reader</definition>
+        <argsstring>(const Features &amp;features)</argsstring>
+        <name>Reader</name>
+        <param>
+          <type>const <ref refid="class_json_1_1_features" kindref="compound">Features</ref> &amp;</type>
+          <declname>features</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="class_json_1_1_reader" kindref="compound">Reader</ref> allowing the specified feature set for parsing. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="58" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1af1da6c976ad1e96c742804c3853eef94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::parse</definition>
+        <argsstring>(const std::string &amp;document, Value &amp;root, bool collectComments=true)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>document</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>collectComments</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Read a <ref refid="class_json_1_1_value" kindref="compound">Value</ref> from a <ulink url="http://www.json.org">JSON</ulink> document. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>document</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UTF-8 encoded string containing the document to read. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[out] Contains the root value of the document if it was successfully parsed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>collectComments</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>true</computeroutput> to collect comment and allow writing them back during serialization, <computeroutput>false</computeroutput> to discard comments. This parameter is ignored if <ref refid="class_json_1_1_features_1a33afd389719624b6bdb23950b3c346c9" kindref="member">Features::allowComments_</ref> is <computeroutput>false</computeroutput>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the document was successfully parsed, <computeroutput>false</computeroutput> if an error occurred. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="75" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="98" bodyend="103"/>
+        <references refid="class_json_1_1_reader_1afde4a4311ae30597da5b6060a8d60542" compoundref="reader_8h" startline="234">document_</references>
+        <referencedby refid="struct_c_item_1ac8447ab1df31981bec3c1e42d6a71d83" compoundref="_src_2_item_mgr_8cpp" startline="1132" endline="1240">CItem::loadData</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a8d0347e6b47343e4bc68be7ecdb9c4e9" compoundref="json__reader_8cpp" startline="105" endline="116">parse</referencedby>
+        <referencedby refid="class_http_server_1ac78f56a8a81cf69fdffcf2e568d5afd4" compoundref="_se_http_resp_process_8cpp" startline="3" endline="25">HttpServer::ProcessHttp_QueryFreeHeroListRet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::parse</definition>
+        <argsstring>(const char *beginDoc, const char *endDoc, Value &amp;root, bool collectComments=true)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>const char *</type>
+          <declname>beginDoc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>endDoc</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>collectComments</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Read a <ref refid="class_json_1_1_value" kindref="compound">Value</ref> from a <ulink url="http://www.json.org">JSON</ulink> document. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>beginDoc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer on the beginning of the UTF-8 encoded string of the document to read. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endDoc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer on the end of the UTF-8 encoded string of the document to read. Must be &gt;= beginDoc. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>root</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[out] Contains the root value of the document if it was successfully parsed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>collectComments</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>true</computeroutput> to collect comment and allow writing them back during serialization, <computeroutput>false</computeroutput> to discard comments. This parameter is ignored if <ref refid="class_json_1_1_features_1a33afd389719624b6bdb23950b3c346c9" kindref="member">Features::allowComments_</ref> is <computeroutput>false</computeroutput>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the document was successfully parsed, <computeroutput>false</computeroutput> if an error occurred. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="95" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="118" bodyend="158"/>
+        <references refid="class_json_1_1_reader_1a04a3a13dbc609dfdf9e3c6723e37ff21" compoundref="json__reader_8cpp" startline="749" endline="756">addError</references>
+        <references refid="class_json_1_1_features_1a33afd389719624b6bdb23950b3c346c9" compoundref="features_8h" startline="42">Json::Features::allowComments_</references>
+        <references refid="class_json_1_1_reader_1a327166839022ea91f0a8290960a8af76" compoundref="reader_8h" startline="235">begin_</references>
+        <references refid="class_json_1_1_reader_1a8e9ce743f6004f0596692f0a9ee4626c" compoundref="reader_8h" startline="242">collectComments_</references>
+        <references refid="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351ac5784ca53b12250888ddb642b06aebef" compoundref="value_8h" startline="92">Json::commentAfter</references>
+        <references refid="class_json_1_1_reader_1a240d10ca88620e06a5bd25cc633e9a8a" compoundref="reader_8h" startline="240">commentsBefore_</references>
+        <references refid="class_json_1_1_reader_1a2f2feb5201a26da7aa133d2f7434479b" compoundref="reader_8h" startline="237">current_</references>
+        <references refid="class_json_1_1_reader_1_1_token_1a7d3bc0fa40097f435d184be4b1fd5ae1" compoundref="reader_8h" startline="180">Json::Reader::Token::end_</references>
+        <references refid="class_json_1_1_reader_1a714793579cbf4ee7c5a7223d2c8d77c1" compoundref="reader_8h" startline="236">end_</references>
+        <references refid="class_json_1_1_reader_1a1bbce45dc4df753bed60c129f4b5147c" compoundref="reader_8h" startline="233">errors_</references>
+        <references refid="class_json_1_1_reader_1aa9984ff8f519b5541346157b7aebf97b" compoundref="reader_8h" startline="241">features_</references>
+        <references refid="class_json_1_1_value_1ac8c898f93543e55b67418f94bced20af" compoundref="json__value_8cpp" startline="1303" endline="1303">Json::Value::isArray</references>
+        <references refid="class_json_1_1_value_1a80cffaa0402b80317c0437216bbb6d92" compoundref="json__value_8cpp" startline="1305" endline="1305">Json::Value::isObject</references>
+        <references refid="class_json_1_1_reader_1a87cc75ae5adc6a6755f0ba1c7255ff6c" compoundref="reader_8h" startline="239">lastValue_</references>
+        <references refid="class_json_1_1_reader_1a497a114f7b760f1b794b8fff9876615a" compoundref="reader_8h" startline="238">lastValueEnd_</references>
+        <references refid="class_json_1_1_reader_1ada3d2c47699dad662e6d156c8c78a6ac" compoundref="reader_8h" startline="232">nodes_</references>
+        <references refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</references>
+        <references refid="class_json_1_1_value_1a29f3a30f7e5d3af6f38d57999bf5b480" compoundref="json__value_8cpp" startline="1317" endline="1319">Json::Value::setComment</references>
+        <references refid="class_json_1_1_reader_1a22e677ef400d8223f27e631b4cd4b821" compoundref="json__reader_8cpp" startline="244" endline="252">skipCommentTokens</references>
+        <references refid="json__reader_8cpp_1a53b45133c80814ea63d9f61966cfb831" compoundref="json__reader_8cpp" startline="46">stackDepth_g</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" compoundref="reader_8h" startline="179">Json::Reader::Token::start_</references>
+        <references refid="class_json_1_1_features_1a1162c37a1458adc32582b585b552f9c3" compoundref="features_8h" startline="46">Json::Features::strictRoot_</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a55d1ab9135c3d068b57fafdbabfa569a" compoundref="reader_8h" startline="173">tokenError</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aa0f06d0105ec3d8cb42427c66b991bad" compoundref="reader_8h" startline="178">Json::Reader::Token::type_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a8d0347e6b47343e4bc68be7ecdb9c4e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::parse</definition>
+        <argsstring>(std::istream &amp;is, Value &amp;root, bool collectComments=true)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>collectComments</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Parse from input stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespace_json_1a4d245ef719cc0853e8e78eb5f99c16e5" kindref="member">Json::operator&gt;&gt;(std::istream&amp;, Json::Value&amp;)</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="102" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="105" bodyend="116"/>
+        <references refid="class_json_1_1_reader_1af1da6c976ad1e96c742804c3853eef94" compoundref="json__reader_8cpp" startline="98" endline="103">parse</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1afa4a59e962d23c4d1c38b433fc95eefa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Json::Reader::getFormatedErrorMessages</definition>
+        <argsstring>() const </argsstring>
+        <name>getFormatedErrorMessages</name>
+        <briefdescription>
+<para>Returns a user friendly string that list errors in the parsed document. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Formatted error message with the list of errors with their location in the parsed document. An empty string is returned if no error occurred during parsing. </para></simplesect>
+<xrefsect id="deprecated_1_deprecated000002"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="class_json_1_1_reader_1a95ab50aa789132e9dee0fc1475c85acf" kindref="member">getFormattedErrorMessages()</ref> instead (typo fix). </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="114" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="818" bodyend="820"/>
+        <references refid="class_json_1_1_reader_1a95ab50aa789132e9dee0fc1475c85acf" compoundref="json__reader_8cpp" startline="822" endline="836">getFormattedErrorMessages</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a95ab50aa789132e9dee0fc1475c85acf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Json::Reader::getFormattedErrorMessages</definition>
+        <argsstring>() const </argsstring>
+        <name>getFormattedErrorMessages</name>
+        <briefdescription>
+<para>Returns a user friendly string that list errors in the parsed document. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Formatted error message with the list of errors with their location in the parsed document. An empty string is returned if no error occurred during parsing. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="124" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="822" bodyend="836"/>
+        <references refid="class_json_1_1_reader_1a1bbce45dc4df753bed60c129f4b5147c" compoundref="reader_8h" startline="233">errors_</references>
+        <references refid="class_json_1_1_reader_1_1_error_info_1af92c24acf642b040d6e40aac4952d44d" compoundref="reader_8h" startline="187">Json::Reader::ErrorInfo::extra_</references>
+        <references refid="class_json_1_1_reader_1a20b3023dc422726e2e4ebe41b8ba0515" compoundref="json__reader_8cpp" startline="786" endline="807">getLocationLineAndColumn</references>
+        <references refid="class_json_1_1_reader_1_1_error_info_1aeb2fb6537a8bb978b239ea1482d73d7a" compoundref="reader_8h" startline="186">Json::Reader::ErrorInfo::message_</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" compoundref="reader_8h" startline="179">Json::Reader::Token::start_</references>
+        <references refid="class_json_1_1_reader_1_1_error_info_1a52e1c71b12eb1c3f0395d7ef1e778ce6" compoundref="reader_8h" startline="185">Json::Reader::ErrorInfo::token_</references>
+        <referencedby refid="class_json_1_1_reader_1afa4a59e962d23c4d1c38b433fc95eefa" compoundref="json__reader_8cpp" startline="818" endline="820">getFormatedErrorMessages</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a08c2ea5ffc7d2a9c9e35020835624f0b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="struct_json_1_1_reader_1_1_structured_error" kindref="compound">StructuredError</ref> &gt;</type>
+        <definition>std::vector&lt; Reader::StructuredError &gt; Json::Reader::getStructuredErrors</definition>
+        <argsstring>() const </argsstring>
+        <name>getStructuredErrors</name>
+        <briefdescription>
+<para>Returns a vector of structured erros encounted while parsing. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A (possibly empty) vector of <ref refid="struct_json_1_1_reader_1_1_structured_error" kindref="compound">StructuredError</ref> objects. Currently only one error can be returned, but the caller should tolerate multiple errors. This can occur if the parser recovers from a non-fatal parse error and then encounters additional errors. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="133" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="838" bodyend="851"/>
+        <references refid="class_json_1_1_reader_1a327166839022ea91f0a8290960a8af76" compoundref="reader_8h" startline="235">begin_</references>
+        <references refid="class_json_1_1_reader_1_1_token_1a7d3bc0fa40097f435d184be4b1fd5ae1" compoundref="reader_8h" startline="180">Json::Reader::Token::end_</references>
+        <references refid="class_json_1_1_reader_1a1bbce45dc4df753bed60c129f4b5147c" compoundref="reader_8h" startline="233">errors_</references>
+        <references refid="struct_json_1_1_reader_1_1_structured_error_1ab8755e5201b78c6ae077338f8819e6e6" compoundref="reader_8h" startline="47">Json::Reader::StructuredError::message</references>
+        <references refid="class_json_1_1_reader_1_1_error_info_1aeb2fb6537a8bb978b239ea1482d73d7a" compoundref="reader_8h" startline="186">Json::Reader::ErrorInfo::message_</references>
+        <references refid="struct_json_1_1_reader_1_1_structured_error_1a80747dae744bcc80a9bc81c94fd42e13" compoundref="reader_8h" startline="46">Json::Reader::StructuredError::offset_limit</references>
+        <references refid="struct_json_1_1_reader_1_1_structured_error_1a160dae4eb3464a2209b743c755baf65f" compoundref="reader_8h" startline="45">Json::Reader::StructuredError::offset_start</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" compoundref="reader_8h" startline="179">Json::Reader::Token::start_</references>
+        <references refid="class_json_1_1_reader_1_1_error_info_1a52e1c71b12eb1c3f0395d7ef1e778ce6" compoundref="reader_8h" startline="185">Json::Reader::ErrorInfo::token_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1ade6c28e0ef00d8f2e0aa2283f91c3e37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::pushError</definition>
+        <argsstring>(const Value &amp;value, const std::string &amp;message)</argsstring>
+        <name>pushError</name>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Add a semantic error message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON <ref refid="class_json_1_1_value" kindref="compound">Value</ref> location associated with the error </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error message. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the error was successfully added, <computeroutput>false</computeroutput> if the <ref refid="class_json_1_1_value" kindref="compound">Value</ref> offset exceeds the document size. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="141" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="853" bodyend="868"/>
+        <references refid="class_json_1_1_reader_1a327166839022ea91f0a8290960a8af76" compoundref="reader_8h" startline="235">begin_</references>
+        <references refid="class_json_1_1_reader_1_1_token_1a7d3bc0fa40097f435d184be4b1fd5ae1" compoundref="reader_8h" startline="180">Json::Reader::Token::end_</references>
+        <references refid="class_json_1_1_reader_1a714793579cbf4ee7c5a7223d2c8d77c1" compoundref="reader_8h" startline="236">end_</references>
+        <references refid="class_json_1_1_reader_1a1bbce45dc4df753bed60c129f4b5147c" compoundref="reader_8h" startline="233">errors_</references>
+        <references refid="class_json_1_1_reader_1_1_error_info_1af92c24acf642b040d6e40aac4952d44d" compoundref="reader_8h" startline="187">Json::Reader::ErrorInfo::extra_</references>
+        <references refid="class_json_1_1_value_1acd7114469bc39368e9d93c29b54d8c8f" compoundref="json__value_8cpp" startline="1341" endline="1341">Json::Value::getOffsetLimit</references>
+        <references refid="class_json_1_1_value_1a10142eda11ae0b1caecbcc9f436854d1" compoundref="json__value_8cpp" startline="1339" endline="1339">Json::Value::getOffsetStart</references>
+        <references refid="class_json_1_1_reader_1_1_error_info_1aeb2fb6537a8bb978b239ea1482d73d7a" compoundref="reader_8h" startline="186">Json::Reader::ErrorInfo::message_</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" compoundref="reader_8h" startline="179">Json::Reader::Token::start_</references>
+        <references refid="class_json_1_1_reader_1_1_error_info_1a52e1c71b12eb1c3f0395d7ef1e778ce6" compoundref="reader_8h" startline="185">Json::Reader::ErrorInfo::token_</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a55d1ab9135c3d068b57fafdbabfa569a" compoundref="reader_8h" startline="173">tokenError</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aa0f06d0105ec3d8cb42427c66b991bad" compoundref="reader_8h" startline="178">Json::Reader::Token::type_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a9b474233c3a7c688e340e70665d45223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::pushError</definition>
+        <argsstring>(const Value &amp;value, const std::string &amp;message, const Value &amp;extra)</argsstring>
+        <name>pushError</name>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>extra</declname>
+        </param>
+        <briefdescription>
+<para>Add a semantic error message with extra context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>JSON <ref refid="class_json_1_1_value" kindref="compound">Value</ref> location associated with the error </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error message. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>extra</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional JSON <ref refid="class_json_1_1_value" kindref="compound">Value</ref> location to contextualize the error </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>true</computeroutput> if the error was successfully added, <computeroutput>false</computeroutput> if either <ref refid="class_json_1_1_value" kindref="compound">Value</ref> offset exceeds the document size. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="150" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="870" bodyend="886"/>
+        <references refid="class_json_1_1_reader_1a327166839022ea91f0a8290960a8af76" compoundref="reader_8h" startline="235">begin_</references>
+        <references refid="class_json_1_1_reader_1_1_token_1a7d3bc0fa40097f435d184be4b1fd5ae1" compoundref="reader_8h" startline="180">Json::Reader::Token::end_</references>
+        <references refid="class_json_1_1_reader_1a714793579cbf4ee7c5a7223d2c8d77c1" compoundref="reader_8h" startline="236">end_</references>
+        <references refid="class_json_1_1_reader_1a1bbce45dc4df753bed60c129f4b5147c" compoundref="reader_8h" startline="233">errors_</references>
+        <references refid="class_json_1_1_reader_1_1_error_info_1af92c24acf642b040d6e40aac4952d44d" compoundref="reader_8h" startline="187">Json::Reader::ErrorInfo::extra_</references>
+        <references refid="class_json_1_1_value_1acd7114469bc39368e9d93c29b54d8c8f" compoundref="json__value_8cpp" startline="1341" endline="1341">Json::Value::getOffsetLimit</references>
+        <references refid="class_json_1_1_value_1a10142eda11ae0b1caecbcc9f436854d1" compoundref="json__value_8cpp" startline="1339" endline="1339">Json::Value::getOffsetStart</references>
+        <references refid="class_json_1_1_reader_1_1_error_info_1aeb2fb6537a8bb978b239ea1482d73d7a" compoundref="reader_8h" startline="186">Json::Reader::ErrorInfo::message_</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" compoundref="reader_8h" startline="179">Json::Reader::Token::start_</references>
+        <references refid="class_json_1_1_reader_1_1_error_info_1a52e1c71b12eb1c3f0395d7ef1e778ce6" compoundref="reader_8h" startline="185">Json::Reader::ErrorInfo::token_</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a55d1ab9135c3d068b57fafdbabfa569a" compoundref="reader_8h" startline="173">tokenError</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aa0f06d0105ec3d8cb42427c66b991bad" compoundref="reader_8h" startline="178">Json::Reader::Token::type_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a06b52dcc656549506b1ae6f05167ecf4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::good</definition>
+        <argsstring>() const </argsstring>
+        <name>good</name>
+        <briefdescription>
+<para>Return whether there are any errors. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if there are no errors to report <computeroutput>false</computeroutput> if errors have occurred. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="156" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="888" bodyend="890"/>
+        <references refid="class_json_1_1_reader_1a1bbce45dc4df753bed60c129f4b5147c" compoundref="reader_8h" startline="233">errors_</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_json_1_1_reader_1a7cb0631963cc0fd4ff6ed0f570976864" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::readToken</definition>
+        <argsstring>(Token &amp;token)</argsstring>
+        <name>readToken</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="192" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="254" bodyend="323"/>
+        <references refid="class_json_1_1_reader_1a2f2feb5201a26da7aa133d2f7434479b" compoundref="reader_8h" startline="237">current_</references>
+        <references refid="class_json_1_1_reader_1_1_token_1a7d3bc0fa40097f435d184be4b1fd5ae1" compoundref="reader_8h" startline="180">Json::Reader::Token::end_</references>
+        <references refid="class_json_1_1_reader_1ab61eb61333cc9ec3afe785663a53ce90" compoundref="json__reader_8cpp" startline="780" endline="784">getNextChar</references>
+        <references refid="class_json_1_1_reader_1a3e5a7bc6b7b53f2ca8cb9da42f8ffb21" compoundref="json__reader_8cpp" startline="335" endline="344">match</references>
+        <references refid="class_json_1_1_reader_1ad2690e860a1b3332c5401fb0850ba065" compoundref="json__reader_8cpp" startline="346" endline="367">readComment</references>
+        <references refid="class_json_1_1_reader_1afb31bfda6bb27d6453057a47655e8363" compoundref="json__reader_8cpp" startline="425" endline="445">readNumber</references>
+        <references refid="class_json_1_1_reader_1a6328a0b1994e05118886f9fc9c608643" compoundref="json__reader_8cpp" startline="447" endline="457">readString</references>
+        <references refid="class_json_1_1_reader_1a40d0f69d15aeb2d52ff78d794f5ab8b2" compoundref="json__reader_8cpp" startline="325" endline="333">skipSpaces</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" compoundref="reader_8h" startline="179">Json::Reader::Token::start_</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a366d1a18459ad0c3b5bd32a35391e35a" compoundref="reader_8h" startline="163">tokenArrayBegin</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a9adc87fd67f5fc21391a4be89382a316" compoundref="reader_8h" startline="164">tokenArrayEnd</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9af2c235e8da86f11ffb1a1243e49ed1fa" compoundref="reader_8h" startline="170">tokenArraySeparator</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ae4fcf05c3b1ce462bacd34af0ccac32b" compoundref="reader_8h" startline="172">tokenComment</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a87fd3ad9cae11a8afe2bd022d8ab90f4" compoundref="reader_8h" startline="160">tokenEndOfStream</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a55d1ab9135c3d068b57fafdbabfa569a" compoundref="reader_8h" startline="173">tokenError</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ac24318c0842c7653c3555a82437b8eb2" compoundref="reader_8h" startline="168">tokenFalse</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a08227b96f54242f4f9a8a597403c4424" compoundref="reader_8h" startline="171">tokenMemberSeparator</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a11bd0ba1c34448d075022b89d5bf9853" compoundref="reader_8h" startline="169">tokenNull</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a9b1717bee03ce7016f507bd4598fa5c6" compoundref="reader_8h" startline="166">tokenNumber</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a6196ce743696e6c803b130e8eef970f3" compoundref="reader_8h" startline="161">tokenObjectBegin</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a12d03a3a710b2d3f1384889df3da887d" compoundref="reader_8h" startline="162">tokenObjectEnd</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ace89d4e0342535b8c00104ed4e5e0cee" compoundref="reader_8h" startline="165">tokenString</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9acec3234e26f2d6bf206187fc5d949a03" compoundref="reader_8h" startline="167">tokenTrue</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aa0f06d0105ec3d8cb42427c66b991bad" compoundref="reader_8h" startline="178">Json::Reader::Token::type_</references>
+        <referencedby refid="class_json_1_1_reader_1afd9a30c0af205c9f327613f486fae6b8" compoundref="json__reader_8cpp" startline="515" endline="551">readArray</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a0068eb3d8e86e91f0e4806f60da66b9c" compoundref="json__reader_8cpp" startline="459" endline="513">readObject</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a8d4ed03a43082c5ace81ba5b81425eaf" compoundref="json__reader_8cpp" startline="758" endline="769">recoverFromError</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a22e677ef400d8223f27e631b4cd4b821" compoundref="json__reader_8cpp" startline="244" endline="252">skipCommentTokens</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a40d0f69d15aeb2d52ff78d794f5ab8b2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::Reader::skipSpaces</definition>
+        <argsstring>()</argsstring>
+        <name>skipSpaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="193" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="325" bodyend="333"/>
+        <references refid="class_json_1_1_reader_1a2f2feb5201a26da7aa133d2f7434479b" compoundref="reader_8h" startline="237">current_</references>
+        <references refid="class_json_1_1_reader_1a714793579cbf4ee7c5a7223d2c8d77c1" compoundref="reader_8h" startline="236">end_</references>
+        <referencedby refid="class_json_1_1_reader_1afd9a30c0af205c9f327613f486fae6b8" compoundref="json__reader_8cpp" startline="515" endline="551">readArray</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a7cb0631963cc0fd4ff6ed0f570976864" compoundref="json__reader_8cpp" startline="254" endline="323">readToken</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a3e5a7bc6b7b53f2ca8cb9da42f8ffb21" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::match</definition>
+        <argsstring>(Location pattern, int patternLength)</argsstring>
+        <name>match</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Location</ref></type>
+          <declname>pattern</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>patternLength</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="194" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="335" bodyend="344"/>
+        <references refid="class_json_1_1_reader_1a2f2feb5201a26da7aa133d2f7434479b" compoundref="reader_8h" startline="237">current_</references>
+        <references refid="class_json_1_1_reader_1a714793579cbf4ee7c5a7223d2c8d77c1" compoundref="reader_8h" startline="236">end_</references>
+        <referencedby refid="class_json_1_1_reader_1a7cb0631963cc0fd4ff6ed0f570976864" compoundref="json__reader_8cpp" startline="254" endline="323">readToken</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1ad2690e860a1b3332c5401fb0850ba065" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::readComment</definition>
+        <argsstring>()</argsstring>
+        <name>readComment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="195" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="346" bodyend="367"/>
+        <references refid="class_json_1_1_reader_1aaea3bd62d12ffb6117a61476c0685049" compoundref="json__reader_8cpp" startline="389" endline="398">addComment</references>
+        <references refid="class_json_1_1_reader_1a8e9ce743f6004f0596692f0a9ee4626c" compoundref="reader_8h" startline="242">collectComments_</references>
+        <references refid="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351a008a230a0586de54f30b76afe70fdcfa" compoundref="value_8h" startline="91">Json::commentAfterOnSameLine</references>
+        <references refid="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351a52f1733775460517b2ea6bedf4906d52" compoundref="value_8h" startline="90">Json::commentBefore</references>
+        <references refid="namespace_json_1a4d6ab0f651348832e5cc49b577a854d2" compoundref="json__reader_8cpp" startline="77" endline="82">Json::containsNewLine</references>
+        <references refid="class_json_1_1_reader_1a2f2feb5201a26da7aa133d2f7434479b" compoundref="reader_8h" startline="237">current_</references>
+        <references refid="class_json_1_1_reader_1ab61eb61333cc9ec3afe785663a53ce90" compoundref="json__reader_8cpp" startline="780" endline="784">getNextChar</references>
+        <references refid="class_json_1_1_reader_1a497a114f7b760f1b794b8fff9876615a" compoundref="reader_8h" startline="238">lastValueEnd_</references>
+        <references refid="class_json_1_1_reader_1a6716ef6290b0f469efaf8d379c357967" compoundref="json__reader_8cpp" startline="409" endline="423">readCppStyleComment</references>
+        <references refid="class_json_1_1_reader_1ae0ffe796abdc3c5851589ee500e28c79" compoundref="json__reader_8cpp" startline="400" endline="407">readCStyleComment</references>
+        <referencedby refid="class_json_1_1_reader_1a7cb0631963cc0fd4ff6ed0f570976864" compoundref="json__reader_8cpp" startline="254" endline="323">readToken</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1ae0ffe796abdc3c5851589ee500e28c79" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::readCStyleComment</definition>
+        <argsstring>()</argsstring>
+        <name>readCStyleComment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="196" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="400" bodyend="407"/>
+        <references refid="class_json_1_1_reader_1a2f2feb5201a26da7aa133d2f7434479b" compoundref="reader_8h" startline="237">current_</references>
+        <references refid="class_json_1_1_reader_1a714793579cbf4ee7c5a7223d2c8d77c1" compoundref="reader_8h" startline="236">end_</references>
+        <references refid="class_json_1_1_reader_1ab61eb61333cc9ec3afe785663a53ce90" compoundref="json__reader_8cpp" startline="780" endline="784">getNextChar</references>
+        <referencedby refid="class_json_1_1_reader_1ad2690e860a1b3332c5401fb0850ba065" compoundref="json__reader_8cpp" startline="346" endline="367">readComment</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a6716ef6290b0f469efaf8d379c357967" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::readCppStyleComment</definition>
+        <argsstring>()</argsstring>
+        <name>readCppStyleComment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="197" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="409" bodyend="423"/>
+        <references refid="class_json_1_1_reader_1a2f2feb5201a26da7aa133d2f7434479b" compoundref="reader_8h" startline="237">current_</references>
+        <references refid="class_json_1_1_reader_1a714793579cbf4ee7c5a7223d2c8d77c1" compoundref="reader_8h" startline="236">end_</references>
+        <references refid="class_json_1_1_reader_1ab61eb61333cc9ec3afe785663a53ce90" compoundref="json__reader_8cpp" startline="780" endline="784">getNextChar</references>
+        <referencedby refid="class_json_1_1_reader_1ad2690e860a1b3332c5401fb0850ba065" compoundref="json__reader_8cpp" startline="346" endline="367">readComment</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a6328a0b1994e05118886f9fc9c608643" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::readString</definition>
+        <argsstring>()</argsstring>
+        <name>readString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="198" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="447" bodyend="457"/>
+        <references refid="class_json_1_1_reader_1a2f2feb5201a26da7aa133d2f7434479b" compoundref="reader_8h" startline="237">current_</references>
+        <references refid="class_json_1_1_reader_1a714793579cbf4ee7c5a7223d2c8d77c1" compoundref="reader_8h" startline="236">end_</references>
+        <references refid="class_json_1_1_reader_1ab61eb61333cc9ec3afe785663a53ce90" compoundref="json__reader_8cpp" startline="780" endline="784">getNextChar</references>
+        <referencedby refid="class_json_1_1_reader_1a7cb0631963cc0fd4ff6ed0f570976864" compoundref="json__reader_8cpp" startline="254" endline="323">readToken</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1afb31bfda6bb27d6453057a47655e8363" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::Reader::readNumber</definition>
+        <argsstring>()</argsstring>
+        <name>readNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="199" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="425" bodyend="445"/>
+        <references refid="class_json_1_1_reader_1a2f2feb5201a26da7aa133d2f7434479b" compoundref="reader_8h" startline="237">current_</references>
+        <references refid="class_json_1_1_reader_1a714793579cbf4ee7c5a7223d2c8d77c1" compoundref="reader_8h" startline="236">end_</references>
+        <referencedby refid="class_json_1_1_reader_1a7cb0631963cc0fd4ff6ed0f570976864" compoundref="json__reader_8cpp" startline="254" endline="323">readToken</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::readValue</definition>
+        <argsstring>()</argsstring>
+        <name>readValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="200" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="160" bodyend="242"/>
+        <references refid="class_json_1_1_reader_1a04a3a13dbc609dfdf9e3c6723e37ff21" compoundref="json__reader_8cpp" startline="749" endline="756">addError</references>
+        <references refid="class_json_1_1_features_1a5076aa72c05c7596ac339ede36c97a6a" compoundref="features_8h" startline="49">Json::Features::allowDroppedNullPlaceholders_</references>
+        <references refid="class_json_1_1_reader_1a327166839022ea91f0a8290960a8af76" compoundref="reader_8h" startline="235">begin_</references>
+        <references refid="class_json_1_1_reader_1a8e9ce743f6004f0596692f0a9ee4626c" compoundref="reader_8h" startline="242">collectComments_</references>
+        <references refid="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351a52f1733775460517b2ea6bedf4906d52" compoundref="value_8h" startline="90">Json::commentBefore</references>
+        <references refid="class_json_1_1_reader_1a240d10ca88620e06a5bd25cc633e9a8a" compoundref="reader_8h" startline="240">commentsBefore_</references>
+        <references refid="class_json_1_1_reader_1a2f2feb5201a26da7aa133d2f7434479b" compoundref="reader_8h" startline="237">current_</references>
+        <references refid="class_json_1_1_reader_1a85597f763fb0148a17359b6dfc6f7326" compoundref="json__reader_8cpp" startline="778" endline="778">currentValue</references>
+        <references refid="class_json_1_1_reader_1a442d1f23edf0f4350f5eeab3ee3f7d46" compoundref="json__reader_8cpp" startline="553" endline="561">decodeNumber</references>
+        <references refid="class_json_1_1_reader_1aaf736937912f5c9b8d221e57f209e3e0" compoundref="json__reader_8cpp" startline="627" endline="636">decodeString</references>
+        <references refid="class_json_1_1_reader_1_1_token_1a7d3bc0fa40097f435d184be4b1fd5ae1" compoundref="reader_8h" startline="180">Json::Reader::Token::end_</references>
+        <references refid="class_json_1_1_reader_1aa9984ff8f519b5541346157b7aebf97b" compoundref="reader_8h" startline="241">features_</references>
+        <references refid="class_json_1_1_reader_1a87cc75ae5adc6a6755f0ba1c7255ff6c" compoundref="reader_8h" startline="239">lastValue_</references>
+        <references refid="class_json_1_1_reader_1a497a114f7b760f1b794b8fff9876615a" compoundref="reader_8h" startline="238">lastValueEnd_</references>
+        <references refid="class_json_1_1_reader_1afd9a30c0af205c9f327613f486fae6b8" compoundref="json__reader_8cpp" startline="515" endline="551">readArray</references>
+        <references refid="class_json_1_1_reader_1a0068eb3d8e86e91f0e4806f60da66b9c" compoundref="json__reader_8cpp" startline="459" endline="513">readObject</references>
+        <references refid="class_json_1_1_value_1a29f3a30f7e5d3af6f38d57999bf5b480" compoundref="json__value_8cpp" startline="1317" endline="1319">Json::Value::setComment</references>
+        <references refid="class_json_1_1_value_1ac6d858b5fd4d5fe6ca84f697def8c5ea" compoundref="json__value_8cpp" startline="1337" endline="1337">Json::Value::setOffsetLimit</references>
+        <references refid="class_json_1_1_value_1a6d741407c3d784360c200f181b0d6d64" compoundref="json__value_8cpp" startline="1335" endline="1335">Json::Value::setOffsetStart</references>
+        <references refid="class_json_1_1_reader_1a22e677ef400d8223f27e631b4cd4b821" compoundref="json__reader_8cpp" startline="244" endline="252">skipCommentTokens</references>
+        <references refid="json__reader_8cpp_1a53b45133c80814ea63d9f61966cfb831" compoundref="json__reader_8cpp" startline="46">stackDepth_g</references>
+        <references refid="json__reader_8cpp_1aa07a622879ae3a72facddfd839f459b9" compoundref="json__reader_8cpp" startline="45">stackLimit_g</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" compoundref="reader_8h" startline="179">Json::Reader::Token::start_</references>
+        <references refid="class_json_1_1_value_1a5263476047f20e2fc6de470e4de34fe5" compoundref="json__value_8cpp" startline="470" endline="478">Json::Value::swapPayload</references>
+        <references refid="namespace_json_1a97f039a107b3f6cf1c3edee50e978f76" compoundref="json__value_8cpp" startline="170" endline="173">Json::throwRuntimeError</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a366d1a18459ad0c3b5bd32a35391e35a" compoundref="reader_8h" startline="163">tokenArrayBegin</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a9adc87fd67f5fc21391a4be89382a316" compoundref="reader_8h" startline="164">tokenArrayEnd</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9af2c235e8da86f11ffb1a1243e49ed1fa" compoundref="reader_8h" startline="170">tokenArraySeparator</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ac24318c0842c7653c3555a82437b8eb2" compoundref="reader_8h" startline="168">tokenFalse</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a11bd0ba1c34448d075022b89d5bf9853" compoundref="reader_8h" startline="169">tokenNull</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a9b1717bee03ce7016f507bd4598fa5c6" compoundref="reader_8h" startline="166">tokenNumber</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a6196ce743696e6c803b130e8eef970f3" compoundref="reader_8h" startline="161">tokenObjectBegin</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a12d03a3a710b2d3f1384889df3da887d" compoundref="reader_8h" startline="162">tokenObjectEnd</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ace89d4e0342535b8c00104ed4e5e0cee" compoundref="reader_8h" startline="165">tokenString</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9acec3234e26f2d6bf206187fc5d949a03" compoundref="reader_8h" startline="167">tokenTrue</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aa0f06d0105ec3d8cb42427c66b991bad" compoundref="reader_8h" startline="178">Json::Reader::Token::type_</references>
+        <referencedby refid="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" compoundref="json__reader_8cpp" startline="118" endline="158">parse</referencedby>
+        <referencedby refid="class_json_1_1_reader_1afd9a30c0af205c9f327613f486fae6b8" compoundref="json__reader_8cpp" startline="515" endline="551">readArray</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a0068eb3d8e86e91f0e4806f60da66b9c" compoundref="json__reader_8cpp" startline="459" endline="513">readObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a0068eb3d8e86e91f0e4806f60da66b9c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::readObject</definition>
+        <argsstring>(Token &amp;token)</argsstring>
+        <name>readObject</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="201" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="459" bodyend="513"/>
+        <references refid="class_json_1_1_reader_1af47fb7564db6ac21faebaba8cebb41ce" compoundref="json__reader_8cpp" startline="771" endline="776">addErrorAndRecover</references>
+        <references refid="class_json_1_1_features_1aff3cb16b79d15d3d761b11a0dd6d4d6b" compoundref="features_8h" startline="52">Json::Features::allowNumericKeys_</references>
+        <references refid="class_json_1_1_value_1a03ee3d5df576640c93ba683f140828bd" compoundref="json__value_8cpp" startline="614" endline="637">Json::Value::asString</references>
+        <references refid="class_json_1_1_reader_1a327166839022ea91f0a8290960a8af76" compoundref="reader_8h" startline="235">begin_</references>
+        <references refid="class_json_1_1_reader_1a85597f763fb0148a17359b6dfc6f7326" compoundref="json__reader_8cpp" startline="778" endline="778">currentValue</references>
+        <references refid="class_json_1_1_reader_1a442d1f23edf0f4350f5eeab3ee3f7d46" compoundref="json__reader_8cpp" startline="553" endline="561">decodeNumber</references>
+        <references refid="class_json_1_1_reader_1aaf736937912f5c9b8d221e57f209e3e0" compoundref="json__reader_8cpp" startline="627" endline="636">decodeString</references>
+        <references refid="class_json_1_1_reader_1aa9984ff8f519b5541346157b7aebf97b" compoundref="reader_8h" startline="241">features_</references>
+        <references refid="class_json_1_1_reader_1ada3d2c47699dad662e6d156c8c78a6ac" compoundref="reader_8h" startline="232">nodes_</references>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4eae8386dcfc36d1ae897745f7b4f77a1f6" compoundref="value_8h" startline="86">Json::objectValue</references>
+        <references refid="class_json_1_1_reader_1a7cb0631963cc0fd4ff6ed0f570976864" compoundref="json__reader_8cpp" startline="254" endline="323">readToken</references>
+        <references refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</references>
+        <references refid="class_json_1_1_reader_1a8d4ed03a43082c5ace81ba5b81425eaf" compoundref="json__reader_8cpp" startline="758" endline="769">recoverFromError</references>
+        <references refid="class_json_1_1_value_1a6d741407c3d784360c200f181b0d6d64" compoundref="json__value_8cpp" startline="1335" endline="1335">Json::Value::setOffsetStart</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" compoundref="reader_8h" startline="179">Json::Reader::Token::start_</references>
+        <references refid="class_json_1_1_value_1a5263476047f20e2fc6de470e4de34fe5" compoundref="json__value_8cpp" startline="470" endline="478">Json::Value::swapPayload</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9af2c235e8da86f11ffb1a1243e49ed1fa" compoundref="reader_8h" startline="170">tokenArraySeparator</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ae4fcf05c3b1ce462bacd34af0ccac32b" compoundref="reader_8h" startline="172">tokenComment</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a08227b96f54242f4f9a8a597403c4424" compoundref="reader_8h" startline="171">tokenMemberSeparator</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a9b1717bee03ce7016f507bd4598fa5c6" compoundref="reader_8h" startline="166">tokenNumber</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a12d03a3a710b2d3f1384889df3da887d" compoundref="reader_8h" startline="162">tokenObjectEnd</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ace89d4e0342535b8c00104ed4e5e0cee" compoundref="reader_8h" startline="165">tokenString</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aa0f06d0105ec3d8cb42427c66b991bad" compoundref="reader_8h" startline="178">Json::Reader::Token::type_</references>
+        <referencedby refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1afd9a30c0af205c9f327613f486fae6b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::readArray</definition>
+        <argsstring>(Token &amp;token)</argsstring>
+        <name>readArray</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="202" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="515" bodyend="551"/>
+        <references refid="class_json_1_1_reader_1af47fb7564db6ac21faebaba8cebb41ce" compoundref="json__reader_8cpp" startline="771" endline="776">addErrorAndRecover</references>
+        <references refid="namespace_json_1a7d654b75c16a57007925868e38212b4eadc8f264f36b55b063c78126b335415f4" compoundref="value_8h" startline="85">Json::arrayValue</references>
+        <references refid="class_json_1_1_reader_1a327166839022ea91f0a8290960a8af76" compoundref="reader_8h" startline="235">begin_</references>
+        <references refid="class_json_1_1_reader_1a2f2feb5201a26da7aa133d2f7434479b" compoundref="reader_8h" startline="237">current_</references>
+        <references refid="class_json_1_1_reader_1a85597f763fb0148a17359b6dfc6f7326" compoundref="json__reader_8cpp" startline="778" endline="778">currentValue</references>
+        <references refid="class_json_1_1_reader_1ada3d2c47699dad662e6d156c8c78a6ac" compoundref="reader_8h" startline="232">nodes_</references>
+        <references refid="class_json_1_1_reader_1a7cb0631963cc0fd4ff6ed0f570976864" compoundref="json__reader_8cpp" startline="254" endline="323">readToken</references>
+        <references refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</references>
+        <references refid="class_json_1_1_reader_1a8d4ed03a43082c5ace81ba5b81425eaf" compoundref="json__reader_8cpp" startline="758" endline="769">recoverFromError</references>
+        <references refid="class_json_1_1_value_1a6d741407c3d784360c200f181b0d6d64" compoundref="json__value_8cpp" startline="1335" endline="1335">Json::Value::setOffsetStart</references>
+        <references refid="class_json_1_1_reader_1a40d0f69d15aeb2d52ff78d794f5ab8b2" compoundref="json__reader_8cpp" startline="325" endline="333">skipSpaces</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" compoundref="reader_8h" startline="179">Json::Reader::Token::start_</references>
+        <references refid="class_json_1_1_value_1a5263476047f20e2fc6de470e4de34fe5" compoundref="json__value_8cpp" startline="470" endline="478">Json::Value::swapPayload</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a9adc87fd67f5fc21391a4be89382a316" compoundref="reader_8h" startline="164">tokenArrayEnd</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9af2c235e8da86f11ffb1a1243e49ed1fa" compoundref="reader_8h" startline="170">tokenArraySeparator</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ae4fcf05c3b1ce462bacd34af0ccac32b" compoundref="reader_8h" startline="172">tokenComment</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aa0f06d0105ec3d8cb42427c66b991bad" compoundref="reader_8h" startline="178">Json::Reader::Token::type_</references>
+        <referencedby refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a442d1f23edf0f4350f5eeab3ee3f7d46" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::decodeNumber</definition>
+        <argsstring>(Token &amp;token)</argsstring>
+        <name>decodeNumber</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="203" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="553" bodyend="561"/>
+        <references refid="class_json_1_1_reader_1a327166839022ea91f0a8290960a8af76" compoundref="reader_8h" startline="235">begin_</references>
+        <references refid="class_json_1_1_reader_1a85597f763fb0148a17359b6dfc6f7326" compoundref="json__reader_8cpp" startline="778" endline="778">currentValue</references>
+        <references refid="class_json_1_1_reader_1_1_token_1a7d3bc0fa40097f435d184be4b1fd5ae1" compoundref="reader_8h" startline="180">Json::Reader::Token::end_</references>
+        <references refid="class_json_1_1_value_1ac6d858b5fd4d5fe6ca84f697def8c5ea" compoundref="json__value_8cpp" startline="1337" endline="1337">Json::Value::setOffsetLimit</references>
+        <references refid="class_json_1_1_value_1a6d741407c3d784360c200f181b0d6d64" compoundref="json__value_8cpp" startline="1335" endline="1335">Json::Value::setOffsetStart</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" compoundref="reader_8h" startline="179">Json::Reader::Token::start_</references>
+        <references refid="class_json_1_1_value_1a5263476047f20e2fc6de470e4de34fe5" compoundref="json__value_8cpp" startline="470" endline="478">Json::Value::swapPayload</references>
+        <referencedby refid="class_json_1_1_reader_1a0068eb3d8e86e91f0e4806f60da66b9c" compoundref="json__reader_8cpp" startline="459" endline="513">readObject</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a72f426ce3fa384d14aa10e9dd75618f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::decodeNumber</definition>
+        <argsstring>(Token &amp;token, Value &amp;decoded)</argsstring>
+        <name>decodeNumber</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>decoded</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="204" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="563" bodyend="603"/>
+        <references refid="class_json_1_1_reader_1a2420bbb7fd6d5d3e7e2fea894dd8f70f" compoundref="json__reader_8cpp" startline="605" endline="613">decodeDouble</references>
+        <references refid="class_json_1_1_reader_1_1_token_1a7d3bc0fa40097f435d184be4b1fd5ae1" compoundref="reader_8h" startline="180">Json::Reader::Token::end_</references>
+        <references refid="class_json_1_1_value_1a978c799a8af3114ef7dab6fd0a310a1b" compoundref="value_8h" startline="190">Json::Value::maxInt</references>
+        <references refid="class_json_1_1_value_1a8b4977696f13296fa8755c7953fafb2f" compoundref="value_8h" startline="183">Json::Value::maxLargestInt</references>
+        <references refid="class_json_1_1_value_1a8ddb32d9d55fa5323ae5135639dc2e31" compoundref="value_8h" startline="185">Json::Value::maxLargestUInt</references>
+        <references refid="class_json_1_1_value_1af91df130daa50dd43d2cd89e6ee67706" compoundref="value_8h" startline="181">Json::Value::minLargestInt</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" compoundref="reader_8h" startline="179">Json::Reader::Token::start_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1aaf736937912f5c9b8d221e57f209e3e0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::decodeString</definition>
+        <argsstring>(Token &amp;token)</argsstring>
+        <name>decodeString</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="205" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="627" bodyend="636"/>
+        <references refid="class_json_1_1_reader_1a327166839022ea91f0a8290960a8af76" compoundref="reader_8h" startline="235">begin_</references>
+        <references refid="class_json_1_1_reader_1a85597f763fb0148a17359b6dfc6f7326" compoundref="json__reader_8cpp" startline="778" endline="778">currentValue</references>
+        <references refid="class_json_1_1_reader_1_1_token_1a7d3bc0fa40097f435d184be4b1fd5ae1" compoundref="reader_8h" startline="180">Json::Reader::Token::end_</references>
+        <references refid="class_json_1_1_value_1ac6d858b5fd4d5fe6ca84f697def8c5ea" compoundref="json__value_8cpp" startline="1337" endline="1337">Json::Value::setOffsetLimit</references>
+        <references refid="class_json_1_1_value_1a6d741407c3d784360c200f181b0d6d64" compoundref="json__value_8cpp" startline="1335" endline="1335">Json::Value::setOffsetStart</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" compoundref="reader_8h" startline="179">Json::Reader::Token::start_</references>
+        <references refid="class_json_1_1_value_1a5263476047f20e2fc6de470e4de34fe5" compoundref="json__value_8cpp" startline="470" endline="478">Json::Value::swapPayload</references>
+        <referencedby refid="class_json_1_1_reader_1a0068eb3d8e86e91f0e4806f60da66b9c" compoundref="json__reader_8cpp" startline="459" endline="513">readObject</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a801253570f16e91519652078fb12b8e6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::decodeString</definition>
+        <argsstring>(Token &amp;token, std::string &amp;decoded)</argsstring>
+        <name>decodeString</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>decoded</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="206" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="638" bodyend="689"/>
+        <references refid="class_json_1_1_reader_1a04a3a13dbc609dfdf9e3c6723e37ff21" compoundref="json__reader_8cpp" startline="749" endline="756">addError</references>
+        <references refid="namespace_json_1adf0456e397a18cd7218a7b51dfc13c73" compoundref="json__tool_8h" startline="18" endline="44">Json::codePointToUTF8</references>
+        <references refid="class_json_1_1_reader_1a8fe24db3e9953aef3d637a56447e795c" compoundref="json__reader_8cpp" startline="691" endline="718">decodeUnicodeCodePoint</references>
+        <references refid="class_json_1_1_reader_1_1_token_1a7d3bc0fa40097f435d184be4b1fd5ae1" compoundref="reader_8h" startline="180">Json::Reader::Token::end_</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" compoundref="reader_8h" startline="179">Json::Reader::Token::start_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a2420bbb7fd6d5d3e7e2fea894dd8f70f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::decodeDouble</definition>
+        <argsstring>(Token &amp;token)</argsstring>
+        <name>decodeDouble</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="207" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="605" bodyend="613"/>
+        <references refid="class_json_1_1_reader_1a327166839022ea91f0a8290960a8af76" compoundref="reader_8h" startline="235">begin_</references>
+        <references refid="class_json_1_1_reader_1a85597f763fb0148a17359b6dfc6f7326" compoundref="json__reader_8cpp" startline="778" endline="778">currentValue</references>
+        <references refid="class_json_1_1_reader_1_1_token_1a7d3bc0fa40097f435d184be4b1fd5ae1" compoundref="reader_8h" startline="180">Json::Reader::Token::end_</references>
+        <references refid="class_json_1_1_value_1ac6d858b5fd4d5fe6ca84f697def8c5ea" compoundref="json__value_8cpp" startline="1337" endline="1337">Json::Value::setOffsetLimit</references>
+        <references refid="class_json_1_1_value_1a6d741407c3d784360c200f181b0d6d64" compoundref="json__value_8cpp" startline="1335" endline="1335">Json::Value::setOffsetStart</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" compoundref="reader_8h" startline="179">Json::Reader::Token::start_</references>
+        <references refid="class_json_1_1_value_1a5263476047f20e2fc6de470e4de34fe5" compoundref="json__value_8cpp" startline="470" endline="478">Json::Value::swapPayload</references>
+        <referencedby refid="class_json_1_1_reader_1a72f426ce3fa384d14aa10e9dd75618f0" compoundref="json__reader_8cpp" startline="563" endline="603">decodeNumber</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a5e4a66be7c413bca86078f14df5eb802" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::decodeDouble</definition>
+        <argsstring>(Token &amp;token, Value &amp;decoded)</argsstring>
+        <name>decodeDouble</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>decoded</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="208" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="615" bodyend="625"/>
+        <references refid="class_json_1_1_reader_1a04a3a13dbc609dfdf9e3c6723e37ff21" compoundref="json__reader_8cpp" startline="749" endline="756">addError</references>
+        <references refid="class_json_1_1_reader_1_1_token_1a7d3bc0fa40097f435d184be4b1fd5ae1" compoundref="reader_8h" startline="180">Json::Reader::Token::end_</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aff87d677b9ac4b52542a00b0d6673249" compoundref="reader_8h" startline="179">Json::Reader::Token::start_</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a8fe24db3e9953aef3d637a56447e795c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::decodeUnicodeCodePoint</definition>
+        <argsstring>(Token &amp;token, Location &amp;current, Location end, unsigned int &amp;unicode)</argsstring>
+        <name>decodeUnicodeCodePoint</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Location</ref> &amp;</type>
+          <declname>current</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Location</ref></type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>unsigned int &amp;</type>
+          <declname>unicode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="209" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="691" bodyend="718"/>
+        <references refid="class_json_1_1_reader_1a04a3a13dbc609dfdf9e3c6723e37ff21" compoundref="json__reader_8cpp" startline="749" endline="756">addError</references>
+        <references refid="class_json_1_1_reader_1a469cb6f55971d7c41fca2752a3aa5bf7" compoundref="json__reader_8cpp" startline="720" endline="746">decodeUnicodeEscapeSequence</references>
+        <referencedby refid="class_json_1_1_reader_1a801253570f16e91519652078fb12b8e6" compoundref="json__reader_8cpp" startline="638" endline="689">decodeString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a469cb6f55971d7c41fca2752a3aa5bf7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::decodeUnicodeEscapeSequence</definition>
+        <argsstring>(Token &amp;token, Location &amp;current, Location end, unsigned int &amp;unicode)</argsstring>
+        <name>decodeUnicodeEscapeSequence</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Location</ref> &amp;</type>
+          <declname>current</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Location</ref></type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type>unsigned int &amp;</type>
+          <declname>unicode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="213" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="720" bodyend="746"/>
+        <references refid="class_json_1_1_reader_1a04a3a13dbc609dfdf9e3c6723e37ff21" compoundref="json__reader_8cpp" startline="749" endline="756">addError</references>
+        <referencedby refid="class_json_1_1_reader_1a8fe24db3e9953aef3d637a56447e795c" compoundref="json__reader_8cpp" startline="691" endline="718">decodeUnicodeCodePoint</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a04a3a13dbc609dfdf9e3c6723e37ff21" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::addError</definition>
+        <argsstring>(const std::string &amp;message, Token &amp;token, Location extra=0)</argsstring>
+        <name>addError</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Location</ref></type>
+          <declname>extra</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="217" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="749" bodyend="756"/>
+        <references refid="class_json_1_1_reader_1a1bbce45dc4df753bed60c129f4b5147c" compoundref="reader_8h" startline="233">errors_</references>
+        <references refid="class_json_1_1_reader_1_1_error_info_1af92c24acf642b040d6e40aac4952d44d" compoundref="reader_8h" startline="187">Json::Reader::ErrorInfo::extra_</references>
+        <references refid="class_json_1_1_reader_1_1_error_info_1aeb2fb6537a8bb978b239ea1482d73d7a" compoundref="reader_8h" startline="186">Json::Reader::ErrorInfo::message_</references>
+        <references refid="class_json_1_1_reader_1_1_error_info_1a52e1c71b12eb1c3f0395d7ef1e778ce6" compoundref="reader_8h" startline="185">Json::Reader::ErrorInfo::token_</references>
+        <referencedby refid="class_json_1_1_reader_1af47fb7564db6ac21faebaba8cebb41ce" compoundref="json__reader_8cpp" startline="771" endline="776">addErrorAndRecover</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a5e4a66be7c413bca86078f14df5eb802" compoundref="json__reader_8cpp" startline="615" endline="625">decodeDouble</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a801253570f16e91519652078fb12b8e6" compoundref="json__reader_8cpp" startline="638" endline="689">decodeString</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a8fe24db3e9953aef3d637a56447e795c" compoundref="json__reader_8cpp" startline="691" endline="718">decodeUnicodeCodePoint</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a469cb6f55971d7c41fca2752a3aa5bf7" compoundref="json__reader_8cpp" startline="720" endline="746">decodeUnicodeEscapeSequence</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" compoundref="json__reader_8cpp" startline="118" endline="158">parse</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a8d4ed03a43082c5ace81ba5b81425eaf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::recoverFromError</definition>
+        <argsstring>(TokenType skipUntilToken)</argsstring>
+        <name>recoverFromError</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9" kindref="member">TokenType</ref></type>
+          <declname>skipUntilToken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="218" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="758" bodyend="769"/>
+        <references refid="class_json_1_1_reader_1a1bbce45dc4df753bed60c129f4b5147c" compoundref="reader_8h" startline="233">errors_</references>
+        <references refid="class_json_1_1_reader_1a7cb0631963cc0fd4ff6ed0f570976864" compoundref="json__reader_8cpp" startline="254" endline="323">readToken</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a87fd3ad9cae11a8afe2bd022d8ab90f4" compoundref="reader_8h" startline="160">tokenEndOfStream</references>
+        <referencedby refid="class_json_1_1_reader_1af47fb7564db6ac21faebaba8cebb41ce" compoundref="json__reader_8cpp" startline="771" endline="776">addErrorAndRecover</referencedby>
+        <referencedby refid="class_json_1_1_reader_1afd9a30c0af205c9f327613f486fae6b8" compoundref="json__reader_8cpp" startline="515" endline="551">readArray</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a0068eb3d8e86e91f0e4806f60da66b9c" compoundref="json__reader_8cpp" startline="459" endline="513">readObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1af47fb7564db6ac21faebaba8cebb41ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Json::Reader::addErrorAndRecover</definition>
+        <argsstring>(const std::string &amp;message, Token &amp;token, TokenType skipUntilToken)</argsstring>
+        <name>addErrorAndRecover</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9" kindref="member">TokenType</ref></type>
+          <declname>skipUntilToken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="219" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="771" bodyend="776"/>
+        <references refid="class_json_1_1_reader_1a04a3a13dbc609dfdf9e3c6723e37ff21" compoundref="json__reader_8cpp" startline="749" endline="756">addError</references>
+        <references refid="class_json_1_1_reader_1a8d4ed03a43082c5ace81ba5b81425eaf" compoundref="json__reader_8cpp" startline="758" endline="769">recoverFromError</references>
+        <referencedby refid="class_json_1_1_reader_1afd9a30c0af205c9f327613f486fae6b8" compoundref="json__reader_8cpp" startline="515" endline="551">readArray</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a0068eb3d8e86e91f0e4806f60da66b9c" compoundref="json__reader_8cpp" startline="459" endline="513">readObject</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1ad922ea5a8ab333084edbb84827861fa3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::Reader::skipUntilSpace</definition>
+        <argsstring>()</argsstring>
+        <name>skipUntilSpace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a85597f763fb0148a17359b6dfc6f7326" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+        <definition>Value &amp; Json::Reader::currentValue</definition>
+        <argsstring>()</argsstring>
+        <name>currentValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="223" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="778" bodyend="778"/>
+        <references refid="class_json_1_1_reader_1ada3d2c47699dad662e6d156c8c78a6ac" compoundref="reader_8h" startline="232">nodes_</references>
+        <referencedby refid="class_json_1_1_reader_1a2420bbb7fd6d5d3e7e2fea894dd8f70f" compoundref="json__reader_8cpp" startline="605" endline="613">decodeDouble</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a442d1f23edf0f4350f5eeab3ee3f7d46" compoundref="json__reader_8cpp" startline="553" endline="561">decodeNumber</referencedby>
+        <referencedby refid="class_json_1_1_reader_1aaf736937912f5c9b8d221e57f209e3e0" compoundref="json__reader_8cpp" startline="627" endline="636">decodeString</referencedby>
+        <referencedby refid="class_json_1_1_reader_1afd9a30c0af205c9f327613f486fae6b8" compoundref="json__reader_8cpp" startline="515" endline="551">readArray</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a0068eb3d8e86e91f0e4806f60da66b9c" compoundref="json__reader_8cpp" startline="459" endline="513">readObject</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1ab61eb61333cc9ec3afe785663a53ce90" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_json_1_1_reader_1a3eec9118f3e9a672ba8348c3a79d0f45" kindref="member">Char</ref></type>
+        <definition>Reader::Char Json::Reader::getNextChar</definition>
+        <argsstring>()</argsstring>
+        <name>getNextChar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="224" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="780" bodyend="784"/>
+        <references refid="class_json_1_1_reader_1a2f2feb5201a26da7aa133d2f7434479b" compoundref="reader_8h" startline="237">current_</references>
+        <references refid="class_json_1_1_reader_1a714793579cbf4ee7c5a7223d2c8d77c1" compoundref="reader_8h" startline="236">end_</references>
+        <referencedby refid="class_json_1_1_reader_1ad2690e860a1b3332c5401fb0850ba065" compoundref="json__reader_8cpp" startline="346" endline="367">readComment</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a6716ef6290b0f469efaf8d379c357967" compoundref="json__reader_8cpp" startline="409" endline="423">readCppStyleComment</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ae0ffe796abdc3c5851589ee500e28c79" compoundref="json__reader_8cpp" startline="400" endline="407">readCStyleComment</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a6328a0b1994e05118886f9fc9c608643" compoundref="json__reader_8cpp" startline="447" endline="457">readString</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a7cb0631963cc0fd4ff6ed0f570976864" compoundref="json__reader_8cpp" startline="254" endline="323">readToken</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a20b3023dc422726e2e4ebe41b8ba0515" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::Reader::getLocationLineAndColumn</definition>
+        <argsstring>(Location location, int &amp;line, int &amp;column) const </argsstring>
+        <name>getLocationLineAndColumn</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Location</ref></type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>column</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="226" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="786" bodyend="807"/>
+        <references refid="class_json_1_1_reader_1a327166839022ea91f0a8290960a8af76" compoundref="reader_8h" startline="235">begin_</references>
+        <references refid="class_json_1_1_reader_1a714793579cbf4ee7c5a7223d2c8d77c1" compoundref="reader_8h" startline="236">end_</references>
+        <referencedby refid="class_json_1_1_reader_1a95ab50aa789132e9dee0fc1475c85acf" compoundref="json__reader_8cpp" startline="822" endline="836">getFormattedErrorMessages</referencedby>
+        <referencedby refid="class_json_1_1_reader_1ac5b4b5a76d3224871519b0656393b35b" compoundref="json__reader_8cpp" startline="809" endline="815">getLocationLineAndColumn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1ac5b4b5a76d3224871519b0656393b35b" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Json::Reader::getLocationLineAndColumn</definition>
+        <argsstring>(Location location) const </argsstring>
+        <name>getLocationLineAndColumn</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Location</ref></type>
+          <declname>location</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="227" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="809" bodyend="815"/>
+        <references refid="class_json_1_1_reader_1a20b3023dc422726e2e4ebe41b8ba0515" compoundref="json__reader_8cpp" startline="786" endline="807">getLocationLineAndColumn</references>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1aaea3bd62d12ffb6117a61476c0685049" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::Reader::addComment</definition>
+        <argsstring>(Location begin, Location end, CommentPlacement placement)</argsstring>
+        <name>addComment</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Location</ref></type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Location</ref></type>
+          <declname>end</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351" kindref="member">CommentPlacement</ref></type>
+          <declname>placement</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="228" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="389" bodyend="398"/>
+        <references refid="class_json_1_1_reader_1a8e9ce743f6004f0596692f0a9ee4626c" compoundref="reader_8h" startline="242">collectComments_</references>
+        <references refid="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351a008a230a0586de54f30b76afe70fdcfa" compoundref="value_8h" startline="91">Json::commentAfterOnSameLine</references>
+        <references refid="class_json_1_1_reader_1a240d10ca88620e06a5bd25cc633e9a8a" compoundref="reader_8h" startline="240">commentsBefore_</references>
+        <references refid="class_json_1_1_reader_1a87cc75ae5adc6a6755f0ba1c7255ff6c" compoundref="reader_8h" startline="239">lastValue_</references>
+        <references refid="namespace_json_1a2e6b8616041876128cbef54b8c75da62" compoundref="json__reader_8cpp" startline="369" endline="386">Json::normalizeEOL</references>
+        <references refid="class_json_1_1_value_1a29f3a30f7e5d3af6f38d57999bf5b480" compoundref="json__value_8cpp" startline="1317" endline="1319">Json::Value::setComment</references>
+        <referencedby refid="class_json_1_1_reader_1ad2690e860a1b3332c5401fb0850ba065" compoundref="json__reader_8cpp" startline="346" endline="367">readComment</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_1_1_reader_1a22e677ef400d8223f27e631b4cd4b821" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::Reader::skipCommentTokens</definition>
+        <argsstring>(Token &amp;token)</argsstring>
+        <name>skipCommentTokens</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1_1_token" kindref="compound">Token</ref> &amp;</type>
+          <declname>token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="229" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="244" bodyend="252"/>
+        <references refid="class_json_1_1_features_1a33afd389719624b6bdb23950b3c346c9" compoundref="features_8h" startline="42">Json::Features::allowComments_</references>
+        <references refid="class_json_1_1_reader_1aa9984ff8f519b5541346157b7aebf97b" compoundref="reader_8h" startline="241">features_</references>
+        <references refid="class_json_1_1_reader_1a7cb0631963cc0fd4ff6ed0f570976864" compoundref="json__reader_8cpp" startline="254" endline="323">readToken</references>
+        <references refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ae4fcf05c3b1ce462bacd34af0ccac32b" compoundref="reader_8h" startline="172">tokenComment</references>
+        <references refid="class_json_1_1_reader_1_1_token_1aa0f06d0105ec3d8cb42427c66b991bad" compoundref="reader_8h" startline="178">Json::Reader::Token::type_</references>
+        <referencedby refid="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" compoundref="json__reader_8cpp" startline="118" endline="158">parse</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">readValue</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Unserialize a <ulink url="http://www.json.org">JSON</ulink> document into a <ref refid="class_json_1_1_value" kindref="compound">Value</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000001"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="class_json_1_1_char_reader" kindref="compound">CharReader</ref> and <ref refid="class_json_1_1_char_reader_builder" kindref="compound">CharReaderBuilder</ref>. </para></xrefdescription></xrefsect></para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="2533">
+        <label>Json::Features</label>
+        <link refid="class_json_1_1_features"/>
+      </node>
+      <node id="2538">
+        <label>K</label>
+      </node>
+      <node id="2539">
+        <label>T</label>
+      </node>
+      <node id="2545">
+        <label>std::stack&lt; Value * &gt;</label>
+        <childnode refid="2534" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2534">
+        <label>Json::Value</label>
+        <link refid="class_json_1_1_value"/>
+        <childnode refid="2534" relation="usage">
+          <edgelabel>null</edgelabel>
+          <edgelabel>nullRef</edgelabel>
+        </childnode>
+        <childnode refid="2535" relation="usage">
+          <edgelabel>comments_</edgelabel>
+        </childnode>
+        <childnode refid="2536" relation="usage">
+          <edgelabel>value_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2537">
+        <label>std::map&lt; K, T &gt;</label>
+        <childnode refid="2538" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="2539" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2536">
+        <label>Json::Value::ValueHolder</label>
+        <link refid="union_json_1_1_value_1_1_value_holder"/>
+        <childnode refid="2537" relation="usage">
+          <edgelabel>map_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2535">
+        <label>Json::Value::CommentInfo</label>
+        <link refid="struct_json_1_1_value_1_1_comment_info"/>
+      </node>
+      <node id="2541">
+        <label>Json::OurReader::ErrorInfo</label>
+        <link refid="class_json_1_1_our_reader_1_1_error_info"/>
+        <childnode refid="2542" relation="usage">
+          <edgelabel>message_</edgelabel>
+        </childnode>
+        <childnode refid="2544" relation="usage">
+          <edgelabel>token_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2543">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="2532">
+        <label>Json::Reader</label>
+        <link refid="class_json_1_1_reader"/>
+        <childnode refid="2533" relation="usage">
+          <edgelabel>features_</edgelabel>
+        </childnode>
+        <childnode refid="2534" relation="usage">
+          <edgelabel>lastValue_</edgelabel>
+        </childnode>
+        <childnode refid="2540" relation="usage">
+          <edgelabel>errors_</edgelabel>
+        </childnode>
+        <childnode refid="2542" relation="usage">
+          <edgelabel>document_</edgelabel>
+          <edgelabel>commentsBefore_</edgelabel>
+        </childnode>
+        <childnode refid="2545" relation="usage">
+          <edgelabel>nodes_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2544">
+        <label>Json::OurReader::Token</label>
+        <link refid="class_json_1_1_our_reader_1_1_token"/>
+      </node>
+      <node id="2540">
+        <label>std::deque&lt; ErrorInfo &gt;</label>
+        <childnode refid="2541" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2542">
+        <label>std::string</label>
+        <childnode refid="2543" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="33" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" bodystart="33" bodyend="243"/>
+    <listofallmembers>
+      <member refid="class_json_1_1_reader_1aaea3bd62d12ffb6117a61476c0685049" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>addComment</name></member>
+      <member refid="class_json_1_1_reader_1a04a3a13dbc609dfdf9e3c6723e37ff21" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>addError</name></member>
+      <member refid="class_json_1_1_reader_1af47fb7564db6ac21faebaba8cebb41ce" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>addErrorAndRecover</name></member>
+      <member refid="class_json_1_1_reader_1a327166839022ea91f0a8290960a8af76" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>begin_</name></member>
+      <member refid="class_json_1_1_reader_1a3eec9118f3e9a672ba8348c3a79d0f45" prot="public" virt="non-virtual"><scope>Json::Reader</scope><name>Char</name></member>
+      <member refid="class_json_1_1_reader_1a8e9ce743f6004f0596692f0a9ee4626c" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>collectComments_</name></member>
+      <member refid="class_json_1_1_reader_1a240d10ca88620e06a5bd25cc633e9a8a" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>commentsBefore_</name></member>
+      <member refid="class_json_1_1_reader_1a2f2feb5201a26da7aa133d2f7434479b" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>current_</name></member>
+      <member refid="class_json_1_1_reader_1a85597f763fb0148a17359b6dfc6f7326" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>currentValue</name></member>
+      <member refid="class_json_1_1_reader_1a2420bbb7fd6d5d3e7e2fea894dd8f70f" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>decodeDouble</name></member>
+      <member refid="class_json_1_1_reader_1a5e4a66be7c413bca86078f14df5eb802" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>decodeDouble</name></member>
+      <member refid="class_json_1_1_reader_1a442d1f23edf0f4350f5eeab3ee3f7d46" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>decodeNumber</name></member>
+      <member refid="class_json_1_1_reader_1a72f426ce3fa384d14aa10e9dd75618f0" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>decodeNumber</name></member>
+      <member refid="class_json_1_1_reader_1aaf736937912f5c9b8d221e57f209e3e0" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>decodeString</name></member>
+      <member refid="class_json_1_1_reader_1a801253570f16e91519652078fb12b8e6" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>decodeString</name></member>
+      <member refid="class_json_1_1_reader_1a8fe24db3e9953aef3d637a56447e795c" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>decodeUnicodeCodePoint</name></member>
+      <member refid="class_json_1_1_reader_1a469cb6f55971d7c41fca2752a3aa5bf7" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>decodeUnicodeEscapeSequence</name></member>
+      <member refid="class_json_1_1_reader_1afde4a4311ae30597da5b6060a8d60542" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>document_</name></member>
+      <member refid="class_json_1_1_reader_1a714793579cbf4ee7c5a7223d2c8d77c1" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>end_</name></member>
+      <member refid="class_json_1_1_reader_1aae51e8f5bab3f067261c842a3ef858e5" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>Errors</name></member>
+      <member refid="class_json_1_1_reader_1a1bbce45dc4df753bed60c129f4b5147c" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>errors_</name></member>
+      <member refid="class_json_1_1_reader_1aa9984ff8f519b5541346157b7aebf97b" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>features_</name></member>
+      <member refid="class_json_1_1_reader_1afa4a59e962d23c4d1c38b433fc95eefa" prot="public" virt="non-virtual"><scope>Json::Reader</scope><name>getFormatedErrorMessages</name></member>
+      <member refid="class_json_1_1_reader_1a95ab50aa789132e9dee0fc1475c85acf" prot="public" virt="non-virtual"><scope>Json::Reader</scope><name>getFormattedErrorMessages</name></member>
+      <member refid="class_json_1_1_reader_1a20b3023dc422726e2e4ebe41b8ba0515" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>getLocationLineAndColumn</name></member>
+      <member refid="class_json_1_1_reader_1ac5b4b5a76d3224871519b0656393b35b" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>getLocationLineAndColumn</name></member>
+      <member refid="class_json_1_1_reader_1ab61eb61333cc9ec3afe785663a53ce90" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>getNextChar</name></member>
+      <member refid="class_json_1_1_reader_1a08c2ea5ffc7d2a9c9e35020835624f0b" prot="public" virt="non-virtual"><scope>Json::Reader</scope><name>getStructuredErrors</name></member>
+      <member refid="class_json_1_1_reader_1a06b52dcc656549506b1ae6f05167ecf4" prot="public" virt="non-virtual"><scope>Json::Reader</scope><name>good</name></member>
+      <member refid="class_json_1_1_reader_1a87cc75ae5adc6a6755f0ba1c7255ff6c" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>lastValue_</name></member>
+      <member refid="class_json_1_1_reader_1a497a114f7b760f1b794b8fff9876615a" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>lastValueEnd_</name></member>
+      <member refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" prot="public" virt="non-virtual"><scope>Json::Reader</scope><name>Location</name></member>
+      <member refid="class_json_1_1_reader_1a3e5a7bc6b7b53f2ca8cb9da42f8ffb21" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>match</name></member>
+      <member refid="class_json_1_1_reader_1a8da2114fe8b8124d41ea2f3434f0171b" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>Nodes</name></member>
+      <member refid="class_json_1_1_reader_1ada3d2c47699dad662e6d156c8c78a6ac" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>nodes_</name></member>
+      <member refid="class_json_1_1_reader_1af1da6c976ad1e96c742804c3853eef94" prot="public" virt="non-virtual"><scope>Json::Reader</scope><name>parse</name></member>
+      <member refid="class_json_1_1_reader_1ac71ef2b64c7c27b062052e692af3fb32" prot="public" virt="non-virtual"><scope>Json::Reader</scope><name>parse</name></member>
+      <member refid="class_json_1_1_reader_1a8d0347e6b47343e4bc68be7ecdb9c4e9" prot="public" virt="non-virtual"><scope>Json::Reader</scope><name>parse</name></member>
+      <member refid="class_json_1_1_reader_1ade6c28e0ef00d8f2e0aa2283f91c3e37" prot="public" virt="non-virtual"><scope>Json::Reader</scope><name>pushError</name></member>
+      <member refid="class_json_1_1_reader_1a9b474233c3a7c688e340e70665d45223" prot="public" virt="non-virtual"><scope>Json::Reader</scope><name>pushError</name></member>
+      <member refid="class_json_1_1_reader_1afd9a30c0af205c9f327613f486fae6b8" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>readArray</name></member>
+      <member refid="class_json_1_1_reader_1ad2690e860a1b3332c5401fb0850ba065" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>readComment</name></member>
+      <member refid="class_json_1_1_reader_1a6716ef6290b0f469efaf8d379c357967" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>readCppStyleComment</name></member>
+      <member refid="class_json_1_1_reader_1ae0ffe796abdc3c5851589ee500e28c79" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>readCStyleComment</name></member>
+      <member refid="class_json_1_1_reader_1a0b3c4e24c8393354bab57a6ba3ffc27f" prot="public" virt="non-virtual"><scope>Json::Reader</scope><name>Reader</name></member>
+      <member refid="class_json_1_1_reader_1a45f17831118337309180313e93ac33f8" prot="public" virt="non-virtual"><scope>Json::Reader</scope><name>Reader</name></member>
+      <member refid="class_json_1_1_reader_1afb31bfda6bb27d6453057a47655e8363" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>readNumber</name></member>
+      <member refid="class_json_1_1_reader_1a0068eb3d8e86e91f0e4806f60da66b9c" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>readObject</name></member>
+      <member refid="class_json_1_1_reader_1a6328a0b1994e05118886f9fc9c608643" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>readString</name></member>
+      <member refid="class_json_1_1_reader_1a7cb0631963cc0fd4ff6ed0f570976864" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>readToken</name></member>
+      <member refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>readValue</name></member>
+      <member refid="class_json_1_1_reader_1a8d4ed03a43082c5ace81ba5b81425eaf" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>recoverFromError</name></member>
+      <member refid="class_json_1_1_reader_1a22e677ef400d8223f27e631b4cd4b821" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>skipCommentTokens</name></member>
+      <member refid="class_json_1_1_reader_1a40d0f69d15aeb2d52ff78d794f5ab8b2" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>skipSpaces</name></member>
+      <member refid="class_json_1_1_reader_1ad922ea5a8ab333084edbb84827861fa3" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>skipUntilSpace</name></member>
+      <member refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a366d1a18459ad0c3b5bd32a35391e35a" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>tokenArrayBegin</name></member>
+      <member refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a9adc87fd67f5fc21391a4be89382a316" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>tokenArrayEnd</name></member>
+      <member refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9af2c235e8da86f11ffb1a1243e49ed1fa" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>tokenArraySeparator</name></member>
+      <member refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ae4fcf05c3b1ce462bacd34af0ccac32b" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>tokenComment</name></member>
+      <member refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a87fd3ad9cae11a8afe2bd022d8ab90f4" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>tokenEndOfStream</name></member>
+      <member refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a55d1ab9135c3d068b57fafdbabfa569a" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>tokenError</name></member>
+      <member refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ac24318c0842c7653c3555a82437b8eb2" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>tokenFalse</name></member>
+      <member refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a08227b96f54242f4f9a8a597403c4424" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>tokenMemberSeparator</name></member>
+      <member refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a11bd0ba1c34448d075022b89d5bf9853" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>tokenNull</name></member>
+      <member refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a9b1717bee03ce7016f507bd4598fa5c6" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>tokenNumber</name></member>
+      <member refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a6196ce743696e6c803b130e8eef970f3" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>tokenObjectBegin</name></member>
+      <member refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9a12d03a3a710b2d3f1384889df3da887d" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>tokenObjectEnd</name></member>
+      <member refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9ace89d4e0342535b8c00104ed4e5e0cee" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>tokenString</name></member>
+      <member refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9acec3234e26f2d6bf206187fc5d949a03" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>tokenTrue</name></member>
+      <member refid="class_json_1_1_reader_1aa35e6ab574dc399a0a645ad98ed66bc9" prot="private" virt="non-virtual"><scope>Json::Reader</scope><name>TokenType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

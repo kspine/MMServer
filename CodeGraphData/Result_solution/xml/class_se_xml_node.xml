@@ -1,0 +1,2153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_se_xml_node" kind="class" prot="public" abstract="yes">
+    <compoundname>SeXmlNode</compoundname>
+    <basecompoundref refid="class_se_xml_base" prot="public" virt="non-virtual">SeXmlBase</basecompoundref>
+    <derivedcompoundref refid="class_se_xml_comment" prot="public" virt="non-virtual">SeXmlComment</derivedcompoundref>
+    <derivedcompoundref refid="class_se_xml_declaration" prot="public" virt="non-virtual">SeXmlDeclaration</derivedcompoundref>
+    <derivedcompoundref refid="class_se_xml_document" prot="public" virt="non-virtual">SeXmlDocument</derivedcompoundref>
+    <derivedcompoundref refid="class_se_xml_element" prot="public" virt="non-virtual">SeXmlElement</derivedcompoundref>
+    <derivedcompoundref refid="class_se_xml_text" prot="public" virt="non-virtual">SeXmlText</derivedcompoundref>
+    <derivedcompoundref refid="class_se_xml_unknown" prot="public" virt="non-virtual">SeXmlUnknown</derivedcompoundref>
+    <includes refid="_se_xml_8h" local="no">SeXml.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6" prot="public" static="no">
+        <name>NodeType</name>
+        <enumvalue id="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6adc684b4a6e0502f24b75c4e825b7980b" prot="public">
+          <name>SeXml_DOCUMENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6a338982483badab9c2857f724d5ed11bf" prot="public">
+          <name>SeXml_ELEMENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6a3b6631ac53ccda25bebf4eff93289c1a" prot="public">
+          <name>SeXml_COMMENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6ae96184d40109c475a8cf91d81942e473" prot="public">
+          <name>SeXml_UNKNOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6ac2319caddc8027ca3be0723939309e52" prot="public">
+          <name>SeXml_TEXT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6a014b92e0fa8844aa5267efe2382ac541" prot="public">
+          <name>SeXml_DECLARATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6aee4f6da186cc60326cb1a081c9d83f3f" prot="public">
+          <name>SeXml_TYPECOUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The types of XML nodes supported by SeXml. (All the unsupported types are picked up by UNKNOWN.) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="450" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="449" bodyend="458"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_se_xml_node_1a649e42d2d9cbc6952d5f2fe6b9c91f4c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SeXmlDocument</definition>
+        <argsstring></argsstring>
+        <name>SeXmlDocument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="414" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_se_xml_node_1a30b08077ea663954788bbd17b23df7a1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SeXmlElement</definition>
+        <argsstring></argsstring>
+        <name>SeXmlElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="415" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="415" bodyend="-1"/>
+        <referencedby refid="class_se_xml_handle_1a6cd76db17ccc4adf3030744c5e30108e" compoundref="_se_xml_8cpp" startline="3412" endline="3464">SeXmlHandle::CreatePath</referencedby>
+        <referencedby refid="class_se_xml_node_1a412b0a236954990d508b0bc4bc5f905e" compoundref="_se_xml_8cpp" startline="838" endline="919">Identify</referencedby>
+      </memberdef>
+      <memberdef kind="friend" id="class_se_xml_node_1a614d9ead65256be0185d1de965456874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend std::istream &amp;</type>
+        <definition>std::istream&amp; operator&gt;&gt;</definition>
+        <argsstring>(std::istream &amp;in, SeXmlNode &amp;base)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> &amp;</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An input stream operator, for every class. Tolerant of newlines and formatting, but doesn&apos;t expect them. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="422" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="3189" bodyend="3197"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_se_xml_node_1a3d617ee6c992a1631f920bc9d6b277f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const SeXmlNode &amp;base)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> &amp;</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An output stream operator, for every class. Note that this outputs without any newlines or formatting, as opposed to <ref refid="class_se_xml_base_1a55dbb0c85e6fa8091572bb536983bf03" kindref="member">Print()</ref>, which includes tabs and new lines.</para><para>The operator&lt;&lt; and operator&gt;&gt; are not completely symmetric. Writing a node to a stream is very well defined. You&apos;ll get a nice stream of output, without any extra whitespace or newlines.</para><para>But reading is not as well defined. (As it always is.) If you create a <ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> (for example) and read that from an input stream, the text needs to define an element or junk will result. This is true of all input streams, but it&apos;s worth keeping in mind.</para><para>A <ref refid="class_se_xml_document" kindref="compound">SeXmlDocument</ref> will read nodes until it reads a root element, and all the children of that root element. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="440" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="3200" bodyend="3208"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_se_xml_node_1adef9bd295e12df57f0a20c640b545801" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend std::string &amp;</type>
+        <definition>std::string&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::string &amp;out, const SeXmlNode &amp;base)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> &amp;</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+<para>Appends the XML node or attribute to a std::string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="443" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="3211" bodyend="3219"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_se_xml_node_1a65a7c41122358cbb58a84bfc8b29e5cb" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="726" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="726" bodyend="-1"/>
+        <referencedby refid="class_se_xml_node_1a4c1ad2eb180e8620343c5c1a6d3b727d" compoundref="_se_xml_8cpp" startline="2130" endline="2140">GetDocument</referencedby>
+        <referencedby refid="class_se_xml_node_1a412b0a236954990d508b0bc4bc5f905e" compoundref="_se_xml_8cpp" startline="838" endline="919">Identify</referencedby>
+        <referencedby refid="class_se_xml_node_1a3deb512364e74225812e1b30ac4f9b14" compoundref="_se_xml_8cpp" startline="1882" endline="1912">InsertAfterChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a9d700e9f5808f5735c463c4310e198d6" compoundref="_se_xml_8cpp" startline="1849" endline="1879">InsertBeforeChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a2b47c420655c6990c4c71b81a711c606" compoundref="_se_xml_8cpp" startline="2006" endline="2017">IterateChildren</referencedby>
+        <referencedby refid="class_se_xml_node_1a5d29bea38bdbc747eaa271000d97db36" compoundref="_se_xml_8cpp" startline="1803" endline="1830">LinkEndChild</referencedby>
+        <referencedby refid="class_se_xml_node_1ad5b279e0ed0036902454cc63ac0d1227" compoundref="_se_xml_8h" startline="501" endline="501">Parent</referencedby>
+        <referencedby refid="class_se_xml_node_1a7f79571be5a3ae1c133d08ea9ba7c8f7" compoundref="_se_xml_8cpp" startline="1955" endline="1980">RemoveChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a67c40f63d60664d4199b9ba1bd33a8bc" compoundref="_se_xml_8cpp" startline="1915" endline="1952">ReplaceChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a32454918b4be5056c9e40737dd973bbf" compoundref="_se_xml_8cpp" startline="1751" endline="1759">SeXmlNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_xml_node_1a55e3cd66c85ccf86923c3cda165b8c2b" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6" kindref="member">NodeType</ref></type>
+        <definition>NodeType SeXmlNode::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="727" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="727" bodyend="-1"/>
+        <referencedby refid="class_se_xml_node_1a32454918b4be5056c9e40737dd973bbf" compoundref="_se_xml_8cpp" startline="1751" endline="1759">SeXmlNode</referencedby>
+        <referencedby refid="class_se_xml_node_1a751961ee99e157cd026584239c88b040" compoundref="_se_xml_8h" startline="657" endline="657">Type</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_xml_node_1a39ef82e71e4fa4c58e875f4f5199afd8" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::firstChild</definition>
+        <argsstring></argsstring>
+        <name>firstChild</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="729" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="729" bodyend="-1"/>
+        <referencedby refid="class_se_xml_node_1a1fc943755c8fbbaeb5b07150d95a7b39" compoundref="_se_xml_8cpp" startline="1785" endline="1800">Clear</referencedby>
+        <referencedby refid="class_se_xml_element_1ad342f7ebb101f6df3250f42d01d7968c" compoundref="_se_xml_8cpp" startline="2453" endline="2473">SeXmlElement::CopyTo</referencedby>
+        <referencedby refid="class_se_xml_document_1ab2a645acc23f7e2d6f67c6c2f58a4abd" compoundref="_se_xml_8cpp" startline="2715" endline="2731">SeXmlDocument::CopyTo</referencedby>
+        <referencedby refid="class_se_xml_node_1a8931877fa48cdf40292de2a43f0e9163" compoundref="_se_xml_8cpp" startline="1982" endline="1991">FirstChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a9d700e9f5808f5735c463c4310e198d6" compoundref="_se_xml_8cpp" startline="1849" endline="1879">InsertBeforeChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a5d29bea38bdbc747eaa271000d97db36" compoundref="_se_xml_8cpp" startline="1803" endline="1830">LinkEndChild</referencedby>
+        <referencedby refid="class_se_xml_node_1ae6472aaa87f74c8b1813779ef24d9cfc" compoundref="_se_xml_8h" startline="668" endline="668">NoChildren</referencedby>
+        <referencedby refid="class_se_xml_document_1ad127c9369e3b07ccc15aa303fd289d5a" compoundref="_se_xml_8cpp" startline="724" endline="816">SeXmlDocument::Parse</referencedby>
+        <referencedby refid="class_se_xml_element_1abf637f8d4e55bd2ebabeaa4a711deb1b" compoundref="_se_xml_8cpp" startline="2400" endline="2450">SeXmlElement::Print</referencedby>
+        <referencedby refid="class_se_xml_node_1a7f79571be5a3ae1c133d08ea9ba7c8f7" compoundref="_se_xml_8cpp" startline="1955" endline="1980">RemoveChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a67c40f63d60664d4199b9ba1bd33a8bc" compoundref="_se_xml_8cpp" startline="1915" endline="1952">ReplaceChild</referencedby>
+        <referencedby refid="class_se_xml_element_1ac389e2b229f68c265c7ae036e7238827" compoundref="_se_xml_8cpp" startline="2143" endline="2148">SeXmlElement::SeXmlElement</referencedby>
+        <referencedby refid="class_se_xml_node_1a32454918b4be5056c9e40737dd973bbf" compoundref="_se_xml_8cpp" startline="1751" endline="1759">SeXmlNode</referencedby>
+        <referencedby refid="class_se_xml_node_1afb90672618fa69d8b4bd1b1e073aa93c" compoundref="_se_xml_8cpp" startline="1762" endline="1774">~SeXmlNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_xml_node_1a392d7764d64074484b08d0f574c1af6f" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::lastChild</definition>
+        <argsstring></argsstring>
+        <name>lastChild</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="730" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="730" bodyend="-1"/>
+        <referencedby refid="class_se_xml_node_1a1fc943755c8fbbaeb5b07150d95a7b39" compoundref="_se_xml_8cpp" startline="1785" endline="1800">Clear</referencedby>
+        <referencedby refid="class_se_xml_node_1a3deb512364e74225812e1b30ac4f9b14" compoundref="_se_xml_8cpp" startline="1882" endline="1912">InsertAfterChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a0cde6cee6e2780079ba6ff8d8f56746f" compoundref="_se_xml_8cpp" startline="1994" endline="2003">LastChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a5d29bea38bdbc747eaa271000d97db36" compoundref="_se_xml_8cpp" startline="1803" endline="1830">LinkEndChild</referencedby>
+        <referencedby refid="class_se_xml_element_1abf637f8d4e55bd2ebabeaa4a711deb1b" compoundref="_se_xml_8cpp" startline="2400" endline="2450">SeXmlElement::Print</referencedby>
+        <referencedby refid="class_se_xml_node_1a7f79571be5a3ae1c133d08ea9ba7c8f7" compoundref="_se_xml_8cpp" startline="1955" endline="1980">RemoveChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a67c40f63d60664d4199b9ba1bd33a8bc" compoundref="_se_xml_8cpp" startline="1915" endline="1952">ReplaceChild</referencedby>
+        <referencedby refid="class_se_xml_element_1ac389e2b229f68c265c7ae036e7238827" compoundref="_se_xml_8cpp" startline="2143" endline="2148">SeXmlElement::SeXmlElement</referencedby>
+        <referencedby refid="class_se_xml_node_1a32454918b4be5056c9e40737dd973bbf" compoundref="_se_xml_8cpp" startline="1751" endline="1759">SeXmlNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_xml_node_1a69c2d00c53d7ead6d45318b7a1da39b6" prot="protected" static="no" mutable="no">
+        <type><ref refid="_se_xml_8h_1aba1e614be498200cbfd6f95fe347cb84" kindref="member">SeXml_STRING</ref></type>
+        <definition>SeXml_STRING SeXmlNode::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="732" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="732" bodyend="-1"/>
+        <referencedby refid="class_se_xml_text_1a3c7aa3f59c14f00a2f981e022b6fd92a" compoundref="_se_xml_8cpp" startline="1640" endline="1646">SeXmlText::Blank</referencedby>
+        <referencedby refid="class_se_xml_node_1ad50bd1f334c012388cac26907f4dcce9" compoundref="_se_xml_8cpp" startline="1777" endline="1782">CopyTo</referencedby>
+        <referencedby refid="class_se_xml_document_1ab6a2cc5344be181879f7231db4c7cb58" compoundref="_se_xml_8cpp" startline="2563" endline="2582">SeXmlDocument::LoadFile</referencedby>
+        <referencedby refid="class_se_xml_element_1a1dece8a6836719b457ae13c97db13a5e" compoundref="_se_xml_8cpp" startline="1060" endline="1191">SeXmlElement::Parse</referencedby>
+        <referencedby refid="class_se_xml_comment_1a544c45d9b1d710e3463d08d411fa11a3" compoundref="_se_xml_8cpp" startline="1350" endline="1402">SeXmlComment::Parse</referencedby>
+        <referencedby refid="class_se_xml_text_1a1379f89aabd31a7583aeaf12b33d61ff" compoundref="_se_xml_8cpp" startline="1508" endline="1557">SeXmlText::Parse</referencedby>
+        <referencedby refid="class_se_xml_unknown_1a6f733221b95b536326ed35cda36fadcd" compoundref="_se_xml_8cpp" startline="1290" endline="1322">SeXmlUnknown::Parse</referencedby>
+        <referencedby refid="class_se_xml_element_1abf637f8d4e55bd2ebabeaa4a711deb1b" compoundref="_se_xml_8cpp" startline="2400" endline="2450">SeXmlElement::Print</referencedby>
+        <referencedby refid="class_se_xml_comment_1a67e1060e4563613e74aff657b89da041" compoundref="_se_xml_8cpp" startline="2897" endline="2905">SeXmlComment::Print</referencedby>
+        <referencedby refid="class_se_xml_text_1a6cbb1cf6b28fbdcb72009e1c343f8770" compoundref="_se_xml_8cpp" startline="2932" endline="2950">SeXmlText::Print</referencedby>
+        <referencedby refid="class_se_xml_unknown_1a96728c89d5fdd916b5542eae0c953dd4" compoundref="_se_xml_8cpp" startline="3066" endline="3071">SeXmlUnknown::Print</referencedby>
+        <referencedby refid="class_se_xml_node_1a9f52fd59908de7f7ce9a64e3f79ad709" compoundref="_se_xml_8h" startline="493" endline="493">SetValue</referencedby>
+        <referencedby refid="class_se_xml_document_1aef18d238531c1c8099a058dd351bbc49" compoundref="_se_xml_8cpp" startline="2520" endline="2526">SeXmlDocument::SeXmlDocument</referencedby>
+        <referencedby refid="class_se_xml_element_1ac389e2b229f68c265c7ae036e7238827" compoundref="_se_xml_8cpp" startline="2143" endline="2148">SeXmlElement::SeXmlElement</referencedby>
+        <referencedby refid="class_se_xml_node_1ac548e8c02b1152a1f4bc4dc700dd9dfc" compoundref="_se_xml_8h" startline="474" endline="474">Value</referencedby>
+        <referencedby refid="class_se_xml_node_1a6a3a5bc25748cd8a44564295cce4dd9c" compoundref="_se_xml_8h" startline="480" endline="480">ValueStr</referencedby>
+        <referencedby refid="class_se_xml_node_1a61e099b3356df3fc0c309215c0cda021" compoundref="_se_xml_8h" startline="482" endline="482">ValueTStr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_xml_node_1a97053ba36357974c8c80d69beb67eb03" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="734" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="734" bodyend="-1"/>
+        <referencedby refid="class_se_xml_node_1a3deb512364e74225812e1b30ac4f9b14" compoundref="_se_xml_8cpp" startline="1882" endline="1912">InsertAfterChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a9d700e9f5808f5735c463c4310e198d6" compoundref="_se_xml_8cpp" startline="1849" endline="1879">InsertBeforeChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a0cde6cee6e2780079ba6ff8d8f56746f" compoundref="_se_xml_8cpp" startline="1994" endline="2003">LastChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a5d29bea38bdbc747eaa271000d97db36" compoundref="_se_xml_8cpp" startline="1803" endline="1830">LinkEndChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a11abed9979291632f9d992298a915913" compoundref="_se_xml_8cpp" startline="2046" endline="2055">PreviousSibling</referencedby>
+        <referencedby refid="class_se_xml_node_1a7f79571be5a3ae1c133d08ea9ba7c8f7" compoundref="_se_xml_8cpp" startline="1955" endline="1980">RemoveChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a67c40f63d60664d4199b9ba1bd33a8bc" compoundref="_se_xml_8cpp" startline="1915" endline="1952">ReplaceChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a32454918b4be5056c9e40737dd973bbf" compoundref="_se_xml_8cpp" startline="1751" endline="1759">SeXmlNode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_xml_node_1a6ad0de4a01fb904d6672ed4a511ff7fb" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="735" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="735" bodyend="-1"/>
+        <referencedby refid="class_se_xml_node_1a1fc943755c8fbbaeb5b07150d95a7b39" compoundref="_se_xml_8cpp" startline="1785" endline="1800">Clear</referencedby>
+        <referencedby refid="class_se_xml_node_1a8931877fa48cdf40292de2a43f0e9163" compoundref="_se_xml_8cpp" startline="1982" endline="1991">FirstChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a3deb512364e74225812e1b30ac4f9b14" compoundref="_se_xml_8cpp" startline="1882" endline="1912">InsertAfterChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a9d700e9f5808f5735c463c4310e198d6" compoundref="_se_xml_8cpp" startline="1849" endline="1879">InsertBeforeChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a5d29bea38bdbc747eaa271000d97db36" compoundref="_se_xml_8cpp" startline="1803" endline="1830">LinkEndChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a70f5a74bd2964f84fcf93ba1643f1190" compoundref="_se_xml_8cpp" startline="2034" endline="2043">NextSibling</referencedby>
+        <referencedby refid="class_se_xml_node_1a7f79571be5a3ae1c133d08ea9ba7c8f7" compoundref="_se_xml_8cpp" startline="1955" endline="1980">RemoveChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a67c40f63d60664d4199b9ba1bd33a8bc" compoundref="_se_xml_8cpp" startline="1915" endline="1952">ReplaceChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a32454918b4be5056c9e40737dd973bbf" compoundref="_se_xml_8cpp" startline="1751" endline="1759">SeXmlNode</referencedby>
+        <referencedby refid="class_se_xml_node_1afb90672618fa69d8b4bd1b1e073aa93c" compoundref="_se_xml_8cpp" startline="1762" endline="1774">~SeXmlNode</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_se_xml_node_1afb90672618fa69d8b4bd1b1e073aa93c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>SeXmlNode::~SeXmlNode</definition>
+        <argsstring>()</argsstring>
+        <name>~SeXmlNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="460" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="1762" bodyend="1774"/>
+        <references refid="class_se_xml_node_1a39ef82e71e4fa4c58e875f4f5199afd8" compoundref="_se_xml_8h" startline="729">firstChild</references>
+        <references refid="class_se_xml_node_1a6ad0de4a01fb904d6672ed4a511ff7fb" compoundref="_se_xml_8h" startline="735">next</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1ac548e8c02b1152a1f4bc4dc700dd9dfc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* SeXmlNode::Value</definition>
+        <argsstring>() const </argsstring>
+        <name>Value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The meaning of &apos;value&apos; changes for the specific type of <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref>. <verbatim>Document:   filename of the xml file
+Element:    name of the element
+Comment:    the comment text
+Unknown:    the tag contents
+Text:       the text string
+</verbatim></para><para>The subclasses will wrap this function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="474" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="474" bodyend="474"/>
+        <references refid="class_se_xml_node_1a69c2d00c53d7ead6d45318b7a1da39b6" compoundref="_se_xml_8h" startline="732">value</references>
+        <referencedby refid="class_se_xml_element_1a880ae094a7a54b3295a46faf590ac7ac" compoundref="_se_xml_8cpp" startline="2489" endline="2497">SeXmlElement::Clone</referencedby>
+        <referencedby refid="class_se_xml_handle_1a6cd76db17ccc4adf3030744c5e30108e" compoundref="_se_xml_8cpp" startline="3412" endline="3464">SeXmlHandle::CreatePath</referencedby>
+        <referencedby refid="class_se_xml_node_1a8931877fa48cdf40292de2a43f0e9163" compoundref="_se_xml_8cpp" startline="1982" endline="1991">FirstChild</referencedby>
+        <referencedby refid="class_se_xml_handle_1a4a6146452b094f3430ed8602a3c1dc14" compoundref="_se_xml_8cpp" startline="3355" endline="3398">SeXmlHandle::GetPath</referencedby>
+        <referencedby refid="class_se_xml_element_1a0a8e87c31ec8b9e557b9f75987ef4b51" compoundref="_se_xml_8cpp" startline="2500" endline="2510">SeXmlElement::GetText</referencedby>
+        <referencedby refid="class_se_xml_node_1a0cde6cee6e2780079ba6ff8d8f56746f" compoundref="_se_xml_8cpp" startline="1994" endline="2003">LastChild</referencedby>
+        <referencedby refid="class_se_xml_document_1ae83a76fa66d7d803bfd92713afc7da66" compoundref="_se_xml_8cpp" startline="2552" endline="2555">SeXmlDocument::LoadFile</referencedby>
+        <referencedby refid="class_se_xml_node_1a70f5a74bd2964f84fcf93ba1643f1190" compoundref="_se_xml_8cpp" startline="2034" endline="2043">NextSibling</referencedby>
+        <referencedby refid="class_se_xml_node_1a11abed9979291632f9d992298a915913" compoundref="_se_xml_8cpp" startline="2046" endline="2055">PreviousSibling</referencedby>
+        <referencedby refid="class_se_xml_document_1af3cc3d8ed18091320295db366c3f1d10" compoundref="_se_xml_8cpp" startline="2558" endline="2561">SeXmlDocument::SaveFile</referencedby>
+        <referencedby refid="class_se_xml_printer_1a9a072352bdc7027060e6399bf6baec83" compoundref="_se_xml_8cpp" startline="3540" endline="3565">SeXmlPrinter::Visit</referencedby>
+        <referencedby refid="class_se_xml_printer_1ae93803a026178e5c3ed9cab3198f0bdd" compoundref="_se_xml_8cpp" startline="3477" endline="3511">SeXmlPrinter::VisitEnter</referencedby>
+        <referencedby refid="class_se_xml_printer_1ae188eaedef85b8775cad9f24d4ea9563" compoundref="_se_xml_8cpp" startline="3514" endline="3537">SeXmlPrinter::VisitExit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a6a3a5bc25748cd8a44564295cce4dd9c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; SeXmlNode::ValueStr</definition>
+        <argsstring>() const </argsstring>
+        <name>ValueStr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return <ref refid="class_se_xml_node_1ac548e8c02b1152a1f4bc4dc700dd9dfc" kindref="member">Value()</ref> as a std::string. If you only use STL, this is more efficient than calling <ref refid="class_se_xml_node_1ac548e8c02b1152a1f4bc4dc700dd9dfc" kindref="member">Value()</ref>. Only available in STL mode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="480" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="480" bodyend="480"/>
+        <references refid="class_se_xml_node_1a69c2d00c53d7ead6d45318b7a1da39b6" compoundref="_se_xml_8h" startline="732">value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a61e099b3356df3fc0c309215c0cda021" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="_se_xml_8h_1aba1e614be498200cbfd6f95fe347cb84" kindref="member">SeXml_STRING</ref> &amp;</type>
+        <definition>const SeXml_STRING&amp; SeXmlNode::ValueTStr</definition>
+        <argsstring>() const </argsstring>
+        <name>ValueTStr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="482" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="482" bodyend="482"/>
+        <references refid="class_se_xml_node_1a69c2d00c53d7ead6d45318b7a1da39b6" compoundref="_se_xml_8h" startline="732">value</references>
+        <referencedby refid="class_se_xml_printer_1a9a072352bdc7027060e6399bf6baec83" compoundref="_se_xml_8cpp" startline="3540" endline="3565">SeXmlPrinter::Visit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a9f52fd59908de7f7ce9a64e3f79ad709" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeXmlNode::SetValue</definition>
+        <argsstring>(const char *_value)</argsstring>
+        <name>SetValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Changes the value of the node. Defined as: <verbatim>Document:   filename of the xml file
+Element:    name of the element
+Comment:    the comment text
+Unknown:    the tag contents
+Text:       the text string
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="493" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="493" bodyend="493"/>
+        <references refid="class_se_xml_node_1a69c2d00c53d7ead6d45318b7a1da39b6" compoundref="_se_xml_8h" startline="732">value</references>
+        <referencedby refid="class_se_xml_node_1ad50bd1f334c012388cac26907f4dcce9" compoundref="_se_xml_8cpp" startline="1777" endline="1782">CopyTo</referencedby>
+        <referencedby refid="class_se_xml_comment_1a8a498e209cebc04a6d48b18adcaaf3e3" compoundref="_se_xml_8h" startline="1123" endline="1125">SeXmlComment::SeXmlComment</referencedby>
+        <referencedby refid="class_se_xml_text_1a367770923d73d1a9ca5e54e6975fdaa3" compoundref="_se_xml_8h" startline="1173" endline="1177">SeXmlText::SeXmlText</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a30cb81252b1fc83b578cd8b005e71dc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeXmlNode::SetValue</definition>
+        <argsstring>(const std::string &amp;_value)</argsstring>
+        <name>SetValue</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>STL std::string form. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="496" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="496" bodyend="496"/>
+        <references refid="class_se_xml_node_1a69c2d00c53d7ead6d45318b7a1da39b6" compoundref="_se_xml_8h" startline="732">value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a1fc943755c8fbbaeb5b07150d95a7b39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeXmlNode::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+<para>Delete all the children of this node. Does not affect &apos;this&apos;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="498" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="1785" bodyend="1800"/>
+        <references refid="class_se_xml_node_1a39ef82e71e4fa4c58e875f4f5199afd8" compoundref="_se_xml_8h" startline="729">firstChild</references>
+        <references refid="class_se_xml_node_1a392d7764d64074484b08d0f574c1af6f" compoundref="_se_xml_8h" startline="730">lastChild</references>
+        <references refid="class_se_xml_node_1a6ad0de4a01fb904d6672ed4a511ff7fb" compoundref="_se_xml_8h" startline="735">next</references>
+        <referencedby refid="class_se_xml_element_1a8804b854137e972bb2da3b699552cdbe" compoundref="_se_xml_8cpp" startline="2181" endline="2191">SeXmlElement::ClearThis</referencedby>
+        <referencedby refid="class_se_xml_document_1a485c6a9be9dd8b5a8bef2be35d27ba06" compoundref="_se_xml_8cpp" startline="2584" endline="2681">SeXmlDocument::LoadFile</referencedby>
+        <referencedby refid="class_se_xml_comment_1a1022748ea4e853940d1ec5d66f06c6b7" compoundref="_se_xml_8cpp" startline="2889" endline="2894">SeXmlComment::operator=</referencedby>
+        <referencedby refid="class_se_xml_declaration_1a02878d1ef4c53803c3a2c04fdbfe4c8f" compoundref="_se_xml_8cpp" startline="3008" endline="3013">SeXmlDeclaration::operator=</referencedby>
+        <referencedby refid="class_se_xml_document_1a7753c53b2d095a31b4e1897bb2efeca1" compoundref="_se_xml_8cpp" startline="2544" endline="2549">SeXmlDocument::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1ad5b279e0ed0036902454cc63ac0d1227" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::Parent</definition>
+        <argsstring>()</argsstring>
+        <name>Parent</name>
+        <briefdescription>
+<para>One step up the DOM. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="501" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="501" bodyend="501"/>
+        <references refid="class_se_xml_node_1a65a7c41122358cbb58a84bfc8b29e5cb" compoundref="_se_xml_8h" startline="726">parent</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1ae22afd10a8d3da29d585c4dbd3f6f823" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>const SeXmlNode* SeXmlNode::Parent</definition>
+        <argsstring>() const </argsstring>
+        <name>Parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="502" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="502" bodyend="502"/>
+        <references refid="class_se_xml_node_1a65a7c41122358cbb58a84bfc8b29e5cb" compoundref="_se_xml_8h" startline="726">parent</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1acb7425a84181ff6c7c2c32f40d820da4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>const SeXmlNode* SeXmlNode::FirstChild</definition>
+        <argsstring>() const </argsstring>
+        <name>FirstChild</name>
+        <briefdescription>
+<para>The first child of this node. Will be null if there are no children. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="504" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="504" bodyend="-1"/>
+        <references refid="class_se_xml_node_1a39ef82e71e4fa4c58e875f4f5199afd8" compoundref="_se_xml_8h" startline="729">firstChild</references>
+        <referencedby refid="class_se_xml_element_1a798939ef336fa72002d0e75a5bfd1e46" compoundref="_se_xml_8cpp" startline="2475" endline="2486">SeXmlElement::Accept</referencedby>
+        <referencedby refid="class_se_xml_document_1a80565e1627b2fbe70e8166acc2e5a574" compoundref="_se_xml_8cpp" startline="2756" endline="2767">SeXmlDocument::Accept</referencedby>
+        <referencedby refid="class_se_xml_handle_1a3bcc24cf97e91b5ffb73f907d178c250" compoundref="_se_xml_8cpp" startline="3269" endline="3285">SeXmlHandle::Child</referencedby>
+        <referencedby refid="class_se_xml_handle_1a8d455b485e6ec0ac969a7ad8660aa465" compoundref="_se_xml_8cpp" startline="3221" endline="3230">SeXmlHandle::FirstChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a345be7c86164dcd50dcacfc8b978f3bc" compoundref="_se_xml_8cpp" startline="2070" endline="2082">FirstChildElement</referencedby>
+        <referencedby refid="class_se_xml_element_1a0a8e87c31ec8b9e557b9f75987ef4b51" compoundref="_se_xml_8cpp" startline="2500" endline="2510">SeXmlElement::GetText</referencedby>
+        <referencedby refid="class_se_xml_node_1a2b47c420655c6990c4c71b81a711c606" compoundref="_se_xml_8cpp" startline="2006" endline="2017">IterateChildren</referencedby>
+        <referencedby refid="class_se_xml_document_1ab7edf296ea28573314bbc2ed5b747202" compoundref="_se_xml_8cpp" startline="2745" endline="2753">SeXmlDocument::Print</referencedby>
+        <referencedby refid="class_se_xml_printer_1ae93803a026178e5c3ed9cab3198f0bdd" compoundref="_se_xml_8cpp" startline="3477" endline="3511">SeXmlPrinter::VisitEnter</referencedby>
+        <referencedby refid="class_se_xml_printer_1ae188eaedef85b8775cad9f24d4ea9563" compoundref="_se_xml_8cpp" startline="3514" endline="3537">SeXmlPrinter::VisitExit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a0a9b06b526a37e9713e16b2e07a749d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::FirstChild</definition>
+        <argsstring>()</argsstring>
+        <name>FirstChild</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="505" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="505" bodyend="505"/>
+        <references refid="class_se_xml_node_1a39ef82e71e4fa4c58e875f4f5199afd8" compoundref="_se_xml_8h" startline="729">firstChild</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a8931877fa48cdf40292de2a43f0e9163" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>const SeXmlNode * SeXmlNode::FirstChild</definition>
+        <argsstring>(const char *value) const </argsstring>
+        <name>FirstChild</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The first child of this node with the matching &apos;value&apos;. Will be null if none found. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="506" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="1982" bodyend="1991"/>
+        <references refid="class_se_xml_node_1a39ef82e71e4fa4c58e875f4f5199afd8" compoundref="_se_xml_8h" startline="729">firstChild</references>
+        <references refid="class_se_xml_node_1a6ad0de4a01fb904d6672ed4a511ff7fb" compoundref="_se_xml_8h" startline="735">next</references>
+        <references refid="class_se_xml_node_1ac548e8c02b1152a1f4bc4dc700dd9dfc" compoundref="_se_xml_8h" startline="474" endline="474">Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a069aeee98d3db67540eaee023bc108bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::FirstChild</definition>
+        <argsstring>(const char *_value)</argsstring>
+        <name>FirstChild</name>
+        <param>
+          <type>const char *</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>The first child of this node with the matching &apos;value&apos;. Will be null if none found. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="508" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="508" bodyend="512"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a0bfafe7b58d1a2b98382ca166abd9a7a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>const SeXmlNode* SeXmlNode::LastChild</definition>
+        <argsstring>() const </argsstring>
+        <name>LastChild</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="513" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="513" bodyend="513"/>
+        <references refid="class_se_xml_node_1a392d7764d64074484b08d0f574c1af6f" compoundref="_se_xml_8h" startline="730">lastChild</references>
+        <referencedby refid="class_se_xml_printer_1ae93803a026178e5c3ed9cab3198f0bdd" compoundref="_se_xml_8cpp" startline="3477" endline="3511">SeXmlPrinter::VisitEnter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a048ea3b6ca8e08db1a84a3e51a2a22cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::LastChild</definition>
+        <argsstring>()</argsstring>
+        <name>LastChild</name>
+        <briefdescription>
+<para>The last child of this node. Will be null if there are no children. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="514" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="514" bodyend="514"/>
+        <references refid="class_se_xml_node_1a392d7764d64074484b08d0f574c1af6f" compoundref="_se_xml_8h" startline="730">lastChild</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a0cde6cee6e2780079ba6ff8d8f56746f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>const SeXmlNode * SeXmlNode::LastChild</definition>
+        <argsstring>(const char *value) const </argsstring>
+        <name>LastChild</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="516" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="1994" bodyend="2003"/>
+        <references refid="class_se_xml_node_1a392d7764d64074484b08d0f574c1af6f" compoundref="_se_xml_8h" startline="730">lastChild</references>
+        <references refid="class_se_xml_node_1a97053ba36357974c8c80d69beb67eb03" compoundref="_se_xml_8h" startline="734">prev</references>
+        <references refid="class_se_xml_node_1ac548e8c02b1152a1f4bc4dc700dd9dfc" compoundref="_se_xml_8h" startline="474" endline="474">Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a6bb88a80c7dfd904ccd40ebd73fceca1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::LastChild</definition>
+        <argsstring>(const char *_value)</argsstring>
+        <name>LastChild</name>
+        <param>
+          <type>const char *</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>The last child of this node matching &apos;value&apos;. Will be null if there are no children. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="517" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="517" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a35dcc768a9e50a2f9d80abd510ea2a4b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>const SeXmlNode* SeXmlNode::FirstChild</definition>
+        <argsstring>(const std::string &amp;_value) const </argsstring>
+        <name>FirstChild</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>STL std::string form. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="521" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="521" bodyend="-1"/>
+        <references refid="class_se_xml_node_1a35dcc768a9e50a2f9d80abd510ea2a4b" compoundref="_se_xml_8h" startline="521">FirstChild</references>
+        <referencedby refid="class_se_xml_node_1a35dcc768a9e50a2f9d80abd510ea2a4b" compoundref="_se_xml_8h" startline="521">FirstChild</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1ae6820e3ce3db3b3c519937db522c4dbe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::FirstChild</definition>
+        <argsstring>(const std::string &amp;_value)</argsstring>
+        <name>FirstChild</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>STL std::string form. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="522" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="522" bodyend="521"/>
+        <references refid="class_se_xml_node_1ae6820e3ce3db3b3c519937db522c4dbe" compoundref="_se_xml_8h" startline="522" endline="521">FirstChild</references>
+        <referencedby refid="class_se_xml_node_1ae6820e3ce3db3b3c519937db522c4dbe" compoundref="_se_xml_8h" startline="522" endline="521">FirstChild</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1aaa95c769ace2593f6d924e26d9371eb3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>const SeXmlNode* SeXmlNode::LastChild</definition>
+        <argsstring>(const std::string &amp;_value) const </argsstring>
+        <name>LastChild</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>STL std::string form. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="523" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="523" bodyend="522"/>
+        <references refid="class_se_xml_node_1aaa95c769ace2593f6d924e26d9371eb3" compoundref="_se_xml_8h" startline="523" endline="522">LastChild</references>
+        <referencedby refid="class_se_xml_node_1aaa95c769ace2593f6d924e26d9371eb3" compoundref="_se_xml_8h" startline="523" endline="522">LastChild</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1ac1fe801b564b7bc97ce1e799fbb49286" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::LastChild</definition>
+        <argsstring>(const std::string &amp;_value)</argsstring>
+        <name>LastChild</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>STL std::string form. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="524" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="524" bodyend="523"/>
+        <references refid="class_se_xml_node_1ac1fe801b564b7bc97ce1e799fbb49286" compoundref="_se_xml_8h" startline="524" endline="523">LastChild</references>
+        <referencedby refid="class_se_xml_node_1ac1fe801b564b7bc97ce1e799fbb49286" compoundref="_se_xml_8h" startline="524" endline="523">LastChild</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a2b47c420655c6990c4c71b81a711c606" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>const SeXmlNode * SeXmlNode::IterateChildren</definition>
+        <argsstring>(const SeXmlNode *previous) const </argsstring>
+        <name>IterateChildren</name>
+        <param>
+          <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+          <declname>previous</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An alternate way to walk the children of a node. One way to iterate over nodes is: <verbatim>    for( child = parent-&gt;FirstChild(); child; child = child-&gt;NextSibling() )
+</verbatim></para><para>IterateChildren does the same thing with the syntax: <verbatim>    child = 0;
+    while( child = parent-&gt;IterateChildren( child ) )
+</verbatim></para><para>IterateChildren takes the previous child as input and finds the next one. If the previous child is null, it returns the first. IterateChildren will return null when done. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="543" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="2006" bodyend="2017"/>
+        <references refid="class_se_xml_node_1acb7425a84181ff6c7c2c32f40d820da4" compoundref="_se_xml_8h" startline="504">FirstChild</references>
+        <references refid="class_se_xml_node_1a0bc6c4de06e6dad4c8a106aebc7f5254" compoundref="_se_xml_8h" startline="604" endline="603">NextSibling</references>
+        <references refid="class_se_xml_node_1a65a7c41122358cbb58a84bfc8b29e5cb" compoundref="_se_xml_8h" startline="726">parent</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1aa5891393c914f7c1d48291221c55788f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::IterateChildren</definition>
+        <argsstring>(const SeXmlNode *previous)</argsstring>
+        <name>IterateChildren</name>
+        <param>
+          <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+          <declname>previous</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="544" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="544" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a01827b221c7ae3b0a86db7889e3b929a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>const SeXmlNode * SeXmlNode::IterateChildren</definition>
+        <argsstring>(const char *value, const SeXmlNode *previous) const </argsstring>
+        <name>IterateChildren</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+          <declname>previous</declname>
+        </param>
+        <briefdescription>
+<para>This flavor of IterateChildren searches for children with a particular &apos;value&apos;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="549" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="2020" bodyend="2031"/>
+        <references refid="class_se_xml_node_1acb7425a84181ff6c7c2c32f40d820da4" compoundref="_se_xml_8h" startline="504">FirstChild</references>
+        <references refid="class_se_xml_node_1a0bc6c4de06e6dad4c8a106aebc7f5254" compoundref="_se_xml_8h" startline="604" endline="603">NextSibling</references>
+        <references refid="class_se_xml_node_1a65a7c41122358cbb58a84bfc8b29e5cb" compoundref="_se_xml_8h" startline="726">parent</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1ab815abb5ec67dc8d5204bdc9a35e5f81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::IterateChildren</definition>
+        <argsstring>(const char *_value, const SeXmlNode *previous)</argsstring>
+        <name>IterateChildren</name>
+        <param>
+          <type>const char *</type>
+          <declname>_value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+          <declname>previous</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="550" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="550" bodyend="552"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a83bd279961caf71ee794b390c6df31fb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>const SeXmlNode* SeXmlNode::IterateChildren</definition>
+        <argsstring>(const std::string &amp;_value, const SeXmlNode *previous) const </argsstring>
+        <name>IterateChildren</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+          <declname>previous</declname>
+        </param>
+        <briefdescription>
+<para>STL std::string form. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="554" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="554" bodyend="-1"/>
+        <references refid="class_se_xml_node_1a83bd279961caf71ee794b390c6df31fb" compoundref="_se_xml_8h" startline="554">IterateChildren</references>
+        <referencedby refid="class_se_xml_node_1a83bd279961caf71ee794b390c6df31fb" compoundref="_se_xml_8h" startline="554">IterateChildren</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a5f90d60ad1b0a899450a6e1ae8c792c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::IterateChildren</definition>
+        <argsstring>(const std::string &amp;_value, const SeXmlNode *previous)</argsstring>
+        <name>IterateChildren</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+          <declname>previous</declname>
+        </param>
+        <briefdescription>
+<para>STL std::string form. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="555" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="555" bodyend="554"/>
+        <references refid="class_se_xml_node_1a5f90d60ad1b0a899450a6e1ae8c792c0" compoundref="_se_xml_8h" startline="555" endline="554">IterateChildren</references>
+        <referencedby refid="class_se_xml_node_1a5f90d60ad1b0a899450a6e1ae8c792c0" compoundref="_se_xml_8h" startline="555" endline="554">IterateChildren</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a5dc1d7567b2f81346d6a2193ccaf5de7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode * SeXmlNode::InsertEndChild</definition>
+        <argsstring>(const SeXmlNode &amp;addThis)</argsstring>
+        <name>InsertEndChild</name>
+        <param>
+          <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> &amp;</type>
+          <declname>addThis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new node related to this. Adds a child past the LastChild. Returns a pointer to the new object or NULL if an error occured. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="560" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="1833" bodyend="1846"/>
+        <references refid="class_se_xml_node_1ab23a5e921b4fe06cd4f927d0a1fbd1f5">Clone</references>
+        <references refid="class_se_xml_node_1a4c1ad2eb180e8620343c5c1a6d3b727d" compoundref="_se_xml_8cpp" startline="2130" endline="2140">GetDocument</references>
+        <references refid="class_se_xml_node_1a5d29bea38bdbc747eaa271000d97db36" compoundref="_se_xml_8cpp" startline="1803" endline="1830">LinkEndChild</references>
+        <references refid="class_se_xml_document_1a23116bac13fcbe4754a1fdff88ff5a38" compoundref="_se_xml_8cpp" startline="818" endline="835">SeXmlDocument::SetError</references>
+        <references refid="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6adc684b4a6e0502f24b75c4e825b7980b" compoundref="_se_xml_8h" startline="451">SeXml_DOCUMENT</references>
+        <references refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6fa3618662356df3aebe721b1278e868a15" compoundref="_se_xml_8h" startline="156">SeXml_ENCODING_UNKNOWN</references>
+        <references refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda9d536a485ccd19c0f98dcd71d8d27302" compoundref="_se_xml_8h" startline="272">SeXmlBase::SeXml_ERROR_DOCUMENT_TOP_ONLY</references>
+        <references refid="class_se_xml_node_1a751961ee99e157cd026584239c88b040" compoundref="_se_xml_8h" startline="657" endline="657">Type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a5d29bea38bdbc747eaa271000d97db36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode * SeXmlNode::LinkEndChild</definition>
+        <argsstring>(SeXmlNode *addThis)</argsstring>
+        <name>LinkEndChild</name>
+        <param>
+          <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+          <declname>addThis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new node related to this. Adds a child past the LastChild.</para><para>NOTE: the node to be added is passed by pointer, and will be henceforth owned (and deleted) by SeXml. This method is efficient and avoids an extra copy, but should be used with care as it uses a different memory model than the other insert functions.</para><para><simplesect kind="see"><para><ref refid="class_se_xml_node_1a5dc1d7567b2f81346d6a2193ccaf5de7" kindref="member">InsertEndChild</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="572" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="1803" bodyend="1830"/>
+        <references refid="class_se_xml_node_1a39ef82e71e4fa4c58e875f4f5199afd8" compoundref="_se_xml_8h" startline="729">firstChild</references>
+        <references refid="class_se_xml_node_1a4c1ad2eb180e8620343c5c1a6d3b727d" compoundref="_se_xml_8cpp" startline="2130" endline="2140">GetDocument</references>
+        <references refid="class_se_xml_node_1a392d7764d64074484b08d0f574c1af6f" compoundref="_se_xml_8h" startline="730">lastChild</references>
+        <references refid="class_se_xml_node_1a6ad0de4a01fb904d6672ed4a511ff7fb" compoundref="_se_xml_8h" startline="735">next</references>
+        <references refid="class_se_xml_node_1a65a7c41122358cbb58a84bfc8b29e5cb" compoundref="_se_xml_8h" startline="726">parent</references>
+        <references refid="class_se_xml_node_1a97053ba36357974c8c80d69beb67eb03" compoundref="_se_xml_8h" startline="734">prev</references>
+        <references refid="class_se_xml_document_1a23116bac13fcbe4754a1fdff88ff5a38" compoundref="_se_xml_8cpp" startline="818" endline="835">SeXmlDocument::SetError</references>
+        <references refid="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6adc684b4a6e0502f24b75c4e825b7980b" compoundref="_se_xml_8h" startline="451">SeXml_DOCUMENT</references>
+        <references refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6fa3618662356df3aebe721b1278e868a15" compoundref="_se_xml_8h" startline="156">SeXml_ENCODING_UNKNOWN</references>
+        <references refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda9d536a485ccd19c0f98dcd71d8d27302" compoundref="_se_xml_8h" startline="272">SeXmlBase::SeXml_ERROR_DOCUMENT_TOP_ONLY</references>
+        <references refid="class_se_xml_node_1a751961ee99e157cd026584239c88b040" compoundref="_se_xml_8h" startline="657" endline="657">Type</references>
+        <referencedby refid="class_se_xml_element_1ad342f7ebb101f6df3250f42d01d7968c" compoundref="_se_xml_8cpp" startline="2453" endline="2473">SeXmlElement::CopyTo</referencedby>
+        <referencedby refid="class_se_xml_document_1ab2a645acc23f7e2d6f67c6c2f58a4abd" compoundref="_se_xml_8cpp" startline="2715" endline="2731">SeXmlDocument::CopyTo</referencedby>
+        <referencedby refid="class_se_xml_handle_1a6cd76db17ccc4adf3030744c5e30108e" compoundref="_se_xml_8cpp" startline="3412" endline="3464">SeXmlHandle::CreatePath</referencedby>
+        <referencedby refid="class_se_xml_node_1a5dc1d7567b2f81346d6a2193ccaf5de7" compoundref="_se_xml_8cpp" startline="1833" endline="1846">InsertEndChild</referencedby>
+        <referencedby refid="class_se_xml_document_1ad127c9369e3b07ccc15aa303fd289d5a" compoundref="_se_xml_8cpp" startline="724" endline="816">SeXmlDocument::Parse</referencedby>
+        <referencedby refid="class_se_xml_element_1aafec275193c8f4e5cbc0233a84a5575e" compoundref="_se_xml_8cpp" startline="1194" endline="1265">SeXmlElement::ReadValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a9d700e9f5808f5735c463c4310e198d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode * SeXmlNode::InsertBeforeChild</definition>
+        <argsstring>(SeXmlNode *beforeThis, const SeXmlNode &amp;addThis)</argsstring>
+        <name>InsertBeforeChild</name>
+        <param>
+          <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+          <declname>beforeThis</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> &amp;</type>
+          <declname>addThis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new node related to this. Adds a child before the specified child. Returns a pointer to the new object or NULL if an error occured. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="577" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="1849" bodyend="1879"/>
+        <references refid="class_se_xml_node_1ab23a5e921b4fe06cd4f927d0a1fbd1f5">Clone</references>
+        <references refid="class_se_xml_node_1a39ef82e71e4fa4c58e875f4f5199afd8" compoundref="_se_xml_8h" startline="729">firstChild</references>
+        <references refid="class_se_xml_node_1a4c1ad2eb180e8620343c5c1a6d3b727d" compoundref="_se_xml_8cpp" startline="2130" endline="2140">GetDocument</references>
+        <references refid="class_se_xml_node_1a6ad0de4a01fb904d6672ed4a511ff7fb" compoundref="_se_xml_8h" startline="735">next</references>
+        <references refid="class_se_xml_node_1a65a7c41122358cbb58a84bfc8b29e5cb" compoundref="_se_xml_8h" startline="726">parent</references>
+        <references refid="class_se_xml_node_1a97053ba36357974c8c80d69beb67eb03" compoundref="_se_xml_8h" startline="734">prev</references>
+        <references refid="class_se_xml_document_1a23116bac13fcbe4754a1fdff88ff5a38" compoundref="_se_xml_8cpp" startline="818" endline="835">SeXmlDocument::SetError</references>
+        <references refid="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6adc684b4a6e0502f24b75c4e825b7980b" compoundref="_se_xml_8h" startline="451">SeXml_DOCUMENT</references>
+        <references refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6fa3618662356df3aebe721b1278e868a15" compoundref="_se_xml_8h" startline="156">SeXml_ENCODING_UNKNOWN</references>
+        <references refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda9d536a485ccd19c0f98dcd71d8d27302" compoundref="_se_xml_8h" startline="272">SeXmlBase::SeXml_ERROR_DOCUMENT_TOP_ONLY</references>
+        <references refid="class_se_xml_node_1a751961ee99e157cd026584239c88b040" compoundref="_se_xml_8h" startline="657" endline="657">Type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a3deb512364e74225812e1b30ac4f9b14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode * SeXmlNode::InsertAfterChild</definition>
+        <argsstring>(SeXmlNode *afterThis, const SeXmlNode &amp;addThis)</argsstring>
+        <name>InsertAfterChild</name>
+        <param>
+          <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+          <declname>afterThis</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> &amp;</type>
+          <declname>addThis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new node related to this. Adds a child after the specified child. Returns a pointer to the new object or NULL if an error occured. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="582" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="1882" bodyend="1912"/>
+        <references refid="class_se_xml_node_1ab23a5e921b4fe06cd4f927d0a1fbd1f5">Clone</references>
+        <references refid="class_se_xml_node_1a4c1ad2eb180e8620343c5c1a6d3b727d" compoundref="_se_xml_8cpp" startline="2130" endline="2140">GetDocument</references>
+        <references refid="class_se_xml_node_1a392d7764d64074484b08d0f574c1af6f" compoundref="_se_xml_8h" startline="730">lastChild</references>
+        <references refid="class_se_xml_node_1a6ad0de4a01fb904d6672ed4a511ff7fb" compoundref="_se_xml_8h" startline="735">next</references>
+        <references refid="class_se_xml_node_1a65a7c41122358cbb58a84bfc8b29e5cb" compoundref="_se_xml_8h" startline="726">parent</references>
+        <references refid="class_se_xml_node_1a97053ba36357974c8c80d69beb67eb03" compoundref="_se_xml_8h" startline="734">prev</references>
+        <references refid="class_se_xml_document_1a23116bac13fcbe4754a1fdff88ff5a38" compoundref="_se_xml_8cpp" startline="818" endline="835">SeXmlDocument::SetError</references>
+        <references refid="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6adc684b4a6e0502f24b75c4e825b7980b" compoundref="_se_xml_8h" startline="451">SeXml_DOCUMENT</references>
+        <references refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6fa3618662356df3aebe721b1278e868a15" compoundref="_se_xml_8h" startline="156">SeXml_ENCODING_UNKNOWN</references>
+        <references refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda9d536a485ccd19c0f98dcd71d8d27302" compoundref="_se_xml_8h" startline="272">SeXmlBase::SeXml_ERROR_DOCUMENT_TOP_ONLY</references>
+        <references refid="class_se_xml_node_1a751961ee99e157cd026584239c88b040" compoundref="_se_xml_8h" startline="657" endline="657">Type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a67c40f63d60664d4199b9ba1bd33a8bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode * SeXmlNode::ReplaceChild</definition>
+        <argsstring>(SeXmlNode *replaceThis, const SeXmlNode &amp;withThis)</argsstring>
+        <name>ReplaceChild</name>
+        <param>
+          <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+          <declname>replaceThis</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> &amp;</type>
+          <declname>withThis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Replace a child of this node. Returns a pointer to the new object or NULL if an error occured. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="587" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="1915" bodyend="1952"/>
+        <references refid="class_se_xml_node_1ab23a5e921b4fe06cd4f927d0a1fbd1f5">Clone</references>
+        <references refid="class_se_xml_node_1a39ef82e71e4fa4c58e875f4f5199afd8" compoundref="_se_xml_8h" startline="729">firstChild</references>
+        <references refid="class_se_xml_node_1a4c1ad2eb180e8620343c5c1a6d3b727d" compoundref="_se_xml_8cpp" startline="2130" endline="2140">GetDocument</references>
+        <references refid="class_se_xml_node_1a392d7764d64074484b08d0f574c1af6f" compoundref="_se_xml_8h" startline="730">lastChild</references>
+        <references refid="class_se_xml_node_1a6ad0de4a01fb904d6672ed4a511ff7fb" compoundref="_se_xml_8h" startline="735">next</references>
+        <references refid="class_se_xml_node_1a65a7c41122358cbb58a84bfc8b29e5cb" compoundref="_se_xml_8h" startline="726">parent</references>
+        <references refid="class_se_xml_node_1a97053ba36357974c8c80d69beb67eb03" compoundref="_se_xml_8h" startline="734">prev</references>
+        <references refid="class_se_xml_document_1a23116bac13fcbe4754a1fdff88ff5a38" compoundref="_se_xml_8cpp" startline="818" endline="835">SeXmlDocument::SetError</references>
+        <references refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6fa3618662356df3aebe721b1278e868a15" compoundref="_se_xml_8h" startline="156">SeXml_ENCODING_UNKNOWN</references>
+        <references refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda9d536a485ccd19c0f98dcd71d8d27302" compoundref="_se_xml_8h" startline="272">SeXmlBase::SeXml_ERROR_DOCUMENT_TOP_ONLY</references>
+        <references refid="class_se_xml_node_1ae66a15881248e57eda5ad1106cc33109" compoundref="_se_xml_8h" startline="670">ToDocument</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a7f79571be5a3ae1c133d08ea9ba7c8f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeXmlNode::RemoveChild</definition>
+        <argsstring>(SeXmlNode *removeThis)</argsstring>
+        <name>RemoveChild</name>
+        <param>
+          <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+          <declname>removeThis</declname>
+        </param>
+        <briefdescription>
+<para>Delete a child of this node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="590" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="1955" bodyend="1980"/>
+        <references refid="class_se_xml_node_1a39ef82e71e4fa4c58e875f4f5199afd8" compoundref="_se_xml_8h" startline="729">firstChild</references>
+        <references refid="class_se_xml_node_1a392d7764d64074484b08d0f574c1af6f" compoundref="_se_xml_8h" startline="730">lastChild</references>
+        <references refid="class_se_xml_node_1a6ad0de4a01fb904d6672ed4a511ff7fb" compoundref="_se_xml_8h" startline="735">next</references>
+        <references refid="class_se_xml_node_1a65a7c41122358cbb58a84bfc8b29e5cb" compoundref="_se_xml_8h" startline="726">parent</references>
+        <references refid="class_se_xml_node_1a97053ba36357974c8c80d69beb67eb03" compoundref="_se_xml_8h" startline="734">prev</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a6819a2e8c5b9e5a51380a73f0f9ef72d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>const SeXmlNode* SeXmlNode::PreviousSibling</definition>
+        <argsstring>() const </argsstring>
+        <name>PreviousSibling</name>
+        <briefdescription>
+<para>Navigate to a sibling node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="593" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="593" bodyend="593"/>
+        <references refid="class_se_xml_node_1a97053ba36357974c8c80d69beb67eb03" compoundref="_se_xml_8h" startline="734">prev</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a22a1796d55cc7c48eb0de989a6ea0de4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::PreviousSibling</definition>
+        <argsstring>()</argsstring>
+        <name>PreviousSibling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="594" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="594" bodyend="594"/>
+        <references refid="class_se_xml_node_1a97053ba36357974c8c80d69beb67eb03" compoundref="_se_xml_8h" startline="734">prev</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a11abed9979291632f9d992298a915913" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>const SeXmlNode * SeXmlNode::PreviousSibling</definition>
+        <argsstring>(const char *) const </argsstring>
+        <name>PreviousSibling</name>
+        <param>
+          <type>const char *</type>
+          <defname>_value</defname>
+        </param>
+        <briefdescription>
+<para>Navigate to a sibling node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="597" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="2046" bodyend="2055"/>
+        <references refid="class_se_xml_node_1a97053ba36357974c8c80d69beb67eb03" compoundref="_se_xml_8h" startline="734">prev</references>
+        <references refid="class_se_xml_node_1ac548e8c02b1152a1f4bc4dc700dd9dfc" compoundref="_se_xml_8h" startline="474" endline="474">Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1afb6fdc40a5506314a37bfd2ffa4aed82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::PreviousSibling</definition>
+        <argsstring>(const char *_prev)</argsstring>
+        <name>PreviousSibling</name>
+        <param>
+          <type>const char *</type>
+          <declname>_prev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="598" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="598" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a40e0177e8c5f848c30b5cd6f79a12dce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>const SeXmlNode* SeXmlNode::PreviousSibling</definition>
+        <argsstring>(const std::string &amp;_value) const </argsstring>
+        <name>PreviousSibling</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>STL std::string form. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="602" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="602" bodyend="-1"/>
+        <references refid="class_se_xml_node_1a40e0177e8c5f848c30b5cd6f79a12dce" compoundref="_se_xml_8h" startline="602">PreviousSibling</references>
+        <referencedby refid="class_se_xml_node_1a40e0177e8c5f848c30b5cd6f79a12dce" compoundref="_se_xml_8h" startline="602">PreviousSibling</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a2512f9e4076a248c969dc85779e9972c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::PreviousSibling</definition>
+        <argsstring>(const std::string &amp;_value)</argsstring>
+        <name>PreviousSibling</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>STL std::string form. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="603" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="603" bodyend="602"/>
+        <references refid="class_se_xml_node_1a2512f9e4076a248c969dc85779e9972c" compoundref="_se_xml_8h" startline="603" endline="602">PreviousSibling</references>
+        <referencedby refid="class_se_xml_node_1a2512f9e4076a248c969dc85779e9972c" compoundref="_se_xml_8h" startline="603" endline="602">PreviousSibling</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a0bc6c4de06e6dad4c8a106aebc7f5254" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>const SeXmlNode* SeXmlNode::NextSibling</definition>
+        <argsstring>(const std::string &amp;_value) const </argsstring>
+        <name>NextSibling</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>STL std::string form. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="604" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="604" bodyend="603"/>
+        <references refid="class_se_xml_node_1a0bc6c4de06e6dad4c8a106aebc7f5254" compoundref="_se_xml_8h" startline="604" endline="603">NextSibling</references>
+        <referencedby refid="class_se_xml_element_1a798939ef336fa72002d0e75a5bfd1e46" compoundref="_se_xml_8cpp" startline="2475" endline="2486">SeXmlElement::Accept</referencedby>
+        <referencedby refid="class_se_xml_document_1a80565e1627b2fbe70e8166acc2e5a574" compoundref="_se_xml_8cpp" startline="2756" endline="2767">SeXmlDocument::Accept</referencedby>
+        <referencedby refid="class_se_xml_handle_1a3bcc24cf97e91b5ffb73f907d178c250" compoundref="_se_xml_8cpp" startline="3269" endline="3285">SeXmlHandle::Child</referencedby>
+        <referencedby refid="class_se_xml_element_1ad342f7ebb101f6df3250f42d01d7968c" compoundref="_se_xml_8cpp" startline="2453" endline="2473">SeXmlElement::CopyTo</referencedby>
+        <referencedby refid="class_se_xml_document_1ab2a645acc23f7e2d6f67c6c2f58a4abd" compoundref="_se_xml_8cpp" startline="2715" endline="2731">SeXmlDocument::CopyTo</referencedby>
+        <referencedby refid="class_se_xml_handle_1a6cd76db17ccc4adf3030744c5e30108e" compoundref="_se_xml_8cpp" startline="3412" endline="3464">SeXmlHandle::CreatePath</referencedby>
+        <referencedby refid="class_se_xml_node_1a345be7c86164dcd50dcacfc8b978f3bc" compoundref="_se_xml_8cpp" startline="2070" endline="2082">FirstChildElement</referencedby>
+        <referencedby refid="class_se_xml_handle_1a4a6146452b094f3430ed8602a3c1dc14" compoundref="_se_xml_8cpp" startline="3355" endline="3398">SeXmlHandle::GetPath</referencedby>
+        <referencedby refid="class_se_xml_node_1a2b47c420655c6990c4c71b81a711c606" compoundref="_se_xml_8cpp" startline="2006" endline="2017">IterateChildren</referencedby>
+        <referencedby refid="class_se_xml_node_1a0bc6c4de06e6dad4c8a106aebc7f5254" compoundref="_se_xml_8h" startline="604" endline="603">NextSibling</referencedby>
+        <referencedby refid="class_se_xml_node_1aeb9d61049b44c6032c9cc71d01043304" compoundref="_se_xml_8cpp" startline="2100" endline="2112">NextSiblingElement</referencedby>
+        <referencedby refid="class_se_xml_element_1abf637f8d4e55bd2ebabeaa4a711deb1b" compoundref="_se_xml_8cpp" startline="2400" endline="2450">SeXmlElement::Print</referencedby>
+        <referencedby refid="class_se_xml_document_1ab7edf296ea28573314bbc2ed5b747202" compoundref="_se_xml_8cpp" startline="2745" endline="2753">SeXmlDocument::Print</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a93efdbc766222b65a74ec27ca17e8430" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::NextSibling</definition>
+        <argsstring>(const std::string &amp;_value)</argsstring>
+        <name>NextSibling</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>STL std::string form. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="605" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="605" bodyend="604"/>
+        <references refid="class_se_xml_node_1a93efdbc766222b65a74ec27ca17e8430" compoundref="_se_xml_8h" startline="605" endline="604">NextSibling</references>
+        <referencedby refid="class_se_xml_node_1a93efdbc766222b65a74ec27ca17e8430" compoundref="_se_xml_8h" startline="605" endline="604">NextSibling</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a984e79f1970432b0e5ffe8a4d41e600d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>const SeXmlNode* SeXmlNode::NextSibling</definition>
+        <argsstring>() const </argsstring>
+        <name>NextSibling</name>
+        <briefdescription>
+<para>Navigate to a sibling node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="608" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="608" bodyend="608"/>
+        <references refid="class_se_xml_node_1a6ad0de4a01fb904d6672ed4a511ff7fb" compoundref="_se_xml_8h" startline="735">next</references>
+        <referencedby refid="class_se_xml_node_1aeb9d61049b44c6032c9cc71d01043304" compoundref="_se_xml_8cpp" startline="2100" endline="2112">NextSiblingElement</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a1cc70265bc12b30e96d7e63b883cd504" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::NextSibling</definition>
+        <argsstring>()</argsstring>
+        <name>NextSibling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="609" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="609" bodyend="609"/>
+        <references refid="class_se_xml_node_1a6ad0de4a01fb904d6672ed4a511ff7fb" compoundref="_se_xml_8h" startline="735">next</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a70f5a74bd2964f84fcf93ba1643f1190" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>const SeXmlNode * SeXmlNode::NextSibling</definition>
+        <argsstring>(const char *) const </argsstring>
+        <name>NextSibling</name>
+        <param>
+          <type>const char *</type>
+          <defname>_value</defname>
+        </param>
+        <briefdescription>
+<para>Navigate to a sibling node with the given &apos;value&apos;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="612" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="2034" bodyend="2043"/>
+        <references refid="class_se_xml_node_1a6ad0de4a01fb904d6672ed4a511ff7fb" compoundref="_se_xml_8h" startline="735">next</references>
+        <references refid="class_se_xml_node_1ac548e8c02b1152a1f4bc4dc700dd9dfc" compoundref="_se_xml_8h" startline="474" endline="474">Value</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a65ab11da17a50f422203c39553858cbe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode* SeXmlNode::NextSibling</definition>
+        <argsstring>(const char *_next)</argsstring>
+        <name>NextSibling</name>
+        <param>
+          <type>const char *</type>
+          <declname>_next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="613" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="613" bodyend="615"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1aeb9d61049b44c6032c9cc71d01043304" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> *</type>
+        <definition>const SeXmlElement * SeXmlNode::NextSiblingElement</definition>
+        <argsstring>() const </argsstring>
+        <name>NextSiblingElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience function to get through elements. Calls NextSibling and ToElement. Will skip all non-Element nodes. Returns 0 if there is not another element. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="621" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="2100" bodyend="2112"/>
+        <references refid="class_se_xml_node_1a984e79f1970432b0e5ffe8a4d41e600d" compoundref="_se_xml_8h" startline="608" endline="608">NextSibling</references>
+        <references refid="class_se_xml_node_1a6a2f70086042f1279e3aad813e9aa57e" compoundref="_se_xml_8h" startline="671" endline="670">ToElement</references>
+        <referencedby refid="class_se_xml_handle_1abbec325af69ee8350829c05f32003e30" compoundref="_se_xml_8cpp" startline="3307" endline="3323">SeXmlHandle::ChildElement</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1afa4b7ff8b6512c5662281bf5eebe2818" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> *</type>
+        <definition>SeXmlElement* SeXmlNode::NextSiblingElement</definition>
+        <argsstring>()</argsstring>
+        <name>NextSiblingElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="622" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="622" bodyend="624"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1addb8bd9a8f1744593c3b1a543646bacc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> *</type>
+        <definition>const SeXmlElement * SeXmlNode::NextSiblingElement</definition>
+        <argsstring>(const char *) const </argsstring>
+        <name>NextSiblingElement</name>
+        <param>
+          <type>const char *</type>
+          <defname>_value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convenience function to get through elements. Calls NextSibling and ToElement. Will skip all non-Element nodes. Returns 0 if there is not another element. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="630" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="2115" bodyend="2127"/>
+        <references refid="class_se_xml_node_1a984e79f1970432b0e5ffe8a4d41e600d" compoundref="_se_xml_8h" startline="608" endline="608">NextSibling</references>
+        <references refid="class_se_xml_node_1a6a2f70086042f1279e3aad813e9aa57e" compoundref="_se_xml_8h" startline="671" endline="670">ToElement</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a67be50193bc120b91729b97940057992" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> *</type>
+        <definition>SeXmlElement* SeXmlNode::NextSiblingElement</definition>
+        <argsstring>(const char *_next)</argsstring>
+        <name>NextSiblingElement</name>
+        <param>
+          <type>const char *</type>
+          <declname>_next</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="631" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="631" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a60270021e20994212de6110155335404" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> *</type>
+        <definition>const SeXmlElement* SeXmlNode::NextSiblingElement</definition>
+        <argsstring>(const std::string &amp;_value) const </argsstring>
+        <name>NextSiblingElement</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>STL std::string form. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="635" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="635" bodyend="-1"/>
+        <references refid="class_se_xml_node_1a60270021e20994212de6110155335404" compoundref="_se_xml_8h" startline="635">NextSiblingElement</references>
+        <referencedby refid="class_se_xml_node_1a60270021e20994212de6110155335404" compoundref="_se_xml_8h" startline="635">NextSiblingElement</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a1a2b92dfc28da0f032b097d4eb6abc48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> *</type>
+        <definition>SeXmlElement* SeXmlNode::NextSiblingElement</definition>
+        <argsstring>(const std::string &amp;_value)</argsstring>
+        <name>NextSiblingElement</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>STL std::string form. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="636" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="636" bodyend="635"/>
+        <references refid="class_se_xml_node_1a1a2b92dfc28da0f032b097d4eb6abc48" compoundref="_se_xml_8h" startline="636" endline="635">NextSiblingElement</references>
+        <referencedby refid="class_se_xml_node_1a1a2b92dfc28da0f032b097d4eb6abc48" compoundref="_se_xml_8h" startline="636" endline="635">NextSiblingElement</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a345be7c86164dcd50dcacfc8b978f3bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> *</type>
+        <definition>const SeXmlElement * SeXmlNode::FirstChildElement</definition>
+        <argsstring>() const </argsstring>
+        <name>FirstChildElement</name>
+        <briefdescription>
+<para>Convenience function to get through elements. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="639" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="2070" bodyend="2082"/>
+        <references refid="class_se_xml_node_1acb7425a84181ff6c7c2c32f40d820da4" compoundref="_se_xml_8h" startline="504">FirstChild</references>
+        <references refid="class_se_xml_node_1a0bc6c4de06e6dad4c8a106aebc7f5254" compoundref="_se_xml_8h" startline="604" endline="603">NextSibling</references>
+        <references refid="class_se_xml_node_1a6a2f70086042f1279e3aad813e9aa57e" compoundref="_se_xml_8h" startline="671" endline="670">ToElement</references>
+        <referencedby refid="class_se_xml_handle_1abbec325af69ee8350829c05f32003e30" compoundref="_se_xml_8cpp" startline="3307" endline="3323">SeXmlHandle::ChildElement</referencedby>
+        <referencedby refid="class_se_xml_handle_1a6cd76db17ccc4adf3030744c5e30108e" compoundref="_se_xml_8cpp" startline="3412" endline="3464">SeXmlHandle::CreatePath</referencedby>
+        <referencedby refid="class_se_xml_handle_1a46924dd26b7f3a5e131313c3f8106fcf" compoundref="_se_xml_8cpp" startline="3245" endline="3254">SeXmlHandle::FirstChildElement</referencedby>
+        <referencedby refid="class_se_xml_handle_1a4a6146452b094f3430ed8602a3c1dc14" compoundref="_se_xml_8cpp" startline="3355" endline="3398">SeXmlHandle::GetPath</referencedby>
+        <referencedby refid="class_se_xml_document_1a13053f4da80022152ec7c099b1c0ee7f" compoundref="_se_xml_8h" startline="1391" endline="1391">SeXmlDocument::RootElement</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1aa3d9a7be9d95b51f6a0622031164e6fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> *</type>
+        <definition>SeXmlElement* SeXmlNode::FirstChildElement</definition>
+        <argsstring>()</argsstring>
+        <name>FirstChildElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="640" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="640" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a6d3eee601d0e620ace2390c21cc5cc74" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> *</type>
+        <definition>const SeXmlElement * SeXmlNode::FirstChildElement</definition>
+        <argsstring>(const char *_value) const </argsstring>
+        <name>FirstChildElement</name>
+        <param>
+          <type>const char *</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>Convenience function to get through elements. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="645" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="2085" bodyend="2097"/>
+        <references refid="class_se_xml_node_1acb7425a84181ff6c7c2c32f40d820da4" compoundref="_se_xml_8h" startline="504">FirstChild</references>
+        <references refid="class_se_xml_node_1a0bc6c4de06e6dad4c8a106aebc7f5254" compoundref="_se_xml_8h" startline="604" endline="603">NextSibling</references>
+        <references refid="class_se_xml_node_1a6a2f70086042f1279e3aad813e9aa57e" compoundref="_se_xml_8h" startline="671" endline="670">ToElement</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1abd4722a57d272f1a61786b9349465a5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> *</type>
+        <definition>SeXmlElement* SeXmlNode::FirstChildElement</definition>
+        <argsstring>(const char *_value)</argsstring>
+        <name>FirstChildElement</name>
+        <param>
+          <type>const char *</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="646" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="646" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a3aa87165287384728b93ba601e8dedfb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> *</type>
+        <definition>const SeXmlElement* SeXmlNode::FirstChildElement</definition>
+        <argsstring>(const std::string &amp;_value) const </argsstring>
+        <name>FirstChildElement</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>STL std::string form. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="650" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="650" bodyend="-1"/>
+        <references refid="class_se_xml_node_1a3aa87165287384728b93ba601e8dedfb" compoundref="_se_xml_8h" startline="650">FirstChildElement</references>
+        <referencedby refid="class_se_xml_node_1a3aa87165287384728b93ba601e8dedfb" compoundref="_se_xml_8h" startline="650">FirstChildElement</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a70a70e1bc92bdc331273cd82ae592796" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> *</type>
+        <definition>SeXmlElement* SeXmlNode::FirstChildElement</definition>
+        <argsstring>(const std::string &amp;_value)</argsstring>
+        <name>FirstChildElement</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+<para>STL std::string form. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="651" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="651" bodyend="650"/>
+        <references refid="class_se_xml_node_1a70a70e1bc92bdc331273cd82ae592796" compoundref="_se_xml_8h" startline="651" endline="650">FirstChildElement</references>
+        <referencedby refid="class_se_xml_node_1a70a70e1bc92bdc331273cd82ae592796" compoundref="_se_xml_8h" startline="651" endline="650">FirstChildElement</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a751961ee99e157cd026584239c88b040" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SeXmlNode::Type</definition>
+        <argsstring>() const </argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query the type (as an enumerated value, above) of this node. The possible types are: SeXml_DOCUMENT, SeXml_ELEMENT, SeXml_COMMENT, SeXml_UNKNOWN, SeXml_TEXT, and SeXml_DECLARATION. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="657" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="657" bodyend="657"/>
+        <references refid="class_se_xml_node_1a55e3cd66c85ccf86923c3cda165b8c2b" compoundref="_se_xml_8h" startline="727">type</references>
+        <referencedby refid="class_se_xml_node_1a3deb512364e74225812e1b30ac4f9b14" compoundref="_se_xml_8cpp" startline="1882" endline="1912">InsertAfterChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a9d700e9f5808f5735c463c4310e198d6" compoundref="_se_xml_8cpp" startline="1849" endline="1879">InsertBeforeChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a5dc1d7567b2f81346d6a2193ccaf5de7" compoundref="_se_xml_8cpp" startline="1833" endline="1846">InsertEndChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a5d29bea38bdbc747eaa271000d97db36" compoundref="_se_xml_8cpp" startline="1803" endline="1830">LinkEndChild</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a4c1ad2eb180e8620343c5c1a6d3b727d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_se_xml_document" kindref="compound">SeXmlDocument</ref> *</type>
+        <definition>const SeXmlDocument * SeXmlNode::GetDocument</definition>
+        <argsstring>() const </argsstring>
+        <name>GetDocument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a pointer to the Document this node lives in. Returns null if not in a document. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="662" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="2130" bodyend="2140"/>
+        <references refid="class_se_xml_node_1a65a7c41122358cbb58a84bfc8b29e5cb" compoundref="_se_xml_8h" startline="726">parent</references>
+        <references refid="class_se_xml_node_1ae66a15881248e57eda5ad1106cc33109" compoundref="_se_xml_8h" startline="670">ToDocument</references>
+        <referencedby refid="class_se_xml_node_1a3deb512364e74225812e1b30ac4f9b14" compoundref="_se_xml_8cpp" startline="1882" endline="1912">InsertAfterChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a9d700e9f5808f5735c463c4310e198d6" compoundref="_se_xml_8cpp" startline="1849" endline="1879">InsertBeforeChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a5dc1d7567b2f81346d6a2193ccaf5de7" compoundref="_se_xml_8cpp" startline="1833" endline="1846">InsertEndChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a5d29bea38bdbc747eaa271000d97db36" compoundref="_se_xml_8cpp" startline="1803" endline="1830">LinkEndChild</referencedby>
+        <referencedby refid="class_se_xml_element_1a1dece8a6836719b457ae13c97db13a5e" compoundref="_se_xml_8cpp" startline="1060" endline="1191">SeXmlElement::Parse</referencedby>
+        <referencedby refid="class_se_xml_comment_1a544c45d9b1d710e3463d08d411fa11a3" compoundref="_se_xml_8cpp" startline="1350" endline="1402">SeXmlComment::Parse</referencedby>
+        <referencedby refid="class_se_xml_text_1a1379f89aabd31a7583aeaf12b33d61ff" compoundref="_se_xml_8cpp" startline="1508" endline="1557">SeXmlText::Parse</referencedby>
+        <referencedby refid="class_se_xml_declaration_1a8094b8798a1fb7b23db2c4cf082ec8cb" compoundref="_se_xml_8cpp" startline="1581" endline="1638">SeXmlDeclaration::Parse</referencedby>
+        <referencedby refid="class_se_xml_unknown_1a6f733221b95b536326ed35cda36fadcd" compoundref="_se_xml_8cpp" startline="1290" endline="1322">SeXmlUnknown::Parse</referencedby>
+        <referencedby refid="class_se_xml_element_1aafec275193c8f4e5cbc0233a84a5575e" compoundref="_se_xml_8cpp" startline="1194" endline="1265">SeXmlElement::ReadValue</referencedby>
+        <referencedby refid="class_se_xml_node_1a67c40f63d60664d4199b9ba1bd33a8bc" compoundref="_se_xml_8cpp" startline="1915" endline="1952">ReplaceChild</referencedby>
+        <referencedby refid="class_se_xml_element_1a04dc77708f21329d5c4a3417dc355ced" compoundref="_se_xml_8cpp" startline="921" endline="1058">SeXmlElement::StreamIn</referencedby>
+        <referencedby refid="class_se_xml_comment_1a6f9f9371057b84def6a8aae28e05df37" compoundref="_se_xml_8cpp" startline="1324" endline="1347">SeXmlComment::StreamIn</referencedby>
+        <referencedby refid="class_se_xml_text_1ad7e3834e3d7c16ee050db24cf6811936" compoundref="_se_xml_8cpp" startline="1478" endline="1506">SeXmlText::StreamIn</referencedby>
+        <referencedby refid="class_se_xml_declaration_1ae35cf4b0b759baf15fe19f1866b43ba5" compoundref="_se_xml_8cpp" startline="1559" endline="1579">SeXmlDeclaration::StreamIn</referencedby>
+        <referencedby refid="class_se_xml_unknown_1a99992ffe200c3531b8324fa97a2c38a0" compoundref="_se_xml_8cpp" startline="1268" endline="1288">SeXmlUnknown::StreamIn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1ab0891ab880e80e92aec54048d3119a60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_xml_document" kindref="compound">SeXmlDocument</ref> *</type>
+        <definition>SeXmlDocument* SeXmlNode::GetDocument</definition>
+        <argsstring>()</argsstring>
+        <name>GetDocument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="663" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="663" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1ae6472aaa87f74c8b1813779ef24d9cfc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeXmlNode::NoChildren</definition>
+        <argsstring>() const </argsstring>
+        <name>NoChildren</name>
+        <briefdescription>
+<para>Returns true if this node has no children. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="668" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="668" bodyend="668"/>
+        <references refid="class_se_xml_node_1a39ef82e71e4fa4c58e875f4f5199afd8" compoundref="_se_xml_8h" startline="729">firstChild</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1ae66a15881248e57eda5ad1106cc33109" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="class_se_xml_document" kindref="compound">SeXmlDocument</ref> *</type>
+        <definition>virtual const SeXmlDocument* SeXmlNode::ToDocument</definition>
+        <argsstring>() const </argsstring>
+        <name>ToDocument</name>
+        <reimplementedby refid="class_se_xml_document_1a6e6595816e613e78f996f8f6a6a7fda6">ToDocument</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="670" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="670" bodyend="-1"/>
+        <referencedby refid="class_se_xml_node_1a4c1ad2eb180e8620343c5c1a6d3b727d" compoundref="_se_xml_8cpp" startline="2130" endline="2140">GetDocument</referencedby>
+        <referencedby refid="class_se_xml_node_1a67c40f63d60664d4199b9ba1bd33a8bc" compoundref="_se_xml_8cpp" startline="1915" endline="1952">ReplaceChild</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a6a2f70086042f1279e3aad813e9aa57e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> *</type>
+        <definition>virtual const SeXmlElement* SeXmlNode::ToElement</definition>
+        <argsstring>() const </argsstring>
+        <name>ToElement</name>
+        <reimplementedby refid="class_se_xml_element_1afbe07e493766b20942a1d4aeade63e09">ToElement</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="671" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="671" bodyend="670"/>
+        <referencedby refid="class_se_xml_handle_1a6cd76db17ccc4adf3030744c5e30108e" compoundref="_se_xml_8cpp" startline="3412" endline="3464">SeXmlHandle::CreatePath</referencedby>
+        <referencedby refid="class_se_xml_node_1a345be7c86164dcd50dcacfc8b978f3bc" compoundref="_se_xml_8cpp" startline="2070" endline="2082">FirstChildElement</referencedby>
+        <referencedby refid="class_se_xml_handle_1a4a6146452b094f3430ed8602a3c1dc14" compoundref="_se_xml_8cpp" startline="3355" endline="3398">SeXmlHandle::GetPath</referencedby>
+        <referencedby refid="class_se_xml_node_1aeb9d61049b44c6032c9cc71d01043304" compoundref="_se_xml_8cpp" startline="2100" endline="2112">NextSiblingElement</referencedby>
+        <referencedby refid="class_se_xml_document_1a76b04b366f8e68e4a52b2f212738e06d" compoundref="_se_xml_8cpp" startline="663" endline="722">SeXmlDocument::StreamIn</referencedby>
+        <referencedby refid="class_se_xml_handle_1aacc81892bf9006a356aa43246bfea617" compoundref="_se_xml_8h" startline="1623" endline="1623">SeXmlHandle::ToElement</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a0430013efb186cd8305addbd911ef2b3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="class_se_xml_comment" kindref="compound">SeXmlComment</ref> *</type>
+        <definition>virtual const SeXmlComment* SeXmlNode::ToComment</definition>
+        <argsstring>() const </argsstring>
+        <name>ToComment</name>
+        <reimplementedby refid="class_se_xml_comment_1a152d4be62af44d49600c463f394c3b23">ToComment</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="672" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="672" bodyend="671"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a61abd10c4cf1966c6df69160a87f21b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="class_se_xml_unknown" kindref="compound">SeXmlUnknown</ref> *</type>
+        <definition>virtual const SeXmlUnknown* SeXmlNode::ToUnknown</definition>
+        <argsstring>() const </argsstring>
+        <name>ToUnknown</name>
+        <reimplementedby refid="class_se_xml_unknown_1a635c404523216e3fbffbf8cd00534335">ToUnknown</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="673" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="673" bodyend="672"/>
+        <referencedby refid="class_se_xml_handle_1a5fe72837a844fc07217c966a2793e0ec" compoundref="_se_xml_8h" startline="1629" endline="1629">SeXmlHandle::ToUnknown</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1abeb3a824eb07a3c40c79901c9fb4c00c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="class_se_xml_text" kindref="compound">SeXmlText</ref> *</type>
+        <definition>virtual const SeXmlText* SeXmlNode::ToText</definition>
+        <argsstring>() const </argsstring>
+        <name>ToText</name>
+        <reimplementedby refid="class_se_xml_text_1a05701d6ea4504e3046175e6bdf837c82">ToText</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="674" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="674" bodyend="673"/>
+        <referencedby refid="class_se_xml_element_1a0a8e87c31ec8b9e557b9f75987ef4b51" compoundref="_se_xml_8cpp" startline="2500" endline="2510">SeXmlElement::GetText</referencedby>
+        <referencedby refid="class_se_xml_element_1abf637f8d4e55bd2ebabeaa4a711deb1b" compoundref="_se_xml_8cpp" startline="2400" endline="2450">SeXmlElement::Print</referencedby>
+        <referencedby refid="class_se_xml_handle_1a4335e4432c3030b369a8d4b538f71567" compoundref="_se_xml_8h" startline="1626" endline="1626">SeXmlHandle::ToText</referencedby>
+        <referencedby refid="class_se_xml_printer_1ae93803a026178e5c3ed9cab3198f0bdd" compoundref="_se_xml_8cpp" startline="3477" endline="3511">SeXmlPrinter::VisitEnter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a5b7053025fc6ebed80bd1c337a248621" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const <ref refid="class_se_xml_declaration" kindref="compound">SeXmlDeclaration</ref> *</type>
+        <definition>virtual const SeXmlDeclaration* SeXmlNode::ToDeclaration</definition>
+        <argsstring>() const </argsstring>
+        <name>ToDeclaration</name>
+        <reimplementedby refid="class_se_xml_declaration_1ab87012abaac85d249f53f0e380fc437d">ToDeclaration</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="675" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="675" bodyend="674"/>
+        <referencedby refid="class_se_xml_document_1ad127c9369e3b07ccc15aa303fd289d5a" compoundref="_se_xml_8cpp" startline="724" endline="816">SeXmlDocument::Parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a9c47d05bc406077317e7bfb22569bb68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_se_xml_document" kindref="compound">SeXmlDocument</ref> *</type>
+        <definition>virtual SeXmlDocument* SeXmlNode::ToDocument</definition>
+        <argsstring>()</argsstring>
+        <name>ToDocument</name>
+        <reimplementedby refid="class_se_xml_document_1ae1bb143e6b32e01f5e5e80f9203cdcb4">ToDocument</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="677" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="677" bodyend="675"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a42b9a10e5dfb64f9ab45071a8b51aeed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_se_xml_element" kindref="compound">SeXmlElement</ref> *</type>
+        <definition>virtual SeXmlElement* SeXmlNode::ToElement</definition>
+        <argsstring>()</argsstring>
+        <name>ToElement</name>
+        <reimplementedby refid="class_se_xml_element_1aa19ed030c425f9b0aaa2e670840db26f">ToElement</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="678" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="678" bodyend="677"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a53fca948d76fc63fcf809589e9da94f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_se_xml_comment" kindref="compound">SeXmlComment</ref> *</type>
+        <definition>virtual SeXmlComment* SeXmlNode::ToComment</definition>
+        <argsstring>()</argsstring>
+        <name>ToComment</name>
+        <reimplementedby refid="class_se_xml_comment_1a8b37a73151afb82fd4768bc6f01b02e6">ToComment</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="679" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="679" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a7a7954fc5176d9634ba770ca4551d930" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_se_xml_unknown" kindref="compound">SeXmlUnknown</ref> *</type>
+        <definition>virtual SeXmlUnknown* SeXmlNode::ToUnknown</definition>
+        <argsstring>()</argsstring>
+        <name>ToUnknown</name>
+        <reimplementedby refid="class_se_xml_unknown_1a29dce1ff2cb6175b7164b81eb8ed4d35">ToUnknown</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="680" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="680" bodyend="679"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1af021cd361ced604dee3b9a3d680ccae2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_se_xml_text" kindref="compound">SeXmlText</ref> *</type>
+        <definition>virtual SeXmlText* SeXmlNode::ToText</definition>
+        <argsstring>()</argsstring>
+        <name>ToText</name>
+        <reimplementedby refid="class_se_xml_text_1ab5b736fe3a1af897952ee4be870cbe28">ToText</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="681" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="681" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a064ecbff97b262862af04dd140c4d75b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="class_se_xml_declaration" kindref="compound">SeXmlDeclaration</ref> *</type>
+        <definition>virtual SeXmlDeclaration* SeXmlNode::ToDeclaration</definition>
+        <argsstring>()</argsstring>
+        <name>ToDeclaration</name>
+        <reimplementedby refid="class_se_xml_declaration_1a695489fc67031d3e814cf2815e11b061">ToDeclaration</reimplementedby>
+        <briefdescription>
+<para>Cast to a more defined type. Will return null if not of the requested type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="682" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="682" bodyend="681"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1ab23a5e921b4fe06cd4f927d0a1fbd1f5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>virtual SeXmlNode* SeXmlNode::Clone</definition>
+        <argsstring>() const =0</argsstring>
+        <name>Clone</name>
+        <reimplementedby refid="class_se_xml_element_1a880ae094a7a54b3295a46faf590ac7ac">Clone</reimplementedby>
+        <reimplementedby refid="class_se_xml_comment_1a18ff06f1bd1d5227cee04314206005ce">Clone</reimplementedby>
+        <reimplementedby refid="class_se_xml_text_1a31b8592784a1a272e8e006fe8a1152ba">Clone</reimplementedby>
+        <reimplementedby refid="class_se_xml_declaration_1ae9755bc3741aa356f375564687bd252b">Clone</reimplementedby>
+        <reimplementedby refid="class_se_xml_unknown_1ab1e55dfa33ac7d9665853a7e02d157c3">Clone</reimplementedby>
+        <reimplementedby refid="class_se_xml_document_1a2568e9cea39b89fc921e8540b276dcd3">Clone</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an exact duplicate of this node and return it. The memory must be deleted by the caller. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="687" column="1"/>
+        <referencedby refid="class_se_xml_element_1ad342f7ebb101f6df3250f42d01d7968c" compoundref="_se_xml_8cpp" startline="2453" endline="2473">SeXmlElement::CopyTo</referencedby>
+        <referencedby refid="class_se_xml_document_1ab2a645acc23f7e2d6f67c6c2f58a4abd" compoundref="_se_xml_8cpp" startline="2715" endline="2731">SeXmlDocument::CopyTo</referencedby>
+        <referencedby refid="class_se_xml_node_1a3deb512364e74225812e1b30ac4f9b14" compoundref="_se_xml_8cpp" startline="1882" endline="1912">InsertAfterChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a9d700e9f5808f5735c463c4310e198d6" compoundref="_se_xml_8cpp" startline="1849" endline="1879">InsertBeforeChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a5dc1d7567b2f81346d6a2193ccaf5de7" compoundref="_se_xml_8cpp" startline="1833" endline="1846">InsertEndChild</referencedby>
+        <referencedby refid="class_se_xml_node_1a67c40f63d60664d4199b9ba1bd33a8bc" compoundref="_se_xml_8cpp" startline="1915" endline="1952">ReplaceChild</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a0bd5f8ed750944abaf9f0d5018d93ce4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool SeXmlNode::Accept</definition>
+        <argsstring>(SeXmlVisitor *visitor) const =0</argsstring>
+        <name>Accept</name>
+        <reimplementedby refid="class_se_xml_element_1a798939ef336fa72002d0e75a5bfd1e46">Accept</reimplementedby>
+        <reimplementedby refid="class_se_xml_comment_1a77e0e880339c1fcc5cc2429c2d630924">Accept</reimplementedby>
+        <reimplementedby refid="class_se_xml_text_1ac33b61ed97045c3f124564811fd03358">Accept</reimplementedby>
+        <reimplementedby refid="class_se_xml_declaration_1a0826ce2a68dd1b3a89f479a88566f853">Accept</reimplementedby>
+        <reimplementedby refid="class_se_xml_unknown_1aa3a642c36386e1ad8dec2c774dd29b85">Accept</reimplementedby>
+        <reimplementedby refid="class_se_xml_document_1a80565e1627b2fbe70e8166acc2e5a574">Accept</reimplementedby>
+        <param>
+          <type><ref refid="class_se_xml_visitor" kindref="compound">SeXmlVisitor</ref> *</type>
+          <declname>visitor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Accept a hierchical visit the nodes in the SeXml DOM. Every node in the XML tree will be conditionally visited and the host will be called back via the <ref refid="class_se_xml_visitor" kindref="compound">SeXmlVisitor</ref> interface.</para><para>This is essentially a SAX interface for SeXml. (Note however it doesn&apos;t re-parse the XML for the callbacks, so the performance of SeXml is unchanged by using this interface versus any other.)</para><para>The interface has been based on ideas from:</para><para><itemizedlist>
+<listitem><para><ulink url="http://www.saxproject.org/">http://www.saxproject.org/</ulink></para></listitem><listitem><para><ulink url="http://c2.com/cgi/wiki?HierarchicalVisitorPattern">http://c2.com/cgi/wiki?HierarchicalVisitorPattern</ulink></para></listitem></itemizedlist>
+</para><para>Which are both good references for &quot;visiting&quot;.</para><para>An example of using <ref refid="class_se_xml_node_1a0bd5f8ed750944abaf9f0d5018d93ce4" kindref="member">Accept()</ref>: <verbatim>SeXmlPrinter printer;
+SeXmlDoc.Accept( &amp;printer );
+const char* xmlcstr = printer.CStr();
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="711" column="1"/>
+        <referencedby refid="_se_xml_8cpp_1a3d617ee6c992a1631f920bc9d6b277f7" compoundref="_se_xml_8cpp" startline="3200" endline="3208">operator&lt;&lt;</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_se_xml_node_1a32454918b4be5056c9e40737dd973bbf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeXmlNode::SeXmlNode</definition>
+        <argsstring>(NodeType _type)</argsstring>
+        <name>SeXmlNode</name>
+        <param>
+          <type><ref refid="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6" kindref="member">NodeType</ref></type>
+          <declname>_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="714" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="1751" bodyend="1759"/>
+        <references refid="class_se_xml_node_1a39ef82e71e4fa4c58e875f4f5199afd8" compoundref="_se_xml_8h" startline="729">firstChild</references>
+        <references refid="class_se_xml_node_1a392d7764d64074484b08d0f574c1af6f" compoundref="_se_xml_8h" startline="730">lastChild</references>
+        <references refid="class_se_xml_node_1a6ad0de4a01fb904d6672ed4a511ff7fb" compoundref="_se_xml_8h" startline="735">next</references>
+        <references refid="class_se_xml_node_1a65a7c41122358cbb58a84bfc8b29e5cb" compoundref="_se_xml_8h" startline="726">parent</references>
+        <references refid="class_se_xml_node_1a97053ba36357974c8c80d69beb67eb03" compoundref="_se_xml_8h" startline="734">prev</references>
+        <references refid="class_se_xml_node_1a55e3cd66c85ccf86923c3cda165b8c2b" compoundref="_se_xml_8h" startline="727">type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1ad50bd1f334c012388cac26907f4dcce9" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeXmlNode::CopyTo</definition>
+        <argsstring>(SeXmlNode *target) const </argsstring>
+        <name>CopyTo</name>
+        <param>
+          <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="718" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="1777" bodyend="1782"/>
+        <references refid="class_se_xml_base_1a79a0f45bd6ad1176c684c81331249cd6" compoundref="_se_xml_8h" startline="362">SeXmlBase::location</references>
+        <references refid="class_se_xml_node_1a9f52fd59908de7f7ce9a64e3f79ad709" compoundref="_se_xml_8h" startline="493" endline="493">SetValue</references>
+        <references refid="class_se_xml_base_1a855e2f10720e4330cb60265a4c6731b5" compoundref="_se_xml_8h" startline="365">SeXmlBase::userData</references>
+        <references refid="class_se_xml_node_1a69c2d00c53d7ead6d45318b7a1da39b6" compoundref="_se_xml_8h" startline="732">value</references>
+        <referencedby refid="class_se_xml_element_1ad342f7ebb101f6df3250f42d01d7968c" compoundref="_se_xml_8cpp" startline="2453" endline="2473">SeXmlElement::CopyTo</referencedby>
+        <referencedby refid="class_se_xml_comment_1aaf7e8633c12d940875ecc0185ee68e2b" compoundref="_se_xml_8cpp" startline="2908" endline="2911">SeXmlComment::CopyTo</referencedby>
+        <referencedby refid="class_se_xml_text_1a350a17ef0d3db0fb7a516e01d4c253a5" compoundref="_se_xml_8cpp" startline="2953" endline="2957">SeXmlText::CopyTo</referencedby>
+        <referencedby refid="class_se_xml_declaration_1a163613acb3f365ea170b5903e9c18909" compoundref="_se_xml_8cpp" startline="3038" endline="3045">SeXmlDeclaration::CopyTo</referencedby>
+        <referencedby refid="class_se_xml_unknown_1a0ac50f9f4dd39f631fb0dd5e551da224" compoundref="_se_xml_8cpp" startline="3074" endline="3077">SeXmlUnknown::CopyTo</referencedby>
+        <referencedby refid="class_se_xml_document_1ab2a645acc23f7e2d6f67c6c2f58a4abd" compoundref="_se_xml_8cpp" startline="2715" endline="2731">SeXmlDocument::CopyTo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1ab845a9ccd3d61e1fe026fc2b7b6b8007" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SeXmlNode::StreamIn</definition>
+        <argsstring>(std::istream *in, SeXml_STRING *tag)=0</argsstring>
+        <name>StreamIn</name>
+        <reimplementedby refid="class_se_xml_element_1a04dc77708f21329d5c4a3417dc355ced">StreamIn</reimplementedby>
+        <reimplementedby refid="class_se_xml_comment_1a6f9f9371057b84def6a8aae28e05df37">StreamIn</reimplementedby>
+        <reimplementedby refid="class_se_xml_text_1ad7e3834e3d7c16ee050db24cf6811936">StreamIn</reimplementedby>
+        <reimplementedby refid="class_se_xml_declaration_1ae35cf4b0b759baf15fe19f1866b43ba5">StreamIn</reimplementedby>
+        <reimplementedby refid="class_se_xml_unknown_1a99992ffe200c3531b8324fa97a2c38a0">StreamIn</reimplementedby>
+        <reimplementedby refid="class_se_xml_document_1a76b04b366f8e68e4a52b2f212738e06d">StreamIn</reimplementedby>
+        <param>
+          <type>std::istream *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1aba1e614be498200cbfd6f95fe347cb84" kindref="member">SeXml_STRING</ref> *</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="721" column="1"/>
+        <referencedby refid="_se_xml_8cpp_1a614d9ead65256be0185d1de965456874" compoundref="_se_xml_8cpp" startline="3189" endline="3197">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_se_xml_element_1a04dc77708f21329d5c4a3417dc355ced" compoundref="_se_xml_8cpp" startline="921" endline="1058">SeXmlElement::StreamIn</referencedby>
+        <referencedby refid="class_se_xml_document_1a76b04b366f8e68e4a52b2f212738e06d" compoundref="_se_xml_8cpp" startline="663" endline="722">SeXmlDocument::StreamIn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1a412b0a236954990d508b0bc4bc5f905e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> *</type>
+        <definition>SeXmlNode * SeXmlNode::Identify</definition>
+        <argsstring>(const char *start, SeXmlEncoding encoding)</argsstring>
+        <name>Identify</name>
+        <param>
+          <type>const char *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6f" kindref="member">SeXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="724" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="838" bodyend="919"/>
+        <references refid="class_se_xml_base_1a5fd1be0fe7ad1563eaf3fb15fc68af4d" compoundref="_se_xml_8cpp" startline="154" endline="172">SeXmlBase::IsAlpha</references>
+        <references refid="class_se_xml_node_1a65a7c41122358cbb58a84bfc8b29e5cb" compoundref="_se_xml_8h" startline="726">parent</references>
+        <references refid="class_se_xml_text_1aa53774021345bab8ff9b346367c26416" compoundref="_se_xml_8h" startline="1196" endline="1196">SeXmlText::SetCDATA</references>
+        <references refid="class_se_xml_node_1a30b08077ea663954788bbd17b23df7a1" compoundref="_se_xml_8h" startline="415">SeXmlElement</references>
+        <references refid="class_se_xml_base_1a379822f55f562a7a5e71a814f66a3548" compoundref="_se_xml_8cpp" startline="339" endline="387">SeXmlBase::SkipWhiteSpace</references>
+        <references refid="class_se_xml_base_1a4415adb23e3bbbfcec01019d6f3a53b7" compoundref="_se_xml_8cpp" startline="557" endline="595">SeXmlBase::StringEqual</references>
+        <referencedby refid="class_se_xml_document_1ad127c9369e3b07ccc15aa303fd289d5a" compoundref="_se_xml_8cpp" startline="724" endline="816">SeXmlDocument::Parse</referencedby>
+        <referencedby refid="class_se_xml_element_1aafec275193c8f4e5cbc0233a84a5575e" compoundref="_se_xml_8cpp" startline="1194" endline="1265">SeXmlElement::ReadValue</referencedby>
+        <referencedby refid="class_se_xml_element_1a04dc77708f21329d5c4a3417dc355ced" compoundref="_se_xml_8cpp" startline="921" endline="1058">SeXmlElement::StreamIn</referencedby>
+        <referencedby refid="class_se_xml_document_1a76b04b366f8e68e4a52b2f212738e06d" compoundref="_se_xml_8cpp" startline="663" endline="722">SeXmlDocument::StreamIn</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_se_xml_node_1a72b8fa7e38d9888956f1efaeb5c894b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeXmlNode::SeXmlNode</definition>
+        <argsstring>(const SeXmlNode &amp;)</argsstring>
+        <name>SeXmlNode</name>
+        <param>
+          <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="738" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_node_1afa31b270679d7e877b07d12e54798c8e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeXmlNode::operator=</definition>
+        <argsstring>(const SeXmlNode &amp;base)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> &amp;</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="739" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The parent class for everything in the Document Object Model. (Except for attributes). Nodes have siblings, a parent, and children. A node can be in a document, or stand on its own. The type of a <ref refid="class_se_xml_node" kindref="compound">SeXmlNode</ref> can be queried, and it can be cast to its more defined type. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="8913">
+        <label>SeXmlUnknown</label>
+        <link refid="class_se_xml_unknown"/>
+        <childnode refid="8906" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8907">
+        <label>SeXmlBase</label>
+        <link refid="class_se_xml_base"/>
+      </node>
+      <node id="8906">
+        <label>SeXmlNode</label>
+        <link refid="class_se_xml_node"/>
+        <childnode refid="8907" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8912">
+        <label>SeXmlText</label>
+        <link refid="class_se_xml_text"/>
+        <childnode refid="8906" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8908">
+        <label>SeXmlComment</label>
+        <link refid="class_se_xml_comment"/>
+        <childnode refid="8906" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8911">
+        <label>SeXmlElement</label>
+        <link refid="class_se_xml_element"/>
+        <childnode refid="8906" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8910">
+        <label>SeXmlDocument</label>
+        <link refid="class_se_xml_document"/>
+        <childnode refid="8906" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8909">
+        <label>SeXmlDeclaration</label>
+        <link refid="class_se_xml_declaration"/>
+        <childnode refid="8906" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8916">
+        <label>SeXmlCursor</label>
+        <link refid="struct_se_xml_cursor"/>
+      </node>
+      <node id="8915">
+        <label>SeXmlBase</label>
+        <link refid="class_se_xml_base"/>
+        <childnode refid="8916" relation="usage">
+          <edgelabel>location</edgelabel>
+        </childnode>
+        <childnode refid="8917" relation="usage">
+          <edgelabel>entity</edgelabel>
+        </childnode>
+      </node>
+      <node id="8914">
+        <label>SeXmlNode</label>
+        <link refid="class_se_xml_node"/>
+        <childnode refid="8915" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8914" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+          <edgelabel>firstChild</edgelabel>
+          <edgelabel>lastChild</edgelabel>
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="8917">
+        <label>SeXmlBase::Entity</label>
+        <link refid="struct_se_xml_base_1_1_entity"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="413" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="412" bodyend="740"/>
+    <listofallmembers>
+      <member refid="class_se_xml_node_1a0bd5f8ed750944abaf9f0d5018d93ce4" prot="public" virt="pure-virtual"><scope>SeXmlNode</scope><name>Accept</name></member>
+      <member refid="class_se_xml_node_1a1fc943755c8fbbaeb5b07150d95a7b39" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>Clear</name></member>
+      <member refid="class_se_xml_node_1ab23a5e921b4fe06cd4f927d0a1fbd1f5" prot="public" virt="pure-virtual"><scope>SeXmlNode</scope><name>Clone</name></member>
+      <member refid="class_se_xml_base_1a8e59dc61db5fe2c86515e581e77d37d7" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>Column</name></member>
+      <member refid="class_se_xml_base_1ad92685cc2915f0d25539cad4f60e79f2" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>ConvertUTF32ToUTF8</name></member>
+      <member refid="class_se_xml_node_1ad50bd1f334c012388cac26907f4dcce9" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>CopyTo</name></member>
+      <member refid="class_se_xml_base_1a1ff244393ecfa2592f20e42b003bed8e" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>EncodeString</name></member>
+      <member refid="class_se_xml_base_1a3e08e16daa316e5dca353d52b50bb634" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>errorString</name></member>
+      <member refid="class_se_xml_node_1a39ef82e71e4fa4c58e875f4f5199afd8" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>firstChild</name></member>
+      <member refid="class_se_xml_node_1acb7425a84181ff6c7c2c32f40d820da4" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>FirstChild</name></member>
+      <member refid="class_se_xml_node_1a0a9b06b526a37e9713e16b2e07a749d6" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>FirstChild</name></member>
+      <member refid="class_se_xml_node_1a8931877fa48cdf40292de2a43f0e9163" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>FirstChild</name></member>
+      <member refid="class_se_xml_node_1a069aeee98d3db67540eaee023bc108bd" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>FirstChild</name></member>
+      <member refid="class_se_xml_node_1a35dcc768a9e50a2f9d80abd510ea2a4b" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>FirstChild</name></member>
+      <member refid="class_se_xml_node_1ae6820e3ce3db3b3c519937db522c4dbe" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>FirstChild</name></member>
+      <member refid="class_se_xml_node_1a345be7c86164dcd50dcacfc8b978f3bc" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>FirstChildElement</name></member>
+      <member refid="class_se_xml_node_1aa3d9a7be9d95b51f6a0622031164e6fe" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>FirstChildElement</name></member>
+      <member refid="class_se_xml_node_1a6d3eee601d0e620ace2390c21cc5cc74" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>FirstChildElement</name></member>
+      <member refid="class_se_xml_node_1abd4722a57d272f1a61786b9349465a5e" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>FirstChildElement</name></member>
+      <member refid="class_se_xml_node_1a3aa87165287384728b93ba601e8dedfb" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>FirstChildElement</name></member>
+      <member refid="class_se_xml_node_1a70a70e1bc92bdc331273cd82ae592796" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>FirstChildElement</name></member>
+      <member refid="class_se_xml_base_1a3eb22d30e95f31830af7d7166124b28e" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>GetChar</name></member>
+      <member refid="class_se_xml_node_1a4c1ad2eb180e8620343c5c1a6d3b727d" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>GetDocument</name></member>
+      <member refid="class_se_xml_node_1ab0891ab880e80e92aec54048d3119a60" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>GetDocument</name></member>
+      <member refid="class_se_xml_base_1ad99e4e4368f338744e79da168ffaaf5f" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>GetEntity</name></member>
+      <member refid="class_se_xml_base_1a1fd6f98baf50dad19bebf82412e5a559" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>GetUserData</name></member>
+      <member refid="class_se_xml_base_1a7d48ae7662f70843e2a29a6edec29f54" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>GetUserData</name></member>
+      <member refid="class_se_xml_node_1a412b0a236954990d508b0bc4bc5f905e" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>Identify</name></member>
+      <member refid="class_se_xml_node_1a3deb512364e74225812e1b30ac4f9b14" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>InsertAfterChild</name></member>
+      <member refid="class_se_xml_node_1a9d700e9f5808f5735c463c4310e198d6" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>InsertBeforeChild</name></member>
+      <member refid="class_se_xml_node_1a5dc1d7567b2f81346d6a2193ccaf5de7" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>InsertEndChild</name></member>
+      <member refid="class_se_xml_base_1a5fd1be0fe7ad1563eaf3fb15fc68af4d" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>IsAlpha</name></member>
+      <member refid="class_se_xml_base_1a52a4bc2e6cc7cb3c37f45d6856d5be11" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>IsAlphaNum</name></member>
+      <member refid="class_se_xml_base_1a7e23cb83e0048e376e7bd40b2ea695a9" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>IsWhiteSpace</name></member>
+      <member refid="class_se_xml_base_1ad8f36c3068ad38ebbb87b5ff4e406387" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>IsWhiteSpace</name></member>
+      <member refid="class_se_xml_base_1aad5ae27ed026516f98703491ba2f4db0" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>IsWhiteSpaceCondensed</name></member>
+      <member refid="class_se_xml_node_1a2b47c420655c6990c4c71b81a711c606" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>IterateChildren</name></member>
+      <member refid="class_se_xml_node_1aa5891393c914f7c1d48291221c55788f" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>IterateChildren</name></member>
+      <member refid="class_se_xml_node_1a01827b221c7ae3b0a86db7889e3b929a" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>IterateChildren</name></member>
+      <member refid="class_se_xml_node_1ab815abb5ec67dc8d5204bdc9a35e5f81" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>IterateChildren</name></member>
+      <member refid="class_se_xml_node_1a83bd279961caf71ee794b390c6df31fb" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>IterateChildren</name></member>
+      <member refid="class_se_xml_node_1a5f90d60ad1b0a899450a6e1ae8c792c0" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>IterateChildren</name></member>
+      <member refid="class_se_xml_node_1a392d7764d64074484b08d0f574c1af6f" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>lastChild</name></member>
+      <member refid="class_se_xml_node_1a0bfafe7b58d1a2b98382ca166abd9a7a" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>LastChild</name></member>
+      <member refid="class_se_xml_node_1a048ea3b6ca8e08db1a84a3e51a2a22cc" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>LastChild</name></member>
+      <member refid="class_se_xml_node_1a0cde6cee6e2780079ba6ff8d8f56746f" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>LastChild</name></member>
+      <member refid="class_se_xml_node_1a6bb88a80c7dfd904ccd40ebd73fceca1" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>LastChild</name></member>
+      <member refid="class_se_xml_node_1aaa95c769ace2593f6d924e26d9371eb3" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>LastChild</name></member>
+      <member refid="class_se_xml_node_1ac1fe801b564b7bc97ce1e799fbb49286" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>LastChild</name></member>
+      <member refid="class_se_xml_node_1a5d29bea38bdbc747eaa271000d97db36" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>LinkEndChild</name></member>
+      <member refid="class_se_xml_base_1a79a0f45bd6ad1176c684c81331249cd6" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>location</name></member>
+      <member refid="class_se_xml_node_1a6ad0de4a01fb904d6672ed4a511ff7fb" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>next</name></member>
+      <member refid="class_se_xml_node_1a0bc6c4de06e6dad4c8a106aebc7f5254" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>NextSibling</name></member>
+      <member refid="class_se_xml_node_1a93efdbc766222b65a74ec27ca17e8430" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>NextSibling</name></member>
+      <member refid="class_se_xml_node_1a984e79f1970432b0e5ffe8a4d41e600d" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>NextSibling</name></member>
+      <member refid="class_se_xml_node_1a1cc70265bc12b30e96d7e63b883cd504" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>NextSibling</name></member>
+      <member refid="class_se_xml_node_1a70f5a74bd2964f84fcf93ba1643f1190" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>NextSibling</name></member>
+      <member refid="class_se_xml_node_1a65ab11da17a50f422203c39553858cbe" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>NextSibling</name></member>
+      <member refid="class_se_xml_node_1aeb9d61049b44c6032c9cc71d01043304" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>NextSiblingElement</name></member>
+      <member refid="class_se_xml_node_1afa4b7ff8b6512c5662281bf5eebe2818" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>NextSiblingElement</name></member>
+      <member refid="class_se_xml_node_1addb8bd9a8f1744593c3b1a543646bacc" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>NextSiblingElement</name></member>
+      <member refid="class_se_xml_node_1a67be50193bc120b91729b97940057992" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>NextSiblingElement</name></member>
+      <member refid="class_se_xml_node_1a60270021e20994212de6110155335404" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>NextSiblingElement</name></member>
+      <member refid="class_se_xml_node_1a1a2b92dfc28da0f032b097d4eb6abc48" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>NextSiblingElement</name></member>
+      <member refid="class_se_xml_node_1ae6472aaa87f74c8b1813779ef24d9cfc" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>NoChildren</name></member>
+      <member refid="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>NodeType</name></member>
+      <member refid="class_se_xml_node_1a3d617ee6c992a1631f920bc9d6b277f7" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_se_xml_node_1adef9bd295e12df57f0a20c640b545801" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_se_xml_node_1afa31b270679d7e877b07d12e54798c8e" prot="private" virt="non-virtual"><scope>SeXmlNode</scope><name>operator=</name></member>
+      <member refid="class_se_xml_node_1a614d9ead65256be0185d1de965456874" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>operator&gt;&gt;</name></member>
+      <member refid="class_se_xml_node_1a65a7c41122358cbb58a84bfc8b29e5cb" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>parent</name></member>
+      <member refid="class_se_xml_node_1ad5b279e0ed0036902454cc63ac0d1227" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>Parent</name></member>
+      <member refid="class_se_xml_node_1ae22afd10a8d3da29d585c4dbd3f6f823" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>Parent</name></member>
+      <member refid="class_se_xml_base_1a38c51cddba53f84ec573190ada8b01b6" prot="public" virt="pure-virtual"><scope>SeXmlNode</scope><name>Parse</name></member>
+      <member refid="class_se_xml_node_1a97053ba36357974c8c80d69beb67eb03" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>prev</name></member>
+      <member refid="class_se_xml_node_1a6819a2e8c5b9e5a51380a73f0f9ef72d" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>PreviousSibling</name></member>
+      <member refid="class_se_xml_node_1a22a1796d55cc7c48eb0de989a6ea0de4" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>PreviousSibling</name></member>
+      <member refid="class_se_xml_node_1a11abed9979291632f9d992298a915913" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>PreviousSibling</name></member>
+      <member refid="class_se_xml_node_1afb6fdc40a5506314a37bfd2ffa4aed82" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>PreviousSibling</name></member>
+      <member refid="class_se_xml_node_1a40e0177e8c5f848c30b5cd6f79a12dce" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>PreviousSibling</name></member>
+      <member refid="class_se_xml_node_1a2512f9e4076a248c969dc85779e9972c" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>PreviousSibling</name></member>
+      <member refid="class_se_xml_base_1a55dbb0c85e6fa8091572bb536983bf03" prot="public" virt="pure-virtual"><scope>SeXmlNode</scope><name>Print</name></member>
+      <member refid="class_se_xml_base_1a2d52695fd41e4b774826e1b78279d837" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>ReadName</name></member>
+      <member refid="class_se_xml_base_1a10a52f040cd9768a88c774bed37d5610" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>ReadText</name></member>
+      <member refid="class_se_xml_node_1a7f79571be5a3ae1c133d08ea9ba7c8f7" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>RemoveChild</name></member>
+      <member refid="class_se_xml_node_1a67c40f63d60664d4199b9ba1bd33a8bc" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>ReplaceChild</name></member>
+      <member refid="class_se_xml_base_1af91d159f8021759d0a7f9cea48322f1a" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>Row</name></member>
+      <member refid="class_se_xml_base_1a508eb7f0d50305393467c9d747cda1c7" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SetCondenseWhiteSpace</name></member>
+      <member refid="class_se_xml_base_1a36a9fb52b728e32d18c8bbb229b8ef25" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SetUserData</name></member>
+      <member refid="class_se_xml_node_1a9f52fd59908de7f7ce9a64e3f79ad709" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SetValue</name></member>
+      <member refid="class_se_xml_node_1a30cb81252b1fc83b578cd8b005e71dc8" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SetValue</name></member>
+      <member refid="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6a3b6631ac53ccda25bebf4eff93289c1a" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_COMMENT</name></member>
+      <member refid="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6a014b92e0fa8844aa5267efe2382ac541" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_DECLARATION</name></member>
+      <member refid="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6adc684b4a6e0502f24b75c4e825b7980b" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_DOCUMENT</name></member>
+      <member refid="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6a338982483badab9c2857f724d5ed11bf" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ELEMENT</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda8fc8090eb2e6684745bb9feba9c0a1f0" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ERROR</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fdaf164e2da2d6196634def737c4dc12a69" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ERROR_DOCUMENT_EMPTY</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda9d536a485ccd19c0f98dcd71d8d27302" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ERROR_DOCUMENT_TOP_ONLY</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fdae80dbf642bb075d49effa3888ee2b3eb" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ERROR_EMBEDDED_NULL</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda86b1490b3060cab3de0b4fabeeec93f8" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ERROR_FAILED_TO_READ_ELEMENT_NAME</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda39849eb7277dacae33756c9fee85852d" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ERROR_OPENING_FILE</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fdaed5285094b2b13e0950770a0973f6701" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ERROR_PARSING_CDATA</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda544cb3c8b47aa56b33b0a064072018e0" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ERROR_PARSING_COMMENT</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda2894e12ed64d628a381d94e28947c6cd" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ERROR_PARSING_DECLARATION</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fdae58a4a23959e57449eb42987a07c34d2" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ERROR_PARSING_ELEMENT</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda1f4605b0204022f928dda07b9c0cb832" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ERROR_PARSING_EMPTY</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda0d08a31dce02b68cdaf5c0db60a2cbd3" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ERROR_PARSING_UNKNOWN</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fdae73ffa849c911960b05884049140e827" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ERROR_READING_ATTRIBUTES</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda057ffec95c48ce4901d186ec25460d6e" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ERROR_READING_ELEMENT_VALUE</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda9bd9d7dca81940b2d1f09e23aa3f3217" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ERROR_READING_END_TAG</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda704d627a90965b6d09e6988ebf0d3743" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_ERROR_STRING_COUNT</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda440bcbf4e8c9d2710231b1a180d0ba9f" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_NO_ERROR</name></member>
+      <member refid="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6ac2319caddc8027ca3be0723939309e52" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_TEXT</name></member>
+      <member refid="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6aee4f6da186cc60326cb1a081c9d83f3f" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_TYPECOUNT</name></member>
+      <member refid="class_se_xml_node_1adcee2a23a1bdde2c6aa26d09a57b01c6ae96184d40109c475a8cf91d81942e473" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXml_UNKNOWN</name></member>
+      <member refid="class_se_xml_base_1aa6db2755e4682bb1a5ad49dd22b5d1f1" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXmlBase</name></member>
+      <member refid="class_se_xml_node_1a649e42d2d9cbc6952d5f2fe6b9c91f4c" prot="private" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXmlDocument</name></member>
+      <member refid="class_se_xml_node_1a30b08077ea663954788bbd17b23df7a1" prot="private" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXmlElement</name></member>
+      <member refid="class_se_xml_node_1a32454918b4be5056c9e40737dd973bbf" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXmlNode</name></member>
+      <member refid="class_se_xml_node_1a72b8fa7e38d9888956f1efaeb5c894b4" prot="private" virt="non-virtual"><scope>SeXmlNode</scope><name>SeXmlNode</name></member>
+      <member refid="class_se_xml_base_1a379822f55f562a7a5e71a814f66a3548" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>SkipWhiteSpace</name></member>
+      <member refid="class_se_xml_node_1ab845a9ccd3d61e1fe026fc2b7b6b8007" prot="protected" virt="pure-virtual"><scope>SeXmlNode</scope><name>StreamIn</name></member>
+      <member refid="class_se_xml_base_1ab0d1c3153c21a3de759cbd7ed6c78a51" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>StreamTo</name></member>
+      <member refid="class_se_xml_base_1ae8001c8fd0086c2d7bfd6fc5fcaa0e71" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>StreamWhiteSpace</name></member>
+      <member refid="class_se_xml_base_1a4415adb23e3bbbfcec01019d6f3a53b7" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>StringEqual</name></member>
+      <member refid="class_se_xml_node_1a0430013efb186cd8305addbd911ef2b3" prot="public" virt="virtual"><scope>SeXmlNode</scope><name>ToComment</name></member>
+      <member refid="class_se_xml_node_1a53fca948d76fc63fcf809589e9da94f8" prot="public" virt="virtual"><scope>SeXmlNode</scope><name>ToComment</name></member>
+      <member refid="class_se_xml_node_1a5b7053025fc6ebed80bd1c337a248621" prot="public" virt="virtual"><scope>SeXmlNode</scope><name>ToDeclaration</name></member>
+      <member refid="class_se_xml_node_1a064ecbff97b262862af04dd140c4d75b" prot="public" virt="virtual"><scope>SeXmlNode</scope><name>ToDeclaration</name></member>
+      <member refid="class_se_xml_node_1ae66a15881248e57eda5ad1106cc33109" prot="public" virt="virtual"><scope>SeXmlNode</scope><name>ToDocument</name></member>
+      <member refid="class_se_xml_node_1a9c47d05bc406077317e7bfb22569bb68" prot="public" virt="virtual"><scope>SeXmlNode</scope><name>ToDocument</name></member>
+      <member refid="class_se_xml_node_1a6a2f70086042f1279e3aad813e9aa57e" prot="public" virt="virtual"><scope>SeXmlNode</scope><name>ToElement</name></member>
+      <member refid="class_se_xml_node_1a42b9a10e5dfb64f9ab45071a8b51aeed" prot="public" virt="virtual"><scope>SeXmlNode</scope><name>ToElement</name></member>
+      <member refid="class_se_xml_base_1a4338b6a7a4db65614d8cac8fb6e3c1fa" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>ToLower</name></member>
+      <member refid="class_se_xml_node_1abeb3a824eb07a3c40c79901c9fb4c00c" prot="public" virt="virtual"><scope>SeXmlNode</scope><name>ToText</name></member>
+      <member refid="class_se_xml_node_1af021cd361ced604dee3b9a3d680ccae2" prot="public" virt="virtual"><scope>SeXmlNode</scope><name>ToText</name></member>
+      <member refid="class_se_xml_node_1a61abd10c4cf1966c6df69160a87f21b9" prot="public" virt="virtual"><scope>SeXmlNode</scope><name>ToUnknown</name></member>
+      <member refid="class_se_xml_node_1a7a7954fc5176d9634ba770ca4551d930" prot="public" virt="virtual"><scope>SeXmlNode</scope><name>ToUnknown</name></member>
+      <member refid="class_se_xml_node_1a55e3cd66c85ccf86923c3cda165b8c2b" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>type</name></member>
+      <member refid="class_se_xml_node_1a751961ee99e157cd026584239c88b040" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>Type</name></member>
+      <member refid="class_se_xml_base_1a855e2f10720e4330cb60265a4c6731b5" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>userData</name></member>
+      <member refid="class_se_xml_base_1aef4aae11f1fb094c426b08f55d2fa44c" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>utf8ByteTable</name></member>
+      <member refid="class_se_xml_node_1ac548e8c02b1152a1f4bc4dc700dd9dfc" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>Value</name></member>
+      <member refid="class_se_xml_node_1a69c2d00c53d7ead6d45318b7a1da39b6" prot="protected" virt="non-virtual"><scope>SeXmlNode</scope><name>value</name></member>
+      <member refid="class_se_xml_node_1a6a3a5bc25748cd8a44564295cce4dd9c" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>ValueStr</name></member>
+      <member refid="class_se_xml_node_1a61e099b3356df3fc0c309215c0cda021" prot="public" virt="non-virtual"><scope>SeXmlNode</scope><name>ValueTStr</name></member>
+      <member refid="class_se_xml_base_1ae465e56e71560767e9529357b9be3822" prot="public" virt="virtual"><scope>SeXmlNode</scope><name>~SeXmlBase</name></member>
+      <member refid="class_se_xml_node_1afb90672618fa69d8b4bd1b1e073aa93c" prot="public" virt="virtual"><scope>SeXmlNode</scope><name>~SeXmlNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

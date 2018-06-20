@@ -1,0 +1,948 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_watch_server_8h" kind="file">
+    <compoundname>WatchServer.h</compoundname>
+    <includes refid="_se_include_8h" local="yes">SeInclude.h</includes>
+    <includes refid="_se_config_8h" local="yes">SeConfig.h</includes>
+    <includes refid="_se_server_tool_8h" local="yes">SeServerTool.h</includes>
+    <includes refid="_se_file_log_8h" local="yes">SeFileLog.h</includes>
+    <includes refid="_se_thread_msg_8h" local="yes">SeThreadMsg.h</includes>
+    <includes refid="_se_race_record_8h" local="yes">SeRaceRecord.h</includes>
+    <includes refid="_se_net_stream_8h" local="yes">SeNetStream.h</includes>
+    <includes refid="_se_ptl_stream_8h" local="yes">SePtlStream.h</includes>
+    <includes refid="_se_server_main_def_8h" local="yes">SeServerMainDef.h</includes>
+    <includes refid="_se_formula_8h" local="yes">SeFormula.h</includes>
+    <includes local="yes">TeNetMgr.h</includes>
+    <includes refid="_watch_server_def_8h" local="yes">WatchServerDef.h</includes>
+    <includes refid="_se_virt_conn_mgr_8h" local="yes">SeVirtConnMgr.h</includes>
+    <includes refid="_se_r_w_c_s_process_8inl" local="yes">SeRWCSProcess.inl</includes>
+    <includes refid="_se_w_c_s_r_send_8inl" local="yes">SeWCSRSend.inl</includes>
+    <includes refid="_se_w_c_s_w_c_m_s_process_8inl" local="yes">SeWCSWCMSProcess.inl</includes>
+    <includes refid="_se_w_c_s_w_c_m_s_send_8inl" local="yes">SeWCSWCMSSend.inl</includes>
+    <includes refid="_se_w_c_m_s_w_c_s_process_8inl" local="yes">SeWCMSWCSProcess.inl</includes>
+    <includes refid="_se_w_c_m_s_w_c_s_send_8inl" local="yes">SeWCMSWCSSend.inl</includes>
+    <includes refid="_se_w_c_s_s_w_c_s_process_8inl" local="yes">SeWCSSWCSProcess.inl</includes>
+    <includes refid="_se_w_c_s_s_w_c_s_send_8inl" local="yes">SeWCSSWCSSend.inl</includes>
+    <includes refid="_se_w_c_s_w_c_s_s_process_8inl" local="yes">SeWCSWCSSProcess.inl</includes>
+    <includes refid="_se_w_c_s_w_c_s_s_send_8inl" local="yes">SeWCSWCSSSend.inl</includes>
+    <includes refid="_se_c_w_c_s_process_8inl" local="yes">SeCWCSProcess.inl</includes>
+    <includes refid="_se_t_w_c_m_s_process_8inl" local="yes">SeTWCMSProcess.inl</includes>
+    <includes refid="_se_w_c_m_s_t_send_8inl" local="yes">SeWCMSTSend.inl</includes>
+    <includes refid="_se_w_c_s_c_send_8inl" local="yes">SeWCSCSend.inl</includes>
+    <includes refid="_se_n_w_c_m_s_process_8inl" local="yes">SeNWCMSProcess.inl</includes>
+    <includes refid="_se_w_c_m_s_n_send_8inl" local="yes">SeWCMSNSend.inl</includes>
+    <includedby refid="_watch_server_2_src_2_main_8cpp" local="yes">WatchServer/Src/Main.cpp</includedby>
+    <includedby refid="_watch_server_2_src_2race_record_save_thread_8cpp" local="yes">WatchServer/Src/raceRecordSaveThread.cpp</includedby>
+    <includedby refid="_se_c_w_c_s_process_8cpp" local="yes">WatchServer/Src/SeCWCSProcess.cpp</includedby>
+    <includedby refid="_se_n_w_c_m_s_process_8cpp" local="yes">WatchServer/Src/SeNWCMSProcess.cpp</includedby>
+    <includedby refid="_watch_server_2_src_2_se_race_mgr_8cpp" local="yes">WatchServer/Src/SeRaceMgr.cpp</includedby>
+    <includedby refid="_se_race_svr_watch_mgr_8cpp" local="yes">WatchServer/Src/SeRaceSvrWatchMgr.cpp</includedby>
+    <includedby refid="_se_r_w_c_s_process_8cpp" local="yes">WatchServer/Src/SeRWCSProcess.cpp</includedby>
+    <includedby refid="_watch_server_2_src_2_se_town_mgr_8cpp" local="yes">WatchServer/Src/SeTownMgr.cpp</includedby>
+    <includedby refid="_se_t_w_c_m_s_process_8cpp" local="yes">WatchServer/Src/SeTWCMSProcess.cpp</includedby>
+    <includedby refid="_se_watch_server_mgr_8cpp" local="yes">WatchServer/Src/SeWatchServerMgr.cpp</includedby>
+    <includedby refid="_se_w_c_m_s_w_c_s_process_8cpp" local="yes">WatchServer/Src/SeWCMSWCSProcess.cpp</includedby>
+    <includedby refid="_se_w_c_s_c_send_8cpp" local="yes">WatchServer/Src/SeWCSCSend.cpp</includedby>
+    <includedby refid="_se_w_c_s_n_send_8cpp" local="yes">WatchServer/Src/SeWCSNSend.cpp</includedby>
+    <includedby refid="_se_w_c_s_r_send_8cpp" local="yes">WatchServer/Src/SeWCSRSend.cpp</includedby>
+    <includedby refid="_se_w_c_s_s_w_c_s_process_8cpp" local="yes">WatchServer/Src/SeWCSSWCSProcess.cpp</includedby>
+    <includedby refid="_se_w_c_s_t_send_8cpp" local="yes">WatchServer/Src/SeWCSTSend.cpp</includedby>
+    <includedby refid="_se_w_c_s_w_c_m_s_process_8cpp" local="yes">WatchServer/Src/SeWCSWCMSProcess.cpp</includedby>
+    <includedby refid="_se_w_c_s_w_c_s_send_8cpp" local="yes">WatchServer/Src/SeWCSWCSSend.cpp</includedby>
+    <includedby refid="_se_w_c_s_w_c_s_s_process_8cpp" local="yes">WatchServer/Src/SeWCSWCSSProcess.cpp</includedby>
+    <includedby refid="_watch_server_8cpp" local="yes">WatchServer/Src/WatchServer.cpp</includedby>
+    <incdepgraph>
+      <node id="68444">
+        <label>SeCommStream.h</label>
+        <link refid="_se_comm_stream_8h"/>
+        <childnode refid="68412" relation="include">
+        </childnode>
+        <childnode refid="68414" relation="include">
+        </childnode>
+      </node>
+      <node id="68398">
+        <label>list</label>
+      </node>
+      <node id="68392">
+        <label>locale</label>
+      </node>
+      <node id="68445">
+        <label>SeCWCSStream.h</label>
+        <link refid="_se_c_w_c_s_stream_8h"/>
+        <childnode refid="68412" relation="include">
+        </childnode>
+        <childnode refid="68439" relation="include">
+        </childnode>
+        <childnode refid="68444" relation="include">
+        </childnode>
+      </node>
+      <node id="68461">
+        <label>SeWCSCSend.inl</label>
+        <link refid="_se_w_c_s_c_send_8inl"/>
+      </node>
+      <node id="68402">
+        <label>queue</label>
+      </node>
+      <node id="68396">
+        <label>limits</label>
+      </node>
+      <node id="68414">
+        <label>SePtlCommDefine.h</label>
+        <link refid="_se_ptl_comm_define_8h"/>
+      </node>
+      <node id="68415">
+        <label>SeMemPool.h</label>
+        <link refid="_se_mem_pool_8h"/>
+        <childnode refid="68377" relation="include">
+        </childnode>
+        <childnode refid="68416" relation="include">
+        </childnode>
+        <childnode refid="68384" relation="include">
+        </childnode>
+      </node>
+      <node id="68379">
+        <label>windows.h</label>
+      </node>
+      <node id="68384">
+        <label>assert.h</label>
+      </node>
+      <node id="68421">
+        <label>SeRaceCmd.h</label>
+        <link refid="_se_race_cmd_8h"/>
+        <childnode refid="68410" relation="include">
+        </childnode>
+        <childnode refid="68412" relation="include">
+        </childnode>
+      </node>
+      <node id="68447">
+        <label>SeTimer.h</label>
+        <link refid="_se_timer_8h"/>
+      </node>
+      <node id="68436">
+        <label>SePtl_WCS_To_RS.h</label>
+        <link refid="_se_ptl___w_c_s___to___r_s_8h"/>
+        <childnode refid="68412" relation="include">
+        </childnode>
+      </node>
+      <node id="68382">
+        <label>stdlib.h</label>
+      </node>
+      <node id="68416">
+        <label>EsLock.h</label>
+      </node>
+      <node id="68429">
+        <label>WatchServerDef.h</label>
+        <link refid="_watch_server_def_8h"/>
+        <childnode refid="68406" relation="include">
+        </childnode>
+        <childnode refid="68428" relation="include">
+        </childnode>
+        <childnode refid="68410" relation="include">
+        </childnode>
+        <childnode refid="68415" relation="include">
+        </childnode>
+        <childnode refid="68414" relation="include">
+        </childnode>
+        <childnode refid="68430" relation="include">
+        </childnode>
+        <childnode refid="68431" relation="include">
+        </childnode>
+        <childnode refid="68432" relation="include">
+        </childnode>
+        <childnode refid="68433" relation="include">
+        </childnode>
+        <childnode refid="68434" relation="include">
+        </childnode>
+        <childnode refid="68435" relation="include">
+        </childnode>
+        <childnode refid="68436" relation="include">
+        </childnode>
+        <childnode refid="68437" relation="include">
+        </childnode>
+        <childnode refid="68438" relation="include">
+        </childnode>
+        <childnode refid="68439" relation="include">
+        </childnode>
+        <childnode refid="68440" relation="include">
+        </childnode>
+        <childnode refid="68441" relation="include">
+        </childnode>
+        <childnode refid="68442" relation="include">
+        </childnode>
+        <childnode refid="68443" relation="include">
+        </childnode>
+        <childnode refid="68445" relation="include">
+        </childnode>
+      </node>
+      <node id="68425">
+        <label>SePtlStream.h</label>
+        <link refid="_se_ptl_stream_8h"/>
+        <childnode refid="68423" relation="include">
+        </childnode>
+        <childnode refid="68412" relation="include">
+        </childnode>
+        <childnode refid="68421" relation="include">
+        </childnode>
+      </node>
+      <node id="68386">
+        <label>cmath</label>
+      </node>
+      <node id="68459">
+        <label>SeTWCMSProcess.inl</label>
+        <link refid="_se_t_w_c_m_s_process_8inl"/>
+      </node>
+      <node id="68395">
+        <label>string</label>
+      </node>
+      <node id="68435">
+        <label>SePtl_RS_To_WCS.h</label>
+        <link refid="_se_ptl___r_s___to___w_c_s_8h"/>
+        <childnode refid="68412" relation="include">
+        </childnode>
+      </node>
+      <node id="68427">
+        <label>SeFormula.h</label>
+        <link refid="_se_formula_8h"/>
+        <childnode refid="68377" relation="include">
+        </childnode>
+        <childnode refid="68412" relation="include">
+        </childnode>
+      </node>
+      <node id="68399">
+        <label>map</label>
+      </node>
+      <node id="68417">
+        <label>SeFileLog.h</label>
+        <link refid="_se_file_log_8h"/>
+        <childnode refid="68418" relation="include">
+        </childnode>
+        <childnode refid="68388" relation="include">
+        </childnode>
+        <childnode refid="68416" relation="include">
+        </childnode>
+      </node>
+      <node id="68381">
+        <label>conio.h</label>
+      </node>
+      <node id="68441">
+        <label>SePtl_NS_To_WCMS.h</label>
+        <link refid="_se_ptl___n_s___to___w_c_m_s_8h"/>
+        <childnode refid="68412" relation="include">
+        </childnode>
+      </node>
+      <node id="68413">
+        <label>SePtlRandomNumDef.h</label>
+        <link refid="_se_ptl_random_num_def_8h"/>
+      </node>
+      <node id="68380">
+        <label>direct.h</label>
+      </node>
+      <node id="68455">
+        <label>SeWCSSWCSSend.inl</label>
+        <link refid="_se_w_c_s_s_w_c_s_send_8inl"/>
+      </node>
+      <node id="68452">
+        <label>SeWCMSWCSProcess.inl</label>
+        <link refid="_se_w_c_m_s_w_c_s_process_8inl"/>
+      </node>
+      <node id="68423">
+        <label>SeNetStream.h</label>
+        <link refid="_se_net_stream_8h"/>
+        <childnode refid="68377" relation="include">
+        </childnode>
+        <childnode refid="68406" relation="include">
+        </childnode>
+        <childnode refid="68424" relation="include">
+        </childnode>
+      </node>
+      <node id="68393">
+        <label>fstream</label>
+      </node>
+      <node id="68408">
+        <label>SeTool.h</label>
+        <link refid="_se_tool_8h"/>
+        <childnode refid="68377" relation="include">
+        </childnode>
+        <childnode refid="68406" relation="include">
+        </childnode>
+        <childnode refid="68409" relation="include">
+        </childnode>
+        <childnode refid="68410" relation="include">
+        </childnode>
+        <childnode refid="68390" relation="include">
+        </childnode>
+        <childnode refid="68411" relation="include">
+        </childnode>
+      </node>
+      <node id="68460">
+        <label>SeWCMSTSend.inl</label>
+        <link refid="_se_w_c_m_s_t_send_8inl"/>
+      </node>
+      <node id="68456">
+        <label>SeWCSWCSSProcess.inl</label>
+        <link refid="_se_w_c_s_w_c_s_s_process_8inl"/>
+      </node>
+      <node id="68378">
+        <label>winsock2.h</label>
+      </node>
+      <node id="68439">
+        <label>SePtl_Cl_To_WCS.h</label>
+        <link refid="_se_ptl___c_l___to___w_c_s_8h"/>
+        <childnode refid="68412" relation="include">
+        </childnode>
+        <childnode refid="68414" relation="include">
+        </childnode>
+      </node>
+      <node id="68431">
+        <label>SePtl_WCS_To_WCMS.h</label>
+        <link refid="_se_ptl___w_c_s___to___w_c_m_s_8h"/>
+        <childnode refid="68412" relation="include">
+        </childnode>
+      </node>
+      <node id="68426">
+        <label>SeServerMainDef.h</label>
+        <link refid="_se_server_main_def_8h"/>
+        <childnode refid="68377" relation="include">
+        </childnode>
+      </node>
+      <node id="68410">
+        <label>TeMisc.h</label>
+        <link refid="_te_misc_8h"/>
+        <childnode refid="68389" relation="include">
+        </childnode>
+      </node>
+      <node id="68458">
+        <label>SeCWCSProcess.inl</label>
+        <link refid="_se_c_w_c_s_process_8inl"/>
+      </node>
+      <node id="68463">
+        <label>SeWCMSNSend.inl</label>
+        <link refid="_se_w_c_m_s_n_send_8inl"/>
+      </node>
+      <node id="68434">
+        <label>SePtl_WCS_To_WCSS.h</label>
+        <link refid="_se_ptl___w_c_s___to___w_c_s_s_8h"/>
+        <childnode refid="68412" relation="include">
+        </childnode>
+      </node>
+      <node id="68419">
+        <label>SeThreadMsg.h</label>
+        <link refid="_se_thread_msg_8h"/>
+        <childnode refid="68377" relation="include">
+        </childnode>
+        <childnode refid="68416" relation="include">
+        </childnode>
+      </node>
+      <node id="68430">
+        <label>SeServerDefine.h</label>
+        <link refid="_se_server_define_8h"/>
+        <childnode refid="68406" relation="include">
+        </childnode>
+        <childnode refid="68428" relation="include">
+        </childnode>
+        <childnode refid="68408" relation="include">
+        </childnode>
+      </node>
+      <node id="68389">
+        <label>string.h</label>
+      </node>
+      <node id="68438">
+        <label>SePtl_WCMS_To_TS.h</label>
+        <link refid="_se_ptl___w_c_m_s___to___t_s_8h"/>
+        <childnode refid="68412" relation="include">
+        </childnode>
+      </node>
+      <node id="68462">
+        <label>SeNWCMSProcess.inl</label>
+        <link refid="_se_n_w_c_m_s_process_8inl"/>
+      </node>
+      <node id="68405">
+        <label>SeConfig.h</label>
+        <link refid="_se_config_8h"/>
+        <childnode refid="68406" relation="include">
+        </childnode>
+      </node>
+      <node id="68387">
+        <label>ctime</label>
+      </node>
+      <node id="68428">
+        <label>TeNetMgr.h</label>
+      </node>
+      <node id="68397">
+        <label>vector</label>
+      </node>
+      <node id="68448">
+        <label>SeRWCSProcess.inl</label>
+        <link refid="_se_r_w_c_s_process_8inl"/>
+      </node>
+      <node id="68403">
+        <label>new</label>
+      </node>
+      <node id="68412">
+        <label>SePtlDefine.h</label>
+        <link refid="_se_ptl_define_8h"/>
+        <childnode refid="68377" relation="include">
+        </childnode>
+        <childnode refid="68406" relation="include">
+        </childnode>
+        <childnode refid="68408" relation="include">
+        </childnode>
+        <childnode refid="68413" relation="include">
+        </childnode>
+        <childnode refid="68414" relation="include">
+        </childnode>
+        <childnode refid="68415" relation="include">
+        </childnode>
+      </node>
+      <node id="68406">
+        <label>SeShareDef.h</label>
+        <link refid="_se_share_def_8h"/>
+        <childnode refid="68377" relation="include">
+        </childnode>
+      </node>
+      <node id="68394">
+        <label>sstream</label>
+      </node>
+      <node id="68411">
+        <label>EsString.h</label>
+      </node>
+      <node id="68454">
+        <label>SeWCSSWCSProcess.inl</label>
+        <link refid="_se_w_c_s_s_w_c_s_process_8inl"/>
+      </node>
+      <node id="68446">
+        <label>SeVirtConnMgr.h</label>
+        <link refid="_se_virt_conn_mgr_8h"/>
+        <childnode refid="68406" relation="include">
+        </childnode>
+        <childnode refid="68428" relation="include">
+        </childnode>
+        <childnode refid="68412" relation="include">
+        </childnode>
+        <childnode refid="68447" relation="include">
+        </childnode>
+      </node>
+      <node id="68377">
+        <label>SeInclude.h</label>
+        <link refid="_se_include_8h"/>
+        <childnode refid="68378" relation="include">
+        </childnode>
+        <childnode refid="68379" relation="include">
+        </childnode>
+        <childnode refid="68380" relation="include">
+        </childnode>
+        <childnode refid="68381" relation="include">
+        </childnode>
+        <childnode refid="68382" relation="include">
+        </childnode>
+        <childnode refid="68383" relation="include">
+        </childnode>
+        <childnode refid="68384" relation="include">
+        </childnode>
+        <childnode refid="68385" relation="include">
+        </childnode>
+        <childnode refid="68386" relation="include">
+        </childnode>
+        <childnode refid="68387" relation="include">
+        </childnode>
+        <childnode refid="68388" relation="include">
+        </childnode>
+        <childnode refid="68389" relation="include">
+        </childnode>
+        <childnode refid="68390" relation="include">
+        </childnode>
+        <childnode refid="68391" relation="include">
+        </childnode>
+        <childnode refid="68392" relation="include">
+        </childnode>
+        <childnode refid="68393" relation="include">
+        </childnode>
+        <childnode refid="68394" relation="include">
+        </childnode>
+        <childnode refid="68395" relation="include">
+        </childnode>
+        <childnode refid="68396" relation="include">
+        </childnode>
+        <childnode refid="68397" relation="include">
+        </childnode>
+        <childnode refid="68398" relation="include">
+        </childnode>
+        <childnode refid="68399" relation="include">
+        </childnode>
+        <childnode refid="68400" relation="include">
+        </childnode>
+        <childnode refid="68401" relation="include">
+        </childnode>
+        <childnode refid="68402" relation="include">
+        </childnode>
+        <childnode refid="68403" relation="include">
+        </childnode>
+        <childnode refid="68404" relation="include">
+        </childnode>
+      </node>
+      <node id="68418">
+        <label>time.h</label>
+      </node>
+      <node id="68383">
+        <label>math.h</label>
+      </node>
+      <node id="68440">
+        <label>SePtl_WCS_To_CL.h</label>
+        <link refid="_se_ptl___w_c_s___to___c_l_8h"/>
+        <childnode refid="68412" relation="include">
+        </childnode>
+        <childnode refid="68414" relation="include">
+        </childnode>
+      </node>
+      <node id="68390">
+        <label>EsType.h</label>
+      </node>
+      <node id="68385">
+        <label>cctype</label>
+      </node>
+      <node id="68409">
+        <label>SeToolTemplate.inl</label>
+        <link refid="_se_tool_template_8inl"/>
+      </node>
+      <node id="68451">
+        <label>SeWCSWCMSSend.inl</label>
+        <link refid="_se_w_c_s_w_c_m_s_send_8inl"/>
+      </node>
+      <node id="68400">
+        <label>unordered_map</label>
+      </node>
+      <node id="68453">
+        <label>SeWCMSWCSSend.inl</label>
+        <link refid="_se_w_c_m_s_w_c_s_send_8inl"/>
+      </node>
+      <node id="68432">
+        <label>SePtl_WCMS_To_WCS.h</label>
+        <link refid="_se_ptl___w_c_m_s___to___w_c_s_8h"/>
+        <childnode refid="68412" relation="include">
+        </childnode>
+      </node>
+      <node id="68404">
+        <label>SeDefine.h</label>
+        <link refid="_se_define_8h"/>
+      </node>
+      <node id="68376">
+        <label>WatchServer/Src/WatchServer.h</label>
+        <link refid="WatchServer.h"/>
+        <childnode refid="68377" relation="include">
+        </childnode>
+        <childnode refid="68405" relation="include">
+        </childnode>
+        <childnode refid="68407" relation="include">
+        </childnode>
+        <childnode refid="68417" relation="include">
+        </childnode>
+        <childnode refid="68419" relation="include">
+        </childnode>
+        <childnode refid="68420" relation="include">
+        </childnode>
+        <childnode refid="68423" relation="include">
+        </childnode>
+        <childnode refid="68425" relation="include">
+        </childnode>
+        <childnode refid="68426" relation="include">
+        </childnode>
+        <childnode refid="68427" relation="include">
+        </childnode>
+        <childnode refid="68428" relation="include">
+        </childnode>
+        <childnode refid="68429" relation="include">
+        </childnode>
+        <childnode refid="68446" relation="include">
+        </childnode>
+        <childnode refid="68448" relation="include">
+        </childnode>
+        <childnode refid="68449" relation="include">
+        </childnode>
+        <childnode refid="68450" relation="include">
+        </childnode>
+        <childnode refid="68451" relation="include">
+        </childnode>
+        <childnode refid="68452" relation="include">
+        </childnode>
+        <childnode refid="68453" relation="include">
+        </childnode>
+        <childnode refid="68454" relation="include">
+        </childnode>
+        <childnode refid="68455" relation="include">
+        </childnode>
+        <childnode refid="68456" relation="include">
+        </childnode>
+        <childnode refid="68457" relation="include">
+        </childnode>
+        <childnode refid="68458" relation="include">
+        </childnode>
+        <childnode refid="68459" relation="include">
+        </childnode>
+        <childnode refid="68460" relation="include">
+        </childnode>
+        <childnode refid="68461" relation="include">
+        </childnode>
+        <childnode refid="68462" relation="include">
+        </childnode>
+        <childnode refid="68463" relation="include">
+        </childnode>
+      </node>
+      <node id="68407">
+        <label>SeServerTool.h</label>
+        <link refid="_se_server_tool_8h"/>
+        <childnode refid="68377" relation="include">
+        </childnode>
+        <childnode refid="68408" relation="include">
+        </childnode>
+        <childnode refid="68412" relation="include">
+        </childnode>
+      </node>
+      <node id="68433">
+        <label>SePtl_WCSS_To_WCS.h</label>
+        <link refid="_se_ptl___w_c_s_s___to___w_c_s_8h"/>
+        <childnode refid="68412" relation="include">
+        </childnode>
+      </node>
+      <node id="68437">
+        <label>SePtl_TS_To_WCMS.h</label>
+        <link refid="_se_ptl___t_s___to___w_c_m_s_8h"/>
+        <childnode refid="68412" relation="include">
+        </childnode>
+      </node>
+      <node id="68449">
+        <label>SeWCSRSend.inl</label>
+        <link refid="_se_w_c_s_r_send_8inl"/>
+      </node>
+      <node id="68442">
+        <label>SePtl_WCMS_To_NS.h</label>
+        <link refid="_se_ptl___w_c_m_s___to___n_s_8h"/>
+        <childnode refid="68412" relation="include">
+        </childnode>
+      </node>
+      <node id="68424">
+        <label>type_traits</label>
+      </node>
+      <node id="68401">
+        <label>set</label>
+      </node>
+      <node id="68391">
+        <label>algorithm</label>
+      </node>
+      <node id="68443">
+        <label>SeWCSCStream.h</label>
+        <link refid="_se_w_c_s_c_stream_8h"/>
+        <childnode refid="68412" relation="include">
+        </childnode>
+        <childnode refid="68440" relation="include">
+        </childnode>
+        <childnode refid="68444" relation="include">
+        </childnode>
+      </node>
+      <node id="68450">
+        <label>SeWCSWCMSProcess.inl</label>
+        <link refid="_se_w_c_s_w_c_m_s_process_8inl"/>
+      </node>
+      <node id="68388">
+        <label>stdio.h</label>
+      </node>
+      <node id="68420">
+        <label>SeRaceRecord.h</label>
+        <link refid="_se_race_record_8h"/>
+        <childnode refid="68377" relation="include">
+        </childnode>
+        <childnode refid="68421" relation="include">
+        </childnode>
+        <childnode refid="68422" relation="include">
+        </childnode>
+      </node>
+      <node id="68457">
+        <label>SeWCSWCSSSend.inl</label>
+        <link refid="_se_w_c_s_w_c_s_s_send_8inl"/>
+      </node>
+      <node id="68422">
+        <label>SeCommon.h</label>
+        <link refid="_se_common_8h"/>
+        <childnode refid="68395" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="68481">
+        <label>WatchServer/Src/SeWCSWCMSProcess.cpp</label>
+        <link refid="_se_w_c_s_w_c_m_s_process_8cpp"/>
+      </node>
+      <node id="68471">
+        <label>WatchServer/Src/SeRWCSProcess.cpp</label>
+        <link refid="_se_r_w_c_s_process_8cpp"/>
+      </node>
+      <node id="68476">
+        <label>WatchServer/Src/SeWCSCSend.cpp</label>
+        <link refid="_se_w_c_s_c_send_8cpp"/>
+      </node>
+      <node id="68479">
+        <label>WatchServer/Src/SeWCSSWCSProcess.cpp</label>
+        <link refid="_se_w_c_s_s_w_c_s_process_8cpp"/>
+      </node>
+      <node id="68473">
+        <label>WatchServer/Src/SeTWCMSProcess.cpp</label>
+        <link refid="_se_t_w_c_m_s_process_8cpp"/>
+      </node>
+      <node id="68467">
+        <label>WatchServer/Src/SeCWCSProcess.cpp</label>
+        <link refid="_se_c_w_c_s_process_8cpp"/>
+      </node>
+      <node id="68472">
+        <label>WatchServer/Src/SeTownMgr.cpp</label>
+        <link refid="_watch_server_2_src_2_se_town_mgr_8cpp"/>
+      </node>
+      <node id="68465">
+        <label>WatchServer/Src/Main.cpp</label>
+        <link refid="_watch_server_2_src_2_main_8cpp"/>
+      </node>
+      <node id="68469">
+        <label>WatchServer/Src/SeRaceMgr.cpp</label>
+        <link refid="_watch_server_2_src_2_se_race_mgr_8cpp"/>
+      </node>
+      <node id="68484">
+        <label>WatchServer/Src/WatchServer.cpp</label>
+        <link refid="_watch_server_8cpp"/>
+      </node>
+      <node id="68474">
+        <label>WatchServer/Src/SeWatchServerMgr.cpp</label>
+        <link refid="_se_watch_server_mgr_8cpp"/>
+      </node>
+      <node id="68475">
+        <label>WatchServer/Src/SeWCMSWCSProcess.cpp</label>
+        <link refid="_se_w_c_m_s_w_c_s_process_8cpp"/>
+      </node>
+      <node id="68482">
+        <label>WatchServer/Src/SeWCSWCSSend.cpp</label>
+        <link refid="_se_w_c_s_w_c_s_send_8cpp"/>
+      </node>
+      <node id="68477">
+        <label>WatchServer/Src/SeWCSNSend.cpp</label>
+        <link refid="_se_w_c_s_n_send_8cpp"/>
+      </node>
+      <node id="68483">
+        <label>WatchServer/Src/SeWCSWCSSProcess.cpp</label>
+        <link refid="_se_w_c_s_w_c_s_s_process_8cpp"/>
+      </node>
+      <node id="68478">
+        <label>WatchServer/Src/SeWCSRSend.cpp</label>
+        <link refid="_se_w_c_s_r_send_8cpp"/>
+      </node>
+      <node id="68468">
+        <label>WatchServer/Src/SeNWCMSProcess.cpp</label>
+        <link refid="_se_n_w_c_m_s_process_8cpp"/>
+      </node>
+      <node id="68470">
+        <label>WatchServer/Src/SeRaceSvrWatchMgr.cpp</label>
+        <link refid="_se_race_svr_watch_mgr_8cpp"/>
+      </node>
+      <node id="68466">
+        <label>WatchServer/Src/raceRecordSaveThread.cpp</label>
+        <link refid="_watch_server_2_src_2race_record_save_thread_8cpp"/>
+      </node>
+      <node id="68464">
+        <label>WatchServer/Src/WatchServer.h</label>
+        <link refid="WatchServer.h"/>
+        <childnode refid="68465" relation="include">
+        </childnode>
+        <childnode refid="68466" relation="include">
+        </childnode>
+        <childnode refid="68467" relation="include">
+        </childnode>
+        <childnode refid="68468" relation="include">
+        </childnode>
+        <childnode refid="68469" relation="include">
+        </childnode>
+        <childnode refid="68470" relation="include">
+        </childnode>
+        <childnode refid="68471" relation="include">
+        </childnode>
+        <childnode refid="68472" relation="include">
+        </childnode>
+        <childnode refid="68473" relation="include">
+        </childnode>
+        <childnode refid="68474" relation="include">
+        </childnode>
+        <childnode refid="68475" relation="include">
+        </childnode>
+        <childnode refid="68476" relation="include">
+        </childnode>
+        <childnode refid="68477" relation="include">
+        </childnode>
+        <childnode refid="68478" relation="include">
+        </childnode>
+        <childnode refid="68479" relation="include">
+        </childnode>
+        <childnode refid="68480" relation="include">
+        </childnode>
+        <childnode refid="68481" relation="include">
+        </childnode>
+        <childnode refid="68482" relation="include">
+        </childnode>
+        <childnode refid="68483" relation="include">
+        </childnode>
+        <childnode refid="68484" relation="include">
+        </childnode>
+      </node>
+      <node id="68480">
+        <label>WatchServer/Src/SeWCSTSend.cpp</label>
+        <link refid="_se_w_c_s_t_send_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_watch_server_1_1_c_watch_server" prot="public">WatchServer::CWatchServer</innerclass>
+    <innernamespace refid="namespace_watch_server">WatchServer</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_watch_server_8h_1a0fe0b3e7097985c9686aa65a22e14299" prot="public" static="no" mutable="no">
+        <type><ref refid="class_watch_server_1_1_c_watch_server" kindref="compound">WatchServer::CWatchServer</ref></type>
+        <definition>WatchServer::CWatchServer g_kWatchServer</definition>
+        <argsstring></argsstring>
+        <name>g_kWatchServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServer.h" line="116" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServer.cpp" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_watch_server_1_1_c_se_race_mgr_1a35ac3e03325ed01ab58edbdc3ed39cc9" compoundref="_watch_server_2_src_2_se_race_mgr_8cpp" startline="23" endline="52">WatchServer::CSeRaceMgr::addViewPlayer</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_se_race_mgr_1ad612bd25b9364406bd93b7b9f7e8e701" compoundref="_watch_server_2_src_2_se_race_mgr_8cpp" startline="166" endline="177">WatchServer::CSeRaceMgr::BeginView</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_se_race_mgr_1a76fd8f6a78749eb416e88db6d762736c" compoundref="_watch_server_2_src_2_se_race_mgr_8cpp" startline="11" endline="15">WatchServer::CSeRaceMgr::CSeRaceMgr</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_mgr_1afbf92fafbe535b6a016412e0efa5673e" compoundref="_se_watch_server_mgr_8cpp" startline="123" endline="208">WatchServer::CWatchServerMgr::onRaceDetailInfoReq</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_se_race_mgr_1a91759ef52322a00d052b0d1f46f88def" compoundref="_watch_server_2_src_2_se_race_mgr_8cpp" startline="123" endline="136">WatchServer::CSeRaceMgr::onRaceEnd</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_mgr_1a720ff56e28c1e74ed56806132094fb10" compoundref="_se_watch_server_mgr_8cpp" startline="210" endline="213">WatchServer::CWatchServerMgr::onRaceWatchUserSync</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_mgr_1ae199b5643aa878f8f4bd001614e713e2" compoundref="_se_watch_server_mgr_8cpp" startline="61" endline="85">WatchServer::CWatchServerMgr::onReqView</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_watch_server_mgr_1ac1c4584f6b52b1cae4536a631e17ed20" compoundref="_se_watch_server_mgr_8cpp" startline="87" endline="121">WatchServer::CWatchServerMgr::onReqViewList</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_se_race_mgr_1ab29ba170c16ad4a86ed35921252bc365" compoundref="_watch_server_2_src_2_se_race_mgr_8cpp" startline="138" endline="164">WatchServer::CSeRaceMgr::onViewValidate</referencedby>
+        <referencedby refid="class_watch_server_1_1_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" compoundref="_watch_server_2_src_2race_record_save_thread_8cpp" startline="77" endline="107">WatchServer::SeRaceRecordSaveThread::saveRecord</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_se_race_mgr_1afa0e0135b773e24c67a4b2ee49e205fa" compoundref="_watch_server_2_src_2_se_race_mgr_8cpp" startline="179" endline="213">WatchServer::CSeRaceMgr::Update</referencedby>
+        <referencedby refid="class_watch_server_1_1_c_se_race_mgr_1a47786cae8d9885e3e0d4b98f4c044e11" compoundref="_watch_server_2_src_2_se_race_mgr_8cpp" startline="215" endline="298">WatchServer::CSeRaceMgr::updateView</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_include_8h" kindref="compound">SeInclude.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_config_8h" kindref="compound">SeConfig.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_server_tool_8h" kindref="compound">SeServerTool.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_file_log_8h" kindref="compound">SeFileLog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_thread_msg_8h" kindref="compound">SeThreadMsg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_race_record_8h" kindref="compound">SeRaceRecord.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_net_stream_8h" kindref="compound">SeNetStream.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_ptl_stream_8h" kindref="compound">SePtlStream.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_server_main_def_8h" kindref="compound">SeServerMainDef.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_formula_8h" kindref="compound">SeFormula.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;TeNetMgr.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_watch_server_def_8h" kindref="compound">WatchServerDef.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_virt_conn_mgr_8h" kindref="compound">SeVirtConnMgr.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">WatchServer</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18" refid="class_watch_server_1_1_c_watch_server" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_watch_server_1_1_c_watch_server" kindref="compound">CWatchServer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>TeNetCall,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_se_base_server" kindref="compound">SeBaseServer</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1afd4f20abc9ebadf1a14275c970be9851" kindref="member">CWatchServer</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a06c70d08fae2a58c1be37f4187ad304a" kindref="member">~CWatchServer</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a2a0fec7f6da222842dce84e5bed8c04e" kindref="member">Initialize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a06346a1715803f6de7f0e5df74fb5cb7" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1accae10b1a923a7d35b10de1cab6ddb16" kindref="member">Finialize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a33f9e96b9e585598ef84457bc2efacb3" kindref="member">ShowConsoleTitle</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iDTime);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_server_main_def_8h_1a6856d2f3d34c3913f55b991c0d63e89d" kindref="member">SeServerActionResult</ref><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a21b0ab164d40eee3adcb5ca99df64391" kindref="member">ExecuteAction</ref>(<ref refid="_se_server_main_def_8h_1abbd63e694a43e9bc292e0e0b55ae79bd" kindref="member">SeServerActionIndex</ref><sp/>eActionIndex);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a55927a94ad08e5ee5d2ba7d7ef6de2db" kindref="member">OnNetConnected</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HSock&amp;<sp/>rkSock,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcIP,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iPort);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a89eb1d5a83320410e331532d79aa53fe" kindref="member">OnNetAccept</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HSock&amp;<sp/>rkSock,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iListenPort,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcIP,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iPort);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a11ebf39f880e95526c64943dcf5bd6c2" kindref="member">OnNetRecv</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HSock&amp;<sp/>rkSock,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a16c4aafd626d1586aaaae1a112e8d071" kindref="member">OnNetDisconnect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HSock&amp;<sp/>rkSock,<sp/>TeDisconnectCode<sp/>eCode,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iParam);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_r_w_c_s_process_8inl" kindref="compound">SeRWCSProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_w_c_s_r_send_8inl" kindref="compound">SeWCSRSend.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_w_c_s_w_c_m_s_process_8inl" kindref="compound">SeWCSWCMSProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_w_c_s_w_c_m_s_send_8inl" kindref="compound">SeWCSWCMSSend.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_w_c_m_s_w_c_s_process_8inl" kindref="compound">SeWCMSWCSProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_w_c_m_s_w_c_s_send_8inl" kindref="compound">SeWCMSWCSSend.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_w_c_s_s_w_c_s_process_8inl" kindref="compound">SeWCSSWCSProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_w_c_s_s_w_c_s_send_8inl" kindref="compound">SeWCSSWCSSend.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_w_c_s_w_c_s_s_process_8inl" kindref="compound">SeWCSWCSSProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_w_c_s_w_c_s_s_send_8inl" kindref="compound">SeWCSWCSSSend.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_c_w_c_s_process_8inl" kindref="compound">SeCWCSProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_t_w_c_m_s_process_8inl" kindref="compound">SeTWCMSProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_w_c_m_s_t_send_8inl" kindref="compound">SeWCMSTSend.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_w_c_s_c_send_8inl" kindref="compound">SeWCSCSend.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_n_w_c_m_s_process_8inl" kindref="compound">SeNWCMSProcess.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_w_c_m_s_n_send_8inl" kindref="compound">SeWCMSNSend.inl</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a1ca64bea8b2d3bdb67b0b6666209230d" kindref="member">OnPlayerConnected</ref>(<ref refid="struct_watch_server_1_1_se_connect" kindref="compound">SeConnect</ref>*<sp/>pkConnect,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcIP,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iPort);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a3444555cdeb5bcef2d385962308f43a1" kindref="member">OnPlayerDisconnect</ref>(HSock<sp/>rkSock,<sp/>TeDisconnectCode<sp/>eCode);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a02d324973f10d692522b461a7004be78" kindref="member">LoadConfig</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>pcFile);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1aa60d5a7e9147fd7fea041a4a92924ee9" kindref="member">ReLoadConfig</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_watch_server_1_1_c_watch_server_1a5ff7e15a13be2c896dd90f66d7ce602f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_watch_server_1_1_se_watch_config" kindref="compound">SeWatchConfig</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a5ff7e15a13be2c896dd90f66d7ce602f" kindref="member">GetWatchConfig</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a3eb2bf017ad3579c36293ccd77faa7d6" kindref="member">m_kConfig</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a3f81d2f99e163949b943e7e437aa3251" kindref="member">IsWatchMgrServerReady</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DWord<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a502c0b4d12916410078c3d72b20945d5" kindref="member">GetServerID</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DWord<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1ad08ef4a2d15c3ac119b072e0a714622c" kindref="member">GetServerTime</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a12d36ae4e2d6851452f7af36d1e5784d" kindref="member">onHandleNewRace</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rRaceID);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a1b5f8ee69896e5c63de2406acc664fac" kindref="member">onDelRace</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref>&amp;<sp/>rRaceID);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a9aa90e76d701e864f90b995e12e05dc4" kindref="member">DisconnectPlayer</ref>(HSock&amp;<sp/>rSock);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a4f20c63ea79d05ad3b6f532d887fb091" kindref="member">InitializeNet</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a2681f68b2ea6593ea98867598263936c" kindref="member">SetWatchMgrServerReady</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bReady);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a9aa90e76d701e864f90b995e12e05dc4" kindref="member">DisconnectPlayer</ref>(<ref refid="struct_watch_server_1_1_se_connect" kindref="compound">SeConnect</ref>*<sp/>pkConn);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a000f261be454b12d610b835f6e703a0c" kindref="member">CheckConnect</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a8eaae57ebcf4040e6d39809c26d891cc" kindref="member">UpdateRsState</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_c_watch_server_1af52df49a4bef89e148ac9eea12081f37" kindref="member">UpdateWCMSState</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_c_watch_server_1aeca5ad6ffae3d811dc7e7be05e7aabfb" kindref="member">Connect2WCMS</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a013b523462f94f84af199f001d593322" kindref="member">Register2WCMS</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a63a55cf9d6cf2034c4e1f6c56fa3410e" kindref="member">Register2RS</ref>(<ref refid="struct_se_server_data" kindref="compound">SeServerData</ref>&amp;<sp/>rServerDat);</highlight></codeline>
+<codeline lineno="84" refid="class_watch_server_1_1_c_watch_server_1aec36178325b4ff289761b83d59b80a74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DWord<sp/><ref refid="class_watch_server_1_1_c_watch_server_1aec36178325b4ff289761b83d59b80a74" kindref="member">GetServerID</ref>()</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a3eb2bf017ad3579c36293ccd77faa7d6" kindref="member">m_kConfig</ref>.<ref refid="struct_watch_server_1_1_se_watch_config_1ac34ee6b0fb440f10d01713802df623d7" kindref="member">dwServerID</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a82c683624bae9a831da6f9864ebe2a81" kindref="member">UpdateHeartPkg</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a82c683624bae9a831da6f9864ebe2a81" kindref="member">UpdateHeartPkg</ref>(<ref refid="struct_se_server_data" kindref="compound">SeServerData</ref>&amp;<sp/>rSrvDat,<sp/><ref refid="namespace_watch_server_1aec82ec276c66b37a2dcf12d5bee0bd91" kindref="member">SeHeartState</ref><sp/>eHeart);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89" refid="class_watch_server_1_1_c_watch_server_1ae3fc0f31e9904e96aea9f1f6e2dbdfc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1ae3fc0f31e9904e96aea9f1f6e2dbdfc4" kindref="member">m_acSend</ref>[<ref refid="namespace_watch_server_1af999072588e5dcf3934052b5aeb5bd11a6c360e59326d46ce344cf57348019bd6" kindref="member">RACERECORD_SEND_SIZE</ref>];<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>用来网络发送使用(构造不定长数据包)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="class_watch_server_1_1_c_watch_server_1a448a900c4c34e3fa62f3d6630fe29236" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a448a900c4c34e3fa62f3d6630fe29236" kindref="member">m_acPraseBuf</ref>[<ref refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa07d3a4f7da0bf861d08aa51e3ec80a37" kindref="member">SSD_PRASER_SIZE</ref>];<sp/><sp/></highlight><highlight class="comment">//解析缓冲</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="class_watch_server_1_1_c_watch_server_1a6670253c567fbbbe37b2ee78201bcfa4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DWord<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a6670253c567fbbbe37b2ee78201bcfa4" kindref="member">m_dwTickCount</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>上次检查时间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_watch_server_1_1_c_watch_server_1a9bc827b6b1bf525952a8f637ec4b5233" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DWord<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a9bc827b6b1bf525952a8f637ec4b5233" kindref="member">m_dwCurTime</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>服务器时间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="class_watch_server_1_1_c_watch_server_1a42119a13b177d1ec84cbb131f2451cc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a42119a13b177d1ec84cbb131f2451cc7" kindref="member">m_bWCMSReady</ref>;</highlight></codeline>
+<codeline lineno="94" refid="class_watch_server_1_1_c_watch_server_1a3eb2bf017ad3579c36293ccd77faa7d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_watch_server_1_1_se_watch_config" kindref="compound">SeWatchConfig</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a3eb2bf017ad3579c36293ccd77faa7d6" kindref="member">m_kConfig</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>配置文件</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="class_watch_server_1_1_c_watch_server_1ab8c3744ead527029dc2447c996d2c7e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1ab8c3744ead527029dc2447c996d2c7e0" kindref="member">m_iRegisterCount</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>与玩家之间的网络</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="class_watch_server_1_1_c_watch_server_1a8bc417bec0c22716c237d38d330df336" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_watch_server_1a1fc8410324167f0c7024eac9ba50da7f" kindref="member">MapAllConnect</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a8bc417bec0c22716c237d38d330df336" kindref="member">m_kAllConnect</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>所有的玩家连接</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="class_watch_server_1_1_c_watch_server_1aadccc5cdd59278ba38d08569cb60682d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_watch_server_1a12dc32278be196867667942e1bf97050" kindref="member">MapAllInnerConnect</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1aadccc5cdd59278ba38d08569cb60682d" kindref="member">m_kAllInnerConnect</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>所有服务器连接</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="class_watch_server_1_1_c_watch_server_1a3dc54fcd755ce4e21f181aa6f4d91b4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TeNetMgr<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a3dc54fcd755ce4e21f181aa6f4d91b4d" kindref="member">m_kNetMgr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TCP网络</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="class_watch_server_1_1_c_watch_server_1a105d719eca41577b0e28b84ce8c97239" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_se_server_data" kindref="compound">SeServerData</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a105d719eca41577b0e28b84ce8c97239" kindref="member">m_vWcsMgrServerData</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//WatchServerMgr服务器状态</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="class_watch_server_1_1_c_watch_server_1aafeb8443263a74c13874ec97f4682e4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_se_server_define_8h_1a2de7dbdfd4803d9dea57aebe53a0e681" kindref="member">VecServerData</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1aafeb8443263a74c13874ec97f4682e4b" kindref="member">m_vRsServerData</ref>;</highlight></codeline>
+<codeline lineno="104" refid="class_watch_server_1_1_c_watch_server_1a3e43fbf05e258c7a214db5c2f75b32ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;HSock,<sp/>DWord&gt;<sp/><ref refid="class_watch_server_1_1_c_watch_server_1a3e43fbf05e258c7a214db5c2f75b32ba" kindref="member">TSockServerDataMap</ref>;</highlight></codeline>
+<codeline lineno="105" refid="class_watch_server_1_1_c_watch_server_1aa18854da00cc2a552d66854428feab8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a3e43fbf05e258c7a214db5c2f75b32ba" kindref="member">TSockServerDataMap</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1aa18854da00cc2a552d66854428feab8b" kindref="member">m_mSockRsServerData</ref>;</highlight></codeline>
+<codeline lineno="106" refid="class_watch_server_1_1_c_watch_server_1ac227c6d43db5635c1c4ddc61a36c0504" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_se_server_data" kindref="compound">SeServerData</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1ac227c6d43db5635c1c4ddc61a36c0504" kindref="member">m_vWCSMasterServerData</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//WatchServerMaster服务器状态</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="class_watch_server_1_1_c_watch_server_1ab230b0e57fd9eb328c6e5ce60a09fbcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_watch_server_1_1_c_watch_server_1ab230b0e57fd9eb328c6e5ce60a09fbcc" kindref="member">m_pkNSConn</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a11f16d3238f2f1006675bff5d704c12b" kindref="member">SetPlayerConnect</ref>(HSock<sp/>kSock,<sp/>DWord<sp/>dwPlayerID);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_c_watch_server_1a7ac28b5d931fa58008b5d34107df294e" kindref="member">RaceWatchUserSync</ref>(DWord<sp/>dwPlayerID,<sp/>DWord<sp/>dwStateID);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="class_watch_server_1_1_c_watch_server" kindref="compound">WatchServer::CWatchServer</ref><sp/><ref refid="_watch_server_8h_1a0fe0b3e7097985c9686aa65a22e14299" kindref="member">g_kWatchServer</ref>;</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WatchServer/Src/WatchServer.h"/>
+  </compounddef>
+</doxygen>

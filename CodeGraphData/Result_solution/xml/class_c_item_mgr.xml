@@ -1,0 +1,2438 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_c_item_mgr" kind="class" prot="public">
+    <compoundname>CItemMgr</compoundname>
+    <basecompoundref refid="class_data_mgr" prot="public" virt="non-virtual">DataMgr&lt; SeDBCharItem &gt;</basecompoundref>
+    <basecompoundref refid="class_data_mgr" prot="public" virt="non-virtual">DataMgr&lt; SeDBCharItem &gt;</basecompoundref>
+    <includes refid="_src_2_item_mgr_8h" local="no">ItemMgr.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_c_item_mgr_1a07f61afc0b744f4353488d7fb09a2316" prot="private" static="no">
+        <type>std::map&lt; uint16_t, <ref refid="struct_c_item" kindref="compound">CItem</ref> * &gt;</type>
+        <definition>typedef std::map&lt;uint16_t, CItem*&gt; CItemMgr::ITEMMAP</definition>
+        <argsstring></argsstring>
+        <name>ITEMMAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="178" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_c_item_mgr_1a16f1c2289bdb38b66ef36b2b3949148e" prot="private" static="no">
+        <type>ITEMMAP::iterator</type>
+        <definition>typedef ITEMMAP::iterator CItemMgr::ITEMIT</definition>
+        <argsstring></argsstring>
+        <name>ITEMIT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="179" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_c_item_mgr_1a07f61afc0b744f4353488d7fb09a2316" prot="private" static="no">
+        <type>std::map&lt; uint16_t, <ref refid="struct_c_item" kindref="compound">CItem</ref> * &gt;</type>
+        <definition>typedef std::map&lt;uint16_t, CItem*&gt; CItemMgr::ITEMMAP</definition>
+        <argsstring></argsstring>
+        <name>ITEMMAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="178" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_c_item_mgr_1a16f1c2289bdb38b66ef36b2b3949148e" prot="private" static="no">
+        <type>ITEMMAP::iterator</type>
+        <definition>typedef ITEMMAP::iterator CItemMgr::ITEMIT</definition>
+        <argsstring></argsstring>
+        <name>ITEMIT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="179" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_c_item_mgr_1a07f61afc0b744f4353488d7fb09a2316" kindref="member">ITEMMAP</ref></type>
+        <definition>ITEMMAP CItemMgr::m_BagMap</definition>
+        <argsstring></argsstring>
+        <name>m_BagMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="180" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" bodystart="180" bodyend="-1"/>
+        <referencedby refid="class_c_item_mgr_1ae8e0377cde5732972c5869d98576ba1b" compoundref="_src_2_item_mgr_8cpp" startline="997" endline="1026">AddItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a310acd889559341a8f360da79d3bf106" compoundref="_src_2_item_mgr_8cpp" startline="809" endline="894">AddNewMultiItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1af5880cf904902fd27716bf920ade1c88" compoundref="_src_2_item_mgr_8cpp" startline="545" endline="633">ChangeCiTiao</referencedby>
+        <referencedby refid="class_c_item_mgr_1a49bd2747343cd9bd277e54b222532ae6" compoundref="_src_2_item_mgr_8cpp" startline="1447" endline="1469">clearItemNewFlag</referencedby>
+        <referencedby refid="class_c_item_mgr_1a5428c3f3553f9869853b15e6fae0f28b" compoundref="_src_2_item_mgr_8cpp" startline="783" endline="807">CountNeedSlotNumByItemID</referencedby>
+        <referencedby refid="class_c_item_mgr_1a248caadff7a02818823523daa027dfa1" compoundref="_src_2_item_mgr_8cpp" startline="1491" endline="1520">decRespawnItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1ac777e83c23b5865e42bced4e9a86f215" compoundref="_src_2_item_mgr_8cpp" startline="1028" endline="1043">DeleteItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a4021097b868fa81e0b1cc0569e5ee46c" compoundref="_src_2_item_mgr_8cpp" startline="351" endline="378">doItemMergeCharge</referencedby>
+        <referencedby refid="class_c_item_mgr_1ace527204142df63b0dbb14f4cffb5522" compoundref="_src_2_item_mgr_8cpp" startline="1045" endline="1049">eraseItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a669523960879aa5b9c37c30a36fb2b0a" compoundref="_src_2_item_mgr_8cpp" startline="730" endline="750">GetEmpySlotIndex</referencedby>
+        <referencedby refid="class_c_item_mgr_1a1578c6a5fa4ec12cb06f57031239877e" compoundref="_src_2_item_mgr_8cpp" startline="752" endline="780">GetExistItemIndex</referencedby>
+        <referencedby refid="class_c_item_mgr_1a2cea785f02476a715323bd3e7aa67caf" compoundref="_src_2_item_mgr_8cpp" startline="1358" endline="1369">getItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1ada634e5a389391fbf158f928e449844e" compoundref="_src_2_item_mgr_8cpp" startline="66" endline="81">GetItemCountByID</referencedby>
+        <referencedby refid="class_c_item_mgr_1abf7f3fd749d2e0bbe9ccb60c2c1d934c" compoundref="_src_2_item_mgr_8cpp" startline="1471" endline="1489">getRespawnItemCount</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae30d35df373466d539c1cb8f6c34b71d" compoundref="_src_2_item_mgr_8cpp" startline="1524" endline="1558">getSelectableAvatars</referencedby>
+        <referencedby refid="class_c_item_mgr_1a8dbd177bc924e97242ea98ed3d6dcd58" compoundref="_src_2_item_mgr_8cpp" startline="1051" endline="1055">insertItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a323ebd3efe07f6f0b5ba60ceaf50db4a" compoundref="_src_2_item_mgr_8cpp" startline="896" endline="995">ItemDepart</referencedby>
+        <referencedby refid="class_c_item_mgr_1a87a78d8e3ef7acf5ee9f1c22b8a87716" compoundref="_src_2_item_mgr_8cpp" startline="44" endline="64">loadData</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae2c680a6a6599c75076c85fcc9653bc5" compoundref="_src_2_item_mgr_8cpp" startline="1371" endline="1445">openRandBox</referencedby>
+        <referencedby refid="class_c_item_mgr_1a507cb0c1b03a411586a8a1f0513d4438" compoundref="_src_2_item_mgr_8cpp" startline="191" endline="214">PackAllItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a42da54f383ba4e19914e723d63e24e89" compoundref="_src_2_item_mgr_8cpp" startline="380" endline="460">StrenthEquip</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae8767fb60af3596f960a1f87947c9e81" compoundref="_src_2_item_mgr_8cpp" startline="32" endline="42">~CItemMgr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_item_mgr_1a23833b420138ffa598159af18b233218" prot="private" static="no" mutable="no">
+        <type>std::map&lt; DWord, <ref refid="struct_c_item" kindref="compound">CItem</ref> * &gt;</type>
+        <definition>std::map&lt; DWord, CItem * &gt; CItemMgr::m_idMap</definition>
+        <argsstring></argsstring>
+        <name>m_idMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="181" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" bodystart="181" bodyend="-1"/>
+        <referencedby refid="class_c_item_mgr_1ace527204142df63b0dbb14f4cffb5522" compoundref="_src_2_item_mgr_8cpp" startline="1045" endline="1049">eraseItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae46cfb3d7664beb10d52a125fb7d0e1f" compoundref="_src_2_item_mgr_8cpp" startline="1345" endline="1356">getItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a8dbd177bc924e97242ea98ed3d6dcd58" compoundref="_src_2_item_mgr_8cpp" startline="1051" endline="1055">insertItem</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_item_mgr_1a6f92f342f5bc5cc97f0063cdffbe4074" prot="private" static="no" mutable="no">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> *</type>
+        <definition>SePlayer * CItemMgr::m_pOwner</definition>
+        <argsstring></argsstring>
+        <name>m_pOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="183" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" bodystart="183" bodyend="-1"/>
+        <referencedby refid="class_c_item_mgr_1afa90610e1b62ab27e1a3641f12944e76" compoundref="_src_2_item_mgr_8cpp" startline="25" endline="29">CItemMgr</referencedby>
+        <referencedby refid="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" compoundref="_src_2_item_mgr_8h" startline="120" endline="120">GetOwner</referencedby>
+        <referencedby refid="class_c_item_mgr_1af517156c7d55fa16812ef09d8d5f3926" compoundref="_src_2_item_mgr_8h" startline="119" endline="119">SetOwner</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_item_mgr_1a8cc6896b3cb6e658e8d81797615397a2" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t CItemMgr::m_uiTimer</definition>
+        <argsstring></argsstring>
+        <name>m_uiTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="184" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" bodystart="184" bodyend="-1"/>
+        <referencedby refid="class_c_item_mgr_1afa90610e1b62ab27e1a3641f12944e76" compoundref="_src_2_item_mgr_8cpp" startline="25" endline="29">CItemMgr</referencedby>
+        <referencedby refid="class_c_item_mgr_1a1fedb76f7f3aeb6364c74a36e944932b" compoundref="_src_2_item_mgr_8cpp" startline="83" endline="133">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_item_mgr_1afa90610e1b62ab27e1a3641f12944e76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CItemMgr::CItemMgr</definition>
+        <argsstring>()</argsstring>
+        <name>CItemMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="110" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="25" bodyend="29"/>
+        <references refid="class_c_item_mgr_1a6f92f342f5bc5cc97f0063cdffbe4074" compoundref="_src_2_item_mgr_8h" startline="183">m_pOwner</references>
+        <references refid="class_c_item_mgr_1a8cc6896b3cb6e658e8d81797615397a2" compoundref="_src_2_item_mgr_8h" startline="184">m_uiTimer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ae8767fb60af3596f960a1f87947c9e81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CItemMgr::~CItemMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~CItemMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="111" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="32" bodyend="42"/>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a87a78d8e3ef7acf5ee9f1c22b8a87716" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CItemMgr::loadData</definition>
+        <argsstring>(const SeDBCharItem &amp;obj)</argsstring>
+        <name>loadData</name>
+        <reimplements refid="class_data_mgr_1a19fd585291b3911a1f43d63dfbcc71c6">loadData</reimplements>
+        <param>
+          <type>const SeDBCharItem &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="114" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="44" bodyend="64"/>
+        <references refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">TownItemTableMgr::Get</references>
+        <references refid="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" compoundref="_town_item__table_8cpp" startline="42" endline="50">TownItemTableMgr::GetTownItemTable</references>
+        <references refid="class_c_item_mgr_1a8dbd177bc924e97242ea98ed3d6dcd58" compoundref="_src_2_item_mgr_8cpp" startline="1051" endline="1055">insertItem</references>
+        <references refid="struct_c_item_1a8d94dd6cfd7a05dc855b1c70bbc42755" compoundref="_src_2_item_mgr_8h" startline="68" endline="77">CItem::load</references>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="_se_file_log_8h_1af539321acd57494a1bf7e8c7757ccd5d" compoundref="_se_file_log_8h" startline="84">SeLogWarning</references>
+        <references refid="struct_c_item_1a12bcf483abb0a38f38c98faa3d9ab78c" compoundref="_src_2_item_mgr_8h" startline="23">CItem::ucIndex</references>
+        <references refid="struct_c_item_1a2846eeb087de732805a73dbcc1219039" compoundref="_src_2_item_mgr_8h" startline="22">CItem::uiID</references>
+        <references refid="struct_c_item_1a32b9964f399b841ecb58f80fc0c06d8f" compoundref="_src_2_item_mgr_8h" startline="24">CItem::uiItemID</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a507cb0c1b03a411586a8a1f0513d4438" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::PackAllItem</definition>
+        <argsstring>()</argsstring>
+        <name>PackAllItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="115" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="191" bodyend="214"/>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="_town_server_2_src_2_se_player_8inl_1a62abab014f0e4e72ae69f67e8e6c3a99" compoundref="_town_server_2_src_2_se_player_8inl" startline="6" endline="9">GetID</references>
+        <references refid="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" compoundref="_src_2_item_mgr_8h" startline="120" endline="120">GetOwner</references>
+        <references refid="_world_server_2_src_2_se_player_8inl_1a2b912387cc3709ca75305a30f0167a37" compoundref="_world_server_2_src_2_se_player_8inl" startline="71" endline="74">GetTownSock</references>
+        <references refid="struct_se_w_t___player_new_item_1a7a7d1d394d14b7bfff6df4018f4639d5" compoundref="_se_ptl___w_s___to___t_s_8h" startline="448">SeWT_PlayerNewItem::iNum</references>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="struct_se_w_t___player_new_item_1ac77eb5874cf53b47223e8c9da979bcc2" compoundref="_se_ptl___w_s___to___t_s_8h" startline="449">SeWT_PlayerNewItem::SeItemArray</references>
+        <references refid="class_world_server_1abad6b09f68b8645d7cdebe858712a3d6">WorldServer::SendWT_PlayerNewItem</references>
+        <referencedby refid="class_se_player_1a6a04c28f9bb38896f106fbf42e732f36" compoundref="_world_server_2_src_2_se_player_8cpp" startline="651" endline="725">SePlayer::OperateLoading</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a1fedb76f7f3aeb6364c74a36e944932b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::Update</definition>
+        <argsstring>(DWord dwCurTime)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwCurTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="116" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="83" bodyend="133"/>
+        <references refid="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" compoundref="_src_2_item_mgr_8h" startline="120" endline="120">GetOwner</references>
+        <references refid="class_c_item_mgr_1a8cc6896b3cb6e658e8d81797615397a2" compoundref="_src_2_item_mgr_8h" startline="184">m_uiTimer</references>
+        <referencedby refid="class_se_player_1a1a741ee8f16618bf4e70846c86f5c2a9" compoundref="_world_server_2_src_2_se_player_8cpp" startline="113" endline="120">SePlayer::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ada634e5a389391fbf158f928e449844e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t CItemMgr::GetItemCountByID</definition>
+        <argsstring>(uint32_t uiItemID)</argsstring>
+        <name>GetItemCountByID</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>uiItemID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="117" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="66" bodyend="81"/>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <referencedby refid="class_c_shop_1af16d650a4e31be0dafdbc3495485ef1c" compoundref="_src_2_shop_8cpp" startline="171" endline="244">CShop::BuyItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a6fe8e813282ac14a6b7e964b8bec5d52" compoundref="_src_2_item_mgr_8cpp" startline="1123" endline="1130">CheckOwnerItem</referencedby>
+        <referencedby refid="class_c_shop_1a663f5c6d1730e05821feab8055a7b962" compoundref="_src_2_shop_8cpp" startline="421" endline="505">CShop::CurrencyBuyItem_Diamond</referencedby>
+        <referencedby refid="class_c_shop_1a009df25456150f7a7ffcf66732bdc3a1" compoundref="_src_2_shop_8cpp" startline="338" endline="419">CShop::CurrencyBuyItem_Gold</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1af517156c7d55fa16812ef09d8d5f3926" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::SetOwner</definition>
+        <argsstring>(SePlayer *pOwner)</argsstring>
+        <name>SetOwner</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> *</type>
+          <declname>pOwner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="119" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" bodystart="119" bodyend="119"/>
+        <references refid="class_c_item_mgr_1a6f92f342f5bc5cc97f0063cdffbe4074" compoundref="_src_2_item_mgr_8h" startline="183">m_pOwner</references>
+        <referencedby refid="class_se_player_1aac1f70580b5a2422ccd6fbd8304a4432" compoundref="_world_server_2_src_2_se_player_8cpp" startline="27" endline="65">SePlayer::SePlayer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> *</type>
+        <definition>SePlayer* CItemMgr::GetOwner</definition>
+        <argsstring>()</argsstring>
+        <name>GetOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="120" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" bodystart="120" bodyend="120"/>
+        <references refid="class_c_item_mgr_1a6f92f342f5bc5cc97f0063cdffbe4074" compoundref="_src_2_item_mgr_8h" startline="183">m_pOwner</references>
+        <referencedby refid="class_c_item_mgr_1ae8e0377cde5732972c5869d98576ba1b" compoundref="_src_2_item_mgr_8cpp" startline="997" endline="1026">AddItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1af5880cf904902fd27716bf920ade1c88" compoundref="_src_2_item_mgr_8cpp" startline="545" endline="633">ChangeCiTiao</referencedby>
+        <referencedby refid="class_c_item_mgr_1ac777e83c23b5865e42bced4e9a86f215" compoundref="_src_2_item_mgr_8cpp" startline="1028" endline="1043">DeleteItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a8a739c0be596a0199d1775fb56fa9a3f" compoundref="_src_2_item_mgr_8cpp" startline="1084" endline="1121">doExchangeItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a4021097b868fa81e0b1cc0569e5ee46c" compoundref="_src_2_item_mgr_8cpp" startline="351" endline="378">doItemMergeCharge</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae2f199bdee13e05f8656325d16308355" compoundref="_src_2_item_mgr_8cpp" startline="1057" endline="1082">doMoveItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a323ebd3efe07f6f0b5ba60ceaf50db4a" compoundref="_src_2_item_mgr_8cpp" startline="896" endline="995">ItemDepart</referencedby>
+        <referencedby refid="class_c_item_mgr_1ab37ce0a46859c9a7af231c3934511a8d" compoundref="_src_2_item_mgr_8cpp" startline="135" endline="189">notiChangeItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae2c680a6a6599c75076c85fcc9653bc5" compoundref="_src_2_item_mgr_8cpp" startline="1371" endline="1445">openRandBox</referencedby>
+        <referencedby refid="class_c_item_mgr_1a507cb0c1b03a411586a8a1f0513d4438" compoundref="_src_2_item_mgr_8cpp" startline="191" endline="214">PackAllItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a42da54f383ba4e19914e723d63e24e89" compoundref="_src_2_item_mgr_8cpp" startline="380" endline="460">StrenthEquip</referencedby>
+        <referencedby refid="class_c_item_mgr_1a1fedb76f7f3aeb6364c74a36e944932b" compoundref="_src_2_item_mgr_8cpp" startline="83" endline="133">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a42da54f383ba4e19914e723d63e24e89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult CItemMgr::StrenthEquip</definition>
+        <argsstring>(Word SrcPos, int32_t iNum, Word DstPos[])</argsstring>
+        <name>StrenthEquip</name>
+        <param>
+          <type>Word</type>
+          <declname>SrcPos</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>iNum</declname>
+        </param>
+        <param>
+          <type>Word</type>
+          <declname>DstPos</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="122" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="380" bodyend="460"/>
+        <references refid="struct_c_item_1ae0fd632a7589df28e263da15e1024ca9" compoundref="_src_2_item_mgr_8h" startline="25">CItem::addedLevel</references>
+        <references refid="_src_2_item_mgr_8cpp_1a408cae4c4dd5014b5232f8d485b79a2f" compoundref="_src_2_item_mgr_8cpp" startline="294" endline="349">AddStrenAttr</references>
+        <references refid="_src_2_item_mgr_8cpp_1aef0622ce3084bece17f5948162361124" compoundref="_src_2_item_mgr_8cpp" startline="216" endline="255">CheckEnough</references>
+        <references refid="class_c_item_mgr_1a4021097b868fa81e0b1cc0569e5ee46c" compoundref="_src_2_item_mgr_8cpp" startline="351" endline="378">doItemMergeCharge</references>
+        <references refid="struct_strengthen_table_1a5b8f600bbcab90caff476b459236707c" compoundref="_strengthen__table_8hpp" startline="154">StrengthenTable::fStrResult1</references>
+        <references refid="struct_strengthen_table_1ab6ea48060ff1c56e93b844cd8cb3ca66" compoundref="_strengthen__table_8hpp" startline="156">StrengthenTable::fStrResult2</references>
+        <references refid="struct_strengthen_table_1a3b2cbde46cef2895d0ac3e9a4032ea09" compoundref="_strengthen__table_8hpp" startline="158">StrengthenTable::fStrResult3</references>
+        <references refid="struct_strengthen_table_1a0ae229308a053875465ba18ee496bc25" compoundref="_strengthen__table_8hpp" startline="160">StrengthenTable::fStrResult4</references>
+        <references refid="struct_strengthen_table_1a8ba60e030d37936cd384facdf2ccb45c" compoundref="_strengthen__table_8hpp" startline="162">StrengthenTable::fStrResult5</references>
+        <references refid="struct_strengthen_table_1ade5fde560ee3be07bb679be5c709aa8d" compoundref="_strengthen__table_8hpp" startline="164">StrengthenTable::fStrResult6</references>
+        <references refid="struct_strengthen_table_1a0bfbca68bcdcd52f6231a498914d9f1a" compoundref="_strengthen__table_8hpp" startline="166">StrengthenTable::fStrResult7</references>
+        <references refid="struct_strengthen_table_1a7624adefc8933347529fcd778205e2bf" compoundref="_strengthen__table_8hpp" startline="168">StrengthenTable::fStrResult8</references>
+        <references refid="class_strengthen_table_mgr_1a797f4ffbbeea1ed9cf5f5ae0b68a5701" compoundref="_strengthen__table_8cpp" startline="6" endline="13">StrengthenTableMgr::Get</references>
+        <references refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">TownItemTableMgr::Get</references>
+        <references refid="_world_server_2_src_2_se_player_8inl_1a5e6641d6b1ed9460a480c4e37d37519d" compoundref="_world_server_2_src_2_se_player_8inl" startline="233" endline="236">GetGold</references>
+        <references refid="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" compoundref="_src_2_item_mgr_8h" startline="120" endline="120">GetOwner</references>
+        <references refid="class_strengthen_table_mgr_1a2204cb73e13ff7e168166b935b70f000" compoundref="_strengthen__table_8cpp" startline="42" endline="50">StrengthenTableMgr::GetStrengthenTable</references>
+        <references refid="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" compoundref="_town_item__table_8cpp" startline="42" endline="50">TownItemTableMgr::GetTownItemTable</references>
+        <references refid="struct_strengthen_table_1a14978710a2e69c5904205eef82b97ff1" compoundref="_strengthen__table_8hpp" startline="152">StrengthenTable::iCostMoney</references>
+        <references refid="struct_town_item_table_1a7c4ae0be015b0838016ecb71d39af44d" compoundref="_town_item__table_8hpp" startline="1179">TownItemTable::iitemlevelmax</references>
+        <references refid="struct_strengthen_table_1a8d669af82079384c65371f2733da5c48" compoundref="_strengthen__table_8hpp" startline="148">StrengthenTable::iStrStoneNum1</references>
+        <references refid="struct_strengthen_table_1a44a11a4ecdde84ee8fe2249363e6b552" compoundref="_strengthen__table_8hpp" startline="151">StrengthenTable::iStrStoneNum2</references>
+        <references refid="struct_strengthen_table_1a30c72ce0f2e4f0ad55b3d43f0b583f74" compoundref="_strengthen__table_8hpp" startline="145">StrengthenTable::iSuccessRate</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa001094f9ac0334129916e84e0e8765af" compoundref="_se_ptl_comm_define_8h" startline="609">ITEM_DST_INDEX_ERROR</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa19ae5275a306cb765a69946771488ce3" compoundref="_se_ptl_comm_define_8h" startline="611">ITEM_DST_ITEM_NOT_FOUND</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa694dff7321291361aa0f4e7d922dbadb" compoundref="_se_ptl_comm_define_8h" startline="613">ITEM_NOT_ENOUGH_MONEY</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75badf27507d7fb229b5babfa29ab5fe62e4" compoundref="_se_ptl_comm_define_8h" startline="323">ITEM_OPER_MOD</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa0948d1c2f670047b615f1b91468de95c" compoundref="_se_ptl_comm_define_8h" startline="606">ITEM_RESULT_SUCCESS</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baad025e3f7ba60c02d988b8f83b8e98210" compoundref="_se_ptl_comm_define_8h" startline="629">ITEM_SERVER_INNER_ERROR</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baad3273420ac5ae333376de6455ed7b970" compoundref="_se_ptl_comm_define_8h" startline="621">ITEM_SRC_DST_ISSAME</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa3e29ae969f236592e438d8d73edfde59" compoundref="_se_ptl_comm_define_8h" startline="607">ITEM_SRC_INDEX_ERROR</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa2df89b2ab1aaa9a5ea0ba9cf167a2193" compoundref="_se_ptl_comm_define_8h" startline="610">ITEM_SRC_ITEM_NOT_FOUND</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa64ca22554b5f23f585ef637433aed954" compoundref="_se_ptl_comm_define_8h" startline="627">ITEM_SRC_NOT_EQUIP</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa4ba6801fb0ffa616f95a6f4268eff5de" compoundref="_se_ptl_comm_define_8h" startline="608">ITEM_SRC_WRONG_NUM</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa9b87c213e1848ccdc5e46c4d3881654d" compoundref="_se_ptl_comm_define_8h" startline="612">ITEM_STRENTH_HIGH_LEVEL</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baab773c59aa1d667faaad59aab19e56229" compoundref="_se_ptl_comm_define_8h" startline="636">ITEM_STRENTH_NO_STRENTHID</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baaaed94573529692cc3a1e979ec6348c0e" compoundref="_se_ptl_comm_define_8h" startline="614">ITEM_STRENTH_NOT_ENOUGH_SRC</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baafb671187e7393ae5166aff22c7febbe5" compoundref="_se_ptl_comm_define_8h" startline="616">ITEM_STRENTH_PROBABLITY_FAIL</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa92e21feb06ddb8620a978fd82571d1d5" compoundref="_se_ptl_comm_define_8h" startline="615">ITEM_STRENTH_SRC_REPEATED</references>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="struct_c_item_1aeea3715c34978cec0a9b0c179eee1fe5" compoundref="_src_2_item_mgr_8h" startline="91" endline="91">CItem::SetOper</references>
+        <references refid="_town_item__table_8hpp_1a4a87ae9dae8583e9acda43ace84659cfab6de6094600654176fddb036c75799c4" compoundref="_town_item__table_8hpp" startline="14">TOWNITEM_CLASS_ZHUANGBEI</references>
+        <references refid="struct_town_item_table_1a50f128b2bc726da3161c11a9edb7787a" compoundref="_town_item__table_8hpp" startline="1170">TownItemTable::uiClass</references>
+        <references refid="struct_c_item_1a32b9964f399b841ecb58f80fc0c06d8f" compoundref="_src_2_item_mgr_8h" startline="24">CItem::uiItemID</references>
+        <references refid="struct_town_item_table_1aff8c8a5bfdf8a753e2900fc90b6218cb" compoundref="_town_item__table_8hpp" startline="1175">TownItemTable::uiLevel</references>
+        <references refid="struct_strengthen_table_1ad0c88cd92111f0b596c447f669794f68" compoundref="_strengthen__table_8hpp" startline="153">StrengthenTable::uiStrProperty1</references>
+        <references refid="struct_strengthen_table_1a2116492686d5596b8dd4803b174a5ba3" compoundref="_strengthen__table_8hpp" startline="155">StrengthenTable::uiStrProperty2</references>
+        <references refid="struct_strengthen_table_1a153f8c1c1d47f72cc7ac34714f0dc610" compoundref="_strengthen__table_8hpp" startline="157">StrengthenTable::uiStrProperty3</references>
+        <references refid="struct_strengthen_table_1aa30a66d6242b2b44ae6dcc4e8ac2c2a9" compoundref="_strengthen__table_8hpp" startline="159">StrengthenTable::uiStrProperty4</references>
+        <references refid="struct_strengthen_table_1a7601a17b700fcf6f868301f02cae78d7" compoundref="_strengthen__table_8hpp" startline="161">StrengthenTable::uiStrProperty5</references>
+        <references refid="struct_strengthen_table_1ae6c776366569a57667962a6a6f78b2ab" compoundref="_strengthen__table_8hpp" startline="163">StrengthenTable::uiStrProperty6</references>
+        <references refid="struct_strengthen_table_1a53dcc0f7d04972190902b61d0f19e70d" compoundref="_strengthen__table_8hpp" startline="165">StrengthenTable::uiStrProperty7</references>
+        <references refid="struct_strengthen_table_1a324bcf15e7d806ed9476501150e60147" compoundref="_strengthen__table_8hpp" startline="167">StrengthenTable::uiStrProperty8</references>
+        <references refid="struct_strengthen_table_1a7924dc0400011f34621f70779cfe5071" compoundref="_strengthen__table_8hpp" startline="146">StrengthenTable::uiStrStoneID1</references>
+        <references refid="struct_strengthen_table_1a8273e679117c6e1bf8df3d2753c22cf5" compoundref="_strengthen__table_8hpp" startline="149">StrengthenTable::uiStrStoneID2</references>
+        <references refid="struct_town_item_table_1a13c33d704af9a1d0d115c9d4b8a5b943" compoundref="_town_item__table_8hpp" startline="1171">TownItemTable::uiSubClass</references>
+        <referencedby refid="class_block_server_1ada2f02f256be1d0a77a325bc079a3f8e" compoundref="_src_2_se_t_b_l_process_8cpp" startline="45" endline="56">BlockServer::ProcessTBL_ReqItemStrenth</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1af5880cf904902fd27716bf920ade1c88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult CItemMgr::ChangeCiTiao</definition>
+        <argsstring>(Word SrcPos, uint32_t iCiTiaoIndex, uint32_t uiNum, bool bLock, Word SrcPosArray[])</argsstring>
+        <name>ChangeCiTiao</name>
+        <param>
+          <type>Word</type>
+          <declname>SrcPos</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>iCiTiaoIndex</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>uiNum</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bLock</declname>
+        </param>
+        <param>
+          <type>Word</type>
+          <declname>SrcPosArray</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="123" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="545" bodyend="633"/>
+        <references refid="_src_2_item_mgr_8cpp_1aef0622ce3084bece17f5948162361124" compoundref="_src_2_item_mgr_8cpp" startline="216" endline="255">CheckEnough</references>
+        <references refid="class_c_item_mgr_1a4021097b868fa81e0b1cc0569e5ee46c" compoundref="_src_2_item_mgr_8cpp" startline="351" endline="378">doItemMergeCharge</references>
+        <references refid="_src_2_item_mgr_8cpp_1ad7b7ec3ebdaaadda0db7df42dff4540c" compoundref="_src_2_item_mgr_8cpp" startline="463" endline="543">FreshSkill</references>
+        <references refid="class_append_cost_table_mgr_1af5e0e493453a28fd4b7655f6eef1fe9e" compoundref="_append_cost__table_8cpp" startline="6" endline="13">AppendCostTableMgr::Get</references>
+        <references refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">TownItemTableMgr::Get</references>
+        <references refid="class_append_cost_table_mgr_1a12693d22f39ca8718d1584b8c8c3aec4" compoundref="_append_cost__table_8cpp" startline="31" endline="40">AppendCostTableMgr::GetAppendCostTableVec</references>
+        <references refid="class_se_player_1aa5e606a84bbefd5e8ca6c7c4f52367d5" compoundref="_world_server_2_src_2_se_player_8h" startline="234" endline="237">SePlayer::GetGold</references>
+        <references refid="class_table_res_array_1a080c4fecf9ee50c5638df5b4beb12d35" compoundref="_se_table_res_base_8cpp" startline="23" endline="26">TableResArray::getObjectAt</references>
+        <references refid="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" compoundref="_src_2_item_mgr_8h" startline="120" endline="120">GetOwner</references>
+        <references refid="class_table_res_array_1a53b10f9a82da7a6f5006536b9cee5252" compoundref="_se_table_res_base_8cpp" startline="28" endline="31">TableResArray::getSize</references>
+        <references refid="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" compoundref="_town_item__table_8cpp" startline="42" endline="50">TownItemTableMgr::GetTownItemTable</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa001094f9ac0334129916e84e0e8765af" compoundref="_se_ptl_comm_define_8h" startline="609">ITEM_DST_INDEX_ERROR</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa19ae5275a306cb765a69946771488ce3" compoundref="_se_ptl_comm_define_8h" startline="611">ITEM_DST_ITEM_NOT_FOUND</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa8cc508a59529a75bcf1c4486130be992" compoundref="_se_ptl_comm_define_8h" startline="618">ITEM_FRESHITEM_NOTEXIST</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baafb1a8fa951215eefc73989170bb935c8" compoundref="_se_ptl_comm_define_8h" startline="617">ITEM_FRESHITEM_WRONG_INDEX</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa694dff7321291361aa0f4e7d922dbadb" compoundref="_se_ptl_comm_define_8h" startline="613">ITEM_NOT_ENOUGH_MONEY</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75badf27507d7fb229b5babfa29ab5fe62e4" compoundref="_se_ptl_comm_define_8h" startline="323">ITEM_OPER_MOD</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baafe58a68edfe3dfbf06e3c11f38975d51" compoundref="_se_ptl_comm_define_8h" startline="620">ITEM_RESULT_FRESH_SRC_NOTENOUGH</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa0948d1c2f670047b615f1b91468de95c" compoundref="_se_ptl_comm_define_8h" startline="606">ITEM_RESULT_SUCCESS</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baae7c47ce31a7a57e94cd202e5105193c6" compoundref="_se_ptl_comm_define_8h" startline="619">ITEM_RESULT_TABLE_ERROR</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baad025e3f7ba60c02d988b8f83b8e98210" compoundref="_se_ptl_comm_define_8h" startline="629">ITEM_SERVER_INNER_ERROR</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baad3273420ac5ae333376de6455ed7b970" compoundref="_se_ptl_comm_define_8h" startline="621">ITEM_SRC_DST_ISSAME</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa3e29ae969f236592e438d8d73edfde59" compoundref="_se_ptl_comm_define_8h" startline="607">ITEM_SRC_INDEX_ERROR</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa2df89b2ab1aaa9a5ea0ba9cf167a2193" compoundref="_se_ptl_comm_define_8h" startline="610">ITEM_SRC_ITEM_NOT_FOUND</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa64ca22554b5f23f585ef637433aed954" compoundref="_se_ptl_comm_define_8h" startline="627">ITEM_SRC_NOT_EQUIP</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa4ba6801fb0ffa616f95a6f4268eff5de" compoundref="_se_ptl_comm_define_8h" startline="608">ITEM_SRC_WRONG_NUM</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa92e21feb06ddb8620a978fd82571d1d5" compoundref="_se_ptl_comm_define_8h" startline="615">ITEM_STRENTH_SRC_REPEATED</references>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa5d3696f49729457201e031a8ee147351" compoundref="_se_ptl_comm_define_8h" startline="44">SSD_MAX_ATTR_NUM</references>
+        <references refid="_town_item__table_8hpp_1a4a87ae9dae8583e9acda43ace84659cfab6de6094600654176fddb036c75799c4" compoundref="_town_item__table_8hpp" startline="14">TOWNITEM_CLASS_ZHUANGBEI</references>
+        <references refid="struct_town_item_table_1a50f128b2bc726da3161c11a9edb7787a" compoundref="_town_item__table_8hpp" startline="1170">TownItemTable::uiClass</references>
+        <references refid="struct_town_item_table_1aff8c8a5bfdf8a753e2900fc90b6218cb" compoundref="_town_item__table_8hpp" startline="1175">TownItemTable::uiLevel</references>
+        <referencedby refid="class_block_server_1a4a3a12868e4a706dc9f4b0b2fe60415e" compoundref="_src_2_se_t_b_l_process_8cpp" startline="58" endline="69">BlockServer::ProcessTBL_ReqItemCiTiaoChange</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a310acd889559341a8f360da79d3bf106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult CItemMgr::AddNewMultiItem</definition>
+        <argsstring>(const std::list&lt; DeposeStru &gt; &amp;itemlist, std::list&lt; CItem * &gt; &amp;items)</argsstring>
+        <name>AddNewMultiItem</name>
+        <param>
+          <type>const std::list&lt; <ref refid="struct_depose_stru" kindref="compound">DeposeStru</ref> &gt; &amp;</type>
+          <declname>itemlist</declname>
+        </param>
+        <param>
+          <type>std::list&lt; <ref refid="struct_c_item" kindref="compound">CItem</ref> * &gt; &amp;</type>
+          <declname>items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="129" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="809" bodyend="894"/>
+        <references refid="struct_c_item_1ae0fd632a7589df28e263da15e1024ca9" compoundref="_src_2_item_mgr_8h" startline="25">CItem::addedLevel</references>
+        <references refid="struct_c_item_1a2aec84c3c2b068d242e2cd406eeebee3" compoundref="_src_2_item_mgr_8h" startline="28">CItem::dwNewFlag</references>
+        <references refid="_d_b_server_2_src_2_char_item_strategy_8cpp_1af32aa6ad7e7465848c38712fe0bc7a99" compoundref="_d_b_server_2_src_2_char_item_strategy_8cpp" startline="3">g_kCharItemStrategy</references>
+        <references refid="_src_2_item_mgr_8cpp_1a5103eef4ff7ed5b5928aaaacde49140d" compoundref="_src_2_item_mgr_8cpp" startline="635" endline="690">GenerateAddedAttr</references>
+        <references refid="_src_2_item_mgr_8cpp_1a0d239e3019851bc899d583e7228f69c2" compoundref="_src_2_item_mgr_8cpp" startline="692" endline="728">GenerateAddedSkill</references>
+        <references refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">TownItemTableMgr::Get</references>
+        <references refid="class_c_item_mgr_1a669523960879aa5b9c37c30a36fb2b0a" compoundref="_src_2_item_mgr_8cpp" startline="730" endline="750">GetEmpySlotIndex</references>
+        <references refid="class_player_data_strategy_1a5f33fc51eb6066e5fe9545dd9e273a3a" compoundref="_world_server_2_src_2_player_data_strategy_8cpp" startline="22" endline="26">PlayerDataStrategy::getGenID</references>
+        <references refid="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" compoundref="_town_item__table_8cpp" startline="42" endline="50">TownItemTableMgr::GetTownItemTable</references>
+        <references refid="class_c_item_mgr_1a8dbd177bc924e97242ea98ed3d6dcd58" compoundref="_src_2_item_mgr_8cpp" startline="1051" endline="1055">insertItem</references>
+        <references refid="struct_town_item_table_1a9fb64259360349c974811b8129f744a5" compoundref="_town_item__table_8hpp" startline="1183">TownItemTable::iPileCount</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baac85a142b36149ba68441157ba295913c" compoundref="_se_ptl_comm_define_8h" startline="628">ITEM_BAG_SLOT_ISNOT_ENOUGH</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa19ae5275a306cb765a69946771488ce3" compoundref="_se_ptl_comm_define_8h" startline="611">ITEM_DST_ITEM_NOT_FOUND</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75ba0922172da39e6dc9479ad347d5a60458" compoundref="_se_ptl_comm_define_8h" startline="322">ITEM_OPER_INSERT</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75badf27507d7fb229b5babfa29ab5fe62e4" compoundref="_se_ptl_comm_define_8h" startline="323">ITEM_OPER_MOD</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa0948d1c2f670047b615f1b91468de95c" compoundref="_se_ptl_comm_define_8h" startline="606">ITEM_RESULT_SUCCESS</references>
+        <references refid="struct_c_item_1acbfbe03f5fbbb8ec184d0eb1f67400a6" compoundref="_src_2_item_mgr_8h" startline="26">CItem::LostTime</references>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="struct_c_item_1aeea3715c34978cec0a9b0c179eee1fe5" compoundref="_src_2_item_mgr_8h" startline="91" endline="91">CItem::SetOper</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa887c76af0dc223cf55132c965d6f9680" compoundref="_se_ptl_comm_define_8h" startline="39">SSD_BAG_ITEM_NUM</references>
+        <references refid="_town_item__table_8hpp_1a4a87ae9dae8583e9acda43ace84659cfab6de6094600654176fddb036c75799c4" compoundref="_town_item__table_8hpp" startline="14">TOWNITEM_CLASS_ZHUANGBEI</references>
+        <references refid="struct_c_item_1a12bcf483abb0a38f38c98faa3d9ab78c" compoundref="_src_2_item_mgr_8h" startline="23">CItem::ucIndex</references>
+        <references refid="struct_town_item_table_1a50f128b2bc726da3161c11a9edb7787a" compoundref="_town_item__table_8hpp" startline="1170">TownItemTable::uiClass</references>
+        <references refid="struct_c_item_1a2846eeb087de732805a73dbcc1219039" compoundref="_src_2_item_mgr_8h" startline="22">CItem::uiID</references>
+        <references refid="struct_c_item_1a32b9964f399b841ecb58f80fc0c06d8f" compoundref="_src_2_item_mgr_8h" startline="24">CItem::uiItemID</references>
+        <references refid="struct_c_item_1ab45430b05089de7146dc07fa7accf26e" compoundref="_src_2_item_mgr_8h" startline="27">CItem::uiOverLap</references>
+        <referencedby refid="class_c_item_mgr_1ae8e0377cde5732972c5869d98576ba1b" compoundref="_src_2_item_mgr_8cpp" startline="997" endline="1026">AddItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a323ebd3efe07f6f0b5ba60ceaf50db4a" compoundref="_src_2_item_mgr_8cpp" startline="896" endline="995">ItemDepart</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae2c680a6a6599c75076c85fcc9653bc5" compoundref="_src_2_item_mgr_8cpp" startline="1371" endline="1445">openRandBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a323ebd3efe07f6f0b5ba60ceaf50db4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult CItemMgr::ItemDepart</definition>
+        <argsstring>(Word DstPos)</argsstring>
+        <name>ItemDepart</name>
+        <param>
+          <type>Word</type>
+          <declname>DstPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="134" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="896" bodyend="995"/>
+        <references refid="class_c_item_mgr_1a310acd889559341a8f360da79d3bf106" compoundref="_src_2_item_mgr_8cpp" startline="809" endline="894">AddNewMultiItem</references>
+        <references refid="class_c_item_mgr_1a5428c3f3553f9869853b15e6fae0f28b" compoundref="_src_2_item_mgr_8cpp" startline="783" endline="807">CountNeedSlotNumByItemID</references>
+        <references refid="struct_depose_stru_1a3828ad002e24a80a165802312c96e996" compoundref="_src_2_world_server_def_8h" startline="219">DeposeStru::dwItemID</references>
+        <references refid="struct_depose_stru_1adddd55b2390f0faa39486b53d096d166" compoundref="_src_2_world_server_def_8h" startline="220">DeposeStru::dwNum</references>
+        <references refid="class_c_item_mgr_1ace527204142df63b0dbb14f4cffb5522" compoundref="_src_2_item_mgr_8cpp" startline="1045" endline="1049">eraseItem</references>
+        <references refid="class_decompose_table_mgr_1a47d572729be1db5d75e47635099fe9c9" compoundref="_decompose__table_8cpp" startline="6" endline="13">DecomposeTableMgr::Get</references>
+        <references refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">TownItemTableMgr::Get</references>
+        <references refid="class_decompose_table_mgr_1a54fab407332750397c47d5cf8625e22d" compoundref="_decompose__table_8cpp" startline="31" endline="40">DecomposeTableMgr::GetDecomposeTableVec</references>
+        <references refid="class_table_res_array_1a080c4fecf9ee50c5638df5b4beb12d35" compoundref="_se_table_res_base_8cpp" startline="23" endline="26">TableResArray::getObjectAt</references>
+        <references refid="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" compoundref="_src_2_item_mgr_8h" startline="120" endline="120">GetOwner</references>
+        <references refid="class_table_res_array_1a53b10f9a82da7a6f5006536b9cee5252" compoundref="_se_table_res_base_8cpp" startline="28" endline="31">TableResArray::getSize</references>
+        <references refid="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" compoundref="_town_item__table_8cpp" startline="42" endline="50">TownItemTableMgr::GetTownItemTable</references>
+        <references refid="struct_decompose_table_1a50941f5651dc71c392753764e2fab670" compoundref="_decompose__table_8hpp" startline="27">DecomposeTable::iItemCount1</references>
+        <references refid="struct_decompose_table_1a10d032d0e312481d56130e756b87d429" compoundref="_decompose__table_8hpp" startline="29">DecomposeTable::iItemCount2</references>
+        <references refid="struct_decompose_table_1a603944fc6a69f2ddd8771ca07b9a93fc" compoundref="_decompose__table_8hpp" startline="31">DecomposeTable::iItemCount3</references>
+        <references refid="struct_decompose_table_1a47cfb9bb5e29ecc75dc37ec2875f5c4a" compoundref="_decompose__table_8hpp" startline="33">DecomposeTable::iItemCount4</references>
+        <references refid="struct_decompose_table_1ad3c512e98dc13da9eef87dfbe048a157" compoundref="_decompose__table_8hpp" startline="35">DecomposeTable::iItemCount5</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baac85a142b36149ba68441157ba295913c" compoundref="_se_ptl_comm_define_8h" startline="628">ITEM_BAG_SLOT_ISNOT_ENOUGH</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75ba32be4eba0912ba1d2f7e0b194834e3e1" compoundref="_se_ptl_comm_define_8h" startline="324">ITEM_OPER_DEL</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa0948d1c2f670047b615f1b91468de95c" compoundref="_se_ptl_comm_define_8h" startline="606">ITEM_RESULT_SUCCESS</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baae7c47ce31a7a57e94cd202e5105193c6" compoundref="_se_ptl_comm_define_8h" startline="619">ITEM_RESULT_TABLE_ERROR</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baad025e3f7ba60c02d988b8f83b8e98210" compoundref="_se_ptl_comm_define_8h" startline="629">ITEM_SERVER_INNER_ERROR</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa3e29ae969f236592e438d8d73edfde59" compoundref="_se_ptl_comm_define_8h" startline="607">ITEM_SRC_INDEX_ERROR</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa2df89b2ab1aaa9a5ea0ba9cf167a2193" compoundref="_se_ptl_comm_define_8h" startline="610">ITEM_SRC_ITEM_NOT_FOUND</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa64ca22554b5f23f585ef637433aed954" compoundref="_se_ptl_comm_define_8h" startline="627">ITEM_SRC_NOT_EQUIP</references>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="class_c_item_mgr_1ab37ce0a46859c9a7af231c3934511a8d" compoundref="_src_2_item_mgr_8cpp" startline="135" endline="189">notiChangeItem</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa887c76af0dc223cf55132c965d6f9680" compoundref="_se_ptl_comm_define_8h" startline="39">SSD_BAG_ITEM_NUM</references>
+        <references refid="_town_item__table_8hpp_1a4a87ae9dae8583e9acda43ace84659cfab6de6094600654176fddb036c75799c4" compoundref="_town_item__table_8hpp" startline="14">TOWNITEM_CLASS_ZHUANGBEI</references>
+        <references refid="struct_town_item_table_1a50f128b2bc726da3161c11a9edb7787a" compoundref="_town_item__table_8hpp" startline="1170">TownItemTable::uiClass</references>
+        <references refid="struct_decompose_table_1a9787e2390544fe7563a99c2bef2f8bb1" compoundref="_decompose__table_8hpp" startline="26">DecomposeTable::uiDecomposeItem1</references>
+        <references refid="struct_decompose_table_1a23b1e5657b1c292dbf8ed77e40734172" compoundref="_decompose__table_8hpp" startline="28">DecomposeTable::uiDecomposeItem2</references>
+        <references refid="struct_decompose_table_1a8e9abf8780545790d3eef8584b7ca20d" compoundref="_decompose__table_8hpp" startline="30">DecomposeTable::uiDecomposeItem3</references>
+        <references refid="struct_decompose_table_1a00c4007bf68685d60a90b923e354a163" compoundref="_decompose__table_8hpp" startline="32">DecomposeTable::uiDecomposeItem4</references>
+        <references refid="struct_decompose_table_1a4db41cd1dc4f9c1421b19ffe01451467" compoundref="_decompose__table_8hpp" startline="34">DecomposeTable::uiDecomposeItem5</references>
+        <references refid="struct_town_item_table_1aff8c8a5bfdf8a753e2900fc90b6218cb" compoundref="_town_item__table_8hpp" startline="1175">TownItemTable::uiLevel</references>
+        <references refid="struct_decompose_table_1a7599108bbf558a3ccf9eca54fb4c74a9" compoundref="_decompose__table_8hpp" startline="25">DecomposeTable::uiQualityType</references>
+        <referencedby refid="class_block_server_1a316ce367adb9c8323fe173861ebc9985" compoundref="_src_2_se_t_b_l_process_8cpp" startline="71" endline="82">BlockServer::ProcessTBL_ReqItemDepart</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a1578c6a5fa4ec12cb06f57031239877e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t CItemMgr::GetExistItemIndex</definition>
+        <argsstring>(uint32_t ItemID, uint32_t &amp;itemcount)</argsstring>
+        <name>GetExistItemIndex</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ItemID</declname>
+        </param>
+        <param>
+          <type>uint32_t &amp;</type>
+          <declname>itemcount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="136" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="752" bodyend="780"/>
+        <references refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">TownItemTableMgr::Get</references>
+        <references refid="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" compoundref="_town_item__table_8cpp" startline="42" endline="50">TownItemTableMgr::GetTownItemTable</references>
+        <references refid="struct_town_item_table_1a9fb64259360349c974811b8129f744a5" compoundref="_town_item__table_8hpp" startline="1183">TownItemTable::iPileCount</references>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa887c76af0dc223cf55132c965d6f9680" compoundref="_se_ptl_comm_define_8h" startline="39">SSD_BAG_ITEM_NUM</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a5428c3f3553f9869853b15e6fae0f28b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t CItemMgr::CountNeedSlotNumByItemID</definition>
+        <argsstring>(DeposeStru &amp;item)</argsstring>
+        <name>CountNeedSlotNumByItemID</name>
+        <param>
+          <type><ref refid="struct_depose_stru" kindref="compound">DeposeStru</ref> &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="137" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="783" bodyend="807"/>
+        <references refid="struct_depose_stru_1a3828ad002e24a80a165802312c96e996" compoundref="_src_2_world_server_def_8h" startline="219">DeposeStru::dwItemID</references>
+        <references refid="struct_depose_stru_1adddd55b2390f0faa39486b53d096d166" compoundref="_src_2_world_server_def_8h" startline="220">DeposeStru::dwNum</references>
+        <references refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">TownItemTableMgr::Get</references>
+        <references refid="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" compoundref="_town_item__table_8cpp" startline="42" endline="50">TownItemTableMgr::GetTownItemTable</references>
+        <references refid="struct_town_item_table_1a9fb64259360349c974811b8129f744a5" compoundref="_town_item__table_8hpp" startline="1183">TownItemTable::iPileCount</references>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa887c76af0dc223cf55132c965d6f9680" compoundref="_se_ptl_comm_define_8h" startline="39">SSD_BAG_ITEM_NUM</references>
+        <referencedby refid="class_c_item_mgr_1ae8e0377cde5732972c5869d98576ba1b" compoundref="_src_2_item_mgr_8cpp" startline="997" endline="1026">AddItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a323ebd3efe07f6f0b5ba60ceaf50db4a" compoundref="_src_2_item_mgr_8cpp" startline="896" endline="995">ItemDepart</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae2c680a6a6599c75076c85fcc9653bc5" compoundref="_src_2_item_mgr_8cpp" startline="1371" endline="1445">openRandBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ae8e0377cde5732972c5869d98576ba1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult CItemMgr::AddItem</definition>
+        <argsstring>(uint32_t ItemID, int32_t num)</argsstring>
+        <name>AddItem</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ItemID</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="138" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="997" bodyend="1026"/>
+        <references refid="class_c_item_mgr_1a310acd889559341a8f360da79d3bf106" compoundref="_src_2_item_mgr_8cpp" startline="809" endline="894">AddNewMultiItem</references>
+        <references refid="class_c_item_mgr_1a5428c3f3553f9869853b15e6fae0f28b" compoundref="_src_2_item_mgr_8cpp" startline="783" endline="807">CountNeedSlotNumByItemID</references>
+        <references refid="struct_depose_stru_1a3828ad002e24a80a165802312c96e996" compoundref="_src_2_world_server_def_8h" startline="219">DeposeStru::dwItemID</references>
+        <references refid="struct_depose_stru_1adddd55b2390f0faa39486b53d096d166" compoundref="_src_2_world_server_def_8h" startline="220">DeposeStru::dwNum</references>
+        <references refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">TownItemTableMgr::Get</references>
+        <references refid="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" compoundref="_src_2_item_mgr_8h" startline="120" endline="120">GetOwner</references>
+        <references refid="class_se_player_1ac49c55fb5c3e446a411eb86b2e392d00" compoundref="_world_server_2_src_2_se_player_8cpp" startline="441" endline="444">SePlayer::getTaskMgr</references>
+        <references refid="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" compoundref="_town_item__table_8cpp" startline="42" endline="50">TownItemTableMgr::GetTownItemTable</references>
+        <references refid="struct_town_item_table_1a9fb64259360349c974811b8129f744a5" compoundref="_town_item__table_8hpp" startline="1183">TownItemTable::iPileCount</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baac85a142b36149ba68441157ba295913c" compoundref="_se_ptl_comm_define_8h" startline="628">ITEM_BAG_SLOT_ISNOT_ENOUGH</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa19ae5275a306cb765a69946771488ce3" compoundref="_se_ptl_comm_define_8h" startline="611">ITEM_DST_ITEM_NOT_FOUND</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa0948d1c2f670047b615f1b91468de95c" compoundref="_se_ptl_comm_define_8h" startline="606">ITEM_RESULT_SUCCESS</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baae7c47ce31a7a57e94cd202e5105193c6" compoundref="_se_ptl_comm_define_8h" startline="619">ITEM_RESULT_TABLE_ERROR</references>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="class_c_item_mgr_1ab37ce0a46859c9a7af231c3934511a8d" compoundref="_src_2_item_mgr_8cpp" startline="135" endline="189">notiChangeItem</references>
+        <references refid="class_task_mgr_1ac2a56ec4804bb04827ce5156ba416e15" compoundref="_src_2_task_mgr_8cpp" startline="713" endline="867">TaskMgr::SettleTask</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa887c76af0dc223cf55132c965d6f9680" compoundref="_se_ptl_comm_define_8h" startline="39">SSD_BAG_ITEM_NUM</references>
+        <references refid="_task_info__table_8hpp_1ac317a181114be8a78a3aee4b2398c940acb324b91f527cfb2f1fd1962b211e13b" compoundref="_task_info__table_8hpp" startline="63">TASKINFO_CONDITON_JIESUOPIFU</references>
+        <references refid="_town_item__table_8hpp_1a4a87ae9dae8583e9acda43ace84659cfaa360a894c11cbf99570b4b6fe11bbdda" compoundref="_town_item__table_8hpp" startline="20">TOWNITEM_CLASS_PIFU</references>
+        <references refid="struct_town_item_table_1a50f128b2bc726da3161c11a9edb7787a" compoundref="_town_item__table_8hpp" startline="1170">TownItemTable::uiClass</references>
+        <referencedby refid="class_c_shop_1af16d650a4e31be0dafdbc3495485ef1c" compoundref="_src_2_shop_8cpp" startline="171" endline="244">CShop::BuyItem</referencedby>
+        <referencedby refid="class_c_shop_1a663f5c6d1730e05821feab8055a7b962" compoundref="_src_2_shop_8cpp" startline="421" endline="505">CShop::CurrencyBuyItem_Diamond</referencedby>
+        <referencedby refid="class_c_shop_1a009df25456150f7a7ffcf66732bdc3a1" compoundref="_src_2_shop_8cpp" startline="338" endline="419">CShop::CurrencyBuyItem_Gold</referencedby>
+        <referencedby refid="class_task_mgr_1abac2b7ce1997430fe49b2dca3fb6c1dd" compoundref="_src_2_task_mgr_8cpp" startline="116" endline="165">TaskMgr::GetTaskReward</referencedby>
+        <referencedby refid="class_hero_mgr_1a187ef4a0b379c47d56ceb65d1b4c5f51" compoundref="_src_2_hero_mgr_8cpp" startline="204" endline="217">HeroMgr::processAddHeroBindItem</referencedby>
+        <referencedby refid="class_block_server_1a943664d743a604ff5db68b869136734c" compoundref="_src_2_se_r_b_l_process_8cpp" startline="124" endline="137">BlockServer::ProcessRBL_AwardItemNtf</referencedby>
+        <referencedby refid="class_block_server_1a4c9243c188fb6550b19d56ee6b3f3248" compoundref="_src_2_se_t_b_l_process_8cpp" startline="84" endline="95">BlockServer::ProcessTBL_GMAddItem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ac777e83c23b5865e42bced4e9a86f215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult CItemMgr::DeleteItem</definition>
+        <argsstring>(Word dstpos)</argsstring>
+        <name>DeleteItem</name>
+        <param>
+          <type>Word</type>
+          <declname>dstpos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="139" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="1028" bodyend="1043"/>
+        <references refid="class_c_item_mgr_1ace527204142df63b0dbb14f4cffb5522" compoundref="_src_2_item_mgr_8cpp" startline="1045" endline="1049">eraseItem</references>
+        <references refid="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" compoundref="_src_2_item_mgr_8h" startline="120" endline="120">GetOwner</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa001094f9ac0334129916e84e0e8765af" compoundref="_se_ptl_comm_define_8h" startline="609">ITEM_DST_INDEX_ERROR</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75ba32be4eba0912ba1d2f7e0b194834e3e1" compoundref="_se_ptl_comm_define_8h" startline="324">ITEM_OPER_DEL</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa0948d1c2f670047b615f1b91468de95c" compoundref="_se_ptl_comm_define_8h" startline="606">ITEM_RESULT_SUCCESS</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baad025e3f7ba60c02d988b8f83b8e98210" compoundref="_se_ptl_comm_define_8h" startline="629">ITEM_SERVER_INNER_ERROR</references>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="class_c_item_mgr_1ab37ce0a46859c9a7af231c3934511a8d" compoundref="_src_2_item_mgr_8cpp" startline="135" endline="189">notiChangeItem</references>
+        <referencedby refid="class_block_server_1afbb7f81c025e58f6855b422dd7ab84d7" compoundref="_src_2_se_t_b_l_process_8cpp" startline="97" endline="108">BlockServer::ProcessTBL_DelelteItem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ae2c680a6a6599c75076c85fcc9653bc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult CItemMgr::openRandBox</definition>
+        <argsstring>(Word wPos, std::vector&lt; SeRandBoxItem &gt; &amp;boxItems)</argsstring>
+        <name>openRandBox</name>
+        <param>
+          <type>Word</type>
+          <declname>wPos</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_se_rand_box_item" kindref="compound">SeRandBoxItem</ref> &gt; &amp;</type>
+          <declname>boxItems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="140" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="1371" bodyend="1445"/>
+        <references refid="class_c_item_mgr_1a310acd889559341a8f360da79d3bf106" compoundref="_src_2_item_mgr_8cpp" startline="809" endline="894">AddNewMultiItem</references>
+        <references refid="class_c_item_mgr_1a5428c3f3553f9869853b15e6fae0f28b" compoundref="_src_2_item_mgr_8cpp" startline="783" endline="807">CountNeedSlotNumByItemID</references>
+        <references refid="struct_se_rand_box_item_1a052ec9547c23ca58c4c39a66b519f709" compoundref="_se_ptl_comm_define_8h" startline="2102">SeRandBoxItem::dwItemID</references>
+        <references refid="struct_se_rand_box_item_1a016633a908fab05108c65356db94cedd" compoundref="_se_ptl_comm_define_8h" startline="2103">SeRandBoxItem::dwNum</references>
+        <references refid="class_c_item_mgr_1ace527204142df63b0dbb14f4cffb5522" compoundref="_src_2_item_mgr_8cpp" startline="1045" endline="1049">eraseItem</references>
+        <references refid="_match_server_2_src_2_se_res_mgr_8cpp_1a1d56b960d47745477c9312778d48e65c" compoundref="_match_server_2_src_2_se_res_mgr_8cpp" startline="4">g_kResMgr</references>
+        <references refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">TownItemTableMgr::Get</references>
+        <references refid="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" compoundref="_src_2_item_mgr_8h" startline="120" endline="120">GetOwner</references>
+        <references refid="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" compoundref="_town_item__table_8cpp" startline="42" endline="50">TownItemTableMgr::GetTownItemTable</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baac85a142b36149ba68441157ba295913c" compoundref="_se_ptl_comm_define_8h" startline="628">ITEM_BAG_SLOT_ISNOT_ENOUGH</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa81c3d1f21eba40fd5724c1919e09b48f" compoundref="_se_ptl_comm_define_8h" startline="639">ITEM_NOT_RANDBOX</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75ba32be4eba0912ba1d2f7e0b194834e3e1" compoundref="_se_ptl_comm_define_8h" startline="324">ITEM_OPER_DEL</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75badf27507d7fb229b5babfa29ab5fe62e4" compoundref="_se_ptl_comm_define_8h" startline="323">ITEM_OPER_MOD</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa0948d1c2f670047b615f1b91468de95c" compoundref="_se_ptl_comm_define_8h" startline="606">ITEM_RESULT_SUCCESS</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baae7c47ce31a7a57e94cd202e5105193c6" compoundref="_se_ptl_comm_define_8h" startline="619">ITEM_RESULT_TABLE_ERROR</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baad025e3f7ba60c02d988b8f83b8e98210" compoundref="_se_ptl_comm_define_8h" startline="629">ITEM_SERVER_INNER_ERROR</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa3e29ae969f236592e438d8d73edfde59" compoundref="_se_ptl_comm_define_8h" startline="607">ITEM_SRC_INDEX_ERROR</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa2df89b2ab1aaa9a5ea0ba9cf167a2193" compoundref="_se_ptl_comm_define_8h" startline="610">ITEM_SRC_ITEM_NOT_FOUND</references>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="class_c_item_mgr_1ab37ce0a46859c9a7af231c3934511a8d" compoundref="_src_2_item_mgr_8cpp" startline="135" endline="189">notiChangeItem</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="struct_c_item_1aeea3715c34978cec0a9b0c179eee1fe5" compoundref="_src_2_item_mgr_8h" startline="91" endline="91">CItem::SetOper</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa887c76af0dc223cf55132c965d6f9680" compoundref="_se_ptl_comm_define_8h" startline="39">SSD_BAG_ITEM_NUM</references>
+        <references refid="_town_item__table_8hpp_1a4a87ae9dae8583e9acda43ace84659cfa2f7758f77f2bd600f75a9016adfd5edc" compoundref="_town_item__table_8hpp" startline="21">TOWNITEM_CLASS_BAOXIANG</references>
+        <references refid="struct_town_item_table_1a50f128b2bc726da3161c11a9edb7787a" compoundref="_town_item__table_8hpp" startline="1170">TownItemTable::uiClass</references>
+        <references refid="struct_c_item_1a32b9964f399b841ecb58f80fc0c06d8f" compoundref="_src_2_item_mgr_8h" startline="24">CItem::uiItemID</references>
+        <references refid="struct_c_item_1ab45430b05089de7146dc07fa7accf26e" compoundref="_src_2_item_mgr_8h" startline="27">CItem::uiOverLap</references>
+        <referencedby refid="class_block_server_1ac1662b50df4fed9358489bc9d37674a8" compoundref="_src_2_se_t_b_l_process_8cpp" startline="137" endline="149">BlockServer::ProcessTBL_OpenRandBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a49bd2747343cd9bd277e54b222532ae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult CItemMgr::clearItemNewFlag</definition>
+        <argsstring>(int iNum, Word PosArray[])</argsstring>
+        <name>clearItemNewFlag</name>
+        <param>
+          <type>int</type>
+          <declname>iNum</declname>
+        </param>
+        <param>
+          <type>Word</type>
+          <declname>PosArray</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="141" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="1447" bodyend="1469"/>
+        <references refid="struct_c_item_1a2aec84c3c2b068d242e2cd406eeebee3" compoundref="_src_2_item_mgr_8h" startline="28">CItem::dwNewFlag</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75badf27507d7fb229b5babfa29ab5fe62e4" compoundref="_se_ptl_comm_define_8h" startline="323">ITEM_OPER_MOD</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa0948d1c2f670047b615f1b91468de95c" compoundref="_se_ptl_comm_define_8h" startline="606">ITEM_RESULT_SUCCESS</references>
+        <references refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978baa3e29ae969f236592e438d8d73edfde59" compoundref="_se_ptl_comm_define_8h" startline="607">ITEM_SRC_INDEX_ERROR</references>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="class_c_item_mgr_1ab37ce0a46859c9a7af231c3934511a8d" compoundref="_src_2_item_mgr_8cpp" startline="135" endline="189">notiChangeItem</references>
+        <referencedby refid="class_block_server_1a87fadc14fd6a889fe6e572fb4e4ff7d0" compoundref="_src_2_se_t_b_l_process_8cpp" startline="151" endline="161">BlockServer::ProcessTBL_ClearItemNewFlag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ae46cfb3d7664beb10d52a125fb7d0e1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_c_item" kindref="compound">CItem</ref> *</type>
+        <definition>CItem * CItemMgr::getItem</definition>
+        <argsstring>(DWord dwID)</argsstring>
+        <name>getItem</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="144" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="1345" bodyend="1356"/>
+        <references refid="class_c_item_mgr_1a23833b420138ffa598159af18b233218" compoundref="_src_2_item_mgr_8h" startline="181">m_idMap</references>
+        <referencedby refid="class_active_avatar_mgr_1a4866ecf9df83db3cc2056d57dd530207" compoundref="_src_2_active_avatar_mgr_8cpp" startline="34" endline="50">ActiveAvatarMgr::fixData</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1ab5bd5a01b4414f19fee5a5471b1d7e00" compoundref="_src_2_equip_schema_mgr_8cpp" startline="77" endline="118">EquipSchemaMgr::fixData</referencedby>
+        <referencedby refid="class_hero_mgr_1abf15e2273f2e65398ec2aa335b1ed6c8" compoundref="_src_2_hero_mgr_8cpp" startline="125" endline="152">HeroMgr::fixData</referencedby>
+        <referencedby refid="class_active_avatar_mgr_1ac71a8c1afaaee33ee1738783827f4e52" compoundref="_src_2_active_avatar_mgr_8cpp" startline="103" endline="117">ActiveAvatarMgr::getAvatars</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1a61525fa1de33e3174993eabe1deed139" compoundref="_src_2_equip_schema_mgr_8cpp" startline="256" endline="284">EquipSchemaMgr::getEquips</referencedby>
+        <referencedby refid="class_equip_schema_mgr_1a8bd817c291f391e01a86119700e5590a" compoundref="_src_2_equip_schema_mgr_8cpp" startline="154" endline="191">EquipSchemaMgr::putOnEquip</referencedby>
+        <referencedby refid="class_active_avatar_mgr_1a49076d6bca16c4775866e0a4747cbf64" compoundref="_src_2_active_avatar_mgr_8cpp" startline="71" endline="101">ActiveAvatarMgr::setActiveAvatar</referencedby>
+        <referencedby refid="class_hero_mgr_1a5a73b3c804087d226e3ce35291f7cdd4" compoundref="_src_2_hero_mgr_8cpp" startline="261" endline="282">HeroMgr::setAvatar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a2cea785f02476a715323bd3e7aa67caf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_c_item" kindref="compound">CItem</ref> *</type>
+        <definition>CItem * CItemMgr::getItem</definition>
+        <argsstring>(Word wPos)</argsstring>
+        <name>getItem</name>
+        <param>
+          <type>Word</type>
+          <declname>wPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="146" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="1358" bodyend="1369"/>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1abf7f3fd749d2e0bbe9ccb60c2c1d934c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord CItemMgr::getRespawnItemCount</definition>
+        <argsstring>()</argsstring>
+        <name>getRespawnItemCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="149" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="1471" bodyend="1489"/>
+        <references refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">TownItemTableMgr::Get</references>
+        <references refid="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" compoundref="_town_item__table_8cpp" startline="42" endline="50">TownItemTableMgr::GetTownItemTable</references>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="_town_item__table_8hpp_1a4a87ae9dae8583e9acda43ace84659cfad80dd37836386f140eb3c795478a4073" compoundref="_town_item__table_8hpp" startline="23">TOWNITEM_CLASS_FUHUODAN</references>
+        <references refid="struct_town_item_table_1a50f128b2bc726da3161c11a9edb7787a" compoundref="_town_item__table_8hpp" startline="1170">TownItemTable::uiClass</references>
+        <references refid="struct_c_item_1a32b9964f399b841ecb58f80fc0c06d8f" compoundref="_src_2_item_mgr_8h" startline="24">CItem::uiItemID</references>
+        <references refid="struct_c_item_1ab45430b05089de7146dc07fa7accf26e" compoundref="_src_2_item_mgr_8h" startline="27">CItem::uiOverLap</references>
+        <referencedby refid="class_block_server_1a1bded5892dcafcabdd012d472b6113ed" compoundref="_src_2_se_m_b_l_process_8cpp" startline="14" endline="43">BlockServer::ProcessMBL_RaceMatchLoadDetail</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a248caadff7a02818823523daa027dfa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::decRespawnItem</definition>
+        <argsstring>()</argsstring>
+        <name>decRespawnItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="151" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="1491" bodyend="1520"/>
+        <references refid="class_c_item_mgr_1ace527204142df63b0dbb14f4cffb5522" compoundref="_src_2_item_mgr_8cpp" startline="1045" endline="1049">eraseItem</references>
+        <references refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">TownItemTableMgr::Get</references>
+        <references refid="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" compoundref="_town_item__table_8cpp" startline="42" endline="50">TownItemTableMgr::GetTownItemTable</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75ba32be4eba0912ba1d2f7e0b194834e3e1" compoundref="_se_ptl_comm_define_8h" startline="324">ITEM_OPER_DEL</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75badf27507d7fb229b5babfa29ab5fe62e4" compoundref="_se_ptl_comm_define_8h" startline="323">ITEM_OPER_MOD</references>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="class_c_item_mgr_1ab37ce0a46859c9a7af231c3934511a8d" compoundref="_src_2_item_mgr_8cpp" startline="135" endline="189">notiChangeItem</references>
+        <references refid="struct_c_item_1aeea3715c34978cec0a9b0c179eee1fe5" compoundref="_src_2_item_mgr_8h" startline="91" endline="91">CItem::SetOper</references>
+        <references refid="_town_item__table_8hpp_1a4a87ae9dae8583e9acda43ace84659cfad80dd37836386f140eb3c795478a4073" compoundref="_town_item__table_8hpp" startline="23">TOWNITEM_CLASS_FUHUODAN</references>
+        <references refid="struct_town_item_table_1a50f128b2bc726da3161c11a9edb7787a" compoundref="_town_item__table_8hpp" startline="1170">TownItemTable::uiClass</references>
+        <references refid="struct_c_item_1a32b9964f399b841ecb58f80fc0c06d8f" compoundref="_src_2_item_mgr_8h" startline="24">CItem::uiItemID</references>
+        <references refid="struct_c_item_1ab45430b05089de7146dc07fa7accf26e" compoundref="_src_2_item_mgr_8h" startline="27">CItem::uiOverLap</references>
+        <referencedby refid="class_block_server_1a6160d5ba4800d785d1406dda21184089" compoundref="_src_2_se_r_b_l_process_8cpp" startline="139" endline="149">BlockServer::ProcessRBL_DecRespawnItemNtf</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ae30d35df373466d539c1cb8f6c34b71d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::getSelectableAvatars</definition>
+        <argsstring>(const VecSelHeroInfo &amp;akHeroList, VPtlAvatar &amp;akAvatars)</argsstring>
+        <name>getSelectableAvatars</name>
+        <param>
+          <type>const <ref refid="_se_ptl_define_8h_1a12bdaa0cb091a7fd8b770f73cc23b3bd" kindref="member">VecSelHeroInfo</ref> &amp;</type>
+          <declname>akHeroList</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_ptl_define_8h_1a6ef71b81bd29e8e8027d3f143092603e" kindref="member">VPtlAvatar</ref> &amp;</type>
+          <declname>akAvatars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="152" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="1524" bodyend="1558"/>
+        <references refid="struct_se_ptl_avatar_1a4b908db8870718cc5902861385806d4b" compoundref="_se_ptl_define_8h" startline="253">SePtlAvatar::dwItemID</references>
+        <references refid="struct_se_ptl_avatar_1a13bdf70c899411bbee7cb3103b1993b7" compoundref="_se_ptl_define_8h" startline="254">SePtlAvatar::dwItemTypeID</references>
+        <references refid="class_avatar_table_mgr_1a3477b4d229f1d71f2e2c1e5051e020f6" compoundref="_avatar__table_8cpp" startline="6" endline="13">AvatarTableMgr::Get</references>
+        <references refid="class_town_item_table_mgr_1ad2d70f51ce3706f06d55deea4abaaa00" compoundref="_town_item__table_8cpp" startline="6" endline="13">TownItemTableMgr::Get</references>
+        <references refid="class_avatar_table_mgr_1a4de3be4c96e1f7c08f15fedd7e3573ed" compoundref="_avatar__table_8cpp" startline="42" endline="50">AvatarTableMgr::GetAvatarTable</references>
+        <references refid="class_town_item_table_mgr_1a98db4b93a085b2278cd0f5f6cf32bed8" compoundref="_town_item__table_8cpp" startline="42" endline="50">TownItemTableMgr::GetTownItemTable</references>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="_town_item__table_8hpp_1a4a87ae9dae8583e9acda43ace84659cfa0abf6166c3fa1e54960cc33f0b3f3412" compoundref="_town_item__table_8hpp" startline="24">TOWNITEM_CLASS_ZHUANGBAN</references>
+        <references refid="struct_town_item_table_1a50f128b2bc726da3161c11a9edb7787a" compoundref="_town_item__table_8hpp" startline="1170">TownItemTable::uiClass</references>
+        <references refid="struct_avatar_table_1ae3f13e91c0dcf2dd048d81ad5c280226" compoundref="_avatar__table_8hpp" startline="52">AvatarTable::uiHeroID</references>
+        <references refid="struct_c_item_1a2846eeb087de732805a73dbcc1219039" compoundref="_src_2_item_mgr_8h" startline="22">CItem::uiID</references>
+        <references refid="struct_c_item_1a32b9964f399b841ecb58f80fc0c06d8f" compoundref="_src_2_item_mgr_8h" startline="24">CItem::uiItemID</references>
+        <referencedby refid="class_block_server_1a1bded5892dcafcabdd012d472b6113ed" compoundref="_src_2_se_m_b_l_process_8cpp" startline="14" endline="43">BlockServer::ProcessMBL_RaceMatchLoadDetail</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a6fe8e813282ac14a6b7e964b8bec5d52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CItemMgr::CheckOwnerItem</definition>
+        <argsstring>(uint32_t ItemID)</argsstring>
+        <name>CheckOwnerItem</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ItemID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="154" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="1123" bodyend="1130"/>
+        <references refid="class_c_item_mgr_1ada634e5a389391fbf158f928e449844e" compoundref="_src_2_item_mgr_8cpp" startline="66" endline="81">GetItemCountByID</references>
+        <referencedby refid="class_c_shop_1a33b095c4327223c8e688dcfb91fc65c8" compoundref="_src_2_shop_8cpp" startline="529" endline="537">CShop::CheckSoleItem</referencedby>
+        <referencedby refid="class_block_server_1aae8eea54996be439672b6e569a2db5b1" compoundref="_src_2_se_w_b_l_process_8cpp" startline="694" endline="726">BlockServer::ProcessWBL_UserAlterNickNameReq</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1afa90610e1b62ab27e1a3641f12944e76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CItemMgr::CItemMgr</definition>
+        <argsstring>()</argsstring>
+        <name>CItemMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ae8767fb60af3596f960a1f87947c9e81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CItemMgr::~CItemMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~CItemMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a87a78d8e3ef7acf5ee9f1c22b8a87716" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CItemMgr::loadData</definition>
+        <argsstring>(const SeDBCharItem &amp;obj)</argsstring>
+        <name>loadData</name>
+        <reimplements refid="class_data_mgr_1a19fd585291b3911a1f43d63dfbcc71c6">loadData</reimplements>
+        <param>
+          <type>const SeDBCharItem &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a507cb0c1b03a411586a8a1f0513d4438" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::PackAllItem</definition>
+        <argsstring>()</argsstring>
+        <name>PackAllItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a1fedb76f7f3aeb6364c74a36e944932b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::Update</definition>
+        <argsstring>(DWord dwCurTime)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwCurTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ada634e5a389391fbf158f928e449844e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t CItemMgr::GetItemCountByID</definition>
+        <argsstring>(uint32_t uiItemID)</argsstring>
+        <name>GetItemCountByID</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>uiItemID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1af517156c7d55fa16812ef09d8d5f3926" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::SetOwner</definition>
+        <argsstring>(SePlayer *pOwner)</argsstring>
+        <name>SetOwner</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> *</type>
+          <declname>pOwner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="119" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" bodystart="119" bodyend="119"/>
+        <references refid="class_c_item_mgr_1a6f92f342f5bc5cc97f0063cdffbe4074" compoundref="_src_2_item_mgr_8h" startline="183">m_pOwner</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> *</type>
+        <definition>SePlayer* CItemMgr::GetOwner</definition>
+        <argsstring>()</argsstring>
+        <name>GetOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="120" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" bodystart="120" bodyend="120"/>
+        <references refid="class_c_item_mgr_1a6f92f342f5bc5cc97f0063cdffbe4074" compoundref="_src_2_item_mgr_8h" startline="183">m_pOwner</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a42da54f383ba4e19914e723d63e24e89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult CItemMgr::StrenthEquip</definition>
+        <argsstring>(Word SrcPos, int32_t iNum, Word DstPos[])</argsstring>
+        <name>StrenthEquip</name>
+        <param>
+          <type>Word</type>
+          <declname>SrcPos</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>iNum</declname>
+        </param>
+        <param>
+          <type>Word</type>
+          <declname>DstPos</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1af5880cf904902fd27716bf920ade1c88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult CItemMgr::ChangeCiTiao</definition>
+        <argsstring>(Word SrcPos, uint32_t iCiTiaoIndex, uint32_t uiNum, bool bLock, Word SrcPosArray[])</argsstring>
+        <name>ChangeCiTiao</name>
+        <param>
+          <type>Word</type>
+          <declname>SrcPos</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>iCiTiaoIndex</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>uiNum</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bLock</declname>
+        </param>
+        <param>
+          <type>Word</type>
+          <declname>SrcPosArray</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a310acd889559341a8f360da79d3bf106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult CItemMgr::AddNewMultiItem</definition>
+        <argsstring>(const std::list&lt; DeposeStru &gt; &amp;itemlist, std::list&lt; CItem * &gt; &amp;items)</argsstring>
+        <name>AddNewMultiItem</name>
+        <param>
+          <type>const std::list&lt; <ref refid="struct_depose_stru" kindref="compound">DeposeStru</ref> &gt; &amp;</type>
+          <declname>itemlist</declname>
+        </param>
+        <param>
+          <type>std::list&lt; <ref refid="struct_c_item" kindref="compound">CItem</ref> * &gt; &amp;</type>
+          <declname>items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a323ebd3efe07f6f0b5ba60ceaf50db4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult CItemMgr::ItemDepart</definition>
+        <argsstring>(Word DstPos)</argsstring>
+        <name>ItemDepart</name>
+        <param>
+          <type>Word</type>
+          <declname>DstPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a1578c6a5fa4ec12cb06f57031239877e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t CItemMgr::GetExistItemIndex</definition>
+        <argsstring>(uint32_t ItemID, uint32_t &amp;itemcount)</argsstring>
+        <name>GetExistItemIndex</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ItemID</declname>
+        </param>
+        <param>
+          <type>uint32_t &amp;</type>
+          <declname>itemcount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a5428c3f3553f9869853b15e6fae0f28b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t CItemMgr::CountNeedSlotNumByItemID</definition>
+        <argsstring>(DeposeStru &amp;item)</argsstring>
+        <name>CountNeedSlotNumByItemID</name>
+        <param>
+          <type><ref refid="struct_depose_stru" kindref="compound">DeposeStru</ref> &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ae8e0377cde5732972c5869d98576ba1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult CItemMgr::AddItem</definition>
+        <argsstring>(uint32_t ItemID, int32_t num)</argsstring>
+        <name>AddItem</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ItemID</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ac777e83c23b5865e42bced4e9a86f215" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult CItemMgr::DeleteItem</definition>
+        <argsstring>(Word dstpos)</argsstring>
+        <name>DeleteItem</name>
+        <param>
+          <type>Word</type>
+          <declname>dstpos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ae2c680a6a6599c75076c85fcc9653bc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult CItemMgr::openRandBox</definition>
+        <argsstring>(Word wPos, std::vector&lt; SeRandBoxItem &gt; &amp;boxItems)</argsstring>
+        <name>openRandBox</name>
+        <param>
+          <type>Word</type>
+          <declname>wPos</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_se_rand_box_item" kindref="compound">SeRandBoxItem</ref> &gt; &amp;</type>
+          <declname>boxItems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a49bd2747343cd9bd277e54b222532ae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a540e1bcd3c8b52866cb3e723298978ba" kindref="member">SeItemResult</ref></type>
+        <definition>SeItemResult CItemMgr::clearItemNewFlag</definition>
+        <argsstring>(int iNum, Word PosArray[])</argsstring>
+        <name>clearItemNewFlag</name>
+        <param>
+          <type>int</type>
+          <declname>iNum</declname>
+        </param>
+        <param>
+          <type>Word</type>
+          <declname>PosArray</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a35a76935dfd2c048792c814ab2e66bb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_c_item" kindref="compound">CItem</ref> *</type>
+        <definition>CItem* CItemMgr::getItem</definition>
+        <argsstring>(DWord dwID)</argsstring>
+        <name>getItem</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a68ffbecd84555990d78c51fd687962fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_c_item" kindref="compound">CItem</ref> *</type>
+        <definition>CItem* CItemMgr::getItem</definition>
+        <argsstring>(Word wPos)</argsstring>
+        <name>getItem</name>
+        <param>
+          <type>Word</type>
+          <declname>wPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1abf7f3fd749d2e0bbe9ccb60c2c1d934c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord CItemMgr::getRespawnItemCount</definition>
+        <argsstring>()</argsstring>
+        <name>getRespawnItemCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a248caadff7a02818823523daa027dfa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::decRespawnItem</definition>
+        <argsstring>()</argsstring>
+        <name>decRespawnItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ae30d35df373466d539c1cb8f6c34b71d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::getSelectableAvatars</definition>
+        <argsstring>(const VecSelHeroInfo &amp;akHeroList, VPtlAvatar &amp;akAvatars)</argsstring>
+        <name>getSelectableAvatars</name>
+        <param>
+          <type>const <ref refid="_se_ptl_define_8h_1a12bdaa0cb091a7fd8b770f73cc23b3bd" kindref="member">VecSelHeroInfo</ref> &amp;</type>
+          <declname>akHeroList</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_ptl_define_8h_1a6ef71b81bd29e8e8027d3f143092603e" kindref="member">VPtlAvatar</ref> &amp;</type>
+          <declname>akAvatars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a6fe8e813282ac14a6b7e964b8bec5d52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CItemMgr::CheckOwnerItem</definition>
+        <argsstring>(uint32_t ItemID)</argsstring>
+        <name>CheckOwnerItem</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ItemID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="154" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_c_item_mgr_1a669523960879aa5b9c37c30a36fb2b0a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t CItemMgr::GetEmpySlotIndex</definition>
+        <argsstring>()</argsstring>
+        <name>GetEmpySlotIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="156" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="730" bodyend="750"/>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa887c76af0dc223cf55132c965d6f9680" compoundref="_se_ptl_comm_define_8h" startline="39">SSD_BAG_ITEM_NUM</references>
+        <referencedby refid="class_c_item_mgr_1a310acd889559341a8f360da79d3bf106" compoundref="_src_2_item_mgr_8cpp" startline="809" endline="894">AddNewMultiItem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ae2f199bdee13e05f8656325d16308355" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::doMoveItem</definition>
+        <argsstring>(CItem &amp;item, Word dstPos)</argsstring>
+        <name>doMoveItem</name>
+        <param>
+          <type><ref refid="struct_c_item" kindref="compound">CItem</ref> &amp;</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>Word</type>
+          <declname>dstPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="162" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="1057" bodyend="1082"/>
+        <references refid="struct_c_item_1a12edc9c274d0bfb87eb8896313f7da4f" compoundref="_src_2_item_mgr_8h" startline="34" endline="47">CItem::CopyToProtoItem</references>
+        <references refid="class_default_player_data_strategy_1a6baced26772bd2c55f9e1caaac6d23ef" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="53" endline="56">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataUpdate</references>
+        <references refid="struct_se_w_t___player_new_item_1ad478ffa8f476c951220d14d6dfea4721" compoundref="_se_ptl___w_s___to___t_s_8h" startline="447">SeWT_PlayerNewItem::dwPlayerID</references>
+        <references refid="class_c_item_mgr_1ace527204142df63b0dbb14f4cffb5522" compoundref="_src_2_item_mgr_8cpp" startline="1045" endline="1049">eraseItem</references>
+        <references refid="_d_b_server_2_src_2_char_item_strategy_8cpp_1af32aa6ad7e7465848c38712fe0bc7a99" compoundref="_d_b_server_2_src_2_char_item_strategy_8cpp" startline="3">g_kCharItemStrategy</references>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="_town_server_2_src_2_se_player_8inl_1a62abab014f0e4e72ae69f67e8e6c3a99" compoundref="_town_server_2_src_2_se_player_8inl" startline="6" endline="9">GetID</references>
+        <references refid="class_se_player_1a0834e11ba6f0e730e99014864f8d25e0" compoundref="_town_server_2_src_2_se_player_8h" startline="7" endline="10">SePlayer::GetID</references>
+        <references refid="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" compoundref="_src_2_item_mgr_8h" startline="120" endline="120">GetOwner</references>
+        <references refid="_world_server_2_src_2_se_player_8inl_1a2b912387cc3709ca75305a30f0167a37" compoundref="_world_server_2_src_2_se_player_8inl" startline="71" endline="74">GetTownSock</references>
+        <references refid="class_c_item_mgr_1a8dbd177bc924e97242ea98ed3d6dcd58" compoundref="_src_2_item_mgr_8cpp" startline="1051" endline="1055">insertItem</references>
+        <references refid="struct_se_w_t___player_new_item_1a7a7d1d394d14b7bfff6df4018f4639d5" compoundref="_se_ptl___w_s___to___t_s_8h" startline="448">SeWT_PlayerNewItem::iNum</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75ba32be4eba0912ba1d2f7e0b194834e3e1" compoundref="_se_ptl_comm_define_8h" startline="324">ITEM_OPER_DEL</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75ba0922172da39e6dc9479ad347d5a60458" compoundref="_se_ptl_comm_define_8h" startline="322">ITEM_OPER_INSERT</references>
+        <references refid="struct_se_item_noti_1a305e553e08161a097a31863aacf7d22d" compoundref="_se_ptl_comm_define_8h" startline="1530">SeItemNoti::ItemOper</references>
+        <references refid="struct_c_item_1ae7bd1f31b9f5ae71e0eea3fda6cc3a6f" compoundref="_src_2_item_mgr_8h" startline="78" endline="89">CItem::save</references>
+        <references refid="struct_se_w_t___player_new_item_1ac77eb5874cf53b47223e8c9da979bcc2" compoundref="_se_ptl___w_s___to___t_s_8h" startline="449">SeWT_PlayerNewItem::SeItemArray</references>
+        <references refid="class_world_server_1abad6b09f68b8645d7cdebe858712a3d6">WorldServer::SendWT_PlayerNewItem</references>
+        <references refid="struct_c_item_1a12bcf483abb0a38f38c98faa3d9ab78c" compoundref="_src_2_item_mgr_8h" startline="23">CItem::ucIndex</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a8a739c0be596a0199d1775fb56fa9a3f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::doExchangeItem</definition>
+        <argsstring>(CItem &amp;itemA, CItem &amp;itemB)</argsstring>
+        <name>doExchangeItem</name>
+        <param>
+          <type><ref refid="struct_c_item" kindref="compound">CItem</ref> &amp;</type>
+          <declname>itemA</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_item" kindref="compound">CItem</ref> &amp;</type>
+          <declname>itemB</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="167" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="1084" bodyend="1121"/>
+        <references refid="struct_c_item_1a12edc9c274d0bfb87eb8896313f7da4f" compoundref="_src_2_item_mgr_8h" startline="34" endline="47">CItem::CopyToProtoItem</references>
+        <references refid="class_default_player_data_strategy_1a6baced26772bd2c55f9e1caaac6d23ef" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="53" endline="56">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataUpdate</references>
+        <references refid="struct_se_w_t___player_new_item_1ad478ffa8f476c951220d14d6dfea4721" compoundref="_se_ptl___w_s___to___t_s_8h" startline="447">SeWT_PlayerNewItem::dwPlayerID</references>
+        <references refid="class_c_item_mgr_1ace527204142df63b0dbb14f4cffb5522" compoundref="_src_2_item_mgr_8cpp" startline="1045" endline="1049">eraseItem</references>
+        <references refid="_d_b_server_2_src_2_char_item_strategy_8cpp_1af32aa6ad7e7465848c38712fe0bc7a99" compoundref="_d_b_server_2_src_2_char_item_strategy_8cpp" startline="3">g_kCharItemStrategy</references>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="_town_server_2_src_2_se_player_8inl_1a62abab014f0e4e72ae69f67e8e6c3a99" compoundref="_town_server_2_src_2_se_player_8inl" startline="6" endline="9">GetID</references>
+        <references refid="class_se_player_1a0834e11ba6f0e730e99014864f8d25e0" compoundref="_town_server_2_src_2_se_player_8h" startline="7" endline="10">SePlayer::GetID</references>
+        <references refid="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" compoundref="_src_2_item_mgr_8h" startline="120" endline="120">GetOwner</references>
+        <references refid="_world_server_2_src_2_se_player_8inl_1a2b912387cc3709ca75305a30f0167a37" compoundref="_world_server_2_src_2_se_player_8inl" startline="71" endline="74">GetTownSock</references>
+        <references refid="class_c_item_mgr_1a8dbd177bc924e97242ea98ed3d6dcd58" compoundref="_src_2_item_mgr_8cpp" startline="1051" endline="1055">insertItem</references>
+        <references refid="struct_se_w_t___player_new_item_1a7a7d1d394d14b7bfff6df4018f4639d5" compoundref="_se_ptl___w_s___to___t_s_8h" startline="448">SeWT_PlayerNewItem::iNum</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75ba32be4eba0912ba1d2f7e0b194834e3e1" compoundref="_se_ptl_comm_define_8h" startline="324">ITEM_OPER_DEL</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75ba0922172da39e6dc9479ad347d5a60458" compoundref="_se_ptl_comm_define_8h" startline="322">ITEM_OPER_INSERT</references>
+        <references refid="struct_se_item_noti_1a305e553e08161a097a31863aacf7d22d" compoundref="_se_ptl_comm_define_8h" startline="1530">SeItemNoti::ItemOper</references>
+        <references refid="struct_c_item_1ae7bd1f31b9f5ae71e0eea3fda6cc3a6f" compoundref="_src_2_item_mgr_8h" startline="78" endline="89">CItem::save</references>
+        <references refid="struct_se_w_t___player_new_item_1ac77eb5874cf53b47223e8c9da979bcc2" compoundref="_se_ptl___w_s___to___t_s_8h" startline="449">SeWT_PlayerNewItem::SeItemArray</references>
+        <references refid="class_world_server_1abad6b09f68b8645d7cdebe858712a3d6">WorldServer::SendWT_PlayerNewItem</references>
+        <references refid="struct_c_item_1a12bcf483abb0a38f38c98faa3d9ab78c" compoundref="_src_2_item_mgr_8h" startline="23">CItem::ucIndex</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ace527204142df63b0dbb14f4cffb5522" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::eraseItem</definition>
+        <argsstring>(CItem &amp;item)</argsstring>
+        <name>eraseItem</name>
+        <param>
+          <type><ref refid="struct_c_item" kindref="compound">CItem</ref> &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="168" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="1045" bodyend="1049"/>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="class_c_item_mgr_1a23833b420138ffa598159af18b233218" compoundref="_src_2_item_mgr_8h" startline="181">m_idMap</references>
+        <references refid="struct_c_item_1a12bcf483abb0a38f38c98faa3d9ab78c" compoundref="_src_2_item_mgr_8h" startline="23">CItem::ucIndex</references>
+        <references refid="struct_c_item_1a2846eeb087de732805a73dbcc1219039" compoundref="_src_2_item_mgr_8h" startline="22">CItem::uiID</references>
+        <referencedby refid="class_c_item_mgr_1a248caadff7a02818823523daa027dfa1" compoundref="_src_2_item_mgr_8cpp" startline="1491" endline="1520">decRespawnItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1ac777e83c23b5865e42bced4e9a86f215" compoundref="_src_2_item_mgr_8cpp" startline="1028" endline="1043">DeleteItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a8a739c0be596a0199d1775fb56fa9a3f" compoundref="_src_2_item_mgr_8cpp" startline="1084" endline="1121">doExchangeItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a4021097b868fa81e0b1cc0569e5ee46c" compoundref="_src_2_item_mgr_8cpp" startline="351" endline="378">doItemMergeCharge</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae2f199bdee13e05f8656325d16308355" compoundref="_src_2_item_mgr_8cpp" startline="1057" endline="1082">doMoveItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a323ebd3efe07f6f0b5ba60ceaf50db4a" compoundref="_src_2_item_mgr_8cpp" startline="896" endline="995">ItemDepart</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae2c680a6a6599c75076c85fcc9653bc5" compoundref="_src_2_item_mgr_8cpp" startline="1371" endline="1445">openRandBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a8dbd177bc924e97242ea98ed3d6dcd58" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::insertItem</definition>
+        <argsstring>(CItem &amp;item)</argsstring>
+        <name>insertItem</name>
+        <param>
+          <type><ref refid="struct_c_item" kindref="compound">CItem</ref> &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="169" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="1051" bodyend="1055"/>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="class_c_item_mgr_1a23833b420138ffa598159af18b233218" compoundref="_src_2_item_mgr_8h" startline="181">m_idMap</references>
+        <references refid="struct_c_item_1a12bcf483abb0a38f38c98faa3d9ab78c" compoundref="_src_2_item_mgr_8h" startline="23">CItem::ucIndex</references>
+        <references refid="struct_c_item_1a2846eeb087de732805a73dbcc1219039" compoundref="_src_2_item_mgr_8h" startline="22">CItem::uiID</references>
+        <referencedby refid="class_c_item_mgr_1a310acd889559341a8f360da79d3bf106" compoundref="_src_2_item_mgr_8cpp" startline="809" endline="894">AddNewMultiItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a8a739c0be596a0199d1775fb56fa9a3f" compoundref="_src_2_item_mgr_8cpp" startline="1084" endline="1121">doExchangeItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae2f199bdee13e05f8656325d16308355" compoundref="_src_2_item_mgr_8cpp" startline="1057" endline="1082">doMoveItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a87a78d8e3ef7acf5ee9f1c22b8a87716" compoundref="_src_2_item_mgr_8cpp" startline="44" endline="64">loadData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ab37ce0a46859c9a7af231c3934511a8d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::notiChangeItem</definition>
+        <argsstring>(std::list&lt; CItem * &gt; &amp;items)</argsstring>
+        <name>notiChangeItem</name>
+        <param>
+          <type>std::list&lt; <ref refid="struct_c_item" kindref="compound">CItem</ref> * &gt; &amp;</type>
+          <declname>items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="171" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="135" bodyend="189"/>
+        <references refid="struct_c_item_1a12edc9c274d0bfb87eb8896313f7da4f" compoundref="_src_2_item_mgr_8h" startline="34" endline="47">CItem::CopyToProtoItem</references>
+        <references refid="class_default_player_data_strategy_1a26a2518d5e30bd8208abf1719f8031e4" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="59" endline="62">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataDelete</references>
+        <references refid="class_default_player_data_strategy_1a01824b8ff7f25899b55f3d4d1bbd6637" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="47" endline="50">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataInsert</references>
+        <references refid="class_default_player_data_strategy_1a6baced26772bd2c55f9e1caaac6d23ef" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="53" endline="56">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataUpdate</references>
+        <references refid="struct_se_w_t___player_new_item_1ad478ffa8f476c951220d14d6dfea4721" compoundref="_se_ptl___w_s___to___t_s_8h" startline="447">SeWT_PlayerNewItem::dwPlayerID</references>
+        <references refid="_d_b_server_2_src_2_char_item_strategy_8cpp_1af32aa6ad7e7465848c38712fe0bc7a99" compoundref="_d_b_server_2_src_2_char_item_strategy_8cpp" startline="3">g_kCharItemStrategy</references>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="_town_server_2_src_2_se_player_8inl_1a62abab014f0e4e72ae69f67e8e6c3a99" compoundref="_town_server_2_src_2_se_player_8inl" startline="6" endline="9">GetID</references>
+        <references refid="class_se_player_1a0834e11ba6f0e730e99014864f8d25e0" compoundref="_town_server_2_src_2_se_player_8h" startline="7" endline="10">SePlayer::GetID</references>
+        <references refid="struct_c_item_1a87b05f13b3f487a70b985b46b8fbad8c" compoundref="_src_2_item_mgr_8h" startline="92" endline="92">CItem::GetOper</references>
+        <references refid="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" compoundref="_src_2_item_mgr_8h" startline="120" endline="120">GetOwner</references>
+        <references refid="_world_server_2_src_2_se_player_8inl_1a2b912387cc3709ca75305a30f0167a37" compoundref="_world_server_2_src_2_se_player_8inl" startline="71" endline="74">GetTownSock</references>
+        <references refid="struct_se_w_t___player_new_item_1a7a7d1d394d14b7bfff6df4018f4639d5" compoundref="_se_ptl___w_s___to___t_s_8h" startline="448">SeWT_PlayerNewItem::iNum</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75ba32be4eba0912ba1d2f7e0b194834e3e1" compoundref="_se_ptl_comm_define_8h" startline="324">ITEM_OPER_DEL</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75ba0922172da39e6dc9479ad347d5a60458" compoundref="_se_ptl_comm_define_8h" startline="322">ITEM_OPER_INSERT</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75badf27507d7fb229b5babfa29ab5fe62e4" compoundref="_se_ptl_comm_define_8h" startline="323">ITEM_OPER_MOD</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75ba8d17ea831d0cacc147ca3e3d0c924405" compoundref="_se_ptl_comm_define_8h" startline="321">ITEM_OPER_NONE</references>
+        <references refid="struct_c_item_1ae7bd1f31b9f5ae71e0eea3fda6cc3a6f" compoundref="_src_2_item_mgr_8h" startline="78" endline="89">CItem::save</references>
+        <references refid="struct_se_w_t___player_new_item_1ac77eb5874cf53b47223e8c9da979bcc2" compoundref="_se_ptl___w_s___to___t_s_8h" startline="449">SeWT_PlayerNewItem::SeItemArray</references>
+        <references refid="class_world_server_1abad6b09f68b8645d7cdebe858712a3d6">WorldServer::SendWT_PlayerNewItem</references>
+        <references refid="struct_c_item_1aeea3715c34978cec0a9b0c179eee1fe5" compoundref="_src_2_item_mgr_8h" startline="91" endline="91">CItem::SetOper</references>
+        <references refid="struct_c_item_1a2846eeb087de732805a73dbcc1219039" compoundref="_src_2_item_mgr_8h" startline="22">CItem::uiID</references>
+        <referencedby refid="class_c_item_mgr_1ae8e0377cde5732972c5869d98576ba1b" compoundref="_src_2_item_mgr_8cpp" startline="997" endline="1026">AddItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a49bd2747343cd9bd277e54b222532ae6" compoundref="_src_2_item_mgr_8cpp" startline="1447" endline="1469">clearItemNewFlag</referencedby>
+        <referencedby refid="class_c_item_mgr_1a248caadff7a02818823523daa027dfa1" compoundref="_src_2_item_mgr_8cpp" startline="1491" endline="1520">decRespawnItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1ac777e83c23b5865e42bced4e9a86f215" compoundref="_src_2_item_mgr_8cpp" startline="1028" endline="1043">DeleteItem</referencedby>
+        <referencedby refid="class_c_item_mgr_1a4021097b868fa81e0b1cc0569e5ee46c" compoundref="_src_2_item_mgr_8cpp" startline="351" endline="378">doItemMergeCharge</referencedby>
+        <referencedby refid="class_c_item_mgr_1a323ebd3efe07f6f0b5ba60ceaf50db4a" compoundref="_src_2_item_mgr_8cpp" startline="896" endline="995">ItemDepart</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae2c680a6a6599c75076c85fcc9653bc5" compoundref="_src_2_item_mgr_8cpp" startline="1371" endline="1445">openRandBox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a4021097b868fa81e0b1cc0569e5ee46c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::doItemMergeCharge</definition>
+        <argsstring>(CItem &amp;item, DWord gold, const std::list&lt; ItemAddedStru &gt; &amp;costItems)</argsstring>
+        <name>doItemMergeCharge</name>
+        <param>
+          <type><ref refid="struct_c_item" kindref="compound">CItem</ref> &amp;</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>gold</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="struct_item_added_stru" kindref="compound">ItemAddedStru</ref> &gt; &amp;</type>
+          <declname>costItems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="173" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.cpp" bodystart="351" bodyend="378"/>
+        <references refid="_src_2_world_server_def_8h_1a52d6342327b19a578567957af526b100acd3b6845b39d4835146723f7f0b6dd78" compoundref="_src_2_world_server_def_8h" startline="94">CMT_GOLD</references>
+        <references refid="class_c_item_mgr_1ace527204142df63b0dbb14f4cffb5522" compoundref="_src_2_item_mgr_8cpp" startline="1045" endline="1049">eraseItem</references>
+        <references refid="_world_server_2_src_2_se_player_8inl_1a5e6641d6b1ed9460a480c4e37d37519d" compoundref="_world_server_2_src_2_se_player_8inl" startline="233" endline="236">GetGold</references>
+        <references refid="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" compoundref="_src_2_item_mgr_8h" startline="120" endline="120">GetOwner</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75ba32be4eba0912ba1d2f7e0b194834e3e1" compoundref="_se_ptl_comm_define_8h" startline="324">ITEM_OPER_DEL</references>
+        <references refid="_se_ptl_comm_define_8h_1a1045c7cb27cd3ea7a9e3284b316db75badf27507d7fb229b5babfa29ab5fe62e4" compoundref="_se_ptl_comm_define_8h" startline="323">ITEM_OPER_MOD</references>
+        <references refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" compoundref="_src_2_item_mgr_8h" startline="180">m_BagMap</references>
+        <references refid="class_c_item_mgr_1ab37ce0a46859c9a7af231c3934511a8d" compoundref="_src_2_item_mgr_8cpp" startline="135" endline="189">notiChangeItem</references>
+        <references refid="class_se_player_1a05c7e8a1c86746696a165718fbfa2c52" compoundref="_world_server_2_src_2_se_player_8cpp" startline="727" endline="734">SePlayer::NotifyOwnMoney</references>
+        <references refid="class_se_player_1a6ae0d2391e30a2e8f0e359d5691adad7" compoundref="_world_server_2_src_2_se_player_8cpp" startline="173" endline="236">SePlayer::UpdateCharMisc</references>
+        <referencedby refid="class_c_item_mgr_1af5880cf904902fd27716bf920ade1c88" compoundref="_src_2_item_mgr_8cpp" startline="545" endline="633">ChangeCiTiao</referencedby>
+        <referencedby refid="class_c_item_mgr_1a42da54f383ba4e19914e723d63e24e89" compoundref="_src_2_item_mgr_8cpp" startline="380" endline="460">StrenthEquip</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a669523960879aa5b9c37c30a36fb2b0a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t CItemMgr::GetEmpySlotIndex</definition>
+        <argsstring>()</argsstring>
+        <name>GetEmpySlotIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ae2f199bdee13e05f8656325d16308355" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::doMoveItem</definition>
+        <argsstring>(CItem &amp;item, Word dstPos)</argsstring>
+        <name>doMoveItem</name>
+        <param>
+          <type><ref refid="struct_c_item" kindref="compound">CItem</ref> &amp;</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>Word</type>
+          <declname>dstPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a8a739c0be596a0199d1775fb56fa9a3f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::doExchangeItem</definition>
+        <argsstring>(CItem &amp;itemA, CItem &amp;itemB)</argsstring>
+        <name>doExchangeItem</name>
+        <param>
+          <type><ref refid="struct_c_item" kindref="compound">CItem</ref> &amp;</type>
+          <declname>itemA</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_item" kindref="compound">CItem</ref> &amp;</type>
+          <declname>itemB</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ace527204142df63b0dbb14f4cffb5522" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::eraseItem</definition>
+        <argsstring>(CItem &amp;item)</argsstring>
+        <name>eraseItem</name>
+        <param>
+          <type><ref refid="struct_c_item" kindref="compound">CItem</ref> &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a8dbd177bc924e97242ea98ed3d6dcd58" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::insertItem</definition>
+        <argsstring>(CItem &amp;item)</argsstring>
+        <name>insertItem</name>
+        <param>
+          <type><ref refid="struct_c_item" kindref="compound">CItem</ref> &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1ab37ce0a46859c9a7af231c3934511a8d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::notiChangeItem</definition>
+        <argsstring>(std::list&lt; CItem * &gt; &amp;items)</argsstring>
+        <name>notiChangeItem</name>
+        <param>
+          <type>std::list&lt; <ref refid="struct_c_item" kindref="compound">CItem</ref> * &gt; &amp;</type>
+          <declname>items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_item_mgr_1a4021097b868fa81e0b1cc0569e5ee46c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CItemMgr::doItemMergeCharge</definition>
+        <argsstring>(CItem &amp;item, DWord gold, const std::list&lt; ItemAddedStru &gt; &amp;costItems)</argsstring>
+        <name>doItemMergeCharge</name>
+        <param>
+          <type><ref refid="struct_c_item" kindref="compound">CItem</ref> &amp;</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>gold</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="struct_item_added_stru" kindref="compound">ItemAddedStru</ref> &gt; &amp;</type>
+          <declname>costItems</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ItemMgr.h" line="173" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="921">
+        <label>DataMgr&lt; SeDBCharItem &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="920">
+        <label>CItemMgr</label>
+        <link refid="class_c_item_mgr"/>
+        <childnode refid="921" relation="public-inheritance">
+        </childnode>
+        <childnode refid="921" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="991">
+        <label>SeAchieveScheduleInfo</label>
+        <link refid="struct_se_achieve_schedule_info"/>
+      </node>
+      <node id="924">
+        <label>std::map&lt; DWord, CItem * &gt;</label>
+        <childnode refid="925" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="944">
+        <label>SeThreadMsgMgr</label>
+        <link refid="class_se_thread_msg_mgr"/>
+        <childnode refid="945" relation="usage">
+          <edgelabel>m_kTemMsgData</edgelabel>
+        </childnode>
+      </node>
+      <node id="951">
+        <label>DataMgr&lt; SeDBCharEquipSchema &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="961">
+        <label>K</label>
+      </node>
+      <node id="962">
+        <label>T</label>
+      </node>
+      <node id="973">
+        <label>SeItem</label>
+        <link refid="struct_se_item"/>
+        <childnode refid="936" relation="usage">
+          <edgelabel>kFinishTime</edgelabel>
+        </childnode>
+        <childnode refid="974" relation="usage">
+          <edgelabel>pkItemRes</edgelabel>
+        </childnode>
+      </node>
+      <node id="936">
+        <label>SeDBTime</label>
+        <link refid="struct_se_d_b_time"/>
+      </node>
+      <node id="967">
+        <label>SeTaskInfo</label>
+        <link refid="struct_se_task_info"/>
+        <childnode refid="968" relation="usage">
+          <edgelabel>pkRes</edgelabel>
+        </childnode>
+      </node>
+      <node id="993">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="962" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="925">
+        <label>CItem</label>
+        <link refid="struct_c_item"/>
+        <childnode refid="926" relation="usage">
+          <edgelabel>pvpAttr</edgelabel>
+          <edgelabel>pveAttr</edgelabel>
+        </childnode>
+        <childnode refid="927" relation="usage">
+          <edgelabel>citiaoAttr</edgelabel>
+        </childnode>
+      </node>
+      <node id="981">
+        <label>AchieveMgr</label>
+        <link refid="class_achieve_mgr"/>
+        <childnode refid="929" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="929">
+        <label>SePlayer</label>
+        <link refid="class_se_player"/>
+        <childnode refid="930" relation="usage">
+          <edgelabel>m_kCurPos</edgelabel>
+        </childnode>
+        <childnode refid="931" relation="usage">
+          <edgelabel>m_heroMgr</edgelabel>
+        </childnode>
+        <childnode refid="934" relation="usage">
+          <edgelabel>m_mapNexusFriendData</edgelabel>
+        </childnode>
+        <childnode refid="922" relation="usage">
+          <edgelabel>m_PlayerItemMgr</edgelabel>
+        </childnode>
+        <childnode refid="937" relation="usage">
+          <edgelabel>m_kMobileInfo</edgelabel>
+        </childnode>
+        <childnode refid="936" relation="usage">
+          <edgelabel>m_kEnterTime</edgelabel>
+        </childnode>
+        <childnode refid="938" relation="usage">
+          <edgelabel>m_pkBlockServer</edgelabel>
+        </childnode>
+        <childnode refid="949" relation="usage">
+          <edgelabel>m_kLoadFlag2Count</edgelabel>
+        </childnode>
+        <childnode refid="950" relation="usage">
+          <edgelabel>m_equipSchemaMgr</edgelabel>
+        </childnode>
+        <childnode refid="952" relation="usage">
+          <edgelabel>m_raceMapMgr</edgelabel>
+        </childnode>
+        <childnode refid="955" relation="usage">
+          <edgelabel>m_raceHeroMgr</edgelabel>
+        </childnode>
+        <childnode refid="963" relation="usage">
+          <edgelabel>m_loadingFlag</edgelabel>
+        </childnode>
+        <childnode refid="964" relation="usage">
+          <edgelabel>m_TaskMgr</edgelabel>
+        </childnode>
+        <childnode refid="972" relation="usage">
+          <edgelabel>m_akItem</edgelabel>
+        </childnode>
+        <childnode refid="975" relation="usage">
+          <edgelabel>m_FriendLadderData</edgelabel>
+        </childnode>
+        <childnode refid="978" relation="usage">
+          <edgelabel>m_activeAvatarMgr</edgelabel>
+        </childnode>
+        <childnode refid="981" relation="usage">
+          <edgelabel>m_AchieveMgr</edgelabel>
+        </childnode>
+        <childnode refid="982" relation="usage">
+          <edgelabel>m_kLoadFlagCounts</edgelabel>
+        </childnode>
+        <childnode refid="948" relation="usage">
+          <edgelabel>m_kAccountInfo</edgelabel>
+        </childnode>
+        <childnode refid="983" relation="usage">
+          <edgelabel>m_AchieveFinishMgr</edgelabel>
+        </childnode>
+        <childnode refid="986" relation="usage">
+          <edgelabel>m_akStatMap</edgelabel>
+        </childnode>
+        <childnode refid="988" relation="usage">
+          <edgelabel>m_AchieveScheduleMgr</edgelabel>
+        </childnode>
+        <childnode refid="992" relation="usage">
+          <edgelabel>m_kMAllCharMem</edgelabel>
+        </childnode>
+        <childnode refid="994" relation="usage">
+          <edgelabel>m_akExchange</edgelabel>
+        </childnode>
+        <childnode refid="996" relation="usage">
+          <edgelabel>m_infoMgr</edgelabel>
+        </childnode>
+        <childnode refid="999" relation="usage">
+          <edgelabel>m_kSingleMatchInfo</edgelabel>
+        </childnode>
+        <childnode refid="1000" relation="usage">
+          <edgelabel>m_kOderItr</edgelabel>
+        </childnode>
+      </node>
+      <node id="947">
+        <label>SeWaitPlayer</label>
+        <link refid="struct_se_wait_player"/>
+        <childnode refid="948" relation="usage">
+          <edgelabel>kAccountInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="960">
+        <label>std::map&lt; K, T &gt;</label>
+        <childnode refid="961" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="962" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="963">
+        <label>std::set&lt; SeDBTableIndex &gt;</label>
+      </node>
+      <node id="983">
+        <label>AchieveFinishMgr</label>
+        <link refid="class_achieve_finish_mgr"/>
+        <childnode refid="984" relation="public-inheritance">
+        </childnode>
+        <childnode refid="984" relation="public-inheritance">
+        </childnode>
+        <childnode refid="985" relation="usage">
+          <edgelabel>m_FinishMap</edgelabel>
+        </childnode>
+        <childnode refid="929" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="958">
+        <label>SeUserRaceMapHeroBase</label>
+        <link refid="struct_se_user_race_map_hero_base"/>
+      </node>
+      <node id="931">
+        <label>HeroMgr</label>
+        <link refid="class_hero_mgr"/>
+        <childnode refid="932" relation="public-inheritance">
+        </childnode>
+        <childnode refid="932" relation="public-inheritance">
+        </childnode>
+        <childnode refid="929" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="933" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="948">
+        <label>SePtlAccountInfo</label>
+        <link refid="struct_se_ptl_account_info"/>
+      </node>
+      <node id="1000">
+        <label>std::map&lt; K, T &gt;::iterator</label>
+      </node>
+      <node id="940">
+        <label>SeLeagueInfo</label>
+        <link refid="struct_se_league_info"/>
+        <childnode refid="936" relation="usage">
+          <edgelabel>kBeginTime</edgelabel>
+          <edgelabel>kEndTime</edgelabel>
+        </childnode>
+      </node>
+      <node id="959">
+        <label>std::map&lt; DWord, MDBCharRaceHero &gt;</label>
+        <childnode refid="960" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="972">
+        <label>std::vector&lt; SeItem * &gt;</label>
+        <childnode refid="973" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="930">
+        <label>SePos2</label>
+        <link refid="struct_se_pos2"/>
+      </node>
+      <node id="966">
+        <label>std::vector&lt; SeTaskInfo * &gt;</label>
+        <childnode refid="967" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="968">
+        <label>TaskInfoTable</label>
+        <link refid="struct_task_info_table"/>
+        <childnode refid="969" relation="public-inheritance">
+        </childnode>
+        <childnode refid="970" relation="usage">
+          <edgelabel>kNameID</edgelabel>
+          <edgelabel>kDescID</edgelabel>
+          <edgelabel>kName_China</edgelabel>
+          <edgelabel>kTaskDesc</edgelabel>
+          <edgelabel>kTargetDesc</edgelabel>
+        </childnode>
+      </node>
+      <node id="935">
+        <label>SeCharNexusFriendData</label>
+        <link refid="struct_se_char_nexus_friend_data"/>
+        <childnode refid="936" relation="usage">
+          <edgelabel>create_time</edgelabel>
+        </childnode>
+      </node>
+      <node id="949">
+        <label>std::map&lt; int, int &gt;</label>
+      </node>
+      <node id="996">
+        <label>InfoMgr</label>
+        <link refid="class_info_mgr"/>
+        <childnode refid="997" relation="public-inheritance">
+        </childnode>
+        <childnode refid="998" relation="public-inheritance">
+        </childnode>
+        <childnode refid="997" relation="public-inheritance">
+        </childnode>
+        <childnode refid="998" relation="public-inheritance">
+        </childnode>
+        <childnode refid="929" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="933" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="954">
+        <label>std::map&lt; DWord, SeDBCharRaceArena * &gt;</label>
+      </node>
+      <node id="943">
+        <label>SeNetAddr</label>
+        <link refid="struct_se_net_addr"/>
+      </node>
+      <node id="926">
+        <label>SeAttrUnit</label>
+        <link refid="struct_se_attr_unit"/>
+      </node>
+      <node id="933">
+        <label>std::map&lt; DWord, SeDBCharHero * &gt;</label>
+      </node>
+      <node id="971">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="969">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="928">
+        <label>SeExternAttrUnit</label>
+        <link refid="struct_se_extern_attr_unit"/>
+      </node>
+      <node id="923">
+        <label>DataMgr&lt; SeDBCharItem &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="946">
+        <label>std::map&lt; DWord, SeWaitPlayer * &gt;</label>
+        <childnode refid="947" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="986">
+        <label>std::vector&lt; SeStatMap * &gt;</label>
+        <childnode refid="987" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="956">
+        <label>DataMgr&lt; SeDBCharRaceHero &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="953">
+        <label>DataMgr&lt; SeDBCharRaceArena &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="965">
+        <label>DataMgr&lt; SeDBCharTask &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="937">
+        <label>SeMobileInfo</label>
+        <link refid="struct_se_mobile_info"/>
+      </node>
+      <node id="1001">
+        <label>std::map&lt; uint16_t, CItem * &gt;</label>
+        <childnode refid="925" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="952">
+        <label>RaceMapMgr</label>
+        <link refid="class_race_map_mgr"/>
+        <childnode refid="953" relation="public-inheritance">
+        </childnode>
+        <childnode refid="953" relation="public-inheritance">
+        </childnode>
+        <childnode refid="929" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="954" relation="usage">
+          <edgelabel>m_race_map</edgelabel>
+        </childnode>
+      </node>
+      <node id="998">
+        <label>DataMgr&lt; SeDBCharInfo &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="978">
+        <label>ActiveAvatarMgr</label>
+        <link refid="class_active_avatar_mgr"/>
+        <childnode refid="979" relation="public-inheritance">
+        </childnode>
+        <childnode refid="979" relation="public-inheritance">
+        </childnode>
+        <childnode refid="980" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+        <childnode refid="929" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="938">
+        <label>BlockServer</label>
+        <link refid="class_block_server"/>
+        <childnode refid="939" relation="public-inheritance">
+        </childnode>
+        <childnode refid="939" relation="public-inheritance">
+        </childnode>
+        <childnode refid="940" relation="usage">
+          <edgelabel>m_kLeagueInfo</edgelabel>
+        </childnode>
+        <childnode refid="941" relation="usage">
+          <edgelabel>m_kAllPlayer</edgelabel>
+        </childnode>
+        <childnode refid="944" relation="usage">
+          <edgelabel>m_kThreadMsgMgr</edgelabel>
+        </childnode>
+        <childnode refid="946" relation="usage">
+          <edgelabel>m_kWaitPlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="922">
+        <label>CItemMgr</label>
+        <link refid="class_c_item_mgr"/>
+        <childnode refid="923" relation="public-inheritance">
+        </childnode>
+        <childnode refid="923" relation="public-inheritance">
+        </childnode>
+        <childnode refid="924" relation="usage">
+          <edgelabel>m_idMap</edgelabel>
+        </childnode>
+        <childnode refid="929" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+        </childnode>
+        <childnode refid="1001" relation="usage">
+          <edgelabel>m_BagMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="995">
+        <label>SeExChangeInfo</label>
+        <link refid="struct_se_ex_change_info"/>
+        <childnode refid="936" relation="usage">
+          <edgelabel>kRecordTime</edgelabel>
+        </childnode>
+      </node>
+      <node id="975">
+        <label>std::unordered_map&lt; DWord, SeCharLadderData * &gt;</label>
+        <childnode refid="976" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="990">
+        <label>std::map&lt; DWord, SeAchieveScheduleInfo * &gt;</label>
+        <childnode refid="991" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="980">
+        <label>std::set&lt; DWord &gt;</label>
+      </node>
+      <node id="999">
+        <label>SeSingleMatchInfo</label>
+        <link refid="struct_se_single_match_info"/>
+      </node>
+      <node id="988">
+        <label>AchieveScheduleMgr</label>
+        <link refid="class_achieve_schedule_mgr"/>
+        <childnode refid="989" relation="public-inheritance">
+        </childnode>
+        <childnode refid="989" relation="public-inheritance">
+        </childnode>
+        <childnode refid="929" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+        <childnode refid="990" relation="usage">
+          <edgelabel>m_ScheduleMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="939">
+        <label>Thread</label>
+      </node>
+      <node id="989">
+        <label>DataMgr&lt; SeDBCharAchieveSchedule &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="977">
+        <label>SeLadderRankInfo</label>
+        <link refid="struct_se_ladder_rank_info"/>
+      </node>
+      <node id="984">
+        <label>DataMgr&lt; SeDBCharAchieveFinish &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="979">
+        <label>DataMgr&lt; SeDBCharActiveAvatar &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="934">
+        <label>std::map&lt; DWord, SeCharNexusFriendData * &gt;</label>
+        <childnode refid="935" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="976">
+        <label>SeCharLadderData</label>
+        <link refid="struct_se_char_ladder_data"/>
+        <childnode refid="977" relation="public-inheritance">
+        </childnode>
+        <childnode refid="977" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="932">
+        <label>DataMgr&lt; SeDBCharHero &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="992">
+        <label>std::map&lt; DWord, VCharMemory &gt;</label>
+        <childnode refid="993" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="941">
+        <label>std::map&lt; HSock, SeLoginPlayer * &gt;</label>
+        <childnode refid="942" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="927">
+        <label>SeCiTiao</label>
+        <link refid="struct_se_ci_tiao"/>
+        <childnode refid="928" relation="usage">
+          <edgelabel>SkillAdd</edgelabel>
+        </childnode>
+      </node>
+      <node id="997">
+        <label>SeDBCharInfo</label>
+      </node>
+      <node id="994">
+        <label>std::vector&lt; SeExChangeInfo * &gt;</label>
+        <childnode refid="995" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="950">
+        <label>EquipSchemaMgr</label>
+        <link refid="class_equip_schema_mgr"/>
+        <childnode refid="951" relation="public-inheritance">
+        </childnode>
+        <childnode refid="951" relation="public-inheritance">
+        </childnode>
+        <childnode refid="929" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="955">
+        <label>RaceHeroMgr</label>
+        <link refid="class_race_hero_mgr"/>
+        <childnode refid="956" relation="public-inheritance">
+        </childnode>
+        <childnode refid="956" relation="public-inheritance">
+        </childnode>
+        <childnode refid="929" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="957" relation="usage">
+          <edgelabel>map_arena_race_heros</edgelabel>
+        </childnode>
+        <childnode refid="959" relation="usage">
+          <edgelabel>map_race_heros</edgelabel>
+        </childnode>
+      </node>
+      <node id="945">
+        <label>SeMsgData</label>
+        <link refid="struct_se_msg_data"/>
+      </node>
+      <node id="985">
+        <label>std::map&lt; DWord, std::map&lt; DWord, SeAchieveFinishInfo * &gt; &gt;</label>
+      </node>
+      <node id="964">
+        <label>TaskMgr</label>
+        <link refid="class_task_mgr"/>
+        <childnode refid="965" relation="public-inheritance">
+        </childnode>
+        <childnode refid="965" relation="public-inheritance">
+        </childnode>
+        <childnode refid="966" relation="usage">
+          <edgelabel>m_akVTask</edgelabel>
+        </childnode>
+        <childnode refid="929" relation="usage">
+          <edgelabel>m_Player</edgelabel>
+        </childnode>
+      </node>
+      <node id="982">
+        <label>std::map&lt; SeDBTableIndex, int &gt;</label>
+      </node>
+      <node id="987">
+        <label>SeStatMap</label>
+        <link refid="struct_se_stat_map"/>
+      </node>
+      <node id="942">
+        <label>SeLoginPlayer</label>
+        <link refid="struct_se_login_player"/>
+        <childnode refid="943" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="970">
+        <label>std::string</label>
+        <childnode refid="971" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="957">
+        <label>std::map&lt; DWord, SeUserRaceMapHeroBase &gt;</label>
+        <childnode refid="958" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="974">
+        <label>TownItemTable</label>
+        <link refid="struct_town_item_table"/>
+        <childnode refid="969" relation="public-inheritance">
+        </childnode>
+        <childnode refid="970" relation="usage">
+          <edgelabel>kAttachModel1</edgelabel>
+          <edgelabel>kAttachModel2</edgelabel>
+          <edgelabel>kPVPValueA</edgelabel>
+          <edgelabel>ktaozhuangID</edgelabel>
+          <edgelabel>kNameID</edgelabel>
+          <edgelabel>kPVPValueB</edgelabel>
+          <edgelabel>kDesc</edgelabel>
+          <edgelabel>kPVPValueC</edgelabel>
+          <edgelabel>kPVPValueD</edgelabel>
+          <edgelabel>kPVPValueE</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" line="108" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ItemMgr.h" bodystart="107" bodyend="185"/>
+    <listofallmembers>
+      <member refid="class_c_item_mgr_1ae8e0377cde5732972c5869d98576ba1b" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>AddItem</name></member>
+      <member refid="class_c_item_mgr_1ae8e0377cde5732972c5869d98576ba1b" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>AddItem</name></member>
+      <member refid="class_c_item_mgr_1a310acd889559341a8f360da79d3bf106" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>AddNewMultiItem</name></member>
+      <member refid="class_c_item_mgr_1a310acd889559341a8f360da79d3bf106" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>AddNewMultiItem</name></member>
+      <member refid="class_c_item_mgr_1af5880cf904902fd27716bf920ade1c88" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>ChangeCiTiao</name></member>
+      <member refid="class_c_item_mgr_1af5880cf904902fd27716bf920ade1c88" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>ChangeCiTiao</name></member>
+      <member refid="class_c_item_mgr_1a6fe8e813282ac14a6b7e964b8bec5d52" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>CheckOwnerItem</name></member>
+      <member refid="class_c_item_mgr_1a6fe8e813282ac14a6b7e964b8bec5d52" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>CheckOwnerItem</name></member>
+      <member refid="class_c_item_mgr_1afa90610e1b62ab27e1a3641f12944e76" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>CItemMgr</name></member>
+      <member refid="class_c_item_mgr_1afa90610e1b62ab27e1a3641f12944e76" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>CItemMgr</name></member>
+      <member refid="class_c_item_mgr_1a49bd2747343cd9bd277e54b222532ae6" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>clearItemNewFlag</name></member>
+      <member refid="class_c_item_mgr_1a49bd2747343cd9bd277e54b222532ae6" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>clearItemNewFlag</name></member>
+      <member refid="class_c_item_mgr_1a5428c3f3553f9869853b15e6fae0f28b" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>CountNeedSlotNumByItemID</name></member>
+      <member refid="class_c_item_mgr_1a5428c3f3553f9869853b15e6fae0f28b" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>CountNeedSlotNumByItemID</name></member>
+      <member refid="class_c_item_mgr_1a248caadff7a02818823523daa027dfa1" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>decRespawnItem</name></member>
+      <member refid="class_c_item_mgr_1a248caadff7a02818823523daa027dfa1" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>decRespawnItem</name></member>
+      <member refid="class_c_item_mgr_1ac777e83c23b5865e42bced4e9a86f215" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>DeleteItem</name></member>
+      <member refid="class_c_item_mgr_1ac777e83c23b5865e42bced4e9a86f215" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>DeleteItem</name></member>
+      <member refid="class_c_item_mgr_1a8a739c0be596a0199d1775fb56fa9a3f" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>doExchangeItem</name></member>
+      <member refid="class_c_item_mgr_1a8a739c0be596a0199d1775fb56fa9a3f" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>doExchangeItem</name></member>
+      <member refid="class_c_item_mgr_1a4021097b868fa81e0b1cc0569e5ee46c" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>doItemMergeCharge</name></member>
+      <member refid="class_c_item_mgr_1a4021097b868fa81e0b1cc0569e5ee46c" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>doItemMergeCharge</name></member>
+      <member refid="class_c_item_mgr_1ae2f199bdee13e05f8656325d16308355" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>doMoveItem</name></member>
+      <member refid="class_c_item_mgr_1ae2f199bdee13e05f8656325d16308355" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>doMoveItem</name></member>
+      <member refid="class_c_item_mgr_1ace527204142df63b0dbb14f4cffb5522" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>eraseItem</name></member>
+      <member refid="class_c_item_mgr_1ace527204142df63b0dbb14f4cffb5522" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>eraseItem</name></member>
+      <member refid="class_data_mgr_1ab72bd1d8bc0f210c94d235c978fbbd4c" prot="public" virt="virtual"><scope>CItemMgr</scope><name>fixData</name></member>
+      <member refid="class_data_mgr_1ab72bd1d8bc0f210c94d235c978fbbd4c" prot="public" virt="virtual"><scope>CItemMgr</scope><name>fixData</name></member>
+      <member refid="class_c_item_mgr_1a669523960879aa5b9c37c30a36fb2b0a" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>GetEmpySlotIndex</name></member>
+      <member refid="class_c_item_mgr_1a669523960879aa5b9c37c30a36fb2b0a" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>GetEmpySlotIndex</name></member>
+      <member refid="class_c_item_mgr_1a1578c6a5fa4ec12cb06f57031239877e" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>GetExistItemIndex</name></member>
+      <member refid="class_c_item_mgr_1a1578c6a5fa4ec12cb06f57031239877e" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>GetExistItemIndex</name></member>
+      <member refid="class_c_item_mgr_1ae46cfb3d7664beb10d52a125fb7d0e1f" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>getItem</name></member>
+      <member refid="class_c_item_mgr_1a2cea785f02476a715323bd3e7aa67caf" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>getItem</name></member>
+      <member refid="class_c_item_mgr_1a35a76935dfd2c048792c814ab2e66bb8" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>getItem</name></member>
+      <member refid="class_c_item_mgr_1a68ffbecd84555990d78c51fd687962fd" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>getItem</name></member>
+      <member refid="class_c_item_mgr_1ada634e5a389391fbf158f928e449844e" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>GetItemCountByID</name></member>
+      <member refid="class_c_item_mgr_1ada634e5a389391fbf158f928e449844e" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>GetItemCountByID</name></member>
+      <member refid="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>GetOwner</name></member>
+      <member refid="class_c_item_mgr_1a9e99fdc4a77a89c1901deac94e949e30" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>GetOwner</name></member>
+      <member refid="class_c_item_mgr_1abf7f3fd749d2e0bbe9ccb60c2c1d934c" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>getRespawnItemCount</name></member>
+      <member refid="class_c_item_mgr_1abf7f3fd749d2e0bbe9ccb60c2c1d934c" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>getRespawnItemCount</name></member>
+      <member refid="class_c_item_mgr_1ae30d35df373466d539c1cb8f6c34b71d" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>getSelectableAvatars</name></member>
+      <member refid="class_c_item_mgr_1ae30d35df373466d539c1cb8f6c34b71d" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>getSelectableAvatars</name></member>
+      <member refid="class_c_item_mgr_1a8dbd177bc924e97242ea98ed3d6dcd58" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>insertItem</name></member>
+      <member refid="class_c_item_mgr_1a8dbd177bc924e97242ea98ed3d6dcd58" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>insertItem</name></member>
+      <member refid="class_c_item_mgr_1a323ebd3efe07f6f0b5ba60ceaf50db4a" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>ItemDepart</name></member>
+      <member refid="class_c_item_mgr_1a323ebd3efe07f6f0b5ba60ceaf50db4a" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>ItemDepart</name></member>
+      <member refid="class_c_item_mgr_1a16f1c2289bdb38b66ef36b2b3949148e" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>ITEMIT</name></member>
+      <member refid="class_c_item_mgr_1a16f1c2289bdb38b66ef36b2b3949148e" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>ITEMIT</name></member>
+      <member refid="class_c_item_mgr_1a07f61afc0b744f4353488d7fb09a2316" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>ITEMMAP</name></member>
+      <member refid="class_c_item_mgr_1a07f61afc0b744f4353488d7fb09a2316" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>ITEMMAP</name></member>
+      <member refid="class_c_item_mgr_1a87a78d8e3ef7acf5ee9f1c22b8a87716" prot="public" virt="virtual"><scope>CItemMgr</scope><name>loadData</name></member>
+      <member refid="class_c_item_mgr_1a87a78d8e3ef7acf5ee9f1c22b8a87716" prot="public" virt="virtual"><scope>CItemMgr</scope><name>loadData</name></member>
+      <member refid="class_c_item_mgr_1a00669985ab6f2f376bee2310dfa4337d" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>m_BagMap</name></member>
+      <member refid="class_c_item_mgr_1a23833b420138ffa598159af18b233218" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>m_idMap</name></member>
+      <member refid="class_c_item_mgr_1a6f92f342f5bc5cc97f0063cdffbe4074" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>m_pOwner</name></member>
+      <member refid="class_c_item_mgr_1a8cc6896b3cb6e658e8d81797615397a2" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>m_uiTimer</name></member>
+      <member refid="class_c_item_mgr_1ab37ce0a46859c9a7af231c3934511a8d" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>notiChangeItem</name></member>
+      <member refid="class_c_item_mgr_1ab37ce0a46859c9a7af231c3934511a8d" prot="private" virt="non-virtual"><scope>CItemMgr</scope><name>notiChangeItem</name></member>
+      <member refid="class_c_item_mgr_1ae2c680a6a6599c75076c85fcc9653bc5" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>openRandBox</name></member>
+      <member refid="class_c_item_mgr_1ae2c680a6a6599c75076c85fcc9653bc5" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>openRandBox</name></member>
+      <member refid="class_c_item_mgr_1a507cb0c1b03a411586a8a1f0513d4438" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>PackAllItem</name></member>
+      <member refid="class_c_item_mgr_1a507cb0c1b03a411586a8a1f0513d4438" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>PackAllItem</name></member>
+      <member refid="class_c_item_mgr_1af517156c7d55fa16812ef09d8d5f3926" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>SetOwner</name></member>
+      <member refid="class_c_item_mgr_1af517156c7d55fa16812ef09d8d5f3926" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>SetOwner</name></member>
+      <member refid="class_c_item_mgr_1a42da54f383ba4e19914e723d63e24e89" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>StrenthEquip</name></member>
+      <member refid="class_c_item_mgr_1a42da54f383ba4e19914e723d63e24e89" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>StrenthEquip</name></member>
+      <member refid="class_c_item_mgr_1a1fedb76f7f3aeb6364c74a36e944932b" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>Update</name></member>
+      <member refid="class_c_item_mgr_1a1fedb76f7f3aeb6364c74a36e944932b" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>Update</name></member>
+      <member refid="class_c_item_mgr_1ae8767fb60af3596f960a1f87947c9e81" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>~CItemMgr</name></member>
+      <member refid="class_c_item_mgr_1ae8767fb60af3596f960a1f87947c9e81" prot="public" virt="non-virtual"><scope>CItemMgr</scope><name>~CItemMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

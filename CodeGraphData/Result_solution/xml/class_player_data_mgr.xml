@@ -1,0 +1,1254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_player_data_mgr" kind="class" prot="public">
+    <compoundname>PlayerDataMgr</compoundname>
+    <includes refid="_d_b_server_2_src_2_player_data_mgr_8h" local="no">PlayerDataMgr.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_player_data_mgr_1a088382b9730db91340e0625a5c97c30e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>PlayerDataStrategy</definition>
+        <argsstring></argsstring>
+        <name>PlayerDataStrategy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="12" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_data_mgr_1afe5c7c770d6a2f15202594fbd4c3e4f6" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref>, <ref refid="class_player_data_strategy" kindref="compound">PlayerDataStrategy</ref> * &gt;</type>
+        <definition>std::map&lt; SeDBTableIndex, PlayerDataStrategy * &gt; PlayerDataMgr::m_strategies</definition>
+        <argsstring></argsstring>
+        <name>m_strategies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="35" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_player_data_mgr_1a737692a62a8b7a4aa761eb19a9d48e7f" compoundref="_world_server_2_src_2_player_data_mgr_8cpp" startline="79" endline="85">fixData</referencedby>
+        <referencedby refid="class_player_data_mgr_1ac965c49bee3a54c68b3783d695d08e5c" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="21" endline="32">getStrategy</referencedby>
+        <referencedby refid="class_player_data_mgr_1afe07a1f8b2596234ed92d0b118c57ed2" compoundref="_world_server_2_src_2_player_data_mgr_8cpp" startline="21" endline="30">initGenID</referencedby>
+        <referencedby refid="class_player_data_mgr_1a9d9a2eafba07920c954dc593923639b7" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="12" endline="19">initialize</referencedby>
+        <referencedby refid="class_player_data_mgr_1ae72cc44d6ef2216d7bc28e0e59367cf8" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="129" endline="135">loadData</referencedby>
+        <referencedby refid="class_player_data_mgr_1ad68bea873337b5a7c96e8cfda4fa5cc8" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="69" endline="75">rebuildMem</referencedby>
+        <referencedby refid="class_player_data_mgr_1a3426fe6fd19953233d012b477993206b" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="174" endline="182">safeDeleteDBPlayer</referencedby>
+        <referencedby refid="class_player_data_mgr_1af347b09d34bc099f3dd5bdcd72afebcd" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="77" endline="85">saveToDB</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_data_mgr_1a0017c3ea59bd343055e576afe58f7681" prot="private" static="no" mutable="no">
+        <type>std::set&lt; <ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref> &gt;</type>
+        <definition>std::set&lt; SeDBTableIndex &gt; PlayerDataMgr::m_initGenIDTables</definition>
+        <argsstring></argsstring>
+        <name>m_initGenIDTables</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.h" line="28" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_player_data_mgr_1afe07a1f8b2596234ed92d0b118c57ed2" compoundref="_world_server_2_src_2_player_data_mgr_8cpp" startline="21" endline="30">initGenID</referencedby>
+        <referencedby refid="class_player_data_mgr_1a21b46d88de88f080f3c6bdb20d328105" compoundref="_world_server_2_src_2_player_data_mgr_8cpp" startline="56" endline="59">isGenIDFinished</referencedby>
+        <referencedby refid="class_player_data_mgr_1a0eada6a9ca8e625f7131b5d45efd498c" compoundref="_world_server_2_src_2_player_data_mgr_8cpp" startline="45" endline="54">onInitGenIDRet</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_data_mgr_1a9d9a2eafba07920c954dc593923639b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="15" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="12" bodyend="19"/>
+        <references refid="class_player_data_mgr_1ac7f6ab536e0de38f8fc73a8a2f9e8330" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="6" endline="10">getInitList</references>
+        <references refid="class_player_data_mgr_1afe5c7c770d6a2f15202594fbd4c3e4f6" compoundref="_d_b_server_2_src_2_player_data_mgr_8h" startline="35">m_strategies</references>
+        <referencedby refid="class_d_b_server_1a62efc40735a5c15970c2b97522d818d0" compoundref="_src_2_d_b_server_8cpp" startline="803" endline="824">DBServer::InitDBMem</referencedby>
+        <referencedby refid="class_world_server_1aa1c10ee088e17e4046c812c31eabee41" compoundref="_src_2_world_server_8cpp" startline="332" endline="393">WorldServer::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a8900a7aceed51d61962af55c8ae4b05d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord PlayerDataMgr::getCacheInitID</definition>
+        <argsstring>(SeDBTableIndex eTableIndex)</argsstring>
+        <name>getCacheInitID</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="17" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="34" bodyend="45"/>
+        <references refid="class_player_data_strategy_1ac174e9cb22a183ad27416db023ed1518">PlayerDataStrategy::getCacheInitID</references>
+        <references refid="class_player_data_mgr_1ac965c49bee3a54c68b3783d695d08e5c" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="21" endline="32">getStrategy</references>
+        <referencedby refid="class_d_b_server_1a365692b64aea904995eed7479e84f31d" compoundref="_d_b_server_2_src_2_se_d_b_send_8cpp" startline="79" endline="139">DBServer::SendDB_InitGenID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a13728789730d3c587fda1c9b212c3101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PlayerDataMgr::getInitGenIDSql</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, char *sql, int size)</argsstring>
+        <name>getInitGenIDSql</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>sql</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="18" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="47" bodyend="58"/>
+        <references refid="class_player_data_strategy_1a08d3d53dc6d12458b89df032c0e6e92d" compoundref="_d_b_server_2_src_2_player_data_strategy_8cpp" startline="11" endline="15">PlayerDataStrategy::getInitGenIDSql</references>
+        <references refid="class_player_data_mgr_1ac965c49bee3a54c68b3783d695d08e5c" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="21" endline="32">getStrategy</references>
+        <referencedby refid="class_d_b_server_1a365692b64aea904995eed7479e84f31d" compoundref="_d_b_server_2_src_2_se_d_b_send_8cpp" startline="79" endline="139">DBServer::SendDB_InitGenID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1af915de193cbccda2a9f8c2600362be3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::setRebuildMemData</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, void *data)</argsstring>
+        <name>setRebuildMemData</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="21" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="60" bodyend="67"/>
+        <references refid="class_player_data_mgr_1ac965c49bee3a54c68b3783d695d08e5c" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="21" endline="32">getStrategy</references>
+        <references refid="class_player_data_strategy_1a0d4ed09cd77f244948f56a51b0f9b9dc" compoundref="_d_b_server_2_src_2_player_data_strategy_8cpp" startline="17" endline="20">PlayerDataStrategy::setRebuildMemData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1ad68bea873337b5a7c96e8cfda4fa5cc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::rebuildMem</definition>
+        <argsstring>()</argsstring>
+        <name>rebuildMem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="22" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="69" bodyend="75"/>
+        <references refid="class_player_data_mgr_1afe5c7c770d6a2f15202594fbd4c3e4f6" compoundref="_d_b_server_2_src_2_player_data_mgr_8h" startline="35">m_strategies</references>
+        <referencedby refid="class_d_b_server_1a26136d8bdf6021c3fea95cfa448af106" compoundref="_src_2_d_b_server_8cpp" startline="836" endline="886">DBServer::RebuildMem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1af347b09d34bc099f3dd5bdcd72afebcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PlayerDataMgr::saveToDB</definition>
+        <argsstring>(SeDBPlayer &amp;player)</argsstring>
+        <name>saveToDB</name>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="23" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="77" bodyend="85"/>
+        <references refid="class_player_data_mgr_1afe5c7c770d6a2f15202594fbd4c3e4f6" compoundref="_d_b_server_2_src_2_player_data_mgr_8h" startline="35">m_strategies</references>
+        <referencedby refid="class_se_d_b_player_mgr_1a081100d31e73eef2726aafdefb049d40" compoundref="_src_2_se_d_b_player_mgr_8cpp" startline="943" endline="989">SeDBPlayerMgr::SaveToDB</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a85ada0b46f0d312a91b947f14ad4312b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PlayerDataMgr::dataInsert</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, SeDBPlayer &amp;player, uint64_t dwlID, DWord dwParam1, int iIndex, void *pkData)</argsstring>
+        <name>dataInsert</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>dwlID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwParam1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iIndex</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="24" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="87" bodyend="99"/>
+        <references refid="class_player_data_strategy_1a0b896d850c91a95bfe656d0d662cc698">PlayerDataStrategy::dataInsert</references>
+        <references refid="class_player_data_mgr_1ac965c49bee3a54c68b3783d695d08e5c" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="21" endline="32">getStrategy</references>
+        <referencedby refid="class_se_d_b_player_mgr_1aaa2679c90a471cbb25c504d904ee5de4" compoundref="_src_2_se_d_b_player_mgr_8cpp" startline="1114" endline="1186">SeDBPlayerMgr::DataInsert</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1af75268a55f694f2d211336978bbeddc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PlayerDataMgr::dataUpdate</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, SeDBPlayer &amp;player, uint64_t dwlID, DWord dwParam1, int iIndex, void *pkData)</argsstring>
+        <name>dataUpdate</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>dwlID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwParam1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iIndex</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="25" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="101" bodyend="113"/>
+        <references refid="class_player_data_strategy_1a977e552e4523d0f5d5779dc433f4d82d">PlayerDataStrategy::dataUpdate</references>
+        <references refid="class_player_data_mgr_1ac965c49bee3a54c68b3783d695d08e5c" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="21" endline="32">getStrategy</references>
+        <referencedby refid="class_se_d_b_player_mgr_1add64487b3e8b0fe6f532b84f8a1319e3" compoundref="_src_2_se_d_b_player_mgr_8cpp" startline="1188" endline="1233">SeDBPlayerMgr::DataUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a4fb8c5d7c6f860c0aba43ad4c5017d5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PlayerDataMgr::dataDelete</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, SeDBPlayer &amp;player, uint64_t dwlID)</argsstring>
+        <name>dataDelete</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>dwlID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="26" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="115" bodyend="127"/>
+        <references refid="class_player_data_strategy_1a8562b0d424de67d530956c6143d21096">PlayerDataStrategy::dataDelete</references>
+        <references refid="class_player_data_mgr_1ac965c49bee3a54c68b3783d695d08e5c" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="21" endline="32">getStrategy</references>
+        <referencedby refid="class_se_d_b_player_mgr_1a412e3a3ec4e92491e20d95a4ab634f19" compoundref="_src_2_se_d_b_player_mgr_8cpp" startline="1239" endline="1280">SeDBPlayerMgr::DataDelete</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1ae72cc44d6ef2216d7bc28e0e59367cf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::loadData</definition>
+        <argsstring>(SeDBPlayer &amp;player)</argsstring>
+        <name>loadData</name>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="27" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="129" bodyend="135"/>
+        <references refid="class_player_data_mgr_1afe5c7c770d6a2f15202594fbd4c3e4f6" compoundref="_d_b_server_2_src_2_player_data_mgr_8h" startline="35">m_strategies</references>
+        <referencedby refid="class_block_server_1a407dfabd46be04248b7a656dd7737af5" compoundref="_src_2_se_b_b_l_process_8cpp" startline="15" endline="28">BlockServer::ProcessBBL_PlayerLoadRet</referencedby>
+        <referencedby refid="class_d_b_server_1a11304a84820e520d2e0c13a7c66f97c8" compoundref="_d_b_server_2_src_2_se_d_b_send_8cpp" startline="5" endline="13">DBServer::SendDB_LoadInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a6c8d586dda580291d5d1f21d75ab187f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::onLoadData</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, SeDBPlayer &amp;player, TeDBResSet &amp;rkResSet)</argsstring>
+        <name>onLoadData</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>TeDBResSet &amp;</type>
+          <declname>rkResSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="28" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="137" bodyend="144"/>
+        <references refid="class_player_data_mgr_1ac965c49bee3a54c68b3783d695d08e5c" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="21" endline="32">getStrategy</references>
+        <references refid="class_player_data_strategy_1a0406f6d4bb55a9884650aaa81df67290">PlayerDataStrategy::onLoadData</references>
+        <referencedby refid="_src_2_se_d_b_send___char_8cpp_1a4c2f9713bc7262896638695e9d36a6f4" compoundref="_src_2_se_d_b_send___char_8cpp" startline="368" endline="390">onLoadCharData</referencedby>
+        <referencedby refid="class_block_server_1ae50614243703a40ee54588dd09919ff2" compoundref="_src_2_se_b_b_l_process_8cpp" startline="30" endline="62">BlockServer::ProcessBBL_SelectDataRet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1af2fea9edfcb479d269f9f28918ff1aa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PlayerDataMgr::getRecordCount</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, SeDBPlayer &amp;player, int &amp;count)</argsstring>
+        <name>getRecordCount</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="29" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="146" bodyend="158"/>
+        <references refid="class_player_data_strategy_1a8801e636dab430f4275f4905d59b448e">PlayerDataStrategy::getRecordCount</references>
+        <references refid="class_player_data_mgr_1ac965c49bee3a54c68b3783d695d08e5c" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="21" endline="32">getStrategy</references>
+        <referencedby refid="class_d_b_server_1a83610301b5f2e74bee136ebdac303ea0" compoundref="_src_2_d_b_server_8cpp" startline="938" endline="978">DBServer::GetPlayerRecordCount</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a6316266863172ad012b6d814be4ab81d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PlayerDataMgr::getFieldData</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, SeDBPlayer &amp;player, SeFieldFormat eFormat, int iIndex, int iCount, uint64_t dwlID, DWord dwPara1, void *&amp;ret)</argsstring>
+        <name>getFieldData</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009" kindref="member">SeFieldFormat</ref></type>
+          <declname>eFormat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iCount</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>dwlID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwPara1</declname>
+        </param>
+        <param>
+          <type>void *&amp;</type>
+          <declname>ret</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="30" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="160" bodyend="172"/>
+        <references refid="class_player_data_strategy_1ae4732d383163bade5f2f5a962d57d1fb">PlayerDataStrategy::getFieldData</references>
+        <references refid="class_player_data_mgr_1ac965c49bee3a54c68b3783d695d08e5c" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="21" endline="32">getStrategy</references>
+        <referencedby refid="class_d_b_server_1a12eb5f3d546916ad9360b70a1e78adc4" compoundref="_src_2_d_b_server_8cpp" startline="980" endline="1144">DBServer::GetPlayerFieldData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a3426fe6fd19953233d012b477993206b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PlayerDataMgr::safeDeleteDBPlayer</definition>
+        <argsstring>(SeDBPlayer &amp;player, DWord dwMagic)</argsstring>
+        <name>safeDeleteDBPlayer</name>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwMagic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="31" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="174" bodyend="182"/>
+        <references refid="class_player_data_mgr_1afe5c7c770d6a2f15202594fbd4c3e4f6" compoundref="_d_b_server_2_src_2_player_data_mgr_8h" startline="35">m_strategies</references>
+        <referencedby refid="class_se_d_b_player_mgr_1ac7bf0550174e3a9974cf3610c62bc32f" compoundref="_src_2_se_d_b_player_mgr_8cpp" startline="894" endline="941">SeDBPlayerMgr::SafeDeleteDBPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a9d9a2eafba07920c954dc593923639b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/src/PlayerDataMgr.h" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a8900a7aceed51d61962af55c8ae4b05d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord PlayerDataMgr::getCacheInitID</definition>
+        <argsstring>(SeDBTableIndex eTableIndex)</argsstring>
+        <name>getCacheInitID</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/src/PlayerDataMgr.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a13728789730d3c587fda1c9b212c3101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PlayerDataMgr::getInitGenIDSql</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, char *sql, int size)</argsstring>
+        <name>getInitGenIDSql</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>sql</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/src/PlayerDataMgr.h" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1af915de193cbccda2a9f8c2600362be3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::setRebuildMemData</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, void *data)</argsstring>
+        <name>setRebuildMemData</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/src/PlayerDataMgr.h" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1ad68bea873337b5a7c96e8cfda4fa5cc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::rebuildMem</definition>
+        <argsstring>()</argsstring>
+        <name>rebuildMem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/src/PlayerDataMgr.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1af347b09d34bc099f3dd5bdcd72afebcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PlayerDataMgr::saveToDB</definition>
+        <argsstring>(SeDBPlayer &amp;player)</argsstring>
+        <name>saveToDB</name>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/src/PlayerDataMgr.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a85ada0b46f0d312a91b947f14ad4312b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PlayerDataMgr::dataInsert</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, SeDBPlayer &amp;player, uint64_t dwlID, DWord dwParam1, int iIndex, void *pkData)</argsstring>
+        <name>dataInsert</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>dwlID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwParam1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iIndex</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/src/PlayerDataMgr.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1af75268a55f694f2d211336978bbeddc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PlayerDataMgr::dataUpdate</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, SeDBPlayer &amp;player, uint64_t dwlID, DWord dwParam1, int iIndex, void *pkData)</argsstring>
+        <name>dataUpdate</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>dwlID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwParam1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iIndex</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/src/PlayerDataMgr.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a4fb8c5d7c6f860c0aba43ad4c5017d5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PlayerDataMgr::dataDelete</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, SeDBPlayer &amp;player, uint64_t dwlID)</argsstring>
+        <name>dataDelete</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>dwlID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/src/PlayerDataMgr.h" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1ae72cc44d6ef2216d7bc28e0e59367cf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::loadData</definition>
+        <argsstring>(SeDBPlayer &amp;player)</argsstring>
+        <name>loadData</name>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/src/PlayerDataMgr.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a6c8d586dda580291d5d1f21d75ab187f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::onLoadData</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, SeDBPlayer &amp;player, TeDBResSet &amp;rkResSet)</argsstring>
+        <name>onLoadData</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>TeDBResSet &amp;</type>
+          <declname>rkResSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/src/PlayerDataMgr.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1af2fea9edfcb479d269f9f28918ff1aa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PlayerDataMgr::getRecordCount</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, SeDBPlayer &amp;player, int &amp;count)</argsstring>
+        <name>getRecordCount</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/src/PlayerDataMgr.h" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a6316266863172ad012b6d814be4ab81d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PlayerDataMgr::getFieldData</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, SeDBPlayer &amp;player, SeFieldFormat eFormat, int iIndex, int iCount, uint64_t dwlID, DWord dwPara1, void *&amp;ret)</argsstring>
+        <name>getFieldData</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a6ee107870e4616c0fda6c0aea42e3009" kindref="member">SeFieldFormat</ref></type>
+          <declname>eFormat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iCount</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>dwlID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwPara1</declname>
+        </param>
+        <param>
+          <type>void *&amp;</type>
+          <declname>ret</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/src/PlayerDataMgr.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a3426fe6fd19953233d012b477993206b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PlayerDataMgr::safeDeleteDBPlayer</definition>
+        <argsstring>(SeDBPlayer &amp;player, DWord dwMagic)</argsstring>
+        <name>safeDeleteDBPlayer</name>
+        <param>
+          <type><ref refid="struct_se_d_b_player" kindref="compound">SeDBPlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwMagic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/src/PlayerDataMgr.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a9d9a2eafba07920c954dc593923639b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.h" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1afe07a1f8b2596234ed92d0b118c57ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::initGenID</definition>
+        <argsstring>()</argsstring>
+        <name>initGenID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.h" line="17" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.cpp" bodystart="21" bodyend="30"/>
+        <references refid="class_player_data_mgr_1a0017c3ea59bd343055e576afe58f7681" compoundref="_world_server_2_src_2_player_data_mgr_8h" startline="28">m_initGenIDTables</references>
+        <references refid="class_player_data_mgr_1afe5c7c770d6a2f15202594fbd4c3e4f6" compoundref="_d_b_server_2_src_2_player_data_mgr_8h" startline="35">m_strategies</references>
+        <referencedby refid="class_world_server_1a59c3e7f7ac1ebbdcf37236b5735ed1cf" compoundref="_src_2_se_b_w_process_8cpp" startline="19" endline="64">WorldServer::ProcessBW_RegisterRet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a0eada6a9ca8e625f7131b5d45efd498c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::onInitGenIDRet</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, DWord dwGenID)</argsstring>
+        <name>onInitGenIDRet</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwGenID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.h" line="18" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.cpp" bodystart="45" bodyend="54"/>
+        <references refid="class_player_data_mgr_1ac965c49bee3a54c68b3783d695d08e5c" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="21" endline="32">getStrategy</references>
+        <references refid="class_player_data_strategy_1ab8a28635803fdc978e7fc17259c87368">PlayerDataStrategy::getTableIndex</references>
+        <references refid="class_player_data_mgr_1a0017c3ea59bd343055e576afe58f7681" compoundref="_world_server_2_src_2_player_data_mgr_8h" startline="28">m_initGenIDTables</references>
+        <references refid="class_player_data_strategy_1a8900ff7f030253880f46989d606a970d" compoundref="_world_server_2_src_2_player_data_strategy_8cpp" startline="17" endline="20">PlayerDataStrategy::setGenID</references>
+        <referencedby refid="class_world_server_1ad3d303860d86118621534c7c1c5c223d" compoundref="_src_2_se_b_w_process_8cpp" startline="66" endline="115">WorldServer::ProcessBW_InitGenIDRet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a21b46d88de88f080f3c6bdb20d328105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PlayerDataMgr::isGenIDFinished</definition>
+        <argsstring>()</argsstring>
+        <name>isGenIDFinished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.h" line="19" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.cpp" bodystart="56" bodyend="59"/>
+        <references refid="class_player_data_mgr_1a0017c3ea59bd343055e576afe58f7681" compoundref="_world_server_2_src_2_player_data_mgr_8h" startline="28">m_initGenIDTables</references>
+        <referencedby refid="class_world_server_1ae9253ba0018a943c9ed75a12af533e86" compoundref="_src_2_world_server_8cpp" startline="594" endline="691">WorldServer::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a6d28ee24415b3d37e015c108c5612888" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::loadData</definition>
+        <argsstring>(SePlayer &amp;player)</argsstring>
+        <name>loadData</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.h" line="21" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.cpp" bodystart="61" bodyend="67"/>
+        <references refid="class_player_data_mgr_1afe5c7c770d6a2f15202594fbd4c3e4f6" compoundref="_d_b_server_2_src_2_player_data_mgr_8h" startline="35">m_strategies</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1acb5c7c11c6e436cf05cd6c22ef958182" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::onLoadData</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, SePlayer &amp;player, SeBBL_SelectDataRet *pkData)</argsstring>
+        <name>onLoadData</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_b_b_l___select_data_ret" kindref="compound">SeBBL_SelectDataRet</ref> *</type>
+          <declname>pkData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.h" line="22" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.cpp" bodystart="69" bodyend="77"/>
+        <references refid="class_player_data_mgr_1ac965c49bee3a54c68b3783d695d08e5c" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="21" endline="32">getStrategy</references>
+        <references refid="class_player_data_strategy_1a0406f6d4bb55a9884650aaa81df67290">PlayerDataStrategy::onLoadData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a737692a62a8b7a4aa761eb19a9d48e7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::fixData</definition>
+        <argsstring>(SePlayer &amp;player)</argsstring>
+        <name>fixData</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.h" line="23" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.cpp" bodystart="79" bodyend="85"/>
+        <references refid="class_player_data_mgr_1afe5c7c770d6a2f15202594fbd4c3e4f6" compoundref="_d_b_server_2_src_2_player_data_mgr_8h" startline="35">m_strategies</references>
+        <referencedby refid="class_se_player_1a156866bea6fba5fed68c367c6a4f7a7c" compoundref="_world_server_2_src_2_se_player_8cpp" startline="122" endline="171">SePlayer::LoadingComplete</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a9d9a2eafba07920c954dc593923639b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/PlayerDataMgr.h" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1afe07a1f8b2596234ed92d0b118c57ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::initGenID</definition>
+        <argsstring>()</argsstring>
+        <name>initGenID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/PlayerDataMgr.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a0eada6a9ca8e625f7131b5d45efd498c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::onInitGenIDRet</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, DWord dwGenID)</argsstring>
+        <name>onInitGenIDRet</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwGenID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/PlayerDataMgr.h" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a21b46d88de88f080f3c6bdb20d328105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PlayerDataMgr::isGenIDFinished</definition>
+        <argsstring>()</argsstring>
+        <name>isGenIDFinished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/PlayerDataMgr.h" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a6d28ee24415b3d37e015c108c5612888" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::loadData</definition>
+        <argsstring>(SePlayer &amp;player)</argsstring>
+        <name>loadData</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/PlayerDataMgr.h" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1acb5c7c11c6e436cf05cd6c22ef958182" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::onLoadData</definition>
+        <argsstring>(SeDBTableIndex eTableIndex, SePlayer &amp;player, SeBBL_SelectDataRet *pkData)</argsstring>
+        <name>onLoadData</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_b_b_l___select_data_ret" kindref="compound">SeBBL_SelectDataRet</ref> *</type>
+          <declname>pkData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/PlayerDataMgr.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a737692a62a8b7a4aa761eb19a9d48e7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerDataMgr::fixData</definition>
+        <argsstring>(SePlayer &amp;player)</argsstring>
+        <name>fixData</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/PlayerDataMgr.h" line="23" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_data_mgr_1ac965c49bee3a54c68b3783d695d08e5c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_player_data_strategy" kindref="compound">PlayerDataStrategy</ref> *</type>
+        <definition>PlayerDataStrategy * PlayerDataMgr::getStrategy</definition>
+        <argsstring>(SeDBTableIndex eTableIndex)</argsstring>
+        <name>getStrategy</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="33" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="21" bodyend="32"/>
+        <references refid="class_player_data_mgr_1afe5c7c770d6a2f15202594fbd4c3e4f6" compoundref="_d_b_server_2_src_2_player_data_mgr_8h" startline="35">m_strategies</references>
+        <referencedby refid="class_player_data_mgr_1a4fb8c5d7c6f860c0aba43ad4c5017d5d" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="115" endline="127">dataDelete</referencedby>
+        <referencedby refid="class_player_data_mgr_1a85ada0b46f0d312a91b947f14ad4312b" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="87" endline="99">dataInsert</referencedby>
+        <referencedby refid="class_player_data_mgr_1af75268a55f694f2d211336978bbeddc9" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="101" endline="113">dataUpdate</referencedby>
+        <referencedby refid="class_player_data_mgr_1a8900a7aceed51d61962af55c8ae4b05d" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="34" endline="45">getCacheInitID</referencedby>
+        <referencedby refid="class_player_data_mgr_1a6316266863172ad012b6d814be4ab81d" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="160" endline="172">getFieldData</referencedby>
+        <referencedby refid="class_player_data_mgr_1a13728789730d3c587fda1c9b212c3101" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="47" endline="58">getInitGenIDSql</referencedby>
+        <referencedby refid="class_player_data_mgr_1af2fea9edfcb479d269f9f28918ff1aa4" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="146" endline="158">getRecordCount</referencedby>
+        <referencedby refid="class_player_data_mgr_1a0eada6a9ca8e625f7131b5d45efd498c" compoundref="_world_server_2_src_2_player_data_mgr_8cpp" startline="45" endline="54">onInitGenIDRet</referencedby>
+        <referencedby refid="class_player_data_mgr_1a6c8d586dda580291d5d1f21d75ab187f" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="137" endline="144">onLoadData</referencedby>
+        <referencedby refid="class_player_data_mgr_1af915de193cbccda2a9f8c2600362be3d" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="60" endline="67">setRebuildMemData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a561c701767934d368ac3cd6de1499cc1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_player_data_strategy" kindref="compound">PlayerDataStrategy</ref> *</type>
+        <definition>PlayerDataStrategy* PlayerDataMgr::getStrategy</definition>
+        <argsstring>(SeDBTableIndex eTableIndex)</argsstring>
+        <name>getStrategy</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/src/PlayerDataMgr.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a561c701767934d368ac3cd6de1499cc1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_player_data_strategy" kindref="compound">PlayerDataStrategy</ref> *</type>
+        <definition>PlayerDataStrategy* PlayerDataMgr::getStrategy</definition>
+        <argsstring>(SeDBTableIndex eTableIndex)</argsstring>
+        <name>getStrategy</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a561c701767934d368ac3cd6de1499cc1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_player_data_strategy" kindref="compound">PlayerDataStrategy</ref> *</type>
+        <definition>PlayerDataStrategy* PlayerDataMgr::getStrategy</definition>
+        <argsstring>(SeDBTableIndex eTableIndex)</argsstring>
+        <name>getStrategy</name>
+        <param>
+          <type><ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref></type>
+          <declname>eTableIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/PlayerDataMgr.h" line="25" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_player_data_mgr_1ac7f6ab536e0de38f8fc73a8a2f9e8330" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; <ref refid="class_player_data_strategy" kindref="compound">PlayerDataStrategy</ref> * &gt; &amp;</type>
+        <definition>std::list&lt; PlayerDataStrategy * &gt; &amp; PlayerDataMgr::getInitList</definition>
+        <argsstring>()</argsstring>
+        <name>getInitList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="37" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="6" bodyend="10"/>
+        <referencedby refid="class_player_data_mgr_1a9d9a2eafba07920c954dc593923639b7" compoundref="_d_b_server_2_src_2_player_data_mgr_8cpp" startline="12" endline="19">initialize</referencedby>
+        <referencedby refid="class_player_data_strategy_1aa106c2fa936d492d77c4fddc687e5256" compoundref="_d_b_server_2_src_2_player_data_strategy_8cpp" startline="5" endline="9">PlayerDataStrategy::PlayerDataStrategy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a557aca0cb68ea85d8f284f3e2a7ea3b2" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; <ref refid="class_player_data_strategy" kindref="compound">PlayerDataStrategy</ref> * &gt; &amp;</type>
+        <definition>static std::list&lt;PlayerDataStrategy *&gt;&amp; PlayerDataMgr::getInitList</definition>
+        <argsstring>()</argsstring>
+        <name>getInitList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/src/PlayerDataMgr.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a557aca0cb68ea85d8f284f3e2a7ea3b2" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; <ref refid="class_player_data_strategy" kindref="compound">PlayerDataStrategy</ref> * &gt; &amp;</type>
+        <definition>static std::list&lt;PlayerDataStrategy *&gt;&amp; PlayerDataMgr::getInitList</definition>
+        <argsstring>()</argsstring>
+        <name>getInitList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/PlayerDataMgr.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_data_mgr_1a557aca0cb68ea85d8f284f3e2a7ea3b2" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; <ref refid="class_player_data_strategy" kindref="compound">PlayerDataStrategy</ref> * &gt; &amp;</type>
+        <definition>static std::list&lt;PlayerDataStrategy *&gt;&amp; PlayerDataMgr::getInitList</definition>
+        <argsstring>()</argsstring>
+        <name>getInitList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/PlayerDataMgr.h" line="30" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2063">
+        <label>PlayerDataMgr</label>
+        <link refid="class_player_data_mgr"/>
+        <childnode refid="2064" relation="usage">
+          <edgelabel>m_initGenIDTables</edgelabel>
+        </childnode>
+        <childnode refid="2065" relation="usage">
+          <edgelabel>m_strategies</edgelabel>
+        </childnode>
+      </node>
+      <node id="2065">
+        <label>std::map&lt; SeDBTableIndex, PlayerDataStrategy * &gt;</label>
+        <childnode refid="2066" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2064">
+        <label>std::set&lt; SeDBTableIndex &gt;</label>
+      </node>
+      <node id="2066">
+        <label>PlayerDataStrategy</label>
+        <link refid="class_player_data_strategy"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" line="11" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.h" bodystart="10" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_player_data_mgr_1a4fb8c5d7c6f860c0aba43ad4c5017d5d" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>dataDelete</name></member>
+      <member refid="class_player_data_mgr_1a4fb8c5d7c6f860c0aba43ad4c5017d5d" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>dataDelete</name></member>
+      <member refid="class_player_data_mgr_1a85ada0b46f0d312a91b947f14ad4312b" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>dataInsert</name></member>
+      <member refid="class_player_data_mgr_1a85ada0b46f0d312a91b947f14ad4312b" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>dataInsert</name></member>
+      <member refid="class_player_data_mgr_1af75268a55f694f2d211336978bbeddc9" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>dataUpdate</name></member>
+      <member refid="class_player_data_mgr_1af75268a55f694f2d211336978bbeddc9" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>dataUpdate</name></member>
+      <member refid="class_player_data_mgr_1a737692a62a8b7a4aa761eb19a9d48e7f" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>fixData</name></member>
+      <member refid="class_player_data_mgr_1a737692a62a8b7a4aa761eb19a9d48e7f" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>fixData</name></member>
+      <member refid="class_player_data_mgr_1a8900a7aceed51d61962af55c8ae4b05d" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>getCacheInitID</name></member>
+      <member refid="class_player_data_mgr_1a8900a7aceed51d61962af55c8ae4b05d" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>getCacheInitID</name></member>
+      <member refid="class_player_data_mgr_1a6316266863172ad012b6d814be4ab81d" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>getFieldData</name></member>
+      <member refid="class_player_data_mgr_1a6316266863172ad012b6d814be4ab81d" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>getFieldData</name></member>
+      <member refid="class_player_data_mgr_1a13728789730d3c587fda1c9b212c3101" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>getInitGenIDSql</name></member>
+      <member refid="class_player_data_mgr_1a13728789730d3c587fda1c9b212c3101" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>getInitGenIDSql</name></member>
+      <member refid="class_player_data_mgr_1ac7f6ab536e0de38f8fc73a8a2f9e8330" prot="private" virt="non-virtual"><scope>PlayerDataMgr</scope><name>getInitList</name></member>
+      <member refid="class_player_data_mgr_1a557aca0cb68ea85d8f284f3e2a7ea3b2" prot="private" virt="non-virtual"><scope>PlayerDataMgr</scope><name>getInitList</name></member>
+      <member refid="class_player_data_mgr_1a557aca0cb68ea85d8f284f3e2a7ea3b2" prot="private" virt="non-virtual"><scope>PlayerDataMgr</scope><name>getInitList</name></member>
+      <member refid="class_player_data_mgr_1a557aca0cb68ea85d8f284f3e2a7ea3b2" prot="private" virt="non-virtual"><scope>PlayerDataMgr</scope><name>getInitList</name></member>
+      <member refid="class_player_data_mgr_1af2fea9edfcb479d269f9f28918ff1aa4" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>getRecordCount</name></member>
+      <member refid="class_player_data_mgr_1af2fea9edfcb479d269f9f28918ff1aa4" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>getRecordCount</name></member>
+      <member refid="class_player_data_mgr_1ac965c49bee3a54c68b3783d695d08e5c" prot="private" virt="non-virtual"><scope>PlayerDataMgr</scope><name>getStrategy</name></member>
+      <member refid="class_player_data_mgr_1a561c701767934d368ac3cd6de1499cc1" prot="private" virt="non-virtual"><scope>PlayerDataMgr</scope><name>getStrategy</name></member>
+      <member refid="class_player_data_mgr_1a561c701767934d368ac3cd6de1499cc1" prot="private" virt="non-virtual"><scope>PlayerDataMgr</scope><name>getStrategy</name></member>
+      <member refid="class_player_data_mgr_1a561c701767934d368ac3cd6de1499cc1" prot="private" virt="non-virtual"><scope>PlayerDataMgr</scope><name>getStrategy</name></member>
+      <member refid="class_player_data_mgr_1afe07a1f8b2596234ed92d0b118c57ed2" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>initGenID</name></member>
+      <member refid="class_player_data_mgr_1afe07a1f8b2596234ed92d0b118c57ed2" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>initGenID</name></member>
+      <member refid="class_player_data_mgr_1a9d9a2eafba07920c954dc593923639b7" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>initialize</name></member>
+      <member refid="class_player_data_mgr_1a9d9a2eafba07920c954dc593923639b7" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>initialize</name></member>
+      <member refid="class_player_data_mgr_1a9d9a2eafba07920c954dc593923639b7" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>initialize</name></member>
+      <member refid="class_player_data_mgr_1a9d9a2eafba07920c954dc593923639b7" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>initialize</name></member>
+      <member refid="class_player_data_mgr_1a21b46d88de88f080f3c6bdb20d328105" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>isGenIDFinished</name></member>
+      <member refid="class_player_data_mgr_1a21b46d88de88f080f3c6bdb20d328105" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>isGenIDFinished</name></member>
+      <member refid="class_player_data_mgr_1ae72cc44d6ef2216d7bc28e0e59367cf8" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>loadData</name></member>
+      <member refid="class_player_data_mgr_1ae72cc44d6ef2216d7bc28e0e59367cf8" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>loadData</name></member>
+      <member refid="class_player_data_mgr_1a6d28ee24415b3d37e015c108c5612888" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>loadData</name></member>
+      <member refid="class_player_data_mgr_1a6d28ee24415b3d37e015c108c5612888" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>loadData</name></member>
+      <member refid="class_player_data_mgr_1a0017c3ea59bd343055e576afe58f7681" prot="private" virt="non-virtual"><scope>PlayerDataMgr</scope><name>m_initGenIDTables</name></member>
+      <member refid="class_player_data_mgr_1afe5c7c770d6a2f15202594fbd4c3e4f6" prot="private" virt="non-virtual"><scope>PlayerDataMgr</scope><name>m_strategies</name></member>
+      <member refid="class_player_data_mgr_1a0eada6a9ca8e625f7131b5d45efd498c" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>onInitGenIDRet</name></member>
+      <member refid="class_player_data_mgr_1a0eada6a9ca8e625f7131b5d45efd498c" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>onInitGenIDRet</name></member>
+      <member refid="class_player_data_mgr_1a6c8d586dda580291d5d1f21d75ab187f" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>onLoadData</name></member>
+      <member refid="class_player_data_mgr_1a6c8d586dda580291d5d1f21d75ab187f" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>onLoadData</name></member>
+      <member refid="class_player_data_mgr_1acb5c7c11c6e436cf05cd6c22ef958182" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>onLoadData</name></member>
+      <member refid="class_player_data_mgr_1acb5c7c11c6e436cf05cd6c22ef958182" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>onLoadData</name></member>
+      <member refid="class_player_data_mgr_1a088382b9730db91340e0625a5c97c30e" prot="private" virt="non-virtual"><scope>PlayerDataMgr</scope><name>PlayerDataStrategy</name></member>
+      <member refid="class_player_data_mgr_1ad68bea873337b5a7c96e8cfda4fa5cc8" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>rebuildMem</name></member>
+      <member refid="class_player_data_mgr_1ad68bea873337b5a7c96e8cfda4fa5cc8" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>rebuildMem</name></member>
+      <member refid="class_player_data_mgr_1a3426fe6fd19953233d012b477993206b" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>safeDeleteDBPlayer</name></member>
+      <member refid="class_player_data_mgr_1a3426fe6fd19953233d012b477993206b" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>safeDeleteDBPlayer</name></member>
+      <member refid="class_player_data_mgr_1af347b09d34bc099f3dd5bdcd72afebcd" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>saveToDB</name></member>
+      <member refid="class_player_data_mgr_1af347b09d34bc099f3dd5bdcd72afebcd" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>saveToDB</name></member>
+      <member refid="class_player_data_mgr_1af915de193cbccda2a9f8c2600362be3d" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>setRebuildMemData</name></member>
+      <member refid="class_player_data_mgr_1af915de193cbccda2a9f8c2600362be3d" prot="public" virt="non-virtual"><scope>PlayerDataMgr</scope><name>setRebuildMemData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

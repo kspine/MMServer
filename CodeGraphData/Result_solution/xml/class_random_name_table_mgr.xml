@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_random_name_table_mgr" kind="class" prot="public">
+    <compoundname>RandomNameTableMgr</compoundname>
+    <includes refid="_random_name__table_8hpp" local="no">RandomName_table.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_random_name_table_mgr_1ae0602213557eb4465847a05c3ab1a70b" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned int, <ref refid="struct_random_name_table" kindref="compound">RandomNameTable</ref> * &gt;</type>
+        <definition>std::map&lt;unsigned int,RandomNameTable*&gt; RandomNameTableMgr::m_kRandomNameTableMap</definition>
+        <argsstring></argsstring>
+        <name>m_kRandomNameTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.hpp" line="38" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.hpp" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_random_name_table_mgr_1afbf46a62a8ce2a9a831a3644a26abd41" compoundref="_random_name__table_8cpp" startline="104" endline="134">FillData</referencedby>
+        <referencedby refid="class_random_name_table_mgr_1a633d87feacf3d9925a905e3adfc04600" compoundref="_random_name__table_8cpp" startline="42" endline="50">GetRandomNameTable</referencedby>
+        <referencedby refid="class_random_name_table_mgr_1a2fc9324c7cf844c1319824719edc6752" compoundref="_random_name__table_8cpp" startline="26" endline="29">GetRandomNameTableMap</referencedby>
+        <referencedby refid="class_random_name_table_mgr_1a02faf3ecac5a9815c2c3dd01837063d3" compoundref="_random_name__table_8cpp" startline="31" endline="40">GetRandomNameTableVec</referencedby>
+        <referencedby refid="class_random_name_table_mgr_1aa2a1e5dc919ae87750f75d26c68a60cf" compoundref="_random_name__table_8cpp" startline="57" endline="60">~RandomNameTableMgr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_random_name_table_mgr_1a2a0c6c911cf846ff83b86c829ebc4e33" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_random_name_table_mgr" kindref="compound">RandomNameTableMgr</ref> *</type>
+        <definition>RandomNameTableMgr * RandomNameTableMgr::m_pkRandomNameTableMgr</definition>
+        <argsstring></argsstring>
+        <name>m_pkRandomNameTableMgr</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.hpp" line="39" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.hpp" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_random_name_table_mgr_1a7d7b7d37c9e41eb54bd83d12803e150d" compoundref="_random_name__table_8cpp" startline="6" endline="13">Get</referencedby>
+        <referencedby refid="class_random_name_table_mgr_1a94c195998d8134e9743d520525c00b25" compoundref="_random_name__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_random_name_table_mgr_1a7d7b7d37c9e41eb54bd83d12803e150d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_random_name_table_mgr" kindref="compound">RandomNameTableMgr</ref> *</type>
+        <definition>RandomNameTableMgr * RandomNameTableMgr::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.hpp" line="25" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.cpp" bodystart="6" bodyend="13"/>
+        <references refid="class_random_name_table_mgr_1a2a0c6c911cf846ff83b86c829ebc4e33" compoundref="_random_name__table_8hpp" startline="39">m_pkRandomNameTableMgr</references>
+        <references refid="class_random_name_table_mgr_1a270278c19c5de3082f28bef05b26b18b" compoundref="_random_name__table_8cpp" startline="52" endline="55">RandomNameTableMgr</references>
+        <referencedby refid="class_table_mgr_1ae1ceeb5a4a6212a8497ef7dd92f87885" compoundref="_table_mgr_8h" startline="79" endline="132">TableMgr::LoadTable</referencedby>
+        <referencedby refid="class_random_name_table_mgr_1a94c195998d8134e9743d520525c00b25" compoundref="_random_name__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_random_name_table_mgr_1a94c195998d8134e9743d520525c00b25" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_random_name_table_mgr" kindref="compound">RandomNameTableMgr</ref> *</type>
+        <definition>RandomNameTableMgr * RandomNameTableMgr::ReLoad</definition>
+        <argsstring>()</argsstring>
+        <name>ReLoad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.hpp" line="26" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.cpp" bodystart="15" bodyend="23"/>
+        <references refid="class_random_name_table_mgr_1a7d7b7d37c9e41eb54bd83d12803e150d" compoundref="_random_name__table_8cpp" startline="6" endline="13">Get</references>
+        <references refid="class_random_name_table_mgr_1a2a0c6c911cf846ff83b86c829ebc4e33" compoundref="_random_name__table_8hpp" startline="39">m_pkRandomNameTableMgr</references>
+        <referencedby refid="class_table_mgr_1a6298f0e9b81636b481a25c06016e237a" compoundref="_table_mgr1_8cpp" startline="860" endline="914">TableMgr::ReloadTable</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_random_name_table_mgr_1a270278c19c5de3082f28bef05b26b18b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RandomNameTableMgr::RandomNameTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>RandomNameTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.hpp" line="27" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.cpp" bodystart="52" bodyend="55"/>
+        <references refid="class_random_name_table_mgr_1a64f2090c4ae646a4ace61bbcd9ff9e8e" compoundref="_random_name__table_8cpp" startline="62" endline="102">Load</references>
+        <referencedby refid="class_random_name_table_mgr_1a7d7b7d37c9e41eb54bd83d12803e150d" compoundref="_random_name__table_8cpp" startline="6" endline="13">Get</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_random_name_table_mgr_1aa2a1e5dc919ae87750f75d26c68a60cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RandomNameTableMgr::~RandomNameTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~RandomNameTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.hpp" line="28" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.cpp" bodystart="57" bodyend="60"/>
+        <references refid="class_random_name_table_mgr_1ae0602213557eb4465847a05c3ab1a70b" compoundref="_random_name__table_8hpp" startline="38">m_kRandomNameTableMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_random_name_table_mgr_1a633d87feacf3d9925a905e3adfc04600" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_random_name_table" kindref="compound">RandomNameTable</ref> *</type>
+        <definition>const RandomNameTable * RandomNameTableMgr::GetRandomNameTable</definition>
+        <argsstring>(unsigned int iTypeID)</argsstring>
+        <name>GetRandomNameTable</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>iTypeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.hpp" line="30" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.cpp" bodystart="42" bodyend="50"/>
+        <references refid="class_random_name_table_mgr_1ae0602213557eb4465847a05c3ab1a70b" compoundref="_random_name__table_8hpp" startline="38">m_kRandomNameTableMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_random_name_table_mgr_1a2fc9324c7cf844c1319824719edc6752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; unsigned int, <ref refid="struct_random_name_table" kindref="compound">RandomNameTable</ref> * &gt; &amp;</type>
+        <definition>const std::map&lt; unsigned int, RandomNameTable * &gt; &amp; RandomNameTableMgr::GetRandomNameTableMap</definition>
+        <argsstring>()</argsstring>
+        <name>GetRandomNameTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.hpp" line="31" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.cpp" bodystart="26" bodyend="29"/>
+        <references refid="class_random_name_table_mgr_1ae0602213557eb4465847a05c3ab1a70b" compoundref="_random_name__table_8hpp" startline="38">m_kRandomNameTableMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_random_name_table_mgr_1a02faf3ecac5a9815c2c3dd01837063d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_table_res_array" kindref="compound">TableResArray</ref></type>
+        <definition>TableResArray RandomNameTableMgr::GetRandomNameTableVec</definition>
+        <argsstring>()</argsstring>
+        <name>GetRandomNameTableVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.hpp" line="32" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.cpp" bodystart="31" bodyend="40"/>
+        <references refid="class_random_name_table_mgr_1ae0602213557eb4465847a05c3ab1a70b" compoundref="_random_name__table_8hpp" startline="38">m_kRandomNameTableMap</references>
+        <references refid="class_table_res_array_1ab7fbd71c9a00bfd30ae2282a4955dbc0" compoundref="_se_table_res_base_8cpp" startline="13" endline="16">TableResArray::pushBack</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_random_name_table_mgr_1a64f2090c4ae646a4ace61bbcd9ff9e8e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RandomNameTableMgr::Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.hpp" line="35" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.cpp" bodystart="62" bodyend="102"/>
+        <references refid="class_ti_xml_document_1a6dfc01a6e5d58e56acd537dfd3bdeb29" compoundref="tinyxml_8h" startline="1430" endline="1430">TiXmlDocument::Error</references>
+        <references refid="class_ti_xml_document_1a9d0f689f6e09ea494ea547be8d79c25e" compoundref="tinyxml_8h" startline="1433" endline="1433">TiXmlDocument::ErrorDesc</references>
+        <references refid="class_random_name_table_mgr_1afbf46a62a8ce2a9a831a3644a26abd41" compoundref="_random_name__table_8cpp" startline="104" endline="134">FillData</references>
+        <references refid="class_ti_xml_node_1ab1f8d8e70d88aea4c5efedfe00862d55" compoundref="tinyxml_8cpp" startline="420" endline="432">TiXmlNode::FirstChildElement</references>
+        <references refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" compoundref="_table_mgr1_8cpp" startline="36" endline="43">TableMgr::Get</references>
+        <references refid="class_table_mgr_1af1a60a8b2807abd34ceb6002cf8f4b80" compoundref="_table_mgr1_8cpp" startline="851" endline="858">TableMgr::GetTableLoader</references>
+        <references refid="class_table_loader_1a8d06b11d37cde9ff76d98901dd39bab4">TableLoader::LoadTable</references>
+        <references refid="class_ti_xml_node_1a7667217e269e0da01d1f82aee94d1a3d" compoundref="tinyxml_8cpp" startline="450" endline="462">TiXmlNode::NextSiblingElement</references>
+        <references refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</references>
+        <referencedby refid="class_random_name_table_mgr_1a270278c19c5de3082f28bef05b26b18b" compoundref="_random_name__table_8cpp" startline="52" endline="55">RandomNameTableMgr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_random_name_table_mgr_1afbf46a62a8ce2a9a831a3644a26abd41" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RandomNameTableMgr::FillData</definition>
+        <argsstring>(RandomNameTable *row, TiXmlElement *element)</argsstring>
+        <name>FillData</name>
+        <param>
+          <type><ref refid="struct_random_name_table" kindref="compound">RandomNameTable</ref> *</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.hpp" line="36" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.cpp" bodystart="104" bodyend="134"/>
+        <references refid="class_ti_xml_element_1ac1e4691e9375ba4e665dce7e46a50a9c" compoundref="tinyxml_8cpp" startline="544" endline="550">TiXmlElement::Attribute</references>
+        <references refid="struct_random_name_table_1ac1092729924bfe2cbe61d06ebb53d493" compoundref="_random_name__table_8hpp" startline="16">RandomNameTable::ksName1</references>
+        <references refid="struct_random_name_table_1a65e3b6913c036b158117409eef15d61e" compoundref="_random_name__table_8hpp" startline="17">RandomNameTable::ksName2</references>
+        <references refid="struct_random_name_table_1a17f55800825e739dd6e14750c4fdb01d" compoundref="_random_name__table_8hpp" startline="18">RandomNameTable::ksName3</references>
+        <references refid="class_random_name_table_mgr_1ae0602213557eb4465847a05c3ab1a70b" compoundref="_random_name__table_8hpp" startline="38">m_kRandomNameTableMap</references>
+        <references refid="struct_random_name_table_1a27ca72cb1ec6dc368cfb08fe56e3c18d" compoundref="_random_name__table_8hpp" startline="15">RandomNameTable::uiUnitID</references>
+        <referencedby refid="class_random_name_table_mgr_1a64f2090c4ae646a4ace61bbcd9ff9e8e" compoundref="_random_name__table_8cpp" startline="62" endline="102">Load</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2514">
+        <label>RandomNameTable</label>
+        <link refid="struct_random_name_table"/>
+        <childnode refid="2515" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2516" relation="usage">
+          <edgelabel>ksName1</edgelabel>
+          <edgelabel>ksName2</edgelabel>
+          <edgelabel>ksName3</edgelabel>
+        </childnode>
+      </node>
+      <node id="2517">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="2515">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="2513">
+        <label>std::map&lt; unsigned int, RandomNameTable * &gt;</label>
+        <childnode refid="2514" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2512">
+        <label>RandomNameTableMgr</label>
+        <link refid="class_random_name_table_mgr"/>
+        <childnode refid="2512" relation="usage">
+          <edgelabel>m_pkRandomNameTableMgr</edgelabel>
+        </childnode>
+        <childnode refid="2513" relation="usage">
+          <edgelabel>m_kRandomNameTableMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="2516">
+        <label>std::string</label>
+        <childnode refid="2517" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.hpp" line="23" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/RandomName_table.hpp" bodystart="22" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_random_name_table_mgr_1afbf46a62a8ce2a9a831a3644a26abd41" prot="private" virt="non-virtual"><scope>RandomNameTableMgr</scope><name>FillData</name></member>
+      <member refid="class_random_name_table_mgr_1a7d7b7d37c9e41eb54bd83d12803e150d" prot="public" virt="non-virtual"><scope>RandomNameTableMgr</scope><name>Get</name></member>
+      <member refid="class_random_name_table_mgr_1a633d87feacf3d9925a905e3adfc04600" prot="public" virt="non-virtual"><scope>RandomNameTableMgr</scope><name>GetRandomNameTable</name></member>
+      <member refid="class_random_name_table_mgr_1a2fc9324c7cf844c1319824719edc6752" prot="public" virt="non-virtual"><scope>RandomNameTableMgr</scope><name>GetRandomNameTableMap</name></member>
+      <member refid="class_random_name_table_mgr_1a02faf3ecac5a9815c2c3dd01837063d3" prot="public" virt="non-virtual"><scope>RandomNameTableMgr</scope><name>GetRandomNameTableVec</name></member>
+      <member refid="class_random_name_table_mgr_1a64f2090c4ae646a4ace61bbcd9ff9e8e" prot="private" virt="non-virtual"><scope>RandomNameTableMgr</scope><name>Load</name></member>
+      <member refid="class_random_name_table_mgr_1ae0602213557eb4465847a05c3ab1a70b" prot="private" virt="non-virtual"><scope>RandomNameTableMgr</scope><name>m_kRandomNameTableMap</name></member>
+      <member refid="class_random_name_table_mgr_1a2a0c6c911cf846ff83b86c829ebc4e33" prot="private" virt="non-virtual"><scope>RandomNameTableMgr</scope><name>m_pkRandomNameTableMgr</name></member>
+      <member refid="class_random_name_table_mgr_1a270278c19c5de3082f28bef05b26b18b" prot="public" virt="non-virtual"><scope>RandomNameTableMgr</scope><name>RandomNameTableMgr</name></member>
+      <member refid="class_random_name_table_mgr_1a94c195998d8134e9743d520525c00b25" prot="public" virt="non-virtual"><scope>RandomNameTableMgr</scope><name>ReLoad</name></member>
+      <member refid="class_random_name_table_mgr_1aa2a1e5dc919ae87750f75d26c68a60cf" prot="public" virt="non-virtual"><scope>RandomNameTableMgr</scope><name>~RandomNameTableMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

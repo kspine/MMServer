@@ -1,0 +1,1880 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_world_server_2src_2_player_data_mgr_8h" kind="file">
+    <compoundname>PlayerDataMgr.h</compoundname>
+    <includes local="no">list</includes>
+    <includes local="no">map</includes>
+    <includes refid="_se_d_b_define_8h" local="yes">SeDBDefine.h</includes>
+    <includes refid="_world_server_2src_2_se_player_8h" local="yes">SePlayer.h</includes>
+    <includes refid="_se_ptl___b_s___to___b_l_s_8h" local="yes">SePtl_BS_To_BLS.h</includes>
+    <includedby refid="_world_server_2src_2_player_data_mgr_8cpp" local="yes">WorldServer/src/PlayerDataMgr.cpp</includedby>
+    <includedby refid="_world_server_2src_2_player_data_strategy_8cpp" local="yes">WorldServer/src/PlayerDataStrategy.cpp</includedby>
+    <includedby refid="src_2_se_b_b_l_process_8cpp" local="yes">WorldServer/src/SeBBLProcess.cpp</includedby>
+    <includedby refid="src_2_se_b_w_process_8cpp" local="yes">WorldServer/src/SeBWProcess.cpp</includedby>
+    <includedby refid="_world_server_2src_2_se_player_8cpp" local="yes">WorldServer/src/SePlayer.cpp</includedby>
+    <includedby refid="src_2_world_server_8cpp" local="yes">WorldServer/src/WorldServer.cpp</includedby>
+    <incdepgraph>
+      <node id="19202">
+        <label>list</label>
+      </node>
+      <node id="19221">
+        <label>locale</label>
+      </node>
+      <node id="19381">
+        <label>SePlayer.inl</label>
+        <link refid="_world_server_2src_2_se_player_8inl"/>
+      </node>
+      <node id="19317">
+        <label>AchievementTask_table.hpp</label>
+        <link refid="_achievement_task__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19360">
+        <label>SePtl_MS_To_WS.h</label>
+        <link refid="_se_ptl___m_s___to___w_s_8h"/>
+        <childnode refid="19205" relation="include">
+        </childnode>
+      </node>
+      <node id="19359">
+        <label>SePtl_WS_To_MS.h</label>
+        <link refid="_se_ptl___w_s___to___m_s_8h"/>
+        <childnode refid="19205" relation="include">
+        </childnode>
+      </node>
+      <node id="19288">
+        <label>MGClientExport.h</label>
+        <link refid="_m_g_client_export_8h"/>
+      </node>
+      <node id="19337">
+        <label>SeCharAchieveSchedule.inl</label>
+        <link refid="secharachieveschedule_8inl"/>
+      </node>
+      <node id="19281">
+        <label>EffectSwitch_table.hpp</label>
+        <link refid="_effect_switch__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19256">
+        <label>Racehelp_table.hpp</label>
+        <link refid="_racehelp__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19229">
+        <label>queue</label>
+      </node>
+      <node id="19318">
+        <label>ItemMgr.h</label>
+        <link refid="src_2_item_mgr_8h"/>
+        <childnode refid="19206" relation="include">
+        </childnode>
+        <childnode refid="19238" relation="include">
+        </childnode>
+        <childnode refid="19239" relation="include">
+        </childnode>
+        <childnode refid="19319" relation="include">
+        </childnode>
+        <childnode refid="19321" relation="include">
+        </childnode>
+        <childnode refid="19250" relation="include">
+        </childnode>
+        <childnode refid="19322" relation="include">
+        </childnode>
+        <childnode refid="19343" relation="include">
+        </childnode>
+        <childnode refid="19365" relation="include">
+        </childnode>
+      </node>
+      <node id="19225">
+        <label>limits</label>
+      </node>
+      <node id="19238">
+        <label>SePtlCommDefine.h</label>
+        <link refid="_se_ptl_comm_define_8h"/>
+      </node>
+      <node id="19314">
+        <label>KillBounty_table.hpp</label>
+        <link refid="_kill_bounty__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19356">
+        <label>SePtl_NS_To_WS.h</label>
+        <link refid="_se_ptl___n_s___to___w_s_8h"/>
+        <childnode refid="19205" relation="include">
+        </childnode>
+      </node>
+      <node id="19355">
+        <label>SePtl_WS_To_NS.h</label>
+        <link refid="_se_ptl___w_s___to___n_s_8h"/>
+        <childnode refid="19205" relation="include">
+        </childnode>
+      </node>
+      <node id="19239">
+        <label>SeMemPool.h</label>
+        <link refid="_se_mem_pool_8h"/>
+        <childnode refid="19206" relation="include">
+        </childnode>
+        <childnode refid="19240" relation="include">
+        </childnode>
+        <childnode refid="19213" relation="include">
+        </childnode>
+      </node>
+      <node id="19208">
+        <label>windows.h</label>
+      </node>
+      <node id="19269">
+        <label>Pet_table.hpp</label>
+        <link refid="_pet__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19213">
+        <label>assert.h</label>
+      </node>
+      <node id="19309">
+        <label>FreeHeroes_table.hpp</label>
+        <link refid="_free_heroes__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19374">
+        <label>RaceMapMgr.h</label>
+        <link refid="src_2_race_map_mgr_8h"/>
+        <childnode refid="19322" relation="include">
+        </childnode>
+        <childnode refid="19365" relation="include">
+        </childnode>
+      </node>
+      <node id="19348">
+        <label>SeServerComDef.h</label>
+        <link refid="_se_server_com_def_8h"/>
+        <childnode refid="19206" relation="include">
+        </childnode>
+        <childnode refid="19239" relation="include">
+        </childnode>
+        <childnode refid="19235" relation="include">
+        </childnode>
+        <childnode refid="19238" relation="include">
+        </childnode>
+      </node>
+      <node id="19201">
+        <label>WorldServer/src/PlayerDataMgr.h</label>
+        <link refid="WorldServer/src/PlayerDataMgr.h"/>
+        <childnode refid="19202" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19204" relation="include">
+        </childnode>
+        <childnode refid="19241" relation="include">
+        </childnode>
+        <childnode refid="19382" relation="include">
+        </childnode>
+      </node>
+      <node id="19336">
+        <label>SeCharAchieveFinish.inl</label>
+        <link refid="_se_char_achieve_finish_8inl"/>
+      </node>
+      <node id="19278">
+        <label>RandomName_table.hpp</label>
+        <link refid="_random_name__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19204">
+        <label>SeDBDefine.h</label>
+        <link refid="_se_d_b_define_8h"/>
+        <childnode refid="19205" relation="include">
+        </childnode>
+      </node>
+      <node id="19378">
+        <label>AchieveMgr.h</label>
+        <link refid="src_2_achieve_mgr_8h"/>
+        <childnode refid="19206" relation="include">
+        </childnode>
+        <childnode refid="19238" relation="include">
+        </childnode>
+      </node>
+      <node id="19322">
+        <label>SeAllTableData.h</label>
+        <link refid="_world_server_2src_2_se_all_table_data_8h"/>
+        <childnode refid="19323" relation="include">
+        </childnode>
+        <childnode refid="19339" relation="include">
+        </childnode>
+        <childnode refid="19340" relation="include">
+        </childnode>
+        <childnode refid="19341" relation="include">
+        </childnode>
+        <childnode refid="19324" relation="include">
+        </childnode>
+      </node>
+      <node id="19296">
+        <label>MapShopRes_table.hpp</label>
+        <link refid="_map_shop_res__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19272">
+        <label>chance_table.hpp</label>
+        <link refid="_chance__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19211">
+        <label>stdlib.h</label>
+      </node>
+      <node id="19240">
+        <label>EsLock.h</label>
+      </node>
+      <node id="19247">
+        <label>Unit_table.hpp</label>
+        <link refid="_unit__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19332">
+        <label>SeCharHero.inl</label>
+        <link refid="_se_char_hero_8inl"/>
+      </node>
+      <node id="19323">
+        <label>SeAllTableEnum.h</label>
+        <link refid="_se_all_table_enum_8h"/>
+        <childnode refid="19206" relation="include">
+        </childnode>
+        <childnode refid="19204" relation="include">
+        </childnode>
+        <childnode refid="19324" relation="include">
+        </childnode>
+      </node>
+      <node id="19263">
+        <label>RenJiCustomData_table.hpp</label>
+        <link refid="_ren_ji_custom_data__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19271">
+        <label>Dress_table.hpp</label>
+        <link refid="_dress__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19215">
+        <label>cmath</label>
+      </node>
+      <node id="19375">
+        <label>TaskMgr.h</label>
+        <link refid="src_2_task_mgr_8h"/>
+        <childnode refid="19244" relation="include">
+        </childnode>
+        <childnode refid="19238" relation="include">
+        </childnode>
+        <childnode refid="19376" relation="include">
+        </childnode>
+        <childnode refid="19233" relation="include">
+        </childnode>
+        <childnode refid="19377" relation="include">
+        </childnode>
+      </node>
+      <node id="19294">
+        <label>AvatarEffect_table.hpp</label>
+        <link refid="_avatar_effect__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19299">
+        <label>MapMisc_table.hpp</label>
+        <link refid="_map_misc__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19303">
+        <label>UpgradeCost_table.hpp</label>
+        <link refid="_upgrade_cost__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19316">
+        <label>VideoTag_table.hpp</label>
+        <link refid="_video_tag__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19261">
+        <label>RenJiActions_table.hpp</label>
+        <link refid="_ren_ji_actions__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19246">
+        <label>SeTableResBase.h</label>
+        <link refid="_se_table_res_base_8h"/>
+        <childnode refid="19226" relation="include">
+        </childnode>
+      </node>
+      <node id="19367">
+        <label>BlockServerDef.h</label>
+        <link refid="src_2_block_server_def_8h"/>
+        <childnode refid="19206" relation="include">
+        </childnode>
+        <childnode refid="19205" relation="include">
+        </childnode>
+        <childnode refid="19366" relation="include">
+        </childnode>
+      </node>
+      <node id="19224">
+        <label>string</label>
+      </node>
+      <node id="19352">
+        <label>SePtl_HS_To_HS.h</label>
+        <link refid="_se_ptl___h_s___to___h_s_8h"/>
+        <childnode refid="19205" relation="include">
+        </childnode>
+      </node>
+      <node id="19380">
+        <label>AchieveScheduleMgr.h</label>
+        <link refid="src_2_achieve_schedule_mgr_8h"/>
+        <childnode refid="19322" relation="include">
+        </childnode>
+        <childnode refid="19365" relation="include">
+        </childnode>
+      </node>
+      <node id="19333">
+        <label>SeCharEquipSchema.inl</label>
+        <link refid="_se_char_equip_schema_8inl"/>
+      </node>
+      <node id="19242">
+        <label>SeFormula.h</label>
+        <link refid="_se_formula_8h"/>
+        <childnode refid="19206" relation="include">
+        </childnode>
+        <childnode refid="19205" relation="include">
+        </childnode>
+      </node>
+      <node id="19305">
+        <label>AppendSkill_table.hpp</label>
+        <link refid="_append_skill__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19203">
+        <label>map</label>
+      </node>
+      <node id="19377">
+        <label>SeFileLog.h</label>
+        <link refid="_se_file_log_8h"/>
+        <childnode refid="19363" relation="include">
+        </childnode>
+        <childnode refid="19217" relation="include">
+        </childnode>
+        <childnode refid="19240" relation="include">
+        </childnode>
+      </node>
+      <node id="19343">
+        <label>WorldServerDef.h</label>
+        <link refid="src_2_world_server_def_8h"/>
+        <childnode refid="19232" relation="include">
+        </childnode>
+        <childnode refid="19344" relation="include">
+        </childnode>
+        <childnode refid="19345" relation="include">
+        </childnode>
+        <childnode refid="19239" relation="include">
+        </childnode>
+        <childnode refid="19320" relation="include">
+        </childnode>
+        <childnode refid="19346" relation="include">
+        </childnode>
+        <childnode refid="19341" relation="include">
+        </childnode>
+        <childnode refid="19323" relation="include">
+        </childnode>
+        <childnode refid="19347" relation="include">
+        </childnode>
+        <childnode refid="19319" relation="include">
+        </childnode>
+        <childnode refid="19348" relation="include">
+        </childnode>
+        <childnode refid="19349" relation="include">
+        </childnode>
+        <childnode refid="19350" relation="include">
+        </childnode>
+        <childnode refid="19321" relation="include">
+        </childnode>
+        <childnode refid="19351" relation="include">
+        </childnode>
+        <childnode refid="19352" relation="include">
+        </childnode>
+        <childnode refid="19353" relation="include">
+        </childnode>
+        <childnode refid="19354" relation="include">
+        </childnode>
+        <childnode refid="19355" relation="include">
+        </childnode>
+        <childnode refid="19356" relation="include">
+        </childnode>
+        <childnode refid="19357" relation="include">
+        </childnode>
+        <childnode refid="19358" relation="include">
+        </childnode>
+        <childnode refid="19359" relation="include">
+        </childnode>
+        <childnode refid="19360" relation="include">
+        </childnode>
+        <childnode refid="19361" relation="include">
+        </childnode>
+      </node>
+      <node id="19210">
+        <label>conio.h</label>
+      </node>
+      <node id="19262">
+        <label>RenJiConditions_table.hpp</label>
+        <link refid="_ren_ji_conditions__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19237">
+        <label>SePtlRandomNumDef.h</label>
+        <link refid="_se_ptl_random_num_def_8h"/>
+      </node>
+      <node id="19304">
+        <label>Decompose_table.hpp</label>
+        <link refid="_decompose__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19258">
+        <label>ItemExchange_table.hpp</label>
+        <link refid="_item_exchange__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19241">
+        <label>SePlayer.h</label>
+        <link refid="_world_server_2src_2_se_player_8h"/>
+        <childnode refid="19242" relation="include">
+        </childnode>
+        <childnode refid="19243" relation="include">
+        </childnode>
+        <childnode refid="19366" relation="include">
+        </childnode>
+        <childnode refid="19367" relation="include">
+        </childnode>
+        <childnode refid="19318" relation="include">
+        </childnode>
+        <childnode refid="19368" relation="include">
+        </childnode>
+        <childnode refid="19322" relation="include">
+        </childnode>
+        <childnode refid="19369" relation="include">
+        </childnode>
+        <childnode refid="19370" relation="include">
+        </childnode>
+        <childnode refid="19371" relation="include">
+        </childnode>
+        <childnode refid="19372" relation="include">
+        </childnode>
+        <childnode refid="19373" relation="include">
+        </childnode>
+        <childnode refid="19365" relation="include">
+        </childnode>
+        <childnode refid="19374" relation="include">
+        </childnode>
+        <childnode refid="19375" relation="include">
+        </childnode>
+        <childnode refid="19378" relation="include">
+        </childnode>
+        <childnode refid="19379" relation="include">
+        </childnode>
+        <childnode refid="19380" relation="include">
+        </childnode>
+        <childnode refid="19381" relation="include">
+        </childnode>
+      </node>
+      <node id="19290">
+        <label>HeroInfo_table.hpp</label>
+        <link refid="_hero_info__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19209">
+        <label>direct.h</label>
+      </node>
+      <node id="19287">
+        <label>GlobalTableMgr.h</label>
+        <link refid="_global_table_mgr_8h"/>
+        <childnode refid="19288" relation="include">
+        </childnode>
+        <childnode refid="19250" relation="include">
+        </childnode>
+        <childnode refid="19248" relation="include">
+        </childnode>
+        <childnode refid="19253" relation="include">
+        </childnode>
+        <childnode refid="19247" relation="include">
+        </childnode>
+        <childnode refid="19251" relation="include">
+        </childnode>
+        <childnode refid="19283" relation="include">
+        </childnode>
+        <childnode refid="19284" relation="include">
+        </childnode>
+        <childnode refid="19286" relation="include">
+        </childnode>
+        <childnode refid="19289" relation="include">
+        </childnode>
+        <childnode refid="19290" relation="include">
+        </childnode>
+        <childnode refid="19291" relation="include">
+        </childnode>
+        <childnode refid="19292" relation="include">
+        </childnode>
+        <childnode refid="19293" relation="include">
+        </childnode>
+        <childnode refid="19294" relation="include">
+        </childnode>
+        <childnode refid="19249" relation="include">
+        </childnode>
+        <childnode refid="19295" relation="include">
+        </childnode>
+        <childnode refid="19276" relation="include">
+        </childnode>
+        <childnode refid="19296" relation="include">
+        </childnode>
+        <childnode refid="19297" relation="include">
+        </childnode>
+        <childnode refid="19298" relation="include">
+        </childnode>
+        <childnode refid="19285" relation="include">
+        </childnode>
+        <childnode refid="19299" relation="include">
+        </childnode>
+        <childnode refid="19300" relation="include">
+        </childnode>
+        <childnode refid="19255" relation="include">
+        </childnode>
+        <childnode refid="19301" relation="include">
+        </childnode>
+        <childnode refid="19302" relation="include">
+        </childnode>
+        <childnode refid="19303" relation="include">
+        </childnode>
+        <childnode refid="19304" relation="include">
+        </childnode>
+        <childnode refid="19305" relation="include">
+        </childnode>
+        <childnode refid="19259" relation="include">
+        </childnode>
+        <childnode refid="19257" relation="include">
+        </childnode>
+        <childnode refid="19306" relation="include">
+        </childnode>
+        <childnode refid="19307" relation="include">
+        </childnode>
+        <childnode refid="19308" relation="include">
+        </childnode>
+        <childnode refid="19309" relation="include">
+        </childnode>
+        <childnode refid="19272" relation="include">
+        </childnode>
+        <childnode refid="19310" relation="include">
+        </childnode>
+      </node>
+      <node id="19285">
+        <label>BattleTips_table.hpp</label>
+        <link refid="_battle_tips__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19267">
+        <label>TaskInfo_table.hpp</label>
+        <link refid="_task_info__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19308">
+        <label>Propaganda_table.hpp</label>
+        <link refid="_propaganda__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19382">
+        <label>SePtl_BS_To_BLS.h</label>
+        <link refid="_se_ptl___b_s___to___b_l_s_8h"/>
+        <childnode refid="19205" relation="include">
+        </childnode>
+        <childnode refid="19319" relation="include">
+        </childnode>
+        <childnode refid="19204" relation="include">
+        </childnode>
+      </node>
+      <node id="19300">
+        <label>MapsInfo_table.hpp</label>
+        <link refid="_maps_info__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19379">
+        <label>AchieveFinishMgr.h</label>
+        <link refid="src_2_achieve_finish_mgr_8h"/>
+        <childnode refid="19322" relation="include">
+        </childnode>
+        <childnode refid="19365" relation="include">
+        </childnode>
+      </node>
+      <node id="19222">
+        <label>fstream</label>
+      </node>
+      <node id="19369">
+        <label>EquipSchemaMgr.h</label>
+        <link refid="src_2_equip_schema_mgr_8h"/>
+        <childnode refid="19322" relation="include">
+        </childnode>
+        <childnode refid="19365" relation="include">
+        </childnode>
+      </node>
+      <node id="19233">
+        <label>SeTool.h</label>
+        <link refid="_se_tool_8h"/>
+        <childnode refid="19206" relation="include">
+        </childnode>
+        <childnode refid="19232" relation="include">
+        </childnode>
+        <childnode refid="19234" relation="include">
+        </childnode>
+        <childnode refid="19235" relation="include">
+        </childnode>
+        <childnode refid="19219" relation="include">
+        </childnode>
+        <childnode refid="19236" relation="include">
+        </childnode>
+      </node>
+      <node id="19376">
+        <label>SeRandNum.h</label>
+        <link refid="_se_rand_num_8h"/>
+        <childnode refid="19206" relation="include">
+        </childnode>
+      </node>
+      <node id="19207">
+        <label>winsock2.h</label>
+      </node>
+      <node id="19346">
+        <label>TeDataBaseMgr.h</label>
+      </node>
+      <node id="19361">
+        <label>ServerSessionMgr.h</label>
+        <link refid="_server_session_mgr_8h"/>
+        <childnode refid="19239" relation="include">
+        </childnode>
+        <childnode refid="19320" relation="include">
+        </childnode>
+        <childnode refid="19232" relation="include">
+        </childnode>
+        <childnode refid="19205" relation="include">
+        </childnode>
+        <childnode refid="19362" relation="include">
+        </childnode>
+      </node>
+      <node id="19282">
+        <label>SearchChoice_table.hpp</label>
+        <link refid="_search_choice__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19306">
+        <label>AcSystem_table.hpp</label>
+        <link refid="_ac_system__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19341">
+        <label>SeDBStream.h</label>
+        <link refid="_se_d_b_stream_8h"/>
+        <childnode refid="19206" relation="include">
+        </childnode>
+        <childnode refid="19204" relation="include">
+        </childnode>
+        <childnode refid="19319" relation="include">
+        </childnode>
+        <childnode refid="19205" relation="include">
+        </childnode>
+        <childnode refid="19342" relation="include">
+        </childnode>
+      </node>
+      <node id="19327">
+        <label>SeCharMemory.inl</label>
+        <link refid="_se_char_memory_8inl"/>
+      </node>
+      <node id="19257">
+        <label>ModelRes_table.hpp</label>
+        <link refid="_model_res__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19334">
+        <label>SeCharLadderRank.inl</label>
+        <link refid="_se_char_ladder_rank_8inl"/>
+      </node>
+      <node id="19255">
+        <label>TownItem_table.hpp</label>
+        <link refid="_town_item__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19235">
+        <label>TeMisc.h</label>
+        <link refid="_te_misc_8h"/>
+        <childnode refid="19218" relation="include">
+        </childnode>
+      </node>
+      <node id="19315">
+        <label>CreepTowerGrowth_table.hpp</label>
+        <link refid="_creep_tower_growth__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19335">
+        <label>SeCharActiveAvatar.inl</label>
+        <link refid="_se_char_active_avatar_8inl"/>
+      </node>
+      <node id="19371">
+        <label>HeroMgr.h</label>
+        <link refid="src_2_hero_mgr_8h"/>
+        <childnode refid="19322" relation="include">
+        </childnode>
+        <childnode refid="19365" relation="include">
+        </childnode>
+      </node>
+      <node id="19245">
+        <label>Addtional_table.hpp</label>
+        <link refid="_addtional__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19319">
+        <label>SeServerDefine.h</label>
+        <link refid="_se_server_define_8h"/>
+        <childnode refid="19232" relation="include">
+        </childnode>
+        <childnode refid="19320" relation="include">
+        </childnode>
+        <childnode refid="19233" relation="include">
+        </childnode>
+      </node>
+      <node id="19340">
+        <label>TeDBResSet.h</label>
+      </node>
+      <node id="19313">
+        <label>AttackArmorRatio_table.hpp</label>
+        <link refid="_attack_armor_ratio__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19248">
+        <label>Skill_table.hpp</label>
+        <link refid="_skill__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19218">
+        <label>string.h</label>
+      </node>
+      <node id="19298">
+        <label>Level_table.hpp</label>
+        <link refid="_level__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19342">
+        <label>SeDBVariant.h</label>
+        <link refid="_se_d_b_variant_8h"/>
+        <childnode refid="19219" relation="include">
+        </childnode>
+        <childnode refid="19204" relation="include">
+        </childnode>
+      </node>
+      <node id="19344">
+        <label>SeConfig.h</label>
+        <link refid="_se_config_8h"/>
+        <childnode refid="19232" relation="include">
+        </childnode>
+      </node>
+      <node id="19329">
+        <label>SeCharNexusFriend.inl</label>
+        <link refid="_se_char_nexus_friend_8inl"/>
+      </node>
+      <node id="19216">
+        <label>ctime</label>
+      </node>
+      <node id="19276">
+        <label>Voice_table.hpp</label>
+        <link refid="_voice__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19365">
+        <label>DataMgr.h</label>
+        <link refid="src_2_data_mgr_8h"/>
+      </node>
+      <node id="19347">
+        <label>SePtlDBStream.h</label>
+        <link refid="_se_ptl_d_b_stream_8h"/>
+        <childnode refid="19341" relation="include">
+        </childnode>
+        <childnode refid="19204" relation="include">
+        </childnode>
+      </node>
+      <node id="19331">
+        <label>SeCharLadder.inl</label>
+        <link refid="_se_char_ladder_8inl"/>
+      </node>
+      <node id="19244">
+        <label>TableMgr.h</label>
+        <link refid="_table_mgr_8h"/>
+        <childnode refid="19245" relation="include">
+        </childnode>
+        <childnode refid="19247" relation="include">
+        </childnode>
+        <childnode refid="19248" relation="include">
+        </childnode>
+        <childnode refid="19249" relation="include">
+        </childnode>
+        <childnode refid="19250" relation="include">
+        </childnode>
+        <childnode refid="19251" relation="include">
+        </childnode>
+        <childnode refid="19252" relation="include">
+        </childnode>
+        <childnode refid="19253" relation="include">
+        </childnode>
+        <childnode refid="19254" relation="include">
+        </childnode>
+        <childnode refid="19255" relation="include">
+        </childnode>
+        <childnode refid="19256" relation="include">
+        </childnode>
+        <childnode refid="19257" relation="include">
+        </childnode>
+        <childnode refid="19258" relation="include">
+        </childnode>
+        <childnode refid="19259" relation="include">
+        </childnode>
+        <childnode refid="19260" relation="include">
+        </childnode>
+        <childnode refid="19261" relation="include">
+        </childnode>
+        <childnode refid="19262" relation="include">
+        </childnode>
+        <childnode refid="19263" relation="include">
+        </childnode>
+        <childnode refid="19264" relation="include">
+        </childnode>
+        <childnode refid="19265" relation="include">
+        </childnode>
+        <childnode refid="19266" relation="include">
+        </childnode>
+        <childnode refid="19267" relation="include">
+        </childnode>
+        <childnode refid="19268" relation="include">
+        </childnode>
+        <childnode refid="19269" relation="include">
+        </childnode>
+        <childnode refid="19270" relation="include">
+        </childnode>
+        <childnode refid="19271" relation="include">
+        </childnode>
+        <childnode refid="19272" relation="include">
+        </childnode>
+        <childnode refid="19273" relation="include">
+        </childnode>
+        <childnode refid="19274" relation="include">
+        </childnode>
+        <childnode refid="19275" relation="include">
+        </childnode>
+        <childnode refid="19276" relation="include">
+        </childnode>
+        <childnode refid="19277" relation="include">
+        </childnode>
+        <childnode refid="19278" relation="include">
+        </childnode>
+        <childnode refid="19279" relation="include">
+        </childnode>
+        <childnode refid="19280" relation="include">
+        </childnode>
+        <childnode refid="19226" relation="include">
+        </childnode>
+        <childnode refid="19281" relation="include">
+        </childnode>
+        <childnode refid="19282" relation="include">
+        </childnode>
+        <childnode refid="19283" relation="include">
+        </childnode>
+        <childnode refid="19284" relation="include">
+        </childnode>
+        <childnode refid="19285" relation="include">
+        </childnode>
+        <childnode refid="19286" relation="include">
+        </childnode>
+        <childnode refid="19287" relation="include">
+        </childnode>
+        <childnode refid="19295" relation="include">
+        </childnode>
+        <childnode refid="19289" relation="include">
+        </childnode>
+        <childnode refid="19290" relation="include">
+        </childnode>
+        <childnode refid="19292" relation="include">
+        </childnode>
+        <childnode refid="19311" relation="include">
+        </childnode>
+        <childnode refid="19294" relation="include">
+        </childnode>
+        <childnode refid="19293" relation="include">
+        </childnode>
+        <childnode refid="19312" relation="include">
+        </childnode>
+        <childnode refid="19291" relation="include">
+        </childnode>
+        <childnode refid="19296" relation="include">
+        </childnode>
+        <childnode refid="19298" relation="include">
+        </childnode>
+        <childnode refid="19313" relation="include">
+        </childnode>
+        <childnode refid="19297" relation="include">
+        </childnode>
+        <childnode refid="19314" relation="include">
+        </childnode>
+        <childnode refid="19315" relation="include">
+        </childnode>
+        <childnode refid="19301" relation="include">
+        </childnode>
+        <childnode refid="19305" relation="include">
+        </childnode>
+        <childnode refid="19316" relation="include">
+        </childnode>
+        <childnode refid="19306" relation="include">
+        </childnode>
+        <childnode refid="19307" relation="include">
+        </childnode>
+        <childnode refid="19308" relation="include">
+        </childnode>
+        <childnode refid="19309" relation="include">
+        </childnode>
+        <childnode refid="19317" relation="include">
+        </childnode>
+      </node>
+      <node id="19351">
+        <label>SePtl_TS_To_WS.h</label>
+        <link refid="_se_ptl___t_s___to___w_s_8h"/>
+        <childnode refid="19205" relation="include">
+        </childnode>
+      </node>
+      <node id="19321">
+        <label>SePtl_WS_To_TS.h</label>
+        <link refid="_se_ptl___w_s___to___t_s_8h"/>
+        <childnode refid="19205" relation="include">
+        </childnode>
+      </node>
+      <node id="19320">
+        <label>TeNetMgr.h</label>
+      </node>
+      <node id="19328">
+        <label>SeCharItem.inl</label>
+        <link refid="_se_char_item_8inl"/>
+      </node>
+      <node id="19226">
+        <label>vector</label>
+      </node>
+      <node id="19279">
+        <label>TableMgrDef.h</label>
+        <link refid="_table_mgr_def_8h"/>
+        <childnode refid="19226" relation="include">
+        </childnode>
+        <childnode refid="19227" relation="include">
+        </childnode>
+      </node>
+      <node id="19364">
+        <label>MobaApi.hpp</label>
+        <link refid="_moba_api_8hpp"/>
+      </node>
+      <node id="19250">
+        <label>MapInfo_table.hpp</label>
+        <link refid="_map_info__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19249">
+        <label>Buffer_table.hpp</label>
+        <link refid="_buffer__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19292">
+        <label>Avatar_table.hpp</label>
+        <link refid="_avatar__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19372">
+        <label>InfoMgr.h</label>
+        <link refid="src_2_info_mgr_8h"/>
+        <childnode refid="19322" relation="include">
+        </childnode>
+        <childnode refid="19365" relation="include">
+        </childnode>
+      </node>
+      <node id="19230">
+        <label>new</label>
+      </node>
+      <node id="19205">
+        <label>SePtlDefine.h</label>
+        <link refid="_se_ptl_define_8h"/>
+        <childnode refid="19206" relation="include">
+        </childnode>
+        <childnode refid="19232" relation="include">
+        </childnode>
+        <childnode refid="19233" relation="include">
+        </childnode>
+        <childnode refid="19237" relation="include">
+        </childnode>
+        <childnode refid="19238" relation="include">
+        </childnode>
+        <childnode refid="19239" relation="include">
+        </childnode>
+      </node>
+      <node id="19232">
+        <label>SeShareDef.h</label>
+        <link refid="_se_share_def_8h"/>
+        <childnode refid="19206" relation="include">
+        </childnode>
+      </node>
+      <node id="19223">
+        <label>sstream</label>
+      </node>
+      <node id="19283">
+        <label>ItemCompose_table.hpp</label>
+        <link refid="_item_compose__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19236">
+        <label>EsString.h</label>
+      </node>
+      <node id="19265">
+        <label>Indexoffer_table.hpp</label>
+        <link refid="_indexoffer__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19370">
+        <label>RaceHeroMgr.h</label>
+        <link refid="src_2_race_hero_mgr_8h"/>
+        <childnode refid="19322" relation="include">
+        </childnode>
+        <childnode refid="19365" relation="include">
+        </childnode>
+      </node>
+      <node id="19259">
+        <label>Rack_table.hpp</label>
+        <link refid="_rack__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19366">
+        <label>SeThreadStream.h</label>
+        <link refid="src_2_se_thread_stream_8h"/>
+        <childnode refid="19343" relation="include">
+        </childnode>
+      </node>
+      <node id="19206">
+        <label>SeInclude.h</label>
+        <link refid="_se_include_8h"/>
+        <childnode refid="19207" relation="include">
+        </childnode>
+        <childnode refid="19208" relation="include">
+        </childnode>
+        <childnode refid="19209" relation="include">
+        </childnode>
+        <childnode refid="19210" relation="include">
+        </childnode>
+        <childnode refid="19211" relation="include">
+        </childnode>
+        <childnode refid="19212" relation="include">
+        </childnode>
+        <childnode refid="19213" relation="include">
+        </childnode>
+        <childnode refid="19214" relation="include">
+        </childnode>
+        <childnode refid="19215" relation="include">
+        </childnode>
+        <childnode refid="19216" relation="include">
+        </childnode>
+        <childnode refid="19217" relation="include">
+        </childnode>
+        <childnode refid="19218" relation="include">
+        </childnode>
+        <childnode refid="19219" relation="include">
+        </childnode>
+        <childnode refid="19220" relation="include">
+        </childnode>
+        <childnode refid="19221" relation="include">
+        </childnode>
+        <childnode refid="19222" relation="include">
+        </childnode>
+        <childnode refid="19223" relation="include">
+        </childnode>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19225" relation="include">
+        </childnode>
+        <childnode refid="19226" relation="include">
+        </childnode>
+        <childnode refid="19202" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19227" relation="include">
+        </childnode>
+        <childnode refid="19228" relation="include">
+        </childnode>
+        <childnode refid="19229" relation="include">
+        </childnode>
+        <childnode refid="19230" relation="include">
+        </childnode>
+        <childnode refid="19231" relation="include">
+        </childnode>
+      </node>
+      <node id="19363">
+        <label>time.h</label>
+      </node>
+      <node id="19368">
+        <label>utils/Time.hpp</label>
+        <link refid="_time_8hpp"/>
+        <childnode refid="19363" relation="include">
+        </childnode>
+        <childnode refid="19364" relation="include">
+        </childnode>
+      </node>
+      <node id="19212">
+        <label>math.h</label>
+      </node>
+      <node id="19284">
+        <label>PresetShop_table.hpp</label>
+        <link refid="_preset_shop__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19273">
+        <label>Language_table.hpp</label>
+        <link refid="_language__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19219">
+        <label>EsType.h</label>
+      </node>
+      <node id="19302">
+        <label>AppendCost_table.hpp</label>
+        <link refid="_append_cost__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19264">
+        <label>RaceText_table.hpp</label>
+        <link refid="_race_text__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19214">
+        <label>cctype</label>
+      </node>
+      <node id="19234">
+        <label>SeToolTemplate.inl</label>
+        <link refid="_se_tool_template_8inl"/>
+      </node>
+      <node id="19266">
+        <label>UnitHeadArea_table.hpp</label>
+        <link refid="_unit_head_area__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19307">
+        <label>RankStage_table.hpp</label>
+        <link refid="_rank_stage__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19330">
+        <label>SeCharRaceArena.inl</label>
+        <link refid="_se_char_race_arena_8inl"/>
+      </node>
+      <node id="19362">
+        <label>utils/Clock.hpp</label>
+        <link refid="_clock_8hpp"/>
+        <childnode refid="19240" relation="include">
+        </childnode>
+        <childnode refid="19363" relation="include">
+        </childnode>
+        <childnode refid="19364" relation="include">
+        </childnode>
+      </node>
+      <node id="19310">
+        <label>MissionInfo_table.hpp</label>
+        <link refid="_mission_info__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19297">
+        <label>ChoiceItem_table.hpp</label>
+        <link refid="_choice_item__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19293">
+        <label>AvatarModel_table.hpp</label>
+        <link refid="_avatar_model__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19338">
+        <label>SeCharRaceHero.inl</label>
+        <link refid="_se_char_race_hero_8inl"/>
+      </node>
+      <node id="19227">
+        <label>unordered_map</label>
+      </node>
+      <node id="19243">
+        <label>SePlayerDef.h</label>
+        <link refid="_world_server_2src_2_se_player_def_8h"/>
+        <childnode refid="19244" relation="include">
+        </childnode>
+        <childnode refid="19242" relation="include">
+        </childnode>
+        <childnode refid="19238" relation="include">
+        </childnode>
+        <childnode refid="19318" relation="include">
+        </childnode>
+      </node>
+      <node id="19286">
+        <label>Shop_table.hpp</label>
+        <link refid="_shop__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19231">
+        <label>SeDefine.h</label>
+        <link refid="_se_define_8h"/>
+      </node>
+      <node id="19274">
+        <label>StarWheel_table.hpp</label>
+        <link refid="_star_wheel__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19373">
+        <label>ActiveAvatarMgr.h</label>
+        <link refid="src_2_active_avatar_mgr_8h"/>
+        <childnode refid="19322" relation="include">
+        </childnode>
+        <childnode refid="19365" relation="include">
+        </childnode>
+      </node>
+      <node id="19252">
+        <label>Racedrop_table.hpp</label>
+        <link refid="_racedrop__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19311">
+        <label>AvatarAnimation_table.hpp</label>
+        <link refid="_avatar_animation__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19345">
+        <label>SeServerTool.h</label>
+        <link refid="_se_server_tool_8h"/>
+        <childnode refid="19206" relation="include">
+        </childnode>
+        <childnode refid="19233" relation="include">
+        </childnode>
+        <childnode refid="19205" relation="include">
+        </childnode>
+      </node>
+      <node id="19260">
+        <label>RenJi_table.hpp</label>
+        <link refid="_ren_ji__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19325">
+        <label>SeCharInfo.inl</label>
+        <link refid="_se_char_info_8inl"/>
+      </node>
+      <node id="19268">
+        <label>TaskRecom_table.hpp</label>
+        <link refid="_task_recom__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19251">
+        <label>Item_table.hpp</label>
+        <link refid="_item__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19228" relation="include">
+        </childnode>
+        <childnode refid="19226" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19312">
+        <label>AvatarShop_table.hpp</label>
+        <link refid="_avatar_shop__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19275">
+        <label>LeagueRank_table.hpp</label>
+        <link refid="_league_rank__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19324">
+        <label>SeAllTable.inl</label>
+        <link refid="_se_all_table_8inl"/>
+        <childnode refid="19325" relation="include">
+        </childnode>
+        <childnode refid="19326" relation="include">
+        </childnode>
+        <childnode refid="19327" relation="include">
+        </childnode>
+        <childnode refid="19328" relation="include">
+        </childnode>
+        <childnode refid="19329" relation="include">
+        </childnode>
+        <childnode refid="19330" relation="include">
+        </childnode>
+        <childnode refid="19331" relation="include">
+        </childnode>
+        <childnode refid="19332" relation="include">
+        </childnode>
+        <childnode refid="19333" relation="include">
+        </childnode>
+        <childnode refid="19334" relation="include">
+        </childnode>
+        <childnode refid="19335" relation="include">
+        </childnode>
+        <childnode refid="19336" relation="include">
+        </childnode>
+        <childnode refid="19337" relation="include">
+        </childnode>
+        <childnode refid="19338" relation="include">
+        </childnode>
+      </node>
+      <node id="19270">
+        <label>Horse_table.hpp</label>
+        <link refid="_horse__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19354">
+        <label>SePtl_BS_To_WS.h</label>
+        <link refid="_se_ptl___b_s___to___w_s_8h"/>
+        <childnode refid="19205" relation="include">
+        </childnode>
+        <childnode refid="19204" relation="include">
+        </childnode>
+      </node>
+      <node id="19353">
+        <label>SePtl_WS_To_BS.h</label>
+        <link refid="_se_ptl___w_s___to___b_s_8h"/>
+        <childnode refid="19205" relation="include">
+        </childnode>
+        <childnode refid="19204" relation="include">
+        </childnode>
+      </node>
+      <node id="19291">
+        <label>Achievement_table.hpp</label>
+        <link refid="_achievement__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19228">
+        <label>set</label>
+      </node>
+      <node id="19277">
+        <label>TableLoader.h</label>
+        <link refid="_table_loader_8h"/>
+      </node>
+      <node id="19295">
+        <label>SkillTips_table.hpp</label>
+        <link refid="_skill_tips__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19228" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19220">
+        <label>algorithm</label>
+      </node>
+      <node id="19339">
+        <label>SeDBMemPool.h</label>
+        <link refid="_se_d_b_mem_pool_8h"/>
+        <childnode refid="19206" relation="include">
+        </childnode>
+      </node>
+      <node id="19280">
+        <label>AddtionalFunction.h</label>
+        <link refid="_addtional_function_8h"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19245" relation="include">
+        </childnode>
+      </node>
+      <node id="19253">
+        <label>SelHero_table.hpp</label>
+        <link refid="_sel_hero__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19358">
+        <label>SePtl_RS_To_WS.h</label>
+        <link refid="_se_ptl___r_s___to___w_s_8h"/>
+        <childnode refid="19205" relation="include">
+        </childnode>
+      </node>
+      <node id="19357">
+        <label>SePtl_WS_To_RS.h</label>
+        <link refid="_se_ptl___w_s___to___r_s_8h"/>
+        <childnode refid="19205" relation="include">
+        </childnode>
+      </node>
+      <node id="19217">
+        <label>stdio.h</label>
+      </node>
+      <node id="19254">
+        <label>AI_table.hpp</label>
+        <link refid="_a_i__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19350">
+        <label>SePtl_LS_To_WS.h</label>
+        <link refid="_se_ptl___l_s___to___w_s_8h"/>
+        <childnode refid="19205" relation="include">
+        </childnode>
+      </node>
+      <node id="19349">
+        <label>SePtl_WS_To_LS.h</label>
+        <link refid="_se_ptl___w_s___to___l_s_8h"/>
+        <childnode refid="19205" relation="include">
+        </childnode>
+      </node>
+      <node id="19289">
+        <label>SystemPrompt_table.hpp</label>
+        <link refid="_system_prompt__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19301">
+        <label>Strengthen_table.hpp</label>
+        <link refid="_strengthen__table_8hpp"/>
+        <childnode refid="19224" relation="include">
+        </childnode>
+        <childnode refid="19203" relation="include">
+        </childnode>
+        <childnode refid="19246" relation="include">
+        </childnode>
+      </node>
+      <node id="19326">
+        <label>SeCharTask.inl</label>
+        <link refid="_se_char_task_8inl"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="19383">
+        <label>WorldServer/src/PlayerDataMgr.h</label>
+        <link refid="WorldServer/src/PlayerDataMgr.h"/>
+        <childnode refid="19384" relation="include">
+        </childnode>
+        <childnode refid="19385" relation="include">
+        </childnode>
+        <childnode refid="19386" relation="include">
+        </childnode>
+        <childnode refid="19387" relation="include">
+        </childnode>
+        <childnode refid="19388" relation="include">
+        </childnode>
+        <childnode refid="19389" relation="include">
+        </childnode>
+      </node>
+      <node id="19389">
+        <label>WorldServer/src/WorldServer.cpp</label>
+        <link refid="src_2_world_server_8cpp"/>
+      </node>
+      <node id="19388">
+        <label>WorldServer/src/SePlayer.cpp</label>
+        <link refid="_world_server_2src_2_se_player_8cpp"/>
+      </node>
+      <node id="19387">
+        <label>WorldServer/src/SeBWProcess.cpp</label>
+        <link refid="src_2_se_b_w_process_8cpp"/>
+      </node>
+      <node id="19386">
+        <label>WorldServer/src/SeBBLProcess.cpp</label>
+        <link refid="src_2_se_b_b_l_process_8cpp"/>
+      </node>
+      <node id="19385">
+        <label>WorldServer/src/PlayerDataStrategy.cpp</label>
+        <link refid="_world_server_2src_2_player_data_strategy_8cpp"/>
+      </node>
+      <node id="19384">
+        <label>WorldServer/src/PlayerDataMgr.cpp</label>
+        <link refid="_world_server_2src_2_player_data_mgr_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_player_data_mgr" prot="public">PlayerDataMgr</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_world_server_2src_2_player_data_mgr_8h_1a61796556f652f14fa959e6730eeaa7c7" prot="public" static="no" mutable="no">
+        <type><ref refid="class_player_data_mgr" kindref="compound">PlayerDataMgr</ref></type>
+        <definition>PlayerDataMgr g_kPlayerDataMgr</definition>
+        <argsstring></argsstring>
+        <name>g_kPlayerDataMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/PlayerDataMgr.h" line="33" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/DBServer/Src/PlayerDataMgr.cpp" bodystart="4" bodyend="-1"/>
+        <referencedby refid="class_se_d_b_player_mgr_1a412e3a3ec4e92491e20d95a4ab634f19" compoundref="_src_2_se_d_b_player_mgr_8cpp" startline="1239" endline="1280">SeDBPlayerMgr::DataDelete</referencedby>
+        <referencedby refid="class_se_d_b_player_mgr_1aaa2679c90a471cbb25c504d904ee5de4" compoundref="_src_2_se_d_b_player_mgr_8cpp" startline="1114" endline="1186">SeDBPlayerMgr::DataInsert</referencedby>
+        <referencedby refid="class_se_d_b_player_mgr_1add64487b3e8b0fe6f532b84f8a1319e3" compoundref="_src_2_se_d_b_player_mgr_8cpp" startline="1188" endline="1233">SeDBPlayerMgr::DataUpdate</referencedby>
+        <referencedby refid="class_d_b_server_1a12eb5f3d546916ad9360b70a1e78adc4" compoundref="_src_2_d_b_server_8cpp" startline="980" endline="1144">DBServer::GetPlayerFieldData</referencedby>
+        <referencedby refid="class_d_b_server_1a83610301b5f2e74bee136ebdac303ea0" compoundref="_src_2_d_b_server_8cpp" startline="938" endline="978">DBServer::GetPlayerRecordCount</referencedby>
+        <referencedby refid="class_d_b_server_1a62efc40735a5c15970c2b97522d818d0" compoundref="_src_2_d_b_server_8cpp" startline="803" endline="824">DBServer::InitDBMem</referencedby>
+        <referencedby refid="class_world_server_1aa1c10ee088e17e4046c812c31eabee41" compoundref="_src_2_world_server_8cpp" startline="332" endline="393">WorldServer::Initialize</referencedby>
+        <referencedby refid="class_se_player_1a156866bea6fba5fed68c367c6a4f7a7c" compoundref="_world_server_2_src_2_se_player_8cpp" startline="122" endline="171">SePlayer::LoadingComplete</referencedby>
+        <referencedby refid="_src_2_se_d_b_send___char_8cpp_1a4c2f9713bc7262896638695e9d36a6f4" compoundref="_src_2_se_d_b_send___char_8cpp" startline="368" endline="390">onLoadCharData</referencedby>
+        <referencedby refid="class_block_server_1a407dfabd46be04248b7a656dd7737af5" compoundref="_src_2_se_b_b_l_process_8cpp" startline="15" endline="28">BlockServer::ProcessBBL_PlayerLoadRet</referencedby>
+        <referencedby refid="class_block_server_1ae50614243703a40ee54588dd09919ff2" compoundref="_src_2_se_b_b_l_process_8cpp" startline="30" endline="62">BlockServer::ProcessBBL_SelectDataRet</referencedby>
+        <referencedby refid="class_world_server_1ad3d303860d86118621534c7c1c5c223d" compoundref="_src_2_se_b_w_process_8cpp" startline="66" endline="115">WorldServer::ProcessBW_InitGenIDRet</referencedby>
+        <referencedby refid="class_world_server_1a59c3e7f7ac1ebbdcf37236b5735ed1cf" compoundref="_src_2_se_b_w_process_8cpp" startline="19" endline="64">WorldServer::ProcessBW_RegisterRet</referencedby>
+        <referencedby refid="class_d_b_server_1a26136d8bdf6021c3fea95cfa448af106" compoundref="_src_2_d_b_server_8cpp" startline="836" endline="886">DBServer::RebuildMem</referencedby>
+        <referencedby refid="class_se_d_b_player_mgr_1ac7bf0550174e3a9974cf3610c62bc32f" compoundref="_src_2_se_d_b_player_mgr_8cpp" startline="894" endline="941">SeDBPlayerMgr::SafeDeleteDBPlayer</referencedby>
+        <referencedby refid="class_se_d_b_player_mgr_1a081100d31e73eef2726aafdefb049d40" compoundref="_src_2_se_d_b_player_mgr_8cpp" startline="943" endline="989">SeDBPlayerMgr::SaveToDB</referencedby>
+        <referencedby refid="class_d_b_server_1a365692b64aea904995eed7479e84f31d" compoundref="_d_b_server_2_src_2_se_d_b_send_8cpp" startline="79" endline="139">DBServer::SendDB_InitGenID</referencedby>
+        <referencedby refid="class_d_b_server_1a11304a84820e520d2e0c13a7c66f97c8" compoundref="_d_b_server_2_src_2_se_d_b_send_8cpp" startline="5" endline="13">DBServer::SendDB_LoadInfo</referencedby>
+        <referencedby refid="class_world_server_1ae9253ba0018a943c9ed75a12af533e86" compoundref="_src_2_world_server_8cpp" startline="594" endline="691">WorldServer::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_d_b_define_8h" kindref="compound">SeDBDefine.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_world_server_2src_2_se_player_8h" kindref="compound">SePlayer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_se_ptl___b_s___to___b_l_s_8h" kindref="compound">SePtl_BS_To_BLS.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_player_data_strategy" kindref="compound">PlayerDataStrategy</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_player_data_mgr" kindref="compound">PlayerDataMgr</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_player_data_strategy" kindref="compound">PlayerDataStrategy</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//≥ı ºªØ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_data_mgr_1a9d9a2eafba07920c954dc593923639b7" kindref="member">initialize</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_data_mgr_1afe07a1f8b2596234ed92d0b118c57ed2" kindref="member">initGenID</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_data_mgr_1a0eada6a9ca8e625f7131b5d45efd498c" kindref="member">onInitGenIDRet</ref>(<ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref><sp/>eTableIndex,<sp/>DWord<sp/>dwGenID);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_player_data_mgr_1a21b46d88de88f080f3c6bdb20d328105" kindref="member">isGenIDFinished</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_data_mgr_1ae72cc44d6ef2216d7bc28e0e59367cf8" kindref="member">loadData</ref>(<ref refid="class_se_player" kindref="compound">SePlayer</ref><sp/>&amp;<sp/>player);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_data_mgr_1a6c8d586dda580291d5d1f21d75ab187f" kindref="member">onLoadData</ref>(<ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref><sp/>eTableIndex,<ref refid="class_se_player" kindref="compound">SePlayer</ref><sp/>&amp;<sp/>player,<sp/><ref refid="struct_se_b_b_l___select_data_ret" kindref="compound">SeBBL_SelectDataRet</ref><sp/>*<sp/>pkData);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_player_data_mgr_1a737692a62a8b7a4aa761eb19a9d48e7f" kindref="member">fixData</ref>(<ref refid="class_se_player" kindref="compound">SePlayer</ref><sp/>&amp;<sp/>player);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_player_data_strategy" kindref="compound">PlayerDataStrategy</ref><sp/>*<sp/><ref refid="class_player_data_mgr_1ac965c49bee3a54c68b3783d695d08e5c" kindref="member">getStrategy</ref>(<ref refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54" kindref="member">SeDBTableIndex</ref><sp/>eTableIndex);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;SeDBTableIndex,<sp/>PlayerDataStrategy<sp/>*&gt;<sp/><ref refid="class_player_data_mgr_1afe5c7c770d6a2f15202594fbd4c3e4f6" kindref="member">m_strategies</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>std::set&lt;SeDBTableIndex&gt;<sp/><ref refid="class_player_data_mgr_1a0017c3ea59bd343055e576afe58f7681" kindref="member">m_initGenIDTables</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::list&lt;PlayerDataStrategy<sp/>*&gt;<sp/>&amp;<sp/><ref refid="class_player_data_mgr_1ac7f6ab536e0de38f8fc73a8a2f9e8330" kindref="member">getInitList</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="class_player_data_mgr" kindref="compound">PlayerDataMgr</ref><sp/><ref refid="_d_b_server_2_src_2_player_data_mgr_8h_1a61796556f652f14fa959e6730eeaa7c7" kindref="member">g_kPlayerDataMgr</ref>;</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/PlayerDataMgr.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_se_b_l_b_process_8inc" kind="file">
+    <compoundname>SeBLBProcess.inc</compoundname>
+    <includedby refid="_src_2_se_b_l_b_process_8cpp" local="yes">DBServer/Src/SeBLBProcess.cpp</includedby>
+    <includedby refid="src_2_se_b_l_b_process_8cpp" local="yes">DBServer/src/SeBLBProcess.cpp</includedby>
+    <invincdepgraph>
+      <node id="124427">
+        <label>DBServer/src/SeBLBProcess.cpp</label>
+        <link refid="src_2_se_b_l_b_process_8cpp"/>
+      </node>
+      <node id="124425">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeBLBProcess.inc</label>
+        <link refid="SeBLBProcess.inc"/>
+        <childnode refid="124426" relation="include">
+        </childnode>
+        <childnode refid="124427" relation="include">
+        </childnode>
+      </node>
+      <node id="124426">
+        <label>DBServer/Src/SeBLBProcess.cpp</label>
+        <link refid="_src_2_se_b_l_b_process_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_b_l_b_process_8inl_1a3e7bccbb98bfadb7f8b220dca4e1782b" kindref="member">SERVER::ProcessBLBData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkSender)</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_c_m_d" kindref="compound">SeCMD</ref>))</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_c_m_d" kindref="compound">SeCMD</ref>*<sp/>pkCmd<sp/>=<sp/>(<ref refid="struct_se_c_m_d" kindref="compound">SeCMD</ref>*)pkData;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pkCmd-&gt;<ref refid="struct_se_c_m_d_1a2efa122a60040d09cfca777f9155394c" kindref="member">wCmd</ref><sp/>&lt;<sp/><ref refid="_se_server_define_8h_1a5ef39269c62c879ff0b5584312980bc2af7f333765098f7c5d25e8f3e96d1e997" kindref="member">STCB_BLS_BS</ref><sp/>||<sp/>pkCmd-&gt;<ref refid="struct_se_c_m_d_1a2efa122a60040d09cfca777f9155394c" kindref="member">wCmd</ref><sp/>&gt;<sp/><ref refid="_se_server_define_8h_1a5ef39269c62c879ff0b5584312980bc2af7f333765098f7c5d25e8f3e96d1e997" kindref="member">STCB_BLS_BS</ref><sp/>+<sp/><ref refid="_se_server_define_8h_1a7e57d75ea3d17743d491908f4fb5cc93" kindref="member">STCB_INTERVAL</ref>)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="_se_b_l_b_process_8inl_1af7ae05ee05477416e7dd65d7604171b9" kindref="member">PreProcessBLB</ref>(pkData,<sp/>iSize,<sp/>pkSender))</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeBLBProcess.inc"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_se_w_c_s_w_c_m_s_send_8inc" kind="file">
+    <compoundname>SeWCSWCMSSend.inc</compoundname>
+    <includedby refid="_se_w_c_s_w_c_s_send_8cpp" local="yes">WatchServer/Src/SeWCSWCSSend.cpp</includedby>
+    <invincdepgraph>
+      <node id="130506">
+        <label>WatchServer/Src/SeWCSWCSSend.cpp</label>
+        <link refid="_se_w_c_s_w_c_s_send_8cpp"/>
+      </node>
+      <node id="130505">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeWCSWCMSSend.inc</label>
+        <link refid="SeWCSWCMSSend.inc"/>
+        <childnode refid="130506" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_w_c_s_w_c_m_s_send_8inl_1ad91ff5651a40ece17cd16169986e4930" kindref="member">SERVER::SendWCSWCMS_Register</ref>(DWord<sp/>dwServerID,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_se_net_addr" kindref="compound">SeNetAddr</ref>&amp;<sp/>kAddrToPlayer,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iRegisterCount,</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bOpen,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_w_c_s_w_c_m_s___register" kindref="compound">SeWCSWCMS_Register</ref>);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_w_c_s_w_c_m_s___register" kindref="compound">SeWCSWCMS_Register</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_w_c_s_w_c_m_s___register" kindref="compound">SeWCSWCMS_Register</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_c_s_w_c_m_s___register_1ae9fb87172c3a08d5bbdea9e181184b57" kindref="member">dwServerID</ref><sp/>=<sp/>dwServerID;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_c_s_w_c_m_s___register_1a69da64f6c072162b8a42cde7e0003e9c" kindref="member">kAddrToPlayer</ref><sp/>=<sp/>kAddrToPlayer;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_c_s_w_c_m_s___register_1ae558b3302c2e15db8c0086fcc6fac868" kindref="member">iRegisterCount</ref><sp/>=<sp/>iRegisterCount;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_w_c_s_w_c_m_s___register_1a3b1b7a469f6a27cff970c6b337072d3a" kindref="member">bOpen</ref><sp/>=<sp/>bOpen;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_w_c_s_w_c_m_s_send_8inl_1a578e65b48c4cb61de22f0f8bad489f9f" kindref="member">SendWCSWCMSData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeWCSWCMSSend.inc"/>
+  </compounddef>
+</doxygen>

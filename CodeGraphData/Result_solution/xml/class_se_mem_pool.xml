@@ -1,0 +1,550 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_se_mem_pool" kind="class" prot="public">
+    <compoundname>SeMemPool</compoundname>
+    <includes refid="_se_mem_pool_8h" local="no">SeMemPool.h</includes>
+    <innerclass refid="struct_se_mem_pool_1_1_se_head_list" prot="private">SeMemPool::SeHeadList</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_se_mem_pool_1a936cde9814993d602a4724c18270e699" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char SeMemPool::m_acName[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>m_acName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="54" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="class_se_mem_pool_1a0a65c2ae2b44690453435ca6fa6ea84a" compoundref="_se_mem_pool_8cpp" startline="126" endline="161">ExtendPool</referencedby>
+        <referencedby refid="class_se_mem_pool_1a536b73e5b8e01be398196eb020367cb1" compoundref="_se_mem_pool_8cpp" startline="4" endline="36">SeMemPool</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_mem_pool_1a87953f3f7e9b840f65bc8a51ea58e70c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeMemPool::m_iEleSize</definition>
+        <argsstring></argsstring>
+        <name>m_iEleSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="55" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_se_mem_pool_1a0a65c2ae2b44690453435ca6fa6ea84a" compoundref="_se_mem_pool_8cpp" startline="126" endline="161">ExtendPool</referencedby>
+        <referencedby refid="class_se_mem_pool_1a6f510577ab05752363ea243a89a39453" compoundref="_se_mem_pool_8cpp" startline="163" endline="166">GetAllocSize</referencedby>
+        <referencedby refid="class_se_mem_pool_1ac0c8a331fe93ac96ffd90a3ae1212075" compoundref="_se_mem_pool_8cpp" startline="97" endline="124">IsValid</referencedby>
+        <referencedby refid="class_se_mem_pool_1a7bc07582ef29b4521d2923fdecc4d4ad" compoundref="_se_mem_pool_8cpp" startline="55" endline="78">NewEle</referencedby>
+        <referencedby refid="class_se_mem_pool_1a536b73e5b8e01be398196eb020367cb1" compoundref="_se_mem_pool_8cpp" startline="4" endline="36">SeMemPool</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_mem_pool_1a6bb4f82df0359f7d2289e1b602e57842" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeMemPool::m_iBaseEles</definition>
+        <argsstring></argsstring>
+        <name>m_iBaseEles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="56" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_se_mem_pool_1a0a65c2ae2b44690453435ca6fa6ea84a" compoundref="_se_mem_pool_8cpp" startline="126" endline="161">ExtendPool</referencedby>
+        <referencedby refid="class_se_mem_pool_1a536b73e5b8e01be398196eb020367cb1" compoundref="_se_mem_pool_8cpp" startline="4" endline="36">SeMemPool</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_mem_pool_1abdeafa25050922458fa7c26d80f576cf" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeMemPool::m_iAddEles</definition>
+        <argsstring></argsstring>
+        <name>m_iAddEles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="57" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_se_mem_pool_1a0a65c2ae2b44690453435ca6fa6ea84a" compoundref="_se_mem_pool_8cpp" startline="126" endline="161">ExtendPool</referencedby>
+        <referencedby refid="class_se_mem_pool_1a536b73e5b8e01be398196eb020367cb1" compoundref="_se_mem_pool_8cpp" startline="4" endline="36">SeMemPool</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_mem_pool_1aeefb41a06d5ce12e53aea4a5b37bc986" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeMemPool::m_iTotalSize</definition>
+        <argsstring></argsstring>
+        <name>m_iTotalSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="58" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="class_se_mem_pool_1a0a65c2ae2b44690453435ca6fa6ea84a" compoundref="_se_mem_pool_8cpp" startline="126" endline="161">ExtendPool</referencedby>
+        <referencedby refid="class_se_mem_pool_1adff7f8d9cc709802784ed0da53c883e7" compoundref="_se_mem_pool_8cpp" startline="168" endline="171">GetTotalSize</referencedby>
+        <referencedby refid="class_se_mem_pool_1a536b73e5b8e01be398196eb020367cb1" compoundref="_se_mem_pool_8cpp" startline="4" endline="36">SeMemPool</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_mem_pool_1a10a49e0ca58754d37de24e3575aeffc9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeMemPool::m_iAllocEles</definition>
+        <argsstring></argsstring>
+        <name>m_iAllocEles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="60" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_se_mem_pool_1aeb8d557804ec9487bc6ed474c5fb6748" compoundref="_se_mem_pool_8cpp" startline="80" endline="95">DelEle</referencedby>
+        <referencedby refid="class_se_mem_pool_1a6f510577ab05752363ea243a89a39453" compoundref="_se_mem_pool_8cpp" startline="163" endline="166">GetAllocSize</referencedby>
+        <referencedby refid="class_se_mem_pool_1a7bc07582ef29b4521d2923fdecc4d4ad" compoundref="_se_mem_pool_8cpp" startline="55" endline="78">NewEle</referencedby>
+        <referencedby refid="class_se_mem_pool_1aee6fc074aabc1e4eff2ca1a5462aae52" compoundref="_se_mem_pool_8cpp" startline="44" endline="53">Reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_mem_pool_1a9a97703e609aa29794c923343f669c73" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeMemPool::m_iAllocMaxEles</definition>
+        <argsstring></argsstring>
+        <name>m_iAllocMaxEles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="61" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="class_se_mem_pool_1aeb288d7d7be52b01c28088c3b5a7ac68" compoundref="_se_mem_pool_8cpp" startline="173" endline="176">GetAllocMaxEles</referencedby>
+        <referencedby refid="class_se_mem_pool_1a7bc07582ef29b4521d2923fdecc4d4ad" compoundref="_se_mem_pool_8cpp" startline="55" endline="78">NewEle</referencedby>
+        <referencedby refid="class_se_mem_pool_1aee6fc074aabc1e4eff2ca1a5462aae52" compoundref="_se_mem_pool_8cpp" startline="44" endline="53">Reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_mem_pool_1a5f8fb8a5e6bc2f9b59299c4f13e764ca" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* SeMemPool::m_pkFreeFirst</definition>
+        <argsstring></argsstring>
+        <name>m_pkFreeFirst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="63" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="class_se_mem_pool_1aeb8d557804ec9487bc6ed474c5fb6748" compoundref="_se_mem_pool_8cpp" startline="80" endline="95">DelEle</referencedby>
+        <referencedby refid="class_se_mem_pool_1a0a65c2ae2b44690453435ca6fa6ea84a" compoundref="_se_mem_pool_8cpp" startline="126" endline="161">ExtendPool</referencedby>
+        <referencedby refid="class_se_mem_pool_1a7bc07582ef29b4521d2923fdecc4d4ad" compoundref="_se_mem_pool_8cpp" startline="55" endline="78">NewEle</referencedby>
+        <referencedby refid="class_se_mem_pool_1aee6fc074aabc1e4eff2ca1a5462aae52" compoundref="_se_mem_pool_8cpp" startline="44" endline="53">Reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_mem_pool_1aabe29204ff2e576dbce00402909aa048" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_se_mem_pool_1_1_se_head_list" kindref="compound">SeHeadList</ref></type>
+        <definition>SeHeadList SeMemPool::m_kHeadList</definition>
+        <argsstring></argsstring>
+        <name>m_kHeadList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="65" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="class_se_mem_pool_1a249096c740267423ddfc5efc7aa54e92" compoundref="_se_mem_pool_8cpp" startline="178" endline="190">Clear</referencedby>
+        <referencedby refid="class_se_mem_pool_1a0a65c2ae2b44690453435ca6fa6ea84a" compoundref="_se_mem_pool_8cpp" startline="126" endline="161">ExtendPool</referencedby>
+        <referencedby refid="class_se_mem_pool_1aee6fc074aabc1e4eff2ca1a5462aae52" compoundref="_se_mem_pool_8cpp" startline="44" endline="53">Reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_mem_pool_1a853e4ea132b73fb02bfcda409322b16d" prot="private" static="no" mutable="no">
+        <type>SIZE_T</type>
+        <definition>SIZE_T SeMemPool::m_stMagicBegin</definition>
+        <argsstring></argsstring>
+        <name>m_stMagicBegin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="67" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="class_se_mem_pool_1ac0c8a331fe93ac96ffd90a3ae1212075" compoundref="_se_mem_pool_8cpp" startline="97" endline="124">IsValid</referencedby>
+        <referencedby refid="class_se_mem_pool_1a7bc07582ef29b4521d2923fdecc4d4ad" compoundref="_se_mem_pool_8cpp" startline="55" endline="78">NewEle</referencedby>
+        <referencedby refid="class_se_mem_pool_1a536b73e5b8e01be398196eb020367cb1" compoundref="_se_mem_pool_8cpp" startline="4" endline="36">SeMemPool</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_mem_pool_1a22c59f6750e67c45f5c615c5525fc793" prot="private" static="no" mutable="no">
+        <type>SIZE_T</type>
+        <definition>SIZE_T SeMemPool::m_stMagicEnd</definition>
+        <argsstring></argsstring>
+        <name>m_stMagicEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="68" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="class_se_mem_pool_1ac0c8a331fe93ac96ffd90a3ae1212075" compoundref="_se_mem_pool_8cpp" startline="97" endline="124">IsValid</referencedby>
+        <referencedby refid="class_se_mem_pool_1a7bc07582ef29b4521d2923fdecc4d4ad" compoundref="_se_mem_pool_8cpp" startline="55" endline="78">NewEle</referencedby>
+        <referencedby refid="class_se_mem_pool_1a536b73e5b8e01be398196eb020367cb1" compoundref="_se_mem_pool_8cpp" startline="4" endline="36">SeMemPool</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_mem_pool_1a6b6d3de1e48d247b3bb3c8dbcab6c593" prot="private" static="no" mutable="no">
+        <type>Es::NormalLock</type>
+        <definition>Es::NormalLock SeMemPool::m_kLock</definition>
+        <argsstring></argsstring>
+        <name>m_kLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="70" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="class_se_mem_pool_1a249096c740267423ddfc5efc7aa54e92" compoundref="_se_mem_pool_8cpp" startline="178" endline="190">Clear</referencedby>
+        <referencedby refid="class_se_mem_pool_1aeb8d557804ec9487bc6ed474c5fb6748" compoundref="_se_mem_pool_8cpp" startline="80" endline="95">DelEle</referencedby>
+        <referencedby refid="class_se_mem_pool_1a0a65c2ae2b44690453435ca6fa6ea84a" compoundref="_se_mem_pool_8cpp" startline="126" endline="161">ExtendPool</referencedby>
+        <referencedby refid="class_se_mem_pool_1ac0c8a331fe93ac96ffd90a3ae1212075" compoundref="_se_mem_pool_8cpp" startline="97" endline="124">IsValid</referencedby>
+        <referencedby refid="class_se_mem_pool_1a7bc07582ef29b4521d2923fdecc4d4ad" compoundref="_se_mem_pool_8cpp" startline="55" endline="78">NewEle</referencedby>
+        <referencedby refid="class_se_mem_pool_1aee6fc074aabc1e4eff2ca1a5462aae52" compoundref="_se_mem_pool_8cpp" startline="44" endline="53">Reset</referencedby>
+        <referencedby refid="class_se_mem_pool_1a536b73e5b8e01be398196eb020367cb1" compoundref="_se_mem_pool_8cpp" startline="4" endline="36">SeMemPool</referencedby>
+        <referencedby refid="class_se_mem_pool_1ab4f0a58b7370e95b4f8d8600dabd1478" compoundref="_se_mem_pool_8cpp" startline="38" endline="42">~SeMemPool</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_se_mem_pool_1ade8e071c923b07c82abe846169bc41f5" prot="private" static="yes" mutable="no">
+        <type><ref refid="_se_mem_pool_8h_1a801f54874a5669fe9af11c0b9532a1b0" kindref="member">NotifyMempoolAlloc</ref></type>
+        <definition>NotifyMempoolAlloc SeMemPool::m_fAllocCallBack</definition>
+        <argsstring></argsstring>
+        <name>m_fAllocCallBack</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="72" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="class_se_mem_pool_1a0a65c2ae2b44690453435ca6fa6ea84a" compoundref="_se_mem_pool_8cpp" startline="126" endline="161">ExtendPool</referencedby>
+        <referencedby refid="class_se_mem_pool_1a058c39179427ce7ebb99e3422131bb46" compoundref="_se_mem_pool_8cpp" startline="192" endline="195">RegisterAllocCallBack</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_se_mem_pool_1a536b73e5b8e01be398196eb020367cb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeMemPool::SeMemPool</definition>
+        <argsstring>(int iEleSize, int iBaseEles, int iAddEles, const char *acName)</argsstring>
+        <name>SeMemPool</name>
+        <param>
+          <type>int</type>
+          <declname>iEleSize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iBaseEles</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iAddEles</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>acName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="28" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.cpp" bodystart="4" bodyend="36"/>
+        <references refid="class_se_mem_pool_1a0a65c2ae2b44690453435ca6fa6ea84a" compoundref="_se_mem_pool_8cpp" startline="126" endline="161">ExtendPool</references>
+        <references refid="class_se_mem_pool_1a936cde9814993d602a4724c18270e699" compoundref="_se_mem_pool_8h" startline="54">m_acName</references>
+        <references refid="class_se_mem_pool_1abdeafa25050922458fa7c26d80f576cf" compoundref="_se_mem_pool_8h" startline="57">m_iAddEles</references>
+        <references refid="class_se_mem_pool_1a6bb4f82df0359f7d2289e1b602e57842" compoundref="_se_mem_pool_8h" startline="56">m_iBaseEles</references>
+        <references refid="class_se_mem_pool_1a87953f3f7e9b840f65bc8a51ea58e70c" compoundref="_se_mem_pool_8h" startline="55">m_iEleSize</references>
+        <references refid="class_se_mem_pool_1aeefb41a06d5ce12e53aea4a5b37bc986" compoundref="_se_mem_pool_8h" startline="58">m_iTotalSize</references>
+        <references refid="class_se_mem_pool_1a6b6d3de1e48d247b3bb3c8dbcab6c593" compoundref="_se_mem_pool_8h" startline="70">m_kLock</references>
+        <references refid="class_se_mem_pool_1a853e4ea132b73fb02bfcda409322b16d" compoundref="_se_mem_pool_8h" startline="67">m_stMagicBegin</references>
+        <references refid="class_se_mem_pool_1a22c59f6750e67c45f5c615c5525fc793" compoundref="_se_mem_pool_8h" startline="68">m_stMagicEnd</references>
+        <references refid="class_se_mem_pool_1aee6fc074aabc1e4eff2ca1a5462aae52" compoundref="_se_mem_pool_8cpp" startline="44" endline="53">Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_mem_pool_1ab4f0a58b7370e95b4f8d8600dabd1478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeMemPool::~SeMemPool</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SeMemPool</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="29" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.cpp" bodystart="38" bodyend="42"/>
+        <references refid="class_se_mem_pool_1a249096c740267423ddfc5efc7aa54e92" compoundref="_se_mem_pool_8cpp" startline="178" endline="190">Clear</references>
+        <references refid="class_se_mem_pool_1a6b6d3de1e48d247b3bb3c8dbcab6c593" compoundref="_se_mem_pool_8h" startline="70">m_kLock</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_mem_pool_1a7bc07582ef29b4521d2923fdecc4d4ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * SeMemPool::NewEle</definition>
+        <argsstring>(void)</argsstring>
+        <name>NewEle</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="31" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.cpp" bodystart="55" bodyend="78"/>
+        <references refid="class_se_mem_pool_1a0a65c2ae2b44690453435ca6fa6ea84a" compoundref="_se_mem_pool_8cpp" startline="126" endline="161">ExtendPool</references>
+        <references refid="class_se_mem_pool_1a10a49e0ca58754d37de24e3575aeffc9" compoundref="_se_mem_pool_8h" startline="60">m_iAllocEles</references>
+        <references refid="class_se_mem_pool_1a9a97703e609aa29794c923343f669c73" compoundref="_se_mem_pool_8h" startline="61">m_iAllocMaxEles</references>
+        <references refid="class_se_mem_pool_1a87953f3f7e9b840f65bc8a51ea58e70c" compoundref="_se_mem_pool_8h" startline="55">m_iEleSize</references>
+        <references refid="class_se_mem_pool_1a6b6d3de1e48d247b3bb3c8dbcab6c593" compoundref="_se_mem_pool_8h" startline="70">m_kLock</references>
+        <references refid="class_se_mem_pool_1a5f8fb8a5e6bc2f9b59299c4f13e764ca" compoundref="_se_mem_pool_8h" startline="63">m_pkFreeFirst</references>
+        <references refid="class_se_mem_pool_1a853e4ea132b73fb02bfcda409322b16d" compoundref="_se_mem_pool_8h" startline="67">m_stMagicBegin</references>
+        <references refid="class_se_mem_pool_1a22c59f6750e67c45f5c615c5525fc793" compoundref="_se_mem_pool_8h" startline="68">m_stMagicEnd</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_mem_pool_1aeb8d557804ec9487bc6ed474c5fb6748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMemPool::DelEle</definition>
+        <argsstring>(void *pkEle)</argsstring>
+        <name>DelEle</name>
+        <param>
+          <type>void *</type>
+          <declname>pkEle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="32" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.cpp" bodystart="80" bodyend="95"/>
+        <references refid="class_se_mem_pool_1a10a49e0ca58754d37de24e3575aeffc9" compoundref="_se_mem_pool_8h" startline="60">m_iAllocEles</references>
+        <references refid="class_se_mem_pool_1a6b6d3de1e48d247b3bb3c8dbcab6c593" compoundref="_se_mem_pool_8h" startline="70">m_kLock</references>
+        <references refid="class_se_mem_pool_1a5f8fb8a5e6bc2f9b59299c4f13e764ca" compoundref="_se_mem_pool_8h" startline="63">m_pkFreeFirst</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_mem_pool_1ac0c8a331fe93ac96ffd90a3ae1212075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeMemPool::IsValid</definition>
+        <argsstring>(void *pkEle)</argsstring>
+        <name>IsValid</name>
+        <param>
+          <type>void *</type>
+          <declname>pkEle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="33" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.cpp" bodystart="97" bodyend="124"/>
+        <references refid="class_se_mem_pool_1a87953f3f7e9b840f65bc8a51ea58e70c" compoundref="_se_mem_pool_8h" startline="55">m_iEleSize</references>
+        <references refid="class_se_mem_pool_1a6b6d3de1e48d247b3bb3c8dbcab6c593" compoundref="_se_mem_pool_8h" startline="70">m_kLock</references>
+        <references refid="class_se_mem_pool_1a853e4ea132b73fb02bfcda409322b16d" compoundref="_se_mem_pool_8h" startline="67">m_stMagicBegin</references>
+        <references refid="class_se_mem_pool_1a22c59f6750e67c45f5c615c5525fc793" compoundref="_se_mem_pool_8h" startline="68">m_stMagicEnd</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_mem_pool_1a6f510577ab05752363ea243a89a39453" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SeMemPool::GetAllocSize</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetAllocSize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="35" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.cpp" bodystart="163" bodyend="166"/>
+        <references refid="class_se_mem_pool_1a10a49e0ca58754d37de24e3575aeffc9" compoundref="_se_mem_pool_8h" startline="60">m_iAllocEles</references>
+        <references refid="class_se_mem_pool_1a87953f3f7e9b840f65bc8a51ea58e70c" compoundref="_se_mem_pool_8h" startline="55">m_iEleSize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_mem_pool_1adff7f8d9cc709802784ed0da53c883e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SeMemPool::GetTotalSize</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetTotalSize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="36" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.cpp" bodystart="168" bodyend="171"/>
+        <references refid="class_se_mem_pool_1aeefb41a06d5ce12e53aea4a5b37bc986" compoundref="_se_mem_pool_8h" startline="58">m_iTotalSize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_mem_pool_1aeb288d7d7be52b01c28088c3b5a7ac68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SeMemPool::GetAllocMaxEles</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetAllocMaxEles</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="37" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.cpp" bodystart="173" bodyend="176"/>
+        <references refid="class_se_mem_pool_1a9a97703e609aa29794c923343f669c73" compoundref="_se_mem_pool_8h" startline="61">m_iAllocMaxEles</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_mem_pool_1a249096c740267423ddfc5efc7aa54e92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMemPool::Clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>Clear</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="38" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.cpp" bodystart="178" bodyend="190"/>
+        <references refid="class_se_mem_pool_1aabe29204ff2e576dbce00402909aa048" compoundref="_se_mem_pool_8h" startline="65">m_kHeadList</references>
+        <references refid="class_se_mem_pool_1a6b6d3de1e48d247b3bb3c8dbcab6c593" compoundref="_se_mem_pool_8h" startline="70">m_kLock</references>
+        <references refid="struct_se_mem_pool_1_1_se_head_list_1a43d6e0b8343e2565c69a1a06451d721f" compoundref="_se_mem_pool_8h" startline="49">SeMemPool::SeHeadList::pkNext</references>
+        <references refid="class_se_mem_pool_1aee6fc074aabc1e4eff2ca1a5462aae52" compoundref="_se_mem_pool_8cpp" startline="44" endline="53">Reset</references>
+        <referencedby refid="class_se_mem_pool_1ab4f0a58b7370e95b4f8d8600dabd1478" compoundref="_se_mem_pool_8cpp" startline="38" endline="42">~SeMemPool</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_se_mem_pool_1a058c39179427ce7ebb99e3422131bb46" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMemPool::RegisterAllocCallBack</definition>
+        <argsstring>(NotifyMempoolAlloc fCallBack)</argsstring>
+        <name>RegisterAllocCallBack</name>
+        <param>
+          <type><ref refid="_se_mem_pool_8h_1a801f54874a5669fe9af11c0b9532a1b0" kindref="member">NotifyMempoolAlloc</ref></type>
+          <declname>fCallBack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="40" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.cpp" bodystart="192" bodyend="195"/>
+        <references refid="class_se_mem_pool_1ade8e071c923b07c82abe846169bc41f5" compoundref="_se_mem_pool_8h" startline="72">m_fAllocCallBack</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_se_mem_pool_1a0a65c2ae2b44690453435ca6fa6ea84a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeMemPool::ExtendPool</definition>
+        <argsstring>(void)</argsstring>
+        <name>ExtendPool</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="42" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.cpp" bodystart="126" bodyend="161"/>
+        <references refid="struct_se_mem_pool_1_1_se_head_list_1a2c37908b2ad4c39dc5fc07c324d1e70d" compoundref="_se_mem_pool_8h" startline="51">SeMemPool::SeHeadList::acData</references>
+        <references refid="struct_se_mem_pool_1_1_se_head_list_1a34f77ba682c00ee24c8b3d3b85efc756" compoundref="_se_mem_pool_8h" startline="50">SeMemPool::SeHeadList::iSize</references>
+        <references refid="class_se_mem_pool_1a936cde9814993d602a4724c18270e699" compoundref="_se_mem_pool_8h" startline="54">m_acName</references>
+        <references refid="class_se_mem_pool_1ade8e071c923b07c82abe846169bc41f5" compoundref="_se_mem_pool_8h" startline="72">m_fAllocCallBack</references>
+        <references refid="class_se_mem_pool_1abdeafa25050922458fa7c26d80f576cf" compoundref="_se_mem_pool_8h" startline="57">m_iAddEles</references>
+        <references refid="class_se_mem_pool_1a6bb4f82df0359f7d2289e1b602e57842" compoundref="_se_mem_pool_8h" startline="56">m_iBaseEles</references>
+        <references refid="class_se_mem_pool_1a87953f3f7e9b840f65bc8a51ea58e70c" compoundref="_se_mem_pool_8h" startline="55">m_iEleSize</references>
+        <references refid="class_se_mem_pool_1aeefb41a06d5ce12e53aea4a5b37bc986" compoundref="_se_mem_pool_8h" startline="58">m_iTotalSize</references>
+        <references refid="class_se_mem_pool_1aabe29204ff2e576dbce00402909aa048" compoundref="_se_mem_pool_8h" startline="65">m_kHeadList</references>
+        <references refid="class_se_mem_pool_1a6b6d3de1e48d247b3bb3c8dbcab6c593" compoundref="_se_mem_pool_8h" startline="70">m_kLock</references>
+        <references refid="class_se_mem_pool_1a5f8fb8a5e6bc2f9b59299c4f13e764ca" compoundref="_se_mem_pool_8h" startline="63">m_pkFreeFirst</references>
+        <references refid="struct_se_mem_pool_1_1_se_head_list_1a43d6e0b8343e2565c69a1a06451d721f" compoundref="_se_mem_pool_8h" startline="49">SeMemPool::SeHeadList::pkNext</references>
+        <references refid="struct_se_mem_pool_1_1_se_head_list_1a3c4f01199b3d17f67c09cd03ad1bdf78" compoundref="_se_mem_pool_8h" startline="48">SeMemPool::SeHeadList::pkPrev</references>
+        <referencedby refid="class_se_mem_pool_1a7bc07582ef29b4521d2923fdecc4d4ad" compoundref="_se_mem_pool_8cpp" startline="55" endline="78">NewEle</referencedby>
+        <referencedby refid="class_se_mem_pool_1a536b73e5b8e01be398196eb020367cb1" compoundref="_se_mem_pool_8cpp" startline="4" endline="36">SeMemPool</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_mem_pool_1aee6fc074aabc1e4eff2ca1a5462aae52" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMemPool::Reset</definition>
+        <argsstring>(void)</argsstring>
+        <name>Reset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="43" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.cpp" bodystart="44" bodyend="53"/>
+        <references refid="class_se_mem_pool_1a10a49e0ca58754d37de24e3575aeffc9" compoundref="_se_mem_pool_8h" startline="60">m_iAllocEles</references>
+        <references refid="class_se_mem_pool_1a9a97703e609aa29794c923343f669c73" compoundref="_se_mem_pool_8h" startline="61">m_iAllocMaxEles</references>
+        <references refid="class_se_mem_pool_1aabe29204ff2e576dbce00402909aa048" compoundref="_se_mem_pool_8h" startline="65">m_kHeadList</references>
+        <references refid="class_se_mem_pool_1a6b6d3de1e48d247b3bb3c8dbcab6c593" compoundref="_se_mem_pool_8h" startline="70">m_kLock</references>
+        <references refid="class_se_mem_pool_1a5f8fb8a5e6bc2f9b59299c4f13e764ca" compoundref="_se_mem_pool_8h" startline="63">m_pkFreeFirst</references>
+        <references refid="struct_se_mem_pool_1_1_se_head_list_1a43d6e0b8343e2565c69a1a06451d721f" compoundref="_se_mem_pool_8h" startline="49">SeMemPool::SeHeadList::pkNext</references>
+        <references refid="struct_se_mem_pool_1_1_se_head_list_1a3c4f01199b3d17f67c09cd03ad1bdf78" compoundref="_se_mem_pool_8h" startline="48">SeMemPool::SeHeadList::pkPrev</references>
+        <referencedby refid="class_se_mem_pool_1a249096c740267423ddfc5efc7aa54e92" compoundref="_se_mem_pool_8cpp" startline="178" endline="190">Clear</referencedby>
+        <referencedby refid="class_se_mem_pool_1a536b73e5b8e01be398196eb020367cb1" compoundref="_se_mem_pool_8cpp" startline="4" endline="36">SeMemPool</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4645">
+        <label>SeMemPool</label>
+        <link refid="class_se_mem_pool"/>
+        <childnode refid="4646" relation="usage">
+          <edgelabel>m_kHeadList</edgelabel>
+        </childnode>
+      </node>
+      <node id="4646">
+        <label>SeMemPool::SeHeadList</label>
+        <link refid="struct_se_mem_pool_1_1_se_head_list"/>
+        <childnode refid="4646" relation="usage">
+          <edgelabel>pkPrev</edgelabel>
+          <edgelabel>pkNext</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" line="26" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeMemPool.h" bodystart="25" bodyend="73"/>
+    <listofallmembers>
+      <member refid="class_se_mem_pool_1a249096c740267423ddfc5efc7aa54e92" prot="public" virt="non-virtual"><scope>SeMemPool</scope><name>Clear</name></member>
+      <member refid="class_se_mem_pool_1aeb8d557804ec9487bc6ed474c5fb6748" prot="public" virt="non-virtual"><scope>SeMemPool</scope><name>DelEle</name></member>
+      <member refid="class_se_mem_pool_1a0a65c2ae2b44690453435ca6fa6ea84a" prot="private" virt="non-virtual"><scope>SeMemPool</scope><name>ExtendPool</name></member>
+      <member refid="class_se_mem_pool_1aeb288d7d7be52b01c28088c3b5a7ac68" prot="public" virt="non-virtual"><scope>SeMemPool</scope><name>GetAllocMaxEles</name></member>
+      <member refid="class_se_mem_pool_1a6f510577ab05752363ea243a89a39453" prot="public" virt="non-virtual"><scope>SeMemPool</scope><name>GetAllocSize</name></member>
+      <member refid="class_se_mem_pool_1adff7f8d9cc709802784ed0da53c883e7" prot="public" virt="non-virtual"><scope>SeMemPool</scope><name>GetTotalSize</name></member>
+      <member refid="class_se_mem_pool_1ac0c8a331fe93ac96ffd90a3ae1212075" prot="public" virt="non-virtual"><scope>SeMemPool</scope><name>IsValid</name></member>
+      <member refid="class_se_mem_pool_1a936cde9814993d602a4724c18270e699" prot="private" virt="non-virtual"><scope>SeMemPool</scope><name>m_acName</name></member>
+      <member refid="class_se_mem_pool_1ade8e071c923b07c82abe846169bc41f5" prot="private" virt="non-virtual"><scope>SeMemPool</scope><name>m_fAllocCallBack</name></member>
+      <member refid="class_se_mem_pool_1abdeafa25050922458fa7c26d80f576cf" prot="private" virt="non-virtual"><scope>SeMemPool</scope><name>m_iAddEles</name></member>
+      <member refid="class_se_mem_pool_1a10a49e0ca58754d37de24e3575aeffc9" prot="private" virt="non-virtual"><scope>SeMemPool</scope><name>m_iAllocEles</name></member>
+      <member refid="class_se_mem_pool_1a9a97703e609aa29794c923343f669c73" prot="private" virt="non-virtual"><scope>SeMemPool</scope><name>m_iAllocMaxEles</name></member>
+      <member refid="class_se_mem_pool_1a6bb4f82df0359f7d2289e1b602e57842" prot="private" virt="non-virtual"><scope>SeMemPool</scope><name>m_iBaseEles</name></member>
+      <member refid="class_se_mem_pool_1a87953f3f7e9b840f65bc8a51ea58e70c" prot="private" virt="non-virtual"><scope>SeMemPool</scope><name>m_iEleSize</name></member>
+      <member refid="class_se_mem_pool_1aeefb41a06d5ce12e53aea4a5b37bc986" prot="private" virt="non-virtual"><scope>SeMemPool</scope><name>m_iTotalSize</name></member>
+      <member refid="class_se_mem_pool_1aabe29204ff2e576dbce00402909aa048" prot="private" virt="non-virtual"><scope>SeMemPool</scope><name>m_kHeadList</name></member>
+      <member refid="class_se_mem_pool_1a6b6d3de1e48d247b3bb3c8dbcab6c593" prot="private" virt="non-virtual"><scope>SeMemPool</scope><name>m_kLock</name></member>
+      <member refid="class_se_mem_pool_1a5f8fb8a5e6bc2f9b59299c4f13e764ca" prot="private" virt="non-virtual"><scope>SeMemPool</scope><name>m_pkFreeFirst</name></member>
+      <member refid="class_se_mem_pool_1a853e4ea132b73fb02bfcda409322b16d" prot="private" virt="non-virtual"><scope>SeMemPool</scope><name>m_stMagicBegin</name></member>
+      <member refid="class_se_mem_pool_1a22c59f6750e67c45f5c615c5525fc793" prot="private" virt="non-virtual"><scope>SeMemPool</scope><name>m_stMagicEnd</name></member>
+      <member refid="class_se_mem_pool_1a7bc07582ef29b4521d2923fdecc4d4ad" prot="public" virt="non-virtual"><scope>SeMemPool</scope><name>NewEle</name></member>
+      <member refid="class_se_mem_pool_1a058c39179427ce7ebb99e3422131bb46" prot="public" virt="non-virtual"><scope>SeMemPool</scope><name>RegisterAllocCallBack</name></member>
+      <member refid="class_se_mem_pool_1aee6fc074aabc1e4eff2ca1a5462aae52" prot="private" virt="non-virtual"><scope>SeMemPool</scope><name>Reset</name></member>
+      <member refid="class_se_mem_pool_1a536b73e5b8e01be398196eb020367cb1" prot="public" virt="non-virtual"><scope>SeMemPool</scope><name>SeMemPool</name></member>
+      <member refid="class_se_mem_pool_1ab4f0a58b7370e95b4f8d8600dabd1478" prot="public" virt="non-virtual"><scope>SeMemPool</scope><name>~SeMemPool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

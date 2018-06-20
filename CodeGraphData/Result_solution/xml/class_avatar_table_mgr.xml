@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_avatar_table_mgr" kind="class" prot="public">
+    <compoundname>AvatarTableMgr</compoundname>
+    <includes refid="_avatar__table_8hpp" local="no">Avatar_table.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_avatar_table_mgr_1a513601a1ddf67d44a23ece2f333f4bdb" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned int, <ref refid="struct_avatar_table" kindref="compound">AvatarTable</ref> * &gt;</type>
+        <definition>std::map&lt;unsigned int,AvatarTable*&gt; AvatarTableMgr::m_kAvatarTableMap</definition>
+        <argsstring></argsstring>
+        <name>m_kAvatarTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.hpp" line="94" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.hpp" bodystart="94" bodyend="-1"/>
+        <referencedby refid="class_avatar_table_mgr_1a2b329a64874e60a89c198bbda1f4ff40" compoundref="_avatar__table_8cpp" startline="104" endline="320">FillData</referencedby>
+        <referencedby refid="class_avatar_table_mgr_1a4de3be4c96e1f7c08f15fedd7e3573ed" compoundref="_avatar__table_8cpp" startline="42" endline="50">GetAvatarTable</referencedby>
+        <referencedby refid="class_avatar_table_mgr_1a3850564c450e2591bf134531e1781ed5" compoundref="_avatar__table_8cpp" startline="26" endline="29">GetAvatarTableMap</referencedby>
+        <referencedby refid="class_avatar_table_mgr_1a378baaeb070732a254c8a68276c9065c" compoundref="_avatar__table_8cpp" startline="31" endline="40">GetAvatarTableVec</referencedby>
+        <referencedby refid="class_avatar_table_mgr_1a5388afa62917de095f021d1e59dd08df" compoundref="_avatar__table_8cpp" startline="57" endline="60">~AvatarTableMgr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_avatar_table_mgr_1a096ee518ca63ee67db7e50440f64e624" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_avatar_table_mgr" kindref="compound">AvatarTableMgr</ref> *</type>
+        <definition>AvatarTableMgr * AvatarTableMgr::m_pkAvatarTableMgr</definition>
+        <argsstring></argsstring>
+        <name>m_pkAvatarTableMgr</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.hpp" line="95" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.hpp" bodystart="95" bodyend="-1"/>
+        <referencedby refid="class_avatar_table_mgr_1a3477b4d229f1d71f2e2c1e5051e020f6" compoundref="_avatar__table_8cpp" startline="6" endline="13">Get</referencedby>
+        <referencedby refid="class_avatar_table_mgr_1a870a4c9ea2f8d6b3cb0a845f75cc6dc7" compoundref="_avatar__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_avatar_table_mgr_1a3477b4d229f1d71f2e2c1e5051e020f6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_avatar_table_mgr" kindref="compound">AvatarTableMgr</ref> *</type>
+        <definition>AvatarTableMgr * AvatarTableMgr::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.hpp" line="81" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.cpp" bodystart="6" bodyend="13"/>
+        <references refid="class_avatar_table_mgr_1ad7fda34f3d676c8dbd677a52183f01ba" compoundref="_avatar__table_8cpp" startline="52" endline="55">AvatarTableMgr</references>
+        <references refid="class_avatar_table_mgr_1a096ee518ca63ee67db7e50440f64e624" compoundref="_avatar__table_8hpp" startline="95">m_pkAvatarTableMgr</references>
+        <referencedby refid="class_global_table_mgr_1a548475cdb0341ef0c61c0986ef404225" compoundref="_global_table_mgr_8cpp" startline="79" endline="82">GlobalTableMgr::GetAvatarTable</referencedby>
+        <referencedby refid="class_global_table_mgr_1a803c024393c06657d18be89d0b58f8f0" compoundref="_global_table_mgr_8cpp" startline="74" endline="77">GlobalTableMgr::GetAvatarTableMap</referencedby>
+        <referencedby refid="class_c_shop_1aeb438ee0067b2412546be1d9ded629d8" compoundref="_src_2_shop_8cpp" startline="553" endline="562">CShop::GetHeroID</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae30d35df373466d539c1cb8f6c34b71d" compoundref="_src_2_item_mgr_8cpp" startline="1524" endline="1558">CItemMgr::getSelectableAvatars</referencedby>
+        <referencedby refid="class_hero_mgr_1a95a298c7d6927414102db7dcae89ef82" compoundref="_src_2_hero_mgr_8cpp" startline="284" endline="318">HeroMgr::isValidAvatar</referencedby>
+        <referencedby refid="class_table_mgr_1ae1ceeb5a4a6212a8497ef7dd92f87885" compoundref="_table_mgr_8h" startline="79" endline="132">TableMgr::LoadTable</referencedby>
+        <referencedby refid="class_avatar_table_mgr_1a870a4c9ea2f8d6b3cb0a845f75cc6dc7" compoundref="_avatar__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+        <referencedby refid="class_se_match_player_1a5dbb5adc727928afc7f8bd0b3df1c3d2" compoundref="src_2_se_match_player_8cpp" startline="252" endline="278">SeMatchPlayer::setAvatar</referencedby>
+        <referencedby refid="class_se_match_player_1af734f104e6c55f7d466437f80b5b5ba1" compoundref="src_2_se_match_player_8cpp" startline="215" endline="250">SeMatchPlayer::setRandomAvatar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_avatar_table_mgr_1a870a4c9ea2f8d6b3cb0a845f75cc6dc7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_avatar_table_mgr" kindref="compound">AvatarTableMgr</ref> *</type>
+        <definition>AvatarTableMgr * AvatarTableMgr::ReLoad</definition>
+        <argsstring>()</argsstring>
+        <name>ReLoad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.hpp" line="82" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.cpp" bodystart="15" bodyend="23"/>
+        <references refid="class_avatar_table_mgr_1a3477b4d229f1d71f2e2c1e5051e020f6" compoundref="_avatar__table_8cpp" startline="6" endline="13">Get</references>
+        <references refid="class_avatar_table_mgr_1a096ee518ca63ee67db7e50440f64e624" compoundref="_avatar__table_8hpp" startline="95">m_pkAvatarTableMgr</references>
+        <referencedby refid="class_table_mgr_1a6298f0e9b81636b481a25c06016e237a" compoundref="_table_mgr1_8cpp" startline="860" endline="914">TableMgr::ReloadTable</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_avatar_table_mgr_1ad7fda34f3d676c8dbd677a52183f01ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AvatarTableMgr::AvatarTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>AvatarTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.hpp" line="83" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.cpp" bodystart="52" bodyend="55"/>
+        <references refid="class_avatar_table_mgr_1a7f0386c3528c677c1d1fe4bf8ef6bf42" compoundref="_avatar__table_8cpp" startline="62" endline="102">Load</references>
+        <referencedby refid="class_avatar_table_mgr_1a3477b4d229f1d71f2e2c1e5051e020f6" compoundref="_avatar__table_8cpp" startline="6" endline="13">Get</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_avatar_table_mgr_1a5388afa62917de095f021d1e59dd08df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AvatarTableMgr::~AvatarTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~AvatarTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.hpp" line="84" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.cpp" bodystart="57" bodyend="60"/>
+        <references refid="class_avatar_table_mgr_1a513601a1ddf67d44a23ece2f333f4bdb" compoundref="_avatar__table_8hpp" startline="94">m_kAvatarTableMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_avatar_table_mgr_1a4de3be4c96e1f7c08f15fedd7e3573ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_avatar_table" kindref="compound">AvatarTable</ref> *</type>
+        <definition>const AvatarTable * AvatarTableMgr::GetAvatarTable</definition>
+        <argsstring>(unsigned int iTypeID)</argsstring>
+        <name>GetAvatarTable</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>iTypeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.hpp" line="86" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.cpp" bodystart="42" bodyend="50"/>
+        <references refid="class_avatar_table_mgr_1a513601a1ddf67d44a23ece2f333f4bdb" compoundref="_avatar__table_8hpp" startline="94">m_kAvatarTableMap</references>
+        <referencedby refid="class_global_table_mgr_1a548475cdb0341ef0c61c0986ef404225" compoundref="_global_table_mgr_8cpp" startline="79" endline="82">GlobalTableMgr::GetAvatarTable</referencedby>
+        <referencedby refid="class_c_shop_1aeb438ee0067b2412546be1d9ded629d8" compoundref="_src_2_shop_8cpp" startline="553" endline="562">CShop::GetHeroID</referencedby>
+        <referencedby refid="class_c_item_mgr_1ae30d35df373466d539c1cb8f6c34b71d" compoundref="_src_2_item_mgr_8cpp" startline="1524" endline="1558">CItemMgr::getSelectableAvatars</referencedby>
+        <referencedby refid="class_hero_mgr_1a95a298c7d6927414102db7dcae89ef82" compoundref="_src_2_hero_mgr_8cpp" startline="284" endline="318">HeroMgr::isValidAvatar</referencedby>
+        <referencedby refid="class_se_match_player_1a5dbb5adc727928afc7f8bd0b3df1c3d2" compoundref="src_2_se_match_player_8cpp" startline="252" endline="278">SeMatchPlayer::setAvatar</referencedby>
+        <referencedby refid="class_se_match_player_1af734f104e6c55f7d466437f80b5b5ba1" compoundref="src_2_se_match_player_8cpp" startline="215" endline="250">SeMatchPlayer::setRandomAvatar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_avatar_table_mgr_1a3850564c450e2591bf134531e1781ed5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; unsigned int, <ref refid="struct_avatar_table" kindref="compound">AvatarTable</ref> * &gt; &amp;</type>
+        <definition>const std::map&lt; unsigned int, AvatarTable * &gt; &amp; AvatarTableMgr::GetAvatarTableMap</definition>
+        <argsstring>()</argsstring>
+        <name>GetAvatarTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.hpp" line="87" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.cpp" bodystart="26" bodyend="29"/>
+        <references refid="class_avatar_table_mgr_1a513601a1ddf67d44a23ece2f333f4bdb" compoundref="_avatar__table_8hpp" startline="94">m_kAvatarTableMap</references>
+        <referencedby refid="class_global_table_mgr_1a803c024393c06657d18be89d0b58f8f0" compoundref="_global_table_mgr_8cpp" startline="74" endline="77">GlobalTableMgr::GetAvatarTableMap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_avatar_table_mgr_1a378baaeb070732a254c8a68276c9065c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_table_res_array" kindref="compound">TableResArray</ref></type>
+        <definition>TableResArray AvatarTableMgr::GetAvatarTableVec</definition>
+        <argsstring>()</argsstring>
+        <name>GetAvatarTableVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.hpp" line="88" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.cpp" bodystart="31" bodyend="40"/>
+        <references refid="class_avatar_table_mgr_1a513601a1ddf67d44a23ece2f333f4bdb" compoundref="_avatar__table_8hpp" startline="94">m_kAvatarTableMap</references>
+        <references refid="class_table_res_array_1ab7fbd71c9a00bfd30ae2282a4955dbc0" compoundref="_se_table_res_base_8cpp" startline="13" endline="16">TableResArray::pushBack</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_avatar_table_mgr_1a7f0386c3528c677c1d1fe4bf8ef6bf42" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AvatarTableMgr::Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.hpp" line="91" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.cpp" bodystart="62" bodyend="102"/>
+        <references refid="class_ti_xml_document_1a6dfc01a6e5d58e56acd537dfd3bdeb29" compoundref="tinyxml_8h" startline="1430" endline="1430">TiXmlDocument::Error</references>
+        <references refid="class_ti_xml_document_1a9d0f689f6e09ea494ea547be8d79c25e" compoundref="tinyxml_8h" startline="1433" endline="1433">TiXmlDocument::ErrorDesc</references>
+        <references refid="class_avatar_table_mgr_1a2b329a64874e60a89c198bbda1f4ff40" compoundref="_avatar__table_8cpp" startline="104" endline="320">FillData</references>
+        <references refid="class_ti_xml_node_1ab1f8d8e70d88aea4c5efedfe00862d55" compoundref="tinyxml_8cpp" startline="420" endline="432">TiXmlNode::FirstChildElement</references>
+        <references refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" compoundref="_table_mgr1_8cpp" startline="36" endline="43">TableMgr::Get</references>
+        <references refid="class_table_mgr_1af1a60a8b2807abd34ceb6002cf8f4b80" compoundref="_table_mgr1_8cpp" startline="851" endline="858">TableMgr::GetTableLoader</references>
+        <references refid="class_table_loader_1a8d06b11d37cde9ff76d98901dd39bab4">TableLoader::LoadTable</references>
+        <references refid="class_ti_xml_node_1a7667217e269e0da01d1f82aee94d1a3d" compoundref="tinyxml_8cpp" startline="450" endline="462">TiXmlNode::NextSiblingElement</references>
+        <references refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</references>
+        <referencedby refid="class_avatar_table_mgr_1ad7fda34f3d676c8dbd677a52183f01ba" compoundref="_avatar__table_8cpp" startline="52" endline="55">AvatarTableMgr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_avatar_table_mgr_1a2b329a64874e60a89c198bbda1f4ff40" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AvatarTableMgr::FillData</definition>
+        <argsstring>(AvatarTable *row, TiXmlElement *element)</argsstring>
+        <name>FillData</name>
+        <param>
+          <type><ref refid="struct_avatar_table" kindref="compound">AvatarTable</ref> *</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.hpp" line="92" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.cpp" bodystart="104" bodyend="320"/>
+        <references refid="class_ti_xml_element_1ac1e4691e9375ba4e665dce7e46a50a9c" compoundref="tinyxml_8cpp" startline="544" endline="550">TiXmlElement::Attribute</references>
+        <references refid="struct_avatar_table_1a1c728c8a6d7307f19c99b6328e1b3812" compoundref="_avatar__table_8hpp" startline="62">AvatarTable::iAniResID</references>
+        <references refid="struct_avatar_table_1a9d36c48fe62f80e4c8b838f8567e5f92" compoundref="_avatar__table_8hpp" startline="59">AvatarTable::iAttack1StateEffID</references>
+        <references refid="struct_avatar_table_1a608459af329ae15c54e384408d06f357" compoundref="_avatar__table_8hpp" startline="60">AvatarTable::iAttack2StateEffID</references>
+        <references refid="struct_avatar_table_1a78b1bfe0bf1b61459484d622ac3bfab0" compoundref="_avatar__table_8hpp" startline="58">AvatarTable::iAttackStateEffID</references>
+        <references refid="struct_avatar_table_1a3db9164311161f59e38e2559acb27939" compoundref="_avatar__table_8hpp" startline="56">AvatarTable::iCommonEffID</references>
+        <references refid="struct_avatar_table_1abb698609d863b38b45433a57872fdfa4" compoundref="_avatar__table_8hpp" startline="61">AvatarTable::iDeadStateEffID</references>
+        <references refid="struct_avatar_table_1a74b6175d675bb900897aebcae3731861" compoundref="_avatar__table_8hpp" startline="55">AvatarTable::iModelResID</references>
+        <references refid="struct_avatar_table_1a4a17bb1abbbbff8918d32a1c296ed3be" compoundref="_avatar__table_8hpp" startline="71">AvatarTable::iShowModelID</references>
+        <references refid="struct_avatar_table_1a60c92562410ee2dea4686bbf9001c9d8" compoundref="_avatar__table_8hpp" startline="57">AvatarTable::iSillEffID</references>
+        <references refid="struct_avatar_table_1ad5cea1a1a30329693ee4f26f5733e86a" compoundref="_avatar__table_8hpp" startline="63">AvatarTable::iSkillIconID</references>
+        <references refid="struct_avatar_table_1a6a4f8719a5ccf1232055d0dcff54f5e7" compoundref="_avatar__table_8hpp" startline="45">AvatarTable::kAvatarFolderName</references>
+        <references refid="struct_avatar_table_1ac3ee0a7971d380d8416c84974a9a28af" compoundref="_avatar__table_8hpp" startline="51">AvatarTable::kBtainTips</references>
+        <references refid="struct_avatar_table_1a8d1c30a5faa875fff224345c83e8dbe8" compoundref="_avatar__table_8hpp" startline="48">AvatarTable::kdescribe</references>
+        <references refid="struct_avatar_table_1aebff2e13d32f642a8ed0bc948e0f0f36" compoundref="_avatar__table_8hpp" startline="44">AvatarTable::kName_China</references>
+        <references refid="class_avatar_table_mgr_1a513601a1ddf67d44a23ece2f333f4bdb" compoundref="_avatar__table_8hpp" startline="94">m_kAvatarTableMap</references>
+        <references refid="struct_avatar_table_1af3f8a2ecfe234751f06bcfc3d543d08f" compoundref="_avatar__table_8hpp" startline="43">AvatarTable::uiAvatarID</references>
+        <references refid="struct_avatar_table_1a732e010a1e7c1b361c38a6f41dc272cd" compoundref="_avatar__table_8hpp" startline="72">AvatarTable::uiAvatarQuality</references>
+        <references refid="struct_avatar_table_1a365ac2ef4776af9c6133df8d82125dc5" compoundref="_avatar__table_8hpp" startline="47">AvatarTable::uiAvatarType</references>
+        <references refid="struct_avatar_table_1a5bdb7f2407a0042dab7bf6ba09f9f38a" compoundref="_avatar__table_8hpp" startline="49">AvatarTable::uiBtain</references>
+        <references refid="struct_avatar_table_1a504767de1c112b8be7c7a276e4446d49" compoundref="_avatar__table_8hpp" startline="67">AvatarTable::uiCardIconID</references>
+        <references refid="struct_avatar_table_1ac79273550e8468b17d96a5e6991c470c" compoundref="_avatar__table_8hpp" startline="65">AvatarTable::uiHeadIconID</references>
+        <references refid="struct_avatar_table_1ae3f13e91c0dcf2dd048d81ad5c280226" compoundref="_avatar__table_8hpp" startline="52">AvatarTable::uiHeroID</references>
+        <references refid="struct_avatar_table_1a2f62feb94a497ccebd5a72ca7ab7b16e" compoundref="_avatar__table_8hpp" startline="46">AvatarTable::uiLanguageID</references>
+        <references refid="struct_avatar_table_1a6c881e8dabe52b754e05d4298c5ad11f" compoundref="_avatar__table_8hpp" startline="69">AvatarTable::uiLoadingIconID</references>
+        <references refid="struct_avatar_table_1aa687cd822598774f158aca36ffb58080" compoundref="_avatar__table_8hpp" startline="73">AvatarTable::uiMorphID</references>
+        <references refid="struct_avatar_table_1a111b9613f03ab179ca9410046540d8d6" compoundref="_avatar__table_8hpp" startline="50">AvatarTable::uiRackID</references>
+        <references refid="struct_avatar_table_1a8768ab5868d59ca30c7869e61dc81455" compoundref="_avatar__table_8hpp" startline="74">AvatarTable::uiSkinPos</references>
+        <referencedby refid="class_avatar_table_mgr_1a7f0386c3528c677c1d1fe4bf8ef6bf42" compoundref="_avatar__table_8cpp" startline="62" endline="102">Load</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="553">
+        <label>AvatarTable</label>
+        <link refid="struct_avatar_table"/>
+        <childnode refid="554" relation="public-inheritance">
+        </childnode>
+        <childnode refid="555" relation="usage">
+          <edgelabel>kBtainTips</edgelabel>
+          <edgelabel>kAvatarFolderName</edgelabel>
+          <edgelabel>kName_China</edgelabel>
+          <edgelabel>kdescribe</edgelabel>
+        </childnode>
+      </node>
+      <node id="552">
+        <label>std::map&lt; unsigned int, AvatarTable * &gt;</label>
+        <childnode refid="553" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="551">
+        <label>AvatarTableMgr</label>
+        <link refid="class_avatar_table_mgr"/>
+        <childnode refid="551" relation="usage">
+          <edgelabel>m_pkAvatarTableMgr</edgelabel>
+        </childnode>
+        <childnode refid="552" relation="usage">
+          <edgelabel>m_kAvatarTableMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="556">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="554">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="555">
+        <label>std::string</label>
+        <childnode refid="556" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.hpp" line="79" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Avatar_table.hpp" bodystart="78" bodyend="96"/>
+    <listofallmembers>
+      <member refid="class_avatar_table_mgr_1ad7fda34f3d676c8dbd677a52183f01ba" prot="public" virt="non-virtual"><scope>AvatarTableMgr</scope><name>AvatarTableMgr</name></member>
+      <member refid="class_avatar_table_mgr_1a2b329a64874e60a89c198bbda1f4ff40" prot="private" virt="non-virtual"><scope>AvatarTableMgr</scope><name>FillData</name></member>
+      <member refid="class_avatar_table_mgr_1a3477b4d229f1d71f2e2c1e5051e020f6" prot="public" virt="non-virtual"><scope>AvatarTableMgr</scope><name>Get</name></member>
+      <member refid="class_avatar_table_mgr_1a4de3be4c96e1f7c08f15fedd7e3573ed" prot="public" virt="non-virtual"><scope>AvatarTableMgr</scope><name>GetAvatarTable</name></member>
+      <member refid="class_avatar_table_mgr_1a3850564c450e2591bf134531e1781ed5" prot="public" virt="non-virtual"><scope>AvatarTableMgr</scope><name>GetAvatarTableMap</name></member>
+      <member refid="class_avatar_table_mgr_1a378baaeb070732a254c8a68276c9065c" prot="public" virt="non-virtual"><scope>AvatarTableMgr</scope><name>GetAvatarTableVec</name></member>
+      <member refid="class_avatar_table_mgr_1a7f0386c3528c677c1d1fe4bf8ef6bf42" prot="private" virt="non-virtual"><scope>AvatarTableMgr</scope><name>Load</name></member>
+      <member refid="class_avatar_table_mgr_1a513601a1ddf67d44a23ece2f333f4bdb" prot="private" virt="non-virtual"><scope>AvatarTableMgr</scope><name>m_kAvatarTableMap</name></member>
+      <member refid="class_avatar_table_mgr_1a096ee518ca63ee67db7e50440f64e624" prot="private" virt="non-virtual"><scope>AvatarTableMgr</scope><name>m_pkAvatarTableMgr</name></member>
+      <member refid="class_avatar_table_mgr_1a870a4c9ea2f8d6b3cb0a845f75cc6dc7" prot="public" virt="non-virtual"><scope>AvatarTableMgr</scope><name>ReLoad</name></member>
+      <member refid="class_avatar_table_mgr_1a5388afa62917de095f021d1e59dd08df" prot="public" virt="non-virtual"><scope>AvatarTableMgr</scope><name>~AvatarTableMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

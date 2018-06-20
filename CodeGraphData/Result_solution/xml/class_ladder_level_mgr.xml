@@ -1,0 +1,852 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_ladder_level_mgr" kind="class" prot="public">
+    <compoundname>LadderLevelMgr</compoundname>
+    <includes refid="_src_2_ladder_level_mgr_8h" local="no">LadderLevelMgr.h</includes>
+    <innerclass refid="struct_ladder_level_mgr_1_1_top_item" prot="private">LadderLevelMgr::TopItem</innerclass>
+    <innerclass refid="class_ladder_level_mgr_1_1_top_item_score_cmp" prot="private">LadderLevelMgr::TopItemScoreCmp</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_ladder_level_mgr_1a02e5c13bd7ba27e834f336659b9d576f" prot="private" static="no">
+        <type>std::map&lt; int, <ref refid="struct_rank_stage_table" kindref="compound">RankStageTable</ref> *, std::greater&lt; int &gt; &gt;</type>
+        <definition>typedef std::map&lt;int, RankStageTable *,std::greater&lt;int&gt; &gt; LadderLevelMgr::SCOREMAP</definition>
+        <argsstring></argsstring>
+        <name>SCOREMAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="62" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_ladder_level_mgr_1a83721c8817bf27a3381243f4c4e8b5d5" prot="private" static="no">
+        <type>std::map&lt; DWord, <ref refid="struct_ladder_level_mgr_1_1_top_item" kindref="compound">TopItem</ref> * &gt;</type>
+        <definition>typedef std::map&lt;DWord, TopItem *&gt; LadderLevelMgr::PLAYERTOPMAP</definition>
+        <argsstring></argsstring>
+        <name>PLAYERTOPMAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="63" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_ladder_level_mgr_1a77e7263f198a981a00575ee9175bd2de" prot="private" static="no">
+        <type>std::set&lt; <ref refid="struct_ladder_level_mgr_1_1_top_item" kindref="compound">TopItem</ref> *, <ref refid="class_ladder_level_mgr_1_1_top_item_score_cmp" kindref="compound">TopItemScoreCmp</ref> &gt;</type>
+        <definition>typedef std::set&lt;TopItem *, TopItemScoreCmp&gt; LadderLevelMgr::SCORETOPSET</definition>
+        <argsstring></argsstring>
+        <name>SCORETOPSET</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="64" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_ladder_level_mgr_1a02e5c13bd7ba27e834f336659b9d576f" prot="private" static="no">
+        <type>std::map&lt; int, <ref refid="struct_rank_stage_table" kindref="compound">RankStageTable</ref> *, std::greater&lt; int &gt; &gt;</type>
+        <definition>typedef std::map&lt;int, RankStageTable *,std::greater&lt;int&gt; &gt; LadderLevelMgr::SCOREMAP</definition>
+        <argsstring></argsstring>
+        <name>SCOREMAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" line="62" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_ladder_level_mgr_1a83721c8817bf27a3381243f4c4e8b5d5" prot="private" static="no">
+        <type>std::map&lt; DWord, <ref refid="struct_ladder_level_mgr_1_1_top_item" kindref="compound">TopItem</ref> * &gt;</type>
+        <definition>typedef std::map&lt;DWord, TopItem *&gt; LadderLevelMgr::PLAYERTOPMAP</definition>
+        <argsstring></argsstring>
+        <name>PLAYERTOPMAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" line="63" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_ladder_level_mgr_1a77e7263f198a981a00575ee9175bd2de" prot="private" static="no">
+        <type>std::set&lt; <ref refid="struct_ladder_level_mgr_1_1_top_item" kindref="compound">TopItem</ref> *, <ref refid="class_ladder_level_mgr_1_1_top_item_score_cmp" kindref="compound">TopItemScoreCmp</ref> &gt;</type>
+        <definition>typedef std::set&lt;TopItem *, TopItemScoreCmp&gt; LadderLevelMgr::SCORETOPSET</definition>
+        <argsstring></argsstring>
+        <name>SCORETOPSET</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" line="64" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ladder_level_mgr_1a57aa7a3a09426baa40fbe54b8e67c6b6" prot="private" static="no" mutable="no">
+        <type>Es::NormalLock</type>
+        <definition>Es::NormalLock LadderLevelMgr::m_mutex</definition>
+        <argsstring></argsstring>
+        <name>m_mutex</name>
+        <briefdescription>
+<para>Ëø. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="59" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_ladder_level_mgr_1af81d92611f0ba45a9c646d514108c814" compoundref="_src_2_ladder_level_mgr_8cpp" startline="121" endline="167">joinTop</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1a61ea9f8b90a5e401a5703fc99ade3ce3" compoundref="_src_2_ladder_level_mgr_8cpp" startline="179" endline="196">quitTop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ladder_level_mgr_1a329f1dc7e43dee47e5124aa0d9cf1b07" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LadderLevelMgr::m_topLevel</definition>
+        <argsstring></argsstring>
+        <name>m_topLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="60" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_ladder_level_mgr_1a065fc41c7999ddd17413db78ac73db43" compoundref="_src_2_ladder_level_mgr_8cpp" startline="56" endline="67">getLevel</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1aef3579f2e6132306beacc12078b5c3cb" compoundref="_src_2_ladder_level_mgr_8cpp" startline="306" endline="309">getTopLevel</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1a3096a1f3c21699b271a812e2a8b7588d" compoundref="_src_2_ladder_level_mgr_8cpp" startline="25" endline="54">Initialize</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1a6c6ddf7bebd796e01a1b27972200b527" compoundref="_src_2_ladder_level_mgr_8cpp" startline="14" endline="18">LadderLevelMgr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ladder_level_mgr_1ae16cb39237ed0cae2de78db9d1762fb8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LadderLevelMgr::m_topPlayerMaxNum</definition>
+        <argsstring></argsstring>
+        <name>m_topPlayerMaxNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="61" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="class_ladder_level_mgr_1a3096a1f3c21699b271a812e2a8b7588d" compoundref="_src_2_ladder_level_mgr_8cpp" startline="25" endline="54">Initialize</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1af81d92611f0ba45a9c646d514108c814" compoundref="_src_2_ladder_level_mgr_8cpp" startline="121" endline="167">joinTop</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1a6c6ddf7bebd796e01a1b27972200b527" compoundref="_src_2_ladder_level_mgr_8cpp" startline="14" endline="18">LadderLevelMgr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ladder_level_mgr_1ac217e6722b47c9c2688a29ce8b6674d7" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ladder_level_mgr_1a02e5c13bd7ba27e834f336659b9d576f" kindref="member">SCOREMAP</ref></type>
+        <definition>SCOREMAP LadderLevelMgr::m_scoreMap</definition>
+        <argsstring></argsstring>
+        <name>m_scoreMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="66" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="class_ladder_level_mgr_1a4501dbe58aa5b748a22df43b0069a5a7" compoundref="_src_2_ladder_level_mgr_8cpp" startline="69" endline="80">getLevelByScore</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1a3096a1f3c21699b271a812e2a8b7588d" compoundref="_src_2_ladder_level_mgr_8cpp" startline="25" endline="54">Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ladder_level_mgr_1a2befec24a341cb9a14ef6f424e3e4aa2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ladder_level_mgr_1a83721c8817bf27a3381243f4c4e8b5d5" kindref="member">PLAYERTOPMAP</ref></type>
+        <definition>PLAYERTOPMAP LadderLevelMgr::m_playerTopMap</definition>
+        <argsstring></argsstring>
+        <name>m_playerTopMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="67" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="class_ladder_level_mgr_1af81d92611f0ba45a9c646d514108c814" compoundref="_src_2_ladder_level_mgr_8cpp" startline="121" endline="167">joinTop</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1a61ea9f8b90a5e401a5703fc99ade3ce3" compoundref="_src_2_ladder_level_mgr_8cpp" startline="179" endline="196">quitTop</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1a170e32a3dec126c0e0888cd1c3f1acaa" compoundref="_src_2_ladder_level_mgr_8cpp" startline="296" endline="304">setInitData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ladder_level_mgr_1a5075bc70d375d99270d512cec868f88f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ladder_level_mgr_1a77e7263f198a981a00575ee9175bd2de" kindref="member">SCORETOPSET</ref></type>
+        <definition>SCORETOPSET LadderLevelMgr::m_scoreTopSet</definition>
+        <argsstring></argsstring>
+        <name>m_scoreTopSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="68" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="class_ladder_level_mgr_1acb6657e09bd9edfef0ab06cf06bb90e7" compoundref="_src_2_ladder_level_mgr_8cpp" startline="113" endline="120">insertTopSet</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1af81d92611f0ba45a9c646d514108c814" compoundref="_src_2_ladder_level_mgr_8cpp" startline="121" endline="167">joinTop</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1a61ea9f8b90a5e401a5703fc99ade3ce3" compoundref="_src_2_ladder_level_mgr_8cpp" startline="179" endline="196">quitTop</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1a5f2dde80c12500c73a5a24438adcae12" compoundref="_src_2_ladder_level_mgr_8cpp" startline="92" endline="111">updateScore</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ladder_level_mgr_1a6c6ddf7bebd796e01a1b27972200b527" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LadderLevelMgr::LadderLevelMgr</definition>
+        <argsstring>(void)</argsstring>
+        <name>LadderLevelMgr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="14" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.cpp" bodystart="14" bodyend="18"/>
+        <references refid="class_ladder_level_mgr_1a329f1dc7e43dee47e5124aa0d9cf1b07" compoundref="_src_2_ladder_level_mgr_8h" startline="60">m_topLevel</references>
+        <references refid="class_ladder_level_mgr_1ae16cb39237ed0cae2de78db9d1762fb8" compoundref="_src_2_ladder_level_mgr_8h" startline="61">m_topPlayerMaxNum</references>
+        <references refid="_src_2_ladder_level_mgr_8cpp_1ad708c16d881443f691ceb820032d56fa" compoundref="_src_2_ladder_level_mgr_8cpp" startline="12">MIN_LEVEL</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1aacad64efc23363dffaabbc237b2691d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LadderLevelMgr::~LadderLevelMgr</definition>
+        <argsstring>(void)</argsstring>
+        <name>~LadderLevelMgr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="15" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.cpp" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1a3096a1f3c21699b271a812e2a8b7588d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LadderLevelMgr::Initialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="17" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.cpp" bodystart="25" bodyend="54"/>
+        <references refid="class_rank_stage_table_mgr_1a5bf8f5713afdccf8132ca5eff5128371" compoundref="_rank_stage__table_8cpp" startline="6" endline="13">RankStageTableMgr::Get</references>
+        <references refid="class_rank_stage_table_mgr_1ad6d98c70ca854bb8abfec7c89d4892a3" compoundref="_rank_stage__table_8cpp" startline="26" endline="29">RankStageTableMgr::GetRankStageTableMap</references>
+        <references refid="class_ladder_level_mgr_1ac217e6722b47c9c2688a29ce8b6674d7" compoundref="_src_2_ladder_level_mgr_8h" startline="66">m_scoreMap</references>
+        <references refid="class_ladder_level_mgr_1a329f1dc7e43dee47e5124aa0d9cf1b07" compoundref="_src_2_ladder_level_mgr_8h" startline="60">m_topLevel</references>
+        <references refid="class_ladder_level_mgr_1ae16cb39237ed0cae2de78db9d1762fb8" compoundref="_src_2_ladder_level_mgr_8h" startline="61">m_topPlayerMaxNum</references>
+        <references refid="_src_2_ladder_level_mgr_8cpp_1ad708c16d881443f691ceb820032d56fa" compoundref="_src_2_ladder_level_mgr_8cpp" startline="12">MIN_LEVEL</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <referencedby refid="class_world_server_1aa1c10ee088e17e4046c812c31eabee41" compoundref="_src_2_world_server_8cpp" startline="332" endline="393">WorldServer::Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1a065fc41c7999ddd17413db78ac73db43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int LadderLevelMgr::getLevel</definition>
+        <argsstring>(DWord dwPlayerID, int score)</argsstring>
+        <name>getLevel</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="20" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.cpp" bodystart="56" bodyend="67"/>
+        <references refid="class_ladder_level_mgr_1a4501dbe58aa5b748a22df43b0069a5a7" compoundref="_src_2_ladder_level_mgr_8cpp" startline="69" endline="80">getLevelByScore</references>
+        <references refid="class_ladder_level_mgr_1af81d92611f0ba45a9c646d514108c814" compoundref="_src_2_ladder_level_mgr_8cpp" startline="121" endline="167">joinTop</references>
+        <references refid="class_ladder_level_mgr_1a329f1dc7e43dee47e5124aa0d9cf1b07" compoundref="_src_2_ladder_level_mgr_8h" startline="60">m_topLevel</references>
+        <referencedby refid="class_se_player_1a259527a3e633a339f6a5e500fc859df5" compoundref="_world_server_2_src_2_se_player_8cpp" startline="930" endline="938">SePlayer::adjustLadderNo</referencedby>
+        <referencedby refid="class_se_player_1aa1afbaca75db9af3457085dd40309ba9" compoundref="_world_server_2_src_2_se_player_8cpp" startline="940" endline="961">SePlayer::GetLadder</referencedby>
+        <referencedby refid="class_block_server_1a295896a58e78e24c2bd3e92ea8856f23" compoundref="_src_2_se_r_b_l_process_8cpp" startline="32" endline="122">BlockServer::ProcessRBL_UpdateScore</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1af675ed53440c1a717b884d6296b85b15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int LadderLevelMgr::getNewLadderScore</definition>
+        <argsstring>(int newNo, int oldNo, int oldLevel)</argsstring>
+        <name>getNewLadderScore</name>
+        <param>
+          <type>int</type>
+          <declname>newNo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>oldNo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>oldLevel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="23" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.cpp" bodystart="201" bodyend="226"/>
+        <references refid="class_rank_stage_table_mgr_1a5bf8f5713afdccf8132ca5eff5128371" compoundref="_rank_stage__table_8cpp" startline="6" endline="13">RankStageTableMgr::Get</references>
+        <references refid="class_ladder_level_mgr_1a4501dbe58aa5b748a22df43b0069a5a7" compoundref="_src_2_ladder_level_mgr_8cpp" startline="69" endline="80">getLevelByScore</references>
+        <references refid="class_rank_stage_table_mgr_1a7f26bce1458fe0d8e84ec645b979638c" compoundref="_rank_stage__table_8cpp" startline="52" endline="60">RankStageTableMgr::GetRankStageTable</references>
+        <references refid="struct_rank_stage_table_1a3ec5ed7975238d8debddf1c248095887" compoundref="_rank_stage__table_8hpp" startline="21">RankStageTable::iStageScoreNextSeason</references>
+        <references refid="_src_2_ladder_level_mgr_8cpp_1a2fabf7251e0b44154a7e825c39c5a4d3" compoundref="_src_2_ladder_level_mgr_8cpp" startline="199">MIN_SCORE</references>
+        <referencedby refid="class_se_player_1a259527a3e633a339f6a5e500fc859df5" compoundref="_world_server_2_src_2_se_player_8cpp" startline="930" endline="938">SePlayer::adjustLadderNo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1aeea12dbd29b2d6e564514f45a4016ffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LadderLevelMgr::loadDBData</definition>
+        <argsstring>()</argsstring>
+        <name>loadDBData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="25" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.cpp" bodystart="242" bodyend="294"/>
+        <references refid="_src_2_tab_mgr_8cpp_1af00e32615be9e95303a4cf41ac3940bb" compoundref="_src_2_tab_mgr_8cpp" startline="9">g_kTabMgr</references>
+        <references refid="_src_2_ladder_level_mgr_8cpp_1ab92174adb94e8524bd8b2194ab14d81e" compoundref="_src_2_ladder_level_mgr_8cpp" startline="229" endline="240">onLadderLoad</references>
+        <references refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54acb95ecd313bab6d948327ecb673a02c7" compoundref="_se_d_b_define_8h" startline="99">SDTI_CharLadder</references>
+        <references refid="class_tab_mgr_1ae434823422416fdb9b091983ac4ab02f" compoundref="_src_2_tab_mgr_8cpp" startline="11" endline="57">TabMgr::tabSelect</references>
+        <referencedby refid="class_world_server_1a59c3e7f7ac1ebbdcf37236b5735ed1cf" compoundref="_src_2_se_b_w_process_8cpp" startline="19" endline="64">WorldServer::ProcessBW_RegisterRet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1a170e32a3dec126c0e0888cd1c3f1acaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LadderLevelMgr::setInitData</definition>
+        <argsstring>(DWord dwPlayerID, time_t time, int score)</argsstring>
+        <name>setInitData</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>time_t</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="27" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.cpp" bodystart="296" bodyend="304"/>
+        <references refid="struct_ladder_level_mgr_1_1_top_item_1aa708ca21040ca62bfa50d68ffc870600" compoundref="_src_2_ladder_level_mgr_8h" startline="42">LadderLevelMgr::TopItem::dwPlayerID</references>
+        <references refid="class_ladder_level_mgr_1acb6657e09bd9edfef0ab06cf06bb90e7" compoundref="_src_2_ladder_level_mgr_8cpp" startline="113" endline="120">insertTopSet</references>
+        <references refid="class_ladder_level_mgr_1a2befec24a341cb9a14ef6f424e3e4aa2" compoundref="_src_2_ladder_level_mgr_8h" startline="67">m_playerTopMap</references>
+        <references refid="struct_ladder_level_mgr_1_1_top_item_1a2477efc0d02354bcd6dd440fb589ad50" compoundref="_src_2_ladder_level_mgr_8h" startline="43">LadderLevelMgr::TopItem::score</references>
+        <references refid="struct_ladder_level_mgr_1_1_top_item_1a4be4875f1c805da47b0c7b136b4fc57d" compoundref="_src_2_ladder_level_mgr_8h" startline="44">LadderLevelMgr::TopItem::time</references>
+        <referencedby refid="_src_2_ladder_level_mgr_8cpp_1ab92174adb94e8524bd8b2194ab14d81e" compoundref="_src_2_ladder_level_mgr_8cpp" startline="229" endline="240">onLadderLoad</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1a61ea9f8b90a5e401a5703fc99ade3ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LadderLevelMgr::quitTop</definition>
+        <argsstring>(DWord dwPlayerID)</argsstring>
+        <name>quitTop</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="30" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.cpp" bodystart="179" bodyend="196"/>
+        <references refid="struct_ladder_level_mgr_1_1_top_item_1abdc1f1ef5e721b505c6d3504645ed3ab" compoundref="_src_2_ladder_level_mgr_8cpp" startline="169" endline="177">LadderLevelMgr::TopItem::dbDelete</references>
+        <references refid="class_ladder_level_mgr_1a57aa7a3a09426baa40fbe54b8e67c6b6" compoundref="_src_2_ladder_level_mgr_8h" startline="59">m_mutex</references>
+        <references refid="class_ladder_level_mgr_1a2befec24a341cb9a14ef6f424e3e4aa2" compoundref="_src_2_ladder_level_mgr_8h" startline="67">m_playerTopMap</references>
+        <references refid="class_ladder_level_mgr_1a5075bc70d375d99270d512cec868f88f" compoundref="_src_2_ladder_level_mgr_8h" startline="68">m_scoreTopSet</references>
+        <referencedby refid="class_block_server_1a295896a58e78e24c2bd3e92ea8856f23" compoundref="_src_2_se_r_b_l_process_8cpp" startline="32" endline="122">BlockServer::ProcessRBL_UpdateScore</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1aef3579f2e6132306beacc12078b5c3cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int LadderLevelMgr::getTopLevel</definition>
+        <argsstring>()</argsstring>
+        <name>getTopLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="32" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.cpp" bodystart="306" bodyend="309"/>
+        <references refid="class_ladder_level_mgr_1a329f1dc7e43dee47e5124aa0d9cf1b07" compoundref="_src_2_ladder_level_mgr_8h" startline="60">m_topLevel</references>
+        <referencedby refid="class_block_server_1a295896a58e78e24c2bd3e92ea8856f23" compoundref="_src_2_se_r_b_l_process_8cpp" startline="32" endline="122">BlockServer::ProcessRBL_UpdateScore</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1a6c6ddf7bebd796e01a1b27972200b527" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LadderLevelMgr::LadderLevelMgr</definition>
+        <argsstring>(void)</argsstring>
+        <name>LadderLevelMgr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1aacad64efc23363dffaabbc237b2691d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LadderLevelMgr::~LadderLevelMgr</definition>
+        <argsstring>(void)</argsstring>
+        <name>~LadderLevelMgr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1a3096a1f3c21699b271a812e2a8b7588d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LadderLevelMgr::Initialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1a065fc41c7999ddd17413db78ac73db43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int LadderLevelMgr::getLevel</definition>
+        <argsstring>(DWord dwPlayerID, int score)</argsstring>
+        <name>getLevel</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1af675ed53440c1a717b884d6296b85b15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int LadderLevelMgr::getNewLadderScore</definition>
+        <argsstring>(int newNo, int oldNo, int oldLevel)</argsstring>
+        <name>getNewLadderScore</name>
+        <param>
+          <type>int</type>
+          <declname>newNo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>oldNo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>oldLevel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1aeea12dbd29b2d6e564514f45a4016ffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LadderLevelMgr::loadDBData</definition>
+        <argsstring>()</argsstring>
+        <name>loadDBData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1a170e32a3dec126c0e0888cd1c3f1acaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LadderLevelMgr::setInitData</definition>
+        <argsstring>(DWord dwPlayerID, time_t time, int score)</argsstring>
+        <name>setInitData</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>time_t</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1a61ea9f8b90a5e401a5703fc99ade3ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LadderLevelMgr::quitTop</definition>
+        <argsstring>(DWord dwPlayerID)</argsstring>
+        <name>quitTop</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1aef3579f2e6132306beacc12078b5c3cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int LadderLevelMgr::getTopLevel</definition>
+        <argsstring>()</argsstring>
+        <name>getTopLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" line="32" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ladder_level_mgr_1a4501dbe58aa5b748a22df43b0069a5a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int LadderLevelMgr::getLevelByScore</definition>
+        <argsstring>(int score)</argsstring>
+        <name>getLevelByScore</name>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="35" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.cpp" bodystart="69" bodyend="80"/>
+        <references refid="class_ladder_level_mgr_1ac217e6722b47c9c2688a29ce8b6674d7" compoundref="_src_2_ladder_level_mgr_8h" startline="66">m_scoreMap</references>
+        <references refid="_src_2_ladder_level_mgr_8cpp_1ad708c16d881443f691ceb820032d56fa" compoundref="_src_2_ladder_level_mgr_8cpp" startline="12">MIN_LEVEL</references>
+        <referencedby refid="class_ladder_level_mgr_1a065fc41c7999ddd17413db78ac73db43" compoundref="_src_2_ladder_level_mgr_8cpp" startline="56" endline="67">getLevel</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1af675ed53440c1a717b884d6296b85b15" compoundref="_src_2_ladder_level_mgr_8cpp" startline="201" endline="226">getNewLadderScore</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1af81d92611f0ba45a9c646d514108c814" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LadderLevelMgr::joinTop</definition>
+        <argsstring>(DWord dwPlayerID, int score)</argsstring>
+        <name>joinTop</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="36" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.cpp" bodystart="121" bodyend="167"/>
+        <references refid="struct_ladder_level_mgr_1_1_top_item_1abdc1f1ef5e721b505c6d3504645ed3ab" compoundref="_src_2_ladder_level_mgr_8cpp" startline="169" endline="177">LadderLevelMgr::TopItem::dbDelete</references>
+        <references refid="struct_ladder_level_mgr_1_1_top_item_1aa708ca21040ca62bfa50d68ffc870600" compoundref="_src_2_ladder_level_mgr_8h" startline="42">LadderLevelMgr::TopItem::dwPlayerID</references>
+        <references refid="_src_2_tab_mgr_8cpp_1af00e32615be9e95303a4cf41ac3940bb" compoundref="_src_2_tab_mgr_8cpp" startline="9">g_kTabMgr</references>
+        <references refid="_se_tool_8cpp_1a525fcb7d706b5d7c5bdda57e9cabe795" compoundref="_se_tool_8cpp" startline="308" endline="335">GetDBTime</references>
+        <references refid="class_ladder_level_mgr_1acb6657e09bd9edfef0ab06cf06bb90e7" compoundref="_src_2_ladder_level_mgr_8cpp" startline="113" endline="120">insertTopSet</references>
+        <references refid="class_ladder_level_mgr_1a57aa7a3a09426baa40fbe54b8e67c6b6" compoundref="_src_2_ladder_level_mgr_8h" startline="59">m_mutex</references>
+        <references refid="class_ladder_level_mgr_1a2befec24a341cb9a14ef6f424e3e4aa2" compoundref="_src_2_ladder_level_mgr_8h" startline="67">m_playerTopMap</references>
+        <references refid="class_ladder_level_mgr_1a5075bc70d375d99270d512cec868f88f" compoundref="_src_2_ladder_level_mgr_8h" startline="68">m_scoreTopSet</references>
+        <references refid="class_ladder_level_mgr_1ae16cb39237ed0cae2de78db9d1762fb8" compoundref="_src_2_ladder_level_mgr_8h" startline="61">m_topPlayerMaxNum</references>
+        <references refid="struct_ladder_level_mgr_1_1_top_item_1a2477efc0d02354bcd6dd440fb589ad50" compoundref="_src_2_ladder_level_mgr_8h" startline="43">LadderLevelMgr::TopItem::score</references>
+        <references refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54acb95ecd313bab6d948327ecb673a02c7" compoundref="_se_d_b_define_8h" startline="99">SDTI_CharLadder</references>
+        <references refid="class_tab_mgr_1ac784516de12992d76e7362d3895777c1" compoundref="_src_2_tab_mgr_8cpp" startline="91" endline="109">TabMgr::tabInsert</references>
+        <references refid="struct_ladder_level_mgr_1_1_top_item_1a4be4875f1c805da47b0c7b136b4fc57d" compoundref="_src_2_ladder_level_mgr_8h" startline="44">LadderLevelMgr::TopItem::time</references>
+        <references refid="class_ladder_level_mgr_1a5f2dde80c12500c73a5a24438adcae12" compoundref="_src_2_ladder_level_mgr_8cpp" startline="92" endline="111">updateScore</references>
+        <referencedby refid="class_ladder_level_mgr_1a065fc41c7999ddd17413db78ac73db43" compoundref="_src_2_ladder_level_mgr_8cpp" startline="56" endline="67">getLevel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1a5f2dde80c12500c73a5a24438adcae12" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LadderLevelMgr::updateScore</definition>
+        <argsstring>(TopItem *item, int score)</argsstring>
+        <name>updateScore</name>
+        <param>
+          <type><ref refid="struct_ladder_level_mgr_1_1_top_item" kindref="compound">TopItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="50" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.cpp" bodystart="92" bodyend="111"/>
+        <references refid="struct_ladder_level_mgr_1_1_top_item_1aa708ca21040ca62bfa50d68ffc870600" compoundref="_src_2_ladder_level_mgr_8h" startline="42">LadderLevelMgr::TopItem::dwPlayerID</references>
+        <references refid="_src_2_tab_mgr_8cpp_1af00e32615be9e95303a4cf41ac3940bb" compoundref="_src_2_tab_mgr_8cpp" startline="9">g_kTabMgr</references>
+        <references refid="_se_tool_8cpp_1a525fcb7d706b5d7c5bdda57e9cabe795" compoundref="_se_tool_8cpp" startline="308" endline="335">GetDBTime</references>
+        <references refid="class_ladder_level_mgr_1acb6657e09bd9edfef0ab06cf06bb90e7" compoundref="_src_2_ladder_level_mgr_8cpp" startline="113" endline="120">insertTopSet</references>
+        <references refid="class_ladder_level_mgr_1a5075bc70d375d99270d512cec868f88f" compoundref="_src_2_ladder_level_mgr_8h" startline="68">m_scoreTopSet</references>
+        <references refid="struct_ladder_level_mgr_1_1_top_item_1a2477efc0d02354bcd6dd440fb589ad50" compoundref="_src_2_ladder_level_mgr_8h" startline="43">LadderLevelMgr::TopItem::score</references>
+        <references refid="_se_d_b_define_8h_1a13b37ad65f627e8c5bdd354e7dd47a54acb95ecd313bab6d948327ecb673a02c7" compoundref="_se_d_b_define_8h" startline="99">SDTI_CharLadder</references>
+        <references refid="class_tab_mgr_1a453989664a31947afdb5559a893e9665" compoundref="_src_2_tab_mgr_8cpp" startline="111" endline="139">TabMgr::tabUpdate</references>
+        <references refid="struct_ladder_level_mgr_1_1_top_item_1a4be4875f1c805da47b0c7b136b4fc57d" compoundref="_src_2_ladder_level_mgr_8h" startline="44">LadderLevelMgr::TopItem::time</references>
+        <referencedby refid="class_ladder_level_mgr_1af81d92611f0ba45a9c646d514108c814" compoundref="_src_2_ladder_level_mgr_8cpp" startline="121" endline="167">joinTop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1acb6657e09bd9edfef0ab06cf06bb90e7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LadderLevelMgr::insertTopSet</definition>
+        <argsstring>(TopItem *item)</argsstring>
+        <name>insertTopSet</name>
+        <param>
+          <type><ref refid="struct_ladder_level_mgr_1_1_top_item" kindref="compound">TopItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="51" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.cpp" bodystart="113" bodyend="120"/>
+        <references refid="class_ladder_level_mgr_1a5075bc70d375d99270d512cec868f88f" compoundref="_src_2_ladder_level_mgr_8h" startline="68">m_scoreTopSet</references>
+        <references refid="struct_ladder_level_mgr_1_1_top_item_1a4be4875f1c805da47b0c7b136b4fc57d" compoundref="_src_2_ladder_level_mgr_8h" startline="44">LadderLevelMgr::TopItem::time</references>
+        <referencedby refid="class_ladder_level_mgr_1af81d92611f0ba45a9c646d514108c814" compoundref="_src_2_ladder_level_mgr_8cpp" startline="121" endline="167">joinTop</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1a170e32a3dec126c0e0888cd1c3f1acaa" compoundref="_src_2_ladder_level_mgr_8cpp" startline="296" endline="304">setInitData</referencedby>
+        <referencedby refid="class_ladder_level_mgr_1a5f2dde80c12500c73a5a24438adcae12" compoundref="_src_2_ladder_level_mgr_8cpp" startline="92" endline="111">updateScore</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1a4501dbe58aa5b748a22df43b0069a5a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int LadderLevelMgr::getLevelByScore</definition>
+        <argsstring>(int score)</argsstring>
+        <name>getLevelByScore</name>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1af81d92611f0ba45a9c646d514108c814" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LadderLevelMgr::joinTop</definition>
+        <argsstring>(DWord dwPlayerID, int score)</argsstring>
+        <name>joinTop</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1a5f2dde80c12500c73a5a24438adcae12" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LadderLevelMgr::updateScore</definition>
+        <argsstring>(TopItem *item, int score)</argsstring>
+        <name>updateScore</name>
+        <param>
+          <type><ref refid="struct_ladder_level_mgr_1_1_top_item" kindref="compound">TopItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ladder_level_mgr_1acb6657e09bd9edfef0ab06cf06bb90e7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LadderLevelMgr::insertTopSet</definition>
+        <argsstring>(TopItem *item)</argsstring>
+        <name>insertTopSet</name>
+        <param>
+          <type><ref refid="struct_ladder_level_mgr_1_1_top_item" kindref="compound">TopItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/LadderLevelMgr.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1730">
+        <label>std::map&lt; int, RankStageTable *, std::greater&lt; int &gt; &gt;</label>
+        <childnode refid="1731" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1727">
+        <label>LadderLevelMgr</label>
+        <link refid="class_ladder_level_mgr"/>
+        <childnode refid="1728" relation="usage">
+          <edgelabel>m_scoreTopSet</edgelabel>
+        </childnode>
+        <childnode refid="1730" relation="usage">
+          <edgelabel>m_scoreMap</edgelabel>
+        </childnode>
+        <childnode refid="1735" relation="usage">
+          <edgelabel>m_playerTopMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="1735">
+        <label>std::map&lt; DWord, TopItem * &gt;</label>
+        <childnode refid="1729" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1729">
+        <label>LadderLevelMgr::TopItem</label>
+        <link refid="struct_ladder_level_mgr_1_1_top_item"/>
+      </node>
+      <node id="1734">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1732">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="1731">
+        <label>RankStageTable</label>
+        <link refid="struct_rank_stage_table"/>
+        <childnode refid="1732" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1733" relation="usage">
+          <edgelabel>kStageLevelName</edgelabel>
+          <edgelabel>kStageLevelNameK</edgelabel>
+          <edgelabel>kGradientBottom</edgelabel>
+          <edgelabel>kStageNameK</edgelabel>
+          <edgelabel>kBeizhu</edgelabel>
+          <edgelabel>kStageName</edgelabel>
+          <edgelabel>kGradientTop</edgelabel>
+          <edgelabel>kStageImg</edgelabel>
+        </childnode>
+      </node>
+      <node id="1733">
+        <label>std::string</label>
+        <childnode refid="1734" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1728">
+        <label>std::set&lt; TopItem *, TopItemScoreCmp &gt;</label>
+        <childnode refid="1729" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" line="12" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/LadderLevelMgr.h" bodystart="11" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_ladder_level_mgr_1a065fc41c7999ddd17413db78ac73db43" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>getLevel</name></member>
+      <member refid="class_ladder_level_mgr_1a065fc41c7999ddd17413db78ac73db43" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>getLevel</name></member>
+      <member refid="class_ladder_level_mgr_1a4501dbe58aa5b748a22df43b0069a5a7" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>getLevelByScore</name></member>
+      <member refid="class_ladder_level_mgr_1a4501dbe58aa5b748a22df43b0069a5a7" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>getLevelByScore</name></member>
+      <member refid="class_ladder_level_mgr_1af675ed53440c1a717b884d6296b85b15" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>getNewLadderScore</name></member>
+      <member refid="class_ladder_level_mgr_1af675ed53440c1a717b884d6296b85b15" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>getNewLadderScore</name></member>
+      <member refid="class_ladder_level_mgr_1aef3579f2e6132306beacc12078b5c3cb" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>getTopLevel</name></member>
+      <member refid="class_ladder_level_mgr_1aef3579f2e6132306beacc12078b5c3cb" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>getTopLevel</name></member>
+      <member refid="class_ladder_level_mgr_1a3096a1f3c21699b271a812e2a8b7588d" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>Initialize</name></member>
+      <member refid="class_ladder_level_mgr_1a3096a1f3c21699b271a812e2a8b7588d" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>Initialize</name></member>
+      <member refid="class_ladder_level_mgr_1acb6657e09bd9edfef0ab06cf06bb90e7" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>insertTopSet</name></member>
+      <member refid="class_ladder_level_mgr_1acb6657e09bd9edfef0ab06cf06bb90e7" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>insertTopSet</name></member>
+      <member refid="class_ladder_level_mgr_1af81d92611f0ba45a9c646d514108c814" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>joinTop</name></member>
+      <member refid="class_ladder_level_mgr_1af81d92611f0ba45a9c646d514108c814" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>joinTop</name></member>
+      <member refid="class_ladder_level_mgr_1a6c6ddf7bebd796e01a1b27972200b527" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>LadderLevelMgr</name></member>
+      <member refid="class_ladder_level_mgr_1a6c6ddf7bebd796e01a1b27972200b527" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>LadderLevelMgr</name></member>
+      <member refid="class_ladder_level_mgr_1aeea12dbd29b2d6e564514f45a4016ffa" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>loadDBData</name></member>
+      <member refid="class_ladder_level_mgr_1aeea12dbd29b2d6e564514f45a4016ffa" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>loadDBData</name></member>
+      <member refid="class_ladder_level_mgr_1a57aa7a3a09426baa40fbe54b8e67c6b6" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>m_mutex</name></member>
+      <member refid="class_ladder_level_mgr_1a2befec24a341cb9a14ef6f424e3e4aa2" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>m_playerTopMap</name></member>
+      <member refid="class_ladder_level_mgr_1ac217e6722b47c9c2688a29ce8b6674d7" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>m_scoreMap</name></member>
+      <member refid="class_ladder_level_mgr_1a5075bc70d375d99270d512cec868f88f" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>m_scoreTopSet</name></member>
+      <member refid="class_ladder_level_mgr_1a329f1dc7e43dee47e5124aa0d9cf1b07" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>m_topLevel</name></member>
+      <member refid="class_ladder_level_mgr_1ae16cb39237ed0cae2de78db9d1762fb8" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>m_topPlayerMaxNum</name></member>
+      <member refid="class_ladder_level_mgr_1a83721c8817bf27a3381243f4c4e8b5d5" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>PLAYERTOPMAP</name></member>
+      <member refid="class_ladder_level_mgr_1a83721c8817bf27a3381243f4c4e8b5d5" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>PLAYERTOPMAP</name></member>
+      <member refid="class_ladder_level_mgr_1a61ea9f8b90a5e401a5703fc99ade3ce3" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>quitTop</name></member>
+      <member refid="class_ladder_level_mgr_1a61ea9f8b90a5e401a5703fc99ade3ce3" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>quitTop</name></member>
+      <member refid="class_ladder_level_mgr_1a02e5c13bd7ba27e834f336659b9d576f" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>SCOREMAP</name></member>
+      <member refid="class_ladder_level_mgr_1a02e5c13bd7ba27e834f336659b9d576f" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>SCOREMAP</name></member>
+      <member refid="class_ladder_level_mgr_1a77e7263f198a981a00575ee9175bd2de" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>SCORETOPSET</name></member>
+      <member refid="class_ladder_level_mgr_1a77e7263f198a981a00575ee9175bd2de" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>SCORETOPSET</name></member>
+      <member refid="class_ladder_level_mgr_1a170e32a3dec126c0e0888cd1c3f1acaa" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>setInitData</name></member>
+      <member refid="class_ladder_level_mgr_1a170e32a3dec126c0e0888cd1c3f1acaa" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>setInitData</name></member>
+      <member refid="class_ladder_level_mgr_1a5f2dde80c12500c73a5a24438adcae12" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>updateScore</name></member>
+      <member refid="class_ladder_level_mgr_1a5f2dde80c12500c73a5a24438adcae12" prot="private" virt="non-virtual"><scope>LadderLevelMgr</scope><name>updateScore</name></member>
+      <member refid="class_ladder_level_mgr_1aacad64efc23363dffaabbc237b2691d3" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>~LadderLevelMgr</name></member>
+      <member refid="class_ladder_level_mgr_1aacad64efc23363dffaabbc237b2691d3" prot="public" virt="non-virtual"><scope>LadderLevelMgr</scope><name>~LadderLevelMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

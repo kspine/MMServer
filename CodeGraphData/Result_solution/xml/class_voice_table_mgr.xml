@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_voice_table_mgr" kind="class" prot="public">
+    <compoundname>VoiceTableMgr</compoundname>
+    <includes refid="_voice__table_8hpp" local="no">Voice_table.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_voice_table_mgr_1a56a67c0568b46efa5511ebeea0bfab32" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned int, <ref refid="struct_voice_table" kindref="compound">VoiceTable</ref> * &gt;</type>
+        <definition>std::map&lt;unsigned int,VoiceTable*&gt; VoiceTableMgr::m_kVoiceTableMap</definition>
+        <argsstring></argsstring>
+        <name>m_kVoiceTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.hpp" line="46" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.hpp" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_voice_table_mgr_1aafd856f7e09433365993ed0fa87c87f5" compoundref="_voice__table_8cpp" startline="104" endline="185">FillData</referencedby>
+        <referencedby refid="class_voice_table_mgr_1aa48dea1975da6714593049e00dc6faa1" compoundref="_voice__table_8cpp" startline="42" endline="50">GetVoiceTable</referencedby>
+        <referencedby refid="class_voice_table_mgr_1a1c780dca5afc1596f740b287e5e832b1" compoundref="_voice__table_8cpp" startline="26" endline="29">GetVoiceTableMap</referencedby>
+        <referencedby refid="class_voice_table_mgr_1a413b9b1836022a45586f8d3dd495e561" compoundref="_voice__table_8cpp" startline="31" endline="40">GetVoiceTableVec</referencedby>
+        <referencedby refid="class_voice_table_mgr_1aa3c930268ff135ec55984ec4f026d9ae" compoundref="_voice__table_8cpp" startline="57" endline="60">~VoiceTableMgr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_voice_table_mgr_1a96677a7e8dfba6474e265b9982e72fe6" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_voice_table_mgr" kindref="compound">VoiceTableMgr</ref> *</type>
+        <definition>VoiceTableMgr * VoiceTableMgr::m_pkVoiceTableMgr</definition>
+        <argsstring></argsstring>
+        <name>m_pkVoiceTableMgr</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.hpp" line="47" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.hpp" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_voice_table_mgr_1a3933e0480565a2bb3bb0654e04e9ed5d" compoundref="_voice__table_8cpp" startline="6" endline="13">Get</referencedby>
+        <referencedby refid="class_voice_table_mgr_1a71be9c1f3f9ab2affdc3b48bf42370ec" compoundref="_voice__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_voice_table_mgr_1a3933e0480565a2bb3bb0654e04e9ed5d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_voice_table_mgr" kindref="compound">VoiceTableMgr</ref> *</type>
+        <definition>VoiceTableMgr * VoiceTableMgr::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.hpp" line="33" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.cpp" bodystart="6" bodyend="13"/>
+        <references refid="class_voice_table_mgr_1a96677a7e8dfba6474e265b9982e72fe6" compoundref="_voice__table_8hpp" startline="47">m_pkVoiceTableMgr</references>
+        <references refid="class_voice_table_mgr_1a02ee82b8e912f286cc42249e7b919e6e" compoundref="_voice__table_8cpp" startline="52" endline="55">VoiceTableMgr</references>
+        <referencedby refid="class_table_mgr_1a9cd5565797c79eded85a67d84f15fbf1" compoundref="_table_mgr1_8cpp" startline="800" endline="824">TableMgr::GetPreLoadRes</referencedby>
+        <referencedby refid="class_table_mgr_1a37ac1bb54b2a65efaf2db1a96a4ae6f2" compoundref="_table_mgr1_8cpp" startline="216" endline="262">TableMgr::GetVoiceInfo</referencedby>
+        <referencedby refid="class_global_table_mgr_1a7be54ea758b5c5341dbd60047c8a59f1" compoundref="_global_table_mgr_8cpp" startline="115" endline="118">GlobalTableMgr::GetVoiceTable</referencedby>
+        <referencedby refid="class_global_table_mgr_1a5debc90d66460fba076e649049e20c1e" compoundref="_global_table_mgr_8cpp" startline="120" endline="123">GlobalTableMgr::GetVoiceTableMap</referencedby>
+        <referencedby refid="class_table_mgr_1a93701d99587c7871ad22119f138adc1b" compoundref="_table_mgr1_8cpp" startline="659" endline="670">TableMgr::InitVoiceRes</referencedby>
+        <referencedby refid="class_table_mgr_1ae1ceeb5a4a6212a8497ef7dd92f87885" compoundref="_table_mgr_8h" startline="79" endline="132">TableMgr::LoadTable</referencedby>
+        <referencedby refid="class_voice_table_mgr_1a71be9c1f3f9ab2affdc3b48bf42370ec" compoundref="_voice__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_voice_table_mgr_1a71be9c1f3f9ab2affdc3b48bf42370ec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_voice_table_mgr" kindref="compound">VoiceTableMgr</ref> *</type>
+        <definition>VoiceTableMgr * VoiceTableMgr::ReLoad</definition>
+        <argsstring>()</argsstring>
+        <name>ReLoad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.hpp" line="34" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.cpp" bodystart="15" bodyend="23"/>
+        <references refid="class_voice_table_mgr_1a3933e0480565a2bb3bb0654e04e9ed5d" compoundref="_voice__table_8cpp" startline="6" endline="13">Get</references>
+        <references refid="class_voice_table_mgr_1a96677a7e8dfba6474e265b9982e72fe6" compoundref="_voice__table_8hpp" startline="47">m_pkVoiceTableMgr</references>
+        <referencedby refid="class_table_mgr_1a6298f0e9b81636b481a25c06016e237a" compoundref="_table_mgr1_8cpp" startline="860" endline="914">TableMgr::ReloadTable</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_voice_table_mgr_1a02ee82b8e912f286cc42249e7b919e6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>VoiceTableMgr::VoiceTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>VoiceTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.hpp" line="35" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.cpp" bodystart="52" bodyend="55"/>
+        <references refid="class_voice_table_mgr_1acdffff4eabfe1409676f829dc5d2e5d2" compoundref="_voice__table_8cpp" startline="62" endline="102">Load</references>
+        <referencedby refid="class_voice_table_mgr_1a3933e0480565a2bb3bb0654e04e9ed5d" compoundref="_voice__table_8cpp" startline="6" endline="13">Get</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_voice_table_mgr_1aa3c930268ff135ec55984ec4f026d9ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>VoiceTableMgr::~VoiceTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~VoiceTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.hpp" line="36" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.cpp" bodystart="57" bodyend="60"/>
+        <references refid="class_voice_table_mgr_1a56a67c0568b46efa5511ebeea0bfab32" compoundref="_voice__table_8hpp" startline="46">m_kVoiceTableMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_voice_table_mgr_1aa48dea1975da6714593049e00dc6faa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_voice_table" kindref="compound">VoiceTable</ref> *</type>
+        <definition>const VoiceTable * VoiceTableMgr::GetVoiceTable</definition>
+        <argsstring>(unsigned int iTypeID)</argsstring>
+        <name>GetVoiceTable</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>iTypeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.hpp" line="38" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.cpp" bodystart="42" bodyend="50"/>
+        <references refid="class_voice_table_mgr_1a56a67c0568b46efa5511ebeea0bfab32" compoundref="_voice__table_8hpp" startline="46">m_kVoiceTableMap</references>
+        <referencedby refid="class_table_mgr_1a37ac1bb54b2a65efaf2db1a96a4ae6f2" compoundref="_table_mgr1_8cpp" startline="216" endline="262">TableMgr::GetVoiceInfo</referencedby>
+        <referencedby refid="class_global_table_mgr_1a7be54ea758b5c5341dbd60047c8a59f1" compoundref="_global_table_mgr_8cpp" startline="115" endline="118">GlobalTableMgr::GetVoiceTable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_voice_table_mgr_1a1c780dca5afc1596f740b287e5e832b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; unsigned int, <ref refid="struct_voice_table" kindref="compound">VoiceTable</ref> * &gt; &amp;</type>
+        <definition>const std::map&lt; unsigned int, VoiceTable * &gt; &amp; VoiceTableMgr::GetVoiceTableMap</definition>
+        <argsstring>()</argsstring>
+        <name>GetVoiceTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.hpp" line="39" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.cpp" bodystart="26" bodyend="29"/>
+        <references refid="class_voice_table_mgr_1a56a67c0568b46efa5511ebeea0bfab32" compoundref="_voice__table_8hpp" startline="46">m_kVoiceTableMap</references>
+        <referencedby refid="class_table_mgr_1a9cd5565797c79eded85a67d84f15fbf1" compoundref="_table_mgr1_8cpp" startline="800" endline="824">TableMgr::GetPreLoadRes</referencedby>
+        <referencedby refid="class_global_table_mgr_1a5debc90d66460fba076e649049e20c1e" compoundref="_global_table_mgr_8cpp" startline="120" endline="123">GlobalTableMgr::GetVoiceTableMap</referencedby>
+        <referencedby refid="class_table_mgr_1a93701d99587c7871ad22119f138adc1b" compoundref="_table_mgr1_8cpp" startline="659" endline="670">TableMgr::InitVoiceRes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_voice_table_mgr_1a413b9b1836022a45586f8d3dd495e561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_table_res_array" kindref="compound">TableResArray</ref></type>
+        <definition>TableResArray VoiceTableMgr::GetVoiceTableVec</definition>
+        <argsstring>()</argsstring>
+        <name>GetVoiceTableVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.hpp" line="40" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.cpp" bodystart="31" bodyend="40"/>
+        <references refid="class_voice_table_mgr_1a56a67c0568b46efa5511ebeea0bfab32" compoundref="_voice__table_8hpp" startline="46">m_kVoiceTableMap</references>
+        <references refid="class_table_res_array_1ab7fbd71c9a00bfd30ae2282a4955dbc0" compoundref="_se_table_res_base_8cpp" startline="13" endline="16">TableResArray::pushBack</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_voice_table_mgr_1acdffff4eabfe1409676f829dc5d2e5d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool VoiceTableMgr::Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.hpp" line="43" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.cpp" bodystart="62" bodyend="102"/>
+        <references refid="class_ti_xml_document_1a6dfc01a6e5d58e56acd537dfd3bdeb29" compoundref="tinyxml_8h" startline="1430" endline="1430">TiXmlDocument::Error</references>
+        <references refid="class_ti_xml_document_1a9d0f689f6e09ea494ea547be8d79c25e" compoundref="tinyxml_8h" startline="1433" endline="1433">TiXmlDocument::ErrorDesc</references>
+        <references refid="class_voice_table_mgr_1aafd856f7e09433365993ed0fa87c87f5" compoundref="_voice__table_8cpp" startline="104" endline="185">FillData</references>
+        <references refid="class_ti_xml_node_1ab1f8d8e70d88aea4c5efedfe00862d55" compoundref="tinyxml_8cpp" startline="420" endline="432">TiXmlNode::FirstChildElement</references>
+        <references refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" compoundref="_table_mgr1_8cpp" startline="36" endline="43">TableMgr::Get</references>
+        <references refid="class_table_mgr_1af1a60a8b2807abd34ceb6002cf8f4b80" compoundref="_table_mgr1_8cpp" startline="851" endline="858">TableMgr::GetTableLoader</references>
+        <references refid="class_table_loader_1a8d06b11d37cde9ff76d98901dd39bab4">TableLoader::LoadTable</references>
+        <references refid="class_ti_xml_node_1a7667217e269e0da01d1f82aee94d1a3d" compoundref="tinyxml_8cpp" startline="450" endline="462">TiXmlNode::NextSiblingElement</references>
+        <references refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</references>
+        <referencedby refid="class_voice_table_mgr_1a02ee82b8e912f286cc42249e7b919e6e" compoundref="_voice__table_8cpp" startline="52" endline="55">VoiceTableMgr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_voice_table_mgr_1aafd856f7e09433365993ed0fa87c87f5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VoiceTableMgr::FillData</definition>
+        <argsstring>(VoiceTable *row, TiXmlElement *element)</argsstring>
+        <name>FillData</name>
+        <param>
+          <type><ref refid="struct_voice_table" kindref="compound">VoiceTable</ref> *</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.hpp" line="44" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.cpp" bodystart="104" bodyend="185"/>
+        <references refid="class_ti_xml_element_1ac1e4691e9375ba4e665dce7e46a50a9c" compoundref="tinyxml_8cpp" startline="544" endline="550">TiXmlElement::Attribute</references>
+        <references refid="struct_voice_table_1a42356738e61dc20338b4040da668db9b" compoundref="_voice__table_8hpp" startline="17">VoiceTable::iPreLoad</references>
+        <references refid="struct_voice_table_1a0dea810295e45372bd1d2e07ac9b3218" compoundref="_voice__table_8hpp" startline="21">VoiceTable::kContent</references>
+        <references refid="struct_voice_table_1a04cd8efd4346b4d812b06f173d10eb07" compoundref="_voice__table_8hpp" startline="23">VoiceTable::kContent_English</references>
+        <references refid="struct_voice_table_1a2c83f9511776e9ad8756f3c7086e89c9" compoundref="_voice__table_8hpp" startline="22">VoiceTable::kContent_FT</references>
+        <references refid="struct_voice_table_1a213c3ece74e1a0f6d5d0ad90fb62a498" compoundref="_voice__table_8hpp" startline="24">VoiceTable::kContent_Japanese</references>
+        <references refid="struct_voice_table_1acdb18ab6438765d37896fcb4ede611d4" compoundref="_voice__table_8hpp" startline="25">VoiceTable::kContent_Vientnam</references>
+        <references refid="struct_voice_table_1a021c26607d7b2439ddda0c8a27dd22f8" compoundref="_voice__table_8hpp" startline="26">VoiceTable::kDesc</references>
+        <references refid="struct_voice_table_1ab7f7479e8e707ab159ba4819333ce032" compoundref="_voice__table_8hpp" startline="20">VoiceTable::kPreLoadContent</references>
+        <references refid="struct_voice_table_1abd5bafd1c1398727bc9fcb25aec2da67" compoundref="_voice__table_8hpp" startline="19">VoiceTable::kSubSet</references>
+        <references refid="struct_voice_table_1a0bc64f64302b430c9562a2dec2caf467" compoundref="_voice__table_8hpp" startline="18">VoiceTable::kTopLayer</references>
+        <references refid="class_voice_table_mgr_1a56a67c0568b46efa5511ebeea0bfab32" compoundref="_voice__table_8hpp" startline="46">m_kVoiceTableMap</references>
+        <references refid="struct_voice_table_1a9935e0b97b01f3c229113dce1b07e590" compoundref="_voice__table_8hpp" startline="15">VoiceTable::uiKey</references>
+        <references refid="struct_voice_table_1a3d0e89d0ce01403705e40a583b25eca3" compoundref="_voice__table_8hpp" startline="16">VoiceTable::uiOwner</references>
+        <referencedby refid="class_voice_table_mgr_1acdffff4eabfe1409676f829dc5d2e5d2" compoundref="_voice__table_8cpp" startline="62" endline="102">Load</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9512">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="9510">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="9507">
+        <label>VoiceTableMgr</label>
+        <link refid="class_voice_table_mgr"/>
+        <childnode refid="9507" relation="usage">
+          <edgelabel>m_pkVoiceTableMgr</edgelabel>
+        </childnode>
+        <childnode refid="9508" relation="usage">
+          <edgelabel>m_kVoiceTableMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="9508">
+        <label>std::map&lt; unsigned int, VoiceTable * &gt;</label>
+        <childnode refid="9509" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9509">
+        <label>VoiceTable</label>
+        <link refid="struct_voice_table"/>
+        <childnode refid="9510" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9511" relation="usage">
+          <edgelabel>kContent_Vientnam</edgelabel>
+          <edgelabel>kDesc</edgelabel>
+          <edgelabel>kContent</edgelabel>
+          <edgelabel>kPreLoadContent</edgelabel>
+          <edgelabel>kContent_Japanese</edgelabel>
+          <edgelabel>kContent_English</edgelabel>
+          <edgelabel>kSubSet</edgelabel>
+          <edgelabel>kContent_FT</edgelabel>
+          <edgelabel>kTopLayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="9511">
+        <label>std::string</label>
+        <childnode refid="9512" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.hpp" line="31" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Voice_table.hpp" bodystart="30" bodyend="48"/>
+    <listofallmembers>
+      <member refid="class_voice_table_mgr_1aafd856f7e09433365993ed0fa87c87f5" prot="private" virt="non-virtual"><scope>VoiceTableMgr</scope><name>FillData</name></member>
+      <member refid="class_voice_table_mgr_1a3933e0480565a2bb3bb0654e04e9ed5d" prot="public" virt="non-virtual"><scope>VoiceTableMgr</scope><name>Get</name></member>
+      <member refid="class_voice_table_mgr_1aa48dea1975da6714593049e00dc6faa1" prot="public" virt="non-virtual"><scope>VoiceTableMgr</scope><name>GetVoiceTable</name></member>
+      <member refid="class_voice_table_mgr_1a1c780dca5afc1596f740b287e5e832b1" prot="public" virt="non-virtual"><scope>VoiceTableMgr</scope><name>GetVoiceTableMap</name></member>
+      <member refid="class_voice_table_mgr_1a413b9b1836022a45586f8d3dd495e561" prot="public" virt="non-virtual"><scope>VoiceTableMgr</scope><name>GetVoiceTableVec</name></member>
+      <member refid="class_voice_table_mgr_1acdffff4eabfe1409676f829dc5d2e5d2" prot="private" virt="non-virtual"><scope>VoiceTableMgr</scope><name>Load</name></member>
+      <member refid="class_voice_table_mgr_1a56a67c0568b46efa5511ebeea0bfab32" prot="private" virt="non-virtual"><scope>VoiceTableMgr</scope><name>m_kVoiceTableMap</name></member>
+      <member refid="class_voice_table_mgr_1a96677a7e8dfba6474e265b9982e72fe6" prot="private" virt="non-virtual"><scope>VoiceTableMgr</scope><name>m_pkVoiceTableMgr</name></member>
+      <member refid="class_voice_table_mgr_1a71be9c1f3f9ab2affdc3b48bf42370ec" prot="public" virt="non-virtual"><scope>VoiceTableMgr</scope><name>ReLoad</name></member>
+      <member refid="class_voice_table_mgr_1a02ee82b8e912f286cc42249e7b919e6e" prot="public" virt="non-virtual"><scope>VoiceTableMgr</scope><name>VoiceTableMgr</name></member>
+      <member refid="class_voice_table_mgr_1aa3c930268ff135ec55984ec4f026d9ae" prot="public" virt="non-virtual"><scope>VoiceTableMgr</scope><name>~VoiceTableMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_src_2_se_res_chance_def_8h" kind="file">
+    <compoundname>SeResChanceDef.h</compoundname>
+    <includedby refid="_world_server_2_src_2_se_res_mgr_8h" local="yes">WorldServer/Src/SeResMgr.h</includedby>
+    <invincdepgraph>
+      <node id="88666">
+        <label>WorldServer/Src/ItemMgr.cpp</label>
+        <link refid="_src_2_item_mgr_8cpp"/>
+      </node>
+      <node id="88669">
+        <label>WorldServer/Src/SeResMgr.cpp</label>
+        <link refid="_world_server_2_src_2_se_res_mgr_8cpp"/>
+      </node>
+      <node id="88670">
+        <label>WorldServer/Src/WorldServer.cpp</label>
+        <link refid="_src_2_world_server_8cpp"/>
+      </node>
+      <node id="88668">
+        <label>WorldServer/Src/SePlayer.cpp</label>
+        <link refid="_world_server_2_src_2_se_player_8cpp"/>
+      </node>
+      <node id="88665">
+        <label>WorldServer/Src/SeResMgr.h</label>
+        <link refid="_world_server_2_src_2_se_res_mgr_8h"/>
+        <childnode refid="88666" relation="include">
+        </childnode>
+        <childnode refid="88667" relation="include">
+        </childnode>
+        <childnode refid="88668" relation="include">
+        </childnode>
+        <childnode refid="88669" relation="include">
+        </childnode>
+        <childnode refid="88670" relation="include">
+        </childnode>
+      </node>
+      <node id="88664">
+        <label>WorldServer/Src/SeResChanceDef.h</label>
+        <link refid="Src/SeResChanceDef.h"/>
+        <childnode refid="88665" relation="include">
+        </childnode>
+      </node>
+      <node id="88667">
+        <label>WorldServer/Src/SeBlockOther.cpp</label>
+        <link refid="_src_2_se_block_other_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_se_chance_key" prot="public">SeChanceKey</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="struct_se_chance_key" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_se_chance_key" kindref="compound">SeChanceKey</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="struct_se_chance_key_1ae6c2b67992aabbd62cf9f623335ff7b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_chance_key_1ae6c2b67992aabbd62cf9f623335ff7b9" kindref="member">SeChanceKey</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iID,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iOrgID)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_se_chance_key_1ab55417f77f13cb02a5833a4a765d3241" kindref="member">iTypeID</ref><sp/>=<sp/>iID;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_se_chance_key_1aeab4303a109edc23a45e83e0a673141f" kindref="member">iOrgTypeID</ref><sp/>=<sp/>iOrgID;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="struct_se_chance_key_1adb84b2f5b503cdc9663eb6bd3b404a07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_se_chance_key_1adb84b2f5b503cdc9663eb6bd3b404a07" kindref="member">operator &lt; </ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_se_chance_key" kindref="compound">SeChanceKey</ref>&amp;<sp/>rkRight)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="12"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="struct_se_chance_key_1ab55417f77f13cb02a5833a4a765d3241" kindref="member">iTypeID</ref><sp/>&lt;<sp/>rkRight.<ref refid="struct_se_chance_key_1ab55417f77f13cb02a5833a4a765d3241" kindref="member">iTypeID</ref>)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20" refid="struct_se_chance_key_1ab55417f77f13cb02a5833a4a765d3241" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="struct_se_chance_key_1ab55417f77f13cb02a5833a4a765d3241" kindref="member">iTypeID</ref>;</highlight></codeline>
+<codeline lineno="21" refid="struct_se_chance_key_1aeab4303a109edc23a45e83e0a673141f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="struct_se_chance_key_1aeab4303a109edc23a45e83e0a673141f" kindref="member">iOrgTypeID</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/SeResChanceDef.h"/>
+  </compounddef>
+</doxygen>

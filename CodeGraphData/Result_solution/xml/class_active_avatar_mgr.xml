@@ -1,0 +1,1003 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_active_avatar_mgr" kind="class" prot="public">
+    <compoundname>ActiveAvatarMgr</compoundname>
+    <basecompoundref refid="class_data_mgr" prot="public" virt="non-virtual">DataMgr&lt; SeDBCharActiveAvatar &gt;</basecompoundref>
+    <basecompoundref refid="class_data_mgr" prot="public" virt="non-virtual">DataMgr&lt; SeDBCharActiveAvatar &gt;</basecompoundref>
+    <includes refid="_src_2_active_avatar_mgr_8h" local="no">ActiveAvatarMgr.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_active_avatar_mgr_1acd64951933801be19704e9e23b9da092" prot="private" static="no" mutable="no">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer &amp; ActiveAvatarMgr::m_owner</definition>
+        <argsstring></argsstring>
+        <name>m_owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.h" line="24" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_active_avatar_mgr_1abbfc0b4abda599ad13015cb9650e4999" compoundref="_src_2_active_avatar_mgr_8cpp" startline="22" endline="25">getOwner</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_active_avatar_mgr_1a8eb35c3766f618bd1046d5f0ad88355a" prot="private" static="no" mutable="no">
+        <type>std::set&lt; DWord &gt;</type>
+        <definition>std::set&lt; DWord &gt; ActiveAvatarMgr::m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.h" line="25" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_active_avatar_mgr_1a4866ecf9df83db3cc2056d57dd530207" compoundref="_src_2_active_avatar_mgr_8cpp" startline="34" endline="50">fixData</referencedby>
+        <referencedby refid="class_active_avatar_mgr_1ac71a8c1afaaee33ee1738783827f4e52" compoundref="_src_2_active_avatar_mgr_8cpp" startline="103" endline="117">getAvatars</referencedby>
+        <referencedby refid="class_active_avatar_mgr_1a131234242744ec99e27685950ad6aa79" compoundref="_src_2_active_avatar_mgr_8cpp" startline="27" endline="30">loadData</referencedby>
+        <referencedby refid="class_active_avatar_mgr_1a344a6664d412022c20cabe5d6e20bd73" compoundref="_src_2_active_avatar_mgr_8cpp" startline="52" endline="69">sendInitData</referencedby>
+        <referencedby refid="class_active_avatar_mgr_1a49076d6bca16c4775866e0a4747cbf64" compoundref="_src_2_active_avatar_mgr_8cpp" startline="71" endline="101">setActiveAvatar</referencedby>
+        <referencedby refid="class_active_avatar_mgr_1a68ca030d4de49d7dd35402826f36cac5" compoundref="_src_2_active_avatar_mgr_8cpp" startline="17" endline="20">~ActiveAvatarMgr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_active_avatar_mgr_1a18a2b360a70fc4c5aba0b659389ff195" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ActiveAvatarMgr::ActiveAvatarMgr</definition>
+        <argsstring>(SePlayer &amp;owner)</argsstring>
+        <name>ActiveAvatarMgr</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.h" line="10" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_active_avatar_mgr_1a68ca030d4de49d7dd35402826f36cac5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ActiveAvatarMgr::~ActiveAvatarMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~ActiveAvatarMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.h" line="11" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.cpp" bodystart="17" bodyend="20"/>
+        <references refid="class_active_avatar_mgr_1a8eb35c3766f618bd1046d5f0ad88355a" compoundref="_src_2_active_avatar_mgr_8h" startline="25">m_data</references>
+      </memberdef>
+      <memberdef kind="function" id="class_active_avatar_mgr_1a131234242744ec99e27685950ad6aa79" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ActiveAvatarMgr::loadData</definition>
+        <argsstring>(const SeDBCharActiveAvatar &amp;item)</argsstring>
+        <name>loadData</name>
+        <reimplements refid="class_data_mgr_1a19fd585291b3911a1f43d63dfbcc71c6">loadData</reimplements>
+        <param>
+          <type>const SeDBCharActiveAvatar &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.h" line="13" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.cpp" bodystart="27" bodyend="30"/>
+        <references refid="class_active_avatar_mgr_1a8eb35c3766f618bd1046d5f0ad88355a" compoundref="_src_2_active_avatar_mgr_8h" startline="25">m_data</references>
+      </memberdef>
+      <memberdef kind="function" id="class_active_avatar_mgr_1a4866ecf9df83db3cc2056d57dd530207" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ActiveAvatarMgr::fixData</definition>
+        <argsstring>()</argsstring>
+        <name>fixData</name>
+        <reimplements refid="class_data_mgr_1ab72bd1d8bc0f210c94d235c978fbbd4c">fixData</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.h" line="14" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.cpp" bodystart="34" bodyend="50"/>
+        <references refid="_src_2_active_avatar_mgr_8cpp_1acbe876519ba834b2291f1691c66d14b5" compoundref="_src_2_active_avatar_mgr_8cpp" startline="32">ACTIVE_AVATAR_BEGIN</references>
+        <references refid="_src_2_active_avatar_mgr_8cpp_1a33f9114758e76f2b1174956f92b7913a" compoundref="_src_2_active_avatar_mgr_8cpp" startline="33">ACTIVE_AVATAR_END</references>
+        <references refid="class_default_player_data_strategy_1a26a2518d5e30bd8208abf1719f8031e4" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="59" endline="62">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataDelete</references>
+        <references refid="_d_b_server_2_src_2_char_active_avatar_strategy_8cpp_1a778e4d9b9abb475476b49a4cd26cc99c" compoundref="_d_b_server_2_src_2_char_active_avatar_strategy_8cpp" startline="3">g_kCharActiveAvatarStrategy</references>
+        <references refid="class_c_item_mgr_1ae46cfb3d7664beb10d52a125fb7d0e1f" compoundref="_src_2_item_mgr_8cpp" startline="1345" endline="1356">CItemMgr::getItem</references>
+        <references refid="class_se_player_1a41f0b00c2f8e02d3acfce5d016f3ec4a" compoundref="_world_server_2_src_2_se_player_8h" startline="55" endline="55">SePlayer::GetItemMgr</references>
+        <references refid="class_active_avatar_mgr_1abbfc0b4abda599ad13015cb9650e4999" compoundref="_src_2_active_avatar_mgr_8cpp" startline="22" endline="25">getOwner</references>
+        <references refid="class_hero_mgr_1a95a298c7d6927414102db7dcae89ef82" compoundref="_src_2_hero_mgr_8cpp" startline="284" endline="318">HeroMgr::isValidAvatar</references>
+        <references refid="class_active_avatar_mgr_1a8eb35c3766f618bd1046d5f0ad88355a" compoundref="_src_2_active_avatar_mgr_8h" startline="25">m_data</references>
+      </memberdef>
+      <memberdef kind="function" id="class_active_avatar_mgr_1a344a6664d412022c20cabe5d6e20bd73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActiveAvatarMgr::sendInitData</definition>
+        <argsstring>()</argsstring>
+        <name>sendInitData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.h" line="16" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.cpp" bodystart="52" bodyend="69"/>
+        <references refid="struct_se_w_t___active_avatar_ntf_1a1f064ec7bd878f01fc033b5c1bed34d4" compoundref="_se_ptl___w_s___to___t_s_8h" startline="576">SeWT_ActiveAvatarNtf::avartars</references>
+        <references refid="_src_2_world_server_8cpp_1a64c6aeb5282ea4d0f1dd5772c167b301" compoundref="_src_2_world_server_8cpp" startline="15">g_kWorldServer</references>
+        <references refid="_town_server_2_src_2_se_player_8inl_1a62abab014f0e4e72ae69f67e8e6c3a99" compoundref="_town_server_2_src_2_se_player_8inl" startline="6" endline="9">GetID</references>
+        <references refid="class_active_avatar_mgr_1abbfc0b4abda599ad13015cb9650e4999" compoundref="_src_2_active_avatar_mgr_8cpp" startline="22" endline="25">getOwner</references>
+        <references refid="_world_server_2_src_2_se_player_8inl_1a2b912387cc3709ca75305a30f0167a37" compoundref="_world_server_2_src_2_se_player_8inl" startline="71" endline="74">GetTownSock</references>
+        <references refid="struct_se_w_t___active_avatar_ntf_1adddedc78d139f5d53e027bea702c1180" compoundref="_se_ptl___w_s___to___t_s_8h" startline="575">SeWT_ActiveAvatarNtf::iNum</references>
+        <references refid="class_active_avatar_mgr_1a8eb35c3766f618bd1046d5f0ad88355a" compoundref="_src_2_active_avatar_mgr_8h" startline="25">m_data</references>
+        <references refid="class_world_server_1a3b22ed65bb3e7774ac0d02c4c6ce6084">WorldServer::SendWT_ActiveAvatarNtf</references>
+        <referencedby refid="class_se_player_1a6a04c28f9bb38896f106fbf42e732f36" compoundref="_world_server_2_src_2_se_player_8cpp" startline="651" endline="725">SePlayer::OperateLoading</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_active_avatar_mgr_1a49076d6bca16c4775866e0a4747cbf64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ActiveAvatarMgr::setActiveAvatar</definition>
+        <argsstring>(bool active, DWord dwItemID)</argsstring>
+        <name>setActiveAvatar</name>
+        <param>
+          <type>bool</type>
+          <declname>active</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwItemID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.h" line="17" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.cpp" bodystart="71" bodyend="101"/>
+        <references refid="_src_2_active_avatar_mgr_8cpp_1acbe876519ba834b2291f1691c66d14b5" compoundref="_src_2_active_avatar_mgr_8cpp" startline="32">ACTIVE_AVATAR_BEGIN</references>
+        <references refid="_src_2_active_avatar_mgr_8cpp_1a33f9114758e76f2b1174956f92b7913a" compoundref="_src_2_active_avatar_mgr_8cpp" startline="33">ACTIVE_AVATAR_END</references>
+        <references refid="class_default_player_data_strategy_1a26a2518d5e30bd8208abf1719f8031e4" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="59" endline="62">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataDelete</references>
+        <references refid="class_default_player_data_strategy_1a01824b8ff7f25899b55f3d4d1bbd6637" compoundref="_d_b_server_2_src_2_default_player_data_strategy_8h" startline="47" endline="50">DefaultPlayerDataStrategy&lt; TABLE, T, DATA &gt;::dataInsert</references>
+        <references refid="_d_b_server_2_src_2_char_active_avatar_strategy_8cpp_1a778e4d9b9abb475476b49a4cd26cc99c" compoundref="_d_b_server_2_src_2_char_active_avatar_strategy_8cpp" startline="3">g_kCharActiveAvatarStrategy</references>
+        <references refid="class_se_player_1a0834e11ba6f0e730e99014864f8d25e0" compoundref="_town_server_2_src_2_se_player_8h" startline="7" endline="10">SePlayer::GetID</references>
+        <references refid="class_c_item_mgr_1ae46cfb3d7664beb10d52a125fb7d0e1f" compoundref="_src_2_item_mgr_8cpp" startline="1345" endline="1356">CItemMgr::getItem</references>
+        <references refid="class_se_player_1a41f0b00c2f8e02d3acfce5d016f3ec4a" compoundref="_world_server_2_src_2_se_player_8h" startline="55" endline="55">SePlayer::GetItemMgr</references>
+        <references refid="class_active_avatar_mgr_1abbfc0b4abda599ad13015cb9650e4999" compoundref="_src_2_active_avatar_mgr_8cpp" startline="22" endline="25">getOwner</references>
+        <references refid="class_hero_mgr_1a95a298c7d6927414102db7dcae89ef82" compoundref="_src_2_hero_mgr_8cpp" startline="284" endline="318">HeroMgr::isValidAvatar</references>
+        <references refid="class_active_avatar_mgr_1a8eb35c3766f618bd1046d5f0ad88355a" compoundref="_src_2_active_avatar_mgr_8h" startline="25">m_data</references>
+        <referencedby refid="class_block_server_1a40a1785f3daf50c42cf9698437bd306e" compoundref="_src_2_se_t_b_l_process_8cpp" startline="211" endline="229">BlockServer::ProcessTBL_SetActiveAvatarReq</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_active_avatar_mgr_1ac71a8c1afaaee33ee1738783827f4e52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActiveAvatarMgr::getAvatars</definition>
+        <argsstring>(VPtlAvatar &amp;akAvatars)</argsstring>
+        <name>getAvatars</name>
+        <param>
+          <type><ref refid="_se_ptl_define_8h_1a6ef71b81bd29e8e8027d3f143092603e" kindref="member">VPtlAvatar</ref> &amp;</type>
+          <declname>akAvatars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.h" line="20" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.cpp" bodystart="103" bodyend="117"/>
+        <references refid="struct_se_ptl_avatar_1a4b908db8870718cc5902861385806d4b" compoundref="_se_ptl_define_8h" startline="253">SePtlAvatar::dwItemID</references>
+        <references refid="struct_se_ptl_avatar_1a13bdf70c899411bbee7cb3103b1993b7" compoundref="_se_ptl_define_8h" startline="254">SePtlAvatar::dwItemTypeID</references>
+        <references refid="class_c_item_mgr_1ae46cfb3d7664beb10d52a125fb7d0e1f" compoundref="_src_2_item_mgr_8cpp" startline="1345" endline="1356">CItemMgr::getItem</references>
+        <references refid="class_se_player_1a41f0b00c2f8e02d3acfce5d016f3ec4a" compoundref="_world_server_2_src_2_se_player_8h" startline="55" endline="55">SePlayer::GetItemMgr</references>
+        <references refid="class_active_avatar_mgr_1abbfc0b4abda599ad13015cb9650e4999" compoundref="_src_2_active_avatar_mgr_8cpp" startline="22" endline="25">getOwner</references>
+        <references refid="class_active_avatar_mgr_1a8eb35c3766f618bd1046d5f0ad88355a" compoundref="_src_2_active_avatar_mgr_8h" startline="25">m_data</references>
+        <references refid="struct_c_item_1a2846eeb087de732805a73dbcc1219039" compoundref="_src_2_item_mgr_8h" startline="22">CItem::uiID</references>
+        <references refid="struct_c_item_1a32b9964f399b841ecb58f80fc0c06d8f" compoundref="_src_2_item_mgr_8h" startline="24">CItem::uiItemID</references>
+        <referencedby refid="class_block_server_1a1bded5892dcafcabdd012d472b6113ed" compoundref="_src_2_se_m_b_l_process_8cpp" startline="14" endline="43">BlockServer::ProcessMBL_RaceMatchLoadDetail</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_active_avatar_mgr_1a18a2b360a70fc4c5aba0b659389ff195" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ActiveAvatarMgr::ActiveAvatarMgr</definition>
+        <argsstring>(SePlayer &amp;owner)</argsstring>
+        <name>ActiveAvatarMgr</name>
+        <param>
+          <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+          <declname>owner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ActiveAvatarMgr.h" line="10" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_active_avatar_mgr_1a68ca030d4de49d7dd35402826f36cac5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ActiveAvatarMgr::~ActiveAvatarMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~ActiveAvatarMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ActiveAvatarMgr.h" line="11" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_active_avatar_mgr_1a131234242744ec99e27685950ad6aa79" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ActiveAvatarMgr::loadData</definition>
+        <argsstring>(const SeDBCharActiveAvatar &amp;item)</argsstring>
+        <name>loadData</name>
+        <reimplements refid="class_data_mgr_1a19fd585291b3911a1f43d63dfbcc71c6">loadData</reimplements>
+        <param>
+          <type>const SeDBCharActiveAvatar &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ActiveAvatarMgr.h" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_active_avatar_mgr_1a4866ecf9df83db3cc2056d57dd530207" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ActiveAvatarMgr::fixData</definition>
+        <argsstring>()</argsstring>
+        <name>fixData</name>
+        <reimplements refid="class_data_mgr_1ab72bd1d8bc0f210c94d235c978fbbd4c">fixData</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ActiveAvatarMgr.h" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_active_avatar_mgr_1a344a6664d412022c20cabe5d6e20bd73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActiveAvatarMgr::sendInitData</definition>
+        <argsstring>()</argsstring>
+        <name>sendInitData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ActiveAvatarMgr.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_active_avatar_mgr_1a49076d6bca16c4775866e0a4747cbf64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ActiveAvatarMgr::setActiveAvatar</definition>
+        <argsstring>(bool active, DWord dwItemID)</argsstring>
+        <name>setActiveAvatar</name>
+        <param>
+          <type>bool</type>
+          <declname>active</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwItemID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ActiveAvatarMgr.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_active_avatar_mgr_1ac71a8c1afaaee33ee1738783827f4e52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActiveAvatarMgr::getAvatars</definition>
+        <argsstring>(VPtlAvatar &amp;akAvatars)</argsstring>
+        <name>getAvatars</name>
+        <param>
+          <type><ref refid="_se_ptl_define_8h_1a6ef71b81bd29e8e8027d3f143092603e" kindref="member">VPtlAvatar</ref> &amp;</type>
+          <declname>akAvatars</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ActiveAvatarMgr.h" line="20" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_active_avatar_mgr_1abbfc0b4abda599ad13015cb9650e4999" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer &amp; ActiveAvatarMgr::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.h" line="22" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.cpp" bodystart="22" bodyend="25"/>
+        <references refid="class_active_avatar_mgr_1acd64951933801be19704e9e23b9da092" compoundref="_src_2_active_avatar_mgr_8h" startline="24">m_owner</references>
+        <referencedby refid="class_active_avatar_mgr_1a4866ecf9df83db3cc2056d57dd530207" compoundref="_src_2_active_avatar_mgr_8cpp" startline="34" endline="50">fixData</referencedby>
+        <referencedby refid="class_active_avatar_mgr_1ac71a8c1afaaee33ee1738783827f4e52" compoundref="_src_2_active_avatar_mgr_8cpp" startline="103" endline="117">getAvatars</referencedby>
+        <referencedby refid="class_active_avatar_mgr_1a344a6664d412022c20cabe5d6e20bd73" compoundref="_src_2_active_avatar_mgr_8cpp" startline="52" endline="69">sendInitData</referencedby>
+        <referencedby refid="class_active_avatar_mgr_1a49076d6bca16c4775866e0a4747cbf64" compoundref="_src_2_active_avatar_mgr_8cpp" startline="71" endline="101">setActiveAvatar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_active_avatar_mgr_1adf91739a03d70571c017a335e0bc5bbf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_player" kindref="compound">SePlayer</ref> &amp;</type>
+        <definition>SePlayer&amp; ActiveAvatarMgr::getOwner</definition>
+        <argsstring>()</argsstring>
+        <name>getOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/src/ActiveAvatarMgr.h" line="22" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="305">
+        <label>ActiveAvatarMgr</label>
+        <link refid="class_active_avatar_mgr"/>
+        <childnode refid="306" relation="public-inheritance">
+        </childnode>
+        <childnode refid="306" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="306">
+        <label>DataMgr&lt; SeDBCharActiveAvatar &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="377">
+        <label>SeAchieveScheduleInfo</label>
+        <link refid="struct_se_achieve_schedule_info"/>
+      </node>
+      <node id="320">
+        <label>std::map&lt; DWord, CItem * &gt;</label>
+        <childnode refid="321" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="333">
+        <label>SeThreadMsgMgr</label>
+        <link refid="class_se_thread_msg_mgr"/>
+        <childnode refid="334" relation="usage">
+          <edgelabel>m_kTemMsgData</edgelabel>
+        </childnode>
+      </node>
+      <node id="340">
+        <label>DataMgr&lt; SeDBCharEquipSchema &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="350">
+        <label>K</label>
+      </node>
+      <node id="351">
+        <label>T</label>
+      </node>
+      <node id="362">
+        <label>SeItem</label>
+        <link refid="struct_se_item"/>
+        <childnode refid="317" relation="usage">
+          <edgelabel>kFinishTime</edgelabel>
+        </childnode>
+        <childnode refid="363" relation="usage">
+          <edgelabel>pkItemRes</edgelabel>
+        </childnode>
+      </node>
+      <node id="317">
+        <label>SeDBTime</label>
+        <link refid="struct_se_d_b_time"/>
+      </node>
+      <node id="356">
+        <label>SeTaskInfo</label>
+        <link refid="struct_se_task_info"/>
+        <childnode refid="357" relation="usage">
+          <edgelabel>pkRes</edgelabel>
+        </childnode>
+      </node>
+      <node id="379">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="351" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="321">
+        <label>CItem</label>
+        <link refid="struct_c_item"/>
+        <childnode refid="322" relation="usage">
+          <edgelabel>pvpAttr</edgelabel>
+          <edgelabel>pveAttr</edgelabel>
+        </childnode>
+        <childnode refid="323" relation="usage">
+          <edgelabel>citiaoAttr</edgelabel>
+        </childnode>
+      </node>
+      <node id="367">
+        <label>AchieveMgr</label>
+        <link refid="class_achieve_mgr"/>
+        <childnode refid="310" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="310">
+        <label>SePlayer</label>
+        <link refid="class_se_player"/>
+        <childnode refid="311" relation="usage">
+          <edgelabel>m_kCurPos</edgelabel>
+        </childnode>
+        <childnode refid="312" relation="usage">
+          <edgelabel>m_heroMgr</edgelabel>
+        </childnode>
+        <childnode refid="315" relation="usage">
+          <edgelabel>m_mapNexusFriendData</edgelabel>
+        </childnode>
+        <childnode refid="318" relation="usage">
+          <edgelabel>m_PlayerItemMgr</edgelabel>
+        </childnode>
+        <childnode refid="326" relation="usage">
+          <edgelabel>m_kMobileInfo</edgelabel>
+        </childnode>
+        <childnode refid="317" relation="usage">
+          <edgelabel>m_kEnterTime</edgelabel>
+        </childnode>
+        <childnode refid="327" relation="usage">
+          <edgelabel>m_pkBlockServer</edgelabel>
+        </childnode>
+        <childnode refid="338" relation="usage">
+          <edgelabel>m_kLoadFlag2Count</edgelabel>
+        </childnode>
+        <childnode refid="339" relation="usage">
+          <edgelabel>m_equipSchemaMgr</edgelabel>
+        </childnode>
+        <childnode refid="341" relation="usage">
+          <edgelabel>m_raceMapMgr</edgelabel>
+        </childnode>
+        <childnode refid="344" relation="usage">
+          <edgelabel>m_raceHeroMgr</edgelabel>
+        </childnode>
+        <childnode refid="352" relation="usage">
+          <edgelabel>m_loadingFlag</edgelabel>
+        </childnode>
+        <childnode refid="353" relation="usage">
+          <edgelabel>m_TaskMgr</edgelabel>
+        </childnode>
+        <childnode refid="361" relation="usage">
+          <edgelabel>m_akItem</edgelabel>
+        </childnode>
+        <childnode refid="364" relation="usage">
+          <edgelabel>m_FriendLadderData</edgelabel>
+        </childnode>
+        <childnode refid="307" relation="usage">
+          <edgelabel>m_activeAvatarMgr</edgelabel>
+        </childnode>
+        <childnode refid="367" relation="usage">
+          <edgelabel>m_AchieveMgr</edgelabel>
+        </childnode>
+        <childnode refid="368" relation="usage">
+          <edgelabel>m_kLoadFlagCounts</edgelabel>
+        </childnode>
+        <childnode refid="337" relation="usage">
+          <edgelabel>m_kAccountInfo</edgelabel>
+        </childnode>
+        <childnode refid="369" relation="usage">
+          <edgelabel>m_AchieveFinishMgr</edgelabel>
+        </childnode>
+        <childnode refid="372" relation="usage">
+          <edgelabel>m_akStatMap</edgelabel>
+        </childnode>
+        <childnode refid="374" relation="usage">
+          <edgelabel>m_AchieveScheduleMgr</edgelabel>
+        </childnode>
+        <childnode refid="378" relation="usage">
+          <edgelabel>m_kMAllCharMem</edgelabel>
+        </childnode>
+        <childnode refid="380" relation="usage">
+          <edgelabel>m_akExchange</edgelabel>
+        </childnode>
+        <childnode refid="382" relation="usage">
+          <edgelabel>m_infoMgr</edgelabel>
+        </childnode>
+        <childnode refid="385" relation="usage">
+          <edgelabel>m_kSingleMatchInfo</edgelabel>
+        </childnode>
+        <childnode refid="386" relation="usage">
+          <edgelabel>m_kOderItr</edgelabel>
+        </childnode>
+      </node>
+      <node id="336">
+        <label>SeWaitPlayer</label>
+        <link refid="struct_se_wait_player"/>
+        <childnode refid="337" relation="usage">
+          <edgelabel>kAccountInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="349">
+        <label>std::map&lt; K, T &gt;</label>
+        <childnode refid="350" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="351" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="352">
+        <label>std::set&lt; SeDBTableIndex &gt;</label>
+      </node>
+      <node id="369">
+        <label>AchieveFinishMgr</label>
+        <link refid="class_achieve_finish_mgr"/>
+        <childnode refid="370" relation="public-inheritance">
+        </childnode>
+        <childnode refid="370" relation="public-inheritance">
+        </childnode>
+        <childnode refid="371" relation="usage">
+          <edgelabel>m_FinishMap</edgelabel>
+        </childnode>
+        <childnode refid="310" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="347">
+        <label>SeUserRaceMapHeroBase</label>
+        <link refid="struct_se_user_race_map_hero_base"/>
+      </node>
+      <node id="312">
+        <label>HeroMgr</label>
+        <link refid="class_hero_mgr"/>
+        <childnode refid="313" relation="public-inheritance">
+        </childnode>
+        <childnode refid="313" relation="public-inheritance">
+        </childnode>
+        <childnode refid="310" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="314" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="337">
+        <label>SePtlAccountInfo</label>
+        <link refid="struct_se_ptl_account_info"/>
+      </node>
+      <node id="386">
+        <label>std::map&lt; K, T &gt;::iterator</label>
+      </node>
+      <node id="329">
+        <label>SeLeagueInfo</label>
+        <link refid="struct_se_league_info"/>
+        <childnode refid="317" relation="usage">
+          <edgelabel>kBeginTime</edgelabel>
+          <edgelabel>kEndTime</edgelabel>
+        </childnode>
+      </node>
+      <node id="348">
+        <label>std::map&lt; DWord, MDBCharRaceHero &gt;</label>
+        <childnode refid="349" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="361">
+        <label>std::vector&lt; SeItem * &gt;</label>
+        <childnode refid="362" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="311">
+        <label>SePos2</label>
+        <link refid="struct_se_pos2"/>
+      </node>
+      <node id="355">
+        <label>std::vector&lt; SeTaskInfo * &gt;</label>
+        <childnode refid="356" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="357">
+        <label>TaskInfoTable</label>
+        <link refid="struct_task_info_table"/>
+        <childnode refid="358" relation="public-inheritance">
+        </childnode>
+        <childnode refid="359" relation="usage">
+          <edgelabel>kNameID</edgelabel>
+          <edgelabel>kDescID</edgelabel>
+          <edgelabel>kName_China</edgelabel>
+          <edgelabel>kTaskDesc</edgelabel>
+          <edgelabel>kTargetDesc</edgelabel>
+        </childnode>
+      </node>
+      <node id="316">
+        <label>SeCharNexusFriendData</label>
+        <link refid="struct_se_char_nexus_friend_data"/>
+        <childnode refid="317" relation="usage">
+          <edgelabel>create_time</edgelabel>
+        </childnode>
+      </node>
+      <node id="338">
+        <label>std::map&lt; int, int &gt;</label>
+      </node>
+      <node id="382">
+        <label>InfoMgr</label>
+        <link refid="class_info_mgr"/>
+        <childnode refid="383" relation="public-inheritance">
+        </childnode>
+        <childnode refid="384" relation="public-inheritance">
+        </childnode>
+        <childnode refid="383" relation="public-inheritance">
+        </childnode>
+        <childnode refid="384" relation="public-inheritance">
+        </childnode>
+        <childnode refid="310" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="314" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="343">
+        <label>std::map&lt; DWord, SeDBCharRaceArena * &gt;</label>
+      </node>
+      <node id="332">
+        <label>SeNetAddr</label>
+        <link refid="struct_se_net_addr"/>
+      </node>
+      <node id="322">
+        <label>SeAttrUnit</label>
+        <link refid="struct_se_attr_unit"/>
+      </node>
+      <node id="314">
+        <label>std::map&lt; DWord, SeDBCharHero * &gt;</label>
+      </node>
+      <node id="360">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="358">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="324">
+        <label>SeExternAttrUnit</label>
+        <link refid="struct_se_extern_attr_unit"/>
+      </node>
+      <node id="319">
+        <label>DataMgr&lt; SeDBCharItem &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="335">
+        <label>std::map&lt; DWord, SeWaitPlayer * &gt;</label>
+        <childnode refid="336" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="372">
+        <label>std::vector&lt; SeStatMap * &gt;</label>
+        <childnode refid="373" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="345">
+        <label>DataMgr&lt; SeDBCharRaceHero &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="342">
+        <label>DataMgr&lt; SeDBCharRaceArena &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="354">
+        <label>DataMgr&lt; SeDBCharTask &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="326">
+        <label>SeMobileInfo</label>
+        <link refid="struct_se_mobile_info"/>
+      </node>
+      <node id="325">
+        <label>std::map&lt; uint16_t, CItem * &gt;</label>
+        <childnode refid="321" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="341">
+        <label>RaceMapMgr</label>
+        <link refid="class_race_map_mgr"/>
+        <childnode refid="342" relation="public-inheritance">
+        </childnode>
+        <childnode refid="342" relation="public-inheritance">
+        </childnode>
+        <childnode refid="310" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="343" relation="usage">
+          <edgelabel>m_race_map</edgelabel>
+        </childnode>
+      </node>
+      <node id="384">
+        <label>DataMgr&lt; SeDBCharInfo &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="307">
+        <label>ActiveAvatarMgr</label>
+        <link refid="class_active_avatar_mgr"/>
+        <childnode refid="308" relation="public-inheritance">
+        </childnode>
+        <childnode refid="308" relation="public-inheritance">
+        </childnode>
+        <childnode refid="309" relation="usage">
+          <edgelabel>m_data</edgelabel>
+        </childnode>
+        <childnode refid="310" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="327">
+        <label>BlockServer</label>
+        <link refid="class_block_server"/>
+        <childnode refid="328" relation="public-inheritance">
+        </childnode>
+        <childnode refid="328" relation="public-inheritance">
+        </childnode>
+        <childnode refid="329" relation="usage">
+          <edgelabel>m_kLeagueInfo</edgelabel>
+        </childnode>
+        <childnode refid="330" relation="usage">
+          <edgelabel>m_kAllPlayer</edgelabel>
+        </childnode>
+        <childnode refid="333" relation="usage">
+          <edgelabel>m_kThreadMsgMgr</edgelabel>
+        </childnode>
+        <childnode refid="335" relation="usage">
+          <edgelabel>m_kWaitPlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="318">
+        <label>CItemMgr</label>
+        <link refid="class_c_item_mgr"/>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+        <childnode refid="320" relation="usage">
+          <edgelabel>m_idMap</edgelabel>
+        </childnode>
+        <childnode refid="310" relation="usage">
+          <edgelabel>m_pOwner</edgelabel>
+        </childnode>
+        <childnode refid="325" relation="usage">
+          <edgelabel>m_BagMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="381">
+        <label>SeExChangeInfo</label>
+        <link refid="struct_se_ex_change_info"/>
+        <childnode refid="317" relation="usage">
+          <edgelabel>kRecordTime</edgelabel>
+        </childnode>
+      </node>
+      <node id="364">
+        <label>std::unordered_map&lt; DWord, SeCharLadderData * &gt;</label>
+        <childnode refid="365" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="376">
+        <label>std::map&lt; DWord, SeAchieveScheduleInfo * &gt;</label>
+        <childnode refid="377" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="309">
+        <label>std::set&lt; DWord &gt;</label>
+      </node>
+      <node id="385">
+        <label>SeSingleMatchInfo</label>
+        <link refid="struct_se_single_match_info"/>
+      </node>
+      <node id="374">
+        <label>AchieveScheduleMgr</label>
+        <link refid="class_achieve_schedule_mgr"/>
+        <childnode refid="375" relation="public-inheritance">
+        </childnode>
+        <childnode refid="375" relation="public-inheritance">
+        </childnode>
+        <childnode refid="310" relation="usage">
+          <edgelabel>m_SePlayer</edgelabel>
+        </childnode>
+        <childnode refid="376" relation="usage">
+          <edgelabel>m_ScheduleMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="328">
+        <label>Thread</label>
+      </node>
+      <node id="375">
+        <label>DataMgr&lt; SeDBCharAchieveSchedule &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="366">
+        <label>SeLadderRankInfo</label>
+        <link refid="struct_se_ladder_rank_info"/>
+      </node>
+      <node id="370">
+        <label>DataMgr&lt; SeDBCharAchieveFinish &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="308">
+        <label>DataMgr&lt; SeDBCharActiveAvatar &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="315">
+        <label>std::map&lt; DWord, SeCharNexusFriendData * &gt;</label>
+        <childnode refid="316" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="365">
+        <label>SeCharLadderData</label>
+        <link refid="struct_se_char_ladder_data"/>
+        <childnode refid="366" relation="public-inheritance">
+        </childnode>
+        <childnode refid="366" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>DataMgr&lt; SeDBCharHero &gt;</label>
+        <link refid="class_data_mgr"/>
+      </node>
+      <node id="378">
+        <label>std::map&lt; DWord, VCharMemory &gt;</label>
+        <childnode refid="379" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="330">
+        <label>std::map&lt; HSock, SeLoginPlayer * &gt;</label>
+        <childnode refid="331" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="323">
+        <label>SeCiTiao</label>
+        <link refid="struct_se_ci_tiao"/>
+        <childnode refid="324" relation="usage">
+          <edgelabel>SkillAdd</edgelabel>
+        </childnode>
+      </node>
+      <node id="383">
+        <label>SeDBCharInfo</label>
+      </node>
+      <node id="380">
+        <label>std::vector&lt; SeExChangeInfo * &gt;</label>
+        <childnode refid="381" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="339">
+        <label>EquipSchemaMgr</label>
+        <link refid="class_equip_schema_mgr"/>
+        <childnode refid="340" relation="public-inheritance">
+        </childnode>
+        <childnode refid="340" relation="public-inheritance">
+        </childnode>
+        <childnode refid="310" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+      </node>
+      <node id="344">
+        <label>RaceHeroMgr</label>
+        <link refid="class_race_hero_mgr"/>
+        <childnode refid="345" relation="public-inheritance">
+        </childnode>
+        <childnode refid="345" relation="public-inheritance">
+        </childnode>
+        <childnode refid="310" relation="usage">
+          <edgelabel>m_owner</edgelabel>
+        </childnode>
+        <childnode refid="346" relation="usage">
+          <edgelabel>map_arena_race_heros</edgelabel>
+        </childnode>
+        <childnode refid="348" relation="usage">
+          <edgelabel>map_race_heros</edgelabel>
+        </childnode>
+      </node>
+      <node id="334">
+        <label>SeMsgData</label>
+        <link refid="struct_se_msg_data"/>
+      </node>
+      <node id="371">
+        <label>std::map&lt; DWord, std::map&lt; DWord, SeAchieveFinishInfo * &gt; &gt;</label>
+      </node>
+      <node id="353">
+        <label>TaskMgr</label>
+        <link refid="class_task_mgr"/>
+        <childnode refid="354" relation="public-inheritance">
+        </childnode>
+        <childnode refid="354" relation="public-inheritance">
+        </childnode>
+        <childnode refid="355" relation="usage">
+          <edgelabel>m_akVTask</edgelabel>
+        </childnode>
+        <childnode refid="310" relation="usage">
+          <edgelabel>m_Player</edgelabel>
+        </childnode>
+      </node>
+      <node id="368">
+        <label>std::map&lt; SeDBTableIndex, int &gt;</label>
+      </node>
+      <node id="373">
+        <label>SeStatMap</label>
+        <link refid="struct_se_stat_map"/>
+      </node>
+      <node id="331">
+        <label>SeLoginPlayer</label>
+        <link refid="struct_se_login_player"/>
+        <childnode refid="332" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="359">
+        <label>std::string</label>
+        <childnode refid="360" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="346">
+        <label>std::map&lt; DWord, SeUserRaceMapHeroBase &gt;</label>
+        <childnode refid="347" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="363">
+        <label>TownItemTable</label>
+        <link refid="struct_town_item_table"/>
+        <childnode refid="358" relation="public-inheritance">
+        </childnode>
+        <childnode refid="359" relation="usage">
+          <edgelabel>kAttachModel1</edgelabel>
+          <edgelabel>kAttachModel2</edgelabel>
+          <edgelabel>kPVPValueA</edgelabel>
+          <edgelabel>ktaozhuangID</edgelabel>
+          <edgelabel>kNameID</edgelabel>
+          <edgelabel>kPVPValueB</edgelabel>
+          <edgelabel>kDesc</edgelabel>
+          <edgelabel>kPVPValueC</edgelabel>
+          <edgelabel>kPVPValueD</edgelabel>
+          <edgelabel>kPVPValueE</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.h" line="8" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/WorldServer/Src/ActiveAvatarMgr.h" bodystart="7" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_active_avatar_mgr_1a18a2b360a70fc4c5aba0b659389ff195" prot="public" virt="non-virtual"><scope>ActiveAvatarMgr</scope><name>ActiveAvatarMgr</name></member>
+      <member refid="class_active_avatar_mgr_1a18a2b360a70fc4c5aba0b659389ff195" prot="public" virt="non-virtual"><scope>ActiveAvatarMgr</scope><name>ActiveAvatarMgr</name></member>
+      <member refid="class_active_avatar_mgr_1a4866ecf9df83db3cc2056d57dd530207" prot="public" virt="virtual"><scope>ActiveAvatarMgr</scope><name>fixData</name></member>
+      <member refid="class_active_avatar_mgr_1a4866ecf9df83db3cc2056d57dd530207" prot="public" virt="virtual"><scope>ActiveAvatarMgr</scope><name>fixData</name></member>
+      <member refid="class_active_avatar_mgr_1ac71a8c1afaaee33ee1738783827f4e52" prot="public" virt="non-virtual"><scope>ActiveAvatarMgr</scope><name>getAvatars</name></member>
+      <member refid="class_active_avatar_mgr_1ac71a8c1afaaee33ee1738783827f4e52" prot="public" virt="non-virtual"><scope>ActiveAvatarMgr</scope><name>getAvatars</name></member>
+      <member refid="class_active_avatar_mgr_1abbfc0b4abda599ad13015cb9650e4999" prot="private" virt="non-virtual"><scope>ActiveAvatarMgr</scope><name>getOwner</name></member>
+      <member refid="class_active_avatar_mgr_1adf91739a03d70571c017a335e0bc5bbf" prot="private" virt="non-virtual"><scope>ActiveAvatarMgr</scope><name>getOwner</name></member>
+      <member refid="class_active_avatar_mgr_1a131234242744ec99e27685950ad6aa79" prot="public" virt="virtual"><scope>ActiveAvatarMgr</scope><name>loadData</name></member>
+      <member refid="class_active_avatar_mgr_1a131234242744ec99e27685950ad6aa79" prot="public" virt="virtual"><scope>ActiveAvatarMgr</scope><name>loadData</name></member>
+      <member refid="class_active_avatar_mgr_1a8eb35c3766f618bd1046d5f0ad88355a" prot="private" virt="non-virtual"><scope>ActiveAvatarMgr</scope><name>m_data</name></member>
+      <member refid="class_active_avatar_mgr_1acd64951933801be19704e9e23b9da092" prot="private" virt="non-virtual"><scope>ActiveAvatarMgr</scope><name>m_owner</name></member>
+      <member refid="class_active_avatar_mgr_1a344a6664d412022c20cabe5d6e20bd73" prot="public" virt="non-virtual"><scope>ActiveAvatarMgr</scope><name>sendInitData</name></member>
+      <member refid="class_active_avatar_mgr_1a344a6664d412022c20cabe5d6e20bd73" prot="public" virt="non-virtual"><scope>ActiveAvatarMgr</scope><name>sendInitData</name></member>
+      <member refid="class_active_avatar_mgr_1a49076d6bca16c4775866e0a4747cbf64" prot="public" virt="non-virtual"><scope>ActiveAvatarMgr</scope><name>setActiveAvatar</name></member>
+      <member refid="class_active_avatar_mgr_1a49076d6bca16c4775866e0a4747cbf64" prot="public" virt="non-virtual"><scope>ActiveAvatarMgr</scope><name>setActiveAvatar</name></member>
+      <member refid="class_active_avatar_mgr_1a68ca030d4de49d7dd35402826f36cac5" prot="public" virt="non-virtual"><scope>ActiveAvatarMgr</scope><name>~ActiveAvatarMgr</name></member>
+      <member refid="class_active_avatar_mgr_1a68ca030d4de49d7dd35402826f36cac5" prot="public" virt="non-virtual"><scope>ActiveAvatarMgr</scope><name>~ActiveAvatarMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

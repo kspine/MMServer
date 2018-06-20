@@ -1,0 +1,1474 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_se_match_mgr" kind="class" prot="public">
+    <compoundname>SeMatchMgr</compoundname>
+    <includes refid="_src_2_se_match_mgr_8h" local="no">SeMatchMgr.h</includes>
+    <innerclass refid="struct_se_match_mgr_1_1_match_item" prot="private">SeMatchMgr::MatchItem</innerclass>
+    <innerclass refid="struct_se_match_mgr_1_1_player_info" prot="private">SeMatchMgr::PlayerInfo</innerclass>
+    <innerclass refid="struct_se_match_mgr_1_1_wait_item" prot="private">SeMatchMgr::WaitItem</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931eda" prot="private" static="no">
+        <name>PlayerType</name>
+        <enumvalue id="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa4a80158faa361b64065950c7155da8da" prot="private">
+          <name>PT_NEW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa3ba9947f7df148128171359821c55314" prot="private">
+          <name>PT_NOVICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa82ec6a43e960b557f6af3a54b451ef08" prot="private">
+          <name>PT_NORMAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa4a80158faa361b64065950c7155da8da" prot="private">
+          <name>PT_NEW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa3ba9947f7df148128171359821c55314" prot="private">
+          <name>PT_NOVICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa82ec6a43e960b557f6af3a54b451ef08" prot="private">
+          <name>PT_NORMAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="114" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="113" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931eda" prot="private" static="no">
+        <name>PlayerType</name>
+        <enumvalue id="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa4a80158faa361b64065950c7155da8da" prot="private">
+          <name>PT_NEW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa3ba9947f7df148128171359821c55314" prot="private">
+          <name>PT_NOVICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa82ec6a43e960b557f6af3a54b451ef08" prot="private">
+          <name>PT_NORMAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa4a80158faa361b64065950c7155da8da" prot="private">
+          <name>PT_NEW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa3ba9947f7df148128171359821c55314" prot="private">
+          <name>PT_NOVICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa82ec6a43e960b557f6af3a54b451ef08" prot="private">
+          <name>PT_NORMAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="114" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" bodystart="113" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_se_match_mgr_1ab6deef96cedd28aec08e34c070cb772c" prot="private" static="no">
+        <type>std::multimap&lt; <ref refid="namespacemoba_1a2ea02b3d6b0984234e33fb9fe56fbdc5" kindref="member">moba::TimeType</ref>, <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt;</type>
+        <definition>typedef std::multimap&lt;moba::TimeType, MatchItem *&gt; SeMatchMgr::TIMEMAP</definition>
+        <argsstring></argsstring>
+        <name>TIMEMAP</name>
+        <briefdescription>
+<para>以时间为key. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="201" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_se_match_mgr_1a9f3c5f7196d3a449c37bc32ffc7694f3" prot="private" static="no">
+        <type>std::multimap&lt; double, <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt;</type>
+        <definition>typedef std::multimap&lt;double, MatchItem *&gt; SeMatchMgr::LEVELMAP</definition>
+        <argsstring></argsstring>
+        <name>LEVELMAP</name>
+        <briefdescription>
+<para>以等级为key. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="202" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_se_match_mgr_1a2a1cabeab01b241b95f5117b915a6044" prot="private" static="no">
+        <type>std::map&lt; uint32_t, <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt;</type>
+        <definition>typedef std::map&lt;uint32_t, MatchItem *&gt; SeMatchMgr::USERMAP</definition>
+        <argsstring></argsstring>
+        <name>USERMAP</name>
+        <briefdescription>
+<para>以用户ID为key. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="203" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_se_match_mgr_1a757c29e1c0e9058610f1c093c39b25fc" prot="private" static="no">
+        <type>std::map&lt; <ref refid="struct_match_index" kindref="compound">MatchIndex</ref>, <ref refid="class_se_match_mgr_1a9f3c5f7196d3a449c37bc32ffc7694f3" kindref="member">LEVELMAP</ref> &gt;</type>
+        <definition>typedef std::map&lt;MatchIndex, LEVELMAP &gt; SeMatchMgr::TYPEMAP</definition>
+        <argsstring></argsstring>
+        <name>TYPEMAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="205" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_se_match_mgr_1ac7d79224c8675e9c410fb59cfb4e89de" prot="private" static="no">
+        <type>std::map&lt; uint32_t, <ref refid="struct_se_match_mgr_1_1_wait_item" kindref="compound">WaitItem</ref> * &gt;</type>
+        <definition>typedef std::map&lt;uint32_t, WaitItem *&gt; SeMatchMgr::WAITMAP</definition>
+        <argsstring></argsstring>
+        <name>WAITMAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="206" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_se_match_mgr_1ab6deef96cedd28aec08e34c070cb772c" prot="private" static="no">
+        <type>std::multimap&lt; <ref refid="namespacemoba_1a2ea02b3d6b0984234e33fb9fe56fbdc5" kindref="member">moba::TimeType</ref>, <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt;</type>
+        <definition>typedef std::multimap&lt;moba::TimeType, MatchItem *&gt; SeMatchMgr::TIMEMAP</definition>
+        <argsstring></argsstring>
+        <name>TIMEMAP</name>
+        <briefdescription>
+<para>以时间为key. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="201" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_se_match_mgr_1a9f3c5f7196d3a449c37bc32ffc7694f3" prot="private" static="no">
+        <type>std::multimap&lt; double, <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt;</type>
+        <definition>typedef std::multimap&lt;double, MatchItem *&gt; SeMatchMgr::LEVELMAP</definition>
+        <argsstring></argsstring>
+        <name>LEVELMAP</name>
+        <briefdescription>
+<para>以等级为key. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="202" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_se_match_mgr_1a2a1cabeab01b241b95f5117b915a6044" prot="private" static="no">
+        <type>std::map&lt; uint32_t, <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt;</type>
+        <definition>typedef std::map&lt;uint32_t, MatchItem *&gt; SeMatchMgr::USERMAP</definition>
+        <argsstring></argsstring>
+        <name>USERMAP</name>
+        <briefdescription>
+<para>以用户ID为key. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="203" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_se_match_mgr_1a757c29e1c0e9058610f1c093c39b25fc" prot="private" static="no">
+        <type>std::map&lt; <ref refid="struct_match_index" kindref="compound">MatchIndex</ref>, <ref refid="class_se_match_mgr_1a9f3c5f7196d3a449c37bc32ffc7694f3" kindref="member">LEVELMAP</ref> &gt;</type>
+        <definition>typedef std::map&lt;MatchIndex, LEVELMAP &gt; SeMatchMgr::TYPEMAP</definition>
+        <argsstring></argsstring>
+        <name>TYPEMAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="205" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_se_match_mgr_1ac7d79224c8675e9c410fb59cfb4e89de" prot="private" static="no">
+        <type>std::map&lt; uint32_t, <ref refid="struct_se_match_mgr_1_1_wait_item" kindref="compound">WaitItem</ref> * &gt;</type>
+        <definition>typedef std::map&lt;uint32_t, WaitItem *&gt; SeMatchMgr::WAITMAP</definition>
+        <argsstring></argsstring>
+        <name>WAITMAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="206" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_se_match_mgr_1a6d4a5a1b63995272d379f363640c15fd" prot="private" static="no" mutable="no">
+        <type><ref refid="class_se_match_mgr_1ab6deef96cedd28aec08e34c070cb772c" kindref="member">TIMEMAP</ref></type>
+        <definition>TIMEMAP SeMatchMgr::m_timeMap</definition>
+        <argsstring></argsstring>
+        <name>m_timeMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="207" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="207" bodyend="-1"/>
+        <referencedby refid="class_se_match_mgr_1ac4e1f79cc61e7824b61e655524c89d4f" compoundref="_src_2_se_match_mgr_8cpp" startline="635" endline="742">match</referencedby>
+        <referencedby refid="class_se_match_mgr_1a5b7155dca0f8b4e5d54b9785515de80e" compoundref="_src_2_se_match_mgr_8cpp" startline="233" endline="332">OnMatchReq</referencedby>
+        <referencedby refid="class_se_match_mgr_1a34d22a0cee659ccf64b3b3ce3c4d5fa4" compoundref="_src_2_se_match_mgr_8cpp" startline="832" endline="862">rejoinMatch</referencedby>
+        <referencedby refid="class_se_match_mgr_1a958a85498f9563b103c18bf1f40c73a8" compoundref="_src_2_se_match_mgr_8cpp" startline="810" endline="821">removeMatch</referencedby>
+        <referencedby refid="class_se_match_mgr_1a1c63d6d17365f930c0885824afb4c5ef" compoundref="_src_2_se_match_mgr_8cpp" startline="165" endline="179">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_match_mgr_1aa4353073968319f0dae0ea1d8cdfbdf6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_se_match_mgr_1a757c29e1c0e9058610f1c093c39b25fc" kindref="member">TYPEMAP</ref></type>
+        <definition>TYPEMAP SeMatchMgr::m_typeMap</definition>
+        <argsstring></argsstring>
+        <name>m_typeMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="208" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="208" bodyend="-1"/>
+        <referencedby refid="class_se_match_mgr_1ac4e1f79cc61e7824b61e655524c89d4f" compoundref="_src_2_se_match_mgr_8cpp" startline="635" endline="742">match</referencedby>
+        <referencedby refid="class_se_match_mgr_1a5b7155dca0f8b4e5d54b9785515de80e" compoundref="_src_2_se_match_mgr_8cpp" startline="233" endline="332">OnMatchReq</referencedby>
+        <referencedby refid="class_se_match_mgr_1a34d22a0cee659ccf64b3b3ce3c4d5fa4" compoundref="_src_2_se_match_mgr_8cpp" startline="832" endline="862">rejoinMatch</referencedby>
+        <referencedby refid="class_se_match_mgr_1a958a85498f9563b103c18bf1f40c73a8" compoundref="_src_2_se_match_mgr_8cpp" startline="810" endline="821">removeMatch</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_match_mgr_1a93751f90361c7ed559c70c6975746b81" prot="private" static="no" mutable="no">
+        <type><ref refid="class_se_match_mgr_1a2a1cabeab01b241b95f5117b915a6044" kindref="member">USERMAP</ref></type>
+        <definition>USERMAP SeMatchMgr::m_userMap</definition>
+        <argsstring></argsstring>
+        <name>m_userMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="209" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="209" bodyend="-1"/>
+        <referencedby refid="class_se_match_mgr_1a7be2cbbe64529aca16e30b24170b906e" compoundref="_src_2_se_match_mgr_8cpp" startline="823" endline="830">clearMatch</referencedby>
+        <referencedby refid="class_se_match_mgr_1a1e1a9e8cbb2f52a7f099edfd11f71b9c" compoundref="_src_2_se_match_mgr_8cpp" startline="334" endline="357">OnMatchCancel</referencedby>
+        <referencedby refid="class_se_match_mgr_1a5b7155dca0f8b4e5d54b9785515de80e" compoundref="_src_2_se_match_mgr_8cpp" startline="233" endline="332">OnMatchReq</referencedby>
+        <referencedby refid="class_se_match_mgr_1a2ec36d55582fe6cdd43cf64e6dea60cb" compoundref="_src_2_se_match_mgr_8cpp" startline="908" endline="924">OnPlayerLeave</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_match_mgr_1a735f159a51a9d3ddda93afbd54e1bd52" prot="private" static="no" mutable="no">
+        <type><ref refid="class_se_match_mgr_1ac7d79224c8675e9c410fb59cfb4e89de" kindref="member">WAITMAP</ref></type>
+        <definition>WAITMAP SeMatchMgr::m_waitMap</definition>
+        <argsstring></argsstring>
+        <name>m_waitMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="211" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="211" bodyend="-1"/>
+        <referencedby refid="class_se_match_mgr_1a8d0caf15f9478fb8580a074284e66b58" compoundref="_src_2_se_match_mgr_8cpp" startline="744" endline="808">addWaitRoom</referencedby>
+        <referencedby refid="class_se_match_mgr_1a565ced66e5b6e7edb32cf98fbc448e65" compoundref="_src_2_se_match_mgr_8cpp" startline="413" endline="480">OnConfirm</referencedby>
+        <referencedby refid="class_se_match_mgr_1aea13a0ecf1bf7c29349f83822c16e994" compoundref="_src_2_se_match_mgr_8cpp" startline="181" endline="231">UpdateRoom</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_se_match_mgr_1aac171350dcc91aa1d84c479ae29e6f3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeMatchMgr::SeMatchMgr</definition>
+        <argsstring>()</argsstring>
+        <name>SeMatchMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="102" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a313f2303bb8842677c07d3ea1381341a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeMatchMgr::~SeMatchMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~SeMatchMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="103" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a1c63d6d17365f930c0885824afb4c5ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="105" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="165" bodyend="179"/>
+        <references refid="classmoba_1_1_clock_1a029b72699ef2168d7429c114bfa856dd" compoundref="_clock_8cpp" startline="105" endline="109">moba::Clock::getInstance</references>
+        <references refid="classmoba_1_1_clock_1a405b5bd09dad4e81b74ddbd4ed00dc32" compoundref="_clock_8cpp" startline="93" endline="97">moba::Clock::getMilliSeconds</references>
+        <references refid="class_se_match_mgr_1a6d4a5a1b63995272d379f363640c15fd" compoundref="_src_2_se_match_mgr_8h" startline="207">m_timeMap</references>
+        <references refid="class_se_match_mgr_1ac4e1f79cc61e7824b61e655524c89d4f" compoundref="_src_2_se_match_mgr_8cpp" startline="635" endline="742">match</references>
+        <references refid="class_se_match_mgr_1aea13a0ecf1bf7c29349f83822c16e994" compoundref="_src_2_se_match_mgr_8cpp" startline="181" endline="231">UpdateRoom</references>
+        <referencedby refid="class_match_server_1aa0c969f78b0a7c57be07f1edeea929cf" compoundref="_src_2_match_server_8cpp" startline="293" endline="367">MatchServer::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a5b7155dca0f8b4e5d54b9785515de80e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a89b73f1dc810e11801b5b7f3ecde8abd" kindref="member">MatchReqResult</ref></type>
+        <definition>MatchReqResult SeMatchMgr::OnMatchReq</definition>
+        <argsstring>(DWord mapid, Byte seats, const std::list&lt; MatchValueStru &gt; &amp;matchValues, const std::list&lt; HTownSign &gt; &amp;towns)</argsstring>
+        <name>OnMatchReq</name>
+        <param>
+          <type>DWord</type>
+          <declname>mapid</declname>
+        </param>
+        <param>
+          <type>Byte</type>
+          <declname>seats</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="struct_match_value_stru" kindref="compound">MatchValueStru</ref> &gt; &amp;</type>
+          <declname>matchValues</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="struct_h_town_sign" kindref="compound">HTownSign</ref> &gt; &amp;</type>
+          <declname>towns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="106" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="233" bodyend="332"/>
+        <references refid="struct_se_match_mgr_1_1_player_info_1a8293adad15aee1721c2b90e7a32efc60" compoundref="_src_2_se_match_mgr_8h" startline="122">SeMatchMgr::PlayerInfo::acName</references>
+        <references refid="struct_se_match_mgr_1_1_player_info_1a99a9a829674f5fda3950686f5c03f069" compoundref="_src_2_se_match_mgr_8h" startline="128">SeMatchMgr::PlayerInfo::BoolConfirmed</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a2e841a0b811c12224ea3fd1f26a0e410" compoundref="_src_2_se_match_mgr_8cpp" startline="864" endline="867">SeMatchMgr::MatchItem::calForce</references>
+        <references refid="struct_se_match_mgr_1_1_player_info_1a8ac06a4c9823d8d4e76657ed24fbb9cd" compoundref="_src_2_se_match_mgr_8h" startline="123">SeMatchMgr::PlayerInfo::defeat</references>
+        <references refid="struct_se_match_mgr_1_1_player_info_1a8ca6cbfc9f8891da59d779f9e1266157" compoundref="_src_2_se_match_mgr_8h" startline="121">SeMatchMgr::PlayerInfo::dwPlayerID</references>
+        <references refid="_se_ptl_comm_define_8h_1a747637046be33d7273262104aad8069daf5bfadb875c8c1de9803d28f9789806d" compoundref="_se_ptl_comm_define_8h" startline="708">EMT_LADDER</references>
+        <references refid="struct_match_index_1a3903a486a0d51cfd57f4a44b08577a36" compoundref="_src_2_se_match_mgr_8h" startline="86">MatchIndex::entertainment</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a618a796900e4eff2b141dc51665c5e85" compoundref="_src_2_se_match_mgr_8h" startline="149">SeMatchMgr::MatchItem::entertainment</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1abc5929dc056d638f96af1b4d556a0300" compoundref="_src_2_se_match_mgr_8h" startline="148">SeMatchMgr::MatchItem::ePlayerType</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1aa5e64c3dde82ec874ec1a84ee4882f7c" compoundref="_src_2_se_match_mgr_8h" startline="141">SeMatchMgr::MatchItem::force</references>
+        <references refid="_match_server_2_src_2_se_town_mgr_8cpp_1a0d99b78f6d107c2f607862b30d586175" compoundref="_match_server_2_src_2_se_town_mgr_8cpp" startline="4">g_kTownMgr</references>
+        <references refid="class_map_info_table_mgr_1a9449f21c1cae1164722db1429849d982" compoundref="_map_info__table_8cpp" startline="6" endline="13">MapInfoTableMgr::Get</references>
+        <references refid="classmoba_1_1_clock_1a029b72699ef2168d7429c114bfa856dd" compoundref="_clock_8cpp" startline="105" endline="109">moba::Clock::getInstance</references>
+        <references refid="class_map_info_table_mgr_1a39952135dade4b97c37babb2956d299a" compoundref="_map_info__table_8cpp" startline="53" endline="61">MapInfoTableMgr::GetMapInfoTable</references>
+        <references refid="_src_2_se_match_mgr_8cpp_1a0933e9f145e5af4fed3686f7622f26a3" compoundref="_src_2_se_match_mgr_8cpp" startline="90" endline="102">getMatchRules</references>
+        <references refid="classmoba_1_1_clock_1a405b5bd09dad4e81b74ddbd4ed00dc32" compoundref="_clock_8cpp" startline="93" endline="97">moba::Clock::getMilliSeconds</references>
+        <references refid="class_se_match_mgr_1aca82556e88fac9c0fdd9445789df0d11" compoundref="_src_2_se_match_mgr_8cpp" startline="869" endline="889">getPlayerType</references>
+        <references refid="class_se_town_mgr_1a3e1b7be924a0c5a9ae0dfaa087eb83e3" compoundref="_match_server_2_src_2_se_town_mgr_8cpp" startline="101" endline="110">SeTownMgr::GetTown</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a12dffb30ca39ab5a7ab3737bea33ba01" compoundref="_src_2_se_match_mgr_8h" startline="147">SeMatchMgr::MatchItem::itLevel</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a2282a8c66d499b4bc1f35c3d47e87fb8" compoundref="_src_2_se_match_mgr_8h" startline="146">SeMatchMgr::MatchItem::itTime</references>
+        <references refid="struct_se_match_mgr_1_1_player_info_1aa1efaead10554beff2fbc79a35c6bd84" compoundref="_src_2_se_match_mgr_8h" startline="127">SeMatchMgr::PlayerInfo::kTownSign</references>
+        <references refid="struct_se_match_mgr_1_1_player_info_1afc9fca6300debca1c52c02290d149705" compoundref="_src_2_se_match_mgr_8h" startline="124">SeMatchMgr::PlayerInfo::level</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1ac9cd8ab0a041d01749c449663b4859bd" compoundref="_src_2_se_match_mgr_8h" startline="140">SeMatchMgr::MatchItem::level</references>
+        <references refid="class_se_match_mgr_1a6d4a5a1b63995272d379f363640c15fd" compoundref="_src_2_se_match_mgr_8h" startline="207">m_timeMap</references>
+        <references refid="class_se_match_mgr_1aa4353073968319f0dae0ea1d8cdfbdf6" compoundref="_src_2_se_match_mgr_8h" startline="208">m_typeMap</references>
+        <references refid="class_se_match_mgr_1a93751f90361c7ed559c70c6975746b81" compoundref="_src_2_se_match_mgr_8h" startline="209">m_userMap</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1ad6dc9ee42f9d3a88bd134cc1239852bf" compoundref="_src_2_se_match_mgr_8h" startline="134">SeMatchMgr::MatchItem::mapID</references>
+        <references refid="_src_2_se_match_mgr_8h_1ad5ff62ee95a9b68d56da20b02a9154b5a0c52e156288d44a14bced927600fc64f" compoundref="_src_2_se_match_mgr_8h" startline="12">MATCH_STATUS_MATCHING</references>
+        <references refid="struct_se_match_mgr_1_1_player_info_1a39dedf7f1151a538df0727697b293afa" compoundref="_src_2_se_match_mgr_8h" startline="126">SeMatchMgr::PlayerInfo::matchNum</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a8cc08d1aa12b9ddc1f735ab48baec6ab" compoundref="_src_2_se_match_mgr_8h" startline="135">SeMatchMgr::MatchItem::matchstatus</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a1e385300419daa9b5fb932d481927725" compoundref="_src_2_se_match_mgr_8h" startline="144">SeMatchMgr::MatchItem::matchTime</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a67bdf6943a748c8c63e945758657bcd2" compoundref="_src_2_se_match_mgr_8h" startline="142">SeMatchMgr::MatchItem::matchTimes</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a75925cff9089e750da41a4cf8ea784a5" compoundref="_src_2_se_match_mgr_8h" startline="137">SeMatchMgr::MatchItem::matchType</references>
+        <references refid="struct_match_rule_1a6deb863c94f8169e0fc4691a0cde02f8" compoundref="_src_2_se_match_mgr_8cpp" startline="61">MatchRule::maxFunc</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a46624736b71f83c04c1f4336cf49b660" compoundref="_src_2_se_match_mgr_8h" startline="139">SeMatchMgr::MatchItem::maxLevel</references>
+        <references refid="struct_match_rule_1a9e7d278e9698ba76ca8bfeef74a97c31" compoundref="_src_2_se_match_mgr_8cpp" startline="60">MatchRule::minFunc</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a89cdb9b593d460f2eb0816d73694eb37" compoundref="_src_2_se_match_mgr_8h" startline="138">SeMatchMgr::MatchItem::minLevel</references>
+        <references refid="struct_match_rule_1a223dea33812972efe41eb6e9a063084e" compoundref="_src_2_se_match_mgr_8cpp" startline="62">MatchRule::param</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a346eb227141bfd2dc447a061533b27c2" compoundref="_src_2_se_match_mgr_8h" startline="145">SeMatchMgr::MatchItem::players</references>
+        <references refid="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa4a80158faa361b64065950c7155da8da" compoundref="_src_2_se_match_mgr_8h" startline="115">PT_NEW</references>
+        <references refid="_se_ptl_comm_define_8h_1a89b73f1dc810e11801b5b7f3ecde8abdad16485df0a79a23e23afd046e2d79ab2" compoundref="_se_ptl_comm_define_8h" startline="688">ReqResultInnerError</references>
+        <references refid="_se_ptl_comm_define_8h_1a89b73f1dc810e11801b5b7f3ecde8abda5c7a99f21af55b24222a348e2d48d760" compoundref="_se_ptl_comm_define_8h" startline="690">ReqResultOffline</references>
+        <references refid="_se_ptl_comm_define_8h_1a89b73f1dc810e11801b5b7f3ecde8abda68512ac68c7a78afc00fdf724058c614" compoundref="_se_ptl_comm_define_8h" startline="685">ReqResultSuccess</references>
+        <references refid="_se_ptl_comm_define_8h_1a89b73f1dc810e11801b5b7f3ecde8abdab0f9dbab18a56b152bd56c0f86575b55" compoundref="_se_ptl_comm_define_8h" startline="686">ReqResultWrongNum</references>
+        <references refid="_se_ptl_comm_define_8h_1a89b73f1dc810e11801b5b7f3ecde8abda90f4d57291d880f4331d92d8fa83bfd5" compoundref="_se_ptl_comm_define_8h" startline="687">ReqResultWrongStatus</references>
+        <references refid="struct_se_match_mgr_1_1_player_info_1a0e8445f882c721089cc3063c747a420f" compoundref="_src_2_se_match_mgr_8h" startline="125">SeMatchMgr::PlayerInfo::score</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a4a23ec91a3da513b35a5d75c96040469" compoundref="_src_2_se_match_mgr_8h" startline="143">SeMatchMgr::MatchItem::seats</references>
+        <references refid="_se_file_log_8h_1ab19c516672348b15ddabafb0bfb9d0a7" compoundref="_se_file_log_8h" startline="89">SeLogDebug</references>
+        <references refid="_se_tool_8cpp_1a4d30fbe56257fc998ebc1346e53be0d8" compoundref="_se_tool_8cpp" startline="50" endline="73">StrCpy</references>
+        <references refid="struct_match_index_1af0abb06abd3504065c94e2ad80e1104c" compoundref="_src_2_se_match_mgr_8h" startline="87">MatchIndex::uiMapID</references>
+        <references refid="struct_map_info_table_1a66ac141851cb8fa022b1ddfde43fc1e0" compoundref="_map_info__table_8hpp" startline="96">MapInfoTable::uiMatchType</references>
+        <referencedby refid="class_match_prepare_mgr_1acb9775ed6f51b7cbbc876c65c9908f88" compoundref="_src_2_match_prepare_mgr_8cpp" startline="93" endline="132">MatchPrepareMgr::onDataResult</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a1e1a9e8cbb2f52a7f099edfd11f71b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a688c4c26fa17c54179919f76377e93f1" kindref="member">MatchCancelResult</ref></type>
+        <definition>MatchCancelResult SeMatchMgr::OnMatchCancel</definition>
+        <argsstring>(DWord dwPlayerID)</argsstring>
+        <name>OnMatchCancel</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="107" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="334" bodyend="357"/>
+        <references refid="_se_ptl_comm_define_8h_1a688c4c26fa17c54179919f76377e93f1a567c00af76b118952bbeb1f007cfc2a0" compoundref="_se_ptl_comm_define_8h" startline="701">CancelResultInBattle</references>
+        <references refid="_se_ptl_comm_define_8h_1a688c4c26fa17c54179919f76377e93f1a3b991cd446c815298ca0481aa27fe8ce" compoundref="_se_ptl_comm_define_8h" startline="700">CancelResultNotQueue</references>
+        <references refid="_se_ptl_comm_define_8h_1a688c4c26fa17c54179919f76377e93f1ab9f700c1e9efdbcd26ae0c25e429e1ad" compoundref="_se_ptl_comm_define_8h" startline="699">CancelResultSuccess</references>
+        <references refid="class_se_match_mgr_1a7be2cbbe64529aca16e30b24170b906e" compoundref="_src_2_se_match_mgr_8cpp" startline="823" endline="830">clearMatch</references>
+        <references refid="_src_2_match_server_8cpp_1a1cd9d6d0396497f8a9d48e44d672f368" compoundref="_src_2_match_server_8cpp" startline="8">g_kMatchServer</references>
+        <references refid="_match_server_2_src_2_se_town_mgr_8cpp_1a0d99b78f6d107c2f607862b30d586175" compoundref="_match_server_2_src_2_se_town_mgr_8cpp" startline="4">g_kTownMgr</references>
+        <references refid="class_se_town_mgr_1ad5cb2c27a4409bd6df880bc33f0c5fa0" compoundref="_match_server_2_src_2_se_town_mgr_8cpp" startline="117" endline="126">SeTownMgr::GetTownSockBySign</references>
+        <references refid="class_se_match_mgr_1a93751f90361c7ed559c70c6975746b81" compoundref="_src_2_se_match_mgr_8h" startline="209">m_userMap</references>
+        <references refid="_src_2_se_match_mgr_8h_1ad5ff62ee95a9b68d56da20b02a9154b5a0c52e156288d44a14bced927600fc64f" compoundref="_src_2_se_match_mgr_8h" startline="12">MATCH_STATUS_MATCHING</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a8cc08d1aa12b9ddc1f735ab48baec6ab" compoundref="_src_2_se_match_mgr_8h" startline="135">SeMatchMgr::MatchItem::matchstatus</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a346eb227141bfd2dc447a061533b27c2" compoundref="_src_2_se_match_mgr_8h" startline="145">SeMatchMgr::MatchItem::players</references>
+        <references refid="class_se_match_mgr_1a958a85498f9563b103c18bf1f40c73a8" compoundref="_src_2_se_match_mgr_8cpp" startline="810" endline="821">removeMatch</references>
+        <references refid="class_match_server_1a423bad2c30d61c5a83eca6b5219c1166">MatchServer::SendMT_MatchCancelRep</references>
+        <referencedby refid="class_se_match_mgr_1a2ec36d55582fe6cdd43cf64e6dea60cb" compoundref="_src_2_se_match_mgr_8cpp" startline="908" endline="924">OnPlayerLeave</referencedby>
+        <referencedby refid="class_match_server_1ac612fc92eb2f07af7095d1b948ff6cb2" compoundref="_src_2_se_t_m_process_8cpp" startline="305" endline="313">MatchServer::ProcessTM_PlayerMatchCancel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1abf72d4e94970d6d9c102809756275c62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::OnBattleOver</definition>
+        <argsstring>(SeRacePlayer &amp;player)</argsstring>
+        <name>OnBattleOver</name>
+        <param>
+          <type><ref refid="struct_se_race_player" kindref="compound">SeRacePlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="108" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="359" bodyend="361"/>
+        <referencedby refid="class_se_race_mgr_1a555f6464f6b7113ca16fbe22555faa9f" compoundref="_match_server_2_src_2_se_race_mgr_8cpp" startline="968" endline="996">SeRaceMgr::DoRaceOver</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a565ced66e5b6e7edb32cf98fbc448e65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::OnConfirm</definition>
+        <argsstring>(uint32_t uiPlayerID, uint32_t uiWaiID, bool bolConfirm)</argsstring>
+        <name>OnConfirm</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>uiPlayerID</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>uiWaiID</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bolConfirm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="109" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="413" bodyend="480"/>
+        <references refid="class_match_ban_mgr_1a5d889629515e43ad143878aaeb64e296" compoundref="_src_2_match_ban_mgr_8cpp" startline="47" endline="61">MatchBanMgr::banPlayer</references>
+        <references refid="class_se_match_mgr_1a7be2cbbe64529aca16e30b24170b906e" compoundref="_src_2_se_match_mgr_8cpp" startline="823" endline="830">clearMatch</references>
+        <references refid="_src_2_match_ban_mgr_8cpp_1aa0d2e9fcd92b9a834b6652bba4c39941" compoundref="_src_2_match_ban_mgr_8cpp" startline="4">g_kMatchBanMgr</references>
+        <references refid="_src_2_match_server_8cpp_1a1cd9d6d0396497f8a9d48e44d672f368" compoundref="_src_2_match_server_8cpp" startline="8">g_kMatchServer</references>
+        <references refid="_match_server_2_src_2_se_town_mgr_8cpp_1a0d99b78f6d107c2f607862b30d586175" compoundref="_match_server_2_src_2_se_town_mgr_8cpp" startline="4">g_kTownMgr</references>
+        <references refid="struct_se_match_mgr_1_1_wait_item_1a11937771e6b730cdd314ed912bd682b0" compoundref="_src_2_se_match_mgr_8cpp" startline="384" endline="394">SeMatchMgr::WaitItem::getConfirm</references>
+        <references refid="class_se_town_mgr_1ad5cb2c27a4409bd6df880bc33f0c5fa0" compoundref="_match_server_2_src_2_se_town_mgr_8cpp" startline="117" endline="126">SeTownMgr::GetTownSockBySign</references>
+        <references refid="class_se_match_mgr_1a735f159a51a9d3ddda93afbd54e1bd52" compoundref="_src_2_se_match_mgr_8h" startline="211">m_waitMap</references>
+        <references refid="class_se_match_mgr_1a6252d5e57e70815a9e9f294239dd35ec" compoundref="_src_2_se_match_mgr_8cpp" startline="117" endline="163">openRoom</references>
+        <references refid="class_se_match_mgr_1a34d22a0cee659ccf64b3b3ce3c4d5fa4" compoundref="_src_2_se_match_mgr_8cpp" startline="832" endline="862">rejoinMatch</references>
+        <references refid="class_match_server_1ab81c1cbded4d4ab529235eb18fc3cf51">MatchServer::SendMT_NotiMatcherResult</references>
+        <references refid="class_match_server_1ab30c42803b22da976c9e46524f65072a">MatchServer::SendMT_SingleMatchConfirm</references>
+        <references refid="struct_se_match_mgr_1_1_wait_item_1af9689b6525a12e767ed230ba9fae8505" compoundref="_src_2_se_match_mgr_8cpp" startline="363" endline="382">SeMatchMgr::WaitItem::setConfirm</references>
+        <references refid="struct_se_match_mgr_1_1_wait_item_1af690ba7953276e7bf1dd95337f8afd97" compoundref="_src_2_se_match_mgr_8h" startline="170">SeMatchMgr::WaitItem::teams</references>
+        <referencedby refid="class_se_match_mgr_1a2ec36d55582fe6cdd43cf64e6dea60cb" compoundref="_src_2_se_match_mgr_8cpp" startline="908" endline="924">OnPlayerLeave</referencedby>
+        <referencedby refid="class_match_server_1a222ac72f31b6b39485b232e67884778b" compoundref="_src_2_se_t_m_process_8cpp" startline="315" endline="318">MatchServer::ProcessTM_MatchConfirm</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a2ec36d55582fe6cdd43cf64e6dea60cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::OnPlayerLeave</definition>
+        <argsstring>(DWord dwPlayerID)</argsstring>
+        <name>OnPlayerLeave</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="110" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="908" bodyend="924"/>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a9238987366f56c52de4ee067b256135d" compoundref="_src_2_se_match_mgr_8h" startline="136">SeMatchMgr::MatchItem::dwWaitID</references>
+        <references refid="class_se_match_mgr_1a93751f90361c7ed559c70c6975746b81" compoundref="_src_2_se_match_mgr_8h" startline="209">m_userMap</references>
+        <references refid="_src_2_se_match_mgr_8h_1ad5ff62ee95a9b68d56da20b02a9154b5a0c52e156288d44a14bced927600fc64f" compoundref="_src_2_se_match_mgr_8h" startline="12">MATCH_STATUS_MATCHING</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a8cc08d1aa12b9ddc1f735ab48baec6ab" compoundref="_src_2_se_match_mgr_8h" startline="135">SeMatchMgr::MatchItem::matchstatus</references>
+        <references refid="class_se_match_mgr_1a565ced66e5b6e7edb32cf98fbc448e65" compoundref="_src_2_se_match_mgr_8cpp" startline="413" endline="480">OnConfirm</references>
+        <references refid="class_se_match_mgr_1a1e1a9e8cbb2f52a7f099edfd11f71b9c" compoundref="_src_2_se_match_mgr_8cpp" startline="334" endline="357">OnMatchCancel</references>
+        <referencedby refid="class_match_server_1ab3aae3a0d1f893c8514777cf5f82cc26" compoundref="_src_2_se_t_m_process_8cpp" startline="158" endline="169">MatchServer::ProcessTM_PlayerLeave</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1aac171350dcc91aa1d84c479ae29e6f3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeMatchMgr::SeMatchMgr</definition>
+        <argsstring>()</argsstring>
+        <name>SeMatchMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a313f2303bb8842677c07d3ea1381341a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeMatchMgr::~SeMatchMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~SeMatchMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a1c63d6d17365f930c0885824afb4c5ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a5b7155dca0f8b4e5d54b9785515de80e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a89b73f1dc810e11801b5b7f3ecde8abd" kindref="member">MatchReqResult</ref></type>
+        <definition>MatchReqResult SeMatchMgr::OnMatchReq</definition>
+        <argsstring>(DWord mapid, Byte seats, const std::list&lt; MatchValueStru &gt; &amp;matchValues, const std::list&lt; HTownSign &gt; &amp;towns)</argsstring>
+        <name>OnMatchReq</name>
+        <param>
+          <type>DWord</type>
+          <declname>mapid</declname>
+        </param>
+        <param>
+          <type>Byte</type>
+          <declname>seats</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="struct_match_value_stru" kindref="compound">MatchValueStru</ref> &gt; &amp;</type>
+          <declname>matchValues</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="struct_h_town_sign" kindref="compound">HTownSign</ref> &gt; &amp;</type>
+          <declname>towns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a1e1a9e8cbb2f52a7f099edfd11f71b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_se_ptl_comm_define_8h_1a688c4c26fa17c54179919f76377e93f1" kindref="member">MatchCancelResult</ref></type>
+        <definition>MatchCancelResult SeMatchMgr::OnMatchCancel</definition>
+        <argsstring>(DWord dwPlayerID)</argsstring>
+        <name>OnMatchCancel</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1abf72d4e94970d6d9c102809756275c62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::OnBattleOver</definition>
+        <argsstring>(SeRacePlayer &amp;player)</argsstring>
+        <name>OnBattleOver</name>
+        <param>
+          <type><ref refid="struct_se_race_player" kindref="compound">SeRacePlayer</ref> &amp;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a565ced66e5b6e7edb32cf98fbc448e65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::OnConfirm</definition>
+        <argsstring>(uint32_t uiPlayerID, uint32_t uiWaiID, bool bolConfirm)</argsstring>
+        <name>OnConfirm</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>uiPlayerID</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>uiWaiID</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bolConfirm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a2ec36d55582fe6cdd43cf64e6dea60cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::OnPlayerLeave</definition>
+        <argsstring>(DWord dwPlayerID)</argsstring>
+        <name>OnPlayerLeave</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="110" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_se_match_mgr_1aea13a0ecf1bf7c29349f83822c16e994" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::UpdateRoom</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateRoom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="112" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="181" bodyend="231"/>
+        <references refid="class_match_ban_mgr_1a5d889629515e43ad143878aaeb64e296" compoundref="_src_2_match_ban_mgr_8cpp" startline="47" endline="61">MatchBanMgr::banPlayer</references>
+        <references refid="class_se_match_mgr_1a7be2cbbe64529aca16e30b24170b906e" compoundref="_src_2_se_match_mgr_8cpp" startline="823" endline="830">clearMatch</references>
+        <references refid="_src_2_match_ban_mgr_8cpp_1aa0d2e9fcd92b9a834b6652bba4c39941" compoundref="_src_2_match_ban_mgr_8cpp" startline="4">g_kMatchBanMgr</references>
+        <references refid="_src_2_match_server_8cpp_1a1cd9d6d0396497f8a9d48e44d672f368" compoundref="_src_2_match_server_8cpp" startline="8">g_kMatchServer</references>
+        <references refid="_match_server_2_src_2_se_town_mgr_8cpp_1a0d99b78f6d107c2f607862b30d586175" compoundref="_match_server_2_src_2_se_town_mgr_8cpp" startline="4">g_kTownMgr</references>
+        <references refid="classmoba_1_1_clock_1a029b72699ef2168d7429c114bfa856dd" compoundref="_clock_8cpp" startline="105" endline="109">moba::Clock::getInstance</references>
+        <references refid="classmoba_1_1_clock_1a405b5bd09dad4e81b74ddbd4ed00dc32" compoundref="_clock_8cpp" startline="93" endline="97">moba::Clock::getMilliSeconds</references>
+        <references refid="class_se_town_mgr_1ad5cb2c27a4409bd6df880bc33f0c5fa0" compoundref="_match_server_2_src_2_se_town_mgr_8cpp" startline="117" endline="126">SeTownMgr::GetTownSockBySign</references>
+        <references refid="class_se_match_mgr_1a735f159a51a9d3ddda93afbd54e1bd52" compoundref="_src_2_se_match_mgr_8h" startline="211">m_waitMap</references>
+        <references refid="class_se_match_mgr_1a34d22a0cee659ccf64b3b3ce3c4d5fa4" compoundref="_src_2_se_match_mgr_8cpp" startline="832" endline="862">rejoinMatch</references>
+        <references refid="class_match_server_1ab81c1cbded4d4ab529235eb18fc3cf51">MatchServer::SendMT_NotiMatcherResult</references>
+        <references refid="struct_se_match_mgr_1_1_wait_item_1a4945ad6ca63ff55c15c2af64165b3007" compoundref="_src_2_se_match_mgr_8h" startline="165">SeMatchMgr::WaitItem::startTime</references>
+        <references refid="struct_se_match_mgr_1_1_wait_item_1af690ba7953276e7bf1dd95337f8afd97" compoundref="_src_2_se_match_mgr_8h" startline="170">SeMatchMgr::WaitItem::teams</references>
+        <referencedby refid="class_se_match_mgr_1a1c63d6d17365f930c0885824afb4c5ef" compoundref="_src_2_se_match_mgr_8cpp" startline="165" endline="179">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1ac4e1f79cc61e7824b61e655524c89d4f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::match</definition>
+        <argsstring>(MatchItem *item)</argsstring>
+        <name>match</name>
+        <param>
+          <type><ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>匹配 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="182" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="635" bodyend="742"/>
+        <references refid="class_se_match_mgr_1a8d0caf15f9478fb8580a074284e66b58" compoundref="_src_2_se_match_mgr_8cpp" startline="744" endline="808">addWaitRoom</references>
+        <references refid="struct_se_match_config_1af69c6286e014ba630ddbd1bdb7e8290a" compoundref="_src_2_match_server_def_8h" startline="43">SeMatchConfig::bMatchTimeoutRobot</references>
+        <references refid="struct_match_index_1a3903a486a0d51cfd57f4a44b08577a36" compoundref="_src_2_se_match_mgr_8h" startline="86">MatchIndex::entertainment</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a618a796900e4eff2b141dc51665c5e85" compoundref="_src_2_se_match_mgr_8h" startline="149">SeMatchMgr::MatchItem::entertainment</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1abc5929dc056d638f96af1b4d556a0300" compoundref="_src_2_se_match_mgr_8h" startline="148">SeMatchMgr::MatchItem::ePlayerType</references>
+        <references refid="_src_2_match_server_8cpp_1a1cd9d6d0396497f8a9d48e44d672f368" compoundref="_src_2_match_server_8cpp" startline="8">g_kMatchServer</references>
+        <references refid="class_map_info_table_mgr_1a9449f21c1cae1164722db1429849d982" compoundref="_map_info__table_8cpp" startline="6" endline="13">MapInfoTableMgr::Get</references>
+        <references refid="class_match_server_1afcffa3c5b48c94fc6ca04df072450526" compoundref="_src_2_match_server_8h" startline="25" endline="25">MatchServer::GetConfig</references>
+        <references refid="class_map_info_table_mgr_1a39952135dade4b97c37babb2956d299a" compoundref="_map_info__table_8cpp" startline="53" endline="61">MapInfoTableMgr::GetMapInfoTable</references>
+        <references refid="_src_2_se_match_mgr_8cpp_1a0933e9f145e5af4fed3686f7622f26a3" compoundref="_src_2_se_match_mgr_8cpp" startline="90" endline="102">getMatchRules</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a12dffb30ca39ab5a7ab3737bea33ba01" compoundref="_src_2_se_match_mgr_8h" startline="147">SeMatchMgr::MatchItem::itLevel</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a2282a8c66d499b4bc1f35c3d47e87fb8" compoundref="_src_2_se_match_mgr_8h" startline="146">SeMatchMgr::MatchItem::itTime</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1ac9cd8ab0a041d01749c449663b4859bd" compoundref="_src_2_se_match_mgr_8h" startline="140">SeMatchMgr::MatchItem::level</references>
+        <references refid="class_se_match_mgr_1a6d4a5a1b63995272d379f363640c15fd" compoundref="_src_2_se_match_mgr_8h" startline="207">m_timeMap</references>
+        <references refid="class_se_match_mgr_1aa4353073968319f0dae0ea1d8cdfbdf6" compoundref="_src_2_se_match_mgr_8h" startline="208">m_typeMap</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1ad6dc9ee42f9d3a88bd134cc1239852bf" compoundref="_src_2_se_match_mgr_8h" startline="134">SeMatchMgr::MatchItem::mapID</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a1e385300419daa9b5fb932d481927725" compoundref="_src_2_se_match_mgr_8h" startline="144">SeMatchMgr::MatchItem::matchTime</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a67bdf6943a748c8c63e945758657bcd2" compoundref="_src_2_se_match_mgr_8h" startline="142">SeMatchMgr::MatchItem::matchTimes</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a75925cff9089e750da41a4cf8ea784a5" compoundref="_src_2_se_match_mgr_8h" startline="137">SeMatchMgr::MatchItem::matchType</references>
+        <references refid="struct_match_rule_1a6deb863c94f8169e0fc4691a0cde02f8" compoundref="_src_2_se_match_mgr_8cpp" startline="61">MatchRule::maxFunc</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a46624736b71f83c04c1f4336cf49b660" compoundref="_src_2_se_match_mgr_8h" startline="139">SeMatchMgr::MatchItem::maxLevel</references>
+        <references refid="struct_match_rule_1a9e7d278e9698ba76ca8bfeef74a97c31" compoundref="_src_2_se_match_mgr_8cpp" startline="60">MatchRule::minFunc</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a89cdb9b593d460f2eb0816d73694eb37" compoundref="_src_2_se_match_mgr_8h" startline="138">SeMatchMgr::MatchItem::minLevel</references>
+        <references refid="struct_match_rule_1af119d98b1fc4e54ecd355a616ab1a340" compoundref="_src_2_se_match_mgr_8cpp" startline="59">MatchRule::ms</references>
+        <references refid="struct_match_rule_1a223dea33812972efe41eb6e9a063084e" compoundref="_src_2_se_match_mgr_8cpp" startline="62">MatchRule::param</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a346eb227141bfd2dc447a061533b27c2" compoundref="_src_2_se_match_mgr_8h" startline="145">SeMatchMgr::MatchItem::players</references>
+        <references refid="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa3ba9947f7df148128171359821c55314" compoundref="_src_2_se_match_mgr_8h" startline="116">PT_NOVICE</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a4a23ec91a3da513b35a5d75c96040469" compoundref="_src_2_se_match_mgr_8h" startline="143">SeMatchMgr::MatchItem::seats</references>
+        <references refid="_se_file_log_8h_1ab19c516672348b15ddabafb0bfb9d0a7" compoundref="_se_file_log_8h" startline="89">SeLogDebug</references>
+        <references refid="struct_match_index_1af0abb06abd3504065c94e2ad80e1104c" compoundref="_src_2_se_match_mgr_8h" startline="87">MatchIndex::uiMapID</references>
+        <referencedby refid="class_se_match_mgr_1a1c63d6d17365f930c0885824afb4c5ef" compoundref="_src_2_se_match_mgr_8cpp" startline="165" endline="179">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1acf795fba3e4459f438aa33024372cda4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeMatchMgr::match</definition>
+        <argsstring>(MatchItem *item, std::multimap&lt; double, MatchItem * &gt; *matchArray, std::list&lt; MatchItem * &gt; &amp;groupA, std::list&lt; MatchItem * &gt; &amp;groupB)</argsstring>
+        <name>match</name>
+        <param>
+          <type><ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>std::multimap&lt; double, <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt; *</type>
+          <declname>matchArray</declname>
+        </param>
+        <param>
+          <type>std::list&lt; <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt; &amp;</type>
+          <declname>groupA</declname>
+        </param>
+        <param>
+          <type>std::list&lt; <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt; &amp;</type>
+          <declname>groupB</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="183" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="576" bodyend="633"/>
+        <references refid="struct_combination_item_1ad93807ec451f8cabcb28855cfd47f985" compoundref="_src_2_se_match_mgr_8cpp" startline="523">CombinationItem::combination</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a618a796900e4eff2b141dc51665c5e85" compoundref="_src_2_se_match_mgr_8h" startline="149">SeMatchMgr::MatchItem::entertainment</references>
+        <references refid="class_se_match_mgr_1a6bf90d7b5fd1637f1cc44a098c3dff50" compoundref="_src_2_se_match_mgr_8cpp" startline="535" endline="574">getMatchItems</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a67bdf6943a748c8c63e945758657bcd2" compoundref="_src_2_se_match_mgr_8h" startline="142">SeMatchMgr::MatchItem::matchTimes</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1aef3e89b3485c2c797e9433eee525bbf9" compoundref="_src_2_se_match_mgr_8cpp" startline="408" endline="411">SeMatchMgr::MatchItem::onlyMatchFriend</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a346eb227141bfd2dc447a061533b27c2" compoundref="_src_2_se_match_mgr_8h" startline="145">SeMatchMgr::MatchItem::players</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a4a23ec91a3da513b35a5d75c96040469" compoundref="_src_2_se_match_mgr_8h" startline="143">SeMatchMgr::MatchItem::seats</references>
+        <references refid="struct_combination_item_1a6c4ffe9fdab24fc2f6958f378fd41858" compoundref="_src_2_se_match_mgr_8cpp" startline="524">CombinationItem::size</references>
+        <references refid="_src_2_se_match_mgr_8cpp_1af4044fdd3603ce31fd05d12ff31551e5" compoundref="_src_2_se_match_mgr_8cpp" startline="65">TURN_FALSE_FORCE_GAME</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a6bf90d7b5fd1637f1cc44a098c3dff50" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeMatchMgr::getMatchItems</definition>
+        <argsstring>(int *counts, std::multimap&lt; double, MatchItem * &gt; *matchArray, std::list&lt; MatchItem * &gt; &amp;group)</argsstring>
+        <name>getMatchItems</name>
+        <param>
+          <type>int *</type>
+          <declname>counts</declname>
+        </param>
+        <param>
+          <type>std::multimap&lt; double, <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt; *</type>
+          <declname>matchArray</declname>
+        </param>
+        <param>
+          <type>std::list&lt; <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt; &amp;</type>
+          <declname>group</declname>
+        </param>
+        <briefdescription>
+<para>从数组中获得指定数量的条目 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="185" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="535" bodyend="574"/>
+        <references refid="_se_file_log_8h_1ab19c516672348b15ddabafb0bfb9d0a7" compoundref="_se_file_log_8h" startline="89">SeLogDebug</references>
+        <referencedby refid="class_se_match_mgr_1acf795fba3e4459f438aa33024372cda4" compoundref="_src_2_se_match_mgr_8cpp" startline="576" endline="633">match</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a8d0caf15f9478fb8580a074284e66b58" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::addWaitRoom</definition>
+        <argsstring>(const std::list&lt; MatchItem * &gt; &amp;groupA, const std::list&lt; MatchItem * &gt; &amp;groupB)</argsstring>
+        <name>addWaitRoom</name>
+        <param>
+          <type>const std::list&lt; <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt; &amp;</type>
+          <declname>groupA</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt; &amp;</type>
+          <declname>groupB</declname>
+        </param>
+        <briefdescription>
+<para>加入到等待房间 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="187" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="744" bodyend="808"/>
+        <references refid="_src_2_match_server_8cpp_1a1cd9d6d0396497f8a9d48e44d672f368" compoundref="_src_2_match_server_8cpp" startline="8">g_kMatchServer</references>
+        <references refid="_match_server_2_src_2_se_town_mgr_8cpp_1a0d99b78f6d107c2f607862b30d586175" compoundref="_match_server_2_src_2_se_town_mgr_8cpp" startline="4">g_kTownMgr</references>
+        <references refid="classmoba_1_1_clock_1a029b72699ef2168d7429c114bfa856dd" compoundref="_clock_8cpp" startline="105" endline="109">moba::Clock::getInstance</references>
+        <references refid="classmoba_1_1_clock_1a405b5bd09dad4e81b74ddbd4ed00dc32" compoundref="_clock_8cpp" startline="93" endline="97">moba::Clock::getMilliSeconds</references>
+        <references refid="class_se_town_mgr_1ad5cb2c27a4409bd6df880bc33f0c5fa0" compoundref="_match_server_2_src_2_se_town_mgr_8cpp" startline="117" endline="126">SeTownMgr::GetTownSockBySign</references>
+        <references refid="struct_se_match_mgr_1_1_wait_item_1aa1bfe07712d7505282e86ef5ca2ee99b" compoundref="_src_2_se_match_mgr_8h" startline="168">SeMatchMgr::WaitItem::groupA</references>
+        <references refid="struct_se_match_mgr_1_1_wait_item_1a5ed24bc2c6bc03a12c8651ea23ee9b99" compoundref="_src_2_se_match_mgr_8h" startline="169">SeMatchMgr::WaitItem::groupB</references>
+        <references refid="class_se_match_mgr_1a735f159a51a9d3ddda93afbd54e1bd52" compoundref="_src_2_se_match_mgr_8h" startline="211">m_waitMap</references>
+        <references refid="_src_2_se_match_mgr_8h_1ad5ff62ee95a9b68d56da20b02a9154b5aa33d1d05efecfd3fc78792563dd37c75" compoundref="_src_2_se_match_mgr_8h" startline="13">MATCH_STATUS_INRACE</references>
+        <references refid="class_se_match_mgr_1a958a85498f9563b103c18bf1f40c73a8" compoundref="_src_2_se_match_mgr_8cpp" startline="810" endline="821">removeMatch</references>
+        <references refid="_se_file_log_8h_1ab19c516672348b15ddabafb0bfb9d0a7" compoundref="_se_file_log_8h" startline="89">SeLogDebug</references>
+        <references refid="class_match_server_1a72057f158d4383ac5297703cb2ebf9bb">MatchServer::SendMT_NotiMatcherPre</references>
+        <references refid="struct_se_match_mgr_1_1_wait_item_1a4945ad6ca63ff55c15c2af64165b3007" compoundref="_src_2_se_match_mgr_8h" startline="165">SeMatchMgr::WaitItem::startTime</references>
+        <references refid="struct_se_match_mgr_1_1_wait_item_1af690ba7953276e7bf1dd95337f8afd97" compoundref="_src_2_se_match_mgr_8h" startline="170">SeMatchMgr::WaitItem::teams</references>
+        <references refid="struct_se_match_mgr_1_1_wait_item_1ab1f6cf2c005db1a29427742722dbf543" compoundref="_src_2_se_match_mgr_8h" startline="166">SeMatchMgr::WaitItem::uiMapID</references>
+        <references refid="struct_se_match_mgr_1_1_wait_item_1a2fd207ffcc56ae4557a14a804b767e6c" compoundref="_src_2_se_match_mgr_8h" startline="163">SeMatchMgr::WaitItem::uiWaitID</references>
+        <references refid="_src_2_se_match_mgr_8h_1a90cf7eef447e58ffa7b02056cd37969fa54895fe5b9f91fdbbe524fc31667bfcc" compoundref="_src_2_se_match_mgr_8h" startline="57">WAITSTATUSWAIT</references>
+        <references refid="struct_se_match_mgr_1_1_wait_item_1a5f43872371c3c1e52fe8b23aae52e6e1" compoundref="_src_2_se_match_mgr_8h" startline="164">SeMatchMgr::WaitItem::ws</references>
+        <referencedby refid="class_se_match_mgr_1ac4e1f79cc61e7824b61e655524c89d4f" compoundref="_src_2_se_match_mgr_8cpp" startline="635" endline="742">match</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a958a85498f9563b103c18bf1f40c73a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::removeMatch</definition>
+        <argsstring>(MatchItem *item)</argsstring>
+        <name>removeMatch</name>
+        <param>
+          <type><ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="189" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="810" bodyend="821"/>
+        <references refid="struct_match_index_1a3903a486a0d51cfd57f4a44b08577a36" compoundref="_src_2_se_match_mgr_8h" startline="86">MatchIndex::entertainment</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a618a796900e4eff2b141dc51665c5e85" compoundref="_src_2_se_match_mgr_8h" startline="149">SeMatchMgr::MatchItem::entertainment</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a12dffb30ca39ab5a7ab3737bea33ba01" compoundref="_src_2_se_match_mgr_8h" startline="147">SeMatchMgr::MatchItem::itLevel</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a2282a8c66d499b4bc1f35c3d47e87fb8" compoundref="_src_2_se_match_mgr_8h" startline="146">SeMatchMgr::MatchItem::itTime</references>
+        <references refid="class_se_match_mgr_1a6d4a5a1b63995272d379f363640c15fd" compoundref="_src_2_se_match_mgr_8h" startline="207">m_timeMap</references>
+        <references refid="class_se_match_mgr_1aa4353073968319f0dae0ea1d8cdfbdf6" compoundref="_src_2_se_match_mgr_8h" startline="208">m_typeMap</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1ad6dc9ee42f9d3a88bd134cc1239852bf" compoundref="_src_2_se_match_mgr_8h" startline="134">SeMatchMgr::MatchItem::mapID</references>
+        <references refid="struct_match_index_1af0abb06abd3504065c94e2ad80e1104c" compoundref="_src_2_se_match_mgr_8h" startline="87">MatchIndex::uiMapID</references>
+        <referencedby refid="class_se_match_mgr_1a8d0caf15f9478fb8580a074284e66b58" compoundref="_src_2_se_match_mgr_8cpp" startline="744" endline="808">addWaitRoom</referencedby>
+        <referencedby refid="class_se_match_mgr_1a1e1a9e8cbb2f52a7f099edfd11f71b9c" compoundref="_src_2_se_match_mgr_8cpp" startline="334" endline="357">OnMatchCancel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a7be2cbbe64529aca16e30b24170b906e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::clearMatch</definition>
+        <argsstring>(MatchItem *item)</argsstring>
+        <name>clearMatch</name>
+        <param>
+          <type><ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="191" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="823" bodyend="830"/>
+        <references refid="class_se_match_mgr_1a93751f90361c7ed559c70c6975746b81" compoundref="_src_2_se_match_mgr_8h" startline="209">m_userMap</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a346eb227141bfd2dc447a061533b27c2" compoundref="_src_2_se_match_mgr_8h" startline="145">SeMatchMgr::MatchItem::players</references>
+        <referencedby refid="class_se_match_mgr_1a565ced66e5b6e7edb32cf98fbc448e65" compoundref="_src_2_se_match_mgr_8cpp" startline="413" endline="480">OnConfirm</referencedby>
+        <referencedby refid="class_se_match_mgr_1a1e1a9e8cbb2f52a7f099edfd11f71b9c" compoundref="_src_2_se_match_mgr_8cpp" startline="334" endline="357">OnMatchCancel</referencedby>
+        <referencedby refid="class_se_match_mgr_1aea13a0ecf1bf7c29349f83822c16e994" compoundref="_src_2_se_match_mgr_8cpp" startline="181" endline="231">UpdateRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a34d22a0cee659ccf64b3b3ce3c4d5fa4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::rejoinMatch</definition>
+        <argsstring>(MatchItem *item)</argsstring>
+        <name>rejoinMatch</name>
+        <param>
+          <type><ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="193" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="832" bodyend="862"/>
+        <references refid="struct_match_index_1a3903a486a0d51cfd57f4a44b08577a36" compoundref="_src_2_se_match_mgr_8h" startline="86">MatchIndex::entertainment</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a618a796900e4eff2b141dc51665c5e85" compoundref="_src_2_se_match_mgr_8h" startline="149">SeMatchMgr::MatchItem::entertainment</references>
+        <references refid="classmoba_1_1_clock_1a029b72699ef2168d7429c114bfa856dd" compoundref="_clock_8cpp" startline="105" endline="109">moba::Clock::getInstance</references>
+        <references refid="_src_2_se_match_mgr_8cpp_1a0933e9f145e5af4fed3686f7622f26a3" compoundref="_src_2_se_match_mgr_8cpp" startline="90" endline="102">getMatchRules</references>
+        <references refid="classmoba_1_1_clock_1a405b5bd09dad4e81b74ddbd4ed00dc32" compoundref="_clock_8cpp" startline="93" endline="97">moba::Clock::getMilliSeconds</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a12dffb30ca39ab5a7ab3737bea33ba01" compoundref="_src_2_se_match_mgr_8h" startline="147">SeMatchMgr::MatchItem::itLevel</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a2282a8c66d499b4bc1f35c3d47e87fb8" compoundref="_src_2_se_match_mgr_8h" startline="146">SeMatchMgr::MatchItem::itTime</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1ac9cd8ab0a041d01749c449663b4859bd" compoundref="_src_2_se_match_mgr_8h" startline="140">SeMatchMgr::MatchItem::level</references>
+        <references refid="class_se_match_mgr_1a6d4a5a1b63995272d379f363640c15fd" compoundref="_src_2_se_match_mgr_8h" startline="207">m_timeMap</references>
+        <references refid="class_se_match_mgr_1aa4353073968319f0dae0ea1d8cdfbdf6" compoundref="_src_2_se_match_mgr_8h" startline="208">m_typeMap</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1ad6dc9ee42f9d3a88bd134cc1239852bf" compoundref="_src_2_se_match_mgr_8h" startline="134">SeMatchMgr::MatchItem::mapID</references>
+        <references refid="_src_2_se_match_mgr_8h_1ad5ff62ee95a9b68d56da20b02a9154b5a0c52e156288d44a14bced927600fc64f" compoundref="_src_2_se_match_mgr_8h" startline="12">MATCH_STATUS_MATCHING</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a8cc08d1aa12b9ddc1f735ab48baec6ab" compoundref="_src_2_se_match_mgr_8h" startline="135">SeMatchMgr::MatchItem::matchstatus</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a1e385300419daa9b5fb932d481927725" compoundref="_src_2_se_match_mgr_8h" startline="144">SeMatchMgr::MatchItem::matchTime</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a67bdf6943a748c8c63e945758657bcd2" compoundref="_src_2_se_match_mgr_8h" startline="142">SeMatchMgr::MatchItem::matchTimes</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a75925cff9089e750da41a4cf8ea784a5" compoundref="_src_2_se_match_mgr_8h" startline="137">SeMatchMgr::MatchItem::matchType</references>
+        <references refid="struct_match_rule_1a6deb863c94f8169e0fc4691a0cde02f8" compoundref="_src_2_se_match_mgr_8cpp" startline="61">MatchRule::maxFunc</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a46624736b71f83c04c1f4336cf49b660" compoundref="_src_2_se_match_mgr_8h" startline="139">SeMatchMgr::MatchItem::maxLevel</references>
+        <references refid="struct_match_rule_1a9e7d278e9698ba76ca8bfeef74a97c31" compoundref="_src_2_se_match_mgr_8cpp" startline="60">MatchRule::minFunc</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a89cdb9b593d460f2eb0816d73694eb37" compoundref="_src_2_se_match_mgr_8h" startline="138">SeMatchMgr::MatchItem::minLevel</references>
+        <references refid="struct_match_rule_1af119d98b1fc4e54ecd355a616ab1a340" compoundref="_src_2_se_match_mgr_8cpp" startline="59">MatchRule::ms</references>
+        <references refid="struct_match_rule_1a223dea33812972efe41eb6e9a063084e" compoundref="_src_2_se_match_mgr_8cpp" startline="62">MatchRule::param</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a346eb227141bfd2dc447a061533b27c2" compoundref="_src_2_se_match_mgr_8h" startline="145">SeMatchMgr::MatchItem::players</references>
+        <references refid="struct_match_index_1af0abb06abd3504065c94e2ad80e1104c" compoundref="_src_2_se_match_mgr_8h" startline="87">MatchIndex::uiMapID</references>
+        <referencedby refid="class_se_match_mgr_1a565ced66e5b6e7edb32cf98fbc448e65" compoundref="_src_2_se_match_mgr_8cpp" startline="413" endline="480">OnConfirm</referencedby>
+        <referencedby refid="class_se_match_mgr_1aea13a0ecf1bf7c29349f83822c16e994" compoundref="_src_2_se_match_mgr_8cpp" startline="181" endline="231">UpdateRoom</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a6252d5e57e70815a9e9f294239dd35ec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::openRoom</definition>
+        <argsstring>(WaitItem *item)</argsstring>
+        <name>openRoom</name>
+        <param>
+          <type><ref refid="struct_se_match_mgr_1_1_wait_item" kindref="compound">WaitItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="195" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="117" bodyend="163"/>
+        <references refid="struct_se_team_player_1a4ab1aae173d4251981fdb72b371a7818" compoundref="_src_2_se_open_room_mgr_def_8h" startline="38">SeTeamPlayer::acName</references>
+        <references refid="struct_se_open_room_1a33d0d6848e57ab7e576e4a20a7bbfaa6" compoundref="_src_2_se_open_room_mgr_def_8h" startline="53">SeOpenRoom::bPlayBoss</references>
+        <references refid="struct_se_open_room_1a9d600c0e01058cdc26b4b2bdc0e28bdc" compoundref="_src_2_se_open_room_mgr_def_8h" startline="58">SeOpenRoom::bSysCreate</references>
+        <references refid="struct_se_open_room_1a5f0267c57ebdf2bce16901b7998c1256" compoundref="_src_2_se_open_room_mgr_def_8h" startline="54">SeOpenRoom::bUseRobot</references>
+        <references refid="_model_res__table_8hpp_1a5090253e487aa65661535d2d709f0c0fa90d15ec02279b742ca91ac168c9c23d7" compoundref="_model_res__table_8hpp" startline="13">CAMP_A</references>
+        <references refid="_model_res__table_8hpp_1a5090253e487aa65661535d2d709f0c0fac1ae678a29627dca5d61704c93c3025b" compoundref="_model_res__table_8hpp" startline="14">CAMP_B</references>
+        <references refid="_src_2_se_match_mgr_8cpp_1ae1fbcbeb113b4ac121eba7f56c48d2f5" compoundref="_src_2_se_match_mgr_8cpp" startline="115">CAMP_SIZE</references>
+        <references refid="struct_se_open_room_1a1eb46785e2e03a72c991d33bf56a9534" compoundref="_src_2_se_open_room_mgr_def_8h" startline="60">SeOpenRoom::campSeat</references>
+        <references refid="struct_se_open_room_1ab95e9ef095a119d004ba06f4464db4d0" compoundref="_src_2_se_open_room_mgr_def_8h" startline="55">SeOpenRoom::dwID</references>
+        <references refid="struct_se_team_player_1a04bf8dec44bb691f7b8302c13999e2c1" compoundref="_src_2_se_open_room_mgr_def_8h" startline="39">SeTeamPlayer::dwJoinTime</references>
+        <references refid="struct_se_open_room_1a7d17bef484e7800a43a4dba531f6a499" compoundref="_src_2_se_open_room_mgr_def_8h" startline="56">SeOpenRoom::dwLeaderID</references>
+        <references refid="struct_se_open_room_1a8c4e5d73732441fd86ba4aaab8c4f501" compoundref="_src_2_se_open_room_mgr_def_8h" startline="61">SeOpenRoom::dwMapID</references>
+        <references refid="struct_se_team_player_1a13eb8677a414e4b50f1d15ad47e797b7" compoundref="_src_2_se_open_room_mgr_def_8h" startline="37">SeTeamPlayer::dwPlayerID</references>
+        <references refid="struct_se_team_player_1a55287fbe65a2d18271fc81ff38e70efd" compoundref="_src_2_se_open_room_mgr_def_8h" startline="36">SeTeamPlayer::dwTeamID</references>
+        <references refid="_src_2_match_server_8cpp_1a1cd9d6d0396497f8a9d48e44d672f368" compoundref="_src_2_match_server_8cpp" startline="8">g_kMatchServer</references>
+        <references refid="class_map_info_table_mgr_1a9449f21c1cae1164722db1429849d982" compoundref="_map_info__table_8cpp" startline="6" endline="13">MapInfoTableMgr::Get</references>
+        <references refid="class_map_info_table_mgr_1a39952135dade4b97c37babb2956d299a" compoundref="_map_info__table_8cpp" startline="53" endline="61">MapInfoTableMgr::GetMapInfoTable</references>
+        <references refid="class_match_server_1ad3ce38db6c10f10891dbfd700cb954ca" compoundref="_src_2_se_match_other_8cpp" startline="5" endline="8">MatchServer::GetServerTime</references>
+        <references refid="struct_se_open_room_1a64a5e56aaaf37e1a944b4501d887f451" compoundref="_src_2_se_open_room_mgr_def_8h" startline="74">SeOpenRoom::groupA</references>
+        <references refid="struct_se_match_mgr_1_1_wait_item_1aa1bfe07712d7505282e86ef5ca2ee99b" compoundref="_src_2_se_match_mgr_8h" startline="168">SeMatchMgr::WaitItem::groupA</references>
+        <references refid="struct_se_open_room_1af719f64704b0b72813c6be8cf20b0d16" compoundref="_src_2_se_open_room_mgr_def_8h" startline="75">SeOpenRoom::groupB</references>
+        <references refid="struct_se_match_mgr_1_1_wait_item_1a5ed24bc2c6bc03a12c8651ea23ee9b99" compoundref="_src_2_se_match_mgr_8h" startline="169">SeMatchMgr::WaitItem::groupB</references>
+        <references refid="struct_map_info_table_1af964b291ca0b25d23732cf2860dc4155" compoundref="_map_info__table_8hpp" startline="109">MapInfoTable::iCampNum</references>
+        <references refid="struct_se_open_room_1a83de6dff2fab271d9627d3c8f0ed6699" compoundref="_src_2_se_open_room_mgr_def_8h" startline="64">SeOpenRoom::iCampPlayerNum</references>
+        <references refid="struct_se_open_room_1a8cbf457b7eec402663d3f5a05c8f61bd" compoundref="_src_2_se_open_room_mgr_def_8h" startline="52">SeOpenRoom::iDifficulty</references>
+        <references refid="struct_map_info_table_1ab6affe9226795011119570d2b95dda7a" compoundref="_map_info__table_8hpp" startline="108">MapInfoTable::iMaxPlayer</references>
+        <references refid="struct_se_team_player_1ab4e89be20102fca41606d25f7112987b" compoundref="_src_2_se_open_room_mgr_def_8h" startline="35">SeTeamPlayer::kTownSign</references>
+        <references refid="struct_se_open_room_1a39733e1ec7d3281cb28aad588dcbf4a9" compoundref="_src_2_se_open_room_mgr_def_8h" startline="59">SeOpenRoom::memberPtr</references>
+        <references refid="_se_file_log_8h_1ab19c516672348b15ddabafb0bfb9d0a7" compoundref="_se_file_log_8h" startline="89">SeLogDebug</references>
+        <references refid="_src_2_se_open_room_mgr_8h_1a3f7186e954822e2db62686352fc88b49" compoundref="_src_2_se_open_room_mgr_8h" startline="57">SeOpenRoomMgrInst</references>
+        <references refid="_se_tool_8cpp_1a4d30fbe56257fc998ebc1346e53be0d8" compoundref="_se_tool_8cpp" startline="50" endline="73">StrCpy</references>
+        <references refid="struct_se_match_mgr_1_1_wait_item_1ab1f6cf2c005db1a29427742722dbf543" compoundref="_src_2_se_match_mgr_8h" startline="166">SeMatchMgr::WaitItem::uiMapID</references>
+        <references refid="struct_se_match_mgr_1_1_wait_item_1a2fd207ffcc56ae4557a14a804b767e6c" compoundref="_src_2_se_match_mgr_8h" startline="163">SeMatchMgr::WaitItem::uiWaitID</references>
+        <referencedby refid="class_se_match_mgr_1a565ced66e5b6e7edb32cf98fbc448e65" compoundref="_src_2_se_match_mgr_8cpp" startline="413" endline="480">OnConfirm</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1aea13a0ecf1bf7c29349f83822c16e994" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::UpdateRoom</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateRoom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1ac4e1f79cc61e7824b61e655524c89d4f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::match</definition>
+        <argsstring>(MatchItem *item)</argsstring>
+        <name>match</name>
+        <param>
+          <type><ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>匹配 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1acf795fba3e4459f438aa33024372cda4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeMatchMgr::match</definition>
+        <argsstring>(MatchItem *item, std::multimap&lt; double, MatchItem * &gt; *matchArray, std::list&lt; MatchItem * &gt; &amp;groupA, std::list&lt; MatchItem * &gt; &amp;groupB)</argsstring>
+        <name>match</name>
+        <param>
+          <type><ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>std::multimap&lt; double, <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt; *</type>
+          <declname>matchArray</declname>
+        </param>
+        <param>
+          <type>std::list&lt; <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt; &amp;</type>
+          <declname>groupA</declname>
+        </param>
+        <param>
+          <type>std::list&lt; <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt; &amp;</type>
+          <declname>groupB</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a6bf90d7b5fd1637f1cc44a098c3dff50" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeMatchMgr::getMatchItems</definition>
+        <argsstring>(int *counts, std::multimap&lt; double, MatchItem * &gt; *matchArray, std::list&lt; MatchItem * &gt; &amp;group)</argsstring>
+        <name>getMatchItems</name>
+        <param>
+          <type>int *</type>
+          <declname>counts</declname>
+        </param>
+        <param>
+          <type>std::multimap&lt; double, <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt; *</type>
+          <declname>matchArray</declname>
+        </param>
+        <param>
+          <type>std::list&lt; <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt; &amp;</type>
+          <declname>group</declname>
+        </param>
+        <briefdescription>
+<para>从数组中获得指定数量的条目 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a8d0caf15f9478fb8580a074284e66b58" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::addWaitRoom</definition>
+        <argsstring>(const std::list&lt; MatchItem * &gt; &amp;groupA, const std::list&lt; MatchItem * &gt; &amp;groupB)</argsstring>
+        <name>addWaitRoom</name>
+        <param>
+          <type>const std::list&lt; <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt; &amp;</type>
+          <declname>groupA</declname>
+        </param>
+        <param>
+          <type>const std::list&lt; <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> * &gt; &amp;</type>
+          <declname>groupB</declname>
+        </param>
+        <briefdescription>
+<para>加入到等待房间 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a958a85498f9563b103c18bf1f40c73a8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::removeMatch</definition>
+        <argsstring>(MatchItem *item)</argsstring>
+        <name>removeMatch</name>
+        <param>
+          <type><ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a7be2cbbe64529aca16e30b24170b906e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::clearMatch</definition>
+        <argsstring>(MatchItem *item)</argsstring>
+        <name>clearMatch</name>
+        <param>
+          <type><ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a34d22a0cee659ccf64b3b3ce3c4d5fa4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::rejoinMatch</definition>
+        <argsstring>(MatchItem *item)</argsstring>
+        <name>rejoinMatch</name>
+        <param>
+          <type><ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a6252d5e57e70815a9e9f294239dd35ec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeMatchMgr::openRoom</definition>
+        <argsstring>(WaitItem *item)</argsstring>
+        <name>openRoom</name>
+        <param>
+          <type><ref refid="struct_se_match_mgr_1_1_wait_item" kindref="compound">WaitItem</ref> *</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="195" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_se_match_mgr_1aca82556e88fac9c0fdd9445789df0d11" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931eda" kindref="member">PlayerType</ref></type>
+        <definition>SeMatchMgr::PlayerType SeMatchMgr::getPlayerType</definition>
+        <argsstring>(MatchType eMatchType, const PlayerInfo &amp;info)</argsstring>
+        <name>getPlayerType</name>
+        <param>
+          <type><ref refid="_se_ptl_comm_define_8h_1a747637046be33d7273262104aad8069d" kindref="member">MatchType</ref></type>
+          <declname>eMatchType</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_se_match_mgr_1_1_player_info" kindref="compound">PlayerInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="197" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="869" bodyend="889"/>
+        <references refid="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa82ec6a43e960b557f6af3a54b451ef08" compoundref="_src_2_se_match_mgr_8h" startline="117">PT_NORMAL</references>
+        <referencedby refid="class_se_match_mgr_1a31c378a820102f29d800283acc9d9cd3" compoundref="_src_2_se_match_mgr_8cpp" startline="891" endline="906">getPlayerType</referencedby>
+        <referencedby refid="class_se_match_mgr_1a5b7155dca0f8b4e5d54b9785515de80e" compoundref="_src_2_se_match_mgr_8cpp" startline="233" endline="332">OnMatchReq</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a31c378a820102f29d800283acc9d9cd3" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931eda" kindref="member">PlayerType</ref></type>
+        <definition>SeMatchMgr::PlayerType SeMatchMgr::getPlayerType</definition>
+        <argsstring>(const MatchItem &amp;item)</argsstring>
+        <name>getPlayerType</name>
+        <param>
+          <type>const <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="198" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.cpp" bodystart="891" bodyend="906"/>
+        <references refid="class_map_info_table_mgr_1a9449f21c1cae1164722db1429849d982" compoundref="_map_info__table_8cpp" startline="6" endline="13">MapInfoTableMgr::Get</references>
+        <references refid="class_map_info_table_mgr_1a39952135dade4b97c37babb2956d299a" compoundref="_map_info__table_8cpp" startline="53" endline="61">MapInfoTableMgr::GetMapInfoTable</references>
+        <references refid="class_se_match_mgr_1aca82556e88fac9c0fdd9445789df0d11" compoundref="_src_2_se_match_mgr_8cpp" startline="869" endline="889">getPlayerType</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1ad6dc9ee42f9d3a88bd134cc1239852bf" compoundref="_src_2_se_match_mgr_8h" startline="134">SeMatchMgr::MatchItem::mapID</references>
+        <references refid="struct_se_match_mgr_1_1_match_item_1a346eb227141bfd2dc447a061533b27c2" compoundref="_src_2_se_match_mgr_8h" startline="145">SeMatchMgr::MatchItem::players</references>
+        <references refid="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa4a80158faa361b64065950c7155da8da" compoundref="_src_2_se_match_mgr_8h" startline="115">PT_NEW</references>
+        <references refid="struct_map_info_table_1a66ac141851cb8fa022b1ddfde43fc1e0" compoundref="_map_info__table_8hpp" startline="96">MapInfoTable::uiMatchType</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a8f081da7511b0fdce6d20ef2f62cd8cd" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931eda" kindref="member">PlayerType</ref></type>
+        <definition>static PlayerType SeMatchMgr::getPlayerType</definition>
+        <argsstring>(MatchType eMatchType, const PlayerInfo &amp;info)</argsstring>
+        <name>getPlayerType</name>
+        <param>
+          <type><ref refid="_se_ptl_comm_define_8h_1a747637046be33d7273262104aad8069d" kindref="member">MatchType</ref></type>
+          <declname>eMatchType</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_se_match_mgr_1_1_player_info" kindref="compound">PlayerInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_match_mgr_1a6f166eb949c2cd97b14fb2a2b5d46e4b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931eda" kindref="member">PlayerType</ref></type>
+        <definition>static PlayerType SeMatchMgr::getPlayerType</definition>
+        <argsstring>(const MatchItem &amp;item)</argsstring>
+        <name>getPlayerType</name>
+        <param>
+          <type>const <ref refid="struct_se_match_mgr_1_1_match_item" kindref="compound">MatchItem</ref> &amp;</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/src/SeMatchMgr.h" line="198" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4436">
+        <label>SeMatchMgr</label>
+        <link refid="class_se_match_mgr"/>
+        <childnode refid="4437" relation="usage">
+          <edgelabel>m_waitMap</edgelabel>
+        </childnode>
+        <childnode refid="4446" relation="usage">
+          <edgelabel>m_userMap</edgelabel>
+        </childnode>
+        <childnode refid="4447" relation="usage">
+          <edgelabel>m_typeMap</edgelabel>
+        </childnode>
+        <childnode refid="4452" relation="usage">
+          <edgelabel>m_timeMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="4452">
+        <label>std::multimap&lt; moba::TimeType, MatchItem * &gt;</label>
+        <childnode refid="4440" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="4450">
+        <label>K</label>
+      </node>
+      <node id="4451">
+        <label>T</label>
+      </node>
+      <node id="4437">
+        <label>std::map&lt; uint32_t, WaitItem * &gt;</label>
+        <childnode refid="4438" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="4444">
+        <label>SeMatchMgr::PlayerInfo</label>
+        <link refid="struct_se_match_mgr_1_1_player_info"/>
+        <childnode refid="4445" relation="usage">
+          <edgelabel>kTownSign</edgelabel>
+        </childnode>
+      </node>
+      <node id="4448">
+        <label>MatchIndex</label>
+        <link refid="struct_match_index"/>
+      </node>
+      <node id="4439">
+        <label>std::list&lt; SeMatchMgr::MatchItem * &gt;</label>
+        <childnode refid="4440" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="4446">
+        <label>std::map&lt; uint32_t, MatchItem * &gt;</label>
+        <childnode refid="4440" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="4440">
+        <label>SeMatchMgr::MatchItem</label>
+        <link refid="struct_se_match_mgr_1_1_match_item"/>
+        <childnode refid="4441" relation="usage">
+          <edgelabel>itLevel</edgelabel>
+        </childnode>
+        <childnode refid="4442" relation="usage">
+          <edgelabel>itTime</edgelabel>
+        </childnode>
+        <childnode refid="4443" relation="usage">
+          <edgelabel>players</edgelabel>
+        </childnode>
+      </node>
+      <node id="4449">
+        <label>std::multimap&lt; K, T &gt;</label>
+        <childnode refid="4450" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="4451" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="4447">
+        <label>std::map&lt; MatchIndex, LEVELMAP &gt;</label>
+        <childnode refid="4448" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="4449" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="4443">
+        <label>std::list&lt; SeMatchMgr::PlayerInfo &gt;</label>
+        <childnode refid="4444" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="4441">
+        <label>std::multimap&lt; double, SeMatchMgr::MatchItem * &gt;</label>
+        <childnode refid="4440" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="4445">
+        <label>HTownSign</label>
+        <link refid="struct_h_town_sign"/>
+      </node>
+      <node id="4438">
+        <label>SeMatchMgr::WaitItem</label>
+        <link refid="struct_se_match_mgr_1_1_wait_item"/>
+        <childnode refid="4439" relation="usage">
+          <edgelabel>groupA</edgelabel>
+          <edgelabel>groupB</edgelabel>
+          <edgelabel>teams</edgelabel>
+        </childnode>
+      </node>
+      <node id="4442">
+        <label>std::multimap&lt; moba::TimeType, SeMatchMgr::MatchItem * &gt;</label>
+        <childnode refid="4440" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="100" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="99" bodyend="212"/>
+    <listofallmembers>
+      <member refid="class_se_match_mgr_1a8d0caf15f9478fb8580a074284e66b58" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>addWaitRoom</name></member>
+      <member refid="class_se_match_mgr_1a8d0caf15f9478fb8580a074284e66b58" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>addWaitRoom</name></member>
+      <member refid="class_se_match_mgr_1a7be2cbbe64529aca16e30b24170b906e" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>clearMatch</name></member>
+      <member refid="class_se_match_mgr_1a7be2cbbe64529aca16e30b24170b906e" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>clearMatch</name></member>
+      <member refid="class_se_match_mgr_1a6bf90d7b5fd1637f1cc44a098c3dff50" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>getMatchItems</name></member>
+      <member refid="class_se_match_mgr_1a6bf90d7b5fd1637f1cc44a098c3dff50" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>getMatchItems</name></member>
+      <member refid="class_se_match_mgr_1aca82556e88fac9c0fdd9445789df0d11" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>getPlayerType</name></member>
+      <member refid="class_se_match_mgr_1a31c378a820102f29d800283acc9d9cd3" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>getPlayerType</name></member>
+      <member refid="class_se_match_mgr_1a8f081da7511b0fdce6d20ef2f62cd8cd" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>getPlayerType</name></member>
+      <member refid="class_se_match_mgr_1a6f166eb949c2cd97b14fb2a2b5d46e4b" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>getPlayerType</name></member>
+      <member refid="class_se_match_mgr_1a9f3c5f7196d3a449c37bc32ffc7694f3" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>LEVELMAP</name></member>
+      <member refid="class_se_match_mgr_1a9f3c5f7196d3a449c37bc32ffc7694f3" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>LEVELMAP</name></member>
+      <member refid="class_se_match_mgr_1a6d4a5a1b63995272d379f363640c15fd" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>m_timeMap</name></member>
+      <member refid="class_se_match_mgr_1aa4353073968319f0dae0ea1d8cdfbdf6" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>m_typeMap</name></member>
+      <member refid="class_se_match_mgr_1a93751f90361c7ed559c70c6975746b81" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>m_userMap</name></member>
+      <member refid="class_se_match_mgr_1a735f159a51a9d3ddda93afbd54e1bd52" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>m_waitMap</name></member>
+      <member refid="class_se_match_mgr_1ac4e1f79cc61e7824b61e655524c89d4f" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>match</name></member>
+      <member refid="class_se_match_mgr_1acf795fba3e4459f438aa33024372cda4" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>match</name></member>
+      <member refid="class_se_match_mgr_1ac4e1f79cc61e7824b61e655524c89d4f" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>match</name></member>
+      <member refid="class_se_match_mgr_1acf795fba3e4459f438aa33024372cda4" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>match</name></member>
+      <member refid="class_se_match_mgr_1abf72d4e94970d6d9c102809756275c62" prot="public" virt="non-virtual"><scope>SeMatchMgr</scope><name>OnBattleOver</name></member>
+      <member refid="class_se_match_mgr_1abf72d4e94970d6d9c102809756275c62" prot="public" virt="non-virtual"><scope>SeMatchMgr</scope><name>OnBattleOver</name></member>
+      <member refid="class_se_match_mgr_1a565ced66e5b6e7edb32cf98fbc448e65" prot="public" virt="non-virtual"><scope>SeMatchMgr</scope><name>OnConfirm</name></member>
+      <member refid="class_se_match_mgr_1a565ced66e5b6e7edb32cf98fbc448e65" prot="public" virt="non-virtual"><scope>SeMatchMgr</scope><name>OnConfirm</name></member>
+      <member refid="class_se_match_mgr_1a1e1a9e8cbb2f52a7f099edfd11f71b9c" prot="public" virt="non-virtual"><scope>SeMatchMgr</scope><name>OnMatchCancel</name></member>
+      <member refid="class_se_match_mgr_1a1e1a9e8cbb2f52a7f099edfd11f71b9c" prot="public" virt="non-virtual"><scope>SeMatchMgr</scope><name>OnMatchCancel</name></member>
+      <member refid="class_se_match_mgr_1a5b7155dca0f8b4e5d54b9785515de80e" prot="public" virt="non-virtual"><scope>SeMatchMgr</scope><name>OnMatchReq</name></member>
+      <member refid="class_se_match_mgr_1a5b7155dca0f8b4e5d54b9785515de80e" prot="public" virt="non-virtual"><scope>SeMatchMgr</scope><name>OnMatchReq</name></member>
+      <member refid="class_se_match_mgr_1a2ec36d55582fe6cdd43cf64e6dea60cb" prot="public" virt="non-virtual"><scope>SeMatchMgr</scope><name>OnPlayerLeave</name></member>
+      <member refid="class_se_match_mgr_1a2ec36d55582fe6cdd43cf64e6dea60cb" prot="public" virt="non-virtual"><scope>SeMatchMgr</scope><name>OnPlayerLeave</name></member>
+      <member refid="class_se_match_mgr_1a6252d5e57e70815a9e9f294239dd35ec" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>openRoom</name></member>
+      <member refid="class_se_match_mgr_1a6252d5e57e70815a9e9f294239dd35ec" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>openRoom</name></member>
+      <member refid="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931eda" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>PlayerType</name></member>
+      <member refid="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931eda" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>PlayerType</name></member>
+      <member refid="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa4a80158faa361b64065950c7155da8da" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>PT_NEW</name></member>
+      <member refid="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa82ec6a43e960b557f6af3a54b451ef08" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>PT_NORMAL</name></member>
+      <member refid="class_se_match_mgr_1ab2f65a47d2f2355504088e41cd931edaa3ba9947f7df148128171359821c55314" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>PT_NOVICE</name></member>
+      <member refid="class_se_match_mgr_1a34d22a0cee659ccf64b3b3ce3c4d5fa4" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>rejoinMatch</name></member>
+      <member refid="class_se_match_mgr_1a34d22a0cee659ccf64b3b3ce3c4d5fa4" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>rejoinMatch</name></member>
+      <member refid="class_se_match_mgr_1a958a85498f9563b103c18bf1f40c73a8" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>removeMatch</name></member>
+      <member refid="class_se_match_mgr_1a958a85498f9563b103c18bf1f40c73a8" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>removeMatch</name></member>
+      <member refid="class_se_match_mgr_1aac171350dcc91aa1d84c479ae29e6f3c" prot="public" virt="non-virtual"><scope>SeMatchMgr</scope><name>SeMatchMgr</name></member>
+      <member refid="class_se_match_mgr_1aac171350dcc91aa1d84c479ae29e6f3c" prot="public" virt="non-virtual"><scope>SeMatchMgr</scope><name>SeMatchMgr</name></member>
+      <member refid="class_se_match_mgr_1ab6deef96cedd28aec08e34c070cb772c" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>TIMEMAP</name></member>
+      <member refid="class_se_match_mgr_1ab6deef96cedd28aec08e34c070cb772c" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>TIMEMAP</name></member>
+      <member refid="class_se_match_mgr_1a757c29e1c0e9058610f1c093c39b25fc" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>TYPEMAP</name></member>
+      <member refid="class_se_match_mgr_1a757c29e1c0e9058610f1c093c39b25fc" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>TYPEMAP</name></member>
+      <member refid="class_se_match_mgr_1a1c63d6d17365f930c0885824afb4c5ef" prot="public" virt="non-virtual"><scope>SeMatchMgr</scope><name>Update</name></member>
+      <member refid="class_se_match_mgr_1a1c63d6d17365f930c0885824afb4c5ef" prot="public" virt="non-virtual"><scope>SeMatchMgr</scope><name>Update</name></member>
+      <member refid="class_se_match_mgr_1aea13a0ecf1bf7c29349f83822c16e994" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>UpdateRoom</name></member>
+      <member refid="class_se_match_mgr_1aea13a0ecf1bf7c29349f83822c16e994" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>UpdateRoom</name></member>
+      <member refid="class_se_match_mgr_1a2a1cabeab01b241b95f5117b915a6044" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>USERMAP</name></member>
+      <member refid="class_se_match_mgr_1a2a1cabeab01b241b95f5117b915a6044" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>USERMAP</name></member>
+      <member refid="class_se_match_mgr_1ac7d79224c8675e9c410fb59cfb4e89de" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>WAITMAP</name></member>
+      <member refid="class_se_match_mgr_1ac7d79224c8675e9c410fb59cfb4e89de" prot="private" virt="non-virtual"><scope>SeMatchMgr</scope><name>WAITMAP</name></member>
+      <member refid="class_se_match_mgr_1a313f2303bb8842677c07d3ea1381341a" prot="public" virt="non-virtual"><scope>SeMatchMgr</scope><name>~SeMatchMgr</name></member>
+      <member refid="class_se_match_mgr_1a313f2303bb8842677c07d3ea1381341a" prot="public" virt="non-virtual"><scope>SeMatchMgr</scope><name>~SeMatchMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

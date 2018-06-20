@@ -1,0 +1,774 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_ti_xml_string" kind="class" prot="public">
+    <compoundname>TiXmlString</compoundname>
+    <derivedcompoundref refid="class_ti_xml_out_stream" prot="public" virt="non-virtual">TiXmlOutStream</derivedcompoundref>
+    <includes refid="tinystr_8h" local="no">tinystr.h</includes>
+    <innerclass refid="struct_ti_xml_string_1_1_rep" prot="private">TiXmlString::Rep</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" prot="public" static="no">
+        <type>size_t</type>
+        <definition>typedef size_t TiXmlString::size_type</definition>
+        <argsstring></argsstring>
+        <name>size_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="71" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_ti_xml_string_1a8f4422d227088dc7bec96f479b275d0a" prot="public" static="yes" mutable="no">
+        <type>const <ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+        <definition>const TiXmlString::size_type TiXmlString::npos</definition>
+        <argsstring></argsstring>
+        <name>npos</name>
+        <initializer>= static_cast&lt; <ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">TiXmlString::size_type</ref> &gt;(-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="74" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_string_1a5f2a6fd565751410b392f249a9786db4" compoundref="tinystr_8h" startline="181" endline="190">find</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ti_xml_string_1ac7be48f31ca451bcb16de428b5c40e0c" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_ti_xml_string_1_1_rep" kindref="compound">Rep</ref> *</type>
+        <definition>Rep* TiXmlString::rep_</definition>
+        <argsstring></argsstring>
+        <name>rep_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="263" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="263" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_string_1a6763093267bbdecbf03f8840bc349877" compoundref="tinystr_8h" startline="161" endline="165">at</referencedby>
+        <referencedby refid="class_ti_xml_string_1a5581ca641d915551d3cda90f8e7bf49b" compoundref="tinystr_8h" startline="142" endline="142">c_str</referencedby>
+        <referencedby refid="class_ti_xml_string_1a76e4d6aba7845f4cf9c02332a5fbf916" compoundref="tinystr_8h" startline="157" endline="157">capacity</referencedby>
+        <referencedby refid="class_ti_xml_string_1a00abc60f135c7ca1951c7334cc2c7993" compoundref="tinystr_8h" startline="145" endline="145">data</referencedby>
+        <referencedby refid="class_ti_xml_string_1a9a61e1d11cdb71bea4a4ed79caa793f4" compoundref="tinystr_8h" startline="154" endline="154">empty</referencedby>
+        <referencedby refid="class_ti_xml_string_1a58faf1c6b9828c8d5d5092bebf146167" compoundref="tinystr_8h" startline="223" endline="223">finish</referencedby>
+        <referencedby refid="class_ti_xml_string_1ae11cd23e090fd2e7bb62eda05b45a2d6" compoundref="tinystr_8h" startline="231" endline="251">init</referencedby>
+        <referencedby refid="class_ti_xml_string_1a3202f27d139a3fac79205f1f3c707727" compoundref="tinystr_8h" startline="148" endline="148">length</referencedby>
+        <referencedby refid="class_ti_xml_string_1ae8cdc1d46c538536b786f7ae03c0c1d9" compoundref="tinystr_8h" startline="168" endline="172">operator[]</referencedby>
+        <referencedby refid="class_ti_xml_string_1aa6008ae51286a342cd366fbf1e3eeafc" compoundref="tinystr_8h" startline="253" endline="261">quit</referencedby>
+        <referencedby refid="class_ti_xml_string_1a5d70615367bf2920c25feddf6ac4ad30" compoundref="tinystr_8h" startline="221" endline="221">set_size</referencedby>
+        <referencedby refid="class_ti_xml_string_1a96103e5c0f67e987fa48527e1f47a1f6" compoundref="tinystr_8h" startline="151" endline="151">size</referencedby>
+        <referencedby refid="class_ti_xml_string_1a36417caceebe25352f53a87e8cd966b4" compoundref="tinystr_8h" startline="222" endline="222">start</referencedby>
+        <referencedby refid="class_ti_xml_string_1aa392cbc180752a79f007f4f9280c7762" compoundref="tinystr_8h" startline="211" endline="216">swap</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_ti_xml_string_1ae1f9e0de28328eed27d5623ff67a3191" prot="private" static="yes" mutable="no">
+        <type><ref refid="struct_ti_xml_string_1_1_rep" kindref="compound">Rep</ref></type>
+        <definition>TiXmlString::Rep TiXmlString::nullrep_</definition>
+        <argsstring></argsstring>
+        <name>nullrep_</name>
+        <initializer>= { 0, 0, &apos;\0&apos; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="264" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="264" bodyend="-1"/>
+        <referencedby refid="class_ti_xml_string_1ae11cd23e090fd2e7bb62eda05b45a2d6" compoundref="tinystr_8h" startline="231" endline="251">init</referencedby>
+        <referencedby refid="class_ti_xml_string_1aa6008ae51286a342cd366fbf1e3eeafc" compoundref="tinystr_8h" startline="253" endline="261">quit</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ti_xml_string_1a342f61e0fc2244df300b73aedf6d3fef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TiXmlString::TiXmlString</definition>
+        <argsstring>()</argsstring>
+        <name>TiXmlString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="78" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1ac80fe17693a438c9ab2591664743fcb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TiXmlString::TiXmlString</definition>
+        <argsstring>(const TiXmlString &amp;copy)</argsstring>
+        <name>TiXmlString</name>
+        <param>
+          <type>const <ref refid="class_ti_xml_string" kindref="compound">TiXmlString</ref> &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="83" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="83" bodyend="87"/>
+        <references refid="class_ti_xml_string_1a00abc60f135c7ca1951c7334cc2c7993" compoundref="tinystr_8h" startline="145" endline="145">data</references>
+        <references refid="class_ti_xml_string_1a694eacb51c43d8eba8aa7d4552b598ff" compoundref="tinystr_8h" startline="220" endline="220">init</references>
+        <references refid="class_ti_xml_string_1a3202f27d139a3fac79205f1f3c707727" compoundref="tinystr_8h" startline="148" endline="148">length</references>
+        <references refid="class_ti_xml_string_1a36417caceebe25352f53a87e8cd966b4" compoundref="tinystr_8h" startline="222" endline="222">start</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1aa3b32bd2891a757c9f36c21db44c81d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="tinystr_8h_1ae341476cd6b94ee32e3e93110a759581" kindref="member">TIXML_EXPLICIT</ref></type>
+        <definition>TIXML_EXPLICIT TiXmlString::TiXmlString</definition>
+        <argsstring>(const char *copy)</argsstring>
+        <name>TiXmlString</name>
+        <param>
+          <type>const char *</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="90" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="90" bodyend="94"/>
+        <references refid="class_ti_xml_string_1a694eacb51c43d8eba8aa7d4552b598ff" compoundref="tinystr_8h" startline="220" endline="220">init</references>
+        <references refid="class_ti_xml_string_1a3202f27d139a3fac79205f1f3c707727" compoundref="tinystr_8h" startline="148" endline="148">length</references>
+        <references refid="class_ti_xml_string_1a36417caceebe25352f53a87e8cd966b4" compoundref="tinystr_8h" startline="222" endline="222">start</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1a4b17ea5c5db986f14827223dfa8f1547" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="tinystr_8h_1ae341476cd6b94ee32e3e93110a759581" kindref="member">TIXML_EXPLICIT</ref></type>
+        <definition>TIXML_EXPLICIT TiXmlString::TiXmlString</definition>
+        <argsstring>(const char *str, size_type len)</argsstring>
+        <name>TiXmlString</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="97" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="97" bodyend="101"/>
+        <references refid="class_ti_xml_string_1a694eacb51c43d8eba8aa7d4552b598ff" compoundref="tinystr_8h" startline="220" endline="220">init</references>
+        <references refid="class_ti_xml_string_1a36417caceebe25352f53a87e8cd966b4" compoundref="tinystr_8h" startline="222" endline="222">start</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1a7ac03f581ca3422c4808162ab14f3450" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TiXmlString::~TiXmlString</definition>
+        <argsstring>()</argsstring>
+        <name>~TiXmlString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="104" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="104" bodyend="107"/>
+        <references refid="class_ti_xml_string_1aa6008ae51286a342cd366fbf1e3eeafc" compoundref="tinystr_8h" startline="253" endline="261">quit</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1ae0bc6147afc0ec2aa0da3a3c0a8fcfb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_string" kindref="compound">TiXmlString</ref> &amp;</type>
+        <definition>TiXmlString&amp; TiXmlString::operator=</definition>
+        <argsstring>(const char *copy)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const char *</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="110" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="110" bodyend="113"/>
+        <references refid="class_ti_xml_string_1ac72f3d9149b7812c1e6c59402014d0d5" compoundref="tinystr_8cpp" startline="54" endline="70">assign</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1ab1f1f5d3eceaa0f22d0a7e6055ea81b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_string" kindref="compound">TiXmlString</ref> &amp;</type>
+        <definition>TiXmlString&amp; TiXmlString::operator=</definition>
+        <argsstring>(const TiXmlString &amp;copy)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_ti_xml_string" kindref="compound">TiXmlString</ref> &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="116" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="116" bodyend="119"/>
+        <references refid="class_ti_xml_string_1ac72f3d9149b7812c1e6c59402014d0d5" compoundref="tinystr_8cpp" startline="54" endline="70">assign</references>
+        <references refid="class_ti_xml_string_1a3202f27d139a3fac79205f1f3c707727" compoundref="tinystr_8h" startline="148" endline="148">length</references>
+        <references refid="class_ti_xml_string_1a36417caceebe25352f53a87e8cd966b4" compoundref="tinystr_8h" startline="222" endline="222">start</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1ab56336ac2aa2a08d24a71eb9a2b502a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_string" kindref="compound">TiXmlString</ref> &amp;</type>
+        <definition>TiXmlString&amp; TiXmlString::operator+=</definition>
+        <argsstring>(const char *suffix)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const char *</type>
+          <declname>suffix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="123" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="123" bodyend="126"/>
+        <references refid="class_ti_xml_string_1ad44b21700d2ec24a511367b222b643fb" compoundref="tinystr_8cpp" startline="73" endline="83">append</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1a6aa09d5240470b76d54ec709e04f8c13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_string" kindref="compound">TiXmlString</ref> &amp;</type>
+        <definition>TiXmlString&amp; TiXmlString::operator+=</definition>
+        <argsstring>(char single)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>char</type>
+          <declname>single</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="129" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="129" bodyend="132"/>
+        <references refid="class_ti_xml_string_1ad44b21700d2ec24a511367b222b643fb" compoundref="tinystr_8cpp" startline="73" endline="83">append</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1afdcae5ea2b4d9e194dc21226b817f417" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_string" kindref="compound">TiXmlString</ref> &amp;</type>
+        <definition>TiXmlString&amp; TiXmlString::operator+=</definition>
+        <argsstring>(const TiXmlString &amp;suffix)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="class_ti_xml_string" kindref="compound">TiXmlString</ref> &amp;</type>
+          <declname>suffix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="135" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="135" bodyend="138"/>
+        <references refid="class_ti_xml_string_1ad44b21700d2ec24a511367b222b643fb" compoundref="tinystr_8cpp" startline="73" endline="83">append</references>
+        <references refid="class_ti_xml_string_1a00abc60f135c7ca1951c7334cc2c7993" compoundref="tinystr_8h" startline="145" endline="145">data</references>
+        <references refid="class_ti_xml_string_1a3202f27d139a3fac79205f1f3c707727" compoundref="tinystr_8h" startline="148" endline="148">length</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1a5581ca641d915551d3cda90f8e7bf49b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* TiXmlString::c_str</definition>
+        <argsstring>() const </argsstring>
+        <name>c_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="142" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="142" bodyend="142"/>
+        <references refid="class_ti_xml_string_1ac7be48f31ca451bcb16de428b5c40e0c" compoundref="tinystr_8h" startline="263">rep_</references>
+        <references refid="struct_ti_xml_string_1_1_rep_1a88a7037a489827ec9e59b008e11342b0" compoundref="tinystr_8h" startline="228">TiXmlString::Rep::str</references>
+        <referencedby refid="class_ti_xml_string_1a5f2a6fd565751410b392f249a9786db4" compoundref="tinystr_8h" startline="181" endline="190">find</referencedby>
+        <referencedby refid="tinystr_8h_1a28e13086a32670328b9f4fac22f09ccb" compoundref="tinystr_8h" startline="274" endline="277">operator&lt;</referencedby>
+        <referencedby refid="tinystr_8h_1ab43569e63f57a29dbc7deebfee90f98e" compoundref="tinystr_8h" startline="269" endline="273">operator==</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1a00abc60f135c7ca1951c7334cc2c7993" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* TiXmlString::data</definition>
+        <argsstring>() const </argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="145" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="145" bodyend="145"/>
+        <references refid="class_ti_xml_string_1ac7be48f31ca451bcb16de428b5c40e0c" compoundref="tinystr_8h" startline="263">rep_</references>
+        <references refid="struct_ti_xml_string_1_1_rep_1a88a7037a489827ec9e59b008e11342b0" compoundref="tinystr_8h" startline="228">TiXmlString::Rep::str</references>
+        <referencedby refid="class_ti_xml_string_1afdcae5ea2b4d9e194dc21226b817f417" compoundref="tinystr_8h" startline="135" endline="138">operator+=</referencedby>
+        <referencedby refid="class_ti_xml_string_1a88ecf9f0f00cb5c67b6b637958d7049c" compoundref="tinystr_8cpp" startline="42" endline="51">reserve</referencedby>
+        <referencedby refid="class_ti_xml_string_1ac80fe17693a438c9ab2591664743fcb6" compoundref="tinystr_8h" startline="83" endline="87">TiXmlString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1a3202f27d139a3fac79205f1f3c707727" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+        <definition>size_type TiXmlString::length</definition>
+        <argsstring>() const </argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="148" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="148" bodyend="148"/>
+        <references refid="class_ti_xml_string_1ac7be48f31ca451bcb16de428b5c40e0c" compoundref="tinystr_8h" startline="263">rep_</references>
+        <references refid="struct_ti_xml_string_1_1_rep_1a3470330fe806a575dbb5909a1b908ac1" compoundref="tinystr_8h" startline="227">TiXmlString::Rep::size</references>
+        <referencedby refid="class_ti_xml_string_1ad44b21700d2ec24a511367b222b643fb" compoundref="tinystr_8cpp" startline="73" endline="83">append</referencedby>
+        <referencedby refid="class_ti_xml_string_1a6763093267bbdecbf03f8840bc349877" compoundref="tinystr_8h" startline="161" endline="165">at</referencedby>
+        <referencedby refid="class_ti_xml_string_1a5f2a6fd565751410b392f249a9786db4" compoundref="tinystr_8h" startline="181" endline="190">find</referencedby>
+        <referencedby refid="tinystr_8h_1a6ee35bce93b3aaf8a2353471c0dd2d58" compoundref="tinystr_8cpp" startline="86" endline="93">operator+</referencedby>
+        <referencedby refid="class_ti_xml_string_1afdcae5ea2b4d9e194dc21226b817f417" compoundref="tinystr_8h" startline="135" endline="138">operator+=</referencedby>
+        <referencedby refid="class_ti_xml_string_1ab1f1f5d3eceaa0f22d0a7e6055ea81b0" compoundref="tinystr_8h" startline="116" endline="119">operator=</referencedby>
+        <referencedby refid="tinystr_8h_1ab43569e63f57a29dbc7deebfee90f98e" compoundref="tinystr_8h" startline="269" endline="273">operator==</referencedby>
+        <referencedby refid="class_ti_xml_string_1ae8cdc1d46c538536b786f7ae03c0c1d9" compoundref="tinystr_8h" startline="168" endline="172">operator[]</referencedby>
+        <referencedby refid="class_ti_xml_string_1a88ecf9f0f00cb5c67b6b637958d7049c" compoundref="tinystr_8cpp" startline="42" endline="51">reserve</referencedby>
+        <referencedby refid="class_ti_xml_string_1ac80fe17693a438c9ab2591664743fcb6" compoundref="tinystr_8h" startline="83" endline="87">TiXmlString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1a96103e5c0f67e987fa48527e1f47a1f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+        <definition>size_type TiXmlString::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="151" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="151" bodyend="151"/>
+        <references refid="class_ti_xml_string_1ac7be48f31ca451bcb16de428b5c40e0c" compoundref="tinystr_8h" startline="263">rep_</references>
+        <references refid="struct_ti_xml_string_1_1_rep_1a3470330fe806a575dbb5909a1b908ac1" compoundref="tinystr_8h" startline="227">TiXmlString::Rep::size</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1a9a61e1d11cdb71bea4a4ed79caa793f4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TiXmlString::empty</definition>
+        <argsstring>() const </argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="154" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="154" bodyend="154"/>
+        <references refid="class_ti_xml_string_1ac7be48f31ca451bcb16de428b5c40e0c" compoundref="tinystr_8h" startline="263">rep_</references>
+        <references refid="struct_ti_xml_string_1_1_rep_1a3470330fe806a575dbb5909a1b908ac1" compoundref="tinystr_8h" startline="227">TiXmlString::Rep::size</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1a76e4d6aba7845f4cf9c02332a5fbf916" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+        <definition>size_type TiXmlString::capacity</definition>
+        <argsstring>() const </argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="157" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="157" bodyend="157"/>
+        <references refid="struct_ti_xml_string_1_1_rep_1a9f38da318212f4a2f6ebe0afdbfaf477" compoundref="tinystr_8h" startline="227">TiXmlString::Rep::capacity</references>
+        <references refid="class_ti_xml_string_1ac7be48f31ca451bcb16de428b5c40e0c" compoundref="tinystr_8h" startline="263">rep_</references>
+        <referencedby refid="class_ti_xml_string_1ad44b21700d2ec24a511367b222b643fb" compoundref="tinystr_8cpp" startline="73" endline="83">append</referencedby>
+        <referencedby refid="class_ti_xml_string_1ac72f3d9149b7812c1e6c59402014d0d5" compoundref="tinystr_8cpp" startline="54" endline="70">assign</referencedby>
+        <referencedby refid="class_ti_xml_string_1a88ecf9f0f00cb5c67b6b637958d7049c" compoundref="tinystr_8cpp" startline="42" endline="51">reserve</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1a6763093267bbdecbf03f8840bc349877" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char &amp;</type>
+        <definition>const char&amp; TiXmlString::at</definition>
+        <argsstring>(size_type index) const </argsstring>
+        <name>at</name>
+        <param>
+          <type><ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="161" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="161" bodyend="165"/>
+        <references refid="class_ti_xml_string_1a3202f27d139a3fac79205f1f3c707727" compoundref="tinystr_8h" startline="148" endline="148">length</references>
+        <references refid="class_ti_xml_string_1ac7be48f31ca451bcb16de428b5c40e0c" compoundref="tinystr_8h" startline="263">rep_</references>
+        <references refid="struct_ti_xml_string_1_1_rep_1a88a7037a489827ec9e59b008e11342b0" compoundref="tinystr_8h" startline="228">TiXmlString::Rep::str</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1ae8cdc1d46c538536b786f7ae03c0c1d9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char &amp;</type>
+        <definition>char&amp; TiXmlString::operator[]</definition>
+        <argsstring>(size_type index) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type><ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="168" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="168" bodyend="172"/>
+        <references refid="class_ti_xml_string_1a3202f27d139a3fac79205f1f3c707727" compoundref="tinystr_8h" startline="148" endline="148">length</references>
+        <references refid="class_ti_xml_string_1ac7be48f31ca451bcb16de428b5c40e0c" compoundref="tinystr_8h" startline="263">rep_</references>
+        <references refid="struct_ti_xml_string_1_1_rep_1a88a7037a489827ec9e59b008e11342b0" compoundref="tinystr_8h" startline="228">TiXmlString::Rep::str</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1a5c2b368b5eafe075fd9565cbcbd4c2f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+        <definition>size_type TiXmlString::find</definition>
+        <argsstring>(char lookup) const </argsstring>
+        <name>find</name>
+        <param>
+          <type>char</type>
+          <declname>lookup</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="175" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1a5f2a6fd565751410b392f249a9786db4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+        <definition>size_type TiXmlString::find</definition>
+        <argsstring>(char tofind, size_type offset) const </argsstring>
+        <name>find</name>
+        <param>
+          <type>char</type>
+          <declname>tofind</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="181" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="181" bodyend="190"/>
+        <references refid="class_ti_xml_string_1a5581ca641d915551d3cda90f8e7bf49b" compoundref="tinystr_8h" startline="142" endline="142">c_str</references>
+        <references refid="class_ti_xml_string_1a3202f27d139a3fac79205f1f3c707727" compoundref="tinystr_8h" startline="148" endline="148">length</references>
+        <references refid="class_ti_xml_string_1a8f4422d227088dc7bec96f479b275d0a" compoundref="tinystr_8h" startline="74">npos</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1ab20e06e4c666abf3bdbfb3a1191d4888" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlString::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="192" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="192" bodyend="200"/>
+        <references refid="class_ti_xml_string_1a694eacb51c43d8eba8aa7d4552b598ff" compoundref="tinystr_8h" startline="220" endline="220">init</references>
+        <references refid="class_ti_xml_string_1aa6008ae51286a342cd366fbf1e3eeafc" compoundref="tinystr_8h" startline="253" endline="261">quit</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1a88ecf9f0f00cb5c67b6b637958d7049c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlString::reserve</definition>
+        <argsstring>(size_type cap)</argsstring>
+        <name>reserve</name>
+        <param>
+          <type><ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+          <declname>cap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="205" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.cpp" bodystart="42" bodyend="51"/>
+        <references refid="class_ti_xml_string_1a76e4d6aba7845f4cf9c02332a5fbf916" compoundref="tinystr_8h" startline="157" endline="157">capacity</references>
+        <references refid="class_ti_xml_string_1a00abc60f135c7ca1951c7334cc2c7993" compoundref="tinystr_8h" startline="145" endline="145">data</references>
+        <references refid="class_ti_xml_string_1a694eacb51c43d8eba8aa7d4552b598ff" compoundref="tinystr_8h" startline="220" endline="220">init</references>
+        <references refid="class_ti_xml_string_1a3202f27d139a3fac79205f1f3c707727" compoundref="tinystr_8h" startline="148" endline="148">length</references>
+        <references refid="class_ti_xml_string_1a36417caceebe25352f53a87e8cd966b4" compoundref="tinystr_8h" startline="222" endline="222">start</references>
+        <references refid="class_ti_xml_string_1aa392cbc180752a79f007f4f9280c7762" compoundref="tinystr_8h" startline="211" endline="216">swap</references>
+        <referencedby refid="class_ti_xml_string_1ad44b21700d2ec24a511367b222b643fb" compoundref="tinystr_8cpp" startline="73" endline="83">append</referencedby>
+        <referencedby refid="tinystr_8h_1a6ee35bce93b3aaf8a2353471c0dd2d58" compoundref="tinystr_8cpp" startline="86" endline="93">operator+</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1ac72f3d9149b7812c1e6c59402014d0d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_ti_xml_string" kindref="compound">TiXmlString</ref> &amp;</type>
+        <definition>TiXmlString &amp; TiXmlString::assign</definition>
+        <argsstring>(const char *str, size_type len)</argsstring>
+        <name>assign</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="207" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.cpp" bodystart="54" bodyend="70"/>
+        <references refid="class_ti_xml_string_1a76e4d6aba7845f4cf9c02332a5fbf916" compoundref="tinystr_8h" startline="157" endline="157">capacity</references>
+        <references refid="class_ti_xml_string_1a694eacb51c43d8eba8aa7d4552b598ff" compoundref="tinystr_8h" startline="220" endline="220">init</references>
+        <references refid="class_ti_xml_string_1a5d70615367bf2920c25feddf6ac4ad30" compoundref="tinystr_8h" startline="221" endline="221">set_size</references>
+        <references refid="class_ti_xml_string_1a36417caceebe25352f53a87e8cd966b4" compoundref="tinystr_8h" startline="222" endline="222">start</references>
+        <references refid="class_ti_xml_string_1aa392cbc180752a79f007f4f9280c7762" compoundref="tinystr_8h" startline="211" endline="216">swap</references>
+        <referencedby refid="class_ti_xml_string_1ae0bc6147afc0ec2aa0da3a3c0a8fcfb0" compoundref="tinystr_8h" startline="110" endline="113">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1ad44b21700d2ec24a511367b222b643fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_ti_xml_string" kindref="compound">TiXmlString</ref> &amp;</type>
+        <definition>TiXmlString &amp; TiXmlString::append</definition>
+        <argsstring>(const char *str, size_type len)</argsstring>
+        <name>append</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="209" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.cpp" bodystart="73" bodyend="83"/>
+        <references refid="class_ti_xml_string_1a76e4d6aba7845f4cf9c02332a5fbf916" compoundref="tinystr_8h" startline="157" endline="157">capacity</references>
+        <references refid="class_ti_xml_string_1a58faf1c6b9828c8d5d5092bebf146167" compoundref="tinystr_8h" startline="223" endline="223">finish</references>
+        <references refid="class_ti_xml_string_1a3202f27d139a3fac79205f1f3c707727" compoundref="tinystr_8h" startline="148" endline="148">length</references>
+        <references refid="class_ti_xml_string_1a88ecf9f0f00cb5c67b6b637958d7049c" compoundref="tinystr_8cpp" startline="42" endline="51">reserve</references>
+        <references refid="class_ti_xml_string_1a5d70615367bf2920c25feddf6ac4ad30" compoundref="tinystr_8h" startline="221" endline="221">set_size</references>
+        <referencedby refid="tinystr_8h_1ab77ef9617d62643b24e52118db159b7b" compoundref="tinystr_8cpp" startline="95" endline="103">operator+</referencedby>
+        <referencedby refid="class_ti_xml_string_1ab56336ac2aa2a08d24a71eb9a2b502a5" compoundref="tinystr_8h" startline="123" endline="126">operator+=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1aa392cbc180752a79f007f4f9280c7762" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlString::swap</definition>
+        <argsstring>(TiXmlString &amp;other)</argsstring>
+        <name>swap</name>
+        <param>
+          <type><ref refid="class_ti_xml_string" kindref="compound">TiXmlString</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="211" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="211" bodyend="216"/>
+        <references refid="class_ti_xml_string_1ac7be48f31ca451bcb16de428b5c40e0c" compoundref="tinystr_8h" startline="263">rep_</references>
+        <referencedby refid="class_ti_xml_string_1ac72f3d9149b7812c1e6c59402014d0d5" compoundref="tinystr_8cpp" startline="54" endline="70">assign</referencedby>
+        <referencedby refid="class_ti_xml_string_1a88ecf9f0f00cb5c67b6b637958d7049c" compoundref="tinystr_8cpp" startline="42" endline="51">reserve</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ti_xml_string_1a694eacb51c43d8eba8aa7d4552b598ff" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlString::init</definition>
+        <argsstring>(size_type sz)</argsstring>
+        <name>init</name>
+        <param>
+          <type><ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="220" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="220" bodyend="220"/>
+        <references refid="class_ti_xml_string_1a694eacb51c43d8eba8aa7d4552b598ff" compoundref="tinystr_8h" startline="220" endline="220">init</references>
+        <referencedby refid="class_ti_xml_string_1ac72f3d9149b7812c1e6c59402014d0d5" compoundref="tinystr_8cpp" startline="54" endline="70">assign</referencedby>
+        <referencedby refid="class_ti_xml_string_1ab20e06e4c666abf3bdbfb3a1191d4888" compoundref="tinystr_8h" startline="192" endline="200">clear</referencedby>
+        <referencedby refid="class_ti_xml_string_1a694eacb51c43d8eba8aa7d4552b598ff" compoundref="tinystr_8h" startline="220" endline="220">init</referencedby>
+        <referencedby refid="class_ti_xml_string_1a88ecf9f0f00cb5c67b6b637958d7049c" compoundref="tinystr_8cpp" startline="42" endline="51">reserve</referencedby>
+        <referencedby refid="class_ti_xml_string_1ac80fe17693a438c9ab2591664743fcb6" compoundref="tinystr_8h" startline="83" endline="87">TiXmlString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1a5d70615367bf2920c25feddf6ac4ad30" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlString::set_size</definition>
+        <argsstring>(size_type sz)</argsstring>
+        <name>set_size</name>
+        <param>
+          <type><ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="221" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="221" bodyend="221"/>
+        <references refid="class_ti_xml_string_1ac7be48f31ca451bcb16de428b5c40e0c" compoundref="tinystr_8h" startline="263">rep_</references>
+        <references refid="struct_ti_xml_string_1_1_rep_1a3470330fe806a575dbb5909a1b908ac1" compoundref="tinystr_8h" startline="227">TiXmlString::Rep::size</references>
+        <references refid="struct_ti_xml_string_1_1_rep_1a88a7037a489827ec9e59b008e11342b0" compoundref="tinystr_8h" startline="228">TiXmlString::Rep::str</references>
+        <referencedby refid="class_ti_xml_string_1ad44b21700d2ec24a511367b222b643fb" compoundref="tinystr_8cpp" startline="73" endline="83">append</referencedby>
+        <referencedby refid="class_ti_xml_string_1ac72f3d9149b7812c1e6c59402014d0d5" compoundref="tinystr_8cpp" startline="54" endline="70">assign</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1a36417caceebe25352f53a87e8cd966b4" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* TiXmlString::start</definition>
+        <argsstring>() const </argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="222" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="222" bodyend="222"/>
+        <references refid="class_ti_xml_string_1ac7be48f31ca451bcb16de428b5c40e0c" compoundref="tinystr_8h" startline="263">rep_</references>
+        <references refid="struct_ti_xml_string_1_1_rep_1a88a7037a489827ec9e59b008e11342b0" compoundref="tinystr_8h" startline="228">TiXmlString::Rep::str</references>
+        <referencedby refid="class_ti_xml_string_1ac72f3d9149b7812c1e6c59402014d0d5" compoundref="tinystr_8cpp" startline="54" endline="70">assign</referencedby>
+        <referencedby refid="class_ti_xml_string_1ab1f1f5d3eceaa0f22d0a7e6055ea81b0" compoundref="tinystr_8h" startline="116" endline="119">operator=</referencedby>
+        <referencedby refid="class_ti_xml_string_1a88ecf9f0f00cb5c67b6b637958d7049c" compoundref="tinystr_8cpp" startline="42" endline="51">reserve</referencedby>
+        <referencedby refid="class_ti_xml_string_1ac80fe17693a438c9ab2591664743fcb6" compoundref="tinystr_8h" startline="83" endline="87">TiXmlString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1a58faf1c6b9828c8d5d5092bebf146167" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* TiXmlString::finish</definition>
+        <argsstring>() const </argsstring>
+        <name>finish</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="223" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="223" bodyend="223"/>
+        <references refid="class_ti_xml_string_1ac7be48f31ca451bcb16de428b5c40e0c" compoundref="tinystr_8h" startline="263">rep_</references>
+        <references refid="struct_ti_xml_string_1_1_rep_1a3470330fe806a575dbb5909a1b908ac1" compoundref="tinystr_8h" startline="227">TiXmlString::Rep::size</references>
+        <references refid="struct_ti_xml_string_1_1_rep_1a88a7037a489827ec9e59b008e11342b0" compoundref="tinystr_8h" startline="228">TiXmlString::Rep::str</references>
+        <referencedby refid="class_ti_xml_string_1ad44b21700d2ec24a511367b222b643fb" compoundref="tinystr_8cpp" startline="73" endline="83">append</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1ae11cd23e090fd2e7bb62eda05b45a2d6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlString::init</definition>
+        <argsstring>(size_type sz, size_type cap)</argsstring>
+        <name>init</name>
+        <param>
+          <type><ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+          <declname>sz</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" kindref="member">size_type</ref></type>
+          <declname>cap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="231" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="231" bodyend="251"/>
+        <references refid="struct_ti_xml_string_1_1_rep_1a9f38da318212f4a2f6ebe0afdbfaf477" compoundref="tinystr_8h" startline="227">TiXmlString::Rep::capacity</references>
+        <references refid="class_ti_xml_string_1ae1f9e0de28328eed27d5623ff67a3191" compoundref="tinystr_8h" startline="264">nullrep_</references>
+        <references refid="class_ti_xml_string_1ac7be48f31ca451bcb16de428b5c40e0c" compoundref="tinystr_8h" startline="263">rep_</references>
+        <references refid="struct_ti_xml_string_1_1_rep_1a3470330fe806a575dbb5909a1b908ac1" compoundref="tinystr_8h" startline="227">TiXmlString::Rep::size</references>
+        <references refid="struct_ti_xml_string_1_1_rep_1a88a7037a489827ec9e59b008e11342b0" compoundref="tinystr_8h" startline="228">TiXmlString::Rep::str</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ti_xml_string_1aa6008ae51286a342cd366fbf1e3eeafc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TiXmlString::quit</definition>
+        <argsstring>()</argsstring>
+        <name>quit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="253" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="253" bodyend="261"/>
+        <references refid="class_ti_xml_string_1ae1f9e0de28328eed27d5623ff67a3191" compoundref="tinystr_8h" startline="264">nullrep_</references>
+        <references refid="class_ti_xml_string_1ac7be48f31ca451bcb16de428b5c40e0c" compoundref="tinystr_8h" startline="263">rep_</references>
+        <referencedby refid="class_ti_xml_string_1ab20e06e4c666abf3bdbfb3a1191d4888" compoundref="tinystr_8h" startline="192" endline="200">clear</referencedby>
+        <referencedby refid="class_ti_xml_string_1a7ac03f581ca3422c4808162ab14f3450" compoundref="tinystr_8h" startline="104" endline="107">~TiXmlString</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9366">
+        <label>TiXmlString</label>
+        <link refid="class_ti_xml_string"/>
+      </node>
+      <node id="9367">
+        <label>TiXmlOutStream</label>
+        <link refid="class_ti_xml_out_stream"/>
+        <childnode refid="9366" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9368">
+        <label>TiXmlString</label>
+        <link refid="class_ti_xml_string"/>
+        <childnode refid="9369" relation="usage">
+          <edgelabel>rep_</edgelabel>
+          <edgelabel>nullrep_</edgelabel>
+        </childnode>
+      </node>
+      <node id="9369">
+        <label>TiXmlString::Rep</label>
+        <link refid="struct_ti_xml_string_1_1_rep"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" line="68" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/tinyxml/tinystr.h" bodystart="67" bodyend="266"/>
+    <listofallmembers>
+      <member refid="class_ti_xml_string_1ad44b21700d2ec24a511367b222b643fb" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>append</name></member>
+      <member refid="class_ti_xml_string_1ac72f3d9149b7812c1e6c59402014d0d5" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>assign</name></member>
+      <member refid="class_ti_xml_string_1a6763093267bbdecbf03f8840bc349877" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>at</name></member>
+      <member refid="class_ti_xml_string_1a5581ca641d915551d3cda90f8e7bf49b" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>c_str</name></member>
+      <member refid="class_ti_xml_string_1a76e4d6aba7845f4cf9c02332a5fbf916" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>capacity</name></member>
+      <member refid="class_ti_xml_string_1ab20e06e4c666abf3bdbfb3a1191d4888" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>clear</name></member>
+      <member refid="class_ti_xml_string_1a00abc60f135c7ca1951c7334cc2c7993" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>data</name></member>
+      <member refid="class_ti_xml_string_1a9a61e1d11cdb71bea4a4ed79caa793f4" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>empty</name></member>
+      <member refid="class_ti_xml_string_1a5c2b368b5eafe075fd9565cbcbd4c2f9" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>find</name></member>
+      <member refid="class_ti_xml_string_1a5f2a6fd565751410b392f249a9786db4" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>find</name></member>
+      <member refid="class_ti_xml_string_1a58faf1c6b9828c8d5d5092bebf146167" prot="private" virt="non-virtual"><scope>TiXmlString</scope><name>finish</name></member>
+      <member refid="class_ti_xml_string_1a694eacb51c43d8eba8aa7d4552b598ff" prot="private" virt="non-virtual"><scope>TiXmlString</scope><name>init</name></member>
+      <member refid="class_ti_xml_string_1ae11cd23e090fd2e7bb62eda05b45a2d6" prot="private" virt="non-virtual"><scope>TiXmlString</scope><name>init</name></member>
+      <member refid="class_ti_xml_string_1a3202f27d139a3fac79205f1f3c707727" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>length</name></member>
+      <member refid="class_ti_xml_string_1a8f4422d227088dc7bec96f479b275d0a" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>npos</name></member>
+      <member refid="class_ti_xml_string_1ae1f9e0de28328eed27d5623ff67a3191" prot="private" virt="non-virtual"><scope>TiXmlString</scope><name>nullrep_</name></member>
+      <member refid="class_ti_xml_string_1ab56336ac2aa2a08d24a71eb9a2b502a5" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>operator+=</name></member>
+      <member refid="class_ti_xml_string_1a6aa09d5240470b76d54ec709e04f8c13" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>operator+=</name></member>
+      <member refid="class_ti_xml_string_1afdcae5ea2b4d9e194dc21226b817f417" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>operator+=</name></member>
+      <member refid="class_ti_xml_string_1ae0bc6147afc0ec2aa0da3a3c0a8fcfb0" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>operator=</name></member>
+      <member refid="class_ti_xml_string_1ab1f1f5d3eceaa0f22d0a7e6055ea81b0" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>operator=</name></member>
+      <member refid="class_ti_xml_string_1ae8cdc1d46c538536b786f7ae03c0c1d9" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>operator[]</name></member>
+      <member refid="class_ti_xml_string_1aa6008ae51286a342cd366fbf1e3eeafc" prot="private" virt="non-virtual"><scope>TiXmlString</scope><name>quit</name></member>
+      <member refid="class_ti_xml_string_1ac7be48f31ca451bcb16de428b5c40e0c" prot="private" virt="non-virtual"><scope>TiXmlString</scope><name>rep_</name></member>
+      <member refid="class_ti_xml_string_1a88ecf9f0f00cb5c67b6b637958d7049c" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>reserve</name></member>
+      <member refid="class_ti_xml_string_1a5d70615367bf2920c25feddf6ac4ad30" prot="private" virt="non-virtual"><scope>TiXmlString</scope><name>set_size</name></member>
+      <member refid="class_ti_xml_string_1a96103e5c0f67e987fa48527e1f47a1f6" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>size</name></member>
+      <member refid="class_ti_xml_string_1abeb2c1893a04c17904f7c06546d0b971" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>size_type</name></member>
+      <member refid="class_ti_xml_string_1a36417caceebe25352f53a87e8cd966b4" prot="private" virt="non-virtual"><scope>TiXmlString</scope><name>start</name></member>
+      <member refid="class_ti_xml_string_1aa392cbc180752a79f007f4f9280c7762" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>swap</name></member>
+      <member refid="class_ti_xml_string_1a342f61e0fc2244df300b73aedf6d3fef" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>TiXmlString</name></member>
+      <member refid="class_ti_xml_string_1ac80fe17693a438c9ab2591664743fcb6" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>TiXmlString</name></member>
+      <member refid="class_ti_xml_string_1aa3b32bd2891a757c9f36c21db44c81d2" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>TiXmlString</name></member>
+      <member refid="class_ti_xml_string_1a4b17ea5c5db986f14827223dfa8f1547" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>TiXmlString</name></member>
+      <member refid="class_ti_xml_string_1a7ac03f581ca3422c4808162ab14f3450" prot="public" virt="non-virtual"><scope>TiXmlString</scope><name>~TiXmlString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

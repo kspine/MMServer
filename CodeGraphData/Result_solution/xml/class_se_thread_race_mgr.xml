@@ -1,0 +1,919 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_se_thread_race_mgr" kind="class" prot="public">
+    <compoundname>SeThreadRaceMgr</compoundname>
+    <includes refid="src_2_se_thread_race_mgr_8h" local="no">SeThreadRaceMgr.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_se_thread_race_mgr_1ae8bb91c50332441e8dc90d56f49baeb8" prot="protected" static="no" mutable="no">
+        <type><ref refid="src_2_se_thread_race_mgr_8h_1a39e103dfc873b8da477f737dc3bed2ef" kindref="member">MSvrRace</ref></type>
+        <definition>MSvrRace SeThreadRaceMgr::m_kMapRace</definition>
+        <argsstring></argsstring>
+        <name>m_kMapRace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="59" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_se_thread_race_mgr_1a5087128d5e99691c4539996bb6cb376e" compoundref="src_2_se_thread_race_mgr_8cpp" startline="24" endline="39">AddRace</referencedby>
+        <referencedby refid="class_se_thread_race_mgr_1a5c1640d88ef383e67ab3ad22b7dd1f9d" compoundref="src_2_se_thread_race_mgr_8cpp" startline="41" endline="59">AddRacePlayer</referencedby>
+        <referencedby refid="class_se_thread_race_mgr_1aaa32cf1e375425ee1eacf3619e311eb2" compoundref="src_2_se_thread_race_mgr_8cpp" startline="61" endline="77">DelRace</referencedby>
+        <referencedby refid="class_se_thread_race_mgr_1a8996177af66d17815e3b3a4c0a6f713e" compoundref="src_2_se_thread_race_mgr_8cpp" startline="137" endline="152">PlayerLeave</referencedby>
+        <referencedby refid="class_se_thread_race_mgr_1a20d3fcf75d66f1161d8fd4bd415006e7" compoundref="src_2_se_thread_race_mgr_8cpp" startline="154" endline="171">PlayerRelink</referencedby>
+        <referencedby refid="class_se_thread_race_mgr_1ad7d4c6c947ddd55ac6bc40cd0b33676d" compoundref="src_2_se_thread_race_mgr_8cpp" startline="301" endline="369">PrintCmdData</referencedby>
+        <referencedby refid="class_se_thread_race_mgr_1a8265c49b0a9dcd4d16bc455427997ab3" compoundref="src_2_se_thread_race_mgr_8cpp" startline="79" endline="88">PushGetHeroInfo</referencedby>
+        <referencedby refid="class_se_thread_race_mgr_1a995b70cdd4c0d3ca81e175bb9794fb10" compoundref="src_2_se_thread_race_mgr_8cpp" startline="91" endline="135">PushRaceData</referencedby>
+        <referencedby refid="class_se_thread_race_mgr_1ae50d9495ff6e5f6968d5aad75bd75847" compoundref="src_2_se_thread_race_mgr_8cpp" startline="173" endline="208">UpdateRace</referencedby>
+        <referencedby refid="class_se_thread_race_mgr_1a3c482b7740d6791d84b8a968ef989be0" compoundref="src_2_se_thread_race_mgr_8cpp" startline="14" endline="17">~SeThreadRaceMgr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_thread_race_mgr_1a02168f1aa3b7f4c52d855a371e64f335" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeThreadRaceMgr::m_iThreadIndex</definition>
+        <argsstring></argsstring>
+        <name>m_iThreadIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="60" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_se_thread_race_mgr_1a5087128d5e99691c4539996bb6cb376e" compoundref="src_2_se_thread_race_mgr_8cpp" startline="24" endline="39">AddRace</referencedby>
+        <referencedby refid="class_se_thread_race_mgr_1aaa32cf1e375425ee1eacf3619e311eb2" compoundref="src_2_se_thread_race_mgr_8cpp" startline="61" endline="77">DelRace</referencedby>
+        <referencedby refid="class_se_thread_race_mgr_1aaaaaccd6ed3e1e75d0ba683dafc3b398" compoundref="src_2_se_thread_race_mgr_8cpp" startline="8" endline="12">SeThreadRaceMgr</referencedby>
+        <referencedby refid="class_se_thread_race_mgr_1a3fb9e1b4f640cda3a47c0f0de32c833b" compoundref="src_2_se_thread_race_mgr_8cpp" startline="19" endline="22">SetThreadIndex</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_se_thread_race_mgr_1ae16e64d8bbe70fbd3587f36f54955218" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeThreadRaceMgr::m_iPrintDataSize</definition>
+        <argsstring></argsstring>
+        <name>m_iPrintDataSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="65" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="class_se_thread_race_mgr_1ad7d4c6c947ddd55ac6bc40cd0b33676d" compoundref="src_2_se_thread_race_mgr_8cpp" startline="301" endline="369">PrintCmdData</referencedby>
+        <referencedby refid="class_se_thread_race_mgr_1aaaaaccd6ed3e1e75d0ba683dafc3b398" compoundref="src_2_se_thread_race_mgr_8cpp" startline="8" endline="12">SeThreadRaceMgr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_se_thread_race_mgr_1aaaaaccd6ed3e1e75d0ba683dafc3b398" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeThreadRaceMgr::SeThreadRaceMgr</definition>
+        <argsstring>(void)</argsstring>
+        <name>SeThreadRaceMgr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="42" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.cpp" bodystart="8" bodyend="12"/>
+        <references refid="class_se_thread_race_mgr_1ae16e64d8bbe70fbd3587f36f54955218" compoundref="src_2_se_thread_race_mgr_8h" startline="65">m_iPrintDataSize</references>
+        <references refid="class_se_thread_race_mgr_1a02168f1aa3b7f4c52d855a371e64f335" compoundref="src_2_se_thread_race_mgr_8h" startline="60">m_iThreadIndex</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a3c482b7740d6791d84b8a968ef989be0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeThreadRaceMgr::~SeThreadRaceMgr</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SeThreadRaceMgr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="43" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.cpp" bodystart="14" bodyend="17"/>
+        <references refid="class_se_thread_race_mgr_1ae8bb91c50332441e8dc90d56f49baeb8" compoundref="src_2_se_thread_race_mgr_8h" startline="59">m_kMapRace</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a3fb9e1b4f640cda3a47c0f0de32c833b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::SetThreadIndex</definition>
+        <argsstring>(int iThreadIndex)</argsstring>
+        <name>SetThreadIndex</name>
+        <param>
+          <type>int</type>
+          <declname>iThreadIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="46" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.cpp" bodystart="19" bodyend="22"/>
+        <references refid="class_se_thread_race_mgr_1a02168f1aa3b7f4c52d855a371e64f335" compoundref="src_2_se_thread_race_mgr_8h" startline="60">m_iThreadIndex</references>
+        <referencedby refid="class_race_service_1ac030266656fd64ac5a06249bf755cb67" compoundref="src_2_race_service_8cpp" startline="341" endline="345">RaceService::SetThreadIndex</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a5087128d5e99691c4539996bb6cb376e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::AddRace</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID)</argsstring>
+        <name>AddRace</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="47" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.cpp" bodystart="24" bodyend="39"/>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="struct_se_r_c_r___race_opr_1aa3dfff8bf8bd90f8143fa7c26d773d6a" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="99">SeRCR_RaceOpr::iOprType</references>
+        <references refid="struct_se_r_c_r___race_opr_1a4dac0aa1cb1b60995bfbd13653b2a89e" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="98">SeRCR_RaceOpr::iThreadIndex</references>
+        <references refid="class_se_thread_race_mgr_1a02168f1aa3b7f4c52d855a371e64f335" compoundref="src_2_se_thread_race_mgr_8h" startline="60">m_iThreadIndex</references>
+        <references refid="class_se_thread_race_mgr_1ae8bb91c50332441e8dc90d56f49baeb8" compoundref="src_2_se_thread_race_mgr_8h" startline="59">m_kMapRace</references>
+        <references refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</references>
+        <referencedby refid="class_race_service_1a77e140d69c562236c411afcb6374a9d1" compoundref="src_2_se_race_server_process_8cpp" startline="28" endline="42">RaceService::ProcessRRC_RaceInit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a5c1640d88ef383e67ab3ad22b7dd1f9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::AddRacePlayer</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iNum, SeRaceStartInfo *pkInfo)</argsstring>
+        <name>AddRacePlayer</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iNum</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_race_start_info" kindref="compound">SeRaceStartInfo</ref> *</type>
+          <declname>pkInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="48" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.cpp" bodystart="41" bodyend="59"/>
+        <references refid="struct_se_race_start_info_1a2bdb04cea5d9e52f869b9fb2df0c7787" compoundref="src_2_se_thread_race_def_8h" startline="67">SeRaceStartInfo::bLeave</references>
+        <references refid="struct_se_race_start_info_1a5b49a0d20ffa94b2dc6fca26f040667e" compoundref="src_2_se_thread_race_def_8h" startline="64">SeRaceStartInfo::iSeatIndex</references>
+        <references refid="struct_se_svr_race_1a3b17a34af75a99953e03d6b458db62f1" compoundref="src_2_se_thread_race_mgr_8h" startline="28">SeSvrRace::kRacePlayer</references>
+        <references refid="struct_se_race_start_info_1af888bd523787803badb1b0f19be4bde5" compoundref="src_2_se_thread_race_def_8h" startline="65">SeRaceStartInfo::kSock</references>
+        <references refid="class_se_thread_race_mgr_1ae8bb91c50332441e8dc90d56f49baeb8" compoundref="src_2_se_thread_race_mgr_8h" startline="59">m_kMapRace</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <referencedby refid="class_race_service_1a77e140d69c562236c411afcb6374a9d1" compoundref="src_2_se_race_server_process_8cpp" startline="28" endline="42">RaceService::ProcessRRC_RaceInit</referencedby>
+        <referencedby refid="class_race_service_1acbb709a0386cddf5b17c7ce8a913e3ab" compoundref="src_2_se_race_server_process_8cpp" startline="97" endline="106">RaceService::ProcessRRC_RaceStart</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1aaa32cf1e375425ee1eacf3619e311eb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::DelRace</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID)</argsstring>
+        <name>DelRace</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="49" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.cpp" bodystart="61" bodyend="77"/>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="class_race_server_1ad90122186fb9ec6a3e8946fe66dd227c" compoundref="src_2_se_race_svr_other_8cpp" startline="68" endline="71">RaceServer::GetServerTime</references>
+        <references refid="struct_se_r_c_r___race_opr_1aa3dfff8bf8bd90f8143fa7c26d773d6a" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="99">SeRCR_RaceOpr::iOprType</references>
+        <references refid="struct_se_r_c_r___race_opr_1a4dac0aa1cb1b60995bfbd13653b2a89e" compoundref="src_2_se_ptl___r_s_c___to___r_s_8h" startline="98">SeRCR_RaceOpr::iThreadIndex</references>
+        <references refid="struct_se_svr_race_1a4e6410e5a84361a3ef65bbeb82fc1567" compoundref="src_2_se_thread_race_mgr_8h" startline="29">SeSvrRace::kRaceDataMgr</references>
+        <references refid="struct_se_svr_race_1a3b17a34af75a99953e03d6b458db62f1" compoundref="src_2_se_thread_race_mgr_8h" startline="28">SeSvrRace::kRacePlayer</references>
+        <references refid="class_se_thread_race_mgr_1a02168f1aa3b7f4c52d855a371e64f335" compoundref="src_2_se_thread_race_mgr_8h" startline="60">m_iThreadIndex</references>
+        <references refid="class_se_thread_race_mgr_1ae8bb91c50332441e8dc90d56f49baeb8" compoundref="src_2_se_thread_race_mgr_8h" startline="59">m_kMapRace</references>
+        <references refid="class_race_server_1a51639bd7785f6dd43a8f31bc2256dc46" compoundref="src_2_se_race_svr_other_8cpp" startline="288" endline="291">RaceServer::PushRSMsg</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="class_se_race_data_mgr_1a87914159ea7e373c23345aae55b27cc2" compoundref="src_2_se_race_data_8cpp" startline="138" endline="187">SeRaceDataMgr::UpdateRaceData</references>
+        <referencedby refid="class_race_service_1aab14866a2a8f9a18002de7f3382bf323" compoundref="src_2_race_service_8cpp" startline="194" endline="201">RaceService::OnRaceErrorRet</referencedby>
+        <referencedby refid="class_race_service_1a682d00a8b87522fd1e27245a150021df" compoundref="src_2_race_service_8cpp" startline="203" endline="224">RaceService::OnRaceEvent</referencedby>
+        <referencedby refid="class_race_service_1a2a5f7d12e2afc1bb15b9c185c5d91462" compoundref="src_2_se_race_server_process_8cpp" startline="83" endline="95">RaceService::ProcessRRC_RaceOver</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a8265c49b0a9dcd4d16bc455427997ab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::PushGetHeroInfo</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iSeat, void *pkData, int iSize)</argsstring>
+        <name>PushGetHeroInfo</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSeat</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="50" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.cpp" bodystart="79" bodyend="88"/>
+        <references refid="struct_se_svr_race_1a4e6410e5a84361a3ef65bbeb82fc1567" compoundref="src_2_se_thread_race_mgr_8h" startline="29">SeSvrRace::kRaceDataMgr</references>
+        <references refid="class_se_thread_race_mgr_1ae8bb91c50332441e8dc90d56f49baeb8" compoundref="src_2_se_thread_race_mgr_8h" startline="59">m_kMapRace</references>
+        <references refid="class_se_race_data_mgr_1aa15e664ed878852799cf4fafa14cfbe3" compoundref="src_2_se_race_data_8cpp" startline="193" endline="210">SeRaceDataMgr::PushHeroInfo</references>
+        <referencedby refid="class_race_service_1aeab2c2c55360788c731c7fed2515689c" compoundref="src_2_race_service_8cpp" startline="264" endline="267">RaceService::OnRaceHeroInfo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a995b70cdd4c0d3ca81e175bb9794fb10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::PushRaceData</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iSeat, DWord dwFrame, char *pkData, int iSize, bool bMustSend)</argsstring>
+        <name>PushRaceData</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSeat</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwFrame</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bMustSend</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="51" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.cpp" bodystart="91" bodyend="135"/>
+        <references refid="struct_se_svr_race_1a85ecb4d6ce273bd593093e638cacc02e" compoundref="src_2_se_thread_race_mgr_8h" startline="30">SeSvrRace::bNeedSendData</references>
+        <references refid="struct_se_race_cmd_1a7a990239f830367580ce4aa46ff1371c" compoundref="_se_race_cmd_8h" startline="146">SeRaceCmd::dwCmd</references>
+        <references refid="struct_se_svr_race_1a1f96b74a8d493fcebc4eff8fca7c4b8d" compoundref="src_2_se_thread_race_mgr_8h" startline="34">SeSvrRace::dwLastSendCmdDataTime</references>
+        <references refid="_performacen_timing_mgr_8h_1a282820dcf883c4eff902816f24e608fea3d4a2275554f29eb1b451773409912c1" compoundref="_performacen_timing_mgr_8h" startline="11">eCounterFlags_ResetEachFrame</references>
+        <references refid="struct_statistic_send_command_packet_1afe40455693a09fed97d57e9c249f1b2e" compoundref="src_2_se_thread_race_mgr_8h" startline="14">StatisticSendCommandPacket::iCount</references>
+        <references refid="struct_statistic_send_command_packet_1ab6b72fed52e1000fe6bb97f2ce2a2c67" compoundref="src_2_se_thread_race_mgr_8h" startline="15">StatisticSendCommandPacket::iSize</references>
+        <references refid="struct_se_svr_race_1a4e6410e5a84361a3ef65bbeb82fc1567" compoundref="src_2_se_thread_race_mgr_8h" startline="29">SeSvrRace::kRaceDataMgr</references>
+        <references refid="struct_se_svr_race_1a4624d1a11095596108b7e454f5a4a643" compoundref="src_2_se_thread_race_mgr_8h" startline="33">SeSvrRace::kSendCmdDataSize</references>
+        <references refid="_performacen_timing_mgr_8h_1abfeb88b8136bb01e0d92ed5063fb8c06" compoundref="_performacen_timing_mgr_8h" startline="161">M_addCounterF_FN</references>
+        <references refid="class_se_thread_race_mgr_1ae8bb91c50332441e8dc90d56f49baeb8" compoundref="src_2_se_thread_race_mgr_8h" startline="59">m_kMapRace</references>
+        <references refid="class_se_race_data_mgr_1a00cadc587eb01cb72f465b4817ac64bc" compoundref="src_2_se_race_data_8cpp" startline="213" endline="241">SeRaceDataMgr::PushRaceData</references>
+        <referencedby refid="class_race_service_1a8a9007b3468fd155011c4a71a077c705" compoundref="src_2_race_service_8cpp" startline="171" endline="180">RaceService::OnRaceStream</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a8996177af66d17815e3b3a4c0a6f713e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::PlayerLeave</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iSeatIndex)</argsstring>
+        <name>PlayerLeave</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSeatIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="52" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.cpp" bodystart="137" bodyend="152"/>
+        <references refid="struct_se_svr_race_1a3b17a34af75a99953e03d6b458db62f1" compoundref="src_2_se_thread_race_mgr_8h" startline="28">SeSvrRace::kRacePlayer</references>
+        <references refid="class_se_thread_race_mgr_1ae8bb91c50332441e8dc90d56f49baeb8" compoundref="src_2_se_thread_race_mgr_8h" startline="59">m_kMapRace</references>
+        <referencedby refid="class_race_service_1a048dc3b1fa9950cc73b7c7364087292f" compoundref="src_2_se_race_server_process_8cpp" startline="55" endline="67">RaceService::ProcessRRC_PlayerLeave</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a20d3fcf75d66f1161d8fd4bd415006e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::PlayerRelink</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iSeatIndex, HSock kPlayerSock)</argsstring>
+        <name>PlayerRelink</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSeatIndex</declname>
+        </param>
+        <param>
+          <type>HSock</type>
+          <declname>kPlayerSock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="53" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.cpp" bodystart="154" bodyend="171"/>
+        <references refid="class_se_race_data_mgr_1a27aecfdecebe3c12260a7b9e29e7b2b2" compoundref="src_2_se_race_data_8cpp" startline="113" endline="134">SeRaceDataMgr::Clear</references>
+        <references refid="struct_se_svr_race_1a4e6410e5a84361a3ef65bbeb82fc1567" compoundref="src_2_se_thread_race_mgr_8h" startline="29">SeSvrRace::kRaceDataMgr</references>
+        <references refid="struct_se_svr_race_1a3b17a34af75a99953e03d6b458db62f1" compoundref="src_2_se_thread_race_mgr_8h" startline="28">SeSvrRace::kRacePlayer</references>
+        <references refid="class_se_thread_race_mgr_1ae8bb91c50332441e8dc90d56f49baeb8" compoundref="src_2_se_thread_race_mgr_8h" startline="59">m_kMapRace</references>
+        <referencedby refid="class_race_service_1a040f3911978ad76c0ea78067be639323" compoundref="src_2_se_race_server_process_8cpp" startline="69" endline="81">RaceService::ProcessRRC_PlayerRelink</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1ae50d9495ff6e5f6968d5aad75bd75847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::UpdateRace</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateRace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="54" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.cpp" bodystart="173" bodyend="208"/>
+        <references refid="struct_se_svr_race_1a85ecb4d6ce273bd593093e638cacc02e" compoundref="src_2_se_thread_race_mgr_8h" startline="30">SeSvrRace::bNeedSendData</references>
+        <references refid="struct_se_svr_race_1a1f96b74a8d493fcebc4eff8fca7c4b8d" compoundref="src_2_se_thread_race_mgr_8h" startline="34">SeSvrRace::dwLastSendCmdDataTime</references>
+        <references refid="struct_se_svr_race_1a53879a103a50975aed796d2e752f7657" compoundref="src_2_se_thread_race_mgr_8h" startline="31">SeSvrRace::dwLastSendTime</references>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="class_race_server_1a2fb70d03c78c196a8d0a59c7a3a93277" compoundref="src_2_se_race_svr_other_8cpp" startline="48" endline="51">RaceServer::GetServerModePackTime</references>
+        <references refid="class_race_server_1ad90122186fb9ec6a3e8946fe66dd227c" compoundref="src_2_se_race_svr_other_8cpp" startline="68" endline="71">RaceServer::GetServerTime</references>
+        <references refid="struct_se_svr_race_1a4e6410e5a84361a3ef65bbeb82fc1567" compoundref="src_2_se_thread_race_mgr_8h" startline="29">SeSvrRace::kRaceDataMgr</references>
+        <references refid="struct_se_svr_race_1a3b17a34af75a99953e03d6b458db62f1" compoundref="src_2_se_thread_race_mgr_8h" startline="28">SeSvrRace::kRacePlayer</references>
+        <references refid="_performacen_timing_mgr_8h_1a9963036d676352430d69324421a8eb82" compoundref="_performacen_timing_mgr_8h" startline="98">M_BeforeStartInverval</references>
+        <references refid="class_se_thread_race_mgr_1ae8bb91c50332441e8dc90d56f49baeb8" compoundref="src_2_se_thread_race_mgr_8h" startline="59">m_kMapRace</references>
+        <references refid="_performacen_timing_mgr_8h_1a08f87f8bb7822829ee6ad556f3a1fa82" compoundref="_performacen_timing_mgr_8h" startline="106">M_QDoMutiInterval_FN</references>
+        <references refid="class_se_thread_race_mgr_1ad7d4c6c947ddd55ac6bc40cd0b33676d" compoundref="src_2_se_thread_race_mgr_8cpp" startline="301" endline="369">PrintCmdData</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="class_se_race_data_mgr_1a87914159ea7e373c23345aae55b27cc2" compoundref="src_2_se_race_data_8cpp" startline="138" endline="187">SeRaceDataMgr::UpdateRaceData</references>
+        <referencedby refid="class_race_service_1ac75744355bee316fe6e3cfd834d2c76c" compoundref="src_2_race_service_8cpp" startline="62" endline="125">RaceService::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a759723f6eaeea9e2ebcd8155a78bcae0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::PushGetKDA</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, void *pkData)</argsstring>
+        <name>PushGetKDA</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1aaaaaccd6ed3e1e75d0ba683dafc3b398" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeThreadRaceMgr::SeThreadRaceMgr</definition>
+        <argsstring>(void)</argsstring>
+        <name>SeThreadRaceMgr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeThreadRaceMgr.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a3c482b7740d6791d84b8a968ef989be0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeThreadRaceMgr::~SeThreadRaceMgr</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SeThreadRaceMgr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeThreadRaceMgr.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a3fb9e1b4f640cda3a47c0f0de32c833b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::SetThreadIndex</definition>
+        <argsstring>(int iThreadIndex)</argsstring>
+        <name>SetThreadIndex</name>
+        <param>
+          <type>int</type>
+          <declname>iThreadIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeThreadRaceMgr.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a5087128d5e99691c4539996bb6cb376e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::AddRace</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID)</argsstring>
+        <name>AddRace</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeThreadRaceMgr.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a5c1640d88ef383e67ab3ad22b7dd1f9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::AddRacePlayer</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iNum, SeRaceStartInfo *pkInfo)</argsstring>
+        <name>AddRacePlayer</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iNum</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_race_start_info" kindref="compound">SeRaceStartInfo</ref> *</type>
+          <declname>pkInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeThreadRaceMgr.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1aaa32cf1e375425ee1eacf3619e311eb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::DelRace</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID)</argsstring>
+        <name>DelRace</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeThreadRaceMgr.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a8265c49b0a9dcd4d16bc455427997ab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::PushGetHeroInfo</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iSeat, void *pkData, int iSize)</argsstring>
+        <name>PushGetHeroInfo</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSeat</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeThreadRaceMgr.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a995b70cdd4c0d3ca81e175bb9794fb10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::PushRaceData</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iSeat, DWord dwFrame, char *pkData, int iSize, bool bMustSend)</argsstring>
+        <name>PushRaceData</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSeat</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwFrame</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bMustSend</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeThreadRaceMgr.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a8996177af66d17815e3b3a4c0a6f713e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::PlayerLeave</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iSeatIndex)</argsstring>
+        <name>PlayerLeave</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSeatIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeThreadRaceMgr.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a20d3fcf75d66f1161d8fd4bd415006e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::PlayerRelink</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, int iSeatIndex, HSock kPlayerSock)</argsstring>
+        <name>PlayerRelink</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSeatIndex</declname>
+        </param>
+        <param>
+          <type>HSock</type>
+          <declname>kPlayerSock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeThreadRaceMgr.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1ae50d9495ff6e5f6968d5aad75bd75847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::UpdateRace</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateRace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeThreadRaceMgr.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a759723f6eaeea9e2ebcd8155a78bcae0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::PushGetKDA</definition>
+        <argsstring>(const TeMD5 &amp;rkRaceID, void *pkData)</argsstring>
+        <name>PushGetKDA</name>
+        <param>
+          <type>const <ref refid="struct_te_m_d5" kindref="compound">TeMD5</ref> &amp;</type>
+          <declname>rkRaceID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeThreadRaceMgr.h" line="55" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_se_thread_race_mgr_1ad7d4c6c947ddd55ac6bc40cd0b33676d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::PrintCmdData</definition>
+        <argsstring>()</argsstring>
+        <name>PrintCmdData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="63" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.cpp" bodystart="301" bodyend="369"/>
+        <references refid="class_se_thread_race_mgr_1a847ba79a21e597582d7eff7bd80691e9" compoundref="src_2_se_thread_race_mgr_8cpp" startline="210" endline="299">ConvCmdName</references>
+        <references refid="struct_se_svr_race_1a1f96b74a8d493fcebc4eff8fca7c4b8d" compoundref="src_2_se_thread_race_mgr_8h" startline="34">SeSvrRace::dwLastSendCmdDataTime</references>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="_se_tool_8h_1adbd57b0a2e2b5bccf6ba29ea002839e8" compoundref="_se_tool_8h" startline="102">GetMD52Str</references>
+        <references refid="class_race_server_1a788a00bd15f61a8dadb074c05658b108" compoundref="src_2_race_server_8cpp" startline="1191" endline="1194">RaceServer::GetRaceConfig</references>
+        <references refid="struct_se_race_config_1a351ec660faea6cae5c3a7faa25e89a48" compoundref="src_2_race_server_def_8h" startline="119">SeRaceConfig::iStatisticPacketSizeTime</references>
+        <references refid="struct_se_svr_race_1a4624d1a11095596108b7e454f5a4a643" compoundref="src_2_se_thread_race_mgr_8h" startline="33">SeSvrRace::kSendCmdDataSize</references>
+        <references refid="class_se_thread_race_mgr_1ae16e64d8bbe70fbd3587f36f54955218" compoundref="src_2_se_thread_race_mgr_8h" startline="65">m_iPrintDataSize</references>
+        <references refid="class_se_thread_race_mgr_1ae8bb91c50332441e8dc90d56f49baeb8" compoundref="src_2_se_thread_race_mgr_8h" startline="59">m_kMapRace</references>
+        <referencedby refid="class_se_thread_race_mgr_1ae50d9495ff6e5f6968d5aad75bd75847" compoundref="src_2_se_thread_race_mgr_8cpp" startline="173" endline="208">UpdateRace</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a847ba79a21e597582d7eff7bd80691e9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * SeThreadRaceMgr::ConvCmdName</definition>
+        <argsstring>(char *ch, DWord cmd)</argsstring>
+        <name>ConvCmdName</name>
+        <param>
+          <type>char *</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="64" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.cpp" bodystart="210" bodyend="299"/>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea293d5a8943d8db5122a1fd7e6903776b" compoundref="_se_race_cmd_8h" startline="115">SPRCT_ATTACHDATA</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea1a280756bc58f1b30af6945cb62bf58c" compoundref="_se_race_cmd_8h" startline="108">SPRCT_BEGIN</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eab5772d75c48f33e41239db59fc8ed192" compoundref="_se_race_cmd_8h" startline="118">SPRCT_BUFFERDATA</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea54d0d9723e74f4c919fb68c489f6629c" compoundref="_se_race_cmd_8h" startline="119">SPRCT_CHAINEFFECTDATA</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea169228e9a4742888003a33f89c54a7a1" compoundref="_se_race_cmd_8h" startline="112">SPRCT_DAMAGEDATA</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea591faef1f734e4d94a3af78a4e37d03b" compoundref="_se_race_cmd_8h" startline="120">SPRCT_EFFECTDATA</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eaebd02f8f9cd37530506ddf4e17477b80" compoundref="_se_race_cmd_8h" startline="121">SPRCT_EFFECTDEL</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eae9c90d38081a71996678e83b04f17d09" compoundref="_se_race_cmd_8h" startline="122">SPRCT_GLOBALDATA</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea4f0648dfb36e2951807eceaf12dcaa87" compoundref="_se_race_cmd_8h" startline="113">SPRCT_HERODATA</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea6ffb067e1c88c9e256ea46149216060e" compoundref="_se_race_cmd_8h" startline="111">SPRCT_KILLHERODATA</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eab0708f6a1bba0977afef81aed730786f" compoundref="_se_race_cmd_8h" startline="114">SPRCT_MAPITEMDATA</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eaacefbcc1cc0c2e9f22ff2c9167497956" compoundref="_se_race_cmd_8h" startline="123">SPRCT_MAPPOINTDATA</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea50ec415d65b935c7cf8d4b673f313363" compoundref="_se_race_cmd_8h" startline="124">SPRCT_PING</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea73186c8b8b7beb70de246ff92f884a42" compoundref="_se_race_cmd_8h" startline="116">SPRCT_UIWINDOWDATA</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea21c552eaa9cb393b4c60a626ebcbcf72" compoundref="_se_race_cmd_8h" startline="110">SPRCT_UNITDISAPPEAR</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eab54bd617cfc5e5a33aad0e03c2f12f83" compoundref="_se_race_cmd_8h" startline="117">SPRCT_UNITSHOWDATA</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eaf33d69c9b84cee65c4e8f0da25c26836" compoundref="_se_race_cmd_8h" startline="125">SPRCT_USERDATA</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea2c9de7536de64b04895276398f7fc88e" compoundref="_se_race_cmd_8h" startline="86">SRC_ADJUSTFRAME</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eab6933b47ce21dd54371ec8f83567bce4" compoundref="_se_race_cmd_8h" startline="14">SRC_END</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea37bfc3f984457b3ea01033692c9cda81" compoundref="_se_race_cmd_8h" startline="10">SRC_FRAME</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eac82c6fba817910b2c5fa4293133b85af" compoundref="_se_race_cmd_8h" startline="38">SRC_HERO_ATTACK_CANCEL</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ead56365070bd6831c4f9b5ebf683bdca9" compoundref="_se_race_cmd_8h" startline="37">SRC_HERO_ATTACK_POS</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea3747eb579b04944bd01ccb80e7e29327" compoundref="_se_race_cmd_8h" startline="41">SRC_HERO_ATTACK_UNIT</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eaf6377d8f8aef71264b1bd906538d93f4" compoundref="_se_race_cmd_8h" startline="29">SRC_HERO_DIRECT_MOVE</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea450e0b7f95ef5284a6b16fd7e80a21ad" compoundref="_se_race_cmd_8h" startline="35">SRC_HERO_HOLD</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea1ec011bbfacd9c60a37c0c4c1e92a2a2" compoundref="_se_race_cmd_8h" startline="30">SRC_HERO_MOVE</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea0379d171346f92f7e544b23b3a5adf46" compoundref="_se_race_cmd_8h" startline="39">SRC_HERO_SELECT</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eaa26cc63d9630db1c5b0b3185fdca48e8" compoundref="_se_race_cmd_8h" startline="32">SRC_HERO_STOP</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eae52d4c7e159952ceae028152e27d34cd" compoundref="_se_race_cmd_8h" startline="12">SRC_LOAD</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea24bebf6ced3f124fcb9b6087c6f04f06" compoundref="_se_race_cmd_8h" startline="85">SRC_LOCKUNIT</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea82a06a8854a43d283866dba142edb46c" compoundref="_se_race_cmd_8h" startline="81">SRC_PAUSE_BEGIN</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea011418c50005f388908ef920f81437aa" compoundref="_se_race_cmd_8h" startline="23">SRC_PAUSE_CANCEL</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea5f1cc87bbee839607dc7f2e642b78b70" compoundref="_se_race_cmd_8h" startline="82">SRC_PAUSE_END</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea82cc4d16d46a26773eb84f5452b38ae5" compoundref="_se_race_cmd_8h" startline="91">SRC_PING</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea90ee7f98882ddf885126531a9c194188" compoundref="_se_race_cmd_8h" startline="67">SRC_PLAYER_GUANQIA_CMD</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea55bae76adfdf653f04b838f90379ea41" compoundref="_se_race_cmd_8h" startline="11">SRC_PLAYER_INFO</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea44e1bb3fe2ceb83c4bfa12d878d42e5c" compoundref="_se_race_cmd_8h" startline="19">SRC_PLAYER_LEAVE</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eabf5764d3743652c6cc3b722211b43a40" compoundref="_se_race_cmd_8h" startline="74">SRC_PLAYER_RECON_END</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eac6e5c46de8d6820cd1abaa060ee00691" compoundref="_se_race_cmd_8h" startline="66">SRC_PLAYER_RELIVEHERO</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea965c14d2aa3f37e743961f6b2e8bc20f" compoundref="_se_race_cmd_8h" startline="70">SRC_PLAYER_TOWNITEM</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eac64cf438ae93aa5db79400afeb8476f1" compoundref="_se_race_cmd_8h" startline="22">SRC_RACE_PAUSE</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea541cb85b41c383684d5aae798539b75f" compoundref="_se_race_cmd_8h" startline="87">SRC_RELINKBEGIN</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eaff1cc151b001babc1f3b7e451419b452" compoundref="_se_race_cmd_8h" startline="88">SRC_RELINKEND</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea18c6532cdc3b003ac02bfc1c7a42b701" compoundref="_se_race_cmd_8h" startline="95">SRC_REPLAYVERSION</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eae5d001b2209bb64443f31f04c377c562" compoundref="_se_race_cmd_8h" startline="92">SRC_SAVE_RECONDATA_BEGIN</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea37a7da12c0ff778ab420d4481bff3612" compoundref="_se_race_cmd_8h" startline="93">SRC_SAVE_RECONDATA_END</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea2227fea9a7807fb02f66c991bb9ac2d7" compoundref="_se_race_cmd_8h" startline="64">SRC_SHOP_LIST</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea1463f119ba6192278b7f353848bb3573" compoundref="_se_race_cmd_8h" startline="13">SRC_START</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea13e5ad55e749597abfa11cfc014e726f" compoundref="_se_race_cmd_8h" startline="79">SRC_SWITCH_HEROFOCUS</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eac103fe0d4fe0f1d53728679335fc4b47" compoundref="_se_race_cmd_8h" startline="90">SRC_SWITCH_MODE</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea98b22621befb1521b0aa90081f6062ce" compoundref="_se_race_cmd_8h" startline="21">SRC_SYSTEM_CHEAT</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eaabca3973f254a9dde5cb785d83a3ee0c" compoundref="_se_race_cmd_8h" startline="26">SRC_SYSTEM_SURRENDER</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea958c0f113b9c1e93656330d7bc8cda25" compoundref="_se_race_cmd_8h" startline="20">SRC_SYSTEM_SUSPEND</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea199372029cfaf52f4efe7833d3bec77e" compoundref="_se_race_cmd_8h" startline="89">SRC_TRAN_LOADEND</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea2dc3b0ca14d1499a3808e64ad63e676d" compoundref="_se_race_cmd_8h" startline="58">SRC_UNIT_ACTIVE_SKILL</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea19e094a4e21858982df58c9723f9c6a6" compoundref="_se_race_cmd_8h" startline="43">SRC_UNIT_ATTACK</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eadf5fcc32b3c3d4537666fa626dc2b177" compoundref="_se_race_cmd_8h" startline="40">SRC_UNIT_ATTACK_POS</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea877c6ad08be3e4d79669d7521613b5f0" compoundref="_se_race_cmd_8h" startline="42">SRC_UNIT_ATTACK_UNIT</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea145b3aebc1999534edb47010874958c6" compoundref="_se_race_cmd_8h" startline="53">SRC_UNIT_BUY_ITEM</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea8076584b42dba0f2c18185a20689ec05" compoundref="_se_race_cmd_8h" startline="54">SRC_UNIT_DIRECTBUY_ITEM</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea21c097e1d438a72c9c49873eb1a63f1a" compoundref="_se_race_cmd_8h" startline="55">SRC_UNIT_DIRECTSELL_ITEM</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea53ea8076fe0d51492f54d01d210e0dd4" compoundref="_se_race_cmd_8h" startline="59">SRC_UNIT_DISPLACE_ITEM</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eaadf25896ecfea5244448bbbb123976ad" compoundref="_se_race_cmd_8h" startline="50">SRC_UNIT_DROP_ITEM</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eaca767b19c46fb93609e371cd50724536" compoundref="_se_race_cmd_8h" startline="45">SRC_UNIT_FOLLOW</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea983099ec2228692551b335bd6875f1e1" compoundref="_se_race_cmd_8h" startline="60">SRC_UNIT_GIVEUP_DISPLACE_ITEM</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea73cc1cd7a1eafc79044070825b7c8753" compoundref="_se_race_cmd_8h" startline="36">SRC_UNIT_HOLD</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea33eb378f1cbfd43de7f621c9897a8341" compoundref="_se_race_cmd_8h" startline="57">SRC_UNIT_LEARN_SKILL</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea20f7e5ac761d2d98c0fcb94f95a1843c" compoundref="_se_race_cmd_8h" startline="31">SRC_UNIT_MOVE</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea13268834337732e47d4039aad09ef016" compoundref="_se_race_cmd_8h" startline="44">SRC_UNIT_PATROL</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea845bc74ca41a59d9da5e13a58b30993e" compoundref="_se_race_cmd_8h" startline="51">SRC_UNIT_PICK_ITEM</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea90dff1a18c2a86050ba4e2e18b2ad525" compoundref="_se_race_cmd_8h" startline="52">SRC_UNIT_PICK_ITEM_AUTO</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eac7d5fd7bb586a2aceb3814916a71186f" compoundref="_se_race_cmd_8h" startline="46">SRC_UNIT_SPELL</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666eabef795d2ab3528e23411a92740bc64c7" compoundref="_se_race_cmd_8h" startline="47">SRC_UNIT_SPELLXULI</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea70aab0c2da2593ca5e5c830a4e167d64" compoundref="_se_race_cmd_8h" startline="34">SRC_UNIT_STOP</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea1cc3cba49453af7d219d621434f2f1f6" compoundref="_se_race_cmd_8h" startline="56">SRC_UNIT_SWAP_ITEM</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea2a09eb43cc29145eba37c6395715f9ba" compoundref="_se_race_cmd_8h" startline="48">SRC_UNIT_USE_ITEM</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea116991f54400059a4af2098c44aaef2b" compoundref="_se_race_cmd_8h" startline="77">SRC_VIEW_SELHERO</references>
+        <references refid="_se_race_cmd_8h_1aeefd68b3ac453a8b06d8df8310f4666ea1a8cf206219b35bad9c73be789deece4" compoundref="_se_race_cmd_8h" startline="63">SRC_WATCH_POINT</references>
+        <referencedby refid="class_se_thread_race_mgr_1ad7d4c6c947ddd55ac6bc40cd0b33676d" compoundref="src_2_se_thread_race_mgr_8cpp" startline="301" endline="369">PrintCmdData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1ad7d4c6c947ddd55ac6bc40cd0b33676d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeThreadRaceMgr::PrintCmdData</definition>
+        <argsstring>()</argsstring>
+        <name>PrintCmdData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeThreadRaceMgr.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_thread_race_mgr_1a47b4a4e7665b2c3c8da9edc84d8a4187" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* SeThreadRaceMgr::ConvCmdName</definition>
+        <argsstring>(char *ch, DWord cmd)</argsstring>
+        <name>ConvCmdName</name>
+        <param>
+          <type>char *</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/SeThreadRaceMgr.h" line="64" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7779">
+        <label>SeLogicRaceData</label>
+        <link refid="class_se_logic_race_data"/>
+      </node>
+      <node id="7776">
+        <label>SeSvrRacePlayer</label>
+        <link refid="struct_se_svr_race_player"/>
+      </node>
+      <node id="7771">
+        <label>std::map&lt; TeMD5, SeSvrRace &gt;</label>
+        <childnode refid="7772" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="7780" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="7778">
+        <label>std::map&lt; int, SeLogicRaceData * &gt;</label>
+        <childnode refid="7779" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7775">
+        <label>std::vector&lt; SeSvrRacePlayer &gt;</label>
+        <childnode refid="7776" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7773">
+        <label>std::map&lt; DWord, StatisticSendCommandPacket &gt;</label>
+        <childnode refid="7774" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7774">
+        <label>StatisticSendCommandPacket</label>
+        <link refid="struct_statistic_send_command_packet"/>
+      </node>
+      <node id="7780">
+        <label>TeMD5</label>
+        <link refid="struct_te_m_d5"/>
+      </node>
+      <node id="7772">
+        <label>SeSvrRace</label>
+        <link refid="struct_se_svr_race"/>
+        <childnode refid="7773" relation="usage">
+          <edgelabel>kSendCmdDataSize</edgelabel>
+        </childnode>
+        <childnode refid="7775" relation="usage">
+          <edgelabel>kRacePlayer</edgelabel>
+        </childnode>
+        <childnode refid="7777" relation="usage">
+          <edgelabel>kRaceDataMgr</edgelabel>
+        </childnode>
+      </node>
+      <node id="7777">
+        <label>SeRaceDataMgr</label>
+        <link refid="class_se_race_data_mgr"/>
+        <childnode refid="7778" relation="usage">
+          <edgelabel>m_kMapRaceData</edgelabel>
+        </childnode>
+      </node>
+      <node id="7770">
+        <label>SeThreadRaceMgr</label>
+        <link refid="class_se_thread_race_mgr"/>
+        <childnode refid="7771" relation="usage">
+          <edgelabel>m_kMapRace</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" line="40" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/SeThreadRaceMgr.h" bodystart="39" bodyend="68"/>
+    <listofallmembers>
+      <member refid="class_se_thread_race_mgr_1a5087128d5e99691c4539996bb6cb376e" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>AddRace</name></member>
+      <member refid="class_se_thread_race_mgr_1a5087128d5e99691c4539996bb6cb376e" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>AddRace</name></member>
+      <member refid="class_se_thread_race_mgr_1a5c1640d88ef383e67ab3ad22b7dd1f9d" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>AddRacePlayer</name></member>
+      <member refid="class_se_thread_race_mgr_1a5c1640d88ef383e67ab3ad22b7dd1f9d" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>AddRacePlayer</name></member>
+      <member refid="class_se_thread_race_mgr_1a847ba79a21e597582d7eff7bd80691e9" prot="private" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>ConvCmdName</name></member>
+      <member refid="class_se_thread_race_mgr_1a47b4a4e7665b2c3c8da9edc84d8a4187" prot="private" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>ConvCmdName</name></member>
+      <member refid="class_se_thread_race_mgr_1aaa32cf1e375425ee1eacf3619e311eb2" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>DelRace</name></member>
+      <member refid="class_se_thread_race_mgr_1aaa32cf1e375425ee1eacf3619e311eb2" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>DelRace</name></member>
+      <member refid="class_se_thread_race_mgr_1ae16e64d8bbe70fbd3587f36f54955218" prot="private" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>m_iPrintDataSize</name></member>
+      <member refid="class_se_thread_race_mgr_1a02168f1aa3b7f4c52d855a371e64f335" prot="protected" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>m_iThreadIndex</name></member>
+      <member refid="class_se_thread_race_mgr_1ae8bb91c50332441e8dc90d56f49baeb8" prot="protected" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>m_kMapRace</name></member>
+      <member refid="class_se_thread_race_mgr_1a8996177af66d17815e3b3a4c0a6f713e" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>PlayerLeave</name></member>
+      <member refid="class_se_thread_race_mgr_1a8996177af66d17815e3b3a4c0a6f713e" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>PlayerLeave</name></member>
+      <member refid="class_se_thread_race_mgr_1a20d3fcf75d66f1161d8fd4bd415006e7" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>PlayerRelink</name></member>
+      <member refid="class_se_thread_race_mgr_1a20d3fcf75d66f1161d8fd4bd415006e7" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>PlayerRelink</name></member>
+      <member refid="class_se_thread_race_mgr_1ad7d4c6c947ddd55ac6bc40cd0b33676d" prot="private" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>PrintCmdData</name></member>
+      <member refid="class_se_thread_race_mgr_1ad7d4c6c947ddd55ac6bc40cd0b33676d" prot="private" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>PrintCmdData</name></member>
+      <member refid="class_se_thread_race_mgr_1a8265c49b0a9dcd4d16bc455427997ab3" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>PushGetHeroInfo</name></member>
+      <member refid="class_se_thread_race_mgr_1a8265c49b0a9dcd4d16bc455427997ab3" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>PushGetHeroInfo</name></member>
+      <member refid="class_se_thread_race_mgr_1a759723f6eaeea9e2ebcd8155a78bcae0" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>PushGetKDA</name></member>
+      <member refid="class_se_thread_race_mgr_1a759723f6eaeea9e2ebcd8155a78bcae0" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>PushGetKDA</name></member>
+      <member refid="class_se_thread_race_mgr_1a995b70cdd4c0d3ca81e175bb9794fb10" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>PushRaceData</name></member>
+      <member refid="class_se_thread_race_mgr_1a995b70cdd4c0d3ca81e175bb9794fb10" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>PushRaceData</name></member>
+      <member refid="class_se_thread_race_mgr_1aaaaaccd6ed3e1e75d0ba683dafc3b398" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>SeThreadRaceMgr</name></member>
+      <member refid="class_se_thread_race_mgr_1aaaaaccd6ed3e1e75d0ba683dafc3b398" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>SeThreadRaceMgr</name></member>
+      <member refid="class_se_thread_race_mgr_1a3fb9e1b4f640cda3a47c0f0de32c833b" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>SetThreadIndex</name></member>
+      <member refid="class_se_thread_race_mgr_1a3fb9e1b4f640cda3a47c0f0de32c833b" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>SetThreadIndex</name></member>
+      <member refid="class_se_thread_race_mgr_1ae50d9495ff6e5f6968d5aad75bd75847" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>UpdateRace</name></member>
+      <member refid="class_se_thread_race_mgr_1ae50d9495ff6e5f6968d5aad75bd75847" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>UpdateRace</name></member>
+      <member refid="class_se_thread_race_mgr_1a3c482b7740d6791d84b8a968ef989be0" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>~SeThreadRaceMgr</name></member>
+      <member refid="class_se_thread_race_mgr_1a3c482b7740d6791d84b8a968ef989be0" prot="public" virt="non-virtual"><scope>SeThreadRaceMgr</scope><name>~SeThreadRaceMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

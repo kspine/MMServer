@@ -1,0 +1,1678 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_backend_server" kind="class" prot="public">
+    <compoundname>BackendServer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TeNetCall</basecompoundref>
+    <basecompoundref refid="class_se_base_server" prot="public" virt="non-virtual">SeBaseServer</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">TeDBCall</basecompoundref>
+    <includes refid="_backend_server_8h" local="no">BackendServer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_backend_server_1a78c7e4f6424b7621a8f2d3d523522714" prot="protected" static="no" mutable="no">
+        <type>TeNetMgr</type>
+        <definition>TeNetMgr BackendServer::m_kNetMgr</definition>
+        <argsstring></argsstring>
+        <name>m_kNetMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="66" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="class_backend_server_1a3b70f54f6ce037cd644a562f0643d02a" compoundref="_backend_server_8cpp" startline="57" endline="61">Finialize</referencedby>
+        <referencedby refid="class_backend_server_1a41913ddc80bde6ef7e62f5422fbb0635" compoundref="_backend_server_8cpp" startline="244" endline="262">InitializeNet</referencedby>
+        <referencedby refid="class_backend_server_1a4abd844ccde6fa6b8e31fd8eaccfb982" compoundref="_backend_server_8cpp" startline="103" endline="143">OnNetRecv</referencedby>
+        <referencedby refid="class_backend_server_1a0d61ca4ff2144893f2552896b3345c22" compoundref="_se_b_k_s_n_send_8cpp" startline="7" endline="30">SendBKSNData</referencedby>
+        <referencedby refid="class_backend_server_1abdc0d26e6a91c17dcda4c6801cf2ad0c" compoundref="_backend_server_8cpp" startline="39" endline="55">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_backend_server_1a1b9c7111a22dfa4beb698a3a33090e34" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_se_backend_config" kindref="compound">SeBackendConfig</ref></type>
+        <definition>SeBackendConfig BackendServer::m_kConfig</definition>
+        <argsstring></argsstring>
+        <name>m_kConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="67" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="class_backend_server_1a7ba02c17cf5da9c5e3510e1a0e093ffa" compoundref="_backend_server_8cpp" startline="180" endline="183">GetAreaID</referencedby>
+        <referencedby refid="class_backend_server_1a4384a13111b1265a8add16ae37b0dfa8" compoundref="_backend_server_8cpp" startline="175" endline="178">GetServerID</referencedby>
+        <referencedby refid="class_backend_server_1a12dbe6127be37de2ffd713a4ce31d98c" compoundref="_backend_server_8cpp" startline="269" endline="287">InitializeDB</referencedby>
+        <referencedby refid="class_backend_server_1a41913ddc80bde6ef7e62f5422fbb0635" compoundref="_backend_server_8cpp" startline="244" endline="262">InitializeNet</referencedby>
+        <referencedby refid="class_backend_server_1ae58a3f69e4a81c8da456344a11bdfe5b" compoundref="_backend_server_8cpp" startline="189" endline="233">LoadConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_backend_server_1af6baf241378b6740fb53b915afb4aef4" prot="protected" static="no" mutable="no">
+        <type><ref refid="_src_2_match_server_def_8h_1a4932e253766909a605e124d24249d8d2" kindref="member">MapAllConnect</ref></type>
+        <definition>MapAllConnect BackendServer::m_kAllConnect</definition>
+        <argsstring></argsstring>
+        <name>m_kAllConnect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="68" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="class_backend_server_1aa10a6b04eb7ac8d43709887ebb5014cd" compoundref="_backend_server_8cpp" startline="93" endline="101">OnNetAccept</referencedby>
+        <referencedby refid="class_backend_server_1ae345c91329273c47cac10e35ad5f6dd1" compoundref="_backend_server_8cpp" startline="145" endline="167">OnNetDisconnect</referencedby>
+        <referencedby refid="class_backend_server_1a4abd844ccde6fa6b8e31fd8eaccfb982" compoundref="_backend_server_8cpp" startline="103" endline="143">OnNetRecv</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_backend_server_1a5e41584bb3c528d09034ec2a4c6c37e9" prot="protected" static="no" mutable="no">
+        <type>TeDataBaseMgr</type>
+        <definition>TeDataBaseMgr BackendServer::m_kDBMgr</definition>
+        <argsstring></argsstring>
+        <name>m_kDBMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="69" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="class_backend_server_1a3b70f54f6ce037cd644a562f0643d02a" compoundref="_backend_server_8cpp" startline="57" endline="61">Finialize</referencedby>
+        <referencedby refid="class_backend_server_1a12dbe6127be37de2ffd713a4ce31d98c" compoundref="_backend_server_8cpp" startline="269" endline="287">InitializeDB</referencedby>
+        <referencedby refid="class_backend_server_1a7496d57bce096cd42b2345047fa82248" compoundref="_backend_d_b_send_8cpp" startline="4" endline="13">SendDB_ExecuteSQL</referencedby>
+        <referencedby refid="class_backend_server_1abdc0d26e6a91c17dcda4c6801cf2ad0c" compoundref="_backend_server_8cpp" startline="39" endline="55">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_backend_server_1aec8fd9936c2e82ee1e5383cf9f3ddb3f" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BackendServer::m_iUnitStatisticDB</definition>
+        <argsstring></argsstring>
+        <name>m_iUnitStatisticDB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="70" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="class_backend_server_1aa585a8b9c0113ed869226ede159ec483" compoundref="_backend_server_8cpp" startline="9" endline="14">BackendServer</referencedby>
+        <referencedby refid="class_backend_server_1a12dbe6127be37de2ffd713a4ce31d98c" compoundref="_backend_server_8cpp" startline="269" endline="287">InitializeDB</referencedby>
+        <referencedby refid="class_backend_server_1a4d2aa3b83a7263beccc86a67cd114e9c" compoundref="_backend_d_b_send_8cpp" startline="79" endline="92">SendDB_Online_Num</referencedby>
+        <referencedby refid="class_backend_server_1ac976af9adda24baf7798c2f2ab762f69" compoundref="_backend_d_b_send_8cpp" startline="94" endline="107">SendDB_Race_Num</referencedby>
+        <referencedby refid="class_backend_server_1a142914139a2f1d32de8a0422a8e64785" compoundref="_backend_d_b_send_8cpp" startline="15" endline="32">SendDB_User_Create</referencedby>
+        <referencedby refid="class_backend_server_1ad12fb3a5cf8f2c37474fef8db6ab4239" compoundref="_backend_d_b_send_8cpp" startline="49" endline="62">SendDB_User_Race</referencedby>
+        <referencedby refid="class_backend_server_1acaf73df8963265ae4a78244ed1b325da" compoundref="_backend_d_b_send_8cpp" startline="34" endline="47">SendDB_User_Town</referencedby>
+        <referencedby refid="class_backend_server_1a650758e5e2b9f3748f7abed222e2ac2d" compoundref="_backend_d_b_send_8cpp" startline="64" endline="77">SendDB_User_Watch</referencedby>
+        <referencedby refid="class_backend_server_1aeb360fa91a3b3d9f56686d1dc92aaca2" compoundref="_backend_d_b_send_8cpp" startline="109" endline="122">SendDB_Watch_Num</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_backend_server_1a8882893a9cdafb722b073854941a041a" prot="protected" static="no" mutable="no">
+        <type><ref refid="_src_2_d_b_server_def_8h_1a9e30f145af51446249461ccd2a98823f" kindref="member">MapDBQuery</ref></type>
+        <definition>MapDBQuery BackendServer::m_kAllDBQuery</definition>
+        <argsstring></argsstring>
+        <name>m_kAllDBQuery</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="71" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="class_backend_server_1a19464bafd2c16f0e2fe3ac6edc4f2177" compoundref="_backend_d_b_process_8cpp" startline="3" endline="29">ProcessDB</referencedby>
+        <referencedby refid="class_backend_server_1a7496d57bce096cd42b2345047fa82248" compoundref="_backend_d_b_send_8cpp" startline="4" endline="13">SendDB_ExecuteSQL</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_backend_server_1a32b1faa4ce9bd85e454dcb90a9ae32cd" prot="private" static="no" mutable="no">
+        <type>DWord</type>
+        <definition>DWord BackendServer::m_dwTickCount</definition>
+        <argsstring></argsstring>
+        <name>m_dwTickCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="74" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="class_backend_server_1aa585a8b9c0113ed869226ede159ec483" compoundref="_backend_server_8cpp" startline="9" endline="14">BackendServer</referencedby>
+        <referencedby refid="class_backend_server_1abdc0d26e6a91c17dcda4c6801cf2ad0c" compoundref="_backend_server_8cpp" startline="39" endline="55">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_backend_server_1a032c526a81175c5c4de3c5e9efdcf1b5" prot="private" static="no" mutable="no">
+        <type>DWord</type>
+        <definition>DWord BackendServer::m_dwCurTime</definition>
+        <argsstring></argsstring>
+        <name>m_dwCurTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="75" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="class_backend_server_1aa585a8b9c0113ed869226ede159ec483" compoundref="_backend_server_8cpp" startline="9" endline="14">BackendServer</referencedby>
+        <referencedby refid="class_backend_server_1af08fdd5758040479fbe2d30dd05b7252" compoundref="_backend_server_8cpp" startline="184" endline="187">GetServerTime</referencedby>
+        <referencedby refid="class_backend_server_1a7496d57bce096cd42b2345047fa82248" compoundref="_backend_d_b_send_8cpp" startline="4" endline="13">SendDB_ExecuteSQL</referencedby>
+        <referencedby refid="class_backend_server_1abdc0d26e6a91c17dcda4c6801cf2ad0c" compoundref="_backend_server_8cpp" startline="39" endline="55">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_backend_server_1aa585a8b9c0113ed869226ede159ec483" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BackendServer::BackendServer</definition>
+        <argsstring>(void)</argsstring>
+        <name>BackendServer</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="14" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="9" bodyend="14"/>
+        <references refid="class_backend_server_1a032c526a81175c5c4de3c5e9efdcf1b5" compoundref="_backend_server_8h" startline="75">m_dwCurTime</references>
+        <references refid="class_backend_server_1a32b1faa4ce9bd85e454dcb90a9ae32cd" compoundref="_backend_server_8h" startline="74">m_dwTickCount</references>
+        <references refid="class_backend_server_1aec8fd9936c2e82ee1e5383cf9f3ddb3f" compoundref="_backend_server_8h" startline="70">m_iUnitStatisticDB</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a7d612218a728c5d0bd5d097352644af8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BackendServer::~BackendServer</definition>
+        <argsstring>(void)</argsstring>
+        <name>~BackendServer</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="15" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1ad52a832b76cd2a40f460343d1ca3d602" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::Initialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Initialize</name>
+        <reimplements refid="class_se_base_server_1a6bb58d0849eb78ffd85d1fcad67d21b2">Initialize</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="17" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="20" bodyend="37"/>
+        <references refid="class_backend_server_1a12dbe6127be37de2ffd713a4ce31d98c" compoundref="_backend_server_8cpp" startline="269" endline="287">InitializeDB</references>
+        <references refid="class_backend_server_1a41913ddc80bde6ef7e62f5422fbb0635" compoundref="_backend_server_8cpp" startline="244" endline="262">InitializeNet</references>
+        <references refid="class_backend_server_1a7b92991268357cbe60da12c3e1930286" compoundref="_backend_server_8cpp" startline="264" endline="267">InitializeNetEx</references>
+        <references refid="class_backend_server_1acb938dc7b908afddcef4d63fff48c0cb" compoundref="_backend_server_8cpp" startline="235" endline="242">LoadConfig</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1abdc0d26e6a91c17dcda4c6801cf2ad0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BackendServer::Update</definition>
+        <argsstring>(void)</argsstring>
+        <name>Update</name>
+        <reimplements refid="class_se_base_server_1a07a0cf8e7406a136e92dcf88875cfd77">Update</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="18" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="39" bodyend="55"/>
+        <references refid="_se_virt_conn_mgr_8cpp_1aa8e9d5beed961f4e26b9cadd49603980" compoundref="_se_virt_conn_mgr_8cpp" startline="7">g_kVirtConnMgr</references>
+        <references refid="class_backend_server_1a032c526a81175c5c4de3c5e9efdcf1b5" compoundref="_backend_server_8h" startline="75">m_dwCurTime</references>
+        <references refid="class_backend_server_1a32b1faa4ce9bd85e454dcb90a9ae32cd" compoundref="_backend_server_8h" startline="74">m_dwTickCount</references>
+        <references refid="class_backend_server_1a5e41584bb3c528d09034ec2a4c6c37e9" compoundref="_backend_server_8h" startline="69">m_kDBMgr</references>
+        <references refid="class_backend_server_1a78c7e4f6424b7621a8f2d3d523522714" compoundref="_backend_server_8h" startline="66">m_kNetMgr</references>
+        <references refid="class_se_virt_conn_mgr_1a1a2056beaab510c633febd91090592ee" compoundref="_se_virt_conn_mgr_8cpp" startline="37" endline="53">SeVirtConnMgr::Update</references>
+        <references refid="class_backend_server_1a7d483acdd3c1d9cffdd56ab1851e1cca" compoundref="_backend_server_8cpp" startline="289" endline="298">UpdateConnect</references>
+        <references refid="class_backend_server_1af4bd8e521cb062d5afbc9a539724d12e" compoundref="_backend_server_8cpp" startline="300" endline="311">UpdateStatistic</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a3b70f54f6ce037cd644a562f0643d02a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BackendServer::Finialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Finialize</name>
+        <reimplements refid="class_se_base_server_1af5e58035250986682d2810757069233b">Finialize</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="19" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="57" bodyend="61"/>
+        <references refid="class_backend_server_1a5e41584bb3c528d09034ec2a4c6c37e9" compoundref="_backend_server_8h" startline="69">m_kDBMgr</references>
+        <references refid="class_backend_server_1a78c7e4f6424b7621a8f2d3d523522714" compoundref="_backend_server_8h" startline="66">m_kNetMgr</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a19ced7cdec4917ac623b73ba96d38d1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BackendServer::ShowConsoleTitle</definition>
+        <argsstring>(int iDTime)</argsstring>
+        <name>ShowConsoleTitle</name>
+        <reimplements refid="class_se_base_server_1aab49ca32b654abc948c4d2b163746591">ShowConsoleTitle</reimplements>
+        <param>
+          <type>int</type>
+          <declname>iDTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="21" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="63" bodyend="73"/>
+        <references refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" compoundref="_se_server_tool_8cpp" startline="31" endline="64">SPrintf</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a994d4ce89299925c6ed17e7f6faa7194" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_se_server_main_def_8h_1a6856d2f3d34c3913f55b991c0d63e89d" kindref="member">SeServerActionResult</ref></type>
+        <definition>SeServerActionResult BackendServer::ExecuteAction</definition>
+        <argsstring>(SeServerActionIndex eActionIndex)</argsstring>
+        <name>ExecuteAction</name>
+        <reimplements refid="class_se_base_server_1ab4a7f5d600833220b84b2c1e143f0605">ExecuteAction</reimplements>
+        <param>
+          <type><ref refid="_se_server_main_def_8h_1abbd63e694a43e9bc292e0e0b55ae79bd" kindref="member">SeServerActionIndex</ref></type>
+          <declname>eActionIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="23" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="75" bodyend="86"/>
+        <references refid="_se_server_main_def_8h_1a6856d2f3d34c3913f55b991c0d63e89dac7f0df5db209cf47b037a31ee2946d0c" compoundref="_se_server_main_def_8h" startline="8">AER_OK</references>
+        <references refid="_se_server_main_def_8h_1abbd63e694a43e9bc292e0e0b55ae79bdab240074b0f8ea39e74f33d2dab2c86b6" compoundref="_se_server_main_def_8h" startline="17">AI_F1</references>
+        <references refid="_se_file_log_8h_1a7c727baeafcf8b1ef6ca798fad4d738c" compoundref="_se_file_log_8h" startline="86">SeLogHideTime</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1abbea08f868a48b3fa8bcaadb5052fb8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BackendServer::OnNetConnected</definition>
+        <argsstring>(const HSock &amp;rkSock, const char *pcIP, int iPort)</argsstring>
+        <name>OnNetConnected</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcIP</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iPort</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="25" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1aa10a6b04eb7ac8d43709887ebb5014cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BackendServer::OnNetAccept</definition>
+        <argsstring>(const HSock &amp;rkSock, int iListenPort, const char *pcIP, int iPort)</argsstring>
+        <name>OnNetAccept</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iListenPort</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcIP</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iPort</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="26" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="93" bodyend="101"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="struct_se_connect_1a149d84058a462e8833764a6dd2aa2d04" compoundref="_src_2_match_server_def_8h" startline="64">SeConnect::eState</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="struct_se_connect_1a6be4df6ec540b10b76496b0d353df27c" compoundref="_src_2_match_server_def_8h" startline="63">SeConnect::kNetAddr</references>
+        <references refid="struct_se_connect_1afaa6333d607da1a42b52df55799eab7b" compoundref="_src_2_match_server_def_8h" startline="61">SeConnect::kSock</references>
+        <references refid="class_backend_server_1af6baf241378b6740fb53b915afb4aef4" compoundref="_backend_server_8h" startline="68">m_kAllConnect</references>
+        <references refid="_src_2_match_server_def_8h_1a66f85fac7c2312bb587ad3f33324085eaa56d080abab641c052974b0a39f8bf32" compoundref="_src_2_match_server_def_8h" startline="48">SCS_UNKOWN</references>
+        <references refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aaaadf26d549f9464c83a25eeb9da2d653" compoundref="_se_ptl_comm_define_8h" startline="20">SSD_IP_LEN</references>
+        <references refid="_se_tool_8cpp_1a4d30fbe56257fc998ebc1346e53be0d8" compoundref="_se_tool_8cpp" startline="50" endline="73">StrCpy</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a4abd844ccde6fa6b8e31fd8eaccfb982" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BackendServer::OnNetRecv</definition>
+        <argsstring>(const HSock &amp;rkSock, void *pkData, int iSize)</argsstring>
+        <name>OnNetRecv</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="27" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="103" bodyend="143"/>
+        <references refid="_se_ptl___n_s___to___b_k_s_8h_1a05e86324a6ce60b04bed11bd2a00fcdea33e900e3ee188ecb424113d672b797b8" compoundref="_se_ptl___n_s___to___b_k_s_8h" startline="9">CMD_NBKS_REGISTER</references>
+        <references refid="struct_se_connect_1a6783313d841289c671e083fbb47cb241" compoundref="_src_2_match_server_def_8h" startline="66">SeConnect::dwRecvTime</references>
+        <references refid="struct_se_connect_1a149d84058a462e8833764a6dd2aa2d04" compoundref="_src_2_match_server_def_8h" startline="64">SeConnect::eState</references>
+        <references refid="class_backend_server_1af08fdd5758040479fbe2d30dd05b7252" compoundref="_backend_server_8cpp" startline="184" endline="187">GetServerTime</references>
+        <references refid="class_backend_server_1af6baf241378b6740fb53b915afb4aef4" compoundref="_backend_server_8h" startline="68">m_kAllConnect</references>
+        <references refid="class_backend_server_1a78c7e4f6424b7621a8f2d3d523522714" compoundref="_backend_server_8h" startline="66">m_kNetMgr</references>
+        <references refid="class_backend_server_1aeded7763b6b62c6ef48347345cf7c6f9">ProcessNBKSData</references>
+        <references refid="_src_2_world_server_def_8h_1a66f85fac7c2312bb587ad3f33324085eaf610a15db4f418f0c6f5554f794709b1" compoundref="_src_2_world_server_def_8h" startline="82">SCS_NEXUS_OK</references>
+        <references refid="_src_2_match_server_def_8h_1a66f85fac7c2312bb587ad3f33324085eaa56d080abab641c052974b0a39f8bf32" compoundref="_src_2_match_server_def_8h" startline="48">SCS_UNKOWN</references>
+        <references refid="struct_se_c_m_d_1a2efa122a60040d09cfca777f9155394c" compoundref="_se_ptl_define_8h" startline="97">SeCMD::wCmd</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1ae345c91329273c47cac10e35ad5f6dd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BackendServer::OnNetDisconnect</definition>
+        <argsstring>(const HSock &amp;rkSock, TeDisconnectCode eCode, int iParam)</argsstring>
+        <name>OnNetDisconnect</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <param>
+          <type>TeDisconnectCode</type>
+          <declname>eCode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="28" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="145" bodyend="167"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="class_se_nexus_mgr_1aeafcd569d7086cc2479fd08617081741" compoundref="_se_nexus_mgr_8cpp" startline="27" endline="35">SeNexusMgr::DeleteNexus</references>
+        <references refid="struct_se_connect_1a334966c0cdc9581fe698c4677ba3b15d" compoundref="_backend_server_def_8h" startline="62">SeConnect::dwServerID</references>
+        <references refid="struct_se_connect_1a149d84058a462e8833764a6dd2aa2d04" compoundref="_src_2_match_server_def_8h" startline="64">SeConnect::eState</references>
+        <references refid="_se_nexus_mgr_8cpp_1ae2820125968221792bc52d09cabbb7c0" compoundref="_se_nexus_mgr_8cpp" startline="3">g_kNexusMgr</references>
+        <references refid="_se_tool_8h_1ada81d4ae5d39c42af0a02b45f4a6f715" compoundref="_se_tool_8h" startline="66">GetID2Str</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="struct_se_connect_1a6be4df6ec540b10b76496b0d353df27c" compoundref="_src_2_match_server_def_8h" startline="63">SeConnect::kNetAddr</references>
+        <references refid="struct_se_connect_1afaa6333d607da1a42b52df55799eab7b" compoundref="_src_2_match_server_def_8h" startline="61">SeConnect::kSock</references>
+        <references refid="class_backend_server_1af6baf241378b6740fb53b915afb4aef4" compoundref="_backend_server_8h" startline="68">m_kAllConnect</references>
+        <references refid="_src_2_world_server_def_8h_1a66f85fac7c2312bb587ad3f33324085eaf610a15db4f418f0c6f5554f794709b1" compoundref="_src_2_world_server_def_8h" startline="82">SCS_NEXUS_OK</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a0f81d3cefe64361ad3dfe6380853ef89" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BackendServer::OnDBResponse</definition>
+        <argsstring>(int iDB, TeDBResSet &amp;rkResSet)</argsstring>
+        <name>OnDBResponse</name>
+        <param>
+          <type>int</type>
+          <declname>iDB</declname>
+        </param>
+        <param>
+          <type>TeDBResSet &amp;</type>
+          <declname>rkResSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="30" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="169" bodyend="172"/>
+        <references refid="class_backend_server_1a19464bafd2c16f0e2fe3ac6edc4f2177" compoundref="_backend_d_b_process_8cpp" startline="3" endline="29">ProcessDB</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a11ba31d46234f69817e7bf639018ca16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::SendBKSN_RegisterRet</definition>
+        <argsstring>(const SeRegisterRet &amp;eRet, void *pkReceiver=NULL)</argsstring>
+        <name>SendBKSN_RegisterRet</name>
+        <param>
+          <type>const <ref refid="_se_server_define_8h_1a83f922065d39660cc6ff3ff3e193daa1" kindref="member">SeRegisterRet</ref> &amp;</type>
+          <declname>eRet</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeBKSNSend.inl" line="2" column="1"/>
+        <referencedby refid="class_backend_server_1ac332832623268b97640ac16afba78907" compoundref="_se_n_b_k_s_process_8cpp" startline="12" endline="37">ProcessNBKS_Register</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1ad3d5c9752ce88fc462923f775d234a8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::SendBKSN_HeartPackageRet</definition>
+        <argsstring>(void *pkReceiver=NULL)</argsstring>
+        <name>SendBKSN_HeartPackageRet</name>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeBKSNSend.inl" line="3" column="1"/>
+        <referencedby refid="class_backend_server_1a86e76eee6b1d359e6269bb46bc056bda" compoundref="_se_n_b_k_s_process_8cpp" startline="39" endline="43">ProcessNBKS_HeartPackage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a0d61ca4ff2144893f2552896b3345c22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::SendBKSNData</definition>
+        <argsstring>(void *pkData, int iSize, void *pkReceiver)</argsstring>
+        <name>SendBKSNData</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeBKSNSend.inl" line="6" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/SeBKSNSend.cpp" bodystart="7" bodyend="30"/>
+        <references refid="class_backend_server_1a78c7e4f6424b7621a8f2d3d523522714" compoundref="_backend_server_8h" startline="66">m_kNetMgr</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="struct_se_c_m_d_1a2efa122a60040d09cfca777f9155394c" compoundref="_se_ptl_define_8h" startline="97">SeCMD::wCmd</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1aeded7763b6b62c6ef48347345cf7c6f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::ProcessNBKSData</definition>
+        <argsstring>(void *pkData, int iSize, void *pkSender=NULL)</argsstring>
+        <name>ProcessNBKSData</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkSender</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNBKSProcess.inl" line="2" column="1"/>
+        <referencedby refid="class_backend_server_1a4abd844ccde6fa6b8e31fd8eaccfb982" compoundref="_backend_server_8cpp" startline="103" endline="143">OnNetRecv</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a531cc8440eef431379138109469aa676" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::PreProcessNBKS</definition>
+        <argsstring>(void *pkData, int iSize, void *pkSender)</argsstring>
+        <name>PreProcessNBKS</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkSender</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNBKSProcess.inl" line="5" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/SeNBKSProcess.cpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1ac332832623268b97640ac16afba78907" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::ProcessNBKS_Register</definition>
+        <argsstring>(SeNBKS_Register *pkData, int iSize, void *pkSender)</argsstring>
+        <name>ProcessNBKS_Register</name>
+        <param>
+          <type><ref refid="struct_se_n_b_k_s___register" kindref="compound">SeNBKS_Register</ref> *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkSender</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNBKSProcess.inl" line="6" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/SeNBKSProcess.cpp" bodystart="12" bodyend="37"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="class_se_nexus_mgr_1a903ffa36eb58d0353a85c153437872ed" compoundref="_se_nexus_mgr_8cpp" startline="37" endline="44">SeNexusMgr::CheckNexus</references>
+        <references refid="class_se_nexus_mgr_1ac671c2187e5a51aaf6915193cda444f9" compoundref="_se_nexus_mgr_8cpp" startline="13" endline="24">SeNexusMgr::CreateNexus</references>
+        <references refid="struct_se_n_b_k_s___register_1abc5216c17eff58121143266362504398" compoundref="_se_ptl___n_s___to___b_k_s_8h" startline="37">SeNBKS_Register::dwServerID</references>
+        <references refid="struct_se_connect_1a334966c0cdc9581fe698c4677ba3b15d" compoundref="_backend_server_def_8h" startline="62">SeConnect::dwServerID</references>
+        <references refid="struct_se_connect_1ae90bd507e6e1e36dc4ee9e4d5e849cd3" compoundref="_src_2_match_server_def_8h" startline="65">SeConnect::dwStateTime</references>
+        <references refid="struct_se_connect_1a149d84058a462e8833764a6dd2aa2d04" compoundref="_src_2_match_server_def_8h" startline="64">SeConnect::eState</references>
+        <references refid="_se_nexus_mgr_8cpp_1ae2820125968221792bc52d09cabbb7c0" compoundref="_se_nexus_mgr_8cpp" startline="3">g_kNexusMgr</references>
+        <references refid="_se_tool_8h_1ada81d4ae5d39c42af0a02b45f4a6f715" compoundref="_se_tool_8h" startline="66">GetID2Str</references>
+        <references refid="class_backend_server_1af08fdd5758040479fbe2d30dd05b7252" compoundref="_backend_server_8cpp" startline="184" endline="187">GetServerTime</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="struct_se_connect_1a6be4df6ec540b10b76496b0d353df27c" compoundref="_src_2_match_server_def_8h" startline="63">SeConnect::kNetAddr</references>
+        <references refid="struct_se_connect_1afaa6333d607da1a42b52df55799eab7b" compoundref="_src_2_match_server_def_8h" startline="61">SeConnect::kSock</references>
+        <references refid="_src_2_world_server_def_8h_1a66f85fac7c2312bb587ad3f33324085eaf610a15db4f418f0c6f5554f794709b1" compoundref="_src_2_world_server_def_8h" startline="82">SCS_NEXUS_OK</references>
+        <references refid="_src_2_match_server_def_8h_1a66f85fac7c2312bb587ad3f33324085eaa56d080abab641c052974b0a39f8bf32" compoundref="_src_2_match_server_def_8h" startline="48">SCS_UNKOWN</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="class_backend_server_1a11ba31d46234f69817e7bf639018ca16">SendBKSN_RegisterRet</references>
+        <references refid="_se_server_define_8h_1a83f922065d39660cc6ff3ff3e193daa1a9066cbcd85981ad03cd92ba399a18338" compoundref="_se_server_define_8h" startline="108">SRR_SUCCESS</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a86e76eee6b1d359e6269bb46bc056bda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::ProcessNBKS_HeartPackage</definition>
+        <argsstring>(SeNBKS_HeartPackage *pkData, int iSize, void *pkSender)</argsstring>
+        <name>ProcessNBKS_HeartPackage</name>
+        <param>
+          <type><ref refid="struct_se_n_b_k_s___heart_package" kindref="compound">SeNBKS_HeartPackage</ref> *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkSender</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNBKSProcess.inl" line="7" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/SeNBKSProcess.cpp" bodystart="39" bodyend="43"/>
+        <references refid="struct_se_connect_1afaa6333d607da1a42b52df55799eab7b" compoundref="_src_2_match_server_def_8h" startline="61">SeConnect::kSock</references>
+        <references refid="class_backend_server_1ad3d5c9752ce88fc462923f775d234a8d">SendBKSN_HeartPackageRet</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1afc7a68d29d681803787115a4126b8d70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::ProcessNBKS_UserStateSync</definition>
+        <argsstring>(SeNBKS_UserStateSync *pkData, int iSize, void *pkSender)</argsstring>
+        <name>ProcessNBKS_UserStateSync</name>
+        <param>
+          <type><ref refid="struct_se_n_b_k_s___user_state_sync" kindref="compound">SeNBKS_UserStateSync</ref> *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkSender</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNBKSProcess.inl" line="8" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/SeNBKSProcess.cpp" bodystart="45" bodyend="56"/>
+        <references refid="struct_se_n_b_k_s___user_state_sync_1a6f64abb0095ab21fdb465024166d2a8a" compoundref="_se_ptl___n_s___to___b_k_s_8h" startline="60">SeNBKS_UserStateSync::dwLoginTime</references>
+        <references refid="struct_se_n_b_k_s___user_state_sync_1a0f7d2ba0e899f090b3b97e43f9659d96" compoundref="_se_ptl___n_s___to___b_k_s_8h" startline="58">SeNBKS_UserStateSync::dwPlayerID</references>
+        <references refid="struct_se_n_b_k_s___user_state_sync_1aaa0a8f8e92d04094937e0695b050c330" compoundref="_se_ptl___n_s___to___b_k_s_8h" startline="59">SeNBKS_UserStateSync::dwStateID</references>
+        <references refid="_link_user_mgr_8cpp_1a4f55fe9bf04df01e9740ac3c21201ab6" compoundref="_link_user_mgr_8cpp" startline="4">g_kLinkUserMgr</references>
+        <references refid="class_backend_server_1af0c69e9d1dd9b6cc77b8c3df26cfac28" compoundref="_backend_server_8cpp" startline="340" endline="353">LinkUserSync</references>
+        <references refid="class_link_user_mgr_1a6fa5d121aa8878490314c60f966b73d1" compoundref="_link_user_mgr_8cpp" startline="48" endline="56">LinkUserMgr::make</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a1c1d58c71b65272b2973d09811ec65bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::ProcessNBKS_CreatUserSync</definition>
+        <argsstring>(SeNBKS_CreatUserSync *pkData, int iSize, void *pkSender)</argsstring>
+        <name>ProcessNBKS_CreatUserSync</name>
+        <param>
+          <type><ref refid="struct_se_n_b_k_s___creat_user_sync" kindref="compound">SeNBKS_CreatUserSync</ref> *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkSender</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeNBKSProcess.inl" line="9" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/SeNBKSProcess.cpp" bodystart="58" bodyend="67"/>
+        <references refid="struct_se_n_b_k_s___creat_user_sync_1aa7d6ed0d239351e450541a7e6e0b051d" compoundref="_se_ptl___n_s___to___b_k_s_8h" startline="74">SeNBKS_CreatUserSync::acRemoteIp</references>
+        <references refid="class_backend_server_1a41df454eb98fadfdf297909d942d50aa" compoundref="_backend_server_8cpp" startline="376" endline="381">CreatUserSync</references>
+        <references refid="struct_se_n_b_k_s___creat_user_sync_1a6018bca9f5b6bbb3c54234a4368b7afb" compoundref="_se_ptl___n_s___to___b_k_s_8h" startline="73">SeNBKS_CreatUserSync::dwLoginTime</references>
+        <references refid="struct_se_n_b_k_s___creat_user_sync_1af69014bf0360a273ac163a47dd46fdff" compoundref="_se_ptl___n_s___to___b_k_s_8h" startline="72">SeNBKS_CreatUserSync::dwPlayerID</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a7496d57bce096cd42b2345047fa82248" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::SendDB_ExecuteSQL</definition>
+        <argsstring>(int db_type, int query_type, const char *pcSql)</argsstring>
+        <name>SendDB_ExecuteSQL</name>
+        <param>
+          <type>int</type>
+          <declname>db_type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>query_type</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcSql</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBSend.inl" line="4" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBSend.cpp" bodystart="4" bodyend="13"/>
+        <references refid="struct_se_d_b_query_1ace86787bd7892fec660b2eff7f02a3d6" compoundref="_src_2_d_b_server_def_8h" startline="127">SeDBQuery::dwTime</references>
+        <references refid="class_backend_server_1a032c526a81175c5c4de3c5e9efdcf1b5" compoundref="_backend_server_8h" startline="75">m_dwCurTime</references>
+        <references refid="class_backend_server_1a8882893a9cdafb722b073854941a041a" compoundref="_backend_server_8h" startline="71">m_kAllDBQuery</references>
+        <references refid="class_backend_server_1a5e41584bb3c528d09034ec2a4c6c37e9" compoundref="_backend_server_8h" startline="69">m_kDBMgr</references>
+        <referencedby refid="class_backend_server_1a4d2aa3b83a7263beccc86a67cd114e9c" compoundref="_backend_d_b_send_8cpp" startline="79" endline="92">SendDB_Online_Num</referencedby>
+        <referencedby refid="class_backend_server_1ac976af9adda24baf7798c2f2ab762f69" compoundref="_backend_d_b_send_8cpp" startline="94" endline="107">SendDB_Race_Num</referencedby>
+        <referencedby refid="class_backend_server_1a142914139a2f1d32de8a0422a8e64785" compoundref="_backend_d_b_send_8cpp" startline="15" endline="32">SendDB_User_Create</referencedby>
+        <referencedby refid="class_backend_server_1ad12fb3a5cf8f2c37474fef8db6ab4239" compoundref="_backend_d_b_send_8cpp" startline="49" endline="62">SendDB_User_Race</referencedby>
+        <referencedby refid="class_backend_server_1acaf73df8963265ae4a78244ed1b325da" compoundref="_backend_d_b_send_8cpp" startline="34" endline="47">SendDB_User_Town</referencedby>
+        <referencedby refid="class_backend_server_1a650758e5e2b9f3748f7abed222e2ac2d" compoundref="_backend_d_b_send_8cpp" startline="64" endline="77">SendDB_User_Watch</referencedby>
+        <referencedby refid="class_backend_server_1aeb360fa91a3b3d9f56686d1dc92aaca2" compoundref="_backend_d_b_send_8cpp" startline="109" endline="122">SendDB_Watch_Num</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a142914139a2f1d32de8a0422a8e64785" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::SendDB_User_Create</definition>
+        <argsstring>(DWord dw_player_id, const char *pIp)</argsstring>
+        <name>SendDB_User_Create</name>
+        <param>
+          <type>DWord</type>
+          <declname>dw_player_id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pIp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBSend.inl" line="5" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBSend.cpp" bodystart="15" bodyend="32"/>
+        <references refid="class_backend_server_1aec8fd9936c2e82ee1e5383cf9f3ddb3f" compoundref="_backend_server_8h" startline="70">m_iUnitStatisticDB</references>
+        <references refid="class_backend_server_1a7496d57bce096cd42b2345047fa82248" compoundref="_backend_d_b_send_8cpp" startline="4" endline="13">SendDB_ExecuteSQL</references>
+        <references refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" compoundref="_se_server_tool_8cpp" startline="31" endline="64">SPrintf</references>
+        <references refid="_backend_server_def_8h_1aa7b9fd5ab21ba090d0a4f10c2e866608aeee18b1e93d063108e8fd6fc73c9045d" compoundref="_backend_server_def_8h" startline="69">SQT_USER_CREATE_ID</references>
+        <referencedby refid="class_backend_server_1a41df454eb98fadfdf297909d942d50aa" compoundref="_backend_server_8cpp" startline="376" endline="381">CreatUserSync</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1acaf73df8963265ae4a78244ed1b325da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::SendDB_User_Town</definition>
+        <argsstring>(DWord dw_player_id)</argsstring>
+        <name>SendDB_User_Town</name>
+        <param>
+          <type>DWord</type>
+          <declname>dw_player_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBSend.inl" line="7" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBSend.cpp" bodystart="34" bodyend="47"/>
+        <references refid="class_backend_server_1aec8fd9936c2e82ee1e5383cf9f3ddb3f" compoundref="_backend_server_8h" startline="70">m_iUnitStatisticDB</references>
+        <references refid="class_backend_server_1a7496d57bce096cd42b2345047fa82248" compoundref="_backend_d_b_send_8cpp" startline="4" endline="13">SendDB_ExecuteSQL</references>
+        <references refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" compoundref="_se_server_tool_8cpp" startline="31" endline="64">SPrintf</references>
+        <references refid="_backend_server_def_8h_1aa7b9fd5ab21ba090d0a4f10c2e866608a60f519195fcfad2f547c4e4377e1cd7f" compoundref="_backend_server_def_8h" startline="70">SQT_USER_TOWN_ID</references>
+        <referencedby refid="class_backend_server_1a5f913aa6ce55d84eb3fe3fdac2519a9c" compoundref="_backend_server_8cpp" startline="355" endline="360">LinkUserTownSync</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1ad12fb3a5cf8f2c37474fef8db6ab4239" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::SendDB_User_Race</definition>
+        <argsstring>(DWord dw_player_id)</argsstring>
+        <name>SendDB_User_Race</name>
+        <param>
+          <type>DWord</type>
+          <declname>dw_player_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBSend.inl" line="8" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBSend.cpp" bodystart="49" bodyend="62"/>
+        <references refid="class_backend_server_1aec8fd9936c2e82ee1e5383cf9f3ddb3f" compoundref="_backend_server_8h" startline="70">m_iUnitStatisticDB</references>
+        <references refid="class_backend_server_1a7496d57bce096cd42b2345047fa82248" compoundref="_backend_d_b_send_8cpp" startline="4" endline="13">SendDB_ExecuteSQL</references>
+        <references refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" compoundref="_se_server_tool_8cpp" startline="31" endline="64">SPrintf</references>
+        <references refid="_backend_server_def_8h_1aa7b9fd5ab21ba090d0a4f10c2e866608ab26838f6b70b1b6e14fa2a2bfdc7eb8a" compoundref="_backend_server_def_8h" startline="71">SQT_USER_RACE_ID</references>
+        <referencedby refid="class_backend_server_1ad156a9845d114d8b1be0fbca207f9449" compoundref="_backend_server_8cpp" startline="362" endline="367">LinkUserRaceSync</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a650758e5e2b9f3748f7abed222e2ac2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::SendDB_User_Watch</definition>
+        <argsstring>(DWord dw_player_id)</argsstring>
+        <name>SendDB_User_Watch</name>
+        <param>
+          <type>DWord</type>
+          <declname>dw_player_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBSend.inl" line="9" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBSend.cpp" bodystart="64" bodyend="77"/>
+        <references refid="class_backend_server_1aec8fd9936c2e82ee1e5383cf9f3ddb3f" compoundref="_backend_server_8h" startline="70">m_iUnitStatisticDB</references>
+        <references refid="class_backend_server_1a7496d57bce096cd42b2345047fa82248" compoundref="_backend_d_b_send_8cpp" startline="4" endline="13">SendDB_ExecuteSQL</references>
+        <references refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" compoundref="_se_server_tool_8cpp" startline="31" endline="64">SPrintf</references>
+        <references refid="_backend_server_def_8h_1aa7b9fd5ab21ba090d0a4f10c2e866608a4f342d84239c846809aa1f0c8c2c8746" compoundref="_backend_server_def_8h" startline="72">SQT_USER_WATCH_ID</references>
+        <referencedby refid="class_backend_server_1af8c1957ec1b25e1ca0bf3961a6a4f0b8" compoundref="_backend_server_8cpp" startline="369" endline="374">LinkUserWatchSync</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a4d2aa3b83a7263beccc86a67cd114e9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::SendDB_Online_Num</definition>
+        <argsstring>(DWord dw_online_users)</argsstring>
+        <name>SendDB_Online_Num</name>
+        <param>
+          <type>DWord</type>
+          <declname>dw_online_users</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBSend.inl" line="12" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBSend.cpp" bodystart="79" bodyend="92"/>
+        <references refid="class_backend_server_1aec8fd9936c2e82ee1e5383cf9f3ddb3f" compoundref="_backend_server_8h" startline="70">m_iUnitStatisticDB</references>
+        <references refid="class_backend_server_1a7496d57bce096cd42b2345047fa82248" compoundref="_backend_d_b_send_8cpp" startline="4" endline="13">SendDB_ExecuteSQL</references>
+        <references refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" compoundref="_se_server_tool_8cpp" startline="31" endline="64">SPrintf</references>
+        <references refid="_backend_server_def_8h_1aa7b9fd5ab21ba090d0a4f10c2e866608aebde4ba5059cc05597c2d852ed43db4f" compoundref="_backend_server_def_8h" startline="73">SQT_ONLINE_NUM_ID</references>
+        <referencedby refid="class_backend_server_1aebf6fbee710bc84551d6985ffcd567dd" compoundref="_backend_server_8cpp" startline="313" endline="320">UpdateStatistic_OnlineNum</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1ac976af9adda24baf7798c2f2ab762f69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::SendDB_Race_Num</definition>
+        <argsstring>(DWord dw_race_users)</argsstring>
+        <name>SendDB_Race_Num</name>
+        <param>
+          <type>DWord</type>
+          <declname>dw_race_users</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBSend.inl" line="14" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBSend.cpp" bodystart="94" bodyend="107"/>
+        <references refid="class_backend_server_1aec8fd9936c2e82ee1e5383cf9f3ddb3f" compoundref="_backend_server_8h" startline="70">m_iUnitStatisticDB</references>
+        <references refid="class_backend_server_1a7496d57bce096cd42b2345047fa82248" compoundref="_backend_d_b_send_8cpp" startline="4" endline="13">SendDB_ExecuteSQL</references>
+        <references refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" compoundref="_se_server_tool_8cpp" startline="31" endline="64">SPrintf</references>
+        <references refid="_backend_server_def_8h_1aa7b9fd5ab21ba090d0a4f10c2e866608a0c1f67dbb9d8376343b496315632c799" compoundref="_backend_server_def_8h" startline="74">SQT_RACE_NUM_ID</references>
+        <referencedby refid="class_backend_server_1ac099b6c5d14dfec627b4e5b755f6a489" compoundref="_backend_server_8cpp" startline="322" endline="329">UpdateStatistic_RaceNum</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1aeb360fa91a3b3d9f56686d1dc92aaca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::SendDB_Watch_Num</definition>
+        <argsstring>(DWord dw_watch_users)</argsstring>
+        <name>SendDB_Watch_Num</name>
+        <param>
+          <type>DWord</type>
+          <declname>dw_watch_users</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBSend.inl" line="16" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBSend.cpp" bodystart="109" bodyend="122"/>
+        <references refid="class_backend_server_1aec8fd9936c2e82ee1e5383cf9f3ddb3f" compoundref="_backend_server_8h" startline="70">m_iUnitStatisticDB</references>
+        <references refid="class_backend_server_1a7496d57bce096cd42b2345047fa82248" compoundref="_backend_d_b_send_8cpp" startline="4" endline="13">SendDB_ExecuteSQL</references>
+        <references refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" compoundref="_se_server_tool_8cpp" startline="31" endline="64">SPrintf</references>
+        <references refid="_backend_server_def_8h_1aa7b9fd5ab21ba090d0a4f10c2e866608a72354c57a4024265a727064dd13ef8e8" compoundref="_backend_server_def_8h" startline="75">SQT_WATCH_NUM_ID</references>
+        <referencedby refid="class_backend_server_1adf862a9c2deed130821352dc292bedb8" compoundref="_backend_server_8cpp" startline="331" endline="338">UpdateStatistic_WatchNum</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a19464bafd2c16f0e2fe3ac6edc4f2177" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::ProcessDB</definition>
+        <argsstring>(int iDB, TeDBResSet &amp;rkResSet)</argsstring>
+        <name>ProcessDB</name>
+        <param>
+          <type>int</type>
+          <declname>iDB</declname>
+        </param>
+        <param>
+          <type>TeDBResSet &amp;</type>
+          <declname>rkResSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBProcess.inl" line="3" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBProcess.cpp" bodystart="3" bodyend="29"/>
+        <references refid="struct_se_d_b_query_1a011e575ee2712ddb28b902f9d04895f4" compoundref="_src_2_d_b_server_def_8h" startline="126">SeDBQuery::eType</references>
+        <references refid="class_backend_server_1a8882893a9cdafb722b073854941a041a" compoundref="_backend_server_8h" startline="71">m_kAllDBQuery</references>
+        <references refid="class_backend_server_1a264259d9938488dcda269afabc01ac73" compoundref="_backend_d_b_process_8cpp" startline="71" endline="79">ProcessDB_Online_Num</references>
+        <references refid="class_backend_server_1af2d54155e47baad126a9e1327bc1cb2d" compoundref="_backend_d_b_process_8cpp" startline="82" endline="90">ProcessDB_Race_Num</references>
+        <references refid="class_backend_server_1a2bb199e8b92911aef9f7058c9b9bd7a7" compoundref="_backend_d_b_process_8cpp" startline="31" endline="39">ProcessDB_User_Create</references>
+        <references refid="class_backend_server_1a8b32c455cc8e36a6f0016eb6095e609b" compoundref="_backend_d_b_process_8cpp" startline="51" endline="59">ProcessDB_User_Race</references>
+        <references refid="class_backend_server_1ac587875e231c5e7735adccdfd7f70b9f" compoundref="_backend_d_b_process_8cpp" startline="41" endline="49">ProcessDB_User_Town</references>
+        <references refid="class_backend_server_1ac3ba97ced48368707d2ca754b9327b22" compoundref="_backend_d_b_process_8cpp" startline="61" endline="69">ProcessDB_User_Watch</references>
+        <references refid="class_backend_server_1a552db3e8ac6a2cd9e1592c9b72eb1788" compoundref="_backend_d_b_process_8cpp" startline="91" endline="99">ProcessDB_Watch_Num</references>
+        <references refid="_backend_server_def_8h_1aa7b9fd5ab21ba090d0a4f10c2e866608aebde4ba5059cc05597c2d852ed43db4f" compoundref="_backend_server_def_8h" startline="73">SQT_ONLINE_NUM_ID</references>
+        <references refid="_backend_server_def_8h_1aa7b9fd5ab21ba090d0a4f10c2e866608a0c1f67dbb9d8376343b496315632c799" compoundref="_backend_server_def_8h" startline="74">SQT_RACE_NUM_ID</references>
+        <references refid="_backend_server_def_8h_1aa7b9fd5ab21ba090d0a4f10c2e866608aeee18b1e93d063108e8fd6fc73c9045d" compoundref="_backend_server_def_8h" startline="69">SQT_USER_CREATE_ID</references>
+        <references refid="_backend_server_def_8h_1aa7b9fd5ab21ba090d0a4f10c2e866608ab26838f6b70b1b6e14fa2a2bfdc7eb8a" compoundref="_backend_server_def_8h" startline="71">SQT_USER_RACE_ID</references>
+        <references refid="_backend_server_def_8h_1aa7b9fd5ab21ba090d0a4f10c2e866608a60f519195fcfad2f547c4e4377e1cd7f" compoundref="_backend_server_def_8h" startline="70">SQT_USER_TOWN_ID</references>
+        <references refid="_backend_server_def_8h_1aa7b9fd5ab21ba090d0a4f10c2e866608a4f342d84239c846809aa1f0c8c2c8746" compoundref="_backend_server_def_8h" startline="72">SQT_USER_WATCH_ID</references>
+        <references refid="_backend_server_def_8h_1aa7b9fd5ab21ba090d0a4f10c2e866608a72354c57a4024265a727064dd13ef8e8" compoundref="_backend_server_def_8h" startline="75">SQT_WATCH_NUM_ID</references>
+        <referencedby refid="class_backend_server_1a0f81d3cefe64361ad3dfe6380853ef89" compoundref="_backend_server_8cpp" startline="169" endline="172">OnDBResponse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a2bb199e8b92911aef9f7058c9b9bd7a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::ProcessDB_User_Create</definition>
+        <argsstring>(SeDBQuery *pkDBQuery, TeDBResSet &amp;rkResSet)</argsstring>
+        <name>ProcessDB_User_Create</name>
+        <param>
+          <type><ref refid="struct_se_d_b_query" kindref="compound">SeDBQuery</ref> *</type>
+          <declname>pkDBQuery</declname>
+        </param>
+        <param>
+          <type>TeDBResSet &amp;</type>
+          <declname>rkResSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBProcess.inl" line="5" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBProcess.cpp" bodystart="31" bodyend="39"/>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <referencedby refid="class_backend_server_1a19464bafd2c16f0e2fe3ac6edc4f2177" compoundref="_backend_d_b_process_8cpp" startline="3" endline="29">ProcessDB</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1ac587875e231c5e7735adccdfd7f70b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::ProcessDB_User_Town</definition>
+        <argsstring>(SeDBQuery *pkDBQuery, TeDBResSet &amp;rkResSet)</argsstring>
+        <name>ProcessDB_User_Town</name>
+        <param>
+          <type><ref refid="struct_se_d_b_query" kindref="compound">SeDBQuery</ref> *</type>
+          <declname>pkDBQuery</declname>
+        </param>
+        <param>
+          <type>TeDBResSet &amp;</type>
+          <declname>rkResSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBProcess.inl" line="6" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBProcess.cpp" bodystart="41" bodyend="49"/>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <referencedby refid="class_backend_server_1a19464bafd2c16f0e2fe3ac6edc4f2177" compoundref="_backend_d_b_process_8cpp" startline="3" endline="29">ProcessDB</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a8b32c455cc8e36a6f0016eb6095e609b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::ProcessDB_User_Race</definition>
+        <argsstring>(SeDBQuery *pkDBQuery, TeDBResSet &amp;rkResSet)</argsstring>
+        <name>ProcessDB_User_Race</name>
+        <param>
+          <type><ref refid="struct_se_d_b_query" kindref="compound">SeDBQuery</ref> *</type>
+          <declname>pkDBQuery</declname>
+        </param>
+        <param>
+          <type>TeDBResSet &amp;</type>
+          <declname>rkResSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBProcess.inl" line="7" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBProcess.cpp" bodystart="51" bodyend="59"/>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <referencedby refid="class_backend_server_1a19464bafd2c16f0e2fe3ac6edc4f2177" compoundref="_backend_d_b_process_8cpp" startline="3" endline="29">ProcessDB</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1ac3ba97ced48368707d2ca754b9327b22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::ProcessDB_User_Watch</definition>
+        <argsstring>(SeDBQuery *pkDBQuery, TeDBResSet &amp;rkResSet)</argsstring>
+        <name>ProcessDB_User_Watch</name>
+        <param>
+          <type><ref refid="struct_se_d_b_query" kindref="compound">SeDBQuery</ref> *</type>
+          <declname>pkDBQuery</declname>
+        </param>
+        <param>
+          <type>TeDBResSet &amp;</type>
+          <declname>rkResSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBProcess.inl" line="8" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBProcess.cpp" bodystart="61" bodyend="69"/>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <referencedby refid="class_backend_server_1a19464bafd2c16f0e2fe3ac6edc4f2177" compoundref="_backend_d_b_process_8cpp" startline="3" endline="29">ProcessDB</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a264259d9938488dcda269afabc01ac73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::ProcessDB_Online_Num</definition>
+        <argsstring>(SeDBQuery *pkDBQuery, TeDBResSet &amp;rkResSet)</argsstring>
+        <name>ProcessDB_Online_Num</name>
+        <param>
+          <type><ref refid="struct_se_d_b_query" kindref="compound">SeDBQuery</ref> *</type>
+          <declname>pkDBQuery</declname>
+        </param>
+        <param>
+          <type>TeDBResSet &amp;</type>
+          <declname>rkResSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBProcess.inl" line="9" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBProcess.cpp" bodystart="71" bodyend="79"/>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <referencedby refid="class_backend_server_1a19464bafd2c16f0e2fe3ac6edc4f2177" compoundref="_backend_d_b_process_8cpp" startline="3" endline="29">ProcessDB</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1af2d54155e47baad126a9e1327bc1cb2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::ProcessDB_Race_Num</definition>
+        <argsstring>(SeDBQuery *pkDBQuery, TeDBResSet &amp;rkResSet)</argsstring>
+        <name>ProcessDB_Race_Num</name>
+        <param>
+          <type><ref refid="struct_se_d_b_query" kindref="compound">SeDBQuery</ref> *</type>
+          <declname>pkDBQuery</declname>
+        </param>
+        <param>
+          <type>TeDBResSet &amp;</type>
+          <declname>rkResSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBProcess.inl" line="10" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBProcess.cpp" bodystart="82" bodyend="90"/>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <referencedby refid="class_backend_server_1a19464bafd2c16f0e2fe3ac6edc4f2177" compoundref="_backend_d_b_process_8cpp" startline="3" endline="29">ProcessDB</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a552db3e8ac6a2cd9e1592c9b72eb1788" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::ProcessDB_Watch_Num</definition>
+        <argsstring>(SeDBQuery *pkDBQuery, TeDBResSet &amp;rkResSet)</argsstring>
+        <name>ProcessDB_Watch_Num</name>
+        <param>
+          <type><ref refid="struct_se_d_b_query" kindref="compound">SeDBQuery</ref> *</type>
+          <declname>pkDBQuery</declname>
+        </param>
+        <param>
+          <type>TeDBResSet &amp;</type>
+          <declname>rkResSet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBProcess.inl" line="11" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendDBProcess.cpp" bodystart="91" bodyend="99"/>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <referencedby refid="class_backend_server_1a19464bafd2c16f0e2fe3ac6edc4f2177" compoundref="_backend_d_b_process_8cpp" startline="3" endline="29">ProcessDB</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a4384a13111b1265a8add16ae37b0dfa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord BackendServer::GetServerID</definition>
+        <argsstring>()</argsstring>
+        <name>GetServerID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="40" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="175" bodyend="178"/>
+        <references refid="struct_se_backend_config_1aa4a9747a4e56c1581a7b63c6f3ecede1" compoundref="_backend_server_def_8h" startline="40">SeBackendConfig::dwServerID</references>
+        <references refid="class_backend_server_1a1b9c7111a22dfa4beb698a3a33090e34" compoundref="_backend_server_8h" startline="67">m_kConfig</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a7ba02c17cf5da9c5e3510e1a0e093ffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord BackendServer::GetAreaID</definition>
+        <argsstring>()</argsstring>
+        <name>GetAreaID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="41" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="180" bodyend="183"/>
+        <references refid="struct_se_backend_config_1a7193a75e70c09f178dba72e7635c0324" compoundref="_backend_server_def_8h" startline="41">SeBackendConfig::dwAreaID</references>
+        <references refid="class_backend_server_1a1b9c7111a22dfa4beb698a3a33090e34" compoundref="_backend_server_8h" startline="67">m_kConfig</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1af08fdd5758040479fbe2d30dd05b7252" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord BackendServer::GetServerTime</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetServerTime</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="42" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="184" bodyend="187"/>
+        <references refid="class_backend_server_1a032c526a81175c5c4de3c5e9efdcf1b5" compoundref="_backend_server_8h" startline="75">m_dwCurTime</references>
+        <referencedby refid="class_backend_server_1a4abd844ccde6fa6b8e31fd8eaccfb982" compoundref="_backend_server_8cpp" startline="103" endline="143">OnNetRecv</referencedby>
+        <referencedby refid="class_backend_server_1ac332832623268b97640ac16afba78907" compoundref="_se_n_b_k_s_process_8cpp" startline="12" endline="37">ProcessNBKS_Register</referencedby>
+        <referencedby refid="class_backend_server_1a7d483acdd3c1d9cffdd56ab1851e1cca" compoundref="_backend_server_8cpp" startline="289" endline="298">UpdateConnect</referencedby>
+        <referencedby refid="class_backend_server_1af4bd8e521cb062d5afbc9a539724d12e" compoundref="_backend_server_8cpp" startline="300" endline="311">UpdateStatistic</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_backend_server_1ae58a3f69e4a81c8da456344a11bdfe5b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::LoadConfig</definition>
+        <argsstring>(const char *pcFile)</argsstring>
+        <name>LoadConfig</name>
+        <param>
+          <type>const char *</type>
+          <declname>pcFile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="45" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="189" bodyend="233"/>
+        <references refid="struct_se_backend_config_1a7193a75e70c09f178dba72e7635c0324" compoundref="_backend_server_def_8h" startline="41">SeBackendConfig::dwAreaID</references>
+        <references refid="struct_se_backend_config_1aa4a9747a4e56c1581a7b63c6f3ecede1" compoundref="_backend_server_def_8h" startline="40">SeBackendConfig::dwServerID</references>
+        <references refid="class_se_config_1a4afab93102626e63e8d44a4cb8b97f35" compoundref="_se_config_8cpp" startline="97" endline="159">SeConfig::GetDBAddr</references>
+        <references refid="class_se_config_1a0bd6ce789230fc24e8e09674c0265d5d" compoundref="_se_config_8cpp" startline="56" endline="95">SeConfig::GetNetAddr</references>
+        <references refid="_se_tool_8cpp_1a03bcc77ad4ef4845b20fc5cf4db96834" compoundref="_se_tool_8cpp" startline="603" endline="610">GetStr2ID</references>
+        <references refid="class_se_config_1a8839d0f5e6b831b66fd018826a304086" compoundref="_se_config_8cpp" startline="23" endline="42">SeConfig::GetValue</references>
+        <references refid="struct_se_backend_config_1ac7c4738168ed5e3650c06d2a8039c1c4" compoundref="_backend_server_def_8h" startline="42">SeBackendConfig::kLocalServer</references>
+        <references refid="struct_se_backend_config_1a810f2ef4901b953c6f16351b43da7c22" compoundref="_backend_server_def_8h" startline="43">SeBackendConfig::kUnitStatisticsDB</references>
+        <references refid="class_se_config_1a077cfce8454c31d293c2d2341980ffca" compoundref="_se_config_8cpp" startline="10" endline="21">SeConfig::Load</references>
+        <references refid="class_backend_server_1a1b9c7111a22dfa4beb698a3a33090e34" compoundref="_backend_server_8h" startline="67">m_kConfig</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1acb938dc7b908afddcef4d63fff48c0cb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::LoadConfig</definition>
+        <argsstring>(void)</argsstring>
+        <name>LoadConfig</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="46" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="235" bodyend="242"/>
+        <referencedby refid="class_backend_server_1ad52a832b76cd2a40f460343d1ca3d602" compoundref="_backend_server_8cpp" startline="20" endline="37">Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a41913ddc80bde6ef7e62f5422fbb0635" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::InitializeNet</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitializeNet</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="47" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="244" bodyend="262"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="struct_se_backend_config_1ac7c4738168ed5e3650c06d2a8039c1c4" compoundref="_backend_server_def_8h" startline="42">SeBackendConfig::kLocalServer</references>
+        <references refid="class_backend_server_1a1b9c7111a22dfa4beb698a3a33090e34" compoundref="_backend_server_8h" startline="67">m_kConfig</references>
+        <references refid="class_backend_server_1a78c7e4f6424b7621a8f2d3d523522714" compoundref="_backend_server_8h" startline="66">m_kNetMgr</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="_se_server_define_8h_1a141dc49d73e6790790a053c29623f606" compoundref="_se_server_define_8h" startline="143">SERVER_BUFFER_SIZE</references>
+        <referencedby refid="class_backend_server_1ad52a832b76cd2a40f460343d1ca3d602" compoundref="_backend_server_8cpp" startline="20" endline="37">Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a7b92991268357cbe60da12c3e1930286" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::InitializeNetEx</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitializeNetEx</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="48" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="264" bodyend="267"/>
+        <referencedby refid="class_backend_server_1ad52a832b76cd2a40f460343d1ca3d602" compoundref="_backend_server_8cpp" startline="20" endline="37">Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a12dbe6127be37de2ffd713a4ce31d98c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BackendServer::InitializeDB</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitializeDB</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="50" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="269" bodyend="287"/>
+        <references refid="struct_se_d_b_addr_1ae8a70001edc6281b45cb6692e94557c7" compoundref="_se_share_def_8h" startline="60">SeDBAddr::acDBName</references>
+        <references refid="struct_se_d_b_addr_1a54fa6e30b317baf8e70247984fbd3118" compoundref="_se_share_def_8h" startline="62">SeDBAddr::acDBPassword</references>
+        <references refid="struct_se_d_b_addr_1a8c395e74313d9eba8aec4c1d43837786" compoundref="_se_share_def_8h" startline="61">SeDBAddr::acDBUser</references>
+        <references refid="struct_se_d_b_addr_1ad9ca5b457c92daf4c9e26583e9505fdd" compoundref="_se_share_def_8h" startline="58">SeDBAddr::acIP</references>
+        <references refid="struct_se_d_b_addr_1a1ac445b204c6f0f79b8be0d866d6c345" compoundref="_se_share_def_8h" startline="59">SeDBAddr::iPort</references>
+        <references refid="struct_se_backend_config_1a810f2ef4901b953c6f16351b43da7c22" compoundref="_backend_server_def_8h" startline="43">SeBackendConfig::kUnitStatisticsDB</references>
+        <references refid="class_backend_server_1aec8fd9936c2e82ee1e5383cf9f3ddb3f" compoundref="_backend_server_8h" startline="70">m_iUnitStatisticDB</references>
+        <references refid="class_backend_server_1a1b9c7111a22dfa4beb698a3a33090e34" compoundref="_backend_server_8h" startline="67">m_kConfig</references>
+        <references refid="class_backend_server_1a5e41584bb3c528d09034ec2a4c6c37e9" compoundref="_backend_server_8h" startline="69">m_kDBMgr</references>
+        <references refid="src_2_global_server_def_8h_1a4b8ccf0bf46575671a44659ec3daa697afbdb1297c666ddefe6878e1538b53383" compoundref="src_2_global_server_def_8h" startline="17">SAD_DB_LOGIC</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <referencedby refid="class_backend_server_1ad52a832b76cd2a40f460343d1ca3d602" compoundref="_backend_server_8cpp" startline="20" endline="37">Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a7d483acdd3c1d9cffdd56ab1851e1cca" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::UpdateConnect</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateConnect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="52" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="289" bodyend="298"/>
+        <references refid="class_backend_server_1af08fdd5758040479fbe2d30dd05b7252" compoundref="_backend_server_8cpp" startline="184" endline="187">GetServerTime</references>
+        <referencedby refid="class_backend_server_1abdc0d26e6a91c17dcda4c6801cf2ad0c" compoundref="_backend_server_8cpp" startline="39" endline="55">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1af4bd8e521cb062d5afbc9a539724d12e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::UpdateStatistic</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateStatistic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="53" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="300" bodyend="311"/>
+        <references refid="_backend_server_def_8h_1a6fab76640e7696fd5209f60debd243f8a62fdd4009b7f5037e5fc833c142138a6" compoundref="_backend_server_def_8h" startline="23">BKS_ONLINE_STATIC_TIME</references>
+        <references refid="class_backend_server_1af08fdd5758040479fbe2d30dd05b7252" compoundref="_backend_server_8cpp" startline="184" endline="187">GetServerTime</references>
+        <references refid="class_backend_server_1aebf6fbee710bc84551d6985ffcd567dd" compoundref="_backend_server_8cpp" startline="313" endline="320">UpdateStatistic_OnlineNum</references>
+        <referencedby refid="class_backend_server_1abdc0d26e6a91c17dcda4c6801cf2ad0c" compoundref="_backend_server_8cpp" startline="39" endline="55">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1aebf6fbee710bc84551d6985ffcd567dd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::UpdateStatistic_OnlineNum</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateStatistic_OnlineNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="54" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="313" bodyend="320"/>
+        <references refid="_backend_statistics_mgr_8cpp_1a3c3155df2c84764ce2b1710d9c01deb0" compoundref="_backend_statistics_mgr_8cpp" startline="3">g_kBackendStatisticsMgr</references>
+        <references refid="class_backend_statistics_mgr_1a3fa4177cf62d52b89cb35723b727f286" compoundref="_backend_statistics_mgr_8cpp" startline="13" endline="16">BackendStatisticsMgr::get_online_users</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="class_backend_server_1a4d2aa3b83a7263beccc86a67cd114e9c" compoundref="_backend_d_b_send_8cpp" startline="79" endline="92">SendDB_Online_Num</references>
+        <referencedby refid="class_backend_server_1af4bd8e521cb062d5afbc9a539724d12e" compoundref="_backend_server_8cpp" startline="300" endline="311">UpdateStatistic</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1ac099b6c5d14dfec627b4e5b755f6a489" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::UpdateStatistic_RaceNum</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateStatistic_RaceNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="55" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="322" bodyend="329"/>
+        <references refid="_backend_statistics_mgr_8cpp_1a3c3155df2c84764ce2b1710d9c01deb0" compoundref="_backend_statistics_mgr_8cpp" startline="3">g_kBackendStatisticsMgr</references>
+        <references refid="class_backend_statistics_mgr_1a72636aa7c709321235fff4f21365d73a" compoundref="_backend_statistics_mgr_8cpp" startline="18" endline="21">BackendStatisticsMgr::get_race_users</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="class_backend_server_1ac976af9adda24baf7798c2f2ab762f69" compoundref="_backend_d_b_send_8cpp" startline="94" endline="107">SendDB_Race_Num</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1adf862a9c2deed130821352dc292bedb8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::UpdateStatistic_WatchNum</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateStatistic_WatchNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="56" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="331" bodyend="338"/>
+        <references refid="_backend_statistics_mgr_8cpp_1a3c3155df2c84764ce2b1710d9c01deb0" compoundref="_backend_statistics_mgr_8cpp" startline="3">g_kBackendStatisticsMgr</references>
+        <references refid="class_backend_statistics_mgr_1a646529fb1512268d7b451018199ada85" compoundref="_backend_statistics_mgr_8cpp" startline="23" endline="26">BackendStatisticsMgr::get_watch_users</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="class_backend_server_1aeb360fa91a3b3d9f56686d1dc92aaca2" compoundref="_backend_d_b_send_8cpp" startline="109" endline="122">SendDB_Watch_Num</references>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1af0c69e9d1dd9b6cc77b8c3df26cfac28" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::LinkUserSync</definition>
+        <argsstring>(DWord dwPlayerID, DWord dwStateID, DWord dwLoginTime)</argsstring>
+        <name>LinkUserSync</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwStateID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwLoginTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="58" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="340" bodyend="353"/>
+        <references refid="_se_ptl_comm_define_8h_1ab4760fe302c6e66814cca89c0675d97fa0fe956bcc181690961b1ff86e9560a3f" compoundref="_se_ptl_comm_define_8h" startline="656">ENState_Online</references>
+        <references refid="_se_ptl_comm_define_8h_1ab4760fe302c6e66814cca89c0675d97fa2f1ae5d7084be70dceca0942db45b3a4" compoundref="_se_ptl_comm_define_8h" startline="658">ENState_Racing</references>
+        <references refid="_se_ptl_comm_define_8h_1ab4760fe302c6e66814cca89c0675d97fa55b4bc54c1a283e151381d9bef96e708" compoundref="_se_ptl_comm_define_8h" startline="657">ENState_Watching</references>
+        <references refid="class_backend_server_1ad156a9845d114d8b1be0fbca207f9449" compoundref="_backend_server_8cpp" startline="362" endline="367">LinkUserRaceSync</references>
+        <references refid="class_backend_server_1a5f913aa6ce55d84eb3fe3fdac2519a9c" compoundref="_backend_server_8cpp" startline="355" endline="360">LinkUserTownSync</references>
+        <references refid="class_backend_server_1af8c1957ec1b25e1ca0bf3961a6a4f0b8" compoundref="_backend_server_8cpp" startline="369" endline="374">LinkUserWatchSync</references>
+        <referencedby refid="class_backend_server_1afc7a68d29d681803787115a4126b8d70" compoundref="_se_n_b_k_s_process_8cpp" startline="45" endline="56">ProcessNBKS_UserStateSync</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a5f913aa6ce55d84eb3fe3fdac2519a9c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::LinkUserTownSync</definition>
+        <argsstring>(DWord dwPlayerID)</argsstring>
+        <name>LinkUserTownSync</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="59" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="355" bodyend="360"/>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="class_backend_server_1acaf73df8963265ae4a78244ed1b325da" compoundref="_backend_d_b_send_8cpp" startline="34" endline="47">SendDB_User_Town</references>
+        <referencedby refid="class_backend_server_1af0c69e9d1dd9b6cc77b8c3df26cfac28" compoundref="_backend_server_8cpp" startline="340" endline="353">LinkUserSync</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1ad156a9845d114d8b1be0fbca207f9449" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::LinkUserRaceSync</definition>
+        <argsstring>(DWord dwPlayerID)</argsstring>
+        <name>LinkUserRaceSync</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="60" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="362" bodyend="367"/>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="class_backend_server_1ad12fb3a5cf8f2c37474fef8db6ab4239" compoundref="_backend_d_b_send_8cpp" startline="49" endline="62">SendDB_User_Race</references>
+        <referencedby refid="class_backend_server_1af0c69e9d1dd9b6cc77b8c3df26cfac28" compoundref="_backend_server_8cpp" startline="340" endline="353">LinkUserSync</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1af8c1957ec1b25e1ca0bf3961a6a4f0b8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::LinkUserWatchSync</definition>
+        <argsstring>(DWord dwPlayerID)</argsstring>
+        <name>LinkUserWatchSync</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="61" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="369" bodyend="374"/>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="class_backend_server_1a650758e5e2b9f3748f7abed222e2ac2d" compoundref="_backend_d_b_send_8cpp" startline="64" endline="77">SendDB_User_Watch</references>
+        <referencedby refid="class_backend_server_1af0c69e9d1dd9b6cc77b8c3df26cfac28" compoundref="_backend_server_8cpp" startline="340" endline="353">LinkUserSync</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_backend_server_1a41df454eb98fadfdf297909d942d50aa" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackendServer::CreatUserSync</definition>
+        <argsstring>(DWord dwPlayerID, DWord dwLoginTime, const char *pIp)</argsstring>
+        <name>CreatUserSync</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwPlayerID</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwLoginTime</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pIp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="63" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.cpp" bodystart="376" bodyend="381"/>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="class_backend_server_1a142914139a2f1d32de8a0422a8e64785" compoundref="_backend_d_b_send_8cpp" startline="15" endline="32">SendDB_User_Create</references>
+        <referencedby refid="class_backend_server_1a1c1d58c71b65272b2973d09811ec65bc" compoundref="_se_n_b_k_s_process_8cpp" startline="58" endline="67">ProcessNBKS_CreatUserSync</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="560">
+        <label>TeDBCall</label>
+      </node>
+      <node id="557">
+        <label>BackendServer</label>
+        <link refid="class_backend_server"/>
+        <childnode refid="558" relation="public-inheritance">
+        </childnode>
+        <childnode refid="559" relation="public-inheritance">
+        </childnode>
+        <childnode refid="560" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="559">
+        <label>SeBaseServer</label>
+        <link refid="class_se_base_server"/>
+      </node>
+      <node id="558">
+        <label>TeNetCall</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="571">
+        <label>std::map&lt; DWord, SeDBQuery * &gt;</label>
+        <childnode refid="572" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="564">
+        <label>TeDBCall</label>
+      </node>
+      <node id="561">
+        <label>BackendServer</label>
+        <link refid="class_backend_server"/>
+        <childnode refid="562" relation="public-inheritance">
+        </childnode>
+        <childnode refid="563" relation="public-inheritance">
+        </childnode>
+        <childnode refid="564" relation="public-inheritance">
+        </childnode>
+        <childnode refid="565" relation="usage">
+          <edgelabel>m_kAllConnect</edgelabel>
+        </childnode>
+        <childnode refid="569" relation="usage">
+          <edgelabel>m_kConfig</edgelabel>
+        </childnode>
+        <childnode refid="571" relation="usage">
+          <edgelabel>m_kAllDBQuery</edgelabel>
+        </childnode>
+      </node>
+      <node id="576">
+        <label>SeDBCallback</label>
+        <link refid="class_se_d_b_callback"/>
+      </node>
+      <node id="566">
+        <label>SeConnect</label>
+        <link refid="struct_se_connect"/>
+        <childnode refid="567" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+        <childnode refid="568" relation="usage">
+          <edgelabel>kTownSign</edgelabel>
+        </childnode>
+      </node>
+      <node id="569">
+        <label>SeBackendConfig</label>
+        <link refid="struct_se_backend_config"/>
+        <childnode refid="567" relation="usage">
+          <edgelabel>kLocalServer</edgelabel>
+        </childnode>
+        <childnode refid="570" relation="usage">
+          <edgelabel>kUnitStatisticsDB</edgelabel>
+        </childnode>
+      </node>
+      <node id="563">
+        <label>SeBaseServer</label>
+        <link refid="class_se_base_server"/>
+      </node>
+      <node id="567">
+        <label>SeNetAddr</label>
+        <link refid="struct_se_net_addr"/>
+      </node>
+      <node id="574">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="565">
+        <label>std::map&lt; HSock, SeConnect * &gt;</label>
+        <childnode refid="566" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="568">
+        <label>HTownSign</label>
+        <link refid="struct_h_town_sign"/>
+      </node>
+      <node id="572">
+        <label>SeDBQuery</label>
+        <link refid="struct_se_d_b_query"/>
+        <childnode refid="573" relation="usage">
+          <edgelabel>kString1</edgelabel>
+          <edgelabel>kString</edgelabel>
+          <edgelabel>kInfo1</edgelabel>
+          <edgelabel>kInfo2</edgelabel>
+        </childnode>
+        <childnode refid="575" relation="usage">
+          <edgelabel>kPlayerSock</edgelabel>
+        </childnode>
+        <childnode refid="576" relation="usage">
+          <edgelabel>callback</edgelabel>
+        </childnode>
+      </node>
+      <node id="570">
+        <label>SeDBAddr</label>
+        <link refid="struct_se_d_b_addr"/>
+      </node>
+      <node id="575">
+        <label>SePtlHSock</label>
+        <link refid="struct_se_ptl_h_sock"/>
+      </node>
+      <node id="562">
+        <label>TeNetCall</label>
+      </node>
+      <node id="573">
+        <label>std::string</label>
+        <childnode refid="574" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" line="12" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/BackendServer/Src/BackendServer.h" bodystart="11" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_backend_server_1aa585a8b9c0113ed869226ede159ec483" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>BackendServer</name></member>
+      <member refid="class_backend_server_1a41df454eb98fadfdf297909d942d50aa" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>CreatUserSync</name></member>
+      <member refid="class_backend_server_1a994d4ce89299925c6ed17e7f6faa7194" prot="public" virt="virtual"><scope>BackendServer</scope><name>ExecuteAction</name></member>
+      <member refid="class_backend_server_1a3b70f54f6ce037cd644a562f0643d02a" prot="public" virt="virtual"><scope>BackendServer</scope><name>Finialize</name></member>
+      <member refid="class_backend_server_1a7ba02c17cf5da9c5e3510e1a0e093ffa" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>GetAreaID</name></member>
+      <member refid="class_backend_server_1a4384a13111b1265a8add16ae37b0dfa8" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>GetServerID</name></member>
+      <member refid="class_backend_server_1af08fdd5758040479fbe2d30dd05b7252" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>GetServerTime</name></member>
+      <member refid="class_backend_server_1ad52a832b76cd2a40f460343d1ca3d602" prot="public" virt="virtual"><scope>BackendServer</scope><name>Initialize</name></member>
+      <member refid="class_backend_server_1a12dbe6127be37de2ffd713a4ce31d98c" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>InitializeDB</name></member>
+      <member refid="class_backend_server_1a41913ddc80bde6ef7e62f5422fbb0635" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>InitializeNet</name></member>
+      <member refid="class_backend_server_1a7b92991268357cbe60da12c3e1930286" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>InitializeNetEx</name></member>
+      <member refid="class_backend_server_1ad156a9845d114d8b1be0fbca207f9449" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>LinkUserRaceSync</name></member>
+      <member refid="class_backend_server_1af0c69e9d1dd9b6cc77b8c3df26cfac28" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>LinkUserSync</name></member>
+      <member refid="class_backend_server_1a5f913aa6ce55d84eb3fe3fdac2519a9c" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>LinkUserTownSync</name></member>
+      <member refid="class_backend_server_1af8c1957ec1b25e1ca0bf3961a6a4f0b8" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>LinkUserWatchSync</name></member>
+      <member refid="class_backend_server_1ae58a3f69e4a81c8da456344a11bdfe5b" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>LoadConfig</name></member>
+      <member refid="class_backend_server_1acb938dc7b908afddcef4d63fff48c0cb" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>LoadConfig</name></member>
+      <member refid="class_backend_server_1a032c526a81175c5c4de3c5e9efdcf1b5" prot="private" virt="non-virtual"><scope>BackendServer</scope><name>m_dwCurTime</name></member>
+      <member refid="class_backend_server_1a32b1faa4ce9bd85e454dcb90a9ae32cd" prot="private" virt="non-virtual"><scope>BackendServer</scope><name>m_dwTickCount</name></member>
+      <member refid="class_backend_server_1aec8fd9936c2e82ee1e5383cf9f3ddb3f" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>m_iUnitStatisticDB</name></member>
+      <member refid="class_backend_server_1af6baf241378b6740fb53b915afb4aef4" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>m_kAllConnect</name></member>
+      <member refid="class_backend_server_1a8882893a9cdafb722b073854941a041a" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>m_kAllDBQuery</name></member>
+      <member refid="class_backend_server_1a1b9c7111a22dfa4beb698a3a33090e34" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>m_kConfig</name></member>
+      <member refid="class_backend_server_1a5e41584bb3c528d09034ec2a4c6c37e9" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>m_kDBMgr</name></member>
+      <member refid="class_backend_server_1a78c7e4f6424b7621a8f2d3d523522714" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>m_kNetMgr</name></member>
+      <member refid="class_backend_server_1a0f81d3cefe64361ad3dfe6380853ef89" prot="public" virt="virtual"><scope>BackendServer</scope><name>OnDBResponse</name></member>
+      <member refid="class_backend_server_1aa10a6b04eb7ac8d43709887ebb5014cd" prot="public" virt="virtual"><scope>BackendServer</scope><name>OnNetAccept</name></member>
+      <member refid="class_backend_server_1abbea08f868a48b3fa8bcaadb5052fb8b" prot="public" virt="virtual"><scope>BackendServer</scope><name>OnNetConnected</name></member>
+      <member refid="class_backend_server_1ae345c91329273c47cac10e35ad5f6dd1" prot="public" virt="virtual"><scope>BackendServer</scope><name>OnNetDisconnect</name></member>
+      <member refid="class_backend_server_1a4abd844ccde6fa6b8e31fd8eaccfb982" prot="public" virt="virtual"><scope>BackendServer</scope><name>OnNetRecv</name></member>
+      <member refid="class_backend_server_1a531cc8440eef431379138109469aa676" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>PreProcessNBKS</name></member>
+      <member refid="class_backend_server_1a19464bafd2c16f0e2fe3ac6edc4f2177" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>ProcessDB</name></member>
+      <member refid="class_backend_server_1a264259d9938488dcda269afabc01ac73" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>ProcessDB_Online_Num</name></member>
+      <member refid="class_backend_server_1af2d54155e47baad126a9e1327bc1cb2d" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>ProcessDB_Race_Num</name></member>
+      <member refid="class_backend_server_1a2bb199e8b92911aef9f7058c9b9bd7a7" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>ProcessDB_User_Create</name></member>
+      <member refid="class_backend_server_1a8b32c455cc8e36a6f0016eb6095e609b" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>ProcessDB_User_Race</name></member>
+      <member refid="class_backend_server_1ac587875e231c5e7735adccdfd7f70b9f" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>ProcessDB_User_Town</name></member>
+      <member refid="class_backend_server_1ac3ba97ced48368707d2ca754b9327b22" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>ProcessDB_User_Watch</name></member>
+      <member refid="class_backend_server_1a552db3e8ac6a2cd9e1592c9b72eb1788" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>ProcessDB_Watch_Num</name></member>
+      <member refid="class_backend_server_1a1c1d58c71b65272b2973d09811ec65bc" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>ProcessNBKS_CreatUserSync</name></member>
+      <member refid="class_backend_server_1a86e76eee6b1d359e6269bb46bc056bda" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>ProcessNBKS_HeartPackage</name></member>
+      <member refid="class_backend_server_1ac332832623268b97640ac16afba78907" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>ProcessNBKS_Register</name></member>
+      <member refid="class_backend_server_1afc7a68d29d681803787115a4126b8d70" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>ProcessNBKS_UserStateSync</name></member>
+      <member refid="class_backend_server_1aeded7763b6b62c6ef48347345cf7c6f9" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>ProcessNBKSData</name></member>
+      <member refid="class_se_base_server_1a88b0de020f966c810134d45a9d8ca074" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>SeBaseServer</name></member>
+      <member refid="class_backend_server_1ad3d5c9752ce88fc462923f775d234a8d" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>SendBKSN_HeartPackageRet</name></member>
+      <member refid="class_backend_server_1a11ba31d46234f69817e7bf639018ca16" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>SendBKSN_RegisterRet</name></member>
+      <member refid="class_backend_server_1a0d61ca4ff2144893f2552896b3345c22" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>SendBKSNData</name></member>
+      <member refid="class_backend_server_1a7496d57bce096cd42b2345047fa82248" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>SendDB_ExecuteSQL</name></member>
+      <member refid="class_backend_server_1a4d2aa3b83a7263beccc86a67cd114e9c" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>SendDB_Online_Num</name></member>
+      <member refid="class_backend_server_1ac976af9adda24baf7798c2f2ab762f69" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>SendDB_Race_Num</name></member>
+      <member refid="class_backend_server_1a142914139a2f1d32de8a0422a8e64785" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>SendDB_User_Create</name></member>
+      <member refid="class_backend_server_1ad12fb3a5cf8f2c37474fef8db6ab4239" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>SendDB_User_Race</name></member>
+      <member refid="class_backend_server_1acaf73df8963265ae4a78244ed1b325da" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>SendDB_User_Town</name></member>
+      <member refid="class_backend_server_1a650758e5e2b9f3748f7abed222e2ac2d" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>SendDB_User_Watch</name></member>
+      <member refid="class_backend_server_1aeb360fa91a3b3d9f56686d1dc92aaca2" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>SendDB_Watch_Num</name></member>
+      <member refid="class_backend_server_1a19ced7cdec4917ac623b73ba96d38d1d" prot="public" virt="virtual"><scope>BackendServer</scope><name>ShowConsoleTitle</name></member>
+      <member refid="class_backend_server_1abdc0d26e6a91c17dcda4c6801cf2ad0c" prot="public" virt="virtual"><scope>BackendServer</scope><name>Update</name></member>
+      <member refid="class_backend_server_1a7d483acdd3c1d9cffdd56ab1851e1cca" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>UpdateConnect</name></member>
+      <member refid="class_backend_server_1af4bd8e521cb062d5afbc9a539724d12e" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>UpdateStatistic</name></member>
+      <member refid="class_backend_server_1aebf6fbee710bc84551d6985ffcd567dd" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>UpdateStatistic_OnlineNum</name></member>
+      <member refid="class_backend_server_1ac099b6c5d14dfec627b4e5b755f6a489" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>UpdateStatistic_RaceNum</name></member>
+      <member refid="class_backend_server_1adf862a9c2deed130821352dc292bedb8" prot="protected" virt="non-virtual"><scope>BackendServer</scope><name>UpdateStatistic_WatchNum</name></member>
+      <member refid="class_backend_server_1a7d612218a728c5d0bd5d097352644af8" prot="public" virt="non-virtual"><scope>BackendServer</scope><name>~BackendServer</name></member>
+      <member refid="class_se_base_server_1a6db805870a32d2966e41923b2815a8db" prot="public" virt="virtual"><scope>BackendServer</scope><name>~SeBaseServer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

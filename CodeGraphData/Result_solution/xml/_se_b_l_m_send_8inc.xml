@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_se_b_l_m_send_8inc" kind="file">
+    <compoundname>SeBLMSend.inc</compoundname>
+    <includedby refid="_src_2_se_b_l_m_send_8cpp" local="yes">WorldServer/Src/SeBLMSend.cpp</includedby>
+    <includedby refid="src_2_se_b_l_m_send_8cpp" local="yes">WorldServer/src/SeBLMSend.cpp</includedby>
+    <invincdepgraph>
+      <node id="124725">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeBLMSend.inc</label>
+        <link refid="SeBLMSend.inc"/>
+        <childnode refid="124726" relation="include">
+        </childnode>
+        <childnode refid="124727" relation="include">
+        </childnode>
+      </node>
+      <node id="124726">
+        <label>WorldServer/Src/SeBLMSend.cpp</label>
+        <link refid="_src_2_se_b_l_m_send_8cpp"/>
+      </node>
+      <node id="124727">
+        <label>WorldServer/src/SeBLMSend.cpp</label>
+        <link refid="src_2_se_b_l_m_send_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_b_l_m_send_8inl_1ac3083ba9609a95af0c35b148669c569f" kindref="member">SERVER::SendBLM_RaceMatchLoadDetailRet</ref>(DWord<sp/>dwPlayerID,DWord<sp/>dwMatchSession,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>acData,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_b_l_m___race_match_load_detail_ret" kindref="compound">SeBLM_RaceMatchLoadDetailRet</ref>);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_b_l_m___race_match_load_detail_ret" kindref="compound">SeBLM_RaceMatchLoadDetailRet</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_b_l_m___race_match_load_detail_ret" kindref="compound">SeBLM_RaceMatchLoadDetailRet</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_b_l_m___race_match_load_detail_ret_1ab3696c6486b3ab72929a43def65cdda3" kindref="member">dwPlayerID</ref><sp/>=<sp/>dwPlayerID;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_b_l_m___race_match_load_detail_ret_1a4e063afb2cfb4d3d41023435767ccad3" kindref="member">dwMatchSession</ref><sp/>=<sp/>dwMatchSession;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_b_l_m___race_match_load_detail_ret_1a9e79cf7587c079e4681d4dc5aeaf53ff" kindref="member">iSize</ref><sp/>=<sp/>iSize;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>iLen<sp/>=<sp/>offsetof(<ref refid="struct_se_b_l_m___race_match_load_detail_ret" kindref="compound">SeBLM_RaceMatchLoadDetailRet</ref>,<sp/>acData)<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(char)<sp/>*<sp/>max(<ref refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa5b31d4cc364eb59fcd6ab560eebc48cc" kindref="member">SSD_ENDSTR_LEN</ref>,<sp/>iSize);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(pkData-&gt;<ref refid="struct_se_b_l_m___race_match_load_detail_ret_1ab82c9fe02fd2338d6840bf19cf0a0a49" kindref="member">acData</ref>,<sp/>acData,<sp/>iSize<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_b_l_m_send_8inl_1a60193bd9b3ac678ed76089ca0228dbff" kindref="member">SendBLMData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_b_l_m_send_8inl_1ac3083ba9609a95af0c35b148669c569f" kindref="member">SERVER::SendBLM_RaceMatchLoadDetailRet</ref>(DWord<sp/>dwPlayerID,DWord<sp/>dwMatchSession,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize,std::vector&lt;char&gt;&amp;<sp/>acData,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_b_l_m___race_match_load_detail_ret" kindref="compound">SeBLM_RaceMatchLoadDetailRet</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_b_l_m___race_match_load_detail_ret" kindref="compound">SeBLM_RaceMatchLoadDetailRet</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_b_l_m___race_match_load_detail_ret" kindref="compound">SeBLM_RaceMatchLoadDetailRet</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_b_l_m___race_match_load_detail_ret_1ab3696c6486b3ab72929a43def65cdda3" kindref="member">dwPlayerID</ref><sp/>=<sp/>dwPlayerID;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_b_l_m___race_match_load_detail_ret_1a4e063afb2cfb4d3d41023435767ccad3" kindref="member">dwMatchSession</ref><sp/>=<sp/>dwMatchSession;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_b_l_m___race_match_load_detail_ret_1a9e79cf7587c079e4681d4dc5aeaf53ff" kindref="member">iSize</ref><sp/>=<sp/>iSize;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>iLen<sp/>=<sp/>offsetof(<ref refid="struct_se_b_l_m___race_match_load_detail_ret" kindref="compound">SeBLM_RaceMatchLoadDetailRet</ref>,<sp/>acData)<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(char)<sp/>*<sp/>max(<ref refid="_se_ptl_comm_define_8h_1af62c3a00672953c86a2586d53c60663aa5b31d4cc364eb59fcd6ab560eebc48cc" kindref="member">SSD_ENDSTR_LEN</ref>,<sp/>iSize);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iSize<sp/>&gt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)acData.size())</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>iSize;<sp/>++i)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_b_l_m___race_match_load_detail_ret_1ab82c9fe02fd2338d6840bf19cf0a0a49" kindref="member">acData</ref>[i]<sp/>=<sp/>acData[i];</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_b_l_m_send_8inl_1a60193bd9b3ac678ed76089ca0228dbff" kindref="member">SendBLMData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_se_b_l_m_send_8inl_1a67b1fbb25e9d2a76cf3dd6304ec20841" kindref="member">SERVER::SendBLM_GetPlayerMatchValueRet</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_se_ptl_comm_define_8h_1a89b73f1dc810e11801b5b7f3ecde8abd" kindref="member">MatchReqResult</ref>&amp;<sp/>result,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_h_town_sign" kindref="compound">HTownSign</ref>&amp;<sp/>town,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_match_value_stru" kindref="compound">MatchValueStru</ref>&amp;<sp/>matchValue,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver</highlight><highlight class="comment">/*<sp/>=<sp/>NULL*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acSend[65536];</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLen<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_se_b_l_m___get_player_match_value_ret" kindref="compound">SeBLM_GetPlayerMatchValueRet</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iLen<sp/>&gt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(acSend))</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_se_b_l_m___get_player_match_value_ret" kindref="compound">SeBLM_GetPlayerMatchValueRet</ref>*<sp/>pkData<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(acSend)<sp/><ref refid="struct_se_b_l_m___get_player_match_value_ret" kindref="compound">SeBLM_GetPlayerMatchValueRet</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_b_l_m___get_player_match_value_ret_1a9f80133e10b108e1526d4a9ee8e5729e" kindref="member">result</ref><sp/>=<sp/>result;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_b_l_m___get_player_match_value_ret_1aecddbd8b70a0299c750431a8ae9b576f" kindref="member">town</ref><sp/>=<sp/>town;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>pkData-&gt;<ref refid="struct_se_b_l_m___get_player_match_value_ret_1a0b08f535cdeb6937490275c579a4220a" kindref="member">matchValue</ref><sp/>=<sp/>matchValue;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_se_b_l_m_send_8inl_1a60193bd9b3ac678ed76089ca0228dbff" kindref="member">SendBLMData</ref>(pkData,<sp/>iLen,<sp/>pkReceiver);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeBLMSend.inc"/>
+  </compounddef>
+</doxygen>

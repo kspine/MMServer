@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_se_base64" kind="class" prot="public">
+    <compoundname>SeBase64</compoundname>
+    <includes refid="_se_xml_8h" local="no">SeXml.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384" prot="private" static="no">
+        <name>@49</name>
+        <enumvalue id="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384ae219df052ea92463b647b21e3929ad90" prot="private">
+          <name>BASE64_PAD</name>
+          <initializer>= &apos;=&apos;</initializer>
+          <briefdescription>
+<para>Pad character. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384a23fa1ea49d9c6745e867a8947a5aee7a" prot="private">
+          <name>BASE64_CR</name>
+          <initializer>= &apos;\r&apos;</initializer>
+          <briefdescription>
+<para>Carriage return. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384a360c28aefb19f2ab999b196f12569be0" prot="private">
+          <name>BASE64_LF</name>
+          <initializer>= &apos;\n&apos;</initializer>
+          <briefdescription>
+<para>New line separator. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384aad9fbe789b8c2145581a8b45deb91fe6" prot="private">
+          <name>BASE64_NCHAR</name>
+          <initializer>= 76</initializer>
+          <briefdescription>
+<para>Number of characters per line when encoding. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384a617e9579acb4d1ce35d78d99b9bf2e4d" prot="private">
+          <name>BASE64_STANDARD</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>Multi line support. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1873" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1873" bodyend="1879"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_se_base64_1afb2d5c73fcf2853f6d4027f5ab1cfc05" prot="private" static="yes" mutable="no">
+        <type><ref refid="_se_xml_8h_1a65f85814a8290f9797005d3b28e7e5fc" kindref="member">uchar</ref></type>
+        <definition>uchar SeBase64::base64_encode[]</definition>
+        <argsstring>[]</argsstring>
+        <name>base64_encode</name>
+        <briefdescription>
+<para>Base64 Alphabet encoder-string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1880" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1880" bodyend="-1"/>
+        <referencedby refid="class_se_base64_1af7b2dbd0ac1a6f4e151a296bf480d5d5" compoundref="_se_xml_8h" startline="1885" endline="1898">Decode</referencedby>
+        <referencedby refid="class_se_base64_1af93b811e4c364ac504264d1c60e8858e" compoundref="_se_xml_8h" startline="1840" endline="1840">Encode</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_se_base64_1a07c024b30e781f8019f5935e61f3f66e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SeBase64::SeBase64</definition>
+        <argsstring>()</argsstring>
+        <name>SeBase64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1812" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1812" bodyend="1812"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_base64_1a9cf70ca9e234d46717df467268d3714a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t SeBase64::CalcBufferSize</definition>
+        <argsstring>(size_t length) const </argsstring>
+        <name>CalcBufferSize</name>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate buffer size requirement <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of binary data in bytes </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>size of required buffer including NULL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1826" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1826" bodyend="1826"/>
+        <references refid="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384aad9fbe789b8c2145581a8b45deb91fe6" compoundref="_se_xml_8h" startline="1877">BASE64_NCHAR</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_base64_1a01178bc56230221ce698da9b7f5092b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeBase64::IsBase64Char</definition>
+        <argsstring>(uchar c) const </argsstring>
+        <name>IsBase64Char</name>
+        <param>
+          <type><ref refid="_se_xml_8h_1a65f85814a8290f9797005d3b28e7e5fc" kindref="member">uchar</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test if a character is a valid Base64 alphabet <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>character to test </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if valid Base64 alphabet </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1833" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1833" bodyend="1833"/>
+        <references refid="class_se_base64_1af7b2dbd0ac1a6f4e151a296bf480d5d5" compoundref="_se_xml_8h" startline="1885" endline="1898">Decode</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_base64_1af93b811e4c364ac504264d1c60e8858e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_se_xml_8h_1a65f85814a8290f9797005d3b28e7e5fc" kindref="member">uchar</ref></type>
+        <definition>uchar SeBase64::Encode</definition>
+        <argsstring>(uchar c) const </argsstring>
+        <name>Encode</name>
+        <param>
+          <type><ref refid="_se_xml_8h_1a65f85814a8290f9797005d3b28e7e5fc" kindref="member">uchar</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encode a unsigned char to Base64 encoding <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unsigned char to convert to Base64 (6-bit) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value unsigned char in Base64 alphabet, or error (-1) for invalid input </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1840" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1840" bodyend="1840"/>
+        <references refid="class_se_base64_1afb2d5c73fcf2853f6d4027f5ab1cfc05" compoundref="_se_xml_8h" startline="1880">base64_encode</references>
+        <referencedby refid="_se_xml_8h_1a0d200ea2bf6110543904b247f4d23984" compoundref="_se_xml_8h" startline="1991" endline="2001">Base64Encode</referencedby>
+        <referencedby refid="class_se_base64_1ad43d1c0a7ec70154b9d8eb242fb858a5" compoundref="_se_xml_8h" startline="1900" endline="1944">Encode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_base64_1ad43d1c0a7ec70154b9d8eb242fb858a5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t SeBase64::Encode</definition>
+        <argsstring>(const uchar *in, size_t length, uchar *outbuf, size_t size, uint option=BASE64_STANDARD) const </argsstring>
+        <name>Encode</name>
+        <param>
+          <type>const <ref refid="_se_xml_8h_1a65f85814a8290f9797005d3b28e7e5fc" kindref="member">uchar</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1a65f85814a8290f9797005d3b28e7e5fc" kindref="member">uchar</ref> *</type>
+          <declname>outbuf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1a91ad9478d81a7aaf2593e8d9c3d06a14" kindref="member">uint</ref></type>
+          <declname>option</declname>
+          <defval><ref refid="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384a617e9579acb4d1ce35d78d99b9bf2e4d" kindref="member">BASE64_STANDARD</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encode an array of bytes to Base64 string <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unsigned char pointer of data source </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of data source </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outbuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unsigned char pointer of destination buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of destination buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>option</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>newline option </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of bytes copied, or error (-1) for invalid input </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1851" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1900" bodyend="1944"/>
+        <references refid="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384a360c28aefb19f2ab999b196f12569be0" compoundref="_se_xml_8h" startline="1876">BASE64_LF</references>
+        <references refid="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384aad9fbe789b8c2145581a8b45deb91fe6" compoundref="_se_xml_8h" startline="1877">BASE64_NCHAR</references>
+        <references refid="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384ae219df052ea92463b647b21e3929ad90" compoundref="_se_xml_8h" startline="1874">BASE64_PAD</references>
+        <references refid="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384a617e9579acb4d1ce35d78d99b9bf2e4d" compoundref="_se_xml_8h" startline="1878">BASE64_STANDARD</references>
+        <references refid="class_se_base64_1af93b811e4c364ac504264d1c60e8858e" compoundref="_se_xml_8h" startline="1840" endline="1840">Encode</references>
+        <references refid="class_se_base64_1a0bd488667a0105fece12a6af2cd3ece7" compoundref="_se_xml_8h" startline="1819" endline="1819">to_uchar</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_base64_1af7b2dbd0ac1a6f4e151a296bf480d5d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_se_xml_8h_1a65f85814a8290f9797005d3b28e7e5fc" kindref="member">uchar</ref></type>
+        <definition>uchar SeBase64::Decode</definition>
+        <argsstring>(uchar c) const </argsstring>
+        <name>Decode</name>
+        <param>
+          <type><ref refid="_se_xml_8h_1a65f85814a8290f9797005d3b28e7e5fc" kindref="member">uchar</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decode a Base64 alphabet data to 6-bit representation <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Alphabet data to convert to binary value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>binary value (0-63), or error (-1) for invalid input </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1858" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1885" bodyend="1898"/>
+        <references refid="class_se_base64_1afb2d5c73fcf2853f6d4027f5ab1cfc05" compoundref="_se_xml_8h" startline="1880">base64_encode</references>
+        <referencedby refid="_se_xml_8h_1a4603678b11cf8329c29d78cf3cb3f7a1" compoundref="_se_xml_8h" startline="2003" endline="2013">Base64Decode</referencedby>
+        <referencedby refid="class_se_base64_1adc6bb623a0076f15618cab18e6864f3a" compoundref="_se_xml_8h" startline="1946" endline="1987">Decode</referencedby>
+        <referencedby refid="class_se_base64_1a01178bc56230221ce698da9b7f5092b4" compoundref="_se_xml_8h" startline="1833" endline="1833">IsBase64Char</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_base64_1adc6bb623a0076f15618cab18e6864f3a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t SeBase64::Decode</definition>
+        <argsstring>(const uchar *in, size_t length, uchar *outbuf, size_t size, uint option=BASE64_STANDARD) const </argsstring>
+        <name>Decode</name>
+        <param>
+          <type>const <ref refid="_se_xml_8h_1a65f85814a8290f9797005d3b28e7e5fc" kindref="member">uchar</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1a65f85814a8290f9797005d3b28e7e5fc" kindref="member">uchar</ref> *</type>
+          <declname>outbuf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1a91ad9478d81a7aaf2593e8d9c3d06a14" kindref="member">uint</ref></type>
+          <declname>option</declname>
+          <defval><ref refid="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384a617e9579acb4d1ce35d78d99b9bf2e4d" kindref="member">BASE64_STANDARD</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decode an array of bytes to binary. It&apos;s safe for &apos;in&apos; and &apos;outbuf&apos; to be the same buffer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unsigned char pointer of data source (Base64 Alphabet) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of data source </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outbuf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unsigned char pointer of destination buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of destination buffer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>option</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>newline option </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of bytes copied, or error (-1) for invalid input </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1870" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1946" bodyend="1987"/>
+        <references refid="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384a23fa1ea49d9c6745e867a8947a5aee7a" compoundref="_se_xml_8h" startline="1875">BASE64_CR</references>
+        <references refid="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384a360c28aefb19f2ab999b196f12569be0" compoundref="_se_xml_8h" startline="1876">BASE64_LF</references>
+        <references refid="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384ae219df052ea92463b647b21e3929ad90" compoundref="_se_xml_8h" startline="1874">BASE64_PAD</references>
+        <references refid="class_se_base64_1af7b2dbd0ac1a6f4e151a296bf480d5d5" compoundref="_se_xml_8h" startline="1885" endline="1898">Decode</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_se_base64_1a0bd488667a0105fece12a6af2cd3ece7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_se_xml_8h_1a65f85814a8290f9797005d3b28e7e5fc" kindref="member">uchar</ref></type>
+        <definition>static uchar SeBase64::to_uchar</definition>
+        <argsstring>(char c)</argsstring>
+        <name>to_uchar</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert to uchar <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ASCII character </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>unsigned character </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1819" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1819" bodyend="1819"/>
+        <referencedby refid="class_se_base64_1ad43d1c0a7ec70154b9d8eb242fb858a5" compoundref="_se_xml_8h" startline="1900" endline="1944">Encode</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="1809" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="1808" bodyend="1881"/>
+    <listofallmembers>
+      <member refid="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384a23fa1ea49d9c6745e867a8947a5aee7a" prot="private" virt="non-virtual"><scope>SeBase64</scope><name>BASE64_CR</name></member>
+      <member refid="class_se_base64_1afb2d5c73fcf2853f6d4027f5ab1cfc05" prot="private" virt="non-virtual"><scope>SeBase64</scope><name>base64_encode</name></member>
+      <member refid="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384a360c28aefb19f2ab999b196f12569be0" prot="private" virt="non-virtual"><scope>SeBase64</scope><name>BASE64_LF</name></member>
+      <member refid="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384aad9fbe789b8c2145581a8b45deb91fe6" prot="private" virt="non-virtual"><scope>SeBase64</scope><name>BASE64_NCHAR</name></member>
+      <member refid="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384ae219df052ea92463b647b21e3929ad90" prot="private" virt="non-virtual"><scope>SeBase64</scope><name>BASE64_PAD</name></member>
+      <member refid="class_se_base64_1a7e08b521bf3cebb4d9a1b5f166677384a617e9579acb4d1ce35d78d99b9bf2e4d" prot="private" virt="non-virtual"><scope>SeBase64</scope><name>BASE64_STANDARD</name></member>
+      <member refid="class_se_base64_1a9cf70ca9e234d46717df467268d3714a" prot="public" virt="non-virtual"><scope>SeBase64</scope><name>CalcBufferSize</name></member>
+      <member refid="class_se_base64_1af7b2dbd0ac1a6f4e151a296bf480d5d5" prot="public" virt="non-virtual"><scope>SeBase64</scope><name>Decode</name></member>
+      <member refid="class_se_base64_1adc6bb623a0076f15618cab18e6864f3a" prot="public" virt="non-virtual"><scope>SeBase64</scope><name>Decode</name></member>
+      <member refid="class_se_base64_1af93b811e4c364ac504264d1c60e8858e" prot="public" virt="non-virtual"><scope>SeBase64</scope><name>Encode</name></member>
+      <member refid="class_se_base64_1ad43d1c0a7ec70154b9d8eb242fb858a5" prot="public" virt="non-virtual"><scope>SeBase64</scope><name>Encode</name></member>
+      <member refid="class_se_base64_1a01178bc56230221ce698da9b7f5092b4" prot="public" virt="non-virtual"><scope>SeBase64</scope><name>IsBase64Char</name></member>
+      <member refid="class_se_base64_1a07c024b30e781f8019f5935e61f3f66e" prot="public" virt="non-virtual"><scope>SeBase64</scope><name>SeBase64</name></member>
+      <member refid="class_se_base64_1a0bd488667a0105fece12a6af2cd3ece7" prot="public" virt="non-virtual"><scope>SeBase64</scope><name>to_uchar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

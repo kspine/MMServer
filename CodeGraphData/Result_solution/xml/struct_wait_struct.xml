@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_wait_struct" kind="struct" prot="public">
+    <compoundname>WaitStruct</compoundname>
+    <includes refid="_src_2_se_match_mgr_8h" local="no">SeMatchMgr.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_wait_struct_1ab1801c5ddc450da8ec4a343443d4ed08" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t WaitStruct::uiWaitID</definition>
+        <argsstring></argsstring>
+        <name>uiWaitID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="73" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_wait_struct_1af98cd0c410f80c48a11d855abfa3d163" prot="public" static="no" mutable="no">
+        <type><ref refid="_src_2_se_match_mgr_8h_1a90cf7eef447e58ffa7b02056cd37969f" kindref="member">WaitStatus</ref></type>
+        <definition>WaitStatus WaitStruct::ws</definition>
+        <argsstring></argsstring>
+        <name>ws</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="74" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_wait_struct_1a6f67ffbd1a379b79bcaf17f7baf0db0e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t WaitStruct::uiStartTime</definition>
+        <argsstring></argsstring>
+        <name>uiStartTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="75" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_wait_struct_1ac716b4865d0902974662713bc1a0c525" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t WaitStruct::uiMapID</definition>
+        <argsstring></argsstring>
+        <name>uiMapID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="76" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_wait_struct_1acc36334d91fa0fa52fdda230c7b4e660" prot="public" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="struct_se_match_stru" kindref="compound">SeMatchStru</ref> * &gt;</type>
+        <definition>std::list&lt; SeMatchStru * &gt; WaitStruct::matchlist</definition>
+        <argsstring></argsstring>
+        <name>matchlist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="77" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9525">
+        <label>SeMatchStru</label>
+        <link refid="struct_se_match_stru"/>
+        <childnode refid="9526" relation="usage">
+          <edgelabel>kMatchInfo</edgelabel>
+        </childnode>
+        <childnode refid="9527" relation="usage">
+          <edgelabel>kTownSign</edgelabel>
+        </childnode>
+      </node>
+      <node id="9526">
+        <label>SeMatchStartInfo</label>
+        <link refid="struct_se_match_start_info"/>
+      </node>
+      <node id="9527">
+        <label>HTownSign</label>
+        <link refid="struct_h_town_sign"/>
+      </node>
+      <node id="9524">
+        <label>std::list&lt; SeMatchStru * &gt;</label>
+        <childnode refid="9525" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9523">
+        <label>WaitStruct</label>
+        <link refid="struct_wait_struct"/>
+        <childnode refid="9524" relation="usage">
+          <edgelabel>matchlist</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" line="72" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/MatchServer/Src/SeMatchMgr.h" bodystart="71" bodyend="78"/>
+    <listofallmembers>
+      <member refid="struct_wait_struct_1acc36334d91fa0fa52fdda230c7b4e660" prot="public" virt="non-virtual"><scope>WaitStruct</scope><name>matchlist</name></member>
+      <member refid="struct_wait_struct_1ac716b4865d0902974662713bc1a0c525" prot="public" virt="non-virtual"><scope>WaitStruct</scope><name>uiMapID</name></member>
+      <member refid="struct_wait_struct_1a6f67ffbd1a379b79bcaf17f7baf0db0e" prot="public" virt="non-virtual"><scope>WaitStruct</scope><name>uiStartTime</name></member>
+      <member refid="struct_wait_struct_1ab1801c5ddc450da8ec4a343443d4ed08" prot="public" virt="non-virtual"><scope>WaitStruct</scope><name>uiWaitID</name></member>
+      <member refid="struct_wait_struct_1af98cd0c410f80c48a11d855abfa3d163" prot="public" virt="non-virtual"><scope>WaitStruct</scope><name>ws</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

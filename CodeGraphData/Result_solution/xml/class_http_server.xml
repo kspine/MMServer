@@ -1,0 +1,1304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_http_server" kind="class" prot="public">
+    <compoundname>HttpServer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TeNetCall</basecompoundref>
+    <basecompoundref refid="class_se_base_server" prot="public" virt="non-virtual">SeBaseServer</basecompoundref>
+    <includes refid="_http_server_8h" local="no">HttpServer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_http_server_1af7569b2d2283b5539db8141eb64913d7" prot="protected" static="no" mutable="no">
+        <type>char</type>
+        <definition>char HttpServer::m_acSend[SSD_SEND_SIZE]</definition>
+        <argsstring>[SSD_SEND_SIZE]</argsstring>
+        <name>m_acSend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="57" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_http_server_1a21cf52381aad79022d297dec4f6b1d4a" compoundref="_http_server_8cpp" startline="39" endline="48">HttpServer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_http_server_1a97c09219673ca8f4ed66e0f92094958f" prot="protected" static="no" mutable="no">
+        <type>char</type>
+        <definition>char HttpServer::m_acPraseBuf[SSD_PRASER_SIZE]</definition>
+        <argsstring>[SSD_PRASER_SIZE]</argsstring>
+        <name>m_acPraseBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="58" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="class_http_server_1a21cf52381aad79022d297dec4f6b1d4a" compoundref="_http_server_8cpp" startline="39" endline="48">HttpServer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_http_server_1ab4e8f9d7ee33439779749179777026cc" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_se_http_config" kindref="compound">SeHttpConfig</ref></type>
+        <definition>SeHttpConfig HttpServer::m_kConfig</definition>
+        <argsstring></argsstring>
+        <name>m_kConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="59" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_http_server_1a26ff7c8e1c7b5cc0ce10c0fcdbee8e88" compoundref="_http_server_8cpp" startline="271" endline="274">GetServerID</referencedby>
+        <referencedby refid="class_http_server_1abc911606499e42dbf9450f4331de0a62" compoundref="_http_server_8cpp" startline="55" endline="98">Initialize</referencedby>
+        <referencedby refid="class_http_server_1a66312168a48b7f22f1e56078c9a588c7" compoundref="_http_server_8cpp" startline="276" endline="327">LoadConfig</referencedby>
+        <referencedby refid="class_http_server_1a6a21013597797329dc5094ecb3f33849" compoundref="_http_server_8cpp" startline="329" endline="350">LoadDynamicConfig</referencedby>
+        <referencedby refid="class_http_server_1ad56585673a36268ccb9cbdca6539b313" compoundref="_se_w_h_process_8cpp" startline="13" endline="36">ProcessWH_RegisterRet</referencedby>
+        <referencedby refid="class_http_server_1a0f10527bafad5af104ac9c000992ac19" compoundref="_http_server_8cpp" startline="126" endline="136">ShowConsoleTitle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_http_server_1aa9ae3bf8ca38162b552ccbc0aa555d84" prot="protected" static="no" mutable="no">
+        <type>DWord</type>
+        <definition>DWord HttpServer::m_dwTickCount</definition>
+        <argsstring></argsstring>
+        <name>m_dwTickCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="62" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="class_http_server_1a21cf52381aad79022d297dec4f6b1d4a" compoundref="_http_server_8cpp" startline="39" endline="48">HttpServer</referencedby>
+        <referencedby refid="class_http_server_1abc911606499e42dbf9450f4331de0a62" compoundref="_http_server_8cpp" startline="55" endline="98">Initialize</referencedby>
+        <referencedby refid="class_http_server_1a16c9f135682bba53fd8753e6dcda2bc9" compoundref="_http_server_8cpp" startline="100" endline="119">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_http_server_1aa47a4fde1e0868a0c86d34311e300af6" prot="protected" static="no" mutable="no">
+        <type>DWord</type>
+        <definition>DWord HttpServer::m_dwCurTime</definition>
+        <argsstring></argsstring>
+        <name>m_dwCurTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="63" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="class_http_server_1af7b41397867e9d9594bfe4379064d105" compoundref="_http_server_8cpp" startline="266" endline="269">GetServerTime</referencedby>
+        <referencedby refid="class_http_server_1a21cf52381aad79022d297dec4f6b1d4a" compoundref="_http_server_8cpp" startline="39" endline="48">HttpServer</referencedby>
+        <referencedby refid="class_http_server_1a16c9f135682bba53fd8753e6dcda2bc9" compoundref="_http_server_8cpp" startline="100" endline="119">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_http_server_1a96834713459d5297a117fd23186084ec" prot="protected" static="no" mutable="no">
+        <type>TeNetMgr</type>
+        <definition>TeNetMgr HttpServer::m_kNetMgr</definition>
+        <argsstring></argsstring>
+        <name>m_kNetMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="65" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="class_http_server_1a1353ba2482032c91a75ce20c841be584" compoundref="_http_server_8cpp" startline="121" endline="124">Finialize</referencedby>
+        <referencedby refid="class_http_server_1abc911606499e42dbf9450f4331de0a62" compoundref="_http_server_8cpp" startline="55" endline="98">Initialize</referencedby>
+        <referencedby refid="class_http_server_1aeb9fc5ec87338e576f19173508f1b4fc" compoundref="_http_server_8cpp" startline="352" endline="362">InitializeNet</referencedby>
+        <referencedby refid="class_http_server_1aaeb40cd619e4a2b41d93a2345644ad70" compoundref="_http_server_8cpp" startline="151" endline="164">OnNetRecv</referencedby>
+        <referencedby refid="class_http_server_1aa71ed5daa7902dc5f7e619b5f021bf7f" compoundref="_se_h_w_send_8cpp" startline="7" endline="17">SendHWData</referencedby>
+        <referencedby refid="class_http_server_1a16c9f135682bba53fd8753e6dcda2bc9" compoundref="_http_server_8cpp" startline="100" endline="119">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_http_server_1aa481945ebf935ed6296eb4fff7cbfda2" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_se_virt_conn" kindref="compound">SeVirtConn</ref> *</type>
+        <definition>SeVirtConn* HttpServer::m_pkWSConn</definition>
+        <argsstring></argsstring>
+        <name>m_pkWSConn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="66" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="class_http_server_1a21cf52381aad79022d297dec4f6b1d4a" compoundref="_http_server_8cpp" startline="39" endline="48">HttpServer</referencedby>
+        <referencedby refid="class_http_server_1a66312168a48b7f22f1e56078c9a588c7" compoundref="_http_server_8cpp" startline="276" endline="327">LoadConfig</referencedby>
+        <referencedby refid="class_http_server_1a191167d16fa982c95ab32d1b2bf154a7" compoundref="_http_server_8cpp" startline="138" endline="144">OnNetConnected</referencedby>
+        <referencedby refid="class_http_server_1a512037f9a67425a544579dff680ea4b1" compoundref="_http_server_8cpp" startline="166" endline="172">OnNetDisconnect</referencedby>
+        <referencedby refid="class_http_server_1aaeb40cd619e4a2b41d93a2345644ad70" compoundref="_http_server_8cpp" startline="151" endline="164">OnNetRecv</referencedby>
+        <referencedby refid="class_http_server_1a53bbc9b844b76bdc495dc9a891aead77" compoundref="_se_w_h_process_8cpp" startline="7" endline="11">PreProcessWH</referencedby>
+        <referencedby refid="class_http_server_1ad56585673a36268ccb9cbdca6539b313" compoundref="_se_w_h_process_8cpp" startline="13" endline="36">ProcessWH_RegisterRet</referencedby>
+        <referencedby refid="class_http_server_1aa71ed5daa7902dc5f7e619b5f021bf7f" compoundref="_se_h_w_send_8cpp" startline="7" endline="17">SendHWData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_http_server_1a1884787d09c7a6aa234a7fce39d5b4e1" prot="protected" static="no" mutable="no">
+        <type>Es::NormalLock</type>
+        <definition>Es::NormalLock HttpServer::m_kRequestLock</definition>
+        <argsstring></argsstring>
+        <name>m_kRequestLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="69" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="class_http_server_1ae1a9ef7d49cdda4b4e55c6954a689893" compoundref="_http_server_8cpp" startline="364" endline="368">AddRequest</referencedby>
+        <referencedby refid="class_http_server_1a9a1d0c25aa6d29b95f62d1020782efc4" compoundref="_http_server_8cpp" startline="370" endline="381">GetDeleteRequest</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_http_server_1a55e56a94206394f9792eb382584e2c31" prot="protected" static="no" mutable="no">
+        <type><ref refid="_http_server_def_8h_1af97e08f6cfc7e464d92561524946f494" kindref="member">MapRequest</ref></type>
+        <definition>MapRequest HttpServer::m_kMapRequest</definition>
+        <argsstring></argsstring>
+        <name>m_kMapRequest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="70" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="class_http_server_1ae1a9ef7d49cdda4b4e55c6954a689893" compoundref="_http_server_8cpp" startline="364" endline="368">AddRequest</referencedby>
+        <referencedby refid="class_http_server_1a9a1d0c25aa6d29b95f62d1020782efc4" compoundref="_http_server_8cpp" startline="370" endline="381">GetDeleteRequest</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_http_server_1a95c07cc385c818f2bfff128bbe9422df" prot="protected" static="no" mutable="no">
+        <type>Es::NormalLock</type>
+        <definition>Es::NormalLock HttpServer::m_kResponseLock</definition>
+        <argsstring></argsstring>
+        <name>m_kResponseLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="71" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="class_http_server_1afd943934218b1c968c9612e4019be8da" compoundref="_http_server_8cpp" startline="383" endline="387">AddResponse</referencedby>
+        <referencedby refid="class_http_server_1a07652b680d05253b41a8d078b06c5baf" compoundref="_http_server_8cpp" startline="389" endline="400">GetDeleteResponse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_http_server_1aa0f45acdb1a8b1d48eb1ca092285a68e" prot="protected" static="no" mutable="no">
+        <type><ref refid="_http_server_def_8h_1a9c89dcbd1ecea25cd2c7be663cf88c61" kindref="member">MapResponse</ref></type>
+        <definition>MapResponse HttpServer::m_kMapResponse</definition>
+        <argsstring></argsstring>
+        <name>m_kMapResponse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="72" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="class_http_server_1afd943934218b1c968c9612e4019be8da" compoundref="_http_server_8cpp" startline="383" endline="387">AddResponse</referencedby>
+        <referencedby refid="class_http_server_1a07652b680d05253b41a8d078b06c5baf" compoundref="_http_server_8cpp" startline="389" endline="400">GetDeleteResponse</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_http_server_1a21cf52381aad79022d297dec4f6b1d4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HttpServer::HttpServer</definition>
+        <argsstring>(void)</argsstring>
+        <name>HttpServer</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="14" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="39" bodyend="48"/>
+        <references refid="class_http_server_1a97c09219673ca8f4ed66e0f92094958f" compoundref="_http_server_8h" startline="58">m_acPraseBuf</references>
+        <references refid="class_http_server_1af7569b2d2283b5539db8141eb64913d7" compoundref="_http_server_8h" startline="57">m_acSend</references>
+        <references refid="class_http_server_1aa47a4fde1e0868a0c86d34311e300af6" compoundref="_http_server_8h" startline="63">m_dwCurTime</references>
+        <references refid="class_http_server_1aa9ae3bf8ca38162b552ccbc0aa555d84" compoundref="_http_server_8h" startline="62">m_dwTickCount</references>
+        <references refid="class_http_server_1aa481945ebf935ed6296eb4fff7cbfda2" compoundref="_http_server_8h" startline="66">m_pkWSConn</references>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1a14fb5346b90163686c1172b5a7e1b19a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HttpServer::~HttpServer</definition>
+        <argsstring>(void)</argsstring>
+        <name>~HttpServer</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="15" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="50" bodyend="53"/>
+        <references refid="class_http_server_1a1353ba2482032c91a75ce20c841be584" compoundref="_http_server_8cpp" startline="121" endline="124">Finialize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1abc911606499e42dbf9450f4331de0a62" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool HttpServer::Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <reimplements refid="class_se_base_server_1a6bb58d0849eb78ffd85d1fcad67d21b2">Initialize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="17" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="55" bodyend="98"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="_se_virt_conn_mgr_8cpp_1aa8e9d5beed961f4e26b9cadd49603980" compoundref="_se_virt_conn_mgr_8cpp" startline="7">g_kVirtConnMgr</references>
+        <references refid="class_http_server_1afbbc874850fdff95267d16af6d1af4e8" compoundref="_http_server_8cpp" startline="187" endline="191">HttpCloseCallback</references>
+        <references refid="class_http_server_1a0a0eca30d34c80dad3f02c64da72cdfe" compoundref="_http_server_8cpp" startline="175" endline="179">HttpRequestCallback</references>
+        <references refid="class_http_server_1a26f7eb0d28647aebeb5d0139ee0e17f1" compoundref="_http_server_8cpp" startline="181" endline="185">HttpResponseCallback</references>
+        <references refid="class_se_virt_conn_mgr_1a6982c2146c5829aa21e4f2bd5487a3d4" compoundref="_se_virt_conn_mgr_8cpp" startline="23" endline="35">SeVirtConnMgr::Initialize</references>
+        <references refid="class_http_server_1aeb9fc5ec87338e576f19173508f1b4fc" compoundref="_http_server_8cpp" startline="352" endline="362">InitializeNet</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="struct_se_http_config_1a1ada0f74c2fc3e8cb541d5dea6d5821a" compoundref="_http_server_def_8h" startline="20">SeHttpConfig::kHttpServer</references>
+        <references refid="class_http_server_1a66312168a48b7f22f1e56078c9a588c7" compoundref="_http_server_8cpp" startline="276" endline="327">LoadConfig</references>
+        <references refid="class_http_server_1aa9ae3bf8ca38162b552ccbc0aa555d84" compoundref="_http_server_8h" startline="62">m_dwTickCount</references>
+        <references refid="class_http_server_1ab4e8f9d7ee33439779749179777026cc" compoundref="_http_server_8h" startline="59">m_kConfig</references>
+        <references refid="class_http_server_1a96834713459d5297a117fd23186084ec" compoundref="_http_server_8h" startline="65">m_kNetMgr</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="_http_server_8cpp_1a1829928f14924b8a97ed00808758de08" compoundref="_http_server_8cpp" startline="22" endline="37">sendHeartPack</references>
+        <references refid="_http_server_8cpp_1a03595bfee2a55045aa751deab1e562d0" compoundref="_http_server_8cpp" startline="5" endline="20">sendRegPack</references>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1a16c9f135682bba53fd8753e6dcda2bc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void HttpServer::Update</definition>
+        <argsstring>(void)</argsstring>
+        <name>Update</name>
+        <reimplements refid="class_se_base_server_1a07a0cf8e7406a136e92dcf88875cfd77">Update</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="18" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="100" bodyend="119"/>
+        <references refid="_se_virt_conn_mgr_8cpp_1aa8e9d5beed961f4e26b9cadd49603980" compoundref="_se_virt_conn_mgr_8cpp" startline="7">g_kVirtConnMgr</references>
+        <references refid="class_http_server_1aa47a4fde1e0868a0c86d34311e300af6" compoundref="_http_server_8h" startline="63">m_dwCurTime</references>
+        <references refid="class_http_server_1aa9ae3bf8ca38162b552ccbc0aa555d84" compoundref="_http_server_8h" startline="62">m_dwTickCount</references>
+        <references refid="class_http_server_1a96834713459d5297a117fd23186084ec" compoundref="_http_server_8h" startline="65">m_kNetMgr</references>
+        <references refid="class_se_virt_conn_mgr_1a1a2056beaab510c633febd91090592ee" compoundref="_se_virt_conn_mgr_8cpp" startline="37" endline="53">SeVirtConnMgr::Update</references>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1a1353ba2482032c91a75ce20c841be584" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void HttpServer::Finialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Finialize</name>
+        <reimplements refid="class_se_base_server_1af5e58035250986682d2810757069233b">Finialize</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="19" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="121" bodyend="124"/>
+        <references refid="class_http_server_1a96834713459d5297a117fd23186084ec" compoundref="_http_server_8h" startline="65">m_kNetMgr</references>
+        <referencedby refid="class_http_server_1a14fb5346b90163686c1172b5a7e1b19a" compoundref="_http_server_8cpp" startline="50" endline="53">~HttpServer</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1a0f10527bafad5af104ac9c000992ac19" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void HttpServer::ShowConsoleTitle</definition>
+        <argsstring>(int iDTime)</argsstring>
+        <name>ShowConsoleTitle</name>
+        <reimplements refid="class_se_base_server_1aab49ca32b654abc948c4d2b163746591">ShowConsoleTitle</reimplements>
+        <param>
+          <type>int</type>
+          <declname>iDTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="20" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="126" bodyend="136"/>
+        <references refid="struct_se_http_config_1a8a2e5b7917422b3cf2ff679c3e4b0fd6" compoundref="_http_server_def_8h" startline="19">SeHttpConfig::dwServerID</references>
+        <references refid="_se_tool_8h_1ada81d4ae5d39c42af0a02b45f4a6f715" compoundref="_se_tool_8h" startline="66">GetID2Str</references>
+        <references refid="class_http_server_1ab4e8f9d7ee33439779749179777026cc" compoundref="_http_server_8h" startline="59">m_kConfig</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" compoundref="_se_server_tool_8cpp" startline="31" endline="64">SPrintf</references>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1a5c20706f0ab97369cead930a117c672a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_se_server_main_def_8h_1a6856d2f3d34c3913f55b991c0d63e89d" kindref="member">SeServerActionResult</ref></type>
+        <definition>SeServerActionResult HttpServer::ExecuteAction</definition>
+        <argsstring>(SeServerActionIndex eActionIndex)</argsstring>
+        <name>ExecuteAction</name>
+        <reimplements refid="class_se_base_server_1ab4a7f5d600833220b84b2c1e143f0605">ExecuteAction</reimplements>
+        <param>
+          <type><ref refid="_se_server_main_def_8h_1abbd63e694a43e9bc292e0e0b55ae79bd" kindref="member">SeServerActionIndex</ref></type>
+          <declname>eActionIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="21" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/Main.cpp" bodystart="3" bodyend="19"/>
+        <references refid="_se_server_main_def_8h_1a6856d2f3d34c3913f55b991c0d63e89dac7f0df5db209cf47b037a31ee2946d0c" compoundref="_se_server_main_def_8h" startline="8">AER_OK</references>
+        <references refid="_se_server_main_def_8h_1abbd63e694a43e9bc292e0e0b55ae79bdab240074b0f8ea39e74f33d2dab2c86b6" compoundref="_se_server_main_def_8h" startline="17">AI_F1</references>
+        <references refid="_se_server_main_def_8h_1abbd63e694a43e9bc292e0e0b55ae79bda650354bdbd2abe28dc6965362eae64e3" compoundref="_se_server_main_def_8h" startline="21">AI_F5</references>
+        <references refid="_se_file_log_8h_1a7c727baeafcf8b1ef6ca798fad4d738c" compoundref="_se_file_log_8h" startline="86">SeLogHideTime</references>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1a191167d16fa982c95ab32d1b2bf154a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void HttpServer::OnNetConnected</definition>
+        <argsstring>(const HSock &amp;rkSock, const char *pcIP, int iPort)</argsstring>
+        <name>OnNetConnected</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcIP</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iPort</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="23" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="138" bodyend="144"/>
+        <references refid="struct_se_net_addr_1a23b51e87d8b7b2201a03833c9adde232" compoundref="_se_share_def_8h" startline="41">SeNetAddr::acIP</references>
+        <references refid="_se_virt_conn_mgr_8cpp_1aa8e9d5beed961f4e26b9cadd49603980" compoundref="_se_virt_conn_mgr_8cpp" startline="7">g_kVirtConnMgr</references>
+        <references refid="struct_se_net_addr_1a989fa5b025bc039122e8d2a29838fde9" compoundref="_se_share_def_8h" startline="42">SeNetAddr::iPort</references>
+        <references refid="struct_se_virt_conn_1ad05e8487648793f2d2340a47856acb71" compoundref="_se_virt_conn_mgr_8h" startline="46">SeVirtConn::kNetAddr</references>
+        <references refid="class_http_server_1aa481945ebf935ed6296eb4fff7cbfda2" compoundref="_http_server_8h" startline="66">m_pkWSConn</references>
+        <references refid="class_se_virt_conn_mgr_1adca74d2f39a17051600b0ea23d600b74" compoundref="_se_virt_conn_mgr_8cpp" startline="83" endline="108">SeVirtConnMgr::OnServerConnected</references>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1ab123245e4752eae9b2c6b427c05be80f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void HttpServer::OnNetAccept</definition>
+        <argsstring>(const HSock &amp;rkSock, int iListenPort, const char *pcIP, int iPort)</argsstring>
+        <name>OnNetAccept</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iListenPort</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcIP</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iPort</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="24" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1aaeb40cd619e4a2b41d93a2345644ad70" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void HttpServer::OnNetRecv</definition>
+        <argsstring>(const HSock &amp;rkSock, void *pkData, int iSize)</argsstring>
+        <name>OnNetRecv</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="25" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="151" bodyend="164"/>
+        <references refid="struct_se_virt_conn_1a2ed0654cfe8f298d1dc8fbe76a310df0" compoundref="_se_virt_conn_mgr_8h" startline="47">SeVirtConn::kSock</references>
+        <references refid="class_http_server_1a96834713459d5297a117fd23186084ec" compoundref="_http_server_8h" startline="65">m_kNetMgr</references>
+        <references refid="class_http_server_1aa481945ebf935ed6296eb4fff7cbfda2" compoundref="_http_server_8h" startline="66">m_pkWSConn</references>
+        <references refid="class_http_server_1a6ff5d1fb5eee83fafc9315517d684e1a">ProcessWHData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1a512037f9a67425a544579dff680ea4b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void HttpServer::OnNetDisconnect</definition>
+        <argsstring>(const HSock &amp;rkSock, TeDisconnectCode eCode, int iParam)</argsstring>
+        <name>OnNetDisconnect</name>
+        <param>
+          <type>const HSock &amp;</type>
+          <declname>rkSock</declname>
+        </param>
+        <param>
+          <type>TeDisconnectCode</type>
+          <declname>eCode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iParam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="26" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="166" bodyend="172"/>
+        <references refid="_se_virt_conn_mgr_8cpp_1aa8e9d5beed961f4e26b9cadd49603980" compoundref="_se_virt_conn_mgr_8cpp" startline="7">g_kVirtConnMgr</references>
+        <references refid="struct_se_virt_conn_1a2ed0654cfe8f298d1dc8fbe76a310df0" compoundref="_se_virt_conn_mgr_8h" startline="47">SeVirtConn::kSock</references>
+        <references refid="class_http_server_1aa481945ebf935ed6296eb4fff7cbfda2" compoundref="_http_server_8h" startline="66">m_pkWSConn</references>
+        <references refid="class_se_virt_conn_mgr_1ad75abfada4de2eb3107aca79b1c99642" compoundref="_se_virt_conn_mgr_8cpp" startline="126" endline="139">SeVirtConnMgr::OnServerDisconnect</references>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1ab5ea6ba8f9e07e1c035c82329010de96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HttpServer::OnHttpRequest</definition>
+        <argsstring>(unsigned long ulKey, const char *pcUrl, const char *pcContent, int iSize)</argsstring>
+        <name>OnHttpRequest</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>ulKey</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcUrl</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcContent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="33" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="193" bodyend="214"/>
+        <referencedby refid="class_http_server_1a0a0eca30d34c80dad3f02c64da72cdfe" compoundref="_http_server_8cpp" startline="175" endline="179">HttpRequestCallback</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1ae69faaed2df760eb23c4d059ac869bc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HttpServer::OnHttpResponse</definition>
+        <argsstring>(unsigned long ulKey, const char *pcContent, int iSize)</argsstring>
+        <name>OnHttpResponse</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>ulKey</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcContent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="34" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="216" bodyend="236"/>
+        <references refid="class_http_server_1a07652b680d05253b41a8d078b06c5baf" compoundref="_http_server_8cpp" startline="389" endline="400">GetDeleteResponse</references>
+        <references refid="struct_se_response_content_1a81d495a9ca1283f004554948105c4fba" compoundref="_http_server_def_8h" startline="44">SeResponseContent::iType</references>
+        <references refid="class_http_server_1ac78f56a8a81cf69fdffcf2e568d5afd4" compoundref="_se_http_resp_process_8cpp" startline="3" endline="25">ProcessHttp_QueryFreeHeroListRet</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_http_server_def_8h_1a43c63d42b7ee76598081c3c38f9220c7a0befc64d7cbc5f47cda8ab2ab348d246" compoundref="_http_server_def_8h" startline="38">SHQT_QUERY_FREE_HERO_LIST</references>
+        <referencedby refid="class_http_server_1a26f7eb0d28647aebeb5d0139ee0e17f1" compoundref="_http_server_8cpp" startline="181" endline="185">HttpResponseCallback</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1ad3a76b48f9e203669fdfac5bb487ce02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HttpServer::OnHttpClose</definition>
+        <argsstring>(unsigned long ulKey)</argsstring>
+        <name>OnHttpClose</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>ulKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="35" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="238" bodyend="264"/>
+        <referencedby refid="class_http_server_1afbbc874850fdff95267d16af6d1af4e8" compoundref="_http_server_8cpp" startline="187" endline="191">HttpCloseCallback</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1af7b41397867e9d9594bfe4379064d105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord HttpServer::GetServerTime</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetServerTime</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="38" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="266" bodyend="269"/>
+        <references refid="class_http_server_1aa47a4fde1e0868a0c86d34311e300af6" compoundref="_http_server_8h" startline="63">m_dwCurTime</references>
+        <referencedby refid="class_http_server_1a53bbc9b844b76bdc495dc9a891aead77" compoundref="_se_w_h_process_8cpp" startline="7" endline="11">PreProcessWH</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1a26ff7c8e1c7b5cc0ce10c0fcdbee8e88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord HttpServer::GetServerID</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetServerID</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="39" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="271" bodyend="274"/>
+        <references refid="struct_se_http_config_1a8a2e5b7917422b3cf2ff679c3e4b0fd6" compoundref="_http_server_def_8h" startline="19">SeHttpConfig::dwServerID</references>
+        <references refid="class_http_server_1ab4e8f9d7ee33439779749179777026cc" compoundref="_http_server_8h" startline="59">m_kConfig</references>
+        <referencedby refid="_http_server_8cpp_1a03595bfee2a55045aa751deab1e562d0" compoundref="_http_server_8cpp" startline="5" endline="20">sendRegPack</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1ab18bf3423c34a1fadeb74e7af530a02b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HttpServer::SendHW_Register</definition>
+        <argsstring>(DWord dwMagic, DWord dwServerID, void *pkReceiver=NULL)</argsstring>
+        <name>SendHW_Register</name>
+        <param>
+          <type>DWord</type>
+          <declname>dwMagic</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwServerID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeHWSend.inl" line="2" column="1"/>
+        <referencedby refid="_http_server_8cpp_1a03595bfee2a55045aa751deab1e562d0" compoundref="_http_server_8cpp" startline="5" endline="20">sendRegPack</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1a5ded3e42dfd68f9eac12e4c949a4f1f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HttpServer::SendHW_HeartPackage</definition>
+        <argsstring>(void *pkReceiver=NULL)</argsstring>
+        <name>SendHW_HeartPackage</name>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeHWSend.inl" line="3" column="1"/>
+        <referencedby refid="_http_server_8cpp_1a1829928f14924b8a97ed00808758de08" compoundref="_http_server_8cpp" startline="22" endline="37">sendHeartPack</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1ad5aa995e22063f3d50645fb943be740a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HttpServer::SendHW_QueryFreeHeroListRet</definition>
+        <argsstring>(int iNum, const DWord *adwHeroID, void *pkReceiver=NULL)</argsstring>
+        <name>SendHW_QueryFreeHeroListRet</name>
+        <param>
+          <type>int</type>
+          <declname>iNum</declname>
+        </param>
+        <param>
+          <type>const DWord *</type>
+          <declname>adwHeroID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeHWSend.inl" line="4" column="1"/>
+        <referencedby refid="class_http_server_1ac78f56a8a81cf69fdffcf2e568d5afd4" compoundref="_se_http_resp_process_8cpp" startline="3" endline="25">ProcessHttp_QueryFreeHeroListRet</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1a0cae4faf9a215e9c34cca636ea2e8965" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HttpServer::SendHW_QueryFreeHeroListRet</definition>
+        <argsstring>(int iNum, std::vector&lt; DWord &gt; &amp;adwHeroID, void *pkReceiver=NULL)</argsstring>
+        <name>SendHW_QueryFreeHeroListRet</name>
+        <param>
+          <type>int</type>
+          <declname>iNum</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; DWord &gt; &amp;</type>
+          <declname>adwHeroID</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeHWSend.inl" line="5" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1aa71ed5daa7902dc5f7e619b5f021bf7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HttpServer::SendHWData</definition>
+        <argsstring>(void *pkData, int iSize, void *pkReceiver)</argsstring>
+        <name>SendHWData</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkReceiver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeHWSend.inl" line="8" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/SeHWSend.cpp" bodystart="7" bodyend="17"/>
+        <references refid="_se_ptl___h_s___to___w_s_8h_1aa24dbc9831ebc4dfbf25fead41a013e6a078341d44108113793bf531fe06a4551" compoundref="_se_ptl___h_s___to___w_s_8h" startline="9">CMD_HW_REGISTER</references>
+        <references refid="struct_se_virt_conn_1a498d90b78881f21f62000e5848c654e2" compoundref="_se_virt_conn_mgr_8h" startline="49">SeVirtConn::eState</references>
+        <references refid="struct_se_virt_conn_1a2ed0654cfe8f298d1dc8fbe76a310df0" compoundref="_se_virt_conn_mgr_8h" startline="47">SeVirtConn::kSock</references>
+        <references refid="class_http_server_1a96834713459d5297a117fd23186084ec" compoundref="_http_server_8h" startline="65">m_kNetMgr</references>
+        <references refid="class_http_server_1aa481945ebf935ed6296eb4fff7cbfda2" compoundref="_http_server_8h" startline="66">m_pkWSConn</references>
+        <references refid="_se_virt_conn_mgr_8h_1ad6484f55baf154efe4f216e3d9c1f459a1e34c360626a791e16a13af7a6bd44fe" compoundref="_se_virt_conn_mgr_8h" startline="12">SVCS_REGISTERED</references>
+        <references refid="struct_se_c_m_d_1a2efa122a60040d09cfca777f9155394c" compoundref="_se_ptl_define_8h" startline="97">SeCMD::wCmd</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_http_server_1a0a0eca30d34c80dad3f02c64da72cdfe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int HttpServer::HttpRequestCallback</definition>
+        <argsstring>(unsigned long ulKey, const char *pcUrl, const char *pcContent, int iSize)</argsstring>
+        <name>HttpRequestCallback</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>ulKey</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcUrl</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcContent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="29" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="175" bodyend="179"/>
+        <references refid="class_http_server_1ab5ea6ba8f9e07e1c035c82329010de96" compoundref="_http_server_8cpp" startline="193" endline="214">OnHttpRequest</references>
+        <referencedby refid="class_http_server_1abc911606499e42dbf9450f4331de0a62" compoundref="_http_server_8cpp" startline="55" endline="98">Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1a26f7eb0d28647aebeb5d0139ee0e17f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int HttpServer::HttpResponseCallback</definition>
+        <argsstring>(unsigned long ulKey, const char *pcContent, int iSize)</argsstring>
+        <name>HttpResponseCallback</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>ulKey</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>pcContent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="30" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="181" bodyend="185"/>
+        <references refid="class_http_server_1ae69faaed2df760eb23c4d059ac869bc5" compoundref="_http_server_8cpp" startline="216" endline="236">OnHttpResponse</references>
+        <referencedby refid="class_http_server_1abc911606499e42dbf9450f4331de0a62" compoundref="_http_server_8cpp" startline="55" endline="98">Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1afbbc874850fdff95267d16af6d1af4e8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int HttpServer::HttpCloseCallback</definition>
+        <argsstring>(unsigned long ulKey)</argsstring>
+        <name>HttpCloseCallback</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>ulKey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="31" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="187" bodyend="191"/>
+        <references refid="class_http_server_1ad3a76b48f9e203669fdfac5bb487ce02" compoundref="_http_server_8cpp" startline="238" endline="264">OnHttpClose</references>
+        <referencedby refid="class_http_server_1abc911606499e42dbf9450f4331de0a62" compoundref="_http_server_8cpp" startline="55" endline="98">Initialize</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_http_server_1a6ff5d1fb5eee83fafc9315517d684e1a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HttpServer::ProcessWHData</definition>
+        <argsstring>(void *pkData, int iSize, void *pkSender=NULL)</argsstring>
+        <name>ProcessWHData</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkSender</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeWHProcess.inl" line="2" column="1"/>
+        <referencedby refid="class_http_server_1aaeb40cd619e4a2b41d93a2345644ad70" compoundref="_http_server_8cpp" startline="151" endline="164">OnNetRecv</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1a53bbc9b844b76bdc495dc9a891aead77" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HttpServer::PreProcessWH</definition>
+        <argsstring>(void *pkData, int iSize, void *pkSender)</argsstring>
+        <name>PreProcessWH</name>
+        <param>
+          <type>void *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkSender</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeWHProcess.inl" line="5" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/SeWHProcess.cpp" bodystart="7" bodyend="11"/>
+        <references refid="struct_se_virt_conn_1a5d5f05afd1fb01e667d072755cba8b2f" compoundref="_se_virt_conn_mgr_8h" startline="52">SeVirtConn::dwLastRecvTime</references>
+        <references refid="class_http_server_1af7b41397867e9d9594bfe4379064d105" compoundref="_http_server_8cpp" startline="266" endline="269">GetServerTime</references>
+        <references refid="class_http_server_1aa481945ebf935ed6296eb4fff7cbfda2" compoundref="_http_server_8h" startline="66">m_pkWSConn</references>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1ad56585673a36268ccb9cbdca6539b313" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HttpServer::ProcessWH_RegisterRet</definition>
+        <argsstring>(SeWH_RegisterRet *pkData, int iSize, void *pkSender)</argsstring>
+        <name>ProcessWH_RegisterRet</name>
+        <param>
+          <type><ref refid="struct_se_w_h___register_ret" kindref="compound">SeWH_RegisterRet</ref> *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkSender</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeWHProcess.inl" line="6" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/SeWHProcess.cpp" bodystart="13" bodyend="36"/>
+        <references refid="struct_se_http_config_1a8a2e5b7917422b3cf2ff679c3e4b0fd6" compoundref="_http_server_def_8h" startline="19">SeHttpConfig::dwServerID</references>
+        <references refid="struct_se_w_h___register_ret_1addf382e9b8f02b0188c94f4dd4ab8120" compoundref="_se_ptl___w_s___to___h_s_8h" startline="33">SeWH_RegisterRet::eRegisterRet</references>
+        <references refid="struct_se_virt_conn_1a498d90b78881f21f62000e5848c654e2" compoundref="_se_virt_conn_mgr_8h" startline="49">SeVirtConn::eState</references>
+        <references refid="_se_tool_8h_1ada81d4ae5d39c42af0a02b45f4a6f715" compoundref="_se_tool_8h" startline="66">GetID2Str</references>
+        <references refid="class_http_server_1ab4e8f9d7ee33439779749179777026cc" compoundref="_http_server_8h" startline="59">m_kConfig</references>
+        <references refid="class_http_server_1aa481945ebf935ed6296eb4fff7cbfda2" compoundref="_http_server_8h" startline="66">m_pkWSConn</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="_se_server_define_8h_1a83f922065d39660cc6ff3ff3e193daa1ac80442ea100ef13c4582723562f3ea53" compoundref="_se_server_define_8h" startline="109">SRR_REPEAT</references>
+        <references refid="_se_server_define_8h_1a83f922065d39660cc6ff3ff3e193daa1a9066cbcd85981ad03cd92ba399a18338" compoundref="_se_server_define_8h" startline="108">SRR_SUCCESS</references>
+        <references refid="_se_virt_conn_mgr_8h_1ad6484f55baf154efe4f216e3d9c1f459a9f83edd36767ac2c28d471a29f16d210" compoundref="_se_virt_conn_mgr_8h" startline="10">SVCS_CAN_CONNECT</references>
+        <references refid="_se_virt_conn_mgr_8h_1ad6484f55baf154efe4f216e3d9c1f459a1e34c360626a791e16a13af7a6bd44fe" compoundref="_se_virt_conn_mgr_8h" startline="12">SVCS_REGISTERED</references>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1aea571164bc26da3e3856d88226646222" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HttpServer::ProcessWH_HeartPackageRet</definition>
+        <argsstring>(SeWH_HeartPackageRet *pkData, int iSize, void *pkSender)</argsstring>
+        <name>ProcessWH_HeartPackageRet</name>
+        <param>
+          <type><ref refid="struct_se_w_h___heart_package_ret" kindref="compound">SeWH_HeartPackageRet</ref> *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkSender</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeWHProcess.inl" line="7" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/SeWHProcess.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1acb34e97922c00cfd9b21e71165fb97dd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HttpServer::ProcessWH_QueryFreeHeroList</definition>
+        <argsstring>(SeWH_QueryFreeHeroList *pkData, int iSize, void *pkSender)</argsstring>
+        <name>ProcessWH_QueryFreeHeroList</name>
+        <param>
+          <type><ref refid="struct_se_w_h___query_free_hero_list" kindref="compound">SeWH_QueryFreeHeroList</ref> *</type>
+          <declname>pkData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pkSender</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Protocol/Server/SeWHProcess.inl" line="8" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/SeWHProcess.cpp" bodystart="43" bodyend="61"/>
+        <references refid="class_http_server_1afd943934218b1c968c9612e4019be8da" compoundref="_http_server_8cpp" startline="383" endline="387">AddResponse</references>
+        <references refid="struct_se_response_content_1a81d495a9ca1283f004554948105c4fba" compoundref="_http_server_def_8h" startline="44">SeResponseContent::iType</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_http_server_def_8h_1a43c63d42b7ee76598081c3c38f9220c7a0befc64d7cbc5f47cda8ab2ab348d246" compoundref="_http_server_def_8h" startline="38">SHQT_QUERY_FREE_HERO_LIST</references>
+        <references refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" compoundref="_se_server_tool_8cpp" startline="31" endline="64">SPrintf</references>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1ac78f56a8a81cf69fdffcf2e568d5afd4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HttpServer::ProcessHttp_QueryFreeHeroListRet</definition>
+        <argsstring>(const char *pcContent, int iSize, SeResponseContent &amp;rkContent)</argsstring>
+        <name>ProcessHttp_QueryFreeHeroListRet</name>
+        <param>
+          <type>const char *</type>
+          <declname>pcContent</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iSize</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_response_content" kindref="compound">SeResponseContent</ref> &amp;</type>
+          <declname>rkContent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/SeHttpRespProcess.inl" line="2" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/SeHttpRespProcess.cpp" bodystart="3" bodyend="25"/>
+        <references refid="class_json_1_1_value_1ac786e35b860b1d700cb3d3e56dd6a235" compoundref="json__value_8cpp" startline="649" endline="669">Json::Value::asInt</references>
+        <references refid="class_json_1_1_value_1ac8c898f93543e55b67418f94bced20af" compoundref="json__value_8cpp" startline="1303" endline="1303">Json::Value::isArray</references>
+        <references refid="class_json_1_1_value_1a80cffaa0402b80317c0437216bbb6d92" compoundref="json__value_8cpp" startline="1305" endline="1305">Json::Value::isObject</references>
+        <references refid="class_json_1_1_reader_1af1da6c976ad1e96c742804c3853eef94" compoundref="json__reader_8cpp" startline="98" endline="103">Json::Reader::parse</references>
+        <references refid="class_http_server_1ad5aa995e22063f3d50645fb943be740a">SendHW_QueryFreeHeroListRet</references>
+        <references refid="class_json_1_1_value_1a4ca8ee6c48a34ca6c2f131956bab5e05" compoundref="json__value_8cpp" startline="851" endline="872">Json::Value::size</references>
+        <referencedby refid="class_http_server_1ae69faaed2df760eb23c4d059ac869bc5" compoundref="_http_server_8cpp" startline="216" endline="236">OnHttpResponse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1a66312168a48b7f22f1e56078c9a588c7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HttpServer::LoadConfig</definition>
+        <argsstring>(const char *pcFile)</argsstring>
+        <name>LoadConfig</name>
+        <param>
+          <type>const char *</type>
+          <declname>pcFile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="47" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="276" bodyend="327"/>
+        <references refid="class_se_virt_conn_mgr_1a42fa65f9815b4e6876a92d0648d7619c" compoundref="_se_virt_conn_mgr_8cpp" startline="60" endline="81">SeVirtConnMgr::AddServerConn</references>
+        <references refid="struct_se_http_config_1a8a2e5b7917422b3cf2ff679c3e4b0fd6" compoundref="_http_server_def_8h" startline="19">SeHttpConfig::dwServerID</references>
+        <references refid="_se_virt_conn_mgr_8cpp_1aa8e9d5beed961f4e26b9cadd49603980" compoundref="_se_virt_conn_mgr_8cpp" startline="7">g_kVirtConnMgr</references>
+        <references refid="class_se_config_1a0bd6ce789230fc24e8e09674c0265d5d" compoundref="_se_config_8cpp" startline="56" endline="95">SeConfig::GetNetAddr</references>
+        <references refid="_se_tool_8cpp_1a03bcc77ad4ef4845b20fc5cf4db96834" compoundref="_se_tool_8cpp" startline="603" endline="610">GetStr2ID</references>
+        <references refid="class_se_config_1a8839d0f5e6b831b66fd018826a304086" compoundref="_se_config_8cpp" startline="23" endline="42">SeConfig::GetValue</references>
+        <references refid="struct_se_http_config_1a1ada0f74c2fc3e8cb541d5dea6d5821a" compoundref="_http_server_def_8h" startline="20">SeHttpConfig::kHttpServer</references>
+        <references refid="class_se_config_1a077cfce8454c31d293c2d2341980ffca" compoundref="_se_config_8cpp" startline="10" endline="21">SeConfig::Load</references>
+        <references refid="class_http_server_1a6a21013597797329dc5094ecb3f33849" compoundref="_http_server_8cpp" startline="329" endline="350">LoadDynamicConfig</references>
+        <references refid="class_http_server_1ab4e8f9d7ee33439779749179777026cc" compoundref="_http_server_8h" startline="59">m_kConfig</references>
+        <references refid="class_http_server_1aa481945ebf935ed6296eb4fff7cbfda2" compoundref="_http_server_8h" startline="66">m_pkWSConn</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="_se_ptl_define_8h_1aefb47f3959b8be9e164448819e4bb7f9ac22c01ccbb196aab5a0eef785eb6ce26" compoundref="_se_ptl_define_8h" startline="15">SSI_WS</references>
+        <referencedby refid="class_http_server_1abc911606499e42dbf9450f4331de0a62" compoundref="_http_server_8cpp" startline="55" endline="98">Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1a6a21013597797329dc5094ecb3f33849" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HttpServer::LoadDynamicConfig</definition>
+        <argsstring>(void)</argsstring>
+        <name>LoadDynamicConfig</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="48" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="329" bodyend="350"/>
+        <references refid="struct_se_http_config_1a05ddef7e0d23cbb5494eb60958b4711b" compoundref="_http_server_def_8h" startline="22">SeHttpConfig::dwHeartPackageTime</references>
+        <references refid="class_se_config_1a8839d0f5e6b831b66fd018826a304086" compoundref="_se_config_8cpp" startline="23" endline="42">SeConfig::GetValue</references>
+        <references refid="class_se_config_1a077cfce8454c31d293c2d2341980ffca" compoundref="_se_config_8cpp" startline="10" endline="21">SeConfig::Load</references>
+        <references refid="class_http_server_1ab4e8f9d7ee33439779749179777026cc" compoundref="_http_server_8h" startline="59">m_kConfig</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <referencedby refid="class_http_server_1a66312168a48b7f22f1e56078c9a588c7" compoundref="_http_server_8cpp" startline="276" endline="327">LoadConfig</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1aeb9fc5ec87338e576f19173508f1b4fc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HttpServer::InitializeNet</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitializeNet</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="49" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="352" bodyend="362"/>
+        <references refid="class_http_server_1a96834713459d5297a117fd23186084ec" compoundref="_http_server_8h" startline="65">m_kNetMgr</references>
+        <references refid="_se_file_log_8h_1a59fe2018c00666084724bec1365b41f5" compoundref="_se_file_log_8h" startline="85">SeLogError</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <referencedby refid="class_http_server_1abc911606499e42dbf9450f4331de0a62" compoundref="_http_server_8cpp" startline="55" endline="98">Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1ae1a9ef7d49cdda4b4e55c6954a689893" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HttpServer::AddRequest</definition>
+        <argsstring>(ULONG ulKey, SeRequestContent &amp;rkContent)</argsstring>
+        <name>AddRequest</name>
+        <param>
+          <type>ULONG</type>
+          <declname>ulKey</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_request_content" kindref="compound">SeRequestContent</ref> &amp;</type>
+          <declname>rkContent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="51" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="364" bodyend="368"/>
+        <references refid="class_http_server_1a55e56a94206394f9792eb382584e2c31" compoundref="_http_server_8h" startline="70">m_kMapRequest</references>
+        <references refid="class_http_server_1a1884787d09c7a6aa234a7fce39d5b4e1" compoundref="_http_server_8h" startline="69">m_kRequestLock</references>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1a9a1d0c25aa6d29b95f62d1020782efc4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HttpServer::GetDeleteRequest</definition>
+        <argsstring>(ULONG ulKey, SeRequestContent &amp;rkContent)</argsstring>
+        <name>GetDeleteRequest</name>
+        <param>
+          <type>ULONG</type>
+          <declname>ulKey</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_request_content" kindref="compound">SeRequestContent</ref> &amp;</type>
+          <declname>rkContent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="52" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="370" bodyend="381"/>
+        <references refid="class_http_server_1a55e56a94206394f9792eb382584e2c31" compoundref="_http_server_8h" startline="70">m_kMapRequest</references>
+        <references refid="class_http_server_1a1884787d09c7a6aa234a7fce39d5b4e1" compoundref="_http_server_8h" startline="69">m_kRequestLock</references>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1afd943934218b1c968c9612e4019be8da" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HttpServer::AddResponse</definition>
+        <argsstring>(ULONG ulKey, SeResponseContent &amp;rkContent)</argsstring>
+        <name>AddResponse</name>
+        <param>
+          <type>ULONG</type>
+          <declname>ulKey</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_response_content" kindref="compound">SeResponseContent</ref> &amp;</type>
+          <declname>rkContent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="53" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="383" bodyend="387"/>
+        <references refid="class_http_server_1aa0f45acdb1a8b1d48eb1ca092285a68e" compoundref="_http_server_8h" startline="72">m_kMapResponse</references>
+        <references refid="class_http_server_1a95c07cc385c818f2bfff128bbe9422df" compoundref="_http_server_8h" startline="71">m_kResponseLock</references>
+        <referencedby refid="class_http_server_1acb34e97922c00cfd9b21e71165fb97dd" compoundref="_se_w_h_process_8cpp" startline="43" endline="61">ProcessWH_QueryFreeHeroList</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_http_server_1a07652b680d05253b41a8d078b06c5baf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HttpServer::GetDeleteResponse</definition>
+        <argsstring>(ULONG ulKey, SeResponseContent &amp;rkContent)</argsstring>
+        <name>GetDeleteResponse</name>
+        <param>
+          <type>ULONG</type>
+          <declname>ulKey</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_se_response_content" kindref="compound">SeResponseContent</ref> &amp;</type>
+          <declname>rkContent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="54" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.cpp" bodystart="389" bodyend="400"/>
+        <references refid="class_http_server_1aa0f45acdb1a8b1d48eb1ca092285a68e" compoundref="_http_server_8h" startline="72">m_kMapResponse</references>
+        <references refid="class_http_server_1a95c07cc385c818f2bfff128bbe9422df" compoundref="_http_server_8h" startline="71">m_kResponseLock</references>
+        <referencedby refid="class_http_server_1ae69faaed2df760eb23c4d059ac869bc5" compoundref="_http_server_8cpp" startline="216" endline="236">OnHttpResponse</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1551">
+        <label>SeBaseServer</label>
+        <link refid="class_se_base_server"/>
+      </node>
+      <node id="1549">
+        <label>HttpServer</label>
+        <link refid="class_http_server"/>
+        <childnode refid="1550" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1551" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1550">
+        <label>TeNetCall</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1562">
+        <label>SeRequestContent</label>
+        <link refid="struct_se_request_content"/>
+        <childnode refid="1559" relation="usage">
+          <edgelabel>strFunc</edgelabel>
+        </childnode>
+        <childnode refid="1563" relation="usage">
+          <edgelabel>akParam</edgelabel>
+        </childnode>
+      </node>
+      <node id="1558">
+        <label>SeResponseContent</label>
+        <link refid="struct_se_response_content"/>
+        <childnode refid="1559" relation="usage">
+          <edgelabel>strParam1</edgelabel>
+        </childnode>
+      </node>
+      <node id="1554">
+        <label>SeBaseServer</label>
+        <link refid="class_se_base_server"/>
+      </node>
+      <node id="1557">
+        <label>std::map&lt; ULONG, SeResponseContent &gt;</label>
+        <childnode refid="1558" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1556">
+        <label>SeNetAddr</label>
+        <link refid="struct_se_net_addr"/>
+      </node>
+      <node id="1560">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1563">
+        <label>std::vector&lt; std::string &gt;</label>
+        <childnode refid="1559" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1555">
+        <label>SeVirtConn</label>
+        <link refid="struct_se_virt_conn"/>
+        <childnode refid="1556" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1564">
+        <label>SeHttpConfig</label>
+        <link refid="struct_se_http_config"/>
+        <childnode refid="1556" relation="usage">
+          <edgelabel>kHttpServer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1552">
+        <label>HttpServer</label>
+        <link refid="class_http_server"/>
+        <childnode refid="1553" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1554" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1555" relation="usage">
+          <edgelabel>m_pkWSConn</edgelabel>
+        </childnode>
+        <childnode refid="1557" relation="usage">
+          <edgelabel>m_kMapResponse</edgelabel>
+        </childnode>
+        <childnode refid="1561" relation="usage">
+          <edgelabel>m_kMapRequest</edgelabel>
+        </childnode>
+        <childnode refid="1564" relation="usage">
+          <edgelabel>m_kConfig</edgelabel>
+        </childnode>
+      </node>
+      <node id="1561">
+        <label>std::map&lt; ULONG, SeRequestContent &gt;</label>
+        <childnode refid="1562" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1553">
+        <label>TeNetCall</label>
+      </node>
+      <node id="1559">
+        <label>std::string</label>
+        <childnode refid="1560" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" line="12" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/HttpServer/src/HttpServer.h" bodystart="11" bodyend="73"/>
+    <listofallmembers>
+      <member refid="class_http_server_1ae1a9ef7d49cdda4b4e55c6954a689893" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>AddRequest</name></member>
+      <member refid="class_http_server_1afd943934218b1c968c9612e4019be8da" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>AddResponse</name></member>
+      <member refid="class_http_server_1a5c20706f0ab97369cead930a117c672a" prot="public" virt="virtual"><scope>HttpServer</scope><name>ExecuteAction</name></member>
+      <member refid="class_http_server_1a1353ba2482032c91a75ce20c841be584" prot="public" virt="virtual"><scope>HttpServer</scope><name>Finialize</name></member>
+      <member refid="class_http_server_1a9a1d0c25aa6d29b95f62d1020782efc4" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>GetDeleteRequest</name></member>
+      <member refid="class_http_server_1a07652b680d05253b41a8d078b06c5baf" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>GetDeleteResponse</name></member>
+      <member refid="class_http_server_1a26ff7c8e1c7b5cc0ce10c0fcdbee8e88" prot="public" virt="non-virtual"><scope>HttpServer</scope><name>GetServerID</name></member>
+      <member refid="class_http_server_1af7b41397867e9d9594bfe4379064d105" prot="public" virt="non-virtual"><scope>HttpServer</scope><name>GetServerTime</name></member>
+      <member refid="class_http_server_1afbbc874850fdff95267d16af6d1af4e8" prot="public" virt="non-virtual"><scope>HttpServer</scope><name>HttpCloseCallback</name></member>
+      <member refid="class_http_server_1a0a0eca30d34c80dad3f02c64da72cdfe" prot="public" virt="non-virtual"><scope>HttpServer</scope><name>HttpRequestCallback</name></member>
+      <member refid="class_http_server_1a26f7eb0d28647aebeb5d0139ee0e17f1" prot="public" virt="non-virtual"><scope>HttpServer</scope><name>HttpResponseCallback</name></member>
+      <member refid="class_http_server_1a21cf52381aad79022d297dec4f6b1d4a" prot="public" virt="non-virtual"><scope>HttpServer</scope><name>HttpServer</name></member>
+      <member refid="class_http_server_1abc911606499e42dbf9450f4331de0a62" prot="public" virt="virtual"><scope>HttpServer</scope><name>Initialize</name></member>
+      <member refid="class_http_server_1aeb9fc5ec87338e576f19173508f1b4fc" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>InitializeNet</name></member>
+      <member refid="class_http_server_1a66312168a48b7f22f1e56078c9a588c7" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>LoadConfig</name></member>
+      <member refid="class_http_server_1a6a21013597797329dc5094ecb3f33849" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>LoadDynamicConfig</name></member>
+      <member refid="class_http_server_1a97c09219673ca8f4ed66e0f92094958f" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>m_acPraseBuf</name></member>
+      <member refid="class_http_server_1af7569b2d2283b5539db8141eb64913d7" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>m_acSend</name></member>
+      <member refid="class_http_server_1aa47a4fde1e0868a0c86d34311e300af6" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>m_dwCurTime</name></member>
+      <member refid="class_http_server_1aa9ae3bf8ca38162b552ccbc0aa555d84" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>m_dwTickCount</name></member>
+      <member refid="class_http_server_1ab4e8f9d7ee33439779749179777026cc" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>m_kConfig</name></member>
+      <member refid="class_http_server_1a55e56a94206394f9792eb382584e2c31" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>m_kMapRequest</name></member>
+      <member refid="class_http_server_1aa0f45acdb1a8b1d48eb1ca092285a68e" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>m_kMapResponse</name></member>
+      <member refid="class_http_server_1a96834713459d5297a117fd23186084ec" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>m_kNetMgr</name></member>
+      <member refid="class_http_server_1a1884787d09c7a6aa234a7fce39d5b4e1" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>m_kRequestLock</name></member>
+      <member refid="class_http_server_1a95c07cc385c818f2bfff128bbe9422df" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>m_kResponseLock</name></member>
+      <member refid="class_http_server_1aa481945ebf935ed6296eb4fff7cbfda2" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>m_pkWSConn</name></member>
+      <member refid="class_http_server_1ad3a76b48f9e203669fdfac5bb487ce02" prot="public" virt="non-virtual"><scope>HttpServer</scope><name>OnHttpClose</name></member>
+      <member refid="class_http_server_1ab5ea6ba8f9e07e1c035c82329010de96" prot="public" virt="non-virtual"><scope>HttpServer</scope><name>OnHttpRequest</name></member>
+      <member refid="class_http_server_1ae69faaed2df760eb23c4d059ac869bc5" prot="public" virt="non-virtual"><scope>HttpServer</scope><name>OnHttpResponse</name></member>
+      <member refid="class_http_server_1ab123245e4752eae9b2c6b427c05be80f" prot="public" virt="virtual"><scope>HttpServer</scope><name>OnNetAccept</name></member>
+      <member refid="class_http_server_1a191167d16fa982c95ab32d1b2bf154a7" prot="public" virt="virtual"><scope>HttpServer</scope><name>OnNetConnected</name></member>
+      <member refid="class_http_server_1a512037f9a67425a544579dff680ea4b1" prot="public" virt="virtual"><scope>HttpServer</scope><name>OnNetDisconnect</name></member>
+      <member refid="class_http_server_1aaeb40cd619e4a2b41d93a2345644ad70" prot="public" virt="virtual"><scope>HttpServer</scope><name>OnNetRecv</name></member>
+      <member refid="class_http_server_1a53bbc9b844b76bdc495dc9a891aead77" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>PreProcessWH</name></member>
+      <member refid="class_http_server_1ac78f56a8a81cf69fdffcf2e568d5afd4" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>ProcessHttp_QueryFreeHeroListRet</name></member>
+      <member refid="class_http_server_1aea571164bc26da3e3856d88226646222" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>ProcessWH_HeartPackageRet</name></member>
+      <member refid="class_http_server_1acb34e97922c00cfd9b21e71165fb97dd" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>ProcessWH_QueryFreeHeroList</name></member>
+      <member refid="class_http_server_1ad56585673a36268ccb9cbdca6539b313" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>ProcessWH_RegisterRet</name></member>
+      <member refid="class_http_server_1a6ff5d1fb5eee83fafc9315517d684e1a" prot="protected" virt="non-virtual"><scope>HttpServer</scope><name>ProcessWHData</name></member>
+      <member refid="class_se_base_server_1a88b0de020f966c810134d45a9d8ca074" prot="public" virt="non-virtual"><scope>HttpServer</scope><name>SeBaseServer</name></member>
+      <member refid="class_http_server_1a5ded3e42dfd68f9eac12e4c949a4f1f5" prot="public" virt="non-virtual"><scope>HttpServer</scope><name>SendHW_HeartPackage</name></member>
+      <member refid="class_http_server_1ad5aa995e22063f3d50645fb943be740a" prot="public" virt="non-virtual"><scope>HttpServer</scope><name>SendHW_QueryFreeHeroListRet</name></member>
+      <member refid="class_http_server_1a0cae4faf9a215e9c34cca636ea2e8965" prot="public" virt="non-virtual"><scope>HttpServer</scope><name>SendHW_QueryFreeHeroListRet</name></member>
+      <member refid="class_http_server_1ab18bf3423c34a1fadeb74e7af530a02b" prot="public" virt="non-virtual"><scope>HttpServer</scope><name>SendHW_Register</name></member>
+      <member refid="class_http_server_1aa71ed5daa7902dc5f7e619b5f021bf7f" prot="public" virt="non-virtual"><scope>HttpServer</scope><name>SendHWData</name></member>
+      <member refid="class_http_server_1a0f10527bafad5af104ac9c000992ac19" prot="public" virt="virtual"><scope>HttpServer</scope><name>ShowConsoleTitle</name></member>
+      <member refid="class_http_server_1a16c9f135682bba53fd8753e6dcda2bc9" prot="public" virt="virtual"><scope>HttpServer</scope><name>Update</name></member>
+      <member refid="class_http_server_1a14fb5346b90163686c1172b5a7e1b19a" prot="public" virt="non-virtual"><scope>HttpServer</scope><name>~HttpServer</name></member>
+      <member refid="class_se_base_server_1a6db805870a32d2966e41923b2815a8db" prot="public" virt="virtual"><scope>HttpServer</scope><name>~SeBaseServer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

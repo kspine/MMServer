@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_ge_c_l_send_8cpp" kind="file">
+    <compoundname>GeCLSend.cpp</compoundname>
+    <includes local="yes">GeNetMgr.h</includes>
+    <includes local="yes">GeCLSend.inc</includes>
+    <incdepgraph>
+      <node id="101263">
+        <label>GeNetMgr.h</label>
+      </node>
+      <node id="101262">
+        <label>F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/GeCLSend.cpp</label>
+        <link refid="GeCLSend.cpp"/>
+        <childnode refid="101263" relation="include">
+        </childnode>
+        <childnode refid="101264" relation="include">
+        </childnode>
+      </node>
+      <node id="101264">
+        <label>GeCLSend.inc</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_ge_c_l_send_8cpp_1a24cd3c37a165a8c4626d9e78df4574ff" prot="public" static="no">
+        <name>SERVER</name>
+        <initializer>GeClientNet</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/GeCLSend.cpp" line="3" column="9" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/GeCLSend.cpp" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;GeNetMgr.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="_ge_c_l_send_8cpp_1a24cd3c37a165a8c4626d9e78df4574ff" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERVER<sp/>GeClientNet</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;GeCLSend.inc&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>SERVER</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>GeClientNet::SendCLData(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkData,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSize,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>pkReceiver)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>HSock<sp/>kSock<sp/>=<sp/>*(HSock*)pkReceiver;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(kSock.IsInvalid())</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GeClientNet::Get()-&gt;SendData(</highlight><highlight class="stringliteral">&quot;Login&quot;</highlight><highlight class="normal">,<sp/>pkData,<sp/>iSize);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>(bool)m_kMultiFunNetMgr.OnSend(m_kLoginInfo.iID,<sp/>pkData,<sp/>iSize,<sp/>false);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/GeCLSend.cpp"/>
+  </compounddef>
+</doxygen>

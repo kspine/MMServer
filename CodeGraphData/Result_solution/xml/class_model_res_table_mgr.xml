@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_model_res_table_mgr" kind="class" prot="public">
+    <compoundname>ModelResTableMgr</compoundname>
+    <includes refid="_model_res__table_8hpp" local="no">ModelRes_table.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_model_res_table_mgr_1a07ac78682f1ef9aec8bd9eab70a46e43" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned int, <ref refid="struct_model_res_table" kindref="compound">ModelResTable</ref> * &gt;</type>
+        <definition>std::map&lt;unsigned int,ModelResTable*&gt; ModelResTableMgr::m_kModelResTableMap</definition>
+        <argsstring></argsstring>
+        <name>m_kModelResTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.hpp" line="60" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.hpp" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_model_res_table_mgr_1a0eb04d452c59941d0ebbd37103e0268e" compoundref="_model_res__table_8cpp" startline="104" endline="169">FillData</referencedby>
+        <referencedby refid="class_model_res_table_mgr_1a1fcf40841b041efafb75f334e3ebd27a" compoundref="_model_res__table_8cpp" startline="42" endline="50">GetModelResTable</referencedby>
+        <referencedby refid="class_model_res_table_mgr_1a06ca1c528c26350a439da081acacf067" compoundref="_model_res__table_8cpp" startline="26" endline="29">GetModelResTableMap</referencedby>
+        <referencedby refid="class_model_res_table_mgr_1a2a974f7167b9aaff0d54d732da306aa4" compoundref="_model_res__table_8cpp" startline="31" endline="40">GetModelResTableVec</referencedby>
+        <referencedby refid="class_model_res_table_mgr_1a34f485bd8cc36f2b390f09e97fa26334" compoundref="_model_res__table_8cpp" startline="57" endline="60">~ModelResTableMgr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_model_res_table_mgr_1aaf88a1ccec286e20e98d2bc22ecb1063" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_model_res_table_mgr" kindref="compound">ModelResTableMgr</ref> *</type>
+        <definition>ModelResTableMgr * ModelResTableMgr::m_pkModelResTableMgr</definition>
+        <argsstring></argsstring>
+        <name>m_pkModelResTableMgr</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.hpp" line="61" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.hpp" bodystart="61" bodyend="-1"/>
+        <referencedby refid="class_model_res_table_mgr_1a2dd4ea8e40aed6955c9db5e857f859e1" compoundref="_model_res__table_8cpp" startline="6" endline="13">Get</referencedby>
+        <referencedby refid="class_model_res_table_mgr_1af87e3edc7cd60ccdba29cd436e8ec883" compoundref="_model_res__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_model_res_table_mgr_1a2dd4ea8e40aed6955c9db5e857f859e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_model_res_table_mgr" kindref="compound">ModelResTableMgr</ref> *</type>
+        <definition>ModelResTableMgr * ModelResTableMgr::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.hpp" line="47" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.cpp" bodystart="6" bodyend="13"/>
+        <references refid="class_model_res_table_mgr_1aaf88a1ccec286e20e98d2bc22ecb1063" compoundref="_model_res__table_8hpp" startline="61">m_pkModelResTableMgr</references>
+        <references refid="class_model_res_table_mgr_1a2e53abcc5a2f5238cea6ea95fe4470c0" compoundref="_model_res__table_8cpp" startline="52" endline="55">ModelResTableMgr</references>
+        <referencedby refid="class_table_mgr_1a00aec7a5698907c65b610f8972bc7ec2" compoundref="_table_mgr1_8cpp" startline="787" endline="798">TableMgr::GetActionResVec</referencedby>
+        <referencedby refid="class_table_mgr_1a2a087af2e4184e9a8e74d4cacda44f82" compoundref="_table_mgr1_8cpp" startline="774" endline="785">TableMgr::GetActionResVecAll</referencedby>
+        <referencedby refid="class_global_table_mgr_1a06c91cc584f2437b4fb1a06e069da001" compoundref="_global_table_mgr_8cpp" startline="263" endline="266">GlobalTableMgr::GetModelResTable</referencedby>
+        <referencedby refid="class_global_table_mgr_1ad0299f71c7cc35b07ef92c46236a6fad" compoundref="_global_table_mgr_8cpp" startline="268" endline="271">GlobalTableMgr::GetModelResTableMap</referencedby>
+        <referencedby refid="class_table_mgr_1a894299f18b598c5108eb2e5d0a11c9d1" compoundref="_table_mgr1_8cpp" startline="97" endline="111">TableMgr::GetModleIndex</referencedby>
+        <referencedby refid="class_table_mgr_1a9cd5565797c79eded85a67d84f15fbf1" compoundref="_table_mgr1_8cpp" startline="800" endline="824">TableMgr::GetPreLoadRes</referencedby>
+        <referencedby refid="class_table_mgr_1af7cf541261c0b36b35af12b2b86367aa" compoundref="_table_mgr1_8cpp" startline="645" endline="657">TableMgr::InitModelRes</referencedby>
+        <referencedby refid="class_table_mgr_1ae1ceeb5a4a6212a8497ef7dd92f87885" compoundref="_table_mgr_8h" startline="79" endline="132">TableMgr::LoadTable</referencedby>
+        <referencedby refid="class_model_res_table_mgr_1af87e3edc7cd60ccdba29cd436e8ec883" compoundref="_model_res__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_model_res_table_mgr_1af87e3edc7cd60ccdba29cd436e8ec883" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_model_res_table_mgr" kindref="compound">ModelResTableMgr</ref> *</type>
+        <definition>ModelResTableMgr * ModelResTableMgr::ReLoad</definition>
+        <argsstring>()</argsstring>
+        <name>ReLoad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.hpp" line="48" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.cpp" bodystart="15" bodyend="23"/>
+        <references refid="class_model_res_table_mgr_1a2dd4ea8e40aed6955c9db5e857f859e1" compoundref="_model_res__table_8cpp" startline="6" endline="13">Get</references>
+        <references refid="class_model_res_table_mgr_1aaf88a1ccec286e20e98d2bc22ecb1063" compoundref="_model_res__table_8hpp" startline="61">m_pkModelResTableMgr</references>
+        <referencedby refid="class_table_mgr_1a6298f0e9b81636b481a25c06016e237a" compoundref="_table_mgr1_8cpp" startline="860" endline="914">TableMgr::ReloadTable</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_model_res_table_mgr_1a2e53abcc5a2f5238cea6ea95fe4470c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ModelResTableMgr::ModelResTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>ModelResTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.hpp" line="49" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.cpp" bodystart="52" bodyend="55"/>
+        <references refid="class_model_res_table_mgr_1acc87d8d970c0f9412565631cae185385" compoundref="_model_res__table_8cpp" startline="62" endline="102">Load</references>
+        <referencedby refid="class_model_res_table_mgr_1a2dd4ea8e40aed6955c9db5e857f859e1" compoundref="_model_res__table_8cpp" startline="6" endline="13">Get</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_model_res_table_mgr_1a34f485bd8cc36f2b390f09e97fa26334" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ModelResTableMgr::~ModelResTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~ModelResTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.hpp" line="50" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.cpp" bodystart="57" bodyend="60"/>
+        <references refid="class_model_res_table_mgr_1a07ac78682f1ef9aec8bd9eab70a46e43" compoundref="_model_res__table_8hpp" startline="60">m_kModelResTableMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_model_res_table_mgr_1a1fcf40841b041efafb75f334e3ebd27a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_model_res_table" kindref="compound">ModelResTable</ref> *</type>
+        <definition>const ModelResTable * ModelResTableMgr::GetModelResTable</definition>
+        <argsstring>(unsigned int iTypeID)</argsstring>
+        <name>GetModelResTable</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>iTypeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.hpp" line="52" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.cpp" bodystart="42" bodyend="50"/>
+        <references refid="class_model_res_table_mgr_1a07ac78682f1ef9aec8bd9eab70a46e43" compoundref="_model_res__table_8hpp" startline="60">m_kModelResTableMap</references>
+        <referencedby refid="class_global_table_mgr_1a06c91cc584f2437b4fb1a06e069da001" compoundref="_global_table_mgr_8cpp" startline="263" endline="266">GlobalTableMgr::GetModelResTable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_model_res_table_mgr_1a06ca1c528c26350a439da081acacf067" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; unsigned int, <ref refid="struct_model_res_table" kindref="compound">ModelResTable</ref> * &gt; &amp;</type>
+        <definition>const std::map&lt; unsigned int, ModelResTable * &gt; &amp; ModelResTableMgr::GetModelResTableMap</definition>
+        <argsstring>()</argsstring>
+        <name>GetModelResTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.hpp" line="53" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.cpp" bodystart="26" bodyend="29"/>
+        <references refid="class_model_res_table_mgr_1a07ac78682f1ef9aec8bd9eab70a46e43" compoundref="_model_res__table_8hpp" startline="60">m_kModelResTableMap</references>
+        <referencedby refid="class_table_mgr_1a00aec7a5698907c65b610f8972bc7ec2" compoundref="_table_mgr1_8cpp" startline="787" endline="798">TableMgr::GetActionResVec</referencedby>
+        <referencedby refid="class_table_mgr_1a2a087af2e4184e9a8e74d4cacda44f82" compoundref="_table_mgr1_8cpp" startline="774" endline="785">TableMgr::GetActionResVecAll</referencedby>
+        <referencedby refid="class_global_table_mgr_1ad0299f71c7cc35b07ef92c46236a6fad" compoundref="_global_table_mgr_8cpp" startline="268" endline="271">GlobalTableMgr::GetModelResTableMap</referencedby>
+        <referencedby refid="class_table_mgr_1a894299f18b598c5108eb2e5d0a11c9d1" compoundref="_table_mgr1_8cpp" startline="97" endline="111">TableMgr::GetModleIndex</referencedby>
+        <referencedby refid="class_table_mgr_1a9cd5565797c79eded85a67d84f15fbf1" compoundref="_table_mgr1_8cpp" startline="800" endline="824">TableMgr::GetPreLoadRes</referencedby>
+        <referencedby refid="class_table_mgr_1af7cf541261c0b36b35af12b2b86367aa" compoundref="_table_mgr1_8cpp" startline="645" endline="657">TableMgr::InitModelRes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_model_res_table_mgr_1a2a974f7167b9aaff0d54d732da306aa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_table_res_array" kindref="compound">TableResArray</ref></type>
+        <definition>TableResArray ModelResTableMgr::GetModelResTableVec</definition>
+        <argsstring>()</argsstring>
+        <name>GetModelResTableVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.hpp" line="54" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.cpp" bodystart="31" bodyend="40"/>
+        <references refid="class_model_res_table_mgr_1a07ac78682f1ef9aec8bd9eab70a46e43" compoundref="_model_res__table_8hpp" startline="60">m_kModelResTableMap</references>
+        <references refid="class_table_res_array_1ab7fbd71c9a00bfd30ae2282a4955dbc0" compoundref="_se_table_res_base_8cpp" startline="13" endline="16">TableResArray::pushBack</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_model_res_table_mgr_1acc87d8d970c0f9412565631cae185385" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ModelResTableMgr::Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.hpp" line="57" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.cpp" bodystart="62" bodyend="102"/>
+        <references refid="class_ti_xml_document_1a6dfc01a6e5d58e56acd537dfd3bdeb29" compoundref="tinyxml_8h" startline="1430" endline="1430">TiXmlDocument::Error</references>
+        <references refid="class_ti_xml_document_1a9d0f689f6e09ea494ea547be8d79c25e" compoundref="tinyxml_8h" startline="1433" endline="1433">TiXmlDocument::ErrorDesc</references>
+        <references refid="class_model_res_table_mgr_1a0eb04d452c59941d0ebbd37103e0268e" compoundref="_model_res__table_8cpp" startline="104" endline="169">FillData</references>
+        <references refid="class_ti_xml_node_1ab1f8d8e70d88aea4c5efedfe00862d55" compoundref="tinyxml_8cpp" startline="420" endline="432">TiXmlNode::FirstChildElement</references>
+        <references refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" compoundref="_table_mgr1_8cpp" startline="36" endline="43">TableMgr::Get</references>
+        <references refid="class_table_mgr_1af1a60a8b2807abd34ceb6002cf8f4b80" compoundref="_table_mgr1_8cpp" startline="851" endline="858">TableMgr::GetTableLoader</references>
+        <references refid="class_table_loader_1a8d06b11d37cde9ff76d98901dd39bab4">TableLoader::LoadTable</references>
+        <references refid="class_ti_xml_node_1a7667217e269e0da01d1f82aee94d1a3d" compoundref="tinyxml_8cpp" startline="450" endline="462">TiXmlNode::NextSiblingElement</references>
+        <references refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</references>
+        <referencedby refid="class_model_res_table_mgr_1a2e53abcc5a2f5238cea6ea95fe4470c0" compoundref="_model_res__table_8cpp" startline="52" endline="55">ModelResTableMgr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_model_res_table_mgr_1a0eb04d452c59941d0ebbd37103e0268e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModelResTableMgr::FillData</definition>
+        <argsstring>(ModelResTable *row, TiXmlElement *element)</argsstring>
+        <name>FillData</name>
+        <param>
+          <type><ref refid="struct_model_res_table" kindref="compound">ModelResTable</ref> *</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.hpp" line="58" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.cpp" bodystart="104" bodyend="169"/>
+        <references refid="class_ti_xml_element_1ac1e4691e9375ba4e665dce7e46a50a9c" compoundref="tinyxml_8cpp" startline="544" endline="550">TiXmlElement::Attribute</references>
+        <references refid="struct_model_res_table_1a45784eae4bbb3be6440b7678cf5f13c8" compoundref="_model_res__table_8hpp" startline="38">ModelResTable::bActionRes</references>
+        <references refid="struct_model_res_table_1af84e52231e66c8991aab181ab0d324ba" compoundref="_model_res__table_8hpp" startline="40">ModelResTable::bNeedScaleWithUnit</references>
+        <references refid="struct_model_res_table_1a9dfc123d68f9372b630f9b08397e01bf" compoundref="_model_res__table_8hpp" startline="35">ModelResTable::DelDelay</references>
+        <references refid="struct_model_res_table_1a436eb69ef7f6f98d6057ffd0b230f5bc" compoundref="_model_res__table_8hpp" startline="39">ModelResTable::iEffectRange</references>
+        <references refid="struct_model_res_table_1a19280dccb61d969e801bd1b637131f87" compoundref="_model_res__table_8hpp" startline="37">ModelResTable::iPreLoad</references>
+        <references refid="struct_model_res_table_1a068600c4c091ff850b3b47c517c61ca4" compoundref="_model_res__table_8hpp" startline="30">ModelResTable::kAttachPos</references>
+        <references refid="struct_model_res_table_1ae733c674041c5ab81387d2e0b60f2c79" compoundref="_model_res__table_8hpp" startline="32">ModelResTable::kDesc</references>
+        <references refid="struct_model_res_table_1a4548625a04219916d2f9756fa17efd2f" compoundref="_model_res__table_8hpp" startline="34">ModelResTable::kHitSound</references>
+        <references refid="struct_model_res_table_1abecad88dc3e097fd14ac938499b2b844" compoundref="_model_res__table_8hpp" startline="31">ModelResTable::kPath</references>
+        <references refid="struct_model_res_table_1a8d86ed1949c99c122e12cdba42c42d0b" compoundref="_model_res__table_8hpp" startline="36">ModelResTable::kPreLoadPath</references>
+        <references refid="class_model_res_table_mgr_1a07ac78682f1ef9aec8bd9eab70a46e43" compoundref="_model_res__table_8hpp" startline="60">m_kModelResTableMap</references>
+        <references refid="struct_model_res_table_1a5b5f9d09d1474fcbf1618c4322f585a6" compoundref="_model_res__table_8hpp" startline="29">ModelResTable::uiID</references>
+        <references refid="struct_model_res_table_1a16f31e3cc813bc2aa021b45baa0a6a7f" compoundref="_model_res__table_8hpp" startline="33">ModelResTable::uiOwner</references>
+        <referencedby refid="class_model_res_table_mgr_1acc87d8d970c0f9412565631cae185385" compoundref="_model_res__table_8cpp" startline="62" endline="102">Load</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1937">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="1935">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="1932">
+        <label>ModelResTableMgr</label>
+        <link refid="class_model_res_table_mgr"/>
+        <childnode refid="1933" relation="usage">
+          <edgelabel>m_kModelResTableMap</edgelabel>
+        </childnode>
+        <childnode refid="1932" relation="usage">
+          <edgelabel>m_pkModelResTableMgr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1934">
+        <label>ModelResTable</label>
+        <link refid="struct_model_res_table"/>
+        <childnode refid="1935" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1936" relation="usage">
+          <edgelabel>kAttachPos</edgelabel>
+          <edgelabel>kDesc</edgelabel>
+          <edgelabel>kPath</edgelabel>
+          <edgelabel>kPreLoadPath</edgelabel>
+          <edgelabel>kHitSound</edgelabel>
+        </childnode>
+      </node>
+      <node id="1933">
+        <label>std::map&lt; unsigned int, ModelResTable * &gt;</label>
+        <childnode refid="1934" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1936">
+        <label>std::string</label>
+        <childnode refid="1937" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.hpp" line="45" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/ModelRes_table.hpp" bodystart="44" bodyend="62"/>
+    <listofallmembers>
+      <member refid="class_model_res_table_mgr_1a0eb04d452c59941d0ebbd37103e0268e" prot="private" virt="non-virtual"><scope>ModelResTableMgr</scope><name>FillData</name></member>
+      <member refid="class_model_res_table_mgr_1a2dd4ea8e40aed6955c9db5e857f859e1" prot="public" virt="non-virtual"><scope>ModelResTableMgr</scope><name>Get</name></member>
+      <member refid="class_model_res_table_mgr_1a1fcf40841b041efafb75f334e3ebd27a" prot="public" virt="non-virtual"><scope>ModelResTableMgr</scope><name>GetModelResTable</name></member>
+      <member refid="class_model_res_table_mgr_1a06ca1c528c26350a439da081acacf067" prot="public" virt="non-virtual"><scope>ModelResTableMgr</scope><name>GetModelResTableMap</name></member>
+      <member refid="class_model_res_table_mgr_1a2a974f7167b9aaff0d54d732da306aa4" prot="public" virt="non-virtual"><scope>ModelResTableMgr</scope><name>GetModelResTableVec</name></member>
+      <member refid="class_model_res_table_mgr_1acc87d8d970c0f9412565631cae185385" prot="private" virt="non-virtual"><scope>ModelResTableMgr</scope><name>Load</name></member>
+      <member refid="class_model_res_table_mgr_1a07ac78682f1ef9aec8bd9eab70a46e43" prot="private" virt="non-virtual"><scope>ModelResTableMgr</scope><name>m_kModelResTableMap</name></member>
+      <member refid="class_model_res_table_mgr_1aaf88a1ccec286e20e98d2bc22ecb1063" prot="private" virt="non-virtual"><scope>ModelResTableMgr</scope><name>m_pkModelResTableMgr</name></member>
+      <member refid="class_model_res_table_mgr_1a2e53abcc5a2f5238cea6ea95fe4470c0" prot="public" virt="non-virtual"><scope>ModelResTableMgr</scope><name>ModelResTableMgr</name></member>
+      <member refid="class_model_res_table_mgr_1af87e3edc7cd60ccdba29cd436e8ec883" prot="public" virt="non-virtual"><scope>ModelResTableMgr</scope><name>ReLoad</name></member>
+      <member refid="class_model_res_table_mgr_1a34f485bd8cc36f2b390f09e97fa26334" prot="public" virt="non-virtual"><scope>ModelResTableMgr</scope><name>~ModelResTableMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

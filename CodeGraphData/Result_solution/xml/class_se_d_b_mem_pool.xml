@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_se_d_b_mem_pool" kind="class" prot="public">
+    <compoundname>SeDBMemPool</compoundname>
+    <includes refid="_se_d_b_mem_pool_8h" local="no">SeDBMemPool.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_se_d_b_mem_pool_1a2da2cc737cbc93c445db08dd43344907" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SeCacheMgr</definition>
+        <argsstring></argsstring>
+        <name>SeCacheMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="7" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_se_d_b_mem_pool_1af9b4f5572c425d8dedc35ed0c607ccf4" prot="protected" static="no" mutable="no">
+        <type>DWord</type>
+        <definition>DWord SeDBMemPool::m_dwMagic</definition>
+        <argsstring></argsstring>
+        <name>m_dwMagic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="26" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_se_d_b_mem_pool_1a1d60de52fe0b578746755b32f2a463e7" compoundref="_se_d_b_mem_pool_8cpp" startline="85" endline="110">ExtendPool</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1ac36a0d1a36d37234e09d3157d6331c8e" compoundref="_se_d_b_mem_pool_8cpp" startline="137" endline="140">GetMagic</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1ac22675982cc4dadb8c34135c8b647967" compoundref="_se_d_b_mem_pool_8cpp" startline="65" endline="83">IsValid</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1a2af55e3ea70d77c12568df4e0a4beaec" compoundref="_se_d_b_mem_pool_8cpp" startline="25" endline="47">NewEle</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1a705340adb215547500cd1ab023e6f3c6" compoundref="_se_d_b_mem_pool_8cpp" startline="112" endline="135">RegisterEle</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1af269ef94667a2fee0cb56ba45fc8f717" compoundref="_se_d_b_mem_pool_8cpp" startline="5" endline="19">SeDBMemPool</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_d_b_mem_pool_1a49678c51f1da35113af393ae02b54161" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeDBMemPool::m_iEleSize</definition>
+        <argsstring></argsstring>
+        <name>m_iEleSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="27" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_se_d_b_mem_pool_1a1658585c9dc1e5c8ad9347a2df7adf3d" compoundref="_se_d_b_mem_pool_8cpp" startline="49" endline="63">DelEle</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1a1d60de52fe0b578746755b32f2a463e7" compoundref="_se_d_b_mem_pool_8cpp" startline="85" endline="110">ExtendPool</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1a5fa22275d2447942868129fc243e6416" compoundref="_se_d_b_mem_pool_8cpp" startline="142" endline="145">GetAllocSize</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1a2af55e3ea70d77c12568df4e0a4beaec" compoundref="_se_d_b_mem_pool_8cpp" startline="25" endline="47">NewEle</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1a705340adb215547500cd1ab023e6f3c6" compoundref="_se_d_b_mem_pool_8cpp" startline="112" endline="135">RegisterEle</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1af269ef94667a2fee0cb56ba45fc8f717" compoundref="_se_d_b_mem_pool_8cpp" startline="5" endline="19">SeDBMemPool</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_d_b_mem_pool_1a43ccc0145005f65f24b78ba2da81d1d1" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeDBMemPool::m_iAddEles</definition>
+        <argsstring></argsstring>
+        <name>m_iAddEles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="28" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_se_d_b_mem_pool_1a1d60de52fe0b578746755b32f2a463e7" compoundref="_se_d_b_mem_pool_8cpp" startline="85" endline="110">ExtendPool</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1af269ef94667a2fee0cb56ba45fc8f717" compoundref="_se_d_b_mem_pool_8cpp" startline="5" endline="19">SeDBMemPool</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_d_b_mem_pool_1ae9d0861c35456b2cd647a04f789cf0e7" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeDBMemPool::m_iTotalSize</definition>
+        <argsstring></argsstring>
+        <name>m_iTotalSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="30" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_se_d_b_mem_pool_1a1d60de52fe0b578746755b32f2a463e7" compoundref="_se_d_b_mem_pool_8cpp" startline="85" endline="110">ExtendPool</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1abe66c5ee7de2a81180a9a93fb305b633" compoundref="_se_d_b_mem_pool_8cpp" startline="147" endline="150">GetTotalSize</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1a705340adb215547500cd1ab023e6f3c6" compoundref="_se_d_b_mem_pool_8cpp" startline="112" endline="135">RegisterEle</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1af269ef94667a2fee0cb56ba45fc8f717" compoundref="_se_d_b_mem_pool_8cpp" startline="5" endline="19">SeDBMemPool</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_d_b_mem_pool_1ade2befe8b781f60179e51d7cfa0c1e8e" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeDBMemPool::m_iAllocEles</definition>
+        <argsstring></argsstring>
+        <name>m_iAllocEles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="31" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_se_d_b_mem_pool_1a1658585c9dc1e5c8ad9347a2df7adf3d" compoundref="_se_d_b_mem_pool_8cpp" startline="49" endline="63">DelEle</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1a5fa22275d2447942868129fc243e6416" compoundref="_se_d_b_mem_pool_8cpp" startline="142" endline="145">GetAllocSize</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1a2af55e3ea70d77c12568df4e0a4beaec" compoundref="_se_d_b_mem_pool_8cpp" startline="25" endline="47">NewEle</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1a705340adb215547500cd1ab023e6f3c6" compoundref="_se_d_b_mem_pool_8cpp" startline="112" endline="135">RegisterEle</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1af269ef94667a2fee0cb56ba45fc8f717" compoundref="_se_d_b_mem_pool_8cpp" startline="5" endline="19">SeDBMemPool</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_d_b_mem_pool_1a16427e492165b979d42907f161efb102" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SeDBMemPool::m_iAllocMaxEles</definition>
+        <argsstring></argsstring>
+        <name>m_iAllocMaxEles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="32" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_se_d_b_mem_pool_1a38249177d5c4b8cd4035991081b75dd8" compoundref="_se_d_b_mem_pool_8cpp" startline="152" endline="155">GetAllocMaxEles</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1a2af55e3ea70d77c12568df4e0a4beaec" compoundref="_se_d_b_mem_pool_8cpp" startline="25" endline="47">NewEle</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1a705340adb215547500cd1ab023e6f3c6" compoundref="_se_d_b_mem_pool_8cpp" startline="112" endline="135">RegisterEle</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1af269ef94667a2fee0cb56ba45fc8f717" compoundref="_se_d_b_mem_pool_8cpp" startline="5" endline="19">SeDBMemPool</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_d_b_mem_pool_1a2bb21c4b39f0482780923c23c009e4cc" prot="protected" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* SeDBMemPool::m_pkFreeFirst</definition>
+        <argsstring></argsstring>
+        <name>m_pkFreeFirst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="34" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_se_d_b_mem_pool_1a1658585c9dc1e5c8ad9347a2df7adf3d" compoundref="_se_d_b_mem_pool_8cpp" startline="49" endline="63">DelEle</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1a1d60de52fe0b578746755b32f2a463e7" compoundref="_se_d_b_mem_pool_8cpp" startline="85" endline="110">ExtendPool</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1a2af55e3ea70d77c12568df4e0a4beaec" compoundref="_se_d_b_mem_pool_8cpp" startline="25" endline="47">NewEle</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1a705340adb215547500cd1ab023e6f3c6" compoundref="_se_d_b_mem_pool_8cpp" startline="112" endline="135">RegisterEle</referencedby>
+        <referencedby refid="class_se_d_b_mem_pool_1af269ef94667a2fee0cb56ba45fc8f717" compoundref="_se_d_b_mem_pool_8cpp" startline="5" endline="19">SeDBMemPool</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_se_d_b_mem_pool_1af269ef94667a2fee0cb56ba45fc8f717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeDBMemPool::SeDBMemPool</definition>
+        <argsstring>(int iEleSize, int iAddEles, DWord dwMagic)</argsstring>
+        <name>SeDBMemPool</name>
+        <param>
+          <type>int</type>
+          <declname>iEleSize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iAddEles</declname>
+        </param>
+        <param>
+          <type>DWord</type>
+          <declname>dwMagic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="9" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.cpp" bodystart="5" bodyend="19"/>
+        <references refid="class_se_d_b_mem_pool_1af9b4f5572c425d8dedc35ed0c607ccf4" compoundref="_se_d_b_mem_pool_8h" startline="26">m_dwMagic</references>
+        <references refid="class_se_d_b_mem_pool_1a43ccc0145005f65f24b78ba2da81d1d1" compoundref="_se_d_b_mem_pool_8h" startline="28">m_iAddEles</references>
+        <references refid="class_se_d_b_mem_pool_1ade2befe8b781f60179e51d7cfa0c1e8e" compoundref="_se_d_b_mem_pool_8h" startline="31">m_iAllocEles</references>
+        <references refid="class_se_d_b_mem_pool_1a16427e492165b979d42907f161efb102" compoundref="_se_d_b_mem_pool_8h" startline="32">m_iAllocMaxEles</references>
+        <references refid="class_se_d_b_mem_pool_1a49678c51f1da35113af393ae02b54161" compoundref="_se_d_b_mem_pool_8h" startline="27">m_iEleSize</references>
+        <references refid="class_se_d_b_mem_pool_1ae9d0861c35456b2cd647a04f789cf0e7" compoundref="_se_d_b_mem_pool_8h" startline="30">m_iTotalSize</references>
+        <references refid="class_se_d_b_mem_pool_1a2bb21c4b39f0482780923c23c009e4cc" compoundref="_se_d_b_mem_pool_8h" startline="34">m_pkFreeFirst</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_d_b_mem_pool_1ab147026578fc8b13a610eec7f1b9371e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeDBMemPool::~SeDBMemPool</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SeDBMemPool</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="10" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_d_b_mem_pool_1a2af55e3ea70d77c12568df4e0a4beaec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * SeDBMemPool::NewEle</definition>
+        <argsstring>(void)</argsstring>
+        <name>NewEle</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="12" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.cpp" bodystart="25" bodyend="47"/>
+        <references refid="class_se_d_b_mem_pool_1a1d60de52fe0b578746755b32f2a463e7" compoundref="_se_d_b_mem_pool_8cpp" startline="85" endline="110">ExtendPool</references>
+        <references refid="class_se_d_b_mem_pool_1af9b4f5572c425d8dedc35ed0c607ccf4" compoundref="_se_d_b_mem_pool_8h" startline="26">m_dwMagic</references>
+        <references refid="class_se_d_b_mem_pool_1ade2befe8b781f60179e51d7cfa0c1e8e" compoundref="_se_d_b_mem_pool_8h" startline="31">m_iAllocEles</references>
+        <references refid="class_se_d_b_mem_pool_1a16427e492165b979d42907f161efb102" compoundref="_se_d_b_mem_pool_8h" startline="32">m_iAllocMaxEles</references>
+        <references refid="class_se_d_b_mem_pool_1a49678c51f1da35113af393ae02b54161" compoundref="_se_d_b_mem_pool_8h" startline="27">m_iEleSize</references>
+        <references refid="class_se_d_b_mem_pool_1a2bb21c4b39f0482780923c23c009e4cc" compoundref="_se_d_b_mem_pool_8h" startline="34">m_pkFreeFirst</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_d_b_mem_pool_1a1658585c9dc1e5c8ad9347a2df7adf3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeDBMemPool::DelEle</definition>
+        <argsstring>(void *pkEle)</argsstring>
+        <name>DelEle</name>
+        <param>
+          <type>void *</type>
+          <declname>pkEle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="13" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.cpp" bodystart="49" bodyend="63"/>
+        <references refid="class_se_d_b_mem_pool_1ade2befe8b781f60179e51d7cfa0c1e8e" compoundref="_se_d_b_mem_pool_8h" startline="31">m_iAllocEles</references>
+        <references refid="class_se_d_b_mem_pool_1a49678c51f1da35113af393ae02b54161" compoundref="_se_d_b_mem_pool_8h" startline="27">m_iEleSize</references>
+        <references refid="class_se_d_b_mem_pool_1a2bb21c4b39f0482780923c23c009e4cc" compoundref="_se_d_b_mem_pool_8h" startline="34">m_pkFreeFirst</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_d_b_mem_pool_1ac22675982cc4dadb8c34135c8b647967" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeDBMemPool::IsValid</definition>
+        <argsstring>(void *pkEle)</argsstring>
+        <name>IsValid</name>
+        <param>
+          <type>void *</type>
+          <declname>pkEle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="14" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.cpp" bodystart="65" bodyend="83"/>
+        <references refid="class_se_d_b_mem_pool_1af9b4f5572c425d8dedc35ed0c607ccf4" compoundref="_se_d_b_mem_pool_8h" startline="26">m_dwMagic</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_d_b_mem_pool_1a5fa22275d2447942868129fc243e6416" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SeDBMemPool::GetAllocSize</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetAllocSize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="16" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.cpp" bodystart="142" bodyend="145"/>
+        <references refid="class_se_d_b_mem_pool_1ade2befe8b781f60179e51d7cfa0c1e8e" compoundref="_se_d_b_mem_pool_8h" startline="31">m_iAllocEles</references>
+        <references refid="class_se_d_b_mem_pool_1a49678c51f1da35113af393ae02b54161" compoundref="_se_d_b_mem_pool_8h" startline="27">m_iEleSize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_d_b_mem_pool_1abe66c5ee7de2a81180a9a93fb305b633" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SeDBMemPool::GetTotalSize</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetTotalSize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="17" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.cpp" bodystart="147" bodyend="150"/>
+        <references refid="class_se_d_b_mem_pool_1ae9d0861c35456b2cd647a04f789cf0e7" compoundref="_se_d_b_mem_pool_8h" startline="30">m_iTotalSize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_d_b_mem_pool_1a38249177d5c4b8cd4035991081b75dd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SeDBMemPool::GetAllocMaxEles</definition>
+        <argsstring>(void)</argsstring>
+        <name>GetAllocMaxEles</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="18" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.cpp" bodystart="152" bodyend="155"/>
+        <references refid="class_se_d_b_mem_pool_1a16427e492165b979d42907f161efb102" compoundref="_se_d_b_mem_pool_8h" startline="32">m_iAllocMaxEles</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_d_b_mem_pool_1a705340adb215547500cd1ab023e6f3c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * SeDBMemPool::RegisterEle</definition>
+        <argsstring>(void *pkEle)</argsstring>
+        <name>RegisterEle</name>
+        <param>
+          <type>void *</type>
+          <declname>pkEle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="19" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.cpp" bodystart="112" bodyend="135"/>
+        <references refid="class_se_d_b_mem_pool_1af9b4f5572c425d8dedc35ed0c607ccf4" compoundref="_se_d_b_mem_pool_8h" startline="26">m_dwMagic</references>
+        <references refid="class_se_d_b_mem_pool_1ade2befe8b781f60179e51d7cfa0c1e8e" compoundref="_se_d_b_mem_pool_8h" startline="31">m_iAllocEles</references>
+        <references refid="class_se_d_b_mem_pool_1a16427e492165b979d42907f161efb102" compoundref="_se_d_b_mem_pool_8h" startline="32">m_iAllocMaxEles</references>
+        <references refid="class_se_d_b_mem_pool_1a49678c51f1da35113af393ae02b54161" compoundref="_se_d_b_mem_pool_8h" startline="27">m_iEleSize</references>
+        <references refid="class_se_d_b_mem_pool_1ae9d0861c35456b2cd647a04f789cf0e7" compoundref="_se_d_b_mem_pool_8h" startline="30">m_iTotalSize</references>
+        <references refid="class_se_d_b_mem_pool_1a2bb21c4b39f0482780923c23c009e4cc" compoundref="_se_d_b_mem_pool_8h" startline="34">m_pkFreeFirst</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_d_b_mem_pool_1ac36a0d1a36d37234e09d3157d6331c8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DWord</type>
+        <definition>DWord SeDBMemPool::GetMagic</definition>
+        <argsstring>()</argsstring>
+        <name>GetMagic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="20" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.cpp" bodystart="137" bodyend="140"/>
+        <references refid="class_se_d_b_mem_pool_1af9b4f5572c425d8dedc35ed0c607ccf4" compoundref="_se_d_b_mem_pool_8h" startline="26">m_dwMagic</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_se_d_b_mem_pool_1a1d60de52fe0b578746755b32f2a463e7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeDBMemPool::ExtendPool</definition>
+        <argsstring>(void)</argsstring>
+        <name>ExtendPool</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="23" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.cpp" bodystart="85" bodyend="110"/>
+        <references refid="class_se_d_b_mem_mgr_1a97c0b15f07e369d3a8f14a43ac6e11f5" compoundref="_se_d_b_mem_mgr_8cpp" startline="138" endline="164">SeDBMemMgr::AllocEleMass</references>
+        <references refid="_se_d_b_mem_mgr_8cpp_1a1f0167d9c252aa8561bd3ef71aeaea80" compoundref="_se_d_b_mem_mgr_8cpp" startline="6">g_kDBMemMgr</references>
+        <references refid="class_se_d_b_mem_pool_1af9b4f5572c425d8dedc35ed0c607ccf4" compoundref="_se_d_b_mem_pool_8h" startline="26">m_dwMagic</references>
+        <references refid="class_se_d_b_mem_pool_1a43ccc0145005f65f24b78ba2da81d1d1" compoundref="_se_d_b_mem_pool_8h" startline="28">m_iAddEles</references>
+        <references refid="class_se_d_b_mem_pool_1a49678c51f1da35113af393ae02b54161" compoundref="_se_d_b_mem_pool_8h" startline="27">m_iEleSize</references>
+        <references refid="class_se_d_b_mem_pool_1ae9d0861c35456b2cd647a04f789cf0e7" compoundref="_se_d_b_mem_pool_8h" startline="30">m_iTotalSize</references>
+        <references refid="class_se_d_b_mem_pool_1a2bb21c4b39f0482780923c23c009e4cc" compoundref="_se_d_b_mem_pool_8h" startline="34">m_pkFreeFirst</references>
+        <referencedby refid="class_se_d_b_mem_pool_1a2af55e3ea70d77c12568df4e0a4beaec" compoundref="_se_d_b_mem_pool_8cpp" startline="25" endline="47">NewEle</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" line="6" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/ServerBase/SeDBMemPool.h" bodystart="5" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_se_d_b_mem_pool_1a1658585c9dc1e5c8ad9347a2df7adf3d" prot="public" virt="non-virtual"><scope>SeDBMemPool</scope><name>DelEle</name></member>
+      <member refid="class_se_d_b_mem_pool_1a1d60de52fe0b578746755b32f2a463e7" prot="protected" virt="non-virtual"><scope>SeDBMemPool</scope><name>ExtendPool</name></member>
+      <member refid="class_se_d_b_mem_pool_1a38249177d5c4b8cd4035991081b75dd8" prot="public" virt="non-virtual"><scope>SeDBMemPool</scope><name>GetAllocMaxEles</name></member>
+      <member refid="class_se_d_b_mem_pool_1a5fa22275d2447942868129fc243e6416" prot="public" virt="non-virtual"><scope>SeDBMemPool</scope><name>GetAllocSize</name></member>
+      <member refid="class_se_d_b_mem_pool_1ac36a0d1a36d37234e09d3157d6331c8e" prot="public" virt="non-virtual"><scope>SeDBMemPool</scope><name>GetMagic</name></member>
+      <member refid="class_se_d_b_mem_pool_1abe66c5ee7de2a81180a9a93fb305b633" prot="public" virt="non-virtual"><scope>SeDBMemPool</scope><name>GetTotalSize</name></member>
+      <member refid="class_se_d_b_mem_pool_1ac22675982cc4dadb8c34135c8b647967" prot="public" virt="non-virtual"><scope>SeDBMemPool</scope><name>IsValid</name></member>
+      <member refid="class_se_d_b_mem_pool_1af9b4f5572c425d8dedc35ed0c607ccf4" prot="protected" virt="non-virtual"><scope>SeDBMemPool</scope><name>m_dwMagic</name></member>
+      <member refid="class_se_d_b_mem_pool_1a43ccc0145005f65f24b78ba2da81d1d1" prot="protected" virt="non-virtual"><scope>SeDBMemPool</scope><name>m_iAddEles</name></member>
+      <member refid="class_se_d_b_mem_pool_1ade2befe8b781f60179e51d7cfa0c1e8e" prot="protected" virt="non-virtual"><scope>SeDBMemPool</scope><name>m_iAllocEles</name></member>
+      <member refid="class_se_d_b_mem_pool_1a16427e492165b979d42907f161efb102" prot="protected" virt="non-virtual"><scope>SeDBMemPool</scope><name>m_iAllocMaxEles</name></member>
+      <member refid="class_se_d_b_mem_pool_1a49678c51f1da35113af393ae02b54161" prot="protected" virt="non-virtual"><scope>SeDBMemPool</scope><name>m_iEleSize</name></member>
+      <member refid="class_se_d_b_mem_pool_1ae9d0861c35456b2cd647a04f789cf0e7" prot="protected" virt="non-virtual"><scope>SeDBMemPool</scope><name>m_iTotalSize</name></member>
+      <member refid="class_se_d_b_mem_pool_1a2bb21c4b39f0482780923c23c009e4cc" prot="protected" virt="non-virtual"><scope>SeDBMemPool</scope><name>m_pkFreeFirst</name></member>
+      <member refid="class_se_d_b_mem_pool_1a2af55e3ea70d77c12568df4e0a4beaec" prot="public" virt="non-virtual"><scope>SeDBMemPool</scope><name>NewEle</name></member>
+      <member refid="class_se_d_b_mem_pool_1a705340adb215547500cd1ab023e6f3c6" prot="public" virt="non-virtual"><scope>SeDBMemPool</scope><name>RegisterEle</name></member>
+      <member refid="class_se_d_b_mem_pool_1a2da2cc737cbc93c445db08dd43344907" prot="private" virt="non-virtual"><scope>SeDBMemPool</scope><name>SeCacheMgr</name></member>
+      <member refid="class_se_d_b_mem_pool_1af269ef94667a2fee0cb56ba45fc8f717" prot="public" virt="non-virtual"><scope>SeDBMemPool</scope><name>SeDBMemPool</name></member>
+      <member refid="class_se_d_b_mem_pool_1ab147026578fc8b13a610eec7f1b9371e" prot="public" virt="non-virtual"><scope>SeDBMemPool</scope><name>~SeDBMemPool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

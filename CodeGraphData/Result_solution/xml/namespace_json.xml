@@ -1,0 +1,1123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_json" kind="namespace">
+    <compoundname>Json</compoundname>
+    <innerclass refid="class_json_1_1_features" prot="public">Json::Features</innerclass>
+    <innerclass refid="class_json_1_1_reader" prot="public">Json::Reader</innerclass>
+    <innerclass refid="class_json_1_1_char_reader" prot="public">Json::CharReader</innerclass>
+    <innerclass refid="class_json_1_1_char_reader_builder" prot="public">Json::CharReaderBuilder</innerclass>
+    <innerclass refid="class_json_1_1_exception" prot="public">Json::Exception</innerclass>
+    <innerclass refid="class_json_1_1_runtime_error" prot="public">Json::RuntimeError</innerclass>
+    <innerclass refid="class_json_1_1_logic_error" prot="public">Json::LogicError</innerclass>
+    <innerclass refid="class_json_1_1_static_string" prot="public">Json::StaticString</innerclass>
+    <innerclass refid="class_json_1_1_value" prot="public">Json::Value</innerclass>
+    <innerclass refid="class_json_1_1_path_argument" prot="public">Json::PathArgument</innerclass>
+    <innerclass refid="class_json_1_1_path" prot="public">Json::Path</innerclass>
+    <innerclass refid="class_json_1_1_value_iterator_base" prot="public">Json::ValueIteratorBase</innerclass>
+    <innerclass refid="class_json_1_1_value_const_iterator" prot="public">Json::ValueConstIterator</innerclass>
+    <innerclass refid="class_json_1_1_value_iterator" prot="public">Json::ValueIterator</innerclass>
+    <innerclass refid="class_json_1_1_stream_writer" prot="public">Json::StreamWriter</innerclass>
+    <innerclass refid="class_json_1_1_stream_writer_builder" prot="public">Json::StreamWriterBuilder</innerclass>
+    <innerclass refid="class_json_1_1_writer" prot="public">Json::Writer</innerclass>
+    <innerclass refid="class_json_1_1_fast_writer" prot="public">Json::FastWriter</innerclass>
+    <innerclass refid="class_json_1_1_styled_writer" prot="public">Json::StyledWriter</innerclass>
+    <innerclass refid="class_json_1_1_styled_stream_writer" prot="public">Json::StyledStreamWriter</innerclass>
+    <innerclass refid="class_json_1_1_our_features" prot="public">Json::OurFeatures</innerclass>
+    <innerclass refid="class_json_1_1_our_reader" prot="public">Json::OurReader</innerclass>
+    <innerclass refid="class_json_1_1_our_char_reader" prot="public">Json::OurCharReader</innerclass>
+    <innerclass refid="struct_json_1_1_comment_style" prot="public">Json::CommentStyle</innerclass>
+    <innerclass refid="struct_json_1_1_built_styled_stream_writer" prot="public">Json::BuiltStyledStreamWriter</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_json_1a7d654b75c16a57007925868e38212b4e" prot="public" static="no">
+        <name>ValueType</name>
+        <enumvalue id="namespace_json_1a7d654b75c16a57007925868e38212b4ea7d9899633b4409bd3fc107e6737f8391" prot="public">
+          <name>nullValue</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>&apos;null&apos; value </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a7d654b75c16a57007925868e38212b4eae5a9d708d5c9e23ae9bf98898522512d" prot="public">
+          <name>intValue</name>
+          <briefdescription>
+<para>signed integer value </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a7d654b75c16a57007925868e38212b4eaea788d9a3bb00adc6d68d97d43e1ccd3" prot="public">
+          <name>uintValue</name>
+          <briefdescription>
+<para>unsigned integer value </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a7d654b75c16a57007925868e38212b4eab837c7b869c14d8be712deb45c9e490e" prot="public">
+          <name>realValue</name>
+          <briefdescription>
+<para>double value </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a7d654b75c16a57007925868e38212b4ea804ef857affea2d415843c73f261c258" prot="public">
+          <name>stringValue</name>
+          <briefdescription>
+<para>UTF-8 string value. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a7d654b75c16a57007925868e38212b4ea14c30dbf4da86f7b809be299f671f7fd" prot="public">
+          <name>booleanValue</name>
+          <briefdescription>
+<para>bool value </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a7d654b75c16a57007925868e38212b4eadc8f264f36b55b063c78126b335415f4" prot="public">
+          <name>arrayValue</name>
+          <briefdescription>
+<para>array value (ordered list) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a7d654b75c16a57007925868e38212b4eae8386dcfc36d1ae897745f7b4f77a1f6" prot="public">
+          <name>objectValue</name>
+          <briefdescription>
+<para>object value (collection of name/value pairs). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Type of the value held by a <ref refid="class_json_1_1_value" kindref="compound">Value</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/value.h" line="78" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/value.h" bodystart="78" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351" prot="public" static="no">
+        <name>CommentPlacement</name>
+        <enumvalue id="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351a52f1733775460517b2ea6bedf4906d52" prot="public">
+          <name>commentBefore</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>a comment placed on the line before a value </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351a008a230a0586de54f30b76afe70fdcfa" prot="public">
+          <name>commentAfterOnSameLine</name>
+          <briefdescription>
+<para>a comment just after a value on the same line </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351ac5784ca53b12250888ddb642b06aebef" prot="public">
+          <name>commentAfter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>a comment on the line after a value (only make sense for </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_json_1a4fc417c23905b2ae9e2c47d197a45351abcbd3eb00417335e094e4a03379659b5" prot="public">
+          <name>numberOfCommentPlacement</name>
+          <briefdescription>
+<para>root value) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/value.h" line="89" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/value.h" bodystart="89" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_json_1aaadda4b3969b65336128f046fccf90a7" prot="public" static="no">
+        <name>@4</name>
+        <enumvalue id="namespace_json_1aaadda4b3969b65336128f046fccf90a7ae4f2008c7919f20d81286121d1374424" prot="public">
+          <name>uintToStringBufferSize</name>
+          <initializer>= 3 * sizeof(LargestUInt) + 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Constant that specify the size of the buffer that must be passed to uintToString. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_tool.h" line="49" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_tool.h" bodystart="49" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespace_json_1a08122e8005b706d982e48cca1e2119c7" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int Json::Int</definition>
+        <argsstring></argsstring>
+        <name>Int</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/config.h" line="117" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/config.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1a800fb90eb6ee8d5d62b600c06f87f7d4" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int Json::UInt</definition>
+        <argsstring></argsstring>
+        <name>UInt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/config.h" line="118" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/config.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1ab7b47d2905da3b4ae60e4e800ec9ae5f" prot="public" static="no">
+        <type>long long int</type>
+        <definition>typedef long long int Json::Int64</definition>
+        <argsstring></argsstring>
+        <name>Int64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/config.h" line="129" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/config.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1a01f20bce8f8229f38ff890168c0e6452" prot="public" static="no">
+        <type>unsigned long long int</type>
+        <definition>typedef unsigned long long int Json::UInt64</definition>
+        <argsstring></argsstring>
+        <name>UInt64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/config.h" line="130" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/config.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1a218d880af853ce786cd985e82571d297" prot="public" static="no">
+        <type><ref refid="namespace_json_1ab7b47d2905da3b4ae60e4e800ec9ae5f" kindref="member">Int64</ref></type>
+        <definition>typedef Int64 Json::LargestInt</definition>
+        <argsstring></argsstring>
+        <name>LargestInt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/config.h" line="132" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/config.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1ae202ecad69725e23443f465e257456d0" prot="public" static="no">
+        <type><ref refid="namespace_json_1a01f20bce8f8229f38ff890168c0e6452" kindref="member">UInt64</ref></type>
+        <definition>typedef UInt64 Json::LargestUInt</definition>
+        <argsstring></argsstring>
+        <name>LargestUInt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/config.h" line="133" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/config.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1a8048e741f2177c3b5d9ede4a5b8c53c2" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int Json::ArrayIndex</definition>
+        <argsstring></argsstring>
+        <name>ArrayIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/forwards.h" line="26" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/forwards.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1a1cbf3f35ce42089f98d771cc49ff4185" prot="public" static="no">
+        <type>std::unique_ptr&lt; <ref refid="class_json_1_1_char_reader" kindref="compound">CharReader</ref> &gt;</type>
+        <definition>typedef std::unique_ptr&lt;CharReader&gt; Json::CharReaderPtr</definition>
+        <argsstring></argsstring>
+        <name>CharReaderPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" line="51" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1a602bcf69c2042fb61c3b243cb16f04ca" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char Json::UIntToStringBuffer[uintToStringBufferSize]</definition>
+        <argsstring>[uintToStringBufferSize]</argsstring>
+        <name>UIntToStringBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_tool.h" line="56" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_tool.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespace_json_1a9554bc17cfe4b8019685fad2fd5d364a" prot="public" static="no">
+        <type>std::unique_ptr&lt; <ref refid="class_json_1_1_stream_writer" kindref="compound">StreamWriter</ref> &gt;</type>
+        <definition>typedef std::unique_ptr&lt;StreamWriter&gt; Json::StreamWriterPtr</definition>
+        <argsstring></argsstring>
+        <name>StreamWriterPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" line="77" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_json_1ab30055b4bbd82aecaca57ccecd63bbe6" prot="public" static="no" mutable="no">
+        <type>const unsigned char &amp;</type>
+        <definition>const unsigned char&amp; Json::kNullRef</definition>
+        <argsstring></argsstring>
+        <name>kNullRef</name>
+        <initializer>= kNull[0]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" line="35" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_json_1aecc0306aa526f25c5156f842182fb7fb" prot="public" static="yes" mutable="no">
+        <type>const double</type>
+        <definition>const double Json::maxUInt64AsDouble</definition>
+        <argsstring></argsstring>
+        <name>maxUInt64AsDouble</name>
+        <initializer>= 18446744073709551615.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" line="49" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_json_1_1_value_1aa35efece2a6cba4d988d7d5b54db2fb8" compoundref="json__value_8cpp" startline="1269" endline="1287">Json::Value::isUInt64</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_json_1acfebeaf759a841173ddce34c4da22486" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool <ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref></type>
+        <definition>bool Json::parseFromStream</definition>
+        <argsstring>(CharReader::Factory const &amp;, std::istream &amp;, Value *root, std::string *errs)</argsstring>
+        <name>parseFromStream</name>
+        <param>
+          <type><ref refid="class_json_1_1_char_reader_1_1_factory" kindref="compound">CharReader::Factory</ref> const &amp;</type>
+          <defname>fact</defname>
+        </param>
+        <param>
+          <type>std::istream &amp;</type>
+          <defname>sin</defname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> *</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>errs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Consume entire stream and use its begin/end. Someday we might have a real StreamReader, but for now this is convenient. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="367" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="2004" bodyend="2016"/>
+        <references refid="class_json_1_1_char_reader_1_1_factory_1a4c5862a1ffd432372dbe65cf59de98c4">Json::CharReader::Factory::newCharReader</references>
+        <referencedby refid="namespace_json_1a4d245ef719cc0853e8e78eb5f99c16e5" compoundref="json__reader_8cpp" startline="2018" endline="2030">operator&gt;&gt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a4d245ef719cc0853e8e78eb5f99c16e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref> std::istream &amp;</type>
+        <definition>std::istream &amp; Json::operator&gt;&gt;</definition>
+        <argsstring>(std::istream &amp;, Value &amp;)</argsstring>
+        <name>operator&gt;&gt;</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <defname>sin</defname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <defname>root</defname>
+        </param>
+        <briefdescription>
+<para>Read from &apos;sin&apos; into &apos;root&apos;. </para>        </briefdescription>
+        <detaileddescription>
+<para>Always keep comments from the input JSON.</para><para>This can be used to read a file into a particular sub-object. For example: <programlisting><codeline><highlight class="normal"><ref refid="class_json_1_1_value" kindref="compound">Json::Value</ref><sp/>root;</highlight></codeline>
+<codeline><highlight class="normal">cin<sp/>&gt;&gt;<sp/>root[</highlight><highlight class="stringliteral">&quot;dir&quot;</highlight><highlight class="normal">][</highlight><highlight class="stringliteral">&quot;file&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline><highlight class="normal">cout<sp/>&lt;&lt;<sp/>root;</highlight></codeline>
+</programlisting> Result: <verbatim>{
+&quot;dir&quot;: {
+    &quot;file&quot;: {
+    // The input stream JSON would be nested here.
+    }
+}
+}
+</verbatim> <parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>on parse error. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_json_1a87bc83d7e90fc666d28aa16727deda2f" kindref="member">Json::operator&lt;&lt;()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/reader.h" line="396" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="2018" bodyend="2030"/>
+        <references refid="namespace_json_1acfebeaf759a841173ddce34c4da22486" compoundref="json__reader_8cpp" startline="2004" endline="2016">parseFromStream</references>
+        <references refid="namespace_json_1a97f039a107b3f6cf1c3edee50e978f76" compoundref="json__value_8cpp" startline="170" endline="173">throwRuntimeError</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a97f039a107b3f6cf1c3edee50e978f76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::throwRuntimeError</definition>
+        <argsstring>(std::string const &amp;msg)</argsstring>
+        <name>throwRuntimeError</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>used internally </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/value.h" line="72" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" bodystart="170" bodyend="173"/>
+        <referencedby refid="namespace_json_1a9795a09a0141d1f12d307c4386aeaee6" compoundref="json__value_8cpp" startline="102" endline="122">duplicateAndPrefixStringValue</referencedby>
+        <referencedby refid="namespace_json_1a678ac3a60cd70ec0fb4c9abfd40eb0c4" compoundref="json__value_8cpp" startline="82" endline="98">duplicateStringValue</referencedby>
+        <referencedby refid="class_json_1_1_stream_writer_builder_1a042d21b84d8c5bede52a764e2ada7d65" compoundref="json__writer_8cpp" startline="1124" endline="1155">Json::StreamWriterBuilder::newStreamWriter</referencedby>
+        <referencedby refid="namespace_json_1a4d245ef719cc0853e8e78eb5f99c16e5" compoundref="json__reader_8cpp" startline="2018" endline="2030">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1aea198f8101dba55099f4d8121a993530" compoundref="json__reader_8cpp" startline="1435" endline="1495">Json::OurReader::readObject</referencedby>
+        <referencedby refid="class_json_1_1_reader_1a47e56844b803d41ec993a83fadf4495c" compoundref="json__reader_8cpp" startline="160" endline="242">Json::Reader::readValue</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1a1765d9670d191c89a57a22ea5591d35f" compoundref="json__reader_8cpp" startline="1090" endline="1191">Json::OurReader::readValue</referencedby>
+        <referencedby refid="class_json_1_1_value_iterator_1aa85aa208670891670392259efa0143bb" compoundref="json__valueiterator_8inl" startline="154" endline="157">Json::ValueIterator::ValueIterator</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a27613326e9e36bbfe04a905ac90caa91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Json::throwLogicError</definition>
+        <argsstring>(std::string const &amp;msg)</argsstring>
+        <name>throwLogicError</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>used internally </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/value.h" line="74" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" bodystart="174" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1afd767fe4c7e962d0ff3d1a6d1622619f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string <ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref></type>
+        <definition>std::string Json::writeString</definition>
+        <argsstring>(StreamWriter::Factory const &amp;factory, Value const &amp;root)</argsstring>
+        <name>writeString</name>
+        <param>
+          <type><ref refid="class_json_1_1_stream_writer_1_1_factory" kindref="compound">StreamWriter::Factory</ref> const &amp;</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_value" kindref="compound">Value</ref> const &amp;</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+<para>Write into stringstream, then return string, for convenience. A <ref refid="class_json_1_1_stream_writer" kindref="compound">StreamWriter</ref> will be created from the factory, used, and then deleted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="69" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="1200" bodyend="1205"/>
+        <references refid="class_json_1_1_stream_writer_1_1_factory_1a9d30ec53e8288cd53befccf1009c5f31">Json::StreamWriter::Factory::newStreamWriter</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a5d3eba6789f9a9c1ab563ff8b4a5090f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string <ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref></type>
+        <definition>std::string Json::valueToString</definition>
+        <argsstring>(Int value)</argsstring>
+        <name>valueToString</name>
+        <param>
+          <type><ref refid="namespace_json_1a08122e8005b706d982e48cca1e2119c7" kindref="member">Int</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="312" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="126" bodyend="128"/>
+        <referencedby refid="class_json_1_1_value_1a03ee3d5df576640c93ba683f140828bd" compoundref="json__value_8cpp" startline="614" endline="637">Json::Value::asString</referencedby>
+        <referencedby refid="namespace_json_1a4d43b0ff222bd3975bcf1babca0b978f" compoundref="json__writer_8cpp" startline="130" endline="132">valueToString</referencedby>
+        <referencedby refid="class_json_1_1_fast_writer_1a2ef4a2ce13a341171f01f414f4fdd765" compoundref="json__writer_8cpp" startline="335" endline="387">Json::FastWriter::writeValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_writer_1ac40143cf43f7c4a94d3d0b41e5245069" compoundref="json__writer_8cpp" startline="406" endline="463">Json::StyledWriter::writeValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="623" endline="680">Json::StyledStreamWriter::writeValue</referencedby>
+        <referencedby refid="struct_json_1_1_built_styled_stream_writer_1a7c9da861861e570a51b45f270c9ff150" compoundref="json__writer_8cpp" startline="904" endline="961">Json::BuiltStyledStreamWriter::writeValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a4d43b0ff222bd3975bcf1babca0b978f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string <ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref></type>
+        <definition>std::string Json::valueToString</definition>
+        <argsstring>(UInt value)</argsstring>
+        <name>valueToString</name>
+        <param>
+          <type><ref refid="namespace_json_1a800fb90eb6ee8d5d62b600c06f87f7d4" kindref="member">UInt</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="313" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="130" bodyend="132"/>
+        <references refid="namespace_json_1a5d3eba6789f9a9c1ab563ff8b4a5090f" compoundref="json__writer_8cpp" startline="126" endline="128">valueToString</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1abd9c650f70d9434f98f9025e2e2faf2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string <ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref></type>
+        <definition>std::string Json::valueToString</definition>
+        <argsstring>(LargestInt value)</argsstring>
+        <name>valueToString</name>
+        <param>
+          <type><ref refid="namespace_json_1a218d880af853ce786cd985e82571d297" kindref="member">LargestInt</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="315" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="100" bodyend="114"/>
+        <references refid="class_json_1_1_value_1a8b4977696f13296fa8755c7953fafb2f" compoundref="value_8h" startline="183">Json::Value::maxLargestInt</references>
+        <references refid="class_json_1_1_value_1af91df130daa50dd43d2cd89e6ee67706" compoundref="value_8h" startline="181">Json::Value::minLargestInt</references>
+        <references refid="namespace_json_1ac1ffd21a9e55122014353c773ccc496e" compoundref="json__tool_8h" startline="63" endline="69">uintToString</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a3f46b0bc62b95a9426a2da0117bdf9f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string <ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref></type>
+        <definition>std::string Json::valueToString</definition>
+        <argsstring>(LargestUInt value)</argsstring>
+        <name>valueToString</name>
+        <param>
+          <type><ref refid="namespace_json_1ae202ecad69725e23443f465e257456d0" kindref="member">LargestUInt</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="316" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="116" bodyend="122"/>
+        <references refid="namespace_json_1ac1ffd21a9e55122014353c773ccc496e" compoundref="json__tool_8h" startline="63" endline="69">uintToString</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a99995d7dafa4f4970b349d7d3c8d1d99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string <ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref></type>
+        <definition>std::string Json::valueToString</definition>
+        <argsstring>(double value)</argsstring>
+        <name>valueToString</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="317" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="166" bodyend="166"/>
+        <references refid="namespace_json_1a5d3eba6789f9a9c1ab563ff8b4a5090f" compoundref="json__writer_8cpp" startline="126" endline="128">valueToString</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a979ed531f091985e22f0051cd2a8e341" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string <ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref></type>
+        <definition>std::string Json::valueToString</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>valueToString</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="318" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="168" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1aa0c8235a4a5c6599da5d3332743db8ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string <ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref></type>
+        <definition>std::string Json::valueToQuotedString</definition>
+        <argsstring>(const char *value)</argsstring>
+        <name>valueToQuotedString</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="319" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="170" bodyend="230"/>
+        <references refid="namespace_json_1aa11b210ff98a4f4dd4e2df19260f8c3a" compoundref="json__writer_8cpp" startline="82" endline="88">containsControlCharacter</references>
+        <references refid="namespace_json_1a0381e631737f51331065a388f4f59197" compoundref="json__tool_8h" startline="47" endline="47">isControlCharacter</references>
+        <referencedby refid="class_json_1_1_styled_writer_1ac40143cf43f7c4a94d3d0b41e5245069" compoundref="json__writer_8cpp" startline="406" endline="463">Json::StyledWriter::writeValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="623" endline="680">Json::StyledStreamWriter::writeValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a87bc83d7e90fc666d28aa16727deda2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="config_8h_1a1d61ffde86ce1a18fd83194ff0d9a206" kindref="member">JSON_API</ref> std::ostream &amp;</type>
+        <definition>std::ostream &amp; Json::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const Value &amp;root)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <defname>sout</defname>
+        </param>
+        <param>
+          <type>const <ref refid="class_json_1_1_value" kindref="compound">Value</ref> &amp;</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+<para>Output using the <ref refid="class_json_1_1_styled_stream_writer" kindref="compound">StyledStreamWriter</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespace_json_1a4d245ef719cc0853e8e78eb5f99c16e5" kindref="member">Json::operator&gt;&gt;()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/writer.h" line="323" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="1207" bodyend="1212"/>
+        <references refid="class_json_1_1_stream_writer_builder_1a042d21b84d8c5bede52a764e2ada7d65" compoundref="json__writer_8cpp" startline="1124" endline="1155">Json::StreamWriterBuilder::newStreamWriter</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a4d6ab0f651348832e5cc49b577a854d2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Json::containsNewLine</definition>
+        <argsstring>(Reader::Location begin, Reader::Location end)</argsstring>
+        <name>containsNewLine</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Reader::Location</ref></type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Reader::Location</ref></type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" line="77" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="77" bodyend="82"/>
+        <referencedby refid="class_json_1_1_reader_1ad2690e860a1b3332c5401fb0850ba065" compoundref="json__reader_8cpp" startline="346" endline="367">Json::Reader::readComment</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1a90f6bb9e55b2bc3d6c1880809495c222" compoundref="json__reader_8cpp" startline="1324" endline="1345">Json::OurReader::readComment</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a2e6b8616041876128cbef54b8c75da62" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Json::normalizeEOL</definition>
+        <argsstring>(Reader::Location begin, Reader::Location end)</argsstring>
+        <name>normalizeEOL</name>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Reader::Location</ref></type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type><ref refid="class_json_1_1_reader_1a46795b5b272bf79a7730e406cb96375a" kindref="member">Reader::Location</ref></type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" line="369" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="369" bodyend="386"/>
+        <referencedby refid="class_json_1_1_reader_1aaea3bd62d12ffb6117a61476c0685049" compoundref="json__reader_8cpp" startline="389" endline="398">Json::Reader::addComment</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1ad7318c37469a9106069a236fb4b10e1f" compoundref="json__reader_8cpp" startline="1348" endline="1357">Json::OurReader::addComment</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a8fedd83f49c9a9109d503b2b1d4824aa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Json::getValidReaderKeys</definition>
+        <argsstring>(std::set&lt; std::string &gt; *valid_keys)</argsstring>
+        <name>getValidReaderKeys</name>
+        <param>
+          <type>std::set&lt; std::string &gt; *</type>
+          <declname>valid_keys</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" line="1934" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_reader.cpp" bodystart="1934" bodyend="1947"/>
+        <referencedby refid="class_json_1_1_char_reader_builder_1a3d233735a1e4b3c9a2cb9c68f972c02a" compoundref="json__reader_8cpp" startline="1948" endline="1964">Json::CharReaderBuilder::validate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1adf0456e397a18cd7218a7b51dfc13c73" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Json::codePointToUTF8</definition>
+        <argsstring>(unsigned int cp)</argsstring>
+        <name>codePointToUTF8</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>cp</declname>
+        </param>
+        <briefdescription>
+<para>Converts a unicode code-point to UTF-8. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_tool.h" line="18" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_tool.h" bodystart="18" bodyend="44"/>
+        <referencedby refid="class_json_1_1_reader_1a801253570f16e91519652078fb12b8e6" compoundref="json__reader_8cpp" startline="638" endline="689">Json::Reader::decodeString</referencedby>
+        <referencedby refid="class_json_1_1_our_reader_1a44b589a85f02f0e2de1b4ad6916be0c5" compoundref="json__reader_8cpp" startline="1642" endline="1693">Json::OurReader::decodeString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a0381e631737f51331065a388f4f59197" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Json::isControlCharacter</definition>
+        <argsstring>(char ch)</argsstring>
+        <name>isControlCharacter</name>
+        <param>
+          <type>char</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+<para>Returns true if ch is a control character (in range [1,31]). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_tool.h" line="47" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_tool.h" bodystart="47" bodyend="47"/>
+        <referencedby refid="namespace_json_1aa11b210ff98a4f4dd4e2df19260f8c3a" compoundref="json__writer_8cpp" startline="82" endline="88">containsControlCharacter</referencedby>
+        <referencedby refid="namespace_json_1ae8a357381f264cf28f46449e79ab1dea" compoundref="json__writer_8cpp" startline="90" endline="98">containsControlCharacter0</referencedby>
+        <referencedby refid="namespace_json_1aa0c8235a4a5c6599da5d3332743db8ac" compoundref="json__writer_8cpp" startline="170" endline="230">valueToQuotedString</referencedby>
+        <referencedby refid="namespace_json_1a20d52b5a457ee5d833645d119451c2cd" compoundref="json__writer_8cpp" startline="247" endline="308">valueToQuotedStringN</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1ac1ffd21a9e55122014353c773ccc496e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Json::uintToString</definition>
+        <argsstring>(LargestUInt value, char *&amp;current)</argsstring>
+        <name>uintToString</name>
+        <param>
+          <type><ref refid="namespace_json_1ae202ecad69725e23443f465e257456d0" kindref="member">LargestUInt</ref></type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>char *&amp;</type>
+          <declname>current</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Converts an unsigned integer to string. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unsigned interger to convert to string </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>current</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input/Output string buffer. Must have at least uintToStringBufferSize chars free. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_tool.h" line="63" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_tool.h" bodystart="63" bodyend="69"/>
+        <referencedby refid="namespace_json_1abd9c650f70d9434f98f9025e2e2faf2d" compoundref="json__writer_8cpp" startline="100" endline="114">valueToString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1aa208904144dc7b11ccc28f47c9afab9a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Json::fixNumericLocale</definition>
+        <argsstring>(char *begin, char *end)</argsstring>
+        <name>fixNumericLocale</name>
+        <param>
+          <type>char *</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Change &apos;,&apos; to &apos;.&apos; everywhere in buffer.</para><para>We had a sophisticated way, but it did not work in WinCE. <simplesect kind="see"><para><ulink url="https://github.com/open-source-parsers/jsoncpp/pull/9">https://github.com/open-source-parsers/jsoncpp/pull/9</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_tool.h" line="76" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_tool.h" bodystart="76" bodyend="83"/>
+        <referencedby refid="namespace_json_1a1c49ced79060a67638d7fa78a63b1813" compoundref="json__writer_8cpp" startline="136" endline="164">valueToString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1ad0638ab262fec34f995ca3d8a22c9cc4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const unsigned char</type>
+        <definition>static const unsigned char Json::ALIGNAS</definition>
+        <argsstring>(8) kNull[sizeof(Value)]</argsstring>
+        <name>ALIGNAS</name>
+        <param>
+          <type>8</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1aff0180507262a244de61b961178d7443" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>static bool Json::InRange</definition>
+        <argsstring>(double d, T min, U max)</argsstring>
+        <name>InRange</name>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>U</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" line="57" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" bodystart="57" bodyend="59"/>
+        <referencedby refid="class_json_1_1_value_1ac786e35b860b1d700cb3d3e56dd6a235" compoundref="json__value_8cpp" startline="649" endline="669">Json::Value::asInt</referencedby>
+        <referencedby refid="class_json_1_1_value_1a7f739b55aef060f4ab6360bfe1912b77" compoundref="json__value_8cpp" startline="695" endline="714">Json::Value::asInt64</referencedby>
+        <referencedby refid="class_json_1_1_value_1a2019d1bd296b89356c1b0da5970c918c" compoundref="json__value_8cpp" startline="671" endline="691">Json::Value::asUInt</referencedby>
+        <referencedby refid="class_json_1_1_value_1a65acdab039f60ff0da15e622f2e17739" compoundref="json__value_8cpp" startline="716" endline="735">Json::Value::asUInt64</referencedby>
+        <referencedby refid="class_json_1_1_value_1a7ec153803631a27abf58cba2bb1af70c" compoundref="json__value_8cpp" startline="817" endline="848">Json::Value::isConvertibleTo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a678ac3a60cd70ec0fb4c9abfd40eb0c4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* Json::duplicateStringValue</definition>
+        <argsstring>(const char *value, size_t length)</argsstring>
+        <name>duplicateStringValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Duplicates the specified string value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the string to duplicate. Must be zero-terminated if length is &quot;unknown&quot;. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the value. if equals to unknown, then it will be computed using strlen(value). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer on the duplicate instance of string. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" line="82" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" bodystart="82" bodyend="98"/>
+        <references refid="class_json_1_1_value_1a978c799a8af3114ef7dab6fd0a310a1b" compoundref="value_8h" startline="190">Json::Value::maxInt</references>
+        <references refid="namespace_json_1a97f039a107b3f6cf1c3edee50e978f76" compoundref="json__value_8cpp" startline="170" endline="173">throwRuntimeError</references>
+        <referencedby refid="struct_json_1_1_value_1_1_comment_info_1a4d01c2cd8c07995969c5d636dfd4fa8c" compoundref="json__value_8cpp" startline="194" endline="205">Json::Value::CommentInfo::setComment</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a9795a09a0141d1f12d307c4386aeaee6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* Json::duplicateAndPrefixStringValue</definition>
+        <argsstring>(const char *value, unsigned int length)</argsstring>
+        <name>duplicateAndPrefixStringValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" line="102" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" bodystart="102" bodyend="122"/>
+        <references refid="assertions_8h_1ad7facdeeca0f495765e3b204c265eadb" compoundref="assertions_8h" startline="49">JSON_ASSERT_MESSAGE</references>
+        <references refid="class_json_1_1_value_1a978c799a8af3114ef7dab6fd0a310a1b" compoundref="value_8h" startline="190">Json::Value::maxInt</references>
+        <references refid="namespace_json_1a97f039a107b3f6cf1c3edee50e978f76" compoundref="json__value_8cpp" startline="170" endline="173">throwRuntimeError</references>
+        <referencedby refid="class_json_1_1_value_1ad87b849356816aca75995dd07302e49d" compoundref="json__value_8cpp" startline="355" endline="358">Json::Value::Value</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1aad8b4982c1acd164f541fba396ac9fb1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Json::decodePrefixedString</definition>
+        <argsstring>(bool isPrefixed, char const *prefixed, unsigned *length, char const **value)</argsstring>
+        <name>decodePrefixedString</name>
+        <param>
+          <type>bool</type>
+          <declname>isPrefixed</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>prefixed</declname>
+        </param>
+        <param>
+          <type>unsigned *</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>char const **</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" line="123" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" bodystart="123" bodyend="134"/>
+        <referencedby refid="class_json_1_1_value_1a5b7da48b163bcec63b1424f1608b7da6" compoundref="json__value_8cpp" startline="595" endline="603">Json::Value::asCString</referencedby>
+        <referencedby refid="class_json_1_1_value_1a03ee3d5df576640c93ba683f140828bd" compoundref="json__value_8cpp" startline="614" endline="637">Json::Value::asString</referencedby>
+        <referencedby refid="class_json_1_1_value_1a1e0263113ae247a632afac43ebc4149f" compoundref="json__value_8cpp" startline="605" endline="612">Json::Value::getString</referencedby>
+        <referencedby refid="class_json_1_1_value_1af0ad8aa027575c3277296458f3fb7b0a" compoundref="json__value_8cpp" startline="497" endline="541">Json::Value::operator&lt;</referencedby>
+        <referencedby refid="class_json_1_1_value_1a14363dda23a6ae2def9afd1590ae85d3" compoundref="json__value_8cpp" startline="549" endline="591">Json::Value::operator==</referencedby>
+        <referencedby refid="class_json_1_1_value_1a436dfd3670f95fd665f680eba5cebcf0" compoundref="json__value_8cpp" startline="389" endline="431">Json::Value::Value</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1acf8dd162c01e37846e129556c50e4037" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Json::releaseStringValue</definition>
+        <argsstring>(char *value)</argsstring>
+        <name>releaseStringValue</name>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free the string duplicated by <ref refid="namespace_json_1a678ac3a60cd70ec0fb4c9abfd40eb0c4" kindref="member">duplicateStringValue()</ref>/duplicateAndPrefixStringValue(). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" line="137" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" bodystart="137" bodyend="137"/>
+        <referencedby refid="struct_json_1_1_value_1_1_comment_info_1a4d01c2cd8c07995969c5d636dfd4fa8c" compoundref="json__value_8cpp" startline="194" endline="205">Json::Value::CommentInfo::setComment</referencedby>
+        <referencedby refid="struct_json_1_1_value_1_1_comment_info_1ab4d0877190bdbf484e4e2a3bade42ac8" compoundref="json__value_8cpp" startline="189" endline="192">Json::Value::CommentInfo::~CommentInfo</referencedby>
+        <referencedby refid="class_json_1_1_value_1_1_c_z_string_1add6989dc7073646b95e5ebacb3f07d51" compoundref="json__value_8cpp" startline="245" endline="248">Json::Value::CZString::~CZString</referencedby>
+        <referencedby refid="class_json_1_1_value_1a287dea48da3912d02756735bf677b27b" compoundref="json__value_8cpp" startline="441" endline="463">Json::Value::~Value</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a1a04cc9d31e64b5912dade003c9b99b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Json::IsIntegral</definition>
+        <argsstring>(double d)</argsstring>
+        <name>IsIntegral</name>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" line="1210" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_value.cpp" bodystart="1210" bodyend="1213"/>
+        <referencedby refid="class_json_1_1_value_1ab0df4746d6787d2ce1db1a156c118f14" compoundref="json__value_8cpp" startline="1219" endline="1232">Json::Value::isInt</referencedby>
+        <referencedby refid="class_json_1_1_value_1aba89690e5fd72d0f7121a30013470423" compoundref="json__value_8cpp" startline="1249" endline="1267">Json::Value::isInt64</referencedby>
+        <referencedby refid="class_json_1_1_value_1ae814ca1796fe2d43ac09898b70213989" compoundref="json__value_8cpp" startline="1234" endline="1247">Json::Value::isUInt</referencedby>
+        <referencedby refid="class_json_1_1_value_1aa35efece2a6cba4d988d7d5b54db2fb8" compoundref="json__value_8cpp" startline="1269" endline="1287">Json::Value::isUInt64</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1aa11b210ff98a4f4dd4e2df19260f8c3a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Json::containsControlCharacter</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>containsControlCharacter</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" line="82" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="82" bodyend="88"/>
+        <references refid="namespace_json_1a0381e631737f51331065a388f4f59197" compoundref="json__tool_8h" startline="47" endline="47">isControlCharacter</references>
+        <referencedby refid="namespace_json_1aa0c8235a4a5c6599da5d3332743db8ac" compoundref="json__writer_8cpp" startline="170" endline="230">valueToQuotedString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1ae8a357381f264cf28f46449e79ab1dea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Json::containsControlCharacter0</definition>
+        <argsstring>(const char *str, unsigned len)</argsstring>
+        <name>containsControlCharacter0</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" line="90" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="90" bodyend="98"/>
+        <references refid="namespace_json_1a0381e631737f51331065a388f4f59197" compoundref="json__tool_8h" startline="47" endline="47">isControlCharacter</references>
+        <referencedby refid="namespace_json_1a20d52b5a457ee5d833645d119451c2cd" compoundref="json__writer_8cpp" startline="247" endline="308">valueToQuotedStringN</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a1c49ced79060a67638d7fa78a63b1813" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Json::valueToString</definition>
+        <argsstring>(double value, bool useSpecialFloats, unsigned int precision)</argsstring>
+        <name>valueToString</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useSpecialFloats</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>precision</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" line="136" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="136" bodyend="164"/>
+        <references refid="namespace_json_1aa208904144dc7b11ccc28f47c9afab9a" compoundref="json__tool_8h" startline="76" endline="83">fixNumericLocale</references>
+        <references refid="json__writer_8cpp_1aab49fbe39624f083e45ef2d85e7e0705" compoundref="json__writer_8cpp" startline="45">isfinite</references>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a7492156d0c7d2dd2f672acacfb240320" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char const *</type>
+        <definition>static char const* Json::strnpbrk</definition>
+        <argsstring>(char const *s, char const *accept, size_t n)</argsstring>
+        <name>strnpbrk</name>
+        <param>
+          <type>char const *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>accept</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" line="233" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="233" bodyend="246"/>
+        <referencedby refid="namespace_json_1a20d52b5a457ee5d833645d119451c2cd" compoundref="json__writer_8cpp" startline="247" endline="308">valueToQuotedStringN</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a20d52b5a457ee5d833645d119451c2cd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Json::valueToQuotedStringN</definition>
+        <argsstring>(const char *value, unsigned length)</argsstring>
+        <name>valueToQuotedStringN</name>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" line="247" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="247" bodyend="308"/>
+        <references refid="namespace_json_1ae8a357381f264cf28f46449e79ab1dea" compoundref="json__writer_8cpp" startline="90" endline="98">containsControlCharacter0</references>
+        <references refid="namespace_json_1a0381e631737f51331065a388f4f59197" compoundref="json__tool_8h" startline="47" endline="47">isControlCharacter</references>
+        <references refid="namespace_json_1a7492156d0c7d2dd2f672acacfb240320" compoundref="json__writer_8cpp" startline="233" endline="246">strnpbrk</references>
+        <referencedby refid="class_json_1_1_fast_writer_1a2ef4a2ce13a341171f01f414f4fdd765" compoundref="json__writer_8cpp" startline="335" endline="387">Json::FastWriter::writeValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_writer_1ac40143cf43f7c4a94d3d0b41e5245069" compoundref="json__writer_8cpp" startline="406" endline="463">Json::StyledWriter::writeValue</referencedby>
+        <referencedby refid="class_json_1_1_styled_stream_writer_1a4359250e09273fa0144021684be001ae" compoundref="json__writer_8cpp" startline="623" endline="680">Json::StyledStreamWriter::writeValue</referencedby>
+        <referencedby refid="struct_json_1_1_built_styled_stream_writer_1a7c9da861861e570a51b45f270c9ff150" compoundref="json__writer_8cpp" startline="904" endline="961">Json::BuiltStyledStreamWriter::writeValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespace_json_1a45c3c8847f03b09cd61035e615d1d820" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Json::getValidWriterKeys</definition>
+        <argsstring>(std::set&lt; std::string &gt; *valid_keys)</argsstring>
+        <name>getValidWriterKeys</name>
+        <param>
+          <type>std::set&lt; std::string &gt; *</type>
+          <declname>valid_keys</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" line="1156" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/lib_json/json_writer.cpp" bodystart="1156" bodyend="1165"/>
+        <referencedby refid="class_json_1_1_stream_writer_builder_1aa1dfed085a3d369e953e4a3c34da009e" compoundref="json__writer_8cpp" startline="1166" endline="1182">Json::StreamWriterBuilder::validate</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>JSON (JavaScript Object Notation). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Other/3rdpart/json/json/config.h" line="116" column="1"/>
+  </compounddef>
+</doxygen>

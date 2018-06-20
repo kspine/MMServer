@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_rack_table_mgr" kind="class" prot="public">
+    <compoundname>RackTableMgr</compoundname>
+    <includes refid="_rack__table_8hpp" local="no">Rack_table.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_rack_table_mgr_1af8faa7a8f761f13e427bedd3f2a23cd4" prot="private" static="no" mutable="no">
+        <type>std::map&lt; unsigned int, <ref refid="struct_rack_table" kindref="compound">RackTable</ref> * &gt;</type>
+        <definition>std::map&lt;unsigned int,RackTable*&gt; RackTableMgr::m_kRackTableMap</definition>
+        <argsstring></argsstring>
+        <name>m_kRackTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.hpp" line="70" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.hpp" bodystart="70" bodyend="-1"/>
+        <referencedby refid="class_rack_table_mgr_1adfd236fd1fcc4f777679872f4bb9158b" compoundref="_rack__table_8cpp" startline="104" endline="171">FillData</referencedby>
+        <referencedby refid="class_rack_table_mgr_1ace849b584b5bb7d16e65c82ca4b176bf" compoundref="_rack__table_8cpp" startline="42" endline="50">GetRackTable</referencedby>
+        <referencedby refid="class_rack_table_mgr_1a147ef2d5f0bcac6a5db2902ff2b76c96" compoundref="_rack__table_8cpp" startline="26" endline="29">GetRackTableMap</referencedby>
+        <referencedby refid="class_rack_table_mgr_1a24c2d1ece8b6338e6b35724aa53e651e" compoundref="_rack__table_8cpp" startline="31" endline="40">GetRackTableVec</referencedby>
+        <referencedby refid="class_rack_table_mgr_1a598b2150d9acf5f154cdecb32782a17d" compoundref="_rack__table_8cpp" startline="57" endline="60">~RackTableMgr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_rack_table_mgr_1a971d75121cffd023fd7fc9b51fe363af" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_rack_table_mgr" kindref="compound">RackTableMgr</ref> *</type>
+        <definition>RackTableMgr * RackTableMgr::m_pkRackTableMgr</definition>
+        <argsstring></argsstring>
+        <name>m_pkRackTableMgr</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.hpp" line="71" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.hpp" bodystart="71" bodyend="-1"/>
+        <referencedby refid="class_rack_table_mgr_1a313d0ac694d9803f59351ce929683e78" compoundref="_rack__table_8cpp" startline="6" endline="13">Get</referencedby>
+        <referencedby refid="class_rack_table_mgr_1adefaadafc2cc66ca8667497844e10c03" compoundref="_rack__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_rack_table_mgr_1a313d0ac694d9803f59351ce929683e78" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_rack_table_mgr" kindref="compound">RackTableMgr</ref> *</type>
+        <definition>RackTableMgr * RackTableMgr::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.hpp" line="57" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.cpp" bodystart="6" bodyend="13"/>
+        <references refid="class_rack_table_mgr_1a971d75121cffd023fd7fc9b51fe363af" compoundref="_rack__table_8hpp" startline="71">m_pkRackTableMgr</references>
+        <references refid="class_rack_table_mgr_1adf12a7af9420dddcfaa9cce7f473248a" compoundref="_rack__table_8cpp" startline="52" endline="55">RackTableMgr</references>
+        <referencedby refid="class_c_shop_1af16d650a4e31be0dafdbc3495485ef1c" compoundref="_src_2_shop_8cpp" startline="171" endline="244">CShop::BuyItem</referencedby>
+        <referencedby refid="class_c_shop_1a663f5c6d1730e05821feab8055a7b962" compoundref="_src_2_shop_8cpp" startline="421" endline="505">CShop::CurrencyBuyItem_Diamond</referencedby>
+        <referencedby refid="class_c_shop_1a009df25456150f7a7ffcf66732bdc3a1" compoundref="_src_2_shop_8cpp" startline="338" endline="419">CShop::CurrencyBuyItem_Gold</referencedby>
+        <referencedby refid="class_global_table_mgr_1ae86eb0e66125a5dd0973b65cb47ea664" compoundref="_global_table_mgr_8cpp" startline="258" endline="261">GlobalTableMgr::GetRackMap</referencedby>
+        <referencedby refid="class_global_table_mgr_1aacbcf95299b1965deb31f0a423c32e76" compoundref="_global_table_mgr_8cpp" startline="253" endline="256">GlobalTableMgr::GetRackTable</referencedby>
+        <referencedby refid="class_c_shop_1a2ec67310fd1d851c809b0e01ae82fb35" compoundref="_src_2_shop_8cpp" startline="246" endline="286">CShop::GMModiItem</referencedby>
+        <referencedby refid="class_table_mgr_1ae1ceeb5a4a6212a8497ef7dd92f87885" compoundref="_table_mgr_8h" startline="79" endline="132">TableMgr::LoadTable</referencedby>
+        <referencedby refid="class_rack_table_mgr_1adefaadafc2cc66ca8667497844e10c03" compoundref="_rack__table_8cpp" startline="15" endline="23">ReLoad</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_rack_table_mgr_1adefaadafc2cc66ca8667497844e10c03" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_rack_table_mgr" kindref="compound">RackTableMgr</ref> *</type>
+        <definition>RackTableMgr * RackTableMgr::ReLoad</definition>
+        <argsstring>()</argsstring>
+        <name>ReLoad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.hpp" line="58" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.cpp" bodystart="15" bodyend="23"/>
+        <references refid="class_rack_table_mgr_1a313d0ac694d9803f59351ce929683e78" compoundref="_rack__table_8cpp" startline="6" endline="13">Get</references>
+        <references refid="class_rack_table_mgr_1a971d75121cffd023fd7fc9b51fe363af" compoundref="_rack__table_8hpp" startline="71">m_pkRackTableMgr</references>
+        <referencedby refid="class_table_mgr_1a6298f0e9b81636b481a25c06016e237a" compoundref="_table_mgr1_8cpp" startline="860" endline="914">TableMgr::ReloadTable</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_rack_table_mgr_1adf12a7af9420dddcfaa9cce7f473248a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RackTableMgr::RackTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>RackTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.hpp" line="59" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.cpp" bodystart="52" bodyend="55"/>
+        <references refid="class_rack_table_mgr_1ab35f2db90bcbfe3572387c7159e4331f" compoundref="_rack__table_8cpp" startline="62" endline="102">Load</references>
+        <referencedby refid="class_rack_table_mgr_1a313d0ac694d9803f59351ce929683e78" compoundref="_rack__table_8cpp" startline="6" endline="13">Get</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_rack_table_mgr_1a598b2150d9acf5f154cdecb32782a17d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RackTableMgr::~RackTableMgr</definition>
+        <argsstring>()</argsstring>
+        <name>~RackTableMgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.hpp" line="60" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.cpp" bodystart="57" bodyend="60"/>
+        <references refid="class_rack_table_mgr_1af8faa7a8f761f13e427bedd3f2a23cd4" compoundref="_rack__table_8hpp" startline="70">m_kRackTableMap</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rack_table_mgr_1ace849b584b5bb7d16e65c82ca4b176bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_rack_table" kindref="compound">RackTable</ref> *</type>
+        <definition>const RackTable * RackTableMgr::GetRackTable</definition>
+        <argsstring>(unsigned int iTypeID)</argsstring>
+        <name>GetRackTable</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>iTypeID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.hpp" line="62" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.cpp" bodystart="42" bodyend="50"/>
+        <references refid="class_rack_table_mgr_1af8faa7a8f761f13e427bedd3f2a23cd4" compoundref="_rack__table_8hpp" startline="70">m_kRackTableMap</references>
+        <referencedby refid="class_c_shop_1af16d650a4e31be0dafdbc3495485ef1c" compoundref="_src_2_shop_8cpp" startline="171" endline="244">CShop::BuyItem</referencedby>
+        <referencedby refid="class_c_shop_1a663f5c6d1730e05821feab8055a7b962" compoundref="_src_2_shop_8cpp" startline="421" endline="505">CShop::CurrencyBuyItem_Diamond</referencedby>
+        <referencedby refid="class_c_shop_1a009df25456150f7a7ffcf66732bdc3a1" compoundref="_src_2_shop_8cpp" startline="338" endline="419">CShop::CurrencyBuyItem_Gold</referencedby>
+        <referencedby refid="class_global_table_mgr_1aacbcf95299b1965deb31f0a423c32e76" compoundref="_global_table_mgr_8cpp" startline="253" endline="256">GlobalTableMgr::GetRackTable</referencedby>
+        <referencedby refid="class_c_shop_1a2ec67310fd1d851c809b0e01ae82fb35" compoundref="_src_2_shop_8cpp" startline="246" endline="286">CShop::GMModiItem</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_rack_table_mgr_1a147ef2d5f0bcac6a5db2902ff2b76c96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::map&lt; unsigned int, <ref refid="struct_rack_table" kindref="compound">RackTable</ref> * &gt; &amp;</type>
+        <definition>const std::map&lt; unsigned int, RackTable * &gt; &amp; RackTableMgr::GetRackTableMap</definition>
+        <argsstring>()</argsstring>
+        <name>GetRackTableMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.hpp" line="63" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.cpp" bodystart="26" bodyend="29"/>
+        <references refid="class_rack_table_mgr_1af8faa7a8f761f13e427bedd3f2a23cd4" compoundref="_rack__table_8hpp" startline="70">m_kRackTableMap</references>
+        <referencedby refid="class_global_table_mgr_1ae86eb0e66125a5dd0973b65cb47ea664" compoundref="_global_table_mgr_8cpp" startline="258" endline="261">GlobalTableMgr::GetRackMap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_rack_table_mgr_1a24c2d1ece8b6338e6b35724aa53e651e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_table_res_array" kindref="compound">TableResArray</ref></type>
+        <definition>TableResArray RackTableMgr::GetRackTableVec</definition>
+        <argsstring>()</argsstring>
+        <name>GetRackTableVec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.hpp" line="64" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.cpp" bodystart="31" bodyend="40"/>
+        <references refid="class_rack_table_mgr_1af8faa7a8f761f13e427bedd3f2a23cd4" compoundref="_rack__table_8hpp" startline="70">m_kRackTableMap</references>
+        <references refid="class_table_res_array_1ab7fbd71c9a00bfd30ae2282a4955dbc0" compoundref="_se_table_res_base_8cpp" startline="13" endline="16">TableResArray::pushBack</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_rack_table_mgr_1ab35f2db90bcbfe3572387c7159e4331f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RackTableMgr::Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.hpp" line="67" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.cpp" bodystart="62" bodyend="102"/>
+        <references refid="class_ti_xml_document_1a6dfc01a6e5d58e56acd537dfd3bdeb29" compoundref="tinyxml_8h" startline="1430" endline="1430">TiXmlDocument::Error</references>
+        <references refid="class_ti_xml_document_1a9d0f689f6e09ea494ea547be8d79c25e" compoundref="tinyxml_8h" startline="1433" endline="1433">TiXmlDocument::ErrorDesc</references>
+        <references refid="class_rack_table_mgr_1adfd236fd1fcc4f777679872f4bb9158b" compoundref="_rack__table_8cpp" startline="104" endline="171">FillData</references>
+        <references refid="class_ti_xml_node_1ab1f8d8e70d88aea4c5efedfe00862d55" compoundref="tinyxml_8cpp" startline="420" endline="432">TiXmlNode::FirstChildElement</references>
+        <references refid="class_table_mgr_1ab0a9caff994303bdc82a28d1eccbca52" compoundref="_table_mgr1_8cpp" startline="36" endline="43">TableMgr::Get</references>
+        <references refid="class_table_mgr_1af1a60a8b2807abd34ceb6002cf8f4b80" compoundref="_table_mgr1_8cpp" startline="851" endline="858">TableMgr::GetTableLoader</references>
+        <references refid="class_table_loader_1a8d06b11d37cde9ff76d98901dd39bab4">TableLoader::LoadTable</references>
+        <references refid="class_ti_xml_node_1a7667217e269e0da01d1f82aee94d1a3d" compoundref="tinyxml_8cpp" startline="450" endline="462">TiXmlNode::NextSiblingElement</references>
+        <references refid="class_ti_xml_document_1a789ad2f06f93d52bdb5570b2f3670289" compoundref="tinyxmlparser_8cpp" startline="705" endline="797">TiXmlDocument::Parse</references>
+        <referencedby refid="class_rack_table_mgr_1adf12a7af9420dddcfaa9cce7f473248a" compoundref="_rack__table_8cpp" startline="52" endline="55">RackTableMgr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_rack_table_mgr_1adfd236fd1fcc4f777679872f4bb9158b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RackTableMgr::FillData</definition>
+        <argsstring>(RackTable *row, TiXmlElement *element)</argsstring>
+        <name>FillData</name>
+        <param>
+          <type><ref refid="struct_rack_table" kindref="compound">RackTable</ref> *</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type><ref refid="class_ti_xml_element" kindref="compound">TiXmlElement</ref> *</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.hpp" line="68" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.cpp" bodystart="104" bodyend="171"/>
+        <references refid="class_ti_xml_element_1ac1e4691e9375ba4e665dce7e46a50a9c" compoundref="tinyxml_8cpp" startline="544" endline="550">TiXmlElement::Attribute</references>
+        <references refid="struct_rack_table_1a66b282893fce43166e17be7176115192" compoundref="_rack__table_8hpp" startline="42">RackTable::fDiscount</references>
+        <references refid="struct_rack_table_1a68238568048778df67d7fdacc6284e07" compoundref="_rack__table_8hpp" startline="44">RackTable::iRank</references>
+        <references refid="struct_rack_table_1a2d332739e73c071fc6b2f699fba5598d" compoundref="_rack__table_8hpp" startline="47">RackTable::iResetTime</references>
+        <references refid="struct_rack_table_1a7c151c5e0716db1dcfef4e75e30c6a23" compoundref="_rack__table_8hpp" startline="46">RackTable::iRestrictionsCount</references>
+        <references refid="struct_rack_table_1a1536c9d9ba12cdf17a07478cc6e53f7c" compoundref="_rack__table_8hpp" startline="45">RackTable::iStockCount</references>
+        <references refid="struct_rack_table_1aaf9eeffcbf1e1a857b7d1bf6cd2c9145" compoundref="_rack__table_8hpp" startline="38">RackTable::kItemTips</references>
+        <references refid="struct_rack_table_1a9a46fb2b61992aefb5877f020cd875a3" compoundref="_rack__table_8hpp" startline="37">RackTable::kLanguageID</references>
+        <references refid="struct_rack_table_1a588e8e811bbef668ecfa75013a4d0cba" compoundref="_rack__table_8hpp" startline="49">RackTable::kLargeIcon</references>
+        <references refid="struct_rack_table_1a4f38188c31892a1c608811a898ba998b" compoundref="_rack__table_8hpp" startline="36">RackTable::kName</references>
+        <references refid="struct_rack_table_1afeb1076e50626f215969ad1ed9a02f02" compoundref="_rack__table_8hpp" startline="48">RackTable::kSmallIcon</references>
+        <references refid="class_rack_table_mgr_1af8faa7a8f761f13e427bedd3f2a23cd4" compoundref="_rack__table_8hpp" startline="70">m_kRackTableMap</references>
+        <references refid="struct_rack_table_1a515a7ddcdb1e81c2e56f79f90414fbba" compoundref="_rack__table_8hpp" startline="43">RackTable::uifeature</references>
+        <references refid="struct_rack_table_1a6f9093388b2f20b6276747d56164f558" compoundref="_rack__table_8hpp" startline="35">RackTable::uiItemID</references>
+        <references refid="struct_rack_table_1ab023f8b918370d02ab75bf892cb99680" compoundref="_rack__table_8hpp" startline="40">RackTable::uiPrice1</references>
+        <references refid="struct_rack_table_1a391955becbe8cf845b9497ab71dc6ed4" compoundref="_rack__table_8hpp" startline="41">RackTable::uiPrice2</references>
+        <references refid="struct_rack_table_1a8f88d55e0711c1cd5c48465215b441ab" compoundref="_rack__table_8hpp" startline="34">RackTable::uiShopID</references>
+        <references refid="struct_rack_table_1a6f2d5c7c4ace69dee1314e24b207e683" compoundref="_rack__table_8hpp" startline="50">RackTable::uiToolControl</references>
+        <references refid="struct_rack_table_1a9a138ece5ddee1533618a2079272506c" compoundref="_rack__table_8hpp" startline="39">RackTable::uitype</references>
+        <referencedby refid="class_rack_table_mgr_1ab35f2db90bcbfe3572387c7159e4331f" compoundref="_rack__table_8cpp" startline="62" endline="102">Load</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2499">
+        <label>RackTableMgr</label>
+        <link refid="class_rack_table_mgr"/>
+        <childnode refid="2499" relation="usage">
+          <edgelabel>m_pkRackTableMgr</edgelabel>
+        </childnode>
+        <childnode refid="2500" relation="usage">
+          <edgelabel>m_kRackTableMap</edgelabel>
+        </childnode>
+      </node>
+      <node id="2500">
+        <label>std::map&lt; unsigned int, RackTable * &gt;</label>
+        <childnode refid="2501" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2504">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="2502">
+        <label>SeTableResBase</label>
+        <link refid="class_se_table_res_base"/>
+      </node>
+      <node id="2501">
+        <label>RackTable</label>
+        <link refid="struct_rack_table"/>
+        <childnode refid="2502" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2503" relation="usage">
+          <edgelabel>kLargeIcon</edgelabel>
+          <edgelabel>kLanguageID</edgelabel>
+          <edgelabel>kSmallIcon</edgelabel>
+          <edgelabel>kItemTips</edgelabel>
+          <edgelabel>kName</edgelabel>
+        </childnode>
+      </node>
+      <node id="2503">
+        <label>std::string</label>
+        <childnode refid="2504" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.hpp" line="55" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/Table/Rack_table.hpp" bodystart="54" bodyend="72"/>
+    <listofallmembers>
+      <member refid="class_rack_table_mgr_1adfd236fd1fcc4f777679872f4bb9158b" prot="private" virt="non-virtual"><scope>RackTableMgr</scope><name>FillData</name></member>
+      <member refid="class_rack_table_mgr_1a313d0ac694d9803f59351ce929683e78" prot="public" virt="non-virtual"><scope>RackTableMgr</scope><name>Get</name></member>
+      <member refid="class_rack_table_mgr_1ace849b584b5bb7d16e65c82ca4b176bf" prot="public" virt="non-virtual"><scope>RackTableMgr</scope><name>GetRackTable</name></member>
+      <member refid="class_rack_table_mgr_1a147ef2d5f0bcac6a5db2902ff2b76c96" prot="public" virt="non-virtual"><scope>RackTableMgr</scope><name>GetRackTableMap</name></member>
+      <member refid="class_rack_table_mgr_1a24c2d1ece8b6338e6b35724aa53e651e" prot="public" virt="non-virtual"><scope>RackTableMgr</scope><name>GetRackTableVec</name></member>
+      <member refid="class_rack_table_mgr_1ab35f2db90bcbfe3572387c7159e4331f" prot="private" virt="non-virtual"><scope>RackTableMgr</scope><name>Load</name></member>
+      <member refid="class_rack_table_mgr_1af8faa7a8f761f13e427bedd3f2a23cd4" prot="private" virt="non-virtual"><scope>RackTableMgr</scope><name>m_kRackTableMap</name></member>
+      <member refid="class_rack_table_mgr_1a971d75121cffd023fd7fc9b51fe363af" prot="private" virt="non-virtual"><scope>RackTableMgr</scope><name>m_pkRackTableMgr</name></member>
+      <member refid="class_rack_table_mgr_1adf12a7af9420dddcfaa9cce7f473248a" prot="public" virt="non-virtual"><scope>RackTableMgr</scope><name>RackTableMgr</name></member>
+      <member refid="class_rack_table_mgr_1adefaadafc2cc66ca8667497844e10c03" prot="public" virt="non-virtual"><scope>RackTableMgr</scope><name>ReLoad</name></member>
+      <member refid="class_rack_table_mgr_1a598b2150d9acf5f154cdecb32782a17d" prot="public" virt="non-virtual"><scope>RackTableMgr</scope><name>~RackTableMgr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

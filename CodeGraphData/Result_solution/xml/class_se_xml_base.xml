@@ -1,0 +1,1184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_se_xml_base" kind="class" prot="public" abstract="yes">
+    <compoundname>SeXmlBase</compoundname>
+    <derivedcompoundref refid="class_se_xml_attribute" prot="public" virt="non-virtual">SeXmlAttribute</derivedcompoundref>
+    <derivedcompoundref refid="class_se_xml_node" prot="public" virt="non-virtual">SeXmlNode</derivedcompoundref>
+    <includes refid="_se_xml_8h" local="no">SeXml.h</includes>
+    <innerclass refid="struct_se_xml_base_1_1_entity" prot="private">SeXmlBase::Entity</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fd" prot="public" static="no">
+        <name>@47</name>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda440bcbf4e8c9d2710231b1a180d0ba9f" prot="public">
+          <name>SeXml_NO_ERROR</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda8fc8090eb2e6684745bb9feba9c0a1f0" prot="public">
+          <name>SeXml_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda39849eb7277dacae33756c9fee85852d" prot="public">
+          <name>SeXml_ERROR_OPENING_FILE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fdae58a4a23959e57449eb42987a07c34d2" prot="public">
+          <name>SeXml_ERROR_PARSING_ELEMENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda86b1490b3060cab3de0b4fabeeec93f8" prot="public">
+          <name>SeXml_ERROR_FAILED_TO_READ_ELEMENT_NAME</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda057ffec95c48ce4901d186ec25460d6e" prot="public">
+          <name>SeXml_ERROR_READING_ELEMENT_VALUE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fdae73ffa849c911960b05884049140e827" prot="public">
+          <name>SeXml_ERROR_READING_ATTRIBUTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda1f4605b0204022f928dda07b9c0cb832" prot="public">
+          <name>SeXml_ERROR_PARSING_EMPTY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda9bd9d7dca81940b2d1f09e23aa3f3217" prot="public">
+          <name>SeXml_ERROR_READING_END_TAG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda0d08a31dce02b68cdaf5c0db60a2cbd3" prot="public">
+          <name>SeXml_ERROR_PARSING_UNKNOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda544cb3c8b47aa56b33b0a064072018e0" prot="public">
+          <name>SeXml_ERROR_PARSING_COMMENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda2894e12ed64d628a381d94e28947c6cd" prot="public">
+          <name>SeXml_ERROR_PARSING_DECLARATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fdaf164e2da2d6196634def737c4dc12a69" prot="public">
+          <name>SeXml_ERROR_DOCUMENT_EMPTY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fdae80dbf642bb075d49effa3888ee2b3eb" prot="public">
+          <name>SeXml_ERROR_EMBEDDED_NULL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fdaed5285094b2b13e0950770a0973f6701" prot="public">
+          <name>SeXml_ERROR_PARSING_CDATA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda9d536a485ccd19c0f98dcd71d8d27302" prot="public">
+          <name>SeXml_ERROR_DOCUMENT_TOP_ONLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda704d627a90965b6d09e6988ebf0d3743" prot="public">
+          <name>SeXml_ERROR_STRING_COUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="256" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="255" bodyend="275"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_se_xml_base_1aedbd3edfe9544e31315e5da726ff9c74" prot="private" static="no">
+        <name>@48</name>
+        <enumvalue id="class_se_xml_base_1aedbd3edfe9544e31315e5da726ff9c74a178b25101d3e599dac19073fbede1068" prot="private">
+          <name>NUM_ENTITY</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_se_xml_base_1aedbd3edfe9544e31315e5da726ff9c74aede14382f6fb1002ac7206427f59b4ab" prot="private">
+          <name>MAX_ENTITY_LENGTH</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="396" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="395" bodyend="400"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_se_xml_base_1adbe83c79a71b73d39dba3d2bdbab6185" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SeXmlNode</definition>
+        <argsstring></argsstring>
+        <name>SeXmlNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="187" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_se_xml_base_1a30b08077ea663954788bbd17b23df7a1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SeXmlElement</definition>
+        <argsstring></argsstring>
+        <name>SeXmlElement</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="188" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_se_xml_base_1a649e42d2d9cbc6952d5f2fe6b9c91f4c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class SeXmlDocument</definition>
+        <argsstring></argsstring>
+        <name>SeXmlDocument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="189" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_se_xml_base_1aef4aae11f1fb094c426b08f55d2fa44c" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int SeXmlBase::utf8ByteTable</definition>
+        <argsstring>[256]</argsstring>
+        <name>utf8ByteTable</name>
+        <initializer>= 
+{
+	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	
+		1,	1,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	
+		2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	2,	
+		3,	3,	3,	3,	3,	3,	3,	3,	3,	3,	3,	3,	3,	3,	3,	3,	
+		4,	4,	4,	4,	4,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1,	1	
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="244" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="244" bodyend="240"/>
+        <referencedby refid="class_se_xml_base_1a3eb22d30e95f31830af7d7166124b28e" compoundref="_se_xml_8h" startline="316" endline="350">GetChar</referencedby>
+        <referencedby refid="class_se_xml_parsing_data_1a7b47dcf48758bbb7b2749b4b6338a093" compoundref="_se_xml_8cpp" startline="221" endline="336">SeXmlParsingData::Stamp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-attrib">
+      <memberdef kind="variable" id="class_se_xml_base_1a3e08e16daa316e5dca353d52b50bb634" prot="protected" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char * SeXmlBase::errorString</definition>
+        <argsstring>[SeXml_ERROR_STRING_COUNT]</argsstring>
+        <name>errorString</name>
+        <initializer>=
+{
+	&quot;No error&quot;,
+	&quot;Error&quot;,
+	&quot;Failed to open file&quot;,
+	&quot;Error parsing Element.&quot;,
+	&quot;Failed to read Element name&quot;,
+	&quot;Error reading Element value.&quot;,
+	&quot;Error reading Attributes.&quot;,
+	&quot;Error: empty tag.&quot;,
+	&quot;Error reading end tag.&quot;,
+	&quot;Error parsing Unknown.&quot;,
+	&quot;Error parsing Comment.&quot;,
+	&quot;Error parsing Declaration.&quot;,
+	&quot;Error document empty.&quot;,
+	&quot;Error null (0) or unexpected EOF found in input stream.&quot;,
+	&quot;Error parsing CDATA.&quot;,
+	&quot;Error when <ref refid="class_se_xml_document" kindref="compound">SeXmlDocument</ref> added to document, because <ref refid="class_se_xml_document" kindref="compound">SeXmlDocument</ref> can only be at the root.&quot;,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="360" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="360" bodyend="-1"/>
+        <referencedby refid="class_se_xml_document_1a23116bac13fcbe4754a1fdff88ff5a38" compoundref="_se_xml_8cpp" startline="818" endline="835">SeXmlDocument::SetError</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_se_xml_base_1a79a0f45bd6ad1176c684c81331249cd6" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_se_xml_cursor" kindref="compound">SeXmlCursor</ref></type>
+        <definition>SeXmlCursor SeXmlBase::location</definition>
+        <argsstring></argsstring>
+        <name>location</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="362" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="362" bodyend="-1"/>
+        <referencedby refid="class_se_xml_base_1a8e59dc61db5fe2c86515e581e77d37d7" compoundref="_se_xml_8h" startline="236">Column</referencedby>
+        <referencedby refid="class_se_xml_node_1ad50bd1f334c012388cac26907f4dcce9" compoundref="_se_xml_8cpp" startline="1777" endline="1782">SeXmlNode::CopyTo</referencedby>
+        <referencedby refid="class_se_xml_document_1a485c6a9be9dd8b5a8bef2be35d27ba06" compoundref="_se_xml_8cpp" startline="2584" endline="2681">SeXmlDocument::LoadFile</referencedby>
+        <referencedby refid="class_se_xml_attribute_1a02580d38bff9a73611ccc38a2f72324a" compoundref="_se_xml_8cpp" startline="1405" endline="1476">SeXmlAttribute::Parse</referencedby>
+        <referencedby refid="class_se_xml_element_1a1dece8a6836719b457ae13c97db13a5e" compoundref="_se_xml_8cpp" startline="1060" endline="1191">SeXmlElement::Parse</referencedby>
+        <referencedby refid="class_se_xml_comment_1a544c45d9b1d710e3463d08d411fa11a3" compoundref="_se_xml_8cpp" startline="1350" endline="1402">SeXmlComment::Parse</referencedby>
+        <referencedby refid="class_se_xml_text_1a1379f89aabd31a7583aeaf12b33d61ff" compoundref="_se_xml_8cpp" startline="1508" endline="1557">SeXmlText::Parse</referencedby>
+        <referencedby refid="class_se_xml_declaration_1a8094b8798a1fb7b23db2c4cf082ec8cb" compoundref="_se_xml_8cpp" startline="1581" endline="1638">SeXmlDeclaration::Parse</referencedby>
+        <referencedby refid="class_se_xml_unknown_1a6f733221b95b536326ed35cda36fadcd" compoundref="_se_xml_8cpp" startline="1290" endline="1322">SeXmlUnknown::Parse</referencedby>
+        <referencedby refid="class_se_xml_document_1ad127c9369e3b07ccc15aa303fd289d5a" compoundref="_se_xml_8cpp" startline="724" endline="816">SeXmlDocument::Parse</referencedby>
+        <referencedby refid="class_se_xml_base_1af91d159f8021759d0a7f9cea48322f1a" compoundref="_se_xml_8h" startline="235" endline="235">Row</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_xml_base_1a855e2f10720e4330cb60265a4c6731b5" prot="protected" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* SeXmlBase::userData</definition>
+        <argsstring></argsstring>
+        <name>userData</name>
+        <briefdescription>
+<para>Field containing a generic user pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="365" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="365" bodyend="-1"/>
+        <referencedby refid="class_se_xml_node_1ad50bd1f334c012388cac26907f4dcce9" compoundref="_se_xml_8cpp" startline="1777" endline="1782">SeXmlNode::CopyTo</referencedby>
+        <referencedby refid="class_se_xml_base_1a1fd6f98baf50dad19bebf82412e5a559" compoundref="_se_xml_8h" startline="239" endline="238">GetUserData</referencedby>
+        <referencedby refid="class_se_xml_base_1a36a9fb52b728e32d18c8bbb229b8ef25" compoundref="_se_xml_8h" startline="238" endline="236">SetUserData</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_se_xml_base_1afa0ea7fe9ebdfabca195e848af3062c9" prot="private" static="yes" mutable="no">
+        <type><ref refid="struct_se_xml_base_1_1_entity" kindref="compound">Entity</ref></type>
+        <definition>SeXmlBase::Entity SeXmlBase::entity</definition>
+        <argsstring>[NUM_ENTITY]</argsstring>
+        <name>entity</name>
+        <initializer>= 
+{
+	{ &quot;&amp;amp;&quot;,  5, &apos;&amp;&apos; },
+	{ &quot;&amp;lt;&quot;,   4, &apos;&lt;&apos; },
+	{ &quot;&amp;gt;&quot;,   4, &apos;&gt;&apos; },
+	{ &quot;&amp;quot;&quot;, 6, &apos;\&quot;&apos; },
+	{ &quot;&amp;apos;&quot;, 6, &apos;\&apos;&apos; }
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="401" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="401" bodyend="-1"/>
+        <referencedby refid="class_se_xml_base_1a1ff244393ecfa2592f20e42b003bed8e" compoundref="_se_xml_8cpp" startline="1667" endline="1748">EncodeString</referencedby>
+        <referencedby refid="class_se_xml_base_1ad99e4e4368f338744e79da168ffaaf5f" compoundref="_se_xml_8cpp" startline="461" endline="554">GetEntity</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_xml_base_1a4aa21fd9a36f7f7d63b294742ce5b244" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool SeXmlBase::condenseWhiteSpace</definition>
+        <argsstring></argsstring>
+        <name>condenseWhiteSpace</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="402" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="402" bodyend="-1"/>
+        <referencedby refid="class_se_xml_base_1aad5ae27ed026516f98703491ba2f4db0" compoundref="_se_xml_8h" startline="215" endline="215">IsWhiteSpaceCondensed</referencedby>
+        <referencedby refid="class_se_xml_base_1a10a52f040cd9768a88c774bed37d5610" compoundref="_se_xml_8cpp" startline="597" endline="660">ReadText</referencedby>
+        <referencedby refid="class_se_xml_base_1a508eb7f0d50305393467c9d747cda1c7" compoundref="_se_xml_8h" startline="212" endline="212">SetCondenseWhiteSpace</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_se_xml_base_1aa6db2755e4682bb1a5ad49dd22b5d1f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SeXmlBase::SeXmlBase</definition>
+        <argsstring>()</argsstring>
+        <name>SeXmlBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="192" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="192" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1ae465e56e71560767e9529357b9be3822" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual SeXmlBase::~SeXmlBase</definition>
+        <argsstring>()</argsstring>
+        <name>~SeXmlBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="193" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="193" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1a55dbb0c85e6fa8091572bb536983bf03" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void SeXmlBase::Print</definition>
+        <argsstring>(FILE *cfile, int depth) const =0</argsstring>
+        <name>Print</name>
+        <reimplementedby refid="class_se_xml_attribute_1ab5bc95303cabcca72be61d389b42c902">Print</reimplementedby>
+        <reimplementedby refid="class_se_xml_element_1abf637f8d4e55bd2ebabeaa4a711deb1b">Print</reimplementedby>
+        <reimplementedby refid="class_se_xml_comment_1a67e1060e4563613e74aff657b89da041">Print</reimplementedby>
+        <reimplementedby refid="class_se_xml_text_1a6cbb1cf6b28fbdcb72009e1c343f8770">Print</reimplementedby>
+        <reimplementedby refid="class_se_xml_declaration_1a7de9b05acecd616820d5f95d7ac41739">Print</reimplementedby>
+        <reimplementedby refid="class_se_xml_unknown_1a96728c89d5fdd916b5542eae0c953dd4">Print</reimplementedby>
+        <reimplementedby refid="class_se_xml_document_1ab7edf296ea28573314bbc2ed5b747202">Print</reimplementedby>
+        <param>
+          <type>FILE *</type>
+          <declname>cfile</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>All SeXml classes can print themselves to a filestream or the string class (SeXmlString in non-STL mode, std::string in STL mode.) Either or both cfile and str can be null.</para><para>This is a formatted print, and will insert tabs and newlines.</para><para>(For an unformatted stream, use the &lt;&lt; operator.) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="204" column="1"/>
+        <referencedby refid="class_se_xml_element_1abf637f8d4e55bd2ebabeaa4a711deb1b" compoundref="_se_xml_8cpp" startline="2400" endline="2450">SeXmlElement::Print</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1af91d159f8021759d0a7f9cea48322f1a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SeXmlBase::Row</definition>
+        <argsstring>() const </argsstring>
+        <name>Row</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the position, in the original source file, of this node or attribute. The row and column are 1-based. (That is the first row and first column is 1,1). If the returns values are 0 or less, then the parser does not have a row and column value.</para><para>Generally, the row and column value will be set when the SeXmlDocument::Load(), <ref refid="class_se_xml_document_1ae83a76fa66d7d803bfd92713afc7da66" kindref="member">SeXmlDocument::LoadFile()</ref>, or any <ref refid="class_se_xml_base_1a38c51cddba53f84ec573190ada8b01b6" kindref="member">SeXmlNode::Parse()</ref> is called. It will NOT be set when the DOM was created from operator&gt;&gt;.</para><para>The values reflect the initial load. Once the DOM is modified programmatically (by adding or changing nodes and attributes) the new values will NOT update to reflect changes in the document.</para><para>There is a minor performance cost to computing the row and column. Computation can be disabled if <ref refid="class_se_xml_document_1ad8c5eab6e6231e505b1b9022338664bf" kindref="member">SeXmlDocument::SetTabSize()</ref> is called with 0 as the value.</para><para><simplesect kind="see"><para><ref refid="class_se_xml_document_1ad8c5eab6e6231e505b1b9022338664bf" kindref="member">SeXmlDocument::SetTabSize()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="235" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="235" bodyend="235"/>
+        <references refid="class_se_xml_base_1a79a0f45bd6ad1176c684c81331249cd6" compoundref="_se_xml_8h" startline="362">location</references>
+        <references refid="struct_se_xml_cursor_1a64b72ddf27d27a4a12853903c1144079" compoundref="_se_xml_8h" startline="95">SeXmlCursor::row</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1a8e59dc61db5fe2c86515e581e77d37d7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SeXmlBase::Column</definition>
+        <argsstring>() const </argsstring>
+        <name>Column</name>
+        <briefdescription>
+<para>See <ref refid="class_se_xml_base_1af91d159f8021759d0a7f9cea48322f1a" kindref="member">Row()</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="236" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="236" bodyend="-1"/>
+        <references refid="struct_se_xml_cursor_1a6ba853557f0c61725134a029a163f6fe" compoundref="_se_xml_8h" startline="96">SeXmlCursor::col</references>
+        <references refid="class_se_xml_base_1a79a0f45bd6ad1176c684c81331249cd6" compoundref="_se_xml_8h" startline="362">location</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1a36a9fb52b728e32d18c8bbb229b8ef25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeXmlBase::SetUserData</definition>
+        <argsstring>(void *user)</argsstring>
+        <name>SetUserData</name>
+        <param>
+          <type>void *</type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+<para>Set a pointer to arbitrary user data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="238" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="238" bodyend="236"/>
+        <references refid="class_se_xml_base_1a855e2f10720e4330cb60265a4c6731b5" compoundref="_se_xml_8h" startline="365">userData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1a1fd6f98baf50dad19bebf82412e5a559" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* SeXmlBase::GetUserData</definition>
+        <argsstring>()</argsstring>
+        <name>GetUserData</name>
+        <briefdescription>
+<para>Get a pointer to arbitrary user data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="239" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="239" bodyend="238"/>
+        <references refid="class_se_xml_base_1a855e2f10720e4330cb60265a4c6731b5" compoundref="_se_xml_8h" startline="365">userData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1a7d48ae7662f70843e2a29a6edec29f54" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const void *</type>
+        <definition>const void* SeXmlBase::GetUserData</definition>
+        <argsstring>() const </argsstring>
+        <name>GetUserData</name>
+        <briefdescription>
+<para>Get a pointer to arbitrary user data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="240" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="240" bodyend="239"/>
+        <references refid="class_se_xml_base_1a855e2f10720e4330cb60265a4c6731b5" compoundref="_se_xml_8h" startline="365">userData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1a38c51cddba53f84ec573190ada8b01b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>const char *</type>
+        <definition>virtual const char* SeXmlBase::Parse</definition>
+        <argsstring>(const char *p, SeXmlParsingData *data, SeXmlEncoding encoding)=0</argsstring>
+        <name>Parse</name>
+        <reimplementedby refid="class_se_xml_attribute_1a02580d38bff9a73611ccc38a2f72324a">Parse</reimplementedby>
+        <reimplementedby refid="class_se_xml_element_1a1dece8a6836719b457ae13c97db13a5e">Parse</reimplementedby>
+        <reimplementedby refid="class_se_xml_comment_1a544c45d9b1d710e3463d08d411fa11a3">Parse</reimplementedby>
+        <reimplementedby refid="class_se_xml_text_1a1379f89aabd31a7583aeaf12b33d61ff">Parse</reimplementedby>
+        <reimplementedby refid="class_se_xml_declaration_1a8094b8798a1fb7b23db2c4cf082ec8cb">Parse</reimplementedby>
+        <reimplementedby refid="class_se_xml_unknown_1a6f733221b95b536326ed35cda36fadcd">Parse</reimplementedby>
+        <reimplementedby refid="class_se_xml_document_1ad127c9369e3b07ccc15aa303fd289d5a">Parse</reimplementedby>
+        <param>
+          <type>const char *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="class_se_xml_parsing_data" kindref="compound">SeXmlParsingData</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6f" kindref="member">SeXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="246" column="1"/>
+        <referencedby refid="_se_xml_8cpp_1a614d9ead65256be0185d1de965456874" compoundref="_se_xml_8cpp" startline="3189" endline="3197">operator&gt;&gt;</referencedby>
+        <referencedby refid="class_se_xml_document_1ad127c9369e3b07ccc15aa303fd289d5a" compoundref="_se_xml_8cpp" startline="724" endline="816">SeXmlDocument::Parse</referencedby>
+        <referencedby refid="class_se_xml_element_1aafec275193c8f4e5cbc0233a84a5575e" compoundref="_se_xml_8cpp" startline="1194" endline="1265">SeXmlElement::ReadValue</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_se_xml_base_1a508eb7f0d50305393467c9d747cda1c7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SeXmlBase::SetCondenseWhiteSpace</definition>
+        <argsstring>(bool condense)</argsstring>
+        <name>SetCondenseWhiteSpace</name>
+        <param>
+          <type>bool</type>
+          <declname>condense</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The world does not agree on whether white space should be kept or not. In order to make everyone happy, these global, static functions are provided to set whether or not SeXml will condense all white space into a single space or not. The default is to condense. Note changing this value is not thread safe. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="212" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="212" bodyend="212"/>
+        <references refid="class_se_xml_base_1a4aa21fd9a36f7f7d63b294742ce5b244" compoundref="_se_xml_8h" startline="402">condenseWhiteSpace</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1aad5ae27ed026516f98703491ba2f4db0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SeXmlBase::IsWhiteSpaceCondensed</definition>
+        <argsstring>()</argsstring>
+        <name>IsWhiteSpaceCondensed</name>
+        <briefdescription>
+<para>Return the current white space setting. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="215" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="215" bodyend="215"/>
+        <references refid="class_se_xml_base_1a4aa21fd9a36f7f7d63b294742ce5b244" compoundref="_se_xml_8h" startline="402">condenseWhiteSpace</references>
+        <referencedby refid="class_se_xml_element_1aafec275193c8f4e5cbc0233a84a5575e" compoundref="_se_xml_8cpp" startline="1194" endline="1265">SeXmlElement::ReadValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1a1ff244393ecfa2592f20e42b003bed8e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeXmlBase::EncodeString</definition>
+        <argsstring>(const SeXml_STRING &amp;str, SeXml_STRING *out)</argsstring>
+        <name>EncodeString</name>
+        <param>
+          <type>const <ref refid="_se_xml_8h_1aba1e614be498200cbfd6f95fe347cb84" kindref="member">SeXml_STRING</ref> &amp;</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1aba1e614be498200cbfd6f95fe347cb84" kindref="member">SeXml_STRING</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Expands entities in a string. Note this should not contian the tag&apos;s &apos;&lt;&apos;, &apos;&gt;&apos;, etc, or they will be transformed into entities! </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="253" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="1667" bodyend="1748"/>
+        <references refid="class_se_xml_base_1afa0ea7fe9ebdfabca195e848af3062c9" compoundref="_se_xml_8h" startline="401">entity</references>
+        <references refid="_se_xml_8h_1a1f222328707c425a7bf503ad663466b3" compoundref="_se_xml_8h" startline="69">SeXml_SNPRINTF</references>
+        <referencedby refid="class_se_xml_attribute_1af65527f4985348cb65750f21ce90d266" compoundref="_se_xml_8cpp" startline="2810" endline="2833">SeXmlAttribute::Print</referencedby>
+        <referencedby refid="class_se_xml_text_1a6cbb1cf6b28fbdcb72009e1c343f8770" compoundref="_se_xml_8cpp" startline="2932" endline="2950">SeXmlText::Print</referencedby>
+        <referencedby refid="class_se_xml_printer_1a9a072352bdc7027060e6399bf6baec83" compoundref="_se_xml_8cpp" startline="3540" endline="3565">SeXmlPrinter::Visit</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="class_se_xml_base_1a379822f55f562a7a5e71a814f66a3548" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * SeXmlBase::SkipWhiteSpace</definition>
+        <argsstring>(const char *, SeXmlEncoding encoding)</argsstring>
+        <name>SkipWhiteSpace</name>
+        <param>
+          <type>const char *</type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6f" kindref="member">SeXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="279" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="339" bodyend="387"/>
+        <references refid="class_se_xml_base_1a7e23cb83e0048e376e7bd40b2ea695a9" compoundref="_se_xml_8h" startline="281" endline="284">IsWhiteSpace</references>
+        <references refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6fad47daa0750f80007ef789ebe2e48da70" compoundref="_se_xml_8h" startline="157">SeXml_ENCODING_UTF8</references>
+        <references refid="_se_xml_8cpp_1ac0540398d97c55e667ac32e9f1e2d592" compoundref="_se_xml_8cpp" startline="87">SeXml_UTF_LEAD_0</references>
+        <references refid="_se_xml_8cpp_1a6a12ba77fd3cb216280d7384f9f4181d" compoundref="_se_xml_8cpp" startline="88">SeXml_UTF_LEAD_1</references>
+        <references refid="_se_xml_8cpp_1adf5cb5013413d6359326efff3d9cfa51" compoundref="_se_xml_8cpp" startline="89">SeXml_UTF_LEAD_2</references>
+        <referencedby refid="class_se_xml_node_1a412b0a236954990d508b0bc4bc5f905e" compoundref="_se_xml_8cpp" startline="838" endline="919">SeXmlNode::Identify</referencedby>
+        <referencedby refid="class_se_xml_attribute_1a02580d38bff9a73611ccc38a2f72324a" compoundref="_se_xml_8cpp" startline="1405" endline="1476">SeXmlAttribute::Parse</referencedby>
+        <referencedby refid="class_se_xml_element_1a1dece8a6836719b457ae13c97db13a5e" compoundref="_se_xml_8cpp" startline="1060" endline="1191">SeXmlElement::Parse</referencedby>
+        <referencedby refid="class_se_xml_comment_1a544c45d9b1d710e3463d08d411fa11a3" compoundref="_se_xml_8cpp" startline="1350" endline="1402">SeXmlComment::Parse</referencedby>
+        <referencedby refid="class_se_xml_declaration_1a8094b8798a1fb7b23db2c4cf082ec8cb" compoundref="_se_xml_8cpp" startline="1581" endline="1638">SeXmlDeclaration::Parse</referencedby>
+        <referencedby refid="class_se_xml_unknown_1a6f733221b95b536326ed35cda36fadcd" compoundref="_se_xml_8cpp" startline="1290" endline="1322">SeXmlUnknown::Parse</referencedby>
+        <referencedby refid="class_se_xml_document_1ad127c9369e3b07ccc15aa303fd289d5a" compoundref="_se_xml_8cpp" startline="724" endline="816">SeXmlDocument::Parse</referencedby>
+        <referencedby refid="class_se_xml_base_1a10a52f040cd9768a88c774bed37d5610" compoundref="_se_xml_8cpp" startline="597" endline="660">ReadText</referencedby>
+        <referencedby refid="class_se_xml_element_1aafec275193c8f4e5cbc0233a84a5575e" compoundref="_se_xml_8cpp" startline="1194" endline="1265">SeXmlElement::ReadValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1a7e23cb83e0048e376e7bd40b2ea695a9" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SeXmlBase::IsWhiteSpace</definition>
+        <argsstring>(char c)</argsstring>
+        <name>IsWhiteSpace</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="281" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="281" bodyend="284"/>
+        <referencedby refid="class_se_xml_text_1a3c7aa3f59c14f00a2f981e022b6fd92a" compoundref="_se_xml_8cpp" startline="1640" endline="1646">SeXmlText::Blank</referencedby>
+        <referencedby refid="class_se_xml_base_1ad8f36c3068ad38ebbb87b5ff4e406387" compoundref="_se_xml_8h" startline="285" endline="290">IsWhiteSpace</referencedby>
+        <referencedby refid="class_se_xml_attribute_1a02580d38bff9a73611ccc38a2f72324a" compoundref="_se_xml_8cpp" startline="1405" endline="1476">SeXmlAttribute::Parse</referencedby>
+        <referencedby refid="class_se_xml_declaration_1a8094b8798a1fb7b23db2c4cf082ec8cb" compoundref="_se_xml_8cpp" startline="1581" endline="1638">SeXmlDeclaration::Parse</referencedby>
+        <referencedby refid="class_se_xml_base_1a10a52f040cd9768a88c774bed37d5610" compoundref="_se_xml_8cpp" startline="597" endline="660">ReadText</referencedby>
+        <referencedby refid="class_se_xml_base_1a379822f55f562a7a5e71a814f66a3548" compoundref="_se_xml_8cpp" startline="339" endline="387">SkipWhiteSpace</referencedby>
+        <referencedby refid="class_se_xml_element_1a04dc77708f21329d5c4a3417dc355ced" compoundref="_se_xml_8cpp" startline="921" endline="1058">SeXmlElement::StreamIn</referencedby>
+        <referencedby refid="class_se_xml_base_1ae8001c8fd0086c2d7bfd6fc5fcaa0e71" compoundref="_se_xml_8cpp" startline="389" endline="402">StreamWhiteSpace</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1ad8f36c3068ad38ebbb87b5ff4e406387" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SeXmlBase::IsWhiteSpace</definition>
+        <argsstring>(int c)</argsstring>
+        <name>IsWhiteSpace</name>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="285" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="285" bodyend="290"/>
+        <references refid="class_se_xml_base_1a7e23cb83e0048e376e7bd40b2ea695a9" compoundref="_se_xml_8h" startline="281" endline="284">IsWhiteSpace</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1ae8001c8fd0086c2d7bfd6fc5fcaa0e71" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeXmlBase::StreamWhiteSpace</definition>
+        <argsstring>(std::istream *in, SeXml_STRING *tag)</argsstring>
+        <name>StreamWhiteSpace</name>
+        <param>
+          <type>std::istream *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1aba1e614be498200cbfd6f95fe347cb84" kindref="member">SeXml_STRING</ref> *</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="292" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="389" bodyend="402"/>
+        <references refid="class_se_xml_base_1a7e23cb83e0048e376e7bd40b2ea695a9" compoundref="_se_xml_8h" startline="281" endline="284">IsWhiteSpace</references>
+        <referencedby refid="class_se_xml_element_1a04dc77708f21329d5c4a3417dc355ced" compoundref="_se_xml_8cpp" startline="921" endline="1058">SeXmlElement::StreamIn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1ab0d1c3153c21a3de759cbd7ed6c78a51" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeXmlBase::StreamTo</definition>
+        <argsstring>(std::istream *in, int character, SeXml_STRING *tag)</argsstring>
+        <name>StreamTo</name>
+        <param>
+          <type>std::istream *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>character</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1aba1e614be498200cbfd6f95fe347cb84" kindref="member">SeXml_STRING</ref> *</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="293" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="404" bodyend="419"/>
+        <referencedby refid="class_se_xml_document_1a76b04b366f8e68e4a52b2f212738e06d" compoundref="_se_xml_8cpp" startline="663" endline="722">SeXmlDocument::StreamIn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1a2d52695fd41e4b774826e1b78279d837" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * SeXmlBase::ReadName</definition>
+        <argsstring>(const char *p, SeXml_STRING *name, SeXmlEncoding encoding)</argsstring>
+        <name>ReadName</name>
+        <param>
+          <type>const char *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1aba1e614be498200cbfd6f95fe347cb84" kindref="member">SeXml_STRING</ref> *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6f" kindref="member">SeXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="299" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="424" bodyend="459"/>
+        <references refid="class_se_xml_base_1a5fd1be0fe7ad1563eaf3fb15fc68af4d" compoundref="_se_xml_8cpp" startline="154" endline="172">IsAlpha</references>
+        <references refid="class_se_xml_base_1a52a4bc2e6cc7cb3c37f45d6856d5be11" compoundref="_se_xml_8cpp" startline="175" endline="193">IsAlphaNum</references>
+        <referencedby refid="class_se_xml_attribute_1a02580d38bff9a73611ccc38a2f72324a" compoundref="_se_xml_8cpp" startline="1405" endline="1476">SeXmlAttribute::Parse</referencedby>
+        <referencedby refid="class_se_xml_element_1a1dece8a6836719b457ae13c97db13a5e" compoundref="_se_xml_8cpp" startline="1060" endline="1191">SeXmlElement::Parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1a10a52f040cd9768a88c774bed37d5610" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * SeXmlBase::ReadText</definition>
+        <argsstring>(const char *in, SeXml_STRING *text, bool ignoreWhiteSpace, const char *endTag, bool ignoreCase, SeXmlEncoding encoding)</argsstring>
+        <name>ReadText</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1aba1e614be498200cbfd6f95fe347cb84" kindref="member">SeXml_STRING</ref> *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignoreWhiteSpace</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>endTag</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignoreCase</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6f" kindref="member">SeXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="304" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="597" bodyend="660"/>
+        <references refid="class_se_xml_base_1a4aa21fd9a36f7f7d63b294742ce5b244" compoundref="_se_xml_8h" startline="402">condenseWhiteSpace</references>
+        <references refid="class_se_xml_base_1a3eb22d30e95f31830af7d7166124b28e" compoundref="_se_xml_8h" startline="316" endline="350">GetChar</references>
+        <references refid="class_se_xml_base_1a7e23cb83e0048e376e7bd40b2ea695a9" compoundref="_se_xml_8h" startline="281" endline="284">IsWhiteSpace</references>
+        <references refid="class_se_xml_base_1a379822f55f562a7a5e71a814f66a3548" compoundref="_se_xml_8cpp" startline="339" endline="387">SkipWhiteSpace</references>
+        <references refid="class_se_xml_base_1a4415adb23e3bbbfcec01019d6f3a53b7" compoundref="_se_xml_8cpp" startline="557" endline="595">StringEqual</references>
+        <referencedby refid="class_se_xml_attribute_1a02580d38bff9a73611ccc38a2f72324a" compoundref="_se_xml_8cpp" startline="1405" endline="1476">SeXmlAttribute::Parse</referencedby>
+        <referencedby refid="class_se_xml_text_1a1379f89aabd31a7583aeaf12b33d61ff" compoundref="_se_xml_8cpp" startline="1508" endline="1557">SeXmlText::Parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1ad99e4e4368f338744e79da168ffaaf5f" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * SeXmlBase::GetEntity</definition>
+        <argsstring>(const char *in, char *value, int *length, SeXmlEncoding encoding)</argsstring>
+        <name>GetEntity</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6f" kindref="member">SeXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="312" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="461" bodyend="554"/>
+        <references refid="struct_se_xml_base_1_1_entity_1a09ed38e1aad054a2431327304569f83a" compoundref="_se_xml_8h" startline="393">SeXmlBase::Entity::chr</references>
+        <references refid="class_se_xml_base_1ad92685cc2915f0d25539cad4f60e79f2" compoundref="_se_xml_8cpp" startline="113" endline="151">ConvertUTF32ToUTF8</references>
+        <references refid="class_se_xml_base_1afa0ea7fe9ebdfabca195e848af3062c9" compoundref="_se_xml_8h" startline="401">entity</references>
+        <references refid="class_se_xml_base_1aedbd3edfe9544e31315e5da726ff9c74a178b25101d3e599dac19073fbede1068" compoundref="_se_xml_8h" startline="397">NUM_ENTITY</references>
+        <references refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6fad47daa0750f80007ef789ebe2e48da70" compoundref="_se_xml_8h" startline="157">SeXml_ENCODING_UTF8</references>
+        <referencedby refid="class_se_xml_base_1a3eb22d30e95f31830af7d7166124b28e" compoundref="_se_xml_8h" startline="316" endline="350">GetChar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1a3eb22d30e95f31830af7d7166124b28e" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* SeXmlBase::GetChar</definition>
+        <argsstring>(const char *p, char *_value, int *length, SeXmlEncoding encoding)</argsstring>
+        <name>GetChar</name>
+        <param>
+          <type>const char *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>_value</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6f" kindref="member">SeXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="316" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="316" bodyend="350"/>
+        <references refid="class_se_xml_base_1ad99e4e4368f338744e79da168ffaaf5f" compoundref="_se_xml_8cpp" startline="461" endline="554">GetEntity</references>
+        <references refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6fad47daa0750f80007ef789ebe2e48da70" compoundref="_se_xml_8h" startline="157">SeXml_ENCODING_UTF8</references>
+        <references refid="class_se_xml_base_1aef4aae11f1fb094c426b08f55d2fa44c" compoundref="_se_xml_8h" startline="244" endline="240">utf8ByteTable</references>
+        <referencedby refid="class_se_xml_base_1a10a52f040cd9768a88c774bed37d5610" compoundref="_se_xml_8cpp" startline="597" endline="660">ReadText</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1a4415adb23e3bbbfcec01019d6f3a53b7" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeXmlBase::StringEqual</definition>
+        <argsstring>(const char *p, const char *endTag, bool ignoreCase, SeXmlEncoding encoding)</argsstring>
+        <name>StringEqual</name>
+        <param>
+          <type>const char *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>endTag</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignoreCase</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6f" kindref="member">SeXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="355" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="557" bodyend="595"/>
+        <references refid="class_se_xml_base_1a4338b6a7a4db65614d8cac8fb6e3c1fa" compoundref="_se_xml_8h" startline="371" endline="382">ToLower</references>
+        <referencedby refid="class_se_xml_node_1a412b0a236954990d508b0bc4bc5f905e" compoundref="_se_xml_8cpp" startline="838" endline="919">SeXmlNode::Identify</referencedby>
+        <referencedby refid="class_se_xml_element_1a1dece8a6836719b457ae13c97db13a5e" compoundref="_se_xml_8cpp" startline="1060" endline="1191">SeXmlElement::Parse</referencedby>
+        <referencedby refid="class_se_xml_comment_1a544c45d9b1d710e3463d08d411fa11a3" compoundref="_se_xml_8cpp" startline="1350" endline="1402">SeXmlComment::Parse</referencedby>
+        <referencedby refid="class_se_xml_text_1a1379f89aabd31a7583aeaf12b33d61ff" compoundref="_se_xml_8cpp" startline="1508" endline="1557">SeXmlText::Parse</referencedby>
+        <referencedby refid="class_se_xml_declaration_1a8094b8798a1fb7b23db2c4cf082ec8cb" compoundref="_se_xml_8cpp" startline="1581" endline="1638">SeXmlDeclaration::Parse</referencedby>
+        <referencedby refid="class_se_xml_document_1ad127c9369e3b07ccc15aa303fd289d5a" compoundref="_se_xml_8cpp" startline="724" endline="816">SeXmlDocument::Parse</referencedby>
+        <referencedby refid="class_se_xml_element_1a8d69e5ac45b04b0257c96be59b16f3f0" compoundref="_se_xml_8cpp" startline="2293" endline="2315">SeXmlElement::QueryBoolAttribute</referencedby>
+        <referencedby refid="class_se_xml_base_1a10a52f040cd9768a88c774bed37d5610" compoundref="_se_xml_8cpp" startline="597" endline="660">ReadText</referencedby>
+        <referencedby refid="class_se_xml_element_1aafec275193c8f4e5cbc0233a84a5575e" compoundref="_se_xml_8cpp" startline="1194" endline="1265">SeXmlElement::ReadValue</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1a5fd1be0fe7ad1563eaf3fb15fc68af4d" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SeXmlBase::IsAlpha</definition>
+        <argsstring>(unsigned char anyByte, SeXmlEncoding encoding)</argsstring>
+        <name>IsAlpha</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>anyByte</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6f" kindref="member">SeXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="369" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="154" bodyend="172"/>
+        <referencedby refid="class_se_xml_node_1a412b0a236954990d508b0bc4bc5f905e" compoundref="_se_xml_8cpp" startline="838" endline="919">SeXmlNode::Identify</referencedby>
+        <referencedby refid="class_se_xml_base_1a2d52695fd41e4b774826e1b78279d837" compoundref="_se_xml_8cpp" startline="424" endline="459">ReadName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1a52a4bc2e6cc7cb3c37f45d6856d5be11" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int SeXmlBase::IsAlphaNum</definition>
+        <argsstring>(unsigned char anyByte, SeXmlEncoding encoding)</argsstring>
+        <name>IsAlphaNum</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>anyByte</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6f" kindref="member">SeXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="370" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="175" bodyend="193"/>
+        <referencedby refid="class_se_xml_base_1a2d52695fd41e4b774826e1b78279d837" compoundref="_se_xml_8cpp" startline="424" endline="459">ReadName</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1a4338b6a7a4db65614d8cac8fb6e3c1fa" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int SeXmlBase::ToLower</definition>
+        <argsstring>(int v, SeXmlEncoding encoding)</argsstring>
+        <name>ToLower</name>
+        <param>
+          <type>int</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6f" kindref="member">SeXmlEncoding</ref></type>
+          <declname>encoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="371" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="371" bodyend="382"/>
+        <references refid="_se_xml_8h_1a0469ba08d8ff7a62e586df5fc4c76d6fad47daa0750f80007ef789ebe2e48da70" compoundref="_se_xml_8h" startline="157">SeXml_ENCODING_UTF8</references>
+        <referencedby refid="class_se_xml_base_1a4415adb23e3bbbfcec01019d6f3a53b7" compoundref="_se_xml_8cpp" startline="557" endline="595">StringEqual</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1ad92685cc2915f0d25539cad4f60e79f2" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeXmlBase::ConvertUTF32ToUTF8</definition>
+        <argsstring>(unsigned long input, char *output, int *length)</argsstring>
+        <name>ConvertUTF32ToUTF8</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="383" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.cpp" bodystart="113" bodyend="151"/>
+        <referencedby refid="class_se_xml_base_1ad99e4e4368f338744e79da168ffaaf5f" compoundref="_se_xml_8cpp" startline="461" endline="554">GetEntity</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_se_xml_base_1a6329e4dc5e17dd84ef34dd332a463198" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeXmlBase::SeXmlBase</definition>
+        <argsstring>(const SeXmlBase &amp;)</argsstring>
+        <name>SeXmlBase</name>
+        <param>
+          <type>const <ref refid="class_se_xml_base" kindref="compound">SeXmlBase</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="386" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_xml_base_1acd34e346daead93ba906ef93af4f3123" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeXmlBase::operator=</definition>
+        <argsstring>(const SeXmlBase &amp;base)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_se_xml_base" kindref="compound">SeXmlBase</ref> &amp;</type>
+          <declname>base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="387" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_se_xml_base" kindref="compound">SeXmlBase</ref> is a base class for every class in SeXml. It does little except to establish that SeXml classes can be printed and provide some utility functions.</para><para>In XML, the document and elements can contain other elements and other types of nodes.</para><para><verbatim>A Document can contain: Element (container or leaf)
+                        Comment (leaf)
+                        Unknown (leaf)
+                        Declaration( leaf )
+
+An Element can contain: Element (container or leaf)
+                        Text    (leaf)
+                        Attributes (not on tree)
+                        Comment (leaf)
+                        Unknown (leaf)
+
+A Decleration contains: Attributes (not on tree)
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="8859">
+        <label>SeXmlUnknown</label>
+        <link refid="class_se_xml_unknown"/>
+        <childnode refid="8853" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8851">
+        <label>SeXmlBase</label>
+        <link refid="class_se_xml_base"/>
+      </node>
+      <node id="8852">
+        <label>SeXmlAttribute</label>
+        <link refid="class_se_xml_attribute"/>
+        <childnode refid="8851" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8853">
+        <label>SeXmlNode</label>
+        <link refid="class_se_xml_node"/>
+        <childnode refid="8851" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8858">
+        <label>SeXmlText</label>
+        <link refid="class_se_xml_text"/>
+        <childnode refid="8853" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8854">
+        <label>SeXmlComment</label>
+        <link refid="class_se_xml_comment"/>
+        <childnode refid="8853" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8857">
+        <label>SeXmlElement</label>
+        <link refid="class_se_xml_element"/>
+        <childnode refid="8853" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8856">
+        <label>SeXmlDocument</label>
+        <link refid="class_se_xml_document"/>
+        <childnode refid="8853" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8855">
+        <label>SeXmlDeclaration</label>
+        <link refid="class_se_xml_declaration"/>
+        <childnode refid="8853" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8861">
+        <label>SeXmlCursor</label>
+        <link refid="struct_se_xml_cursor"/>
+      </node>
+      <node id="8860">
+        <label>SeXmlBase</label>
+        <link refid="class_se_xml_base"/>
+        <childnode refid="8861" relation="usage">
+          <edgelabel>location</edgelabel>
+        </childnode>
+        <childnode refid="8862" relation="usage">
+          <edgelabel>entity</edgelabel>
+        </childnode>
+      </node>
+      <node id="8862">
+        <label>SeXmlBase::Entity</label>
+        <link refid="struct_se_xml_base_1_1_entity"/>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" line="186" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Share/CommonShare/SeXml.h" bodystart="185" bodyend="403"/>
+    <listofallmembers>
+      <member refid="class_se_xml_base_1a8e59dc61db5fe2c86515e581e77d37d7" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>Column</name></member>
+      <member refid="class_se_xml_base_1a4aa21fd9a36f7f7d63b294742ce5b244" prot="private" virt="non-virtual"><scope>SeXmlBase</scope><name>condenseWhiteSpace</name></member>
+      <member refid="class_se_xml_base_1ad92685cc2915f0d25539cad4f60e79f2" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>ConvertUTF32ToUTF8</name></member>
+      <member refid="class_se_xml_base_1a1ff244393ecfa2592f20e42b003bed8e" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>EncodeString</name></member>
+      <member refid="class_se_xml_base_1afa0ea7fe9ebdfabca195e848af3062c9" prot="private" virt="non-virtual"><scope>SeXmlBase</scope><name>entity</name></member>
+      <member refid="class_se_xml_base_1a3e08e16daa316e5dca353d52b50bb634" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>errorString</name></member>
+      <member refid="class_se_xml_base_1a3eb22d30e95f31830af7d7166124b28e" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>GetChar</name></member>
+      <member refid="class_se_xml_base_1ad99e4e4368f338744e79da168ffaaf5f" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>GetEntity</name></member>
+      <member refid="class_se_xml_base_1a1fd6f98baf50dad19bebf82412e5a559" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>GetUserData</name></member>
+      <member refid="class_se_xml_base_1a7d48ae7662f70843e2a29a6edec29f54" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>GetUserData</name></member>
+      <member refid="class_se_xml_base_1a5fd1be0fe7ad1563eaf3fb15fc68af4d" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>IsAlpha</name></member>
+      <member refid="class_se_xml_base_1a52a4bc2e6cc7cb3c37f45d6856d5be11" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>IsAlphaNum</name></member>
+      <member refid="class_se_xml_base_1a7e23cb83e0048e376e7bd40b2ea695a9" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>IsWhiteSpace</name></member>
+      <member refid="class_se_xml_base_1ad8f36c3068ad38ebbb87b5ff4e406387" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>IsWhiteSpace</name></member>
+      <member refid="class_se_xml_base_1aad5ae27ed026516f98703491ba2f4db0" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>IsWhiteSpaceCondensed</name></member>
+      <member refid="class_se_xml_base_1a79a0f45bd6ad1176c684c81331249cd6" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>location</name></member>
+      <member refid="class_se_xml_base_1aedbd3edfe9544e31315e5da726ff9c74aede14382f6fb1002ac7206427f59b4ab" prot="private" virt="non-virtual"><scope>SeXmlBase</scope><name>MAX_ENTITY_LENGTH</name></member>
+      <member refid="class_se_xml_base_1aedbd3edfe9544e31315e5da726ff9c74a178b25101d3e599dac19073fbede1068" prot="private" virt="non-virtual"><scope>SeXmlBase</scope><name>NUM_ENTITY</name></member>
+      <member refid="class_se_xml_base_1acd34e346daead93ba906ef93af4f3123" prot="private" virt="non-virtual"><scope>SeXmlBase</scope><name>operator=</name></member>
+      <member refid="class_se_xml_base_1a38c51cddba53f84ec573190ada8b01b6" prot="public" virt="pure-virtual"><scope>SeXmlBase</scope><name>Parse</name></member>
+      <member refid="class_se_xml_base_1a55dbb0c85e6fa8091572bb536983bf03" prot="public" virt="pure-virtual"><scope>SeXmlBase</scope><name>Print</name></member>
+      <member refid="class_se_xml_base_1a2d52695fd41e4b774826e1b78279d837" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>ReadName</name></member>
+      <member refid="class_se_xml_base_1a10a52f040cd9768a88c774bed37d5610" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>ReadText</name></member>
+      <member refid="class_se_xml_base_1af91d159f8021759d0a7f9cea48322f1a" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>Row</name></member>
+      <member refid="class_se_xml_base_1a508eb7f0d50305393467c9d747cda1c7" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SetCondenseWhiteSpace</name></member>
+      <member refid="class_se_xml_base_1a36a9fb52b728e32d18c8bbb229b8ef25" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SetUserData</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda8fc8090eb2e6684745bb9feba9c0a1f0" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_ERROR</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fdaf164e2da2d6196634def737c4dc12a69" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_ERROR_DOCUMENT_EMPTY</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda9d536a485ccd19c0f98dcd71d8d27302" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_ERROR_DOCUMENT_TOP_ONLY</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fdae80dbf642bb075d49effa3888ee2b3eb" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_ERROR_EMBEDDED_NULL</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda86b1490b3060cab3de0b4fabeeec93f8" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_ERROR_FAILED_TO_READ_ELEMENT_NAME</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda39849eb7277dacae33756c9fee85852d" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_ERROR_OPENING_FILE</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fdaed5285094b2b13e0950770a0973f6701" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_ERROR_PARSING_CDATA</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda544cb3c8b47aa56b33b0a064072018e0" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_ERROR_PARSING_COMMENT</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda2894e12ed64d628a381d94e28947c6cd" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_ERROR_PARSING_DECLARATION</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fdae58a4a23959e57449eb42987a07c34d2" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_ERROR_PARSING_ELEMENT</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda1f4605b0204022f928dda07b9c0cb832" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_ERROR_PARSING_EMPTY</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda0d08a31dce02b68cdaf5c0db60a2cbd3" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_ERROR_PARSING_UNKNOWN</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fdae73ffa849c911960b05884049140e827" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_ERROR_READING_ATTRIBUTES</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda057ffec95c48ce4901d186ec25460d6e" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_ERROR_READING_ELEMENT_VALUE</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda9bd9d7dca81940b2d1f09e23aa3f3217" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_ERROR_READING_END_TAG</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda704d627a90965b6d09e6988ebf0d3743" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_ERROR_STRING_COUNT</name></member>
+      <member refid="class_se_xml_base_1a7e2829d816042b02aae53e7762a405fda440bcbf4e8c9d2710231b1a180d0ba9f" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXml_NO_ERROR</name></member>
+      <member refid="class_se_xml_base_1aa6db2755e4682bb1a5ad49dd22b5d1f1" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXmlBase</name></member>
+      <member refid="class_se_xml_base_1a6329e4dc5e17dd84ef34dd332a463198" prot="private" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXmlBase</name></member>
+      <member refid="class_se_xml_base_1a649e42d2d9cbc6952d5f2fe6b9c91f4c" prot="private" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXmlDocument</name></member>
+      <member refid="class_se_xml_base_1a30b08077ea663954788bbd17b23df7a1" prot="private" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXmlElement</name></member>
+      <member refid="class_se_xml_base_1adbe83c79a71b73d39dba3d2bdbab6185" prot="private" virt="non-virtual"><scope>SeXmlBase</scope><name>SeXmlNode</name></member>
+      <member refid="class_se_xml_base_1a379822f55f562a7a5e71a814f66a3548" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>SkipWhiteSpace</name></member>
+      <member refid="class_se_xml_base_1ab0d1c3153c21a3de759cbd7ed6c78a51" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>StreamTo</name></member>
+      <member refid="class_se_xml_base_1ae8001c8fd0086c2d7bfd6fc5fcaa0e71" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>StreamWhiteSpace</name></member>
+      <member refid="class_se_xml_base_1a4415adb23e3bbbfcec01019d6f3a53b7" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>StringEqual</name></member>
+      <member refid="class_se_xml_base_1a4338b6a7a4db65614d8cac8fb6e3c1fa" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>ToLower</name></member>
+      <member refid="class_se_xml_base_1a855e2f10720e4330cb60265a4c6731b5" prot="protected" virt="non-virtual"><scope>SeXmlBase</scope><name>userData</name></member>
+      <member refid="class_se_xml_base_1aef4aae11f1fb094c426b08f55d2fa44c" prot="public" virt="non-virtual"><scope>SeXmlBase</scope><name>utf8ByteTable</name></member>
+      <member refid="class_se_xml_base_1ae465e56e71560767e9529357b9be3822" prot="public" virt="virtual"><scope>SeXmlBase</scope><name>~SeXmlBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

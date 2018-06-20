@@ -1,0 +1,894 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_se_race_record_save_thread" kind="class" prot="public">
+    <compoundname>SeRaceRecordSaveThread</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Thread</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Thread</basecompoundref>
+    <includes refid="_race_server_2src_2race_record_save_thread_8h" local="no">raceRecordSaveThread.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_se_race_record_save_thread_1a07b5d768ee99521e626132f67fdf95fa" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SeRaceRecordSaveThread::m_bRun</definition>
+        <argsstring></argsstring>
+        <name>m_bRun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" line="30" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_se_race_record_save_thread_1a79535d2f4037275cc7eee46c39e3c851" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="54" endline="82">DoWork</referencedby>
+        <referencedby refid="class_se_race_record_save_thread_1a5ed1b2df07fda6e520bb78ab5f598db6" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="38" endline="52">Finialize</referencedby>
+        <referencedby refid="class_se_race_record_save_thread_1a195f97d5828265248e79642ee080e7b9" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="28" endline="36">Initialize</referencedby>
+        <referencedby refid="class_se_race_record_save_thread_1a33789b2a2c688fe9fbb7f1dfe69aad91" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="8" endline="13">SeRaceRecordSaveThread</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_race_record_save_thread_1a85ba2708bb3cc61d08c92ee4804a2a62" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_race_server" kindref="compound">RaceServer</ref> *</type>
+        <definition>RaceServer * SeRaceRecordSaveThread::m_pkOwner</definition>
+        <argsstring></argsstring>
+        <name>m_pkOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" line="31" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_race_record_save_thread_1a65464df8c526840333135e1a197e2370" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int SeRaceRecordSaveThread::m_uLogicVersion</definition>
+        <argsstring></argsstring>
+        <name>m_uLogicVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" line="32" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="84" endline="135">saveRecord</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_race_record_save_thread_1a28fb614a7e2c00f7f5abdba781a370e2" prot="protected" static="no" mutable="no">
+        <type><ref refid="_race_server_2src_2race_record_save_thread_8h_1a2a0bb9348fc3bf1eb462765e4a6b5795" kindref="member">TRaceTaskQueue</ref></type>
+        <definition>TRaceTaskQueue SeRaceRecordSaveThread::m_qSaveQueue</definition>
+        <argsstring></argsstring>
+        <name>m_qSaveQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" line="34" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_se_race_record_save_thread_1a79535d2f4037275cc7eee46c39e3c851" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="54" endline="82">DoWork</referencedby>
+        <referencedby refid="class_se_race_record_save_thread_1a5ed1b2df07fda6e520bb78ab5f598db6" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="38" endline="52">Finialize</referencedby>
+        <referencedby refid="class_se_race_record_save_thread_1a15e230a438d9545018bdaea1a4b247e5" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="19" endline="26">PushTask</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_race_record_save_thread_1ac2c0d4a876a8fa2f2205dc1b1fa3ffbb" prot="protected" static="no" mutable="no">
+        <type><ref refid="_race_server_2src_2race_record_save_thread_8h_1a2a0bb9348fc3bf1eb462765e4a6b5795" kindref="member">TRaceTaskQueue</ref></type>
+        <definition>TRaceTaskQueue SeRaceRecordSaveThread::m_qFinishQueue</definition>
+        <argsstring></argsstring>
+        <name>m_qFinishQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" line="35" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_se_race_record_save_thread_1a79535d2f4037275cc7eee46c39e3c851" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="54" endline="82">DoWork</referencedby>
+        <referencedby refid="class_se_race_record_save_thread_1a9d97a8490bfd14b5ecd36dcb6638b706" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="138" endline="151">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_se_race_record_save_thread_1a4c7708b208f313718859d512589a8307" prot="protected" static="no" mutable="no">
+        <type>Es::NormalLock *</type>
+        <definition>Es::NormalLock * SeRaceRecordSaveThread::m_pkQueueLock</definition>
+        <argsstring></argsstring>
+        <name>m_pkQueueLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" line="37" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_se_race_record_save_thread_1a79535d2f4037275cc7eee46c39e3c851" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="54" endline="82">DoWork</referencedby>
+        <referencedby refid="class_se_race_record_save_thread_1a195f97d5828265248e79642ee080e7b9" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="28" endline="36">Initialize</referencedby>
+        <referencedby refid="class_se_race_record_save_thread_1a15e230a438d9545018bdaea1a4b247e5" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="19" endline="26">PushTask</referencedby>
+        <referencedby refid="class_se_race_record_save_thread_1a9d97a8490bfd14b5ecd36dcb6638b706" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="138" endline="151">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_se_race_record_save_thread_1a33789b2a2c688fe9fbb7f1dfe69aad91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeRaceRecordSaveThread::SeRaceRecordSaveThread</definition>
+        <argsstring>(RaceServer *owner, unsigned int logciVersion)</argsstring>
+        <name>SeRaceRecordSaveThread</name>
+        <param>
+          <type><ref refid="class_race_server" kindref="compound">RaceServer</ref> *</type>
+          <declname>owner</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>logciVersion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" line="13" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.cpp" bodystart="8" bodyend="13"/>
+        <references refid="class_se_race_record_save_thread_1a07b5d768ee99521e626132f67fdf95fa" compoundref="_race_server_2src_2race_record_save_thread_8h" startline="30">m_bRun</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_race_record_save_thread_1ac3e249da0c4a38f4484b8b64e6aceb0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>SeRaceRecordSaveThread::~SeRaceRecordSaveThread</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SeRaceRecordSaveThread</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" line="14" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_race_record_save_thread_1a15e230a438d9545018bdaea1a4b247e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeRaceRecordSaveThread::PushTask</definition>
+        <argsstring>(class SeRace *pTask)</argsstring>
+        <name>PushTask</name>
+        <param>
+          <type>class <ref refid="struct_se_race" kindref="compound">SeRace</ref> *</type>
+          <declname>pTask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" line="16" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.cpp" bodystart="19" bodyend="26"/>
+        <references refid="class_se_race_record_save_thread_1a4c7708b208f313718859d512589a8307" compoundref="_race_server_2src_2race_record_save_thread_8h" startline="37">m_pkQueueLock</references>
+        <references refid="class_se_race_record_save_thread_1a28fb614a7e2c00f7f5abdba781a370e2" compoundref="_race_server_2src_2race_record_save_thread_8h" startline="34">m_qSaveQueue</references>
+        <referencedby refid="class_race_server_1a09463facb5a9bebcc97f7d4b2c0945d2" compoundref="src_2_race_server_8cpp" startline="210" endline="216">RaceServer::SaveRecord</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_race_record_save_thread_1a195f97d5828265248e79642ee080e7b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeRaceRecordSaveThread::Initialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" line="17" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.cpp" bodystart="28" bodyend="36"/>
+        <references refid="class_se_race_record_save_thread_1a07b5d768ee99521e626132f67fdf95fa" compoundref="_race_server_2src_2race_record_save_thread_8h" startline="30">m_bRun</references>
+        <references refid="class_se_race_record_save_thread_1a4c7708b208f313718859d512589a8307" compoundref="_race_server_2src_2race_record_save_thread_8h" startline="37">m_pkQueueLock</references>
+        <referencedby refid="class_race_server_1a2303f7152794a0be3a6c6639b7373dba" compoundref="src_2_race_server_8cpp" startline="1523" endline="1529">RaceServer::RaceThreadInitialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_race_record_save_thread_1a5ed1b2df07fda6e520bb78ab5f598db6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeRaceRecordSaveThread::Finialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Finialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" line="18" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.cpp" bodystart="38" bodyend="52"/>
+        <references refid="class_se_race_record_save_thread_1a07b5d768ee99521e626132f67fdf95fa" compoundref="_race_server_2src_2race_record_save_thread_8h" startline="30">m_bRun</references>
+        <references refid="class_se_race_record_save_thread_1a28fb614a7e2c00f7f5abdba781a370e2" compoundref="_race_server_2src_2race_record_save_thread_8h" startline="34">m_qSaveQueue</references>
+        <references refid="class_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="84" endline="135">saveRecord</references>
+        <referencedby refid="class_race_server_1acfd8886b9d300d53a533746a67b750e8" compoundref="src_2_race_server_8cpp" startline="1531" endline="1539">RaceServer::RaceThreadFinialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_race_record_save_thread_1a9d97a8490bfd14b5ecd36dcb6638b706" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeRaceRecordSaveThread::Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" line="20" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.cpp" bodystart="138" bodyend="151"/>
+        <references refid="class_se_race_record_save_thread_1a4c7708b208f313718859d512589a8307" compoundref="_race_server_2src_2race_record_save_thread_8h" startline="37">m_pkQueueLock</references>
+        <references refid="class_se_race_record_save_thread_1ac2c0d4a876a8fa2f2205dc1b1fa3ffbb" compoundref="_race_server_2src_2race_record_save_thread_8h" startline="35">m_qFinishQueue</references>
+        <referencedby refid="class_race_server_1acfd8886b9d300d53a533746a67b750e8" compoundref="src_2_race_server_8cpp" startline="1531" endline="1539">RaceServer::RaceThreadFinialize</referencedby>
+        <referencedby refid="class_race_server_1ae92da288f2c535c4c897c82381e205cd" compoundref="src_2_race_server_8cpp" startline="1541" endline="1549">RaceServer::RaceThreadUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_race_record_save_thread_1a79535d2f4037275cc7eee46c39e3c851" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SeRaceRecordSaveThread::DoWork</definition>
+        <argsstring>(void)</argsstring>
+        <name>DoWork</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" line="22" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.cpp" bodystart="54" bodyend="82"/>
+        <references refid="class_se_race_record_save_thread_1a07b5d768ee99521e626132f67fdf95fa" compoundref="_race_server_2src_2race_record_save_thread_8h" startline="30">m_bRun</references>
+        <references refid="class_se_race_record_save_thread_1a4c7708b208f313718859d512589a8307" compoundref="_race_server_2src_2race_record_save_thread_8h" startline="37">m_pkQueueLock</references>
+        <references refid="class_se_race_record_save_thread_1ac2c0d4a876a8fa2f2205dc1b1fa3ffbb" compoundref="_race_server_2src_2race_record_save_thread_8h" startline="35">m_qFinishQueue</references>
+        <references refid="class_se_race_record_save_thread_1a28fb614a7e2c00f7f5abdba781a370e2" compoundref="_race_server_2src_2race_record_save_thread_8h" startline="34">m_qSaveQueue</references>
+        <references refid="class_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="84" endline="135">saveRecord</references>
+      </memberdef>
+      <memberdef kind="function" id="class_se_race_record_save_thread_1a33789b2a2c688fe9fbb7f1dfe69aad91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SeRaceRecordSaveThread::SeRaceRecordSaveThread</definition>
+        <argsstring>(RaceServer *owner, unsigned int logciVersion)</argsstring>
+        <name>SeRaceRecordSaveThread</name>
+        <param>
+          <type><ref refid="class_race_server" kindref="compound">RaceServer</ref> *</type>
+          <declname>owner</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>logciVersion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/raceRecordSaveThread.h" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_race_record_save_thread_1a892721d6677aeeb9cdda6d860befc946" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual SeRaceRecordSaveThread::~SeRaceRecordSaveThread</definition>
+        <argsstring>(void)</argsstring>
+        <name>~SeRaceRecordSaveThread</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/raceRecordSaveThread.h" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_race_record_save_thread_1a15e230a438d9545018bdaea1a4b247e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeRaceRecordSaveThread::PushTask</definition>
+        <argsstring>(class SeRace *pTask)</argsstring>
+        <name>PushTask</name>
+        <param>
+          <type>class <ref refid="struct_se_race" kindref="compound">SeRace</ref> *</type>
+          <declname>pTask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/raceRecordSaveThread.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_race_record_save_thread_1a195f97d5828265248e79642ee080e7b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SeRaceRecordSaveThread::Initialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/raceRecordSaveThread.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_race_record_save_thread_1a5ed1b2df07fda6e520bb78ab5f598db6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeRaceRecordSaveThread::Finialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>Finialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/raceRecordSaveThread.h" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_race_record_save_thread_1a9d97a8490bfd14b5ecd36dcb6638b706" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeRaceRecordSaveThread::Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/raceRecordSaveThread.h" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_se_race_record_save_thread_1aef52089ca9529ff68af23dd6a1232952" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void SeRaceRecordSaveThread::DoWork</definition>
+        <argsstring>(void)</argsstring>
+        <name>DoWork</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/raceRecordSaveThread.h" line="22" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeRaceRecordSaveThread::saveRecord</definition>
+        <argsstring>(class SeRace *pTask)</argsstring>
+        <name>saveRecord</name>
+        <param>
+          <type>class <ref refid="struct_se_race" kindref="compound">SeRace</ref> *</type>
+          <declname>pTask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" line="26" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.cpp" bodystart="84" bodyend="135"/>
+        <references refid="struct_te_m_d5_1a4a87587ff2453882ccfb8a1fe64b9b94" compoundref="_te_misc_8h" startline="53">TeMD5::abyMD5</references>
+        <references refid="struct_se_race_config_1a185b50d5737dfaf99b61660354d529d1" compoundref="src_2_race_server_def_8h" startline="122">SeRaceConfig::acRaceRecordSavePath</references>
+        <references refid="src_2_race_server_8cpp_1a11ebf86c50956d92a423e490dfbd05be" compoundref="src_2_race_server_8cpp" startline="9">g_kRaceServer</references>
+        <references refid="_se_tool_8h_1adbd57b0a2e2b5bccf6ba29ea002839e8" compoundref="_se_tool_8h" startline="102">GetMD52Str</references>
+        <references refid="class_race_server_1a788a00bd15f61a8dadb074c05658b108" compoundref="src_2_race_server_8cpp" startline="1191" endline="1194">RaceServer::GetRaceConfig</references>
+        <references refid="struct_se_race_1a83b542516d4f3e73058257bd337b4605" compoundref="_race_server_2src_2_se_race_mgr_def_8h" startline="254">SeRace::kRaceID</references>
+        <references refid="struct_se_race_1a910d43b4f7925e3e66b60bd4fd049d0c" compoundref="_race_server_2src_2_se_race_mgr_def_8h" startline="267">SeRace::kRecord</references>
+        <references refid="struct_se_race_1a24c3de67f278149f7312f1c7975342b5" compoundref="_race_server_2src_2_se_race_mgr_def_8h" startline="266">SeRace::kSvrModeRecord</references>
+        <references refid="class_se_race_record_save_thread_1a65464df8c526840333135e1a197e2370" compoundref="_race_server_2src_2race_record_save_thread_8h" startline="32">m_uLogicVersion</references>
+        <references refid="class_se_race_record_1a982f4486cf0dae01430b5fea4d1ba4cb" compoundref="_se_race_record_8cpp" startline="998" endline="1029">SeRaceRecord::SaveReplayReportToFile</references>
+        <references refid="class_se_race_record_1a8371775734b57d065293a4723b6416ea" compoundref="_se_race_record_8cpp" startline="915" endline="960">SeRaceRecord::SaveToFile</references>
+        <references refid="_se_file_log_8h_1a83f3fe470b91cb8eed8762cc8e5e26c3" compoundref="_se_file_log_8h" startline="83">SeLogInfo</references>
+        <references refid="_se_server_tool_8cpp_1ad2735ec90511f0d6ec1535cf448709b8" compoundref="_se_server_tool_8cpp" startline="31" endline="64">SPrintf</references>
+        <referencedby refid="class_se_race_record_save_thread_1a79535d2f4037275cc7eee46c39e3c851" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="54" endline="82">DoWork</referencedby>
+        <referencedby refid="class_se_race_record_save_thread_1a5ed1b2df07fda6e520bb78ab5f598db6" compoundref="_race_server_2src_2race_record_save_thread_8cpp" startline="38" endline="52">Finialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SeRaceRecordSaveThread::saveRecord</definition>
+        <argsstring>(class SeRace *pTask)</argsstring>
+        <name>saveRecord</name>
+        <param>
+          <type>class <ref refid="struct_se_race" kindref="compound">SeRace</ref> *</type>
+          <declname>pTask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/raceRecordSaveThread.h" line="26" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6251">
+        <label>Thread</label>
+      </node>
+      <node id="6250">
+        <label>SeRaceRecordSaveThread</label>
+        <link refid="class_se_race_record_save_thread"/>
+        <childnode refid="6251" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6251" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6272">
+        <label>SeRandNum</label>
+        <link refid="class_se_rand_num"/>
+        <childnode refid="6273" relation="usage">
+          <edgelabel>m_kFileName</edgelabel>
+        </childnode>
+        <childnode refid="6275" relation="usage">
+          <edgelabel>m_kRandInfo</edgelabel>
+        </childnode>
+      </node>
+      <node id="6261">
+        <label>SeThreadMsgMgr</label>
+        <link refid="class_se_thread_msg_mgr"/>
+        <childnode refid="6262" relation="usage">
+          <edgelabel>m_kTemMsgData</edgelabel>
+        </childnode>
+      </node>
+      <node id="6267">
+        <label>K</label>
+      </node>
+      <node id="6268">
+        <label>T</label>
+      </node>
+      <node id="6295">
+        <label>SeRaceRecord</label>
+        <link refid="class_se_race_record"/>
+        <childnode refid="6296" relation="usage">
+          <edgelabel>m_kReplayInfo</edgelabel>
+        </childnode>
+        <childnode refid="6297" relation="usage">
+          <edgelabel>m_vecRecordLabel</edgelabel>
+        </childnode>
+        <childnode refid="6299" relation="usage">
+          <edgelabel>m_akPackInfo</edgelabel>
+        </childnode>
+        <childnode refid="6300" relation="usage">
+          <edgelabel>m_kTmpRacePack</edgelabel>
+        </childnode>
+        <childnode refid="6301" relation="usage">
+          <edgelabel>m_vecRecordReport</edgelabel>
+        </childnode>
+        <childnode refid="6303" relation="usage">
+          <edgelabel>m_aiReconDataOffPos</edgelabel>
+        </childnode>
+        <childnode refid="6304" relation="usage">
+          <edgelabel>m_ClientWatchLogFile</edgelabel>
+        </childnode>
+        <childnode refid="6309" relation="usage">
+          <edgelabel>m_kPlayerInfo</edgelabel>
+        </childnode>
+        <childnode refid="6311" relation="usage">
+          <edgelabel>m_kTmpRaceHead</edgelabel>
+        </childnode>
+      </node>
+      <node id="6271">
+        <label>SeWatchServerConnect</label>
+        <link refid="struct_se_watch_server_connect"/>
+        <childnode refid="6259" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6301">
+        <label>std::vector&lt; RecordReport &gt;</label>
+        <childnode refid="6302" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6291">
+        <label>std::vector&lt; SeWCSView &gt;</label>
+        <childnode refid="6292" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6287">
+        <label>SeLogicRaceData</label>
+        <link refid="class_se_logic_race_data"/>
+      </node>
+      <node id="6297">
+        <label>std::vector&lt; RecordLabel &gt;</label>
+        <childnode refid="6298" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6254">
+        <label>RaceServer</label>
+        <link refid="class_race_server"/>
+        <childnode refid="6255" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6256" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6255" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6256" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6257" relation="usage">
+          <edgelabel>m_kAllConnect</edgelabel>
+        </childnode>
+        <childnode refid="6252" relation="usage">
+          <edgelabel>m_pkSaveRecordThread</edgelabel>
+        </childnode>
+        <childnode refid="6261" relation="usage">
+          <edgelabel>m_kThreadMsgMgr</edgelabel>
+        </childnode>
+        <childnode refid="6263" relation="usage">
+          <edgelabel>m_akThreadTime</edgelabel>
+        </childnode>
+        <childnode refid="6264" relation="usage">
+          <edgelabel>m_pkNSConn</edgelabel>
+          <edgelabel>m_pkWSConn</edgelabel>
+        </childnode>
+        <childnode refid="6265" relation="usage">
+          <edgelabel>m_kWaitRobot</edgelabel>
+        </childnode>
+        <childnode refid="6269" relation="usage">
+          <edgelabel>m_kConfig</edgelabel>
+        </childnode>
+        <childnode refid="6270" relation="usage">
+          <edgelabel>m_kWCSConnect</edgelabel>
+        </childnode>
+        <childnode refid="6272" relation="usage">
+          <edgelabel>m_kRandNum</edgelabel>
+        </childnode>
+        <childnode refid="6276" relation="usage">
+          <edgelabel>m_pakRaceService</edgelabel>
+        </childnode>
+        <childnode refid="6290" relation="usage">
+          <edgelabel>m_kMSData</edgelabel>
+        </childnode>
+        <childnode refid="6291" relation="usage">
+          <edgelabel>m_vWCSView</edgelabel>
+        </childnode>
+      </node>
+      <node id="6284">
+        <label>SeSvrRacePlayer</label>
+        <link refid="struct_se_svr_race_player"/>
+      </node>
+      <node id="6279">
+        <label>std::map&lt; TeMD5, SeSvrRace &gt;</label>
+        <childnode refid="6280" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="6288" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="6286">
+        <label>std::map&lt; int, SeLogicRaceData * &gt;</label>
+        <childnode refid="6287" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6305">
+        <label>std::basic_ofstream&lt; char &gt;</label>
+        <childnode refid="6306" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6293">
+        <label>std::queue&lt; class SeRace * &gt;</label>
+        <childnode refid="6294" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6283">
+        <label>std::vector&lt; SeSvrRacePlayer &gt;</label>
+        <childnode refid="6284" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6266">
+        <label>std::map&lt; K, T &gt;</label>
+        <childnode refid="6267" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="6268" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6302">
+        <label>RecordReport</label>
+        <link refid="struct_record_report"/>
+        <childnode refid="6273" relation="usage">
+          <edgelabel>strMsg</edgelabel>
+        </childnode>
+      </node>
+      <node id="6276">
+        <label>RaceService</label>
+        <link refid="class_race_service"/>
+        <childnode refid="6277" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6253" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6277" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6253" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6278" relation="usage">
+          <edgelabel>m_kRaceMgr</edgelabel>
+        </childnode>
+        <childnode refid="6261" relation="usage">
+          <edgelabel>m_kThreadMsgMgr</edgelabel>
+        </childnode>
+        <childnode refid="6289" relation="usage">
+          <edgelabel>m_pPerforceMgr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6281">
+        <label>std::map&lt; DWord, StatisticSendCommandPacket &gt;</label>
+        <childnode refid="6282" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6265">
+        <label>std::map&lt; DWord, MID2TestRobot &gt;</label>
+        <childnode refid="6266" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6309">
+        <label>std::vector&lt; SePlayerInfoSeat &gt;</label>
+        <childnode refid="6310" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6310">
+        <label>SePlayerInfoSeat</label>
+        <link refid="struct_se_player_info_seat"/>
+      </node>
+      <node id="6304">
+        <label>std::ofstream</label>
+        <childnode refid="6305" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6258">
+        <label>SeConnect</label>
+        <link refid="struct_se_connect"/>
+        <childnode refid="6259" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+        <childnode refid="6260" relation="usage">
+          <edgelabel>kTownSign</edgelabel>
+        </childnode>
+      </node>
+      <node id="6256">
+        <label>SeBaseServer</label>
+        <link refid="class_se_base_server"/>
+      </node>
+      <node id="6259">
+        <label>SeNetAddr</label>
+        <link refid="struct_se_net_addr"/>
+      </node>
+      <node id="6300">
+        <label>SeRacePack</label>
+        <link refid="struct_se_race_pack"/>
+      </node>
+      <node id="6282">
+        <label>StatisticSendCommandPacket</label>
+        <link refid="struct_statistic_send_command_packet"/>
+      </node>
+      <node id="6274">
+        <label>std::basic_string&lt; char &gt;</label>
+      </node>
+      <node id="6313">
+        <label>std::unordered_map&lt; DWord, SeViewPlayer &gt;</label>
+        <childnode refid="6314" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6296">
+        <label>SeReplayInfo</label>
+        <link refid="struct_se_replay_info"/>
+      </node>
+      <node id="6275">
+        <label>std::vector&lt; std::string &gt;</label>
+        <childnode refid="6273" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6288">
+        <label>TeMD5</label>
+        <link refid="struct_te_m_d5"/>
+      </node>
+      <node id="6263">
+        <label>std::queue&lt; int &gt;</label>
+      </node>
+      <node id="6280">
+        <label>SeSvrRace</label>
+        <link refid="struct_se_svr_race"/>
+        <childnode refid="6281" relation="usage">
+          <edgelabel>kSendCmdDataSize</edgelabel>
+        </childnode>
+        <childnode refid="6283" relation="usage">
+          <edgelabel>kRacePlayer</edgelabel>
+        </childnode>
+        <childnode refid="6285" relation="usage">
+          <edgelabel>kRaceDataMgr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6298">
+        <label>RecordLabel</label>
+        <link refid="struct_record_label"/>
+      </node>
+      <node id="6299">
+        <label>SePackInfo</label>
+        <link refid="struct_se_pack_info"/>
+      </node>
+      <node id="6264">
+        <label>SeVirtConn</label>
+        <link refid="struct_se_virt_conn"/>
+        <childnode refid="6259" relation="usage">
+          <edgelabel>kNetAddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6257">
+        <label>std::map&lt; HSock, SeConnect * &gt;</label>
+        <childnode refid="6258" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6306">
+        <label>std::basic_ostream&lt; Char &gt;</label>
+        <childnode refid="6307" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6307">
+        <label>std::basic_ios&lt; Char &gt;</label>
+        <childnode refid="6308" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6253">
+        <label>Thread</label>
+      </node>
+      <node id="6289">
+        <label>CPerformanceTimingMgr</label>
+        <link refid="class_c_performance_timing_mgr"/>
+        <childnode refid="6289" relation="usage">
+          <edgelabel>m_pMgr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6260">
+        <label>HTownSign</label>
+        <link refid="struct_h_town_sign"/>
+      </node>
+      <node id="6308">
+        <label>std::ios_base</label>
+      </node>
+      <node id="6312">
+        <label>SeRaceCmd</label>
+        <link refid="struct_se_race_cmd"/>
+      </node>
+      <node id="6292">
+        <label>SeWCSView</label>
+        <link refid="struct_se_w_c_s_view"/>
+      </node>
+      <node id="6285">
+        <label>SeRaceDataMgr</label>
+        <link refid="class_se_race_data_mgr"/>
+        <childnode refid="6286" relation="usage">
+          <edgelabel>m_kMapRaceData</edgelabel>
+        </childnode>
+      </node>
+      <node id="6311">
+        <label>SeRaceFrame</label>
+        <link refid="struct_se_race_frame"/>
+        <childnode refid="6312" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6278">
+        <label>SeThreadRaceMgr</label>
+        <link refid="class_se_thread_race_mgr"/>
+        <childnode refid="6279" relation="usage">
+          <edgelabel>m_kMapRace</edgelabel>
+        </childnode>
+      </node>
+      <node id="6294">
+        <label>WatchServer::SeRace</label>
+        <link refid="struct_watch_server_1_1_se_race"/>
+        <childnode refid="6295" relation="usage">
+          <edgelabel>kRecord</edgelabel>
+          <edgelabel>kSvrModeRecord</edgelabel>
+        </childnode>
+        <childnode refid="6288" relation="usage">
+          <edgelabel>kRaceID</edgelabel>
+        </childnode>
+        <childnode refid="6313" relation="usage">
+          <edgelabel>mViewPlayer</edgelabel>
+        </childnode>
+      </node>
+      <node id="6269">
+        <label>SeRaceConfig</label>
+        <link refid="struct_se_race_config"/>
+        <childnode refid="6259" relation="usage">
+          <edgelabel>kAddrToWCS</edgelabel>
+          <edgelabel>kAddrToPlayer</edgelabel>
+          <edgelabel>kAddrToPlayerUdp</edgelabel>
+          <edgelabel>kMSServer</edgelabel>
+        </childnode>
+      </node>
+      <node id="6277">
+        <label>BeRaceLogicCall</label>
+      </node>
+      <node id="6290">
+        <label>SeServerData</label>
+        <link refid="struct_se_server_data"/>
+      </node>
+      <node id="6262">
+        <label>SeMsgData</label>
+        <link refid="struct_se_msg_data"/>
+      </node>
+      <node id="6314">
+        <label>WatchServer::SeViewPlayer</label>
+        <link refid="struct_watch_server_1_1_se_view_player"/>
+      </node>
+      <node id="6252">
+        <label>SeRaceRecordSaveThread</label>
+        <link refid="class_se_race_record_save_thread"/>
+        <childnode refid="6253" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6253" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6254" relation="usage">
+          <edgelabel>m_pkOwner</edgelabel>
+        </childnode>
+        <childnode refid="6293" relation="usage">
+          <edgelabel>m_qFinishQueue</edgelabel>
+          <edgelabel>m_qSaveQueue</edgelabel>
+        </childnode>
+      </node>
+      <node id="6303">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+      <node id="6255">
+        <label>TeNetCall</label>
+      </node>
+      <node id="6273">
+        <label>std::string</label>
+        <childnode refid="6274" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6270">
+        <label>std::map&lt; HSock, SeWatchServerConnect * &gt;</label>
+        <childnode refid="6271" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" line="11" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/raceRecordSaveThread.h" bodystart="10" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_se_race_record_save_thread_1a79535d2f4037275cc7eee46c39e3c851" prot="public" virt="virtual"><scope>SeRaceRecordSaveThread</scope><name>DoWork</name></member>
+      <member refid="class_se_race_record_save_thread_1aef52089ca9529ff68af23dd6a1232952" prot="public" virt="virtual"><scope>SeRaceRecordSaveThread</scope><name>DoWork</name></member>
+      <member refid="class_se_race_record_save_thread_1a5ed1b2df07fda6e520bb78ab5f598db6" prot="public" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>Finialize</name></member>
+      <member refid="class_se_race_record_save_thread_1a5ed1b2df07fda6e520bb78ab5f598db6" prot="public" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>Finialize</name></member>
+      <member refid="class_se_race_record_save_thread_1a195f97d5828265248e79642ee080e7b9" prot="public" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>Initialize</name></member>
+      <member refid="class_se_race_record_save_thread_1a195f97d5828265248e79642ee080e7b9" prot="public" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>Initialize</name></member>
+      <member refid="class_se_race_record_save_thread_1a07b5d768ee99521e626132f67fdf95fa" prot="protected" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>m_bRun</name></member>
+      <member refid="class_se_race_record_save_thread_1a85ba2708bb3cc61d08c92ee4804a2a62" prot="protected" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>m_pkOwner</name></member>
+      <member refid="class_se_race_record_save_thread_1a4c7708b208f313718859d512589a8307" prot="protected" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>m_pkQueueLock</name></member>
+      <member refid="class_se_race_record_save_thread_1ac2c0d4a876a8fa2f2205dc1b1fa3ffbb" prot="protected" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>m_qFinishQueue</name></member>
+      <member refid="class_se_race_record_save_thread_1a28fb614a7e2c00f7f5abdba781a370e2" prot="protected" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>m_qSaveQueue</name></member>
+      <member refid="class_se_race_record_save_thread_1a65464df8c526840333135e1a197e2370" prot="protected" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>m_uLogicVersion</name></member>
+      <member refid="class_se_race_record_save_thread_1a15e230a438d9545018bdaea1a4b247e5" prot="public" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>PushTask</name></member>
+      <member refid="class_se_race_record_save_thread_1a15e230a438d9545018bdaea1a4b247e5" prot="public" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>PushTask</name></member>
+      <member refid="class_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" prot="private" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>saveRecord</name></member>
+      <member refid="class_se_race_record_save_thread_1a56cdff87cc7b27fe325913d36f931e3f" prot="private" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>saveRecord</name></member>
+      <member refid="class_se_race_record_save_thread_1a33789b2a2c688fe9fbb7f1dfe69aad91" prot="public" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>SeRaceRecordSaveThread</name></member>
+      <member refid="class_se_race_record_save_thread_1a33789b2a2c688fe9fbb7f1dfe69aad91" prot="public" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>SeRaceRecordSaveThread</name></member>
+      <member refid="class_se_race_record_save_thread_1a9d97a8490bfd14b5ecd36dcb6638b706" prot="public" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>Update</name></member>
+      <member refid="class_se_race_record_save_thread_1a9d97a8490bfd14b5ecd36dcb6638b706" prot="public" virt="non-virtual"><scope>SeRaceRecordSaveThread</scope><name>Update</name></member>
+      <member refid="class_se_race_record_save_thread_1ac3e249da0c4a38f4484b8b64e6aceb0c" prot="public" virt="virtual"><scope>SeRaceRecordSaveThread</scope><name>~SeRaceRecordSaveThread</name></member>
+      <member refid="class_se_race_record_save_thread_1a892721d6677aeeb9cdda6d860befc946" prot="public" virt="virtual"><scope>SeRaceRecordSaveThread</scope><name>~SeRaceRecordSaveThread</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_performance_timing_1_1_c_counter_history" kind="class" prot="public">
+    <compoundname>PerformanceTiming::CCounterHistory</compoundname>
+    <includes refid="src_2_performance_timing_8h" local="no">PerformanceTiming.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>TValueType</declname>
+        <defname>TValueType</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>TSumType</declname>
+        <defname>TSumType</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_performance_timing_1_1_c_counter_history_1ac40bf12d135895ae5ae289098d44b009" prot="private" static="yes" mutable="no">
+        <type>const UInt32</type>
+        <definition>static const UInt32 PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::s_uiNumHistoryElements</definition>
+        <argsstring></argsstring>
+        <name>s_uiNumHistoryElements</name>
+        <initializer>= 60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="168" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="168" bodyend="-1"/>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1a2a809d32c5ca3e9d99f345367f6050d9" compoundref="src_2_performance_timing_8h" startline="146" endline="155">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::AddToHistory</referencedby>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1a671848819ed8850a89964cdefe1cacd9" compoundref="src_2_performance_timing_8h" startline="98" endline="108">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::CCounterHistory</referencedby>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1a00d0bb2ae5ba1068eae882f5774e9919" compoundref="src_2_performance_timing_8h" startline="131" endline="134">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::GetMax</referencedby>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1acea878c394c3908967a6f93f44f25ec0" compoundref="src_2_performance_timing_8h" startline="136" endline="139">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::GetMin</referencedby>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1ad26b333d20b67f23c5fe45b05a7bceaf" compoundref="src_2_performance_timing_8h" startline="157" endline="160">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::GetNumberOfSamples</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_performance_timing_1_1_c_counter_history_1a0b638da0874671b6a8829e2f4ffd50ca" prot="private" static="no" mutable="no">
+        <type>TValueType</type>
+        <definition>TValueType PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::m_History</definition>
+        <argsstring>[s_uiNumHistoryElements]</argsstring>
+        <name>m_History</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="170" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="170" bodyend="-1"/>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1a2a809d32c5ca3e9d99f345367f6050d9" compoundref="src_2_performance_timing_8h" startline="146" endline="155">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::AddToHistory</referencedby>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1a671848819ed8850a89964cdefe1cacd9" compoundref="src_2_performance_timing_8h" startline="98" endline="108">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::CCounterHistory</referencedby>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1a00d0bb2ae5ba1068eae882f5774e9919" compoundref="src_2_performance_timing_8h" startline="131" endline="134">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::GetMax</referencedby>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1acea878c394c3908967a6f93f44f25ec0" compoundref="src_2_performance_timing_8h" startline="136" endline="139">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::GetMin</referencedby>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1a036a3b9b2fa9ab2d3c2252ade2ce500f" compoundref="src_2_performance_timing_8h" startline="162" endline="165">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::GetSample</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_performance_timing_1_1_c_counter_history_1a87240fc021ea9bab978249d50e87e7a3" prot="private" static="no" mutable="no">
+        <type>TValueType</type>
+        <definition>TValueType PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::m_LastValueAdded</definition>
+        <argsstring></argsstring>
+        <name>m_LastValueAdded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="171" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="171" bodyend="-1"/>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1a2a809d32c5ca3e9d99f345367f6050d9" compoundref="src_2_performance_timing_8h" startline="146" endline="155">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::AddToHistory</referencedby>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1a0a764fc8ff4b798fca04a79d588a12ae" compoundref="src_2_performance_timing_8h" startline="141" endline="144">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::GetLastValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_performance_timing_1_1_c_counter_history_1afd80ac6c5e330bde6986ee091d868c79" prot="private" static="no" mutable="no">
+        <type>TSumType</type>
+        <definition>TSumType PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::m_Total</definition>
+        <argsstring></argsstring>
+        <name>m_Total</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="172" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="172" bodyend="-1"/>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1a2a809d32c5ca3e9d99f345367f6050d9" compoundref="src_2_performance_timing_8h" startline="146" endline="155">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::AddToHistory</referencedby>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1ab0e1127257767b3af56382c3fb7f7c67" compoundref="src_2_performance_timing_8h" startline="120" endline="129">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::GetAverage</referencedby>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1a9f935cc8bf984d9d791f74b152abb25a" compoundref="src_2_performance_timing_8h" startline="110" endline="113">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::GetTotal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_performance_timing_1_1_c_counter_history_1afe061035d2f5bb2823d4240526dde3ea" prot="private" static="no" mutable="no">
+        <type>TSumType</type>
+        <definition>TSumType PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::m_RunningTotal</definition>
+        <argsstring></argsstring>
+        <name>m_RunningTotal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="173" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="173" bodyend="-1"/>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1a2a809d32c5ca3e9d99f345367f6050d9" compoundref="src_2_performance_timing_8h" startline="146" endline="155">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::AddToHistory</referencedby>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1ac06eed4d91e3d13ebaee618f220fd82b" compoundref="src_2_performance_timing_8h" startline="115" endline="118">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::GetRunningTotal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_performance_timing_1_1_c_counter_history_1a8e2bed0eff79d7c205040b506a4adfeb" prot="private" static="no" mutable="no">
+        <type>UInt32</type>
+        <definition>UInt32 PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::m_uiCount</definition>
+        <argsstring></argsstring>
+        <name>m_uiCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="174" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="174" bodyend="-1"/>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1a2a809d32c5ca3e9d99f345367f6050d9" compoundref="src_2_performance_timing_8h" startline="146" endline="155">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::AddToHistory</referencedby>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1ad26b333d20b67f23c5fe45b05a7bceaf" compoundref="src_2_performance_timing_8h" startline="157" endline="160">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::GetNumberOfSamples</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1a671848819ed8850a89964cdefe1cacd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::CCounterHistory</definition>
+        <argsstring>()</argsstring>
+        <name>CCounterHistory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="98" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="98" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1a9f935cc8bf984d9d791f74b152abb25a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TSumType</type>
+        <definition>TSumType PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetTotal</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTotal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="110" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1ac06eed4d91e3d13ebaee618f220fd82b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TSumType</type>
+        <definition>TSumType PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetRunningTotal</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRunningTotal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="115" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1ab0e1127257767b3af56382c3fb7f7c67" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetAverage</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAverage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="120" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="120" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1a00d0bb2ae5ba1068eae882f5774e9919" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TValueType</type>
+        <definition>TValueType PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetMax</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="131" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1acea878c394c3908967a6f93f44f25ec0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TValueType</type>
+        <definition>TValueType PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetMin</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="136" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1a0a764fc8ff4b798fca04a79d588a12ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TValueType</type>
+        <definition>TValueType PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetLastValue</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLastValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="141" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="141" bodyend="144"/>
+        <referencedby refid="class_c_performance_timing_1a5bfd75b3a3c3933063244609888e2dfc" compoundref="src_2_performance_timing_8cpp" startline="677" endline="710">CPerformanceTiming::EnumerateAllCounters</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1a2a809d32c5ca3e9d99f345367f6050d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::AddToHistory</definition>
+        <argsstring>(TValueType Value)</argsstring>
+        <name>AddToHistory</name>
+        <param>
+          <type>TValueType</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="146" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="146" bodyend="155"/>
+        <referencedby refid="class_performance_timing_1_1_c_history_counter_1a40fe9aee9086f43f878d71ad0330771b" compoundref="src_2_performance_timing_8h" startline="514" endline="524">PerformanceTiming::CHistoryCounter::AdvanceFrame</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1ad26b333d20b67f23c5fe45b05a7bceaf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt32</type>
+        <definition>UInt32 PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetNumberOfSamples</definition>
+        <argsstring>() const </argsstring>
+        <name>GetNumberOfSamples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="157" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="157" bodyend="160"/>
+        <referencedby refid="class_performance_timing_1_1_c_counter_history_1ab0e1127257767b3af56382c3fb7f7c67" compoundref="src_2_performance_timing_8h" startline="120" endline="129">PerformanceTiming::CCounterHistory&lt; UInt32, UInt64 &gt;::GetAverage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1a036a3b9b2fa9ab2d3c2252ade2ce500f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TValueType</type>
+        <definition>TValueType PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetSample</definition>
+        <argsstring>(size_t uiIndex) const </argsstring>
+        <name>GetSample</name>
+        <param>
+          <type>size_t</type>
+          <declname>uiIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="162" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1a671848819ed8850a89964cdefe1cacd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::CCounterHistory</definition>
+        <argsstring>()</argsstring>
+        <name>CCounterHistory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="98" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="98" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1a9f935cc8bf984d9d791f74b152abb25a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TSumType</type>
+        <definition>TSumType PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetTotal</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTotal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="110" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1ac06eed4d91e3d13ebaee618f220fd82b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TSumType</type>
+        <definition>TSumType PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetRunningTotal</definition>
+        <argsstring>() const </argsstring>
+        <name>GetRunningTotal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="115" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1ab0e1127257767b3af56382c3fb7f7c67" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetAverage</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAverage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="120" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="120" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1a00d0bb2ae5ba1068eae882f5774e9919" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TValueType</type>
+        <definition>TValueType PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetMax</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="131" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1acea878c394c3908967a6f93f44f25ec0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TValueType</type>
+        <definition>TValueType PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetMin</definition>
+        <argsstring>() const </argsstring>
+        <name>GetMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="136" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1a0a764fc8ff4b798fca04a79d588a12ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TValueType</type>
+        <definition>TValueType PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetLastValue</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLastValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="141" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1a2a809d32c5ca3e9d99f345367f6050d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::AddToHistory</definition>
+        <argsstring>(TValueType Value)</argsstring>
+        <name>AddToHistory</name>
+        <param>
+          <type>TValueType</type>
+          <declname>Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="146" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="146" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1ad26b333d20b67f23c5fe45b05a7bceaf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>UInt32</type>
+        <definition>UInt32 PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetNumberOfSamples</definition>
+        <argsstring>() const </argsstring>
+        <name>GetNumberOfSamples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="157" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="157" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_performance_timing_1_1_c_counter_history_1a036a3b9b2fa9ab2d3c2252ade2ce500f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TValueType</type>
+        <definition>TValueType PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;::GetSample</definition>
+        <argsstring>(size_t uiIndex) const </argsstring>
+        <name>GetSample</name>
+        <param>
+          <type>size_t</type>
+          <declname>uiIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" line="162" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/Src/PerformanceTiming.h" bodystart="162" bodyend="165"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="755">
+        <label>TSumType</label>
+      </node>
+      <node id="756">
+        <label>TValueType</label>
+      </node>
+      <node id="754">
+        <label>PerformanceTiming::CCounterHistory&lt; TValueType, TSumType &gt;</label>
+        <link refid="class_performance_timing_1_1_c_counter_history"/>
+        <childnode refid="755" relation="usage">
+          <edgelabel>m_Total</edgelabel>
+          <edgelabel>m_RunningTotal</edgelabel>
+        </childnode>
+        <childnode refid="756" relation="usage">
+          <edgelabel>m_LastValueAdded</edgelabel>
+          <edgelabel>m_History</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" line="96" column="1" bodyfile="F:/TeamWork/ServerVersion/projects/server/Server/Server/RaceServer/src/PerformanceTiming.h" bodystart="95" bodyend="175"/>
+    <listofallmembers>
+      <member refid="class_performance_timing_1_1_c_counter_history_1a2a809d32c5ca3e9d99f345367f6050d9" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>AddToHistory</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1a2a809d32c5ca3e9d99f345367f6050d9" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>AddToHistory</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1a671848819ed8850a89964cdefe1cacd9" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>CCounterHistory</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1a671848819ed8850a89964cdefe1cacd9" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>CCounterHistory</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1ab0e1127257767b3af56382c3fb7f7c67" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>GetAverage</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1ab0e1127257767b3af56382c3fb7f7c67" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>GetAverage</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1a0a764fc8ff4b798fca04a79d588a12ae" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>GetLastValue</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1a0a764fc8ff4b798fca04a79d588a12ae" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>GetLastValue</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1a00d0bb2ae5ba1068eae882f5774e9919" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>GetMax</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1a00d0bb2ae5ba1068eae882f5774e9919" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>GetMax</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1acea878c394c3908967a6f93f44f25ec0" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>GetMin</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1acea878c394c3908967a6f93f44f25ec0" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>GetMin</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1ad26b333d20b67f23c5fe45b05a7bceaf" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>GetNumberOfSamples</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1ad26b333d20b67f23c5fe45b05a7bceaf" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>GetNumberOfSamples</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1ac06eed4d91e3d13ebaee618f220fd82b" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>GetRunningTotal</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1ac06eed4d91e3d13ebaee618f220fd82b" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>GetRunningTotal</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1a036a3b9b2fa9ab2d3c2252ade2ce500f" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>GetSample</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1a036a3b9b2fa9ab2d3c2252ade2ce500f" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>GetSample</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1a9f935cc8bf984d9d791f74b152abb25a" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>GetTotal</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1a9f935cc8bf984d9d791f74b152abb25a" prot="public" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>GetTotal</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1a0b638da0874671b6a8829e2f4ffd50ca" prot="private" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>m_History</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1a87240fc021ea9bab978249d50e87e7a3" prot="private" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>m_LastValueAdded</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1afe061035d2f5bb2823d4240526dde3ea" prot="private" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>m_RunningTotal</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1afd80ac6c5e330bde6986ee091d868c79" prot="private" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>m_Total</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1a8e2bed0eff79d7c205040b506a4adfeb" prot="private" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>m_uiCount</name></member>
+      <member refid="class_performance_timing_1_1_c_counter_history_1ac40bf12d135895ae5ae289098d44b009" prot="private" virt="non-virtual"><scope>PerformanceTiming::CCounterHistory</scope><name>s_uiNumHistoryElements</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
